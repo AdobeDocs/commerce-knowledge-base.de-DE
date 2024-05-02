@@ -1,0 +1,41 @@
+---
+title: Produkt-Recommendations wird nicht im Seitenaufbau angezeigt
+description: Dieser Artikel bietet eine Lösung für das Problem, bei dem die Option Produkt-Recommendations nicht im Seitenaufbau angezeigt wird.
+exl-id: e96a446b-2e64-47a6-ac1b-e73183da9fb8
+feature: Page Builder, Configuration, Personalization, Products, Recommendations
+role: Developer
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 0%
+
+---
+
+# Produkt-Recommendations wird nicht im Seitenaufbau angezeigt
+
+Dieser Artikel bietet eine Lösung für das Problem, bei dem die Option Produkt-Recommendations nicht im Seitenaufbau angezeigt wird.
+
+## Betroffene Produkte und Versionen
+
+* Adobe Commerce (alle Bereitstellungsmethoden)
+
+## Problem
+
+Die Option &quot;Produkt-Recommendations&quot;wird nicht im Seitenaufbau angezeigt.
+
+## Ursache
+
+Im Seitenaufbau gibt es keine Option, Produkt-Recommendations hinzuzufügen. Product Recommendations for Page Builder ist ein optionales Modul und wird separat installiert.
+
+## Lösung
+
+1. Überprüfen Sie, ob Sie das Modul separat installiert haben, indem Sie den Befehl ausführen: `composer show magento/module-page-builder-product-recommendations`
+1. Wenn die folgende Meldung zurückgegeben wird: *Package Magento/module-page-builder-product-recommendations nicht gefunden* müssen Sie sie installieren, indem Sie den Befehl ausführen: `composer require magento/module-page-builder-product-recommendations`
+
+Durch die Aktivierung von Product Recommendations in Page Builder können Sie [Hinzufügen einer Empfehlungseinheit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) zu allen Inhalten, die in Page Builder erstellt wurden.
+
+## Verwandtes Lesen
+
+* [Inhalt hinzufügen - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) in unserem Benutzerhandbuch.
+* [Installieren und Konfigurieren von Product Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) in unserer Entwicklerdokumentation.
+* [Adobe Commerce-Benutzerhandbuch](https://docs.magento.com/user-guide/)

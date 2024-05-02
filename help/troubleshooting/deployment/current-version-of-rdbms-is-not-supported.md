@@ -1,0 +1,56 @@
+---
+title: Fehler "Aktuelle Version von RDBMS nicht unterstützt"bei der Implementierung
+description: "Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereitstellung fehlschlägt und Sie im Bereitstellungsprotokoll den folgenden Fehler haben: *Die aktuelle Version von RDBMS wird nicht unterstützt*."
+exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
+feature: Deploy
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 0%
+
+---
+
+# Fehler &quot;Aktuelle Version von RDBMS nicht unterstützt&quot;bei der Implementierung
+
+Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereitstellung fehlschlägt und der folgende Fehler im Bereitstellungsprotokoll auftritt: *aktuelle Version von RDBMS wird nicht unterstützt*.
+
+## Betroffene Produkte und Versionen
+
+Adobe Commerce on Cloud Infrastructure, 2.3.0-2.3.7-p1, 2.4.0-2.4.3.
+
+## Problem
+
+Diese Fehlermeldung bedeutet, dass die aktuelle MariaDB-Version in der Adobe Commerce-Version, auf die Sie ein Upgrade durchführen möchten, nicht mehr unterstützt wird und MariaDB auf eine kompatible Version aktualisiert werden muss.
+
+
+<u>Zu reproduzierende Schritte</u>:
+
+Versuchen Sie, sie bereitzustellen.
+
+<u>Erwartetes Ergebnis</u>:
+
+Erfolgreiche Implementierung.
+
+<u>Tatsächliches Ergebnis</u>:
+
+Die Bereitstellung schlägt mit der Fehlermeldung fehl: *aktuelle Version von RDBMS wird nicht unterstützt*.
+
+## Ursache
+
+Ihre MariaDB-Version ist nicht mit der Adobe Commerce-Version kompatibel, auf die Sie ein Upgrade durchführen möchten.
+
+## Lösung
+
+Sie müssen den MariaDB-Dienst auf eine kompatible Version aktualisieren, bevor Sie die Anwendung aktualisieren.
+
+
+Für die Integrationsverzweigung in Adobe Commerce zur Cloud-Infrastruktur Pro-Planarchitektur (und allen Zweigen in der Starter-Architektur) folgen Sie [Dienst konfigurieren](https://devdocs.magento.com/cloud/project/services.html) in unserer Entwicklerdokumentation.
+
+Für die Staging- und Produktionsumgebung in Adobe Commerce auf der Cloud Infrastructure Pro-Planarchitektur: [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , um anzufordern, dass die Dienste vor der Bereitstellung der Adobe Commerce-Versionsaktualisierung aktualisiert werden.
+
+
+## Verwandtes Lesen
+
+* [Best Practices für Builds und Implementierungen](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) in unserer Entwicklerdokumentation.
+* [Adobe Commerce 2.3.5-Upgrade: kompakt in dynamische Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) in unserer Support-Know-how-Basis.

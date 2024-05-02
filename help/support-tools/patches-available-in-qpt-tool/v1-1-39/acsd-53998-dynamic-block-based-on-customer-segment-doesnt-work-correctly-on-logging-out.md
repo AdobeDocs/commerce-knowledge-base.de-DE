@@ -1,0 +1,73 @@
+---
+title: "ACSD-53998: Dynamischer Block, der auf dem Kundensegment basiert, funktioniert nach dem Abmelden nicht richtig."
+description: Wenden Sie den Patch ACSD-53998 an, um das Adobe Commerce-Problem zu beheben, bei dem ein dynamischer Block, der auf einem Kundensegment basiert, nach dem Abmelden von einem Kundenkonto nicht ordnungsgemäß funktioniert.
+feature: Customers, Page Builder, Personalization
+role: Admin, Developer
+exl-id: 5a82a6b8-e8f7-47ff-89f6-93a39b72fe38
+source-git-commit: dccb8dde1666fa0c72c7c94cd94c82daddaadc54
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 0%
+
+---
+
+# ACSD-53998: Dynamischer Block, der auf dem Kundensegment basiert, funktioniert nach dem Abmelden falsch
+
+Der Patch ACSD-53998 behebt das Problem, dass ein dynamischer Block, der auf einem Kundensegment basiert, nach dem Abmelden von einem Kundenkonto nicht ordnungsgemäß funktioniert. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.39 ist installiert. Die Patch-ID ist ACSD-53998. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.5-p2
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4-p2 - 2.4.4-p6, 2.4.5-p1 - 2.4.6-p3
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Ein dynamischer Block, der auf einem Kundensegment basiert, funktioniert nach dem Abmelden von einem Kundenkonto nicht ordnungsgemäß.
+
+<u>Voraussetzungen</u>:
+
+Installieren und Aktivieren [!DNL Page Builder] Module.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Erstellen Sie zwei Kundensegmente ohne Bedingungen.
+1. Erstellen Sie zwei dynamische Blöcke für jedes Segment.
+1. Erstellen Sie einen Baustein mit den beiden dynamischen Bausteinen als [!DNL Page Builder] dynamische Bausteine.
+1. Erstellen Sie ein Widget einschließlich des obigen Blocks und machen Sie den Block unter dem Fußzeilenabschnitt aller Seiten sichtbar.
+1. Löschen Sie die Caches.
+1. Öffnen Sie die Startseite.
+1. Melden Sie sich als Kunde an.
+1. Melden Sie sich ab.
+
+<u>Erwartete Ergebnisse</u>:
+
+Das für angemeldete Kunden erstellte Banner wird nicht für Gastbenutzer angezeigt.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Das für das angemeldete Kundensegment erstellte Banner wird auch nach dem Abmelden vom Kundenkonto angezeigt.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.

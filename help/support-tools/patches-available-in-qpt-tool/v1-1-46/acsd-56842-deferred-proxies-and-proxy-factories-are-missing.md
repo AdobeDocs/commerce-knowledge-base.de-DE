@@ -1,0 +1,96 @@
+---
+title: "ACSD-56842: Verzögerte Proxys und Proxy-Fabriken fehlen nach Ausführung von `setup:di:kompilieren"
+description: Wenden Sie den Patch ACSD-56842 an, um das Adobe Commerce-Problem zu beheben, bei dem die verzögerten Proxys und Proxy-Fabriken nach der Ausführung von `setup' fehlen.:di:kompilieren".
+feature: Deploy, Catalog Management
+role: Admin, Developer
+exl-id: 2d12e36c-d8b7-4253-91d8-28b50477ccd9
+source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 0%
+
+---
+
+# ACSD-56842: Verzögerte Proxys und Proxy-Fabriken fehlen nach der Ausführung `setup:di:compile`
+
+Der Patch ACSD-56842 behebt das Problem, dass die verzögerten Proxys und Proxy-Fabriken nach der Ausführung fehlen `setup:di:compile`. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 installiert ist. Die Patch-ID ist ACSD-56842. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4-p6
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.2 - 2.4.6-p3
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Die verzögerten Proxys und Proxy-Factories fehlen nach der Ausführung `setup:di:compile`.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Erstellen Sie ein benutzerdefiniertes Modul namens *Magento_CustomModule*.
+1. Im *[!UICONTROL etc]* Ordner des Moduls erstellen Sie eine `di.xml` mit diesem Inhalt:
+
+   ```xml
+    <?xml version="1.0"?>
+     <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+        <type name="Magento\Catalog\Model\ProductLink\CollectionProvider">
+           <arguments>
+              <argument name="providers" xsi:type="array">
+                 <item name="crosssell" xsi:type="object">
+                      Magento\Catalog\Model\ProductLink\CollectionProvider\Crosssell\Proxy
+                 </item>
+                   <item name="upsell" xsi:type="object">Magento\Catalog\Model\ProductLink\CollectionProvider\Upsell\Proxy</item>
+                     <item name="related" xsi:type="object">Magento\Catalog\Model\ProductLink\CollectionProvider\Related\Proxy</item>
+              </argument>
+           </arguments>
+         </type>
+            <type name="Magento\Catalog\Model\Product">
+               <arguments>
+                  <argument name="catalogProductStatus" xsi:type="object">
+                   Magento\Catalog\Model\Product\Attribute\Source\Status\Proxy
+                  </argument>
+                   <argument name="productLink" xsi:type="object">
+                     Magento\Catalog\Model\Product\Link\Proxy
+                   </argument>
+               </arguments>
+             </type>
+     </config>
+   ```
+
+1. Legen Sie die [!UICONTROL Production] mode: `bin/magento deploy:mode:set production`.
+1. Löschen Sie den generierten Ordner aus dem Magento-Stamm.
+1. Führen Sie den Befehl aus `bin/magento setup:di:compile`.
+1. Überprüfen Sie den generierten Ordner.
+
+<u>Erwartete Ergebnisse</u>:
+
+* Proxy-Dateien werden nach der Kompilierung erfolgreich erstellt.
+* Werksdateien werden nach der Kompilierung erfolgreich erstellt.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Im generierten Ordner wird die Proxy-Datei für Proxy-Argumente generiert, die ohne Zeilenumbruch angegeben werden, und nicht für die Argumente, die mit einem Zeilenumbruch angegeben werden.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.

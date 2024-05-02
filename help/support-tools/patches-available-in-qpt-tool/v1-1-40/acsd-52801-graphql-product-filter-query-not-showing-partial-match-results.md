@@ -1,0 +1,82 @@
+---
+title: "ACSD-52801: GraphQL-Produktfilterabfrage zeigt keine partiellen Übereinstimmungsergebnisse an"
+description: Wenden Sie den Patch ACSD-52801 an, um das Adobe Commerce-Problem zu beheben, bei dem die GraphQL-Produktfilterabfrage keine partiellen Übereinstimmungsergebnisse anzeigt.
+feature: Products
+role: Admin, Developer
+exl-id: a03a4d09-ebec-4ad0-a875-48e000a29b44
+source-git-commit: 40968db03939058884bca4e4aeed2ffef0462e0b
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
+
+---
+
+# ACSD-52801: GraphQL-Produktfilterabfrage zeigt keine partiellen Übereinstimmungsergebnisse an
+
+Der Patch ACSD-52801 behebt das Problem, dass die GraphQL-Produktfilterabfrage keine partiellen Übereinstimmungsergebnisse anzeigt. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.40 ist installiert. Die Patch-ID ist ACSD-52801. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben ist.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4-p2, 2.4.5-p4
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.6-p3
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Die GraphQL-Produktfilterabfrage zeigt keine partiellen Übereinstimmungsergebnisse an.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Installieren Sie eine saubere Instanz mit Beispieldaten.
+1. Führen Sie die folgende GraphQL-Abfrage aus.
+
+```GraphQL
+{
+  products(
+    filter: { name: { match: "Life" } }
+    sort: { position: ASC }
+    pageSize: 100
+    currentPage: 1
+  ) {
+    total_count
+    items {
+      url_key
+      sku
+      name
+      meta_title
+    }
+  }
+}
+```
+
+<u>Erwartete Ergebnisse</u>:
+
+Sie ermöglicht ähnliche Übereinstimmungsergebnisse wie die Storefront-Vorabsuche, indem Sie die `match_type` ([!UICONTROL PARTIAL], [!UICONTROL FULL]), um die erforderlichen Ergebnisse zu steuern. [!UICONTROL FULL] entspricht vollständigen Wörtern und [!UICONTROL PARTIAL] entspricht partiellen Wörtern wie dem Leben, das in lebenslangen Jahren enthalten ist.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Die Produktfilterabfrage gibt keine Ergebnisse von partiellen Übereinstimmungen für Suchbegriffe zurück.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.

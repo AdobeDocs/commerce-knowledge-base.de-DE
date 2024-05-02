@@ -1,0 +1,72 @@
+---
+title: "ACSD-48694: Ungültiger Statusänderungsfehler verhindert, dass der Kunde eine Bestellung aufgibt."
+description: Wenden Sie den Patch ACSD-48694 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler *Ungültige Statusänderung angefordert* verhindert, dass ein Kunde eine Bestellung aufgibt.
+exl-id: edf79424-6c4f-4cfd-ab7e-19f95b9bc685
+feature: Admin Workspace, Orders
+role: Admin
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '459'
+ht-degree: 0%
+
+---
+
+# ACSD-48694: *Ungültige Statusänderung angefordert* -Fehler verhindert, dass der Kunde eine Bestellung aufgibt
+
+Der Patch ACSD-48694 behebt das Problem, bei dem der Fehler *Ungültige Statusänderung angefordert* verhindert, dass ein Kunde eine Bestellung aufgibt. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 ist installiert. Die Patch-ID lautet ACSD-48694. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.7 - 2.37-p4, 2.4.1 - 2.4.6
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Der Fehler *Ungültige Statusänderung angefordert* verhindert, dass ein Kunde eine Bestellung aufgibt.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Fügen Sie eine leichte Verzögerung während der `/estimate-shipping-methods` Anfrage durch Aufnahme einer `sleep()` at `app/code/Magento/Quote/Model/GuestCart/GuestShippingMethodManagement.php::estimateByExtendedAddress()` -Funktion, also die `/estimate-shipping-methods` -Anfrage abgeschlossen wird, nachdem `/shipping-information` beim Wechsel vom Versandschritt zum Zahlungsschritt während des Checkout.
+1. Konfigurieren der zu verwendenden Sitzung [!DNL Redis] mit dem *disable_locking: 1* -Einstellung.
+1. Öffnen **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** und aktivieren *[!UICONTROL Persistent Shopping Cart]*.
+1. Melden Sie sich als Kunde an und fügen Sie dem Warenkorb ein Produkt hinzu.
+1. Lassen Sie die Kundensitzung ablaufen. Persistentes Cookie und der Warenkorb bleiben weiterhin bestehen.
+1. Gehen Sie nun zum Checkout, fügen Sie die Lieferadresse hinzu und navigieren Sie zum Zahlungsabschnitt.
+1. Gehen Sie zurück zur Startseite oder einer anderen Seite und melden Sie sich mit dem Kundenkonto an.
+1. Lassen Sie die Sitzung erneut ablaufen.
+1. Gehen Sie jetzt direkt zur Checkout-Seite und navigieren Sie zum Zahlungsschritt.
+1. Versuchen Sie, die Bestellung aufzugeben.
+
+<u>Erwartete Ergebnisse</u>:
+
+* Es gibt keinen Fehler.
+* Die Bestellung wurde erfolgreich platziert und eine *Vielen Dank* angezeigt.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Der Fehler *Ungültige Statusänderung angefordert* angezeigt wird, aber die Reihenfolge platziert wird.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.

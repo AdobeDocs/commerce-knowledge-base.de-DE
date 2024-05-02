@@ -1,0 +1,50 @@
+---
+title: "Adobe Commerce 2.4.1: leere Seite beim Speichern des digitalen Seitenaufbaus"
+description: Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce 2.4.1, bei dem bei Verwendung des Safari-Browsers eine leere Webseite angezeigt wird, nachdem ein dotdigital Page Builder -Formular im Admin Panel gespeichert wurde.
+exl-id: 682eac73-1ad2-4093-acfb-6a8da4c05cf5
+feature: Page Builder
+role: Developer
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
+
+---
+
+# Adobe Commerce 2.4.1: leere Seite beim Speichern des Digital Page Builder-Formulars
+
+Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce 2.4.1, bei dem bei Verwendung des Safari-Browsers eine leere Webseite angezeigt wird, nachdem ein dotdigital Page Builder -Formular im Admin Panel gespeichert wurde.
+
+## Betroffene Produkte und Versionen
+
+* Adobe Commerce vor Ort 2.4.1
+* Adobe Commerce in Cloud-Infrastruktur 2.4.1
+
+## Problem
+
+<u>Zu reproduzierende Schritte</u>
+
+1. Navigieren Sie zu **Admin Panel** > **Inhalt** > **Seiten** und wählen Sie **Bearbeiten** einer beliebigen Seite.
+1. Navigieren Sie zu **Inhalt** und klicken Sie auf **Mit Page Builder bearbeiten** Schaltfläche.
+1. Ziehen Sie die **dotdigital form** markieren **Bearbeiten**.
+1. Wählen Sie eines der Testformulare aus und wählen Sie dann **Eingebettet** und speichern Sie das Formular.
+1. Speichern Sie die Seitenänderung.
+
+<u>Erwartetes Ergebnis:</u>
+
+Die Webseite sollte erfolgreich gespeichert werden.
+
+<u>Ergebnis:</u>
+
+Die Webseite ist leer. Nach dem erneuten Laden der Webseite werden die Änderungen übernommen.
+
+## Workaround
+
+Die Lösung besteht darin, einen alternativen Browser zu Safari zu verwenden. Das Problem wird in der nächsten Version, Adobe Commerce 2.4.2, im 1. Quartal 2021 behoben.
+
+## Verwandtes Lesen
+
+* [Was ist Page Builder?](https://devdocs.magento.com/page-builder/docs/) in unserer Entwicklerdokumentation.
+* [Einrichten des Seitenaufbaus](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) in unserer Entwicklerdokumentation.
+* [Page Builder](https://docs.magento.com/user-guide/cms/page-builder.html) in unserem Benutzerhandbuch.
+* [Seitenaufbau - Elemente](https://docs.magento.com/user-guide/cms/page-builder-elements.html) in unserem Benutzerhandbuch.

@@ -1,0 +1,60 @@
+---
+title: 2.3.4 PayPal-Problem Hotfix
+description: Dieser Artikel enthält eine Fehlerbehebung für Fehler, die während der Bestellplatzierung bei der Auswahl einer Region in PayPal Express Checkout empfangen wurden. Das Problem wird durch Änderungen in der Adobe Commerce-Version 2.3.4 verursacht und hängt damit zusammen, wie die Adressfelder des PayPal Express Checkout analysiert werden.
+exl-id: 9f5ec100-49b0-4ac5-8951-32b5c4fe6bed
+feature: Orders, Payments
+role: Developer
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 0%
+
+---
+
+# 2.3.4 PayPal-Problem Hotfix
+
+Dieser Artikel enthält eine Fehlerbehebung für Fehler, die während der Bestellplatzierung bei der Auswahl einer Region in PayPal Express Checkout empfangen wurden. Das Problem wird durch Änderungen in der Adobe Commerce-Version 2.3.4 verursacht und hängt damit zusammen, wie die Adressfelder des PayPal Express Checkout analysiert werden.
+
+## Betroffene Versionen und Produkte
+
+* Adobe Commerce auf Cloud-Infrastruktur v2.3.4
+* Adobe Commerce On-Premise v2.3.4
+
+## Problem
+
+Bei der Eingabe des Landes und der Region während der Bestellplatzierung in PayPal Express Checkout tritt ein Fehler auf. Das Problem ist reproduzierbar für jedes Land, in dem das Feld region im Adressbereich ein Textfeld ist (im Gegensatz zu einem Dropdown-Menü).
+
+<u>Zu reproduzierende Schritte</u> :
+
+1. Aktivieren Sie PayPal Express Checkout.
+1. Fügen Sie ein Produkt zum Warenkorb als Gast oder bei der Anmeldung hinzu.
+1. Gehen Sie zum Checkout.
+1. Wählen Sie Ihre Versandadresse aus. Beispiel: die *UK* . Geben Sie dann die Eingabe in die **Bundesland/Provinz** -Feld. Beispiel: *Nottinghamshire*.
+1. Klicken Sie auf **Bestellung platzieren** -Schaltfläche, um eine Bestellung aufzugeben. Sie erhalten eine erfolgreiche Bestellseite und eine Bestätigungs-E-Mail.
+
+<u>Erwartetes Ergebnis:</u>
+
+Die Bestellung wurde erfolgreich platziert.
+
+<u>Tatsächliches Ergebnis:</u>
+
+Wenn auf die Bestellschaltfläche geklickt wird, wird ein Fehler angezeigt:
+
+```
+Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a member
+  function getId() on null in httpdocs/vendor/magento/module-paypal/Model/Api/Nvp.php:1527
+```
+
+## Lösung
+
+Für Adobe Commerce-Händler vor Ort: Wenden Sie die [Hotfix,](https://magento.com/tech-resources/download#download2353) , die im Abschnitt Downloads verfügbar sind unter [magento.com](https://magento.com) Portal in Mein Konto.
+
+Für Adobe Commerce für Cloud-Infrastruktur-Händler: Adobe hat die Fehlerbehebung in den Cloud-Patches für Commerce Version 1.0.2 enthalten. Siehe [Cloud Patches für Commerce - Versionshinweise](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) in unserer Entwicklerdokumentation finden Sie Anweisungen zur Anwendung des neuesten Pakets.
+
+## Anwenden des Pflasters
+
+Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+
+## Verwandte Informationen
+
+* [Versionshinweise > Adobe Commerce 2.3.4 Versionshinweise > Wenden Sie das PayPal Express-Checkout-Problem mit dem Regions-Patch für Adobe Commerce 2.3.4 an, um ein kritisches PayPal Express-Checkout-Problem zu beheben.](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue) in unserer Entwicklerdokumentation.

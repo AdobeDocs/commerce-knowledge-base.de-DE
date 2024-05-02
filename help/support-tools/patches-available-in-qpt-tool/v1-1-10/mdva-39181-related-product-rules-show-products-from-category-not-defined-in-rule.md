@@ -1,0 +1,93 @@
+---
+title: "MDVA-39181: Verwandte Produktregeln zeigen Produkte aus der Kategorie, die in der Regel nicht definiert sind"
+description: Der Patch MDVA-39181 behebt das Problem, dass verwandte Produktregeln Produkte aus einer Kategorie zeigen, die in der Regel nicht definiert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-39181. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+exl-id: b6364d1c-2480-483a-9a83-ac91feeb14b9
+feature: Categories, Products
+role: Admin
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 0%
+
+---
+
+# MDVA-39181: Verwandte Produktregeln zeigen Produkte aus Kategorien an, die in der Regel nicht definiert sind
+
+Der Patch MDVA-39181 behebt das Problem, dass verwandte Produktregeln Produkte aus einer Kategorie zeigen, die in der Regel nicht definiert ist. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-39181. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.2
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.1 - 2.4.3-p1
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Zugehörige Produktregeln zeigen Produkte aus Kategorien an, die nicht in der Regel definiert sind.
+
+<u>Voraussetzungen</u>:
+
+Beispieldaten installieren.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Erstellen Sie eine Attributmarke und fügen Sie sie der **Tops-Attributsatz**.
+1. Auswählen **Josie**, **Augusta**, und **Ingrid** Jacken, die von der Marke Kitty hinzugefügt werden sollen **Frauen** > **Tops** > **Jacken-Kategorie**.
+1. Auswählen **Beaumont**, **Hyperion**, und **Kenobi** Jacken, die von der Marke Kitty hinzugefügt werden sollen **Männer** > **Tops** > **Jackenkategorie**.
+1. Erstellen Sie ein verwandtes Produkt mit:
+
+   ```markdown
+   Apply To: Related Products
+   Customer Segments: All
+   ```
+
+   * Produkte, die übereinstimmen:
+
+   ```markdown
+   If ALL of these conditions are TRUE
+     Category is {}
+     Brand is {}
+   ```
+
+   * Anzuzeigende Produkte:
+
+   ```markdown
+   If ALL of these conditions are TRUE
+      Product Category is the same as Matched Product Category
+      Product brand is Matched Product Brand
+   ```
+
+1. Öffnen Sie SKU WJ04 vom Frontend und prüfen Sie die entsprechenden Produkte.
+1. Aktualisieren der Kategorie-ID von **Frauen** > **Tops** > **Jacken** falls es sich von diesem unterscheidet.
+
+<u>Erwartete Ergebnisse</u>:
+
+In verwandten Produkten werden nur Produkte derselben Marke und derselben untergeordneten Kategorie angezeigt.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Zugehörige Produkte werden von derselben Marke, aber von einer zufälligen übergeordneten Kategorie angezeigt.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+
+## Verwandtes Lesen
+
+Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.

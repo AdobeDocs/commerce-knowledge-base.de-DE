@@ -1,0 +1,216 @@
+---
+title: "ACSD-56158: Falscher Steuerwert in GraphQL-Antwort bei Anwendung mehrerer Steuerregeln auf den Warenkorb"
+description: Wenden Sie den Patch ACSD-56158 an, um das Adobe Commerce-Problem zu beheben, bei dem das Steuerwert-Rendering in der GraphQL-Antwort falsch ist, wenn mehrere Steuerregeln auf den Warenkorb angewendet werden.
+feature: GraphQL, Taxes
+role: Admin, Developer
+exl-id: 0f030b35-372f-46ce-8f67-29e4b6dd3527
+source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 0%
+
+---
+
+# ACSD-56158: Falscher Steuerwert in GraphQL-Antwort, wenn mehrere Steuerregeln auf den Warenkorb angewendet werden
+
+Der Patch ACSD-56158 behebt das Problem, bei dem das Steuerwertrendering in der GraphQL-Antwort falsch ist, wenn mehrere Steuerregeln auf den Warenkorb angewendet werden. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.44 ist installiert. Die Patch-ID ist ACSD-56158. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.5-p5
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.5-p5 - 2.4.6-p3
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Die Darstellung des Steuerwerts in der GraphQL-Antwort ist falsch, wenn mehrere Steuerregeln auf den Warenkorb angewendet werden.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Erstellen Sie einen Kunden mit einer US-Adresse.
+1. Navigieren Sie zum Admin-Bedienfeld.
+1. Erstellen Sie ein Produkt mit einem Preis von 100 USD.
+1. Erstellen Sie zwei Steuersätze für die US-Adresse: einen für 10 % und einen für 5 %.
+1. Konfigurieren von zwei Steuerregeln für USA aus **[!UICONTROL Stores]** > **[!UICONTROL Taxes]** > **[!UICONTROL Tax Rule]**.
+1. Einer Regel einen Steuersatz zuweisen.
+1. Melden Sie sich von der Frontend-Seite aus als Kunde mit der US-Adresse an und fügen Sie das Produkt zum Warenkorb hinzu.
+1. Generieren Sie ein Kunden-Token über GraphQL.
+1. Generieren Sie eine Warenkorb-ID über GraphQL.
+1. Überprüfen Sie, ob die angewendete Steuer richtig ist, indem Sie den Warenkorb des Kunden über GraphQL abrufen:
+
+   ```GraphQL
+   {
+       cart(cart_id: "o3Yqt6zkn8ncOzFxGnR1IWdT..") {
+           id
+           email
+           billing_address {
+               city
+               country {
+                   code
+                   label
+               }
+               firstname
+               lastname
+               company
+               postcode
+               vat_id
+               region {
+                   code
+                   label
+               }
+               street
+               telephone
+           }
+           shipping_addresses {
+               firstname
+               lastname
+               company
+               street
+               city
+               postcode
+               vat_id
+               region {
+                   code
+                   label
+               }
+               country {
+                   code
+                   label
+               }
+               telephone
+               available_shipping_methods {
+                   amount {
+                       currency
+                       value
+                   }
+                   available
+                   carrier_code
+                   carrier_title
+                   error_message
+                   method_code
+                   method_title
+                   price_excl_tax {
+                       value
+                       currency
+                   }
+                   price_incl_tax {
+                       value
+                       currency
+                   }
+               }
+               selected_shipping_method {
+                   amount {
+                       value
+                       currency
+                   }
+                   carrier_code
+                   carrier_title
+                   method_code
+                   method_title
+               }
+           }
+           available_payment_methods {
+               code
+               title
+           }
+           selected_payment_method {
+               code
+               title
+           }
+           applied_coupons {
+               code
+           }
+           prices {
+               grand_total {
+                   value
+                   currency
+               }
+               subtotal_excluding_tax {
+                   value
+                   currency
+               }
+               subtotal_including_tax {
+                   value
+                   currency
+               }
+               applied_taxes {
+                   label
+                   amount {
+                       currency
+                       value
+                   }
+               }
+           }
+       }
+   }    
+   ```
+
+<u>Erwartete Ergebnisse</u>:
+
+Jeder Steuersatz zeigt seinen eigenen Steuerbetrag an:
+
+```
+"applied_taxes": [
+    {
+        "label": "US-CA-*-Rate 1",
+        "amount": {
+            "currency": "USD",
+            "value": 10
+        }
+    },
+    {
+        "label": "US-CA-*-Rate 2",
+        "amount": {
+            "currency": "USD",
+            "value": 5
+        }
+    }
+]
+```
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Gesamtbetrag der für jede Regel zurückgegebenen Steuern:
+
+```
+"applied_taxes": [
+    {
+        "label": "US-CA-*-Rate 1",
+        "amount": {
+            "currency": "USD",
+            "value": 15
+        }
+    },
+    {
+        "label": "US-CA-*-Rate 2",
+        "amount": {
+            "currency": "USD",
+            "value": 15
+        }
+    }
+]
+```
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.

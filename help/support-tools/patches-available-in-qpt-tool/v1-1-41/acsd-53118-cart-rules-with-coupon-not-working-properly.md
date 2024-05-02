@@ -1,0 +1,69 @@
+---
+title: "ACSD-53118: Warenkorbregeln mit Coupon funktionieren nicht ordnungsgemäß"
+description: Wenden Sie den Patch ACSD-53118 an, um das Adobe Commerce-Problem zu beheben, bei dem die Preisregel für den Warenkorb mit einem Coupon-Code angewendet wird, während das Produkt im Warenkorb über ein leeres übereinstimmendes Attribut verfügt.
+feature: Shopping Cart, Price Rules
+role: Admin, Developer
+exl-id: a660ddb3-03fc-4460-b2a8-8e851f57e7a9
+source-git-commit: 35cd21581ee34a6213be42a79e159439b8856fb6
+workflow-type: tm+mt
+source-wordcount: '419'
+ht-degree: 0%
+
+---
+
+# ACSD-53118: Warenkorbregeln mit Coupon funktionieren nicht ordnungsgemäß
+
+Der Patch ACSD-53118 behebt das Problem, dass die Preisregel für den Warenkorb mit einem Coupon-Code angewendet wird, während das Produkt im Warenkorb über ein leeres übereinstimmendes Attribut verfügt. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.41 installiert ist. Die Patch-ID ist ACSD-53118. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.0 - 2.4.6-p3
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Die Preisregel für Warenkorb wird mit einem Coupon-Code angewendet, während das Produkt im Warenkorb über ein leeres entsprechendes Attribut verfügt.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Erstellen Sie ein Preisattribut und fügen Sie es zum Attributsatz hinzu. Machen Sie das Attribut in Bedingungen für Angebotsregeln nutzbar.
+1. Erstellen Sie ein Produkt und lassen Sie das neue Attribut leer.
+1. Erstellen Sie eine Preisregel für den Warenkorb mit einem bestimmten Coupon und der folgenden Bedingung:
+
+   * Wenn ein Artikel im Warenkorb mit ALLEN dieser Bedingungen gefunden wird: Attribut1 ist 0.
+
+1. Fügen Sie das in Schritt 2 erstellte Produkt zum Warenkorb hinzu.
+1. Verwenden Sie den Gutscheincode für die in Schritt 3 erstellte Warenkorbregel.
+
+<u>Erwartete Ergebnisse</u>:
+
+Der Rabatt gilt nicht für den Warenkorb.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Der Rabatt gilt für den Warenkorb.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.

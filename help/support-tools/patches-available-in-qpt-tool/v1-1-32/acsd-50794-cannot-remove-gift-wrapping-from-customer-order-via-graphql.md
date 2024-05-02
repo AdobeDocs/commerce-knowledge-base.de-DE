@@ -1,0 +1,125 @@
+---
+title: "ACSD-50794: Kann Geschenkverpackungen nicht aus Kundenbestellung über GraphQL entfernen."
+description: Wenden Sie den Patch ACSD-50794 an, um das Adobe Commerce-Problem zu beheben, bei dem Benutzer die Geschenkverpackung nicht aus der Kundenbestellung über GraphQL entfernen können.
+exl-id: 4983910c-9ea0-451e-a2b6-81485184bbce
+feature: Gift, GraphQL, Orders
+role: Admin
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
+
+---
+
+# ACSD-50794: Geschenkverpackung kann nicht aus der Kundenbestellung über GraphQL entfernt werden
+
+Der Patch ACSD-50794 behebt das Problem, dass Benutzer keine Geschenkverpackung aus der Kundenbestellung über GraphQL entfernen können. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.32 installiert ist. Die Patch-ID ist ACSD-50794. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.5-p1
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.1 - 2.4.6-p1
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Benutzer können die Geschenkverpackung nicht über GraphQL aus der Kundenbestellung entfernen.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Erstellen Sie einen Kunden über das Frontend.
+1. Erstellen Sie ein einfaches Produkt.
+1. Aktivieren *[!UICONTROL Gift Messages]* durch **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Gift Options]** und *[!UICONTROL Allow Gift Messages]* = *[!UICONTROL Yes]*.
+1. Erstellen *[!UICONTROL Gift Wrapping]* durch **[!UICONTROL Stores]** > **[!UICONTROL Other Settings]** > **[!UICONTROL Gift Wrapping]**.
+1. Kundentoken abrufen.
+1. Erstellen Sie einen leeren Warenkorb customerCart.
+   * Produkte zum Warenkorb hinzufügen: `addProductsToCart` Mutation
+   * Rechnungsadresse festlegen: `setBillingAddressOnCart` Mutation
+   * Lieferadresse festlegen: `setShippingAddressesOnCart` Mutation
+   * Versandmethode festlegen: `setShippingMethodsOnCart` Mutation (Flatrat)
+   * Zahlungsmethode festlegen: `setPaymentMethodOnCart` Mutation (checkmo)
+1. Überprüfen Sie jetzt die Geschenkverpackung. *Uid* mit dieser Warenkorbabfrage:
+
+   <pre><code class="language-GraphQL">
+    {
+      cart(cart_id: "{{CART_ID}}") {
+        available_gift_wrappings{
+            uid
+        }
+    }
+    }
+    </code></pre>
+
+1. Geschenkpackung mit `setGiftOptionsOnCart`.
+1. Überprüfen Sie die Warenkorbabfrage.
+1. Entsorgen Sie die Geschenkpackung mit `setGiftOptionsOnCart` (Wert auf null setzen).
+1. Überprüfen Sie erneut die Abfrage zum Warenkorb: Warenkorb .
+1. Platzierung: `placeOrder` Mutation.
+1. Kundenabfrage ausführen: Kunde.
+
+   <pre><code class="language-graphql">
+    query {
+      customer {
+        firstname
+        middlename
+        lastname
+        suffix
+        email
+        orders {
+            items {
+                order_date
+                gift_wrapping {
+                    design
+                    uid
+                }
+            }
+        }
+        addresses {
+          firstname
+          middlename
+          lastname
+          street
+          city
+          region {
+            region_code
+            region
+          }
+          postcode
+          country_code
+          telephone
+        }
+      }
+    }
+    </code></pre>
+
+<u>Erwartete Ergebnisse</u>:
+
+Sobald ein Benutzer einen Geschenkpacker festlegt und ihn aufhebt, gibt die Kundenabfrage null zurück.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Die Kundenabfrage gibt nach wie vor eine Geschenkverpackung zurück.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.

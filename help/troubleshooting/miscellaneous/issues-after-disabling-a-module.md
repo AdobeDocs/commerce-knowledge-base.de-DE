@@ -1,0 +1,35 @@
+---
+title: Probleme nach dem Deaktivieren eines Moduls
+description: Dieser Artikel bietet eine Lösung für Probleme mit Modulfunktionen, nachdem die Modulausgabe in der Commerce Admin deaktiviert wurde.
+exl-id: 517f6993-f09e-4a94-8c57-175ecf9a98a8
+feature: Extensions
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 0%
+
+---
+
+# Probleme nach dem Deaktivieren eines Moduls
+
+Dieser Artikel bietet eine Lösung für Probleme mit Modulfunktionen, nachdem die Modulausgabe in der Commerce Admin deaktiviert wurde.
+
+## Betroffene Produkte und Versionen
+
+* Adobe Commerce auf Cloud-Infrastruktur 2.1.X oder früher
+* Adobe Commerce On-Premise 2.1.X oder früher
+
+## Problem
+
+Deaktivierung der Modulausgabe in Commerce Admin, unter **Stores** > **Einstellungen** > **Konfiguration** > ERWEITERT > **Erweitert** können Probleme im Zusammenhang mit der Modulfunktionalität auftreten.
+
+## Ursache
+
+Deaktivieren einer Modulausgabe unter **Stores** > **Einstellungen** > **Konfiguration** > ERWEITERT > **Erweitert** deaktiviert nur die Ausgabe (HTML, JS), deaktiviert jedoch nicht die Funktionalität dieses Moduls.
+
+## Lösung
+
+Wenn Sie die Modulfunktionalität deaktivieren müssen, deaktivieren Sie das Modul, wie unter [Module aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) in unserer Entwicklerdokumentation.
+
+Die Funktion zur Deaktivierung der Modulausgabe wurde ab Version 2.2.0 entfernt.

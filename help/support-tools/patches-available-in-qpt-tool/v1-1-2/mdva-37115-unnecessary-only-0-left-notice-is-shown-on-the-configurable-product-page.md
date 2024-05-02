@@ -1,0 +1,68 @@
+---
+title: '"MDVA-37115: Der Hinweis "Nur 0 links"wird auf der Produktseite angezeigt."'
+description: Der Patch MDVA-37115 behebt das Problem, dass der unnötige Hinweis *Nur 0 links* auf der konfigurierbaren Produktseite angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37115. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+exl-id: 08aa6ac7-13ae-44c1-9db4-d449c3d8c985
+feature: Configuration, Products, Orders
+role: Admin
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 0%
+
+---
+
+# MDVA-37115: Der Hinweis &quot;Nur 0 links&quot;wird auf der Produktseite angezeigt
+
+Der Patch MDVA-37115 löst das Problem, dass die unnötige *Nur 0 links* wird auf der konfigurierbaren Produktseite angezeigt. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 ist installiert. Die Patch-ID lautet MDVA-37115. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungstypen) 2.4.2
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungstypen) 2.4.2 - 2.4.2-p2
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Eine unnötige *Nur 0 links* wird auf der konfigurierbaren Produktseite angezeigt.
+
+<u>Voraussetzungen</u>:
+
+Die Inventarmodule sind installiert.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Erstellen Sie ein konfigurierbares Produkt mit wenigen Optionen.
+1. Geh zum Frontend.
+1. Öffnen Sie die konfigurierbare Produktseite und wählen Sie eine beliebige Option aus.
+
+<u>Erwartete Ergebnisse</u>:
+
+Nein *Nur 0 links* wird auf der Produktseite angezeigt.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+*Nur 0 links* wird auf der Produktseite angezeigt.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+
+## Verwandtes Lesen
+
+Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) Abschnitt.

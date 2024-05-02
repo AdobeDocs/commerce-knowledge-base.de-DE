@@ -1,0 +1,70 @@
+---
+title: "MDVA-38626: Admin-Benutzer kann mit PayPal Payflow Pro keine Bestellungen aufgeben."
+description: Der Patch MDVA-38626 behebt das Problem, dass der Admin-Benutzer nicht in der Lage ist, eine Bestellung über die PayPal Payflow Pro Zahlungsmethode im Backend aufzugeben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-38626. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+exl-id: b9257d42-d8df-4dd6-b2b4-70ddd6f3e414
+feature: Admin Workspace, Orders, Payments
+role: Admin
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 0%
+
+---
+
+# MDVA-38626: Admin-Benutzer können keine Bestellungen mit PayPal Payflow Pro tätigen
+
+Der Patch MDVA-38626 behebt das Problem, dass der Admin-Benutzer nicht in der Lage ist, eine Bestellung über die PayPal Payflow Pro Zahlungsmethode im Backend aufzugeben. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 ist installiert. Die Patch-ID lautet MDVA-38626. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.2
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.3.3 - 2.4.3-p1
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+Der Admin-Benutzer kann mit der PayPal Payflow Pro Zahlungsmethode keine Bestellungen im Backend aufgeben.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. PayPal Payflow Pro Zahlungsmethode konfigurieren.
+1. Navigieren Sie zu **Kunden** > **Alle Kunden** und erstellen Sie ein Kundenkonto.
+1. Klicken Sie auf **Bestellung erstellen**.
+1. Fügen Sie beliebige Artikel zum Warenkorb hinzu.
+1. Versuchen Sie, die Bestellung mit Payflow Pro zu platzieren.
+
+<u>Erwartete Ergebnisse</u>:
+
+Die Bestellung wird platziert.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Der Benutzer erhält 500 Fehler. Das Berichtsprotokoll enthält:
+
+```
+{"0":"No such entity with cartId = 0","1":"#1 Magento\\Quote\\Model\\QuoteRepository->loadQuote() called at [app\/code\/Magento\/Quote\/Model\/QuoteRepository.php:136]\n#2 Magento\\Quote\\Model\\QuoteRepository->get() called at [lib\/internal\/Magento\/Framework\/Interception\/Interceptor.php:58]\n#3 Mag
+```
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+
+## Verwandtes Lesen
+
+Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.

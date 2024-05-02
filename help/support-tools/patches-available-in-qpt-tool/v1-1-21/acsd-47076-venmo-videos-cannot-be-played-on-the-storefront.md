@@ -1,0 +1,63 @@
+---
+title: "ACSD-47076: [!DNL Vimeo] Videos können nicht auf der Storefront wiedergegeben werden."
+description: Wenden Sie den Patch ACSD-47076 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL Vimeo] Videos können nicht auf der Storefront abgespielt werden.
+exl-id: 52161c0d-3d51-45a3-ba41-36f955df0bea
+feature: Storefront
+role: Admin
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 0%
+
+---
+
+# ACSD-47076: [!DNL Vimeo] Videos können nicht auf der Storefront wiedergegeben werden
+
+Der Patch ACSD-47076 behebt das Problem, bei dem [!DNL Vimeo] Videos können nicht auf der Storefront abgespielt werden. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 installiert ist. Die Patch-ID ist ACSD-47076. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+
+## Betroffene Produkte und Versionen
+
+**Der Patch wird für die Adobe Commerce-Version erstellt:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.3-p2
+
+**Kompatibel mit Adobe Commerce-Versionen:**
+
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.1 - 2.4.3-p3
+
+>[!NOTE]
+>
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+
+## Problem
+
+[!DNL Vimeo] Videos können nicht auf der Storefront abgespielt werden.
+
+<u>Zu reproduzierende Schritte</u>:
+
+1. Hinzufügen einer [!DNL Vimeo] Video zu einem Produkt in Commerce [!UICONTROL Admin] > **[!UICONTROL Catalog]** > **[!UICONTROL Products]** > Seite zur Produktbearbeitung > **[!UICONTROL Images and Videos]**.
+1. Öffnen Sie das Produkt auf der Storefront und spielen Sie das Video ab.
+
+<u>Erwartete Ergebnisse</u>:
+
+Die [!DNL Vimeo] Video kann wiedergegeben werden.
+
+<u>Tatsächliche Ergebnisse</u>:
+
+Die [!DNL Vimeo] -Video kann nicht auf der Storefront wiedergegeben werden.
+
+## Wenden Sie den Patch an
+
+Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
+* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+
+## Verwandtes Lesen
+
+Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+
+* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
+* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
