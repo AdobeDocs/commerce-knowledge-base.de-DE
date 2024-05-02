@@ -3,9 +3,9 @@ title: Zurücksetzen der Umgebung auf Adobe Commerce in der Cloud-Infrastruktur
 description: In diesem Artikel werden verschiedene Szenarien für die Zurücksetzung einer Umgebung in Adobe Commerce in der Cloud-Infrastruktur vorgestellt.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: ddde2385f1d94194b34e9ed51f6cbda55c916d90
+source-git-commit: f2aeb0262ddcb3d7e78028d08b9323db243fc96b
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1083'
 ht-degree: 0%
 
 ---
@@ -156,8 +156,8 @@ Wenn die `setup:uninstall` -Befehl mit einem Fehler fehlschlägt und nicht abges
 
 1. [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Stellen Sie eine Verbindung zur MySQL DB her: `mysql -h database.internal` (Für Pro-Umgebungen siehe: [MySQL-Dienst einrichten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)).
-1. Legen Sie die DB \`main\` ab: `drop database main;`
-1. Erstellen Sie eine leere DB mit der Bezeichnung &quot;\`main\`&quot;: `create database main;`
+1. Legen Sie die `main` DB : `drop database main;`
+1. Leere erstellen `main` DB: `create database main;`
 1. Löschen Sie die folgenden Konfigurationsdateien: `config.php` , `config.php` , `.bak,` , `env.php`, `env.php.bak`
 
 Nach dem Zurücksetzen der DB [erstellen [!DNL git] Push in die Umgebung zur erneuten Bereitstellung des Triggers](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) und installieren Sie Adobe Commerce in einer neu erstellten DB. Oder [Führen Sie den Befehl redeploy aus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
