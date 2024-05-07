@@ -3,9 +3,9 @@ title: "Backup (Snapshot) in Cloud: FAQ"
 description: In diesem Artikel werden die Grundlagen zum Sichern Ihrer Umgebungen mit Momentaufnahmen in Adobe Commerce in der Cloud-Infrastruktur beschrieben.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 9491279d147eac9ed36ad236c227b08e7c6e0211
+source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ In diesem Artikel wird die Sicherung Ihrer Umgebungen mit Momentaufnahmen in Ado
 
 ## Wiederherstellen eines Umgebungs-Snapshots
 
-Um einen vorhandenen Schnappschuss wiederherzustellen (in der unterstützten Umgebung: Integration, Staging, Produktion im Starter-Plan oder Integration in Pro-Plan), führen Sie die Schritte unter [Backup-Management: Wiederherstellen einer manuellen Sicherung](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Commerce on Cloud Infrastructure Guide.
+Um einen vorhandenen Schnappschuss wiederherzustellen (in der unterstützten Umgebung: Integration, Staging, Produktion im Starter-Plan oder Integration in Pro-Plan), führen Sie die Schritte unter [Backup-Management: Wiederherstellen einer manuellen Sicherung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Commerce on Cloud Infrastructure Guide.
 
 ## Datenbanksicherung (DB)
 
