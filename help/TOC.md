@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: cdfcfbb1c6b91eb06bb028179676d022a1e27000
+source-git-commit: 76be98e46941bc6a7857aba8e95c8415ce3fc978
 workflow-type: tm+mt
-source-wordcount: '11006'
+source-wordcount: '11017'
 ht-degree: 0%
 
 ---
@@ -1110,6 +1110,7 @@ ht-degree: 0%
       * [Bereitstellungsfehler bei der Zuweisung falscher Dateien](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Bereitstellungsfehler, bei denen keine Patches gefunden wurden](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [Bereitstellung fehlgeschlagen: Es wurden keine Befehle im Namespace-Fehler &quot;cache&quot;definiert](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Bekannte Probleme {#known-issues-patches-attached}
       * [[!DNL UPS] Migration der Versandmethode [!DNL SOAP] nach [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Support-Hotfix für die Ground Advantage-Versandmethode für AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
