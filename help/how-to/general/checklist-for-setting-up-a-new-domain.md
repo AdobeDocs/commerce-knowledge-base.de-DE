@@ -3,9 +3,9 @@ title: Checkliste für die Einrichtung einer neuen [!DNL domain]
 description: Dies ist eine Checkliste, wie eine neue [!DNL domain] in Adobe Commerce über die Cloud-Infrastruktur.
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: cc3dc1e3f9c8f98370ce5db125b402d4c1dfbd6f
+source-git-commit: 625ed2c7ab79f7bca9a979903e97c44c875e607c
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,13 @@ Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 >[!NOTE]
 >
 >Sie können die neue [!DNL domain] nach [!DNL Fastly] selbst durch Aktualisierung der Konfiguration im [!DNL Admin] in **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** wie in [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) in unserem Benutzerhandbuch.
+>
+>Wenn Sie die Domäne nicht hinzufügen können, kann dies auf einen der folgenden Gründe zurückzuführen sein:
+>
+>1. Sie migrieren die Domäne in die Cloud-Umgebung, die in Ihrer eigenen konfiguriert wurde. [!DNL Fastly] -Dienst. Senden Sie in diesem Fall eine Anfrage und beantragen Sie die Zuweisung der Domäne.
+>1. Sie migrieren die Domäne von Starter zu Pro. Senden Sie in diesem Fall einen Antrag auf weitere Unterstützung.
 
-* **[!DNL Starter]**: [!DNL Custom domains] werden nicht unterstützt.
+* **[!DNL Starter]**: [!DNL Custom domains] werden in der Staging-Umgebung nicht unterstützt.
 
 ### 3. Schritt - [!DNL Production environment]: sind Sie auf [!DNL Pro] oder [!DNL Starter]?
 
@@ -43,6 +48,12 @@ Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 >[!NOTE]
 >
 >Sie können die neue [!DNL domain] nach [!DNL Fastly] selbst durch Aktualisierung der Konfiguration im [!DNL Admin] in **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL System]** > **[!UICONTROL Full Page Cache]** > **[!DNL Fastly Configuration]** > **[!UICONTROL Domains]** [[!DNL Manage domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration.html#manage-domains) in unserem Benutzerhandbuch.
+>
+>
+>Wenn Sie die Domäne nicht hinzufügen können, kann dies auf einen der folgenden Gründe zurückzuführen sein:
+>
+>1. Sie migrieren die Domäne von der lokalen in die Cloud-Umgebung, die in Ihrer eigenen konfiguriert wurde. [!DNL Fastly] -Dienst. Senden Sie in diesem Fall eine Anfrage und beantragen Sie die Zuweisung der Domäne.
+>1. Sie migrieren die Domäne von Starter zu Pro. Senden Sie in diesem Fall einen Antrag auf weitere Unterstützung.
 
 * **[!DNL Starter]**: Fügen Sie die [!DNL domain] zu Ihrem Projekt in **[!DNL Domains]** tab, dann **Anfrage senden** die **[!DNL ACME Challenge Key]** für die [!DNL SSL certificate].
 
