@@ -4,9 +4,9 @@ description: In diesem Artikel wird das Problem behoben, dass Sie versuchen, Pro
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 465eb89cf5c5169b0b459ab7e6bdcbd418781093
+source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,10 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 >[!NOTE]
 >
 >Wenn die Variable `.magento.env.yaml` -Datei für Ihre Umgebung erstellen und Sie glauben, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml`. Es kann anfangs leer sein. Sie können dort bei Bedarf Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel: [Umgebungsvariablen für die Bereitstellung konfigurieren](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) und [Umgebungsvariablen](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in unserer Entwicklerdokumentation.
+
+>[!TIP]
+>
+>[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) zwischen Groß- und Kleinschreibung unterscheiden und keine Tabs zulassen. Achten Sie darauf, einen konsistenten Einzug in der .magento.env.yaml-Datei zu verwenden, da Ihre Konfiguration sonst nicht wie erwartet funktioniert. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden einen Einzug von zwei Leerzeichen. Überprüfen Sie Ihre Konfiguration mit dem Befehl ece-tools validate .
 
 >[!NOTE]
 >
