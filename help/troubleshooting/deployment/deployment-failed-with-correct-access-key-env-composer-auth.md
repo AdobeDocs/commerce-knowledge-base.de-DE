@@ -1,11 +1,12 @@
 ---
-title: '"Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl.'
+title: Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl
 description: 'Dieser Artikel bietet eine Lösung für das Problem, wenn die Bereitstellung mit dem folgenden Fehler fehlschlägt: "Die Datei https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip konnte nicht heruntergeladen werden (HTTP/1.1 404 Not Found)".'
 feature: Deploy
 role: Admin
-source-git-commit: 8e0aca8f528b017e288ae6fb19b072a5cc04761b
+exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
+source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ Eine Anleitung finden Sie unter [Variablenebenen](/docs/commerce-cloud-service/u
 ## Verwandtes Lesen
 
 * [Auf Adobe Commerce on Cloud Repo konnte nicht zugegriffen werden: Fehler 403 Verboten oder 404 Nicht gefunden bei Bereitstellung](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)
-* [Bereitstellungsfehler: Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/deployment-error-downloading-connection-refused-adobe-commerce.html)
+* [Bereitstellungsfehler: Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce)
