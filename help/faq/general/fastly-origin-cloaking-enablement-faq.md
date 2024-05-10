@@ -2,9 +2,9 @@
 title: "[!DNL Fastly] Häufig gestellte Fragen zur Aktivierung der Ursprungsverschlüsselung"
 description: Diese FAQs behandeln häufige Fragen zu [!DNL Fastly] Aktivierung der Herkunftsverdeckung in Adobe Commerce (die seit 2021 vollständig implementiert ist).
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
-source-git-commit: 348a1f6e455aff9ad7c562ea20c95f27c9ee0b86
+source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Diese Funktion wurde ursprünglich erstellt, um Adobe Commerce in der Cloud-Infr
 
 ## Muss ich die Aktivierung der Herkunftsverdeckung für mein Projekt anfordern?
 
-Anzahl Diese Funktion hätte bereits für alle Cloud-Projekte implementiert werden müssen und für alle Projekte, die seit 2021 bereitgestellt wurden, wäre diese standardmäßig aktiviert worden. Sie können jedoch verlangen, dass die Ursprungs-Maskierung für Ihr Projekt deaktiviert wird durch [Support anfordern](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Anzahl Diese Funktion hätte bereits für alle Cloud-Projekte implementiert werden müssen und für alle Projekte, die seit 2021 bereitgestellt wurden, wäre diese standardmäßig aktiviert worden.
 
 ## Ändert die Ursprungsangabe die ausgehende IP-Adresse?
 
@@ -37,8 +37,22 @@ Nein, nicht.
 
 [!DNL Fastly] speichert API-Aufrufe nicht zwischen. Daher sollte der Client mit der Änderung in Ordnung sein. Das Ursprungs-Cloaking blockiert nur Anforderungen, die direkt zum Ursprung führen, z. B.:
 
+* Produktion
+
 ```php
 mywebsite.com.c.abcdefghijkl.ent.magento.cloud
+```
+
+* Staging
+
+```php
+mcstaging2.mywebsite.com.c.abcdefghijkl.dev.ent.magento.cloud
+```
+
+* StagingX
+
+```php
+mcstagingX.mywebsite.com.c.abcdefghijkl.X.dev.ent.magento.cloud
 ```
 
 In diesem Beispiel kann der Client weiterhin die API aufrufen, wenn er die URL in ``mywebsite.com``:
