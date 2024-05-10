@@ -4,9 +4,9 @@ description: "In diesem Artikel wird erläutert, wie der Adobe Commerce in Bezug
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Einige der Gründe, warum Schlüssel nicht gültig sind, sind:
 Führen Sie die folgenden Schritte aus, um das Problem mit den Autorisierungsschlüsseln zu beheben (weitere Informationen zu den einzelnen Schritten finden Sie in den folgenden Abschnitten):
 
 1. Ermitteln Sie die gültigen Autorisierungsschlüssel (überspringen Sie diese, wenn Sie sich absolut sicher sind, dass Ihr Schlüssel gültig ist).
-1. Fügen Sie den Wert keys in der `env:COMPOSER_AUTH` (oder stellen Sie sicher, dass der richtige Wert vorhanden ist) und überprüfen Sie, ob die Schlüssel konsistent in der Variablen und der `auth.json` im Projektstamm.
+1. Fügen Sie den Wert keys in der `env:COMPOSER_AUTH` (oder stellen Sie sicher, dass der richtige Wert vorhanden ist) und überprüfen Sie, ob die Schlüssel in der Variablen auf Projekt- und Umgebungsebene sowie in der Variablen `auth.json` Datei (sofern vorhanden) im Projektstamm.
 1. Aktualisieren oder Löschen `auth.json`, um eine zentrale Stelle zu haben, an der der Schlüssel konfiguriert ist, wenn die Werte der Autorisierungsschlüssel nicht angegeben sind oder einen anderen Wert haben.
 
 ### 1. Gültige Zulassungsschlüssel abrufen
