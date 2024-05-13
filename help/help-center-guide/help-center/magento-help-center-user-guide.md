@@ -3,9 +3,9 @@ title: Benutzerhandbuch zum Adobe Commerce Help Center
 description: Erfahren Sie, wie Sie ein Support-Ticket an das Adobe Commerce Help Center senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: a2e68f63a53013b6f0b8bfa12838fafe2bb6e6c7
+source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
 workflow-type: tm+mt
-source-wordcount: '3924'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -231,6 +231,10 @@ Nachdem Sie vom Händler freigegebenen Zugriff erhalten haben, müssen Sie die f
 1. Melden Sie sich bei Ihrer [Magento Account auf der magento.com Website](https://account.magento.com/).
 1. Im **Wechseln von Konten** in der oberen rechten Ecke das Freigabekonto ein.
 1. Klicken Sie auf **Support** im linken Bereich. Dadurch wird sichergestellt, dass das Adobe Commerce Help Center über den SSO-Aufruf von Magento.com zum Adobe Commerce Help Center ordnungsgemäß konfiguriert ist.
+
+Wenn Sie dies bereits getan haben, überprüfen Sie, ob Ihnen die Genehmigung erteilt wurde. *freigegebener Zugriff von mehr als einem Händler* durch Klicken auf die [[!UICONTROL Shared with me] Registerkarte Ihres Kontos](https://account.magento.com/grantor/manage/shared/):
+* Wenn nur eine [!UICONTROL Share Name] aufgelistet ist, d. h., Sie wurden nur von einem Händler bewilligt, *Sie sehen keine [!UICONTROL Organization] Dropdown*.
+* Wenn mehrere [!UICONTROL Share Names]kann es sein, dass die Stützungsberechtigungen des Händlers abgelaufen sind, da ihre Lizenz aufgrund von Zahlungsproblemen zuvor widerrufen wurde.
 
 ### Tickets verfolgen {#track-tickets}
 
