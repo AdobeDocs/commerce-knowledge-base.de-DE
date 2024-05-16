@@ -4,9 +4,9 @@ description: Während der Sommerferien (ungefähr Mitte November bis Mitte Janua
 exl-id: 9d6910bf-30bc-4117-bf7f-a0316f9506b5
 feature: Cloud, Paas
 role: Admin
-source-git-commit: dfd3f788f42677b631ffb5b3153a1c79c2cc1ca3
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Wenn Sie die empfohlene Schätzung abgeschlossen haben und Ihr Team Daten identi
 
 **Anzeigen des Verlaufs Ihrer Upgrades**
 
-Sie können den Verlauf der angeforderten Größenänderungen in Ihrem [Projekt-Portal (Onboarding-Benutzeroberfläche)](https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html), unter **Projekt** > **Dienste** > **CPU-Nutzungsverfolgung**.
+Sie können den Verlauf der angeforderten Größenänderungen anzeigen, indem Sie die Informationen von Ihrer **CSM (Customer Success Manager)**.
 Die folgenden Informationen stehen für jede Größenanforderung zur Verfügung:
 
 * **Startdatum der Größe**: Datum der Aktualisierungsanfrage.
