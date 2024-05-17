@@ -3,9 +3,9 @@ title: Benutzerhandbuch zum Adobe Commerce Help Center
 description: Erfahren Sie, wie Sie ein Support-Ticket an das Adobe Commerce Help Center senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
+source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
 workflow-type: tm+mt
-source-wordcount: '3993'
+source-wordcount: '3992'
 ht-degree: 0%
 
 ---
@@ -574,7 +574,7 @@ Nachdem Sie die Berechtigungen für diese Benutzer mit gemeinsamem Zugriff wider
 1. Suchen Sie den Benutzer, von dem der freigegebene Zugriff widerrufen werden soll, und klicken Sie auf **[!UICONTROL Edit]** in der Zeile des Benutzers (*[!UICONTROL Actions]* Spalte).
 1. Deaktivieren Sie alle Ressourcen unter *[!UICONTROL Grant Account Permissions]*.
 
-![image](https://git.corp.adobe.com/storage/user/38345/files/2d42fa60-559f-4697-a3cf-287c7e765405)
+![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
 Weitere Informationen finden Sie im Abschnitt [Benutzerzugriff verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) Dokumentation zu unserem Commerce on Cloud Infrastructure Guide.
 
