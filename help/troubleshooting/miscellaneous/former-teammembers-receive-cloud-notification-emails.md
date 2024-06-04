@@ -4,16 +4,18 @@ description: Dieser Artikel bietet eine Lösung für Adobe Commerce, bei der Ben
 exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
 feature: Cloud, Communications, Paas
 role: Developer
-source-git-commit: 075f295c5b600fcca9fbecc5aad20b0640d900f9
+source-git-commit: 0017d43e221ef3023630f714c34aa65b368e214f
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # Ehemalige Teammitglieder erhalten Adobe Commerce-Cloud-Benachrichtigungs-E-Mails
 
-Dieser Artikel bietet eine Lösung, bei der Teammitglieder, die nicht mehr mit Ihrem Projekt verbunden sind, weiterhin Benachrichtigungen erhalten.
+Dieser Artikel bietet eine Lösung zum Entfernen von Benutzern aus der Liste der Benachrichtigungs-E-Mails, die sich wie folgt verhalten:
+* Ehemalige Teammitglieder, die nicht mehr mit Ihrem Projekt verbunden sind.
+* Aktuelle Teammitglieder, die die Benachrichtigungen nicht erhalten sollten.
 
 ## Problem
 
