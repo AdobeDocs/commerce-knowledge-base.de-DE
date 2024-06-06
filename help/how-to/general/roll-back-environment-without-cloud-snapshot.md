@@ -3,7 +3,7 @@ title: Zurücksetzen der Umgebung ohne Cloud-Schnappschuss
 description: In diesem Artikel werden zwei Lösungen vorgestellt, um eine Umgebung wiederherzustellen, ohne dass eine Momentaufnahme Ihrer Umgebung in Adobe Commerce in der Cloud-Infrastruktur vorliegt.
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: f3c976bd44dbc47bd5cc8076f1679d56910cfaf3
+source-git-commit: 5347e8714ef1374440f5d246100a0221e4b189fc
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -44,13 +44,13 @@ Gehen Sie wie folgt vor:
 
 Wir müssen Configuration Management deaktivieren, damit die vorherigen Konfigurationseinstellungen während der Bereitstellung nicht automatisch angewendet werden.
 
-Um die Konfigurationsverwaltung zu deaktivieren, stellen Sie sicher, dass Ihr `/app/etc/` enthält nicht die `config.php` (für Adobe Commerce 2.2.x) oder `config.local.php` (für Adobe Commerce 2.1.x).
+Um die Konfigurationsverwaltung zu deaktivieren, stellen Sie sicher, dass Ihr `/app/etc/` enthält nicht die `config.php` (für Adobe Commerce 2.4.x) oder `config.local.php` (für Adobe Commerce 2.1.x).
 
 Gehen Sie wie folgt vor, um die Konfigurationsdatei zu entfernen:
 
 1. [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Entfernen Sie die Konfigurationsdatei:
-   * Für Adobe Commerce 2.2:
+   * Für Adobe Commerce 2.4:
 
    ```php
     rm app/etc/config.php
