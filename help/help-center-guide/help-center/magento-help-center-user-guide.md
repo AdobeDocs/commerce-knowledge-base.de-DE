@@ -3,9 +3,9 @@ title: Benutzerhandbuch zum Adobe Commerce Help Center
 description: Erfahren Sie, wie Sie ein Support-Ticket an das Adobe Commerce Help Center senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
+source-git-commit: 751a315303be3d6435f4064cdd3fb28a0c811155
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,16 @@ Gehen Sie wie folgt vor, um über die Startseite des Adobe Commerce Help Center 
 1. Füllen Sie die Felder aus.
 1. Klicks **Einsenden**.
 
-You **muss sich anmelden** über Ihr Magento-Konto zum Help Center gelangen, um ein Support-Ticket zu senden. Bis Sie angemeldet sind, [die **Einreichen eines Tickets** -Schaltfläche wird nicht angezeigt](#no-submit-link).
+You *muss* ein Konto sowohl auf https://account.adobe.com als auch auf https://account.magento.com und melden Sie sich dann mit Ihrem Adobe Commerce-Konto beim Help Center an, um ein Support-Ticket zu senden. Bis Sie angemeldet sind, [die **Einreichen eines Tickets** -Schaltfläche wird nicht angezeigt](#no-submit-link).
+
+>[!NOTE]
+>
+>Wenn Sie bereits über ein Konto unter https://account.magento.com verfügen, sich aber nicht anmelden können, haben Sie sich möglicherweise nicht bei https://account.adobe.com angemeldet, was ab August 2022 erforderlich ist.
+>
+>So beheben Sie Folgendes:
+>1. Erstellen Sie ein Konto unter https://account.adobe.com mit derselben E-Mail-Adresse auf Ihrer MAG-ID.
+>1. Gehen Sie zu https://account.magento.com , um Ihre Adobe ID mit der MAG-ID zu verknüpfen.
+
 
 #### Magento-Kontoseite {#submit-ticket-magento-account-page}
 
@@ -182,7 +191,7 @@ Wenn Sie Probleme haben, sich bei Ihrem Konto anzumelden, oder der Ansicht sind,
 
 >[!NOTE]
 >
->Senden Sie keine E-Mail, wenn Sie ein Ticket senden können, sondern haben stattdessen ein Problem beim Zugriff auf Ihr Cloud-Projekt. Bitte senden Sie das Ticket für dieses Problem über die regulären Kanäle.
+>Wenn beim Zugriff auf Ihr Cloud-Projekt Probleme auftreten, senden Sie das Ticket für dieses Problem über die normalen Kanäle. Senden Sie keine E-Mail, wenn Sie ein Ticket senden können.
 
 ### Fehler &quot;Bitte überprüfen Sie Ihre E-Mail-Adresse&quot; auf der Magento-Kontoseite {#verify-email-address}
 
@@ -192,13 +201,8 @@ Sie können kein Support-Ticket senden, wenn Sie die *Bitte überprüfen Sie Ihr
 
 Die Lösung besteht darin, Ihre E-Mail-Adresse zu validieren:
 
-1. Klicken Sie auf **E-Mail validieren** Schaltfläche unter dem Feld E-Mail auf der [Kontoinformationen bearbeiten](https://account.magento.com/customer/account/edit/) -Seite ähnlich der unten aufgeführten.
-
-   ![validate_email_solution](assets/Validate_Email_Solution.png){width="800"}
-
-1. Klicken Sie auf **E-Mail validieren** -Schaltfläche eine E-Mail an die für dieses Magento-Konto registrierte E-Mail-Adresse mit einem Link zur Validierung der E-Mail-Adresse.
-1. Klicken Sie auf den E-Mail-Validierungslink, um Ihre E-Mail zu validieren und dieses Problem zu beheben.
-1. Wenn Sie keine E-Mail mit einem E-Mail-Validierungslink erhalten, wenden Sie sich bitte per E-Mail an [Anmeldungsprobleme beim Help Center](mailto:grp-magento-helpcenterloginissues@adobe.com) und geben an, dass Sie Ihre E-Mail-Adresse nicht überprüfen können.
+1. Melden Sie sich bei https://account.adobe.com an und fordern Sie bei Bedarf ein Kennwort an.
+1. Überprüfen Sie Ihr Adobe-Konto.
 
 >[!NOTE]
 >
