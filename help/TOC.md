@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: ee1ba9c0bb07c260058f53696c88ced737899361
+source-git-commit: 449e37e140e7df13be8d59a61a33c6298cb65f53
 workflow-type: tm+mt
-source-wordcount: '11032'
+source-wordcount: '11040'
 ht-degree: 0%
 
 ---
@@ -821,7 +821,7 @@ ht-degree: 0%
       * [Adobe unterstützt den Zugriff auf Kundendaten und Datenschutz](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [UPS-APIs veraltet](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
       * [Versionsplanung 2024](/help/announcements/adobe-commerce-announcements/2024-release-schedule.md)
-      * [test](/help/announcements/adobe-commerce-announcements/test.md)
+      * [Migration von Aufnahmeprozessen durch Adobe Commerce wird unterstützt zu Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
    * Hilfe-Center-Nachrichten {#news}
       * [Adobe Commerce-Support-Wissensdatenbank beginnt mit der Annahme von Beiträgen](/help/announcements/help-center-news/github-repo-for-external-contributions.md)
 * Fehlerbehebung {#troubleshooting}
