@@ -5,14 +5,18 @@ description: Wenden Sie einen Patch an, um die [!DNL UPS] Migration der Versandm
 feature: Shipping/Delivery
 role: Developer
 exl-id: 8ab5d4a8-0155-4b2c-ab67-d0bd2f949a07
-source-git-commit: 7785a37e033bc2bea5b6a1509c337289e7b871cb
+source-git-commit: 6694bb1e041e6285f5bd5a05a1c37b7062521f52
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
 # [!DNL UPS] Migration der Versandmethode [!DNL SOAP] nach [!DNL RESTful API]
+
+>[!NOTE]
+>
+>Wenn Sie einen der drei Patches aus diesem Artikel vor **6. Juni 2024**: Wenn dieses Problem aufgrund der [!DNL Metric System/SI] -Messungen (Kilogramm und Zentimeter) nicht verwendet werden, sollten Sie einen dieser neuen, aktualisierten Patches, die jetzt in diesem Artikel veröffentlicht werden, erneut auf Ihre Version 2.4.4+/2.4.5+/2.4.6+ von Adobe Commerce/Magento Open Source anwenden, da Sie andernfalls nicht die [!DNL Metric System/SI] Messungen **Kilogramm** und **Zentimeter** im [!DNL UPS] Versandmethoden in **[!DNL Admin configuration]**. Diese neuen Patches sind mit den zuvor veröffentlichten Patches kompatibel. Dieses Problem wird im Rahmen der bevorstehenden Adobe Commerce-Version 2.4.7-p1, die für geplant ist, dauerhaft behoben **11. Juni 2024**.
 
 >[!NOTE]
 >
@@ -39,9 +43,11 @@ Adobe Commerce über Cloud-Infrastruktur und On-Premise und Magento Open Source:
 * 2,4,6
 * 2.4.6-pX
 
-## Ursache
+## Ursachen
 
 Die [!DNL UPS] veröffentlicht [Sicherheitsupdate für ihre [!DNL API]](https://developer.ups.com/oauth-developer-guide?loc=en_US&amp;sp_rid=NTA5MzQ1OTE2NjEyS0&amp;sp_mid=72989914).
+
+Wenn Sie über die Europäische Union verfügen (andere Herkunft kann das gleiche Problem haben), führt dies zu einem Fehler in der [!DNL UPS REST] Anfrage: &quot;*Eine Sendung darf nicht als Maßeinheit über KGS/IN, LBS/CM oder OZS/CM verfügen.*&quot;
 
 ## Lösung
 
@@ -55,15 +61,15 @@ Verwenden Sie die folgenden angehängten Patches je nach Adobe Commerce-/Magento
 
 ### Für Versionen 2.4.4, 2.4.4-pX:
 
-* [AC-9363_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-9646_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
+* [AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
 
 ### Für Versionen 2.4.5, 2.4.5-pX:
 
-* [AC-9358_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-9647_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
+* [AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
 
 ### Für Versionen 2.4.6, 2.4.6-pX:
 
-* [AC-9345_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-9648_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
+* [AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
 
 ## Anwenden des Pflasters
 
