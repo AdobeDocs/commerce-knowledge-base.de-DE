@@ -4,9 +4,9 @@ description: Informationen zum [!DNL Site-Wide Analysis Tool], ein proaktives Se
 exl-id: 7c843d55-9e2c-4b18-8859-0ebad0ae28cf
 feature: Best Practices, Saas, Support, Tools and External Services
 role: Admin
-source-git-commit: 4e327654279095f6523a7cbec77bd2dca57b2034
+source-git-commit: 580ad148cd4346868cd9892a1ae9a4d85f73edce
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ Alle Kunden, unabhängig von der [!DNL Site-Wide Analysis Tool] Health Index (wi
 ## Wie werden Berichte bereitgestellt?
 
 [!DNL Site-Wide Analysis Tool] Berichte werden automatisch monatlich oder vierteljährlich über das Support-Ticketsystem von Adobe Commerce bereitgestellt. [!DNL Site-Wide Analysis Tool] Berichte können auch manuell über die [!DNL Site-Wide Analysis Tool] Dashboard auf Ihrem Desktop gespeichert. Diese [!DNL Site-Wide Analysis Tool] Berichte können dann als Anhänge per E-Mail versendet werden.
+
+>[!NOTE]
+>
+>Nach Anwendung einer Empfehlung werden die Empfehlungen durch manuelles Generieren eines Berichts nicht aktualisiert. Es kann einige Tage dauern, bis der Bericht aus dem [!DNL Site-Wide Analysis Tool Dashboard].
