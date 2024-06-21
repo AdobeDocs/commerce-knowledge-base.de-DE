@@ -4,9 +4,9 @@ description: Wenn Sie Adobe Commerce on Cloud Infrastructure Pro Plan-Architektu
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: 43be85de953909253900d60488f76a20bac91793
+source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # Anforderung zur Verbesserung der Integrationsumgebung - Pro und Starter
 
 Wenn Sie Adobe Commerce on Cloud Infrastructure Pro Plan-Architekturkunde sind und derzeit die standardmäßigen Integrationsumgebungen verwenden oder Sie Adobe Commerce on Cloud Infrastructure Starter Plan Architecture-Kunde sind und derzeit die standardmäßige Staging-Umgebung verwenden und mehr Leistung wünschen, können Sie ein Upgrade auf Enhanced Integration Environments anfordern, die etwa das Vierfache der Leistung bieten. Dieser Artikel trennt Anweisungen für Pro-Kunden von Starter-Kunden.
+
+>[!NOTE]
+>
+> Bei der Aktualisierung auf die erweiterte Integration werden möglicherweise nicht alle Leistungsprobleme behoben, da dies von den gesamten Ressourcenanforderungen Ihrer Installation, einschließlich Integrationen von Drittanbietern oder Anpassungen, abhängt.
+>
+> Außerdem müssen Sie sicherstellen, dass Sie die Best Practices für die beste Leistung in der Integrationsumgebung befolgen, und auch dies kann keine Komplettlösung sein. Die folgenden Anleitungen finden Sie in der folgenden Dokumentation: [Pro Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) und [Starterarchitektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) im Commerce on Cloud Infrastructure Guide.
 
 ## Pro
 
