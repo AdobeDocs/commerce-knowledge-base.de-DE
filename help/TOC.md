@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 449e37e140e7df13be8d59a61a33c6298cb65f53
+source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
 workflow-type: tm+mt
-source-wordcount: '11040'
+source-wordcount: '11052'
 ht-degree: 0%
 
 ---
@@ -1062,11 +1062,11 @@ ht-degree: 0%
       * [Run-Setup:static-content:Problem mit bereitgestelltem_version.txt](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [Gehen Sie zurück zum Anmeldeformular für die Commerce Admin mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
       * [Google Analytics werden nach der Implementierung deaktiviert](/help/troubleshooting/miscellaneous/google-analytics-gets-disabled-after-deployment.md)
-      * [Fehlerbehebung für die Sperrung des Adobe Commerce Intelligence-Kontos](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
+      * [Fehlerbehebung für die Sperrung von Adobe Commerce Intelligence-Konten](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
       * [Bekannte Probleme, die sich auf die Installation von xdebug auswirken](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [Anmeldung beim Adobe Commerce-Support- oder Cloud-Konto nicht möglich](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
       * [Konflikt bei Komponentenabhängigkeiten](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
-      * [Adobe Commerce Intelligence Service-Richtlinien](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
+      * [Adobe Commerce Intelligence-Dienstrichtlinien](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Neue Umgebungen, die beim Verschieben aus Git in die Produktionsumgebung eingefügt werden](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Fehler nach der Anmeldung beim Commerce-Administrator](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Zeitüberschreitung des Magento Order Management-Systems (OMS) für Adobe Commerce](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
@@ -1085,7 +1085,7 @@ ht-degree: 0%
       * [Cron-Haltepunkte aufgrund fehlender Konfiguration [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [Die Datei kann nicht gelöscht werden. Warnung! unlink: Kein solcher Datei- oder Verzeichnisfehler* aus der [!DNL Admin]](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md)
       * [[!DNL Admin] Anmeldung funktioniert nicht - zulässige Sitzungsmax-Größe überschritten](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
-      * [Konfigurieren der Adobe Commerce Intelligence-Verbindung für vorhandene Cloud-Starter-Projekte](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
+      * [Konfigurieren der Adobe Commerce Intelligence-Verbindung für bestehende Cloud-Starter-Projekte](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] wird durch das Widget zur Live-Suche beschädigt](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
       * [Sicherheitslücken, die von Sicherheitsscans von Drittanbietern gefunden werden, sollten zu [!DNL HackerOne]](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
       * [Abrufen von Tausenden von Suchergebnissen nach dem Upgrade von 2.4.2 auf 2.4.5-p3](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
@@ -1113,6 +1113,7 @@ ht-degree: 0%
       * [Bereitstellung fehlgeschlagen: Es wurden keine Befehle im Namespace-Fehler &quot;cache&quot;definiert](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Bekannte Probleme {#known-issues-patches-attached}
+      * [Sicherheitsupdate für Adobe Commerce - [!DNL APSB24-40] Überarbeitet, um isoliertes Pflaster für [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] Migration der Versandmethode [!DNL SOAP] nach [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Support-Hotfix für die Ground Advantage-Versandmethode für AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Adobe Commerce 2.4.3-p2 - 2.4.5 Sicherheits-Hotfix für CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
