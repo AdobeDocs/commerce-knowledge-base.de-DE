@@ -3,7 +3,7 @@ title: Reduzieren von Bereitstellungsausfällen in Adobe Commerce in der Cloud-I
 description: Um Wartungsausfälle erheblich zu reduzieren und eine effiziente Konfiguration Ihres Stores in allen Umgebungen zu ermöglichen, bietet Adobe Commerce in der Cloud-Infrastruktur die Funktion **Konfigurationsverwaltung**. Bei Implementierungen von Adobe Commerce mit der Cloud-Infrastruktur 2.2.x und höher unterstützt diese Funktion Konzepte und Optionen zur Pipeline-Implementierung mit reduzierten Schritten.
 exl-id: fde3571c-d95c-4a9b-a024-3b29f9c491ab
 feature: Build, Cloud, Configuration, Deploy
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 23d957ceac17f9989d14b215582304199d398545
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Zu den schmerzhaften und zeitaufwendigen Problemen bei der Bereitstellung Ihres 
 
 * **Anwenden derselben Konfiguration auf alle Umgebungen.** Normalerweise würden Sie Konfigurationen manuell oder durch komplizierte Datenbankaktualisierungen eingeben. Mit Configuration Management exportieren Sie Konfigurationen aus der Datenbank in eine einzelne Datei, um sie später mit Ihrem Code von Ihrer lokalen Entwicklungsumgebung in die Integration, Staging und Produktion zu pushen.
 
-* **Site-Ausfallzeiten bei der Bereitstellung statischer Inhalte.** Normalerweise werden statische Inhalte während der [Bereitstellungsphase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase). Dies kann bis zu 30 Minuten oder länger dauern, was für Unternehmen nicht akzeptabel ist. Die Konfigurationsverwaltung verschiebt die Bereitstellung statischer Inhalte auf [Build-Phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?#build-phase), was keine Ausfallzeiten erfordert.
+* **Site-Ausfallzeiten bei der Bereitstellung statischer Inhalte.** Normalerweise werden statische Inhalte während der [Bereitstellungsphase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase). Dies kann bis zu 30 Minuten oder länger dauern, was für Unternehmen nicht akzeptabel ist. Die Konfigurationsverwaltung verschiebt die Bereitstellung statischer Inhalte auf [Build-Phase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase), was keine Ausfallzeiten erfordert.
 
 ## Technologieversionen
 
@@ -34,7 +34,7 @@ Kurz gesagt: Der Prozess &quot;Configuration Management&quot;(auch als Pipeline-
 Dies bietet die folgenden Vorteile:
 
 * **Konsistente Einstellungen in allen Umgebungen:** Alle Einstellungen, die in die Konfigurationsdatei exportiert werden, werden gesperrt (die entsprechenden Felder im Commerce Admin sind schreibgeschützt), wodurch konsistente Konfigurationen beim Pushen der Datei über alle Umgebungen hinweg sichergestellt werden.
-* **Geringere Ausfallzeiten:** Die statische Dateibereitstellung verschiebt sich von der [Bereitstellungsphase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) (was erfordert, dass sich die Site im Wartungsmodus befindet) bis zum [Build-Phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?#build-phase) (wenn sich die Site nicht im Wartungsmodus befindet und nicht heruntergefahren wird, wenn Fehler oder Probleme auftreten).
+* **Geringere Ausfallzeiten:** Die statische Dateibereitstellung verschiebt sich von der [Bereitstellungsphase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase) (was erfordert, dass sich die Site im Wartungsmodus befindet) bis zum [Build-Phase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase) (wenn sich die Site nicht im Wartungsmodus befindet und nicht heruntergefahren wird, wenn Fehler oder Probleme auftreten).
 * **Geschützte vertrauliche Daten:** mit Adobe Commerce auf Cloud-Infrastruktur 2.2 und höher exportiert der Prozess auch alle sensiblen Daten (z. B. Anmeldedaten für Zahlungsdenn-Gateway) in die `env.php` -Datei. Diese Datei sollte nur in der Umgebung gespeichert werden, in der sie erstellt wurde, und nicht mit Ihren Git-Verzweigungen gesendet werden.
 
 Es wird dringend empfohlen, den Konfigurationsmanagement-Ansatz in Ihrer Implementierung anzuwenden.

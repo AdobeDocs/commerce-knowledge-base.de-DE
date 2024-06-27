@@ -2,9 +2,9 @@
 title: '[!DNL Admin] Anmeldung funktioniert nicht - zulässige Sitzungsmax-Größe überschritten'
 description: Lösen Sie das Problem, wenn Sie versuchen, sich bei Ihrem [!DNL Admin] -Bedienfeld und das Formular wird aktualisiert und Sie können sich nicht anmelden.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,6 @@ Sie können *500000* Abhängig von der vorhandenen maximalen Größe, die im Feh
 
 ## Verwandte Informationen
 
-* [Sitzungsgröße](/docs/commerce-admin/systems/security/security-session-management.html?lang=en#admin-sessions) im Administratorsystem-Handbuch.
-* [Betriebsmodus](/docs/commerce-operations/configuration-guide/cli/set-mode.html) im Konfigurationshandbuch.
-* [Sichere Verbindungen](/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) im Commerce on Cloud Infrastructure Guide.
+* [Sitzungsgröße](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) im Administratorsystem-Handbuch.
+* [Betriebsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) im Konfigurationshandbuch.
+* [Sichere Verbindungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) im Commerce on Cloud Infrastructure Guide.

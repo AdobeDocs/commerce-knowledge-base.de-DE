@@ -4,9 +4,9 @@ description: 'Dieser Artikel bietet eine Lösung für das Problem, wenn die Bere
 feature: Deploy
 role: Admin
 exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
-source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
+source-git-commit: 7804e7094fb05d1cce9747c8f96c3cfe6bc6171e
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ W:   The "https://repo.magento.com/archives/magento/module-customer-balance/mage
 
 Adobe Commerce auf Cloud-Infrastruktur 2.4.x
 
-## Problem  
+## Problem
 
 <u>Zu reproduzierende Schritte</u>:
 
-Versuchen Sie, sie bereitzustellen. 
+Versuchen Sie, sie bereitzustellen.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -40,7 +40,7 @@ Sie können die Bereitstellung erfolgreich durchführen.
 >
 >Dies ist ein Beispielfehler. Möglicherweise wird eine Fehlermeldung angezeigt, die eine andere Datei angibt (je nachdem, welche Adobe Commerce-Version Sie bereitstellen).
 
-Sie werden nicht erfolgreich bereitgestellt. Sie sehen einen Fehler wie *Die Datei &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; konnte nicht heruntergeladen werden (HTTP/1.1 404 Not Found)* im [Bereitstellungsprotokoll](/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+Sie werden nicht erfolgreich bereitgestellt. Sie sehen einen Fehler wie *Die Datei &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; konnte nicht heruntergeladen werden (HTTP/1.1 404 Not Found)* im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 
 ### Ursache
@@ -54,7 +54,7 @@ Die in einem dieser Speicherorte gefundenen Zugriffsschlüssel des Composers hab
 
 Aktualisieren Sie die `env:COMPOSER_AUTH` auf der Projektebene und stellen Sie sicher, dass sie mit Schlüsseln konfiguriert ist, die Zugriff auf den Code haben.
 
-Eine Anleitung finden Sie unter [Variablenebenen](/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) in Commerce on Cloud Infrastructure Guide.
+Eine Anleitung finden Sie unter [Variablenebenen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) in Commerce on Cloud Infrastructure Guide.
 
 ## Verwandtes Lesen
 
