@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
+source-git-commit: c8e688b59f0d66dc32da098c185d81b14c6770bc
 workflow-type: tm+mt
-source-wordcount: '11052'
+source-wordcount: '11064'
 ht-degree: 0%
 
 ---
@@ -912,6 +912,7 @@ ht-degree: 0%
       * [Fehlerbehebung auf der Adobe Commerce-Site](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
       * [Durch Anwenden eines Pflasters wird Ihre Website heruntergefahren](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Fehler 404 auf allen Seiten aufgrund eines Problems beim Staging von Inhalten](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
+      * [Überarbeitete Patches für Google Maps-Zugriffsverluste für alle Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Sonstiges {#miscellaneous}
       * [Überprüfen der Gründe [!DNL cron] war deaktiviert](/help/troubleshooting/miscellaneous/how-to-check-why-cron-was-disabled.md)
       * [Fehler [!DNL opensearch] Suchmaschine existiert nicht. Fallback zu [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
