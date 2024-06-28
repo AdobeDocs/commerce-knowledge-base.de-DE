@@ -3,9 +3,9 @@ title: Überarbeitete Patches für Google Maps-Zugriffsverluste für alle Adobe 
 description: '"Dieser Artikel enthält eine Fehlerbehebung für Adobe Commerce-Händler, die nicht mit aktuellen [!DNL Google Maps] Versionen ab Version 3.54.'''
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 49bc0b643c10c6597d6a905935c36251e92b18f9
+source-git-commit: 575fce2f678321ff184779895d43be90828c2ce4
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Dieser Artikel enthält eine Fehlerbehebung für Adobe Commerce-Händler, die ni
 
 on *14. Juni 2024* [!DNL Google Maps] version *3,53* das Ende der Lebensdauer erreicht hat und abgeschaltet wurde durch [!DNL Google].
 
-Weitere Informationen finden Sie unter [[!DNL Google Maps] Plattform: Maps JavaScript API] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
+[Weitere Informationen hierzu finden Sie unter[!DNL Google Maps Platform: Maps JavaScript API])] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
 Adobe Commerce ist mit keiner der neuesten [!DNL  Google Maps] ab Version 3.54.
 
 Die Inkompatibilität wurde durch die alte Version verursacht `prototype.js script`, die sich durch `lib/web/legacy-build.min.js` überschreibt die native Array.from -Funktion, die zu einem direkten Konflikt mit [!DNL  Google Maps] API.
 
-Siehe [[!DNL Google Maps: JS Best Practices]] (https://developers.google.com/maps/documentation/javascript/best-practices).
+[Siehe ([!DNL Google Maps: JS Best Practices])] (https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>Zu reproduzierende Schritte</u> :
 
-1. Navigieren Sie zu **[!UICONTROL Content]** > **[!UICONTROL Pages]** > und klicken Sie auf eine **[!UICONTROL New Page]**.
+1. Klicken Sie auf **[!UICONTROL Content]** > **[!UICONTROL Pages]** > und wählen Sie eine **[!UICONTROL New Page]**.
 1. Erweitern Sie den Inhaltsbaustein und klicken Sie auf die Schaltfläche Bearbeiten . **[!DNL PageBuilder]** Schaltfläche.
 1. Ziehen Sie den Baustein Inhalt zuordnen aus dem **[!DNL PageBuilder]** Menü zu Seite.
 
