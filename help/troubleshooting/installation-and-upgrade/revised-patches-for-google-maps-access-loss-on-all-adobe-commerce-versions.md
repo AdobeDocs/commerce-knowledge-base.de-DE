@@ -3,9 +3,9 @@ title: Überarbeitete Patches für Google Maps-Zugriffsverluste für alle Adobe 
 description: '"Dieser Artikel enthält eine Fehlerbehebung für Adobe Commerce-Händler, die nicht mit aktuellen [!DNL Google Maps] Versionen ab Version 3.54.'''
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 98581cc9c251976339406f80764715096321126b
+source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Beim Ablegen des Inhaltsbausteins aus **[!DNL PageBuilder]** -Menü auf der Seit
 
 ## Lösung
 
-* Alle Händler in Patch-Versionen 2.4.4, 2.4.5, 2.4.6 oder 2.2.7 sollten diese Patches auf ihre Version anwenden.
+* Alle Händler in Patch-Versionen 2.4.4, 2.4.5, 2.4.6 oder 2.4.7 sollten diese Patches auf ihre Version anwenden.
 
 ## Patch
 
