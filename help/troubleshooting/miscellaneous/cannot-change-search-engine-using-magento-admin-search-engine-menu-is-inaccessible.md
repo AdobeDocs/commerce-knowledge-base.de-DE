@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung zum Ändern der Adobe Commerce-S
 exl-id: 5b0f728c-6a8d-446d-9553-5abc3d01e516
 feature: Admin Workspace, Search, Variables
 role: Developer
-source-git-commit: e9f009cf4e072dcd9784693c10a4c16746af3cc5
+source-git-commit: 0ea7bbef7fec556f9a90151be9cf1077f5cfac45
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,14 @@ In diesem Artikel:
 
 ## Suchmaschine mit Admin ändern (Schritte)
 
-1. Melden Sie sich bei Admin als Administrator an.
-1. Klicken Sie in der linken Admin-Seitenleiste auf **Stores**. Dann, unter **Einstellungen** auswählen **Konfiguration**.
-1. Im Bedienfeld auf der linken Seite unter **Katalog,** Auswählen **Katalog**.
-1. Erweitern Sie die **Katalogsuche** Abschnitt.    ![catalog_menu.png](assets/catalog_menu.png)
-1. Navigieren Sie zu **Suchmaschine** und die Auswahl aus dem **Systemwert verwenden** aktivieren.
-1. Klicken Sie auf **Suchmaschine** und wählen Sie eine der verfügbaren Optionen aus.    ![search_engine_menu.png](assets/search_engine_menu.png)
-1. Klicks **Konfiguration speichern** in der oberen rechten Ecke der Seite.
+1. Melden Sie sich bei **[!UICONTROL Admin]** als Administrator.
+1. Auf der linken Seite des **[!UICONTROL Admin]** Seitenleiste, klicken Sie auf **[!UICONTROL Stores]**.
+1. under **[!UICONTROL Settings]** auswählen **[!UICONTROL Configuration]**.
+1. Navigieren Sie zum Bereich links unter **[!UICONTROL Catalog],** und wählen **[!UICONTROL Catalog]**.
+1. Erweitern Sie die **[!UICONTROL Catalog Search]** Abschnitt.    ![catalog_menu.png](assets/catalog_menu.png)
+1. Navigieren Sie zu **[!UICONTROL Search Engine]** und die Auswahl aus dem **[!UICONTROL Use system value]** aktivieren.
+1. Klicken Sie auf **[!UICONTROL Search Engine]** und wählen Sie eine der verfügbaren Optionen aus, wie unten dargestellt.    ![search_engine_menu.png](assets/search_engine_menu.png)
+1. Klicken Sie auf **[!UICONTROL Save Config]** in der oberen rechten Ecke der Seite.
 
 ## Probleme mit Adobe Commerce vor Ort
 
@@ -65,10 +66,11 @@ Bei der Suchmaschine handelt es sich um eine globale Konfiguration, die auf Anwe
 
 ### Lösung: Legen Sie die Store-Ansicht auf Standardkonfiguration fest.
 
-1. Melden Sie sich bei Admin als Administrator an.
-1. Klicken Sie in der linken Admin-Seitenleiste auf **Stores**. Dann, unter **Einstellungen** auswählen **Konfiguration**.
-1. Klicken Sie oben links auf die **Store-Ansicht** auswählen *Standardkonfiguration*.
-1. Klicks **OK** im Bestätigungsdialogfeld, um die Änderung der Store-Ansicht zu bestätigen.
+1. Melden Sie sich bei **[!UICONTROL Admin]** als Administrator.
+1. Auf der linken Seite des **[!UICONTROL Admin]** Seitenleiste, klicken Sie auf **[!UICONTROL Stores]**.
+1. Navigieren Sie zu **[!UICONTROL Settings]** und wählen **[!UICONTROL Configuration]**.
+1. Klicken Sie oben links auf die **[!UICONTROL Store View]** auswählen **[!UICONTROL *Standardkonfiguration *]**.
+1. Klicken Sie auf **[!UICONTROL OK]** im Bestätigungsdialogfeld, um die Änderungen an der Store-Ansicht zu genehmigen.
 
 ![change_store_view.png](assets/change_store_view.png)
 
