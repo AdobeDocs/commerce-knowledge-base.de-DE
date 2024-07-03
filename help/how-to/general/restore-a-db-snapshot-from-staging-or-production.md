@@ -2,9 +2,9 @@
 title: Wiederherstellen eines DB-Schnappschusses aus Staging oder Produktion
 description: Dieser Artikel zeigt, wie Sie einen DB-Schnappschuss aus Staging oder Produktion in Adobe Commerce in der Cloud-Infrastruktur wiederherstellen können.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: b9e72ff8d541ad01788e5198e03abcb46a1bd11f
+source-git-commit: ad0ec2e6dc1d3e1023ad4ecda595b5c942716407
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -124,16 +124,22 @@ Die Schritte sind:
 
 1. Geben Sie den folgenden Befehl ein, um die [!DNL snapshot]:
 
-   (Für [!DNL Production])
+   (Für den Import der Datenbanksicherung von [!DNL Production])
 
    ```sql
    zcat <cluster ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
-   (Für [!DNL Staging])
+   (Für den Import der Datenbanksicherung von [!DNL Staging])
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
+   ```
+
+   (Für den Import einer Datenbanksicherung aus einer anderen Umgebung)
+
+   ```sql
+   zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
 ## Verwandtes Lesen
