@@ -2,9 +2,10 @@
 title: Upgrade von MariaDB 10.4 auf 10.5 für Adobe Commerce auf Cloud
 description: MariaDB 10.4 beendet den Support am 18. Juni 2024. In diesem Artikel wird erläutert, wie Sie MariaDB von 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
 feature: Best Practices, Cloud
-source-git-commit: 401a36722b3336b47dd76bb12ace34f0bf55b8e6
+exl-id: 065840b8-28c1-4686-95fc-df3e73152845
+source-git-commit: 11f2fae3264a61413c5da1b93ef4980151a1df1e
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -39,6 +40,10 @@ Nehmen Sie die neuen reinen Sicherheits-Patches (2.4.4-p9 oder 2.4.5-p8) an, die
    1. Teilen Sie dem Support mit, dass Sie das Backup über Ihr Supportticket abgeschlossen haben. Anweisungen zum Anzeigen und Tracking Ihrer Tickets finden Sie unter [Adobe Commerce Help Center-Benutzerhandbuch: Tickets verfolgen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#track-tickets) in unserer Wissensdatenbank.
    1. Das Adobe Commerce-Supportteam beginnt dann mit dem Upgrade-Prozess für MariaDB. Wenn alle oben genannten Schritte ausgeführt wurden und die Datenbank eine durchschnittliche Größe aufweist, dauert der Prozess etwa eine Stunde. Größere DBs brauchen länger. Sobald das Upgrade abgeschlossen ist, werden Sie über Ihr Ticket informiert.
 1. Wartungsmodus deaktivieren. Siehe Abschnitt [Aktivieren oder Deaktivieren des Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.
+
+>[!NOTE]
+>
+>Es wird empfohlen, vor und nach jedem Upgrade-Schritt eine DB-Sicherung zu erstellen, um Datenverlust zu vermeiden. Auf diese Weise können Sie zu einem vorherigen Schritt zurückkehren, wenn während der Versionsaktualisierung Probleme auftreten.
 
 ## Verwandte Informationen
 
