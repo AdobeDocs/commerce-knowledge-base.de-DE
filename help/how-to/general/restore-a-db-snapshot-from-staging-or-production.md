@@ -2,9 +2,9 @@
 title: Wiederherstellen eines DB-Schnappschusses aus Staging oder Produktion
 description: Dieser Artikel zeigt, wie Sie einen DB-Schnappschuss aus Staging oder Produktion in Adobe Commerce in der Cloud-Infrastruktur wiederherstellen können.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: ad0ec2e6dc1d3e1023ad4ecda595b5c942716407
+source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Wählen Sie die für Ihren Fall am besten geeignete Option aus:
 
 Die Schritte sind:
 
-1. Verwenden [!DNL sFTP], navigieren Sie zum Speicherort der Datenbank. [!DNL snapshot] wurde platziert, normalerweise auf dem ersten Server/Knoten Ihrer [!DNL cluster] (Beispiel: `/mnt/recovery-<recovery_id>`). HINWEIS: Wenn Ihr Projekt Azure-basiert ist, d. h. Ihre Projekt-URL sieht ungefähr wie https://us-a1.magento.cloud/projects/ aus.&lt;cluster_id>, wird der Schnappschuss in `/mnt/shared/<cluster ID>/all-databases.sql.gz` oder `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` anstatt.
+1. Verwenden [!DNL SFTP], navigieren Sie zum Speicherort der Datenbank. [!DNL snapshot] wurde platziert, normalerweise auf dem ersten Server/Knoten Ihrer [!DNL cluster] (Beispiel: `/mnt/recovery-<recovery_id>`). HINWEIS: Wenn Ihr Projekt Azure-basiert ist, d. h. Ihre Projekt-URL sieht ungefähr wie https://us-a1.magento.cloud/projects/ aus.&lt;cluster_id>, wird der Schnappschuss in `/mnt/shared/<cluster ID>/all-databases.sql.gz` oder `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` anstatt.
 
    HINWEIS: Das Format der Momentaufnahme bei Azure-Projekten ist anders und enthält andere Datenbanken, die nicht importiert werden können. Vor dem Import des Snapshots müssen Sie zusätzliche Schritte unternehmen, um die entsprechende Datenbank zu extrahieren, bevor Sie den Dump importieren.
 
@@ -134,6 +134,12 @@ Die Schritte sind:
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
+   ```
+
+   (Für den Import einer Datenbanksicherung aus einer anderen Umgebung)
+
+   ```sql
+   zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
    (Für den Import einer Datenbanksicherung aus einer anderen Umgebung)
