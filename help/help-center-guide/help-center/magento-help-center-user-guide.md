@@ -3,7 +3,7 @@ title: Benutzerhandbuch zum Adobe Commerce Help Center
 description: Erfahren Sie, wie Sie ein Support-Ticket an das Adobe Commerce Help Center senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: bdef7c26141356727a225c0ea0a1f9a064d213db
+source-git-commit: 3e773131f6f44436fc533f74474efbe8597abb5f
 workflow-type: tm+mt
 source-wordcount: '4988'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Nach der erfolgreichen Anmeldung können Sie über die Adobe Experience League-S
 
 Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Adobe Experience League einzureichen:
 
->
+>[!NOTE]
 >
 >1. Wenn Sie mehreren Organisationen angehören, müssen Sie die entsprechende Organisation aus der Dropdown-Liste auswählen.
 >1. Um einen Fall einzureichen, müssen Sie berechtigt sein, Unterstützung zu erhalten. Ist dies nicht der Fall, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Benutzer mit Supportberechtigung in der Organisation sind.
@@ -276,6 +276,7 @@ You *muss* ein Konto sowohl auf https://account.adobe.com als auch auf https://a
 >Wenn Sie bereits über ein Konto unter https://account.magento.com verfügen, sich aber nicht anmelden können, haben Sie sich möglicherweise nicht bei https://account.adobe.com angemeldet, was ab August 2022 erforderlich ist.
 >
 >So beheben Sie Folgendes:
+>
 >1. Erstellen Sie ein Konto unter https://account.adobe.com mit derselben E-Mail-Adresse auf Ihrer MAG-ID.
 >1. Gehen Sie zu https://account.magento.com , um Ihre Adobe ID mit der MAG-ID zu verknüpfen.
 
