@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für in Konflikt stehende Kompon
 exl-id: 782049c4-b6e1-4ead-a00f-80d2aa8475c9
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -64,8 +64,8 @@ Konflikte zwischen Komponentenabhängigkeiten können auch durch Drittanbietermo
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}
 
 1. Wenden Sie sich an den Entwickler der Erweiterung, damit dieser Ihnen helfen kann. Sie finden ihre Kontaktinformationen auf der Seite, von der Sie die Erweiterung erworben haben, auf der Commerce Marketplace. Suchen Sie nach **Ansprechpartner Verkäufer** im rechten Bereich angezeigt. Alle Commerce-Entwickler müssen beim Veröffentlichen einer Erweiterung in Marketplace ein Benutzer- und Installationshandbuch bereitstellen. Sie finden beide auf der rechten Seite der Landingpage.
-1. Wenn Sie nicht innerhalb einer angemessenen Frist eine Antwort vom Verkäufer erhalten, bitte [Commerce Marketplace wissen lassen](https://marketplacesupport.magento.com/hc/en-us) damit wir sie an ihre Zusagen bezüglich des Kundendienstes erinnern können.
+1. Wenn Sie nicht innerhalb einer angemessenen Frist eine Antwort vom Verkäufer erhalten, bitte [Support für den Kontakt](mailto:commercemarketplacesupport@adobe.com) damit wir sie an ihre Zusagen bezüglich des Kundendienstes erinnern können.
 
 ## Magento Open Source {#opensource}
 
-Hilfe anfordern unter [Unser Hauptforum](https://community.magento.com/) oder [Adobe Commerce Partner kontaktieren](https://magento.com/find-a-partner) , die bei Open Source-Problemen hilft.
+Hilfe anfordern unter [Unser Hauptforum](https://community.magento.com/) oder [Adobe Commerce Partner kontaktieren](https://magento.com/find-a-partner) , die bei Open Source-Problemen unterstützt.
