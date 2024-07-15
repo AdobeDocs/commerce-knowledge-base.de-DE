@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fehler &quot;Klasse kann nicht im Codeverzeichnis gespeichert werden&quot;
 
-In diesem Artikel wird beschrieben, wie Sie das Problem beheben, dass die Art und Weise, wie Sie Abhängigkeiten angegeben haben, verhindert, dass Klassen automatisch direkt generiert werden, und Sie erhalten die *&quot;Die Klasse kann nicht im Ordner &quot;generate/code&quot;gespeichert werden.* Fehlermeldung.
+In diesem Artikel wird beschrieben, wie Sie das Problem beheben, bei dem die Art und Weise, wie Sie Abhängigkeiten angegeben haben, verhindert, dass Klassen dynamisch automatisch generiert werden und Sie die Fehlermeldung *&quot;Klasse kann nicht im generierten/Codeverzeichnis gespeichert werden&quot;* erhalten.
 
 ## Betroffene Produkte und Versionen
 
@@ -26,7 +26,7 @@ In diesem Artikel wird beschrieben, wie Sie das Problem beheben, dass die Art un
 1. Schreiben Sie in Ihrer lokalen Umgebung eine benutzerdefinierte Klasse mit einer Abhängigkeit von der automatisch generierten Klasse.
 1. Führen Sie das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird, und überprüfen Sie, ob sie ordnungsgemäß funktioniert.
 1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie in die Integrationsumgebung. Dies würde den Bereitstellungsprozess Trigger. Die Implementierung ist erfolgreich.
-1. Im [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), führen Sie das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
+1. Führen Sie in der [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
 
 <u>Erwartetes Ergebnis</u>
 
@@ -34,15 +34,15 @@ Alles funktioniert ordnungsgemäß, genauso wie in Ihrer lokalen Umgebung.
 
 <u>Tatsächliches Ergebnis</u>
 
-Fehler mit der Fehlermeldung, dass Ihre Klasse nicht im `generated/code` Verzeichnis.
+Fehler mit der Fehlermeldung, dass Ihre Klasse nicht im Verzeichnis `generated/code` gespeichert werden kann.
 
 ## Ursache
 
-Die Ursache des Problems ist, dass die Klasse, von der Sie abhängig sind, während der Bereitstellung nicht generiert wird und später nicht sofort generiert werden kann, wenn die Klasse ausgelöst wird, da die `generated/code` nach Abschluss der Bereitstellung nicht mehr zum Schreiben verfügbar ist.
+Die Ursache des Problems ist, dass die Klasse, von der Sie abhängig sind, während der Bereitstellung nicht generiert wird und später nicht sofort generiert werden kann, wenn die Klasse ausgelöst wird, da das Verzeichnis `generated/code` nach Abschluss der Bereitstellung nicht zum Schreiben verfügbar ist.
 
 Es gibt zwei Hauptgründe dafür:
 
-* 1. Fall: Die Klasse mit Abhängigkeiten von automatisch generierten Klassen befindet sich im Einstiegspunkt (wie `index.php` ), die während der Bereitstellung nicht auf Abhängigkeiten überprüft wird.
+* Fall 1: Die Klasse mit Abhängigkeiten von automatisch generierten Klassen befindet sich im Einstiegspunkt (wie `index.php` ), der während der Bereitstellung nicht auf Abhängigkeiten überprüft wird.
 * Fall 2: Die Abhängigkeit zur automatisch generierten Klasse wird direkt angegeben (im Vergleich zur empfohlenen Verwendung des Konstruktors zum Deklarieren der Abhängigkeit).
 
 ## Lösung
@@ -57,7 +57,7 @@ Verschieben Sie Ihren Klassencode vom Einstiegspunkt in ein separates Modul und 
 
 <u>Beispiel</u>
 
-Originalcode beispielsweise in `index2.php` :
+Originalcode in, z. B. `index2.php` :
 
 ```php
 <?php
@@ -85,7 +85,7 @@ $someObject = $bootstrap->getObjectManager()->create(SomeClass::class);
 
 Führen Sie die folgenden Schritte aus:
 
-1. Verschieben der Klassendefinition nach `app/code/YourVendor/YourModule`:
+1. Verschieben Sie die Klassendefinition auf `app/code/YourVendor/YourModule`:
 
    ```php
       <?php
@@ -103,7 +103,7 @@ Führen Sie die folgenden Schritte aus:
        }
    ```
 
-1. Einstiegspunkt bearbeiten `my_api/index.php` sodass es wie folgt aussieht:
+1. Bearbeiten Sie den Einstiegspunkt `my_api/index.php` so, dass er wie folgt aussieht:
 
    ```php
      <?php

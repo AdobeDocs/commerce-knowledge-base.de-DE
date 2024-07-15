@@ -1,18 +1,19 @@
 ---
-title: "ACSD-57315: Neue Transaktion wird erstellt in [!DNL PayPal Payflow Pro] jedes Mal, wenn auf die Schaltfläche zum Abrufen geklickt wird."
-description: Wenden Sie den Patch ACSD-57315 an, um das Adobe Commerce-Problem zu beheben, bei dem eine neue Transaktion in [!DNL PayPal Payflow Pro] jedes Mal, wenn auf die Schaltfläche "Abruf"im Bildschirm "Transaktionen anzeigen"im [!UICONTROL Admin].
+title: 'ACSD-57315: Neue Transaktion wird in [!DNL PayPal Payflow Pro] jedes Mal erstellt, wenn auf die Schaltfläche zum Abrufen geklickt wird.'
+description: Wenden Sie den Patch ACSD-57315 an, um das Adobe Commerce-Problem zu beheben, bei dem eine neue Transaktion in [!DNL PayPal Payflow Pro] jedes Mal erstellt wird, wenn auf dem Bildschirm "Ansichtstransaktion"im [!UICONTROL Admin] auf die Schaltfläche "Abruf"geklickt wird.
 feature: Payments
 role: Admin, Developer
-source-git-commit: b7f85e4fdb7ef4a6328a1a411dac765dd8da083e
+exl-id: bcc7467d-09f9-4235-9f9f-46d3034567b8
+source-git-commit: d7ace1f20defb01105d4a241f971b06fca052215
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
-# ACSD-57315: Neue Transaktion wird in erstellt [!DNL PayPal Payflow Pro] jedes Mal, wenn auf die Schaltfläche zum Abrufen geklickt wird
+# ACSD-57315: Jedes Mal, wenn auf die Schaltfläche zum Abrufen geklickt wird, wird eine neue Transaktion in [!DNL PayPal Payflow Pro] erstellt
 
-Der Patch ACSD-57315 behebt das Problem, dass eine neue Transaktion in erstellt wird. [!DNL PayPal Payflow Pro] jedes Mal, wenn auf die Schaltfläche &quot;Abruf&quot;im Bildschirm &quot;Transaktionen anzeigen&quot;im [!UICONTROL Admin]. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.48 ist installiert. Die Patch-ID ist ACSD-57315. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.5.0 behoben sein soll.
+Der Patch ACSD-57315 behebt das Problem, dass bei jedem Klick auf die Schaltfläche &quot;Abruf&quot;auf dem Bildschirm &quot;View transaction&quot;im [!UICONTROL Admin] eine neue Transaktion in [!DNL PayPal Payflow Pro] erstellt wird. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.48 installiert ist. Die Patch-ID ist ACSD-57315. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.5.0 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -26,20 +27,20 @@ Der Patch ACSD-57315 behebt das Problem, dass eine neue Transaktion in erstellt 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Eine neue Transaktion wird in [!DNL PayPal Payflow Pro] jedes Mal, wenn auf die Schaltfläche &quot;Abruf&quot;im Bildschirm &quot;Transaktionen anzeigen&quot;im [!UICONTROL Admin].
+Jedes Mal, wenn auf die Schaltfläche &quot;Abruf&quot;im Bildschirm &quot;Transaktionen anzeigen&quot;in [!UICONTROL Admin] geklickt wird, wird eine neue Transaktion in [!DNL PayPal Payflow Pro] erstellt.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Konfigurieren [!DNL PayPal Payflow Pro].
+1. Konfigurieren Sie [!DNL PayPal Payflow Pro].
 1. Setzen Sie die Transaktionsmethode auf *[!UICONTROL Sale]*.
-1. Platzieren Sie eine Bestellung mithilfe von *Kreditkarte*.
-1. Öffnen Sie die Transaktion von [!UICONTROL Admin].
-1. Klicken Sie auf **[!UICONTROL Fetch]** Schaltfläche.
-1. Überprüfen [!DNL PayPal] für Transaktionen im Zusammenhang mit der aufgegebenen Bestellung.
+1. Platzieren Sie eine Bestellung mit *Kreditkarte*.
+1. Öffnen Sie die Transaktion über &quot;[!UICONTROL Admin]&quot;.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Fetch]** .
+1. Überprüfen Sie das [!DNL PayPal]-Konto auf Transaktionen im Zusammenhang mit der platzierten Bestellung.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -53,14 +54,14 @@ Ein neuer Zahlungsvorgang wird für eine bereits bezahlte Bestellung erstellt.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

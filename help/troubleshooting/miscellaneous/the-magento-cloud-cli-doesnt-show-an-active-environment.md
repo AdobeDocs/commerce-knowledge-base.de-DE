@@ -1,6 +1,6 @@
 ---
-title: Magento-cloud [!DNL CLI] zeigt keine aktive Umgebung an
-description: In diesem Artikel wird ein bekanntes Adobe Commerce-Problem beschrieben, bei dem die Magento-Cloud [!DNL CLI] (Befehlszeilen-Tool) zeigt keine aktive Umgebung an.
+title: '"Magento-cloud"zeigt keine aktive Umgebung an. [!DNL CLI] '
+description: In diesem Artikel wird ein bekanntes Adobe Commerce-Problem beschrieben, bei dem "Magento-cloud" [!DNL CLI]  (Befehlszeilen-Tool) keine aktive Umgebung anzeigt.
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Problem
 
-Es gibt mehrere aktive Umgebungen. Sie versuchen, mit einer Umgebung zu interagieren, indem Sie eine `Magento-cloud` [!DNL CLI] (Befehlszeilen-Tool). (Beispiel: `ssh`, `db:size`, `db:sql`usw.)
+Es gibt mehrere aktive Umgebungen. Sie versuchen, mit einer Umgebung zu interagieren, indem Sie einen Befehl `Magento-cloud` [!DNL CLI] (Befehlszeilen-Tool) ausführen. (Beispiel: `ssh`, `db:size`, `db:sql` usw.)
 Die Aufforderung zur Auswahl der gewünschten Umgebung listet diese Umgebung jedoch nicht auf. (Beispiel: die Integrationsumgebung)
 
 ```
@@ -34,7 +34,7 @@ Die Umgebung ist möglicherweise nicht verfügbar, da eine Implementierung ausge
 
 ## Lösung
 
-Sie müssen die Umgebung manuell mit der `e|-environment` Markierung.
+Sie müssen die Umgebung manuell mit dem Flag `e|-environment` angeben.
 
 1. Suchen Sie die Liste der aktiven Umgebungen und notieren Sie sich die Umgebungsnamen:
 

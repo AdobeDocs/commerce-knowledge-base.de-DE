@@ -26,9 +26,9 @@ Benutzer können keine Produkte zum Warenkorb hinzufügen, wenn die Option Länd
 <u>Zu reproduzierende Schritte</u>:
 
 1. Melden Sie sich bei Commerce Admin an.
-1. Navigieren Sie zu **Store** > **Konfiguration** > **Allgemein** > **Länderoptionen**
-1. Aufheben der Auswahl aller Optionen unter **Länder zulassen** -Feld.
-1. Klicks **Konfiguration speichern** , um die Konfiguration zu speichern.
+1. Wechseln Sie zu **Store** > **Konfiguration** > **Allgemein** > **Länderoptionen** .
+1. Heben Sie die Auswahl aller Optionen im Feld **Länder zulassen** auf.
+1. Klicken Sie auf **Konfiguration speichern** , um die Konfiguration zu speichern.
 1. Gehen Sie zur Storefront und versuchen Sie, dem Warenkorb ein Produkt hinzuzufügen.
 
 <u>Erwartetes Ergebnis:</u>
@@ -51,7 +51,7 @@ customer-data.js:87 Uncaught Error: [object Object]
 
 ## Ursache
 
-Die Adobe Commerce-Konfiguration ruft ab `null` , wenn eine Mehrfachauswahl-Konfiguration keine ausgewählten Elemente enthält. Diese Konfiguration, wenn sie in PHP-Versionen vor 8.1 erfolgreich weiterverarbeitet wurde. In PHP 8.1 funktioniert es jedoch aufgrund der Fehler, die durch die &quot;[Veraltete Übergabe von null an nicht nullbare Argumente interner Funktionen in PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)&quot;.
+Die Adobe Commerce-Konfiguration ruft `null` ab, wenn in einer Multiselect-Konfiguration keine Elemente ausgewählt sind. Diese Konfiguration, wenn sie in PHP-Versionen vor 8.1 erfolgreich weiterverarbeitet wurde. In PHP 8.1 funktioniert es jedoch nicht richtig, da die Fehler durch die &quot;[Deprecate&quot;-Übergabe von null an nicht nullbare Argumente der internen Funktionen in PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg) verursacht werden.
 
 ## Lösungen
 
@@ -61,8 +61,8 @@ Um das Problem zu beheben, wenden Sie den folgenden Patch an:
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank für Anleitungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Nützliche Links
 
-[Anwenden benutzerdefinierter Patches auf Adobe Commerce in der Cloud-Infrastruktur](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+[Wenden Sie benutzerdefinierte Patches auf Adobe Commerce in der Cloud-Infrastruktur an](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.

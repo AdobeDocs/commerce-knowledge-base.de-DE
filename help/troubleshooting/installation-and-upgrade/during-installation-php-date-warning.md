@@ -25,4 +25,4 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 ### Lösung {#solution}
 
-Überprüfen Sie die Einstellung der PHP-Zeitzone sorgfältig. Siehe Abschnitt [Installationsanleitung > PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) in unserer Entwicklerdokumentation.
+Überprüfen Sie die Einstellung der PHP-Zeitzone sorgfältig. Weitere Informationen finden Sie in unserer Entwicklerdokumentation unter [Installationshandbuch > PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) .

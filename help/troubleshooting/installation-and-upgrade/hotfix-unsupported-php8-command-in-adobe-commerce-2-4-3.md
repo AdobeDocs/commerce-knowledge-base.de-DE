@@ -26,7 +26,7 @@ Das Problem wird in den Versionen 2.4.4, 2.4.3-p1 und 2.3.7-p2 behoben.
 
 ## Problem
 
-Das Problem wird durch die neuen Adobe Commerce-Versionen 2.4.3 und 2.3.7-p1 verursacht, die nur PHP 8 verwenden `str_contains`. Adobe Commerce 2.4.3 und 2.3.7-p1 sind nur mit PHP 7.4 kompatibel, sodass diese Funktion nicht verwendet werden kann.
+Das Problem wird durch die neuen Adobe Commerce-Versionen 2.4.3 und 2.3.7-p1 verursacht, die nur PHP 8 verwenden und die Funktion `str_contains` verwenden. Adobe Commerce 2.4.3 und 2.3.7-p1 sind nur mit PHP 7.4 kompatibel, sodass diese Funktion nicht verwendet werden kann.
 
 <u>Zu reproduzierende Schritte</u> :
 
@@ -36,13 +36,13 @@ Versuchen Sie, auf Adobe Commerce 2.4.3 oder 2.3.7-p1 zu aktualisieren.
 
 Erfolgreiches Upgrade.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 PHP fatal error.
 
 ## Lösung
 
-Als Problemumgehung führen Sie den folgenden Befehl in der CLI/Terminal aus: `composer require symfony/polyfill-php80` aus dem Magento-Stammordner oder installieren Sie einen Composer-Patch.
+Als Problemumgehung führen Sie den folgenden Befehl im CLI/Terminal aus: `composer require symfony/polyfill-php80` aus dem Magento-Stammordner aus oder installieren Sie einen Composer-Patch.
 
 Um das Problem für 2.4.3 zu beheben, sollten Adobe Commerce (alle Bereitstellungsmethoden) und Magento Open Source Merchants einen Patch anwenden:
 
@@ -54,7 +54,7 @@ Um das Problem für 2.3.7-p1 zu beheben, sollten Adobe Commerce (alle Bereitstel
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Magento bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Magento](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Verwandte Informationen
 

@@ -23,12 +23,12 @@ Dieser Artikel bietet eine Lösung für Probleme bei der Bereitstellung von Adob
 
 <u>Voraussetzungen</u>:
 
-Die Cloud-Lizenz ist mit Kontakt A (E-Mail-Adresse: *<u>first@e.mail</u>*)
+Die Cloud-Lizenz ist mit Kontakt A verknüpft (E-Mail-Adresse: *<u>first@e.mail</u>*)
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Kontakt Ein erstellter Adobe Commerce-Zugriffsschlüssel auf seinem Konto (Schlüssel X) und dessen Installation in der Cloud.
-1. Kontakt B (E-Mail-Adresse: *<u>second@e.mail</u>*) eine Erweiterung über sein Konto erworben und die Zugriffsschlüssel für die Installation der Erweiterung erstellt haben (Schlüssel Y).
+1. Kontakt B (E-Mail-Adresse: *<u>second@e.mail</u>*) hat eine Erweiterung über sein Konto gekauft und die Zugriffsschlüssel für die Installation der Erweiterung erstellt (Schlüssel Y).
 1. Kontakt A verließ dann das Unternehmen, und die Lizenz (Eigentum) wurde dann an Kontakt B übertragen.
 1. Der Systemintegrator versucht, die Erweiterung mithilfe von Schlüssel X in der Cloud-Umgebung zu installieren.
 
@@ -50,18 +50,18 @@ Wenn eine Bereitstellung fehlschlug, nachdem eine Änderung am Primären Kontakt
 
 ### Deaktivieren des Zugriffsschlüssels
 
-Wenn Sie keinen Zugriff auf die [Commerce Marketplace](https://marketplace.magento.com/) Konto, das mit dem alten Schlüssel verknüpft ist, [Adobe Commerce Support kontaktieren](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , damit der Schlüssel deaktiviert wird.
+Wenn Sie keinen Zugriff auf das mit dem alten Schlüssel verknüpfte [Commerce Marketplace](https://marketplace.magento.com/)-Konto haben, wenden Sie sich an den Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), damit der Schlüssel deaktiviert wird.[
 
 Wenn Sie Zugriff auf das mit dem alten Schlüssel verknüpfte Marketplace-Konto haben, führen Sie die folgenden Schritte aus, um den Schlüssel zu deaktivieren:
 
-1. Melden Sie sich bei [Commerce Marketplace](https://marketplace.magento.com/) mit den Anmeldedaten des alten Kontos.
-1. Klicken Sie oben rechts auf der Seite auf den Kontonamen und wählen Sie **Mein Profil**.
-1. Klicks **Zugriffsschlüssel** auf der Registerkarte Marketplace .
+1. Melden Sie sich mit den Anmeldedaten des alten Kontos bei [Commerce Marketplace](https://marketplace.magento.com/) an.
+1. Klicken Sie oben rechts auf der Seite auf den Kontonamen und wählen Sie **Mein Profil** aus.
+1. Klicken Sie auf der Registerkarte &quot;Marketplace&quot;auf **Zugriffsschlüssel** .
 
    ![magento_products_access_keys_2.4.1.png](/help/troubleshooting/miscellaneous/assets/magento_products_access_keys_2.4.1.png)
 
-1. Klicks **Deaktivieren** neben dem Zugriffsschlüssel.
+1. Klicken Sie neben dem Zugriffsschlüssel auf **Deaktivieren** .
 
 ## Verwandtes Lesen
 
-* [Abrufen der Authentifizierungsschlüssel](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) in unserer Entwicklerdokumentation.
+* [Besorgen Sie sich Ihre Authentifizierungsschlüssel](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) in unserer Entwicklerdokumentation.

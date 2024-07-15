@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54324: GraphQL `requisition_lists` -Anfrage berücksichtigt keine Paginierungseinstellungen
+# ACSD-54324: GraphQL `requisition_lists`-Anfrage berücksichtigt keine Paginierungseinstellungen
 
-Der Patch ACSD-54324 behebt das Problem, bei dem der GraphQL `requisition_lists` -Anfrage berücksichtigt keine Paginierungseinstellungen und gibt alle Ergebnisse zurück. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.41 installiert ist. Die Patch-ID ist ACSD-54324. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-54324 behebt das Problem, dass bei der GraphQL `requisition_lists` -Anfrage keine Paginierungseinstellungen berücksichtigt werden und alle Ergebnisse zurückgegeben werden. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.41 installiert ist. Die Patch-ID ist ACSD-54324. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-54324 behebt das Problem, bei dem der GraphQL `requisition_lists`
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -37,10 +37,10 @@ Die GraphQL `requisition_lists` -Anfrage berücksichtigt keine Paginierungseinst
 
 1. Melden Sie sich bei Admin an und navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
 
-   * Satz *[!UICONTROL Enable Requisition List]* nach *Ja*.
+   * Setzen Sie *[!UICONTROL Enable Requisition List]* auf *Ja*.
 
-1. Melden Sie sich beim Frontend an und gehen Sie zu **[!UICONTROL My Requisition Lists]** über das obere Menü oder von **[!UICONTROL My Account]** und erstellen Sie mehrere Anforderungen (Beispiel: 7).
-1. Führen Sie nach dem Generieren eines Kunden-Tokens den folgenden GraphQL aus `requisition_lists` Abfrage für den Kunden.
+1. Melden Sie sich beim Frontend an, wechseln Sie vom oberen Menü oder von **[!UICONTROL My Account]** zu **[!UICONTROL My Requisition Lists]** und erstellen Sie mehrere Anforderungen (Beispiel: 7).
+1. Führen Sie nach dem Generieren eines Kunden-Tokens die folgende GraphQL `requisition_lists`-Abfrage für den Kunden aus.
 
    * Stellen Sie sicher, dass die Seitengröße kleiner ist als die Gesamtzahl der von Ihnen erstellten Anforderungslisten (Beispiel: 4)
 
@@ -57,31 +57,31 @@ Die GraphQL `requisition_lists` -Anfrage berücksichtigt keine Paginierungseinst
    }
    ```
 
-1. Beachten Sie, dass der Wert der `total_count` zeigt 7 an, wann 4 angezeigt werden sollte.
+1. Beachten Sie, dass der Wert des Felds `total_count` 7 anzeigt, wenn 4 angezeigt werden soll.
 
-   Die Anzahl der Elemente zeigt auch 7 an, wenn es mit der *Seitengröße*.
+   Die Anzahl der Elemente zeigt auch 7 an, wenn sie mit der *Seitengröße* übereinstimmen sollte.
 
 <u>Erwartete Ergebnisse</u>:
 
-* Die Zahl wird als *Seitengröße* zurückgegeben unter `total_count` und nicht die Gesamtzahl der Datensätze.
+* Die Zahl, die als *Seitengröße* aufgeführt ist, wird unter `total_count` und nicht unter der Gesamtzahl der Datensätze zurückgegeben.
 * Die Anzahl der Elemente entspricht der *Seitengröße*.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Gesamtzahl der Datensätze wird zurückgegeben unter `total_count`, auch wenn *Seitengröße* erwähnt.
+Die Gesamtzahl der Datensätze wird unter `total_count` zurückgegeben, selbst wenn *Seitengröße* angegeben ist.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

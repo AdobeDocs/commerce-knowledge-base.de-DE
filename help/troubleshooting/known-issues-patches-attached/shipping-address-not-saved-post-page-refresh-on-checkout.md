@@ -21,7 +21,7 @@ Kunden gehen zum Checkout und füllen alle Formulare einschließlich der Liefera
 
 <u>Zu reproduzierende Schritte</u> :
 
-**Voraussetzungen**: Die persistente Warenkorbfunktion ist aktiviert. Überprüfen Sie, ob es in Admin unter aktiviert ist. **Stores** > **Konfiguration** > **Kunden** oder **Stores** > **Konfiguration** > **Verkäufe,** abhängig von Ihrer Adobe Commerce-Version.
+**Voraussetzungen**: Die persistente Warenkorbfunktion ist aktiviert. Überprüfen Sie, ob es in Admin unter &quot;**Stores** > **Konfiguration** > **Kunden**&quot;oder &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**Vertrieb,**&quot;je nach Adobe Commerce-Version aktiviert ist.
 
 1. Gehen Sie zur Storefront.
 1. Fügen Sie Produkte zum Warenkorb hinzu.
@@ -47,7 +47,7 @@ Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach 
 
 ### Kompatible Adobe Commerce-Versionen
 
-**Der Patch wurde für erstellt:**
+**Der Patch wurde erstellt für:**
 
 * Adobe Commerce 2.2.3
 
@@ -61,6 +61,6 @@ Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach 
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

@@ -17,7 +17,7 @@ Dieser Artikel enthält Lösungen für das Problem fehlgeschlagener Bereitstellu
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 * Composer-Versionen 1.10.20 und niedriger
 
 >[!NOTE]
@@ -38,13 +38,13 @@ Veraltete Composer-Schlüssel verursachen Github-Token-Fehler, die zu fehlgeschl
 
 Um das Problem zu beheben, aktualisieren Sie Ihre Composer-Version auf Version 1.10.22:
 
-1. Führen Sie in Ihrer lokalen Umgebung `composer require “composer/composer”:”>1.10.21`.
-1. Dadurch wird die Anforderung für diese Composer-Paketversion hinzugefügt. Überprüfen Sie die Sperrdatei - `composer/composer` -Version muss 1.0.22 oder höher sein.
-1. Bestätigen `composer.json` und `composer.lock` und eine Bereitstellung per Push durchführen.
+1. Führen Sie in Ihrer lokalen Umgebung `composer require “composer/composer”:”>1.10.21` aus.
+1. Dadurch wird die Anforderung für diese Composer-Paketversion hinzugefügt. Überprüfen Sie die Sperrdatei - die Version `composer/composer` muss 1.0.22 oder höher sein.
+1. Setzen Sie `composer.json` und `composer.lock` ein und führen Sie eine Bereitstellung durch.
 
-Wenn diese Methode nicht funktioniert, bitte [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn diese Methode nicht funktioniert, senden Sie bitte [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Verwandtes Lesen
 
 * [GitHub-Blog: Hinter den neuen Authentifizierungstoken-Formaten von GitHub](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
-* [InfoQ.com News-Artikel: GitHub-Änderungstoken-Format zur Verbesserung der Identifizierbarkeit, Geheimen Scannen und Entropie](https://www.infoq.com/news/2021/04/github-new-token-format/)
+* [InfoQ.com News-Artikel: GitHub-Änderungs-Token-Format zur Verbesserung der Identifizierbarkeit, geheimen Scannen und Entropie](https://www.infoq.com/news/2021/04/github-new-token-format/)

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Der Patch MDVA-32694 behebt das Problem, dass es nicht möglich ist, ein gültiges Produkt in Admin zu einem verhandelbaren Angebot hinzuzufügen, das auf der nicht standardmäßigen Website erstellt wurde.
 
-Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.14 ist installiert. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.3 behoben werden soll.
+Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.14 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.3 behoben werden soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -29,7 +29,7 @@ Adobe Commerce über Cloud-Infrastruktur und Adobe Commerce vor Ort 2.3.0 - 2.3.
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -39,14 +39,14 @@ Installieren Sie eine neue Adobe Commerce-Instanz mit B2B.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **SPEICHER > Konfiguration > ALLGEMEIN > B2B-Funktionen** und aktivieren **Firma** und **B2B-Angebot**.
-1. Erstellen Sie zwei weitere Websites mit **Stores** und **stoviews** (Insgesamt sollten Sie über drei Websites verfügen: *base*, *website2*, *website3*).
-1. Erstellen Sie ein einfaches Produkt und weisen Sie es nur *website3*.
-1. Navigieren Sie zu **STORES > Alle Stores** und *website3* as **default**.
-1. Gehen Sie zum Frontend und erstellen Sie ein neues Unternehmen auf *website3*.
+1. Wechseln Sie zu **STORES > Konfiguration > ALLGEMEIN > B2B-Funktionen** und aktivieren Sie **Firma** und **B2B-Angebot**.
+1. Erstellen Sie zwei weitere Websites mit **stores** und **stoviews** (insgesamt sollten Sie über drei Websites verfügen: *base*, *website2*, *website3*).
+1. Erstellen Sie ein einfaches Produkt und weisen Sie es nur *website3* zu.
+1. Wechseln Sie zu **STORES > Alle Stores** und legen Sie *website3* auf **default** fest.
+1. Gehen Sie zum Frontend und erstellen Sie ein neues Unternehmen auf *Website3*.
 1. Fügen Sie das zuvor erstellte Produkt zum Warenkorb hinzu und erstellen Sie ein neues handelbares Angebot.
-1. Navigieren Sie zu **STORES > Alle Stores** und legen Sie &quot;*base*&quot;Website zurück als **default**.
-1. Navigieren Sie zu **SALES > Anführungszeichen > Offenes, zuvor erstelltes Zitat** und versuchen Sie, ihm dasselbe Produkt hinzuzufügen.
+1. Wechseln Sie zu **STORES > Alle Stores** und stellen Sie die Website &quot;*base*&quot;wieder auf **default** ein.
+1. Gehen Sie zu **VERKAUF > Angebote > Offenes, zuvor erstelltes Anführungszeichen** und versuchen Sie, dasselbe Produkt hinzuzufügen.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -64,14 +64,14 @@ This product is assigned to another website.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie in der [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

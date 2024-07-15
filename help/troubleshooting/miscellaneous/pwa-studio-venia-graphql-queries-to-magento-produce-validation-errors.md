@@ -37,19 +37,19 @@ Um zu testen, ob Ihre Abfragen aktuell sind, führen Sie den folgenden Befehl im
 yarn run validate-queries
 ```
 
-Dadurch wird ein Kompatibilitätsbericht angezeigt. Wenn Sie Inkompatibilitäten haben, müssen Sie Ihr PWA Studio oder Ihre Adobe Commerce-Instanz aktualisieren. Überprüfen Sie die [Adobe Commerce-Kompatibilitätsmatrix](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/version-compatibility/) um zu sehen, welche Versionen Sie benötigen.
+Dadurch wird ein Kompatibilitätsbericht angezeigt. Wenn Sie Inkompatibilitäten haben, müssen Sie Ihr PWA Studio oder Ihre Adobe Commerce-Instanz aktualisieren. Überprüfen Sie die [Adobe Commerce-Kompatibilitätsmatrix](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/version-compatibility/) , um zu sehen, welche Versionen genau Sie benötigen.
 
 Anweisungen zum Aktualisieren finden Sie in der folgenden Dokumentation:
 
-* Suchen Sie für PWA Studio-Upgrades nach dem Abschnitt &quot;Upgrade von einer früheren Version&quot;des [PWA-Versionshinweise](https://github.com/magento/pwa-studio/releases/) für die Version, auf die Sie aktualisieren müssen.
-* [Aktualisierung der Adobe Commerce-Version der Cloud-Infrastruktur](https://devdocs.magento.com/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation
+* Suchen Sie für PWA Studio-Upgrades im Abschnitt &quot;Upgrade von einer früheren Version&quot;der [PWA-Versionshinweise](https://github.com/magento/pwa-studio/releases/) nach der Version, auf die Sie ein Upgrade durchführen müssen.
+* [Aktualisieren Sie Adobe Commerce auf die Cloud-Infrastrukturversion](https://devdocs.magento.com/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation
 * [Aktualisieren Sie Adobe Commerce lokal (installiert mit &quot;Composer create-project&quot;oder &quot;archive&quot;)](https://devdocs.magento.com/guides/v2.3/comp-mgr/cli/cli-upgrade.html) in unserer Entwicklerdokumentation
-* [Vor Ort Aktualisierung von Adobe Commerce (installiert durch Klonen von Adobe Commerce Repo)](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/dev_update-magento.html) in unserer Entwicklerdokumentation
+* [Aktualisieren Sie Adobe Commerce lokal (installiert durch Klonen von Adobe Commerce Repo)](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/dev_update-magento.html) in unserer Entwicklerdokumentation
 
 ## Verwandtes Lesen
 
-* [PWA Studio: Webpack hängt vor Beginn der Kompilierung](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md) in unserer Wissensdatenbank
-* [PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md) in unserer Wissensdatenbank
-* [PWA Studio: Browser zeigt den Fehler &quot;Proxy zu nicht möglich&quot;an](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md) in unserer Wissensdatenbank
-* [Konfigurieren von NPM für die Verwendung von PWA Studio](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md) in unserer Wissensdatenbank
+* [PWA Studio: Der Webpack hängt vor Beginn der Kompilierung](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md) in unserer Support-Wissensdatenbank
+* [PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md) in unserer Support-Wissensdatenbank
+* [PWA Studio: Browser zeigt in unserer Support-Wissensdatenbank &quot;Kann nicht auf&quot;Fehler](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md) an
+* [Konfigurieren Sie NPM so, dass es PWA Studio](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md) in unserer Support-Wissensdatenbank verwenden kann.
 * [PWA für Adobe Commerce-Dokumentation](https://magento.github.io/pwa-studio/)

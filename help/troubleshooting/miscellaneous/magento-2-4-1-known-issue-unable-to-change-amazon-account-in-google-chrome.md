@@ -27,16 +27,16 @@ Kunden können sich bei den zuvor verwendeten Amazon-Konten anmelden, anstatt si
 <u>Zu reproduzierende Schritte:</u>
 
 1. Fügen Sie in der Storefront einen Artikel zum Warenkorb hinzu und fahren Sie mit dem Checkout fort.
-1. Klicken Sie auf **Amazon Pay** Schaltfläche. Amazon.com Anmeldung wird angezeigt.
+1. Klicken Sie auf die Schaltfläche **Amazon Pay** . Amazon.com Anmeldung wird angezeigt.
 1. Melden Sie sich beim Amazon-Konto an.
-1. Adresse auswählen und auf **Nächste**.
+1. Wählen Sie eine Adresse aus und klicken Sie auf **Weiter**.
 1. Wählen Sie die Zahlungsmethode aus.
-1. Klicks **Reihenfolge**.
+1. Klicken Sie auf **Bestellung platzieren**.
 1. Gehen Sie zurück zur Startseite und melden Sie sich beim Store-Konto an.
 1. Fügen Sie dem Warenkorb erneut einen Artikel hinzu und fahren Sie mit dem Checkout fort.
-1. Klicken Sie auf **Amazon Pay** Schaltfläche.
+1. Klicken Sie auf die Schaltfläche **Amazon Pay** .
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Sie werden automatisch erneut beim zuvor verwendeten Amazon-Konto (Schritt 3) angemeldet.
 
@@ -48,7 +48,7 @@ Amazon.com Melden Sie sich in einem Popup an und Sie können sich anmelden oder 
 
 Das Problem kann in einer der folgenden Situationen auftreten:
 
-* Wenn die Variable `SameSite` Cookie-Wert ist `LAX`festgelegt ist, wird das Cookie nicht als Teil von Drittanbieter-Aufrufen gesendet.
+* Wenn der Cookie-Wert `SameSite` den Wert `LAX` aufweist, wird das Cookie nicht als Teil von Aufrufen von Drittanbietern gesendet.
 * Die Mozilla Firefox-Funktion zur Inhaltsblockierung verhindert, dass Drittanbieter die Aktivitäten von Browserbenutzern verfolgen, indem sie die Nutzung von Skripten und clientseitigen Speichermechanismen blockiert. Firefox verwendet einen externen Anbieter, &quot;Disconnect.me&quot;, um eine Liste der zu blockierenden Tracking-Sites bereitzustellen. Amazon Pay verwendet einen iframe auf einer Drittanbieter-Website, um nach der Anmeldung ein Zugriffstoken zurückzugeben und das Widget Adresse und Geldbörse anzuzeigen. Mit der Funktion zur Inhaltsblockierung werden iFrame-Ladeanfragen für Amazon Pay als Tracking-Anfragen von Drittanbietern betrachtet und blockiert, sodass der Käufer mit dem Checkout nicht fortfahren kann.
 * Situationen, in denen Drittanbieter-Cookies oder JS explizit vom Browser blockiert werden.
 

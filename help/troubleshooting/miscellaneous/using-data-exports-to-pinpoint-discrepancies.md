@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Verwendung von Datenexporten zur Ermittlung von Diskrepanzen
 
-Dieser Artikel bietet Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool zum Vergleichen Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu erkennen, insbesondere wenn die Variable [Checkliste für die Datendiskrepanz-Diagnose](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md) Ich habe dir nicht dabei geholfen, das Problem zu bestimmen. Dieser Artikel führt Sie durch ein echtes Beispiel dafür, wie Datendiskrepanzen mithilfe von Datenexporten ermittelt werden können.
+Dieser Artikel bietet Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool zum Vergleichen Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu erkennen, insbesondere wenn die [Checkliste zur Diagnose von Datendiskrepanzen](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md) nicht bei der Ermittlung des Problems hilfreich war. Dieser Artikel führt Sie durch ein echtes Beispiel dafür, wie Datendiskrepanzen mithilfe von Datenexporten ermittelt werden können.
 
 Nehmen wir diese Analyse beispielsweise:
 
 ![](assets/Exports_Discrepancies_1.png)
 
-Im November 2014 gibt es einen verdächtigen Tiefpunkt. 500.780,94 $ Umsatz? Das klingt nicht richtig. Sie haben bestätigt, dass in Ihrer Quelldatenbank mehr Umsatz angezeigt wird für den Monat November 2014, und Sie haben überprüft, dass die Variable **Umsatz** -Metrik, die in diesem Bericht verwendet wird, korrekt definiert ist. Die Daten im Data Warehouse von Magento BI sind anscheinend unvollständig und können mithilfe eines Datenexports bestätigt werden.
+Im November 2014 gibt es einen verdächtigen Tiefpunkt. 500.780,94 $ Umsatz? Das klingt nicht richtig. Sie haben bestätigt, dass in Ihrer Quelldatenbank mehr Umsatz für den Monat November 2014 angezeigt wird, und Sie haben überprüft, ob die in diesem Bericht verwendete Metrik **Umsatz** korrekt definiert ist. Die Daten im Data Warehouse von Magento BI sind anscheinend unvollständig und können mithilfe eines Datenexports bestätigt werden.
 
 ## Daten exportieren {#export}
 
@@ -29,13 +29,13 @@ Klicken Sie zunächst auf das Zahnrad oben rechts im Diagramm und dann im Dropdo
 
 Im Menü &quot;Rohdatenexport&quot;können Sie die zu exportierende Tabelle zusammen mit den Spalten auswählen, die in den Export einbezogen werden sollen. Filter können auch auf die Ergebnismenge angewendet werden.
 
-In unserem Beispiel wird die **Umsatz** -Metrik verwendet, verwendet in diesem Bericht die **order\_total** im Feld definiert **Bestellungen** -Tabelle mithilfe der **date** als Zeitstempel. In unserem Export möchten wir alle **order\_id** -Werte für November 2014 und ihre **order\_total** . Die **Umsatz** -Metrik verwendet keine Filter, aber wir fügen dem Export einen Filter hinzu, um den Ergebnissatz auf November 2014 zu begrenzen.
+In unserem Beispiel verwendet die für diesen Bericht verwendete Metrik **Umsatz** das Feld **Bestellung\_insgesamt** , das in der Tabelle **Bestellungen** definiert wurde, wobei **Datum** als Zeitstempel verwendet wird. In unserem Export möchten wir alle **order\_id** -Werte für November 2014 und deren **order\_total** einbeziehen. Die Metrik **Umsatz** verwendet keine Filter, aber wir fügen dem Export einen Filter hinzu, um den Ergebnissatz auf nur November 2014 zu begrenzen.
 
 So sieht das Menü &quot;Rohdatenexport&quot;für dieses Beispiel aus:
 
 ![](assets/Exports_Discrepancies_2.png)
 
-Klicken Sie auf Daten exportieren , um den Export zu starten. Daraufhin wird ein Fenster mit Details zum Export einschließlich des Status angezeigt. Das Vorbereiten des Exports dauert einige Minuten. Dies ist nun eine gute Zeit, um einen analogen Extrakt unserer Quelldaten für November 2014 durchzuführen, einschließlich **date, order\_id** und die **order\_total** . Wir werden diese Datei in Excel öffnen und sie hochlassen, da wir gleich darauf zurückkommen werden.
+Klicken Sie auf Daten exportieren , um den Export zu starten. Daraufhin wird ein Fenster mit Details zum Export einschließlich des Status angezeigt. Das Vorbereiten des Exports dauert einige Minuten. Dies ist jetzt eine gute Zeit, einen analogen Auszug unserer Quelldaten für November 2014 auszuführen, einschließlich **Datum, Bestellung\_id** und **Bestellung\_total** . Wir werden diese Datei in Excel öffnen und sie hochlassen, da wir gleich darauf zurückkommen werden.
 
 Wenn die Schaltfläche Herunterladen im Fenster Rohdatenexporte angezeigt wird, klicken Sie darauf, um die ZIP-Datei mit der CSV-Datei herunterzuladen.
 
@@ -49,13 +49,13 @@ Da sich alle Daten an einem Ort befinden, können wir nach der Quelle der Diskre
 
 ### Beide Arbeitsblätter enthalten die gleiche Anzahl von Zeilen.
 
-Wenn beide Systeme dieselbe Zeilenanzahl aufweisen und die **Umsatz** die Metrik nicht mit den Quelldaten übereinstimmt, wird die **order\_total** muss irgendwo weg sein. Es ist möglich, dass die **order\_total** -Feld wurde in Ihrer Quelldatenbank aktualisiert und Magento BI übernimmt diese Änderungen nicht.
+Wenn beide Systeme dieselbe Zeilenanzahl aufweisen und die Metrik **Umsatz** nicht mit den Quelldaten übereinstimmt, muss sich die Metrik **order\_total** irgendwo befinden. Es ist möglich, dass das Feld **order\_total** in Ihrer Quelldatenbank aktualisiert wurde und Magento BI diese Änderungen nicht übernimmt.
 
-Um dies zu bestätigen, prüfen Sie, ob die Variable **order\_total** -Spalte wird erneut überprüft. Gehen Sie zum Data Warehouse-Manager und klicken Sie auf die Bestelltabelle. Du wirst die [Wiederholungsfrequenz](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) in der Liste &quot;Änderungen?&quot; Spalte. Die **order\_total** -Feld so oft wie erwartet erneut überprüft werden. Ist dies nicht der Fall, starten Sie den Vorgang und stellen Sie ihn auf die gewünschte Häufigkeit ein.
+Um dies zu bestätigen, überprüfen Sie, ob die Spalte **order\_total** erneut überprüft wird. Gehen Sie zum Data Warehouse-Manager und klicken Sie auf die Bestelltabelle. Sie sehen die [Überprüfungsfrequenz](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) in den &quot;Änderungen?&quot; Spalte. Das Feld **order\_total** sollte so oft wieder überprüft werden, wie es sich voraussichtlich ändern wird. Ist dies nicht der Fall, fahren Sie fort und legen Sie es auf die gewünschte Wiederholungshäufigkeit fest.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
-Wenn die Überprüfungsfrequenz bereits korrekt eingestellt ist, ist etwas Anderes falsch. Siehe Abschnitt [Supportbereich kontaktieren](#support) am Ende dieses Artikels für die nächsten Schritte.
+Wenn die Überprüfungsfrequenz bereits korrekt eingestellt ist, ist etwas Anderes falsch. Die nächsten Schritte finden Sie im Abschnitt [Support kontaktieren](#support) am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält mehr Zeilen als Magento BI. {#morerows}
 
@@ -63,17 +63,17 @@ Wenn die Quelldatenbank mehr Zeilen als Magento BI enthält und die Lücke grö�
 
 Navigieren Sie zur Seite Verbindungen und sehen Sie sich den Status der Datenquelle an, die die Bestelltabelle enthält:
 
-1. **Wenn der Status Re-auth lautet** , verwendet die Verbindung nicht die richtigen Anmeldeinformationen. Klicken Sie auf die Verbindung, geben Sie die richtigen Anmeldeinformationen ein und versuchen Sie es erneut.
-1. **Wenn der Status Fehlgeschlagen ist** , wird die Verbindung möglicherweise nicht ordnungsgemäß auf der Serverseite eingerichtet. Fehlgeschlagene Verbindungen entstehen normalerweise durch einen falschen Hostnamen oder den Zielserver, der keine Verbindungen am angegebenen Port akzeptiert. Klicken Sie auf die Verbindung und überprüfen Sie die Rechtschreibung des Hostnamens und vergewissern Sie sich, dass der richtige Port eingegeben wurde. Stellen Sie auf der Serverseite sicher, dass der Port Verbindungen akzeptieren kann und dass Ihre Firewall die Magento BI IP-Adresse (54.88.76.97/32) wie erlaubt hat. **Wenn die Verbindung weiterhin fehlschlägt** , siehe [Supportbereich kontaktieren](#support) am Ende dieses Artikels für die nächsten Schritte.
-1. **Wenn der Status erfolgreich ist** , dann ist die Verbindung nicht das Problem und der RJ-Support muss beteiligt werden. Siehe Abschnitt [Supportbereich kontaktieren](#support) am Ende dieses Artikels für die nächsten Schritte.
+1. **Wenn der Status Neu auth** lautet, verwendet die Verbindung nicht die richtigen Anmeldeinformationen. Klicken Sie auf die Verbindung, geben Sie die richtigen Anmeldeinformationen ein und versuchen Sie es erneut.
+1. **Wenn der Status Fehlgeschlagen** lautet, wird die Verbindung möglicherweise nicht ordnungsgemäß auf der Serverseite eingerichtet. Fehlgeschlagene Verbindungen entstehen normalerweise durch einen falschen Hostnamen oder den Zielserver, der keine Verbindungen am angegebenen Port akzeptiert. Klicken Sie auf die Verbindung und überprüfen Sie die Rechtschreibung des Hostnamens und vergewissern Sie sich, dass der richtige Port eingegeben wurde. Stellen Sie auf der Serverseite sicher, dass der Port Verbindungen akzeptieren kann und dass Ihre Firewall die Magento BI IP-Adresse (54.88.76.97/32) wie erlaubt hat. **Wenn die Verbindung weiterhin fehlschlägt** , finden Sie die nächsten Schritte im Abschnitt [Support kontaktieren](#support) am Ende dieses Artikels.
+1. **Wenn der Status erfolgreich** lautet, ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte finden Sie im Abschnitt [Support kontaktieren](#support) am Ende dieses Artikels.
 
 ## Die Quelldatenbank verfügt über FEWER-Zeilen als Magento BI {#lessrows}
 
-Wenn die Quelldatenbank weniger Zeilen enthält als Magento BI, können Zeilen aus der Quelldatenbank gelöscht werden und Magento BI übernimmt diese Löschungen nicht. ** [Daten löschen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe logistischer Kopfschmerzen führen. Daher empfehlen wir dringend, Daten nur dann zu löschen, wenn sie wirklich erforderlich sind.
+Wenn die Quelldatenbank weniger Zeilen enthält als Magento BI, können Zeilen aus der Quelldatenbank gelöscht werden und Magento BI übernimmt diese Löschungen nicht. ** [Das Löschen von Daten](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe logistischer Kopfschmerzen** führen. Daher empfehlen wir dringend, Daten nur dann zu löschen, wenn sie wirklich erforderlich sind.
 
 Wenn jedoch Zeilen aus der Tabelle gelöscht werden, sollten Sie sich die Häufigkeit des erneuten Zugriffs auf den Primärschlüssel ansehen. Eine erneute Überprüfung des Primärschlüssels bedeutet, dass die Tabelle auf gelöschte Zeilen überprüft wird.
 
-Im Data Warehouse-Manager werden die Primärschlüsselspalten mit einem Schlüsselsymbol markiert. In unserem Beispiel ist der Primärschlüssel die **order\_id** column:
+Im Data Warehouse-Manager werden die Primärschlüsselspalten mit einem Schlüsselsymbol markiert. In unserem Beispiel ist der Primärschlüssel die Spalte **order\_id**:
 
 ![](assets/Export_Discrepancies_3.png)
 
@@ -83,11 +83,11 @@ Wenn der Primärschlüssel bereits auf eine erneute Überprüfung eingestellt is
 
 Wenn Sie nicht in der Lage sind, die Ursache des Problems zu bestimmen, müssen Sie den RJ-Support einbinden. Bevor Sie ein Ticket einreichen, gehen Sie wie folgt vor:
 
-* **Wenn Ihre Quelldatenbank und Magento BI über dieselbe Anzahl von Zeilen verfügen** und die Überprüfungsfrequenzen korrekt eingestellt sind, führen Sie eine VLOOKUP in Ihrer Tabelle durch. **um zu ermitteln, welche order\_id-Werte einen anderen order\_total -Wert zwischen Magento BI und Ihrer Quelldatenbank haben.** Fügen Sie diese Werte bei, wenn Sie Ihr Ticket übermitteln.
-* **Wenn Ihre Quelldatenbank mehr Zeilen als Magento BI enthält** und die Verbindung als erfolgreich angezeigt wird oder weiterhin fehlschlägt, müssen wir den Namen der Verbindung und die Fehlermeldung kennen, die Sie sehen, sofern vorhanden.
-* **Wenn Ihre Quelldatenbank über FEWER-Zeilen als Magento BI verfügt,** Zeilen werden nicht aus der Tabelle gelöscht, und die Überprüfungsfrequenzen werden korrekt eingestellt, führen Sie eine VLOOKUP in Ihrer Tabelle durch. **um zu finden, welche order\_id-Werte in Magento BI vorhanden sind** aber nicht in Ihrer Quelldatenbank. Fügen Sie diese Werte bei, wenn Sie Ihr Ticket übermitteln.
+* **Wenn Ihre Quelldatenbank und Magento BI dieselbe Anzahl von Zeilen haben** und die Häufigkeit der erneuten Überprüfungen korrekt eingestellt sind, führen Sie einen VLOOKUP in Ihrem Arbeitsblatt **durch, um zu ermitteln, welche order\_id-Werte einen anderen order\_total -Wert zwischen Magento BI und Ihrer Quelldatenbank aufweisen.** Schließen Sie diese Werte ein, wenn Sie Ihr Ticket übermitteln.
+* **Wenn Ihre Quelldatenbank mehr Zeilen als Magento BI** enthält und die Verbindung als erfolgreich angezeigt wird oder weiterhin fehlschlägt, müssen wir den Namen der Verbindung und die Fehlermeldung, die Sie sehen, kennen, sofern vorhanden.
+* **Wenn Ihre Quelldatenbank über FEWER-Zeilen als Magento BI verfügt, werden** Zeilen nicht aus der Tabelle gelöscht und die Häufigkeit der Überprüfung korrekt eingestellt, führen Sie eine VLOOKUP in Ihrem Arbeitsblatt **durch, um zu ermitteln, welche order\_id-Werte sich in Magento BI**, aber nicht in Ihrer Quelldatenbank befinden. Fügen Sie diese Werte bei, wenn Sie Ihr Ticket übermitteln.
 
 ## Verwandte
 
 * [Checkliste für die Diagnose von Datendiskrepanzen](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
-* [Senden eines Tickets zur Datendiskrepanz](https://support.magento.com/hc/en-us/articles/360016506472-Submitting-a-data-discrepancy-ticket)
+* [Senden eines Tickets wegen einer Datendiskrepanz](https://support.magento.com/hc/en-us/articles/360016506472-Submitting-a-data-discrepancy-ticket)

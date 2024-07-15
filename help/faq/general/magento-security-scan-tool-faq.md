@@ -40,14 +40,14 @@ Das Sicherheitsscan-Tool ist kostenlos. Händler müssen einen Haftungsausschlus
 
 ## Wie funktioniert das Sicherheitsscan-Tool? {#how-does-the-magento-security-scan-tool-work}
 
-Das Sicherheitsscan-Tool ist webbasiert und kann über das Online-Adobe Commerce-Konto des Händlers aufgerufen werden ([account.magento.com](https://account.magento.com/)). Die Sicherheitsprüfung erfolgt über HTTP und HTTPS. Es sucht nach bekannten Sicherheitsproblemen und erkennt fehlende Adobe Commerce-Patches und -Updates.
+Das Sicherheitsscan-Tool ist webbasiert und kann über das Online-Adobe Commerce-Konto des Händlers ([account.magento.com](https://account.magento.com/)) aufgerufen werden. Die Sicherheitsprüfung erfolgt über HTTP und HTTPS. Es sucht nach bekannten Sicherheitsproblemen und erkennt fehlende Adobe Commerce-Patches und -Updates.
 
 ## Wie melde ich mich für die Verwendung des Sicherheits-Scan-Tools an? {#how-do-i-sign-up-to-use-the-magento-security-scan-tool}
 
-Händler können sich registrieren, um mit dem Security Scan Tool ihre Webstores über ihr Adobe Commerce-Konto zu scannen ([account.magento.com](https://account.magento.com)). Klicken Sie auf den Link, um sich für das Sicherheitsscan-Tool zu registrieren. [here](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
+Händler können sich registrieren, um mit dem Sicherheitsscan-Tool ihre Webstores über ihr Adobe Commerce-Konto ([account.magento.com](https://account.magento.com)) zu überprüfen. Folgen Sie dem Link zur Anmeldung für das Sicherheitsscan-Tool [hier](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
 
 ## Was mache ich, wenn ich im Scan-Bericht auf ein falsch-positives Ergebnis treffe? {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
 Wir empfehlen unseren Händlern, alle fehlgeschlagenen Prüfungen zu untersuchen und geeignete Schritte zur Lösung solcher Probleme zu unternehmen. Wenn Händler nach der Untersuchung auf ein Überprüfungsergebnis stoßen, das als falsch positiv erscheint, bitten wir den Händler, Adobe zu benachrichtigen, geeignete Maßnahmen zu ergreifen.
 
-Um einen falsch positiven Bericht einzureichen, geben Sie ein Ticket beim Adobe Commerce-Händler-Support ein, damit wir den falsch-positiven Bericht auswerten, erforderliche Änderungen vornehmen und/oder Empfehlungen bereitstellen können, um zu verhindern, dass solche Benachrichtigungen in Zukunft angezeigt werden. Händler können auch eine Falsch-Positiv-Meldung machen, indem sie uns per E-Mail unter [securityscan@magento.com](mailto:securityscan@magento.com).
+Um einen falsch positiven Bericht einzureichen, geben Sie ein Ticket beim Adobe Commerce-Händler-Support ein, damit wir den falsch-positiven Bericht auswerten, erforderliche Änderungen vornehmen und/oder Empfehlungen bereitstellen können, um zu verhindern, dass solche Benachrichtigungen in Zukunft angezeigt werden. Händler können auch einen Falsch-Positiv-Wert melden, indem sie uns eine E-Mail an [securityscan@magento.com](mailto:securityscan@magento.com) schicken.

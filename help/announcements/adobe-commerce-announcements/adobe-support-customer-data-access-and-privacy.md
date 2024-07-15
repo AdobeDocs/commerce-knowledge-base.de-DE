@@ -21,12 +21,12 @@ Der technische Adobe-Support benötigt möglicherweise Zugriff auf Ihre Adobe Co
 
 Zugriffsberechtigung:
 
-1. [Anmelden](https://account.magento.com/customer/account/login) als unterstützenden primären Benutzer.
-1. Im **[!UICONTROL My Account]** page > **[!UICONTROL Account Settings]**, stellen Sie sicher, dass Sie Ihre [Kontoprofil](https://account.magento.com/customer/account/edit) und klicken **[!UICONTROL Save]**.
-1. Im **[!UICONTROL My Account]** page > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Es wird ein Einverständnisformular angezeigt, mit dem dem technischen Support von Adobe Zugriff auf Ihre Daten gewährt wird.
-1. Nachdem Sie die Informationen zu den Datenschutzeinstellungen überprüft haben, wählen Sie aus, ob das Kontrollkästchen neben **Ich autorisiere den Zugriff auf meine Daten für die folgende Dauer:**.
+1. [Melden Sie sich als unterstützenden primären Benutzer an.](https://account.magento.com/customer/account/login)
+1. Vergewissern Sie sich auf der Seite **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]**, dass Sie Ihr [Kontoprofil](https://account.magento.com/customer/account/edit) ausgefüllt haben, und klicken Sie auf **[!UICONTROL Save]**.
+1. Auf der Seite **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Es wird ein Einverständnisformular angezeigt, mit dem dem technischen Support von Adobe Zugriff auf Ihre Daten gewährt wird.
+1. Nachdem Sie die Informationen zu den Datenschutzeinstellungen überprüft haben, können Sie festlegen, ob das Kontrollkästchen neben **Ich autorisiere den Zugriff auf meine Daten für die folgende Dauer:** aktiviert werden soll.
 1. Wählen Sie in der Dropdown-Liste Dauer den Zeitraum aus, für den die Mitarbeiter des technischen Adobe-Supports Zugriff auf Ihre Kundendaten haben sollen. Sie können zwischen 7 Tagen, 30 Tagen, einem Jahr oder unbegrenzt wählen.
-1. Klicks **[!UICONTROL Save]**. Dadurch werden das Start- und Enddatum am unteren Rand der Seite unter **Sie haben für die folgende Dauer Ihre Einwilligung gegeben** (Screenshot). Nachdem die Einwilligung erteilt wurde, sieht der berechtigte primäre Benutzer am unteren Bildschirmrand die Option, die Einwilligung zurückzuziehen.
+1. Klicken Sie auf **[!UICONTROL Save]**. Dadurch werden das Start- und Enddatum unten auf der Seite unter **Sie haben für die folgende Dauer** (Screenshot) Ihre Zustimmung erteilt. Nachdem die Einwilligung erteilt wurde, sieht der berechtigte primäre Benutzer am unteren Bildschirmrand die Option, die Einwilligung zurückzuziehen.
    ![magento-account-privacy-settings.png](assets/magento-account-privacy-settings.png)
 
-Sie können auf **Einverständnis widerrufen** Sie können jederzeit Ihre Einwilligung zurücknehmen, damit Adobe-Support-Mitarbeiter Zugriff auf Ihre Daten haben.
+Sie können jederzeit auf **Einverständnis widerrufen** klicken, um Ihre Einwilligung zu widerrufen, damit Mitarbeiter des Adobe-Supports Zugriff auf Ihre Daten haben.

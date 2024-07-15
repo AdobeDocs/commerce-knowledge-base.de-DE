@@ -17,7 +17,7 @@ Dieser Artikel enthält einen Patch für das bekannte B2B-Problem in Adobe Comme
 
 ## Problem
 
-Kunden (Unternehmen) können erfolgreich ein Unternehmenskonto auf der Site erstellen, aber die *&quot;Keine solche Entität mit customerId = &quot;* und *&quot;Sie haben noch kein Firmenkonto&quot;* Fehlermeldungen. Sie können auch *&quot;500 Interner Server-Fehler&quot;* beim Versuch, auf die Seite &quot;Unternehmensprofil&quot;zuzugreifen.
+Kunden (Unternehmen) können erfolgreich ein Unternehmenskonto auf der Site erstellen, erhalten jedoch die Fehlermeldungen &quot;*&quot;Keine Entität mit customerId = &quot;*&quot;und &quot;*&quot;Sie haben noch kein Unternehmenskonto&quot;*. Sie erhalten möglicherweise auch den *&quot;500 Interner Server-Fehler&quot;*, wenn sie versuchen, auf die Seite &quot;Unternehmensprofil&quot;zuzugreifen.
 
 ## Patch
 
@@ -38,4 +38,4 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.

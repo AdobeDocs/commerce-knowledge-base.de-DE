@@ -1,6 +1,6 @@
 ---
 title: "ACSD-49970: Falsche Handhabung von GraphQL-Fehlern"
-description: Wenden Sie den Patch ACSD-49970 an, um das Adobe Commerce-Problem zu beheben, bei dem GraphQL-Fehler falsch behandelt werden, wenn [!UICONTROL New Relic Reporting] aktiviert ist.
+description: Wenden Sie den Patch ACSD-49970 an, um das Adobe Commerce-Problem zu beheben, bei dem GraphQL-Fehler falsch verarbeitet werden, wenn [!UICONTROL New Relic Reporting] aktiviert ist.
 exl-id: 70acade5-02a5-4769-86e2-5c566b2af709
 feature: GraphQL, Observability
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-49970: Falsche Handhabung von GraphQL-Fehlern
 
-Der Patch ACSD-49970 behebt das Problem, bei dem GraphQL-Fehler falsch behandelt werden, wenn *[!UICONTROL New Relic Reporting]* aktiviert ist. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.29 ist installiert. Die Patch-ID ist ACSD-49970. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-49970 behebt das Problem, bei dem GraphQL-Fehler falsch verarbeitet werden, wenn *[!UICONTROL New Relic Reporting]* aktiviert ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.29 installiert ist. Die Patch-ID ist ACSD-49970. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,19 +27,19 @@ Der Patch ACSD-49970 behebt das Problem, bei dem GraphQL-Fehler falsch behandelt
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-`GraphQLOperationNames` -Schlüssel nicht ordnungsgemäß verarbeitet werden, unabhängig davon, ob die `logDataHelper` enthält diesen Schlüssel oder nicht.
+Der Schlüssel `GraphQLOperationNames` wird nicht ordnungsgemäß verarbeitet, unabhängig davon, ob der Schlüssel `logDataHelper` diesen Schlüssel enthält oder nicht.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Ausführen `bin/magento deploy:mode:set developer`.
+1. Führen Sie `bin/magento deploy:mode:set developer` aus.
 1. Melden Sie sich beim Administrator an.
-1. Aktivieren **[!UICONTROL New Relic Integration]** von **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL New Relic Reporting]**
-(Hinweis: Selbst wenn ein Fehler angezeigt wird, der besagt, dass die Variable [!DNL New Relic] -Erweiterung nicht verfügbar ist, wird die Konfiguration gespeichert).
-1. Ausführen *GraphQL* Mutation zu `http://yourMagentoDomain/graphql` aus dem *[!DNL Altair]* Client oder einem anderen Client oder über cURL.
+1. **[!UICONTROL New Relic Integration]** von **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL New Relic Reporting]** aktivieren
+(Hinweis: Selbst wenn ein Fehler angezeigt wird, der besagt, dass die Erweiterung [!DNL New Relic] nicht verfügbar ist, wird die Konfiguration gespeichert.)
+1. Führen Sie diese *GraphQL*-Mutation vom *[!DNL Altair]*-Client oder einem anderen Client oder über cURL zu `http://yourMagentoDomain/graphql` aus.
 
    ```GraphQL
    mutation {
@@ -47,7 +47,7 @@ Der Patch ACSD-49970 behebt das Problem, bei dem GraphQL-Fehler falsch behandelt
    }
    ```
 
-   (Hinweis: Legen Sie die **[!UICONTROL Header]** nach [!UICONTROL Content-Currency:CA] vor der Ausführung).
+   (Hinweis: Setzen Sie die **[!UICONTROL Header]** auf [!UICONTROL Content-Currency:CA] , bevor Sie sie ausführen).
 
    ```cURL
    curl --location 'http://yourMagentoDomain/graphql' \--header 'Content-Currency: CA' \--header 'Content-Type: application/json' \--header 'Cookie: PHPSESSID=b5147f63fe5014ea523f262946; private_content_version=8d53dfda210a6e9bc46f4e4a01ffd6c5' \--data '{"query":"mutation {\r\n  createEmptyCart\r\n}","variables":{}}'
@@ -55,24 +55,24 @@ Der Patch ACSD-49970 behebt das Problem, bei dem GraphQL-Fehler falsch behandelt
 
 <u>Erwartete Ergebnisse</u>:
 
-Es gibt keine *500 Ausnahme* in Protokollen, `GraphQLOperationNames` -Schlüssel korrekt verarbeitet werden.
+Es gibt keine *500 Ausnahme* in Protokollen, `GraphQLOperationNames` Schlüssel wird korrekt verarbeitet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Es gibt eine *500 Ausnahme* in Protokollen, `GraphQLOperationNames` -Schlüssel nicht korrekt verarbeitet werden.
+Es gibt eine *500 Ausnahme* in den Protokollen, die `GraphQLOperationNames` -Taste wird nicht ordnungsgemäß verarbeitet.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

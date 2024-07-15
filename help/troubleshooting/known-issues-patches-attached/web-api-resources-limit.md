@@ -51,11 +51,11 @@ Die Patches sind nicht mit anderen Adobe Commerce-Versionen kompatibel.
 
 ### Anwenden des Pflasters
 
-Entpacken Sie die heruntergeladene Datei `.zip` und wenden Sie den Patch wie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Entpacken Sie die heruntergeladene `.zip`-Datei und wenden Sie den Patch wie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches beschrieben an.
 
 >[!WARNING]
 >
->Wenn Sie vermuten, dass Ihr Store einen DoS-Angriff erfährt, empfiehlt Adobe, die Standardeingabeschränkungen auf einen niedrigeren Wert zu senken, um die Anzahl der Ressourcen, die angefordert werden können, zu beschränken.  Sie können die Standardbeschränkungen programmgesteuert anpassen, indem Sie [Klassenkonstruktionsargumente](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html)
+>Wenn Sie vermuten, dass Ihr Store einen DoS-Angriff erfährt, empfiehlt Adobe, die Standardeingabeschränkungen auf einen niedrigeren Wert zu senken, um die Anzahl der Ressourcen, die angefordert werden können, zu beschränken.  Sie können die Standardbeschränkungen programmgesteuert mithilfe von [class -Konstruktorargumenten](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html) anpassen
 >wie in unserer Entwicklerdokumentation beschrieben: [API-Sicherheit > Ratenbegrenzung > Maximale Parametereingaben](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting).
 
 ## Verwandtes Lesen

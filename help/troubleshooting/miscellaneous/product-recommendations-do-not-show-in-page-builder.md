@@ -30,9 +30,9 @@ Im Seitenaufbau gibt es keine Option, Produkt-Recommendations hinzuzufügen. Pro
 ## Lösung
 
 1. Überprüfen Sie, ob Sie das Modul separat installiert haben, indem Sie den Befehl ausführen: `composer show magento/module-page-builder-product-recommendations`
-1. Wenn die folgende Meldung zurückgegeben wird: *Package Magento/module-page-builder-product-recommendations nicht gefunden* müssen Sie sie installieren, indem Sie den Befehl ausführen: `composer require magento/module-page-builder-product-recommendations`
+1. Wenn die folgende Meldung zurückgegeben wird: *Paketmagento/module-page-builder-product-recommendations not found*, müssen Sie sie installieren, indem Sie den Befehl `composer require magento/module-page-builder-product-recommendations` ausführen:
 
-Durch die Aktivierung von Product Recommendations in Page Builder können Sie [Hinzufügen einer Empfehlungseinheit](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) zu allen Inhalten, die in Page Builder erstellt wurden.
+Durch die Aktivierung von Product Recommendations in Page Builder können Sie jedem in Page Builder erstellten Inhalt [eine Empfehlungseinheit ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) hinzufügen.
 
 ## Verwandtes Lesen
 

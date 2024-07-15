@@ -23,7 +23,7 @@ In diesem Artikel wird das Problem behoben, dass das Sicherheitsscan-Tool anstel
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Konfigurieren Sie das Sicherheitsscan-Tool, um Ihre Website zu überprüfen, wie unter [Sicherheitsscan](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) in unserem Benutzerhandbuch.
+1. Konfigurieren Sie das Sicherheitsscan-Tool, um Ihre Website zu überprüfen, wie in [Sicherheitsprüfung](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) in unserem Benutzerhandbuch beschrieben.
 1. Wählen Sie in der Spalte Aktionen die Option **Scan ausführen**.
 
 <u>Erwartete Ergebnisse</u>:
@@ -43,9 +43,9 @@ Dieses Problem tritt möglicherweise auf, weil das Sicherheitsscan-Tool Ihre Web
 Versuchen Sie, Ihre Website zu öffnen.
 
 * Wenn die Seite erfolgreich geladen wird, müssen Sie möglicherweise die von den Security Scan Tools verwendeten IPs zur Firewall-Zulassungsliste hinzufügen. Die folgenden IPs werden verwendet: 52.87.98.44, 34.196.167.176, 3.218.25.102 in den Ports 80 und 443.
-* Wenn die Site nicht geladen wird und die *&quot;Bei der Verarbeitung Ihrer Anfrage ist ein Fehler aufgetreten&quot;* -Meldung erhalten, überprüfen Sie Ihre Website auf mögliche Fehler.
+* Wenn die Site nicht geladen wird und die Meldung &quot;*&quot;Es ist ein Fehler bei der Verarbeitung Ihrer Anfrage aufgetreten&quot;* zurückgibt, überprüfen Sie Ihre Website auf mögliche Fehler.
 
 ## Verwandtes Lesen
 
-* [Live schalten und starten](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) in unserer Entwicklerdokumentation.
+* [Go live and launch](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) in unserer Entwicklerdokumentation.
 * [Sicherheitsscan](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) in unserem Benutzerhandbuch.

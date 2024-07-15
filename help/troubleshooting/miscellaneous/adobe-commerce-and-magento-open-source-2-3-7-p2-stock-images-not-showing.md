@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Nicht angezeigte Lagerbilder, Adobe Commerce und Magento Open Source 2.3.7-p2
 
-Dieser Artikel bietet eine Lösung für das Problem, dass Adobe-Stock-Bilder in die Dateisystemverzeichnisse hochgeladen werden. `pub/media` oder `pub/media/catalog` werden nicht in der Benutzeroberfläche der Media Gallery angezeigt. Dies liegt daran, dass sich die Bilder außerhalb der zulässigen Medien-Galerie-Verzeichnisse befinden. Damit diese Bilder Händler anzeigen können, müssen Sie die Bilder im Dateisystem löschen und erneut in ein zulässiges Verzeichnis der Media Gallery hochladen.
+Dieser Artikel bietet eine Lösung für das Problem, dass Adobe-Stock-Bilder, die in die Dateisystemverzeichnisse `pub/media` oder `pub/media/catalog` hochgeladen wurden, nicht in der Benutzeroberfläche von Media Gallery angezeigt werden. Dies liegt daran, dass sich die Bilder außerhalb der zulässigen Medien-Galerie-Verzeichnisse befinden. Damit diese Bilder Händler anzeigen können, müssen Sie die Bilder im Dateisystem löschen und erneut in ein zulässiges Verzeichnis der Media Gallery hochladen.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,14 +22,14 @@ Dieser Artikel bietet eine Lösung für das Problem, dass Adobe-Stock-Bilder in 
 
 ## Problem
 
-Händler können Adobe Stock-Bilder in den Speicherstamm in der Media Gallery hochladen. Diese Bilder werden jedoch nicht in der Benutzeroberfläche angezeigt und erscheinen so, als wären sie nicht hochgeladen worden. Dies liegt daran, dass das System erkennt, dass das Bild bereits in das Dateisystem hochgeladen wurde, obwohl es nicht in der Benutzeroberfläche von Media Gallery verfügbar ist. Das bedeutet, dass ein Händler ein Bild in `pub/media` oder `pub/media/catalog`, können sie dieses Bild erst verwenden, wenn es direkt im Dateisystem gelöscht wird.
+Händler können Adobe Stock-Bilder in den Speicherstamm in der Media Gallery hochladen. Diese Bilder werden jedoch nicht in der Benutzeroberfläche angezeigt und erscheinen so, als wären sie nicht hochgeladen worden. Dies liegt daran, dass das System erkennt, dass das Bild bereits in das Dateisystem hochgeladen wurde, obwohl es nicht in der Benutzeroberfläche von Media Gallery verfügbar ist. Das bedeutet, dass ein Händler ein Bild nach dem Hochladen in `pub/media` oder `pub/media/catalog` erst verwenden kann, wenn es direkt im Dateisystem gelöscht wurde.
 
 <u>Zu reproduzierende Schritte</u>
 
 1. Aktivieren Sie Adobe Stock mit gültigen API-Schlüsseln.
-1. Offene Mediengalerie (**Katalog** > **Kategorien** > **Inhalt** Abschnitt > Klicken **Aus Galerie auswählen**).
-1. Klicks **Adobe Stock durchsuchen**.
-1. Wählen Sie ein Bild. Klicken **Vorschau speichern**. Beachten Sie, dass Sie möglicherweise das Adobe Stock-Raster zurücksetzen müssen, damit Bilder angezeigt werden.
+1. Öffnen Sie die Mediengalerie (**Katalog** > **Kategorien** > **Inhalt** ) und klicken Sie auf **Aus Galerie auswählen**).
+1. Klicken Sie auf **Adobe Stock durchsuchen**.
+1. Wählen Sie ein Bild. Klicken Sie auf **Vorschau speichern**. Beachten Sie, dass Sie möglicherweise das Adobe Stock-Raster zurücksetzen müssen, damit Bilder angezeigt werden.
 
 <u>Erwartetes Ergebnis</u>:
 
@@ -37,7 +37,7 @@ Das Bild wird angezeigt.
 
 <u>Tatsächliches Ergebnis</u>:
 
-Eine Fehlermeldung wird angezeigt: *Das Bild kann nicht gefunden werden. Wir können dieses Bild nicht in der Mediengalerie finden.*
+Es wird eine Fehlermeldung angezeigt: *Das Bild kann nicht gefunden werden. Wir können dieses Bild nicht in der Mediengalerie finden.*
 
 ## Ursache
 
@@ -45,8 +45,8 @@ Bilder können über Adobe Stock in den Speicherstamm der Media Gallery hochgela
 
 ## Lösung
 
-Wählen Sie ein beliebiges Unterverzeichnis des Speicherstamms der Mediengalerie aus (außer **Speicherstamm** > **Katalog**), bevor Sie ein Adobe Stock-Bild hochladen.
-Löschen Sie die hochgeladenen Adobe Stock-Bilder aus dem `pub/media` und `pub/media/catalog` Ordner im Adobe Commerce-Dateisystem und laden Bilder stattdessen in alle zulässigen Medien-Galerie-Stammordner-Unterverzeichnisse hoch (außer **Speicherstamm** > **Katalog**).
+Wählen Sie einen beliebigen Unterordner des Speicherstamms der Mediengalerie aus (außer **Speicherstamm** > **Katalog**), bevor Sie ein Adobe Stock-Bild hochladen.
+Löschen Sie die hochgeladenen Adobe Stock-Bilder aus den Ordnern `pub/media` und `pub/media/catalog` im Adobe Commerce-Dateisystem und laden Sie die Bilder stattdessen in alle zulässigen Stammordner für Mediengalerie-Speicher hoch (außer **Speicherstamm** > **Katalog**).
 
 ## Verwandtes Lesen
 

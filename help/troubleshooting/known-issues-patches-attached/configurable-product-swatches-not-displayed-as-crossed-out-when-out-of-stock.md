@@ -54,6 +54,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

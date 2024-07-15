@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Beschreibungen der Gründe für Support-Tickets
 
-In diesem Artikel wird das Support-Ticket aufgeführt **Kontaktgrund** Feldoptionen und detailliertere Beschreibungen der einzelnen Felder.
+In diesem Artikel werden die Feldoptionen für das Support-Ticket **Kontaktgrund** und detailliertere Beschreibungen der einzelnen Felder aufgelistet.
 
 ## Kontaktgründe
 
@@ -52,7 +52,7 @@ In diesem Artikel wird das Support-Ticket aufgeführt **Kontaktgrund** Feldoptio
 
 ## Gründe für Adobe Commerce-Anwendungen
 
-Diese Optionen werden angezeigt, wenn **Adobe Commerce-Anwendung** wird als **Kontaktgrund**:
+Diese Optionen werden angezeigt, wenn **Adobe Commerce Application** als **Kontaktgrund** ausgewählt ist:
 
 <table class="tg">
 <thead>
@@ -95,7 +95,7 @@ Diese Optionen werden angezeigt, wenn **Adobe Commerce-Anwendung** wird als **Ko
 
 ## Gründe für die Adobe Commerce Cloud-Infrastruktur
 
-Diese Optionen werden angezeigt, wenn **Adobe Commerce Cloud-Infrastruktur** wird als **Kontaktgrund**:
+Diese Optionen werden angezeigt, wenn **Adobe Commerce Cloud Infrastructure** als **Kontaktgrund** ausgewählt ist:
 
 <table class="tg">
 <thead>
@@ -150,4 +150,4 @@ Diese Optionen werden angezeigt, wenn **Adobe Commerce Cloud-Infrastruktur** wir
 
 ## Verwandte Informationen
 
-Siehe Abschnitt [Hilfe Center-Handbuch > Support-Ticketfelder - Erklärung](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) um Details zu anderen Feldern des Annahmeformulars für Tickets anzuzeigen.
+Weitere Informationen zu anderen Formularfeldern für die Einnahme von Tickets finden Sie unter [Hilfe-Center-Handbuch > Support-Ticketfelder erläutert](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) .

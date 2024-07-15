@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bereitstellungsfehler: SQLSTATE[HY000]
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem die Bereitstellung aufgrund des SQLSTATE fehlschlägt.[HY000] Fehler.
+Dieser Artikel bietet eine Lösung für das Problem, bei dem die Bereitstellung aufgrund des SQLSTATE[HY000] -Fehlers fehlschlägt.
 
 ## Betroffene Produkte und Versionen
 

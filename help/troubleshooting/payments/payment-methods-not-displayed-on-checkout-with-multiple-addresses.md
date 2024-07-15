@@ -22,7 +22,7 @@ In diesem Artikel wird erläutert, dass die meisten Zahlungsmethoden beim Checko
 
 >[!NOTE]
 >
->Die zentrale Adobe Commerce Cybersource-Zahlungsintegration ist seit 2.3.3 veraltet und wird in 2.4.0 vollständig entfernt. Verwenden Sie die [offizielle Erweiterung](https://marketplace.magento.com/cybersource-global-payment-management.html) vom Marketplace aus.
+>Die zentrale Adobe Commerce Cybersource-Zahlungsintegration ist seit 2.3.3 veraltet und wird in 2.4.0 vollständig entfernt. Verwenden Sie stattdessen die offizielle Erweiterung [vom Marketplace aus.](https://marketplace.magento.com/cybersource-global-payment-management.html)
 
 ## Problem
 
@@ -32,12 +32,12 @@ In diesem Artikel wird erläutert, dass die meisten Zahlungsmethoden beim Checko
 
 1. Fügen Sie im Schaufenster mehrere Produkte zum Warenkorb hinzu.
 1. Gehen Sie zur Warenkorbseite.
-1. Klicks **Mit mehreren Adressen auschecken**.
+1. Klicken Sie auf **Mit mehreren Adressen auschecken**.
 1. Melden Sie sich an oder erstellen Sie ein Konto.
 1. Teilen Sie Produkte zwischen den Adressen auf der Seite &quot;Versand an mehrere Adressen&quot; auf.
-1. Klicks **Navigieren Sie zu Versandinformationen .**.
+1. Klicken Sie auf **Zu Versandinformationen wechseln**.
 1. Wählen Sie Versandmethoden für jede Sendung aus.
-1. Klicks **Weiter zu Rechnungsinformationen**.
+1. Klicken Sie auf **Weiter zu Rechnungsinformationen**.
 
 <u>Erwartetes Ergebnis</u>: PayPal und Cybersource sind als Zahlungsoptionen verfügbar.
 

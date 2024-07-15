@@ -25,9 +25,9 @@ Ihre Katalogdaten werden nicht richtig synchronisiert oder ein neues Produkt wur
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Konfigurieren Sie die Live-Suche für Ihre Adobe Commerce-Instanz und verbinden Sie sie wie in [Live Search installieren > API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) in unserer Benutzerdokumentation.
-1. Überprüfen Sie nach 30 Minuten die exportierten Katalogdaten, wie unter [Live Search installieren > Export überprüfen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) in unserer Benutzerdokumentation.
-1. Nach 30 Minuten testen Sie die Verbindung wie unter [Live-Suche installieren > Verbindung testen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) in unserer Benutzerdokumentation.
+1. Konfigurieren und verbinden Sie die Live-Suche für Ihre Adobe Commerce-Instanz, wie in der Benutzerdokumentation unter [Live-Suche installieren > API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) beschrieben.
+1. Überprüfen Sie nach 30 Minuten die exportierten Katalogdaten, wie in unserer Benutzerdokumentation unter [Live-Suche installieren > Export überprüfen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) beschrieben.
+1. Testen Sie die Verbindung nach 30 Minuten wie unter [Live-Suche installieren > Verbindung testen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) in unserer Benutzerdokumentation beschrieben.
 
 Oder
 
@@ -56,7 +56,7 @@ Nach der Konfiguration und Verbindung kann es über 30 Minuten dauern, bis der I
 
 Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werden, gehen Sie wie folgt vor:
 
-1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die in der Variablen `feed_data` Spalte. Beachten Sie außerdem die `modified_at` timestamp
+1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die erwarteten Daten in der Spalte `feed_data` verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
 
    ```sql
    select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
@@ -68,11 +68,11 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werd
    bin/magento indexer:reindex catalog_data_exporter_products
    ```
 
-1. Wenn die korrekten Daten immer noch nicht angezeigt werden, [Support-Ticket erstellen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Wenn immer noch nicht die korrekten Daten angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
 
 ### Zeitstempel des letzten Produktexports überprüfen
 
-1. Wenn die richtigen Daten angezeigt werden unter `catalog_data_exporter_products`verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach der `modified_at` timestamp:
+1. Wenn die korrekten Daten in `catalog_data_exporter_products` angezeigt werden, verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen:
 
    ```sql
    select * from flag where flag_code = 'products-feed-version';
@@ -84,13 +84,13 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werd
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Warten auf `<>` Zeit (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten immer noch nicht angezeigt werden, [Support-Ticket erstellen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Warten Sie auf `<>` Zeit (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten immer noch nicht angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
 
 ### Synchronisieren spezifischer Attributcode
 
 Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht richtig synchronisiert werden, gehen Sie wie folgt vor:
 
-1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die in der Variablen `feed_data` Spalte. Beachten Sie außerdem die `modified_at` timestamp
+1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die erwarteten Daten in der Spalte `feed_data` verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
 
    ```sql
    select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
@@ -102,13 +102,13 @@ Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht richtig 
    bin/magento indexer:reindex catalog_data_exporter_product_attributes
    ```
 
-1. Wenn die korrekten Daten immer noch nicht angezeigt werden, [Support-Ticket erstellen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Wenn immer noch nicht die korrekten Daten angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
 
 ### Zeitstempel des letzten Produktattributexports überprüfen
 
-Wenn die richtigen Daten angezeigt werden unter `catalog_data_exporter_product_attributes`:
+Wenn die korrekten Daten in `catalog_data_exporter_product_attributes` angezeigt werden:
 
-1. Verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach der `modified_at` timestamp
+1. Verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen.
 
    ```sql
    select * from flag where flag_code = 'product-attributes-feed-version';
@@ -120,7 +120,7 @@ Wenn die richtigen Daten angezeigt werden unter `catalog_data_exporter_product_a
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Warten Sie 15-20 Minuten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten immer noch nicht angezeigt werden, wenden Sie sich an [Support-Ticket erstellen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Warten Sie 15-20 Minuten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten immer noch nicht angezeigt werden, erstellen Sie bitte [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Synchronisieren nach Änderung der API-Konfiguration
 

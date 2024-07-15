@@ -52,7 +52,7 @@ Versuchen Sie, einen anderen Browser zu verwenden und die Lebensdauer der Admin-
 Gehen Sie wie folgt vor, um die Lebensdauer der Admin-Sitzung zu erhöhen:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Gehen Sie wie folgt vor, um die Lebensdauer der Admin-Sitzung zu erhöhen:
 Gehen Sie wie folgt vor, um die Werte der Cookie-Einstellungen zu überprüfen und zu löschen:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");
@@ -89,5 +89,5 @@ Gehen Sie wie folgt vor, um die Werte der Cookie-Einstellungen zu überprüfen u
 
 ## Verwandte Artikel
 
-* [Gehen Sie zurück zum Anmeldeformular für die Admin-Anmeldung mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) in unserer Wissensdatenbank.
-* [Gehen Sie zurück zum Anmeldeformular für die Admin-Anmeldung mit dem Fehler &quot;Ihre aktuelle Sitzung ist abgelaufen&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) in unserer Wissensdatenbank.
+* [Kehren Sie zum Formular für die Admin-Anmeldung mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;zurück](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) in unserer Support-Wissensdatenbank.
+* [Kehren Sie zum Formular für die Admin-Anmeldung mit dem Fehler &quot;Ihre aktuelle Sitzung ist abgelaufen&quot;zurück](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) in unserer Support-Wissensdatenbank.

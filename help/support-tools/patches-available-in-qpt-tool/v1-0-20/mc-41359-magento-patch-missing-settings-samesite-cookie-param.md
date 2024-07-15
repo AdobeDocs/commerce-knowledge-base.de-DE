@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # MC-41359 Commerce-Patch: fehlende Einstellungen SameSite-Cookie-Parameter
 
-Der Commerce-Patch MC-41359 behebt das Problem mit fehlenden SameSite-Cookie-Parametern. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 ist installiert. Die Patch-ID ist MC-41359. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben sein soll.
+Der Commerce-Patch MC-41359 behebt das Problem mit fehlenden SameSite-Cookie-Parametern. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 installiert ist. Die Patch-ID ist MC-41359. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
-**Der Patch wird für die Adobe Commerce-Version erstellt:** Adobe Commerce in Cloud-Infrastruktur 2.4.2
+**Der Patch wird für die Adobe Commerce-Version erstellt:** Adobe Commerce in der Cloud-Infrastruktur 2.4.2
 
-**Kompatibel mit Adobe Commerce-Versionen:** Adobe Commerce lokal und Adobe Commerce auf Cloud-Infrastruktur 2.3.6-p1, 2.4.2, 2.4.2-p1
+**Kompatibel mit Adobe Commerce-Versionen:** Adobe Commerce lokal und Adobe Commerce in der Cloud-Infrastruktur 2.3.6-p1, 2.4.2, 2.4.2-p1
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -33,8 +33,8 @@ Fehlende Einstellungen des SameSite-Cookie-Parameters.
 
 Voraussetzungen:
 
-* Öffnen Sie Chrome und gehen Sie zu chrome://flags/
-* Aktivieren **Standard-SameSite-Cookies** und **Cookies ohne SameSite müssen sicher sein**.
+* Öffnen Sie Chrome und navigieren Sie zu chrome://flags/
+* Aktivieren Sie standardmäßig **SameSite-Cookies** und **Cookies ohne SameSite müssen sicher sein**.
 * Öffnen Sie den Chrome-Inspektor.
 
 <u>Szenario 1:</u>
@@ -46,11 +46,11 @@ Voraussetzungen:
 
 <u>Szenario 2:</u>
 
-Wenn Sie New Relic [enabled](https://docs.magento.com/user-guide/reports/new-relic-reporting.html) Die Warnung wird auf jeder beliebigen Frontend-Seite angezeigt.
+Wenn Sie New Relic [aktiviert haben](https://docs.magento.com/user-guide/reports/new-relic-reporting.html), wird die Warnung auf einer beliebigen Frontend-Seite angezeigt.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Warnmeldung in der Browser-Konsole: *Ein mit einer Site-übergreifenden Ressource verknüpftes Cookie wurde ohne SameSite-Attribut gesetzt.*
+Warnmeldung in der Browser-Konsole: *Ein Cookie, das mit einer Site-übergreifenden Ressource verknüpft ist, wurde ohne SameSite-Attribut gesetzt.*
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -60,14 +60,14 @@ Warnmeldung in der Browser-Konsole: *Ein mit einer Site-übergreifenden Ressourc
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Qualitätssicherungswerkzeugs](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md), ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie unter [Im QPT-Tool verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie unter [im QPT-Tool verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.

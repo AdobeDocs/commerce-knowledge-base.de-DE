@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39181: Verwandte Produktregeln zeigen Produkte aus Kategorien an, die in der Regel nicht definiert sind
 
-Der Patch MDVA-39181 behebt das Problem, dass verwandte Produktregeln Produkte aus einer Kategorie zeigen, die in der Regel nicht definiert ist. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-39181. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der Patch MDVA-39181 behebt das Problem, dass verwandte Produktregeln Produkte aus einer Kategorie zeigen, die in der Regel nicht definiert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-39181. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch MDVA-39181 behebt das Problem, dass verwandte Produktregeln Produkte a
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -39,9 +39,9 @@ Beispieldaten installieren.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Erstellen Sie eine Attributmarke und fügen Sie sie der **Tops-Attributsatz**.
-1. Auswählen **Josie**, **Augusta**, und **Ingrid** Jacken, die von der Marke Kitty hinzugefügt werden sollen **Frauen** > **Tops** > **Jacken-Kategorie**.
-1. Auswählen **Beaumont**, **Hyperion**, und **Kenobi** Jacken, die von der Marke Kitty hinzugefügt werden sollen **Männer** > **Tops** > **Jackenkategorie**.
+1. Erstellen Sie eine Attributmarke und fügen Sie sie dem **Tops-Attributsatz** hinzu.
+1. Wählen Sie **Josie**, **Augusta** und **Ingrid** Jackets aus, die der Marke Kitty von **Women** > **Tops** > **Jackets-Kategorie** hinzugefügt werden sollen.
+1. Wählen Sie die Jacken **Beaumont**, **Hyperion** und **Kenobi** aus, um sie der Marke Kitty von **Men** > **Tops** > **Jacket category** hinzuzufügen.
 1. Erstellen Sie ein verwandtes Produkt mit:
 
    ```markdown
@@ -66,7 +66,7 @@ Beispieldaten installieren.
    ```
 
 1. Öffnen Sie SKU WJ04 vom Frontend und prüfen Sie die entsprechenden Produkte.
-1. Aktualisieren der Kategorie-ID von **Frauen** > **Tops** > **Jacken** falls es sich von diesem unterscheidet.
+1. Aktualisieren Sie die Kategorie-ID von **Frauen** > **Tops** > **Jackets** , falls sie sich von dieser unterscheidet.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -80,14 +80,14 @@ Zugehörige Produkte werden von derselben Marke, aber von einer zufälligen übe
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

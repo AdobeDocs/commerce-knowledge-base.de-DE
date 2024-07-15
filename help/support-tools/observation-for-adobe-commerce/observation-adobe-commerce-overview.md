@@ -17,4 +17,4 @@ Beobachtung für Adobe Commerce ist ein New Relic-Nerdlet, um den Zustand Ihrer 
 
 Auf der Registerkarte &quot;Zusammenfassung&quot;der Beobachtung für Adobe Commerce sollen schnell einige der Probleme angezeigt werden, die bei Sites auftreten, damit Sie potenzielle Ursachen für Site-Probleme automatisch beheben oder identifizieren können. Die zusätzlichen Registerkarten bieten umfassendere Informationen zu Komponentendiensten, Datenbank, Infrastruktur und Prozessstatus.
 
-Eine vollständige Anleitung zur Verwendung der Beobachtung für Adobe Commerce in der Cloud-Infrastruktur finden Sie unter [Beobachtung für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) Handbuch in Experience League.
+Eine vollständige Anleitung zur Verwendung der Beobachtung für Adobe Commerce in der Cloud-Infrastruktur finden Sie im Handbuch [Beobachtung für Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) unter Experience League.

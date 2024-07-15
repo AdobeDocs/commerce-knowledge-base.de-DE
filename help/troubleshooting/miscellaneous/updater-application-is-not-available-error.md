@@ -29,4 +29,4 @@ Die folgende Meldung wird in der Bereitschaftsprüfung angezeigt:
 
 ## Lösung
 
-Um dieses Problem zu beheben, überprüfen Sie, ob eine `<magento_root>/update` Verzeichnis, das Dateien und Unterverzeichnisse enthält. Weitere Informationen finden Sie unter [Einrichten des Aktualisierers](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) in unserer Entwicklerdokumentation.
+Um dieses Problem zu beheben, überprüfen Sie, ob ein &quot;`<magento_root>/update`&quot;-Ordner vorhanden ist, der Dateien und Unterverzeichnisse enthält. Weitere Informationen finden Sie unter [Einrichten des Aktualisierungsdienstes](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) in unserer Entwicklerdokumentation.

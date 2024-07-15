@@ -1,6 +1,6 @@
 ---
-title: Fallback zu [!DNL Elasticsearch7] wenn die Suchmaschine auf [!DNL Opensearch]
-description: Dieser Artikel bietet eine Lösung für das Problem, wenn ein * Fallback auf [!DNL Elasticsearch7]* error occurs when the search engine is set to [!DNL OpenSearch] in Adobe Commerce.
+title: Zurückfallen auf [!DNL Elasticsearch7] bei Einstellung der Suchmaschine auf [!DNL Opensearch]
+description: Dieser Artikel bietet eine Lösung für das Problem, wenn ein * Fallback auf [!DNL Elasticsearch7]* error occurs when the search engine is set to [!DNL OpenSearch] in Adobe Commerce erfolgt.
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Fallback zu [!DNL Elasticsearch7] wenn die Suchmaschine auf [!DNL Opensearch]
+# Zurückfallen auf [!DNL Elasticsearch7], wenn die Suchmaschine auf [!DNL Opensearch] gesetzt ist
 
-Dieser Artikel bietet eine Lösung für das Problem, wenn ein *Fallback zu[!DNL Elasticsearch7]* Fehler tritt auf, wenn die Suchmaschine auf [!DNL OpenSearch] in Adobe Commerce.
+Dieser Artikel bietet eine Lösung für das Problem, wenn ein *Fallback auf[!DNL Elasticsearch7]* -Fehler auftritt, wenn die Suchmaschine in Adobe Commerce auf [!DNL OpenSearch] gesetzt ist.
 
 ## Betroffene Versionen
 
@@ -25,29 +25,29 @@ Adobe Commerce auf Cloud-Infrastruktur 2.4.4 - 2.4.5
 
 ## Problem
 
-Sie legen **Suchmaschine** nach **[!DNL OpenSearch]**, aber sehen Sie diesen Fehlertyp im `var/log/support_report.log` Datei:
+Sie legen die **Suchmaschine** auf **[!DNL OpenSearch]** fest, sehen aber diesen Fehlertyp in der Datei `var/log/support_report.log`:
 
 ```[2024-04-04T00:27:41.212916+00:00] report.ERROR: opensearch search engine doesn't exist. Falling back to elasticsearch7 [] []```
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Stellen Sie sicher, dass [!DNL OpenSearch] wird durch Ausführen dieses Befehls installiert: `curl 127.0.0.1:9200`<br>
-Wenn *1.2.4*, dann [!DNL OpenSearch] ist bereits installiert.
-1. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
-1. Überprüfen Sie die Suchmaschine. wird [!DNL Elasticsearch7].
+1. Stellen Sie sicher, dass [!DNL OpenSearch] installiert ist, indem Sie diesen Befehl ausführen: `curl 127.0.0.1:9200`<br>
+Wenn dies auf *1.2.4* verweist, ist [!DNL OpenSearch] bereits installiert.
+1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]**.
+1. Überprüfen Sie die Suchmaschine. Es wird [!DNL Elasticsearch7] angezeigt.
 
 ## Ursache
 
-Auch wenn Ihre Version [!DNL OpenSearch], erkennt die Anwendung nur [!DNL Elasticsearch7] als Suchmaschine.
+Obwohl Ihre Version [!DNL OpenSearch] unterstützt, erkennt/akzeptiert die Anwendung nur [!DNL Elasticsearch7] als Suchmaschine.
 
-Ab Adobe Commerce-Version 2.4.6 wurde die Anwendung aktualisiert, um [!DNL OpenSearch] als Suchmaschine auszuwählen.
-Wenn Sie **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** In einer Nicht-Cloud-Umgebung können Sie diese Option ändern, wie in der **Lösung** unten.
-(Hinweis: In einer Cloud-Umgebung kann dieses Feld nicht geändert werden, da die Suchmaschine im `app/etc/env.php` Datei.)
+Ab Adobe Commerce-Version 2.4.6 wurde die Anwendung aktualisiert, damit [!DNL OpenSearch] als Suchmaschine ausgewählt werden kann.
+Wenn Sie in einer Nicht-Cloud-Umgebung zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** gehen, können Sie diese Option ändern, wie in der folgenden **Lösung** dargestellt.
+(Hinweis: In einer Cloud-Umgebung kann dieses Feld nicht geändert werden, da die Suchmaschine in der Datei `app/etc/env.php` gesperrt ist.)
 
 ## Lösung
 
-Aktualisieren Sie die `SEARCH_CONFIGURATION` in der `.magento.env.yaml` und stellen Sie sicher, dass die **Suchmaschine** auf *[!DNL elasticsearch7]*.
+Aktualisieren Sie die Variable `SEARCH_CONFIGURATION` in der Datei `.magento.env.yaml` und stellen Sie sicher, dass die Suchmaschine **3} auf *[!DNL elasticsearch7]* eingestellt ist.**
 
 ## Verwandtes Lesen
 
-[Einrichten des OpenSearch-Dienstes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) im Commerce on Cloud Infrastructure-Handbuch.
+[Richten Sie den OpenSearch-Dienst](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) im Handbuch Commerce on Cloud Infrastructure ein.

@@ -25,7 +25,7 @@ In diesem Artikel wird das Problem behoben, das bei der Anmeldung beim Commerce-
 * Vor-Ort-Versionen von Adobe Commerce 2.1.11 - 2.1.13 und 2.2.1
 * Redis, alle Versionen
 
-Wenn Sie Adobe Commerce in der Cloud-Infrastrukturversion verwenden [2,2,0](#h_64593789291526919876198), ist eine Problemumgehung verfügbar.
+Wenn Sie Adobe Commerce in der Cloud-Infrastrukturversion [2.2.0](#h_64593789291526919876198) verwenden, ist eine Problemumgehung verfügbar.
 
 ## Problem
 
@@ -43,7 +43,7 @@ Dieses Problem wurde in Adobe Commerce 2.1.14 und 2.2.2 behoben.
 
 ### Lösung 1: Wenden Sie den Patch mit einem Fix an
 
-Um einen Patch zu erhalten, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) den Patch anfordern. Geben Sie in Ihrem Ticket Ihre Adobe Commerce-Version und die entsprechende Referenznummer für den Patch an:
+Um einen Patch zu erhalten, senden [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), das den Patch anfordert. Geben Sie in Ihrem Ticket Ihre Adobe Commerce-Version und die entsprechende Referenznummer für den Patch an:
 
 * **2.1.11 und höher:** MDVA-7835
 * **2.2.1:** MDVA-8128
@@ -56,7 +56,7 @@ Wenn Sie bereits ein Upgrade auf Adobe Commerce 2.2.2 oder höher in Erwägung g
 
 ## Problemumgehung: Sitzungssperrung deaktivieren
 
-Um die Sitzungssperrung zu deaktivieren, legen Sie `disable_locking` nach `1` im Abschnitt Konfiguration der Redis des `env.php` Datei:
+Um die Sitzungssperrung zu deaktivieren, setzen Sie `disable_locking` im Abschnitt &quot;Redis configuration&quot;der Datei `env.php` auf `1`:
 
 ```php
 'session' =>
@@ -76,10 +76,10 @@ Diese Lösung wirkt sich nicht auf andere Adobe Commerce-Funktionen aus.
 
 ### Behelfslösung nach Anwenden des Pflasters wiederherstellen
 
-Nach dem Anwenden des Patches mit der Korrektur ist die Problemumgehung nicht mehr erforderlich, daher können Sie sie zurücksetzen (setzen Sie `disable_locking` nach `0`).
+Nachdem Sie den Patch mit der Korrektur angewendet haben, ist die Problemumgehung nicht mehr erforderlich, sodass Sie ihn zurücksetzen können (setzen Sie `disable_locking` auf `0`).
 
 ## Adobe Commerce auf Cloud-Infrastruktur 2.2.0: ECE-Tools v2002.0.8 oder höher verwenden {#h_64593789291526919876198}
 
-Die [ECE-Tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html) Bereitstellungsskriptpaket mit den Versionen 2002.0.3 - 2002.0.7 [gilt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) die Behelfslösung automatisch festlegen, `disable_locking` nach `1`. Dadurch wird der Sitzungssperrmechanismus für Adobe Commerce 2.2.0 deaktiviert, bei dem das ursprüngliche Problem nicht auftritt.
+Das Bereitstellungsskript-Paket [ECE-Tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html) mit den Versionen 2002.0.3 - 2002.0.7 [wendet ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) die Problemumgehung automatisch an und legt `disable_locking` auf `1` fest. Dadurch wird der Sitzungssperrmechanismus für Adobe Commerce 2.2.0 deaktiviert, bei dem das ursprüngliche Problem nicht auftritt.
 
 Wenn Sie Adobe Commerce in der Cloud-Infrastruktur 2.2.0 ausführen, aktualisieren Sie ECE-Tools auf Version 2002.0.8 von höher. Sie können auch erwägen, Ihre Adobe Commerce in der Cloud-Infrastruktur auf 2.2.2 oder höher zu aktualisieren.

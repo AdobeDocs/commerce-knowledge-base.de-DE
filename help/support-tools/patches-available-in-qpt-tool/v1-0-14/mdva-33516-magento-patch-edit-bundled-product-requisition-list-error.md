@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-33516 Patch: Fehler bei gebündelter Produktanforderungsliste bearbeiten
 
-Der Patch MDVA-33516 behebt das Problem, dass Sie beim Bearbeiten des Bundle-Produkttyps aus der Anforderungsliste zu einer Fehlerseite für das Anforderungslistenelement weitergeleitet werden. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.14 ist installiert. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben sein soll.
+Der Patch MDVA-33516 behebt das Problem, dass Sie beim Bearbeiten des Bundle-Produkttyps aus der Anforderungsliste zu einer Fehlerseite für das Anforderungslistenelement weitergeleitet werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.14 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.3.0 - 2.3.5 - p2
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -41,11 +41,11 @@ Fehler beim Bearbeiten von gebündelten Produkten auf der Anforderungsliste.
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie ein gebündeltes Produkt mit zwei einfachen Produkten.
-1. Klicken Sie auf der gebündelten Produktseite auf die **Anpassen und Hinzufügen zum Warenkorb** Schaltfläche.
-1. Wählen Sie eine der Optionen aus der Dropdown-Liste aus und klicken Sie auf **Zur Anforderungsliste hinzufügen** , um eine neue Anforderungsliste zu erstellen. Ausführliche Anweisungen finden Sie unter [Magento-Benutzerhandbuch > Meine Anforderungslisten > Erstellen einer Anforderungsliste](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html#create-a-requisition-list) in unserem Benutzerhandbuch.
+1. Klicken Sie auf der gebündelten Produktseite auf die Schaltfläche **Anpassen und Zum Warenkorb hinzufügen** .
+1. Wählen Sie eine der Optionen aus der Dropdown-Liste aus und klicken Sie auf **Zur Anforderungsliste hinzufügen** , um eine neue Anforderungsliste zu erstellen. Detaillierte Anweisungen finden Sie im Abschnitt zum [Magento-Benutzerhandbuch > Meine Anforderungslisten > Erstellen einer Anforderungsliste](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html#create-a-requisition-list) in unserem Benutzerhandbuch.
 1. Gehen Sie zur neu erstellten Anforderungsliste (Mein Konto > **Meine Anforderungslisten**).
-1. Klicken Sie auf **Ansicht** im *Aktionen* Spalte.
-1. Klicken Sie auf **Bearbeiten** Schaltfläche.
+1. Klicken Sie in der Spalte *Aktionen* auf die Schaltfläche **Anzeigen** .
+1. Klicken Sie auf die Schaltfläche **Bearbeiten** .
 
 <u>Erwartete Ergebnisse</u>:<br>
 
@@ -64,14 +64,14 @@ Fatal error: Uncaught Error: Call to a member function isAvailableForCompare() o
 
 Verwenden Sie je nach Adobe Commerce-Produkt die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) Abschnitt.
+Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

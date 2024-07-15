@@ -28,7 +28,8 @@ Adobe Commerce 2.4.5, die im August 2022 veröffentlicht werden soll, enthält d
 
 ## Patch
 
-Die Patch-ID ist AC-3022 in der Version 1.1.16 des Quality Patches Tool verfügbar. Siehe Abschnitt [Quality Patches Tool (QPT) > Nutzung](https://devdocs.magento.com/quality-patches/usage.html) in unserer Entwicklerdokumentation finden Sie Informationen zur Verwendung von QPT und zur Installation von Patches.
+Die Patch-ID ist AC-3022 in der Version 1.1.16 des Quality Patches Tool verfügbar.
+Informationen zur Verwendung von QPT und zur Installation von Patches finden Sie im Artikel [Qualitätspatches-Tool (QPT) > Nutzung](https://devdocs.magento.com/quality-patches/usage.html) unserer Entwicklerdokumentation.
 
 Der Patch gilt für die folgenden Adobe Commerce-Versionen:
 
@@ -38,4 +39,4 @@ Der Patch gilt für die folgenden Adobe Commerce-Versionen:
 ## Verwandtes Lesen
 
 * [Versandunternehmen > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) in unserem Benutzerhandbuch
-* [Versandmethoden](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) in unserem Benutzerhandbuch
+* [Bereitstellungsmethoden](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) in unserem Benutzerhandbuch

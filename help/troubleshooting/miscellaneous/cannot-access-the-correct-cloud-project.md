@@ -18,8 +18,8 @@ ht-degree: 0%
 In diesem Artikel werden die folgenden Probleme behoben, nachdem das Kontoeigentum oder die zugehörigen E-Mail-Adressen geändert wurde:
 
 1. Sie können nicht auf die richtigen Cloud Adobe Commerce-Projekte zugreifen.
-1. Unter Ihrem Konto werden keine Cloud Adobe Commerce-Projekte angezeigt unter [accounts.magento.cloud/user](https://accounts.magento.cloud/user).
-1. Sie sehen die Details zu einem anderen Konto (d. h. dem vorherigen Kontoinhaber) unter [accounts.magento.cloud/user](https://accounts.magento.cloud/user).
+1. Unter [accounts.magento.cloud/user](https://accounts.magento.cloud/user) werden keine Cloud-Adobe Commerce-Projekte angezeigt.
+1. Sie sehen die Details eines anderen Kontos (d. h. des vorherigen Kontoinhabers) unter [accounts.magento.cloud/user](https://accounts.magento.cloud/user).
 
 ## Problem
 
@@ -27,7 +27,7 @@ Sie können nicht auf das richtige Cloud Adobe Commerce-Projekt zugreifen, wenn 
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Ursache
 
@@ -47,16 +47,16 @@ Dieses Problem tritt normalerweise auf, wenn das Single Sign-On (SSO) des vorher
 
 Die Lösung für den Fall, dass das Problem durch ein und zwei verursacht wird, besteht darin, die Single Sign-On-Integration mit Adobe.com zu trennen. Gehen Sie wie folgt vor, um die Verbindung zu trennen:
 
-1. Erweitern Sie unter https://accounts.magento.cloud/user den **[!UICONTROL Single Sign-On]** Abschnitt. Klicks **[!UICONTROL Disconnect from Adobe.com]**, um die Verbindung zu trennen.
+1. Erweitern Sie von https://accounts.magento.cloud/user aus den Abschnitt **[!UICONTROL Single Sign-On]** . Klicken Sie auf **[!UICONTROL Disconnect from Adobe.com]**, um die Verbindung zu trennen.
 
-   ![Single Sign-on-adobe-connect](assets/sso-adobe-disconnect.png)
+   ![single-sign-on-adobe-connect](assets/sso-adobe-disconnect.png)
 
-1. Klicks **[!UICONTROL Disconnect]**.
+1. Klicken Sie auf **[!UICONTROL Disconnect]**.
 
    ![adobe-disconnect](assets/adobe-disconnect.png)
 
 1. Melden Sie sich ab.
-1. Klicken Sie auf **[!UICONTROL Adobe.com]** Schaltfläche.
+1. Klicken Sie auf die Schaltfläche **[!UICONTROL Adobe.com]** .
 
    ![Magento.com](assets/adobe-welcome-login.png)
 
@@ -64,4 +64,4 @@ Die Lösung für den Fall, dass das Problem durch ein und zwei verursacht wird, 
 
 ## Lösung für Ursache drei {#solution-for-cause-three}
 
-Wenn das Problem durch Grund 3 verursacht wurde, bitten Sie einen vorhandenen Superuser im Projekt, Ihre neue E-Mail-Adresse zum Projekt hinzuzufügen. Weitere Informationen finden Sie unter [Verwalten des Benutzerzugriffs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+Wenn das Problem durch Grund 3 verursacht wurde, bitten Sie einen vorhandenen Superuser im Projekt, Ihre neue E-Mail-Adresse zum Projekt hinzuzufügen. Weitere Informationen finden Sie unter [Benutzerzugriff verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).

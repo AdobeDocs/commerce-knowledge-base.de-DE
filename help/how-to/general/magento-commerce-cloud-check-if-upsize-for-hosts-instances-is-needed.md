@@ -20,4 +20,4 @@ Adobe Commerce auf Cloud-Infrastruktur 2.3.x, 2.4.x.
 
 ## Artikel herunterladen
 
-Klicks [Check_if_an_upsize_is_required.pdf](assets/Check_whether_an_upsize_is_needed.pdf) , um den Artikel herunterzuladen.
+Klicken Sie auf [Check_if_an_upsize_is_required.pdf](assets/Check_whether_an_upsize_is_needed.pdf) , um den Artikel herunterzuladen.

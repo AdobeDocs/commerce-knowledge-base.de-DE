@@ -35,15 +35,15 @@ Führen Sie in Ihrem Storefront-Projekt den Befehl zum Hinzufügen eines benutze
 yarn buildpack create-custom-origin ./
 ```
 
-Das Generieren von Zertifikaten wird von [devcert](https://github.com/davewasmer/devcert). Es ist von OpenSSL abhängig. Stellen Sie daher mithilfe des folgenden Befehls sicher, dass Sie eine aktuelle Version von openssl auf Ihrem System haben:
+Das Generieren von Zertifikaten wird von [devcert](https://github.com/davewasmer/devcert) verarbeitet. Es ist von OpenSSL abhängig. Stellen Sie daher mithilfe des folgenden Befehls sicher, dass Sie eine aktuelle Version von openssl auf Ihrem System haben:
 
 `openssl version`
 
 Die Version sollte 1.0 oder höher sein (oder LibreSSL 2, im Falle von OSX High Sierra).
 
-Sie können höhere Versionen von OpenSSL mit [Homebrew](https://brew.sh/) auf OSX, [Schokolade](https://chocolatey.org/) unter Windows oder dem Paketmanager Ihrer Linux-Distribution.
+Sie können höhere Versionen von OpenSSL mit [Homebrew](https://brew.sh/) unter OSX, [Chocolatey](https://chocolatey.org/) unter Windows oder dem Paketmanager Ihrer Linux-Distribution installieren.
 
-Wenn Sie Linux ausführen, stellen Sie sicher, dass `libnss3-tools` (oder das Äquivalent) auf Ihrem System installiert ist. Weitere Informationen finden Sie in diesem Abschnitt der [devcert](https://github.com/davewasmer/devcert#skipcertutil) Readme.
+Wenn Sie Linux ausführen, stellen Sie sicher, dass `libnss3-tools` (oder das Äquivalent) auf Ihrem System installiert ist. Weitere Informationen finden Sie in diesem Abschnitt der [devcert](https://github.com/davewasmer/devcert#skipcertutil) -Readme.
 
 Einige Benutzer haben vorgeschlagen, den Ordner &quot;devcert&quot;zu löschen, um das Trigger-Zertifikat neu zu generieren.
 
@@ -52,7 +52,7 @@ Einige Benutzer haben vorgeschlagen, den Ordner &quot;devcert&quot;zu löschen, 
 
 ## Verwandtes Lesen in unserer Wissensdatenbank
 
-* [PWA Studio: Selbstsignierter Vertrauensfehler bei Zertifikaten](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio: Selbstsignierter Zertifikattrust-Fehler](https://support.magento.com/hc/en-us/articles/360038973172)
 * [PWA Studio: Webpack hängt vor Beginn der Kompilierung](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
 * [PWA Studio: Browser zeigt den Fehler &quot;Proxy zu nicht möglich&quot;an](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
 * [PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)

@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce Intelligence Service-Richtlinien
-description: Bei Commerce Intelligence ist es unser Ziel, herausragenden Kundendienst zu bieten, Ihre Daten zu schützen und Ihnen das Know-how zu vermitteln, das Sie für datenbasierte Entscheidungen benötigen.
+title: Adobe Commerce Intelligence-Dienstrichtlinien
+description: Unser Ziel bei Commerce Intelligence ist es, Ihnen einen herausragenden Kundendienst zu bieten, Ihre Daten zu schützen und Ihnen das Know-how zur Verfügung zu stellen, das Sie für datenbasierte Entscheidungen benötigen.
 exl-id: 2e1ef4b3-a77c-4281-8337-fb90574a44f7
 feature: Commerce Intelligence, User Account
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce Intelligence Service-Richtlinien
+# Adobe Commerce Intelligence-Dienstrichtlinien
 
-Bei Commerce Intelligence ist es unser Ziel, herausragenden Kundendienst zu bieten, Ihre Daten zu schützen und Ihnen das Know-how zu vermitteln, das Sie für datenbasierte Entscheidungen benötigen.
+Unser Ziel bei Commerce Intelligence ist es, Ihnen einen herausragenden Kundendienst zu bieten, Ihre Daten zu schützen und Ihnen das Know-how zur Verfügung zu stellen, das Sie für datenbasierte Entscheidungen benötigen.
 
 ## Was kann Ihr Support-Team tun?
 
@@ -43,11 +43,11 @@ Wir können diese Aktionen zwar nicht in Ihrem Namen durchführen, sind aber ber
 
 Zusätzlich zu den oben aufgeführten Datensicherheitsfunktionen gibt es einige produktbezogene Anfragen, die unser Support-Team nicht unterstützen kann:
 
-* **SQL-Unterrichten** - Möchten Sie den SQL Report Builder verwenden, aber Sie kennen SQL nicht? Keine Sorge - wir haben eine [Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) um Ihnen bei den Grundlagen zu helfen.
+* **SQL lehren** - Möchten Sie den SQL-Report Builder verwenden, aber Sie kennen SQL nicht? Keine Sorge - wir haben ein [Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) zusammengestellt, das Ihnen bei den Grundlagen hilft.
 
-* **Probleme mit der SQL-Visualisierung, die nicht durch Produktfehler verursacht werden** - Wenn sich ein Diagramm ergibt, das ein wenig ungewöhnlich aussieht und es **is&#39;t** durch einen Produktfehler verursacht wurde, ist die Ursache wahrscheinlich die Abfrage selbst. Sehen Sie sich unsere [Tutorial zum Erstellen von Visualisierungen aus SQL-Abfragen](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html) in unserem Benutzerhandbuch für Anleitungen zur Strukturierung Ihrer Visualisierungsabfragen.
-* **Debuggen von SQL-Abfragen** - Gelegentlich können Fehler auftreten, die die Ausführung Ihrer Abfrage verhindern. Wir empfehlen, auf die [Commerce Intelligence-Benutzerhandbuch: Verwenden von SQL Report Builder](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) und unser SQL-Tutorial , um herauszufinden, wo die Abfrage fehlschlug.
+* **Probleme bei der SQL-Visualisierung, die nicht durch Produktfehler verursacht wurden** - Wenn ein Diagramm ein wenig undurchsichtig erscheint und **nicht** durch einen Produktfehler verursacht wird, ist die Ursache wahrscheinlich die Abfrage selbst. Sehen Sie sich unser Tutorial [Erstellen von Visualisierungen aus SQL-Abfragen ](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html) in unserem Benutzerhandbuch an, um zu erfahren, wie Sie Ihre Abfragen zur Visualisierung strukturieren können.
+* **Debugging von SQL-Abfragen** - Gelegentlich können Fehler auftreten, die die Ausführung Ihrer Abfrage nicht EXPLAIN verhindern. Es wird empfohlen, auf das [Commerce Intelligence-Benutzerhandbuch zu verweisen: Verwenden von SQL Report Builder](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) und unser SQL-Tutorial, um herauszufinden, wo die Abfrage fehlschlug.
 
 ## Wie kann ich ein Ticket einreichen?
 
-Sie können [Einreichen eines Tickets](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) durch Klicken auf **Einreichen eines Tickets** -Link oben auf der Seite. Wir empfehlen Ihnen, auszuchecken [Informationen zum Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#info-in-support-ticket) bevor Sie uns kontaktieren, um sicherzustellen, dass alle notwendigen Informationen in Ihrer ersten Übermittlung enthalten sind.
+Sie können [ein Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), indem Sie oben auf der Seite auf den Link **Ticket senden** klicken. Wir empfehlen Ihnen, die [Informationen in Ihrem Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#info-in-support-ticket) auszuchecken, bevor Sie uns kontaktieren, um sicherzustellen, dass alle erforderlichen Informationen in Ihrer ersten Übermittlung enthalten sind.

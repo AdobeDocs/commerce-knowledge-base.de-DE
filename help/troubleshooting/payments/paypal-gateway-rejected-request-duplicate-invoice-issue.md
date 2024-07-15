@@ -53,17 +53,17 @@ Standardmäßig gestattet PayPal die zweifache Verarbeitung derselben Rechnung n
 
 Ändern Sie Ihr PayPal-Profil, um mehrere Zahlungen pro Rechnungskennung zuzulassen. Sie müssen diese Änderungen über PayPal vornehmen.
 
-1. Melden Sie sich bei Ihrem Konto an unter [https://www.paypal.com](https://www.paypal.com/).
-1. Klicks **Profil** > **Profil und Einstellungen** (obere rechte Ecke).
-1. Navigieren Sie zu **Meine Verkaufstools**.
-1. Navigieren Sie zu **Bezahlung und Risikomanagement** > **Blockzahlungen** und klicken **Aktualisieren**.
-1. **Verkaufsvoreinstellungen** klicken **Zahlungseinstellungen**.
-1. under **Unbeabsichtigte Zahlungen blockieren** auswählen **Nein, mehrere Zahlungen pro Rechnungskennung zulassen**.    ![paypal_allow_multiple_payments_per_bill_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
+1. Melden Sie sich bei Ihrem Konto unter [https://www.paypal.com](https://www.paypal.com/) an.
+1. Klicken Sie auf **Profil** > **Profil und Einstellungen** (obere rechte Ecke).
+1. Wechseln Sie zu **Meine Verkaufstools**.
+1. Navigieren Sie zu **Bezahlung und Verwaltung meines Risikos erhalten** > **Blockzahlungen** und klicken Sie auf **Aktualisieren**.
+1. **Verkaufseinstellungen**, klicken Sie auf **Zahlungsempfang-Voreinstellungen**.
+1. Wählen Sie unter **Unbeabsichtigte Zahlungen blockieren** die Option **Nein, erlauben Sie mehrere Zahlungen pro Rechnungskennung**.    ![paypal_allow_multiple_payments_per_bill_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
 1. Scrollen Sie nach unten und klicken Sie auf **Speichern**.
 
 ## Weitere Informationen
 
-* [Unbeabsichtigte Zahlungen blockieren](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments) zu PayPal Developer Docs.
+* [Blockieren Sie versehentliche Zahlungen](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments) in PayPal Developer Docs.
 * PayPal-Zahlungen in unserem Benutzerhandbuch:
    * [PayPal Express Checkout](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html)
    * [Andere PayPal-Lösungen](/docs/commerce-admin/stores-sales/payments/paypal/paypal.html)

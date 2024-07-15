@@ -26,8 +26,8 @@ In diesem Artikel wird ein bekanntes B2B-Problem in Adobe Commerce 2.4.2 beschri
 <u>Zu reproduzierende Schritte</u>:
 
 1. Der Unternehmensadministrator erstellt eine Bestellung (Purchase Order) im Frontend.
-1. Überprüfen Sie die E-Mail &quot;Automatisch genehmigt&quot;. Die **Kundenname** / **Währungskurs** sollten erwartete Werte sein.
-1. Währungssymbol ändern (**Stores > Konfiguration > Währungseinstellungen > Währungsoptionen**) auf der Seite &quot;Kundenkonto&quot;im Admin- und Unternehmensadminamen angezeigt.
+1. Überprüfen Sie die E-Mail &quot;Automatisch genehmigt&quot;. Der **Kundenname** / **Währungskurs** sollte erwartete Werte sein.
+1. Ändern Sie das Währungssymbol (**Geschäfte > Konfiguration > Währungseinstellungen > Währungsoptionen**) in den Namen des Administrators für Admin und Unternehmen auf der Seite Kundenkonto .
 1. Der Kundenadministrator erstellt eine weitere Bestellung in Admin.
 1. Überprüfen Sie die E-Mail &quot;Automatisch genehmigt&quot;.
 

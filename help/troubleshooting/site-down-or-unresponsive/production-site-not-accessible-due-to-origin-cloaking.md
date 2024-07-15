@@ -21,18 +21,18 @@ Dieser Artikel bietet eine Lösung für den Fall, dass der Zugriff auf Ihre Adob
 
 ## Problem
 
-https: &#x200B;//mydomain.com.c.&lt;projectid>.magento.cloud/ ist nicht mehr verfügbar.
+https: &#x200B;//mydomain.com.c.&lt;projektid>.magento.cloud/ ist nicht mehr verfügbar.
 
 <u>Zu reproduzierende Schritte:</u>
 
 1. Melden Sie sich bei Ihrem Projekt an.
-1. Klicks **Projekt aufrufen** für eine Liste von URLs und SSH.
+1. Klicken Sie auf **Projekt aufrufen** , um eine Liste der URLs und SSH anzuzeigen.
 
-<u>Ergebnisse:</u>
+<u>Tatsächliche Ergebnisse:</u>
 
 Seite kann mit dem folgenden Fehler nicht geladen werden:
 
-*NET::ERR\_CERT\_INVALID*  *TLS-Warnhinweis, ungültiges Zertifikat (554):*
+*NET::ERR\_CERT\_INVALID* *TLS-Warnhinweis, ungültiges Zertifikat (554):*
 
 <u>Erwartete Ergebnisse:</u>
 
@@ -47,8 +47,8 @@ Die Herkunftsverdeckung ist eine Sicherheitsfunktion, mit der Adobe Commerce jeg
 ## Lösung
 
 * Wenn Ihre Cloud-Site live ist, wechseln Sie zu https://mydomain.com/.
-* Wenn Sie eine aktive Site (nicht Cloud) haben, richten Sie mithilfe der Domäne &quot;https://mydomain.com/&quot;eine Subdomäne ein. `mcprod.mydomain.com` und aktualisieren Sie **Basis-URL** nach *https://mcprod.mydomain.com* anstelle von [Setzen Sie das DNS auf Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Wenn Sie über eine aktive Site (nicht Cloud) verfügen, richten Sie mithilfe der Domäne &quot;https://mydomain.com/&quot;die Unterdomäne &quot;`mcprod.mydomain.com`&quot;ein und aktualisieren Sie Ihre **Basis-URL** stattdessen auf &quot;*https://mcprod.mydomain.com*&quot;. Anschließend verweisen [auf Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
 
 ## Verwandtes Lesen
 
-[Häufig gestellte Fragen zur Aktivierung der Fastly-origin-Cloaking](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) in unserer Wissensdatenbank.
+[Häufig gestellte Fragen zur Aktivierung der frühzeitigen Ursprungsverschlüsselung](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) in unserer Support-Wissensdatenbank.

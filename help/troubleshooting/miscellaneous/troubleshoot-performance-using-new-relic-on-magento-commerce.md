@@ -30,22 +30,22 @@ In diesem Artikel finden Sie Schritte zur Fehlerbehebung bei Problemen mit der C
 <tr>
 <td>
 <p>Niedriger Apdex-Wert:</p>
-<p>Ihre New Relic <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measuring-user-satisfaction">Apdex-Ergebnis</a> misst die Zufriedenheit der Benutzer mit der Reaktionszeit Ihrer Webanwendungen und -dienste.</p>
+<p>Der New Relic-Wert <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measuring-user-satisfaction">Apdex-Wert</a> misst die Zufriedenheit der Benutzer mit der Reaktionszeit Ihrer Webanwendungen und -dienste.</p>
 </td>
 <td>
-<p>Sie melden sich bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; Übersicht. Auf der rechten Seite der Übersichtsseite sehen Sie das Apdex-Punktdiagramm. Ein Apdex-Wert von 0,5 oder weniger ist ein Grund zur Besorgnis und erfordert die Untersuchung: Web-Transaktionszeiten (Server-Anforderungen):</p>
+<p>Sie melden sich bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; Übersicht an. Auf der rechten Seite der Übersichtsseite sehen Sie das Apdex-Punktdiagramm. Ein Apdex-Wert von 0,5 oder weniger ist ein Grund zur Besorgnis und erfordert die Untersuchung: Web-Transaktionszeiten (Server-Anforderungen):</p>
 <ol>
 <ol>
-<li>Anmelden bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (App auswählen) &gt; Übersicht. Stellen Sie sicher, dass der Filter im Dropdown-Filter für Hauptdiagramme auf Webtransaktionszeit eingestellt ist. Suchen Sie unten in der Transaktionstabelle nach der Zeit des Anwendungsservers. Überprüfen Sie, ob Sie über langwierige oder verdächtige Transaktionen verfügen.</li>
-<li>Untersuchen Sie sie einzeln, indem Sie zu Überwachung &gt; Transaktionen navigieren und sicherstellen, dass Sie die Filter für Web und Am zeitintensivsten einstellen.<em>.</em>
+<li>Melden Sie sich bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (App auswählen) &gt; Übersicht an. Stellen Sie sicher, dass der Filter im Dropdown-Filter für Hauptdiagramme auf Webtransaktionszeit eingestellt ist. Suchen Sie unten in der Transaktionstabelle nach der Zeit des Anwendungsservers. Überprüfen Sie, ob Sie über langwierige oder verdächtige Transaktionen verfügen.</li>
+<li>Untersuchen Sie sie einzeln, indem Sie zu Überwachung &gt; Transaktionen navigieren und stellen Sie sicher, dass Sie die Filter für Web und die zeitintensivsten<em> festlegen.</em>
 </li>
 <li>Suchen Sie dann nach Drittanbietermodulen, die Ressourcen verbrauchen: Zahlungsdienstleister, ERP usw.</li>
 <li>Im Abschnitt Überwachung von APM:<ol>
 <li>Klicken Sie auf Transaktionen.</li>
 <li>Scrollen Sie nach unten und klicken Sie auf Alle Transaktionen anzeigen .</li>
-<li>Sie können Transaktionen nach <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#table_view">Verschiedene Parameter</a> und springen zu denen, die Verdacht verursachen.</li>
+<li>Sie können Transaktionen nach <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#table_view">verschiedenen Parametern</a> sortieren und zu den Parametern springen, die Verdacht verursachen.</li>
 <li>Überprüfen Sie diese Transaktionen mit einem niedrigen Apdex-Wert, ungewöhnlich hoher Count- oder hoher Avg-Zeit oder Dissat %.</li>
-<li>Klicken Sie auf jede einzelne Transaktion. Wenn Sie das Problem nicht lösen können, <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">senden Sie ein Support-Ticket.</a>
+<li>Klicken Sie auf jede einzelne Transaktion. Wenn Sie das Problem nicht beheben können, senden <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">ein Support-Ticket.</a>
 </li>
 <li>Wenn Sie weitere Untersuchungen durchführen müssen, sollten Sie Nicht-Web-Transaktionen überprüfen.</li>
 </ol>
@@ -55,12 +55,12 @@ In diesem Artikel finden Sie Schritte zur Fehlerbehebung bei Problemen mit der C
 <p>Nicht-Webtransaktionszeit (Vorgänge und Hintergrundaufgaben):</p>
 <ol>
 <ol>
-<li>Anmelden bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (App auswählen) &gt; Übersicht. Stellen Sie sicher, dass Sie im Dropdown-Filter für Hauptdiagramme die Option Zeit für Nicht-Web-Transaktionen auswählen. Klicken Sie in der Transaktionstabelle auf die einzelnen Transaktionen. Suchen Sie nach langwierigen oder verdächtigen Transaktionen. Dies umfasst Backend-Aufträge, Cron-Aufträge oder Import-/Exportvorgänge, einschließlich Drittanbieter-Aufträgen.</li>
+<li>Melden Sie sich bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; (App auswählen) &gt; Übersicht an. Stellen Sie sicher, dass Sie im Dropdown-Filter für Hauptdiagramme die Option Zeit für Nicht-Web-Transaktionen auswählen. Klicken Sie in der Transaktionstabelle auf die einzelnen Transaktionen. Suchen Sie nach langwierigen oder verdächtigen Transaktionen. Dies umfasst Backend-Aufträge, Cron-Aufträge oder Import-/Exportvorgänge, einschließlich Drittanbieter-Aufträgen.</li>
 </ol>
 </ol>
 </td>
 <td>
-<p>Weitere Informationen zum New Relic Apdex-Score finden Sie unter <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM-API &gt; Benutzerzufriedenheit messen</a>. Weitere Informationen finden Sie unter <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für Index</a> in unserer Wissensdatenbank.</p>
+<p>Weitere Informationen zum New Relic-Apdex-Ergebnis finden Sie in der <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM-Apdex &gt; Benutzerzufriedenheit messen</a>. Sie können auch auf <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Verwalte Warnhinweise für Adobe Commerce: Warnhinweis für Index</a> in unserer Support-Wissensdatenbank verweisen.</p>
 </td>
 </tr>
 <tr>
@@ -70,12 +70,12 @@ In diesem Artikel finden Sie Schritte zur Fehlerbehebung bei Problemen mit der C
 </td>
 <td>
 <ol>
-<li>Anmelden bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; Infrastruktur &gt; Prozesse.</li>
+<li>Melden Sie sich bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; Infrastruktur &gt; Prozesse an.</li>
 <li>Überprüfen Sie die CPU-Diagramme, um festzustellen, ob ein steckender oder hochauflösender Prozess vorhanden ist, der mehr als 100 % CPU-Zeit verwendet, und vergleichen Sie ihn mit der Prozessoranzahl der Instanz. Achten Sie auf Spitzen bei der Ressourcenauslastung. Es wird nicht empfohlen, einen Prozess zu beenden, es sei denn, es handelt sich um einen hängenden Cron.</li>
 </ol>
 </td>
 <td>
-<p>Weitere Informationen zu Leistungsmetriken, insbesondere zum CPU-Prozentsatz, zu I/O-Bytes und zur Speichernutzung für einzelne oder Gruppen von Prozessen, finden Sie unter <a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic-Dokumentation &gt; UI-Seite Infrastruktur &gt; Infrastruktur-Host-Seite &gt; Registerkarte Prozesse</a>.</p>
+<p>Weitere Informationen zu Leistungsmetriken, insbesondere zum CPU-Prozentsatz, zu I/O-Bytes und zur Speichernutzung für einzelne oder Gruppen von Prozessen, finden Sie unter <a href="https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes">New Relic-Dokumentation &gt; Infrastruktur-UI-Seite &gt; Infrastruktur-Host-Seite &gt; Registerkarte "Prozesse"</a>.</p>
 </td>
 </tr>
 <tr>
@@ -85,7 +85,7 @@ In diesem Artikel finden Sie Schritte zur Fehlerbehebung bei Problemen mit der C
 <td>
 <p>Suchen Sie nach einer ungewöhnlichen Spitze im Vergleich zu vorherigen durchschnittlichen I/O-Vorgängen:</p>
 <ol>
-<li>Anmelden bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; Infrastruktur &gt; Prozesse.</li>
+<li>Melden Sie sich bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; Infrastruktur &gt; Prozesse an.</li>
 <li>Prüfen Sie die I/O-Lesezeichen pro Sekunde.</li>
 <li>Zeichnen Sie die Zeit der Spitze auf.</li>
 <li>Klicken Sie auf APM.</li>
@@ -103,7 +103,7 @@ In diesem Artikel finden Sie Schritte zur Fehlerbehebung bei Problemen mit der C
 <td>
 <p>Die Untersuchung eines Ausfalls kann mehrere Schritte umfassen, um Web- und Nicht-Web-Transaktionen, Datenbanken und Transaktionen mit Dritten zu untersuchen. Web-Transaktionen:</p>
 <ol>
-<li>Anmelden bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; Übersicht. Stellen Sie sicher, dass der Filter im Dropdown-Diagrammfilter auf Webtransaktionen-Zeit eingestellt ist.</li>
+<li>Melden Sie sich bei <a href="https://login.newrelic.com/login">New Relic</a> &gt; APM &gt; Übersicht an. Stellen Sie sicher, dass der Filter im Dropdown-Diagrammfilter auf Webtransaktionen-Zeit eingestellt ist.</li>
 <li>Das Zeitfenster manuell eingrenzen.</li>
 <li>Klicken Sie auf Transaktionen. Stellen Sie sicher, dass die Filter auf "Web"und "Am zeitintensivsten"eingestellt sind. Untersuchen Sie die am längsten laufende Transaktion.</li>
 <li>Wenn Sie weitere Untersuchungen durchführen müssen, sollten Sie Nicht-Web-Transaktionen überprüfen.</li>
@@ -121,7 +121,7 @@ In diesem Artikel finden Sie Schritte zur Fehlerbehebung bei Problemen mit der C
 <li>Sortieren nach am zeitaufwendigsten.</li>
 <li>Überprüfen Sie die TOP-Abfragen.
 
-Hinweis: <code>AKTUALISIEREN</code> oder <code>INSERT</code>Abfragen sind die CPU-intensivsten Abfragen.</li>
+Hinweis: <code>UPDATE</code> oder <code>INSERT</code>Abfragen sind die CPU-intensivsten Abfragen.</li>
 <li>Wechseln Sie von Sortieren nach Auswahl zu Durchsatz und suchen Sie nach Prozessen, die zu einer Dropdown-Liste des Datenbankdurchsatzes geführt haben.</li>
 <li>Wenn Sie weitere Untersuchungen durchführen müssen, sollten Sie die Services von Drittanbietern prüfen.</li>
 </ol>

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-34943: Schnellbestellung kann nicht mehr als 2 Produkte zum Warenkorb hinzufügen
 
-Der Patch MDVA-34943 löst das Problem, dass eine schnelle Bestellung nicht zwei oder mehr Produkte zum Warenkorb hinzufügen kann. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.17 ist installiert. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.2 behoben wurde.
+Der Patch MDVA-34943 löst das Problem, dass eine schnelle Bestellung nicht zwei oder mehr Produkte zum Warenkorb hinzufügen kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.17 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.2 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Adobe Commerce über Cloud-Infrastruktur und Adobe Commerce vor Ort 2.3.0 - 2.4.
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -39,18 +39,18 @@ Adobe Commerce mit einfachen Produkten.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **Schnellbestellung** auf der Storefront (während nicht angemeldet).
-1. Geben Sie eine gültige SKU ein, klicken Sie auf das Produkt, das im Feld für die automatische Vervollständigung angezeigt wird, und legen Sie **Menge** = *1*.
-1. Geben Sie dieselbe gültige SKU ein, ändern Sie jedoch die Groß-/Kleinschreibung (ändern Sie Großbuchstaben in Kleinbuchstaben oder ändern Sie Kleinbuchstaben in Großbuchstaben) des ersten Zeichens, klicken Sie auf das Produkt, das im Feld für die automatische Vervollständigung angezeigt wird, und legen Sie **Menge** = *1*.
-1. Geben Sie einen `random_sting_value` für **SKU** und legen **Menge** = *1*.
-1. Satz **SKU** = *123123123* und legen **Menge** = *1*.
-1. Alles mit Ausnahme des ersten Eintrags, den Sie zum **Schnellbestellung** Seite.
-1. Geben Sie die erste SKU (ähnlich wie in Schritt 2) in die **Mehrere SKUs eingeben** und klicken Sie auf **Zu Liste hinzufügen**.
+1. Wechseln Sie in der Storefront zu **Quick Order** (ohne angemeldet zu sein).
+1. Geben Sie eine gültige SKU ein, klicken Sie auf das Produkt, das im Feld für die automatische Vervollständigung angezeigt wird, und legen Sie **Menge** = *1* fest.
+1. Geben Sie dieselbe gültige SKU ein, ändern Sie jedoch die Groß-/Kleinschreibung des ersten Zeichens (ändern Sie Großbuchstaben in Kleinbuchstaben oder ändern Sie Kleinbuchstaben in Großbuchstaben), klicken Sie auf das Produkt, das im Feld für die automatische Vervollständigung angezeigt wird, und legen Sie **Quantity** = *1* fest.
+1. Geben Sie einen `random_sting_value` für **SKU** ein und legen Sie **Quantity** = *1* fest.
+1. Legen Sie **SKU** = *123123123* fest und legen Sie **Quantity** = *1* fest.
+1. Löschen Sie alle Elemente außer dem ersten Eintrag, den Sie der Seite **Quick Order** hinzugefügt haben.
+1. Geben Sie die erste SKU (ähnlich wie in Schritt 2 oben) in das Feld **Mehrere SKUs eingeben** ein und klicken Sie auf **Zu Liste hinzufügen**.
 1. Dies ergibt eine Menge von 2 für die erste SKU und eine Zeile für eine `random_sting_value`.
 1. Um mehr zu testen, aktualisieren Sie die Seite.
 1. Dies führt dazu, dass keine SKUs für eine schnelle Bestellung wie erwartet verfügbar sind.
-1. Geben Sie einen `random_sting_value2` in **Mehrere SKUs eingeben** und klicken Sie auf **Zu Liste hinzufügen**.
-1. Dies führt zu zwei gültigen SKUs aus dem Vorfeld und einer `random_sting_value2`.
+1. Geben Sie einen `random_sting_value2` in das Feld **Mehrere SKUs eingeben** ein und klicken Sie auf **Zur Liste hinzufügen**.
+1. Dies führt zu zwei gültigen SKUs aus dem Vorfeld und einem `random_sting_value2`.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -58,20 +58,20 @@ Zwei oder mehr Produkte können erwartungsgemäß zum Warenkorb hinzugefügt wer
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Wenn Sie zur **Warenkorb** Seite, wird das erste hinzugefügte Produkt normal angezeigt, aber für das zweite Produkt und alle nachfolgenden Produkte, die zum Warenkorb hinzugefügt werden, wird ein &quot;*1 Produkt erfordert Aufmerksamkeit*&quot; wird eine Fehlermeldung angezeigt. Das zweite oder alle weiteren Produkte werden im **Produkt erfordert Aufmerksamkeit** Abschnitt **Warenkorb** Seite.
+Wenn Sie zur Seite **Warenkorb** gehen, wird das erste hinzugefügte Produkt normal angezeigt. Für das zweite Produkt und alle nachfolgenden Produkte, die zum Warenkorb hinzugefügt werden, ist jedoch eine Fehlermeldung &quot;*1 Produkt erfordert Aufmerksamkeit*&quot; angezeigt. Das zweite oder jedes weitere Produkt wird im Abschnitt **Wichtiges Produkt** der Seite **Warenkorb** aufgelistet.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) Abschnitt.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) verfügbare Patches.

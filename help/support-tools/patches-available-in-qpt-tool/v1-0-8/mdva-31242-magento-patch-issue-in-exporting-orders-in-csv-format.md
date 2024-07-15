@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-31242: Ausgabe in CSV-Exportbestellungen
 
-Der Patch MDVA-31242 behebt das Problem, dass beim Export von Bestellungen im CSV-Dateiformat ein Fehler auftritt. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.8 ist installiert. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
+Der Patch MDVA-31242 behebt das Problem, dass beim Export von Bestellungen im CSV-Dateiformat ein Fehler auftritt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.8 installiert ist. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,19 +27,19 @@ Der Patch MDVA-31242 behebt das Problem, dass beim Export von Bestellungen im CS
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Melden Sie sich beim Admin-Backend an.
-1. Aktivieren **Firma** at **Stores** > **Konfiguration** > **B2B-Funktionen**.
-1. Navigieren Sie zu **Vertrieb** > **Bestellungen**.
-1. Klicken Sie auf **Spalte** > **Firmenname** aktivieren.
-1. Geben Sie einen beliebigen Wert in die **Filter** > **Firmenname** Textfeld.
-1. Klicken Sie auf **Filter anwenden** Schaltfläche.
-1. Klicken Sie auf **Export** > **CSV** > **Export** Schaltfläche.
+1. Aktivieren Sie **Firma** unter **Geschäfte** > **Konfiguration** > **B2B-Funktionen**.
+1. Wechseln Sie zu **Verkauf** > **Bestellungen**.
+1. Klicken Sie auf das Kontrollkästchen **Spalte** > **Firmenname** .
+1. Geben Sie einen beliebigen Wert in das Textfeld **Filter** > **Firmenname** ein.
+1. Klicken Sie auf die Schaltfläche **Filter anwenden** .
+1. Klicken Sie auf die Schaltfläche **Exportieren** > **CSV** > **Exportieren** .
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -47,20 +47,20 @@ Das Popup für die ausgewählte Datei wird wie erwartet geöffnet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Weißer Bildschirm mit Fehler *Bei der Verarbeitung Ihrer Anfrage ist ein Fehler aufgetreten.* Ausnahmefehler angezeigt.
+Weißer Bildschirm mit dem Fehler *Es wurde ein Fehler bei der Verarbeitung Ihrer Anfrage* angezeigt.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

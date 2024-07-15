@@ -37,10 +37,10 @@ Wenn Sie die Sender-E-Mail nicht richtig konfiguriert haben oder Ihre Domain in 
    ```
 
    * Wenn keine Ergebnisse zurückgegeben werden, bedeutet dies, dass die Absenderadresse nicht konfiguriert wurde.
-   * Wenn ein Ergebnis zurückgegeben wird, fahren Sie mit **Schritt 2**.
+   * Wenn ein Ergebnis zurückgegeben wird, fahren Sie mit **Schritt 2** fort.
 
 1. Wenn die E-Mail in Ihrem Spam-Ordner erscheint, klicken Sie auf den Link in der E-Mail. Wenn der Link seither abgelaufen ist, versuchen Sie erneut, sich anzumelden, um den Vorgang zu wiederholen.
-1. Sobald Sie Zugriff erhalten haben, navigieren Sie zu **Stores** > **Konfiguration** > **Allgemein** > **E-Mail-Adressen speichern** und konfigurieren Sie die E-Mail-Adressen.
+1. Nachdem Sie Zugriff erhalten haben, navigieren Sie zu **Stores** > **Konfiguration** > **Allgemein** > **E-Mail-Adressen speichern** und konfigurieren Sie die E-Mail-Adressen.
 
 ### Schritt 2: Wenn/nachdem die E-Mail-Adressen ordnungsgemäß konfiguriert wurden, SSH in die Umgebung und führen Sie folgenden Befehl aus:
 
@@ -48,7 +48,7 @@ Wenn Sie die Sender-E-Mail nicht richtig konfiguriert haben oder Ihre Domain in 
 php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 ```
 
-Überprüfen Sie Ihren Spam-Ordner auf die E-Mail. Wenn die E-Mail dort angezeigt wurde, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) , um anzufordern, dass die Domäne in SendGrid eine weiße Beschriftung aufweist.
+Überprüfen Sie Ihren Spam-Ordner auf die E-Mail. Wenn die E-Mail dort angezeigt wurde, senden [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login), um anzufordern, dass die Domäne in SendGrid mit einer weißen Beschriftung versehen wird.
 
 ## Verwandtes Lesen
 

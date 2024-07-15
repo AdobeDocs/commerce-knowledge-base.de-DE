@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bekanntes Problem in Adobe Commerce 2.4.0: Amazon-Zahlung, keine Zahlungsmethoden
 
-Dieser Artikel bietet eine Lösung für ein bekanntes Problem mit Adobe Commerce 2.4.0, bei dem Zahlungsmethoden fehlen, wenn Kunden **Zurück zum standardmäßigen Checkout**, nachdem sie die Amazon-Bezahlung aktiviert haben.
+Dieser Artikel bietet eine Lösung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Zahlungsmethoden fehlen, wenn Kunden **Zurück zum standardmäßigen Checkout** verwenden, nachdem sie die Amazon-Zahlung aktiviert haben.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,14 +25,14 @@ Adobe Commerce On-Premise und Adobe Commerce auf Cloud-Infrastruktur v2.3.5.p1 u
 1. Fügen Sie beliebige Artikel zum Warenkorb hinzu und fahren Sie mit dem Checkout fort.
 1. Melden Sie sich bei Ihrem Amazon Pay-Konto an.
 1. Wählen Sie eine Adresse aus und fahren Sie mit dem Checkout fort.
-1. Klicks **Zurück zum standardmäßigen Checkout**.
+1. Klicken Sie auf **Zurück zum standardmäßigen Checkout**.
 1. Fahren Sie mit dem Checkout fort.
 
 <u>Erwartete Ergebnisse:</u>
 
 Zahlungsmethoden sollten nach einem Neustart des Checkout angezeigt werden.
 
-<u>Ergebnisse:</u>
+<u>Tatsächliche Ergebnisse:</u>
 
 Zahlungsmethoden fehlen.
 

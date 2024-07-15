@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Erhöhen Sie den Speicherplatz für die Integrationsumgebung in Cloud.
 
-Siehe [Verwalten des Festplattenspeichers](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserem Commerce on Cloud Infrastructure-Handbuch.
+Weitere Informationen finden Sie unter [Verwalten von Speicherplatz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserem Handbuch zu Commerce on Cloud Infrastructure.

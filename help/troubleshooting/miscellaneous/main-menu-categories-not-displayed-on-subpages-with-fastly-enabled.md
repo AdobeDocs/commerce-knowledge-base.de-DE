@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Hauptmenü (Kategorien) wird nicht auf Unterseiten mit Fastly-Aktivierung angezeigt
 
-Dieser Artikel enthält eine Korrektur für den Zeitpunkt, zu dem das Hauptmenü (oder die [Menü &quot;Top-Navigation&quot;der Kategorie](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
+Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das oberste Navigationsmenü der Kategorie [in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *Blog/Seite*), wenn Fastly oder Varnish aktiviert ist.](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html)
 
-**Ursache:** nicht erlaubt `/` -Zeichen (Schrägstrich) im *URL-Schlüssel* -Parameter der Seite (Suchmaschinenoptimierungseinstellungen). Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort) versehentlich anstelle von *URL-Schlüssel*: zum Beispiel *blog/page\_name* anstelle von nur *page\_name*.
+**Ursache:** das nicht zulässige `/` Zeichen (Schrägstrich) im Parameter *URL-Schlüssel* der Seite (Suchmaschinenoptimierungseinstellungen). Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort) fälschlicherweise anstelle von *URL-Schlüssel* angegeben wird: Beispiel: *blog/page\_name* anstelle von nur *page\_name*.
 
-**Lösung:** entfernen `/` Zeichen (Schrägstrich); für die *URL-Schlüssel* -Parameter nur den Seitennamen angeben.
+**Lösung:** Entfernen Sie das Zeichen `/` (Schrägstrich). Geben Sie für den Parameter *URL-Schlüssel* nur den Seitennamen an.
 
 ## Betroffene Versionen
 
@@ -27,35 +27,35 @@ Dieser Artikel enthält eine Korrektur für den Zeitpunkt, zu dem das Hauptmenü
 
 ## Problem
 
-Das Hauptmenü (auch als [Menü &quot;Top-Navigation&quot;der Kategorie](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt, wenn Fastly oder andere Dienste auf der Basis des Pfanns aktiviert sind.
+Das Hauptmenü (in unserem Benutzerhandbuch auch als [Kategorieoberer Navigationsmenü](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) bezeichnet) wird nicht auf der Storefront für Unterseiten angezeigt, wenn Fastly oder andere auf Varnish basierende Dienste aktiviert sind.
 
 ## Ursache
 
-Das Problem wird durch das nicht zulässige verursacht `/` -Zeichen (Schrägstrich), der *URL-Schlüssel* -Parameter (Suchmaschinenoptimierungseinstellungen).
+Das Problem wird durch das nicht zulässige `/` -Zeichen (Schrägstrich) verursacht, das zum Parameter *URL-Schlüssel* hinzugefügt wurde (Suchmaschinenoptimierungseinstellungen).
 
-Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort, einschließlich der übergeordneten Ressource/des Ordners der Seite) versehentlich anstelle von *URL-Schlüssel*: zum Beispiel *blog/page\_name* anstelle von nur *page\_name*.
+Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort, einschließlich der übergeordneten Ressource/des Ordners der Seite) fälschlicherweise anstelle von *URL-Schlüssel* angegeben wird: Beispiel: *blog/page\_name* anstelle von nur *page\_name*.
 
 ![URL-Schlüsselparameter für SEO-Einstellungen](assets/seo_url_key.png)
 
 ## Lösung
 
-Entfernen Sie die `/` -Zeichen (Schrägstrich) aus der *URL-Schlüssel* für alle Seiten Ihres Stores.
+Entfernen Sie das Zeichen `/` (Schrägstrich) aus dem Parameter *URL-Schlüssel* für alle Seiten Ihres Stores.
 
-Mit anderen Worten: Verwenden Sie *URL-Schlüssel* anstelle von *URL-Pfad*: Erwähnen Sie nur den Seitennamen ohne übergeordnete Ressource/Verzeichnis.
+Verwenden Sie also *URL-Schlüssel* anstelle von *URL-Pfad*: Erwähnen Sie nur den Seitennamen ohne übergeordnete Ressource/Verzeichnis.
 
 ### Recommendations in Seitenhierarchie und SEO
 
-Verwenden Sie zum Festlegen der Seitenhierarchie den **Hierarchie** im Menü Seite bearbeiten .
+Verwenden Sie zum Festlegen der Seitenhierarchie den Abschnitt **Hierarchie** im Menü &quot;Seite bearbeiten&quot;.
 
 ![Hierarchieeinstellungen](assets/hierarchy_hr.png)
 
-Sie können auch die **Inhalt** > **Elemente** > **Hierarchie** Menü - für komplexere Hierarchielösungen.
+Für komplexere Hierarchielösungen können Sie auch das Menü **Inhalt** > **Elemente** > **Hierarchie** verwenden.
 
 Verwenden Sie für SEO-Zwecke auf Produktseiten URL-Neuschreibungen (**Marketing** > **SEO und Suche** > **URL-Neuschreibungen**).
 
 ## Weitere Informationen finden Sie in unserem Benutzerhandbuch
 
-Die *URL-Schlüssel* Parameter für SEO:
+Der Parameter *URL-Schlüssel* für SEO:
 
 * [Suchmaschinenoptimierung](/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
 * [Hinzufügen einer neuen Seite](/docs/commerce-admin/content-design/elements/pages/page-add.html)

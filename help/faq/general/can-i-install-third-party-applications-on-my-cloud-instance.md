@@ -18,7 +18,7 @@ Anzahl Die Installation von Drittanbieteranwendungen (wie WordPress oder Drupal)
 
 ### Vereinbarung über die Nutzungsbedingungen
 
-Adobe Commerce on Cloud Infrastructure Edition [Vereinbarung über die Nutzungsbedingungen](https://magento.com/legal/terms/cloud-terms) In Artikel 18 heißt es:
+In Artikel 18 der Adobe Commerce on Cloud Infrastructure Edition [Vereinbarung über die Nutzungsbedingungen](https://magento.com/legal/terms/cloud-terms) heißt es:
 
 > Der Kunde erklärt sich damit einverstanden, dass Adobe Commerce und der Service nicht zum Hosten anderer Softwareanwendungen von Drittanbietern verwendet werden, die nicht direkt von der Software abhängig sind.
 
@@ -29,10 +29,10 @@ Als Cloud-Lösung übernimmt Adobe die volle Verantwortung für die Sicherheit I
 Als PCI-zertifizierter Lösungsanbieter der Stufe 1 muss Adobe Commerce in der Cloud-Infrastruktur dem PCI Data Security Standard entsprechen und sicherstellen, dass:
 
 >... Entwicklung und Pflege sicherer Systeme und Anwendungen
-> ([Adobe-Ansatz zur PCI-Compliance](https://magento.com/pci-compliance) 6. Anforderung, Programm zur Verwaltung von Sicherheitsrisiken zu verwalten)
+> ([Adobe-Ansatz für PCI Compliance](https://magento.com/pci-compliance) Anforderung 6, Pflege eines Programms zur Verwaltung von Sicherheitsrisiken)
 
 Da Adobe die PCI-Compliance von Drittanbieteranwendungen nicht garantieren kann, ist die Installation solcher Apps auf Cloud-Servern nicht zulässig.
 
 ## Hinweis: Verwenden von Commerce Marketplace-Erweiterungen für bessere Integrationen
 
-Um die Integration Ihrer Adobe Commerce in die Cloud-Infrastrukturanwendung mit den Drittanbieterlösungen zu verbessern, die auf externen Servern gehostet werden, empfehlen wir Ihnen, die [Commerce Marketplace](https://marketplace.magento.com) Erweiterungen, die Ihren Anforderungen entsprechen.
+Um die Integration Ihrer Adobe Commerce in die Cloud-Infrastrukturanwendung mit den Drittanbieterlösungen zu verbessern, die auf externen Servern gehostet werden, empfehlen wir Ihnen, die [Commerce Marketplace](https://marketplace.magento.com) -Erweiterungen zu verwenden, die Ihren Anforderungen entsprechen könnten.

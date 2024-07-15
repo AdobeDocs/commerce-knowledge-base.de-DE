@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Weisen Sie Platz für Starter-Plan und Pro-Plan-Integration zu
 
-Für alle Starter-Planumgebungen und Pro-Plan [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), können Sie MySQL im Abschnitt `.magento/services.yaml` durch Erhöhung der `mysql: disk:` -Parameter. Beispiel:
+Für alle Starter-Planumgebungen und die Pro-Plan [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) können Sie in der Datei `.magento/services.yaml` mehr Speicherplatz für MySQL zuweisen, indem Sie den Parameter `mysql: disk:` erhöhen. Beispiel:
 
 ```yaml
 mysql:
@@ -23,9 +23,9 @@ mysql:
     disk: 2048
 ```
 
-Siehe [MySQL-Dienst einrichten](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-mysql.html) Artikel als Referenz.
+Weitere Informationen finden Sie im Artikel [Einrichten des MySQL-Dienstes](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-mysql.html) .
 
-Sobald Sie die `.magento/services.yaml` -Datei, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Die Push-Benachrichtigung Trigger den Bereitstellungsprozess.
+Nachdem Sie die `.magento/services.yaml` -Datei geändert haben, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Die Push-Benachrichtigung Trigger den Bereitstellungsprozess.
 
 >[!WARNING]
 >
@@ -33,9 +33,9 @@ Sobald Sie die `.magento/services.yaml` -Datei, müssen Sie Ihre Änderungen üb
 
 ## Speicherplatz für Pro-Plan-Staging oder -Produktion zuweisen
 
-Um diese Änderungen für die Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie eine [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Beim Senden eines Support-Tickets zur Erhöhung des Speichers muss der Support wissen, wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Eine Anfrage zur Erhöhung des Speicherplatzes erfordert die Genehmigung durch Ihr Adobe Account-Team, das vor der Validierung Ihre berechtigte Speichermenge (gemäß Bestellformular) überprüft.
+Um diese Änderungen für die Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie ein [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed) erstellen. Beim Senden eines Support-Tickets zur Erhöhung des Speichers muss der Support wissen, wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Eine Anfrage zur Erhöhung des Speicherplatzes erfordert die Genehmigung durch Ihr Adobe Account-Team, das vor der Validierung Ihre berechtigte Speichermenge (gemäß Bestellformular) überprüft.
 
 ## Verringerter zugewiesener Speicherplatz nicht verfügbar (Pro- und Starter-Plan)
 
-Der Adobe Commerce-Support kann eine Partition (`/mysql` oder `/exports`), kann aber eine Partition nicht verkleinern. Dies birgt die Gefahr von Datenbeschädigungen, weshalb eine Verringerung des Speicherplatzes für eine Partition nicht verfügbar ist.
+Der Adobe Commerce-Support kann eine Partition (`/mysql` oder `/exports`) vergrößern, eine Partition jedoch nicht verkleinern. Dies birgt die Gefahr von Datenbeschädigungen, weshalb eine Verringerung des Speicherplatzes für eine Partition nicht verfügbar ist.
 Dies gilt auch für den Starter-Plan, bei dem Sie den zugewiesenen Platz selbst vergrößern können: Eine Reduzierung wird dringend nicht empfohlen und könnte zu katastrophalen Datenbeschädigungen führen.

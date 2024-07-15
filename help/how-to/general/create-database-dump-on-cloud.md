@@ -18,15 +18,15 @@ Sie müssen nur eine Variante (Option) verwenden, um Ihre DB zu komprimieren. Di
 
 ## Voraussetzung: SSH in Ihrer Umgebung
 
-Um Ihre DB auf Adobe Commerce in einer Cloud-Infrastruktur mit einer beliebigen Variante zu speichern, die in diesem Artikel besprochen wird, müssen Sie zunächst [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+Um Ihre DB auf Adobe Commerce in einer Cloud-Infrastruktur mit einer beliebigen Variante, die in diesem Artikel besprochen wird, abzulegen, müssen Sie zunächst [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) eingeben.
 
 >[!WARNING]
 >
 >Unabhängig davon, ob Sie Option 1 oder Option 2 auswählen, führen Sie den Befehl während der Nebenzeiten außerhalb der Spitzenzeiten für einen sekundären Datenbankknoten aus.
 
-## Option 1: db-dump (**Eichwerkzeuge; empfohlen**)
+## Option 1: db-dump (**ece-tools; empfohlen**)
 
-Sie können Ihre DB mit dem [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) command:
+Sie können Ihre DB mit dem Befehl [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) ablegen:
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 Dies ist die empfohlene und sicherste Option.
 
-Siehe [Datenbank abrufen (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) in unserem Commerce on Cloud Infrastructure Guide.
+Siehe [Dump your database (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) in unserem Handbuch zu Commerce on Cloud Infrastructure.
 
 ## Option 2: mysqldump
 
@@ -42,7 +42,7 @@ Siehe [Datenbank abrufen (ECE-Tools)](https://experienceleague.adobe.com/docs/co
 >
 >Führen Sie diesen Befehl nicht für den Datenbankcluster aus. Der Cluster unterscheidet nicht, ob er mit der primären Datenbank oder einer sekundären Datenbank ausgeführt wird. Wenn der Cluster diesen Befehl für die primäre Instanz ausführt, kann die Datenbank bis zum Abschluss des Dumps keine Schreibvorgänge ausführen und könnte sich auf die Leistung und Site-Stabilität auswirken.
 
-Sie können Ihre DB mit der nativen MySQL-Software komprimieren. `mysqldump` Befehl.
+Sie können Ihre DB mit dem nativen MySQL `mysqldump`-Befehl ablegen.
 
 Der gesamte Befehl könnte wie folgt aussehen:
 
@@ -50,9 +50,9 @@ Der gesamte Befehl könnte wie folgt aussehen:
 mysqldump -h <host> -u <username> -p <password> --single-transaction <db_name> | gzip > /tmp/<dump_name>.sql.gz
 ```
 
-Die durch Ausführen der `mysqldump` Befehl und gespeichert in `\tmp`von diesem Speicherort verschoben werden. Es sollte keinen Speicherplatz in `\tmp` (was zu Problemen führen kann).
+Die durch Ausführen des Befehls `mysqldump` erstellte und in `\tmp` gespeicherte Datenbanksicherung sollte von diesem Speicherort verschoben werden. Es sollte keinen Speicherplatz in `\tmp` beanspruchen (was zu Problemen führen kann).
 
-Um Ihre DB-Anmeldeinformationen (Host, Benutzername und Kennwort) abzurufen, können Sie die `MAGENTO_CLOUD_RELATIONSHIPS` Umgebungsvariable:
+Um Ihre DB-Anmeldeinformationen (Host, Benutzername und Kennwort) abzurufen, können Sie die Umgebungsvariable `MAGENTO_CLOUD_RELATIONSHIPS` aufrufen:
 
 ```
 echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
@@ -61,4 +61,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Verwandte Dokumentation:**
 
 * [mysqldump - Ein Datenbanksicherungsprogramm](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) in der offiziellen MySQL-Dokumentation.
-* [Cloud-spezifische Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (siehe `MAGENTO_CLOUD_RELATIONSHIPS`) in unserem Commerce on Cloud Infrastructure Guide.
+* [Cloud-spezifische Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (siehe `MAGENTO_CLOUD_RELATIONSHIPS`) in unserem Commerce on Cloud Infrastructure-Handbuch.

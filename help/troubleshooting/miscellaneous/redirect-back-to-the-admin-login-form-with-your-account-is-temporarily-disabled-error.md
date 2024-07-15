@@ -32,12 +32,12 @@ Sie werden beim Commerce-Administrator angemeldet.
 
 <u>Tatsächliches Ergebnis</u>:
 
-Sie werden zum Anmeldeformular zurückgeleitet, wobei die folgende Fehlermeldung angezeigt wird: *&quot;Ihr Konto ist vorübergehend deaktiviert. Versuchen Sie es später erneut.&quot;*.
+Sie werden zum Anmeldeformular zurückgeleitet, wobei die folgende Fehlermeldung angezeigt wird: *&quot;Ihr Konto ist vorübergehend deaktiviert. Versuchen Sie es später erneut&quot;*.
 
 ## Lösung
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)oder greifen Sie über die Befehlszeile manuell auf die DB zu. Im `admin_user` Datenbanktabelle, überprüfen Sie für Ihren Administratorbenutzerdatensatz, ob `is_active` auf &quot;`1`&quot; und `lock_expires` is `NULL`. Setzen Sie diese Werte bei Bedarf zurück.
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die DB zu. Überprüfen Sie in der Datenbanktabelle `admin_user` für Ihren Administratorbenutzerdatensatz, ob `is_active` auf &quot;`1`&quot; und `lock_expires` auf &quot;`NULL`&quot; gesetzt ist. Setzen Sie diese Werte bei Bedarf zurück.
 
 ## Verwandtes Lesen in unserer Wissensdatenbank
 

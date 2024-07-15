@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Autor in Markdown
 
-Im Allgemeinen verwenden wir [Adobe Experience League Markdown-Syntaxhandbuch](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), aber es gibt einige Unterschiede und Ausnahmen. Außerdem sind bestimmte HTML-Tags in bestimmten Fällen erforderlich.
+Im Allgemeinen verwenden wir [Adobe Experience League Markdown Syntax Style Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), es gibt jedoch einige Unterschiede und Ausnahmen. Außerdem sind bestimmte HTML-Tags in bestimmten Fällen erforderlich.
 
 Im Folgenden finden Sie Beispiele für die Markdown-Formatierung, die am häufigsten in unserem Repo verwendet wird.
 
@@ -23,11 +23,11 @@ Um Text kursiv zu formatieren, verwenden Sie ein einzelnes Sternchen:
 
 `This text will be *italics*`
 
-Um Text wie unterstrichen zu formatieren, verwenden Sie die `<ins>` Tag:
+Um Text wie unterstrichen zu formatieren, verwenden Sie das Tag `<ins>` :
 
 `<ins>This text will be underlined</ins>`
 
-Verwenden Sie zum Hinzufügen eines Zeilenumbruchs die `<br>` HTML-Tag.
+Verwenden Sie zum Hinzufügen eines Zeilenumbruchs das Tag `<br>` HTML .
 
 
 ## Kopfzeilen
@@ -54,8 +54,11 @@ Um einen Codeblock einzufügen, fügen Sie den Codeblock in drei Backticks ein u
 
 \`\`\` sql
 
-SELECT TABLE_NAME AS `Table`, ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
-VON information_schema.TABLES WHERE TABLE_SCHEMA = &quot;%project_id%&quot; ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
+SELECT TABLE_NAME AS `Table`,
+ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+VON information_schema.TABLES
+WOBEI TABLE_SCHEMA = &quot;%project_id%&quot;
+ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 
 \`\`\`
 
@@ -81,7 +84,7 @@ your code here
 </pre></code>
 ```
 
-Wo ``%language-code%`` sind die von [Unterstützte Sprachen für Prism.js](https://prismjs.com/#supported-languages).
+Wobei ``%language-code%`` die von [Prism.js unterstützten Sprachen](https://prismjs.com/#supported-languages) definierten Codes sind.
 
 ## Listen
 
@@ -130,7 +133,7 @@ Externe Links sind einfach:
 
 Jede Art von Anlage sollte in den Formaten .png, .jpg und .jpeg vorliegen. Aus Sicherheitsgründen akzeptieren wir nur Anhänge, die in einem der drei Formate enthalten sind.
 
-Um ein Bild einzufügen, platzieren Sie das Bild auf *Assets* Unterordner im selben Abschnittsordner wie der Artikel und verwenden Sie die folgende Syntax, um das Bild in Ihren Artikel einzufügen:
+Um ein Bild einzufügen, platzieren Sie das Bild in den Unterordner *assets* im selben Abschnittsordner wie der Artikel und verwenden Sie die folgende Syntax, um das Bild in Ihren Artikel einzufügen:
 
 ```markdown
 ![alt text](assets/image.png)
@@ -162,17 +165,17 @@ Dies ist ein Link zu dieser Kopfzeile:
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-Wenn Sie auf ein anderes Element als die Kopfzeile verweisen müssen, verwenden Sie HTML, um das hinzuzufügende Element zu definieren. Verwenden Sie dazu die [id-Attribut](https://www.w3schools.com/html/html_id.asp). Sie können dann Markdown oder HTML verwenden, um auf diese ID zu verweisen.
+Wenn Sie auf ein anderes Element als die Kopfzeile verweisen müssen, verwenden Sie HTML, um das hinzuzufügende Element zu definieren, und verwenden Sie das Attribut [id](https://www.w3schools.com/html/html_id.asp). Sie können dann Markdown oder HTML verwenden, um auf diese ID zu verweisen.
 
 ### Relative Links und Links zu anderen Artikeln
 
-Verwenden Sie keine relativen Links, um auf unsere Support-Knowledge Base-Artikel zu verweisen. Diese Links funktionieren nicht, wenn Ihr Artikel in der [Adobe Commerce Help Center](https://support.magento.com/hc/en-us).
-Bitte verwenden Sie vollständige Hyperlinks aus dem [Adobe Commerce Help Center](https://support.magento.com/hc/en-us).
+Verwenden Sie keine relativen Links, um auf unsere Support-Knowledge Base-Artikel zu verweisen. Diese Links funktionieren nicht, wenn Ihr Artikel im [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) veröffentlicht wird.
+Verwenden Sie vollständige Hyperlinks aus dem [Adobe Commerce Help Center](https://support.magento.com/hc/en-us).
 
 
 ## Tabellen
 
-Verwendung [Tabellenformatierung](https://www.w3schools.com/html/html_tables.asp).
+Verwenden Sie die [HTML-Formatierung für Tabellen](https://www.w3schools.com/html/html_tables.asp).
 
 
 ## Warnungen und Informationsblöcke

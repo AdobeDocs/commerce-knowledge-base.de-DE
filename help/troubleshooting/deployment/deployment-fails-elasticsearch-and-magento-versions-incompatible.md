@@ -1,6 +1,6 @@
 ---
 title: "Bereitstellung schlägt fehl: inkompatible Elasticsearch- und Adobe Commerce-Versionen"
-description: Weitere Informationen finden Sie unter [Einrichten von Elasticsearch Service &gt; Elasticsearch-Softwarekompatibilität](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) in unserer Entwicklerdokumentation.
+description: Weitere Informationen finden Sie im Abschnitt [Elasticsearch-Dienst einrichten &gt; Elasticsearch-Softwarekompatibilität](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) in unserer Entwicklerdokumentation.
 exl-id: 7021df62-627c-45cf-a2f2-07c1a29ba1b2
 feature: Deploy, Search, Services
 role: Developer
@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Die Implementierung schlägt fehl: inkompatible Elasticsearch- und Adobe Commerce-Versionen
 
-Weitere Informationen finden Sie unter [Einrichten von Elasticsearch Service > Elasticsearch-Softwarekompatibilität](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie unter [Einrichten des Elasticsearch-Dienstes > Elasticsearch-Softwarekompatibilität](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) in unserer Entwicklerdokumentation.

@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass Produktbilder trotz der Bildrollen, die auf der Seite &quot;Produktbearbeitung&quot;festgelegt sind, nicht in der Storefront angezeigt werden.
 
-**Ursache:** Bei Adobe Commerce-Instanzen mit mehr als einem Store verfügen einige Produktbilder möglicherweise über die `no_selection` -Werte für Bildrollenattribute `image`, `small_image`, `thumbnail`, `swatch`. Solche `no_selection` -Werte treten auf, wenn die Bildrolle des Produkts auf den globalen Bereich gesetzt wird, werden alle Stores anstelle des Umfangs eines bestimmten Stores verwendet (d. h. auf die **Alle Store-Ansichten** anstelle eines bestimmten **Store-Ansicht**). Um zu verstehen, ob dies der Fall ist, führen Sie das SQL-Skript aus dem **Ursache** unten.
+**Ursache:** Bei Adobe Commerce-Instanzen mit mehr als einem Store verfügen einige Produktbilder möglicherweise über die `no_selection` -Werte für die Bildelement-Attribute `image`, `small_image`, `thumbnail`, `swatch`. Solche `no_selection` -Werte treten auf, wenn die Rolle des Produktbilds auf den globalen Bereich des All-Stores statt auf den Umfang eines bestimmten Stores gesetzt wird (d. h. auf den **Alle Store-Ansichten** anstelle einer bestimmten **Store-Ansicht**). Um zu verstehen, ob dies der Fall ist, führen Sie das SQL-Skript aus dem Abschnitt **Ursache** unten aus.
 
-**Lösung:** Löschen Sie Zeilen mit der `no_selection` -Werte für diese Bilder mithilfe des SQL-Skripts aus dem Abschnitt Lösung unten.
+**Lösung:** löscht Zeilen mit den `no_selection` -Werten für solche Bilder mithilfe des SQL-Skripts aus dem Abschnitt Lösung unten.
 
 ## Betroffene Versionen
 
@@ -28,21 +28,21 @@ Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass Produktbilder tr
 
 Produktbilder werden möglicherweise nicht in Ihrer Storefront angezeigt, obwohl die Bildrollen (Basis, Klein, Miniatur, Muster) auf der Produktseite Ihres Admin-Bedienfelds korrekt festgelegt wurden.
 
-Wenn Sie die Produktseite mit **Store-Ansicht** auf **Alle Store-Ansichten**, hat das Bild die Rollen, die für die **Bilddetails** angezeigt.
+Wenn Sie die Produktseite überprüfen, bei der **Store-Ansicht** auf **Alle Store-Ansichten** eingestellt ist, werden für das Bild die Rollen auf dem Bildschirm **Bilddetails** festgelegt.
 
 ![all_store_views.png](assets/all_store_views.png)
 
 ![image_roles.png](assets/image_roles.png)
 
-Auf der Storefront wird das Bild jedoch nicht angezeigt. Wenn Sie die Produktseite auf der jeweiligen Store-Ebene überprüfen (Wechseln der **Store-Ansicht**), ist das Bild vorhanden, aber die Rollen sind nicht festgelegt.
+Auf der Storefront wird das Bild jedoch nicht angezeigt. Wenn Sie die Produktseite auf der jeweiligen Store-Ebene überprüfen (indem Sie die **Store-Ansicht** wechseln), ist das Bild vorhanden, die Rollen sind jedoch nicht festgelegt.
 
 ![image_roles_not_set.png](assets/image_roles_not_set.png)
 
 ## Ursache
 
-Bei Adobe Commerce-Instanzen mit mehreren Stores (mit mehreren Stores) können einige Produktbilder die Variable `no_selection` Werte für Attribute `image`, `small_image`, `thumbnail`, `swatch` (diese Attribute entsprechen Bildrollen). Solche `no_selection` -Werte treten auf, wenn die Bildrolle des Produkts auf den globalen Bereich gesetzt wird, werden alle Stores anstelle des Umfangs eines bestimmten Stores verwendet (d. h. auf die **Alle Store-Ansichten** anstelle eines bestimmten **Store-Ansicht**).
+Bei Adobe Commerce-Instanzen mit mehreren Stores (mit mehr als einem Store) können einige Produktbilder die `no_selection` -Werte für die Attribute `image`, `small_image`, `thumbnail` und `swatch` aufweisen (diese Attribute entsprechen den Bildrollen). Solche `no_selection` -Werte treten auf, wenn die Rolle des Produktbilds auf den globalen Bereich des All-Stores statt auf den Umfang eines bestimmten Stores gesetzt wird (d. h. auf den **Alle Store-Ansichten** anstelle einer bestimmten **Store-Ansicht**).
 
-Technisch gesehen: on `store_id=0` (die die globalen Einstellungen für alle Stores in Ihrer Adobe Commerce-Instanz enthält), können die Produktbildrollen festgelegt werden: Dies bedeutet, dass die Attribute `image`, `small_image`, `thumbnail`, `swatch` über gültige Werte verfügen (Pfad zu Bildern). Gleichzeitig können Sie `store_id=1` (die eine bestimmte Store-Darstellung ist), sind die Werte für diese Attribute `no_selection`.
+Technisch gesehen: Unter `store_id=0` (der die globalen Einstellungen für alle Stores in Ihrer Adobe Commerce-Instanz enthält) können die Produktbildrollen festgelegt werden: Das bedeutet, dass die Attribute `image`, `small_image`, `thumbnail` und `swatch` gültige Werte aufweisen (Pfad zu Bildern). Gleichzeitig sind bei `store_id=1` (einer bestimmten Store-Darstellung) die Werte für diese Attribute `no_selection`.
 
 ### Überprüfen des Problems
 
@@ -75,11 +75,11 @@ Wenn die Abfrage ein Ergebnis wie unten zurückgibt, haben Sie es mit dem in die
 
 Wenn die Adobe Commerce-Anwendung über mehr als einen Store verfügt, werden die Daten zwischen einem bestimmten Store und den globalen Store-Einstellungen möglicherweise nicht synchronisiert.
 
-Werte für `store_id=1` haben eine höhere Priorität als der standardmäßige (globale) Store (`store_id=0`). Daher kann die Anwendung die globalen Bildeinstellungen ignorieren und die Speicherbereichskonfiguration (`no_selection` für Bildrollenattribute) bei der Anzeige eines Bildes.
+Die Werte für `store_id=1` haben eine höhere Priorität als der standardmäßige (globale) Speicher (`store_id=0`). Daher kann das Programm die globalen Bildeinstellungen ignorieren und die Speicherbereichskonfiguration (`no_selection` für Bildelement-Attribute) bei der Anzeige eines Bildes verwenden.
 
 ## Lösung {#solution}
 
-Löschen von Attributen mit `no_selection` Werte, die dieses SQL-Skript verwenden:
+Löschen Sie mithilfe dieses SQL-Skripts Attribute mit den `no_selection` -Werten:
 
 ```
 DELETE `cpev_s`.* FROM `catalog_product_entity_varchar` `cpev_s` JOIN `eav_attribute` `ea` ON `cpev_s`.`attribute_id` = `ea`.`attribute_id` LEFT JOIN `catalog_product_entity_varchar` `cpev_0` ON `cpev_0`.`row_id` = `cpev_s`.`row_id` AND `cpev_0`.`attribute_id` = `cpev_s`.`attribute_id` AND `cpev_0`.`store_id` = 0 WHERE `cpev_s`.`value` = 'no_selection' AND `ea`.`attribute_code` IN ('image', 'small_image', 'thumbnail') AND `cpev_s`.`store_id` > 0 AND `cpev_s`.`value` != `cpev_0`.`value` AND `cpev_s`.`value` = 'no_selection';
@@ -91,13 +91,13 @@ Nachdem diese Attribute entfernt wurden, werden die Rollen für bestimmte Stores
 
 Wenn der vollständige Seiten-Cache in Ihrer Adobe Commerce-Instanz aktiviert ist, können Sie die Fixergebnisse nicht sofort sehen.
 
-Damit die Änderungen angezeigt werden, aktualisieren Sie den Seiten-Cache mit dem **Cacheverwaltung** Menü Ihres Admin-Bedienfelds.
+Damit die Änderungen angezeigt werden, aktualisieren Sie den Seiten-Cache mithilfe des Menüs **Cache-Verwaltung** im Admin-Bedienfeld.
 
 ## Weitere Informationen
 
 ### Stores und Bereiche
 
-[Speicher und Speicherbereiche](/docs/commerce-admin/stores-sales/site-store/stores.html) in unserem Benutzerhandbuch
+[Speichern und Speichern von Bereichen](/docs/commerce-admin/stores-sales/site-store/stores.html) in unserem Benutzerhandbuch
 
 ### Bilder
 
@@ -105,5 +105,5 @@ Damit die Änderungen angezeigt werden, aktualisieren Sie den Seiten-Cache mit d
 
 ### Cache
 
-* [Cacheverwaltung](/docs/commerce-admin/systems/tools/cache-management.html) in unserem Benutzerhandbuch für das Admin-System.
+* [Cache-Verwaltung](/docs/commerce-admin/systems/tools/cache-management.html) in unserem Benutzer-Administratorsystem-Handbuch.
 * [Verwalten des Cache](/docs/commerce-operations/configuration-guide/cli/manage-cache.html) in unserer Entwicklerdokumentation

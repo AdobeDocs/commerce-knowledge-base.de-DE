@@ -21,7 +21,7 @@ In diesem Artikel wird beschrieben, wie Sie die Probleme beheben, die durch den 
 
 ## Problem
 
-Nach dem Import einer [Datenbank-Dump](/help/how-to/general/create-database-dump-on-cloud.md) von der Produktions- zur Staging-/Integrationsumgebung, erscheinen gespeicherte Kreditkartennummern falsch und/oder Zahlungen schlagen bei Zahlungsintegrationen fehl, die die Verwendung von Händleranmeldeinformationen erfordern.
+Nach dem Import eines [Datenbank-Dump](/help/how-to/general/create-database-dump-on-cloud.md) aus der Produktions- in Staging-/Integrationsumgebung erscheinen gespeicherte Kreditkartennummern falsch und/oder Zahlungen schlagen bei Zahlungsintegrationen fehl, die die Verwendung von Händleranmeldeinformationen erfordern.
 
 ## Ursache
 
@@ -33,9 +33,9 @@ Sie müssen den Verschlüsselungsschlüssel aus der Quellumgebung kopieren und i
 
 So kopieren Sie den Verschlüsselungsschlüssel:
 
-1. SSH zu Ihrem Projekt, das die Quelle für die Datenbank-Dump war, wie beschrieben in [SSH in der Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) in unserer Entwicklerdokumentation.
-1. Öffnen `app/etc/env.php` in einem Texteditor.
-1. Den Wert von `key` für `crypt`.
+1. SSH zu Ihrem Projekt, das die Quelle für die Datenbank-Dump war, wie in der Entwicklerdokumentation unter [SSH in die Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) beschrieben.
+1. Öffnen Sie `app/etc/env.php` in einem Texteditor.
+1. Kopieren Sie den Wert von `key` für `crypt`.
 
 ```php
 return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
@@ -44,12 +44,12 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 So legen Sie den Schlüsselwert für das Zielprojekt fest:
 
 1. Öffnen Sie die [Cloud-Konsole](https://console.adobecommerce.com) und suchen Sie Ihr Projekt.
-1. Legen Sie den Wert der [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (in unserer Entwicklerdokumentation), wie hier beschrieben: [Projekt konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) in unserer Entwicklerdokumentation. Dadurch wird der Bereitstellungsprozess Trigger und `CRYPT_KEY` wird im `app/etc/env.php` -Datei bei jeder Bereitstellung.
+1. Legen Sie den Wert der Variablen [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (in unserer Entwicklerdokumentation) fest, wie in der Entwicklerdokumentation unter [Konfigurieren Sie Ihr Projekt](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) beschrieben. Dadurch wird der Bereitstellungsprozess Trigger und `CRYPT_KEY` wird bei jeder Bereitstellung in der `app/etc/env.php` -Datei überschrieben.
 
-Optional können Sie den Verschlüsselungsschlüssel im `app/etc/env.php` Datei:
+Optional können Sie den Verschlüsselungsschlüssel in der Datei `app/etc/env.php` manuell überschreiben:
 
 1. SSH in die Zielumgebung.
-1. Öffnen `app/etc/env.php` in einem Texteditor.
-1. Fügen Sie die kopierten Daten als `key` Wert für `crypt`.
+1. Öffnen Sie `app/etc/env.php` in einem Texteditor.
+1. Fügen Sie die kopierten Daten als `key` -Wert für `crypt` ein.
 1. Speichern Sie die bearbeitete `env.php`.
-1. Cache in der Zielumgebung bereinigen, indem Sie `bin/magento cache:clean` oder im Commerce Admin unter **System** > **Instrumente** > **Cacheverwaltung**.
+1. Bereinigen Sie den Cache in der Zielumgebung, indem Sie `bin/magento cache:clean` oder im Commerce Admin unter **System** > **Tools** > **Cache-Verwaltung** ausführen.

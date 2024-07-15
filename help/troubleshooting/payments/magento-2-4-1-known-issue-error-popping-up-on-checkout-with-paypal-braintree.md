@@ -29,20 +29,20 @@ Eine Fehlermeldung wird angezeigt und verschwindet im Schritt &quot;Rechnungsste
 1. Melden Sie sich auf der Storefront als Kunde an (optional kann es sich um einen Gast-Checkout handeln, wenn er in Admin aktiviert ist).
 1. Fügen Sie dem Warenkorb ein Produkt hinzu.
 1. Klicken Sie auf , um die Vorschau des Warenkorbs zu öffnen.
-1. Klicks **Warenkorb anzeigen und bearbeiten**.
+1. Klicken Sie auf **Warenkorb anzeigen und bearbeiten**.
 1. Klicken Sie auf der Seite &quot;Warenkorb&quot;auf **Mit mehreren Adressen auschecken**.
-1. Klicks **Navigieren Sie zu Versandinformationen .** und geben Sie die Adressen an.
-1. Klicks **Weiter zu Rechnungsinformationen**.
-1. Auswählen **PayPal-Braintree** und klicken Sie auf **PayPal** Schaltfläche.
+1. Klicken Sie auf **Zu Versandinformationen wechseln** und geben Sie die Adressen an.
+1. Klicken Sie auf **Weiter zu Rechnungsinformationen**.
+1. Wählen Sie **PayPal Braintree** und klicken Sie auf die Schaltfläche **PayPal** .
 1. Klicken Sie im Popup-Fenster auf **Zustimmen und Bezahlen**.
 
 <u>Erwartetes Ergebnis:</u>
 
 Die Bestellung wird ohne Fehler aufgegeben.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Die Reihenfolge wird platziert, jedoch mit einem Fehler. Die *PayPal Checkout konnte nicht initialisiert werden. Bitte kontaktieren Sie den Eigentümer des Stores*.  -Fehler wird für eine Sekunde angezeigt und verschwindet.
+Die Reihenfolge wird platziert, jedoch mit einem Fehler. Der *PayPal Checkout konnte nicht initialisiert werden. Bitte kontaktieren Sie den Store-Eigentümer*.  -Fehler wird für eine Sekunde angezeigt und verschwindet.
 
 ## Fehlerbehebung
 

@@ -1,6 +1,6 @@
 ---
 title: "ACSD-52824: Für Unternehmenskunden angezeigte Zahlungsmethoden deaktiviert"
-description: Wenden Sie den Patch ACSD-52824 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] Zahlungsmethoden werden für Unternehmenskunden angezeigt, obwohl sie in den Unternehmenseinstellungen deaktiviert sind.
+description: Wenden Sie den Patch ACSD-52824 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] Zahlungsmethoden für Unternehmenskunden angezeigt werden, obwohl sie in den Unternehmenseinstellungen deaktiviert wurden.
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
 exl-id: 03496fb1-d492-4f02-9cdc-466cb571a2eb
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52824: Deaktivierte Zahlungsmethoden für Unternehmenskunden
 
-Der Patch ACSD-52824 behebt das Problem, bei dem [!DNL PayPal Express], [!DNL Google Pay], und [!DNL Apple Pay] Zahlungsmethoden werden für Unternehmenskunden angezeigt, obwohl sie in den Unternehmenseinstellungen deaktiviert sind. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.45 ist installiert. Die Patch-ID ist ACSD-52824. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-52824 behebt das Problem, dass die Zahlungsmethoden [!DNL PayPal Express], [!DNL Google Pay] und [!DNL Apple Pay] für Unternehmenskunden angezeigt werden, obwohl sie in den Unternehmenseinstellungen deaktiviert wurden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.45 installiert ist. Die Patch-ID ist ACSD-52824. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-52824 behebt das Problem, bei dem [!DNL PayPal Express], [!DNL Go
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -35,35 +35,35 @@ Für Unternehmenskunden werden deaktivierte Zahlungsmethoden angezeigt.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Konfigurieren und Aktivieren [!DNL PayPal Express Checkout]. Navigieren Sie zu **[!UICONTROL Basic Settings]** > Auswählen **[!DNL PayPal Express Checkout]** und legen Sie die Option für **[!UICONTROL Display on Shopping Cart]** nach *Ja*.
-1. Konfigurieren [!DNL Braintree] und aktivieren [!DNL Apple Pay] und [!DNL Google Pay] bis [!DNL Braintree].
+1. Konfigurieren und aktivieren Sie [!DNL PayPal Express Checkout]. Navigieren Sie zu **[!UICONTROL Basic Settings]** > wählen Sie **[!DNL PayPal Express Checkout]** aus und legen Sie die Option für **[!UICONTROL Display on Shopping Cart]** auf *Ja* fest.
+1. Konfigurieren Sie [!DNL Braintree] und aktivieren Sie [!DNL Apple Pay] und [!DNL Google Pay] bis [!DNL Braintree].
 1. Navigieren Sie zu **[!UICONTROL Customers]** > **[!UICONTROL Companies]** und erstellen Sie ein neues Unternehmen.
-1. Klicken Sie auf **[!UICONTROL Advanced Settings]**, suchen Sie die **[!UICONTROL Applicable Payment Methods]** und wählen **[!UICONTROL Selected Payment Methods]**.
-1. under **[!UICONTROL Selected Payment Methods]** auswählen, die Zahlungsmethoden auswählen, die aktiviert sind und nicht mit *[!DNL PayPal Express Checkout]*, *[!DNL Apple Pay]* oder *[!DNL Google Pay]*. Wählen Sie beispielsweise **[!UICONTROL Check/Money Order]**.
+1. Klicken Sie auf **[!UICONTROL Advanced Settings]**, suchen Sie die **[!UICONTROL Applicable Payment Methods]** und wählen Sie **[!UICONTROL Selected Payment Methods]** aus.
+1. Wählen Sie unter **[!UICONTROL Selected Payment Methods]** Zahlungsmethoden aus, die aktiviert sind und nicht mit *[!DNL PayPal Express Checkout]*, *[!DNL Apple Pay]* oder *[!DNL Google Pay]* verknüpft sind. Wählen Sie beispielsweise &quot;**[!UICONTROL Check/Money Order]**&quot;.
 1. Erstellen Sie nach Auswahl der entsprechenden Zahlungsmethoden einen neuen Kunden und verbinden Sie ihn mit dem zuvor erstellten Unternehmen.
 1. Melden Sie sich mit dem Kundenkonto an, das dem Unternehmen zugeordnet ist, und fahren Sie mit dem Hinzufügen von Artikeln zum Warenkorb fort.
 1. Beachten Sie beim Checkout-Prozess den Mini-Warenkorb, den Warenkorb und den Zahlungsschritt.
 
 <u>Erwartete Ergebnisse</u>:
 
-Zahlungsoptionen aus [!DNL PayPal] und [!DNL Braintree] sind nicht im Mini-Warenkorb und im Warenkorb sichtbar.
+Zahlungsoptionen von [!DNL PayPal] und [!DNL Braintree] sind nicht im Mini-Warenkorb und -Warenkorb sichtbar.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Zahlungsoptionen aus [!DNL PayPal] und [!DNL Braintree] bleiben im Mini-Warenkorb und im Warenkorb sichtbar.
+Zahlungsoptionen von [!DNL PayPal] und [!DNL Braintree] bleiben im Mini-Warenkorb und im Warenkorb sichtbar.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

@@ -25,7 +25,7 @@ Es gibt keine festen Beschränkungen für die Anzahl der E-Mails, die in der Pro
 
 ## Wie kann ich überprüfen, ob Ihre Guthaben überschritten wurden?
 
-Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur: Überprüfen Sie die `/var/log/mail.log` - Möglicherweise wird eine Meldung wie die folgende angezeigt:
+Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur: Überprüfen Sie die `/var/log/mail.log` - möglicherweise wird eine Meldung wie die folgende angezeigt:
 
 `May 28 21:13:00 <i-node> postfix/error[21335]: BC7941A2BBF: to=<to@email.com>, relay=none, delay=4642, delays=4642/0.56/0/0.03, dsn=4.0.0, status=deferred (delivery temporarily suspended: SASL authentication failed; server smtp.sendgrid.net[ip address] said: 451 Authentication failed: Maximum credits exceeded).`
 
@@ -35,8 +35,8 @@ Die Anzahl der zulässigen E-Mails, die gesendet werden können, ist begrenzt.
 
 ## Lösung
 
-* Wenn diese Meldung in der Produktionsumgebung angezeigt wird, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die oben genannte Mitteilung an und fordern Sie die Erhöhung der Gutschriften an.
-* Wenn diese Meldung nicht angezeigt wird oder Sie sich auf Adobe Commerce in der Cloud-Infrastruktur-Starter-Planarchitektur befinden, können Sie auch [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und darauf hinweisen, dass `mail.log` nicht angeben, dass die Gutschriften überschritten wurden.
+* Wenn diese Nachricht in der Produktionsumgebung angezeigt wird, senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), geben Sie die oben genannte Meldung an und fordern Sie die Erhöhung der Gutschriften an.[
+* Wenn diese Meldung nicht angezeigt wird oder Sie sich in der Adobe Commerce-Planarchitektur für Cloud-Infrastruktur-Starter befinden, senden Sie auch ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und weisen Sie darauf hin, dass die Datei `mail.log` nicht angibt, dass die Credits überschritten wurden.[
 
 ## Verwandtes Lesen
 

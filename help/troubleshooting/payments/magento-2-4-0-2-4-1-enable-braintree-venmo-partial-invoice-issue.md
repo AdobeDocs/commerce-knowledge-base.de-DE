@@ -24,7 +24,7 @@ In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.0 und 2.4.1 
 
 <u>Voraussetzungen:</u>
 
-Legen Sie in der Konfiguration der Braintree-Zahlungsmethode **Venmo über Braintree aktivieren** = *Ja* mit **Zahlungsaktion** = *Autorisierung*; **Aktivieren von Vault für Kartenzahlungen** = *Nein*.
+Legen Sie in der Konfiguration der Braintree-Zahlungsmethode **Venmo durch Braintree** = *Ja* mit **Zahlungsaktion** = *Autorisierung*; **Vault für Kartenzahlungen aktivieren** = *Nein* fest.
 
 <u>Zu reproduzierende Schritte:</u>
 
@@ -37,7 +37,7 @@ Legen Sie in der Konfiguration der Braintree-Zahlungsmethode **Venmo über Brain
 
 Rechnung erstellt.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Die folgende Fehlermeldung wird angezeigt: *Der Befehl &quot;vault\_Capture&quot;ist nicht vorhanden. Überprüfen Sie den Befehl und versuchen Sie es erneut.*
 

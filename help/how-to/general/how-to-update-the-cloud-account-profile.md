@@ -25,18 +25,20 @@ Beim Ändern eines Profils im Cloud-Konto können die folgenden Felder geändert
 
 Gehen Sie wie folgt vor, um diese Felder zu ändern:
 
-1. Greifen Sie auf Ihr Konto zu unter [Adobe-Kontoanmeldung](https://accounts.magento.cloud).
-1. Klicken Sie auf **[!UICONTROL Account Settings]** Registerkarte.
-1. Wählen Sie die *Neues Kennwort erstellen* aktivieren.
+1. Greifen Sie auf Ihr Konto unter [Adobe-Kontoanmeldung](https://accounts.magento.cloud) zu.
+1. Klicken Sie auf die Registerkarte **[!UICONTROL Account Settings]** .
+1. Aktivieren Sie das Kontrollkästchen *Neues Kennwort erstellen* .
 1. Nehmen Sie die erforderlichen Änderungen vor und klicken Sie auf *save*.
 
-**NOTE**: *Ihr Passwort wird nicht geändert.*
+**HINWEIS**: *Ihr Kennwort wird nicht geändert.*
 
 ## Was kann nicht geändert werden?
 
-1. **[!UICONTROL Password]**: Um Ihr Kennwort zu ändern, besuchen Sie [Zurücksetzen des Adobe-Kennworts](https://account.adobe.com/), da dieses Profil mit Ihrem Konto/Ihrer E-Mail-Adresse dort verknüpft ist.
+1. **[!UICONTROL Password]**:
+Um Ihr Kennwort zu ändern, besuchen Sie [Adobe password reset](https://account.adobe.com/) , da dieses Profil mit Ihrem Konto/Ihrer E-Mail-Adresse dort verknüpft ist.
 
-1. **[!UICONTROL Email Address]**: Die Änderung dieses Felds hängt von Ihren individuellen Umständen ab.
+1. **[!UICONTROL Email Address]**:
+Die Änderung dieses Felds hängt von Ihren individuellen Umständen ab.
 
 Wenn Sie die Eigentümerschaft Ihres aktuellen Kontos an einen neuen Eigentümer oder eine andere E-Mail-Adresse übertragen müssen, müssen Sie die mit dem Konto verknüpfte primäre Benutzer-E-Mail aktualisieren.
 

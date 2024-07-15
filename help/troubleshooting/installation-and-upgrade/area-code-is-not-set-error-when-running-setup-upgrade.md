@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Fehler &quot;Bereichscode nicht festgelegt&quot;bei Ausführung `setup:upgrade`
+# Fehler &quot;Bereichscode ist nicht festgelegt&quot;bei Ausführung von `setup:upgrade`
 
-Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.3 im Zusammenhang mit dem Abrufen der *&quot;Bereichscode ist nicht festgelegt&quot;* Fehler beim Ausführen des folgenden Befehls:
+Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.3 in Zusammenhang mit dem Abrufen des Fehlers &quot;*&quot;Area code is not set&quot;*&quot;, wenn der folgende Befehl ausgeführt wird:
 
 ```bash
 setup:upgrade
@@ -31,7 +31,7 @@ Beim Ausführen von
 bin/magento setup:upgrade
 ```
 
--Befehl eingeben, erhalten Sie die folgende Fehlermeldung: *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Installieren von Daten...Gebietscode nicht festgelegt: Der Bereichscode muss vor dem Start einer Sitzung festgelegt werden.&quot;* und die Ausführung des Befehls unterbrochen wird. Das Problem wird angezeigt, da die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Der Patch ermöglicht das Auffinden des Fehlers und nicht das Unterbrechen des Aktualisierungsprozesses.
+erhalten Sie die folgende Fehlermeldung: *&quot;Modul &#39;Magento\_AdvancedSalesRule&#39;: Installieren von Daten...Gebietscode nicht festgelegt: Gebietscode muss vor Beginn einer Sitzung festgelegt werden&quot;* und die Ausführung des Befehls wird unterbrochen. Das Problem wird angezeigt, da die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Der Patch ermöglicht das Auffinden des Fehlers und nicht das Unterbrechen des Aktualisierungsprozesses.
 
 ## Patch
 
@@ -51,6 +51,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

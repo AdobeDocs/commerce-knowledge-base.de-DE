@@ -24,7 +24,7 @@ Dieser Patch behebt das Problem, dass es nicht möglich ist, eine Zahlungsmethod
 
 Wenn ein Käufer mit Amazon Pay auscheckt, sich anmeldet, zum Zahlungsschritt übergeht und versucht, seine Kreditkarte über das Zahlungswidget zu ändern, wird eine Fehlermeldung angezeigt. Der Checkout kann nicht abgeschlossen werden, wenn der Käufer den Fehler ignoriert und mit dem Checkout fortfährt.
 
-Um dieses Problem zu beheben und den Fehler zu entfernen, haben wir eine [Patch](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip).
+Um dieses Problem zu beheben und den Fehler zu entfernen, haben wir einen [Patch](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) erstellt.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -35,11 +35,11 @@ Um dieses Problem zu beheben und den Fehler zu entfernen, haben wir eine [Patch]
 
 <u>Erwartetes Ergebnis</u>: Eine andere Kreditkarte wird als Zahlungsmethode ohne Fehler ausgewählt.
 
-<u>Tatsächliches Ergebnis</u>: Die Fehlermeldung wird angezeigt: *&quot;Wenden Sie sich an diesen Händler, um Hilfe beim Abschluss Ihrer Bestellung zu erhalten.&quot;*
+<u>Tatsächliches Ergebnis</u>: Die Fehlermeldung wird angezeigt: *&quot;Wenden Sie sich an diesen Händler, um Hilfe beim Abschließen Ihrer Bestellung zu erhalten.&quot;*
 
 ## Lösung
 
-[Wenden Sie den Patch an](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) unten.
+[Wenden Sie den Patch](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) unten an.
 
 ## Patch
 
@@ -61,6 +61,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank für Anleitungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

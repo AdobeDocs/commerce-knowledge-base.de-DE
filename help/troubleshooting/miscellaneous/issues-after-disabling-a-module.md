@@ -22,14 +22,14 @@ Dieser Artikel bietet eine Lösung für Probleme mit Modulfunktionen, nachdem di
 
 ## Problem
 
-Deaktivierung der Modulausgabe in Commerce Admin, unter **Stores** > **Einstellungen** > **Konfiguration** > ERWEITERT > **Erweitert** können Probleme im Zusammenhang mit der Modulfunktionalität auftreten.
+Wenn Sie die Modulausgabe in Commerce Admin unter **Stores** > **Einstellungen** > **Konfiguration** > ERWEITERT > **Erweitert** deaktiviert haben, treten möglicherweise Probleme im Zusammenhang mit der Modulfunktionalität auf.
 
 ## Ursache
 
-Deaktivieren einer Modulausgabe unter **Stores** > **Einstellungen** > **Konfiguration** > ERWEITERT > **Erweitert** deaktiviert nur die Ausgabe (HTML, JS), deaktiviert jedoch nicht die Funktionalität dieses Moduls.
+Durch Deaktivieren einer Modulausgabe unter **Speicher** > **Einstellungen** > **Konfiguration** > ERWEITERT > **Erweitert** wird nur die Ausgabe (HTML, JS) deaktiviert, die Funktion dieses Moduls wird jedoch nicht deaktiviert.
 
 ## Lösung
 
-Wenn Sie die Modulfunktionalität deaktivieren müssen, deaktivieren Sie das Modul, wie unter [Module aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) in unserer Entwicklerdokumentation.
+Wenn Sie die Modulfunktionalität deaktivieren müssen, deaktivieren Sie das Modul, wie in der Entwicklerdokumentation unter [Module aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) beschrieben.
 
 Die Funktion zur Deaktivierung der Modulausgabe wurde ab Version 2.2.0 entfernt.

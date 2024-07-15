@@ -16,21 +16,21 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-Lesen Sie die Schritte im Abschnitt [Abschnitt &quot;Passwort zurücksetzen&quot;der Admin-Anmeldung](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) in unserem Benutzerhandbuch.
+Lesen Sie die Schritte im Abschnitt [Passwort zurücksetzen von Admin Sign-In](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) in unserem Benutzerhandbuch.
 
 Im Folgenden finden Sie die wichtigsten Hinweise zur Verwendung.
 
 ### Ausgehende E-Mails aktivieren
 
-Vor der Verwendung von **Kennwort vergessen** Formular, [ausgehende E-Mails aktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) mithilfe der [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+Vor Verwendung des Formulars **Kennwort vergessen** aktivieren Sie ausgehende E-Mails](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) mit der [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).[
 
 ### Überprüfen Sie Ihren Ordner &quot;Junk Email&quot;.
 
-Wenn Sie die Nachricht mit dem Link Kennwort zurücksetzen nicht finden können, überprüfen Sie Ihre *Junk Email* Ordner. Der Name der E-Mail lautet *Kennwortrücksetzbestätigung für Admin-Benutzername*.
+Wenn Sie die Nachricht mit dem Link Kennwort zurücksetzen nicht finden können, überprüfen Sie Ihren Ordner *Junk Email* . Der Name der E-Mail lautet *Bestätigung für das Zurücksetzen des Kennworts für den Admin-Benutzernamen*.
 
 ## Methode 2: Hinzufügen eines neuen Admin-Benutzers
 
 Wenn Sie das Kennwort für den vorhandenen Benutzer nicht wiederherstellen oder zurücksetzen können, können Sie einen neuen Admin-Benutzer erstellen und ein Kennwort für diesen Benutzer festlegen. Gehen Sie dazu wie folgt vor:
 
-1. Verwendung [SSH zur Anmeldung bei der Remote-Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Verwenden Sie [SSH , um sich bei der Remote-Umgebung anzumelden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Führen Sie den folgenden Befehl aus: `bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`

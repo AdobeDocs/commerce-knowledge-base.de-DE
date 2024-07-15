@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0: 404-Fehler Entfernung von Belohnungspunkten beim Multi-Shipping-Checkout
 
-Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce 2.4.0 für eine *404 nicht gefunden*&quot;Webseitenfehler beim Entfernen von Belohnungspunkten auf einer Checkout-Seite mit mehreren Sendungen. Derzeit wird auf der Seite mit dem Checkout für mehrere Sendungen beim Versuch, die Punkte zu entfernen, die zum Bezahlen einer Bestellung verwendet wurden, ein &quot;*404 nicht gefunden* &quot;anstelle der erfolgreichen Löschung von Belohnungspunkten angezeigt wird. Dieses Problem wird mit einer Patch-Version von Adobe Commerce 2.4.1 in behoben.
+Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce 2.4.0 für einen &quot;*404 Not Found*&quot;-Webseitenfehler, wenn Belohnungspunkte auf einer Checkout-Seite mit mehreren Sendungen entfernt werden. Zurzeit wird auf der Seite mit dem Checkout für mehrere Versandkosten beim Versuch, Punkte zu entfernen, die zum Bezahlen einer Bestellung verwendet wurden, anstelle der erfolgreichen Löschung von Belohnungspunkten eine Seite &quot;*404 Not Found* &quot;angezeigt. Dieses Problem wird mit einer Patch-Version von Adobe Commerce 2.4.1 in behoben.
 
 ## Betroffene Produkte und Versionen
 
@@ -24,30 +24,30 @@ Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Co
 <u>Zu reproduzierende Schritte</u>
 
 1. Navigieren Sie zur Storefront und melden Sie sich als Kunde an.
-1. Fügen Sie mindestens zwei Produkte zu **Warenkorb**.
-1. Öffnen Sie die **Warenkorb**.
-1. Klicken Sie auf **Warenkorb anzeigen und bearbeiten** -Link.
-1. Klicken Sie auf **Mit mehreren Adressen auschecken** -Link.
-1. Versandadressen auf der Seite **An mehrere Adressen senden** Seite.
-1. Klicken Sie auf **Navigieren Sie zu Versandinformationen .** Schaltfläche.
-1. Wählen Sie die **Pauschalsatz - Feste Versandmethode** für jede Adresse.
-1. Klicken Sie auf **Weiter zu Rechnungsinformationen** Schaltfläche.
-1. Überprüfen Sie die **Verwenden Sie Ihre Prämienpunkte** Kontrollkästchen auf der **Rechnungsinformationen** Seite.
-1. Klicken Sie auf **Gehen Sie zu Bestellung überprüfen .** Schaltfläche.
-1. Klicken Sie auf **Entfernen** -Link für jede Adresse, um die Belohnungspunkte zu entfernen.
+1. Fügen Sie mindestens zwei Produkte zum **Warenkorb** hinzu.
+1. Öffnen Sie den **Mini-Warenkorb**.
+1. Klicken Sie auf den Link **Warenkorb anzeigen und bearbeiten** .
+1. Klicken Sie auf den Link **Mit mehreren Adressen auschecken** .
+1. Wählen Sie auf der Seite **An mehrere Adressen senden** Versandadressen aus.
+1. Klicken Sie auf die Schaltfläche **Zu Versandinformationen wechseln** .
+1. Wählen Sie für jede Adresse die Option **Pauschalrate - Feste Versandmethode** aus.
+1. Klicken Sie auf die Schaltfläche **Weiter zu Rechnungsinformationen** .
+1. Aktivieren Sie das Kontrollkästchen **Use Your Rewards Points** auf der Seite **Rechnungsinformationen** .
+1. Klicken Sie auf die Schaltfläche **Gehe zu Bestellung überprüfen** .
+1. Klicken Sie auf den Link **Entfernen** für eine beliebige Adresse, um die Belohnungspunkte zu entfernen.
 
 <u>Erwartete Ergebnisse</u>
 
-* Die **Warenkorb** angezeigt.
-* Die &quot;*Sie haben die Belohnungspunkte aus dieser Bestellung entfernt.* angezeigt.
+* Die Seite **Warenkorb** sollte angezeigt werden.
+* Der &quot;*Sie haben die Belohnungspunkte aus dieser Bestellung entfernt.*&quot; angezeigt.
 
 <u>Tatsächliches Ergebnis</u>
 
-A *404 nicht gefunden* &quot; Fehlerseite angezeigt.
+Die Fehlerseite &quot;*404 Not Found*&quot; wird angezeigt.
 
 ## Workaround
 
-Die Lösung besteht darin, dass der Käufer zurück zum **Warenkorb** und die Belohnungspunkte aus der **Warenkorb** Webseite. Das Problem wird voraussichtlich im Patch der Adobe Commerce-Version 2.4.1 behoben, der für Q4 2020 geplant ist.
+Die Lösung besteht darin, dass der Käufer zurück zum **Warenkorb** navigiert und die Belohnungspunkte von der Webseite **Warenkorb** entfernt. Das Problem wird voraussichtlich im Patch der Adobe Commerce-Version 2.4.1 behoben, der für Q4 2020 geplant ist.
 
 ## Verwandtes Lesen
 

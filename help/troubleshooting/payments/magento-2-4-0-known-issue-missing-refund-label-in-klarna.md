@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bekanntes Problem bei Adobe Commerce 2.4.0: fehlendes &quot;Refund&quot;-Label in Klarna
 
-Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Admin für ein fehlendes **Erstattung** label in Klarna VBE (Vendor Bundle Extension). Wenn im Klarna-Portal eine Rückerstattung durchgeführt wird, wird die **Erstattung** neben dem zurückerstatteten gebündelten Produkt nicht angezeigt.
+Dieser Artikel bietet eine Problemumgehung für ein bekanntes Problem in Admin für eine fehlende **Rückerstattungsbeschriftung** in Klarna VBE (Vendor Bundle Extension). Wenn im Klarna-Portal eine Rückerstattung durchgeführt wird, wird neben dem erstatteten gebündelten Produkt nicht das Etikett **Rückerstattung** angezeigt.
 
 ## Betroffene Produkte und Versionen
 
@@ -29,29 +29,29 @@ Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Admin f�
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Wechseln Sie zum Adobe Commerce-Frontend und fügen Sie ein gebündeltes Produkt zu **Warenkorb**.
+1. Gehen Sie zum Adobe Commerce-Frontend und fügen Sie ein gebündeltes Produkt zu **Warenkorb** hinzu.
 1. Navigieren Sie zum Checkout.
-1. Eingabe von Verbraucherinformationen zum Checkout und Klicken **Nächste**.
-1. Auswählen **KP-Option** und klicken **Bestellung platzieren**.
-1. Navigieren Sie zu **Admin** > **Vertrieb** > **Bestellungen**.
+1. Geben Sie Verbraucherinformationen zum Checkout ein und klicken Sie auf **Weiter**.
+1. Wählen Sie **KP-Option** und klicken Sie auf **Bestellung platzieren**.
+1. Gehen Sie zu **Admin** > **Verkauf** > **Bestellungen**.
 1. Öffnen Sie die Bestellung.
 1. Erstellen Sie eine Rechnung für das Produkt.
-1. Navigieren Sie zu **Rechnungen** > **Rechnung auswählen** > Klicken **Credit Memo** > Klicken **Erstattung** (Not **Rückerstattungsoffline**).
+1. Wechseln Sie zu **Rechnungen** > **Rechnung auswählen** > Klicken Sie auf **Credit Memo** > Klicken Sie auf **Rückerstattungen** (Nicht auf **Offline zurückerstatteten**).
 1. Gehen Sie zum Portal Klarna.
 1. Öffnen Sie die Bestellung.
-1. Die **Erstattung** vorhanden ist.
+1. Die Bezeichnung **Refund** ist vorhanden.
 
 <u>Erwartetes Ergebnis</u>
 
-Auf dem Portal Klarna **Erstattung** neben dem erstatteten Produkt angezeigt wird.
+Auf dem Klarna-Portal wird neben dem erstatteten Produkt die Bezeichnung **Refund** angezeigt.
 
 <u>Tatsächliches Ergebnis</u>
 
-Auf dem Portal Klarna **Erstattung** neben dem erstatteten Produkt nicht angezeigt wird.
+Auf dem Klarna-Portal wird neben dem erstatteten Produkt nicht die Bezeichnung **Refund** angezeigt.
 
 ## Workaround
 
-Die Lösung für dieses Problem besteht darin, das fehlende **Erstattung** Label im Klarna-Portal für rückerstattete gebündelte Produkte. Die Rückerstattung erfolgte, auch wenn die **Erstattung** wurde nicht angezeigt. Das Problem wird voraussichtlich in Adobe Commerce 2.4.1 behoben, das für das 4. Quartal 2020 geplant ist.
+Die Lösung für dieses Problem besteht darin, die fehlende **Rückerstattungsbeschriftung** im Klarna-Portal für rückerstattete gebündelte Produkte zu ignorieren. Die Rückerstattung erfolgte, auch wenn die Beschriftung **Rückerstattung** nicht angezeigt wurde. Das Problem wird voraussichtlich in Adobe Commerce 2.4.1 behoben, das für das 4. Quartal 2020 geplant ist.
 
 ## Verwandte Lesungen in unserer Wissensdatenbank:
 

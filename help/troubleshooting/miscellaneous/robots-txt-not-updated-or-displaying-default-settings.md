@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # robots.txt wird nicht aktualisiert oder zeigt Standardeinstellungen an
 
-Der Artikel bietet eine Lösung für den Fall, dass Sie `robots.txt` korrekt, z. B. pro [Best Practices für Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931) aber die `robots.txt` wird nicht aktualisiert oder zeigt die Standardeinstellungen an.
+Der Artikel bietet eine Lösung für Fälle, in denen Sie `robots.txt` richtig konfiguriert haben, z. B. gemäß den Best Practices für Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931) , die `robots.txt` jedoch nicht aktualisiert wird oder die Standardeinstellungen anzeigt.[
 
 ## Betroffene Produkte und Versionen
 
@@ -21,20 +21,20 @@ Der Artikel bietet eine Lösung für den Fall, dass Sie `robots.txt` korrekt, z.
 
 ## Problem
 
-Die Standardeinstellung kann nicht geändert werden `robots.txt` -Einstellung.
+Die Standardeinstellung `robots.txt` kann nicht geändert werden.
 
 <u>Zu reproduzierende Schritte:</u>
 
 1. Rufen Sie das Admin-Bedienfeld auf.
-1. Hinzufügen von Inhalten zu **Inhalt** > Design > **Konfiguration** > **Benutzerdefinierte Anweisung bearbeiten von`robots.txt`** -Datei, z. B. den Text &quot;hello&quot;und speichern Sie die Änderungen.
-1. Besuchen Sie die `robots.txt` url.
+1. Fügen Sie Inhalt zu **Inhalt** > Design > **Konfiguration** > **Benutzerdefinierte Anweisung der Datei`robots.txt`** hinzu, z. B. den Text &quot;hello&quot;und speichern Sie die Änderungen.
+1. Besuchen Sie die URL `robots.txt` .
 
 <u>Erwartetes Ergebnis:</u>
 `robots.txt` hat den gespeicherten Text.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-`robots.txt` -Datei nicht geändert.
+Die Datei &quot;`robots.txt`&quot; ändert sich nicht.
 
 ## Ursache
 
@@ -42,8 +42,8 @@ Die Indizierung durch Suchmaschinen ist deaktiviert.
 
 ## Lösung
 
-Aktivieren Sie die Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung nach Suchmaschine](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) in unserer Entwicklerdokumentation.
+Aktivieren Sie die Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung durch Suchmaschine](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* [Sitemap- und Suchmaschinenroboter hinzufügen](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) in unserer Entwicklerdokumentation.
+* [Fügen Sie in unserer Entwicklerdokumentation Sitemap und Suchmaschinen-Roboter hinzu](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html).

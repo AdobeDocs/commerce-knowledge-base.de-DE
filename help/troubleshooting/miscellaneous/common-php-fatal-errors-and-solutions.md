@@ -21,33 +21,33 @@ In diesem Artikel werden einige häufige PHP Fatal Error-Schnellbeispiele aufgel
 
 ## Lösung
 
-Sie können die maximale Ausführungszeit aktualisieren, indem Sie eine benutzerdefinierte `max_execution_time` -Wert in `php.ini` Datei und erneute Bereitstellung.
+Sie können die maximale Ausführungsdauer aktualisieren, indem Sie in Ihrer `php.ini` -Datei einen benutzerdefinierten `max_execution_time` -Wert festlegen und die Bereitstellung erneut vornehmen.
 
 Beispiel:
 
 `max_execution_time = 120`
 
-Lesen Sie die [php.ini-Einstellungen anpassen](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) Artikel.
+Lesen Sie den Artikel [php.ini-Einstellungen anpassen](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) .
 
 ## Beispiel
 
-*&#39;PHP Fatal error: Allowed memory size of 792723456 bytes erschöpft&#39;* (Das ist nur eine Beispiel-Byte-Größe.)
+*&#39;PHP Fatal error: Zulässige Speichergröße von 792723456 Byte erschöpft&#39;* (Dies ist nur eine Beispiel-Byte-Größe.)
 
 ## Lösung
 
-Anpassen Ihrer `php.ini` -Einstellungen. Lesen Sie hierzu [php.ini-Einstellungen anpassen](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) Artikel.
+Passen Sie Ihre `php.ini` -Einstellungen an. Lesen Sie diesen Artikel [php.ini-Einstellungen anpassen](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) .
 
 ## Beispiel
 
-*&#39;PHP-Warnung: Unbekannt: Stream konnte nicht geöffnet werden: Keine solche Datei oder Verzeichnis.&#39;*
+*&#39;PHP-Warnung: Unbekannt: Nicht bekannt: Fehler beim Öffnen des Streams: Keine solche Datei oder Verzeichnis&#39;*
 
 ## Lösung
 
-Stellen Sie sicher, dass Sie die Windows-Stilendungen nicht im `php.ini` -Datei. Unter Windows werden Zeilenende mit einer Kombination aus einem Wagenrücklauf (ASCII 0x0d oder \r) und einem Zeilenumbruch (\n) beendet, der auch als CR/LF bezeichnet wird.
+Entfernen Sie nicht die Windows-Stilendungen in der Datei &quot;`php.ini`&quot;. Unter Windows werden Zeilenende mit einer Kombination aus einem Wagenrücklauf (ASCII 0x0d oder \r) und einem Zeilenumbruch (\n) beendet, der auch als CR/LF bezeichnet wird.
 
 ## Beispiel
 
-*&#39;PHP Fatal error: Uncaught PDOException: SQLSTATE\[HY000\] \[1040\] Zu viele Verbindungen in&#39;*
+*&#39;PHP Schwerwiegender Fehler: Uncaught PDOException: SQLSTATE\[HY000\] \[1040\] Zu viele Verbindungen in&#39;*
 
 ## Lösung
 
@@ -59,7 +59,7 @@ Der MySQL-Umgebung ist der Speicherplatz ausgegangen. Stellen Sie mehr Speicherp
 
 ## Lösung
 
-Überprüfen Sie die `<root>/tmp` Verzeichnis, da es wahrscheinlich voll ist. Wenn es voll ist, geben Sie mehr Speicherplatz im Verzeichnis an. Dazu kann es gehören, einfach Dateien in ein anderes Verzeichnis zu verschieben oder sie zu löschen.
+Überprüfen Sie den Ordner &quot;`<root>/tmp`&quot;, da er wahrscheinlich voll ist. Wenn es voll ist, geben Sie mehr Speicherplatz im Verzeichnis an. Dazu kann es gehören, einfach Dateien in ein anderes Verzeichnis zu verschieben oder sie zu löschen.
 
 ## Verwandtes Lesen
 
@@ -67,7 +67,7 @@ In unserer Entwicklerdokumentation:
 
 * [Fehler bei PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
 * [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)
-* [Rediw-Überprüfung](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
-* [Konfigurieren von Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
-* [Fehler bei PHP-Speicherbegrenzung](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html#trouble-php-memory)
-* [Lösungen für häufige Probleme - Speicherbegrenzung](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)
+* [Überprüfung der Umkehrung](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
+* [Redis konfigurieren](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
+* [PHP-Speicherbegrenzungsfehler](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html#trouble-php-memory)
+* [Lösungen für häufige Probleme - Speicherbeschränkung](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)

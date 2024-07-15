@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # SQL-Abfragen: Fehler bei EXPLAIN-Kosten
 
-Dieser Artikel enthält Lösungen für Fehler bei EXPLAIN-Kosten bei der Ausführung nicht erfolgreicher SQL-Abfragen. PostgreSQL verwendet etwas namens [den Befehl EXPLAIN](https://www.postgresql.org/docs/9.5/static/using-explain.html) um die Kosten für SQL-Abfragen zu ermitteln. Wir haben den SQL-Report Builder erstellt, um diesen Befehl ebenfalls zu verwenden. Das bedeutet, dass die Abfrage nicht ausgeführt wird und eine EXPLAIN-Meldung angezeigt wird, wenn die Kosten als zu hoch gelten - die für die Ausführung der Abfrage erforderliche Ressourcenmenge überschreitet die Schwellenwerte.
+Dieser Artikel enthält Lösungen für Fehler bei EXPLAIN-Kosten bei der Ausführung nicht erfolgreicher SQL-Abfragen. PostgreSQL verwendet etwas namens [EXPLAIN-Befehl](https://www.postgresql.org/docs/9.5/static/using-explain.html), um die Kosten von SQL-Abfragen zu ermitteln. Wir haben den SQL-Report Builder erstellt, um diesen Befehl ebenfalls zu verwenden. Das bedeutet, dass die Abfrage nicht ausgeführt wird und eine EXPLAIN-Meldung angezeigt wird, wenn die Kosten als zu hoch gelten - die für die Ausführung der Abfrage erforderliche Ressourcenmenge überschreitet die Schwellenwerte.
 
 Es gibt einige Gründe, warum das passieren könnte. Hier finden Sie die Nachrichten, die Sie erhalten können, was sie bedeuten und wie Sie sie beheben können.
 
 ## Abfrage kann nicht ausgeführt werden. Der &quot;EXPLAIN&quot;-Kostenwert von \[xxx\] ist zu hoch, um diese Abfrage ausführen zu können.
 
-Wenn diese Meldung angezeigt wird, bedeutet dies, dass die Ausführung der Abfrage als zu teuer erachtet wurde. Wir haben zwei Empfehlungen für diese Situation: eine besteht darin, alle ORDER BY-Klauseln aus Ihrer Abfrage zu streichen, da es sich um kostspielige Vorgänge handelt. Die zweite besteht darin, den Tipps in [Optimierungsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) , um Ihre Abfrage anzupassen.
+Wenn diese Meldung angezeigt wird, bedeutet dies, dass die Ausführung der Abfrage als zu teuer erachtet wurde. Wir haben zwei Empfehlungen für diese Situation: eine besteht darin, alle ORDER BY-Klauseln aus Ihrer Abfrage zu streichen, da es sich um kostspielige Vorgänge handelt. Die zweite besteht darin, die Tipps in unserem [Optimierungsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) zu befolgen, um Ihre Abfrage anzupassen.
 
 ## Abfrage kann nicht ausgeführt werden. Diese Abfrage gibt \[xxx\] Zeilen zurück, die unseren Grenzwert von 10.000 überschreiten.
 

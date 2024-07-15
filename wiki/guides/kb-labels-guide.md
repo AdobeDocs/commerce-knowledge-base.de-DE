@@ -8,9 +8,9 @@ ht-degree: 0%
 # Anleitung für KB-Beschriftungen
 
 Dieses Dokument enthält Richtlinien zum Hinzufügen von Bezeichnungen zu Artikeln in der Knowledge Base des Adobe Commerce-Supports.
-Beschriftungen (auch als Tags bezeichnet) verbessern das Sucherlebnis in der [Wissensdatenbank zur Adobe Commerce-Unterstützung](https://support.magento.com/hc/en-us).
+Beschriftungen (auch als Tags bezeichnet) verbessern das Sucherlebnis in der [Wissensdatenbank der Adobe Commerce-Unterstützung](https://support.magento.com/hc/en-us).
 Beschriftungen werden im Feld &quot;Beschriftungen&quot;im Metadatenabschnitt einer Artikeldatei hinzugefügt, durch Kommas getrennt, kein Leerzeichen zwischen einem Komma und der nächsten Beschriftung.
-Siehe [../../.github/CONTRIBUTING.md#metadata] für Details.
+Weitere Informationen finden Sie unter [../../.github/CONTRIBUTING.md#metadata] .
 
 ## Allgemeine Bestimmungen
 
@@ -84,7 +84,8 @@ In den folgenden Abschnitten finden Sie ausführliche Empfehlungen zum Definiere
 
 * Fügen Sie für jede Version von Adobe Commerce eine separate Bezeichnung hinzu. Beispiel: &quot;2.3.7&quot;
 * Fügen Sie keine Bezeichnungen für Intervalle hinzu.
-Das heißt, wenn 2.3.0-2.3.5 betroffen ist, wird Folgendes hinzugefügt: &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot; NICHT &quot;2.2 3.0-2.3.5&quot;
+Das heißt, wenn 2.3.0-2.3.5 betroffen ist, wird Folgendes hinzugefügt: &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot;
+NICHT &quot;2.3.0-2.3.5&quot;
 * Fügen Sie keine Bezeichnungen mit .x hinzu. Beispiel: &quot;2.3.x&quot;
 
 ## Beschriftungen für den Inhaltstyp (basierend auf der Kategorie)

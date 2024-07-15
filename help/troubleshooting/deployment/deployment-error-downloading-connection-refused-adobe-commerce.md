@@ -25,11 +25,11 @@ W:    refused
 
 ## Betroffene Versionen
 
-Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Die Bereitstellung schlägt mit einer **curl error 7** Nachricht.
+Die Bereitstellung schlägt mit der Meldung **curl error 7** fehl.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -41,7 +41,7 @@ Die Implementierung ist erfolgreich.
 
 <u>Tatsächliches Verhalten</u>:
 
-Die Implementierung schlägt fehl und der folgende Fehler tritt auf: *curl error 7 beim Herunterladen ... Port 443: Verbindung verweigert* im Bereitstellungsprotokoll angezeigt.
+Die Bereitstellung schlägt fehl, und der folgende Fehler: *curl error 7 while download ... port 443: Connection refused* wird im Bereitstellungsprotokoll angezeigt.
 
 ## Ursache
 
@@ -55,10 +55,10 @@ Bitten Sie einen Superuser im Projekt, diesen Befehl auszuführen:
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Informationen zum Überprüfen, wer am Projekt ein Superuser ist, finden Sie unter [Anzeigen der Projektrolle eines Benutzers](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) im Commerce on Cloud Infrastructure Guide.
+Informationen dazu, wer im Projekt ein Superuser ist, finden Sie unter [Anzeigen der Projektrolle eines Benutzers](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) im Commerce on Cloud Infrastructure Guide.
 
 ## Empfohlene Lesbarkeit
 
 * [Fehlerbehebung bei der Adobe Commerce-Bereitstellung](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
-* [Auf Adobe Commerce on Cloud Repo konnte nicht zugegriffen werden: Fehler 403 Verboten oder 404 Nicht gefunden bei Bereitstellung](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [Die Bereitstellung schlägt mit &quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen.](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* [Auf Adobe Commerce in Cloud Repo konnte nicht zugegriffen werden: Fehler 403 Verboten oder 404 Nicht gefunden bei Bereitstellung von ](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
+* [Die Bereitstellung schlägt mit &quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html) fehl.

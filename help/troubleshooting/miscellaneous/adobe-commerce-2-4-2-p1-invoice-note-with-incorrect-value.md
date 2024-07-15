@@ -26,20 +26,20 @@ Wenn die Kundengruppe zum Zeitpunkt der Bestellerstellung geändert wird, wird d
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Erstellen Sie eine **Kundenkonto testen** und fügen Sie sie zum **Einzelhandelskundengruppe**.
-1. Erstellen Sie eine **Neue Bestellung** Fügen Sie für den Testkunden **Produkt** und **Adresse**.
-1. Auswählen **Versandmethode**.
-1. Im **Kontoinformationen** Abschnitt Kundengruppe ändern von **Einzelhändler** nach **Regierung**.
-1. Klicks **Bestellung platzieren**.
-1. Klicks **Rechnung** > **Submit Invoice**.
+1. Erstellen Sie ein **Kundenkonto testen** und fügen Sie es zur **Einzelhandelsgruppe** hinzu.
+1. Erstellen Sie eine **neue Bestellung** für den Testkunden, fügen Sie **Produkt** und **Adresse** hinzu.
+1. Wählen Sie **Versandmethode** aus.
+1. Ändern Sie im Abschnitt **Kontoinformationen** die Kundengruppe von **Händler** in **Regierung**.
+1. Klicken Sie auf **Bestellung platzieren**.
+1. Klicken Sie auf **Rechnung** > **Rechnung senden**.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die folgende Anmerkung sollte unter der **Hinweise zu dieser Reihenfolge**  Abschnitt: &quot;Vertex Invoice erfolgreich gesendet. Betrag: 0,00 USD.&quot;
+Der folgende Hinweis sollte unter dem Abschnitt **Hinweise für diese Bestellung** angezeigt werden: &quot;Vertex Invoice erfolgreich gesendet. Betrag: 0,00 USD.&quot;
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die folgende Anmerkung wird unter der **Hinweise zu dieser Reihenfolge** Abschnitt: &quot;Vertex Invoice erfolgreich gesendet. Betrag: 3,23 USD.&quot;
+Der folgende Hinweis wird unter dem Abschnitt **Hinweise für diese Bestellung** angezeigt: &quot;Vertex Invoice erfolgreich gesendet. Betrag: 3,23 USD.&quot;
 
 ## Lösung
 

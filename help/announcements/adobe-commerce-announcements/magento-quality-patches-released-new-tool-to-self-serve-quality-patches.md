@@ -29,5 +29,5 @@ Nachdem Sie das Tool installiert haben, können Sie jederzeit nach verfügbaren 
 
 Weitere Informationen finden Sie in unserer Entwicklerdokumentation .
 
-* [Im Werkzeug für Qualitätsmuster verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
-* [Versionshinweise zum Qualitätsmuster-Tool](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [Im Tool für Qualitätsmuster verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
+* [Versionshinweise zum Werkzeug für Qualitätsmuster](https://devdocs.magento.com/quality-patches/release-notes.html)

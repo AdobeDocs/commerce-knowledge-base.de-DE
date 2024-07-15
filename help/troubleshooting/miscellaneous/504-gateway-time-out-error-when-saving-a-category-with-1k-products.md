@@ -23,20 +23,20 @@ In diesem Artikel wird eine Lösung für das Problem mit der Zeitüberschreitung
 
 ## Problem
 
-Voraussetzungen: Die **Stores** > **Konfiguration** > **KATALOG** > **Katalog** > **Kategoriepfad für Produkt-URLs verwenden** ist auf *Ja* für Ihre Store-Ansicht.
+Voraussetzungen: Die Option **Stores** > **Konfiguration** > **KATALOG** > **Katalog** > **Kategoriepfad für Produkt-URLs verwenden** ist für Ihre Store-Ansicht auf *Ja* eingestellt.
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Navigieren Sie im Commerce-Admin zu **Katalog** > **Kategorien**.
+1. Navigieren Sie im Commerce Admin zu **Katalog** > **Kategorien**.
 1. Öffnen Sie eine große Kategorie, z. B. mehr als 1000 zugewiesene Produkte.
 1. Fügen Sie der Kategorie ein Produkt hinzu.
-1. Klicks **Kategorie speichern**.
+1. Klicken Sie auf **Kategorie speichern**.
 
 <u>Erwartetes Ergebnis:</u>
 
 Die Kategorie wurde erfolgreich gespeichert.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Nach fünf Minuten Speichervorgang wird die Fehlerseite 504 Gateway Timeout angezeigt.
 
@@ -46,19 +46,19 @@ Der Prozess dauert länger als der konfigurierte Timeout des Servers.
 
 ## Lösung
 
-Deaktivieren der **URL-Neuschreibungen für &quot;Kategorie/Produkt&quot;generieren** entfernt alle Kategorie-/Produkt-URL-Neuschreibungen aus der Datenbank und verringert die für Vorgänge mit großen Kategorien erforderliche Zeit erheblich.
+Durch Deaktivieren der Option **URL-Neuschreibungen für Kategorie/Produkt generieren** werden alle Kategorie-/Produkt-URL-Neuschreibungen aus der Datenbank entfernt und die für Vorgänge mit großen Kategorien erforderliche Zeit erheblich verringert.
 
 >[!WARNING]
 >
 >Wenn Sie diese Option deaktivieren, werden Kategorie-/Produkt-URL-Neuschreibungen dauerhaft entfernt, ohne dass eine Wiederherstellung möglich ist.
 
-So deaktivieren Sie die **URL-Neuschreibungen für &quot;Kategorie/Produkt&quot;generieren** Option:
+So deaktivieren Sie die Option **URL-Neuschreibungen für Kategorie/Produkt generieren**:
 
-1. Navigieren Sie in Commerce Admin zu **Stores** > **Konfiguration** > **KATALOG** > **Katalog**.
-1. In der oberen linken Ecke der Konfigurationsseite finden Sie im **Anwendungsbereich** -Feld, legen Sie den Konfigurationsbereich auf *Standardkonfiguration*.
-1. Satz **URL-Neuschreibungen für &quot;Kategorie/Produkt&quot;generieren** nach *Nein*.
-1. Klicks **Konfiguration speichern**.
-1. Cache bereinigen durch Ausführen    ```bash    bin/magento cache:clean    ```    oder im Commerce Admin unter **System** > **Instrumente** > **Cacheverwaltung**.
+1. Navigieren Sie im Commerce-Admin zu &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**KATALOG**&quot;> &quot;**Katalog**&quot;.
+1. Legen Sie in der oberen linken Ecke der Konfigurationsseite im Feld **Umfang** den Konfigurationsbereich auf *Standardkonfiguration* fest.
+1. Setzen Sie **URL &quot;Kategorie/Produkt&quot;generieren, schreibt** neu auf *Nein*.
+1. Klicken Sie auf **Konfiguration speichern**.
+1. Cache bereinigen durch Ausführen    ```bash    bin/magento cache:clean    ```    oder im Commerce Admin unter **System** > **Tools** > **Cache-Verwaltung**.
 
 Jetzt können Sie Produkte zu Kategorien hinzufügen oder Kategorien mit einer großen Anzahl von Produkten verschieben. Diese Vorgänge werden viel weniger Zeit in Anspruch nehmen und sollten keinen Timeout verursachen.
 

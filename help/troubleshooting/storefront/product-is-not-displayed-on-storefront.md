@@ -29,7 +29,7 @@ Dieser Artikel bietet Lösungen für Fälle, in denen Produkte nicht auf der Sto
 
    ![open_product_page_magento_2.4.1.png](assets/open_product_page_magento_2.4.1.png)
 
-1. Klicks **Produkt hinzufügen** und führen Sie den Prozess zur Produkterstellung durch. Oder importieren Sie Produkte aus einer CSV-Datei.
+1. Klicken Sie auf **Produkt hinzufügen** und gehen Sie zum Erstellungsvorgang für das Produkt. Oder importieren Sie Produkte aus einer CSV-Datei.
 
 <u>Erwartetes Ergebnis</u>:
 
@@ -49,13 +49,13 @@ Jeder der folgenden Punkte kann das Problem lösen.
 
 * Überprüfen Sie die Produkteinstellungen in Admin. Navigieren Sie zu **Katalog** > **Produkte**, öffnen Sie die Produktseite und stellen Sie sicher, dass die folgenden Felder korrekt konfiguriert sind:
    * **Produkt aktivieren** = *Ja.*
-   * **Lagerstatus**: *Auf Lager*. Oder *Nicht vorrätig* den richtigen Wert aufweist, stellen Sie sicher, dass **Nicht vorrätige Produkte anzeigen** (**SPEICHER** > **Einstellungen** > **Konfiguration** > **KATALOG** > **Bestand** > **Lageroptionen** > **Nicht vorrätige Produkte anzeigen**) auf *Ja* (global konfiguriert).
+   * **Lagerstatus**: *Auf Lager*. Oder wenn *Nicht auf Lager* der richtige Wert ist, stellen Sie sicher, dass **Nicht vorrätige Produkte anzeigen** (**STORES** > **Einstellungen** > **Konfiguration** > **KATALOG** > **Lagerbestand** > **Lageroptionen** > **}Nicht vorrätige Produkte anzeigen**) auf *Ja* eingestellt ist (global konfiguriert).
    * **Kategorien**: Wenn Sie versuchen, das Produkt auf einer Kategorieseite zu finden, überprüfen Sie, ob das Produkt der Kategorie zugewiesen ist. Um die Fehlerbehebung zu vereinfachen, erstellen Sie auf der aktuellen Seite eine neue Kategorie und weisen Sie ihr ein Produkt zu.
    * **Sichtbarkeit** = *Katalog, Suche.*
-   * Im **Produkt in Websites** müssen Sie sicherstellen, dass das Produkt der richtigen Website zugewiesen ist.
+   * Stellen Sie im Abschnitt **Produkt in Websites** sicher, dass das Produkt der richtigen Website zugewiesen ist.
    * Wechseln Sie in der Scope-Auswahl zur Store-Ansicht, in der Sie versuchen, Ihr Produkt in der Storefront zu finden, und überprüfen Sie dieselben Einstellungen.
-* Führen Sie die vollständige Neuindizierung durch, indem Sie `bin/magento indexer:reindex` aus der Konsole und leeren Sie den gesamten Cache im Admin unter **System** > **Instrumente** > **Cacheverwaltung** oder über die Konsole durch Ausführen von `bin/magento cache:clean`.
-* Wenn das oben beschriebene nicht hilft, können Sie mit der weiteren Untersuchung beginnen, indem Sie die Protokolle in der `var/log` Verzeichnis.
+* Führen Sie die vollständige Neuindizierung durch, indem Sie `bin/magento indexer:reindex` aus der Konsole ausführen und den gesamten Cache im Admin unter **System** > **Tools** > **Cache-Verwaltung** oder aus der Konsole leeren, indem Sie `bin/magento cache:clean` ausführen.
+* Wenn die obigen Schritte nicht hilfreich sind, können Sie mit der weiteren Untersuchung beginnen, indem Sie die Protokolle im Verzeichnis `var/log` überprüfen.
 
 ## Verwandtes Lesen in unserer Wissensdatenbank
 

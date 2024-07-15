@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-49737: Coupon wird fälschlicherweise als *used* nach gescheiterter Kartenzahlung
+# ACSD-49737: Der Coupon wird fälschlicherweise als *verwendet* nach einer fehlgeschlagenen Kartenzahlung markiert
 
-Der Patch ACSD-49737 behebt das Problem, dass der Gutschein fälschlicherweise als *used* nach einer fehlgeschlagenen Kartenzahlung. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 installiert ist. Die Patch-ID ist ACSD-49737. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-49737 behebt das Problem, dass der Gutschein nach einer fehlgeschlagenen Kartenzahlung fälschlicherweise als *used* markiert wurde. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 installiert ist. Die Patch-ID ist ACSD-49737. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,41 +27,41 @@ Der Patch ACSD-49737 behebt das Problem, dass der Gutschein fälschlicherweise a
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Der Gutschein wurde fälschlicherweise als *used* nach einer fehlgeschlagenen Kartenzahlung.
+Der Gutschein wird nach einer fehlgeschlagenen Kartenzahlung fälschlicherweise als *verwendet* markiert.
 
 <u>Voraussetzungen</u>:
 
 1. Konfigurieren Sie die **[!UICONTROL Braintree sandbox payment]** -Methode.
-1. Stellen Sie sicher, dass [*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html?lang=en) Consumer ist eingerichtet und läuft.
+1. Stellen Sie sicher, dass der Benutzer [*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html?lang=en) eingerichtet ist und ausgeführt wird.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Erstellen Sie eine **[!UICONTROL Cart Price Rule]** mit automatisch generierten Gutscheincodes.
+1. Erstellen Sie eine **[!UICONTROL Cart Price Rule]** mit automatisch generierten Couponcodes.
 1. Melden Sie sich als Kunde an.
 1. Fügen Sie Produkte zum Warenkorb hinzu.
 1. Wenden Sie einen automatisch generierten Gutscheincode an.
 1. Versuchen Sie, eine Bestellung mit einer fehlgeschlagenen Zahlung zu tätigen.
-1. Überprüfen Sie die Verwendung des Gutscheins im **[!UICONTROL Cart Price Rule]** unter **[!UICONTROL Manage Coupon Codes]** Registerkarte.
+1. Überprüfen Sie die Nutzung des Gutscheins im Tab **[!UICONTROL Manage Coupon Codes]** unter **[!UICONTROL Cart Price Rule]**.
 
 <u>Erwartete Ergebnisse</u>:
 
-Coupon sollte nicht als *used* wenn die Zahlung fehlgeschlagen ist.
+Der Gutschein sollte nicht als *Verwendet* gekennzeichnet werden, wenn die Zahlung fehlgeschlagen ist.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Couponcode lautet - Verwendet: *Ja*, Verwendete Zeiten: *1*
+* Couponcode lautet: - Verwendet: *Ja*, Verwendete Zeiten: *1*
 * Der Couponcode ist nur für eine einmalige Verwendung gültig.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Zusätzliche Schritte, die nach der Patch-Installation erforderlich sind
 
@@ -69,9 +69,9 @@ Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Pa
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

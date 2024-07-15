@@ -13,55 +13,55 @@ ht-degree: 0%
 
 # MDVA-33970 Patch: Währungszeichen im Kreditmemo
 
-Der Patch MDVA-33970 behebt das Problem, dass anstelle der lokalisierten Währung in einem Kreditmemo ein Dollarzeichen ($) angezeigt wurde. Dies geschieht, wenn eine **Webseite** Der Gültigkeitsbereich wird für eine **Preis** -Attribut.
+Der Patch MDVA-33970 behebt das Problem, dass anstelle der lokalisierten Währung in einem Kreditmemo ein Dollarzeichen ($) angezeigt wurde. Dies tritt auf, wenn ein Gültigkeitsbereich von **Website** für ein Attribut **Preis** verwendet wird.
 
-Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.15 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.3 behoben werden soll.
+Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.15 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.3 behoben werden soll.
 
 ## Betroffene Produkte und Versionen
 
-**Der Patch wird für die Adobe Commerce-Version erstellt:** Adobe Commerce auf Cloud-Infrastruktur 2.3.4-p2
+**Der Patch wird für die Adobe Commerce-Version erstellt:** Adobe Commerce für die Cloud-Infrastruktur 2.3.4-p2
 
-**Kompatibel mit Adobe Commerce-Versionen:** Adobe Commerce über Cloud-Infrastruktur und Adobe Commerce vor Ort 2.3.4 - 2.4.1-p1
+**Kompatibel mit Adobe Commerce-Versionen:** Adobe Commerce für Cloud-Infrastruktur und Adobe Commerce On-Premise 2.3.4 - 2.4.1-p1
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-<u>Voraussetzungen</u>:
+<u>Precondition</u>:
 
 Für dieses Beispiel werden die folgenden Einstellungen verwendet:
 
-* 2 Websites sind vorhanden - jeder verfügt über eine **Store** und **Store-Ansicht**.
-* Die **Standardkonfiguration** den Singapur-Dollar als **Währung** (**Stores > Konfiguration > Allgemein > Währungseinstellungen**):
-   * **Basiswährung** = *Singapur, Dollar*
-   * **Standardanzeigewährung** = *Singapur, Dollar*
-   * **Zulässige Währungen** = *Singapur, Dollar*
+* 2 Websites sind vorhanden - jede hat einen **Store** und eine **Store-Ansicht**.
+* Die Standardkonfiguration **von** hat den Singapur-Dollar als **Währung** (**Speicher > Konfiguration > Allgemein > Währungseinstellungen**):
+   * **Basiswährung** = *Singapur-Dollar*
+   * **Standardanzeigewährung** = *Singapur-Dollar*
+   * **Zulässige Währungen** = *Singapur-Dollar*
 * **Website 1** hat eine **Standardkonfiguration**.
 * **Website 2** hat den malaysischen Ringgit als **Währung**:
-   * **Basiswährung** = *Malaysia Ringgit*
-   * **Standardanzeigewährung** = *Malaysia Ringgit*
-   * **Zulässige Währungen** = *Malaysia Ringgit*
-* Navigieren Sie zu **Stores > Währungssymbole**, und legen Sie fest:
+   * **Basiswährung** = *Malaysischer Ringgit*
+   * **Standardanzeigewährung** = *Malaysischer Ringgit*
+   * **Zulässige Währungen** = *Malaysischer Ringgit*
+* Wechseln Sie zu **Stores > Währungssymbole** und legen Sie Folgendes fest:
    * **MYR (Malaysischer Ringgit)** = *RM*
-   * **SGD (Singapur-Dollar)** = *SGD* (**Use Standard** = *Aktiviert*)
-* Einige **Produkt** vorhanden ist.
+   * **SGD (Singapur-Dollar)** = *SGD* (**Use Standard** = *Checked*)
+* Einige **Produkt** sind vorhanden.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Erstellen Sie eine **Bestellung** aus dem **Website 2** (Sie können ihn als Standard einrichten, um zusätzliche Einstellungen zu vermeiden).
-1. Anmelden bei **Admin**.
+1. Nehmen Sie eine **Bestellung** von der **Website 2** vor (Sie können sie als Standard einrichten, um zusätzliche Einstellungen zu vermeiden).
+1. Melden Sie sich bei **Admin** an.
 1. Öffnen Sie die neu erstellte Bestellung.
-1. Stellen Sie sicher, dass die **Währungssymbol** = *RM*.
+1. Überprüfen Sie, ob das **Währungssymbol** = *RM* ist.
 1. Erstellen Sie eine **Rechnung**.
-1. Stellen Sie sicher, dass die **Währungssymbol** = *RM* in der Rechnung.
-1. Erstellen Sie eine **Credit Memo**.
-1. Stellen Sie sicher, dass die **Währungssymbol**  ** ** = *RM* im **Credit Memo**.
-1. Öffnen Sie die **Credit Memos** Registerkarte in **Bestellung**.
-1. Überprüfen Sie die **Währungssymbol** im Raster.
-1. Öffnen **Verkauf > Credit Memos**.
-1. Überprüfen Sie die **Währungssymbol** im Raster.
+1. Überprüfen Sie, ob das **Währungssymbol** = *RM* in der Rechnung enthalten ist.
+1. Erstellen Sie ein **Credit Memo**.
+1. Überprüfen Sie, ob das **Währungssymbol** ** ** = *RM* im **Credit Memo** enthalten ist.
+1. Öffnen Sie die Registerkarte **KreditMemos** in **Bestellung**.
+1. Überprüfen Sie das **Währungssymbol** im Raster.
+1. Öffnen Sie **Verkauf > Kreditkarten**.
+1. Überprüfen Sie das **Währungssymbol** im Raster.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -75,14 +75,14 @@ Das Dollarzeichen ($) wird verwendet, auch wenn es nicht in den Admin-Einstellun
 
 Verwenden Sie je nach Adobe Commerce-Produkt die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) Abschnitt.
+Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

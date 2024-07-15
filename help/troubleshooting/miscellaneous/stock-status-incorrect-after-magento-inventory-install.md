@@ -27,10 +27,10 @@ Nach der ersten Installation oder Aktualisierung, um Inventory management in der
 
 ## Ursache
 
-Bei der ersten Installation/Aktualisierung werden alle Ihre Produkte der Standardquelle zugeordnet, wobei alle Mengen dieser Quelle zugeordnet werden. Die Standardquelle wird dem Standardbestand zugewiesen, wobei die Standardwebsite verknüpft ist.
+Bei der ersten Installation/Aktualisierung werden alle Ihre Produkte der Standardquelle zugeordnet, wobei alle Mengen dieser Quelle zugeordnet werden. Der Standard-Source wird dem Standardbestand zugewiesen, wobei die Standard-Website mit zugeordnet ist.
 
 ## Lösung
 
 Wenn Sie mehr als eine Website haben, müssen Sie diese Websites als Sales Channel zum Standardbestand oder anderen benutzerdefinierten Lagern hinzufügen.
 
-Siehe [Lagerbereich des Wiki/Benutzerhandbuchs](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) im Benutzerhandbuch für weitere Informationen dazu.
+Weitere Informationen dazu finden Sie im Abschnitt [Stock des Wiki/Benutzerhandbuchs](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) in unserem Benutzerhandbuch.

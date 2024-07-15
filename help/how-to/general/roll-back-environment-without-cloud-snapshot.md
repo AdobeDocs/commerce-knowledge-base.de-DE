@@ -16,12 +16,12 @@ In diesem Artikel werden zwei Lösungen vorgestellt, um eine Umgebung wiederherz
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 Wählen Sie die für Ihren Fall am besten geeignete Option aus:
 
-* Wenn Sie einen stabilen Build haben, aber keinen gültigen Schnappschuss - [Szenario 1: Keine Momentaufnahme, Build-Stable (SSH-Verbindung verfügbar)](#scen2).
-* Wenn der Build beschädigt ist und Sie keinen gültigen Schnappschuss haben - [Szenario 2: Keine Momentaufnahme; Build defekt (keine SSH-Verbindung)](#scen3).
+* Wenn Sie einen stabilen Build haben, aber keinen gültigen Snapshot - [Szenario 1: Kein Snapshot, Build Stable (SSH-Verbindung verfügbar)](#scen2).
+* Wenn der Build beschädigt ist und Sie keinen gültigen Snapshot haben - [Szenario 2: Kein Snapshot; Build defekt (keine SSH-Verbindung)](#scen3).
 
 ## Szenario 1: Keine Momentaufnahme, Build-Stable (SSH-Verbindung verfügbar) {#scen2}
 
@@ -35,7 +35,7 @@ Die Schritte sind:
 
 Führen Sie diese Schritte aus:
 
-* Ihre Adobe Commerce-Installation kehrt zum Vanilla-Status zurück (Datenbank wiederhergestellt, Bereitstellungskonfiguration entfernt; Ordner unter `var` gelöscht)
+* Ihre Adobe Commerce-Installation kehrt zum Vanilla-Status zurück (Datenbank wiederhergestellt, Bereitstellungskonfiguration entfernt, Ordner unter `var` gelöscht).
 * Ihre Git-Verzweigung wird in der Vergangenheit auf den gewünschten Status zurückgesetzt
 
 Gehen Sie wie folgt vor:
@@ -44,11 +44,11 @@ Gehen Sie wie folgt vor:
 
 Wir müssen Configuration Management deaktivieren, damit die vorherigen Konfigurationseinstellungen während der Bereitstellung nicht automatisch angewendet werden.
 
-Um die Konfigurationsverwaltung zu deaktivieren, stellen Sie sicher, dass Ihr `/app/etc/` enthält nicht die `config.php` (für Adobe Commerce 2.4.x) oder `config.local.php` (für Adobe Commerce 2.1.x).
+Um die Konfigurationsverwaltung zu deaktivieren, stellen Sie sicher, dass der Ordner &quot;`/app/etc/`&quot;nicht die Dateien &quot;`config.php`&quot;(für Adobe Commerce 2.4.x) oder &quot;`config.local.php`&quot;(für Adobe Commerce 2.1.x) enthält.
 
 Gehen Sie wie folgt vor, um die Konfigurationsdatei zu entfernen:
 
-1. [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Entfernen Sie die Konfigurationsdatei:
    * Für Adobe Commerce 2.4:
 
@@ -64,20 +64,20 @@ Gehen Sie wie folgt vor, um die Konfigurationsdatei zu entfernen:
 
 Weitere Informationen zur Konfigurationsverwaltung finden Sie unter:
 
-* [Reduzieren von Bereitstellungsausfällen in Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) in unserer Wissensdatenbank.
+* [Reduzieren Sie die Ausfallzeiten bei der Bereitstellung auf Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) in unserer Support-Wissensdatenbank.
 * [Konfigurationsverwaltung für Speichereinstellungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) in unserer Entwicklerdokumentation.
 
 ### Schritt 1: Deinstallieren Sie die Adobe Commerce-Software mit setup:uninstall-Befehl {#setup-uninstall}
 
 
-Durch das Deinstallieren der Adobe Commerce-Software wird die Datenbank gelöscht, die Bereitstellungskonfiguration entfernt und die Ordner unter `var`.
+Durch die Deinstallation der Adobe Commerce-Software wird die Datenbank gelöscht, die Bereitstellungskonfiguration entfernt und die Ordner unter `var` gelöscht.
 
-Überprüfen [Deinstallieren der Adobe Commerce-Software](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) in unserer Entwicklerdokumentation.
+Lesen Sie [Deinstallieren der Adobe Commerce-Software](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall.html) in unserer Entwicklerdokumentation.
 
 Gehen Sie wie folgt vor, um die Adobe Commerce-Software zu deinstallieren:
 
-1. [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
-1. Ausführen `setup:uninstall`:
+1. [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Ausführen von `setup:uninstall`:
 
    ```php
      php bin/magento setup:uninstall
@@ -98,13 +98,13 @@ Dies bedeutet, dass wir unsere Adobe Commerce-Installation (einschließlich DB) 
 Beim Zurücksetzen von Git kehren wir den Code in der Vergangenheit zum gewünschten Status zurück.
 
 1. Klonen Sie die Umgebung in Ihre lokale Entwicklungsumgebung. Sie können den Befehl in die Cloud-Konsole kopieren:    ![copy_git_clone.png](assets/copy_git_clone.png)
-1. Rufen Sie den Commits-Verlauf auf. Verwendung `--reverse` , um den Verlauf in umgekehrter Reihenfolge anzuzeigen, um mehr Komfort zu bieten:
+1. Rufen Sie den Commits-Verlauf auf. Verwenden Sie `--reverse` , um den Verlauf für weitere Informationen in umgekehrter Reihenfolge anzuzeigen:
 
    ```git
      git log --reverse
    ```
 
-1. Wählen Sie den Commit-Hash aus, für den Sie gut waren. Um den Code auf seinen authentischen Status (Vanilla) zurückzusetzen, suchen Sie den allerersten Commit, der Ihre Verzweigung (Umgebung) erstellt hat.    ![Commit-Hash in der Git-Konsole auswählen](assets/select_commit_hash.png)
+1. Wählen Sie den Commit-Hash aus, für den Sie gut waren. Um den Code auf seinen authentischen Status (Vanilla) zurückzusetzen, suchen Sie den allerersten Commit, der Ihre Verzweigung (Umgebung) erstellt hat.    ![Auswählen eines Commit-Hashs in der Git-Konsole](assets/select_commit_hash.png)
 1. Wenden Sie das Hard Git-Reset an:
 
    ```git
@@ -127,11 +127,11 @@ In diesem Szenario müssen Sie zunächst den Arbeitsstatus Ihrer Adobe Commerce-
 
 [1. Setzen Sie die Git-Verzweigung zurück.](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
 
-[2. Deaktivieren Sie die Konfigurationsverwaltung.](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
+[2. Konfigurationsverwaltung deaktivieren.](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
 
 [3. Deinstallieren Sie die Adobe Commerce-Software.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&amp;period; Neuverlegung erzwingen.
+4&amp;period;Neuzuweisung erzwingen.
 
 Nachdem Sie diese Schritte ausgeführt haben, haben Sie dieselben Ergebnisse wie in Szenario 1.
 
@@ -145,38 +145,38 @@ git commit --allow-empty -m "<message>" && git push <origin> <branch>
 
 ## Wenn Setup:uninstall fehlschlägt, die Datenbank manuell zurücksetzen
 
-Wenn die `setup:uninstall` -Befehl mit einem Fehler fehlschlägt und nicht abgeschlossen werden kann, können wir die DB mit den folgenden Schritten manuell löschen:
+Wenn die Ausführung des Befehls `setup:uninstall` mit einem Fehler fehlschlägt und nicht abgeschlossen werden kann, können wir die DB mit den folgenden Schritten manuell löschen:
 
-1. [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Stellen Sie eine Verbindung zur MySQL DB her:
 
    ```sql
    mysql -h database.internal
    ```
 
-1. Legen Sie die `main` DB:
+1. Legen Sie die `main`-DB ab:
 
    ```sql
    drop database main;
    ```
 
-1. Leere erstellen `main` DB:
+1. Erstellen Sie eine leere `main` DB:
 
    ```sql
    create database main;
    ```
 
-1. Löschen Sie die folgenden Konfigurationsdateien: `config.php`, `config.php` `.bak`, `env.php`, und `env.php.bak`.
+1. Löschen Sie die folgenden Konfigurationsdateien: `config.php`, `config.php` `.bak`, `env.php` und `env.php.bak`.
 
-Nach dem Zurücksetzen der DB [einen Git-Push in die Umgebung durchführen, um die erneute Bereitstellung des Triggers zu ermöglichen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands) und installieren Sie Adobe Commerce in einer neu erstellten DB. Oder [Führen Sie den Befehl redeploy aus](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
+Nachdem Sie die DB zurückgesetzt haben, führen [einen Git-Push in die Umgebung durch, um den Trigger erneut bereitzustellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#git-commands) und Adobe Commerce in einer neu erstellten DB zu installieren. Oder [führen Sie den Befehl zum erneuten Bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands) aus.
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
-* [Wiederherstellen eines Snapshots in Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
-* [Erstellen eines Schnappschusses](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
+* [Schnappschuss in Cloud wiederherstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
+* [Erstellen eines Snapshots](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
 * [Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Verwalten von Zweigen mit der Cloud Console - Protokolle anzeigen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=en#view-logs)
-* [Komponentenbereitstellungsfehler](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html)
+* [Verwalten von Zweigen mit der Cloud-Konsole - Protokolle anzeigen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=en#view-logs)
+* [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html)
 * [Projekt verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project)

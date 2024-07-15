@@ -14,22 +14,22 @@ ht-degree: 0%
 
 Adobe Commerce auf Cloud-Infrastruktur-Cron-Aufträgen wird nicht ausgeführt, bleibt hängen und verhindert, dass andere Cron-Aufträge ausgeführt werden. In diesem Artikel wird gezeigt, wie die hängenden Cron-Aufträge manuell zurückgesetzt werden.
 
-Verwenden Sie diesen Befehl mit Vorsicht! Wir empfehlen, die [Cron-Aufträge zurücksetzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) in unserer Support-Wissensdatenbank für weitere Informationen.
+Verwenden Sie diesen Befehl mit Vorsicht! Wir empfehlen, den Artikel [Cron-Aufträge zurücksetzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) in unserer Support-Wissensdatenbank zu lesen, um mehr zu erfahren.
 
 ## Schritte
 
 >[!INFO]
 >
->Von [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) Sie können hängengebliebene Cron-Aufträge mithilfe eines CLI-Befehls über SSH-Zugriff manuell zurücksetzen.
+>Ab [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) können Sie hängengebliebene Cron-Aufträge mithilfe eines CLI-Befehls über SSH-Zugriff manuell zurücksetzen.
 
-1. [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Führen Sie diesen Befehl aus: `./vendor/bin/ece-tools cron:unlock`
 
 ## Warnungen
 
-* Der Befehl setzt **all** Cron-Aufträge, einschließlich der derzeit ausgeführten Aufträge; **nur in Ausnahmefällen verwenden**.
+* Der Befehl setzt **alle** Cron-Aufträge zurück, einschließlich der derzeit ausgeführten; **verwendet sie nur in Ausnahmefällen**.
 * Vermeiden Sie die Verwendung dieser Lösung, wenn Indexer ausgeführt werden.
 
 ## Lesen Sie es in unserer Support-Wissensdatenbank:
 
-[Cron-Aufträge zurücksetzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+[cron-Aufträge zurücksetzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)

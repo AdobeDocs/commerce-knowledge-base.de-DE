@@ -17,7 +17,7 @@ Dieser Artikel bietet eine Lösung für den Fall, dass sich der Seiten-Cache erw
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützte Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
@@ -37,7 +37,7 @@ Die Site ist nicht verfügbar oder die Antwortzeit ist zu hoch.
 
 ## Lösung
 
-Schränken Sie die Anzahl der gleichzeitigen Verbindungen während der Aktualisierung des Cache ein. Dazu müssen Sie die `WARM_UP_CONCURRENCY` Variable nach der Bereitstellung , um die Anzahl der Aufwärmanforderungen anzugeben, die das Aufwärmskript für den Cache gleichzeitig senden kann. Durch das Festlegen dieser Option kann die Auslastung der Cloud-Infrastruktur von Adobe Commerce verwaltet werden. Anweisungen finden Sie unter [Variablen nach der Bereitstellung > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) in unserer Entwicklerdokumentation.
+Schränken Sie die Anzahl der gleichzeitigen Verbindungen während der Aktualisierung des Cache ein. Dazu muss die Variable &quot;`WARM_UP_CONCURRENCY` nach der Bereitstellung&quot;hinzugefügt werden, um die Anzahl der Aufwärmanforderungen anzugeben, die das Aufwärmskript für den Cache gleichzeitig senden kann. Durch das Festlegen dieser Option kann die Auslastung der Cloud-Infrastruktur von Adobe Commerce verwaltet werden. Anweisungen finden Sie unter [Post-Bereitstellungsvariablen > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

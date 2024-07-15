@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce auf Cloud-Infrastruktur v2.3.5 GraphQL-Cache-Invalidierung nicht funktioniert
 
-Dieser Artikel enthält einen Patch für das Problem, bei dem GraphQL `GET` -Anfrage gibt veraltete Informationen zurück, wenn der Kunde die Produktinformationen ändert.
+Dieser Artikel enthält einen Patch für das Problem, bei dem die GraphQL `GET`-Anfrage veraltete Informationen zurückgibt, wenn der Kunde die Produktinformationen ändert.
 
 ## Betroffene Produkte und Versionen
 
@@ -33,11 +33,11 @@ GraphQL-Anforderungen werden von Fastly zwischengespeichert und die zwischengesp
 
 <u>Erwartete Ergebnisse</u>:
 
-Die `X-Cache` header contains `MISS`.
+Die Kopfzeile `X-Cache` enthält `MISS`.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die `X-Cache` header contains `HIT`, was bedeutet, dass die Antwort zwischengespeichert wird.
+Die Kopfzeile `X-Cache` enthält `HIT`, was bedeutet, dass die Antwort zwischengespeichert wird.
 
 ## Lösung
 
@@ -73,6 +73,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen zum Anwenden eines Composer-Patches.
+Anweisungen zum Anwenden eines Composer-Patches finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached files

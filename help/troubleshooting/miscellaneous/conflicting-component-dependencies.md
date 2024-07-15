@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Konflikt bei Komponentenabhängigkeiten
 
-Dieser Artikel bietet eine Lösung für in Konflikt stehende Komponentenabhängigkeiten. Wenn Sie versuchen, Adobe Commerce mit dem Web-Setup-Assistenten einzurichten oder zu aktualisieren, wird Ihnen die *&quot;Wir haben in Konflikt stehende Komponentenabhängigkeiten gefunden&quot;* Komponentenfehlermeldung.
+Dieser Artikel bietet eine Lösung für in Konflikt stehende Komponentenabhängigkeiten. Beim Versuch, Adobe Commerce mit dem Web-Einrichtungs-Assistenten einzurichten oder zu aktualisieren, wird die Fehlermeldung &quot;*In Konflikt stehende Komponentenabhängigkeiten&quot;* Composer angezeigt.
 
 ## Betroffene Produkte und Versionen
 
@@ -51,21 +51,21 @@ Zwei Hauptszenarien können zu widersprüchlichen Komponentenabhängigkeiten fü
 Wenn Sie Adobe Commerce auf Cloud-Infrastruktur aktualisieren, versuchen Sie Folgendes, um in Konflikt stehende Komponentenabhängigkeiten zu lösen:
 
 * Überprüfen Sie die Schlüssel, die für die Aktualisierung verwendet werden. Werden die Schlüssel aus dem richtigen E-Mail-Konto generiert?
-* Überprüfen Sie die Berechtigungen und stellen Sie sicher, dass sie den Magento-Upgrade-Anforderungen entsprechen. Überprüfen [Magento Upgrade-Übersicht > Checkliste für Aktualisierung und Aktualisierung > Dateisystemberechtigungen](https://devdocs.magento.com/guides/v2.3/comp-mgr/prereq/prereq_compman-checklist.html#perms) in unserer Entwicklerdokumentation.
+* Überprüfen Sie die Berechtigungen und stellen Sie sicher, dass sie den Magento-Upgrade-Anforderungen entsprechen. Lesen Sie [Magento Upgrade-Übersicht > Checkliste für Aktualisierung und Aktualisierung > Dateisystemberechtigungen](https://devdocs.magento.com/guides/v2.3/comp-mgr/prereq/prereq_compman-checklist.html#perms) in unserer Entwicklerdokumentation.
 
 ## Inkompatibilität mit Drittanbietermodulen: {#incompatibility-third-party-modules}
 
 Konflikte zwischen Komponentenabhängigkeiten können auch durch Drittanbietermodule verursacht werden, die von früheren Commerce-Komponenten als den installierten abhängen. Versuchen Sie Folgendes:
 
-1. Im vorangehenden [example](#issue), kann die installierte Paket magento/sample-data Version 0.74.0-beta15 nicht auf 1.0.0-beta aktualisiert werden. 0.74.0-beta15 kann jedoch auf 0.74.0-beta16 (oder andere) aktualisiert werden. Bearbeiten `composer.json` um eine dieser Änderungen vorzunehmen. Normalerweise werden die Versionen, die Ihr Projekt anfordert, im `require` oder `require-dev` -Eigenschaft des -Objekts in dieser JSON-Datei. Abhängig von den verfügbaren Optionen der Paketversionen können sie eine bestimmte Version oder eine Einschränkung angeben. Allgemeine Hinweise zur Verwendung von Composer finden Sie unter [Cloud für Adobe Commerce > Technologien und Anforderungen > Composer](https://devdocs.magento.com/cloud/reference/cloud-composer.html#files) in unserer Entwicklerdokumentation. Wenn Sie sich vor Ort in Adobe Commerce befinden, lesen Sie [Adobe Commerce > Installationshandbuch > Adobe Commerce mithilfe des Composers installieren](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) .
-1. Versuchen Sie jetzt die Überprüfung der Bereitschaft. Überprüfen [Adobe Commerce-Upgrade-Übersicht > Ausführen des Modulmanagers > Schritt 1 - Überprüfung der Bereitschaft](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-readiness.html) in unserer Entwicklerdokumentation.
-1. Wenn die Bereitschaftsprüfung mit einer anderen Fehlermeldung zur Prüfung der Komponentenabhängigkeit fehlschlägt, klicken Sie auf die folgenden Links, je nachdem, ob Sie [Adobe Commerce](#magento-commerce-magento-commerce-cloud) oder [Magento Open Source](#opensource) um weitere Schritte zur Fehlerbehebung zu erhalten.
+1. Im vorherigen [Beispiel](#issue) kann die installierte Paket-Magento/sample-data-Version 0.74.0-beta15 nicht auf 1.0.0-beta aktualisiert werden. 0.74.0-beta15 kann jedoch auf 0.74.0-beta16 (oder andere) aktualisiert werden. Bearbeiten Sie `composer.json` , um eine dieser Änderungen vorzunehmen. In der Regel werden die Versionen, die Ihr Projekt anfordert, in der Eigenschaft `require` oder `require-dev` des Objekts in dieser JSON-Datei definiert. Abhängig von den verfügbaren Optionen der Paketversionen können sie eine bestimmte Version oder eine Einschränkung angeben. Allgemeine Anleitungen zur Verwendung von Composer finden Sie in unserer Entwicklerdokumentation unter [Cloud für Adobe Commerce > Technologien und Anforderungen > Composer](https://devdocs.magento.com/cloud/reference/cloud-composer.html#files) . Wenn Sie sich vor Ort in Adobe Commerce befinden, finden Sie weitere Informationen unter [Adobe Commerce > Installationsanleitung > Adobe Commerce mithilfe des Composers installieren](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) .
+1. Versuchen Sie jetzt die Überprüfung der Bereitschaft. Lesen Sie den Abschnitt [Adobe Commerce-Upgrade-Übersicht > Ausführen des Modulmanagers > Schritt 1 - Prüfung der Bereitschaft](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-readiness.html) in unserer Entwicklerdokumentation.
+1. Wenn die Bereitschaftsprüfung mit einer anderen Fehlermeldung zur Komponentenabhängigkeit fehlschlägt, klicken Sie auf die folgenden Links, je nachdem, ob Sie [Adobe Commerce](#magento-commerce-magento-commerce-cloud) oder [Magento Open Source](#opensource) verwenden, um weitere Schritte zur Fehlerbehebung zu erhalten.
 
 ## Adobe Commerce {#magento-commerce-magento-commerce-cloud}
 
-1. Wenden Sie sich an den Entwickler der Erweiterung, damit dieser Ihnen helfen kann. Sie finden ihre Kontaktinformationen auf der Seite, von der Sie die Erweiterung erworben haben, auf der Commerce Marketplace. Suchen Sie nach **Ansprechpartner Verkäufer** im rechten Bereich angezeigt. Alle Commerce-Entwickler müssen beim Veröffentlichen einer Erweiterung in Marketplace ein Benutzer- und Installationshandbuch bereitstellen. Sie finden beide auf der rechten Seite der Landingpage.
-1. Wenn Sie nicht innerhalb einer angemessenen Frist eine Antwort vom Verkäufer erhalten, bitte [Support für den Kontakt](mailto:commercemarketplacesupport@adobe.com) damit wir sie an ihre Zusagen bezüglich des Kundendienstes erinnern können.
+1. Wenden Sie sich an den Entwickler der Erweiterung, damit dieser Ihnen helfen kann. Sie finden ihre Kontaktinformationen auf der Seite, von der Sie die Erweiterung erworben haben, auf der Commerce Marketplace. Suchen Sie nach der Schaltfläche **Verkäufer kontaktieren** , die im rechten Fensterbereich angezeigt wird. Alle Commerce-Entwickler müssen beim Veröffentlichen einer Erweiterung in Marketplace ein Benutzer- und Installationshandbuch bereitstellen. Sie finden beide auf der rechten Seite der Landingpage.
+1. Wenn Sie nicht innerhalb einer angemessenen Frist eine Antwort vom Verkäufer erhalten, wenden Sie sich bitte an den Support von Marketplace](mailto:commercemarketplacesupport@adobe.com), damit wir sie an ihre Support-Verpflichtungen beim Kunden erinnern können.[
 
 ## Magento Open Source {#opensource}
 
-Hilfe anfordern unter [Unser Hauptforum](https://community.magento.com/) oder [Adobe Commerce Partner kontaktieren](https://magento.com/find-a-partner) , die bei Open Source-Problemen unterstützt.
+Fordern Sie Hilfe bei [unserem Hauptforum](https://community.magento.com/) an oder [wenden Sie sich an einen Adobe Commerce-Partner](https://magento.com/find-a-partner), der bei Open Source-Problemen unterstützt.

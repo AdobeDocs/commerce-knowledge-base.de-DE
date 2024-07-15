@@ -21,7 +21,7 @@ Dieser Artikel bietet eine Lösung für das Problem, bei dem die Fastly Image Op
 
 ## Problem
 
-Auf der Seite Schnelle Konfiguration neben dem Fastly I/O-Snippet sehen Sie den aktuellen Status: \_disabled \_with der folgenden Meldung darunter: Wenden Sie sich an Ihren Vertriebsmitarbeiter oder senden Sie eine E-Mail an `support@fastly.com` , um die Aktivierung der Bildoptimierung für Ihren Fastly-Service anzufordern.
+Auf der Seite Schnelle Konfiguration neben dem Fastly I/O-Snippet sehen Sie den aktuellen Status: \_disabled \_with der folgenden Meldung darunter: Wenden Sie sich an Ihren Vertriebsmitarbeiter oder senden Sie eine E-Mail an `support@fastly.com`, um die Aktivierung der Bildoptimierung für Ihren Fastly-Service anzufordern.
 
 ## Ursache
 
@@ -29,4 +29,4 @@ Die Site ist möglicherweise noch nicht live. Es gibt Prozesse zum Vorausfüllen
 
 ## Lösung
 
-Erstellen Sie eine [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und Bildoptimierung anfordern.
+Erstellen Sie ein [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und fordern Sie die Bildoptimierung an.

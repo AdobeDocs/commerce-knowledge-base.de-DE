@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Die Installation von Adobe Commerce 2.4.0 schlägt mit veraltetem Speicher-Cache fehl
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem die Installation von Adobe Commerce 2.4.0 mit der Fehlermeldung fehlschlägt: *Die Standardwebsite ist nicht definiert. Legen Sie die Website fest und versuchen Sie es erneut.* in der Konsole angezeigt.
+Dieser Artikel bietet eine Lösung für das Problem, bei dem Ihre Adobe Commerce 2.4.0-Installation mit der Fehlermeldung fehlschlägt: *Die Standardwebsite ist nicht definiert. Legen Sie die Website fest und versuchen Sie es erneut.* in der Konsole angezeigt.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,7 +23,7 @@ Dieser Artikel bietet eine Lösung für das Problem, bei dem die Installation vo
 ## Problem
 
 <u>Voraussetzungen:</u>
-Eine Drittanbietererweiterung mit Abhängigkeiten von APIs für das Store-Modul in CLI-Befehlen wird wie in `composer.json`. Dadurch schlägt die Installation von Adobe Commerce 2.4.0 mit einer Fehlermeldung fehl: *Die Standardwebsite ist nicht definiert. Legen Sie die Website fest und versuchen Sie es erneut.* in der Konsole angezeigt.
+Eine Drittanbietererweiterung mit Abhängigkeiten von APIs für das Store-Modul in CLI-Befehlen wird wie in `composer.json` erforderlich konfiguriert. Dies führt dazu, dass die Installation von Adobe Commerce 2.4.0 mit einer Fehlermeldung fehlschlägt: *Die Standardwebsite ist nicht definiert. Legen Sie die Website fest und versuchen Sie es erneut.* in der Konsole angezeigt.
 
 ## Ursache
 

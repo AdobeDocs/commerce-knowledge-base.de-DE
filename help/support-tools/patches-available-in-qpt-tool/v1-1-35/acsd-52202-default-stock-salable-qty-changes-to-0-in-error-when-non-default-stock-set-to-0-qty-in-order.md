@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52202: Die standardmäßige Lagerverkaufsmenge ändert sich zu 0, wenn der nicht standardmäßige Lagerbestand in einer Bestellung auf 0 Menge eingestellt ist.
 
-Der Patch ACSD-52202 behebt das Problem, dass eine standardmäßige Lagerverkaufsmenge (qty) zu 0 fehlerhaft wird, wenn ein nicht standardmäßiges Lager in einer Bestellung auf 0 Menge eingestellt ist. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.35 installiert ist. Die Patch-ID ist ACSD-52202. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-52202 behebt das Problem, dass eine standardmäßige Lagerverkaufsmenge (qty) zu 0 fehlerhaft wird, wenn ein nicht standardmäßiges Lager in einer Bestellung auf 0 Menge eingestellt ist. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.35 installiert ist. Die Patch-ID ist ACSD-52202. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-52202 behebt das Problem, dass eine standardmäßige Lagerverkauf
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -35,36 +35,36 @@ Die standardmäßige Lagerverkaufsmenge ändert sich zu 0, wenn der nicht standa
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Melden Sie sich bei [!DNL Admin].
-1. Erstellen **website2**.
-1. Benutzerdefiniert erstellen **source2**.
-1. Benutzerdefiniert erstellen **stock2**.
-1. Zuweisen der **source2** und **stock2** nach **website1** sowie die Standardquelle und den Standardbestand auf der Standardwebsite.
-1. Einfaches Produkt erstellen und zuweisen **qty** = *10* für die Standardquelle und **qty** = *1* für die **source2** -Quelle.
-1. Platzieren einer Bestellung mit **qty** = *1* für **website2**.
+1. Melden Sie sich bei [!DNL Admin] an.
+1. Erstellen Sie **website2**.
+1. Erstellen Sie eine benutzerdefinierte **Quelle2**.
+1. Erstellen Sie benutzerdefiniertes **stock2**.
+1. Weisen Sie **source2** und **stock2** **website1** sowie die Standardquelle und den Standardbestand der Standardwebsite zu.
+1. Erstellen Sie ein einfaches Produkt und weisen Sie **qty** = *10* für die Standardquelle und **qty** = *1* für die Quelle **source2** zu.
+1. Legen Sie eine Bestellung mit **qty** = *1* für **website2** auf.
 1. Erstellen Sie eine Rechnung und eine Sendung.
-1. Überprüfen des einfachen Produkts **verkaufte Menge**.
+1. Überprüfen Sie die einfache Produktmenge **Verkaufsmenge**.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die **verkaufte Menge** = *10* für **source2**.
+Die **verkaufbare Menge** = *10* für **source2**.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die **verkaufte Menge** = *0* für beide Quellen.
+Die **verkaufbare Menge** = *0* für beide Quellen.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

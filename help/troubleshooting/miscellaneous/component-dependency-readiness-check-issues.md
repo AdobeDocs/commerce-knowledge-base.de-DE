@@ -25,7 +25,7 @@ Wir empfehlen Ihnen, die folgenden Lösungen in der angegebenen Reihenfolge ausz
 
 ### Konfliktabhängigkeiten {#trouble-depend-conflict}
 
-Die Nachricht *Wir haben in Konflikt stehende Komponentenabhängigkeiten gefunden* wird angezeigt, wenn Composer nicht ermitteln kann, welche Komponenten installiert oder aktualisiert werden sollen. Um Probleme mit der Komponentenabhängigkeit zu lösen, sollten Sie eine technische Person sein, die genau versteht, wie Composer funktioniert.
+Die Meldung &quot;*Wir haben in Konflikt stehende Komponentenabhängigkeiten gefunden*&quot;wird angezeigt, wenn der Composer nicht bestimmen kann, welche Komponenten installiert oder aktualisiert werden sollen. Um Probleme mit der Komponentenabhängigkeit zu lösen, sollten Sie eine technische Person sein, die genau versteht, wie Composer funktioniert.
 
 Im Folgenden finden Sie eine Beispielfehlermeldung:
 
@@ -40,7 +40,7 @@ We found conflicting component dependencies.
 >
 >Die angezeigte Nachricht unterscheidet sich wahrscheinlich.
 
-Siehe Abschnitt [Konflikt bei Komponentenabhängigkeiten für eine Lösung](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) in unserer Wissensdatenbank.
+Weitere Informationen zu einer Lösung finden Sie unter ](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) in unserer Support-Wissensdatenbank unter [Konflikte zwischen Komponentenabhängigkeiten .
 
 ## Probleme mit Dateisystemberechtigungen {#trouble-depend-permission}
 
@@ -51,10 +51,10 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Stellen Sie sicher, dass Sie Dateisystemberechtigungen festlegen, wie im Artikel beschrieben [Übersicht über Eigentum und Berechtigungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) in unserer Entwicklerdokumentation.
+Stellen Sie sicher, dass Sie Dateisystemberechtigungen festlegen, wie im Artikel [Überblick über Eigentümer und Berechtigungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) in unserer Entwicklerdokumentation beschrieben.
 
 ## Der Status der Komponentenabhängigkeitsprüfung ändert sich nie {#trouble-depend-state}
 
-In einigen Fällen ändert sich der Status der Prüfung der Komponentenabhängigkeit nicht, selbst wenn Sie versuchen, Probleme zu beheben. In diesem Fall können Sie Dateien mit dem Namen `<magento_root>/var/.update_cronjob_status` und `<magento_root>/var/.setup_cronjob_status` und versuchen Sie, den Komponenten-Manager erneut auszuführen.
+In einigen Fällen ändert sich der Status der Prüfung der Komponentenabhängigkeit nicht, selbst wenn Sie versuchen, Probleme zu beheben. In diesem Fall können Sie Dateien mit den Namen `<magento_root>/var/.update_cronjob_status` und `<magento_root>/var/.setup_cronjob_status` löschen oder umbenennen und den Komponenten-Manager erneut ausführen.
 
 Das Umbenennen oder Entfernen dieser Dateien zwingt den Komponenten-Manager dazu, die Prüfungen erneut auszuführen.

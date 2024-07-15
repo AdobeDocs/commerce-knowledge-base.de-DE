@@ -15,7 +15,7 @@ ht-degree: 0%
 
 In diesem Artikel wird über eine Lösung für ein bekanntes Problem in Adobe Commerce beim Checkout gesprochen, bei dem eine Fehlermeldung angezeigt wird, wenn eine lokale Zahlungsmethode für einige Länder ausgewählt wird. Dies trifft auf die Länder Belgien, Italien, Niederlande, Polen und Spanien zu.
 
-Die Fehlermeldung &quot;*Es gibt derzeit keine Zahlungsmethoden. Bitte aktualisieren Sie Ihre Rechnungsadresse.*&quot; angezeigt, aber die lokalen Zahlungsmethoden werden weiterhin angezeigt und funktionieren ordnungsgemäß. In Adobe Commerce 2.4.1 wird eine permanente Korrektur verfügbar sein.
+Die Fehlermeldung &quot;*Es sind derzeit keine Zahlungsmethoden verfügbar. Bitte aktualisieren Sie Ihre Rechnungsadresse.*&quot; angezeigt, aber die lokalen Zahlungsmethoden werden weiterhin angezeigt und funktionieren ordnungsgemäß. In Adobe Commerce 2.4.1 wird eine permanente Korrektur verfügbar sein.
 
 ## Betroffene Produkte und Versionen
 
@@ -28,7 +28,7 @@ Die Fehlermeldung &quot;*Es gibt derzeit keine Zahlungsmethoden. Bitte aktualisi
 
 * Adobe Commerce 2.4.0 ist installiert.
 * Erstellen Sie ein Produkt und eine Kategorie.
-* Konfigurieren [Braintree-Zahlungsmethode](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
+* Konfigurieren Sie die [Braintree-Zahlungsmethode](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -44,7 +44,7 @@ Die lokalen Zahlungsmethoden sollten normal angezeigt werden, ohne dass eine Feh
 
 <u>Tatsächliches Ergebnis</u>:
 
-Die Fehlermeldung &quot;*Es gibt derzeit keine Zahlungsmethoden. Bitte aktualisieren Sie Ihre Rechnungsadresse.*&quot; angezeigt, aber die lokalen Zahlungsmethoden werden weiterhin angezeigt und funktionieren ordnungsgemäß.
+Die Fehlermeldung &quot;*Es sind derzeit keine Zahlungsmethoden verfügbar. Bitte aktualisieren Sie Ihre Rechnungsadresse.*&quot; angezeigt, aber die lokalen Zahlungsmethoden werden weiterhin angezeigt und funktionieren ordnungsgemäß.
 
 ## Lösung
 

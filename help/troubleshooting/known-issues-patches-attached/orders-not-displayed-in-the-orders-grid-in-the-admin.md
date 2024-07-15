@@ -17,7 +17,7 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.2.1-Probl
 
 ## Problem
 
-In Adobe Commerce 2.2.1 mit installierter B2B-Erweiterung werden Bestellungen, die von einem registrierten Kunden auf der Storefront erstellt wurden, nicht in der Liste der Bestellungen im Kundenkonto im Commerce Admin angezeigt. Im Debug-Protokoll (`./var/log/debug.log`), wird der folgende Fehler protokolliert:
+In Adobe Commerce 2.2.1 mit installierter B2B-Erweiterung werden Bestellungen, die von einem registrierten Kunden auf der Storefront erstellt wurden, nicht in der Liste der Bestellungen im Kundenkonto im Commerce Admin angezeigt. Im Debug-Protokoll (`./var/log/debug.log`) wird der folgende Fehler protokolliert:
 
 `report.CRITICAL: You cannot define a correlation name ‘company_order’ more than once`
 
@@ -30,9 +30,9 @@ Ihr Store-Katalog enthält Produkte, nicht Adobe Commerce-Beispieldaten, und die
 1. Navigieren Sie zur Storefront und erstellen Sie ein Kundenkonto.
 1. Fügen Sie ein Produkt zum Warenkorb hinzu, schließen Sie den Checkout ab und senden Sie eine Bestellung.
 1. Melden Sie sich beim Administrator an.
-1. Navigieren Sie zu **Kunden,** dann wählen **Alle Kunden**.
-1. Für den neu erstellten Kunden klicken Sie auf **Bearbeiten**.
-1. Klicks **Bestellungen** im Bedienfeld auf der linken Seite.
+1. Navigieren Sie zu **Kunden,** und wählen Sie dann **Alle Kunden** aus.
+1. Klicken Sie für den neu erstellten Kunden auf **Bearbeiten**.
+1. Klicken Sie im Bereich auf der linken Seite auf **Bestellungen** .
 
 <u>Erwartetes Ergebnis</u>:
 
@@ -61,6 +61,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank, für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

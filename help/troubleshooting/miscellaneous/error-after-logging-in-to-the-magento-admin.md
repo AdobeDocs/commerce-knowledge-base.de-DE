@@ -19,14 +19,14 @@ Dieser Artikel bietet eine Lösung für das Problem, bei dem Sie eine Fehlermeld
 
 Die angeforderte URL /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ wurde auf diesem Server nicht gefunden.
 
-Beachten Sie, dass es zwischen `magento2` und `index.php` in der URL.
+Beachten Sie, dass es in der URL kein Schrägstrich zwischen `magento2` und `index.php` gibt.
 
 ## Lösung
 
 Die Basis-URL ist nicht korrekt. Die Basis-URL muss:
 
-* Beginnen mit `http://` oder `https://`
-* Ende mit einem Schrägstrich ( `/` )
-* Groß-/Kleinschreibung berücksichtigen `web/unsecure/base_url` im `core_config_data` Datenbanktabelle
+* Mit `http://` oder `https://` beginnen
+* Mit einem Schrägstrich ( `/` ) enden
+* Übereinstimmung mit der Groß-/Kleinschreibung des `web/unsecure/base_url` -Datensatzes in der `core_config_data`-Datenbanktabelle
 
 Führen Sie die Installation mit einem gültigen Wert erneut aus.

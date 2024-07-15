@@ -1,6 +1,6 @@
 ---
 title: '"[!DNL Cron] Auftrag ist im Status "Wird ausgeführt"stecken geblieben.'
-description: Dieser Artikel enthält Lösungen für Adobe Commerce [!DNL cron] Aufträge werden nicht abgeschlossen und dauern in einem "laufenden"Status an, was andere verhindert [!DNL cron] Aufträge nicht ausgeführt werden. Dies kann verschiedene Gründe haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der Neubereitstellung.
+description: Dieser Artikel bietet Lösungen für den Fall, dass Adobe Commerce [!DNL cron] Aufträge nicht abgeschlossen werden und in einem "laufenden"Status bestehen bleiben, was verhindert, dass andere [!DNL cron] Aufträge ausgeführt werden. Dies kann verschiedene Gründe haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der Neubereitstellung.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Cron] Auftrag ist im Status &quot;Wird ausgeführt&quot;stecken
+# [!DNL Cron] Auftrag ist im Status &quot;Wird ausgeführt&quot; stecken
 
-Dieser Artikel enthält Lösungen für Adobe Commerce [!DNL cron] Aufträge werden nicht abgeschlossen und dauern in einem &quot;laufenden&quot;Status an, was andere verhindert [!DNL cron] Aufträge nicht ausgeführt werden. Dies kann verschiedene Gründe haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der Neubereitstellung.
+Dieser Artikel bietet Lösungen für den Fall, dass Adobe Commerce [!DNL cron]-Aufträge nicht abgeschlossen werden und in einem &quot;laufenden&quot;Status verbleiben, was verhindert, dass andere [!DNL cron] -Aufträge ausgeführt werden. Dies kann verschiedene Gründe haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der Neubereitstellung.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,38 +21,38 @@ Adobe Commerce in der Cloud-Infrastruktur, alle Versionen
 
 ## Symptom {#symptom}
 
-Symptome [!DNL cron] Folgende Aufträge müssen zurückgesetzt werden:
+Zu den Symptomen von [!DNL cron] Aufträgen, die zurückgesetzt werden müssen, gehören:
 
-* Eine große Anzahl von Aufträgen wird im `cron_schedule` queue
+* Eine große Anzahl von Aufträgen wird in der `cron_schedule`-Warteschlange angezeigt
 * Die Site-Leistung nimmt ab
 * Aufträge werden nicht planmäßig ausgeführt
 
 ## Lösungen {#solutions}
 
-### Lösung zum Anhalten aller [!DNL cron] Aufträge gleichzeitig {#solution-stop-all-crons-at-once}
+### Lösung zum gleichzeitigen Beenden aller [!DNL cron] Aufträge {#solution-stop-all-crons-at-once}
 
 >[!WARNING]
 >
->Ausführen dieses Befehls ohne die `--job-code` Optionseinstellungen *all* [!DNL cron] Aufträge, auch solche, die derzeit ausgeführt werden. Daher empfehlen wir, diese nur in Ausnahmefällen zu verwenden, z. B. nachdem Sie überprüft haben, dass alle [!DNL cron] Aufträge müssen zurückgesetzt werden. Bei der erneuten Bereitstellung wird dieser Befehl standardmäßig zum Zurücksetzen ausgeführt [!DNL cron] Aufträge, sodass sie sich nach der Sicherung der Umgebung entsprechend erholen. Vermeiden Sie die Verwendung dieser Lösung, wenn Indexer ausgeführt werden.
+>Wenn Sie diesen Befehl ohne die Option `--job-code` ausführen, werden alle *2} [!DNL cron] Aufträge zurückgesetzt, einschließlich der derzeit ausgeführten Aufträge. Daher empfehlen wir, ihn nur in Ausnahmefällen zu verwenden, z. B. nachdem Sie überprüft haben, dass alle [!DNL cron] Aufträge zurückgesetzt werden müssen.* Bei der erneuten Bereitstellung wird dieser Befehl standardmäßig ausgeführt, um [!DNL cron] Aufträge zurückzusetzen, sodass sie nach der Sicherung der Umgebung ordnungsgemäß abgerufen werden. Vermeiden Sie die Verwendung dieser Lösung, wenn Indexer ausgeführt werden.
 
-Um dieses Problem zu beheben, müssen Sie die [!DNL cron] Auftrag(e), der die `cron:unlock` Befehl. Dieser Befehl ändert den Status der [!DNL cron] Auftrag in der Datenbank, wodurch der Auftrag erzwungen wird, damit andere geplante Aufträge fortgesetzt werden können.
+Um dieses Problem zu beheben, müssen Sie die [!DNL cron] Aufträge mit dem Befehl `cron:unlock` zurücksetzen. Mit diesem Befehl wird der Status des [!DNL cron] -Auftrags in der Datenbank geändert und der Auftrag wird forciert beendet, damit andere geplante Aufträge fortgesetzt werden können.
 
-1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH-Schlüssel](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) zur Verbindung mit der betroffenen Umgebung.
+1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH-Schlüssel](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections), um eine Verbindung zur betroffenen Umgebung herzustellen.
 1. Rufen Sie die Anmeldeinformationen der MySQL-Datenbank ab:    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
-1. Mit der Datenbank verbinden `mysql` :    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
-1. Wählen Sie die `main` Datenbank:    ```shell    use main    ```
-1. Suchen nach allen Laufenden [!DNL cron] Aufträge:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
-1. Kopieren Sie die `job_code` jedes Auftrags, der länger als üblich ausgeführt wird.
-1. Verwenden Sie die Zeitplan-IDs aus dem vorherigen Schritt, um bestimmte [!DNL cron] Aufträge:    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
+1. Stellen Sie mithilfe von `mysql` eine Verbindung zur Datenbank her:    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
+1. Wählen Sie die Datenbank `main` aus:    ```shell    use main    ```
+1. Suchen Sie alle ausgeführten [!DNL cron] Aufträge:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
+1. Kopieren Sie die `job_code` eines Auftrags, der länger als üblich ausgeführt wird.
+1. Verwenden Sie die Zeitplan-IDs aus dem vorherigen Schritt, um bestimmte [!DNL cron] Aufträge zu entsperren:    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
 
 ### Lösung zum Anhalten einer einzelnen [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH-Schlüssel](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) zur Verbindung mit der betroffenen Umgebung.
+1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH-Schlüssel](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections), um eine Verbindung zur betroffenen Umgebung herzustellen.
 1. Überprüfen Sie langwierige Aufgaben mit dem folgenden Befehl:
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```
 
-1. Wie in der Beispielausgabe unten sehen Sie in der Ausgabe das aktuelle Datum und die Liste der Prozesse. Die `START` gibt die Startzeit oder das Datum des Prozesses an:
+1. Wie in der Beispielausgabe unten sehen Sie in der Ausgabe das aktuelle Datum und die Liste der Prozesse. Die Spalte `START` zeigt die Startzeit oder das Datum des Prozesses an:
 
    ```
    Wed May  8 22:41:31 UTC 2019
@@ -72,8 +72,8 @@ Um dieses Problem zu beheben, müssen Sie die [!DNL cron] Auftrag(e), der die `c
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. Wenn Sie eine lange Ausführung sehen [!DNL cron] Aufträge, die den Bereitstellungsprozess blockieren können, können Sie den Prozess mit der `kill` Befehl. Sie können **Prozess-ID** (gefunden wird, `PID` -Spalte) und legen Sie diese `PID` im -Befehl, um den Prozess zu beenden.
-Die **Prozess beenden** Befehl:
+1. Wenn Sie eine lange Ausführung von [!DNL cron] Aufträgen sehen, die den Prozess der Blockbereitstellung auslösen können, können Sie den Prozess mit dem Befehl `kill` beenden. Sie können die **Prozess-ID** (Spalte `PID` gefunden) identifizieren und diese `PID` dann in den Befehl einfügen, um den Prozess abzubrechen.
+Der Befehl **kill process** lautet:
 
    ```kill -9 <PID>```
 

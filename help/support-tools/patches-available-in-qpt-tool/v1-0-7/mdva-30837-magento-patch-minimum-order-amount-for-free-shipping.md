@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30837: Mindestbestellbetrag für kostenlosen Versand
 
-Der Patch MDVA-30837 fügt Konfigurationsoptionen für die kostenlose Versandberechnung hinzu, sodass der Benutzer den Mindestbestellbetrag so konfigurieren kann, dass er kostenlosen Versand auf Grundlage der Zwischensumme (oder Gesamtsumme) erhält. Dies ermöglicht lokale Anpassungen für Steuer- und Versandmethoden. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 ist installiert. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
+Der Patch MDVA-30837 fügt Konfigurationsoptionen für die kostenlose Versandberechnung hinzu, sodass der Benutzer den Mindestbestellbetrag so konfigurieren kann, dass er kostenlosen Versand auf Grundlage der Zwischensumme (oder Gesamtsumme) erhält. Dies ermöglicht lokale Anpassungen für Steuer- und Versandmethoden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 installiert ist. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,36 +27,36 @@ Der Patch MDVA-30837 fügt Konfigurationsoptionen für die kostenlose Versandber
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Der Patch MDVA-30837 fügt die Konfigurationseinstellung hinzu, um die **Mindestauftragsbetrag** Einstellung, um kostenlosen Versand auf Grundlage der Zwischensumme (oder Gesamtsumme) zu erhalten:
+Der Patch MDVA-30837 fügt die Konfigurationseinstellung hinzu, um die Einstellung **Mindestbestellbetrag** so zu konfigurieren, dass der kostenlose Versand auf Grundlage der Zwischensumme (oder Gesamtsumme) erfolgt:
 
-* **Steuern auf Betrag einschließen**: *Ja/Nein* in der Konfiguration der Versandmethode &quot;Free Shipping&quot;.
-   * Wann **Steuern auf Betrag einschließen** auf *Ja*, wird der Mindestbestellbetrag als Zwischensumme + Steuern - Rabatt berechnet.
-   * Wann **Steuern auf Betrag einschließen** auf *Nein*, wird der Mindestbestellbetrag als Zwischensumme - Rabatt berechnet.
+* **Steuern auf Betrag einbeziehen**: *Ja/Nein* in der Konfiguration der Versandmethode für kostenlosen Versand.
+   * Wenn **Steuern auf Betrag einschließen** auf *Ja* gesetzt ist, wird der Mindestbestellbetrag als Zwischensumme + Steuer - Rabatt berechnet.
+   * Wenn **Steuern auf Betrag einschließen** auf *NEIN* gesetzt ist, wird der Mindestbestellbetrag als Zwischensumme - Rabatt berechnet.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Steuern** und legen Sie Folgendes fest:
+1. Wechseln Sie zu **Stores** > Einstellungen > **Konfiguration** > **Verkauf** > **Steuern** und legen Sie Folgendes fest:
 
    * Steuerberechnung basierend auf *Versandadresse*
    * Grenzüberschreitenden Handel aktivieren: *Nein*
-   * Anzeigen von Produktionspreisen im Katalog: *Ausschließen der Steuer*
-   * Versandpreise anzeigen: *Ausschließen der Steuer*
-   * Anzeigepreise: *Ausschließen der Steuer*
-   * Zwischensumme anzeigen: *Ausschließen der Steuer*
+   * Anzeigen von Produktionspreisen im Katalog: *ohne Steuern*
+   * Versandpreise anzeigen: *ohne Steuern*
+   * Anzeigepreise: *ohne Steuern*
+   * Zwischensumme anzeigen: *Steuern ausschließen*
    * Versandbetrag anzeigen: *Ausschließen der Steuer*
-   * Geschenkpreise anzeigen: *Ausschließen der Steuer*
-   * Preise für gedruckte Karten anzeigen: *Ausschließen der Steuer*
-   * Steuern in Bestellsumme einschließen: *Ja*
+   * Anzeige der Geschenkverpackungspreise: *ohne Steuern*
+   * Anzeigen der gedruckten Kartenpreise: *ohne Steuern*
+   * Steuern in Bestellsumme einbeziehen: *Ja*
    * Vollständige Steuerzusammenfassung anzeigen: *Ja*
 
-1. Navigieren Sie zu **Vertrieb** > **Versandeinstellungen** > **Kostenloser Versand** und **Mindestauftragsbetrag** = *30*.
-1. Navigieren Sie zu **Marketing** > Promotions > **Warenkorbpreisregeln** und erstellen Sie eine neue Preisregel (detaillierte Schritte finden Sie unter [Erstellen einer Preisregel für Warenkorb](https://docs.magento.com/user-guide/marketing/price-rules-cart-create.html) in unserem Benutzerhandbuch).
+1. Wechseln Sie zu **Umsatz** > **Versandeinstellungen** > **Kostenloses Versand** und legen Sie den Mindestbestellbetrag **7} = *30* fest.**
+1. Gehen Sie zu **Marketing** > Promotions > **Regeln zum Warenkorbpreis** und erstellen Sie eine neue Preisregel (detaillierte Schritte finden Sie unter [Erstellen einer Preisregel für Warenkorb](https://docs.magento.com/user-guide/marketing/price-rules-cart-create.html) in unserem Benutzerhandbuch).
 
-   * Couponcode = *Spezifischer Gutschein*.
+   * Couponcode = *spezifischer Coupon*.
    * Bedingungen: Zwischensumme größer/gleich 25 USD.
    * Aktionen: Kostenloser Versand = *Für Sendungen mit übereinstimmenden Artikeln*.
 
@@ -68,10 +68,10 @@ Der Patch MDVA-30837 fügt die Konfigurationseinstellung hinzu, um die **Mindest
 
 <u>Erwartete Ergebnisse</u>:
 
-Es gibt eine zusätzliche Konfigurationseinstellung - &quot;Steuern auf Betrag einschließen&quot;: *Ja*/*Nein* in der Konfiguration der Versandmethode &quot;Free Shipping&quot;:
+Es gibt eine zusätzliche Konfigurationseinstellung - &quot;Steuern auf Betrag einbeziehen&quot;: *Ja*/*Nein* in der Konfiguration der kostenlosen Versandmethode:
 
-* Wenn &quot;Steuer einschließen&quot;auf &quot;Betrag&quot;eingestellt ist auf *Ja*, wird der Mindestbestellbetrag als Zwischensumme + Steuer - Rabatt berechnet.
-* Wenn &quot;Steuer einschließen&quot;auf &quot;Betrag&quot;eingestellt ist auf *Nein*, wird der Mindestbestellbetrag als Zwischensumme - Rabatt berechnet.
+* Wenn &quot;Steuern auf Betrag einschließen&quot;auf *Ja* gesetzt ist, wird der Mindestbestellbetrag als Zwischensumme + Steuer - Rabatt berechnet.
+* Wenn &quot;Steuern auf Betrag einschließen&quot;auf *NEIN* gesetzt ist, wird der Mindestbestellbetrag als Zwischensumme - Rabatt berechnet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
@@ -81,14 +81,14 @@ Die Bedingung der Preisregel für kostenlosen Versand kann nur auf der Zwischens
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

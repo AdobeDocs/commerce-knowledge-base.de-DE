@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-23426 Magento Patch: E-Mails, die als Anhänge von Outlook gesendet werden
 
-Der Magento-Patch MDVA-23426 behebt das Problem, dass E-Mails als Anhänge von MS Outlook als Magento gesendet werden. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.13 installiert ist. Bitte beachten Sie, dass das Problem in Magento 2.3.5 behoben wurde.
+Der Magento-Patch MDVA-23426 behebt das Problem, dass E-Mails als Anhänge von MS Outlook als Magento gesendet werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.13 installiert ist. Bitte beachten Sie, dass das Problem in Magento 2.3.5 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,7 +23,7 @@ Der Magento-Patch MDVA-23426 behebt das Problem, dass E-Mails als Anhänge von M
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -33,7 +33,7 @@ E-Mails werden mit einem leeren Textkörper empfangen und der Inhalt wird als An
 
 <u>Zu reproduzierende Schritte:</u> 1. Senden Sie eine Bestellung, die Bestellbenachrichtigung oder die Versandbenachrichtigung.2. Die E-Mail wird empfangen.
 
-<u>Ergebnis:</u> Die E-Mail wird mit einem leeren Text und dem Inhalt als ATT\*-gekennzeichneter Anhang an die E-Mail angezeigt. <u>Erwartetes Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u> Die E-Mail wird mit einem leeren Hauptteil und dem Inhalt als ATT\*-gekennzeichneter Anhang an die E-Mail angezeigt. <u>Erwartetes Ergebnis:</u>
 
 Die E-Mail wird ohne Anhang empfangen und der Hauptteil der E-Mail enthält den Inhalt.
 
@@ -48,7 +48,7 @@ Anweisungen zum Anwenden eines QPT-Patches finden Sie unter den folgenden Links 
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
-* [Überprüfen Sie den Patch auf ein Magento-Problem mit dem Quality Patches Tool.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) .
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
+* [Überprüfen Sie den Patch auf ein Magento-Problem mit dem Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) .
 
-Weitere Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) Abschnitt.
+Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

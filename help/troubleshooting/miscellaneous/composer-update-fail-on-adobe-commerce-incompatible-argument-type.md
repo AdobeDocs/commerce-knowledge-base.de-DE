@@ -33,7 +33,7 @@ Eine neue Version der Abhängigkeit von symfony/console (4.4.27, 4.4.28) führt 
 <u>Zu reproduzierende Schritte</u>:
 
 Wenn Sie Adobe Commerce installieren oder aktualisieren oder das Composer-Update ausführen, schlägt die Ausführung mit der folgenden Fehlermeldung fehl:
-*Inkompatibler Argumenttyp: Erforderlicher Typ: int. Tatsächlicher Typ: Zeichenfolge*
+*Inkompatibler Argumenttyp: Erforderlicher Typ: int. Tatsächlicher Typ: string*
 
 ## Ursache
 
@@ -43,7 +43,7 @@ Das Problem wird durch die Inkompatibilität des Adobe Commerce-Core-Codes mit d
 
 Das Problem wird automatisch behoben, sobald eine neue symfony/console-Version 4.2.29 veröffentlicht wird (voraussichtlich im August 2021).
 
-**Problembehebung in Adobe Commerce On-Premise:**
+**Fehlerbehebung bei Adobe Commerce On-Premise:**
 
 Adobe Commerce On-Premise 2.4.x
 
@@ -57,10 +57,10 @@ Alle Vor-Ort-Händler von Adobe Commerce 2.3.5 und höher sollten den folgenden 
 
 **Fehlerbehebung in Adobe Commerce in der Cloud-Infrastruktur:**
 
-Führen Sie die oben genannten Befehle aus oder aktualisieren Sie auf die neueste Version der ECE-Tools (ece-tools: 2002.1.7), die am Donnerstag, den 29. Juli verfügbar sein wird. Eine Anleitung finden Sie unter [Cloud für Adobe Commerce > Aktualisierung der ece-tools-Version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) in unserer Entwicklerdokumentation.
+Führen Sie die oben genannten Befehle aus oder aktualisieren Sie auf die neueste Version der ECE-Tools (ece-tools: 2002.1.7), die am Donnerstag, den 29. Juli verfügbar sein wird. Anweisungen hierzu finden Sie in unserer Entwicklerdokumentation unter [Cloud für Adobe Commerce > Aktualisierung der ece-tools-Version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) .
 
 Die vollständige Fehlerbehebung wird in Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 veröffentlicht.
 
 ## Verwandtes Lesen
 
-* GitHub: [2021-07-27 Composer-Update Inkompatibler Argumenttyp: Erforderlicher Typ: int. Tatsächlicher Typ: Zeichenfolge](https://github.com/magento/magento2/issues/33595)
+* GitHub: [2021-07-27 Composer-Update Inkompatibler Argumenttyp: Erforderlicher Typ: int. Tatsächlicher Typ: string](https://github.com/magento/magento2/issues/33595)

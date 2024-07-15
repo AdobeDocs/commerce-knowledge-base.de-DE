@@ -22,7 +22,7 @@ Dieser Artikel enthält einen Patch für die bekannte Ausgabe eines Bestellrabat
 
 ## Problem
 
-<u>Voraussetzungen</u>: Es wird ein Rabattcoupon erstellt und es gibt Validierungsregeln, die verhindern, dass POs automatisch verarbeitet werden.
+<u>Voraussetzungen</u>: Es wird ein Rabattgutschein erstellt, und es gibt Genehmigungsregeln, die verhindern, dass POs automatisch verarbeitet werden.
 
 <u>Zu reproduzierende Schritte:</u>
 
@@ -35,7 +35,7 @@ Dieser Artikel enthält einen Patch für die bekannte Ausgabe eines Bestellrabat
 
 Die Bestellung wird mit einem ermäßigten Gesamtwert erstellt.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Die Bestellung wird für den vollen Betrag erstellt.
 
@@ -49,8 +49,8 @@ Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach 
 
 [B2B-709-composer.patch](assets/B2B-709-composer.patch.zip)
 
-Der Patch kann auch in beiden heruntergeladen werden. `.git` und `.composer` , Formate in [Adobe Commerce-Downloads](https://magento.com/tech-resources/download) Seite, unter **Patches** in der linken Spaltennavigation. Suchen Sie nach XXX Patch.
+Der Patch kann auch in den Formaten `.git` und `.composer` heruntergeladen werden, die auf der Seite [Adobe Commerce-Downloads](https://magento.com/tech-resources/download) unter **Patches** in der linken Spaltennavigation verfügbar sind. Suchen Sie nach XXX Patch.
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank für Anleitungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.

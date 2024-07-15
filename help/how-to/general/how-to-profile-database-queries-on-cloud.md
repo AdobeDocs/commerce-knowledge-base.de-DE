@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Profilen von Datenbankabfragen in Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen finden Sie unter [Profildatenbankabfragen](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie in der Entwicklerdokumentation unter [Datenbankabfragen für Profile](https://devdocs.magento.com/guides/v2.3/cloud/project/profile-database-queries.html) .

@@ -27,11 +27,11 @@ Abhängig von Ihren internen Sicherheitsstandards können Sie die Fehlerbehebung
 
 * Gewähren Sie Ihrem Drittanbieter Zugriff auf die Cloud-Umgebung. Verwandte Artikel:
 
-   * [Adobe Commerce Help Center-Benutzerhandbuch > FREIGEGEBENER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO.](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) in unserer Wissensdatenbank.
+   * [Adobe Commerce Help Center-Benutzerhandbuch > FREIGEGEBENER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) IN unserer Support-Wissensdatenbank.
    * [Freigeben Ihres Commerce-Kontos](https://docs.magento.com/user-guide/magento/magento-account-share.html) in unserem Benutzerhandbuch.
 
 * Erstellen Sie eine Datenbank-Ablage (oder gewähren Sie dem Drittanbieter Zugriff darauf). Dies kann über die CLI oder im Commerce Admin erfolgen. Dieser DB-Dump verschleiert Kundendaten, sodass sie nur Code- und Produkt-SKUs usw. erhalten, keine proprietären/Kundendaten. Verwenden Sie als Referenz [Freigeben Ihres Commerce-Kontos] (/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.
-* Stellen Sie nach Abschluss des Tests sicher, dass Sie den freigegebenen Zugriff auf Ihre Cloud-Umgebung widerrufen, wie hier beschrieben: [Benutzerhandbuch für das Adobe Commerce Help Center > Sperren (freigegebenen Zugriff löschen)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) in unserer Wissensdatenbank.
+* Stellen Sie nach Abschluss des Tests sicher, dass Sie den freigegebenen Zugriff auf Ihre Cloud-Umgebung widerrufen, wie unter [Benutzerhandbuch für das Adobe Commerce Help Center > Sperren (freigegebenen Zugriff löschen)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) in unserer Support-Wissensdatenbank beschrieben.
 
 ## Best Practice testen
 
@@ -39,4 +39,4 @@ Es wird üblich, eine Fehlerbehebung in einer lokalen Umgebung durchzuführen. W
 
 ## Verwandtes Lesen
 
-* [Best Practices für die Verwendung von Erweiterungen von Drittanbietern in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) in unserer Wissensdatenbank.
+* [Best Practices für die Verwendung von Erweiterungen von Drittanbietern in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360042361152-Best-Practices-for-using-third-party-extensions-in-Magento) in unserer Support-Wissensdatenbank.

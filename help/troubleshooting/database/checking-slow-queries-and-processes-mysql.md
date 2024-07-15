@@ -30,7 +30,7 @@ Wenn Sie einen Ausfall hatten, der möglicherweise durch eine überlastete Daten
    grep 'Query_time: [5-9][0-9]\|Query_time: [0-9][0-9][0-9]' /var/log/mysql/mysql-slow.log -A 3
    ```
 
-1. Navigieren Sie zu <https://www.unixtimestamp.com/> (oder ein ähnlicher Unix-Zeitstempelkonverter) und fügen Sie den Zeitstempel der Ausführung der langsamen Abfrage ein.
+1. Gehen Sie zu <https://www.unixtimestamp.com/> (oder einem ähnlichen Unix-Zeitstempelkonverter) und fügen Sie den Zeitstempel von ein, von dem aus die langsame Abfrage ausgeführt wurde.
 1. Wenn die Zeit mit einem Site-Ausfall korreliert, der bei Ihnen aufgetreten ist, kann dies durch eine überlastete Datenbank verursacht werden. Überprüfen Sie, ob die zu diesem Zeitpunkt in der Datenbank geladenen Daten angezeigt wurden. Beispiele für solche Lasten sind:
 
 * Cron-Prozesse
@@ -39,13 +39,13 @@ Wenn Sie einen Ausfall hatten, der möglicherweise durch eine überlastete Daten
 * Erstellen von Dumps
 
 
-### Abfragen mithilfe der [!DNL Percona Toolkit] (Adobe Commerce Pro: Nur Cloud-Architektur)
+### Analysieren von Abfragen mit [!DNL Percona Toolkit] (nur Adobe Commerce Pro: Cloud-Architektur)
 
-Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie die [!DNL Percona Toolkit] , um Abfragen zu analysieren.
+Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie die [!DNL Percona Toolkit] verwenden, um Abfragen zu analysieren.
 
-1. Führen Sie die `pt-query-digest --type=slowlog` -Befehl für langsame MySQL-Abfrageprotokolle.
+1. Führen Sie den Befehl `pt-query-digest --type=slowlog` für langsame MySQL-Abfrageprotokolle aus.
    * Informationen zum Speicherort der langsamen Abfrageprotokolle finden Sie unter **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** in unserer Entwicklerdokumentation.
-   * Siehe [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) Dokumentation.
+   * Weitere Informationen finden Sie in der Dokumentation zu [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) .
 1. Führen Sie je nach den gefundenen Problemen Schritte aus, um die Abfrage zu korrigieren, damit sie schneller ausgeführt wird.
 
 ## MySQL &quot;Prozessliste&quot;überprüfen
@@ -78,7 +78,7 @@ Dadurch lässt sich feststellen, ob der MySQL-Server aktiv ist und keine blockie
 
 ## Verwandtes Lesen
 
-* [Syntax der Verarbeitungsliste für MySQL anzeigen](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) in dev.mysql.com.
-* [MySQL-Kill-Syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html) in dev.mysql.com.
+* [MySQL-Syntax der Verarbeitungsliste anzeigen](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) in dev.mysql.com.
+* [MySQL Kill Syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html) in dev.mysql.com.
 * [Sicherheit, Leistung und Datenverarbeitung](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) in unserer Entwicklerdokumentation.
 * [MySQL-Hilfe](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) in unserer Entwicklerdokumentation.

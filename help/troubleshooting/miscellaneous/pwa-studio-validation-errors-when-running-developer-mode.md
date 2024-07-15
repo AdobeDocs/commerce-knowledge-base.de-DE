@@ -21,7 +21,7 @@ Dieses Thema behandelt eine Lösung für den Fall, dass Validierungsfehler auftr
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritt zum Reproduzieren</u>:
 
 * Führen Sie den Entwicklermodus in PWA Studio für Adobe Commerce aus.
 
@@ -53,5 +53,5 @@ im Stammverzeichnis, um die Datei zu generieren, die die Variablen für Ihre lok
 
 ## Verwandtes Lesen
 
-* [PWA Studio für die Adobe Commerce-Dokumentation](https://magento.github.io/pwa-studio/)
+* [PWA Studio für Adobe Commerce-Dokumentation](https://magento.github.io/pwa-studio/)
 * [Venia-Storefront (Konzept)](https://magento.github.io/pwa-studio/venia-pwa-concept/)

@@ -29,7 +29,7 @@ Die folgende Meldung wird angezeigt, wenn Sie versuchen, auf die Adobe Commerce 
 
 Versuchen Sie Folgendes:
 
-* Aktualisieren Sie PHP auf Version 7.3. Weitere Informationen finden Sie unter [Stapelanforderungen für die Adobe Commerce 2.3-Technologie](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html#php) in unserer Entwicklerdokumentation.
+* Aktualisieren Sie PHP auf Version 7.3. Weitere Informationen finden Sie unter [Anforderungen an den Technologiestapel für Adobe Commerce 2.3](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html#php) in unserer Entwicklerdokumentation.
 * Starten Sie Apache neu, da es möglicherweise nicht dieselbe PHP-Version wie im Dateisystem verwendet. Verwenden Sie die folgenden Befehle, um Apache neu zu starten:
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`
@@ -42,5 +42,5 @@ Beim Zugriff auf die Adobe Commerce Storefront oder Commerce Admin wird der Fehl
 
 Versuchen Sie Folgendes:
 
-* Stellen Sie sicher [Neuschreibungen des Apache-Servers](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html) aktiviert sind. Wenn die Neuschreibungen des Apache-Servers falsch eingestellt sind, werden statische Dateien nicht vom richtigen Speicherort bereitgestellt.
-* Es kann ein Problem mit der Basis-URL geben, die Sie während der Installation eingegeben haben. Sie geben die Basis-URL als Wert von `--base-url=` bei der Installation von Adobe Commerce über die Befehlszeile oder als Wert des **Ihre Store-Adresse** auf der Web-Konfigurationsseite des Webinstallationsprogramms. Die Basis-URL *must* Beginn mit dem System (z. B. `http://` ) und mit einem Schrägstrich (/) enden. Führen Sie das Installationsprogramm erneut mit einem gültigen Wert aus und versuchen Sie danach, auf Adobe Commerce zuzugreifen.
+* Stellen Sie sicher, dass [Apache-Server-Neuschreibungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html) aktiviert sind. Wenn die Neuschreibungen des Apache-Servers falsch eingestellt sind, werden statische Dateien nicht vom richtigen Speicherort bereitgestellt.
+* Es kann ein Problem mit der Basis-URL geben, die Sie während der Installation eingegeben haben. Sie geben die Basis-URL als Wert von `--base-url=` an, wenn Sie Adobe Commerce über die Befehlszeile installieren, oder als Wert des Felds **Ihre Store-Adresse** auf der Web-Konfigurationsseite des Webinstallationsprogramms. Die Basis-URL *muss* mit dem Schema beginnen (z. B. `http://` ) und mit einem nachfolgenden Schrägstrich (/) enden. Führen Sie das Installationsprogramm erneut mit einem gültigen Wert aus und versuchen Sie danach, auf Adobe Commerce zuzugreifen.

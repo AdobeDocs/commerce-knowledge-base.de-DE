@@ -15,5 +15,5 @@ ht-degree: 0%
 
 Die wichtigsten Informationen zu für Adobe Commerce bereitgestellten SSL-/TLS-Zertifikaten für Cloud-Infrastruktur finden Sie in den folgenden Artikeln:
 
-* [SSL-Zertifikate (TLS) für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) in unserer Wissensdatenbank
+* [SSL-Zertifikate (TLS) für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) in unserer Support-Wissensdatenbank
 * [Bereitstellen von SSL-/TLS-Zertifikaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) in unserer Entwicklerdokumentation

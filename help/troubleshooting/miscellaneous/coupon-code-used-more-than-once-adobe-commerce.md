@@ -33,7 +33,7 @@ Händler richten einen Gutschein für die einmalige Verwendung ein und Kunden k�
 
 <u>Erwartetes Ergebnis</u>:
 
-Der Gutschein kann nur einmal verwendet werden. Eine Meldung wird angezeigt: *Der Couponcode &quot;COUPON_NAME&quot;ist ungültig.*.
+Der Gutschein kann nur einmal verwendet werden. Eine Meldung wird angezeigt: *Der Couponcode &quot;COUPON_NAME&quot;ist ungültig*.
 
 <u>Tatsächliches Ergebnis</u>:
 
@@ -42,11 +42,11 @@ Der Gutschein kann mehrmals verwendet werden.
 
 ## Ursache
 
-Merchants haben keine `sales.rule.update.coupon.usage` Einrichtung und Ausführung des Verbrauchers, was zu unangemessenem Verhalten führt.
+Merchants verfügen nicht über `sales.rule.update.coupon.usage` Verbraucherrechte, die zu unangemessenem Verhalten führen.
 
 ## Lösung
 
-Fügen Sie die `sales.rule.update.coupon.usage` Verbraucher `app/etc/env.php` -Datei.
+Fügen Sie den `sales.rule.update.coupon.usage` -Verbraucher zur Datei `app/etc/env.php` hinzu.
 
 ```php
 ...

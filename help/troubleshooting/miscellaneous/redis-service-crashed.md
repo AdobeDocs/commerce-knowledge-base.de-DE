@@ -37,9 +37,9 @@ Um die aktuelle Konfiguration und den verwendeten Speicher zu überprüfen, füh
 redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_peak|maxmemory|evicted_keys|uptime_in_days)"
 ```
 
-Die *REDIS\_PORT* und *REDIS\_HOST* -Variablen können aus abgerufen werden. `app/etc/env.php`.
+Die Variablen *REDIS\_PORT* und *REDIS\_HOST* können von `app/etc/env.php` abgerufen werden.
 
-Wenn die Ausgabe der obigen Abfrage zeigt, dass der Prozentsatz des freien Speichers weniger als 40 % beträgt, [Senden eines Tickets an den Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , um eine Erhöhung der `maxmemory` -Einstellung in Redis Server. Wenn der Wert der entfernten Schlüssel nicht &quot;0&quot;oder die Zeit zum Umkehren in Tagen gleich 0 ist (was bedeutet, dass Redis heute abgestürzt ist), sollten Sie auch [Senden eines Tickets an den Adobe Commerce Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) eine Untersuchung und eine Korrektur dieses Problems anzufordern.
+Wenn die Ausgabe der obigen Abfrage zeigt, dass der Anteil des freien Arbeitsspeichers weniger als 40 % beträgt, senden [ein Ticket an den Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um eine Erhöhung der Einstellung `maxmemory` im Redis-Server anzufordern. Wenn der Wert der entfernten Schlüssel nicht &quot;0&quot;oder der Wert für die Ladezeit in Tagen gleich 0 ist (was bedeutet, dass Redis heute abgestürzt ist), sollten Sie auch [ein Ticket an den Adobe Commerce-Support senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um eine Untersuchung und eine Korrektur dieses Problems anzufordern.
 
 ## Verwandte Informationen
 

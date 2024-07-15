@@ -34,7 +34,8 @@ Wenn Sie nach technischer Dokumentation oder Dokumentation für Endbenutzer such
 <td>Webseite</td>
 </tr>
 <tr>
-<td rowspan="2">Adobe Commerce vor Ort und Adobe Commerce über Cloud-Infrastruktur</td>
+<td rowspan="2">Adobe Commerce vor Ort und
+Adobe Commerce auf Cloud-Infrastruktur</td>
 <td>
 <p>(technische) Entwicklerdokumentation:</p>
 <p><a href="https://developer.adobe.com/commerce/docs/">https://developer.adobe.com/commerce/docs/</a></p>
@@ -100,6 +101,6 @@ Wenn Sie nach technischer Dokumentation oder Dokumentation für Endbenutzer such
 
 ## Blogs und Kommunikation
 
-* Adobe Trust Center (Sicherheitsupdates und Patches): [https://www.adobe.com/trust/resources.html](https://www.adobe.com/trust/resources.html)
-* Adobe Commerce Community Developer Blog (Anleitungen, Best Practices und technische Nachrichten aus der Community): [https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog](https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog)
+* Adobe Trust Center (Sicherheits-Updates und -Patches): [https://www.adobe.com/trust/resources.html](https://www.adobe.com/trust/resources.html)
+* Adobe Commerce Community Developer Blog (Anleitungen, Best Practices und technische Informationen aus der Community): [https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog](https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog)
 * Adobe Commerce-Blog (High-Level-E-Commerce):[https://business.adobe.com/blog/](https://business.adobe.com/blog/)

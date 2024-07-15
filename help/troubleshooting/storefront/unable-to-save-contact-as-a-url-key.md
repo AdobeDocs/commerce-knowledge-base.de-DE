@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Kann nicht gespeichert werden *Kontakt* als URL-Schlüssel
+# *contact* kann nicht als URL-Schlüssel gespeichert werden
 
-Dieser Artikel bietet eine Behelfslösung für das Problem, wenn Sie nicht speichern können *Kontakt* als URL-Schlüssel (z. B. &quot;/contact&quot;) für Produkte oder CMS-Seiten.
+Dieser Artikel bietet eine Problemumgehung, wenn Sie *contact* nicht als URL-Schlüssel (z. B. &quot;/contact&quot;) für Produkte oder CMS-Seiten speichern können.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,15 +21,15 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.x
 
 ## Problem
 
-Sie können ein Produkt oder eine CMS-Seite nicht mit dem Begriff speichern *Kontakt* als URL-Schlüssel. Wenn Sie versuchen, den URL-Schlüssel zu speichern, erhalten Sie einen Fehler, der anzeigt, dass der URL-Schlüssel eine doppelte URL ist.
+Sie können ein Produkt oder eine CMS-Seite nicht mit dem Begriff *contact* als URL-Schlüssel speichern. Wenn Sie versuchen, den URL-Schlüssel zu speichern, erhalten Sie einen Fehler, der anzeigt, dass der URL-Schlüssel eine doppelte URL ist.
 
 <u>Zu reproduzierende Schritte</u>:
 
-Erstellen Sie eine CMS-Seite mit *Kontakt* als URL-Schlüssel.
+Erstellen Sie eine CMS-Seite mit *contact* als URL-Schlüssel.
 
 <u>Erwartetes Ergebnis</u>:
 
-Die Seite wird gespeichert mit *Kontakt* als URL-Schlüssel.
+Die Seite wird mit *contact* als URL-Schlüssel gespeichert.
 
 <u>Tatsächliches Ergebnis</u>:
 
@@ -37,7 +37,7 @@ Sie können die Seite nicht speichern. Sie erhalten den Fehler: *Der im Feld URL
 
 ## Ursache
 
-*Kontakt* ist ein reserviertes Wort, das in `vendor/magento/module-contact/view/frontend/layout/contact_index_index.xml`.
+*Kontakt* ist ein reserviertes Wort, das in `vendor/magento/module-contact/view/frontend/layout/contact_index_index.xml` definiert ist.
 
 ```xml
 <router id="standard">
@@ -49,19 +49,19 @@ Sie können die Seite nicht speichern. Sie erhalten den Fehler: *Der im Feld URL
 
 ## Lösung
 
-Sie können den Begriff nicht verwenden *Kontakt* als URL-Schlüssel verwenden, können Sie jedoch den Begriff *Kontakt* mit einem anderen Buchstaben oder einer anderen Zahl kombiniert werden (z. B. *contact1* und *contact2*). Auch wenn der Begriff *contact+\&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;>* kann der Begriff eine beliebige Zeichenfolge sein, solange die Länge 255 Zeichen nicht überschreitet.
+Sie können den Begriff *contact* nicht als URL-Schlüssel verwenden. Sie können jedoch den Begriff *contact* in Verbindung mit einem anderen Brief oder einer anderen Nummer verwenden (z. B. *contact1* und *contact2*). Der Begriff muss zwar nicht &quot;*contact+\&lt;andere Zahl oder Buchstabe\>*&quot;lauten, der Begriff kann jedoch eine beliebige Zeichenfolge sein, solange die Länge 255 Zeichen nicht überschreitet.
 
 Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei Commerce Admin an.
-1. Navigieren Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
-1. Klicks **[!UICONTROL Add URL Rewrite]**.
-1. Auswählen *[!UICONTROL Custom]* auf [!UICONTROL Create URL Rewrite] angezeigt.
-   1. Im [!UICONTROL Request Path], geben Sie &quot;contact&quot;ein. Beachten Sie Folgendes: [!UICONTROL Request Path] ist, was ein Benutzer im Browser eingibt, und [!UICONTROL Target Path] ist, zu der er umgeleitet werden sollte.
-   1. Im [!UICONTROL Target Path], geben Sie den neuen URL-Schlüssel ein (z. B. &quot;contact1&quot;).
-   1. Auswählen *[!UICONTROL No]* im [!UICONTROL Redirect] angezeigt.
+1. Gehen Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
+1. Klicken Sie auf **[!UICONTROL Add URL Rewrite]**.
+1. Wählen Sie *[!UICONTROL Custom]* in der Dropdownliste [!UICONTROL Create URL Rewrite] aus.
+   1. Geben Sie in das Feld [!UICONTROL Request Path] &quot;contact&quot;ein. Beachten Sie, dass der [!UICONTROL Request Path] ist, was ein Benutzer in den Browser eingibt, und der [!UICONTROL Target Path] ist, zu dem er umleiten soll.
+   1. Geben Sie im [!UICONTROL Target Path] den neuen URL-Schlüssel ein (z. B. &quot;contact1&quot;).
+   1. Wählen Sie *[!UICONTROL No]* in der Dropdownliste [!UICONTROL Redirect] aus.
 
 ## Verwandtes Lesen
 
-* [URL-Neuschreibungen](https://docs.magento.com/user-guide/marketing/url-rewrite.html) in unserem Benutzerhandbuch.
+* [URL schreibt ](https://docs.magento.com/user-guide/marketing/url-rewrite.html) in unser Benutzerhandbuch um.
 * [Best Practices für SEO](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) in unserem Benutzerhandbuch.

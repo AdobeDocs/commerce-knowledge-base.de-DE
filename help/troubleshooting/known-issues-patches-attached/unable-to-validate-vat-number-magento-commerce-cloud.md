@@ -30,21 +30,21 @@ Alle lokalen Adobe Commerce- und Adobe Commerce-Versionen von Cloud-Infrastruktu
 
 <u>Zu reproduzierende Schritte:</u>
 
-1. Navigieren Sie zu **Stores** > **Konfiguration** > **Kunden** > **Kundenkonfiguration** > **Neue Kontooptionen erstellen** und **Automatische Zuweisung aktivieren** nach **Kundengruppe** nach *Ja*.
-1. Navigieren Sie zu **Allgemein** > **Store-Informationen** > und legen Sie ein gültiges Land und eine gültige MwSt.-Nummer fest.
-1. Klicken Sie auf **MwSt.-Nummer validieren**.
+1. Wechseln Sie zu **Stores** > **Konfiguration** > **Kunden** > **Kundenkonfiguration** > **Neue Kontooptionen erstellen** und legen Sie **Automatische Zuweisung aktivieren** auf **Kundengruppe** auf *Ja* fest.
+1. Wechseln Sie zu **Allgemein** > **Store-Informationen** > und legen Sie ein gültiges Land und eine gültige MwSt.-Nummer fest.
+1. Klicken Sie auf **MwSt.-Nummer überprüfen**.
 
 <u>Erwartetes Ergebnis:</u>
 
 Die Validierung ist erfolgreich.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Der folgende Fehler wird angezeigt: &quot;*Fehler bei Überprüfung der MwSt.-Nummer.*&quot;
 
 ## Lösung
 
-Wenden Sie die [Patch](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) in diesem Artikel angegeben.
+Wenden Sie den in diesem Artikel angegebenen [Patch](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) an.
 
 ## Patch
 
@@ -54,6 +54,6 @@ Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach 
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

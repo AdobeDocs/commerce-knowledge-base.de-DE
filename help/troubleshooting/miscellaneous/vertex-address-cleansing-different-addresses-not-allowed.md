@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Reklamationsbereinigung: Verschiedene Adressen sind nicht zulässig
 
-In diesem Artikel wird über die Lösung des Problems gesprochen, bei dem der Benutzer versucht, eine **distinct** Abrechnungs- und Versandadresse, bei aktivierter Überprüfung der Vertex-Adresse, lässt die Storefront den Benutzer nicht in die Eingabe zu.
+In diesem Artikel wird über die Lösung für das Problem gesprochen, bei dem der Benutzer versucht, eine **andere** Abrechnungs- und Versandadresse einzugeben, wobei die Überprüfung der Vertex-Adresse aktiviert ist, die Storefront den Benutzer nicht zur Eingabe berechtigt.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,15 +23,15 @@ In diesem Artikel wird über die Lösung des Problems gesprochen, bei dem der Be
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Gehen Sie zu Admin > **Stores** > **Konfiguration** > **Vertrieb** > **Adressenbereinigung**.
-1. Auswählen *Aktiviert* aus dem **Vertex-Adressenbereinigung verwenden** Dropdown und **Konfiguration speichern**.
+1. Gehen Sie zu Admin > **Geschäfte** > **Konfiguration** > **Verkauf** > **Adressbereinigung**.
+1. Wählen Sie *Aktiviert* aus der Dropdown-Liste **Vertextsadressenbereinigung verwenden** und **Konfiguration speichern** aus.
 1. Gehen Sie als Gast in das Frontend und fügen Sie dem Warenkorb ein Produkt hinzu.
-1. Klicken Sie auf das Symbol Warenkorb und **Zur Kasse gehen**.
+1. Klicken Sie auf das Warenkorbsymbol und **Fahren Sie mit dem Checkout fort**.
 1. Füllen Sie die Adressfelder aus.
-1. Auswahl gewünscht **Versandmethode** und klicken **Nächste**.
-1. Klicken Sie auf **Nächste** erneut.
-1. Deaktivieren **Meine Abrechnungs- und Lieferadresse** **sind identisch** und geben Sie eine neue Rechnungsadresse ein (anders als &quot;Adresse&quot;).
-1. Klicken Sie auf **Aktualisieren** Schaltfläche und klicken Sie auf **Adresse aktualisieren**.
+1. Wählen Sie die gewünschte **Versandmethode** aus und klicken Sie auf **Weiter**.
+1. Klicken Sie erneut auf die Schaltfläche **Weiter** .
+1. Deaktivieren Sie **Meine Abrechnungs- und Lieferadresse** **sind identisch** und geben Sie eine neue Abrechnungsadresse ein (die sich von Adresse unterscheidet).
+1. Klicken Sie auf die Schaltfläche **Aktualisieren** und dann auf **Adresse aktualisieren**.
 
 <u>Erwartete Ergebnisse</u>:
 

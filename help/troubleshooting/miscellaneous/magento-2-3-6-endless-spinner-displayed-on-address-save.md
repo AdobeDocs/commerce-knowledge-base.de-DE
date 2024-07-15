@@ -31,5 +31,5 @@ Das Problem wurde in Adobe Commerce 2.3.1 behoben.
 
 ## Verwandtes Lesen
 
-* [Verschiedene Adressen, die bei der Aufhebung der Auswahl von &quot;Meine Abrechnungs- und Lieferadresse sind identisch&quot;nicht zulässig sind, werden mit der VertexAddress-Bereinigung verwendet](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) in unserer Wissensdatenbank.
-* [Adobe Commerce 2.4.1 Validierungsmeldung für Reklame-Adressen nach der Aktualisierung der Adresse](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) in unserer Wissensdatenbank.
+* [Verschiedene Adressen, die bei der Aufhebung der Auswahl von &quot;Meine Abrechnungs- und Lieferadresse sind identisch&quot;nicht zulässig sind, werden mit VertexAddress Cleansing](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) in unserer Support-Wissensdatenbank verwendet.
+* [Adobe Commerce 2.4.1 Vertex Address validation message post address update](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) in unserer Support-Wissensdatenbank.

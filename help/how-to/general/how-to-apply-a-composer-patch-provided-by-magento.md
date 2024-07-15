@@ -20,8 +20,8 @@ In diesem Artikel wird beschrieben, wie Sie einen Composer-Patch für Adobe Comm
 
 ## Anwenden eines Composer-Patches für Adobe Commerce auf die Cloud-Infrastruktur {#cloud}
 
-1. Wenn Sie kein Verzeichnis mit dem Namen `m2-hotfixes` Erstellen Sie im Projektstamm eine.
-1. Kopieren Sie die `%patch_name%.composer.patch` Datei(en) an die `m2-hotfixes` Verzeichnis.
+1. Wenn Sie keinen Ordner mit dem Namen `m2-hotfixes` im Projektstamm haben, erstellen Sie einen.
+1. Kopieren Sie die Datei(en) `%patch_name%.composer.patch` in das Verzeichnis `m2-hotfixes` .
 1. Fügen Sie Code-Änderungen hinzu, übertragen Sie sie und fügen Sie sie per Push hinzu:
 
    ```git
@@ -36,7 +36,7 @@ In diesem Artikel wird beschrieben, wie Sie einen Composer-Patch für Adobe Comm
    git push origin
    ```
 
-Weitere Informationen zum Anwenden von Patches auf Cloud-Projekte finden Sie unter [Anwenden von Patches](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+Weitere Informationen zum Anwenden von Patches auf Cloud-Projekte finden Sie unter [Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ### Anwenden eines Composer-Patches für Adobe Commerce vor Ort und Magento Open Source {#commerce}
 
@@ -49,4 +49,4 @@ Weitere Informationen zum Anwenden von Patches auf Cloud-Projekte finden Sie unt
 
    (Wenn der obige Befehl nicht funktioniert, verwenden Sie `-p2` anstelle von `-p1` )
 
-1. Damit die Änderungen übernommen werden, aktualisieren Sie den Cache im Admin unter **System** > **Cacheverwaltung**.
+1. Damit die Änderungen übernommen werden, aktualisieren Sie den Cache im Admin unter **System** > **Cache-Verwaltung**.

@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Protokollspeicherorte (Verzeichnisse) für den Startplan
 
-Siehe [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) im *Handbuch zu Commerce on Cloud Infrastructure* um zu erfahren, wo Sie die Build- und Bereitstellungs-, Anwendungs- und Service-Protokolle für Adobe Commerce-Projekte finden, die in der Cloud-Infrastruktur bereitgestellt werden.
+Informationen dazu, wo Sie die Build- und Bereitstellungs-, Anwendungs- und Dienstprotokolle für Adobe Commerce-Projekte finden, die in der Cloud-Infrastruktur bereitgestellt werden, finden Sie unter [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) im *Commerce on Cloud Infrastructure Guide* .

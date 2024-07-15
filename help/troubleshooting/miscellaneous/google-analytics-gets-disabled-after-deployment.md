@@ -21,7 +21,7 @@ In diesem Thema wird eine Lösung für ein typisches Problem besprochen, das bei
 
 ## Problem
 
-Bei der Bereitstellung Ihres Codes in allen Umgebungen überprüfen die Build- und Bereitstellungsskripte die `master/production/staging` -Verzweigung bereitgestellt, um die Aktivierung von Google Analytics zu gewährleisten. Bei der Bereitstellung von (oder untergeordneten) Zweigen des Master in Entwicklungsumgebungen (Integration) deaktiviert das Bereitstellungsskript Google Analytics.
+Bei der Bereitstellung des Codes in allen Umgebungen überprüfen die Build- und Bereitstellungsskripte, dass die Verzweigung `master/production/staging` bereitgestellt wird, damit die Google Analytics aktiviert bleibt. Bei der Bereitstellung von (oder untergeordneten) Zweigen des Master in Entwicklungsumgebungen (Integration) deaktiviert das Bereitstellungsskript Google Analytics.
 
 ## Ursache
 
@@ -29,7 +29,7 @@ Diese Funktion soll sicherstellen, dass Entwicklerdaten und -interaktionen nicht
 
 ## Lösung
 
-Wenn Sie möchten, dass Google Analytics immer aktiviert sind, legen Sie die Bereitstellungsvariable fest. `ENABLE_GOOGLE_ANALYTICS = true`, wie unter [Bereitstellen von Variablen](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) in unserer Entwicklerdokumentation.
+Wenn Sie möchten, dass Google Analytics immer aktiviert ist, legen Sie die Bereitstellungsvariable `ENABLE_GOOGLE_ANALYTICS = true` fest, wie in der Entwicklerdokumentation unter [Variablen bereitstellen](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) beschrieben.
 
 >[!NOTE]
 >

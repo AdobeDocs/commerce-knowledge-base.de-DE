@@ -49,16 +49,16 @@ Wenn du im Zweifel bist, mach dir keine Großschreibung. Verwenden Sie in Übers
 
 ## Benutzeroberflächen-Elemente
 
-* Alles, was der Benutzer eingegeben hat **fett**. Beispiel: &quot;Klicken Sie auf **Weiter**.&quot; Optionswerte und Fehlermeldungen werden mit _kursiv_.
-* Vermeiden Sie es, den UI-Elementtyp nach Möglichkeit in Anweisungen zu erwähnen. (Klicken Sie auf **Nächste**. Klick auf die **Nächste** Schaltfläche.)
+* Alles, was der Benutzer anklickt, wird in **fett** abgelegt. Beispiel: &quot;Klicken Sie auf **Weiter**.&quot; Optionswerte und Fehlermeldungen werden mit _kursiv_ formatiert.
+* Vermeiden Sie es, den UI-Elementtyp nach Möglichkeit in Anweisungen zu erwähnen. (Klicken Sie auf **Weiter**. vs. Klicken Sie auf die Schaltfläche **Weiter** .)
 * Verwenden Sie &quot;Choose&quot;und &quot;>&quot;in Befehlssequenzen. (Wählen Sie **Bearbeiten** > **Voreinstellungen**. vs. Klicken auf Bearbeiten | Voreinstellungen.)
 * Vorstellung: &quot;in&quot; für Dialogfeld, Fenster, sind ein, Bedienfeld, Ansicht, Assistent, Liste, Ordner, Knoten.
 * Vorstellung: &quot;Ein&quot; für Bildschirm, Seite, Symbolleiste, Menüleiste, Registerkarte, Bereich, Band.
-* Präposition: Klicken (Klick **Nächste** vs. Klick **Nächste**).
+* Präposition: Klicken Sie auf (klicken Sie auf **Weiter** oder auf **Weiter**).
 
 ## Dateinamen
 
-Dateinamen und Ordner werden als Code formatiert. Beispiel: Die `/var/log` Das Systemverzeichnis enthält Protokolle für alle Umgebungen.
+Dateinamen und Ordner werden als Code formatiert. Beispiel: Das Systemverzeichnis &quot;`/var/log`&quot; enthält Protokolle für alle Umgebungen.
 
 
 ## Zahlen
@@ -200,13 +200,13 @@ Kein Grund für Großbuchstaben.
 
 <td colspan="1">
 
-Fehlermeldung: _&quot;Irgendetwas ist schiefgelaufen.&quot;_
+Fehlermeldung: _&quot;Irgendetwas ist schief gelaufen.&quot;_
 
-Fehlermeldung: __Etwas ist schiefgelaufen.__
+Fehlermeldung: __Irgendetwas ist schiefgelaufen.__
 
 </td>
 
-<td colspan="1"> Fehlermeldung:  <i>Etwas ist schiefgelaufen.</i> </td>
+<td colspan="1"> Fehlermeldung: <i>Irgendetwas ist schiefgelaufen.</i> </td>
 
 <td colspan="1">
 </td>
@@ -221,7 +221,7 @@ Fehlermeldung: __Etwas ist schiefgelaufen.__
 
 * Alle nichttextlichen oder grafischen Elemente haben Textäquivalente oder Alternativtext. Beispiel: ![example_image](/url "alt_text_for_this_image").
 
-* Alle Links beschreiben das Ziel des Links. Beispiel [link](/uri "destination_of_the_link").
+* Alle Links beschreiben das Ziel des Links. Beispiel: [link](/uri "destination_of_the_link").
 
 
 <!--
@@ -253,14 +253,14 @@ Eine spezialisierte Link-Liste, die so genannte &quot;See-auch&quot;-Liste, wird
 
 ### Links zu externen Websites
 
-Verwenden Sie normale URLs anstelle von goURLs, um Links zu Seiten außerhalb von  [Adobe.com](http://Adobe.com).
+Verwenden Sie normale URLs anstelle von goURLs, um eine Verknüpfung zu Seiten außerhalb von [Adobe.com](http://Adobe.com) herzustellen.
 
 
 ## Kommas
 
 Im Allgemeinen folgen Sie den Empfehlungen des Chicago Manual of Style zur Interpunktion im offenen Stil und setzen nur dort Interpunktion ein, wo dies notwendig ist, um eine Fehllesung zu verhindern. Sie können beispielsweise das Komma vor einer Verbindung in einem zusammengesetzten Satz auslassen, wenn nur ein geringes oder gar kein Risiko besteht, falsch gelesen zu werden. Verwenden Sie zur Klarstellung das Komma, sofern erforderlich.
 
-* Verwenden Sie immer das serielle Komma (ein Komma vor _und_ oder _oder_ in einer Liste mit drei oder mehr Elementen): x, y und z
+* Verwenden Sie immer das serielle Komma (ein Komma vor _und_ oder _oder_ in einer Liste mit drei oder mehr Elementen): x, y und z
 
 * Platzieren Sie ein Komma vor einer Verknüpfung, die eine unabhängige Klausel einführt: &quot;Geben Sie einen Speicherort an und geben Sie einen Namen für die Dateiliste ein.&quot;
 
@@ -276,4 +276,4 @@ Im Allgemeinen folgen Sie den Empfehlungen des Chicago Manual of Style zur Inter
 
 ## Branding
 
-* Magento Commerce ist jetzt Adobe Commerce. Weitere Informationen finden Sie unter [Rebrandbedingungen](https://github.com/magento/knowledge-base/wiki) Wiki für weitere Informationen zur Verwendung der aktuellen Branding-Sprache.
+* Magento Commerce ist jetzt Adobe Commerce. Weitere Informationen zur Verwendung der aktuellen Branding-Sprache finden Sie im Wiki [Rebrand terms](https://github.com/magento/knowledge-base/wiki) .

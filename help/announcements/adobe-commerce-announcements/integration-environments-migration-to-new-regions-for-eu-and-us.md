@@ -1,6 +1,6 @@
 ---
 title: Migration von Integrationsumgebungen für die alte EU-Region
-description: '"Um Ihnen die modernste Infrastruktur zur Verfügung zu stellen, migrieren wir die Integrationsumgebungen für alle Kunden, die der alten EU-Region angehören, in eine neue EU-Region. Die übrigen Regionen und Gebiete, EU-3, EU-5, EU-6 und Ndash, werden unverändert bleiben.  '''
+description: '"Um Ihnen die modernste Infrastruktur zur Verfügung zu stellen, migrieren wir die Integrationsumgebungen für alle Kunden, die der alten EU-Region angehören, in eine neue EU-Region. Die übrigen Regionen &ndash; EU-3, EU-5, EU-6 &ndash; werden unverändert bleiben.  '''
 exl-id: 71c0d241-7ba8-48c3-acf1-2b28be5c80e7
 feature: Integration
 role: Admin

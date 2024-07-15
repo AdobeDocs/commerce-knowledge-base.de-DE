@@ -17,7 +17,7 @@ In diesem Artikel werden Fehler erläutert, die bei der Verwendung des Upgrade-K
 
 ## Betroffene Produkte und Versionen
 
-* [Upgrade-Kompatibilitätstool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) ist ab Version 2.3.0 mit Adobe Commerce kompatibel.
+* [Upgrade-Kompatibilitätstool](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) ist ab Version 2.3.0 mit Adobe Commerce-Versionen kompatibel.
 
 ## Fehler bei Segmentierung
 
@@ -62,7 +62,7 @@ Es gibt zwei mögliche Lösungen, um diese PHP-Speicherbegrenzung zu vermeiden.
 
 <u>Lösung 1</u>:
 
-Überschreiben Sie die Speicherbegrenzung durch Festlegen von `memory_limit` nach `-1`:
+Überschreiben Sie die Speicherbegrenzung, indem Sie `memory_limit` auf `-1` setzen:
 
 ```bash
 php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
@@ -74,7 +74,7 @@ php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
 
 <u>Lösung 2</u>:
 
-Hinzufügen der `-m` ermöglicht es dem Upgrade-Kompatibilitätstool, jedes spezifische Modul unabhängig zu analysieren, um zu vermeiden, dass in Ihrer Adobe Commerce-Instanz zwei Module mit demselben Namen auftreten.
+Durch Hinzufügen der Option `-m` kann das Upgrade-Kompatibilitätstool jedes einzelne Modul unabhängig analysieren, um zu vermeiden, dass in Ihrer Adobe Commerce-Instanz zwei Module mit demselben Namen auftreten.
 
 Mit dieser Befehlsoption kann das Upgrade-Kompatibilitätstool auch einen Ordner analysieren, der mehrere Module enthält:
 
@@ -82,4 +82,4 @@ Mit dieser Befehlsoption kann das Upgrade-Kompatibilitätstool auch einen Ordner
 bin/uct upgrade:check /<dir>/<instance-name> -m /vendor/<vendor-name>/
 ```
 
-Siehe [Führen Sie das Tool in einer Befehlszeilenschnittstelle aus](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) Seite finden Sie weitere Informationen zu Befehlszeilenoberflächenoptionen.
+Weitere Informationen zu Befehlszeilenoberflächenoptionen finden Sie auf der Seite [Ausführen des Tools in einer Befehlszeilenschnittstelle ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) .

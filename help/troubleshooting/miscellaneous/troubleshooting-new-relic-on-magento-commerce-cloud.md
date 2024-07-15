@@ -28,7 +28,7 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 <tr>
 <td>
 <p><u>Projekte in New Relic können nicht angezeigt werden.</u></p>
-<p>Sie melden sich bei <em>New Relic</em> aber keine Projekte sehen können, sollten Sie berechtigt sein, sie anzuzeigen/aufzurufen.</p>
+<p>Sie melden sich bei <em>New Relic</em> an, können jedoch keine Projekte anzeigen, für die Sie berechtigt sein sollten, darauf zuzugreifen.</p>
 </td>
 <td>
 <p>In diesen Fällen muss ein Administrator Sie zum Projekt hinzufügen.</p>
@@ -43,7 +43,7 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 <tr>
 <td>
 <p><u>Fehlende Daten nach der Installation.</u></p>
-<p>Verwenden Sie die <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">New Relic Diagnostics-Dienstprogramm</a> , um zu versuchen, die Ursache zu identifizieren. Wenn dies nicht hilfreich ist, sollten Sie sich agentenspezifische Lösungen ansehen. Links zu Artikeln, die diese Lösungen enthalten, befinden sich in der rechten Spalte.</p>
+<p>Verwenden Sie das Dienstprogramm <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">New Relic Diagnostics</a>, um die Ursache zu ermitteln. Wenn dies nicht hilfreich ist, sollten Sie sich agentenspezifische Lösungen ansehen. Links zu Artikeln, die diese Lösungen enthalten, befinden sich in der rechten Spalte.</p>
 </td>
 <td>
 <p>Fehlende Daten können unterschiedliche Ursachen haben. Möglicherweise müssen Sie:</p>
@@ -66,7 +66,7 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 </tr>
 <tr>
 <td>
-<p><u>Diskrepanz bei Transaktionszeitstempeln.</u> Mithilfe der New Relic-Benutzeroberfläche können Sie unter Umständen lange Transaktionen (mehr als 5 Minuten) finden. Sie können auch Transaktionen finden, die außerhalb des erwarteten Zeitrahmens angezeigt werden.</p>
+<p><u>Diskrepanz bei Transaktionszeitstempeln.</u> Sie können mit der New Relic-Benutzeroberfläche Schwierigkeiten haben, lange Transaktionen (mehr als 5 Minuten) zu finden. Sie können auch Transaktionen finden, die außerhalb des erwarteten Zeitrahmens angezeigt werden.</p>
 </td>
 <td>
 <p>In der New Relic-Benutzeroberfläche wird der Zeitpunkt des Transaktionsendes und nicht der Zeitpunkt des Transaktionsbeginns angezeigt.</p>
@@ -77,13 +77,13 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 </tr>
 <tr>
 <td>
-<p><u>NerdGraph GraphQL <code>curl</code> Abfragen mit Sonderzeichen wie <code>|</code> und <code>%</code> nicht funktionieren</u>.</p>
+<p><u>NerdGraph GraphQL <code>curl</code> Abfragen mit Sonderzeichen wie <code>|</code> und <code>%</code> funktionieren nicht</u>.</p>
 </td>
 <td>
-<p>Die New Relic-Funktion "Copy to curl"in NerdGraph bietet derzeit keine Möglichkeit, Sonderzeichen wie <code>|</code> und <code>%</code>.</p>
+<p>Die New Relic-Funktion "Copy to curl"in NerdGraph bietet derzeit keine Möglichkeit, Sonderzeichen wie <code>|</code> und <code>%</code> zu verarbeiten.</p>
 </td>
 <td>
-<p>Verwenden Sie eine andere API-Bibliothek, um das Problem mit Sonderzeichen zu lösen. Beispiel: GraphQLClient-Bibliothek für GraphQL-API in Python oder Apache.commons nach Java-Sprachaufrufen. Client-Bibliotheken in überprüfen <a href="https://graphql.org/code/">GraphQL</a>.</p>
+<p>Verwenden Sie eine andere API-Bibliothek, um das Problem mit Sonderzeichen zu lösen. Beispiel: GraphQLClient-Bibliothek für GraphQL-API in Python oder Apache.commons nach Java-Sprachaufrufen. Überprüfen Sie Client-Bibliotheken auf <a href="https://graphql.org/code/">GraphQL</a>.</p>
 </td>
 </tr>
 <tr>
@@ -94,7 +94,7 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 <p>Beheben Sie fehlende Diagramme, indem Sie New Relic-Domänen zur Zulassungsliste hinzufügen oder die Browsererweiterung deinstallieren, was zu Problemen führt.</p>
 </td>
 <td>
-<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">New Relic-Dokumentation &gt; Diagramme fehlen oder werden nicht dargestellt</a> </p>
+<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">New Relic-Dokumentation &gt; Diagramme fehlen oder nicht rendern</a> </p>
 </td>
 </tr>
 <tr>

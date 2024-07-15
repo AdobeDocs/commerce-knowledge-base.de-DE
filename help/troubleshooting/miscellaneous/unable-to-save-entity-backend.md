@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Entität Adobe Commerce-Backend kann nicht gespeichert werden
 
-Dieser Artikel bietet eine Lösung für den Fall, dass Sie eine Entität nicht im Adobe Commerce-Backend speichern können. Wenn Sie beispielsweise eine bestimmte `cart_price` Regel.
+Dieser Artikel bietet eine Lösung für den Fall, dass Sie eine Entität nicht im Adobe Commerce-Backend speichern können. Wenn Sie beispielsweise eine bestimmte `cart_price` -Regel nicht bearbeiten und speichern können.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,16 +22,16 @@ Dieses Problem kann sich auf alle Adobe Commerce-Versionen auswirken, für die d
 
 ## Problem
 
-Wenn Sie versuchen, Ihren Store neu zu konfigurieren, wird die Seite neu geladen und Ihre Änderungen werden nicht gespeichert. Eine Nachricht wird in `var/log/system.log`:
+Wenn Sie versuchen, Ihren Store neu zu konfigurieren, wird die Seite neu geladen und Ihre Änderungen werden nicht gespeichert. Eine Meldung wird in `var/log/system.log` angezeigt:
 
-*[27.11.2021 00:30:52] report.WARNING: Die Sitzungsgröße von 418056 hat die zulässige Sitzungsmax.-Größe von 256000 überschritten. [][]*
+*[2021-11-27 00:30:52] report.WARNING: Sitzungsgröße von 418056 hat die zulässige Sitzungshöchstgröße von 256000 überschritten. [][]*
 
 <u>Zu reproduzierende Schritte</u>:
 
 Beispiel für eine nicht gespeicherte Speicherkonfiguration:
 
-1. Wählen Sie eine Regel im Adobe Commerce Store unter Produktion > aus. **Marketing** > **Preisregeln für Warenkorb**.
-1. Wählen Sie eine Regel aus und legen Sie *Inaaktiv* und speichern Sie die Änderung.
+1. Wählen Sie im Adobe Commerce-Store unter Produktion > **Marketing** > **Preisregeln für Warenkorb** eine Regel aus.
+1. Wählen Sie eine Regel aus, legen Sie den Wert *Inaktiv* fest und speichern Sie die Änderung.
 
 <u>Erwartetes Ergebnis</u>:
 
@@ -48,7 +48,7 @@ Dieses Problem bezieht sich auf die kürzlich eingeführten neuen Funktionen, di
 
 ## Lösung
 
-Erhöhen Sie den Wert &quot;Max. Sitzungsgröße&quot;in (**Stores** > **Konfiguration** > **Erweitert** > **System** > **Sicherheit** > Max. Sitzungsgröße).
+Erhöhen Sie den Wert &quot;Max. Sitzungsgröße&quot;in (**Speicher** > **Konfiguration** > **Erweitert** > **System** > **Sicherheit** > Max. Sitzungsgröße).
 
 ## Verwandtes Lesen
 

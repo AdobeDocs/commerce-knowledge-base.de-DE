@@ -17,7 +17,7 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.2.2-Probl
 
 ## Problem
 
-Wenn Sie den Sonderpreis für ein Produkt festlegen/ändern, werden das aktuelle Datum und die aktuelle Uhrzeit in der Datenbank als Wert für `special_from_date` -Attribut (nicht sichtbar beim Bearbeiten eines Produkts). Wenn Sie den Sonderpreis bearbeiten und Ihr Admin-Benutzerkonto auf ein anderes Gebietsschema der Benutzeroberfläche festgelegt ist, kann ein falscher Wert auf `special_from_date` aufgrund der Probleme beim Parsen des Datumsformats für verschiedene Gebietsschemas.
+Wenn Sie den Sonderpreis für ein Produkt festlegen/ändern, werden das aktuelle Datum und die Uhrzeit in der Datenbank als Wert für das Attribut `special_from_date` gespeichert (nicht sichtbar bei der Bearbeitung eines Produkts). Wenn Sie den Sonderpreis bearbeiten und Ihr Admin-Benutzerkonto auf ein anderes Gebietsschema der Benutzeroberfläche festgelegt ist, kann ein falscher Wert auf `special_from_date` gesetzt werden, da bei der Analyse des Datumsformats für verschiedene Gebietsschemas Probleme auftreten.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -26,14 +26,14 @@ Voraussetzungen: Das Gebietsschema des Admin-Benutzers ist Englisch (USA).
 1. Melden Sie sich bei Commerce Admin an.
 1. Gehen Sie zu den Einstellungen für das Admin-Benutzerkonto .
 1. Setzen Sie &quot;Interface Locale&quot;auf Ukrainisch.
-1. Klicks **Konto speichern**.
-1. Navigieren Sie zu **Katalog** > **Produkt**.
+1. Klicken Sie auf **Konto speichern**.
+1. Wechseln Sie zu **Katalog** > **Produkt**.
 1. Wählen Sie ein beliebiges Produkt aus.
 1. Klicken Sie auf der Produktseite auf **Erweiterte Preise**.
 1. Fügen Sie einen Sonderpreis hinzu.
 1. Speichern Sie das Produkt.
 1. Wiederholen Sie die Schritte 7 bis 9.
-1. Navigieren Sie zu **System** > **Aktionsprotokolle**.
+1. Wechseln Sie zu **System** > **Aktionsprotokolle**.
 1. Überprüfen Sie das Protokoll auf Produktaktualisierung.
 
 <u>Erwartete Ergebnisse</u>:
@@ -67,6 +67,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

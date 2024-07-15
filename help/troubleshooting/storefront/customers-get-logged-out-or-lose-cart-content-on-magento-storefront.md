@@ -18,7 +18,7 @@ Dieser Artikel bietet eine Lösung für das Problem, bei dem Kunden vom Warenkor
 ## Betroffene Produkte und Versionen
 
 * Adobe Commerce vor Ort, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-* Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problem
 
@@ -28,7 +28,7 @@ Dieser Artikel bietet eine Lösung für das Problem, bei dem Kunden vom Warenkor
 1. Der Kunde wird zur Bezahlung/Versand oder zu anderen Informationen/Dienstleistungen auf die Drittanbieter-Website weitergeleitet.
 1. Der Kunde wird zurück zum Geschäft weitergeleitet.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Der Kunde wurde zum leeren Warenkorb oder zu einer leeren Seite umgeleitet.
 
@@ -38,7 +38,7 @@ Der Kunde wurde auf eine Erfolgszahlungsseite (oder eine andere Erfolgsseite) um
 
 ## Ursache
 
-Das SameSite-Cookie-Attribut ist auf *Lax* oder nicht spezifiziert (behandelt als *Lax* ). nach `SameSite` = *Lax* Deaktiviert die Übertragung eines Cookies über `POST` -Anfragen.
+Das SameSite-Cookie-Attribut ist auf *Lax* gesetzt oder nicht angegeben (wird als *Lax* behandelt). Mit `SameSite` = *Lax* wird die Übertragung eines Cookies über `POST` -Anfragen an externe URLs deaktiviert.
 
 ## Lösung
 
@@ -46,4 +46,4 @@ Um das Problem zu beheben, wenden Sie sich an den Drittanbieter und bitten Sie s
 
 ## Verwandtes Lesen
 
-[Chrome SameSite-Aktualisierung](https://www.chromestatus.com/feature/5088147346030592)
+[Chrome SameSite-Update](https://www.chromestatus.com/feature/5088147346030592)

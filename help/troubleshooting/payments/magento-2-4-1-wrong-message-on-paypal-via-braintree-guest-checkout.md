@@ -26,16 +26,16 @@ Ein unspezifischer Fehler wird angezeigt, wenn der Gast-Checkout aus dem Backend
 
 <u>Voraussetzungen</u>:
 
-1. In Commerce Admin, unter **Stores** > **Konfiguration** > **Vertrieb** > **Checkout**, set **Gastauschecken zulassen** = *Nein*.
-1. Aktivieren Sie PayPal über Braintree, wie im Abschnitt [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) in unserem Benutzerhandbuch.
+1. Legen Sie in Commerce Admin unter **Stores** > **Konfiguration** > **Verkauf** > **Checkout** den Wert **Gastauscheck zulassen** = *Nein* fest.
+1. Aktivieren Sie PayPal über Braintree, wie im Benutzerhandbuch unter [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) beschrieben.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Fügen Sie das Produkt als Gast zum Warenkorb hinzu.
-1. Auswählen **Mini-Warenkorb** und klicken **PayPal**.
+1. Wählen Sie **Mini-Warenkorb** und klicken Sie auf **Mit PayPal bezahlen**.
 1. Schließen Sie den Paypal-Checkout ab, und landen Sie dann auf der Seite &quot;Bestellübersicht&quot;.
-1. Auswählen **Versandmethode**.
-1. Klicks **Bestellung platzieren**.
+1. Wählen Sie **Versandmethode** aus.
+1. Klicken Sie auf **Bestellung platzieren**.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -59,6 +59,6 @@ Die Lösung für dieses Problem besteht darin, dass sich der Kunde in einem Spei
 
 ## Verwandtes Lesen
 
-* [Best Practice für die Anzahl von Produkten im Warenkorb in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Wissensdatenbank.
+* [Best Practice für die Anzahl der Produkte im Warenkorb in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Support-Wissensdatenbank.
 * [Tutorial zur Bestellverarbeitung: Schritt 1. Hinzufügen von Artikeln zum Warenkorb](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) in unserer Entwicklerdokumentation
-* [GraphQL-Checkout-Tutorial: Schritt 1. Produkte zum Warenkorb hinzufügen](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) in unserer Entwicklerdokumentation
+* [Tutorial zum GraphQL-Checkout: Schritt 1. Produkte zum Warenkorb hinzufügen](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) in unserer Entwicklerdokumentation

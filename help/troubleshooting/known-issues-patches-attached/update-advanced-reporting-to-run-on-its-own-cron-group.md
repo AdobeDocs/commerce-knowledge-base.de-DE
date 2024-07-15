@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Aktualisierung der erweiterten Berichterstellung für die Ausführung auf eigene Cron-Gruppe
 
-Dieser Artikel enthält einen Patch für das bekannte Problem für Adobe Commerce in der Cloud-Infrastruktur 2.3.0, bei dem die erweiterte Berichterstellung keine Daten anzeigt. Dies liegt daran, dass der erweiterte Berichtsauftrag `analytics_collect_data` nicht planmäßig ausgeführt wird. Dieser Artikel enthält einen Patch, der eine Cron-Gruppe für erweiterte Berichte erstellt `analytics`.
+Dieser Artikel enthält einen Patch für das bekannte Problem für Adobe Commerce in der Cloud-Infrastruktur 2.3.0, bei dem die erweiterte Berichterstellung keine Daten anzeigt. Dies liegt daran, dass der erweiterte Berichtsauftrag `analytics_collect_data` nicht planmäßig ausgeführt wird. Dieser Artikel enthält einen Patch, mit dem eine Cron-Gruppe für erweiterte Berichte erstellt wird `analytics`.
 
 ## Problem
 
@@ -21,13 +21,13 @@ In das Modul &quot;Erweiterte Berichterstellung&quot;werden keine Daten geladen.
 
 ## Patch
 
-Der Patch ist an diesen Artikel angehängt. Der Patch verschiebt den `analytics` Cron-Auftragsaufgaben von der Standardgruppe in `analytics`.
+Der Patch ist an diesen Artikel angehängt. Der Patch verschiebt die `analytics` Cron-Auftragsaufgaben von der Standardgruppe in `analytics`.
 
 Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link:
 
 [MDVA-19640\_EE\_2.3.0\_COMPOSER\_v1.patch](assets/MDVA-19640_EE_2.3.0_COMPOSER_v1.patch.zip)
 
-Führen Sie nach dem Anwenden des Patches die folgende SQL-Abfrage aus. Die Abfrage muss ausgeführt werden, um Datensätze in `cron_schedule` Tabelle.
+Führen Sie nach dem Anwenden des Patches die folgende SQL-Abfrage aus. Die Abfrage muss ausgeführt werden, um Datensätze in der Tabelle `cron_schedule` zu ändern.
 
 ```
 UPDATE core_config_data
@@ -45,6 +45,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached files

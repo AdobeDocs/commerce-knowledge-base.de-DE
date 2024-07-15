@@ -24,8 +24,8 @@ In diesem Artikel finden Sie Lösungen zur Fehlerbehebung bei Problemen mit Cron
 
 ## Im Folgenden finden Sie Symptome von Cron-Problemen:
 
-* Ihre Aktualisierung oder Aktualisierung wird nie ausgeführt. Sie bleibt in einem `pending` state.
-* Eine Fehlermeldung zur [PHP](https://glossary.magento.com/php) Einstellung `$HTTP_RAW_POST_DATA` angezeigt, obwohl sie richtig eingestellt ist.
+* Ihre Aktualisierung oder Aktualisierung wird nie ausgeführt. Sie befindet sich im Status &quot;`pending`&quot;.
+* Eine Fehlermeldung über die Einstellung [PHP](https://glossary.magento.com/php) `$HTTP_RAW_POST_DATA` wird angezeigt, obwohl sie richtig eingestellt ist.
 * Die Prüfung der Cron-Bereitschaft schlägt fehl. Mögliche Fehler sind nicht beschreibbare Pfade und nicht eingerichtetes Cron. Ein Beispiel:
 
   ![upgr-tshooting-no-cron2.png](assets/upgr-tshoot-no-cron2.png)
@@ -38,7 +38,7 @@ In diesem Artikel finden Sie Lösungen zur Fehlerbehebung bei Problemen mit Cron
 
   ![compman-cron-not-running.png](assets/compman-cron-not-running.png)
 
-Um den Fehler anzuzeigen, müssen Sie möglicherweise auf **Systemmeldungen** oben im Fenster wie folgt:
+Um den Fehler anzuzeigen, müssen Sie möglicherweise oben im Fenster auf **Systemmeldungen** klicken:
 
 ![compman_sys-messages.png](assets/compman_sys-messages.png)
 
@@ -48,9 +48,9 @@ In diesem Abschnitt wird beschrieben, wie Sie sehen, ob Cron derzeit ausgeführt
 
 Gehen Sie wie folgt vor, um zu überprüfen, ob die Registerkarte &quot;Crontab&quot;eingerichtet ist:
 
-1. Melden Sie sich bei Ihrem Magento-Server an oder wechseln Sie zu dem [Magento-Dateisysteminhaber](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html).
-1. Überprüfen Sie, ob die folgende Datei vorhanden ist:    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Wenn die Datei vorhanden ist, hat cron in der Vergangenheit erfolgreich ausgeführt. Wenn die Datei *nicht* vorhanden sind, entweder haben Sie noch keine Magento installiert oder Cron läuft nicht. Fahren Sie in beiden Fällen mit dem nächsten Schritt fort.
-1. Erfahren Sie mehr über Cron. Als Benutzer mit `root` -Berechtigungen verwenden, geben Sie den folgenden Befehl ein:    `bash    crontab -u <Magento file system owner name> -l`. Beispiel: unter CentOS `bash    crontab -u magento_user -l`.  Wenn für den Benutzer kein Crontab eingerichtet wurde, wird die folgende Meldung angezeigt:    `terminal    no crontab for magento_user`. Ihr Crontab sagt Ihnen Folgendes:
+1. Melden Sie sich bei Ihrem Magento-Server als [Magento-Dateisysteminhaber](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) an oder wechseln Sie zu ihm.
+1. Überprüfen Sie, ob die folgende Datei vorhanden ist:    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Wenn die Datei vorhanden ist, hat cron in der Vergangenheit erfolgreich ausgeführt. Wenn die Datei &quot;*nicht*&quot; vorhanden ist, wird entweder Magento noch nicht installiert oder Cron wird nicht ausgeführt. Fahren Sie in beiden Fällen mit dem nächsten Schritt fort.
+1. Erfahren Sie mehr über Cron. Geben Sie als Benutzer mit `root` -Berechtigungen den folgenden Befehl ein:    `bash    crontab -u <Magento file system owner name> -l` Beispiel: bei CentOS `bash    crontab -u magento_user -l`.  Wenn für den Benutzer kein Crontab eingerichtet wurde, wird die folgende Meldung angezeigt:    `terminal    no crontab for magento_user`. Ihr Crontab sagt Ihnen Folgendes:
 
    * Welche PHP-Binärdatei Sie verwenden (in einigen Fällen haben Sie mehr als eine)
    * Welche Magento-Cron-Skripte Sie ausführen (insbesondere die Pfade zu diesen Skripten)
@@ -76,4 +76,4 @@ Versuchen Sie, jeden Befehl manuell auszuführen, da der Befehl möglicherweise 
 
 >[!NOTE]
 >
->Sie müssen cron mindestens ausführen *zweimal* für den Auftrag, der ausgeführt werden soll; das erste Mal, dass Aufträge in die Warteschlange gestellt werden, das zweite Mal, dass die Aufträge ausgeführt werden.
+>Sie müssen cron mindestens *zweimal* ausführen, damit der Auftrag ausgeführt wird. Das erste Mal, dass Aufträge in die Warteschlange gestellt werden, das zweite Mal, um die Aufträge auszuführen.

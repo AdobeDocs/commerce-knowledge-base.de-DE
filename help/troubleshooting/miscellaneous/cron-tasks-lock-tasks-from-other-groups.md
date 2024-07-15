@@ -28,16 +28,16 @@ Wenn Sie in Adobe Commerce for Cloud komplexe Cron-Aufgaben (langfristige Aufgab
 
 Die von Cron-Aufträgen ausgeführten Prozesse werden nicht ausgeführt. Beispielsweise werden Produktaktualisierungen nicht stundenlang angewendet oder Kunden melden, dass sie keine E-Mails erhalten.
 
-Wenn Sie die `cron_schedule` Datenbanktabelle angezeigt werden, sehen Sie die Aufträge mit `missed` -Status.
+Wenn Sie die Datenbanktabelle `cron_schedule` öffnen, sehen Sie die Aufträge mit dem Status `missed` .
 
 ## Ursache
 
-Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server zum Ausführen von Cron-Aufträgen verwendet. Jenkins führt jeweils nur eine Instanz eines Auftrags aus; folglich wird es nur eine geben `bin/magento cron:run` -Prozess ausgeführt wird.
+Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server zum Ausführen von Cron-Aufträgen verwendet. Jenkins führt jeweils nur eine Instanz eines Auftrags aus. Folglich wird jeweils nur ein `bin/magento cron:run` -Prozess ausgeführt.
 
 ## Lösung
 
-1. Kontakt [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) um selbstverwaltete Crons zu aktivieren.
-1. Bearbeiten Sie die `.magento.app.yaml` im Stammverzeichnis des Codes für Adobe Commerce in der Git-Verzweigung. Fügen Sie Folgendes hinzu:
+1. Wenden Sie sich an den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , damit selbstverwaltete Crons aktiviert sind.
+1. Bearbeiten Sie die Datei &quot;`.magento.app.yaml`&quot; im Stammverzeichnis des Codes für Adobe Commerce in der Git-Verzweigung. Fügen Sie Folgendes hinzu:
 
    ```yaml
      crons:
@@ -50,11 +50,11 @@ Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server zum Ausführen von Cron
 
 >[!NOTE]
 >
->Es ist nicht erforderlich, alte Cron-Konfigurationen zu übertragen, bei denen mehrere `cron:run` für den neuen Cron-Zeitplan vorhanden sind; die reguläre `cron:run` -Aufgabe, wie oben beschrieben hinzugefügt, reicht aus. Es ist jedoch erforderlich, Ihre benutzerdefinierten Aufträge zu übertragen, falls vorhanden.
+>Es ist nicht erforderlich, alte Cron-Konfigurationen zu übertragen, bei denen mehrere `cron:run` vorhanden sind, um den neuen Cron-Zeitplan zu erhalten. Die normale `cron:run`-Aufgabe, die wie oben beschrieben hinzugefügt wurde, reicht aus. Es ist jedoch erforderlich, Ihre benutzerdefinierten Aufträge zu übertragen, falls vorhanden.
 
 ### Überprüfen Sie, ob die selbst verwaltete Cron-Funktion aktiviert ist (nur für Cloud Pro Staging und Produktion).
 
-Um zu überprüfen, ob der selbst verwaltete Cron aktiviert ist, führen Sie den `crontab -l` -Befehl und beobachten Sie das Ergebnis:
+Um zu überprüfen, ob der selbst verwaltete Cron aktiviert ist, führen Sie den Befehl `crontab -l` aus und beobachten Sie das Ergebnis:
 
 * Selbstverwalteter Cron ist aktiviert, wenn Sie die Aufgaben sehen können, z. B.:
 
@@ -63,7 +63,7 @@ Um zu überprüfen, ob der selbst verwaltete Cron aktiviert ist, führen Sie den
   SHELL=/etc/platform/username/cron-run    MAILTO=""    # m h dom mon dow job_name    * * * * * cronrun
   ```
 
-* Der selbst verwaltete Cron ist nicht aktiviert, wenn Sie die Aufgaben nicht sehen und die *&quot;Sie dürfen dieses Programm nicht verwenden&quot;* Fehlermeldung.
+* Der selbstverwaltete Cron ist nicht aktiviert, wenn Sie die Aufgaben nicht sehen und die Fehlermeldung &quot;*&quot;Sie dürfen dieses Programm nicht verwenden&quot;* erhalten können.
 
 >[!NOTE]
 >
@@ -71,4 +71,4 @@ Um zu überprüfen, ob der selbst verwaltete Cron aktiviert ist, führen Sie den
 
 ## Verwandtes Lesen
 
-* [Einrichten von Cron-Aufträgen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation.
+* [Richten Sie Cron-Aufträge ein](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation.

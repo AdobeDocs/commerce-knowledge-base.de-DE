@@ -1,6 +1,6 @@
 ---
-title: '"ACSD-48857: Änderungen können nicht gespeichert werden, nachdem sie bearbeitet wurden mit [!DNL Page Builder]'''
-description: Wenden Sie den Patch ACSD-48857 an, um das Adobe Commerce-Problem zu beheben, bei dem der Benutzer nach der Bearbeitung mit [!DNL Page Builder].
+title: '''ACSD-48857: Änderungen können nach der Bearbeitung mit [!DNL Page Builder] nicht gespeichert werden'
+description: Wenden Sie den Patch ACSD-48857 an, um das Adobe Commerce-Problem zu beheben, bei dem der Benutzer nach der Bearbeitung mit [!DNL Page Builder] keine Änderungen speichern kann.
 exl-id: c95b354d-8954-4e9c-9e92-8a64f62f0a68
 feature: Admin Workspace, CMS, Page Builder
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48857: Änderungen können nach der Bearbeitung mit [!DNL Page Builder]
+# ACSD-48857: Änderungen können nach der Bearbeitung mit [!DNL Page Builder] nicht gespeichert werden
 
-Der Patch ACSD-48857 behebt das Problem, dass der Benutzer nach der Bearbeitung mit [!DNL Page Builder]. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.28 ist installiert. Die Patch-ID lautet ACSD-48857. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-48857 behebt das Problem, dass der Benutzer nach der Bearbeitung mit [!DNL Page Builder] keine Änderungen speichern kann. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.28 installiert ist. Die Patch-ID lautet ACSD-48857. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,30 +27,30 @@ Der Patch ACSD-48857 behebt das Problem, dass der Benutzer nach der Bearbeitung 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Benutzer kann Änderungen nach der Bearbeitung mit [!DNL Page Builder].
+Der Benutzer kann Änderungen nach der Bearbeitung mit [!DNL Page Builder] nicht speichern.
 
 <u>Zu reproduzierende Schritte</u>
 
 1. Melden Sie sich bei der Admin-Website an.
 1. Navigieren Sie zu **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]** , um eine leere CMS-Seite zu erstellen.
-1. Führen Sie dieses SQL-Skript aus, um Folgendes festzulegen: **[!UICONTROL Content]** Feldwert:
+1. Führen Sie dieses SQL-Skript aus, um den folgenden **[!UICONTROL Content]** -Feldwert festzulegen:
 
    ```SQL
    update cms_page set content = '<div data-content-type="text" data-appearance="default" data-element="main"><h4 style="text-align: center;" contenteditable="true" data-placeholder="Edit Heading Text" data-content-type="heading" data-appearance="default" data-element="main">THE RULES</h4></div>' where page_id=8;
    ```
 
-1. Zurück zu **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]** in Admin.
+1. Kehren Sie in Admin zu **[!UICONTROL Content]** > **[!UICONTROL Elements]** > **[!UICONTROL Pages]** zurück.
 1. Bearbeiten Sie Ihre Seite.
-1. Navigieren Sie zu **[!UICONTROL Content]** Registerkarte.
-1. Klicks **[!UICONTROL Save]**.
+1. Navigieren Sie zur Registerkarte **[!UICONTROL Content]** .
+1. Klicken Sie auf **[!UICONTROL Save]**.
 
 <u>Erwartete Ergebnisse</u>
 
-Die Bereinigung von HTML-Inhalten ist implementiert. Dadurch wird [!DNL Page Builder] reservierte HTML-Attribute in Inhalten, die vom Texteditor generiert wurden.
+Die Bereinigung von HTML-Inhalten ist implementiert. Dadurch werden vom Texteditor erstellte HTML-Attribute für [!DNL Page Builder] entfernt.
 
 <u>Tatsächliche Ergebnisse</u>
 
@@ -64,14 +64,14 @@ Die Seite bleibt nicht gespeichert und die Ladefunktion dreht sich weiter. In de
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52287: Status archivierter Bestellungen ändert sich nicht
 
-Der Patch ACSD-52287 behebt das Problem, dass der Status archivierter Bestellungen sich nicht von *completed* nach *geschlossen* nach der Übermittlung des Kreditprotokolls in das Raster eintragen. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.38 installiert ist. Die Patch-ID ist ACSD-52287. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-52287 behebt das Problem, dass der Status archivierter Bestellungen sich nach dem Senden des Kreditprotokolls nicht von *completed* in *closed* im Raster ändert. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.38 installiert ist. Die Patch-ID ist ACSD-52287. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,56 +27,56 @@ Der Patch ACSD-52287 behebt das Problem, dass der Status archivierter Bestellung
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Der Status archivierter Bestellungen ändert sich nicht von *completed* nach *geschlossen* nach der Übermittlung des Kreditprotokolls in das Raster eintragen.
+Der Status archivierter Bestellungen ändert sich nicht von *completed* in *closed* im Raster, nachdem das Kreditmemo übermittelt wurde.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Konfigurieren *[!UICONTROL Asynchronous Indexing]*.
-   * Navigieren Sie in der Admin-Seitenleiste zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]**.
-   * Erweitern Sie im linken Bereich den **[!UICONTROL Advanced]** auswählen **[!UICONTROL Developer]** darunter.
-   * Erweitern Sie die **[!UICONTROL Grid Settings]** Abschnitt.
-   * Satz *[!UICONTROL Asynchronous indexing]* nach *Ja*.
-   * Klicks **[!UICONTROL Save Config]**.
+1. Konfigurieren Sie *[!UICONTROL Asynchronous Indexing]*.
+   * Wechseln Sie in der Admin-Seitenleiste zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]**.
+   * Erweitern Sie im linken Bereich den Abschnitt **[!UICONTROL Advanced]** und wählen Sie unter &quot;**[!UICONTROL Developer]**&quot;.
+   * Erweitern Sie den Abschnitt **[!UICONTROL Grid Settings]** .
+   * Setzen Sie *[!UICONTROL Asynchronous indexing]* auf *Ja*.
+   * Klicken Sie auf **[!UICONTROL Save Config]**.
 1. Konfigurieren Sie die *[!UICONTROL Order Archive]*.
-   * Navigieren Sie in der Admin-Seitenleiste zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]**.
-   * Erweitern Sie im linken Bereich den **[!UICONTROL Sales]** auswählen **[!UICONTROL Sales]** darunter.
-   * Erweitern Sie die **[!UICONTROL Orders, Invoices, Shipments, Credit Memos Archiving]** Abschnitt.
-   * Satz *[!UICONTROL Enable Archiving]* nach *Ja* (Belassen Sie die restlichen Konfigurationen als Standard.)
-   * Klicks **[!UICONTROL Save Config]**.
+   * Wechseln Sie in der Admin-Seitenleiste zu **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]**.
+   * Erweitern Sie im linken Bereich den Abschnitt **[!UICONTROL Sales]** und wählen Sie unter &quot;**[!UICONTROL Sales]**&quot;.
+   * Erweitern Sie den Abschnitt **[!UICONTROL Orders, Invoices, Shipments, Credit Memos Archiving]** .
+   * Setzen Sie *[!UICONTROL Enable Archiving]* auf *Ja* (Belassen Sie die restlichen Konfigurationen als Standard).
+   * Klicken Sie auf **[!UICONTROL Save Config]**.
 1. Platzieren Sie eine Bestellung im Frontend.
-1. Führen Sie die [!DNL cron]  , damit die Reihenfolge in der *[!UICONTROL Admin Order Grid]*.
-1. Rechnungsstellung und Versand der Bestellung zur Aktualisierung des Bestellstatus auf *Fertig*.
-1. Führen Sie die [!DNL cron]  , um die *[!UICONTROL Sales Order Grid]* mit dem neuesten Bestellstatus.
+1. Führen Sie die [!DNL cron] aus, damit die Reihenfolge in der *[!UICONTROL Admin Order Grid]* angezeigt wird.
+1. Rechnung und Versand der Bestellung, um den Bestellstatus auf *Abgeschlossen* zu aktualisieren.
+1. Führen Sie die [!DNL cron] aus, um den *[!UICONTROL Sales Order Grid]* mit dem neuesten Bestellstatus zu aktualisieren.
 1. Archivieren Sie die Bestellung.
-1. Navigieren Sie zu *[!UICONTROL Archived order grid]*.
-1. Öffnen Sie die archivierte Bestellung und erstatten Sie die Bestellung offline, indem Sie eine [!UICONTROL Credit Memo] , um [!UICONTROL Order status]: *Geschlossen*.
-1. Führen Sie die [!DNL cron] für einige Male.
-1. Überprüfen Sie die *[!UICONTROL Archived order grid]* für den neuen Bestellstatus.
+1. Wechseln Sie zu &quot;*[!UICONTROL Archived order grid]*&quot;.
+1. Öffnen Sie die archivierte Bestellung und geben Sie die Bestellung offline zurück, indem Sie eine [!UICONTROL Credit Memo] erstellen, um die [!UICONTROL Order status]: *Geschlossen* zu machen.
+1. Führen Sie die [!DNL cron] einige Male aus.
+1. Überprüfen Sie die *[!UICONTROL Archived order grid]* auf den neuen Bestellstatus.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Reihenfolge wird als *Geschlossen*.
+Die Reihenfolge wird als *Geschlossen* angezeigt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Reihenfolge wird als *Fertig*.
+Die Reihenfolge wird als *Abgeschlossen* angezeigt.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

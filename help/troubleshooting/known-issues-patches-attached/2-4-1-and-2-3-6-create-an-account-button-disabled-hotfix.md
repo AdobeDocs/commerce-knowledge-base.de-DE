@@ -17,29 +17,29 @@ Dieser Artikel enthält einen Hotfix für das Problem, wenn Sie Schwierigkeiten 
 
 ## Problem
 
-Die **Konto erstellen** Schaltfläche auf der **Neues Konto erstellen** bleibt deaktiviert, wenn ein Käufer ungültige Daten eingegeben hat. Dadurch wird verhindert, dass Käufer nach einem Fehler erneut versuchen, ein Konto zu erstellen.
+Die Schaltfläche **Konto erstellen** auf der Seite **Neues Konto erstellen** bleibt deaktiviert, wenn ein Käufer ungültige Daten eingegeben hat. Dadurch wird verhindert, dass Käufer nach einem Fehler erneut versuchen, ein Konto zu erstellen.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **Neues Kundenkonto erstellen**.
-1. Füllen Sie die Formularfelder aus. Im **Passwort** -Feld, Eingabewerte, die nicht den Kennwortanforderungen entsprechen. Beispiel:
-   * Die Kennwörter im **Passwort** und **Kennwort bestätigen** -Felder stimmen nicht überein.
-   * Die Kennwörter im **Passwort** und **Kennwort bestätigen** -Felder sind nicht lang genug.
-1. Klicken Sie auf **Konto erstellen** Schaltfläche.
+1. Wechseln Sie zu **Neues Kundenkonto erstellen**.
+1. Füllen Sie die Formularfelder aus. Geben Sie im Feld **Kennwort** Werte ein, die nicht den Kennwortanforderungen entsprechen. Beispiel:
+   * Die Kennwörter in den Feldern **Kennwort** und **Kennwort bestätigen** stimmen nicht überein.
+   * Die Kennwörter in den Feldern **Kennwort** und **Kennwort bestätigen** sind nicht lang genug.
+1. Klicken Sie auf die Schaltfläche **Konto erstellen** .
 
 <u>Erwartete Ergebnisse</u>:
 
-* **Konto erstellen** -Schaltfläche aktiv/aktiviert bleiben.
+* **Die Schaltfläche &quot;Konto erstellen&quot;** sollte aktiv/aktiviert bleiben.
 * Der Benutzer sollte in der Lage sein, ein neues Konto zu erstellen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* **Konto erstellen** Schaltfläche bleibt deaktiviert, auch wenn alle erforderlichen Felder mit gültigen/korrekten Daten ausgefüllt wurden.
+* Die Schaltfläche **Konto erstellen** bleibt deaktiviert, auch wenn alle erforderlichen Felder mit gültigen/korrekten Daten ausgefüllt wurden.
 * Der Kunde kann kein neues Konto erstellen.
 
 ## Patch
 
-Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link: [MC-38509-composer.patch herunterladen](assets/MC-38509-composer.patch.zip)
+Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link: [Download MC-38509-composer.patch](assets/MC-38509-composer.patch.zip)
 
 ## Kompatible Adobe Commerce-Versionen:
 
@@ -52,9 +52,9 @@ Der Patch ist nicht mit anderen Adobe Commerce-Versionen und -Editionen kompatib
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Verwandtes Lesen
 
-* [GitHub Adobe Commerce > Ungültiges Formular zur Kontoerstellung übermitteln lässt die Senden-Schaltfläche deaktiviert](https://github.com/magento/magento2/issues/30513)
-* [Adobe Commerce-Benutzerhandbuch > Erste Schritte > Konto erstellen](https://docs.magento.com/user-guide/magento/magento-account-create.html)
+* [GitHub Adobe Commerce > Ungültiges Formular zum Erstellen eines Kontos übermitteln lässt die Senden-Schaltfläche deaktiviert](https://github.com/magento/magento2/issues/30513)
+* [Adobe Commerce-Benutzerhandbuch > Erste Schritte > Erstellen eines Kontos](https://docs.magento.com/user-guide/magento/magento-account-create.html)

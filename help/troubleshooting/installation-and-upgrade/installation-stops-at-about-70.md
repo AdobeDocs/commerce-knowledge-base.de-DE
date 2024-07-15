@@ -33,8 +33,8 @@ Legen Sie alle folgenden Einstellungen wie gewünscht fest.
 ### Alle Webserver und Server verschwinden {#all-web-servers-and-varnish}
 
 1. Suchen Sie Ihre `php.ini` mithilfe einer [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) -Datei.
-1. Als Benutzer mit `root` Berechtigungen, öffnen `php.ini` in einem Texteditor.
-1. Suchen Sie die `max_execution_time` -Einstellung.
+1. Als Benutzer mit `root` -Berechtigungen öffnen Sie `php.ini` in einem Texteditor.
+1. Suchen Sie die Einstellung &quot;`max_execution_time`&quot;.
 1. Ändern Sie den Wert in `18000` .
 1. Speichern Sie Ihre Änderungen in `php.ini` und beenden Sie den Texteditor.
 1. Starten Sie Apache neu:
@@ -46,7 +46,7 @@ Legen Sie alle folgenden Einstellungen wie gewünscht fest.
 
 ### nur nginx {#nginx-only}
 
-Wenn Sie nginx verwenden, verwenden Sie unsere im Lieferumfang enthaltene `nginx.conf.sample` oder fügen Sie eine Timeout-Einstellungen in der nginx-Host-Konfigurationsdatei zur `location ~ ^/setup/index.php` wie folgt:
+Wenn Sie nginx verwenden, verwenden Sie unseren eingeschlossenen `nginx.conf.sample` oder fügen Sie wie folgt in der nginx-Host-Konfigurationsdatei eine Zeitüberschreitungseinstellung zum Abschnitt `location ~ ^/setup/index.php` hinzu:
 
 ```php
 location ~ ^/setup/index.php {
@@ -56,11 +56,11 @@ location ~ ^/setup/index.php {
 }
 ```
 
-Starten Sie nginx neu: `service nginx restart`
+Nginx neu starten: `service nginx restart`
 
 ### Nur Varnisch {#varnish-only}
 
-Wenn Sie Varnish verwenden, bearbeiten Sie `default.vcl` und fügen Sie dem `backend` Stanza wie folgt:
+Wenn Sie &quot;Varnish&quot;verwenden, bearbeiten Sie `default.vcl` und fügen Sie dem Stanza `backend` einen Timeout-Grenzwert wie folgt hinzu:
 
 ```php
 backend default {

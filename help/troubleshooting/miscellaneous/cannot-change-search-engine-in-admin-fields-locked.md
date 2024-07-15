@@ -9,13 +9,13 @@ ht-degree: 0%
 
 ---
 
-# Suchmaschine in kann nicht geändert werden `app/etc/env.php`
+# Suchmaschine in `app/etc/env.php` kann nicht geändert werden
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem Sie versuchen, die Suchmaschinenkonfiguration aus dem `app/etc/env.php` -Datei, aber nach der erneuten Bereitstellung wird die Konfiguration auf die vorherige Einstellung zurückgesetzt oder in [!DNL OpenSearch] Standardmäßig.
+Dieser Artikel bietet eine Lösung für das Problem, bei dem Sie versuchen, die Suchmaschinenkonfiguration aus der `app/etc/env.php` -Datei zu entfernen. Nach der erneuten Bereitstellung wird die Konfiguration jedoch auf die vorherige Einstellung zurückgesetzt oder standardmäßig auf [!DNL OpenSearch] geändert.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problem
 
@@ -23,11 +23,11 @@ Sie versuchen, die Suchmaschine in der Commerce-Admin-Instanz zu ändern, aber d
 
 ## Ursache
 
-Die Suchmaschinenkonfiguration ist in der Variablen `app/etc/env.php` oder die Suchmaschine explizit im `.magento.env.yaml` -Datei.
+Die Suchmaschinenkonfiguration ist in der Datei `app/etc/env.php` gesperrt oder die Suchmaschine ist explizit in der Datei `.magento.env.yaml` definiert.
 
 ## Lösung
 
-1. Überprüfen Sie die `.magento.env.yaml` -Datei unter der Bereitstellungsphase und überprüfen Sie, ob die `SEARCH_CONFIGURATION` wurde konfiguriert. Beispiel:
+1. Überprüfen Sie die Datei &quot;`.magento.env.yaml`&quot;im Bereitstellungsstadium und überprüfen Sie, ob die Variable &quot;`SEARCH_CONFIGURATION`&quot;konfiguriert wurde. Beispiel:
 
    ```yaml
    SEARCH_CONFIGURATION:
@@ -36,10 +36,10 @@ Die Suchmaschinenkonfiguration ist in der Variablen `app/etc/env.php` oder die S
    <VARIABLE X>
    ```
 
-1. Ist die  `SEARCH_CONFIGURATION` vorhanden? Falls nicht vorhanden, ist die Suchmaschinenkonfiguration auf [!DNL OpenSearch] Standardmäßig. Um die Konfiguration zu ändern, müssen Sie die Variable zum `.magento.env.yaml` -Datei mit dem entsprechenden Wert für die Suchmaschine. Wenn die Variable `SEARCH_CONFIGURATION` vorhanden ist und Sie die Engine ändern möchten, ersetzen Sie den vorhandenen Wert für die Engine in `.magento.env.yaml`. Mögliche/bekannte Werte: [!DNL opensearch], [!DNL livesearch], [!DNL elasticsuite], [!DNL amasty_elastic], und [!DNL amasty_elastic_opensearch].
+1. Ist die Variable `SEARCH_CONFIGURATION` vorhanden? Wenn nicht vorhanden, ist die Suchmaschinenkonfiguration standardmäßig auf [!DNL OpenSearch] beschränkt. Um die Konfiguration zu ändern, müssen Sie die Variable der Datei `.magento.env.yaml` mit dem entsprechenden Wert für die Suchmaschine hinzufügen. Wenn die Variable `SEARCH_CONFIGURATION` vorhanden ist und Sie die Engine ändern möchten, ersetzen Sie den vorhandenen Wert für die Engine in `.magento.env.yaml`. Mögliche/bekannte Werte: [!DNL opensearch], [!DNL livesearch], [!DNL elasticsuite], [!DNL amasty_elastic] und [!DNL amasty_elastic_opensearch].
 1. Stellen Sie die Instanz erneut bereit.
 1. Das Suchmaschinenfeld im Admin bleibt gesperrt, sollte jedoch mit dem von Ihnen angegebenen Wert aktualisiert werden.
 
 ## Verwandtes Lesen
 
-* [Gesperrte Felder in Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) in Commerce on Cloud Infrastructure Guide.
+* [Gesperrte Felder in Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) im Handbuch zu Commerce on Cloud Infrastructure.

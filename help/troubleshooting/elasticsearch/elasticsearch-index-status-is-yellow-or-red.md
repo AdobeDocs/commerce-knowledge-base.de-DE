@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Sie müssen den Elasticsearch-Host vor der Installation von Version 2.4.0 eingerichtet und konfiguriert haben. Siehe Abschnitt [Installieren und Konfigurieren von Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md) entfernt. Sie müssen den Elasticsearch-Host vor der Installation von Version 2.4.0 eingerichtet und konfiguriert haben. Siehe [Elasticsearch installieren und konfigurieren](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
 
-Der Artikel enthält eine Fehlerbehebung für den Fall, dass der Indexstatus des Elasticsearchs nicht lautet *grün*&quot;. &#39;*gelb*&quot; bedeutet normal und &quot;*red*&quot; bedeutet &quot;Schlecht&quot;. Der Status &quot;gelb&quot;oder &quot;rot&quot;kann im Zusammenhang mit fehlenden Produkten oder der Anzeige alter Produktinformationen auftreten.
+Der Artikel enthält eine Korrektur für den Fall, dass der Elasticsearch-Indexstatus nicht &quot;*green*&quot;lautet. &quot;*gelb*&quot; bedeutet normal, &quot;*red*&quot; bedeutet &quot;schlecht&quot;. Der Status &quot;gelb&quot;oder &quot;rot&quot;kann im Zusammenhang mit fehlenden Produkten oder der Anzeige alter Produktinformationen auftreten.
 
 ## Betroffene Versionen und Produkte
 
@@ -24,7 +24,7 @@ Der Artikel enthält eine Fehlerbehebung für den Fall, dass der Indexstatus des
 
 ## Problem
 
-Der Suchindex des Elasticsearch-Katalogs ist langsam, was zu einem Status von führt *gelb*&#39; or &#39;*red*&#39; anstelle von &#39;*grün*&quot;. Möglicherweise fehlen auch die Änderungen am Frontend.
+Der Suchindex des Elasticsearch-Katalogs ist langsam, was zu einem Status von &quot;*gelb*&quot; oder &quot;*red*&quot; anstelle von &quot;*grün*&quot; führt. Möglicherweise fehlen auch die Änderungen am Frontend.
 
 ## Ursache
 
@@ -55,7 +55,7 @@ Erstellen Sie eine neue mysql-Sicherungskopie, bevor Sie diese Schritte ausführ
    curl --silent -X GET localhost:9200/_cat/indices?v
    ```
 
-Wenn diese Schritte nicht funktionieren, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn diese Schritte nicht funktionieren, senden [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Verwandtes Lesen
 

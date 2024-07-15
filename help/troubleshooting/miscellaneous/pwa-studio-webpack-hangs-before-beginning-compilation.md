@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Webpack hängt vor Beginn der Kompilierung
 
-In diesem Artikel wird von einer empfohlenen Lösung für JavaScript-Fälle gesprochen [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) lange Zeit hängt, bevor mit der Kompilierung in Progressive Web App Studio (PWA Studio) begonnen wird.
+In diesem Artikel wird von einer empfohlenen Lösung gesprochen, wenn ein JavaScript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) lange Zeit hängt, bevor mit der Kompilierung in Progressiv Web App Studio (PWA Studio) begonnen wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,13 +21,13 @@ In diesem Artikel wird von einer empfohlenen Lösung für JavaScript-Fälle gesp
 
 ## Problem
 
-[Überprüfen Sie, was die neueste Version des pwa-buildpack ist.](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack)und die
+[Überprüfen Sie, was die neueste Version des pwa-buildpack ist](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack), und die
 
 ```yaml
 pwa-buildpack
 ```
 
-Die Versionsnummer befindet sich neben der `package.json` Dateinamenliste. Wenn Sie eine alte Version des
+Die Versionsnummer befindet sich neben der Liste mit dem Dateinamen &quot;`package.json`&quot;. Wenn Sie eine alte Version des
 
 ```yaml
 pwa-buildpack
@@ -88,12 +88,12 @@ openssl version
 
 Die Version sollte 1.0 oder höher sein (oder LibreSSL 2, im Falle von OSX High Sierra.).
 
-Sie können höhere Versionen von OpenSSL mit [Homebrew](https://brew.sh/) auf OSX, [Schokolade](https://chocolatey.org/) unter Windows oder dem Paketmanager Ihrer Linux-Distribution.
+Sie können höhere Versionen von OpenSSL mit [Homebrew](https://brew.sh/) unter OSX, [Chocolatey](https://chocolatey.org/) unter Windows oder dem Paketmanager Ihrer Linux-Distribution installieren.
 
 ## Verwandtes Lesen
 
-* [JavaScript-Webpack: Konzepte](https://webpack.js.org/concepts/)
-* [Einrichtung der Venia-Storefront](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
+* [Javascript-Webpack: Konzepte](https://webpack.js.org/concepts/)
+* [Venia-Storefront-Setup](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
 * [PWA Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
-* [Befehlszeilenschnittstelle von buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
+* [buildpack-Befehlszeilenschnittstelle](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
 * [Tools und Bibliotheken: buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)

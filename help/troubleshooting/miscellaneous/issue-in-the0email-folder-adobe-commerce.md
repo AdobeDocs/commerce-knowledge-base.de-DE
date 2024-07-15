@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problem mit der Berechtigung für var-/export-Ordner in Adobe Commerce in Cloud
 
-Dieser Artikel bietet eine Lösung für ein Problem, bei dem Sie aufgrund eines Problems mit Dateiberechtigungen auf dem Server im `var/export/email` Ordner. Zu den Symptomen gehören Produkt- und Katalogexporte, die nicht in der Benutzeroberfläche verfügbar sind, aber bei Verwendung von SSH sichtbar sind.
+Dieser Artikel bietet eine Lösung für ein Problem, bei dem Sie aufgrund eines Problems mit Dateiberechtigungen auf dem Server im Ordner `var/export/email` keine Produktdaten exportieren können. Zu den Symptomen gehören Produkt- und Katalogexporte, die nicht in der Benutzeroberfläche verfügbar sind, aber bei Verwendung von SSH sichtbar sind.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,13 +21,13 @@ Adobe Commerce für Cloud-Infrastruktur, 2.3.0-2.3.7-p2, 2.4.0-2.4.3-p1
 
 ## Problem
 
-Dateien können nicht im `var/export/email` oder `var/export/archive` Ordner.
-Diese Bereitstellung ist aufgrund von Berechtigungen für fehlgeschlagen. `var/export/email` oder `var/export/email/archive` weil dieser Archivordner unter der E-Mail erstellt wird und wenn ich nur den Export/die E-Mail vornehme, gibt es manchmal noch ein Problem), das andere ist als das Hinzufügen von Elementen zum Unterordner `var/export/email/archive`.
+Sie können keine Dateien im Ordner `var/export/email` oder `var/export/archive` exportieren.
+Diese Bereitstellung schlug aufgrund von Berechtigungen für `var/export/email` oder `var/export/email/archive` fehl, da dieser Archivordner unter E-Mail erstellt wird und wenn ich nur den Export/die E-Mail vornehme, ist manchmal noch ein Problem aufgetreten), das andere ist als das Hinzufügen von Elementen zum Unterordner `var/export/email/archive`.
 
 <u>Zu reproduzierende Schritte</u>:
 
-Navigieren Sie im Admin zu **System** > *Datenübertragung* > **Export**.
-Wählen Sie die CSV-Dateien aus, die im `var/export/` Ordner.
+Wechseln Sie im Admin zu **System** > *Datenübertragung* > **Export**.
+Wählen Sie die CSV-Dateien aus, die im Ordner `var/export/` gespeichert werden sollen.
 
 <u>Erwartetes Ergebnis</u>:
 
@@ -35,15 +35,15 @@ CSV-Dateien sind sichtbar und können exportiert werden.
 
 <u>Tatsächliches Ergebnis</u>:
 
-CSV-Dateien sind nicht sichtbar. Außerdem wird die Meldung über die verweigerte Berechtigung angezeigt: *RecursiveDirectoryIterator::__struct(/app/project id>/var/export/email): Fehler beim Öffnen von Verzeichnis: Berechtigung verweigert*
+CSV-Dateien sind nicht sichtbar. Außerdem wird die Meldung über die verweigerte Berechtigung angezeigt: *RecursiveDirectoryIterator::__struct(/app/project id>/var/export/email): failed to open dir: Permission denied*
 
 Sie erhalten dieselbe Nachricht für alle Exporttypen: Erweiterte Preise, Kundenfinanzierungen, Hauptdatei des Kunden und Kundenadressen.
 
 ## Ursache
 
-Dies wird durch einen Ordner verursacht, der in `/var` mit unvollständigen Berechtigungen: `d-wxrwsr-T`. Der &quot;Sticky&quot;-Bit bedeutet, dass die Benutzer nur die Dateien löschen können, deren Eigentümer sie sind. Die fehlende ausführbare Datei bedeutet jedoch, dass sie keine Dateien im Verzeichnis erstellen können.
+Dies wird durch einen Ordner verursacht, der innerhalb von `/var` erstellt wurde und über falsche Berechtigungen verfügt: `d-wxrwsr-T`. Der &quot;Sticky&quot;-Bit bedeutet, dass die Benutzer nur die Dateien löschen können, deren Eigentümer sie sind. Die fehlende ausführbare Datei bedeutet jedoch, dass sie keine Dateien im Verzeichnis erstellen können.
 
-Dies wird häufig bemerkt, wenn das System einen Ordner mit dem Namen `export`, der den Ordner enthält, der `email`, der den Ordner enthält, der `archive`.
+Dies wird oft bemerkt, wenn das System einen Ordner mit dem Namen `export` erstellt, der einen Ordner mit dem Namen `email` enthält, der einen Ordner mit dem Namen `archive` enthält.
 
 Um zu überprüfen, ob das Verzeichnis über diese falsch konfigurierten Berechtigungen verfügt, führen Sie den folgenden Befehl in der CLI/Terminal aus:
 
@@ -67,4 +67,4 @@ chmod 777 -R var/export/
 
 ## Verwandtes Lesen
 
-* [Export](https://docs.magento.com/user-guide/system/data-export.html) in unserem Benutzerhandbuch.
+* [Exportieren](https://docs.magento.com/user-guide/system/data-export.html) in unser Benutzerhandbuch.

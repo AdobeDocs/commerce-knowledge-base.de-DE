@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Adobe Commerce Recommendations für PHP-Schwachstellen
 
-Am 3. September hat das Multi-State Information Sharing and Analysis Center (MS-ISAC) eine Warnung bezüglich mehrerer Verwundbarkeiten herausgegeben, die eine beliebige Codeausführung ermöglichen könnten, und eine Empfehlung, dass alle Websites, die PHP verwenden, auf die neueste PHP-Version ASAP aktualisiert werden sollten ([Den vollständigen Warnhinweis finden Sie hier .](https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-php-could-allow-for-arbitrary-code-execution_2019-087/)).
+Am 3. September hat das Multi-State Information Sharing and Analysis Center (MS-ISAC) einen Warnhinweis zu mehreren Verwundbarkeiten herausgegeben, die die beliebige Codeausführung ermöglichen könnten, und eine Empfehlung, dass alle Websites mit PHP auf die neueste PHP-Version ASAP aktualisieren sollten ([vollständiger Warnhinweis ist hier verfügbar](https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-php-could-allow-for-arbitrary-code-execution_2019-087/)).
 
 >[!WARNING]
 >
->Beachten Sie bei Adobe Commerce zur Cloud-Infrastruktur, dass Service-Upgrades nicht ohne 48-Stunden-Benachrichtigung an unser Infrastrukturteam in die Produktionsumgebung gesendet werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Geben Sie die erforderliche Dienstaktualisierung an und geben Sie den Zeitpunkt an, zu dem die Aktualisierung beginnen soll.
+>Beachten Sie bei Adobe Commerce zur Cloud-Infrastruktur, dass Service-Upgrades nicht ohne 48-Stunden-Benachrichtigung an unser Infrastrukturteam in die Produktionsumgebung gesendet werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen [senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), in dem Sie Ihre erforderliche Service-Aktualisierung und den Zeitpunkt angeben, zu dem der Upgrade-Prozess beginnen soll.
 
 Weitere Informationen zu den Auswirkungen und Schritten für Adobe Commerce-Sites:
 
@@ -28,9 +28,9 @@ Wenn Sie Adobe Commerce in der Cloud-Infrastruktur verwenden, wenden Sie sich an
 Weitere Hinweise zur erneuten Bereitstellung Ihrer Cloud-Site für diese Aktualisierung:
 
 * Wenn Ihre Website noch PHP Version 7.0 verwendet, müssen Sie zuerst auf eine unterstützte PHP-Version aktualisieren, bevor Sie sie erneut bereitstellen, um diese Sicherheitsaktualisierungen nutzen zu können.
-* Für 2.1.x/2.2.x finden Sie weitere Informationen zum Aktualisieren von PHP. [here](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html).
+* Für 2.1.x/2.2.x finden Sie weitere Informationen zum Aktualisieren von PHP [hier](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html).
 
-\* *Frühere Versionen dieses Artikels und unsere Nachrichten haben den 19. September, aber unsere Teams haben ihre Arbeit schon früher abgeschlossen.*
+\* *In früheren Versionen dieses Artikels und unserer Botschaft wurde der 19. September angegeben, aber unsere Teams haben ihre Arbeit vorzeitig beendet.*
 
 **Adobe Commerce auf allen anderen Hosting-Lösungen**
 
@@ -46,4 +46,4 @@ Gemäß dem Warnhinweis werden für diese Schwachstelle folgende Patches empfohl
 * PHP 7.2: [https://www.php.net/ChangeLog-7.php\#7.2.22](https://www.php.net/ChangeLog-7.php#7.2.22)
 * PHP 7.3: [https://www.php.net/ChangeLog-7.php\#7.3.9](https://www.php.net/ChangeLog-7.php#7.3.9)
 
-Wenn Sie weitere Informationen über PHP und aktuelle Versionen wünschen, können Sie [PHP-Website](https://www.php.net/). Wenn Sie Fragen haben oder weitere Informationen zu Best Practices für die Sicherheit wünschen, besuchen Sie bitte unsere [Handbuch mit Best Practices für die Sicherheit](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf).
+Wenn Sie weitere Informationen über PHP und aktuelle Versionen wünschen, können Sie [PHP&#39;s site](https://www.php.net/) besuchen. Wenn Sie Fragen haben oder weitere Informationen zu Best Practices für die Sicherheit wünschen, lesen Sie bitte unseren [Best Practices für die Sicherheit](https://www.adobe.com/content/dam/cc/en/security/pdfs/Adobe-Magento-Commerce-Best-Practices-Guide.pdf)-Leitfaden.

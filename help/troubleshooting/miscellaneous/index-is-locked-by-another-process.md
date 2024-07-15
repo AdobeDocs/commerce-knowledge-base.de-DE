@@ -21,7 +21,7 @@ In diesem Artikel wird über ein gängiges Indizierungsproblem in Adobe Commerce
 
 ## Problem
 
-Während einer vollständigen Neuindizierung in Ihrer CLI erhalten Sie von Adobe Commerce die Fehlermeldung: *&#39;Index wird durch einen anderen Neuindizierungsprozess gesperrt. Überspringen.&quot;* Mit anderen Worten: Wenn der Prozess oder der Indextyp gesperrt ist, können Sie diesen bestimmten gesperrten Indextyp nicht neu indizieren. Die Neuindizierung überspringt diesen Indextyp immer.
+Während einer vollständigen Neuindizierung in Ihrer CLI erhalten Sie von Adobe Commerce die Fehlermeldung: Der Index von *wird durch einen anderen Neuindizierungsprozess gesperrt. Überspringen.&quot;* Mit anderen Worten: Wenn der Prozess oder der Indextyp gesperrt ist, können Sie diesen bestimmten gesperrten Indextyp nicht neu indizieren. Die Neuindizierung überspringt diesen Indextyp immer.
 
 ## Ursache
 
@@ -83,6 +83,6 @@ In unserer Entwicklerdokumentation:
 
 * [Indizierungsübersicht](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
 * [Best Practices für Indexer](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
-* [Cron konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
-* [Indexer verwalten](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
-* [Indexer-Optimierung](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)
+* [CRON konfigurieren und ausführen](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
+* [Verwalten der Indexer](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
+* [Indexoptimierung](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexer-batch.html)

@@ -12,5 +12,5 @@ ht-degree: 0%
 
 # Kontoinhaber ändern (Zugriffsberechtigungen über API-Token) für Fastly in Cloud
 
-Weitere Informationen finden Sie unter [Schnelles Service-Konto und -Anmeldedaten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) in unserem Commerce on Cloud Infrastructure Guide.
+Weitere Informationen finden Sie im Leitfaden zu Commerce on Cloud Infrastructure im Abschnitt zum [Fastly-Service-Konto und den Anmeldeinformationen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=en#test-fastly-credentials) .
 

@@ -11,4 +11,4 @@ ht-degree: 0%
 
 # Fastly-DNS-Einstellungen in Staging- und Produktionsumgebungen konfigurieren
 
-Weitere Informationen finden Sie unter [Schnelles Einrichten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html) in unserer Entwicklerdokumentation für die neuesten Informationen.
+Aktuelle Informationen finden Sie im Artikel [Schnelles Einrichten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html) in unserer Entwicklerdokumentation.

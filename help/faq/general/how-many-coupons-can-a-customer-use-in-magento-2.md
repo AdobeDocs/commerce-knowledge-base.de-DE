@@ -12,12 +12,12 @@ ht-degree: 0%
 
 # Wie viele Coupons kann ein Kunde in Adobe Commerce verwenden?
 
-Für Adobe Commerce-Versionen unter 2.4.7 können Sie mehrere Coupon-Codes konfigurieren, jedoch **Nur ein Gutscheincode im Warenkorb**.
+Bei Adobe Commerce-Versionen unter 2.4.7 können Sie mehrere Couponcodes konfigurieren, aber **nur einen Couponcode im Warenkorb** verwenden.
 
-Wenn Sie mehr als einen Couponcode gleichzeitig im Warenkorb verwenden möchten, sollten Sie eine entsprechende Erweiterung in [Commerce Marketplace](https://marketplace.magento.com/).
+Wenn Sie mehr als einen Couponcode gleichzeitig im Warenkorb verwenden möchten, können Sie eine entsprechende Erweiterung in [Commerce Marketplace](https://marketplace.magento.com/) in Erwägung ziehen.
 
-Ab Adobe Commerce-Version 2.4.7 können Sie jedoch Folgendes konfigurieren und verwenden: **mehrere Gutscheincodes gleichzeitig im Warenkorb**. Informationen zur Aktivierung finden Sie unter [Mehrfach-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales#multicoupon-settings).
+Ab Adobe Commerce-Version 2.4.7 können Sie jedoch **mehr als einen Couponcode im Warenkorb gleichzeitig konfigurieren und verwenden**. Informationen zur Aktivierung finden Sie unter [Einstellungen für Multicoupon](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales#multicoupon-settings).
 
 ## Weitere Informationen
 
-[Coupon-Codes](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html) in unserem Benutzerhandbuch.
+[Couponcodes](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html) in unserem Benutzerhandbuch.

@@ -1,6 +1,6 @@
 ---
-title: "ACSD-51846: Interner Fehler als [!DNL REST API] Nutzlastebenen werden nicht validiert"
-description: Wenden Sie den Patch ACSD-51846 an, um das Adobe Commerce-Problem zu beheben, bei dem ein "Interner Fehler"auftritt, da alle Ebenen von [!DNL REST API] Nutzdaten werden nicht validiert.
+title: "ACSD-51846: Interner Fehler als [!DNL REST API] Payload-Levels werden nicht validiert"
+description: Wenden Sie den Patch ACSD-51846 an, um das Adobe Commerce-Problem zu beheben, bei dem ein "Interner Fehler"auftritt, da nicht alle Ebenen von [!DNL REST API] Payload validiert werden.
 feature: REST
 role: Developer
 exl-id: 17ce5cca-063d-439c-9390-f5e2bf5b696b
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51846: Interner Fehler als [!DNL REST API] Nutzlastebenen werden nicht validiert
+# ACSD-51846: Interner Fehler als [!DNL REST API] Payload-Level werden nicht validiert
 
-Der Patch ACSD-51846 behebt das Problem, bei dem ein &quot;Interner Fehler&quot;auftritt, da alle Ebenen von [!DNL REST API] Nutzdaten werden nicht validiert. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.36 installiert ist. Die Patch-ID ist ACSD-51846. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
+Der Patch ACSD-51846 behebt das Problem, bei dem ein &quot;Interner Fehler&quot;auftritt, da nicht alle Ebenen der [!DNL REST API]-Payload validiert werden. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.36 installiert ist. Die Patch-ID ist ACSD-51846. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,16 +27,16 @@ Der Patch ACSD-51846 behebt das Problem, bei dem ein &quot;Interner Fehler&quot;
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Ein &quot;Interner Fehler&quot;tritt auf, wenn alle Ebenen von [!DNL REST API] Nutzdaten werden nicht validiert.
+Ein &quot;Interner Fehler&quot;tritt auf, da nicht alle Ebenen von [!DNL REST API] Payload validiert werden.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Fügen Sie dem Warenkorb des Kunden ein Produkt hinzu.
-1. Senden Sie die [!DNL REST API] Anfrage an `rest/V1/carts/mine/estimate-shipping-methods` Verwendung eines falschen Attributs &quot;_Straße._&quot; mit einem Punkt am Ende.
+1. Senden Sie die [!DNL REST API] -Anfrage an `rest/V1/carts/mine/estimate-shipping-methods` mit einem falschen Attribut &quot;_street&quot;._&quot; mit einem Punkt am Ende.
 
 ```
  {
@@ -65,7 +65,7 @@ Ein &quot;Interner Fehler&quot;tritt auf, wenn alle Ebenen von [!DNL REST API] N
 
 <u>Erwartete Ergebnisse</u>:
 
-Der Endpunkt sollte den Parameter validieren und die `400 status code` mit einer bestimmten Fehlermeldung. Beispiel:
+Der Endpunkt sollte den Parameter validieren und die `400 status code` mit einer bestimmten Fehlermeldung zurückgeben. Beispiel:
 
 ```
 report.CRITICAL: LogicException: Property "Street." does not have accessor method "getStreet." in class "Magento\Quote\Api\Data\AddressInterface". in vendor/magento/framework/Reflection/NameFinder.php:103
@@ -73,20 +73,20 @@ report.CRITICAL: LogicException: Property "Street." does not have accessor metho
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Endpunkt überprüft den falschen Parameter nicht und gibt die `500 status code` Fehler.
+Der Endpunkt validiert den falschen Parameter nicht und gibt den Fehler `500 status code` zurück.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

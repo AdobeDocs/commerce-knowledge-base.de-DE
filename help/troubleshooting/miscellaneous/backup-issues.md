@@ -35,26 +35,26 @@ Geben Sie den folgenden CLI-Befehl ein:
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
-Weitere Informationen zu Backups finden Sie unter [Sichern Sie das Dateisystem, die Medien und die Datenbank und führen Sie einen Rollback durch.](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-backup.html)
+Weitere Informationen zu Backups finden Sie unter [Sichern Sie das Dateisystem, die Medien und die Datenbank und führen Sie sie durch.](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-backup.html)
 
 ## Unzureichender Festplattenspeicher {#insufficient-disk-space-trouble-backup-space-}
 
 Wenn die Sicherung fehlschlägt, weil nicht genügend Speicherplatz vorhanden ist, sollten Sie normalerweise Speicherplatz freigeben, indem Sie einige Dateien auf ein anderes Speichergerät oder Laufwerk verschieben. Es gibt jedoch möglicherweise andere Möglichkeiten, das Problem zu lösen. Tipps finden Sie in einer der folgenden Ressourcen:
 
-* [8 Tipps zur Lösung von Problemen mit Linux- und Unix-Systemfestplatten wie voll Disk Full oder kann nicht auf die Festplatte schreiben](https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk)
-* [serverfailure: df sagt, dass die Festplatte voll ist, aber nicht](https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not)
-* [unix.stackexchange.com: Verfolgen Sie, wo auf Linux Speicherplatz gegangen ist?](https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux)
+* [8 Tipps, um Probleme mit Linux- und Unix-Systemfestplatten zu lösen, z. B. Festplatte voll oder kann nicht auf die Festplatte schreiben](https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk)
+* [serverfailure: df gibt an, dass die Festplatte voll ist, aber nicht](https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not)
+* [unix.stackexchange.com: Verfolgung des Speicherplatzes auf Linux?](https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux)
 
 ## Betriebssystemfehler {#operating-system-error-trouble-backup-os-}
 
 Leider können wir aufgrund der Vielzahl von Fehlern, auf die Sie stoßen können, keine besonderen Empfehlungen geben. Wir können Ihnen jedoch Folgendes vorschlagen:
 
 * Wenden Sie sich an Ihren Systemadministrator.
-* Durchsuchen Sie öffentliche Foren wie [Stack Exchange](https://unix.stackexchange.com) oder [Stapelüberlauf](https://stackoverflow.com)
-* Öffnen Sie eine [GitHub-Problem](https://github.com/magento/magento2/issues) und wir werden versuchen zu helfen.
+* Durchsuchen Sie öffentliche Foren wie [Stack Exchange](https://unix.stackexchange.com) oder [Stack Overflow](https://stackoverflow.com)
+* Öffnen Sie ein [GitHub-Problem](https://github.com/magento/magento2/issues) und wir versuchen, Ihnen zu helfen.
 
 ## Backup schlägt fehl {#backup-fails-trouble-backup-all-}
 
-Wenn die Sicherung fehlschlägt oder alle Sicherungstests fehlschlagen, kann die [Adobe Commerce-Dateisysteminhaber](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/file-sys-perms-over.html) verfügt nicht über ausreichende Berechtigungen und Eigentümer des Adobe Commerce-Dateisystems. Beispielsweise könnten die Dateien einem anderen Benutzer gehören oder die Dateien sind möglicherweise schreibgeschützt.
+Wenn die Sicherung fehlschlägt oder alle Sicherungstests fehlschlagen, verfügt der [Adobe Commerce-Dateisysteminhaber](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/file-sys-perms-over.html) möglicherweise nicht über ausreichende Berechtigungen und das Eigentum des Adobe Commerce-Dateisystems. Beispielsweise könnten die Dateien einem anderen Benutzer gehören oder die Dateien sind möglicherweise schreibgeschützt.
 
-Beachten Sie insbesondere die Dateisystemberechtigungen und das Eigentum an der `<magento_root>/var` Verzeichnis und Unterverzeichnissen. Weitere Informationen finden Sie unter [Festlegen von Dateisystemberechtigungen und -berechtigungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-system-perms.html).
+Achten Sie besonders auf Dateisystemberechtigungen und das Eigentum an dem Verzeichnis `<magento_root>/var` und den Unterverzeichnissen. Weitere Informationen finden Sie unter [Festlegen von Dateisystemberechtigungen und -eigentum](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-system-perms.html).

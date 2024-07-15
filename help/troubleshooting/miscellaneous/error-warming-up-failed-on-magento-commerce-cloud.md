@@ -19,7 +19,7 @@ Dieser Artikel bietet eine Lösung für den Fall, dass der Seiten-Cache wärmer 
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützte Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problem
 
@@ -43,9 +43,9 @@ Die Cache-Aktualisierung funktioniert nicht, wenn die HTTP-Zugriffssteuerung akt
 
 ## Lösung
 
-Vergewissern Sie sich, dass die Zugriffskontrolle nicht aktiviert ist: Wechseln Sie zur jeweiligen Verzweigung/Umgebung und klicken Sie auf die Schaltfläche **Einstellungen** und überprüfen Sie die **HTTP-Zugriffssteuerung** Einstellung - In diesem Szenario kann keine Cache-Aufwärmung erfolgen und die Zugriffskontrolle muss deaktiviert werden.
+Vergewissern Sie sich, dass die Zugriffskontrolle nicht aktiviert ist: Wechseln Sie zur jeweiligen Verzweigung/Umgebung und klicken Sie auf das Symbol &quot;**Einstellungen**&quot;. Aktivieren Sie die Einstellung &quot;**HTTP-Zugriffssteuerung**&quot;. In diesem Szenario kann keine Aktualisierung des Cache vorgenommen werden. Die Zugriffssteuerung muss deaktiviert werden.
 
 ## Verwandtes Lesen
 
 * [Adobe Commerce-Benutzerhandbuch > Vollseiten-Cache](https://docs.magento.com/user-guide/system/cache-full-page.html) in unserem Benutzerhandbuch.
-* [Cache-Erwärmung und Site in Adobe Commerce nicht verfügbar](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) in unserer Wissensdatenbank.
+* [Caching-Erwärmung und Site nicht verfügbar auf Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) in unserer Support-Wissensdatenbank.

@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Dieser Artikel bietet Lösungen für Probleme mit der Cron-Bereitschaft. Im Folgenden finden Sie Symptome von Cron-Problemen:
 
-* Eine Fehlermeldung zur PHP-Einstellung `$HTTP_RAW_POST_DATA` angezeigt, obwohl sie richtig eingestellt ist.
+* Eine Fehlermeldung über die PHP-Einstellung &quot;`$HTTP_RAW_POST_DATA`&quot; wird angezeigt, obwohl sie richtig eingestellt ist.
 * Die PHP Ready Check zeigt die PHP-Version nicht wie in der folgenden Abbildung dargestellt an:
   ![upgr-tshooting-no-cron.png](assets/upgr-tshoot-no-cron.png)
 * Der folgende Fehler wird in Commerce Admin angezeigt:
   ![compman-cron-not-running.png](assets/compman-cron-not-running.png)
-Um den Fehler anzuzeigen, müssen Sie möglicherweise auf **Systemmeldungen** oben im Fenster wie folgt:
+Um den Fehler anzuzeigen, müssen Sie möglicherweise oben im Fenster auf **Systemmeldungen** klicken:
   ![compman_sys-messages.png](assets/compman_sys-messages.png)
 
 ## Überprüfen Sie die vorhandene Registerkarte {#check-your-existing-crontab}
@@ -29,9 +29,9 @@ In diesem Abschnitt wird beschrieben, wie Sie sehen, ob Cron derzeit ausgeführt
 
 So überprüfen Sie, ob Ihr Crontab eingerichtet ist:
 
-1. Melden Sie sich bei Ihrem Commerce-Server an oder wechseln Sie zu dem [Magento-Dateisysteminhaber](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html).
-1. Überprüfen Sie, ob die folgende Datei vorhanden ist: `$ ls -al <magento_root>/var/.setup_cronjob_status`. Wenn die Datei vorhanden ist, hat cron in der Vergangenheit erfolgreich ausgeführt. Wenn die Datei *nicht* vorhanden sind, entweder haben Sie Adobe Commerce noch nicht installiert oder Cron wird nicht ausgeführt. Fahren Sie in beiden Fällen mit dem nächsten Schritt fort.
-1. Erfahren Sie mehr über Cron. Als Benutzer mit `root` -Berechtigungen verwenden, geben Sie den folgenden Befehl ein: `$ crontab -u <Magento file system owner name> -l`. Beispiel: unter CentOS `$ crontab -u magento_user -l`. Wenn für den Benutzer kein Crontab eingerichtet wurde, wird die folgende Meldung angezeigt:    `no crontab for magento_user`. Ihr Crontab sagt Ihnen Folgendes:
+1. Melden Sie sich bei Ihrem Commerce-Server als [Magento-Dateisysteminhaber](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) an oder wechseln Sie zu ihm.
+1. Überprüfen Sie, ob die folgende Datei vorhanden ist: `$ ls -al <magento_root>/var/.setup_cronjob_status`. Wenn die Datei vorhanden ist, hat cron in der Vergangenheit erfolgreich ausgeführt. Wenn die Datei *nicht* vorhanden ist, haben Sie Adobe Commerce noch nicht installiert oder Cron wird nicht ausgeführt. Fahren Sie in beiden Fällen mit dem nächsten Schritt fort.
+1. Erfahren Sie mehr über Cron. Geben Sie als Benutzer mit `root` -Berechtigungen den folgenden Befehl ein: `$ crontab -u <Magento file system owner name> -l`. Beispiel: bei CentOS `$ crontab -u magento_user -l`. Wenn für den Benutzer kein Crontab eingerichtet wurde, wird die folgende Meldung angezeigt:    `no crontab for magento_user`. Ihr Crontab sagt Ihnen Folgendes:
    * Welche PHP-Binärdatei Sie verwenden (in einigen Fällen haben Sie mehr als eine)
    * Welche Adobe Commerce-Cron-Skripte Sie ausführen (insbesondere die Pfade zu diesen Skripten)
    * Wo sich Ihre Cron-Protokolle befinden
@@ -40,7 +40,7 @@ So überprüfen Sie, ob Ihr Crontab eingerichtet ist:
 
 ## Lösung: crontab nicht eingerichtet {#solution-crontab-not-set-up}
 
-Informationen zum Überprüfen der ordnungsgemäßen Einrichtung Ihrer Cron-Aufträge finden Sie unter [Einrichten von Cron-Aufträgen](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) in unserer Entwicklerdokumentation.
+Um sicherzustellen, dass Ihre Cron-Aufträge ordnungsgemäß eingerichtet sind, lesen Sie [Einrichten von Cron-Aufträgen](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) in unserer Entwicklerdokumentation.
 
 ## Lösung: cron läuft aus falscher PHP-Binärdatei {#solution-cron-running-from-incorrect-php-binary}
 
@@ -54,4 +54,4 @@ Versuchen Sie, jeden Befehl manuell auszuführen, da der Befehl möglicherweise 
 
 >[!NOTE]
 >
->Sie müssen cron mindestens ausführen *zweimal* für den Auftrag, der ausgeführt werden soll; das erste Mal, dass Aufträge in die Warteschlange gestellt werden, das zweite Mal, dass die Aufträge ausgeführt werden.
+>Sie müssen cron mindestens *zweimal* ausführen, damit der Auftrag ausgeführt wird. Das erste Mal, dass Aufträge in die Warteschlange gestellt werden, das zweite Mal, um die Aufträge auszuführen.

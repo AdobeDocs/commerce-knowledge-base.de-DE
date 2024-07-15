@@ -1,6 +1,6 @@
 ---
-title: '"ACSD-49502: Download-Link wurde nach nicht korrekt aktualisiert [!DNL staging] update'''
-description: Wenden Sie den Patch ACSD-49502 an, um das Adobe Commerce-Problem zu beheben, bei dem der herunterladbare Link nach einem [!DNL staging] wird auf das herunterladbare Produkt angewendet.
+title: '"ACSD-49502: Downloadfähiger Link nach [!DNL staging] Update'' nicht korrekt aktualisiert'
+description: Wenden Sie den Patch ACSD-49502 an, um das Adobe Commerce-Problem zu beheben, bei dem der herunterladbare Link nicht ordnungsgemäß aktualisiert wird, nachdem ein [!DNL staging] Update auf das herunterladbare Produkt angewendet wurde.
 exl-id: 9e7f0c06-4b7d-42c4-8ec7-cdeefd7e8a08
 feature: Staging
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-49502: Download-Link wurde nach nicht korrekt aktualisiert [!DNL staging] update
+# ACSD-49502: Download-Link nach [!DNL staging] Update nicht korrekt aktualisiert
 
-Der Patch ACSD-49502 behebt das Problem, dass der herunterladbare Link nach einem [!DNL staging] wird auf das herunterladbare Produkt angewendet. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.29 ist installiert. Die Patch-ID lautet ACSD-49502. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-49502 behebt das Problem, dass der herunterladbare Link nach der Anwendung eines [!DNL staging] -Updates auf das herunterladbare Produkt nicht korrekt aktualisiert wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.29 installiert ist. Die Patch-ID lautet ACSD-49502. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Der Patch ACSD-49502 behebt das Problem, dass der herunterladbare Link nach eine
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Der herunterladbare Link wird nach einer [!DNL staging] wird auf das herunterladbare Produkt angewendet.
+Der herunterladbare Link wird nicht ordnungsgemäß aktualisiert, nachdem ein [!DNL staging] -Update auf das herunterladbare Produkt angewendet wurde.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie ein herunterladbares Produkt mit Links.
 1. Erstellen Sie ein Kundenkonto und melden Sie sich an.
 1. Fügen Sie das herunterladbare Produkt aus der Storefront in den Warenkorb.
-1. Im **[!UICONTROL Admin]**, planen Sie ein neues Update für das herunterladbare Produkt und lassen Sie die geplante Aktualisierung abgeschlossen.
+1. Planen Sie in der **[!UICONTROL Admin]** ein neues Update für das herunterladbare Produkt und lassen Sie die geplante Aktualisierung abgeschlossen.
 1. Führen Sie die Bestellung auf der Storefront aus.
 
 <u>Erwartete Ergebnisse</u>:
@@ -47,20 +47,20 @@ Downloadbare Links werden beibehalten, wenn geplante Aktualisierungen verwendet 
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Herunterladbare Links fehlen sowohl unter dem *[!UICONTROL My Account]* ([!UICONTROL My Downloadable Products]) und Bestellansichtsseiten in der  **[!UICONTROL Admin]**.
+Herunterladbare Links fehlen sowohl unter den *[!UICONTROL My Account]* ([!UICONTROL My Downloadable Products]) des Kunden als auch auf den Bestellansichtsseiten in der **[!UICONTROL Admin]**.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

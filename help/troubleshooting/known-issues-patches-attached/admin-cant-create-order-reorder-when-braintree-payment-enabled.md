@@ -25,10 +25,10 @@ Dieser Artikel enthält einen Patch für die Adobe Commerce-Ausgabe 2.4.5, in de
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Die Core-Braintree-Integration wird verwendet (**Stores** > **Konfigurationen** > **Vertrieb** > **Zahlungsmethode** > **Braintree**).
+1. Die Core-Braintree-Integration wird verwendet (**Speicher** > **Konfigurationen** > **Verkauf** > **Zahlungsmethode** > **Braintree**).
 1. Platzieren Sie eine Bestellung über die Storefront von Luma.
-1. Navigieren Sie zur Admin-Benutzeroberfläche > **Vertrieb**.
-1. Versuchen Sie entweder, eine neue Bestellung für einen Kunden zu erstellen, oder gehen Sie zu einer zuvor aufgegebenen Bestellung und klicken Sie auf **Neu anordnen**.
+1. Wechseln Sie zu Admin-Benutzeroberfläche > **Vertrieb**.
+1. Versuchen Sie entweder, eine neue Bestellung für einen Kunden zu erstellen, oder gehen Sie zu einer zuvor platzierten Bestellung und klicken Sie auf **Neu anordnen**.
 
 <u>Erwartetes Ergebnis</u>:
 
@@ -58,7 +58,7 @@ Der Patch ist an diesen Artikel angehängt. Um es herunterzuladen, klicken Sie a
 
 >[!NOTE]
 >
->Zusätzlich zu Adobe Commerce für Cloud-Infrastruktur-Händler: Adobe hat die Fehlerbehebung in den Cloud-Patches für Commerce-Version 1.0.18 enthalten. Siehe [Cloud Patches für Commerce - Versionshinweise](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) in unserer Entwicklerdokumentation finden Sie Anweisungen zur Anwendung des neuesten Pakets.
+>Zusätzlich zu Adobe Commerce für Cloud-Infrastruktur-Händler: Adobe hat die Fehlerbehebung in den Cloud-Patches für Commerce-Version 1.0.18 enthalten. Anweisungen zum Anwenden des neuesten Pakets finden Sie in der Entwicklerdokumentation unter [Cloud-Patches für Commerce-Versionshinweise](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) .
 
 ### Kompatible Adobe Commerce-Versionen:
 
@@ -74,4 +74,4 @@ Der Patch wurde für erstellt:
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank für Anleitungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.

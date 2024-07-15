@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1 Bekanntes Problem: dotdigital login
 
-In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.3.6, 2.4.0-p1 und 2.4.1 beschrieben, bei dem es nicht möglich ist, sich bei [dotdigital](https://dotdigital.com/) über das Admin Panel , wenn das dotdigital-Konto aktiviert ist.
+In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.3.6, 2.4.0-p1 und 2.4.1 beschrieben, bei dem es nicht möglich ist, sich über das Admin Panel bei [dotdigital](https://dotdigital.com/) anzumelden, wenn das digitale Konto aktiviert ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,8 +30,8 @@ In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.3.6, 2.4.0-p1 
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **Stores** > **Konfiguration** > **DOTDIGITAL** > **Chat-Einstellungen** > **Aktiviert** auf *Ja.*
-1. Klicken Sie auf **Konfigurieren** in **Chat-Widget konfigurieren** oder **Chat-Teams konfigurieren**.
+1. Gehen Sie zu **Stores** > **Konfiguration** > **DOTDIGITAL** > **Chat-Einstellungen** > **Aktiviert** ist auf *Ja* eingestellt.
+1. Klicken Sie auf **Konfigurieren** in **Chat-Widget konfigurieren** oder **Chat-Teams konfigurieren** .
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -47,4 +47,4 @@ Problemumgehung: Verwenden Sie für diese spezielle Situation einen alternativen
 
 ## Verwandte Informationen
 
-[Adobe Commerce 2.4.1 Bekanntes Problem - Testadresse nicht mit unterschiedlichen Versand-/Rechnungsadressen validiert](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) in unserer Wissensdatenbank.
+[Bekanntes Problem mit Adobe Commerce 2.4.1 - Testadresse, die nicht mit verschiedenen Versand-/Rechnungsadressen validiert wurde](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) in unserer Support-Wissensdatenbank.

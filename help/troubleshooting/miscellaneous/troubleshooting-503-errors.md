@@ -17,25 +17,25 @@ Dieser Artikel bietet Lösungen zur Fehlerbehebung von 503-Fehlern, die dadurch 
 
 ## Problem
 
-Wenn die Länge der von Adobe Commerce verwendeten Cache-Tags den Standardwert von Varnish von 8192 Byte überschreitet, werden im Browser HTTP 503-Fehler (Backend Fetch Failed) angezeigt. Die Fehler können in etwa wie folgt aussehen: *&quot;Fehler 503 Backend-Abruf fehlgeschlagen. Backend-Abruf fehlgeschlagen&quot;*
+Wenn die Länge der von Adobe Commerce verwendeten Cache-Tags den Standardwert von Varnish von 8192 Byte überschreitet, werden im Browser HTTP 503-Fehler (Backend Fetch Failed) angezeigt. Die Fehler werden möglicherweise in etwa wie folgt angezeigt: *&quot;Fehler 503 Backend-Abruf fehlgeschlagen. Backend-Abruf fehlgeschlagen&quot;*
 
 ## Lösung
 
-Um dieses Problem zu beheben, erhöhen Sie den Standardwert des `http_resp_hdr_len` in der Konfigurationsdatei &quot;Varnish&quot;fest. Die `http_resp_hdr_len` Parameter gibt die maximale Kopfzeilenlänge an *Innerhalb* die standardmäßige Antwortgröße von 32768 Byte.
+Um dieses Problem zu beheben, erhöhen Sie den Standardwert des Parameters `http_resp_hdr_len` in Ihrer Varnish-Konfigurationsdatei. Der Parameter `http_resp_hdr_len` gibt die maximale Header-Länge *innerhalb* der standardmäßigen Gesamtantwortgröße von 32768 Byte an.
 
 >[!NOTE]
 >
->Wenn die Variable `http_resp_hdr_len` -Wert größer als 32 K ist, müssen Sie auch die standardmäßige Antwortgröße mit der Variablen `http_resp_size` -Parameter.
+>Wenn der `http_resp_hdr_len` -Wert 32 K überschreitet, müssen Sie auch die standardmäßige Antwortgröße mit dem Parameter `http_resp_size` erhöhen.
 
-1. Als Benutzer mit `root` -Berechtigungen verwenden, öffnen Sie die Konfigurationsdatei &quot;Vanish&quot;in einem Texteditor:
+1. Als Benutzer mit `root` -Berechtigungen öffnen Sie die Konfigurationsdatei &quot;Vanish&quot;in einem Texteditor:
    * CentOS 6: `/etc/sysconfig/varnish`
    * CentOS 7: `/etc/varnish/varnish.params`
    * Debian: `/etc/default/varnish`
    * Ubuntu: `/etc/default/varnish`
-1. Suchen Sie nach `http_resp_hdr_len` -Parameter.
-1. Wenn der Parameter nicht vorhanden ist, fügen Sie ihn nach `thread_pool_max` .
-1. Satz `http_resp_hdr_len` auf einen Wert, der der Produktanzahl Ihrer größten Kategorie entspricht, multipliziert mit 21. (Jedes Produkt-Tag hat eine Länge von etwa 21 Zeichen.)    Die Festlegung des Werts auf 65536 Byte sollte beispielsweise funktionieren, wenn Ihre größte Kategorie 3.000 Produkte aufweist.    Beispiel:    ```conf    -p http_resp_hdr_len=65536 \    ```
-1. Legen Sie die `http_resp_size` auf einen Wert hinzu, der die längere Antwortheader-Länge berücksichtigt.    Beispielsweise ist die Verwendung der Summe der erhöhten Kopfzeilenlänge und der standardmäßigen Antwortgröße ein guter Ausgangspunkt (z. B. 65536 + 32768 = 98304): `-p http_resp_size=98304`. Ein Snippet folgt:
+1. Suchen Sie nach dem Parameter `http_resp_hdr_len` .
+1. Wenn der Parameter nicht vorhanden ist, fügen Sie ihn nach `thread_pool_max` hinzu.
+1. Setzen Sie `http_resp_hdr_len` auf einen Wert, der der Anzahl der Produkte Ihrer größten Kategorie entspricht, multipliziert mit 21. (Jedes Produkt-Tag hat eine Länge von etwa 21 Zeichen.)    Die Festlegung des Werts auf 65536 Byte sollte beispielsweise funktionieren, wenn Ihre größte Kategorie 3.000 Produkte aufweist.    Beispiel:    ```conf    -p http_resp_hdr_len=65536 \    ```
+1. Setzen Sie &quot;`http_resp_size`&quot;auf einen Wert, der der erhöhten Antwortheader-Länge entspricht.    Beispielsweise ist die Verwendung der Summe der erhöhten Kopfzeilenlänge und der standardmäßigen Antwortgröße ein guter Ausgangspunkt (z. B. 65536 + 32768 = 98304): `-p http_resp_size=98304`. Ein Snippet folgt:
 
    ```
    # DAEMON_OPTS is used by the init script.
@@ -55,7 +55,7 @@ Um dieses Problem zu beheben, erhöhen Sie den Standardwert des `http_resp_hdr_l
 
 Wenn Sie den Cache deaktivieren, während &quot;Varnish&quot;als Cacheanwendung konfiguriert ist und sich Adobe Commerce im Entwicklermodus befindet, ist es möglicherweise nicht möglich, sich beim Administrator anzumelden.
 
-Diese Situation kann auftreten, da die standardmäßige Konsistenzprüfung eine `timeout` -Wert von 2 Sekunden. Es kann mehr als 2 Sekunden dauern, bis die Konsistenzprüfung Informationen zu jeder Konsistenzprüfungsanforderung erfasst und zusammenführt. Tritt dies bei 6 von 10 Konsistenzprüfungen auf, wird der Adobe Commerce-Server als ungesund betrachtet. Varnish stellt veraltete Inhalte bereit, wenn der Server ungesund ist.
+Diese Situation kann auftreten, da die standardmäßige Konsistenzprüfung den Wert `timeout` von 2 Sekunden hat. Es kann mehr als 2 Sekunden dauern, bis die Konsistenzprüfung Informationen zu jeder Konsistenzprüfungsanforderung erfasst und zusammenführt. Tritt dies bei 6 von 10 Konsistenzprüfungen auf, wird der Adobe Commerce-Server als ungesund betrachtet. Varnish stellt veraltete Inhalte bereit, wenn der Server ungesund ist.
 
 Da der Zugriff auf Admin über einen anderen Vorgang erfolgt, können Sie sich nicht bei Admin anmelden, um die Zwischenspeicherung zu aktivieren (es sei denn, Adobe Commerce wird wieder gesund). Sie können jedoch den folgenden Befehl verwenden, um den Cache zu aktivieren:
 

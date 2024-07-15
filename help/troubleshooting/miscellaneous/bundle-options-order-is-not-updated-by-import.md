@@ -46,7 +46,7 @@ Die Position der Optionen wurde nicht explizit deklariert.
 
 ## Lösung
 
-1. Eine Position explizit für jede Option im `position` Parameter der `bundle_values` in der .csv -Datei. Detaillierte Anweisungen finden Sie unter [Produktdaten bearbeiten](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) in unserem Benutzerhandbuch.
+1. Deklarieren Sie eine Position explizit für jede Option im Parameter `position` der Spalte `bundle_values` in der CSV-Datei. Detaillierte Anweisungen finden Sie unter [Bearbeiten der Produktdaten](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) in unserem Benutzerhandbuch.
 1. Wiederholen Sie den Importvorgang.
 
-Allgemeine Informationen zum Import finden Sie im Abschnitt [Bundle-Produkt importieren](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) in unserem Benutzerhandbuch.
+Allgemeine Informationen zum Import finden Sie im Benutzerhandbuch unter [Importieren von Bundle-Produkten](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) .

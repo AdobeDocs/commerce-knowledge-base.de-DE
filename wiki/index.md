@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Willkommen auf der Startseite der Dokumentation zur Knowledge Base-Repository des Adobe Commerce-Supports.
 Hier finden Sie Dokumente, die Ihnen dabei helfen, am besten passende Beiträge und Vorlagen zu erstellen, die dem gleichen Zweck dienen.
-Wenn Sie mehr über den allgemeinen Beitragsfluss erfahren müssen, navigieren Sie zu [Mitarbeiter-Handbuch](../.github/CONTRIBUTING.md).
+Wenn Sie mehr über den allgemeinen Beitragsfluss erfahren müssen, gehen Sie zum [Leitfaden für Beitragende](../.github/CONTRIBUTING.md).
 
 ## Handbücher
 

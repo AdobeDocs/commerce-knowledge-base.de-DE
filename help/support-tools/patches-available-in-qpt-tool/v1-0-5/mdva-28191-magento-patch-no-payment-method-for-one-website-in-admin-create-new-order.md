@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-28191: Keine Zahlungsmethode für eine Website in Admin Neue Bestellung erstellen
 
-Der Patch MDVA-28191 behebt das Problem, dass eine Zahlungsmethode im Admin nicht geladen wird **Neue Bestellung erstellen** für eine Website, obwohl Zahlungsmethoden für andere Websites angezeigt werden können.  Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) -Tool-Version 1.0.5 installiert ist.
+Der Patch MDVA-28191 behebt das Problem, dass eine Zahlungsmethode nicht in den Admin **Create New Order** für eine Website geladen wird, obwohl für andere Websites möglicherweise Zahlungsmethoden angezeigt werden.  Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) Tool Version 1.0.5 installiert ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,7 +21,7 @@ Adobe Commerce lokal und Adobe Commerce auf Cloud-Infrastruktur 2.3.3 bis 2.4.1 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -29,10 +29,10 @@ Beim Erstellen einer Bestellung aus dem Backend erstellt Adobe Commerce zwei Anf
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Navigieren Sie zu **Admin Panel** > **Vertrieb** > **Bestellungen** und klicken Sie auf **Neue Bestellung erstellen** Schaltfläche.
+1. Wechseln Sie zu **Admin Panel** > **Sales** > **Bestellungen** und klicken Sie auf die Schaltfläche **Neue Bestellung erstellen** .
 1. Wählen Sie den Kunden aus, für den Sie die Bestellung erstellen möchten.
-1. Wenn Ihr Store mehrere Ansichten hat, wählen Sie die Store-Ansicht, in der die Bestellung platziert werden soll, auf der **Neue Bestellung erstellen** Seite für den ausgewählten Benutzer.
-1. Fügen Sie Produkte aus der **Kundenaktivitäten** oder aus dem Katalog durch Klicken auf **Produkte hinzufügen**. Scrollen Sie nach unten auf der Seite, um die folgenden Abschnitte für die Bestellung abzuschließen:
+1. Wenn Ihr Store mehrere Ansichten hat, wählen Sie die Store-Ansicht, in der die Bestellung platziert werden soll, auf der Seite **Neue Bestellung erstellen** für den ausgewählten Benutzer aus.
+1. Fügen Sie Produkte aus dem Abschnitt **Aktivitäten des Kunden** hinzu oder klicken Sie aus dem Katalog auf **Produkte hinzufügen**. Scrollen Sie nach unten auf der Seite, um die folgenden Abschnitte für die Bestellung abzuschließen:
    * Coupon-Codes anwenden
    * Zahlungsmethode
    * Versandmethode
@@ -42,22 +42,22 @@ Beim Erstellen einer Bestellung aus dem Backend erstellt Adobe Commerce zwei Anf
 
 Zahlungsmethoden sollten für alle Websites in den Admin geladen werden.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Keine Zahlungsmethode verfügbar (auch keine Nachricht &quot;*Keine Zahlungsinformationen erforderlich*&quot; angezeigt) für diese Website, obwohl Zahlungsmethoden beim Testen von Bestellungen für andere Websites angezeigt werden können.
+Für diese Website gibt es keine Zahlungsmethode (ebenso wenig wie die Meldung &quot;*Keine Zahlungsinformationen erforderlich*&quot;), auch wenn beim Testen von Bestellungen für andere Websites Zahlungsmethoden angezeigt werden können.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

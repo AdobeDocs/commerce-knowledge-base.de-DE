@@ -17,17 +17,17 @@ Dieser Artikel enthält einen Patch für die bekannte Adobe Commerce 2.3.0-Einsc
 
 >[!NOTE]
 >
->Die zentrale Adobe Commerce Cybersource-Zahlungsintegration ist seit 2.3.3 veraltet und wird in 2.4.0 vollständig entfernt. Verwenden Sie die [offizielle Erweiterung](https://marketplace.magento.com/cybersource-global-payment-management.html) vom Marketplace aus.
+>Die zentrale Adobe Commerce Cybersource-Zahlungsintegration ist seit 2.3.3 veraltet und wird in 2.4.0 vollständig entfernt. Verwenden Sie stattdessen die offizielle Erweiterung [vom Marketplace aus.](https://marketplace.magento.com/cybersource-global-payment-management.html)
 
 ## Problem
 
-Die vorherige Implementierung der Cybersource-Integration ermöglichte nur die Verarbeitung von Zahlungen aus einer Domain. Wenn sich Ihre Adobe Commerce-Storefront daher in einer anderen Domäne als der Commerce-Administrator befindet, erhalten Sie beim Versuch, eine Bestellung mit Cybersource in der Admin-Konsole zu tätigen, den folgenden Fehler: &quot; *Von X-Frame-Options verweigerte Last: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ erlaubt kein ursprungsübergreifendes Framing.* ...&quot;
+Die vorherige Implementierung der Cybersource-Integration ermöglichte nur die Verarbeitung von Zahlungen aus einer Domain. Wenn sich Ihre Adobe Commerce-Storefront daher in einer anderen Domäne als der Commerce-Administrator befindet, erhalten Sie beim Versuch, eine Bestellung mit Cybersource im Admin zu platzieren, den folgenden Fehler: &quot; *Von X-Frame-Optionen verweigertes Laden: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ erlaubt kein ursprungsübergreifendes Framing.* ..&quot;
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Richten Sie Admin für eine andere Subdomäne ein.
-1. Cybersource für den Speicher unter konfigurieren **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Zahlungsmethoden** > **CyberSource**.
-1. Navigieren Sie zu **Vertrieb** > **Bestellungen**.
+1. Konfigurieren Sie Cybersource für den Speicher unter &quot;**Stores**&quot;> &quot;Einstellungen&quot;> &quot;**Konfiguration**&quot;> &quot;**Verkauf**&quot;> &quot;**Zahlungsmethoden**&quot;> &quot;**CyberSource**&quot;.
+1. Wechseln Sie zu **Verkauf** > **Bestellungen**.
 1. Erstellen Sie eine neue Bestellung.
 1. Erstellen Sie einen neuen Kunden.
 1. Geben Sie Kundendetails ein.
@@ -35,13 +35,13 @@ Die vorherige Implementierung der Cybersource-Integration ermöglichte nur die V
 1. Wählen Sie Cybersource als Zahlungsmethode aus.
 1. Bestellung absenden.
 
-<u>Erwartetes Ergebnis</u>: Die Bestellung wird ohne Probleme platziert.
+<u>Erwartetes Ergebnis</u>: Die Reihenfolge wird ohne Probleme platziert.
 
 <u>Tatsächliches Ergebnis</u>: Auf der Seite &quot;Bestellung&quot;wird ein Ladesymbol angezeigt, die Reihenfolge wird jedoch nie platziert. Der Fehler wird in der Konsole angezeigt.
 
 ## Lösung
 
-Der angehängte Patch verbessert die Integration mit Cybersource. Nachdem Sie den Patch angewendet haben, müssen Sie mit Cybersource ein weiteres Profil für die Verarbeitung von Zahlungen in der Admin-Instanz erstellen und die erforderlichen Anmeldeinformationen in der Cybersource-Konfiguration in der Commerce-Admin unter hinzufügen. **Stores** > Einstellungen > **Konfiguration** > **Vertrieb** > **Zahlungsmethoden** > **CyberSource**.
+Der angehängte Patch verbessert die Integration mit Cybersource. Nachdem Sie den Patch angewendet haben, müssen Sie ein weiteres Profil mit Cybersource zur Verarbeitung von Zahlungen in der Admin-Konsole erstellen und die erforderlichen Anmeldeinformationen in der Cybersource-Konfiguration im Commerce-Admin unter **Stores** > Einstellungen > **Konfiguration** > **Verkauf** > **Zahlungsmethoden** > **CyberSource** hinzufügen.
 
 >[!NOTE]
 >
@@ -69,6 +69,6 @@ Die Patches sind auch mit den folgenden Versionen kompatibel:
 
 ## Anwenden eines Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Der manuelle Bestellexport nach MOM schlägt fehl. Die Schaltfläche &quot;Auftrag exportieren&quot;gibt den HTTP-404-Fehler zurück
 
-In diesem Artikel wird beschrieben, wie Sie ein Problem beheben können, bei dem versucht wird, eine Bestellung nach Magento Order Management (MOM) zu exportieren, indem Sie auf das **Auftrag exportieren** -Schaltfläche in der Bestellansicht in Commerce Admin gibt einen &quot;&quot; *404 Seite nicht gefunden* &quot;.
+In diesem Artikel wird erläutert, wie ein Problem behoben werden kann, bei dem beim Versuch, eine Bestellung in Magento Order Management (MOM) zu exportieren, durch Klicken auf die Schaltfläche **Auftrag exportieren** in der Bestellansicht im Commerce-Admin der Fehler &quot;*404 Seite nicht gefunden* &quot; zurückgegeben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -24,10 +24,10 @@ In diesem Artikel wird beschrieben, wie Sie ein Problem beheben können, bei dem
 
 <u>Zu reproduzierende Schritte:</u>:
 
-1. Klicken Sie in Commerce Admin auf **Vertrieb > Bestellungen**.
-1. Klicken Sie auf **Neue Bestellung erstellen** Schaltfläche.
-1. Wählen Sie einen Benutzer aus, fügen Sie einen oder mehrere Artikel hinzu, wählen Sie die Zahlungs- und Versandmethoden aus und klicken Sie auf die Schaltfläche **Bestellung absenden** Schaltfläche.
-1. Klicken Sie auf **Auftrag exportieren** Schaltfläche und dann **OK**.
+1. Klicken Sie in Commerce Admin auf **Verkauf > Bestellungen**.
+1. Klicken Sie auf die Schaltfläche **Neue Bestellung erstellen** .
+1. Wählen Sie einen Benutzer aus, fügen Sie einen oder mehrere Artikel hinzu, wählen Sie die Zahlungs- und Versandmethoden aus und klicken Sie auf die Schaltfläche **Bestellung absenden** .
+1. Klicken Sie auf die Schaltfläche **Auftrag exportieren** und dann auf **OK**.
 
 <u>Erwartetes Ergebnis</u>:
 
@@ -35,7 +35,7 @@ Die Bestellung wird an MOM gesendet.
 
 <u>Tatsächliches Ergebnis</u>:
 
-A *404-Fehler: Seite nicht gefunden* angezeigt.
+Die Seite &quot;*404-Fehler: Seite nicht gefunden* &quot;wird angezeigt.
 
 ## Lösung
 
@@ -48,4 +48,4 @@ $bin/magento oms:orders:sync
 
 ## Verwandtes Lesen
 
-[Technische Dokumentation zu Magento Order Managements](https://omsdocs.magento.com/en/)
+[Technische Dokumentation zum Magento Order Management](https://omsdocs.magento.com/en/)

@@ -29,9 +29,9 @@ In Magento Open Source und Adobe Commerce wurde ein Problem entdeckt, das zum Of
 
 Um das Problem zu beheben, wenden Sie bitte den an diesen Artikel angehängten Patch an. Um es herunterzuladen, klicken Sie auf den folgenden Link:
 
-* Herunterladen [PRODSECBUG-2432\_EE\_2.1.17\_composer.patch](assets/PRODSECBUG-2432_EE_2.1.17_composer.patch.zip) - für die Versionen 2.1.13-2.1.17, Adobe Commerce, Magento Open Source
-* Herunterladen [PRODSECBUG-2432\_EE\_2.2.8\_composer.patch](assets/PRODSECBUG-2432_EE_2.2.8_composer.patch.zip) - für die Versionen 2.2.0-2.2.8 alle Editionen
-* Herunterladen [PRODSECBUG-2432\_EE\_2.3.1\_composer.patch](assets/PRODSECBUG-2432_EE_2.3.1_composer.patch.zip) - für die Versionen 2.3.0-2.3.1 alle Editionen
+* Laden Sie [PRODSECBUG-2432\_EE\_2.1.17\_composer.patch](assets/PRODSECBUG-2432_EE_2.1.17_composer.patch.zip) - für die Versionen 2.1.13-2.1.17, Adobe Commerce, Magento Open Source herunter.
+* Laden Sie [PRODSECBUG-2432\_EE\_2.2.8\_composer.patch](assets/PRODSECBUG-2432_EE_2.2.8_composer.patch.zip) - für die Versionen 2.2.0-2.2.8 alle Editionen herunter.
+* Laden Sie [PRODSECBUG-2432\_EE\_2.3.1\_composer.patch](assets/PRODSECBUG-2432_EE_2.3.1_composer.patch.zip) - für die Versionen 2.3.0-2.3.1 alle Editionen herunter.
 
 Wenn Sie keinen Patch für Ihr Produkt/Ihre Version sehen, aktualisieren Sie auf die neueste Sicherheitsversion und wenden Sie dann den Patch an.
 
@@ -39,13 +39,13 @@ Adobe empfiehlt dringend, das Pflaster so schnell wie möglich anzuwenden, auch 
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Sonstige Sicherheitsempfehlungen
 
 Adobe empfiehlt Händlern außerdem dringend, Tools bereitzustellen, um ihr Admin Panel zu schützen, einschließlich Zweifaktorauthentifizierung, VPN, IP-Zulassungsauflistung und mehr. Detaillierte Informationen finden Sie in den folgenden Blogs und Dokumentationen:
 
-* [5 Sofortmaßnahmen gegen Protect gegen Brute-Force-Angriffe](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
-* [Protect - Ihr Magento-Installationskennwort - Tipps für neue Updates](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
+* [5 Sofortige Maßnahmen gegenüber Protect gegen Brute-Force-Angriffe](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
+* [Protect Ihr Magento-Installationskennwort für die Warnung &quot;Neues Update&quot;](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [Best Practices für die Sicherheit](https://magento.com/security/best-practices/security-best-practices)
-* Hinzufügen und Konfigurieren der Zwei-Faktor-Authentifizierung in Adobe Commerce für [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) und [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)
+* Hinzufügen und Konfigurieren der Zweifaktorauthentifizierung in Adobe Commerce für [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) und [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)

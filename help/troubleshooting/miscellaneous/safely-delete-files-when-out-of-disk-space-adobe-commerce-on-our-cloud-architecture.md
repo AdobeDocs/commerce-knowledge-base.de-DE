@@ -16,7 +16,7 @@ ht-degree: 0%
 ## Betroffene Produkte und Versionen
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.4.2 - 2.4.7
-* Dies gilt speziell für dedizierte Pro-Cluster. Starter- und Integrationsumgebungen sind ein einzelner Knoten und verfügen nicht über die `/data/exports` Verzeichnis.
+* Dies gilt speziell für dedizierte Pro-Cluster. Starter- und Integrationsumgebungen sind nur ein Knoten und haben nicht den Ordner &quot;`/data/exports`&quot;.
 
 ## Anzeichen für geringen Festplattenspeicher
 
@@ -28,7 +28,7 @@ Führen Sie den folgenden Befehl in der CLI/Terminal aus, um den vom Dateisystem
 
 ## Sicheres Löschen von Dateien zur Erhöhung des Festplattenspeicherplatzes
 
-Sie können Dateien aus den Bereitstellungspunkten der Anwendung löschen, indem Sie `/app` Pfad oder Pfad `/mnt/shared`. Es gibt zwei verschiedene Möglichkeiten, auf dieselben Dateien zuzugreifen.
+Sie können Dateien aus den Bereitstellungspunkten der Anwendung löschen, aus Ihrem `/app` Pfad oder über `/mnt/shared`. Es gibt zwei verschiedene Möglichkeiten, auf dieselben Dateien zuzugreifen.
 
 >[!WARNING]
 >

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fehler &quot;Erweiterte Berichterstellung 404&quot;in der geteilten Datenbanklösung
 
-Dieser Artikel enthält einen Patch für Benutzer von Adobe Commerce 2.3.x mit der [Split-Datenbanklösung](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) bei dem beim Versuch, die erweiterte Berichterstellung zu verwenden, ein 404-Fehler auftritt.
+Dieser Artikel enthält einen Patch für Benutzer von Adobe Commerce 2.3.x mit der [aufgespalteten Datenbanklösung](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html), bei dem beim Versuch, die erweiterte Berichterstellung zu verwenden, ein 404-Fehler auftritt.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,7 +25,7 @@ Der Patch behebt das Problem, dass der falsche Verbindungsname zum Erfassen von 
 
 ## Lösung
 
-Wenden Sie die [Patch](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) in diesem Artikel angegeben.
+Wenden Sie den in diesem Artikel angegebenen [Patch](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) an.
 
 ## Patch
 
@@ -35,4 +35,4 @@ Der Patch ist an diesen Artikel angehängt. Um es herunterzuladen, klicken Sie a
 
 ## Anwenden des Pflasters
 
-Entpacken Sie die Datei und befolgen Sie die Anweisungen unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Entpacken Sie die Datei und befolgen Sie die Anweisungen unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.

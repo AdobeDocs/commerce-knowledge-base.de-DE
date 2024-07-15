@@ -24,21 +24,21 @@ In diesem Artikel wird das Problem geklärt, dass die Suchergebnisse für die Vo
 
 <u>Voraussetzungen:</u>
 
-Sie haben Produkte mit Attributwerten `Saga 1` und `Saga 16` in den Stores Adobe Commerce 2.3 und Adobe Commerce 2.4.
+Sie haben Produkte mit den Attributwerten `Saga 1` und `Saga 16` sowohl in Adobe Commerce 2.3 als auch in Adobe Commerce 2.4 Stores.
 
 <u>Zu reproduzierende Schritte:</u>
 
-1. Geben Sie auf der Storefront eines Adobe Commerce 2.3-Stores *Saga 1* im Suchfeld und klicken Sie auf **Suche**.
-1. Beachten Sie, dass Sie in den Suchergebnissen nur die Produkte mit dem Attributwert erhalten `Saga 1`.
-1. Geben Sie auf der Storefront eines Adobe Commerce 2.4-Stores *Saga 1* im Suchfeld und klicken Sie auf **Suche**.
+1. Geben Sie auf der Storefront eines Adobe Commerce 2.3-Stores *Saga 1* in das Suchfeld ein und klicken Sie auf **Suchen**.
+1. Beachten Sie, dass Sie in den Suchergebnissen nur die Produkte mit dem Attributwert `Saga 1` erhalten.
+1. Geben Sie auf der Storefront eines Adobe Commerce 2.4-Stores *Saga 1* in das Suchfeld ein und klicken Sie auf **Suchen**.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Suchergebnisse in 2.4 schließen Produkte mit Attributwerten ein. `Saga 1` und `Saga 16`.
+Die Suchergebnisse in 2.4 umfassen Produkte mit den Attributwerten `Saga 1` und `Saga 16`.
 
 <u>Erwartetes Ergebnis:</u>
 
-Die Suchergebnisse in 2.4 ähneln 2.3 und umfassen nur Produkte mit Attributwert. `Saga 1`.
+Die Suchergebnisse in 2.4 ähneln 2.3 und enthalten nur Produkte mit dem Attributwert `Saga 1`.
 
 ## Ursache
 
@@ -46,6 +46,6 @@ Die native Adobe Commerce-Suchfunktion, die in 2.3.x verwendet wird, liefert exa
 
 ## Verwandte Informationen
 
-[Live Search installieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) in unserem Benutzerhandbuch.
+[Installieren Sie die Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) in unserem Benutzerhandbuch.
 
 [Live Search](https://devdocs.magento.com/live-search/overview.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=Live%20Search) in unserer Entwicklerdokumentation.

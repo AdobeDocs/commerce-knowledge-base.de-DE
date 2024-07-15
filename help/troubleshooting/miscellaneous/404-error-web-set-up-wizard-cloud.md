@@ -43,8 +43,8 @@ Der Web-Einrichtungs-Assistent wurde für alle Adobe Commerce-Instanzen in Cloud
 
 Diese Funktion ist in Adobe Commerce in der Cloud-Infrastruktur deaktiviert.
 
-Siehe [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://devdocs.magento.com/cloud/howtos/install-components.html) in unserer Entwicklerdokumentation finden Sie Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur.
-Siehe [Schnellstart-Installation](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) in unserer Entwicklerdokumentation finden Sie Informationen dazu, wie Sie vor Ort Aktualisierungen durchführen oder externe Module für Adobe Commerce installieren können.
+Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur finden Sie unter [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://devdocs.magento.com/cloud/howtos/install-components.html) in unserer Entwicklerdokumentation.
+Informationen zum Durchführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce vor Ort finden Sie unter [Schnellstart-Installation](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

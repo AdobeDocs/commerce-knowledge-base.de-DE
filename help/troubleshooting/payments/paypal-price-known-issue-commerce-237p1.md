@@ -29,14 +29,14 @@ Wenn Sie eine Bestellung mit der Zahlungsmethode PayPal Express Checkout aufgebe
 
 1. Fügen Sie auf der Storefront ein Produkt zum Warenkorb hinzu (Produkt A, Preis 50 USD).
 1. Klicken Sie auf den Link Warenkorb , um den Warenkorb zu öffnen.
-1. Klicken Sie auf **PayPal Checkout** Schaltfläche.
+1. Klicken Sie auf die Schaltfläche **PayPal Checkout** .
 1. Verwenden Sie Ihre PayPal-Anmeldedaten, um sich bei PayPal anzumelden und die Zahlung abzuschicken.
 1. Beenden Sie die Bestellplatzierung auf der Store-Seite.
 1. Gehen Sie zurück zum Katalog und fügen Sie dem Warenkorb ein anderes Produkt hinzu (Produkt B, Preis 100 USD).
 1. Klicken Sie auf den Link Warenkorb , um den Warenkorb zu öffnen.
-1. Klicken Sie auf **PayPal Checkout** Schaltfläche.
+1. Klicken Sie auf die Schaltfläche **PayPal Checkout** .
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Der Produktpreis im Warenkorb beträgt 50 USD anstelle von 100 USD.<br/>
 Auf der Seite des Stores enthält die Bestellung Produkt A anstelle von Produkt B.
@@ -51,7 +51,7 @@ Wenden Sie den in diesem Artikel bereitgestellten Patch an.
 
 ## Patch
 
-Verwenden Sie den folgenden Link, um eine ZIP-Datei mit dem Patch herunterzuladen: [MC42674-Composer.patch.zip](assets/MC42674-composer.patch.zip).
+Verwenden Sie den folgenden Link, um eine ZIP-Datei mit dem Patch herunterzuladen: [MC42674-composer.patch.zip](assets/MC42674-composer.patch.zip).
 
 ### Kompatible Adobe Commerce-Versionen
 
@@ -60,4 +60,4 @@ Verwenden Sie den folgenden Link, um eine ZIP-Datei mit dem Patch herunterzulade
 ## Anwenden der Patches
 
 1. Entpacken Sie die heruntergeladene ZIP-Datei.
-1. Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für weitere Anweisungen.
+1. Weitere Informationen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.

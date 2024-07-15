@@ -25,20 +25,20 @@ Beim Zugriff auf das Site-weite Analyse-Tool erhalten Sie einen 403-Fehler.
 
 <u>Zu reproduzierende Schritte:</u>
 
-Melden Sie sich beim Commerce Admin-Bedienfeld an und klicken Sie auf **Berichte** > *Systemeinblicke* > **Site-weites Analyse-Tool**.
+Melden Sie sich beim Commerce Admin-Bedienfeld an und klicken Sie auf &quot;**Berichte**&quot;> &quot;*Systemeinblicke*&quot;> &quot;**Site-weites Analyse-Tool**&quot;.
 
 <u>Erwartetes Ergebnis:</u>
 
 Sie sehen das Site-weite Analyse-Tool.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Sie sehen: *Fehler 403.*
 
 
 ## Lösung
 
-Um sicherzustellen, dass das Site-weite Analyse-Tool den richtigen Zugriff auf Ihre Anwendung hat, führen Sie den folgenden Befehl in der CLI aus. Ersetzen `<store URL>` mit Ihrer Store-URL:
+Um sicherzustellen, dass das Site-weite Analyse-Tool den richtigen Zugriff auf Ihre Anwendung hat, führen Sie den folgenden Befehl in der CLI aus. Ersetzen Sie `<store URL>` durch Ihre Store-URL:
 
 ```cURL
 curl -sIL -X GET <store URL>/swat/key/index | grep HTTP
@@ -57,26 +57,26 @@ Wenn der Antwortcode 403 ist, verfügen Sie möglicherweise über Cloudflare-Bot
 
 ### 200-Antwort-Code und JSON-Ausgabe korrigieren
 
-Wenn die Antwort der richtige 200-Code- und JSON-Ausgabe ist, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) um das Problem mit dem Site-weiten Analyse-Tool-Zugriff zu eskalieren.
+Wenn die Antwort der richtige 200-Code- und JSON-Ausgabe ist, senden [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um das Problem mit dem Site-weiten Analyse-Tool-Zugriff zu eskalieren.
 
 
 ### Antwortcode 500 (Schwerwiegender Fehler)
 
 Wenn der Antwortcode 500 (Todesfehler) beträgt, installieren Sie bitte den Patch MDVA-38526. Verwenden Sie je nach gewünschtem Patch einen der folgenden Links, um den Patch herunterzuladen:
 
-* Adobe Commerce auf dem Patch für Cloud-Infrastruktur: [MDVA-38526_EE_2.4.1-p1_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_v3.patch.zip)
-* Patch für Adobe Commerce on Cloud Infrastructure Composer: [MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip)
+* Adobe Commerce auf dem Cloud-Infrastruktur-Patch: [MDVA-38526_EE_2.4.1-p1_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_v3.patch.zip)
+* Adobe Commerce on cloud Infrastructure Composer patch: [MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip)
 
 Der Patch gilt für Adobe Commerce in den Cloud-Infrastrukturversionen 2.4.1 und höher.
 
 ### Antwort nicht JSON
 
-Wenn die Antwortausgabe nicht JSON ist, kann dies an der Implementierung von PWA/Headless liegen. Wenn Sie die Headless-Implementierung verwenden, aktualisieren Sie die UPWARD-Konfiguration, um Anforderungen an Adobe Commerce Origin zu umgehen. Gehen Sie dazu in den Adobe Commerce-Administrator unter **Stores** > **Konfiguration** > **Allgemein** > **Web** > **UPWARD-PWA-Konfiguration** > **Zulassungsliste &quot;Vorname&quot;**, hinzufügen *swat*.
+Wenn die Antwortausgabe nicht JSON ist, kann dies an der Implementierung von PWA/Headless liegen. Wenn Sie die Headless-Implementierung verwenden, aktualisieren Sie die UPWARD-Konfiguration, um Anforderungen an Adobe Commerce Origin zu umgehen. Fügen Sie dazu im Adobe Commerce-Admin unter **Stores** > **Konfiguration** > **Allgemein** > **Web** > **UPWARD-PWA-Konfiguration** > **Vorname** den Wert *swat* hinzu.
 
 ![Upward_configuration](assets/upward_pwa.png)
 
-Wenn Sie noch immer nicht auf das Site-weite Analyse-Tool zugreifen können, melden Sie sich beim nächsten Mal im Commerce Admin-Bereich an und navigieren Sie zu **Berichte** > *Systemeinblicke* > **Site-weites Analyse-Tool**, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn Sie immer noch nicht auf das Site-weite Analyse-Tool zugreifen können, senden Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), wenn Sie sich das nächste Mal beim Commerce Admin-Bedienfeld anmelden und zu **Berichte** > *Systemeinblicke* > **Site-Wweiter Analyse-Tool** navigieren.[
 
 ## Verwandtes Lesen
 
-* [Handbuch zum Site-weiten Analyse-Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)
+* [Handbuch für das Site-weite Analyse-Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)

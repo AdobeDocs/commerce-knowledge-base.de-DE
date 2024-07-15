@@ -19,7 +19,7 @@ Dieser Artikel bietet Lösungen für Fehler, die auftreten können, wenn der Ela
 
    * v2.2.3+ unterstützt ES 5.x
    * v2.2.8+ und v2.3.1+ unterstützen ES 6.x
-   * ES v2.x und v5.x werden aufgrund von [Ende der Lebensdauer](https://www.elastic.co/support/eol). Wenn Sie jedoch über Adobe Commerce v2.3.1 verfügen und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [Ändern des Elasticsearch-PHP-Clients](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * ES v2.x und v5.x werden aufgrund von [Ende der Lebensdauer](https://www.elastic.co/support/eol) nicht empfohlen. Wenn Sie jedoch über Adobe Commerce v2.3.1 verfügen und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [den Elasticsearch php Client ändern](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
 
 * Magento Open Source v2.3.0+ unterstützt ES 5.x und 6.x (es wird jedoch 6.x empfohlen).
 
@@ -37,7 +37,7 @@ Dieser Artikel bietet Lösungen für Fehler, die auftreten können, wenn der Ela
 <code>{"0":"{\"error\":{\"root_cause\":[{\"type\":\"illegal_argument_exception\",\"reason\":\"Fielddata is disabled on text fields by default. Set fielddata=true on [%attribute_code%]] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory.\"}]</code>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">Elasticsearch 5 ist konfiguriert, die Suchseite wird jedoch nicht mit dem Fehler "Felddaten sind deaktiviert.."geladen.</a> in unserer Wissensdatenbank.
+<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">Elasticsearch 5 ist konfiguriert, aber die Suchseite wird nicht mit dem Fehler "Felddaten sind deaktiviert..."in unserer Support-Wissensdatenbank geladen.</a>
 </td>
 </tr>
 <tr>
@@ -45,13 +45,13 @@ Dieser Artikel bietet Lösungen für Fehler, die auftreten können, wenn der Ela
 <code>Elasticsearch\Common\Exceptions\NoNodesAvailableException: Noticed exception 'Elasticsearch\Common\Exceptions\NoNodesAvailableException' with message 'No alive nodes found in your cluster' in /app/&lt;projectid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ConnectionPool/StaticNoPingConnectionPool.php:51</code>
 </td>
 <td>
-Elasticsuite-Indizes werden nicht gelöscht.  Siehe <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite-Trackingindizes verursachen Probleme mit Elasticsearch</a> in unserer Wissensdatenbank.
+Elasticsuite-Indizes werden nicht gelöscht.  Siehe <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite-Trackingindizes verursachen Probleme mit Elasticsearch</a> in unserer Support-Wissensdatenbank.
  </td>
 </tr>
 <tr>
 <td>PHP-Fehler</td>
 <td>
-<i>Keine lebenden Knoten im Cluster gefunden","1":"#0 /app/&lt;projectid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Transport.php</i>
+<i>Keine aktiven Knoten im Cluster gefunden","1":"#0 /app/&lt;projektid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Transport.php</i>
 </td>
 <td rowspan="4">
 <ul>
@@ -64,21 +64,22 @@ Elasticsuite-Indizes werden nicht gelöscht.  Siehe <a href="https://experiencel
 <li>Wenn die Lösungen in der obigen Dokumentation das Problem nicht beheben, wenden Sie sich an Ihr Adobe-Account-Team, um zusätzlichen Speicher anzufordern.</li>
 </ul>
 </li>
-<li>Wenn Ihr Datenträger nicht über genügend Speicherplatz verfügt, Sie aber dennoch die Fehlermeldungen in der linken Spalte erhalten, <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">Support-Ticket einreichen</a>.</li>
+<li>Wenn Ihr Datenträger nicht über genügend Speicherplatz verfügt, Sie aber trotzdem die Fehlermeldungen in der linken Spalte erhalten, senden Sie <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">ein Support-Ticket</a>.</li>
 </ul>
 <ul>
-<li>Siehe <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite-Trackingindizes verursachen Probleme mit Elasticsearch</a> in unserer Wissensdatenbank.
+<li>Siehe <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite-Trackingindizes verursachen Probleme mit Elasticsearch</a> in unserer Support-Wissensdatenbank.
 </li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><code>Curl</code> error</td>
-<td>Ausführen der <code>curl</code> -Befehl zum Überprüfen des Elasticsearch-Zustands:<code>curl -m1 localhost:9200/_cluster/health?pretty</code>(oder<code>curl -m1 elasticsearch.internal:9200/_cluster/health?pretty</code>für Starter-Konten) erzeugt diesen Fehler: <i>Fehler: curl: (7) Fehler bei Verbindung mit localhost port 9200: Verbindung verweigert</i> </td>
+<td>Wenn Sie den Befehl <code>curl</code> ausführen, um den Zustand des Elasticsearchs zu überprüfen: <code>curl -m1 localhost:9200/_cluster/health?pretty</code> (oder <code>curl -m1 elasticsearch.internal:9200/_cluster/health?pretty</code>für Starter-Konten), wird der folgende Fehler ausgegeben: <i>Fehler: curl: (7) Fehler bei Verbindung mit localhost-Anschluss 9200: Verbindung verweigert</i> </td>
 </tr>
 <tr>
 <td>Befehlszeilenfehler</td>
-<td>Läuft <code>$ bin/magento indexer:reindex catalogsearch_fulltext</code> erzeugt diesen Fehler <i>Unbekannter Fehler beim Catalog Search-Indexprozess: Keine aktiven Knoten in Ihrem Cluster gefunden</i>
+<td>Beim Ausführen von <code>$ bin/magento indexer:reindex catalogsearch_fulltext</code> wird der Fehler <i>Indexer für die Katalogsuche unbekannter Fehler ausgegeben:
+        Keine aktiven Knoten im Cluster gefunden</i>
 </td>
 </tr>
 <tr>

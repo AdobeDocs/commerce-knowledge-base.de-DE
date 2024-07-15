@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # &quot;500-Fehler&quot;nach Doppelklicken auf Link im Warenkorb entfernen
 
-Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.0, das sich auf Kunden bezieht, die beim Versuch, ein zweimal gekauftes Warenkorbelement zu entfernen, einen Fehler erhalten (durch Doppelklicken auf die Variable *Entfernen* oder indem Sie in verschiedenen Tabs darauf klicken).
+Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.0, das darauf zurückzuführen ist, dass Kunden beim Versuch, ein zweimal gekauftes Warenkorbelement zu entfernen, einen Fehler erhalten (durch Doppelklicken auf den Link *Entfernen* oder durch Klicken auf das Element auf verschiedenen Registerkarten).
 
 ## Problem
 
-Wenn Kunden auf die *Entfernen* -Link im Warenkorb, der versucht, ein Produkt aus dem Warenkorb zu entfernen, eine leere Seite mit der folgenden Fehlermeldung erhält: *&quot;Diese Seite funktioniert nicht. HTTP-FEHLER 500&quot;.* Das gleiche Problem tritt auf, wenn ein Kunde zwei Browser-Registerkarten mit der Warenkorbseite öffnet und das Produkt zuerst auf einer Registerkarte und dann auf der zweiten entfernt.
+Wenn Kunden auf den Link *Entfernen* im Warenkorb doppelklicken und versuchen, ein Produkt aus dem Warenkorb zu entfernen, erhalten sie eine leere Seite mit der folgenden Fehlermeldung: *&quot;Diese Seite funktioniert nicht. HTTP-FEHLER 500&quot;.* Das gleiche Problem tritt auf, wenn ein Kunde zwei Browser-Registerkarten mit der Warenkorbseite öffnet und das Produkt zuerst auf einer Registerkarte und dann auf der zweiten entfernt.
 
 <u>Zu reproduzierende Schritte</u> :
 
@@ -35,7 +35,7 @@ ODER
 
 <u>Erwartetes Ergebnis</u> : Das Produkt wird ohne Fehler aus dem Warenkorb entfernt.
 
-<u>Tatsächliches Ergebnis</u> : Das Produkt wird mit dem Fehler entfernt: *&quot;Diese Seite funktioniert nicht. HTTP-FEHLER 500&quot;* Fehlermeldung.
+<u>Tatsächliches Ergebnis</u> : Das Produkt wird mit dem Fehler &quot;*&quot;entfernt. Diese Seite funktioniert nicht. HTTP-FEHLER 500&quot;* Fehlermeldung.
 
 ## Patch
 
@@ -56,6 +56,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

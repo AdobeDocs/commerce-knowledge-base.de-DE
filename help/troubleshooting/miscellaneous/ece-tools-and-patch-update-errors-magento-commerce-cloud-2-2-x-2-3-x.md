@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ECE-Tools und Patch-Update-Fehler Adobe Commerce Cloud-Infrastruktur 2.2.x, 2.3.x
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem Fehlermeldungen angezeigt werden, darunter *Stream konnte nicht geöffnet werden:*&quot; oder &quot;*Keine solche Datei oder Verzeichnis*&quot;, wenn Sie versuchen, Updates für ECE-Tools, Patches oder andere Änderungen bereitzustellen.
+Dieser Artikel bietet eine Lösung für das Problem, dass Fehlermeldungen wie &quot;*failed to open stream:*&quot;oder &quot;*No such file or directory*&quot;angezeigt werden, wenn Sie versuchen, Updates für ECE-Tools, Patches oder andere Änderungen bereitzustellen.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,7 +21,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.2.x, 2.3.x
 
 ## Problem
 
-Fehler bei der Bereitstellung von Updates für ECE-Tools, Patches oder andere Änderungen umfassen: PHP-Fehler in der Cloud-Konsole und in der `var/log/cloud.log`
+Fehler bei der Bereitstellung von Updates für ECE-Tools, Patches oder andere Änderungen umfassen: PHP-Fehler in der Cloud-Konsole und im `var/log/cloud.log`
 
 ```
 W: PHP Warning: require(<path to file>): failed to open stream: No such file or directory in <path to file> on line 70
@@ -69,7 +69,7 @@ Fehlkonfiguration Ihrer `composer.json` -Datei.
 
 ## Lösung
 
-Wenn eine Einstellung in der `composer.json` -Datei, werden einige Verzeichnisse nicht aus der Adobe Commerce-Codebasis kopiert. Das Paket und das Update/Patch können nicht angewendet werden, da Dateien nicht gefunden werden.
+Wenn in Ihrer `composer.json` -Datei eine Einstellung fehlt, werden einige Verzeichnisse nicht aus der Adobe Commerce-Codebasis kopiert. Das Paket und das Update/Patch können nicht angewendet werden, da Dateien nicht gefunden werden.
 
 Bitte ändern Sie Ihren zusätzlichen Abschnitt entsprechend dem unten angegebenen Abschnitt und versuchen Sie die Bereitstellung erneut.
 

@@ -19,7 +19,7 @@ Der MDVA-23764 Magento Patch behebt den Fehler in
 JsFooterPlugin.php
 ```
 
-die sich auf die Anzeige dynamischer Blöcke auswirkt. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13 installiert ist. Bitte beachten Sie, dass das Problem in Magento 2.3.5 behoben wurde.
+die sich auf die Anzeige dynamischer Blöcke auswirkt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13 installiert ist. Bitte beachten Sie, dass das Problem in Magento 2.3.5 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -29,7 +29,7 @@ die sich auf die Anzeige dynamischer Blöcke auswirkt. Dieser Patch ist verfügb
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -37,9 +37,9 @@ die sich auf die Anzeige dynamischer Blöcke auswirkt. Dieser Patch ist verfügb
 
 Versuchen Sie, eine URL zu laden, die wie folgt aussieht: https://\[magento domain\]/banner/ajax/load/.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Es wird ein Fehler ähnlich dem folgenden ausgegeben: *Uncaught TypeError: strpos() erwartet, dass der Parameter 1 eine Zeichenfolge ist, null, angegeben in ...(Codezeile).* .
+Ein Fehler ähnlich dem folgenden wird ausgegeben: *Uncaught TypeError: strpos() erwartet, dass der Parameter 1 eine Zeichenfolge ist, null, angegeben in..(Codezeile)* .
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -56,7 +56,7 @@ Anweisungen zum Anwenden eines QPT-Patches finden Sie unter den folgenden Links 
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
-* [Überprüfen Sie mithilfe des Tools &quot;Quality Patches&quot;, ob der Patch für Ihr Magento-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) .
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
+* [Überprüfen Sie mithilfe des Qualitätspatches-Tools](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md), ob für Ihr Magento-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) Abschnitt.
+Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

@@ -21,7 +21,7 @@ Adobe Commerce in der Cloud-Infrastruktur (alle Versionen)
 
 ## Problem
 
-Sie erhalten Bereitstellungsfehler, wenn Sie eine Übertragung in das Repository von Dateien/Ordnern durchführen. Beispielsweise wird der folgende Fehler durch einen Versuch verursacht, eine Verbindung zur DB herzustellen, wenn diese derzeit nicht während der [Build-Phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase):
+Sie erhalten Bereitstellungsfehler, wenn Sie eine Übertragung in das Repository von Dateien/Ordnern durchführen. Beispielsweise wird der folgende Fehler durch einen Versuch verursacht, eine Verbindung zur DB herzustellen, wenn diese während der [Build-Phase](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase) nicht verfügbar ist:
 
 ```SQL
 SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i  
@@ -42,7 +42,7 @@ SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i
 
 ## Ursache
 
-Bestimmte Dateien/Ordner sollten nicht in das Repository übertragen werden, da sie einen Umbruch im [Bereitstellungs-Workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html).
+Bestimmte Dateien/Ordner sollten nicht in das Repository übertragen werden, da sie einen Umbruch im [Bereitstellungs-Workflow](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) verursachen.
 
 ## Lösung
 

@@ -25,7 +25,7 @@ Modifier/AdvancedInventory.php on line 87
 
 ## Detail
 
-Adobe Commerce 2.1 und höher verwenden PHP-Code-Kommentare in der `getDocComment` Überprüfungsaufruf in [`getExtensionAttributes`](https://github.com/magento/magento2/blob/2.3/lib/internal/Magento/Framework/Api/ExtensionAttributesFactory.php#L64-L73) -Methode in `Magento\Framework\Api\ExtensionAttributesFactory.php`.
+Adobe Commerce 2.1 und höher verwenden PHP-Code-Kommentare im `getDocComment` Validierungsaufruf in der [`getExtensionAttributes`](https://github.com/magento/magento2/blob/2.3/lib/internal/Magento/Framework/Api/ExtensionAttributesFactory.php#L64-L73) -Methode in `Magento\Framework\Api\ExtensionAttributesFactory.php`.
 
 Wenn Sie den PHP OPcache aktiviert haben (was wir empfehlen), wird dieser Fehler angezeigt, da standardmäßig die OPcache-Einstellung [`opcache.save_comments`](http://php.net/manual/en/opcache.configuration.php#ini.opcache.save_comments) deaktiviert ist.
 
@@ -37,7 +37,7 @@ Um das Problem zu beheben, suchen Sie Ihre OPcache-Konfigurationseinstellungen u
 
 #### So finden Sie die OPcache-Konfigurationseinstellungen:
 
-PHP OPcache-Einstellungen befinden sich normalerweise entweder in `php.ini` oder `opcache.ini`. Der Speicherort kann von Ihrem Betriebssystem und Ihrer PHP-Version abhängen. Die OPcache-Konfigurationsdatei verfügt möglicherweise über eine `[opcache]` -Abschnitt oder Einstellungen wie `opcache.enable`.
+PHP OPcache-Einstellungen befinden sich normalerweise entweder in `php.ini` oder in `opcache.ini`. Der Speicherort kann von Ihrem Betriebssystem und Ihrer PHP-Version abhängen. Die OPcache-Konfigurationsdatei kann einen Abschnitt &quot;`[opcache]`&quot; oder Einstellungen wie &quot;`opcache.enable`&quot; enthalten.
 
 Verwenden Sie die folgenden Richtlinien, um sie zu finden:
 
@@ -53,14 +53,14 @@ Wenn nicht, suchen Sie mit dem folgenden Befehl:
 
 * nginx-Webserver mit PHP-FPM: `/etc/php5/fpm/php.ini`.
 
-Wenn Sie mehr als eine `opcache.ini`, ändern Sie alle.
+Wenn Sie mehr als einen `opcache.ini` haben, ändern Sie alle.
 
 
-### Schritt 2: Aktivieren `opcache.save_comments`
+### Schritt 2: Aktivieren Sie `opcache.save_comments`
 
 1. Öffnen Sie die OPcache-Konfigurationsdatei in einem Texteditor.
-1. Suchen `opcache.save_comments` und entfernen Sie gegebenenfalls die Kommentar.
-1. Stellen Sie sicher, dass der Wert auf `1`.
+1. Suchen Sie `opcache.save_comments` und heben Sie die Auskommentierung auf, falls erforderlich.
+1. Stellen Sie sicher, dass der Wert auf `1` eingestellt ist.
 1. Speichern Sie Ihre Änderungen und beenden Sie den Texteditor.
 1. Starten Sie den Webserver neu:
 

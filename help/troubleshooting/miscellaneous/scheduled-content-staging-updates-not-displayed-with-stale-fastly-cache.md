@@ -17,34 +17,34 @@ Dieser Artikel enthält eine Fehlerbehebung für Fälle, in denen Adobe Commerce
 
 ## Problem
 
-Geplante Aktualisierungen für ein Store-Inhalts-Asset (Seite, Produkt, Block usw.) werden nicht unmittelbar nach dem Startzeitpunkt der Aktualisierung auf der Storefront angezeigt. Dies geschieht, wenn Aktualisierungen mit der Variablen [Inhaltstaging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) Funktionalität.
+Geplante Aktualisierungen für ein Store-Inhalts-Asset (Seite, Produkt, Block usw.) werden nicht unmittelbar nach dem Startzeitpunkt der Aktualisierung auf der Storefront angezeigt. Dies geschieht, wenn Aktualisierungen mithilfe der [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) -Funktion geplant wurden.
 
 ## Ursache
 
-Aufgrund der (standardmäßig aktivierten) Softbereinigungsfunktion von Fastly erhält die Adobe Commerce-Storefront beim Senden weiterhin den alten (veralteten) zwischengespeicherten Inhalt **der erste** Anfrage für das aktualisierte Asset an Fastly. Eine zweite Anforderung zur erneuten Generierung der Site-Daten ist erforderlich.
+Aufgrund der (standardmäßig aktivierten) Softbereinigungsfunktion von Fastly erhält die Adobe Commerce-Storefront beim Senden der ersten **Anfrage für das aktualisierte Asset an Fastly weiterhin den alten (veralteten) zwischengespeicherten Inhalt.** Eine zweite Anforderung zur erneuten Generierung der Site-Daten ist erforderlich.
 
 Daher kann Fastly veraltete Inhalte bis zur zweiten Anfrage für den aktualisierten Inhalt bereitstellen.
 
-**Erwartete Zwischenspeicherung:** Nachdem wir ein Update für ein Inhalts-Asset mit Content Staging planen, sendet Adobe Commerce eine Anfrage zur Aktualisierung des Caches an Fastly. Aktualisiert den vorherigen zwischengespeicherten Inhalt schnell (ohne Inhalt zu löschen) und beginnt mit der Bereitstellung des aktualisierten Inhalts.
+**Erwartete Zwischenspeicherung:** Nachdem wir eine Aktualisierung für ein Inhalts-Asset mit Content Staging planen, sendet Adobe Commerce eine Anfrage zur Aktualisierung des Caches an Fastly. Aktualisiert den vorherigen zwischengespeicherten Inhalt schnell (ohne Inhalt zu löschen) und beginnt mit der Bereitstellung des aktualisierten Inhalts.
 
-**Tatsächliche Zwischenspeicherung:** Wenn Fastly weiterhin den veralteten Inhalt beim Empfang bereitstellt **der erste** Anforderung des aktualisierten Inhalts, wird der Inhalt nur nach Erhalt neu generiert und korrigiert **der zweite** -Anfrage. Dieses Verhalten wurde implementiert, um die Server-Last zu reduzieren, indem der Cache nur in Bereichen mit nachweislichem Traffic erneuert wird, ohne den Cache für die gesamte Website neu zu generieren. Aktualisiert den Cache schnell und speichert die Anwendungsressourcen.
+**Tatsächliches Caching:** Wenn beim Empfang der **ersten** Anfrage für den aktualisierten Inhalt weiterhin der veraltete Inhalt bereitgestellt wird, wird der Inhalt nur nach Erhalt der **zweiten** -Anfrage neu generiert und korrigiert. Dieses Verhalten wurde implementiert, um die Server-Last zu reduzieren, indem der Cache nur in Bereichen mit nachweislichem Traffic erneuert wird, ohne den Cache für die gesamte Website neu zu generieren. Aktualisiert den Cache schnell und speichert die Anwendungsressourcen.
 
 ## Lösung
 
 Wenn die Bereitstellung von veraltetem Inhalt auch für die erste Anforderung inakzeptabel ist, können Sie die Softbounce-Bereinigung deaktivieren und die Option CMS-Seite bereinigen aktivieren:
 
 1. Melden Sie sich bei Ihrem lokalen Commerce-Administrator als Administrator an.
-1. Navigieren Sie zu **Stores** > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache**.
-1. Erweitern **Schnelle Konfiguration**, dann erweitern **Erweitert**.
-1. Satz **Verwenden der weichen Bereinigung** nach *Nein*.
-1. Satz **CMS-Seite bereinigen** nach *Ja*.
-1. Klicks **Konfiguration speichern** oben auf der Seite.
+1. Wechseln Sie zu **Stores** > **Konfiguration** > **Erweitert** > **System** > **Gesamter Seiten-Cache**.
+1. Erweitern Sie **Schnelle Konfiguration** und erweitern Sie dann **Erweitert**.
+1. Setzen Sie **Use Soft Purge** auf *Nein*.
+1. Setzen Sie **CMS-Seite bereinigen** auf *Ja*.
+1. Klicken Sie oben auf der Seite auf **Konfiguration speichern** .
 
 
 ![purge_options.png](assets/purge_options.png)
 
 ## Verwandte Dokumentation
 
-* [Bereinigungsoptionen konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) im Commerce on Cloud Infrastructure Guide.
+* [Konfigurieren Sie die Bereinigungsoptionen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) im Handbuch Commerce on Cloud Infrastructure.
 * [Inhaltstaging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) in der Dokumentation zu Inhalt und Design.
-* [Bereitstellen veralteter Inhalte](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) in der Fastly-Dokumentation.
+* [Bereitstellen von veraltetem Inhalt](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) in der Fastly-Dokumentation.

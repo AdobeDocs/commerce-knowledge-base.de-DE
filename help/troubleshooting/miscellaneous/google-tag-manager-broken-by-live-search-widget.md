@@ -1,6 +1,6 @@
 ---
-title: Google Tag Manager wird durch die [!DNL Live Search] Widget
-description: Dieser Artikel bietet eine Lösung für die [!DNL Live Search Product Listing Widget] verursachen [!DNL Google Tag Manager] , um nicht mehr zu funktionieren.
+title: Google Tag Manager wird durch das Widget [!DNL Live Search] beschädigt.
+description: Dieser Artikel bietet eine Lösung für den [!DNL Live Search Product Listing Widget] und führt dazu, dass [!DNL Google Tag Manager] nicht mehr funktioniert.
 feature: Install, Search, Best Practices
 role: Admin, Developer
 exl-id: 485f8ccb-cba2-4785-a8e1-a1e98c88b21e
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google Tag Manager] wird durch [!DNL Live Search] Widget
+# [!DNL Google Tag Manager] wird durch das Widget [!DNL Live Search] beschädigt
 
-Dieser Artikel bietet eine Lösung für die [!DNL Live Search Product Listing Widget] verursachen [!DNL Google Tag Manager] , um nicht mehr zu funktionieren.
+Dieser Artikel bietet eine Lösung für die [!DNL Live Search Product Listing Widget], die dazu führt, dass [!DNL Google Tag Manager] nicht mehr funktioniert.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,13 +21,13 @@ Dieser Artikel bietet eine Lösung für die [!DNL Live Search Product Listing Wi
 
 ## Problem
 
-Die [!DNL Live Search Product Listing Widget] verursacht [!DNL Google Tag Manager] , um nicht mehr zu funktionieren.
+Die [!DNL Live Search Product Listing Widget] bewirkt, dass [!DNL Google Tag Manager] nicht mehr funktioniert.
 
 ## Lösung
 
-Um sicherzustellen, dass [!DNL Google Tag Manager] arbeitet mit [!DNL Live Search], verwenden Sie die *Suchadapter*.
+Um sicherzustellen, dass [!DNL Google Tag Manager] mit [!DNL Live Search] funktioniert, verwenden Sie den *Suchadapter*.
 
-Deaktivieren Sie dazu das Widget im Admin. [!DNL Live Search] verwendet dann standardmäßig die *Suchadapter*.
+Deaktivieren Sie dazu das Widget im Admin. [!DNL Live Search] verwendet dann standardmäßig den *Suchadapter*.
 
 ## Verwandtes Lesen
 

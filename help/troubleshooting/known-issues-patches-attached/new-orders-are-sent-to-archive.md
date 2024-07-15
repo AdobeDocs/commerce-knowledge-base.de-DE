@@ -26,8 +26,8 @@ Wenn Kunden Bestellungen aufgeben, werden sie im archivierten Bestellungsraster 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Fügen Sie ein Produkt zum Warenkorb in der Storefront hinzu, fahren Sie mit dem Checkout fort und platzieren Sie die Bestellung.
-1. Navigieren Sie in Commerce Admin zu **Vertrieb** > **Aktivitäten** > **Bestellung**. Die Reihenfolge wird im Raster angezeigt.
-1. Navigieren Sie zu **Vertrieb** > **Archivieren** > **Bestellungen**. Die neue Reihenfolge wird im Raster angezeigt.
+1. Navigieren Sie im Commerce-Admin zu &quot;**Sales**&quot;> &quot;**Vorgänge**&quot;> &quot;**Bestellung**&quot;. Die Reihenfolge wird im Raster angezeigt.
+1. Navigieren Sie zu **Verkauf** > **Archiv** > **Bestellungen**. Die neue Reihenfolge wird im Raster angezeigt.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -59,7 +59,7 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Nützliche Links in unserem Benutzerhandbuch
 

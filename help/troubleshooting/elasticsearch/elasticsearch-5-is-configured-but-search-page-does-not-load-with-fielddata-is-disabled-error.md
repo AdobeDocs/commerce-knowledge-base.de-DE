@@ -39,7 +39,7 @@ Bei Suchanfragen wird die folgende Ausnahme in Protokollen generiert:
 
 ## Ursache
 
-Standardmäßig können in der Ebenennavigation nur bestimmte Arten von Produktattributen verwendet werden. Es handelt sich um Ja/Nein, Dropdown, Multi-Selektiv und Preis. Daher können Sie in Commerce Admin kein Attribut eines anderen Typs als **Verwendung in mehrschichtiger Navigation** = *Gefiltert* oder **Verwendung in Navigation mit Ebenen von Suchergebnissen** = *Ja*. Es gibt jedoch eine technische Möglichkeit, diese Einschränkung zu umgehen, indem die `is_filterable` und `is_filterable_in_search` -Werte in der Datenbank. Wenn dies der Fall ist und ein anderer Attributtyp wie Datum, Text usw. für die Verwendung in der Ebenennavigation festgelegt ist, gibt Elasticsearch 5 eine Ausnahme aus.
+Standardmäßig können in der Ebenennavigation nur bestimmte Arten von Produktattributen verwendet werden. Es handelt sich um Ja/Nein, Dropdown, Multi-Selektiv und Preis. Aus diesem Grund können Sie in Commerce Admin kein Attribut eines anderen Typs als **In der Navigationsschicht mit Ebenen verwenden** = *filterbar* oder **In der Navigationsstruktur mit Suchergebnissen verwenden** = *Ja* festlegen. Es gibt jedoch eine technische Möglichkeit, diese Einschränkung zu umgehen, indem die Werte `is_filterable` und `is_filterable_in_search` in der Datenbank direkt geändert werden. Wenn dies der Fall ist und ein anderer Attributtyp wie Datum, Text usw. für die Verwendung in der Ebenennavigation festgelegt ist, gibt Elasticsearch 5 eine Ausnahme aus.
 
 Um sicherzustellen, dass dies der Fall ist, müssen Sie herausfinden, ob es andere Attribute als Dropdown, Multiple Choice und Price gibt, die für die Verwendung in der Ebenennavigation festgelegt sind. Führen Sie die folgende Abfrage aus, um nach diesen Attributen zu suchen:
 
@@ -53,10 +53,10 @@ Das Ergebnis enthält eine Liste von Attributen, die für die Navigation mit Ebe
 
 ## Lösung
 
-Um das Problem zu beheben, müssen Sie `is_filterable` (d. h. in der Ebenennavigation verwendet) und `filterable_in_search` (d. h. in Suchergebnissen verwendet Layered Navigation) zu &quot;0&quot;(nicht verwendet). Gehen Sie dazu wie folgt vor:
+Um das Problem zu beheben, müssen Sie `is_filterable` (d. h. verwendet in der Ebenennavigation) und `filterable_in_search` (d. h. in der Suchergebnisnavigation verwendet) auf &quot;0&quot;(nicht verwendet) setzen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin)oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea
@@ -79,6 +79,6 @@ Um das Problem zu beheben, müssen Sie `is_filterable` (d. h. in der Ebenennavig
    bin/magento cache:clean
    ```
 
-oder im Commerce Admin unter **System** > **Instrumente** > **Cacheverwaltung**.
+oder im Commerce Admin unter **System** > **Tools** > **Cache-Verwaltung**.
 
 Jetzt sollten Sie in der Lage sein, Katalogsuchen ohne Probleme durchzuführen.

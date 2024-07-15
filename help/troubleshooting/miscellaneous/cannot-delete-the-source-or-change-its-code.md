@@ -37,6 +37,6 @@ Der Code ist für die Verbindung der Quelle mit Bestellungen von entscheidender 
 
 Sie können eine Quelle aus einem Produkt entfernen, indem Sie den Bestand übertragen oder das Produkt von allen Sendungen an einem Ort ablegen.
 
-Wenn Sie eine Quelle aus [SSA](https://devdocs.magento.com/guides/v2.3/inventory/source-selection-algorithms.html) Berechnungen und der Verarbeitung der Lagerbestandsbestellung in Adobe Commerce können Sie die Quelle deaktivieren. Deaktivierte Quellen behalten alle Daten, zugewiesenen Produkte und Lagerbestandsmengen bei und können jederzeit wieder aktiviert werden, um den Versand wieder zu starten.
+Wenn Sie eine Quelle aus [SSA](https://devdocs.magento.com/guides/v2.3/inventory/source-selection-algorithms.html)-Berechnungen und der Verarbeitung der Lagerbestandsbestellung in Adobe Commerce entfernen müssen, können Sie die Quelle deaktivieren. Deaktivierte Quellen behalten alle Daten, zugewiesenen Produkte und Lagerbestandsmengen bei und können jederzeit wieder aktiviert werden, um den Versand wieder zu starten.
 
-Siehe [Anleitung zum Erstellen von Quellen](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) für Details zur Deaktivierung einer Quelle.
+Weitere Informationen zum Deaktivieren einer Quelle finden Sie im Leitfaden [Quellen erstellen](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) .

@@ -12,30 +12,30 @@ ht-degree: 0%
 
 ---
 
-# Indizes wurden ungültig gemacht und `indexer_reindex_all_invalid` laufend
+# Indizes ungültig gemacht und `indexer_reindex_all_invalid` laufend ausgeführt
 
-Dieser Artikel bietet eine mögliche Problemumgehung, wenn auf Ihrer Site Leistungsprobleme auftreten, die durch eine ständige Neuindizierung verursacht werden. Dies wird durch die [!DNL cron] job `indexer_reindex_all_invalid` fortlaufend laufen und gereinigte Caches [!DNL reindex].
+Dieser Artikel bietet eine mögliche Problemumgehung, wenn auf Ihrer Site Leistungsprobleme auftreten, die durch eine ständige Neuindizierung verursacht werden. Dies wird durch den fortlaufenden [!DNL cron] Auftrag `indexer_reindex_all_invalid` verursacht, der auf [!DNL reindex] gesäubert wird.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce (Cloud &amp; On-Premise) 2.4.0+ (As **[!UICONTROL Category Permissions]** ist eine Funktion, die nur für Adobe-Commerce verfügbar ist. Sie hat keine Auswirkungen auf die Magento Open Source.)
+* Adobe Commerce (Cloud &amp; On-Premise) 2.4.0+ (Da **[!UICONTROL Category Permissions]** nur eine Adobe-Commerce-Funktion ist, hat dies keine Auswirkungen auf die Magento Open Source.)
 
 ## Problem
 
-In [!DNL New Relic One] Fehlerprotokolle zeigen `indexer_update_all_views` mehrmals mit einer Zeit > 1 Sekunde ausgeführt werden (d. h. es wird etwas verarbeitet).
+In den [!DNL New Relic One] -Fehlerprotokollen sollte `indexer_update_all_views` angezeigt werden, die mehrmals mit einer Zeit > 1 Sekunde ausgeführt werden (d. h. es wird etwas verarbeitet).
 
 ## Ursache
 
-Wenn das Adobe Commerce-Core-Importtool ausgeführt wird (manuell oder von [!DNL cron]), dann wird eine Reihe von Plug-ins über mehrere Kernmodule hinweg ausgeführt, um zu bestimmen, welche Indizes ungültig gemacht werden sollen.
+Wenn das Adobe Commerce-Core-Importtool ausgeführt wird (manuell oder durch [!DNL cron]), wird eine Reihe von Plug-ins über mehrere Hauptmodule hinweg ausgeführt, um zu bestimmen, welche Indizes ungültig gemacht werden sollen.
 
-Das Problem tritt auf, wenn die **[!UICONTROL Category Permissions]** -Modul aktiviert ist, wird im [!DNL Commerce Admin]. Wenn dies zutrifft, werden die Produkt- und Kategorienindizes (und verknüpften Indizes) durch das Plug-in des Moduls immer invalidiert, wenn ein Import ausgeführt wird. Werden die pauschalen Einfuhrtypen untersucht, so wirken sich sie alle auf **[!UICONTROL Category Permissions]**. Die Invalidierung ist zu erwarten.
+Das Problem tritt auf, wenn das **[!UICONTROL Category Permissions]**-Modul in der [!DNL Commerce Admin] aktiviert ist. Wenn dies zutrifft, werden die Produkt- und Kategorienindizes (und verknüpften Indizes) durch das Plug-in des Moduls immer invalidiert, wenn ein Import ausgeführt wird. Wenn die standardmäßigen Einfuhrtypen untersucht werden, wirken sich diese auf **[!UICONTROL Category Permissions]** aus. Die Invalidierung ist zu erwarten.
 
-Wenn für eine Site B2B-Module aktiviert sind, muss darüber hinaus **[!UICONTROL Shared Catalog]** aktiviert ist, wird aktiviert und gesperrt **[!UICONTROL Category Permissions]**. Ausschalten **[!UICONTROL Shared Catalog]** wird entsperrt **[!UICONTROL Category Permissions]**, aber nicht ausschalten.
+Wenn für eine Site B2B-Module aktiviert sind, wird bei Aktivierung von **[!UICONTROL Shared Catalog]** außerdem **[!UICONTROL Category Permissions]** aktiviert und gesperrt. Wenn Sie **[!UICONTROL Shared Catalog]** ausschalten, wird **[!UICONTROL Category Permissions]** entsperrt, aber nicht ausgeschaltet.
 
-<u>Überprüfung [!DNL cron] Login in [!DNL MySQL] Datenbank</u>:
+<u>Überprüfen der [!DNL cron] Protokolle in Ihrer [!DNL MySQL] Datenbank</u>:
 
-Wenn Sie sich bei Ihrem [!DNL MySQL] -Datenbank, können sie Ihre `cron` log für **[!DNL reindex all indexes]** -Prozess.
-Diese **sollte** erscheint oft, aber der wichtige Faktor ist, dass der Prozess eine von zwei möglichen Dingen ausführt.
+Wenn Sie sich in Ihrer [!DNL MySQL] -Datenbank anmelden, können sie Ihr `cron`-Protokoll auf den **[!DNL reindex all indexes]**-Prozess überprüfen.
+Dieser **sollte** mehrmals erscheinen, aber der wichtige Faktor ist, dass der Prozess eines von zwei möglichen Dingen ausführt.
 
 Der Prozess kann nur eine der beiden folgenden Aktionen durchführen:
 
@@ -43,7 +43,7 @@ Der Prozess kann nur eine der beiden folgenden Aktionen durchführen:
 1. [!DNL Reindex] alles: Es dauert immer Zeit - normalerweise Minuten.
 
 Normalerweise möchten Sie viele Vorkommen des Prozesses sehen, jedoch mit einer Ausführungszeit von weniger als 1 Sekunde.
-Ein Händler kann dies daher verwenden [!DNL MySQL] Abfrage zum Finden von Transaktionen, die **mehr als 1 Sekunde** zum Ausführen:
+Ein Händler kann diese [!DNL MySQL] -Abfrage daher verwenden, um Transaktionen zu finden, für die die Ausführung von **mehr als 1 Sekunde** dauert:
 
 ```sql
 SELECT TIMESTAMPDIFF(SECOND, executed_at, finished_at) AS period FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' HAVING period > 1
@@ -55,12 +55,12 @@ Sie können sehen, wie lange ein Zeitraum aufgezeichnet wurde, indem Sie Folgend
 SELECT executed_at FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' AND executed_at IS NOT NULL ORDER BY executed_at ASC LIMIT 1;
 ```
 
-Wenn Ihnen dies nicht genügend Zeit gibt, um eine korrekte Bewertung vorzunehmen, können Sie die Zeit für einen erfolgreichen Test verlängern `cron` Der Prozess wird im folgenden Protokoll beibehalten: [[!DNL Cron] (geplante Aufgaben)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) und erhöhen Sie **[!DNL Success History Lifetime]** -Wert (der Standardwert ist nur 60 Minuten).
+Wenn Ihnen dies keinen ausreichend langen Zeitraum für eine ordnungsgemäße Bewertung gibt, können Sie die Zeit, in der ein erfolgreicher `cron` -Prozess im Protokoll aufbewahrt wird, nach diesem [[!DNL Cron] (geplanten Aufgaben)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) -Handbuch und dem Erhöhen des **[!DNL Success History Lifetime]** -Werts erhöhen (der Standardwert beträgt nur 60 Minuten).
 
 
 ## Lösung
 
-Erweitern `Magento\CatalogPermissions\Model\Indexer\Plugin\Import` damit die `afterImportSource` -Methode schließt das benutzerdefinierte Importtool aus.
+Erweitern Sie `Magento\CatalogPermissions\Model\Indexer\Plugin\Import` , sodass die Methode `afterImportSource` das benutzerdefinierte Importtool ausschließt.
 
 ```
     public function afterImportSource(\Magento\ImportExport\Model\Import $subject, $import)
@@ -73,8 +73,8 @@ Erweitern `Magento\CatalogPermissions\Model\Indexer\Plugin\Import` damit die `af
     }
 ```
 
-Wo `ENTITY_CODE` ist der für den Entitätsnamenparameter im `import.xml` -Datei für das benutzerdefinierte Importtool.
+Wobei `ENTITY_CODE` der Wert ist, der für den Entitätsnamenparameter in der `import.xml` -Datei für das benutzerdefinierte Importtool verwendet wird.
 
 ## Verwandtes Lesen
 
-[Konfigurieren [!DNL cron] Aufträge](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) im Konfigurationshandbuch für den Betrieb von Adobe Commerce.
+[Konfigurieren Sie [!DNL cron] jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) im Konfigurationshandbuch für den Adobe Commerce-Betrieb.

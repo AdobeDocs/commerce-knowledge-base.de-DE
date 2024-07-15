@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Kann nicht gespeichert werden _Versand_ als URL-Schlüssel
+# _shipping_ kann nicht als URL-Schlüssel gespeichert werden
 
-Dieser Artikel bietet eine Problemumgehung, wenn Sie den Versand nicht als URL-Schlüssel speichern können (_z. B. /shipping_) für Produkte oder CMS-Seiten. Wenn Sie versuchen, den URL-Schlüssel zu speichern, erhalten Sie einen Fehler, der anzeigt, dass der URL-Schlüssel eine doppelte URL ist.
+Dieser Artikel bietet eine Problemumgehung, wenn Sie den Versand nicht als URL-Schlüssel (_z. B. /shipping_) für Produkte oder CMS-Seiten speichern können. Wenn Sie versuchen, den URL-Schlüssel zu speichern, erhalten Sie einen Fehler, der anzeigt, dass der URL-Schlüssel eine doppelte URL ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,24 +21,24 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.x
 
 ## Problem
 
-Sie können eine CMS-Seite nicht mit dem Begriff speichern _Versand_ im URL-Schlüssel.
+Sie können keine CMS-Seite mit dem Begriff _shipping_ im URL-Schlüssel speichern.
 
 <u>Zu reproduzierende Schritte</u>:
 
-Erstellen Sie eine **[!UICONTROL CMS page]** mit dem URL-Schlüssel als _Versand_.
+Erstellen Sie eine **[!UICONTROL CMS page]** mit dem URL-Schlüssel _shipping_ .
 
 <u>Erwartetes Ergebnis</u>:
 
-Die Seite speichert mit _Versand_ als URL-Schlüssel.
+Die Seite wird mit _shipping_ als URL-Schlüssel gespeichert.
 
 <u>Tatsächliches Ergebnis</u>:
 
 Sie können nicht speichern, da dieser Fehler auftritt:
-*Der im Feld URL-Schlüssel angegebene Wert generiert eine bereits vorhandene URL.*
+*Der im Feld &quot;URL-Schlüssel&quot;angegebene Wert generiert eine bereits vorhandene URL.*
 
 ## Ursache
 
-Der Versand ist ein reserviertes Wort, das in `vendor/magento/module-shipping/etc/frontend/routes.xml`.
+Der Versand ist ein reserviertes Wort, das in `vendor/magento/module-shipping/etc/frontend/routes.xml` definiert ist.
 
 ```xml
 <router id="standard">
@@ -50,24 +50,24 @@ Der Versand ist ein reserviertes Wort, das in `vendor/magento/module-shipping/et
 
 ## Lösung
 
-Sie können den Begriff nicht verwenden _Versand_ in Ihrem URL-Schlüssel - Sie können jedoch den Begriff _Versand_ kombiniert mit einem anderen Buchstaben oder einer anderen Zahl (_Beispiel: shipping1 und shipping2_).
+Sie können den Begriff _shipping_ nicht in Ihrem URL-Schlüssel verwenden. Sie können jedoch den Begriff _shipping_ in Kombination mit einem anderen Brief oder einer anderen Nummer (_z. B. shipping1 und shipping2_) verwenden.
 
-Auch wenn der Begriff _Versand_+&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;> - der Begriff kann eine beliebige Zeichenfolge sein, solange die Länge nicht überschreitet *255* Zeichen.
+Obwohl der Begriff nicht _shipping_+&lt;another number or letter> lauten muss, kann der Begriff eine beliebige Zeichenfolge sein, solange die Länge nicht mehr als *255* Zeichen beträgt.
 
 ## Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich bei Adobe Commerce Admin an.
-1. Navigieren Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
-1. Klicks **[!UICONTROL Add URL Rewrite]**.
-1. Auswählen **[!UICONTROL Custom]** im **[!UICONTROL Create URL Rewrite]** angezeigt.
-   1. Geben Sie die [!UICONTROL Request Path] as **_Versand_**.
-   1. Im **[!UICONTROL Target Path]** Geben Sie den neuen URL-Schlüssel (_Beispiel: &quot;shipping1&quot;_).
-   1. Auswählen **[!UICONTROL No]** im **[!UICONTROL Redirect]** angezeigt.
+1. Gehen Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
+1. Klicken Sie auf **[!UICONTROL Add URL Rewrite]**.
+1. Wählen Sie **[!UICONTROL Custom]** in der Dropdownliste **[!UICONTROL Create URL Rewrite]** aus.
+   1. Geben Sie [!UICONTROL Request Path] als **_shipping_** ein.
+   1. Geben Sie in &quot;**[!UICONTROL Target Path]**&quot;den neuen URL-Schlüssel ein (_z. B. &quot;shipping1&quot;_).
+   1. Wählen Sie **[!UICONTROL No]** in der Dropdownliste **[!UICONTROL Redirect]** aus.
 
 
       (**Hinweis**: Der Anfragepfad ist der vom Benutzer im Browser eingegebene Pfad und der Zielpfad ist der Ort, an den er umgeleitet werden soll.)
 
-Vermeiden Sie außerdem die Verwendung dieser Suchbegriffe, die als *reserviert* Suchbegriffe, die die gleiche Ausnahme verursachen. Wenn Sie einen der folgenden Suchbegriffe als URL-Schlüsselwert verwenden, wird derselbe Fehler angezeigt.
+Vermeiden Sie außerdem die Verwendung dieser Suchbegriffe, die als *reservierte* Schlüsselwörter gekennzeichnet sind, die dazu führen, dass dieselbe Ausnahme erscheint. Wenn Sie einen der folgenden Suchbegriffe als URL-Schlüsselwert verwenden, wird derselbe Fehler angezeigt.
 
 
 ```
@@ -122,5 +122,5 @@ Vermeiden Sie außerdem die Verwendung dieser Suchbegriffe, die als *reserviert*
 
 ## Verwandtes Lesen
 
-* [URL-Neuschreibungen](https://docs.magento.com/user-guide/marketing/url-rewrite.html) im Benutzerhandbuch zu Merchandising und Promotions.
-* [Best Practices für SEO](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) im Benutzerhandbuch zu Merchandising und Promotions.
+* [URL schreibt ](https://docs.magento.com/user-guide/marketing/url-rewrite.html) in unserem Benutzerhandbuch zu Merchandising und Promotions um.
+* [Best Practices für SEO](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) in unserem Benutzerhandbuch für Merchandising und Promotions.

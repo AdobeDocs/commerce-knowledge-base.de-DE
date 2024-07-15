@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # Importieren von CSV-Produktinformationen für dasselbe Produkt schlägt fehl
 
-Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.2.3-Problem im Zusammenhang mit dem Abrufen von Fehlern beim Versuch, eine `.csv` -Datei mit Produktinformationen, wenn es Produkte mit demselben Namen gibt.
+Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.2.3-Problem, bei dem beim Versuch, eine `.csv` -Datei mit Produktinformationen zu importieren, Fehler ausgegeben werden, wenn es Produkte mit demselben Namen gibt.
 
 ## Problem
 
-Wenn eine `.csv` -Datei mit Produktinformationen importiert wird und es Produkte mit demselben Namen gibt, erhalten Sie im Schritt Daten überprüfen den folgenden Fehler: *&quot;`URL Key XYZ was already generated for an item with the SKU %sku%"`*. Das Problem wird dadurch verursacht, dass die URLs der Produkte während des Imports umgeschrieben werden, selbst wenn in den importierten Produkten keine Spalte für die URLs enthalten ist `.csv` -Datei.
+Wenn eine `.csv` -Datei mit Produktinformationen importiert wird und es Produkte mit demselben Namen gibt, erhalten Sie im Schritt Daten überprüfen den folgenden Fehler: *&quot;`URL Key XYZ was already generated for an item with the SKU %sku%"`*. Das Problem wird dadurch verursacht, dass die URLs der Produkte während des Imports umgeschrieben werden, selbst wenn in der importierten Datei `.csv` keine Spalte für die URLs der Produkte vorhanden ist.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie im Commerce-Admin zwei konfigurierbare Produkte mit demselben Namen.
-1. Erstellen Sie eine `.csv` -Datei, um Daten für diese Produkte zu importieren, die beispielsweise die folgenden Spalten enthalten: `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
-1. Navigieren Sie zu **System** > **Datenübertragung** > **Import** und wählen Sie die `.csv` -Datei.
-1. Klicks **Daten überprüfen**.
+1. Erstellen Sie eine `.csv` -Datei, um Daten für diese Produkte zu importieren, die beispielsweise die folgenden Spalten enthält: `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
+1. Wechseln Sie zu **System** > **Datenübertragung** > **Import** und wählen Sie die Datei `.csv` aus.
+1. Klicken Sie auf **Daten überprüfen**.
 
 <u>Erwartetes Ergebnis</u>:
 
-Keine Probleme gefunden; Sie können die `.csv` -Datei.
+Keine Probleme gefunden. Sie können die Datei &quot;`.csv`&quot; erfolgreich importieren.
 
 <u>Tatsächliches Ergebnis</u>:
 
-Die folgende Fehlermeldung wird angezeigt: *&quot;URL-Schlüssel XYZ wurde bereits für ein Element mit der SKU %sku% generiert.&quot;*, ist es nicht möglich, die Datei zu importieren.
+Die folgende Fehlermeldung wird angezeigt: *&quot;URL-Schlüssel XYZ wurde bereits für ein Element mit der SKU %sku%&quot;* generiert. Die Datei kann nicht importiert werden.
 
 ## Patch
 
@@ -53,7 +53,7 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Editionen und -Versionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank für Anleitungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Nützliche Links
 

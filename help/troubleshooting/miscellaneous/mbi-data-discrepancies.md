@@ -18,11 +18,11 @@ Sehen die Zahlen in einem bestimmten Bericht ungenau aus? Sehen Sie unerwartete 
 * [Checkliste für die Diagnose von Datendiskrepanzen](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Verwenden von Exporten zur Ermittlung von Datendiskrepanzen](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Wir empfehlen Ihnen außerdem, die richtige [Replikationsmethoden](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) und [rechecks](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) wurden für die Tabellen und Spalten festgelegt, die an der Diskrepanz beteiligt sind. Beachten Sie, dass Sie Administratorberechtigungen benötigen, um auf die Replikationsmethode zuzugreifen und die Informationen erneut zu überprüfen.
+Es wird außerdem empfohlen, sicherzustellen, dass die richtigen [Replikationsmethoden](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) und [erneute Prüfungen](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) für die Tabellen und Spalten festgelegt wurden, die an der Diskrepanz beteiligt sind. Beachten Sie, dass Sie Administratorberechtigungen benötigen, um auf die Replikationsmethode zuzugreifen und die Informationen erneut zu überprüfen.
 
 ## Ich brauche noch Hilfe!
 
-Wenn der Bericht immer noch ungenau ist, sorgen Sie sich nicht - unser Supportteam hilft Ihnen gerne! [Kontakt zu uns aufnehmen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit den folgenden Informationen:
+Wenn der Bericht immer noch ungenau ist, sorgen Sie sich nicht - unser Supportteam hilft Ihnen gerne! [Wenden Sie sich mit den folgenden Informationen an uns ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket):
 
 * Wie heißt der Bericht, in dem die Diskrepanz auftritt?
 * Welche Werte im Bericht sind falsch?
@@ -32,4 +32,4 @@ Wenn der Bericht immer noch ungenau ist, sorgen Sie sich nicht - unser Supportte
 ## Verwandtes Lesen
 
 * [Berechnete Spalten](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [Strukturdatenbankänderungen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [Strukturierte Datenbankänderungen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)

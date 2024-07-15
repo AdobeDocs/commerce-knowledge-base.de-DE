@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Dieser Artikel bietet eine Problemumgehung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Braintree-Zahlungsmethoden nicht beim Arbeiten mit dem Checkout für mehrere Adressen enthalten sind. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 
-Hinweis: Adobe Commerce empfiehlt die Verwendung der [Commerce Marketplace Braintree-Erweiterung](https://marketplace.magento.com/paypal-module-braintree.html) für die Versionen 2.3 und höher, um die PSD-Compliance zu wahren. Die Erweiterung bietet keine Funktion zum Auschecken mehrerer Adressen.
+Hinweis: Adobe Commerce empfiehlt die Verwendung der [Commerce Marketplace-Braintree-Erweiterung](https://marketplace.magento.com/paypal-module-braintree.html) für Versionen 2.3 und höher, um die PSD-Konformität zu wahren. Die Erweiterung bietet keine Funktion zum Auschecken mehrerer Adressen.
 
 ## Betroffene Produkte und Versionen
 
@@ -34,10 +34,10 @@ Die Core-Braintree-Integration wird verwendet.
 1. Melden Sie sich als Kunde an.
 1. Fügen Sie dem Warenkorb ein Produkt hinzu.
 1. Öffnen Sie Ihren Warenkorb.
-1. Presse **Warenkorb anzeigen und bearbeiten**.
-1. Presse **Mit mehreren Adressen auschecken**.
-1. Presse **Navigieren Sie zu Versandinformationen .**.
-1. Presse **Weiter zu Rechnungsinformationen**.
+1. Drücken Sie **Warenkorb anzeigen und bearbeiten**.
+1. Drücken Sie **Mit mehreren Adressen auschecken**.
+1. Drücken Sie die Taste **Gehe zu Versandinformationen**.
+1. Drücken Sie **Weiter zu Rechnungsinformationen**.
 
 <u>Erwartetes Ergebnis</u>:
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Wie ändere ich die E-Mail-Adresse in magento.com Konto, wenn das Feld ausgegraut ist?
 
-In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrer [Magento.com](https://account.magento.com) , wenn das Feld ausgegraut ist.
+In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern können, wenn das Feld ausgegraut ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -20,13 +20,13 @@ In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrer [Magento.
 
 ## Ursache
 
-Die E-Mail-Adresse auf Ihrer [Magento.com](https://account.magento.com) -Konto mit Ihrem Adobe-Konto verknüpft ist unter <https://account.adobe.com> und dort aktualisiert werden müssen.
+Die E-Mail-Adresse Ihres [Magento.com](https://account.magento.com)-Kontos ist mit Ihrem Adobe-Konto unter <https://account.adobe.com> verknüpft und muss dort aktualisiert werden.
 
 ## Schritte zum Ändern der E-Mail-Adresse
 
 ### Fall I:
 
-E-Mail-Adresse eines Benutzers ändern, der über ein eigenes Konto verfügt unter <https://account.adobe.com>
+E-Mail-Adresse eines Benutzers ändern, der über ein eigenes Konto bei <https://account.adobe.com> verfügt
 
 <u>Lösung</u>
 
@@ -40,20 +40,20 @@ E-Mail-Adresse eines Benutzers ändern, der über ein eigenes Konto verfügt unt
 
 ### Fall II:
 
-E-Mail-Adresse für einen Benutzer ändern, der derzeit kein eigenes Konto hat unter <https://account.adobe.com>
+E-Mail-Adresse für einen Benutzer ändern, der derzeit kein eigenes Konto bei <https://account.adobe.com> hat
 
 <u>Lösung</u>
 
-Wenn Sie Zugriff auf das Postfach des [aktuelle Eigentümer-E-Mail], setzen Sie das Kennwort für die E-Mail des aktuellen Eigentümers nach dem [Zurücksetzen oder Ändern des Adobe-Kennworts](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) Handbuch im Creative Cloud-Benutzerhandbuch.
+Wenn Sie Zugriff auf das Postfach der [aktuellen Eigentümer-E-Mail] haben, setzen Sie das Kennwort für die E-Mail des aktuellen Eigentümers gemäß dem Handbuch [Zurücksetzen oder ändern Sie Ihr Adobe-Kennwort](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch zurück.
 
 1. Suchen Sie den Link zum Zurücksetzen des Kennworts, der mit Anweisungen an das Postfach des aktuellen Eigentümers gesendet wird.
-1. Legen Sie ein neues Kennwort fest und ändern Sie die E-Mail in [neue Eigentümeremail].
-1. Navigieren Sie zum [IMS-Konto](https://account.adobe.com/) um sich mit der neuen E-Mail anzumelden, und ändern Sie das Kennwort.
-1. Nachdem Sie die E-Mail-Adresse und das Kennwort geändert haben, navigieren Sie zu [Magento.com](https://account.magento.com) , um sich mithilfe der [neue Eigentümeremail].
+1. Legen Sie ein neues Kennwort fest und ändern Sie die E-Mail in [E-Mail-Adresse des neuen Eigentümers].
+1. Navigieren Sie zum [IMS-Konto](https://account.adobe.com/) , um sich mit der neuen E-Mail anzumelden, und ändern Sie das Kennwort.
+1. Nachdem Sie die E-Mail-Adresse und das Kennwort geändert haben, navigieren Sie zu [Magento.com](https://account.magento.com) , um sich mit der [neuen Besitzer-E-Mail] anzumelden.
 
-Wenn Sie jedoch keinen Zugriff auf E-Mails haben, die an die [aktuelle Eigentümer-E-Mail]führen Sie die folgenden Schritte aus:
+Wenn Sie jedoch keinen Zugriff auf E-Mails haben, die an die [aktuelle Besitzer-E-Mail] gesendet werden, führen Sie die folgenden Schritte aus:
 
-1. E-Mail-Weiterleitung einrichten über [aktuelle Eigentümer-E-Mail] eine neue E-Mail mithilfe der Mailserver-Konfiguration Ihres Unternehmens erstellen.
+1. Richten Sie die E-Mail-Weiterleitung von der [aktuellen Eigentümer-E-Mail] an eine neue E-Mail mithilfe der E-Mail-Server-Konfiguration Ihres Unternehmens ein.
 1. Fahren Sie nun mit den vorhergehenden Schritten fort.
 
 ## Verwandtes Lesen

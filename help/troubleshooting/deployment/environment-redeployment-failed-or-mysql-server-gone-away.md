@@ -21,7 +21,7 @@ Dieser Artikel bietet eine Lösung für Probleme mit Adobe Commerce (alle Bereit
 
 ## Problem
 
-* Der Bereitstellungsprozess schlägt mit dem folgenden Fehler im Bereitstellungsprotokoll (Befehlszeile und Benutzeroberflächenprotokoll) fehl:  ```bash    Re-deploying environment abcdefghijklm-master-7rqtwti         E: Environment redeployment failed    ```
+* Der Bereitstellungsprozess schlägt mit dem folgenden Fehler im Bereitstellungsprotokoll (Befehlszeile und Benutzeroberflächenprotokoll) fehl: ```bash    Re-deploying environment abcdefghijklm-master-7rqtwti         E: Environment redeployment failed    ```
 * Adobe Commerce antwortet mit dem Fehler 503 und die folgende Fehlermeldung wird in den Anwendungsprotokollen angezeigt:    ```bash    SQLSTATE[HY000] [2006] MySQL server has gone away    ```    und der folgende Fehler wird angezeigt, wenn Sie eine Verbindung zu einem MySQL-Server herstellen:    ```bash    ERROR 2013 (HY000): Lost connection to MySQL server at 'reading initial communication packet', system error: 0 "Internal error/check (Not system error)"    ```
 
 ## Ursache
@@ -30,13 +30,13 @@ Die wahrscheinlichste Ursache für die Probleme ist, dass der MySQL-Datenbank zu
 
 ### Überprüfen Sie, ob für MySQL genügend Platz vorhanden ist.
 
-Für alle Adobe Commerce in den Starter-Planarchitekturumgebungen der Cloud-Infrastruktur und [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) der Adobe Commerce zur Planarchitektur der Cloud-Infrastruktur Pro [SSH in die Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) und führen Sie den Befehl aus:
+Führen Sie für alle Adobe Commerce-Umgebungen mit Starter-Plan-Architekturumgebungen für Cloud-Infrastruktur und der [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) der Adobe Commerce-Planarchitektur für Cloud-Infrastruktur Pro [SSH in der Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) aus und führen Sie den Befehl aus:
 
 ```bash
 magento-cloud db:size
 ```
 
-Für die Staging- oder Produktionsumgebung der Pro-Architektur: [SSH in die Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)und führen Sie die `df -h`   `| grep mysql` Befehl. Das Ergebnis sieht in etwa wie folgt aus:
+Führen Sie für die Staging- oder Produktionsumgebung der Pro-Architektur [SSH in der Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) aus und führen Sie den Befehl `df -h` aus.   `| grep mysql` . Das Ergebnis sieht in etwa wie folgt aus:
 
 ```bash
 sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
@@ -47,7 +47,7 @@ sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
 
 ### Um das Problem zu lösen, müssen Sie mehr Platz für MySQL bereitstellen.
 
-Für alle Integrationsumgebungen der Starter-Architektur und der Pro-Architektur gilt Folgendes: `.magento/services.yaml` durch Erhöhung der `mysql: disk:` -Parameter. Beispiel:
+Für alle Integrationsumgebungen der Starter-Architektur und der Pro-Architektur erfolgt dies in der Datei `.magento/services.yaml`, indem der Parameter `mysql: disk:` erhöht wird. Beispiel:
 
 ```yaml
 mysql:
@@ -55,10 +55,10 @@ mysql:
     disk: 2048
 ```
 
-Siehe [MySQL-Dienst einrichten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html) Artikel als Referenz.
+Weitere Informationen finden Sie im Artikel [Einrichten des MySQL-Dienstes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html) .
 
-Um diese Änderungen für die Staging- oder Produktionsumgebung der Pro-Architektur vorzunehmen, müssen Sie eine [Support-Ticket](https://support.magento.com). Normalerweise müssen Sie sich aber nicht mit Staging/Produktion der Pro-Architektur befassen, da Adobe Commerce diese Parameter für Sie überwacht und Sie benachrichtigt und/oder vertragsgemäß tätig wird.
+Um diese Änderungen für die Staging- oder Produktionsumgebung der Pro-Architektur vorzunehmen, müssen Sie ein [Support-Ticket](https://support.magento.com) erstellen. Normalerweise müssen Sie sich aber nicht mit Staging/Produktion der Pro-Architektur befassen, da Adobe Commerce diese Parameter für Sie überwacht und Sie benachrichtigt und/oder vertragsgemäß tätig wird.
 
 ### Anwenden der Änderungen
 
-Sobald Sie die `.magento/services.yaml` -Datei, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Die Push-Benachrichtigung Trigger den Bereitstellungsprozess.
+Nachdem Sie die `.magento/services.yaml` -Datei geändert haben, müssen Sie Ihre Änderungen übernehmen und per Push übertragen, damit sie angewendet werden. Die Push-Benachrichtigung Trigger den Bereitstellungsprozess.

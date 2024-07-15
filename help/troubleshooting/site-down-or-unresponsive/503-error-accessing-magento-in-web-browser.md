@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u>Zu reproduzierende Schritte</u>
 
-(Voraussetzungen: Stellen Sie sicher, dass der Store nicht in [Wartungsmodus](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html#config-mode-show)).
+(Voraussetzungen: Stellen Sie sicher, dass sich der Store nicht im [Wartungsmodus](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html#config-mode-show) befindet.)
 
 Navigieren Sie in einem Webbrowser zu Ihrem Commerce-Administrator oder Ihrer Storefront.
 
@@ -39,11 +39,11 @@ Sie erhalten den Fehler HTTP 503 (Dienst nicht verfügbar). Der Apache `error.lo
 
 ## Ursache {#details}
 
-Apache 2.4-Kompatibilitätsmodul `mod_access_compat` deaktiviert ist, was dazu führt, dass Adobe Commerce-URL-Neuschreibungen nicht ordnungsgemäß funktionieren.
+Das Apache 2.4-Kompatibilitätsmodul `mod_access_compat` ist deaktiviert, was dazu führt, dass Adobe Commerce-URL-Neuschreibungen nicht ordnungsgemäß funktionieren.
 
 ## Lösung {#suggested-solution}
 
-Aktivieren Sie die `mod_access_compat` Apache-Modul verwenden und Apache neu starten, indem Sie Folgendes als Benutzer mit &quot;root&quot;-Berechtigungen ausführen:
+Aktivieren Sie das Apache-Modul `mod_access_compat` und starten Sie Apache neu, indem Sie Folgendes als Benutzer mit den Berechtigungen &quot;root&quot;ausführen:
 
 ```bash
 a2enmod access_compat
@@ -80,5 +80,5 @@ apache2
 
 * [Apache-Dokumentation zu mod\_access\_compat](https://httpd.apache.org/docs/current/mod/mod_access_compat.html)
 * [Apache-Dokumentation zu mod\_authz\_host](https://httpd.apache.org/docs/current/mod/mod_authz_host.html)
-* [Sortieren, Zulassen, Ablehnen aus dem Apache-Definitionshandbuch](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
+* [Bestellen, Zulassen, Ablehnen aus dem Apache-Definitionsleitfaden](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
 * [askubuntu.com](https://askubuntu.com/questions/335228/changes-in-apache-config-between-12-04-2-and-12-04-3-lts)

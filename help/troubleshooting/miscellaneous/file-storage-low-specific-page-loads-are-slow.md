@@ -23,7 +23,7 @@ Dieser Artikel bietet eine Lösung für das Problem des geringen Festplattenspei
 
 ## Problem
 
-Geringer Speicherplatz und langsame Seitenladevorgänge können durch große, umfassende Rich-Bilder verursacht werden, die hohe Speichermengen in `pub/media/catalog/products` und die Freigabe von Speicherplatz zwischen Staging und Produktion (es sei denn, eine dedizierte Staging-Umgebung wird bereitgestellt).
+Geringer Festplattenspeicher und langsame Seitenladevorgänge können durch große, umfassende Bilder verursacht werden, die in `pub/media/catalog/products` hohe Speichermengen verwenden und Speicherplatz zwischen Staging und Produktion freigeben (es sei denn, es wird eine dedizierte Staging-Umgebung bereitgestellt).
 
 ## Ursache
 
@@ -33,8 +33,8 @@ Bilder werden nicht optimiert, um die Leistung mit der Anzeigequalität in Einkl
 
 Optimieren und komprimieren Sie sie vor dem Hochladen von Bildern, um die Leistung mit der Anzeigequalität in Einklang zu bringen. Dadurch wird der Speicherplatz erhöht und die Seitenladezeiten verkürzt. PNGs bieten kleinere Bildgrößen mit großen einfarbigen Bereichen. JPEG geben kleinere Größen für alles andere an. Verwenden Sie die höchste Komprimierung (ohne spürbaren Abbau). Dies beträgt in der Regel 60-80 %.
 
-Verwendung [Schnelle Bildoptimierung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) zur Erstellung von speichereffizienteren Bildern.
+Verwenden Sie [Fastly image optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html), um speichereffizientere Bilder zu erzeugen.
 
 ## Verwandtes Lesen
 
-Informationen zum Verwalten Ihres Festplattenspeichers (wenn Sie sich in Adobe Commerce in der Cloud-Infrastruktur befinden) finden Sie unter [Verwalten des Festplattenspeichers in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) im Commerce on Cloud Infrastructure Guide.
+Weitere Informationen zum Verwalten des Festplattenspeichers (wenn Sie sich in Adobe Commerce in der Cloud-Infrastruktur befinden) finden Sie unter [Verwalten des Festplattenspeichers in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) im Commerce on Cloud Infrastructure Guide.

@@ -37,7 +37,7 @@ labels: patch: 2041.1,article,labels,tags
 ---
 ```
 
-Um diesen Fehler zu vermeiden, schließen Sie den Titel oder die Beschriftungen (oder beide, wenn beide über Doppelpunkte verfügen) in **einfache Anführungszeichen**.
+Um diesen Fehler zu vermeiden, schließen Sie den Titel oder die Beschriftungen (oder beide, wenn beide Doppelpunkte aufweisen) in **einfache Anführungszeichen** ein.
 
 **Beispiel:**
 
@@ -61,7 +61,7 @@ labels: patch: 2041.1,'article',labels,tags
 ---
 ```
 
-Dieser Fehler wird behoben, indem der Titel oder die Beschriftungen (oder beide) in **Doppelte Anführungszeichen**.
+Dieser Fehler wird behoben, indem der Titel oder die Beschriftungen (oder beide) in **doppelte Anführungszeichen** eingeschlossen werden.
 
 **Beispiel:**
 
@@ -83,7 +83,7 @@ labels: patch: 2041.1,'article',"labels",can't,tags
 ---
 ```
 
-In diesem Fall können Sie den Titel oder die Beschriftungen (oder beides) in **Doppelte Anführungszeichen** und verwenden Sie eine **umgekehrter Schrägstrich** um alle doppelten Anführungszeichen in Titel und Titel zu maskieren.
+Schließen Sie in diesem Fall den Titel oder die Beschriftungen (oder beide) in **doppelte Anführungszeichen** ein und verwenden Sie einen **umgekehrten Schrägstrich**, um alle doppelten Anführungszeichen im Titel und in den Beschriftungen zu maskieren.
 
 **Beispiel:**
 

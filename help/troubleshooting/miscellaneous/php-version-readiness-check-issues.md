@@ -17,7 +17,7 @@ In diesem Artikel werden die Lösungen für die Probleme der PHP-Version beschri
 
 >[!WARNING]
 >
->Beachten Sie bei Adobe Commerce zur Cloud-Infrastruktur, dass Service-Upgrades nicht ohne 48-Stunden-Benachrichtigung an unser Infrastrukturteam in die Produktionsumgebung gesendet werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Geben Sie die erforderliche Dienstaktualisierung an und geben Sie den Zeitpunkt an, zu dem die Aktualisierung beginnen soll.
+>Beachten Sie bei Adobe Commerce zur Cloud-Infrastruktur, dass Service-Upgrades nicht ohne 48-Stunden-Benachrichtigung an unser Infrastrukturteam in die Produktionsumgebung gesendet werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen [senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), in dem Sie Ihre erforderliche Service-Aktualisierung und den Zeitpunkt angeben, zu dem der Upgrade-Prozess beginnen soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -32,7 +32,7 @@ Die Prüfung schlägt fehl, da Sie eine nicht unterstützte PHP-Version verwende
 
 ### Lösung
 
-Um dieses Problem zu beheben, verwenden Sie eine der unterstützten Versionen, die in unserer Entwicklerdokumentation aufgeführt sind [2.3.x Systemanforderungen](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html) und [2.2.x Systemanforderungen](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html).
+Um dieses Problem zu beheben, verwenden Sie eine der unterstützten Versionen, die in unserer Entwicklerdokumentation unter [2.3.x Systemanforderungen](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html) und [2.2.x Systemanforderungen](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html) aufgeführt sind.
 
 ## Die PHP-Kompatibilitätsprüfung wird nicht angezeigt
 
@@ -51,7 +51,7 @@ Dies ist ein Symptom der falschen Einrichtung von Cron-Aufträgen. Weitere Infor
 
 Die Prüfung meldet die falsche PHP-Version. Normalerweise geschieht dies nur für fortgeschrittene Benutzer, die mehrere PHP-Versionen installiert haben. In einigen Fällen schlägt die Bereitschaftsprüfung fehl, in anderen Fällen sogar.
 
-Wenn die PHP-Version, die von der Readiness-Prüfung gemeldet wurde, falsch ist, ist dies das Ergebnis einer Inkongruenz der PHP-Versionen zwischen der PHP-CLI und dem Webserver-Plug-in. Adobe Commerce erfordert die Verwendung von *eine Version* von PHP sowohl für die CLI (auf der Cron ausgeführt wird) als auch für den Webserver (auf dem Commerce Admin, Component Manager und System Upgrade ausgeführt werden).
+Wenn die PHP-Version, die von der Readiness-Prüfung gemeldet wurde, falsch ist, ist dies das Ergebnis einer Inkongruenz der PHP-Versionen zwischen der PHP-CLI und dem Webserver-Plug-in. Adobe Commerce erfordert die Verwendung von *einer PHP-Version* sowohl für die CLI (auf der Cron ausgeführt wird) als auch für den Webserver (auf dem Commerce Admin, Component Manager und System Upgrade ausgeführt werden).
 
 ### Lösung
 
@@ -60,10 +60,10 @@ Wir gehen davon aus, dass Sie, wenn Sie dieses Problem haben, ein fortgeschritte
 Um das Problem zu beheben, versuchen Sie Folgendes:
 
 * Starten Sie Ihren Webserver oder php-fm neu.
-* Überprüfen Sie die `$PATH` Umgebungsvariable für mehrere Pfade zu PHP.
-* Verwenden Sie die `which php` -Befehl, um die erste ausführbare PHP-Datei in Ihrem Pfad zu finden; wenn sie nicht korrekt ist, entfernen Sie sie oder erstellen Sie einen Symlink zur richtigen PHP-Version.
-* Verwenden Sie eine [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) , um weitere Informationen zu sammeln.
+* Überprüfen Sie die Umgebungsvariable `$PATH` auf mehrere Pfade zu PHP.
+* Verwenden Sie den Befehl `which php` , um die erste ausführbare PHP-Datei in Ihrem Pfad zu finden. Wenn sie nicht korrekt ist, entfernen Sie sie oder erstellen Sie einen Symlink zur richtigen PHP-Version.
+* Verwenden Sie eine [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) -Seite, um weitere Informationen zu sammeln.
 * Stellen Sie sicher, dass Sie eine unterstützte PHP-Version gemäß unseren Systemanforderungen in unserer Entwicklerdokumentation ausführen:
    * [Systemanforderungen für Adobe Commerce 2.3.x](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html)
    * [Systemanforderungen für Adobe Commerce 2.2.x](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html)
-* Legen Sie dieselben PHP-Einstellungen für die PHP-Befehlszeile und das PHP-Webserver-Plug-in fest, wie im Abschnitt [PHP-Konfigurationsoptionen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-centos-ubuntu.html) in unserer Entwicklerdokumentation.
+* Legen Sie dieselben PHP-Einstellungen für die PHP-Befehlszeile und das PHP-Webserver-Plug-in fest, wie in [PHP-Konfigurationsoptionen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-centos-ubuntu.html) in unserer Entwicklerdokumentation beschrieben.

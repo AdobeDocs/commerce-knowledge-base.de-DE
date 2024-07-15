@@ -23,4 +23,4 @@ Ja, um die fortlaufende Synchronisierung der Systeme zu gewährleisten, ruft Ado
 
 ## So deaktivieren Sie diese E-Mails:
 
-Befolgen Sie diese Anweisungen für [Aktualisieren von Benachrichtigungseinstellungen auf der Amazon-Site](https://sellercentral.amazon.com/gp/help/external/G871).
+Befolgen Sie diese Anweisungen für [Aktualisieren der Benachrichtigungseinstellungen auf der Amazon-Site](https://sellercentral.amazon.com/gp/help/external/G871).

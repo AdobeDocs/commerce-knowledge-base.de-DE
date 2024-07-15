@@ -23,7 +23,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass das Magento Order Mana
 
 >[!WARNING]
 >
->Haftungsausschluss: Adobe Commerce empfiehlt oder unterstützt kein bestimmtes Instrument zur Tunnelerstellung. Die vorhergehenden sind nur Vorschläge. Weitere Informationen finden Sie im [ngrok-Dokumentation](https://ngrok.com/docs).
+>Haftungsausschluss: Adobe Commerce empfiehlt oder unterstützt kein bestimmtes Instrument zur Tunnelerstellung. Die vorhergehenden sind nur Vorschläge. Weitere Informationen finden Sie in der [ngrok-Dokumentation](https://ngrok.com/docs).
 
 ## Problem
 
@@ -31,7 +31,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass das Magento Order Mana
 
 1. Installieren Sie Adobe Commerce in Ihrer lokalen Umgebung.
 1. Richten Sie ngrok ein, um einen Tunnel zu erstellen und Ihren lokalen Server verfügbar zu machen.
-1. Probieren [Verbindung zu OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+1. Versuchen Sie, [eine Verbindung zu OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) herzustellen.
 
 <u>Erwartetes Ergebnis</u>
 

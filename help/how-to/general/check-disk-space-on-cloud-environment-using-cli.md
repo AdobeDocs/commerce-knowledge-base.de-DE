@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Überprüfen des Festplattenspeichers mithilfe von CLI in Adobe Commerce in der Cloud-Infrastruktur-Umgebung
 
-Weitere Informationen finden Sie unter [Verwalten des Festplattenspeichers](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie im Artikel [Verwalten des Festplattenspeichers](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) in unserer Entwicklerdokumentation.

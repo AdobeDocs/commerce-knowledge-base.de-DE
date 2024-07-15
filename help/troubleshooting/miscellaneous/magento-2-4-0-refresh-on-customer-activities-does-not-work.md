@@ -24,33 +24,33 @@ Dieser Artikel bietet eine Lösung für das bekannte Problem mit Adobe Commerce 
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **Admin Panel** > **Vertrieb** > **Bestellungen**.
-1. Klicken Sie auf **Neue Bestellung erstellen** Schaltfläche.
+1. Gehen Sie zum Bereich **Admin Panel** > **Sales** > **Bestellungen**.
+1. Klicken Sie auf die Schaltfläche **Neue Bestellung erstellen** .
 1. Wählen Sie den erstellten Kunden aus.
 1. Markieren Sie als erstellten Kunden die Storefront.
-1. Navigieren Sie zu **Produkt** Seite. Klicken Sie auf **Aktualisieren** Schaltfläche auf der **Kürzlich angezeigte Produkte** Abschnitt **Kundenaktivitäten**.
+1. Rufen Sie die Seite **Produkt** auf. Klicken Sie auf die Schaltfläche **Aktualisieren** im Abschnitt **Zuletzt angezeigte Produkte** der Aktivitäten des **Kunden**.
 1. Gehen Sie zurück zur Storefront.
 1. Platzieren Sie eine Bestellung mit den erstellten Produkten.
-1. Gehen Sie zurück zu **Admin Panel** und klicken Sie auf **Aktualisieren** Schaltfläche des **Zuletzt sortierte Artikel** Abschnitt **Kundenaktivitäten**.
-1. Gehen Sie zurück zur Storefront. Fügen Sie das erstellte Produkt zum **Vergleichsliste**.
-1. Gehen Sie zurück zu **Admin Panel**. Klicken Sie auf **Aktualisieren** Schaltfläche des **Produkte in der Vergleichsliste** Abschnitt **Kundenaktivitäten**.
+1. Gehen Sie zurück zum **Admin-Bedienfeld** und klicken Sie auf die Schaltfläche **Aktualisieren** im Abschnitt **Zuletzt bestellte Artikel** der **Aktivitäten des Kunden**.
+1. Gehen Sie zurück zur Storefront. Fügen Sie das erstellte Produkt zur **Vergleichsliste** hinzu.
+1. Gehen Sie zurück zum **Admin-Bedienfeld**. Klicken Sie auf die Schaltfläche **Aktualisieren** im Abschnitt **Produkte in Vergleichsliste** der Aktivitäten des **Kunden**.
 1. Gehen Sie zurück zur Storefront.
 1. Entfernen Sie das erstellte Produkt aus der **Vergleichsliste**.
-1. Gehen Sie zurück zu **Admin Panel**.
-1. Klicken Sie auf **Aktualisieren** Schaltfläche des **Vor Kurzem verglichene Produkte** Abschnitt **Kundenaktivitäten**.
+1. Gehen Sie zurück zum **Admin-Bedienfeld**.
+1. Klicken Sie auf die Schaltfläche **Aktualisieren** im Abschnitt **Zuletzt verglichene Produkte** der Aktivitäten des **Kunden**.
 1. Gehen Sie zurück zur Storefront.
 
 <u>Erwartete Ergebnisse</u>:
 
-Der Name des Produkts sollte im **Kürzlich angezeigte Produkte**, **Zuletzt sortierte Artikel**, **Produkte in der Vergleichsliste**, und **Vor Kurzem verglichene Produkte** Abschnitt.
+Der Name des Produkts sollte im Abschnitt &quot;**Zuletzt angezeigte Produkte**&quot;, &quot;**Zuletzt bestellte Artikel**&quot;, &quot;**Produkte in Vergleichsliste**&quot;und &quot;**Vor kurzem verglichene Produkte**&quot;angezeigt werden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Seite wird jedes Mal, wenn ein **Aktualisieren** auf klicken. Der Name des Produkts wird nicht im entsprechenden Abschnitt angezeigt.
+Die Seite wird jedes Mal, wenn auf die Schaltfläche **Aktualisieren** geklickt wird, nach oben gescrollt. Der Name des Produkts wird nicht im entsprechenden Abschnitt angezeigt.
 
 ## Lösung
 
-Eine Problemumgehung besteht darin, dass der Administrator **Kundenaktivitäten** durch Klicken auf **Änderungen aktualisieren** -Schaltfläche am unteren Rand der Seitenleiste. Das Problem soll im Patch für Adobe Commerce 2.4.1 behoben werden.
+Eine Problemumgehung besteht darin, dass der Administrator die **Aktivitäten des Kunden** aktualisieren kann, indem er unten in der Seitenleiste auf die Schaltfläche **Änderungen aktualisieren** klickt. Das Problem soll im Patch für Adobe Commerce 2.4.1 behoben werden.
 
 ![mceclip0.png](assets/mceclip0.png)
 

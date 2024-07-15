@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Konfigurieren von NPM für die Verwendung von PWA Studio
 
-[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) ist ein neues Projekt, das für Adobe Commerce in der Cloud-Infrastruktur 2.3.x oder höher verfügbar ist. Um PWA Studio verwenden und installieren zu können, müssen Sie die NPM Package Manager-Version auf 5.x oder höher setzen, um Unterstützung für Node.js 8.x zu erhalten. Dies geschieht im `hooks:build` Abschnitt `.magento.app.yaml` Konfigurationsdatei.
+[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) ist ein neues Projekt, das für Adobe Commerce in der Cloud-Infrastruktur 2.3.x oder höher verfügbar ist. Um PWA Studio verwenden und installieren zu können, müssen Sie die NPM Package Manager-Version auf 5.x oder höher setzen, um Unterstützung für Node.js 8.x zu erhalten. Dies geschieht im Abschnitt `hooks:build` der Konfigurationsdatei `.magento.app.yaml` .
 
 ## Umwelt und Technologien
 
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 ## Festlegen der NPM-Version: Schritte
 
-Um die benötigte NPM-Version festzulegen, geben Sie sie im `.magento.app.yaml` Konfigurationsdatei. Führen Sie die folgenden Schritte aus:
+Um die benötigte NPM-Version festzulegen, geben Sie sie in der Konfigurationsdatei `.magento.app.yaml` an. Führen Sie die folgenden Schritte aus:
 
-1. Suchen Sie in Ihrer lokalen Entwicklungsumgebung die `.magento.app.yaml` Konfigurationsdatei.
+1. Suchen Sie in Ihrer lokalen Entwicklungsumgebung die Konfigurationsdatei `.magento.app.yaml` .
 1. Öffnen Sie die Datei zur Bearbeitung mit Ihrem Texteditor oder Ihrer IDE.
-1. Legen Sie die erforderliche Version in der `hooks:build` Abschnitt. Im folgenden Beispiel ist die Konfiguration so eingestellt, dass NPM v9.5.0 installiert wird, die derzeit höchste verfügbare Version (4. Februar 2019):
+1. Legen Sie die erforderliche Version im Abschnitt `hooks:build` fest. Im folgenden Beispiel ist die Konfiguration so eingestellt, dass NPM v9.5.0 installiert wird, die derzeit höchste verfügbare Version (4. Februar 2019):
 
    ```yaml
    hooks:
@@ -48,10 +48,10 @@ Um die benötigte NPM-Version festzulegen, geben Sie sie im `.magento.app.yaml` 
    > ```
 
 1. Speichern Sie die Änderungen in der Datei.
-1. Git pushen Sie die bearbeitete Datei an Ihre [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md).
+1. Git pushen Sie die bearbeitete Datei in Ihre [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md).
 
 Die Änderungen treten in Kraft, nachdem Sie Git die aktualisierte YAML-Datei in die Umgebung gepusht haben.
 
 ## Verwandte Dokumentation
 
-* [Anwendungskonfiguration: Hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) in unserem Adobe Commerce on Cloud Infrastructure Guide.
+* [Anwendungskonfiguration: hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) in unserem Adobe Commerce on Cloud Infrastructure Guide.

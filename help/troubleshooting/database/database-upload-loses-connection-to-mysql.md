@@ -35,14 +35,14 @@ Dies liegt in der Regel an mangelndem Speicherplatz für den Import der Datenban
 
 ## Lösung
 
-Überprüfen Sie, ob nicht genügend Festplattenspeicher vorhanden ist. Führen Sie dazu die `netcat` -Befehl in der CLI für den Datenbankport 3306; es wird eine vollständige Meldung auf dem Datenträger angezeigt, wenn dieser voll ist:
+Überprüfen Sie, ob nicht genügend Festplattenspeicher vorhanden ist. Führen Sie dazu den Befehl `netcat` in der CLI für den Datenbankanschluss 3306 aus. Wenn er voll ist, wird eine vollständige Meldung auf dem Datenträger ausgegeben:
 
 ```
 web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Sie müssen mehr Speicherplatz für die Datenbank in Ihrer `services.yaml` und stellen Sie bereit, wenn Sie Speicherplatz nicht verwendet haben. Anweisungen finden Sie unter [Service Disk Space](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
+Sie müssen mehr Speicherplatz für die Datenbank in Ihrem `services.yaml` zuweisen und bereitstellen, wenn Sie Speicherplatz nicht verwendet haben. Anweisungen finden Sie unter [Service Disk Space](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
 
 Hinweis: Im Pro-Architekturplan können Sie den zugewiesenen Speicherplatz auf Ihrer Partition überprüfen, indem Sie den folgenden Befehl ausführen: `df -h`
 

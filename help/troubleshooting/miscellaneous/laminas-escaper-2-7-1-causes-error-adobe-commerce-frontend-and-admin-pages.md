@@ -33,7 +33,7 @@ Kein Fehler.
 
 <u>Tatsächliches Ergebnis</u>:
 
-Nach der Aktualisierung auf laminas/laminas-escaper:2.7.1 wird eine Fehlermeldung auf einer Seite zur Produktbearbeitung (oder Produktverwaltung) angezeigt: *TypeError: rawurlencode() erwartet, dass Parameter 1 Zeichenfolge ist, int angegeben in /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
+Nach der Aktualisierung auf laminas/laminas-escaper:2.7.1 wird auf einer Seite zur Produktbearbeitung (oder Produktverwaltung) eine Fehlermeldung angezeigt: *TypeError: rawurlencode() erwartet, dass Parameter 1 eine Zeichenfolge ist, int angegeben in /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
 Dieser Fehler tritt auf den Frontend- und Admin-Seiten auf, wodurch der Seiteninhalt verzerrt wird.
 
 ## Ursache
@@ -42,8 +42,8 @@ Laminas/Laminas-Escaper 2.7.1 begann mit der strengen Typvalidierung für die Es
 
 ## Lösung
 
-Ausführen `composer require laminas/laminas-escaper:2.7.0` im Stammverzeichnis jedes Projekts.
+Führen Sie `composer require laminas/laminas-escaper:2.7.0` im Stammverzeichnis jedes Projekts aus.
 
 ## Verwandtes Lesen
 
-Laminatdokumentation: [Lamina-Escaper](https://docs.laminas.dev/laminas-escaper/)
+Laminas-Dokumentation: [laminas-escaper](https://docs.laminas.dev/laminas-escaper/)

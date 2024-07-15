@@ -25,7 +25,7 @@ In diesem Artikel wird ein bekanntes Problem in Adobe Commerce 2.3.5 erläutert,
 <u>Zu reproduzierende Schritte</u>:
 
 1. Fügen Sie dem Warenkorb physische und virtuelle Produkte hinzu.
-1. Begeben Sie sich zum Checkout und wählen Sie **Mit mehreren Adressen auschecken**.
+1. Fahren Sie mit dem Checkout fort und wählen Sie **Mit mehreren Adressen auschecken** aus.
 1. Fügen Sie alle erforderlichen Informationen hinzu und geben Sie die Bestellung auf.
 
 <u>Erwartetes Ergebnis</u>:
@@ -52,4 +52,4 @@ In unserer Support-Wissensdatenbank:
 
 In unserer Entwicklerdokumentation:
 
-* [Versionshinweise zu Adobe Commerce 2.3.5](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Adobe Commerce 2.3.5 - Versionshinweise](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

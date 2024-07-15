@@ -22,40 +22,40 @@ Dieser Artikel enthält einen Patch für ein bekanntes Adobe Commerce 2.4.0-Prob
 
 ## Problem
 
-<u>Voraussetzungen</u>: Erstellen Sie eine Bestellung mit der Versandmethode FedEx, DHL, UPS oder USPS.
+<u>Voraussetzungen</u>: Erstellen Sie eine Bestellung mithilfe der Versandmethode FedEx, DHL, UPS oder USPS.
 
 ### Szenario 1: Beim Hinzufügen einer Sendung einen Titel erstellen
 
 <u>Zu reproduzierende Schritte:</u>
 
-1. Öffnen Sie die platzierte Bestellung unter &quot;Admin&quot;. **Vertrieb** > **Bestellungen**.
-1. Klicken Sie auf **Schiff** Schaltfläche. Die **Neue Sendungen** Seite geöffnet.
+1. Öffnen Sie die platzierte Bestellung im Admin unter **Verkauf** > **Bestellungen**.
+1. Klicken Sie auf die Schaltfläche **Schiff** . Die Seite **Neue Sendung** wird geöffnet.
 
 <u>Erwartetes Ergebnis:</u>
 
-Die **Versandtitel erstellen** wird unten auf der Seite angezeigt.
+Das Kontrollkästchen **Versandtitel erstellen** wird unten auf der Seite angezeigt.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Die **Versandtitel erstellen** nicht angezeigt.
+Das Kontrollkästchen **Versandtitel erstellen** wird nicht angezeigt.
 
 ### Szenario 2: Erstellen eines Etiketts für eine bestehende Sendung
 
 <u>Zu reproduzierende Schritte:</u>
 
-1. Öffnen Sie die platzierte Bestellung unter &quot;Admin&quot;. **Vertrieb** > **Bestellungen**.
-1. Klicken Sie auf **Schiff** Schaltfläche. Die **Neue Sendungen** Seite geöffnet.
-1. Klicken Sie auf **Sendung übermitteln** Schaltfläche. Eine Sendung wird erstellt.
+1. Öffnen Sie die platzierte Bestellung im Admin unter **Verkauf** > **Bestellungen**.
+1. Klicken Sie auf die Schaltfläche **Schiff** . Die Seite **Neue Sendung** wird geöffnet.
+1. Klicken Sie auf die Schaltfläche **Sendung senden** . Eine Sendung wird erstellt.
 1. Öffnen Sie die neu erstellte Sendung.
-1. Klicken Sie auf **Versandtitel erstellen** Schaltfläche. Die **Erstellen von Paketen** wird geöffnet.
+1. Klicken Sie auf die Schaltfläche **Versandtitel erstellen** . Das Dialogfeld **Pakete erstellen** wird geöffnet.
 
 <u>Erwartetes Ergebnis:</u>
 
-Die **Produkte zum Paket hinzufügen** Schaltfläche auf der **Erstellen von Paketen** modales Fenster zeigt Felder mit Bestellelementen an.
+Die Schaltfläche **Produkte zum Paket hinzufügen** im modalen Fenster **Pakete erstellen** zeigt Felder mit Bestellelementen an.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Die **Erstellen von Paketen** modales Fenster nicht richtig angezeigt wird, ist es nicht möglich, Bestellartikel zur Sendung hinzuzufügen.
+Das modale Fenster **Pakete erstellen** wird nicht ordnungsgemäß angezeigt. Es ist nicht möglich, der Sendung Bestellelemente hinzuzufügen.
 
 ## Lösung
 
@@ -67,7 +67,7 @@ Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach 
 
 [MC-35514-2.4.0-CE-Composer-2.patch](assets/MC-35514-2.4.0-CE-composer-2.patch.zip)
 
-Der Patch kann auch in beiden heruntergeladen werden. `.git` und `.composer`, Formate in [Adobe Commerce-Downloads](https://magento.com/tech-resources/download) Seite, unter **Patches** in der linken Spaltennavigation. Suchen Sie nach dem Patch MC-35514 .
+Der Patch kann auch in den Formaten `.git` und `.composer` heruntergeladen werden, und zwar auf der Seite [Adobe Commerce-Downloads](https://magento.com/tech-resources/download) unter **Patches** in der linken Spaltennavigation. Suchen Sie nach dem Patch MC-35514 .
 
 ### Kompatible Adobe Commerce-Versionen:
 
@@ -78,6 +78,6 @@ Der Patch wurde für erstellt:
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

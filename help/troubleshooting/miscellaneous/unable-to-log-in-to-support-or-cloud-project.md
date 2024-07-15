@@ -17,11 +17,11 @@ Dieser Artikel bietet eine Lösung für Fälle, in denen Sie Schwierigkeiten hab
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce (alle Bereitstellungsmethoden) alle [unterstützte Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce (alle Bereitstellungsmethoden) alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Wenn Sie [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) oder [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) Sie werden feststellen, dass es jetzt ein einheitliches Anmeldeformular gibt und Sie Ihre Anmeldedaten nicht mehr wie bisher eingeben können.
+Wenn Sie zu [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) oder [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) gehen, werden Sie möglicherweise feststellen, dass es jetzt ein einheitliches Anmeldeformular gibt und Sie Ihre Anmeldedaten nicht mehr wie bisher eingeben können.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -51,7 +51,7 @@ Sie können sich wie folgt bei dem Konto anmelden:
 - Ein bestehendes Adobe-Unternehmens-/Personenkonto.
 - Wenn Sie kein Adobe-Konto haben, erstellen Sie eines mit derselben E-Mail-Adresse.
 
-Anweisungen hierzu finden Sie unter [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) in Adobe Experience League.
+Anweisungen finden Sie unter [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) in Adobe Experience League.
 
 ## Verwandtes Lesen
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fehlermeldung beim Hinzufügen von Sites zum Sicherheitsscan
 
-Dieser Artikel bietet mögliche Lösungen für das Problem, wenn ein Benutzer keine Sites zum [Commerce Security Scan](https://account.magento.com/scanner/dashboard/).
+Dieser Artikel bietet mögliche Lösungen für das Problem, wenn ein Benutzer keine Sites zum [Commerce Security Scan](https://account.magento.com/scanner/dashboard/) hinzufügen kann.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,7 +22,7 @@ Dieser Artikel bietet mögliche Lösungen für das Problem, wenn ein Benutzer ke
 
 ## Problem
 
-Benutzer kann keine Sites zum [Commerce Security Scan](https://account.magento.com/scanner/dashboard/). Beim Versuch, eine Site hinzuzufügen, wird die folgende Fehlermeldung angezeigt: *Die Site kann nicht zum Scannen gesendet werden.*
+Benutzer können keine Sites zum [Commerce-Sicherheitsscan](https://account.magento.com/scanner/dashboard/) hinzufügen. Die folgende Fehlermeldung wird angezeigt, wenn versucht wird, eine Site hinzuzufügen: *Site kann nicht zum Scannen übermittelt werden.*
 
 ## Lösung
 
@@ -31,10 +31,10 @@ Benutzer kann keine Sites zum [Commerce Security Scan](https://account.magento.c
    * 34 196 167 176
    * 3 218 25 102
 
-1. Der Bestätigungscode ist zeitabhängig. Wenn nach der **Site hinzufügen** auf den Link geklickt wurde, ist der Code wahrscheinlich abgelaufen.
+1. Der Bestätigungscode ist zeitabhängig. Wenn mehr als 30 Minuten vergangen sind, nachdem auf den Link **Site hinzufügen** geklickt wurde, ist der Code wahrscheinlich abgelaufen.
 1. Vergessen Sie nicht, den Cache zu leeren und sicherzustellen, dass der Validierungscode im Quelltext der Startseite angezeigt wird. Der Bestätigungscode sollte entsprechend den HTML Markup-Spezifikationen eingefügt werden: HTML-Kommentar kann in den Seitentext eingefügt werden (wir empfehlen, ihn in den Fußzeilenabschnitt einzufügen); das META-Tag sollte sich nur im Kopfabschnitt befinden.
-1. Vor dem Klicken **Bestätigungscode überprüfen**, öffnen Sie die Entwicklerkonsole des Browsers und klicken Sie auf die **Netzwerk** und überprüfen Sie die Antwort von magento.com. Es sollte HTTP 200 (OK) sein und der Antworttext sollte ein JSON-Objekt enthalten.
-1. Wenn der Antwort-Code HTTP 200 ist und der Antworttext ein JSON-Objekt und der `verified` Eigenschaftswert ist `false`bedeutet dies, dass der Code nicht auf der Seite gefunden wird. Die `details` -Eigenschaftswert sollte die Erklärung enthalten. Wenn der Store beispielsweise ein selbstsigniertes SSL-Zertifikat verwendet, tritt wahrscheinlich ein Verbindungsfehler auf.
+1. Bevor Sie auf **Bestätigungscode überprüfen** klicken, öffnen Sie die Entwicklerkonsole des Browsers, klicken Sie auf die Registerkarte **Netzwerk** und überprüfen Sie die Antwort von magento.com. Es sollte HTTP 200 (OK) sein und der Antworttext sollte ein JSON-Objekt enthalten.
+1. Wenn der Antwort-Code HTTP 200 ist und der Antworttext ein JSON-Objekt ist und der `verified`-Eigenschaftswert `false` lautet, bedeutet dies, dass der Code nicht auf der Seite gefunden wird. Der Eigenschaftswert `details` sollte die Erklärung enthalten. Wenn der Store beispielsweise ein selbstsigniertes SSL-Zertifikat verwendet, tritt wahrscheinlich ein Verbindungsfehler auf.
 
 Wenn Sie weiterhin keine Sites hinzufügen können, führen Sie die folgenden Schritte aus:
 

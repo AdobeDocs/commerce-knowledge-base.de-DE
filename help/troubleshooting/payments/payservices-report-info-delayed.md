@@ -29,34 +29,36 @@ Nachdem Sie beispielsweise eine Bestellung in Rechnung gestellt (erfasst) oder e
 
 Voraussetzungen: Eine Bestellung wird mithilfe der Funktion Zahlungsdienste durchgeführt.
 
-1. Eine Bestellung ist [fakturiert](https://docs.magento.com/user-guide/sales/invoice-create.html) (oder [abgebrochen](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) oder [über Kreditkarte zurückerstattet](https://docs.magento.com/user-guide/sales/credit-memos.html)) in der [Admin](https://docs.magento.com/user-guide/stores/admin.html).
+1. Eine Bestellung wird in [Admin](https://docs.magento.com/user-guide/stores/admin.html) als [fakturiert](https://docs.magento.com/user-guide/sales/invoice-create.html) (oder [storniert](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) oder [durch Credit Memo](https://docs.magento.com/user-guide/sales/credit-memos.html) zurückerstattet).
 1. Navigieren Sie zum Bericht Bestellstatus , um Informationen zu dieser Bestellung anzuzeigen.
-1. Der Status wird angezeigt als `AUTHORIZED`: der Auftragsstatus vor der Rechnungsstellung oder einer anderen Bestellaktion.
+1. Der Status wird als `AUTHORIZED` angezeigt, was dem Bestellstatus vor der Rechnungsstellung oder anderen Bestellaktionen entspricht.
 
    Commerce hat keine Daten synchronisiert und an Zahlungsdienste gesendet. Daher wird der neue Bestellstatus vom Bericht noch nicht erkannt.
 
 >[!NOTE]
 >
->Dies ist nur ein gängiger Anwendungsfall. In anderen Anwendungsfällen kann es vorkommen, dass ein [Bestellaktion](https://docs.magento.com/user-guide/sales/order-actions.html) auftritt und die Daten nicht sofort im entsprechenden Bericht verfügbar sind.
+>Dies ist nur ein gängiger Anwendungsfall. Es kann andere Anwendungsfälle geben, in denen eine [Bestellaktion](https://docs.magento.com/user-guide/sales/order-actions.html) auftritt und die Daten nicht sofort im entsprechenden Bericht verfügbar sind.
 
-<u>Erwartetes Ergebnis</u>: Berichtsdaten werden sofort ausgefüllt, nachdem eine Aktion für eine Bestellung ausgeführt wurde.
+<u>Erwartetes Ergebnis</u>:
+Berichtsdaten werden sofort ausgefüllt, nachdem eine Aktion für eine Bestellung erfolgt ist.
 
-<u>Tatsächliches Ergebnis</u>: Bei gerade abgeschlossenen Bestellaktionen kann es zu einer Verzögerung bei den angezeigten Berichtsdaten kommen. Zahlungsverantwortliche Berichte können eine Verzögerung von 24-48 Stunden verursachen. Berichte zum Bestellstatus können eine Verzögerung von einigen Stunden verursachen.
+<u>Tatsächliches Ergebnis</u>:
+Es kann zu einer Verzögerung bei sichtbaren Berichtsdaten für gerade abgeschlossene Bestellaktionen kommen. Zahlungsverantwortliche Berichte können eine Verzögerung von 24-48 Stunden verursachen. Berichte zum Bestellstatus können eine Verzögerung von einigen Stunden verursachen.
 
 ## Ursache
 
 Es gibt zwei Faktoren, die sich auf diese Verzögerung bei den sichtbaren Daten im Admin auswirken:
 
-* Wie oft Sie Daten aus Commerce synchronisieren (exportieren und beibehalten), über [Konfiguration in der Admin-Konfiguration](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html).
+* Wie oft Sie Daten aus Commerce über die [Konfiguration in Admin](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html) synchronisieren (exportieren und beibehalten).
 * Zeitrahmen, in dem PayPal Berichtsdaten veröffentlicht.
 
 ## Lösung
 
 Für Bestellstatusberichte:
 
-1. Navigieren Sie zu **Vertrieb** > **Zahlungsdienste**.
-1. Klicks **Bestellstatus** , um die Tabelle mit den Berichten zum Bestellstatus anzuzeigen.
-1. Erzwingen der Neusynchronisierung durch Klicken auf **erzwingen resync** rechts oben in der Berichtstabelle angezeigt.
+1. Navigieren Sie zu **Verkauf** > **Zahlungsdienste**.
+1. Klicken Sie auf **Bestellstatus** , um die Berichtstabelle zum Bestellstatus anzuzeigen.
+1. Erzwingen Sie die Neusynchronisierung, indem Sie oben rechts in der Berichtstabelle auf das Symbol **Resync erzwingen** klicken.
 1. Sie sollten die letzte aktualisierte Zeitstempeländerung sehen und neue Transaktionen in Ihre Berichtstabelle geladen haben.
 
 Bei PayPal-Payout-Berichten ist das erwartete Ergebnis eine Verzögerung von 24-48 Stunden aufgrund der Abhängigkeit vom Zeitrahmen für die Datenveröffentlichung von PayPal.

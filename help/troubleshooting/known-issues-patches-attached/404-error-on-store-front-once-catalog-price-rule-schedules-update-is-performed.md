@@ -21,9 +21,9 @@ Storefront-Seiten sind nicht mehr verfügbar und geben den 404-Fehler zurück. D
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Erstellen Sie in Commerce Admin eine neue Katalogpreisregel unter **Marketing** > **Promotions** > **Katalogpreisregel**.
-1. Im **Katalogpreisregel** Raster, klicken **Bearbeiten,** eine neue Aktualisierung planen und **Status** nach *Aktiv.*
-1. Navigieren Sie zu **Inhalt** > **Inhaltstaging** > **Dashboard.**
+1. Erstellen Sie in Commerce Admin unter **Marketing** > **Promotions** > **Katalogpreisregel** eine neue Katalogpreisregel.
+1. Klicken Sie im Raster **Katalogpreisregel** auf **Bearbeiten,** planen Sie eine neue Aktualisierung und legen Sie **Status** auf *Aktiv* fest.
+1. Navigieren Sie zu &quot;**Inhalt**&quot;> &quot;**Content Staging**&quot;> &quot;**Dashboard&quot;.**
 1. Wählen Sie das kürzlich erstellte Update aus und ändern Sie die Startzeit.
 1. Speichern Sie die Änderungen.
 
@@ -43,10 +43,10 @@ Im Folgenden werden die erforderlichen Schritte detailliert beschrieben:
 
 1. [Wenden Sie den Patch an](#patch).
 1. Löschen Sie in Commerce Admin die Katalogpreisregel für das Problem (wo die Startzeit aktualisiert wurde). Öffnen Sie dazu die Regelseite unter **Marketing** > **Promotions** > **Katalogpreisregel** und klicken Sie auf **Regel löschen**.
-1. Durch manuellen Zugriff auf die Datenbank wird der zugehörige Datensatz aus der `catalogrule` Tabelle.
-1. Korrigieren Sie die ungültigen Links in der Datenbank. Siehe [verwandter Absatz](#fix_links) für Details.
-1. In Commerce Admin unter **Marketing**, gehen Sie zu **Promotions** > **Katalogpreisregel** und erstellen Sie die neue Regel mit der erforderlichen Konfiguration.
-1. Löschen Sie den Browsercache unter **System** > **Cacheverwaltung**.
+1. Durch manuellen Zugriff auf die Datenbank wird der zugehörige Datensatz aus der Tabelle `catalogrule` gelöscht.
+1. Korrigieren Sie die ungültigen Links in der Datenbank. Weitere Informationen finden Sie im Abschnitt [zugehörigen Absatz](#fix_links) .
+1. Wechseln Sie im Commerce-Admin unter **Marketing** zu **Promotions** > **Katalogpreisregel** und erstellen Sie die neue Regel mit der erforderlichen Konfiguration.
+1. Löschen Sie den Browser-Cache unter **System** > **Cache-Verwaltung**.
 1. Stellen Sie sicher, dass die Cron-Aufträge ordnungsgemäß konfiguriert sind und erfolgreich ausgeführt werden können.
 
 ## Patch {#patch}
@@ -68,7 +68,7 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Beheben Sie die ungültigen Links zum Staging in DB {#fix_links}
 
@@ -76,24 +76,24 @@ Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer
 >
 >Es wird dringend empfohlen, vor der Bearbeitung der Datenbank eine Datenbanksicherung zu erstellen. Wir empfehlen auch, Abfragen zur Entwicklungsumgebung zuerst zu testen.
 
-Führen Sie die folgenden Schritte aus, um die Zeilen mit ungültigen Links zum `staging_update` Tabelle.
+Führen Sie die folgenden Schritte aus, um die Zeilen mit ungültigen Links zur Tabelle `staging_update` zu korrigieren.
 
-1. Überprüfen Sie, ob die ungültigen Links zur `staging_update` -Tabelle in `flag` Tabelle. Dies wären Datensätze, bei denen `flag_code=staging`.
-1. Identifizieren Sie die ungültige Version aus der `flag` Tabelle mit der folgenden Abfrage:
+1. Überprüfen Sie, ob die ungültigen Links zur Tabelle `staging_update` in der Tabelle `flag` vorhanden sind. Dies sind Datensätze, bei denen `flag_code=staging` verwendet wird.
+1. Identifizieren Sie die ungültige Version aus der Tabelle `flag` mithilfe der folgenden Abfrage:
 
    ```sql
    SELECT flag_data FROM flag WHERE flag_code = 'staging';
    ```
 
-1. Aus dem `staging_update` -Tabelle, wählen Sie die vorhandene Version aus, die kleiner als die aktuelle (ungültige) Version ist, und rufen Sie den Versionswert ab, der zwei Zahlen zurückgibt. Sie nehmen es, nicht die vorherige Version, um die Situation zu vermeiden, in der die vorherige Version die maximale Version in der `staging_update` -Tabelle, die angewendet werden könnte, und wir müssen sie noch einmal anwenden.
+1. Wählen Sie in der Tabelle `staging_update` die vorhandene Version aus, die kleiner als die aktuelle (ungültige) Version ist, und rufen Sie den Versionswert ab, der zwei Zahlen zurückgibt. Sie nehmen es, nicht die vorherige Version, um zu vermeiden, dass die vorherige Version die maximale Version in der `staging_update` -Tabelle ist, die angewendet werden könnte, und wir müssen sie trotzdem erneut anwenden.
 
    ```sql
    SELECT id FROM staging_update WHERE id < %current_id% ORDER BY id DESC LIMIT 1, 1
    ```
 
-   Die Version, die Sie erhalten, ist Ihre gültige Version `id`.
+   Die Version, die Sie als Antwort erhalten, ist Ihre gültige Version `id`.
 
-1. Für Zeilen mit ungültigen Links im `flag` -Tabelle, legen Sie die `flag_data` -Werte zu Daten, die eine gültige Versions-ID enthalten. Dies hilft, die Leistung beim Neuindizierungsschritt zu speichern, und ermöglicht es, eine Neuindizierung aller Entitäten zu vermeiden.
+1. Setzen Sie für die Zeilen mit ungültigen Links in der Tabelle `flag` die `flag_data` -Werte auf Daten, die eine gültige Versions-ID enthalten. Dies hilft, die Leistung beim Neuindizierungsschritt zu speichern, und ermöglicht es, eine Neuindizierung aller Entitäten zu vermeiden.
 
    ```sql
    UPDATE flag SET flag_data=REPLACE(flag_data, '%invalid_id%', '%new_valid_id%') WHERE flag_code='staging';

@@ -15,14 +15,14 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Sie müssen den Elasticsearch-Host vor der Installation von Version 2.4.0 eingerichtet und konfiguriert haben.
+> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md) entfernt. Sie müssen den Elasticsearch-Host vor der Installation von Version 2.4.0 eingerichtet und konfiguriert haben.
 > 
 > Siehe:
-> [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
+> [Installieren und konfigurieren Sie Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch).
 > [Installieren und Konfigurieren von OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 > [Live Search installieren und konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install)
 
-Dieser Artikel bietet eine Lösung zum Ändern der Adobe Commerce-Suchmaschine mithilfe des Commerce-Administrators, wenn die **Suchmaschine** nicht angezeigt wird oder die **Systemwert verwenden** ist ausgegraut und nicht zugänglich.
+Dieser Artikel bietet eine Lösung zum Ändern der Adobe Commerce-Suchmaschine mithilfe des Commerce-Administrators, wenn das Feld **Suchmaschine** nicht angezeigt wird oder das Kontrollkästchen **Systemwert verwenden** ausgegraut ist und nicht aufgerufen werden kann.
 
 In diesem Artikel:
 
@@ -41,36 +41,36 @@ In diesem Artikel:
 
 ## Suchmaschine mit Admin ändern (Schritte)
 
-1. Melden Sie sich bei **[!UICONTROL Admin]** als Administrator.
-1. Auf der linken Seite des **[!UICONTROL Admin]** Seitenleiste, klicken Sie auf **[!UICONTROL Stores]**.
-1. under **[!UICONTROL Settings]** auswählen **[!UICONTROL Configuration]**.
-1. Navigieren Sie zum Bereich links unter **[!UICONTROL Catalog],** und wählen **[!UICONTROL Catalog]**.
-1. Erweitern Sie die **[!UICONTROL Catalog Search]** Abschnitt.    ![catalog_menu.png](assets/catalog_menu.png)
-1. Navigieren Sie zu **[!UICONTROL Search Engine]** und die Auswahl aus dem **[!UICONTROL Use system value]** aktivieren.
-1. Klicken Sie auf **[!UICONTROL Search Engine]** und wählen Sie eine der verfügbaren Optionen aus, wie unten dargestellt.    ![search_engine_menu.png](assets/search_engine_menu.png)
-1. Klicken Sie auf **[!UICONTROL Save Config]** in der oberen rechten Ecke der Seite.
+1. Melden Sie sich bei **[!UICONTROL Admin]** als Administrator an.
+1. Klicken Sie auf der linken Seite der **[!UICONTROL Admin]** -Seitenleiste auf **[!UICONTROL Stores]**.
+1. Wählen Sie unter &quot;**[!UICONTROL Settings]**&quot;die Option &quot;**[!UICONTROL Configuration]**&quot;.
+1. Navigieren Sie zum Bedienfeld auf der linken Seite unter **[!UICONTROL Catalog],** und wählen Sie **[!UICONTROL Catalog]**.
+1. Erweitern Sie den Abschnitt **[!UICONTROL Catalog Search]** .    ![catalog_menu.png](assets/catalog_menu.png)
+1. Gehen Sie zum Feld **[!UICONTROL Search Engine]** und entfernen Sie die Auswahl aus dem Kontrollkästchen **[!UICONTROL Use system value]** .
+1. Klicken Sie auf das Menü **[!UICONTROL Search Engine]** und wählen Sie eine der folgenden verfügbaren Optionen aus:    ![search_engine_menu.png](assets/search_engine_menu.png)
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Save Config]** .
 
 ## Probleme mit Adobe Commerce vor Ort
 
 ### Problem 1: Das Suchmaschinenfeld wird nicht angezeigt
 
-Wenn Sie auf **Katalogsuche** -Abschnitt **Suchmaschine** -Menü überhaupt nicht angezeigt.
+Wenn Sie auf den Abschnitt **Katalogsuche** zugreifen, wird das Menü **Suchmaschine** überhaupt nicht angezeigt.
 
 ![search_engine_not_displayed.png](assets/search_engine_not_displayed.png)
 
 ### Ursache: Die Store-Ansicht ist keine Standardkonfiguration
 
-Die Store-Ansicht für den Administrator wurde auf einen beliebigen anderen Wert als *Standardkonfiguration*.
+Für die Store-Ansicht für den Admin wurde ein anderer Wert als *Standardkonfiguration* festgelegt.
 
 Bei der Suchmaschine handelt es sich um eine globale Konfiguration, die auf Anwendungsebene und nicht auf Store-Umfang festgelegt wird. Stores in einer Adobe Commerce-Anwendung können keine unterschiedlichen Suchmaschinen verwenden.
 
 ### Lösung: Legen Sie die Store-Ansicht auf Standardkonfiguration fest.
 
-1. Melden Sie sich bei **[!UICONTROL Admin]** als Administrator.
-1. Auf der linken Seite des **[!UICONTROL Admin]** Seitenleiste, klicken Sie auf **[!UICONTROL Stores]**.
-1. Navigieren Sie zu **[!UICONTROL Settings]** und wählen **[!UICONTROL Configuration]**.
-1. Klicken Sie oben links auf die **[!UICONTROL Store View]** auswählen **[!UICONTROL *Standardkonfiguration *]**.
-1. Klicken Sie auf **[!UICONTROL OK]** im Bestätigungsdialogfeld, um die Änderungen an der Store-Ansicht zu genehmigen.
+1. Melden Sie sich bei **[!UICONTROL Admin]** als Administrator an.
+1. Klicken Sie auf der linken Seite der **[!UICONTROL Admin]** -Seitenleiste auf **[!UICONTROL Stores]**.
+1. Navigieren Sie zu **[!UICONTROL Settings]** und wählen Sie **[!UICONTROL Configuration]** aus.
+1. Klicken Sie in der oberen linken Ecke auf den Selektor **[!UICONTROL Store View]** und wählen Sie **[!UICONTROL *Standardkonfiguration *]**.
+1. Klicken Sie im Bestätigungsdialogfeld auf &quot;**[!UICONTROL OK]**&quot;, um die Änderungen an der Store-Ansicht zu genehmigen.
 
 ![change_store_view.png](assets/change_store_view.png)
 
@@ -78,11 +78,11 @@ Bei der Suchmaschine handelt es sich um eine globale Konfiguration, die auf Anwe
 
 ### Problem 2: &quot;Use system value&quot; kann nicht deaktiviert werden
 
-Wenn Sie auf **Katalogsuche** -Abschnitt des Administrators, der **Systemwert verwenden** ist ausgegraut, sodass Sie die Auswahl nicht aus dem Kontrollkästchen entfernen können, um die Suchmaschine später zu ändern.
+Wenn Sie auf den Abschnitt **Katalogsuche** des Admin zugreifen, ist das Kontrollkästchen **Systemwert verwenden** grau ausgeblendet, sodass Sie die Auswahl nicht aus dem Kontrollkästchen entfernen können, um die Suchmaschine später zu ändern.
 
 ### Ursache
 
-Die standardmäßige Suchmaschine wurde auf der Anwendungskonfigurationsebene im `app/etc/env.php` oder `app/etc/config.php` -Dateien und daher nicht mit dem Admin geändert werden können.
+Die standardmäßige Suchmaschine wurde auf der Anwendungskonfigurationsebene in den Dateien `app/etc/env.php` oder `app/etc/config.php` konfiguriert und kann daher nicht mit dem Admin geändert werden.
 
 Beispiel des Abschnitts mit standardmäßiger Suchmaschinenkonfiguration:
 
@@ -104,7 +104,7 @@ array (
 
 ### Lösung
 
-Entfernen Sie den Abschnitt mit der standardmäßigen Suchmaschinenkonfiguration aus dem `app/etc/env.php` oder `app/etc/config.php` Konfigurationsdateien.
+Entfernen Sie den Abschnitt mit der standardmäßigen Suchmaschinenkonfiguration aus den Konfigurationsdateien `app/etc/env.php` oder `app/etc/config.php` .
 
 ### Verwandte Artikel in unserer Entwicklerdokumentation
 
@@ -114,17 +114,17 @@ Entfernen Sie den Abschnitt mit der standardmäßigen Suchmaschinenkonfiguration
 
 Der Wechsel von Suchmaschinen mithilfe von Admin ist in Adobe Commerce in der Cloud-Infrastruktur aufgrund der Organisation der Cloud-Infrastruktur nicht möglich.
 
-Während des Bereitstellungsprozesses überprüfen die Adobe Commerce-Bereitstellungsskripte für Cloud-Infrastruktur, ob das Elasticsearch im `MAGENTO_CLOUD_RELATIONSHIPS` -Variable. Wenn deklariert, wird Elasticsearch als aktive Suchmaschine ausgewählt und automatisch konfiguriert. Die [MySQL-Suchmaschine](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md) wird in der Admin-Konsole nicht zugänglich. Wenn die Elasticsearch-Beziehung nicht deklariert wurde, ist MySQL auf &quot;aktiv&quot;gesetzt und der Zugriff auf Elasticsearch wird nicht mehr möglich.
+Während des Bereitstellungsprozesses überprüfen die Adobe Commerce-Bereitstellungsskripte für Cloud-Infrastruktur, ob das Elasticsearch in der Variable `MAGENTO_CLOUD_RELATIONSHIPS` deklariert wurde. Wenn diese Option deklariert ist, wird Elasticsearch als aktive Suchmaschine ausgewählt und automatisch konfiguriert. Der Zugriff auf die [MySQL-Suchmaschine](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md) ist im Admin nicht mehr möglich. Wenn die Elasticsearch-Beziehung nicht deklariert wurde, ist MySQL auf &quot;aktiv&quot;gesetzt und der Zugriff auf Elasticsearch wird nicht mehr möglich.
 
-Die Bearbeitung der `app/etc/env.php` oder `app/etc/config.php` Konfigurationsdateien direkt in Ihrer Cloud-Umgebung. Daher ist es für Ihr Cloud-Projekt nicht relevant, diese Dateien zu ändern, um die Elasticsearch-Engine zu erstellen, die in Admin angezeigt werden soll (die im vorherigen Abschnitt empfohlene Lösung).
+Es wird nicht empfohlen, die Konfigurationsdateien `app/etc/env.php` oder `app/etc/config.php` direkt in Ihrer Cloud-Umgebung zu bearbeiten. Daher ist es nicht empfehlenswert, diese Dateien zu ändern, um die Elasticsearch-Engine zu erstellen, die in Admin angezeigt werden soll (die im vorherigen Abschnitt empfohlene Lösung).
 
 ### Suchmaschine in Staging- und Produktionsumgebungen ändern
 
-Bevor Sie in Ihren Staging- und Produktionsumgebungen die Suchmaschine von MySQL zu Elasticsearch wechseln, stellen Sie sicher, dass Sie zuvor [Support-Ticket gesendet](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) -Anfrage zur Aktivierung des Elasticsearchs in der Umgebung gesendet und das Ticket wurde erfolgreich aufgelöst.
+Bevor Sie in Ihren Staging- und Produktionsumgebungen von MySQL zu Elasticsearch wechseln, stellen Sie sicher, dass Sie zuvor [ein Support-Ticket gesendet haben](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um Elasticsearch in der Umgebung zu aktivieren, und das Ticket wurde erfolgreich behoben.
 
-Um die in Ihren Staging- und Produktionsumgebungen verwendete Suchmaschine zu ändern, ändern Sie die `SEARCH_CONFIGURATION` Umgebungsvariable in `.magento.env.yaml` in Ihrer lokalen Umgebung speichern und dann Änderungen an die Integrations- und Staging-/Produktionsumgebungen pushen, damit die Änderungen wirksam werden.
+Um die in Ihren Staging- und Produktionsumgebungen verwendete Suchmaschine zu ändern, ändern Sie die Umgebungsvariable `SEARCH_CONFIGURATION` in Ihrer `.magento.env.yaml` -Datei in Ihrer lokalen Umgebung und fügen Sie dann Änderungen in die Integrations- und Staging-/Produktionsumgebungen ein, damit die Änderungen wirksam werden.
 
-Wenn Sie zu Elasticsearch 7 wechseln, wird die Variable SEARCH\_CONFIGURATION in der `.magento.env.yaml` -Datei könnte wie folgt aussehen:
+Wenn Sie zu Elasticsearch 7 wechseln, sieht die Variable &quot;SEARCH\_CONFIGURATION&quot;in der resultierenden `.magento.env.yaml`-Datei möglicherweise wie folgt aus:
 
 ```yaml
 stage:
@@ -137,7 +137,7 @@ stage:
      elasticsearch_server_timeout: '15'
 ```
 
-Wenn Sie zu [OpenSearch (in 2.4.6 und höher)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search) die Variable &quot;SEARCH\_CONFIGURATION&quot;in der resultierenden `.magento.env.yaml` -Datei könnte wie folgt aussehen:
+Wenn Sie zu &quot;[OpenSearch&quot;(in 2.4.6 und höher)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search)&quot;wechseln, könnte die Variable &quot;SEARCH\_CONFIGURATION&quot;in der resultierenden Datei &quot;`.magento.env.yaml`&quot;wie folgt aussehen:
 
 ```yaml
 stage:
@@ -150,7 +150,7 @@ stage:
      elasticsearch_server_timeout: '15'
 ```
 
-Wenn Sie [Wechseln zur Live-Suche](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch), die Variable SEARCH\_CONFIGURATION in der resultierenden `.magento.env.yaml` -Datei könnte wie folgt aussehen:
+Wenn Sie [ zur Live-Suche wechseln](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch), sieht die Variable &quot;SEARCH\_CONFIGURATION&quot;in der resultierenden `.magento.env.yaml`-Datei möglicherweise wie folgt aus:
 
 ```yaml
 stage:
@@ -167,8 +167,8 @@ stage:
 
 #### Entwicklerdokumentation
 
-* [Elasticsearch-Dienst einrichten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html)
-* [Erstellen und Bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) (Dokumentation zu `.magento.env.yaml` Konfigurationsdatei)
-* [Bereitstellen von Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) ([Abschnitt &quot;SEARCH\_CONFIGURATION&quot;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#search_configuration))
-* [Dienste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) (Dokumentation zu `.magento/services.yaml` Konfigurationsdatei)
+* [Einrichten des Elasticsearch-Dienstes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch.html)
+* [Erstellen und Bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) (Dokumentation zur Konfigurationsdatei `.magento.env.yaml`)
+* [Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) ([SEARCH\_CONFIGURATION section](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#search_configuration))
+* [Dienste](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) (Dokumentation zur Konfigurationsdatei `.magento/services.yaml`)
 * [Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview)

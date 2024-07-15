@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Aktualisierung freigegebener Katalogpreise mithilfe der REST-API
 
-Um Preise in freigegebenen Katalogen mit API hinzuzufügen oder zu aktualisieren, empfehlen wir die Verwendung der `TierPriceStorageInterface` Dienst, beschrieben im Abschnitt [Verwalten von Tierpreisen](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) REST-API-Referenz in unserer Entwicklerdokumentation. Für gemeinsame Katalogpreise verwenden wir Tier Price und Customer Group.
+Um Preise in freigegebenen Katalogen mit der API hinzuzufügen oder zu aktualisieren, empfehlen wir die Verwendung des Dienstes `TierPriceStorageInterface` , der in der REST-API-Referenz für die [Verwaltung von Tierpreisen](http://devdocs.magento.com/guides/v2.2/rest/modules/catalog-pricing.html#manage-tier-prices) in unserer Entwicklerdokumentation beschrieben wird. Für gemeinsame Katalogpreise verwenden wir Tier Price und Customer Group.

@@ -17,7 +17,7 @@ Dieser Artikel bietet eine Lösung für den Fall, dass in früheren Adobe Commer
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce (alle Bereitstellungsmethoden) alle  [unterstützte Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce (alle Bereitstellungsmethoden) alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
@@ -31,8 +31,8 @@ Dies ist ein erwartetes Verhalten, da die Vendor-Bundle-Erweiterungen aus der Co
 
 ## Lösung
 
-Installieren/erwerben Sie die offiziellen Erweiterungen separat. Diese sind im Abschnitt [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+Installieren/erwerben Sie die offiziellen Erweiterungen separat. Diese sind auf der [Commerce Marketplace](https://marketplace.magento.com/extensions.html) verfügbar.
 
 ## Verwandtes Lesen
 
-[Anbietergebundene Erweiterungen](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) in Adobe Commerce-Dokumentation > Versionshinweise > Versionshinweise zu Adobe Commerce 2.4.4.
+[Vendor-Bundle-Erweiterungen](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) in der Adobe Commerce-Dokumentation > Versionsinformationen > Versionshinweise zu Adobe Commerce 2.4.4.

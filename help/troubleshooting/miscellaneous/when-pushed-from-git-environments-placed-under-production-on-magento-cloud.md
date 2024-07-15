@@ -17,7 +17,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass neue Umgebungen in der
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
@@ -47,9 +47,9 @@ Das ist kein Fehler. Um eine übergeordnete Verzweigung für eine andere Verzwei
 
 ## Lösung
 
-Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Siehe Abschnitt [Adobe Commerce auf Cloud-Infrastruktur > Bitbucket-Integration](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) in unserer Entwicklerdokumentation.
+Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Weitere Informationen finden Sie unter [Adobe Commerce unter Cloud-Infrastruktur > Bitbucket-Integration](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) in unserer Entwicklerdokumentation.
 
-Um eine übergeordnete Verzweigung für die vorhandene Verzweigung auf dem Server zu aktualisieren, verwenden Sie die `magento-cloud environment:info` -Befehl in der Befehlszeilenschnittstelle von Magento-Cloud.
+Um ein übergeordnetes Element für die vorhandene Verzweigung auf dem Server zu aktualisieren, verwenden Sie den Befehl `magento-cloud environment:info` in der magento-cloud-CLI.
 
 Anwendungsbeispiel:
 
@@ -59,4 +59,4 @@ Dadurch wird die übergeordnete Verzweigung für die derzeit ausgecheckte Verzwe
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce über Cloud-Infrastruktur > Magento-Cloud-CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) in unserer Entwicklerdokumentation.
+* [Adobe Commerce über Cloud-Infrastruktur > magento-cloud-CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) in unserer Entwicklerdokumentation.

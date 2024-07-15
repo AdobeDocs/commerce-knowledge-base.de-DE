@@ -29,4 +29,4 @@ Magento Inventory unterstützt derzeit nicht die Verwendung der Berechnung von D
 
 ## Verwandte Informationen
 
-* [Magento Inventar-FAQs](https://github.com/magento/inventory/wiki/MSI-FAQs) in GitHub.
+* [Magento Inventar-FAQ](https://github.com/magento/inventory/wiki/MSI-FAQs) in GitHub.

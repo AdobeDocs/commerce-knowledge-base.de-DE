@@ -25,10 +25,10 @@ Die Konversionsdaten wurden von Google Analytics aufgrund eines Fehlers im Kompo
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Aktivieren und konfigurieren Sie die Google Analytics-Funktion in Commerce Admin unter **Stores** > **Einstellungen** > **Konfiguration** > **Vertrieb** > **Google-API** > **Google Analytics**.
-1. Klicks **Konfiguration speichern**.
+1. Aktivieren und konfigurieren Sie die Google Analytics-Funktion im Commerce Admin unter **Stores** > **Einstellungen** > **Konfiguration** > **Vertrieb** > **Google-API** > **Google Analytics**.
+1. Klicken Sie auf **Konfiguration speichern**.
 1. Positionieren Sie eine Bestellung auf der Storefront.
-1. Navigieren Sie zu **Google Analytics-Dashboard** > **Konversionen** > **Übersicht**.
+1. Gehen Sie zu **Google Analytics-Dashboard** > **Konversionen** > **Überblick**.
 1. Stellen Sie den Datumsbereich auf das aktuelle Datum ein.
 
 <u>Erwartetes Ergebnis</u>:
@@ -62,6 +62,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

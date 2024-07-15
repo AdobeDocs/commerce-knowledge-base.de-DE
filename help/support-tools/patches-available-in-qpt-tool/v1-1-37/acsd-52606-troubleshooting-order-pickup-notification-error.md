@@ -1,6 +1,6 @@
 ---
 title: '''ACSD-52606: Fehlermeldung angezeigt, wenn der Benutzer auf "Auftrag für Abruf benachrichtigen"klickt'
-description: Wenden Sie den Patch ACSD-52606 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Klicken auf ** eine Fehlermeldung angezeigt wird.[!UICONTROL Notify Order is Ready for Pickup]**.
+description: Wenden Sie den Patch ACSD-52606 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Fehlermeldung angezeigt wird, wenn der Benutzer auf **[!UICONTROL Notify Order is Ready for Pickup]** klickt.
 feature: Orders, User Account
 role: Admin, Developer
 exl-id: c3e69eb1-90bf-46cf-9b53-110e40e0c3c1
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-52606: Fehlermeldung angezeigt, wenn der Benutzer auf &quot;Auftrag wird für Abruf bereit benachrichtigt&quot;klickt
 
-Der Patch ACSD-52606 behebt das Problem, dass eine Fehlermeldung angezeigt wird. *Ihre Bestellung ist noch nicht bereit zur Übernahme* angezeigt wird, wenn der Benutzer auf **[!UICONTROL Notify Order is Ready for Pickup]**. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-52606. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-52606 behebt das Problem, bei dem die Fehlermeldung *Ihre Bestellung ist nicht bereit zum Aufheben* angezeigt wird, wenn der Benutzer auf **[!UICONTROL Notify Order is Ready for Pickup]** klickt. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-52606. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,11 +27,11 @@ Der Patch ACSD-52606 behebt das Problem, dass eine Fehlermeldung angezeigt wird.
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Eine Fehlermeldung *Ihre Bestellung ist noch nicht bereit zur Übernahme* wird auf dem Bildschirm angezeigt, wenn der Benutzer auf **[!UICONTROL Notify Order is Ready for Pickup]**.
+Eine Fehlermeldung *Ihre Bestellung ist noch nicht bereit für die Abholung* wird auf dem Bildschirm angezeigt, wenn der Benutzer auf **[!UICONTROL Notify Order is Ready for Pickup]** klickt.
 
 <u>Voraussetzungen</u>:
 
@@ -43,11 +43,11 @@ Inventarmodule werden installiert.
 1. Erstellen Sie eine neue Quelle und ein neues Lager.
 1. Weisen Sie die neue Quelle der Standardwebsite zu.
 1. Aktivieren Sie den Abholspeicherort für die neu erstellte Quelle.
-1. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]** und aktivieren **[!UICONTROL In-Store Delivery]**.
-1. Erstellen Sie eine *Auf Lager* einfaches Produkt mit *QTY=0* für alle Bestände und *[!UICONTROL Manage Stock = No]* und weisen Sie ihn beiden Quellen zu.
-1. Erstellen Sie eine Bestellung über das Frontend mit dem im vorherigen Schritt erstellten Produkt und wählen Sie *[!UICONTROL In-Store Pickup]* als Versandmethode.
+1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]** und aktivieren Sie **[!UICONTROL In-Store Delivery]**.
+1. Erstellen Sie ein einfaches Produkt *In Stock* mit *QTY=0* für alle Bestände und *[!UICONTROL Manage Stock = No]* und weisen Sie es beiden Quellen zu.
+1. Erstellen Sie eine Bestellung vom Frontend mit dem im vorherigen Schritt erstellten Produkt und wählen Sie als Versandmethode *[!UICONTROL In-Store Pickup]* aus.
 1. Gehen Sie in Admin zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice that order]**.
-1. Klicks **[!UICONTROL Notify order is ready for pickup]**.
+1. Klicken Sie auf **[!UICONTROL Notify order is ready for pickup]**.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -55,20 +55,20 @@ Sie werden ohne Fehler benachrichtigt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Sie erhalten die folgende Fehlermeldung: *Ihre Bestellung ist noch nicht bereit zur Übernahme*.
+Sie erhalten die folgende Fehlermeldung: *Ihre Bestellung ist nicht bereit zur Übernahme*.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

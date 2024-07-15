@@ -34,7 +34,7 @@ In der Regel funktionieren Konfigurationen, falsche Anmeldeinformationen oder ni
 
 ### Testen mit dem Befehl &quot;dig&quot;
 
-Überprüfen Sie zunächst, ob Kopfzeilen mit einem &quot;dig&quot;-Befehl zur URL vorhanden sind. Geben Sie in eine Terminal-Anwendung den Graben ein. `<url>` um zu überprüfen, ob die Fastly-Dienste in den Kopfzeilen angezeigt werden. Weitere Grabungstests finden Sie unter Fastly&#39;s [Tests vor DNS-Änderung](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
+Überprüfen Sie zunächst, ob Kopfzeilen mit einem &quot;dig&quot;-Befehl zur URL vorhanden sind. Geben Sie in einer Terminal-Anwendung die Ziffer `<url>` ein, um zu überprüfen, ob die Fastly-Dienste in den Kopfzeilen angezeigt werden. Weitere Gradungstests finden Sie unter Fastly&#39;s [Testing before change DNS](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
 
 Beispiel:
 
@@ -46,12 +46,12 @@ Beispiel:
 
 Verwenden Sie als Nächstes einen curl-Befehl, um zu überprüfen, ob X-Magento-Tags vorhanden sind, und zusätzliche Kopfzeileninformationen. Das Befehlsformat unterscheidet sich bei Staging und Produktion.
 
-Weitere Informationen zu diesen Befehlen erhalten Sie, wenn Sie sie injizieren, durch die Verwendung von Fastly `-H "host:URL"`durch Herkunft zum Verbindungsspeicherort ersetzen (CNAME-Informationen aus Ihrer OneDrive-Tabelle), `-k` ignoriert SSL und `-v` bietet ausführliche Antworten. Wenn Kopfzeilen korrekt angezeigt werden, überprüfen Sie die Live-Site und überprüfen Sie die Kopfzeilen erneut.
+Weitere Informationen zu diesen Befehlen erhalten Sie, wenn Sie &quot;`-H "host:URL"`&quot;, &quot;Ersetzen mit Ursprung zum Verbindungsspeicherort&quot;(CNAME-Informationen aus Ihrer OneDrive-Tabelle), &quot;`-k`&quot;ignoriert SSL und &quot;`-v`&quot;liefert ausführliche Antworten. Wenn Kopfzeilen korrekt angezeigt werden, überprüfen Sie die Live-Site und überprüfen Sie die Kopfzeilen erneut.
 
 * Wenn Kopfzeilenprobleme auftreten, wenn die ursprünglichen Server direkt über die Umgehung von Fastly erreicht werden, kann es zu Problemen im Code, mit Erweiterungen oder mit der Infrastruktur kommen.
 * Wenn keine Fehler auftreten, die direkt auf die Herkunftsserver gelangen, aber Header fehlen, die die Live-Domäne über Fastly erreichen, kann es zu Fastly-Fehlern kommen.
 
-Überprüfen Sie zunächst Ihre **Live-Site** , um die Antwortheader zu überprüfen. Der Befehl durchläuft die Fastly-Erweiterung, um Antworten zu erhalten. Wenn Sie nicht die richtigen Header erhalten, sollten Sie die Herkunftsserver direkt testen. Dieser Befehl gibt die Werte der `Fastly-Magento-VCL-Uploaded` und `X-Cache` Kopfzeilen.
+Überprüfen Sie zunächst Ihre **Live-Site**, um die Antwortheader zu überprüfen. Der Befehl durchläuft die Fastly-Erweiterung, um Antworten zu erhalten. Wenn Sie nicht die richtigen Header erhalten, sollten Sie die Herkunftsserver direkt testen. Dieser Befehl gibt die Werte der Header `Fastly-Magento-VCL-Uploaded` und `X-Cache` zurück.
 
 1. Geben Sie in einem Terminal den folgenden Befehl ein, um Ihre Live-Site-URL zu testen:
 
@@ -59,7 +59,7 @@ Weitere Informationen zu diesen Befehlen erhalten Sie, wenn Sie sie injizieren, 
    curl http://<live URL> -vo /dev/null -HFastly-Debug:1 [--resolve]
    ```
 
-   Verwendung `--resolve` nur dann, wenn Ihre Live-URL nicht mit DNS eingerichtet ist und Sie keine statische Route festgelegt haben. Beispiel:
+   Verwenden Sie `--resolve` nur, wenn Ihre Live-URL nicht mit DNS eingerichtet ist und Sie keine statische Route festgelegt haben. Beispiel:
 
    ```
    curl http://www.mymagento.biz -vo /dev/null -HFastly-Debug:1
@@ -71,19 +71,19 @@ Weitere Informationen zu diesen Befehlen erhalten Sie, wenn Sie sie injizieren, 
    < Fastly-Magento-VCL-Uploaded: yes    < X-Cache: HIT, MISS
    ```
 
-Zu testen **Staging** :
+Testen von **Staging** :
 
 ```
 curl http[s]://staging.<your domain>.c.<instanceid>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-Zu testen **Produktionslastausgleich** :
+So testen Sie den **Produktionslastausgleich** :
 
 ```
 curl http[s]://<your domain>.c.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-Zu testen **Produktionsursprungsknoten** :
+Testen des Knotens **Produktionsursprung** :
 
 ```
 curl http[s]://<your domain>.{1|2|3}.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
@@ -170,13 +170,13 @@ Um sicherzustellen, dass Fastly in der Staging- und Produktionsumgebung aktivier
    "fastly-magento2": {    "type": "vcs",    "url": "https://github.com/fastly/fastly-magento2.git"    }
    ```
 
-1. Wenn Sie Configuration Management verwenden, sollten Sie über eine Konfigurationsdatei verfügen. Bearbeiten Sie die Datei app/etc/config.app.php (2.0, 2.1) oder app/etc/config.php (2.2) und stellen Sie sicher, dass die Einstellung `'Fastly_Cdn' => 1` korrekt ist. Die Einstellung sollte nicht `'Fastly_Cdn' => 0` (d. h. deaktiviert).Wenn Sie die Option Schnell aktiviert haben, löschen Sie die Konfigurationsdatei und führen Sie den Befehl bin/magento magento-cloud:scd-dump aus, um zu aktualisieren. Eine schrittweise Anleitung zu dieser Datei finden Sie unter [Beispiel für die Verwaltung systemspezifischer Einstellungen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) im Konfigurationshandbuch.
+1. Wenn Sie Configuration Management verwenden, sollten Sie über eine Konfigurationsdatei verfügen. Bearbeiten Sie die Datei app/etc/config.app.php (2.0, 2.1) oder app/etc/config.php (2.2) und stellen Sie sicher, dass die Einstellung `'Fastly_Cdn' => 1` korrekt ist. Die Einstellung sollte nicht `'Fastly_Cdn' => 0` sein (d. h. deaktiviert). Wenn Sie die Option Fastly aktiviert haben, löschen Sie die Konfigurationsdatei und führen Sie den Befehl bin/magento magento-cloud:scd-dump aus, um zu aktualisieren. Eine schrittweise Anleitung zu dieser Datei finden Sie unter [Beispiel für die Verwaltung systemspezifischer Einstellungen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) im Konfigurationshandbuch.
 
-Wenn das Modul nicht installiert ist, müssen Sie in einem [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) -Verzweigung und für Staging und Produktion bereitgestellt. Siehe [Schnelles Einrichten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) für Anweisungen im Commerce on Cloud Infrastructure-Handbuch.
+Wenn das Modul nicht installiert ist, müssen Sie in einer Verzweigung [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) installieren und für Staging und Produktion bereitstellen. Anweisungen finden Sie unter [Schnelles Einrichten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) im Handbuch zu Commerce on Cloud Infrastructure.
 
 ### Fastly-Magento-VCL-Uploaded ist nicht vorhanden
 
-Während der Installation und Konfiguration sollten Sie den Fastly VCL hochgeladen haben. Dies sind die Basis-VCL-Snippets, die vom Fastly-Modul bereitgestellt werden, nicht benutzerdefinierte VCL-Snippets, die Sie erstellen. Anweisungen finden Sie unter [Fastly VCL-Snippets hochladen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) im Commerce on Cloud Infrastructure Guide.
+Während der Installation und Konfiguration sollten Sie den Fastly VCL hochgeladen haben. Dies sind die Basis-VCL-Snippets, die vom Fastly-Modul bereitgestellt werden, nicht benutzerdefinierte VCL-Snippets, die Sie erstellen. Anweisungen finden Sie unter [Fastly VCL-Snippets hochladen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#upload-vcl-to-fastly) im Handbuch zu Commerce on Cloud Infrastructure.
 
 ### X-Cache enthält MISS
 
@@ -190,9 +190,9 @@ Wenn Sie dasselbe Ergebnis erhalten, verwenden Sie die curl-Befehle und überpr�
 
 Wenn das Problem weiterhin besteht, werden diese Kopfzeilen wahrscheinlich von einer anderen Erweiterung zurückgesetzt. Wiederholen Sie das folgende Verfahren in Staging, um Erweiterungen zu deaktivieren, um herauszufinden, welche das Problem verursacht. Nachdem Sie die Erweiterungen gefunden haben, die das Problem verursachen, müssen Sie die Erweiterungen in der Produktion deaktivieren.
 
-1. Um die Erweiterungen zu deaktivieren, führen Sie die Schritte unter [Verwalten von Erweiterungen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) Abschnitt von Commerce im Handbuch zur Cloud-Infrastruktur.
-1. Nachdem Sie die Erweiterungen deaktiviert haben, navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Tools]** > **[!UICONTROL Cache Management]**.
-1. Klicks **[!UICONTROL Flush Magento Cache]**.
+1. Um die Erweiterungen zu deaktivieren, führen Sie die Schritte aus, die im Abschnitt [Erweiterungen verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) des Commerce-Handbuchs zur Cloud-Infrastruktur beschrieben werden.
+1. Nachdem Sie die Erweiterungen deaktiviert haben, gehen Sie zu **[!UICONTROL System]** > **[!UICONTROL Tools]** > **[!UICONTROL Cache Management]**.
+1. Klicken Sie auf **[!UICONTROL Flush Magento Cache]**.
 1. Aktivieren Sie jetzt jeweils eine Erweiterung, speichern Sie die Konfiguration und leeren Sie den Cache.
 1. Probieren Sie die curl-Befehle aus und überprüfen Sie die Antwortheader.
 1. Wiederholen Sie die Schritte 4 und 5, um die curl-Befehle zu aktivieren und zu testen. Wenn die Schnellkopfzeilen nicht mehr angezeigt werden, haben Sie die Erweiterung gefunden, die Probleme mit Fastly verursacht hat.
@@ -201,6 +201,6 @@ Wenn Sie die Erweiterung isolieren, die Fastly-Header zurücksetzt, wenden Sie s
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
-* [Über Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Info über Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
 * [Schnelles Einrichten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Benutzerdefinierte Fastly VCL-Snippets](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Benutzerdefinierte schnelle VCL-Snippets](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)

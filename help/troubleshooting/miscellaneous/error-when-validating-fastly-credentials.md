@@ -26,22 +26,22 @@ Der Benutzer erhält bei der Validierung der Fastly-Anmeldedaten einen Fehler.
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass Sie über die richtige Fastly-Dienst-ID und das richtige API-Token verfügen, und versuchen Sie erneut, die Überprüfung durchzuführen. Detaillierte Anweisungen finden Sie unter [Testen der Fastly-Anmeldeinformationen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
+1. Vergewissern Sie sich, dass Sie über die richtige Fastly-Dienst-ID und das richtige API-Token verfügen, und versuchen Sie erneut, die Überprüfung durchzuführen. Detaillierte Anweisungen finden Sie unter [Testen der Fastly-Anmeldedaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
 1. Wenn die Überprüfung der Anmeldeinformationen fehlschlägt, führen Sie den folgenden curl-Befehl aus, um den Status des Dienstes zu bestätigen:
 
    ```curl
    curl -H "Fastly-Key: <API key>" https://api.fastly.com/service/<service ID>/version/active
    ```
 
-1. Wenn der obige Befehl einen Fehler wie den folgenden zurückgibt: *{&quot;msg&quot;:&quot;Token $TOKEN ist 2021-09-28T02 abgelaufen:03:37Z&quot;}* senden, senden Sie ein Support-Ticket, um ein neues API-Token anzufordern.
+1. Wenn der obige Befehl einen Fehler wie den folgenden zurückgibt: *{&quot;msg&quot;:&quot;Token $TOKEN ist 2021-09-28T02:03:37Z&quot;}*, senden Sie ein Support-Ticket, um ein neues API-Token anzufordern.
 
-   Informationen zum Senden eines Support-Tickets finden Sie unter [Adobe Commerce Help Center-Benutzerhandbuch > SUPPORT-TICKETS](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) in unserer Wissensdatenbank.
+   Informationen zum Senden eines Support-Tickets finden Sie im [Benutzerhandbuch zum Adobe Commerce Help Center > SUPPORT TICKETS](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) in unserer Support-Wissensdatenbank.
 
    >[!NOTE]
    >
    >Geben Sie nie direkt im Ticket Kennwörter oder gültige/aktive API-Token frei, da wir das aktuelle Token aus Sicherheitsgründen widerrufen und ein neues generieren müssen.
 
-1. Wenn der Befehl den Fehler nicht zurückgibt, stellen Sie sicher, dass Sie die neueste Version der [!DNL Fastly] -Erweiterung. Wenn Sie eine ältere Version vor dem 1.2.203 verwenden, müssen Sie zuerst auf **[!UICONTROL Save Config]** bevor Sie die Anmeldeinformationen testen können.
+1. Wenn der Befehl den Fehler nicht zurückgibt, stellen Sie sicher, dass Sie die neueste Version der [!DNL Fastly] -Erweiterung ausführen. Wenn Sie eine ältere Version vor dem 1.2.203 verwenden, müssen Sie zunächst auf **[!UICONTROL Save Config]** klicken, bevor Sie die Anmeldeinformationen testen können.
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 

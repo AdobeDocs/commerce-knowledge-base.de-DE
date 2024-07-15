@@ -1,6 +1,6 @@
 ---
-title: '"ACSD-57394: Falsche Produktsortierung nach mehreren Sortierungsattributen in [!DNL GraphQL]'''
-description: Wenden Sie den Patch ACSD-57394 an, um das Adobe Commerce-Problem zu beheben, bei dem Produkte bei Verwendung mehrerer Sortierattribute in falsch sortiert werden. [!DNL GraphQL].
+title: "ACSD-57394: Falsche Produktsortierung nach mehreren Sortierungsattributen in [!DNL GraphQL]"
+description: Wenden Sie den Patch ACSD-57394 an, um das Adobe Commerce-Problem zu beheben, bei dem Produkte bei Verwendung mehrerer Sortierattribute in  [!DNL GraphQL] falsch sortiert werden.
 feature: GraphQL, Products
 role: Admin, Developer
 exl-id: f2e24daa-43a0-46b2-80b2-4e0ee116b776
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-57394: Falsche Produktsortierung nach mehreren Sortierungsattributen in [!DNL GraphQL]
 
-Der Patch ACSD-57394 behebt das Problem, dass Produkte bei der Verwendung mehrerer Sortierattribute in falsch sortiert werden [!DNL GraphQL]. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 ist installiert. Die Patch-ID ist ACSD-57394. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.5.0 behoben sein soll.
+Der Patch ACSD-57394 behebt das Problem, dass Produkte bei Verwendung mehrerer Sortierattribute in [!DNL GraphQL] falsch sortiert werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 installiert ist. Die Patch-ID ist ACSD-57394. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.5.0 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,17 +27,17 @@ Der Patch ACSD-57394 behebt das Problem, dass Produkte bei der Verwendung mehrer
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Produkte werden bei Verwendung mehrerer Sortierattribute in falsch sortiert [!DNL GraphQL].
+Produkte werden bei Verwendung mehrerer Sortierattribute in [!DNL GraphQL] falsch sortiert.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie einige Produkte mit unterschiedlichen Preisen und Namen.
 1. Erstellen Sie eine Kategorie und weisen Sie ihr die erstellten Produkte zu.
-1. Senden Sie eine [!DNL GraphQL] Produktabfrage für die erstellte Kategorie mit einigen *sort* -Attribute. Beispiel:
+1. Senden Sie eine [!DNL GraphQL] -Produktanfrage für die erstellte Kategorie mit einigen *sort* -Attributen. Beispiel:
 
    ```
    {
@@ -78,7 +78,7 @@ Produkte werden bei Verwendung mehrerer Sortierattribute in falsch sortiert [!DN
     }
    ```
 
-1. Überprüfen Sie die Antwort nach der Erstellung *sort* -Attribute.
+1. Überprüfen Sie die Antwort, nachdem Sie *sort* -Attribute erstellt haben.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -92,15 +92,15 @@ Die Produkte werden nicht in der richtigen Reihenfolge zurückgegeben. Die Sorti
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
 

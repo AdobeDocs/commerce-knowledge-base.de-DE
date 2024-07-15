@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-47803: konfigurierbare, nicht vorrätig verfügbare Produktmuster, die als verfügbar angezeigt werden
 
-Der Patch ACSD-47803 behebt das Problem, dass konfigurierbare nicht vorrätige Produktmuster als verfügbar angezeigt werden. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 ist installiert. Die Patch-ID ist ACSD-47803. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-47803 behebt das Problem, dass konfigurierbare nicht vorrätige Produktmuster als verfügbar angezeigt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 installiert ist. Die Patch-ID ist ACSD-47803. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-47803 behebt das Problem, dass konfigurierbare nicht vorrätige P
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -39,32 +39,32 @@ Nicht vorrätig konfigurierbare Produktmuster werden als verfügbar angezeigt.
 >
 >Die folgenden Schritte beziehen sich als Beispiel auf Beispieldaten.
 
-1. Im [!UICONTROL Commerce] Admin, gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Stock Options]** und legen Sie die **[!UICONTROL Display Out of Stock Products]** nach *Ja*.
-1. Navigieren Sie vom Administrator erneut zu **[!UICONTROL Catalog]** > **[!UICONTROL Products]** und bearbeiten Sie ein konfigurierbares Produkt auf der Produktebearbeitungsseite (z. B. &quot;WB04&quot;-SKU, wenn Sie Beispieldaten verwenden):
-   * Setzen Sie für eine der Konfigurationsvarianten die Menge auf *0* (beispielsweise für &quot;WB04-M-Purple&quot;).
+1. Navigieren Sie in [!UICONTROL Commerce] Admin zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Stock Options]** und setzen Sie die **[!UICONTROL Display Out of Stock Products]** auf *Ja*.
+1. Navigieren Sie vom Administrator erneut zu &quot;**[!UICONTROL Catalog]** > &quot;**[!UICONTROL Products]**&quot;und bearbeiten Sie ein konfigurierbares Produkt auf der Seite zur Produktbearbeitung (z. B. &quot;WB04&quot;-SKU, wenn Sie Beispieldaten verwenden):
+   * Legen Sie für eine der Konfigurationsvarianten die Menge auf *0* fest (z. B. für &quot;WB04-M-Purple&quot;).
 1. Öffnen Sie nun das konfigurierbare Produkt auf der Storefront.
 1. Wählen Sie die Produktgröße für die konfigurierbare Variante mit Nullbestand (d. h. &quot;M&quot;) aus.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die nicht vorrätigen Optionen sind deaktiviert und als [!UICONTROL Out of Stock].
+Die nicht vorrätigen Optionen sind deaktiviert und als [!UICONTROL Out of Stock] markiert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Alle Farbmuster sind aktiviert, auch die [!UICONTROL Out of Stock].
+Alle Farbmuster sind aktiviert, auch die Farbfelder [!UICONTROL Out of Stock].
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

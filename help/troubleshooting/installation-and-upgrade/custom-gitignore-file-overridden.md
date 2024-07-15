@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installationsbefehl des Composers überschreibt .gitignore-Datei, Adobe Commerce
 
-Dieser Artikel bietet eine Lösung für den Fall, dass ein getrackter `.gitignore` -Datei wird vom Composer in Adobe Commerce in der Cloud-Infrastruktur 2.4.2-p1 und 2.3.7 überschrieben.
+Dieser Artikel bietet eine Lösung für den Fall, dass eine verfolgte `.gitignore` -Datei vom Composer in Adobe Commerce in der Cloud-Infrastruktur 2.4.2-p1 und 2.3.7 überschrieben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,7 +21,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.4.2-p1 und 2.3.7.
 
 ## Problem
 
-`.gitignore` -Datei überschrieben wird, wenn der Befehl zur Installation von Composer ausgeführt wird.
+`.gitignore` -Datei wird überschrieben, wenn der Befehl zum Installieren von Composer ausgeführt wird.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -39,7 +39,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.4.2-p1 und 2.3.7.
    1. `echo "/this/line/should/stay" >> .gitignore`
    1. `git init`
    1. `git add * && git add .*`
-   1. `git commit -m "Init"` # Datei für Repo
+   1. `git commit -m "Init"` # Datei zum Repo hinzugefügt
    1. `rm -rf vendor/*`
    1. `composer install`
    1. `git diff`
@@ -58,15 +58,15 @@ Adobe Commerce auf Cloud-Infrastruktur 2.4.2-p1 und 2.3.7.
 
 <u>Erwartetes Ergebnis</u>:
 
-`.gitignore` wird vom Komponisten nicht überschrieben.
+`.gitignore` wird vom Composer nicht überschrieben.
 
 <u>Tatsächliches Ergebnis</u>:
 
-`.gitignore` wird von jedem Installations-Lauf des Composers überschrieben.
+`.gitignore` wird von jedem Komponenteninstallationsablauf überschrieben.
 
 ## Lösung
 
-So halten Sie Ihre benutzerdefinierten `.gitignore file` Sie müssen es im `magento-deploy-ignore` Abschnitt.
+Um Ihre benutzerspezifische `.gitignore file` beizubehalten, müssen Sie sie im Abschnitt `magento-deploy-ignore` ignorieren.
 
 ```git
 {

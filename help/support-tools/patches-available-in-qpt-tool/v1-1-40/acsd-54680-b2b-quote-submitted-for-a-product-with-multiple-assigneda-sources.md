@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-54680: B2B-Zitat für ein Produkt mit mehreren zugewiesenen Quellen kann nicht verarbeitet werden.
 
-Der Patch ACSD-54680 behebt das Problem, dass das B2B-Zitat für ein Produkt mit mehreren zugewiesenen Quellen nicht verarbeitet werden kann. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.40 ist installiert. Die Patch-ID ist ACSD-54680. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-54680 behebt das Problem, dass das B2B-Zitat für ein Produkt mit mehreren zugewiesenen Quellen nicht verarbeitet werden kann. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.40 installiert ist. Die Patch-ID ist ACSD-54680. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-54680 behebt das Problem, dass das B2B-Zitat für ein Produkt mit
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -35,15 +35,15 @@ B2B-Anführungszeichen für ein Produkt mit mehreren zugewiesenen Quellen kann n
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Sources]** und erstellen Sie zwei neue Quellen: **Quelle 1** und **Quelle 2**.
-1. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Stocks]** und erstellen Sie einen neuen Stock: **Lager A**, weisen Sie sie der Haupt-Website zu und weisen Sie sie zu **Quelle 1** und **Quelle 2** zu.
-1. Erstellen eines einfachen Produkts, zuweisen **Quelle 1** und **Quelle 2**, setzen Sie Qty = *2* für jede Quelle. (die Verkaufsmenge des Erzeugnisses sollte *4* als Ergebnis).
+1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Sources]** und erstellen Sie zwei neue Quellen: **Source 1** und **Source 2**.
+1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Stocks]** und erstellen Sie einen neuen Lager: **Stock A**, weisen Sie ihn der Hauptwebsite zu und weisen Sie ihm **Source 1** und **Source 2** zu.
+1. Erstellen Sie ein einfaches Produkt, weisen Sie **Source 1** und **Source 2** zu und legen Sie für jede Quelle &quot;Menge = *2*&quot;fest. (Die Verkaufsmenge des Produkts sollte daher *4* betragen.)
 1. Erstellen Sie ein Unternehmenskonto.
-1. Navigieren Sie zu **[!UICONTROL Storefront]** und melden Sie sich beim Unternehmenskonto an.
-1. Fügen Sie das einfache Produkt mit qty = zum Warenkorb hinzu. *4*.
-1. Öffnen Sie die *[!UICONTROL Shopping cart]* und klicken **[!UICONTROL Request a quote]** Schaltfläche.
-1. Fügen Sie einen Kommentar- und Anführungsnamen hinzu und klicken Sie auf **[!UICONTROL Send a Request]** Schaltfläche.
-1. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]**.
+1. Gehen Sie zu &quot;**[!UICONTROL Storefront]**&quot;und melden Sie sich beim Unternehmenskonto an.
+1. Fügen Sie das einfache Produkt zum Warenkorb mit qty = *4* hinzu.
+1. Öffnen Sie den *[!UICONTROL Shopping cart]* und klicken Sie auf die Schaltfläche **[!UICONTROL Request a quote]** .
+1. Fügen Sie einen Kommentar- und einen Anführungsnamen hinzu und klicken Sie auf die Schaltfläche **[!UICONTROL Send a Request]** .
+1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Quotes]**.
 1. Vor Kurzem veröffentlichte Zitat öffnen.
 
 <u>Erwartete Ergebnisse</u>:
@@ -63,14 +63,14 @@ report.CRITICAL: TypeError: number_format() expects parameter 1 to be float, nul
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

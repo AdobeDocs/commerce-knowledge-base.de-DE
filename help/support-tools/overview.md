@@ -37,4 +37,4 @@ Adobe Commerce bietet eine Vielzahl von Support-Tools, mit denen Sie Ihr E-Comme
    * [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für Index](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    * [Verwaltete Warnhinweise für Adobe Commerce: CPU-Warnhinweis](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 * Commerce Site Assessment Tool
-   * [Bewertung der Commerce-Website](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)
+   * [Commerce-Site-Bewertung](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)

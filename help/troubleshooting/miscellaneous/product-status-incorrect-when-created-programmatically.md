@@ -26,12 +26,12 @@ Wenn die Katalogprodukte programmgesteuert von einem Skript erstellt oder aktual
 
 ## Ursache
 
-Das Problem tritt möglicherweise aufgrund von ACL-Einschränkungen auf, die für die Admin-Rollen der Adobe Commerce-Instanz festgelegt wurden. Bei Bootstrapping-Anwendungen gibt es keine initialisierten Admin-Sitzungen mit entsprechenden ACL-Einstellungen. Dadurch schlagen Überprüfungen im `Magento_AdminGws` -Modul, das für die Berechtigungsprüfung bei solchen Aktionen verantwortlich ist.
+Das Problem tritt möglicherweise aufgrund von ACL-Einschränkungen auf, die für die Admin-Rollen der Adobe Commerce-Instanz festgelegt wurden. Bei Bootstrapping-Anwendungen gibt es keine initialisierten Admin-Sitzungen mit entsprechenden ACL-Einstellungen. Dies würde dazu führen, dass Überprüfungen im Modul `Magento_AdminGws` fehlschlagen, das für die Berechtigungsprüfung bei solchen Aktionen zuständig ist.
 
 ## Lösung für falschen Produktstatus
 
-Festlegen einer dynamischen ID-Voreinstellung für die `Magento\Framework\Authorization\PolicyInterface`, wie im Abschnitt [ObjectManager > Programmatische Produktaktualisierungen](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) Thema in unserer Entwicklerdokumentation.
+Legen Sie eine dynamische ID-Voreinstellung für den `Magento\Framework\Authorization\PolicyInterface` fest, wie im Thema [ObjectManager>Programmatische Produktaktualisierungen](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) in unserer Entwicklerdokumentation beschrieben.
 
 ## Verwandtes Lesen
 
-* [GitHub: Der Produktstatus kann nicht geändert werden, welches Produkt mit productRepository erstellt wurde.](https://github.com/magento/magento2/issues/5664)
+* [Github: Der Produktstatus kann nicht geändert werden, welches Produkt mit productRepository erstellt wurde](https://github.com/magento/magento2/issues/5664)

@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce 2.4.0 B2B Admin kann kein konfigurierbares Produkt zum Anführungszeichen hinzufügen
-description: In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Verwaltung eines B2B-Zitats gesprochen. Es ist nicht möglich, ein konfigurierbares Produkt durch **SKU** zum Angebot hinzuzufügen. Wenn Sie auf die Schaltfläche **Zu Anführungszeichen hinzufügen** klicken, wird die Bearbeitungsseite **Anführungszeichen** nicht geladen. Sie können das Produkt nicht konfigurieren und Änderungen speichern. Dieses Problem tritt auch in Admin auf, wenn ein Produkt durch **SKU** zu einer Bestellung hinzugefügt oder ein Produkt durch **SKU** in **Advanced Checkout** (**Admin** &gt; **Customers**&gt; **All Customers* &gt; **Customer Edit** &gt; **Warenkorb verwalten**) hinzugefügt wird. Dieses Problem wird in einem Patch für Adobe Commerce 2.4.1 behoben.
+description: In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Verwaltung eines B2B-Zitats gesprochen. Es ist nicht möglich, ein konfigurierbares Produkt durch **SKU** zum Angebot hinzuzufügen. Wenn Sie auf die Schaltfläche **Zu Anführungszeichen hinzufügen** klicken, wird die Bearbeitungsseite **Anführungszeichen** nicht geladen. Sie können das Produkt nicht konfigurieren und Änderungen speichern. Dieses Problem tritt auch in Admin auf, wenn ein Produkt durch **SKU** zu einer Bestellung hinzugefügt oder ein Produkt durch **SKU** in **Erweiterter Checkout** (**Admin** &gt; **Customers* &gt; **Alle Kunden**&gt; **Kundenbearbeitung*&gt; **Warenkorb verwalten**). Dieses Problem wird in einem Patch für Adobe Commerce 2.4.1 behoben.
 exl-id: 73f7231b-b496-4250-b9e2-29427c772d56
 feature: Admin Workspace, B2B, Catalog Management, Configuration, Products, Quotes
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0 B2B Admin kann kein konfigurierbares Produkt zum Anführungszeichen hinzufügen
 
-In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Verwaltung eines B2B-Zitats gesprochen. Es ist nicht möglich, ein konfigurierbares Produkt hinzuzufügen, indem **SKU** dem Zitat. Wenn Sie auf **Zu Anführungszeichen hinzufügen** -Schaltfläche, **Anführungszeichen** Die Seite &quot;Bearbeiten&quot;wird nicht geladen. Sie können das Produkt nicht konfigurieren und Änderungen speichern. Dieses Problem tritt auch in Admin auf, wenn ein Produkt von hinzugefügt wird **SKU** einer Bestellung oder dem Hinzufügen eines Produkts durch **SKU** in **Erweiterter Checkout** (**Admin** > **Kunden** > **Alle Kunden** > **Kundenbearbeitung** > **Warenkorb verwalten**). Dieses Problem wird in einem Patch für Adobe Commerce 2.4.1 behoben.
+In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Verwaltung eines B2B-Zitats gesprochen. Es ist nicht möglich, ein konfigurierbares Produkt von **SKU** zum Angebot hinzuzufügen. Wenn Sie auf die Schaltfläche &quot;**Zu Anführungszeichen hinzufügen**&quot;klicken, hängt das Laden der Bearbeitungsseite &quot;**Anführungszeichen**&quot;an und Sie können das Produkt nicht konfigurieren und Änderungen speichern. Dieses Problem tritt auch in Admin auf, wenn ein Produkt durch **SKU** zu einer Bestellung hinzugefügt oder ein Produkt durch **SKU** in **Erweiterter Checkout** (**Admin** > **Kunden** > **Alle Kunden** > **Kunden bearbeiten** > **Einkauf verwalten hinzugefügt wird art**). Dieses Problem wird in einem Patch für Adobe Commerce 2.4.1 behoben.
 
 ## Betroffene Produkte und Versionen
 
@@ -26,35 +26,35 @@ In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Ver
 
 * Adobe Commerce 2.4.0 ist installiert.
 * B2B wird installiert.
-* B2B-Funktionen auf einstellen **Firma aktivieren =**  *Ja* , **Freigegebenen Katalog aktivieren =**  *Nein* , und **B2B-Angebot aktivieren =**  *Ja*.
+* Setzen Sie B2B-Funktionen auf **Unternehmen aktivieren =** *Ja* , **Freigegebenen Katalog aktivieren =** *Nein* und **B2B-Angebot aktivieren =** *Ja*.
 * Erstellen Sie ein Kundenkonto.
 * Erstellen Sie ein Unternehmenskonto mit dem zuvor erstellten Kunden als Unternehmensadministrator.
-* Erstellen Sie ein einfaches Produkt (Beispiel: Name &amp; **SKU** = TEST SIMPLE 1), das nicht zugewiesen ist **Standard (Allgemein)**.
+* Erstellen Sie ein einfaches Produkt (Beispiel: Name &amp; **SKU** = TEST SIMPLE 1), das nicht **Standard (Allgemein)** zugewiesen ist.
 * Bitten Sie den Unternehmensadministrator, ein Angebot mit dem oben erstellten einfachen Produkt anzufordern (Beispiel: TEST SIMPLE 1).
 
 <u>Zu reproduzierende Schritte</u>
 
 1. Navigieren Sie zum Commerce Admin-Bedienfeld.
-1. Navigieren Sie zu **Vertrieb > Anführungszeichen**.
-1. Öffnen Sie die **Anführungszeichen**.
-1. Klicken Sie auf **Produkt nach SKU hinzufügen** Schaltfläche.
-1. Geben Sie die **SKU** eines anderen (Beispiel: TEST SIMPLE 2)-Produkts in die **SKU eingeben** Eingabefeld.
-1. Geben Sie eine gültige Menge in das Feld **Qty** Eingabefeld.
-1. Klicken Sie auf **Zu Anführungszeichen hinzufügen** Schaltfläche.
+1. Wechseln Sie zu **Verkauf > Anführungszeichen**.
+1. Öffnen Sie das **Zitat**.
+1. Klicken Sie auf die Schaltfläche **Produkt von SKU hinzufügen** .
+1. Geben Sie die **SKU** eines anderen Produkts (Beispiel: TEST SIMPLE 2) in das Eingabefeld **Enter SKU** ein.
+1. Geben Sie eine gültige Menge in das Eingabefeld **Menge** ein.
+1. Klicken Sie auf die Schaltfläche **Zu Anführungszeichen hinzufügen** .
 
 <u>Erwartete Ergebnisse</u>
 
-* Die **Nicht zum Angebot hinzugefügte Produkte** grid, das den Namen und **SKU** des erstellten Produkts angezeigt.
-* Nachdem das Produkt konfiguriert wurde, kann es der Administrator der **Anführungszeichen** durch Klicken auf **Produkte zu Anführungszeichen hinzufügen** -Schaltfläche, wie erwartet.
+* Das Raster **Produkte nicht zum Zitat hinzugefügt** , das den Namen und die **SKU** des erstellten Produkts enthält, wird erwartungsgemäß angezeigt.
+* Nachdem das Produkt konfiguriert wurde, kann es der Administrator dem **Zitat** hinzufügen, indem er wie erwartet auf die Schaltfläche **Produkte zu Zitat hinzufügen** klickt.
 
 <u>Tatsächliche Ergebnisse</u>
 
-* Die **Nicht zum Angebot hinzugefügte Produkte** grid, das den Namen und **SKU** des erstellten Produkts nicht angezeigt.
-* Die **Anführungszeichen** Seite wird nicht mehr geladen.
+* Das Raster **Produkte, die nicht zum Raster &quot;Zitat&quot;** hinzugefügt wurden und den Namen und die **SKU** des erstellten Produkts enthalten, wird nicht angezeigt.
+* Die Seite **Zitat** wird nicht mehr geladen.
 
 ## Empfehlung
 
-Derzeit gibt es keine Problemumgehung bei der Bearbeitung von B2B-Zitaten. Für die Verwaltung von Bestellungen und Warenkorb ist es jedoch möglich, Produkte aus dem **Produktliste** anstatt sie durch hinzuzufügen **SKU**. Ein Patch zur Lösung des Problems wird für Adobe Commerce 2.4.1 verfügbar sein, das für das 4. Quartal 2020 geplant ist.
+Derzeit gibt es keine Problemumgehung bei der Bearbeitung von B2B-Zitaten. Für die Verwaltung von Bestellungen und Warenkorb ist es jedoch möglich, Produkte aus der **Produktliste** auszuwählen, anstatt sie über **SKU** hinzuzufügen. Ein Patch zur Lösung des Problems wird für Adobe Commerce 2.4.1 verfügbar sein, das für das 4. Quartal 2020 geplant ist.
 
 ## Verwandtes Lesen
 

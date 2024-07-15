@@ -1,6 +1,6 @@
 ---
-title: run `setup:static-content:deploy` deploy_version.txt-Problem
-description: Dieser Artikel enthält eine Fehlerbehebung für "deploy_version.txt"ist kein schreibbarer Fehler, wenn Sie "setup"ausführen:static-content:Befehl "deploy" manuell ausführen.
+title: Ausführen des Problems "setup:static-content:deploy" deploy_version.txt
+description: Dieser Artikel enthält eine Fehlerbehebung für "deploy_version.txt"ist kein schreibbarer Fehler, wenn der Befehl "setup:static-content:deploy"manuell ausgeführt wird.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# run `setup:static-content:deploy` deploy_version.txt-Problem
+# Problem mit der Ausführung von `setup:static-content:deploy` deploy_version.txt
 
-Dieser Artikel enthält eine Korrektur für `deployed_version.txt` ist beim Ausführen der `setup:static-content:deploy` manuell ausführen.
+Dieser Artikel enthält eine Fehlerbehebung für `deployed_version.txt` ist kein schreibbarer Fehler, wenn der Befehl `setup:static-content:deploy` manuell ausgeführt wird.
 
 ## Problem
 
-Befolgen Sie die Adobe Commerce-Empfehlungen zur Cloud-Infrastruktur, um [Konfigurationsverwaltung](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) (und verschieben Sie die Generierung statischer Assets in die Build-Phase, um den Website-Ausfall während der Bereitstellung zu reduzieren), kann bei der Ausführung der `setup:static-content:deploy` Befehl manuell:
+Wenn Sie den Adobe Commerce-Empfehlungen zur Cloud-Infrastruktur folgen, um [Konfigurationsverwaltung](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) zu verwenden (und die Generierung statischer Assets in die Build-Phase verschieben, um die Ausfallzeit von Websites während der Bereitstellung zu verringern), kann beim manuellen Ausführen des Befehls `setup:static-content:deploy` der folgende Fehler auftreten:
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy
@@ -36,7 +36,7 @@ Es wird dringend davon abgeraten, die Bereitstellung statischer Inhalte manuell 
 
 ## Lösung
 
-Wenn Sie weiterhin die Bereitstellung statischer Inhalte ausführen möchten, entfernen Sie Symlinks in der `pub/static` und führen Sie die `setup:static-content:deploy` Befehl erneut:
+Wenn Sie weiterhin die Bereitstellung statischer Inhalte ausführen möchten, entfernen Sie symlinks im Verzeichnis `pub/static` und führen Sie den Befehl `setup:static-content:deploy` erneut aus:
 
 ```
 find pub/static/ -maxdepth 1 -type l -delete

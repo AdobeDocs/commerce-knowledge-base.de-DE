@@ -43,13 +43,13 @@ Produkte sollten auf der zweiten Seite angezeigt werden.
 
 <u>Tatsächliches Ergebnis</u>:
 
-**&quot;***Wir können keine der Auswahl entsprechenden Produkte finden***&quot;** wird auf der zweiten Seite angezeigt.
+**&quot;***Wir können keine Produkte finden, die mit der Nachricht &quot;selection***&quot;** übereinstimmen, die auf der zweiten Seite angezeigt wird.
 
 ## Lösung
 
 Um das Problem zu beheben, wenden Sie bitte den an diesen Artikel angehängten Patch an. Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link:
 
-[Problem mit Katalogpaginierung beim Patch für Elasticsearch 6.x herunterladen](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip) - Der Patch ist mit allen betroffenen Versionen und Editionen kompatibel.
+[Problem mit der Katalogpaginierung beim Patch 6.x herunterladen](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip) - Der Patch ist mit allen betroffenen Versionen und Editionen kompatibel.
 
 >[!WARNING]
 >
@@ -57,6 +57,6 @@ Um das Problem zu beheben, wenden Sie bitte den an diesen Artikel angehängten P
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached files

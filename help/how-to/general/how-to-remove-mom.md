@@ -11,6 +11,6 @@ ht-degree: 0%
 
 # Entfernen von Magento Order Managements (MOM)
 
-1. Deaktivieren Sie die MOM-Integration, indem Sie die Schritte unter [Die Integration deaktivieren oder aktivieren](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration).
-1. Deaktivieren Sie das MOM-Modul, indem Sie die Schritte unter [Module deinstallieren](/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
-1. Zum Extrahieren von vollständigen Bestelldaten bieten wir die API an. Weitere Informationen finden Sie unter [Repository bestellen](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) in unserer Adobe | Magento OMS-Dokumente, die Bestellinformationen (order_repository) abdecken. Verwenden Sie die [Spezifikationen](https://omsdocs.magento.com/specifications/#services) in unserer Adobe | Magento OMS Docs verwenden, um andere APIs zur Extraktion verschiedener Informationstypen zu verwenden.
+1. Deaktivieren Sie die MOM-Integration, indem Sie die Schritte unter [Deaktivieren oder Aktivieren der Integration](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration) ausführen.
+1. Deaktivieren Sie das MOM-Modul, indem Sie die Schritte unter [Module deinstallieren](/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) ausführen.
+1. Zum Extrahieren von vollständigen Bestelldaten bieten wir die API an. Weitere Informationen finden Sie unter [Repository bestellen](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) in unserer Adobe | Magento OMS-Dokumente, die Bestellinformationen (order_repository) abdecken. Verwenden Sie den Abschnitt [Spezifikationen](https://omsdocs.magento.com/specifications/#services) in unserer Adobe. | Magento OMS Docs verwenden, um andere APIs zur Extraktion verschiedener Informationstypen zu verwenden.

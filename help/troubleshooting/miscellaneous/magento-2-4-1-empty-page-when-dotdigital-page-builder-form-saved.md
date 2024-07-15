@@ -24,17 +24,17 @@ Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Co
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Navigieren Sie zu **Admin Panel** > **Inhalt** > **Seiten** und wählen Sie **Bearbeiten** einer beliebigen Seite.
-1. Navigieren Sie zu **Inhalt** und klicken Sie auf **Mit Page Builder bearbeiten** Schaltfläche.
-1. Ziehen Sie die **dotdigital form** markieren **Bearbeiten**.
-1. Wählen Sie eines der Testformulare aus und wählen Sie dann **Eingebettet** und speichern Sie das Formular.
+1. Wechseln Sie zu **Admin-Bedienfeld** > **Inhalt** > **Seiten** und wählen Sie **Bearbeiten** einer beliebigen Seite aus.
+1. Wechseln Sie zu **Inhalt** und klicken Sie auf die Schaltfläche **Mit Seitenaufbau bearbeiten** .
+1. Ziehen Sie den Block **dotdigital form** und wählen Sie **Edit** aus.
+1. Wählen Sie eines der Testformulare aus, wählen Sie dann den Modus **Eingebettet** und speichern Sie das Formular.
 1. Speichern Sie die Seitenänderung.
 
 <u>Erwartetes Ergebnis:</u>
 
 Die Webseite sollte erfolgreich gespeichert werden.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Die Webseite ist leer. Nach dem erneuten Laden der Webseite werden die Änderungen übernommen.
 
@@ -46,5 +46,5 @@ Die Lösung besteht darin, einen alternativen Browser zu Safari zu verwenden. Da
 
 * [Was ist Page Builder?](https://devdocs.magento.com/page-builder/docs/) in unserer Entwicklerdokumentation.
 * [Einrichten des Seitenaufbaus](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) in unserer Entwicklerdokumentation.
-* [Page Builder](https://docs.magento.com/user-guide/cms/page-builder.html) in unserem Benutzerhandbuch.
+* [Seitenaufbau](https://docs.magento.com/user-guide/cms/page-builder.html) in unserem Benutzerhandbuch.
 * [Seitenaufbau - Elemente](https://docs.magento.com/user-guide/cms/page-builder-elements.html) in unserem Benutzerhandbuch.

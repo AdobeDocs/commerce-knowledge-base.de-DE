@@ -30,18 +30,18 @@ Ein Grund für die Leistungsbeeinträchtigung kann die Deaktivierung bestimmter 
 
 ## Lösung
 
-1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu [SSH in Ihrer Umgebung](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) und führen Sie den folgenden Befehl aus:
+1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu führen Sie [SSH in Ihrer Umgebung](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) aus und den folgenden Befehl aus:
 
    ```bash
    php bin/magento cache:status
    ```
 
-   Dadurch wird der Status jedes Cache-Typs angezeigt (&quot;0&quot; für deaktiviert, &quot;1&quot; für aktiviert). Sie können diese Informationen auch im Abschnitt `app/etc/env.php` -Datei.
+   Dadurch wird der Status jedes Cache-Typs angezeigt (&quot;0&quot; für deaktiviert, &quot;1&quot; für aktiviert). Sie können diese Informationen auch in der Datei `app/etc/env.php` abrufen.
 
 1. Untersuchen Sie die deaktivierten Cache-Typen. Alle Adobe Commerce-Cache-Typen sollten aktiviert sein, es sei denn, Sie erhalten alternative Anleitungen von Adobe. Für Drittanbietererweiterungen ist es nicht erforderlich, den Adobe Commerce-Cache zu deaktivieren.
 1. Wenn die Untersuchung bestätigt, dass einige Cache-Typen versehentlich deaktiviert sind, aktivieren Sie sie, indem Sie für jeden Cache-Typ den folgenden Befehl ausführen: `php bin/magento cache:enable <your_disabled_cache_type>`
 
-Wenn es Bedenken und/oder Fragen gibt, ob ein bestimmter Adobe Commerce-Cache-Typ deaktiviert werden kann oder sollte, [Adobe Commerce-Support kontaktieren](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Empfehlungen einzuholen.
+Wenn Bedenken bestehen und/oder Fragen darüber bestehen, ob ein bestimmter Adobe Commerce-Cache-Typ deaktiviert werden kann oder sollte, [wenden Sie sich an den Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um Empfehlungen zu erhalten.
 
 ## Verwandtes Lesen
 

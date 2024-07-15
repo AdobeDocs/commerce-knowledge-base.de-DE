@@ -15,13 +15,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieser Artikel enthält einen Patch als Problemumgehung, aber das Problem wurde in Adobe Commerce in der Cloud-Infrastruktur-Version 2.3.3 dauerhaft behoben. Es wird empfohlen, ein Upgrade auf Version 2.3.3 durchzuführen. Führen Sie die Schritte unter [Upgrade der Adobe Commerce-Version](https://devdocs.magento.com/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation.
+>Dieser Artikel enthält einen Patch als Problemumgehung, aber das Problem wurde in Adobe Commerce in der Cloud-Infrastruktur-Version 2.3.3 dauerhaft behoben. Es wird empfohlen, ein Upgrade auf Version 2.3.3 durchzuführen. Führen Sie die Schritte unter [Aktualisieren der Adobe Commerce-Version](https://devdocs.magento.com/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation aus.
 
-Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.0, das mit dem Problem verbunden ist, dass der Zugriff auf die Seiten im Front-Katalog nicht möglich ist. Die Fehlermeldung ähnelt der folgenden im Protokoll: *Integrationsbeschränkungsverletzung: 1062 Doppelter Eintrag &#39;%entry%&#39; für Schlüssel &#39;PRIMÄR&#39;, Abfrage war: INSERT IN \`search\_tmp\_%number%*.
+Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.0 in Bezug auf den nicht zugänglichen Speicher von Front-Catalog-Seiten. Die Fehlermeldung ähnelt dem folgenden im Protokoll: *Verletzung der Integrationsbeschränkung: 1062 Doppelter Eintrag &#39;%entry%&#39; für Schlüssel &#39;PRIMÄR&#39;, Abfrage lautete: INSERT INTO \`search_tmp\_%number%*.
 
 ## Problem
 
-Die Seiten im Vordergrund-Katalog werden unerwartet barrierefrei. Das Fehlerprotokoll weist eine Fehlerbeschreibung auf, die der folgenden ähnelt: *Integrationsbeschränkungsverletzung: 1062 Doppelter Eintrag &#39;%entry%&#39; für Schlüssel &#39;PRIMÄR&#39;, Abfrage war: INSERT IN \`search\_tmp\_%number%*.
+Die Seiten im Vordergrund-Katalog werden unerwartet barrierefrei. Das Fehlerprotokoll weist eine Fehlerbeschreibung auf, die der folgenden ähnelt: *Verletzung der Integrationsbeschränkung: 1062 Doppelter Eintrag &#39;%entry%&#39; für Schlüssel &#39;PRIMÄR&#39;, Abfrage lautete: INSERT IN \`search\_tmp\_%number%*.
 
 Das Problem bezieht sich auf die Suche und wird durch das Vorhandensein des veralteten Index zusammen mit dem neuen Index nach der Neuindizierung verursacht.
 
@@ -60,24 +60,24 @@ Die Patches wurden für die folgenden Editionen und Versionen erstellt:
 * Adobe Commerce auf Cloud-Infrastruktur 2.2.0 (`MDVA-9590_EE_2.2.0_COMPOSER_v2.patch`)
 * Adobe Commerce auf Cloud-Infrastruktur 2.2.4 (`MDVA-13203_EE_2.2.4_V1_COMPOSER.patch`)
 
-Die `MDVA-9590_EE_2.2.0_COMPOSER_v2` Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kompatibel (löst das Problem jedoch möglicherweise nicht):
+Der Patch `MDVA-9590_EE_2.2.0_COMPOSER_v2` ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kompatibel (löst das Problem jedoch möglicherweise nicht):
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.0.X, 2.1.X, 2.2.X und 2.3.0 - 2.3.3
 * Adobe Commerce lokal 2.0.X, 2.1.X, 2.2.X und 2.3.0 - 2.3.3
 
-Die `MDVA-13203_EE_2.2.4_V1_COMPOSER` Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kompatibel (löst das Problem jedoch möglicherweise nicht):
+Der Patch `MDVA-13203_EE_2.2.4_V1_COMPOSER` ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kompatibel (löst das Problem jedoch möglicherweise nicht):
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.0.X, 2.1.X, 2.2.X und 2.3.0 - 2.3.3
 * Adobe Commerce lokal 2.0.X, 2.1.X, 2.2.X und 2.3.0 - 2.3.3
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Nützliche Links
 
-* [Speicherort von Protokolldateien für Adobe Commerce in der Starter-Planarchitektur der Cloud-Infrastruktur](/help/how-to/general/log-locations-directories-for-starter-plan.md) in unserer Wissensdatenbank.
-* [Speicherort von Protokolldateien für Adobe Commerce in der Cloud Infrastructure Pro-Planarchitektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) in unserer Wissensdatenbank.
+* [Speicherort von Protokolldateien für Adobe Commerce in der Starter-Planarchitektur der Cloud-Infrastruktur](/help/how-to/general/log-locations-directories-for-starter-plan.md) in unserer Support-Wissensdatenbank.
+* [Speicherort von Protokolldateien für Adobe Commerce in der Cloud Infrastructure Pro-Planarchitektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) in unserer Support-Wissensdatenbank.
 * [Speicherort der Protokolldateien für Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) in unserer Entwicklerdokumentation.
 
 ## Attached Files

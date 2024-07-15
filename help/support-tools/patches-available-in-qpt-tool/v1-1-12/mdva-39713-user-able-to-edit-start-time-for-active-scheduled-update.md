@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39713: Benutzer kann die Startzeit einer geplanten aktiven Aktualisierung bearbeiten
 
-Der Patch MDVA-39713 behebt das Problem, dass ein Benutzer die Startzeit eines aktiven geplanten Updates bearbeiten kann. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39713. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der Patch MDVA-39713 behebt das Problem, dass ein Benutzer die Startzeit eines aktiven geplanten Updates bearbeiten kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39713. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch MDVA-39713 behebt das Problem, dass ein Benutzer die Startzeit eines a
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -36,14 +36,14 @@ Der Benutzer kann die Startzeit für eine aktive geplante Aktualisierung bearbei
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie neue CMS-Seiten.
-1. Auswählen **Neue Aktualisierung planen** und legen Sie die **Startdatum** auf aktuelle +1 Minute.
-1. Aktivieren Sie das geplante Update, indem Sie den Befehl ausführen. `bin/magento cron:run --group=staging` in der lokalen Umgebung. Warten Sie einige Minuten und überprüfen Sie, ob der Zeitplan aktiv ist.
+1. Wählen Sie **Neues Update planen** und setzen Sie das **Startdatum** auf die aktuelle +1-Minute-Zeit.
+1. Aktivieren Sie das geplante Update, indem Sie den Befehl `bin/magento cron:run --group=staging` in der lokalen Umgebung ausführen. Warten Sie einige Minuten und überprüfen Sie, ob der Zeitplan aktiv ist.
 1. Sobald der Zeitplan aktiv ist, aktualisieren Sie die Seite.
-1. Klicks **Anzeigen/Bearbeiten** im Abschnitt Geplante Änderungen .
+1. Klicken Sie im Abschnitt &quot;Geplante Änderungen&quot;auf **Anzeigen/Bearbeiten** .
 1. Bearbeiten Sie die Zeit, indem Sie +2 Minuten hinzufügen und speichern Sie die Änderung.
 1. Speichern Sie die CMS-Seite.
 1. Führen Sie erneut den folgenden Befehl aus: `bin/magento cron:run --group=staging`.
-1. Klicks **Anzeigen/Bearbeiten** des geplanten Updates.
+1. Klicken Sie auf **Anzeigen/Bearbeiten** des geplanten Updates.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -51,20 +51,20 @@ Der Benutzer kann die Startzeit für eine aktive geplante Aktualisierung nicht b
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Benutzer erhält eine Fehlermeldung wie *Element (Magento\Cms\Model\Page) mit der gleichen ID &quot;11&quot;ist bereits vorhanden.*
+Der Benutzer erhält einen Fehler wie *Element (Magento\Cms\Model\Page) mit der gleichen ID &quot;11&quot;bereits vorhanden.*
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

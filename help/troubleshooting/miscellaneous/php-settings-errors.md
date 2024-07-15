@@ -22,15 +22,15 @@ Die Readiness-Prüfungen stellen sicher, dass für PHP-Prozesse mindestens 1 GB 
 So erhöhen Sie die PHP-Speicherbegrenzung:
 
 1. Melden Sie sich bei Ihrem Adobe Commerce-Server an.
-1. Suchen Sie Ihre `php.ini` Datei mit dem folgenden Befehl:
+1. Suchen Sie die Datei &quot;`php.ini`&quot;mit dem folgenden Befehl:
 
    ```
    bash    $ php --ini
    ```
 
-1. Als Benutzer mit `root` Berechtigungen verwenden Sie einen Texteditor zum Öffnen der `php.ini` festgelegt durch `Loaded Configuration File`.
-1. Suchen `memory_limit`.
-1. Ändern Sie ihn in den Wert von `2GB` für die normale Verwendung und das Debugging.
+1. Verwenden Sie als Benutzer mit `root` -Berechtigungen einen Texteditor, um die von `Loaded Configuration File` angegebene `php.ini` zu öffnen.
+1. Suchen Sie `memory_limit`.
+1. Ändern Sie ihn für die normale Verwendung und das Debugging in den Wert `2GB` .
 1. Speichern Sie Ihre Änderungen in `php.ini` und beenden Sie den Texteditor.
 1. Starten Sie den Webserver neu. Beispiele:
 
@@ -42,17 +42,17 @@ So erhöhen Sie die PHP-Speicherbegrenzung:
 
 ## max-input-vars-Fehler aufgrund großer Formulare
 
-Konfigurationen mit einer großen Anzahl von Storeviews, Produkten, Attributen oder Optionen können Formulare generieren, die die voreingestellte PHP-Grenze überschreiten. Wenn die Anzahl gesendeter Werte die `max-input-vars` innerhalb der `php.ini` (Standardwert ist 1000), werden die verbleibenden Daten nicht übertragen und diese Datenbankwerte werden nicht aktualisiert. Wenn dies eintritt, erscheint ein Warnhinweis im PHP-Protokoll:
+Konfigurationen mit einer großen Anzahl von Storeviews, Produkten, Attributen oder Optionen können Formulare generieren, die die voreingestellte PHP-Grenze überschreiten. Wenn die Anzahl der gesendeten Werte die innerhalb von `php.ini` festgelegte Grenze von `max-input-vars` überschreitet (Standard ist 1000), werden die verbleibenden Daten nicht übertragen und diese Datenbankwerte werden nicht aktualisiert. Wenn dies eintritt, erscheint ein Warnhinweis im PHP-Protokoll:
 
 ```terminal
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-Es gibt keinen &quot;richtigen&quot;Wert für `max-input-vars`; dies hängt von der Größe und Komplexität Ihrer Konfiguration ab. Ändern Sie den Wert im `php.ini` Datei nach Bedarf. Siehe [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Es gibt keinen &quot;richtigen&quot;Wert für `max-input-vars`; er hängt von der Größe und Komplexität Ihrer Konfiguration ab. Ändern Sie den Wert in der Datei `php.ini` nach Bedarf. Siehe [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
 
 ## xdebug maximum function nesting level error
 
-Siehe [Während der Installation Fehler der maximalen Funktionsverschachtelungsstufe xdebug](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
+Siehe [Während der Installation Fehler xdebug maximum function nesting level error](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
 
 ## Beim Zugriff auf eine PHTML-Vorlage werden Fehler angezeigt
 
@@ -62,9 +62,9 @@ Fehlertext ist normalerweise:
 Parse error: syntax error, unexpected 'data' (T_STRING)
 ```
 
-### Lösung: Festlegen `asp_tags = off` in php.ini
+### Lösung: Legen Sie `asp_tags = off` in php.ini fest
 
-Mehrere Vorlagen haben eine Syntax, um abstrakte Ebenen auf Vorlagen zu unterstützen (verwenden Sie verschiedene Vorlagen-Engines wie Twig), die in `<% %>` Tags wie diese [template](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) zum Anzeigen eines Produktbilds:
+Mehrere Vorlagen haben eine Syntax für die Unterstützung der abstrakten Ebene auf Vorlagen (verwenden Sie verschiedene Vorlagen-Engines wie Twig), die in `<% %>` -Tags eingeschlossen sind, wie diese [Vorlage](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) zum Anzeigen eines Produktbilds:
 
 ```php
 <img
@@ -74,6 +74,6 @@ Mehrere Vorlagen haben eine Syntax, um abstrakte Ebenen auf Vorlagen zu unterst�
     alt="<%- data.label %>" />
 ```
 
-Weitere Informationen über [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
+Weitere Informationen zu [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
 
-Bearbeiten `php.ini` und `asp_tags = off`. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Bearbeiten Sie `php.ini` und legen Sie `asp_tags = off` fest. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).

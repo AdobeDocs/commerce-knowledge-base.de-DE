@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-53643: Die Gesamtsumme der Bestellungen ist bei der Bestellung nicht korrekt
 
-Der Patch ACSD-53643 behebt das Problem, bei dem die Bestellung bei der Bestellung mit deaktivierten oder nicht vorrätigen Produkten einen falschen Gesamtwert aufweist. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.41 installiert ist. Die Patch-ID ist ACSD-53643. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-53643 behebt das Problem, bei dem die Bestellung bei der Bestellung mit deaktivierten oder nicht vorrätigen Produkten einen falschen Gesamtwert aufweist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.41 installiert ist. Die Patch-ID ist ACSD-53643. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-53643 behebt das Problem, bei dem die Bestellung bei der Bestellu
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -35,12 +35,12 @@ Die Bestellsumme ist falsch, wenn eine Bestellung mit deaktivierten oder nicht v
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Installieren *[!UICONTROL B2B]* und *[!UICONTROL Inventory]*.
-1. Navigieren Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL B2B]** und **[!UICONTROL Company]** = *Ja* und **[!UICONTROL Purchase Order]** = *Ja*.
+1. Installieren Sie *[!UICONTROL B2B]* und *[!UICONTROL Inventory]*.
+1. Gehen Sie zu **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL B2B]** und legen Sie **[!UICONTROL Company]** = *Ja* und **[!UICONTROL Purchase Order]** = *Ja* fest.
 1. Löschen Sie den Konfigurationscache.
 1. Erstellen Sie ein neues Unternehmen, aktivieren Sie es und aktivieren Sie *[!UICONTROL Purchase order]* für das Unternehmen.
 1. Erstellen Sie einen neuen Benutzer für das Unternehmen.
-1. Erstellen Sie eine *Validierungsregel* zur Genehmigung aller Bestellungen von mehr als *1 USD* durch den Unternehmensadministrator.
+1. Erstellen Sie eine *Genehmigungsregel* , um alle Bestellungen von mehr als *1 USD* durch den Unternehmensadministrator zu genehmigen.
 1. Erstellen Sie eine zusätzliche Quelle.
 1. Melden Sie sich als neuer Unternehmensbenutzer an.
 1. Fügen Sie zwei Produkte zum Warenkorb hinzu und geben Sie eine Bestellung auf.
@@ -53,8 +53,8 @@ Die Bestellsumme ist falsch, wenn eine Bestellung mit deaktivierten oder nicht v
 
 <u>Erwartete Ergebnisse</u>:
 
-* Die Bestellung kann nicht platziert werden, selbst wenn ein Produkt in der Bestellung *disabled* oder *nicht vorrätig*.
-* *[!UICONTROL Place Order]* -Schaltfläche ausgeblendet ist.
+* Die Reihenfolge kann nicht platziert werden, selbst wenn ein Produkt in der Reihenfolge *deaktiviert* oder *nicht vorrätig ist*.
+* Schaltfläche *[!UICONTROL Place Order]* ist ausgeblendet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
@@ -64,14 +64,14 @@ Die aufgegebene Bestellung enthält nur das erste aktive Produkt, aber die Beste
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

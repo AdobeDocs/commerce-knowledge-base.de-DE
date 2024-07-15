@@ -34,7 +34,7 @@ Die erweiterte Suchfunktion gibt nicht zuerst die relevantesten Ergebnisse zurü
 
 Die &quot;Orion Two-Tone Fitted Jacket&quot; ist das erste Ergebnis bei der Verwendung der erweiterten Suche, als relevantestes Ergebnis.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Die &quot;Orion Two-Tone Fitted Jacket&quot; ist nicht das erste Ergebnis, obwohl es am relevantesten ist.
 
@@ -50,6 +50,6 @@ Der Patch ist mit allen betroffenen Versionen und Editionen kompatibel.
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached files

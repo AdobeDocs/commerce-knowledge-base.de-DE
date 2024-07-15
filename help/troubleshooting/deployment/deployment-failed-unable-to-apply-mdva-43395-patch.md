@@ -25,16 +25,16 @@ Sie können den Patch MDVA-43395 nicht anwenden.
 
 ## Ursache
 
-Cloud-Händler müssen den MDVA-43395-Patch nicht separat anwenden, wenn sie [magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) installiert, die bereits den Patch enthält.
+Cloud-Händler müssen den MDVA-43395-Patch nicht separat anwenden, wenn sie [magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) installiert haben, das bereits den Patch enthält.
 
 ## Lösung
 
-Um das Problem zu beheben, entfernen Sie die MDVA-43395- und MDVA-43443-Pflaster aus dem `m2-hotfixes` Verzeichnis erstellen und erneut bereitstellen.
+Um das Problem zu beheben, entfernen Sie die MDVA-43395- und MDVA-43443-Patches aus dem Verzeichnis `m2-hotfixes` und stellen Sie sie erneut bereit.
 
-Wenn Sie das MDVA-43443 Pflaster über die `m2-hotfixes` -Verzeichnis, müssen Sie es dennoch entfernen, wie oben erwähnt. In zukünftigen Versionen von Adobe Commerce sind diese Patches bereits enthalten, sodass die Bereitstellung fehlschlagen könnte, wenn Sie später aktualisieren würden.
+Wenn Sie den Patch MDVA-43443 über das Verzeichnis `m2-hotfixes` anwenden können, müssen Sie ihn trotzdem entfernen, wie oben erwähnt. In zukünftigen Versionen von Adobe Commerce sind diese Patches bereits enthalten, sodass die Bereitstellung fehlschlagen könnte, wenn Sie später aktualisieren würden.
 
-Um zu überprüfen, ob der Patch angewendet wurde, führen Sie den `vendor/bin/magento-patches -n status |grep 43443` Befehl.
-Wenn es mehrere Ergebnisse wie diese zeigt, sollten Sie den MDVA-43443 Patch aus dem `m2-hotfixes` Ordner:
+Um zu überprüfen, ob der Patch angewendet wurde, führen Sie den Befehl `vendor/bin/magento-patches -n status |grep 43443` aus.
+Wenn mehrere Ergebnisse wie diese angezeigt werden, sollten Sie den MDVA-43443-Patch aus dem Ordner `m2-hotfixes` entfernen:
 
 ```bash
 $ vendor/bin/magento-patches -n status |grep 43443
@@ -44,5 +44,5 @@ $ vendor/bin/magento-patches -n status |grep 43443
 
 ## Verwandtes Lesen
 
-* [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+* [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 * [Cloud-Patches für Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) in unserer Entwicklerdokumentation.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bekanntes Problem beim Produktvergleich in Adobe Commerce 2.3.5
 
-Dieser Artikel enthält Empfehlungen dazu, wie Sie bekannte [Produktvergleich](https://docs.magento.com/user-guide/marketing/product-compare.html) Ausgabe in Adobe Commerce vor Ort 2.3.5 und Adobe Commerce über Cloud-Infrastruktur 2.3.5.
+Dieser Artikel enthält Empfehlungen dazu, wie ein bekanntes [Produktvergleich](https://docs.magento.com/user-guide/marketing/product-compare.html)-Problem in Adobe Commerce vor Ort 2.3.5 und Adobe Commerce in der Cloud-Infrastruktur 2.3.5 vermieden werden kann.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,7 +30,7 @@ Geben Sie nicht leere Werte für vergleichbare Produktattribute an oder verwende
 
 >[!NOTE]
 >
->Produktattribute werden so eingestellt, dass sie zum Vergleich mit dem **Vergleich auf Storefront** Konfigurationseinstellung. Weitere Informationen finden Sie im Abschnitt [Erstellen von Produktattributen](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) in unserem Benutzerhandbuch.
+>Produktattribute werden für den Vergleich mit der Konfigurationseinstellung **Vergleichbar auf der Storefront** festgelegt. Weitere Informationen finden Sie unter [Erstellen von Produktattributen](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) in unserem Benutzerhandbuch.
 
 In Adobe Commerce 2.3.6, das ab 4. Quartal 2020 veröffentlicht werden soll, ist eine Korrektur verfügbar.
 
@@ -53,4 +53,4 @@ Sie können die Fehlerbehebung in GitHub anzeigen (beachten Sie bitte, dass die 
 <p title="Patch für Amazon Pay-out-Problem in Adobe Commerce 2.3.5-p1"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Patch für Amazon Pay-out-Problem in Adobe Commerce 2.3.5-p1</a></p>
 </li>
 </ul>
-</li><li><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Bekannte Probleme in Adobe Commerce 2.3.5</a> in unserer Entwicklerdokumentation</li></ul>
+</li><li><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues">Bekannte Probleme mit Adobe Commerce 2.3.5</a> in unserer Entwicklerdokumentation</li></ul>

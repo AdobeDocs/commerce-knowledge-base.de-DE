@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-47292: Nicht vorrätige gebündelte Produkte sind in der GraphQL-Antwort nicht verfügbar
 
-Der Patch ACSD-47292 behebt das Problem, dass die nicht vorrätigen gebündelten Produkte in der GraphQL-Antwort nicht verfügbar sind, selbst wenn die [!UICONTROL Display Out-of-Stock Products] auf *[!UICONTROL Yes]*. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 ist installiert. Die Patch-ID ist ACSD-47292. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-47292 behebt das Problem, dass die nicht vorrätig gebündelten Produkte nicht in der GraphQL-Antwort verfügbar sind, selbst wenn der Wert [!UICONTROL Display Out-of-Stock Products] auf *[!UICONTROL Yes]* gesetzt ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 installiert ist. Die Patch-ID ist ACSD-47292. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,15 +27,15 @@ Der Patch ACSD-47292 behebt das Problem, dass die nicht vorrätigen gebündelten
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Die nicht vorrätigen gebündelten Produkte sind in der GraphQL-Antwort selbst dann nicht verfügbar, wenn die [!UICONTROL Display Out-of-Stock Products] auf *[!UICONTROL Yes]*.
+Die nicht vorrätigen gebündelten Produkte sind in der GraphQL-Antwort nicht verfügbar, selbst wenn [!UICONTROL Display Out-of-Stock Products] auf *[!UICONTROL Yes]* gesetzt ist.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu Adobe Commerce Admin > **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** und legen Sie die [!UICONTROL Display Out-of-Stock Products] nach *[!UICONTROL Yes]*.
+1. Gehen Sie zum Adobe Commerce Admin > **[!UICONTROL System]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** und legen Sie die [!UICONTROL Display Out-of-Stock Products] auf *[!UICONTROL Yes]* fest.
 1. Erstellen Sie zwei einfache Produkte: s1 und s2.
 1. Machen Sie s1 nicht vorrätig und nicht einzeln sichtbar und s2 ist vorrätig und nicht einzeln sichtbar, und weisen Sie sie einer Kategorie zu.
 1. Erstellen Sie ein gebündeltes Produkt mit mindestens einem Optionsprodukt und weisen Sie dieser Option s1 und s2 zu (Eingabetyp &quot;RadioButton&quot;).
@@ -79,7 +79,7 @@ Die nicht vorrätigen gebündelten Produkte sind in der GraphQL-Antwort selbst d
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Option &quot;s1 bundle&quot;wird in der GraphQL-Antwort aufgeführt, da [!UICONTROL Display Out-of-Stock Products] auf *[!UICONTROL Yes]* und ist in der Storefront sichtbar.
+Die Option &quot;s1 Bundle&quot;wird in der GraphQL-Antwort aufgeführt, da [!UICONTROL Display Out-of-Stock Products] auf *[!UICONTROL Yes]* festgelegt ist und auf der Storefront sichtbar ist.
 
 <u>Tatsächliche Ergebnisse</u>:
 
@@ -110,14 +110,14 @@ Die Option &quot;s1 Bundle&quot;wird in der GraphQL-Antwort nicht aufgeführt.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

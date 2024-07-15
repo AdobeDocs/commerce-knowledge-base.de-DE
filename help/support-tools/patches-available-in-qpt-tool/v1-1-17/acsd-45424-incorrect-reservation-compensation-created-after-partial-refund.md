@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-45424: Falsche Reservierungsentschädigung nach teilweiser Rückerstattung
 
-Der Patch ACSD-45424 behebt das Problem, dass nach einer teilweisen Rückerstattung eine falsche Reservierungsentschädigung entsteht. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 installiert ist. Die Patch-ID lautet ACSD-45424. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-45424 behebt das Problem, dass nach einer teilweisen Rückerstattung eine falsche Reservierungsentschädigung entsteht. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 installiert ist. Die Patch-ID lautet ACSD-45424. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-45424 behebt das Problem, dass nach einer teilweisen Rückerstatt
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -53,31 +53,31 @@ Nach einer teilweisen Rückerstattung wird eine falsche Reservierungsentschädig
    SELECT * FROM inventory_reservation WHERE sku = 'P3';
    ```
 
-   Sie erhalten den Bestelldatensatz im `inventory_reservation` Tabelle. Die Menge ist 10, was richtig ist.
+   Sie erhalten den aufgegebenen Bestelldatensatz in der Tabelle `inventory_reservation`. Die Menge ist 10, was richtig ist.
 1. Invotieren Sie diese Bestellung vom Backend aus.
-1. Erstellen Sie nun ein Kreditmemo für nur ein Produkt. Wählen Sie NICHT die *Zurück auf Lager* aktivieren.
+1. Erstellen Sie nun ein Kreditmemo für nur ein Produkt. Aktivieren Sie NICHT das Kontrollkästchen *Zurück auf Lager* .
 1. Führen Sie dieselbe Abfrage aus Schritt 8 aus.
 
 <u>Erwartete Ergebnisse</u>:
 
-Wenn Sie die *Zurück auf Lager* während der Erstellung des Kreditmemo die `inventory_reservation` -Tabelle keinen Datensatz enthält, der dem Kreditmemo entspricht.
+Wenn Sie die *Zurück auf Lager* während der Erstellung des Kreditmemos nicht ausgewählt haben, enthält die Tabelle `inventory_reservation` keinen Datensatz, der dem Kreditmemo entspricht.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Auch wenn Sie die *Zurück auf Lager* während der Erstellung des Credit-Memos wird ein Datensatz zu `inventory_reservation` Tabelle mit `creditmemo_created` Ereignistyp. Außerdem wurde der Datensatz mit dem Credit Memo im `inventory_reservation` -Tabelle weist eine Menge von 10 auf, obwohl Sie das Kreditmemo für nur eine Menge erstellt haben.
+Auch wenn Sie während der Erstellung des Credit Memos die Option *Zurück auf Lager* nicht ausgewählt haben, wird der Tabelle `inventory_reservation` ein Datensatz mit dem Ereignistyp `creditmemo_created` hinzugefügt. Außerdem hat der in der Tabelle `inventory_reservation` hinzugefügte Credit Memo-Datensatz eine Menge von 10, obwohl Sie das Credit Memo für nur eine Menge erstellt haben.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

@@ -1,6 +1,6 @@
 ---
-title: "ACSD-46767: [!UICONTROL Category] Seitenzwischenspeicher ungültig machen, wenn sich die Lagermenge ändert"
-description: Wenden Sie den Patch ACSD-46767 an, um das Adobe Commerce-Problem zu beheben, bei dem das [!UICONTROL Category] Seitenzwischenspeicher invalidieren, wenn sich die Lagermenge ändert, selbst wenn das Produkt noch auf Lager ist.
+title: "ACSD-46767: [!UICONTROL Category] Seite speichert ungültig, wenn sich die Bestandsmenge ändert"
+description: Wenden Sie den Patch ACSD-46767 an, um das Adobe Commerce-Problem zu beheben, bei dem die Seite [!UICONTROL Category] invalidiert, wenn sich die Lagermenge ändert, selbst wenn das Produkt noch auf Lager ist.
 feature: Cache, Products, Inventory
 role: Admin, Developer
 exl-id: 39811c03-8518-4975-a128-31537b4706c0
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46767: [!UICONTROL Category] Seiten-Caches ungültig machen, wenn sich die Lagermenge ändert
+# ACSD-46767: [!UICONTROL Category] Seiten-Caches invalidieren, wenn sich die Lagermenge ändert
 
-Der Patch ACSD-46767 behebt das Problem, bei dem das [!UICONTROL Category] Seitenzwischenspeicher invalidieren, wenn sich die Lagermenge ändert, selbst wenn das Produkt noch auf Lager ist. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 installiert ist. Die Patch-ID ist ACSD-46767. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-46767 behebt das Problem, bei dem die Seite [!UICONTROL Category] invalidiert, wenn sich die Lagermenge ändert, selbst wenn das Produkt noch auf Lager ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 installiert ist. Die Patch-ID ist ACSD-46767. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Der Patch ACSD-46767 behebt das Problem, bei dem das [!UICONTROL Category] Seite
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-[!UICONTROL Category] Seitenzwischenspeicher ungültig machen, wenn sich die Lagermenge ändert.
+[!UICONTROL Category] Seiten-Caches machen ungültig, wenn sich die Lagermenge ändert.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie einige Produkte und fügen Sie sie derselben Kategorie hinzu.
-1. Öffnen Sie die *[!UICONTROL Category]* auf der Storefront angezeigt, um sicherzustellen, dass die Seite zwischengespeichert wird.
-1. Bestellung mit einem der Produkte der Kategorie aufgeben *(Die Produktmenge wird geändert, aber das Produkt ist noch auf Lager.)*.
-1. Öffnen Sie die [!UICONTROL Category] erneut auf der Storefront angezeigt.
+1. Öffnen Sie die Seite &quot;*[!UICONTROL Category]*&quot; im Storefront, um sicherzustellen, dass die Seite zwischengespeichert wird.
+1. die Bestellung mit einem der Produkte der Kategorie &quot;*&quot;(Produktmenge wird geändert, aber das Produkt ist noch auf Lager)* aufgeben.
+1. Öffnen Sie die Seite &quot;[!UICONTROL Category]&quot; erneut auf der Storefront.
 
 <u>Tatsächliche Ergebnisse</u>:
 
@@ -52,14 +52,14 @@ Die Seite wird aus dem Cache geladen.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

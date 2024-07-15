@@ -16,12 +16,12 @@ In diesem Artikel wird beschrieben, wie Sie sich bei Ihrem mit Adobe Commerce be
 
 ## Anzeigen Ihrer Fastly-Anmeldedaten
 
-Weitere Informationen finden Sie unter [Schnelles Abrufen von Anmeldeinformationen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie im Abschnitt [Fastly-Anmeldedaten abrufen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) in unserer Entwicklerdokumentation.
 
 ## Testen der Fastly-Anmeldedaten
 
-Weitere Informationen finden Sie unter [Testen der schnellen Anmeldedaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie im Abschnitt [Testen der Fastly-Anmeldedaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-[Kontoinhaber ändern (Zugriffsberechtigungen über API-Token) für Fastly in Cloud](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) in unserer Wissensdatenbank.
+[Ändern Sie den Kontoinhaber (Zugriffsberechtigungen über API-Token) für Fastly on Cloud](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) in unserer Support-Wissensdatenbank.

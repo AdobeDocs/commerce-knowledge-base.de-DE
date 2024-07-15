@@ -16,7 +16,7 @@ In diesem Artikel finden Sie schnelle Antworten auf Fragen zum Abrufen von SSL-Z
 
 ## Welches SSL-/TLS-Zertifikat bietet Adobe?
 
-Adobe stellt eine Domäne bereit, die validiert wurde [SSL-/TLS-Zertifikat verschlüsseln](https://letsencrypt.org/) zur Bereitstellung des sicheren HTTPS-Traffics von [!DNL Fastly]. Adobe stellt für jede Adobe Commerce ein Zertifikat in der Planarchitektur von Cloud Infrastructure Pro, Staging und Adobe Commerce in der Planarchitekturumgebung für Cloud-Infrastruktur-Starter bereit, um alle Domänen in dieser Umgebung zu sichern.
+Adobe stellt ein domänenvalidiertes [SSL-/TLS-Zertifikat verschlüsseln](https://letsencrypt.org/) bereit, um sicheren HTTPS-Traffic von [!DNL Fastly] bereitzustellen. Adobe stellt für jede Adobe Commerce ein Zertifikat in der Planarchitektur von Cloud Infrastructure Pro, Staging und Adobe Commerce in der Planarchitekturumgebung für Cloud-Infrastruktur-Starter bereit, um alle Domänen in dieser Umgebung zu sichern.
 
 ## Was umfasst ein Zertifikat?
 
@@ -29,7 +29,7 @@ Für die Starter-Planarchitektur und die PaaS-Integrationsumgebungen gibt es ein
 Hinzufügen der Domäne zum Dienst in [!DNL Fastly]:
 
 1. Setzen Sie Ihre Domain im DNS auf prod.magentocloud.map.fastly.net und warten Sie bis zu 6 Stunden.
-1. [Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) -Anfrage, um diese Domäne in der Nginx-Konfiguration hinzuzufügen (wenn Sie dies noch nicht getan haben).
+1. [Senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um diese Domäne in die Nginx-Konfiguration hinzuzufügen (falls Sie dies noch nicht getan haben).
 
 ## Wie kann ich ein Zertifikat anfordern?
 
@@ -39,18 +39,18 @@ Wenn Sie noch keine Website gestartet haben, haben Sie möglicherweise ACME Chal
 
 2. Fall
 
-Wenn Ihre Site bereits live ist und/oder Sie auf die URLs verweisen können, die für Ihre Live-Site verwendet werden, müssen Sie keinen ACME-CNAME anfordern. Nachdem Sie die URLs nach Bedarf zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site hinzugefügt haben und Ihr DNS unter [!DNL Fastly], funktioniert die HTTP-Validierung und erstellen entweder das SSL-Zertifikat zum ersten Mal oder aktualisieren Sie Ihr Zertifikat mit zusätzlichen URLs.
+Wenn Ihre Site bereits live ist und/oder Sie auf die URLs verweisen können, die für Ihre Live-Site verwendet werden, müssen Sie keinen ACME-CNAME anfordern. Nachdem Sie die URLs nach Bedarf zu Ihrer Adobe Commerce auf der Cloud-Infrastruktur-Site hinzugefügt und Ihr DNS auf [!DNL Fastly] verweisen, funktioniert die HTTP-Validierung und erstellt entweder zum ersten Mal Ihr SSL-Zertifikat oder aktualisiert Ihr Zertifikat mit zusätzlichen URLs.
 
 ## Kann ich mein eigenes SSL-/TLS-Zertifikat verwenden?
 
-Sie können Ihr eigenes SSL-/TLS-Zertifikat bereitstellen, anstatt die [Zertifikat verschlüsseln](https://letsencrypt.org/) bereitgestellt von Adobe.
+Sie können Ihr eigenes SSL-/TLS-Zertifikat bereitstellen, anstatt das von Adobe bereitgestellte [Let&#39;s Encrypt certificate](https://letsencrypt.org/) zu verwenden.
 
 Dieser Prozess erfordert jedoch zusätzliche Arbeit für die Einrichtung und Wartung. Sie müssen zunächst eine Certificate Signing Request (CSR) für den Domänennamen (oder allgemeinen Namen) der Website generieren und diesem SSL-Anbieter ein SSL-Zertifikat bereitstellen.
 
-Sobald Sie über das SSL-Zertifikat verfügen, senden Sie eine [Support-Ticket für Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) oder mit Ihrem CTA zusammenarbeiten, um benutzerdefinierte gehostete Zertifikate zu Ihren Cloud-Umgebungen hinzuzufügen.
+Sobald Sie über das SSL-Zertifikat verfügen, senden Sie ein [Adobe Commerce-Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) oder verwenden Sie Ihren CTA, um benutzerdefinierte gehostete Zertifikate zu Ihren Cloud-Umgebungen hinzuzufügen.
 
 * Wenn die Domains nicht mehr verwendet werden, werden sie automatisch aus unserem System gelöscht, und es sind keine weiteren Maßnahmen erforderlich.
-* Wenn Sie bereits Inhaber eines Zertifikats sind, laden Sie es mithilfe eines SFTP-Clients (SSH File Transfer Protocol) an einen Web-nicht zugänglichen Dateispeicherort auf Ihrem Server hoch und [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) ihnen den Dateipfad mitteilen.
+* Wenn Sie bereits Inhaber eines Zertifikats sind, laden Sie es mithilfe eines SFTP-Clients (SSH File Transfer Protocol) an einen Web-nicht zugänglichen Dateispeicherort auf Ihrem Server hoch und senden Sie [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um ihnen den Dateipfad mitzuteilen.
 
 >[!WARNING]
 >
@@ -63,15 +63,15 @@ Der Name des SSL-Zertifikats spielt nur für die primäre URL eine Rolle. Er ist
 
 ## Welche Domäne wird im Feld Allgemeiner Name des Zertifikats angezeigt?
 
-Die im Zertifikat angezeigte Domäne ist nur die erste Domäne, die dem TLS-Zertifikat hinzugefügt wurde. Sie füllt die **Gebrauchsname** (**CN**) und in Browsern wird dieser Name zuerst angezeigt. Die **Alternativname des Betreffs** (**SAN**) enthält alle DNS-Namen für das TLS-Zertifikat. Es gibt keine Möglichkeit, den angezeigten allgemeinen Namen zu ändern oder anzufordern.
+Die im Zertifikat angezeigte Domäne ist nur die erste Domäne, die dem TLS-Zertifikat hinzugefügt wurde. Sie füllt das Feld **Gebrauchsname** (**CN**) und in Browsern wird dieser Name zuerst angezeigt. Das Feld **Alternativer Betreffname** (**SAN**) enthält alle DNS-Namen für das TLS-Zertifikat. Es gibt keine Möglichkeit, den angezeigten allgemeinen Namen zu ändern oder anzufordern.
 
 ## Kann ich Platzhalter-TLS-Zertifikate verwenden?
 
-Wildcard-TLS-Zertifikate können nur mit Ihrem benutzerdefinierten Zertifikat und nicht mit Adobe Commerce Let&#39;s Encrypt certificates verwendet werden. Im Rahmen unserer TLS-Optimierung beendet Adobe die Unterstützung für Platzhalter-TLS-Zertifikate. Wir identifizieren und kontaktieren Händler, die ein Platzhalterzertifikat mit Adobe Let&#39;s Encrypt-Zertifikaten verwenden und im [!DNL Fastly] -Konsole für Adobe Commerce. Wir fordern, dass diese Wildcard-Zertifikate durch genaue Domänen ersetzt werden, um die TLS-Abdeckung sicherzustellen. Um ein Platzhalter-TLS-Zertifikat zu ersetzen, besuchen Sie bitte das [Domänenabschnitt](https://devdocs.magento.com/cloud/cdn/configure-fastly-customize-cache.html#manage-domains) des [!DNL Fastly] Plug-in. Von hier aus können exakte Domänen hinzugefügt und der Platzhalter entfernt werden. Bitte beachten Sie, dass DNS auf [!DNL Fastly] für diese neuen Domänen durch das CDN weitergeleitet werden. Sobald die Domänen hinzugefügt und das DNS aktualisiert wurde, wird eine [Verschlüsseln](https://letsencrypt.org/) -Zertifikat bereitgestellt wird. Wenn Sie keine Domäne entfernen, die auf [!DNL Fastly] mit einem Platzhalter löscht Adobe das freigegebene Zertifikat. Dies kann zu einem Site-Ausfall führen, wenn Sie den URL-FQDN nicht konfiguriert und denselben URL-FQDN in Ihrem DNS eingerichtet haben. Sie sollten daher sicherstellen, dass die konfigurierten URLs auch eine Eins-zu-Eins-Übereinstimmung im DNS aufweisen, die auf Folgendes verweist: [!DNL Fastly].
+Wildcard-TLS-Zertifikate können nur mit Ihrem benutzerdefinierten Zertifikat und nicht mit Adobe Commerce Let&#39;s Encrypt certificates verwendet werden. Im Rahmen unserer TLS-Optimierung beendet Adobe die Unterstützung für Platzhalter-TLS-Zertifikate. Wir identifizieren und kontaktieren Händler, die ein Platzhalterzertifikat mit Adobe Let&#39;s Encrypt-Zertifikaten verwenden und in der [!DNL Fastly] -Konsole für Adobe Commerce konfiguriert sind. Wir fordern, dass diese Wildcard-Zertifikate durch genaue Domänen ersetzt werden, um die TLS-Abdeckung sicherzustellen. Um ein Platzhalter-TLS-Zertifikat zu ersetzen, besuchen Sie den Abschnitt [Domäne](https://devdocs.magento.com/cloud/cdn/configure-fastly-customize-cache.html#manage-domains) des Plug-ins [!DNL Fastly] . Von hier aus können exakte Domänen hinzugefügt und der Platzhalter entfernt werden. Beachten Sie, dass DNS auf [!DNL Fastly] verweisen muss, damit diese neuen Domänen durch das CDN weitergeleitet werden. Sobald die Domänen hinzugefügt und das DNS aktualisiert wurde, wird ein entsprechendes [Let&#39;s Encrypt](https://letsencrypt.org/) -Zertifikat bereitgestellt. Wenn Sie eine Domäne, die mit einem Platzhalter auf [!DNL Fastly] verweist, nicht entfernen, löscht Adobe das freigegebene Zertifikat. Dies kann zu einem Site-Ausfall führen, wenn Sie den URL-FQDN nicht konfiguriert und denselben URL-FQDN in Ihrem DNS eingerichtet haben. Sie sollten daher sicherstellen, dass die konfigurierten URLs auch eine Eins-zu-Eins-Übereinstimmung im DNS aufweisen, die auf [!DNL Fastly] verweist.
 
 ## Was sollte ich tun, wenn meine Domain nicht mehr auf Adobe Commerce verweist?
 
-Wenn Ihre Domäne nicht mehr auf Adobe Commerce verweist, entfernen Sie sie aus dem [!DNL Fastly]/Adobe Commerce. Siehe [!DNL Fastly] [Löschen einer Domäne](https://docs.fastly.com/en/guides/working-with-domains#deleting-a-domain) , um mehr zu erfahren. Es ist zwar nicht erforderlich, Ihre Domäne auf Adobe Commerce zu verweisen, doch überprüfen Sie, ob ein TLS-Zertifikat der obersten Ebene erforderlich ist. Wenn eine Domäne der obersten Ebene erforderlich ist, aktualisieren Sie Ihr DNS so, dass sie auf Adobe Commerce verweist. Wenn er bereits auf Adobe Commerce verweist, aktualisieren Sie Ihren CAA-Datensatz, um [lets-encrypt](https://letsencrypt.org/). Wenn Sie diese Schritte ausführen, wird das LE-Zertifikat mit den erforderlichen sekundären URLs aktualisiert, die vom Zertifikat abgedeckt werden. &#x200B;
+Wenn Ihre Domäne nicht mehr auf Adobe Commerce verweist, entfernen Sie sie aus dem System [!DNL Fastly]/Adobe Commerce . Weitere Informationen finden Sie unter [!DNL Fastly] [Löschen einer Domäne](https://docs.fastly.com/en/guides/working-with-domains#deleting-a-domain) . Es ist zwar nicht erforderlich, Ihre Domäne auf Adobe Commerce zu verweisen, doch überprüfen Sie, ob ein TLS-Zertifikat der obersten Ebene erforderlich ist. Wenn eine Domäne der obersten Ebene erforderlich ist, aktualisieren Sie Ihr DNS so, dass sie auf Adobe Commerce verweist. Wenn er bereits auf Adobe Commerce verweist, aktualisieren Sie Ihren CAA-Datensatz, sodass er [lets-encrypt](https://letsencrypt.org/) enthält. Wenn Sie diese Schritte ausführen, wird das LE-Zertifikat mit den erforderlichen sekundären URLs aktualisiert, die vom Zertifikat abgedeckt werden. &#x200B;
 
 ## Verwandtes Lesen
 

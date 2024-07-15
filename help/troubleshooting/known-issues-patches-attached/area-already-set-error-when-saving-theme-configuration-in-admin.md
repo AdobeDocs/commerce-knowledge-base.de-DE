@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # Fehler &quot;Bereich bereits festgelegt&quot;beim Speichern der Designkonfiguration in Admin
 
-Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.4, das mit dem Abrufen der *&quot;Bereich ist bereits festgelegt&quot;* Fehlermeldung beim Versuch, ein Design für die standardmäßige Store-Ansicht in Commerce Admin festzulegen.
+Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.4 in Zusammenhang mit dem Abrufen der Fehlermeldung &quot;*&quot;Bereich ist bereits festgelegt&quot;* , wenn versucht wird, ein Design für die standardmäßige Store-Ansicht in Commerce Admin festzulegen.
 
 ## Problem
 
-Sie erhalten die &quot; *Beim Speichern dieser Konfiguration ist etwas schiefgelaufen: Bereich ist bereits festgelegt.* Fehlermeldung beim Versuch, ein Design für die standardmäßige Store-Ansicht festzulegen.
+Sie erhalten die Fehlermeldung &quot;*Etwas ist beim Speichern dieser Konfiguration schiefgelaufen: Bereich ist bereits festgelegt* &quot;, wenn Sie versuchen, ein Design für die standardmäßige Store-Ansicht festzulegen.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Melden Sie sich bei Commerce Admin an.
-1. Navigieren Sie zu **Inhalt** > **Design** > **Konfiguration**.
-1. Stellen Sie den Konfigurationsbereich auf *Standardspeicheransicht*.
-1. Ändern Sie das Design im **Angewandtes Design** angezeigt. Beispiel: von *Luma* nach *Leer.*
-1. Klicks **Konfiguration speichern**.
+1. Navigieren Sie zu &quot;**Inhalt**&quot;> &quot;**Design**&quot;> &quot;**Konfiguration**&quot;.
+1. Stellen Sie den Konfigurationsbereich auf *Standard-Speicheransicht* ein.
+1. Ändern Sie das Design in der Dropdown-Liste **Angewandtes Design** . Beispiel: von *Luma* bis *Leer.*
+1. Klicken Sie auf **Konfiguration speichern**.
 
 <u>Erwartetes Ergebnis</u>: Das ausgewählte Design wird auf die standardmäßige Store-Ansicht angewendet.
 
-<u>Tatsächliches Ergebnis</u> : Das Design wird nicht angewendet, die *&quot;Beim Speichern dieser Konfiguration ist etwas schiefgelaufen: Bereich ist bereits festgelegt.* -Fehlermeldung angezeigt.
+<u>Tatsächliches Ergebnis</u> : Design wird nicht angewendet, die Fehlermeldung *&quot;Beim Speichern dieser Konfiguration ist etwas schiefgelaufen: Bereich ist bereits festgelegt&quot;* wird angezeigt.
 
 ## Patch
 
@@ -54,6 +54,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

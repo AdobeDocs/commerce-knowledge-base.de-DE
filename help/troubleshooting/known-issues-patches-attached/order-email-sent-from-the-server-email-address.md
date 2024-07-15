@@ -21,7 +21,7 @@ Bestellbestätigungs-E-Mails werden von der Apache-Server-E-Mail-Adresse gesende
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Platzieren Sie eine Bestellung bei der **Bestellbestätigung senden** aktiviert ist.
+1. Platzieren Sie eine Bestellung, wobei das Kontrollkästchen **Bestellbestätigung senden** aktiviert ist.
 1. Prüfen Sie E-Mail.
 
 <u>Erwartetes Ergebnis</u>:
@@ -59,6 +59,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

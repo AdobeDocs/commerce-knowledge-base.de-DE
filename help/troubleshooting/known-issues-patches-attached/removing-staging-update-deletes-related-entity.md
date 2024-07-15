@@ -29,7 +29,7 @@ Wenn Sie ein aktives Planupdate zwischen Start- und Enddatum löschen, wird auch
 1. Erstellen Sie eine neue Unterkategorie unter **Katalog** > **Kategorien**.
 1. Erstellen Sie ein neues Staging-Update mit der Start- und Endzeit.
 1. Warten Sie, bis die Aktualisierung durchgeführt wurde. Dies ist die Startzeit.
-1. Löschen Sie die Aktualisierung mithilfe der **Anzeigen/Bearbeiten** -Link.
+1. Löschen Sie die Aktualisierung mithilfe des Links **Anzeigen/Bearbeiten** .
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -80,6 +80,6 @@ Der Patch MDVA-23505\_EE\_2.2.5\_COMPOSER\_v1.patch ist ebenfalls mit den folgen
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

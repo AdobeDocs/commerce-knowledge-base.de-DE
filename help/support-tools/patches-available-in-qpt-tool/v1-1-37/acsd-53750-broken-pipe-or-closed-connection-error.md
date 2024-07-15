@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-53750: *Beschädigte Leitung oder geschlossene Verbindung* Fehler bei mehrprozessgestützten `catalog_product_price` reindex
+# ACSD-53750: *Beschädigte Leitung oder geschlossene Verbindung* Fehler während mehrprozessgestützter `catalog_product_price` Neuindizierung
 
-Der Patch ACSD-53750 behebt das Problem, bei dem ein *Beschädigte Leitung oder geschlossene Verbindung* Fehler tritt während mehrprozessgestützter `catalog_product_price` reindex. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-53750. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-53750 behebt das Problem, bei dem während der Neuindizierung mit mehreren Threads `catalog_product_price` ein Fehler vom Typ *Beschädigte Leitung oder geschlossene Verbindung* auftritt. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.37 installiert ist. Die Patch-ID ist ACSD-53750. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,24 +27,24 @@ Der Patch ACSD-53750 behebt das Problem, bei dem ein *Beschädigte Leitung oder 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-*Beschädigte Leitung oder geschlossene Verbindung* Fehler tritt während mehrprozessgestützter `catalog_product_price` reindex.
+Der Fehler *Beschädigte senkrechte Leitung oder geschlossene Verbindung* tritt während der Neuindizierung mit mehreren Threads `catalog_product_price` auf.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Konfigurieren Sie RabbitMq.
-1. Beispieldaten mithilfe des angehängten `small.xml` -Datei.
-1. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Inventory Indexer Setting]** und **[!UICONTROL Stock/Source reindex strategy]** = **[!UICONTROL Asynchronous]**.
+1. Generieren Sie Beispieldaten mit der angehängten `small.xml`-Datei.
+1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Config]** > **[!UICONTROL Catalog]** > **[!UICONTROL Inventory]** > **[!UICONTROL Inventory Indexer Setting]** und legen Sie **[!UICONTROL Stock/Source reindex strategy]** = **[!UICONTROL Asynchronous]** fest.
 1. Legen Sie den Dimensionsmodus für Indizes fest, die dies unterstützen. Beispiel: `catalog_product_price_website_and_customer_group` oder `customer_group`.
 
    ```
    bin/magento indexer:set-dimensions-mode catalog_product_price customer_group
    ```
 
-1. Zurücksetzen von Indexern ausführen für `catalog_product_price`.
+1. Führen Sie das Zurücksetzen der Indexer für `catalog_product_price` aus.
 
    ```
    bin/magento indexer:reset catalog_product_price
@@ -62,20 +62,20 @@ Es treten keine Fehler auf.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der folgende Fehler wird durch eine AMQP-Verbindung verursacht: *Beschädigte Leitung oder geschlossene Verbindung*.
+Der folgende Fehler wird durch eine AMQP-Verbindung verursacht: *Beschädigtes Rohr oder geschlossene Verbindung*.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

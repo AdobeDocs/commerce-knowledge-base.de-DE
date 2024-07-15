@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Die Bereitstellung schlägt mit &quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen.
 
-In diesem Artikel werden die Ursachen und Lösungen für die Adobe Commerce zum Thema Cloud-Infrastruktur erläutert, bei denen die Build-Phase des Implementierungsprozesses fehlschlägt und die Fehlermeldung wie folgt zusammengefasst wird: *&quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen.*.
+In diesem Artikel werden die Ursachen und Lösungen für die Adobe Commerce zum Problem der Cloud-Infrastruktur erläutert, bei dem die Build-Phase des Implementierungsprozesses fehlschlägt und die Fehlermeldung mit &quot;*&quot;Fehlererstellungsprojekt: Der Build-Erweiterungspunkt schlägt mit Status-Code 1 fehl&quot;*.
 
 ## Betroffene Produkte und Versionen
 
@@ -32,11 +32,11 @@ Die Implementierung wurde erfolgreich abgeschlossen.
 <u>Tatsächliches Ergebnis</u>:
 
 1. Die Bauphase schlägt fehl, und der gesamte Implementierungsprozess wird blockiert.
-1. Im Fehlerprotokoll der Bereitstellung endet die Fehlermeldung mit: *&quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen. Build abgebrochen.&quot;*
+1. Im Fehlerprotokoll der Bereitstellung endet die Fehlermeldung mit: *&quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen. Build abgebrochen&quot;.*
 
 ## Ursache
 
-Es gibt mehrere Gründe, warum die Umgebungserstellung fehlschlägt. Normalerweise wird im Bereitstellungsprotokoll eine lange Fehlermeldung angezeigt, in der der erste Teil genauer auf den Grund verweist und der Abschluss als *&quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen. Build abgebrochen.&quot;*
+Es gibt mehrere Gründe, warum die Umgebungserstellung fehlschlägt. Normalerweise wird im Bereitstellungsprotokoll eine lange Fehlermeldung angezeigt, in der der erste Teil genauer auf den Grund verweist und der Schluss *&quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen. Build abgebrochen&quot;.*
 
 Wenn Sie sich näher mit dem ersten problemspezifischen Teil befassen, können Sie das Problem erkennen. Im Folgenden finden Sie die häufigsten Lösungen, und im nächsten Abschnitt finden Sie Lösungen für diese:
 
@@ -47,9 +47,9 @@ Wenn Sie sich näher mit dem ersten problemspezifischen Teil befassen, können S
 
 ## Lösung
 
-* Stellen Sie sicher, dass genügend Speicher vorhanden ist. Informationen zum Überprüfen des verfügbaren Speicherplatzes finden Sie unter [Überprüfen des Festplattenspeichers in der Cloud-Umgebung mithilfe von CLI](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md) Artikel. Sie können erwägen, die Protokollverzeichnisse zu bereinigen und/oder den Speicherplatz zu erhöhen.
+* Stellen Sie sicher, dass genügend Speicher vorhanden ist. Informationen zum Überprüfen des verfügbaren Speicherplatzes finden Sie im Artikel [Überprüfen des Festplattenspeichers in der Cloud-Umgebung mithilfe von CLI](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md) . Sie können erwägen, die Protokollverzeichnisse zu bereinigen und/oder den Speicherplatz zu erhöhen.
 * Stellen Sie sicher, dass die ECE-Tools korrekt konfiguriert sind.
-* Überprüfen Sie, ob der Patch das Problem verursacht. Beheben des Konflikts oder Kontakts [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Weitere Informationen finden Sie unten.
+* Überprüfen Sie, ob der Patch das Problem verursacht. Beheben Sie den Konflikt oder kontaktieren Sie den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Weitere Informationen finden Sie unten.
 * Überprüfen Sie, ob das Problem von der benutzerdefinierten Erweiterung verursacht wird. Lösen Sie den Konflikt oder kontaktieren Sie die Entwickler der Erweiterung für die Lösung.
 
 Die folgenden Absätze bieten einige weitere Details.
@@ -63,11 +63,11 @@ Für die Bereinigung zu berücksichtigende Verzeichnisse:
 * `var/debug/`
 * `var`
 
-Weitere Informationen zur Erhöhung des Festplattenspeichers, wenn Sie sich in der Adobe Commerce-Planarchitektur für Cloud-Infrastruktur-Starter befinden, finden Sie in der [Erhöhen Sie den Speicherplatz für die Integrationsumgebung in Cloud.](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md). Dieselbe Anleitung kann für die Erhöhung des Speicherplatzes von Adobe Commerce in der Cloud Infrastructure Pro Plan-Architekturintegrationsumgebung verwendet werden. Für Pro Production/Staging müssen Sie ein Ticket bei [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)und fordern Sie mehr Speicherplatz an. Aber es wird von Platform überwacht. In der Regel müssen Sie dies jedoch nicht in der Staging-/Produktions-Architektur von Pro behandeln, da Adobe Commerce diese Parameter für Sie überwacht und Sie benachrichtigt und/oder gemäß dem Vertrag Maßnahmen ergreift.
+Weitere Informationen zur Erhöhung des Festplattenspeichers, wenn Sie sich in der Adobe Commerce-Planarchitektur für Cloud-Infrastruktur-Starter befinden, finden Sie unter [Erhöhen des Festplattenspeichers für die Integrationsumgebung in Cloud](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md). Dieselbe Anleitung kann für die Erhöhung des Speicherplatzes von Adobe Commerce in der Cloud Infrastructure Pro Plan-Architekturintegrationsumgebung verwendet werden. Für Pro Production/Staging müssen Sie ein Ticket an den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) senden und mehr Speicherplatz anfordern. Aber es wird von Platform überwacht. In der Regel müssen Sie dies jedoch nicht in der Staging-/Produktions-Architektur von Pro behandeln, da Adobe Commerce diese Parameter für Sie überwacht und Sie benachrichtigt und/oder gemäß dem Vertrag Maßnahmen ergreift.
 
 ### Sicherstellen, dass ECE-Tools korrekt konfiguriert sind
 
-1. Stellen Sie sicher, dass die Build-Hooks im `magento.app.yaml` -Datei. Wenn Sie Adobe Commerce 2.2.X verwenden, sollten Sie Hooks wie folgt erstellen:
+1. Stellen Sie sicher, dass Build-Hooks in der Datei &quot;`magento.app.yaml`&quot;ordnungsgemäß definiert sind. Wenn Sie Adobe Commerce 2.2.X verwenden, sollten Sie Hooks wie folgt erstellen:
 
    ```yaml
    # We run build hooks before your application has been packaged.
@@ -78,11 +78,11 @@ Weitere Informationen zur Erhöhung des Festplattenspeichers, wenn Sie sich in d
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Verwenden Sie die [Upgrade auf ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) Artikel als Referenz.
+   Verwenden Sie den Artikel [Aktualisieren auf ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) als Referenz.
 
-1. Stellen Sie sicher, dass das ECE-Tool-Paket im `composer.lock` Datei durch Ausführen des folgenden Befehls:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    Wenn sie angegeben werden, würde die Antwort wie im folgenden Beispiel aussehen:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
+1. Stellen Sie sicher, dass das ECE-Tools-Paket in der Datei `composer.lock` vorhanden ist, indem Sie den folgenden Befehl ausführen:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    Wenn sie angegeben werden, würde die Antwort wie im folgenden Beispiel aussehen:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
 
-Siehe [Upgrade auf ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) Artikel als Referenz.
+Weitere Informationen finden Sie im Artikel [Aktualisierung auf ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) .
 
 ### Wird das Problem durch den Patch verursacht?
 
@@ -103,7 +103,7 @@ W: build
 E: Error building project: The build hook failed with status code 1. Aborted build.
 ```
 
-Diese Fehlermeldungen bedeuten, dass der Patch, den Sie anwenden möchten, entweder für eine andere Adobe Commerce-Version erstellt wurde oder Konflikte mit Ihren Anpassungen oder zuvor angewendeten Patches aufweist. Versuchen Sie, den Konflikt oder den Kontakt zu lösen [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Diese Fehlermeldungen bedeuten, dass der Patch, den Sie anwenden möchten, entweder für eine andere Adobe Commerce-Version erstellt wurde oder Konflikte mit Ihren Anpassungen oder zuvor angewendeten Patches aufweist. Versuchen Sie, den Konflikt zu lösen, oder kontaktieren Sie den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Wird das Problem durch die Erweiterung verursacht?
 

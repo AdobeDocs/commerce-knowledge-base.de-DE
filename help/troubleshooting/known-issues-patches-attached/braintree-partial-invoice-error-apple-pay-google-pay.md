@@ -21,13 +21,13 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4
 
 ## Problem
 
-Wenn Sie Apple Pay oder Google Pay als Zahlungsmethoden verwenden, erhalten Benutzer den Fehler &quot;*Der Befehl &quot;vault_Capture&quot;existiert nicht. Überprüfen Sie den Befehl und versuchen Sie es erneut.*&quot; bei der Erstellung von Teilrechnungen.
+Bei Verwendung von Apple Pay oder Google Pay als Zahlungsmethoden erhalten Benutzer den Fehler &quot;*Der Befehl &quot;vault_Capture&quot;ist nicht vorhanden. Überprüfen Sie den Befehl und versuchen Sie es erneut.*&quot; beim Erstellen von Teilrechnungen.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Öffnen Sie Ihre Adobe Commerce-Website.
 1. Fügen Sie ein einfaches Produkt zum Warenkorb hinzu (2. Quartal).
-1. Auswählen **Apple Pay** oder **Google Pay** als Zahlungsmethode aus dem Warenkorb.
+1. Wählen Sie **Apple Pay** oder **Google Pay** als Zahlungsmethode aus dem Warenkorb.
 1. Platzieren Sie die Bestellung.
 1. Öffnen Sie Bestelldetails über das Back-End.
 1. Erstellen Sie eine Teilrechnung.
@@ -39,7 +39,7 @@ Teilrechnungen werden erstellt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die erste Teilrechnung wird erstellt. Beim Erstellen der zweiten Teilrechnung erhalten Benutzer den folgenden Fehler: *Der Befehl &quot;vault_Capture&quot;existiert nicht. Überprüfen Sie den Befehl und versuchen Sie es erneut.*.
+Die erste Teilrechnung wird erstellt. Beim Erstellen der zweiten partiellen Rechnung erhalten Benutzer den folgenden Fehler: *Der Befehl &quot;vault_collection&quot;ist nicht vorhanden. Überprüfen Sie den Befehl und versuchen Sie es erneut*.
 
 ## Ursache
 
@@ -53,4 +53,4 @@ Um das Problem zu beheben, wenden Sie den folgenden Patch an:
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.

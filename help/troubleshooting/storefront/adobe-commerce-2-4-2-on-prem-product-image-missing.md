@@ -21,7 +21,7 @@ In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce On-Premise 2.4.2
 
 ## Problem
 
-Das Produktbild wird im `s3` -Bucket, wird jedoch nicht wieder mit der `pub/media` Verzeichnis. Dieses Problem tritt nur bei Verwendung von beidem auf:
+Das Produktbild wird im Bucket `s3` gespeichert, aber nicht wieder mit dem Verzeichnis `pub/media` synchronisiert. Dieses Problem tritt nur bei Verwendung von beidem auf:
 
 * Site-aktivierter Nginx zur Größenanpassung von Bildern
 * AWS `s3` als Medienspeicher
@@ -32,10 +32,10 @@ Adobe Commerce wird mit Nginx installiert.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Konfigurieren von Adobe Commerce für die Verwendung von AWS `s3` als Medienspeicher.
-1. Konfigurieren Sie Nginx mithilfe der `nginx.conf.sample` Konfigurationsdatei, die im Adobe Commerce-Installationsverzeichnis und einem virtuellen Nginx-Host bereitgestellt wird. Siehe [Nginx konfigurieren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) in unserer Entwicklerdokumentation.
+1. Konfigurieren Sie Adobe Commerce für die Verwendung von AWS `s3` als Medienspeicher.
+1. Konfigurieren Sie Nginx mithilfe der Konfigurationsdatei &quot;`nginx.conf.sample`&quot;, die im Adobe Commerce-Installationsverzeichnis bereitgestellt wird, und eines virtuellen Nginx-Hosts. Siehe [Konfigurieren von Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) in unserer Entwicklerdokumentation.
 1. Erstellen Sie ein einfaches Produkt mit einem Produktbild.
-1. Nginx verfügt über eine unkommentierte Konfiguration für die Bildgröße in `nginx.conf.sample` ähnlich wie hier:
+1. Nginx verfügt über eine nicht kommentierte Konfiguration für die Bildgröße in `nginx.conf.sample`, die der folgenden ähnelt:
 
 ```conf
 load_module /etc/nginx/modules/ngx_http_image_filter_module.so;

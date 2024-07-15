@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## Verwandte Informationen
 
-Informationen zur Verwendung des Wartungsmodus finden Sie unter [Aktivieren oder Deaktivieren des Wartungsmodus](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) in unserer Entwicklerdokumentation.
+Informationen dazu, wann der Wartungsmodus verwendet werden soll, finden Sie in unserer Entwicklerdokumentation unter [Wartungsmodus aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) .

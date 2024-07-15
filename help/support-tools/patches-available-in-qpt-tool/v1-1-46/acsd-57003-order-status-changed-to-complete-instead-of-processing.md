@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-57003: Auftragsstatus ändert sich in *Fertig* anstatt *Verarbeitung*
+# ACSD-57003: Der Bestellstatus ändert sich in *Complete*, anstatt in *Processing* zu wechseln.
 
-Der Patch ACSD-57003 behebt das Problem, bei dem der Auftragsstatus in *Fertig* anstatt *Verarbeitung*. Dieser Patch ist verfügbar, wenn die Variable [!DNL Quality Patches Tool (QPT)] 1.1.46 installiert ist. Die Patch-ID ist ACSD-57003. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-57003 behebt das Problem, bei dem der Auftragsstatus zu *Complete* geändert wird, anstatt zu *Processing* zu wechseln. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.46 installiert ist. Die Patch-ID ist ACSD-57003. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,40 +27,40 @@ Der Patch ACSD-57003 behebt das Problem, bei dem der Auftragsstatus in *Fertig* 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Der Bestellstatus ändert sich in *Fertig* anstatt *Verarbeitung* wenn eine Bestellung teilweise zurückerstattet und teilweise versandt wird.
+Der Bestellstatus ändert sich in *Complete*, anstatt in *Processing* zu wechseln, wenn eine Bestellung teilweise zurückerstattet und teilweise versendet wird.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie eine Bestellung mit zwei konfigurierbaren Produkten.
 1. Rechnungsstellung für alle Artikel.
 1. Verschicken Sie nur den ersten Artikel.
-1. Bonitätseinträge nur für den versandten Artikel zurückerstatten/erstellen (*Erstes Element*).
+1. Sie können nur für das ausgelieferte Element (*erster Eintrag*) ein Kreditmemo zurückerstatten/erstellen.
 1. Überprüfen Sie den Bestellstatus.
 
 <u>Erwartete Ergebnisse</u>:
 
-Der Bestellstatus sollte sich im _Verarbeitung_ state.
+Der Auftragsstatus sollte sich im Status _Verarbeitung_ befinden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Bestellstatusänderungen in *Fertig* , nachdem Sie ein Kreditmemo für den teilweise versandten Artikel erstellt haben.
+Der Auftragsstatus ändert sich in *Abgeschlossen* , nachdem ein Kreditmemo für das teilweise ausgelieferte Element erstellt wurde.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Benutzerhandbuch zum Adobe Commerce Help Center
 
-In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an die [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) und gewähren freigegebenen Zugriff auf die Adobe Commerce-Konten.
+In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an das [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) senden und freigegebenen Zugriff auf die Adobe Commerce-Konten gewähren.
 
 >[!NOTE]
 >
->Der Adobe Commerce-Support wechselt vom Adobe Commerce Help Center zum Experience League. Wenn Sie darüber informiert wurden, dass Sie Zugriff haben, verwenden Sie den beschriebenen Experience League-Case-Formularfluss [here](#what-is-experience-support). Wenn Sie nicht benachrichtigt wurden, verwenden Sie weiterhin die [Adobe Commerce Help Center - Fallfluss](#what-is-adobe-commerce-help-center).
+>Der Adobe Commerce-Support wechselt vom Adobe Commerce Help Center zum Experience League. Wenn Sie darüber informiert wurden, dass Sie Zugriff haben, verwenden Sie den Experience League-Formularfluss, der [hier](#what-is-experience-support) beschrieben wird. Wenn Sie nicht benachrichtigt wurden, verwenden Sie weiterhin den [Fallfluss im Adobe Commerce Help Center](#what-is-adobe-commerce-help-center).
 
 >[!NOTE]
 >
@@ -39,9 +39,9 @@ In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an die [Adobe Commer
 * [Kommentare in Ihrem Fall](#comments-in-your-case)
 * [Schließen Sie den Fall.](#close-case)
 
-**[WAS IST DAS ADOBE COMMERCE HELP CENTER?](#what-is-adobe-commerce-help-center)**
+**[WAS IST DAS ADOBE COMMERCE-HILFEZENTRUM?](#what-is-adobe-commerce-help-center)**
 
-**[SUPPORT-TICKETS](#support-tickets)**
+**[UNTERSTÜTZUNGS-TICKETS](#support-tickets)**
 
 * [Bei Help Center anmelden](#login)
 * [Support-Ticket senden](#submit-ticket)
@@ -63,7 +63,7 @@ In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an die [Adobe Commer
 * [Ticket lösen](#resolve-ticket)
 * [Öffnen Sie ein Folgenachticket.](#follow-up)
 
-**[FREIGEGEBENER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO.](#shared-access)**
+**[FREIGEGEBENER ZUGRIFF: BERECHTIGUNGEN FÜR ANDERE BENUTZER FÜR DEN ZUGRIFF AUF IHR KONTO GEWÄHREN](#shared-access)**
 
 * [Wer kann freigegebenen Zugriff gewähren?](#who-can-provide-shared-access)
 * [Freigegebenen Zugriff gewähren](#provide-shared-access)
@@ -76,11 +76,11 @@ In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an die [Adobe Commer
 
 **[FAQ ZUR ABRECHNUNG FÜR ADOBE COMMERCE](#billing-faq)**
 
-**[MAGENTO U IST JETZT TEIL VON ADOBE DIGITAL LERNDIENSTLEISTUNGEN](#magento-u)**
+**[MAGENTO U IST JETZT TEIL VON ADOBE DIGITAL LEARNING SERVICES](#magento-u)**
 
 >[!NOTE]
 >
->Wenn Sie nicht benachrichtigt wurden, verwenden Sie weiterhin die [Adobe Commerce Help Center - Fallfluss](#what-is-adobe-commerce-help-center). Wenn Sie darüber informiert wurden, dass Sie sich in der Kohorte mit Zugriff befinden, folgen Sie dem Experience League-Beispiel-Formularfluss, der beschrieben wird [below](#what-is-experience-league-support).
+>Wenn Sie nicht benachrichtigt wurden, verwenden Sie weiterhin den Fallfluss [Adobe Commerce Help Center Help Center](#what-is-adobe-commerce-help-center). Wenn Sie darüber informiert wurden, dass Sie sich in der Kohorte mit Zugriff befinden, folgen Sie dem Experience League-Formularfluss, der [unter ](#what-is-experience-league-support) beschrieben wird.
 
 ## WAS UNTERSTÜTZT EXPERIENCE LEAGUE? {#what-is-experience-support}
 
@@ -99,14 +99,14 @@ Gehen Sie wie folgt vor, um sich beim Adobe Experience League-Support anzumelden
 1. Navigieren Sie zu [experienceleague.adobe.com](https://experienceleague.adobe.com/).
 1. Melden Sie sich mit Ihren Adobe-Anmeldedaten an.
 
-![Sign-in-Experience-League](assets/experience_league_sign_in.png)
+![Sign-in-experience-league](assets/experience_league_sign_in.png)
 
 ### Support-Fall einreichen {#support-case}
 
 Nach der erfolgreichen Anmeldung können Sie über die Adobe Experience League-Startseite, Ihre Adobe Commerce-Kontoseite und Ihre Adobe Commerce Cloud-Kontoseite einen Support-Fall einreichen.
 
 * Wenn Sie der Kontoinhaber sind, führen Sie die folgenden Schritte aus.
-* Wenn Sie Benutzer von Shared Access sind, müssen Sie zunächst zwischen Konten wechseln. Siehe [Zugriff auf freigegebene Konten (Konten wechseln)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts)und dann können Sie mit den folgenden Schritten fortfahren.
+* Wenn Sie Benutzer von Shared Access sind, müssen Sie zunächst zwischen Konten wechseln. Siehe [Zugriff auf freigegebene Konten (Wechsel der Konten)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts), und dann können Sie mit den folgenden Schritten fortfahren.
 
 #### Startseite von Adobe Experience League {#experience-league-start-page}
 
@@ -117,11 +117,11 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 >1. Wenn Sie mehreren Organisationen angehören, müssen Sie die entsprechende Organisation aus der Dropdown-Liste auswählen.
 >1. Um einen Fall einzureichen, müssen Sie berechtigt sein, Unterstützung zu erhalten. Ist dies nicht der Fall, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Benutzer mit Supportberechtigung in der Organisation sind.
 
-1. Klicken Sie auf **Support** in der Kopfzeile. Dadurch wird die Startseite des Supports geöffnet.
+1. Klicken Sie in der Kopfzeile auf **Support** . Dadurch wird die Startseite des Supports geöffnet.
 
    ![open-support-page](assets/click_support.png)
 
-1. Um den Support-Aufnahmeprozess zu starten, klicken Sie auf **[!UICONTROL Open Ticket]** im Menü links oder klicken Sie auf **[!UICONTROL Get Started]** in *[!UICONTROL Open a support ticket]* Karte.
+1. Um den Aufnahmeprozess zu starten, klicken Sie im linken Menü auf **[!UICONTROL Open Ticket]** oder auf **[!UICONTROL Get Started]** auf der Karte *[!UICONTROL Open a support ticket]*.
 
    ![open-support-case](assets/open_support_case.png)
 
@@ -149,19 +149,19 @@ Sie müssen über ein Konto sowohl auf https://account.adobe.com als auch auf ht
 
 Gehen Sie wie folgt vor, um über Ihre Adobe Commerce-Kontoseite ein neues Support-Ticket zu senden:
 
-1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an. Siehe [detaillierte Anweisungen](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) in unserem Benutzerhandbuch.
-1. Klicken Sie auf **Support** Registerkarte.
+1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an. Siehe [Detaillierte Anweisungen](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) in unserem Benutzerhandbuch.
+1. Klicken Sie auf die Registerkarte **Support** .
 
    ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
 
 1. Die Adobe Experience League-Support-Seite wird für Sie geladen.
-1. Auswählen **[!UICONTROL Open Ticket]** aus dem Menü links.
+1. Wählen Sie im linken Menü **[!UICONTROL Open Ticket]** aus.
 1. Füllen Sie die Felder aus.
-1. Klicks **Einsenden**.
+1. Klicken Sie auf **Senden**.
 
-#### *Bitte überprüfen Sie Ihre E-Mail-Adresse* Fehler auf der Adobe Commerce-Kontoseite {#verify-email-address-error}
+#### *Bitte überprüfen Sie den Fehler Ihrer E-Mail-Adresse* auf der Adobe Commerce-Kontoseite. {#verify-email-address-error}
 
-Sie können kein Support-Ticket senden, wenn Sie den Fehler Bitte überprüfen Sie Ihre E-Mail-Adresse ähnlich dem Fehler auf der Seite [Adobe Commerce-Konto](https://account.magento.com/) Seite.
+Sie können kein Support-Ticket senden, wenn Sie den Fehler Ihre E-Mail-Adresse überprüfen erhalten, der dem auf der Seite [Adobe Commerce-Konto](https://account.magento.com/) unten stehenden ähnelt.
 
 ![Verify_Email_Address_Error](assets/Verify_Email_Address_Error.png)
 
@@ -175,13 +175,13 @@ Folgende Support-Fälle stehen Ihnen zur Verfügung:
 
 #### Anzeigen von Fällen
 
-Sie können Ihre Fälle durch Klicken auf **[!UICONTROL My Cases]** auf dem Menü links.
+Sie können Ihre Fälle anzeigen, indem Sie im Menü auf der linken Seite auf **[!UICONTROL My Cases]** klicken.
 
 ![view-support-cases](assets/view_support_cases.png)
 
 #### Suchen nach Fällen
 
-Um Fälle zu finden, geben Sie Ihre Suchabfrage in die *[!UICONTROL Search]* field und press *enter* auf Ihrer Tastatur.
+Um Fälle zu finden, geben Sie Ihre Suchabfrage in das Feld *[!UICONTROL Search]* ein und drücken Sie auf der Tastatur die Taste *enter* .
 
 ![Suchfälle](assets/search_cases.png)
 
@@ -189,15 +189,15 @@ Um Fälle zu finden, geben Sie Ihre Suchabfrage in die *[!UICONTROL Search]* f
 
 Wenn Sie der Meinung sind, dass ein Fall weitere Aufmerksamkeit erfordert und unsere anfängliche Reaktionszeit verstrichen ist, können Sie den Fall eskalieren. Gehen Sie dazu folgendermaßen vor:
 
-1. Klicken Sie auf **[!UICONTROL Escalate to management]** unten rechts im *[!UICONTROL Case Detail]* auf der rechten Bildschirmseite angezeigt.
+1. Klicken Sie rechts unten im Bedienfeld *[!UICONTROL Case Detail]* auf **[!UICONTROL Escalate to management]** .
 
-   ![Eskalieren an die Verwaltung](assets/escalate_to_management.png)
+   ![Eskalate-to-Management](assets/escalate_to_management.png)
 
-1. Nach dem Klicken wird ein Popup-Formular angezeigt. Füllen Sie das Formular aus und klicken Sie auf **[!UICONTROL Escalate]**.
+1. Nach dem Klicken wird ein Popup-Formular angezeigt. Füllen Sie das Formular aus und klicken Sie dann auf **[!UICONTROL Escalate]**.
 
-   ![Eskalation bestätigen](assets/confirm_escalation.png)
+   ![confirm-escalation](assets/confirm_escalation.png)
 
-   *Gründe für die Eskalation können*: Kommunikationsfähigkeiten für Agenten, technisches Fachwissen für Agenten, Warten auf Callback/Aktualisierung, Änderung der Dringlichkeit von Problemen, Lösung entsprach nicht den Erwartungen oder Zeit zur Lösung.
+   *Eskalationsgründe können* sein: Kommunikationsfähigkeiten von Agenten, technisches Wissen von Agenten, Warten auf Callback/Aktualisierung, Änderung der Dringlichkeit von Problemen, Lösung entsprach nicht den Erwartungen oder Zeit bis zur Lösung.
 
 #### Hinzufügen eines Beobachters zu Supportfällen
 
@@ -205,7 +205,7 @@ Sie können Beobachter hinzufügen, um Fälle zu unterstützen, die von Mitglied
 
 1. Um einen Watcher zu einer vorhandenen Groß-/Kleinschreibung hinzuzufügen, öffnen Sie die Groß-/Kleinschreibung und klicken Sie auf das Stiftsymbol neben &quot;Watchers&quot;im Bereich &quot;Case Details&quot;auf der rechten Seite des Bildschirms.
 
-   ![add-watcher](assets/add_watchers.png)
+   ![add-watchers](assets/add_watchers.png)
 
 1. Nachdem Sie auf den Stift geklickt haben, können Sie der Liste Beobachter hinzufügen oder daraus entfernen.
 
@@ -217,23 +217,23 @@ Kommentare in Ihrem Fall enthalten alle Kommentare, die von Ihnen oder dem Adobe
 Gehen Sie wie folgt vor, um einen Kommentar hinzuzufügen:
 
 1. Scrollen Sie zum unteren Ende Ihres Tickets.
-1. Schreiben Sie Ihren Kommentar in **[!UICONTROL Comments]** Feld und klicken Sie auf **[!UICONTROL Add comments]**.
+1. Schreiben Sie Ihren Kommentar in das Feld **[!UICONTROL Comments]** und klicken Sie auf **[!UICONTROL Add comments]**.
 
 ![add-comments](assets/add_comments.png)
 
 ### Schließen Sie den Fall. {#close-case}
 
-Um den Fall zu schließen, klicken Sie auf **[!UICONTROL Close case]** unten rechts im *[!UICONTROL Case Detail]* Bedienfeld.
+Um den Fall zu schließen, klicken Sie unten rechts im Bedienfeld *[!UICONTROL Case Detail]* auf **[!UICONTROL Close case]** .
 
-![close case](assets/close_case.png)
+![close-case](assets/close_case.png)
 
 >[!NOTE]
 >
->Formularfluss des Adobe Commerce Help Center weiterhin verwenden [below](#what-is-adobe-commerce-help-center) für die Übermittlung und Verwaltung von Tickets, es sei denn, Sie wurden darüber informiert, dass Sie sich in der Kohorte befinden und Zugriff auf den beschriebenen Ablauf des Experience League-Fallformulars haben [here](#what-is-experience-league-support).
+>Fahren Sie mit dem Formularfluss &quot;Adobe Commerce Help Center&quot;[unter](#what-is-adobe-commerce-help-center) für die Übermittlung und Verwaltung von Tickets fort, es sei denn, Sie wurden darüber informiert, dass Sie sich in der Kohorte befinden und Zugriff auf den Formularfluss &quot;Experience League Case&quot;erhalten, der [hier](#what-is-experience-league-support) beschrieben ist.
 
 ## WAS IST ADOBE COMMERCE HELP CENTER? {#what-is-adobe-commerce-help-center}
 
-Die [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) ist ein Support-Portal für Adobe Commerce, in dem qualifizierte Kunden Support-Tickets einreichen und verwalten können. Dort können Sie auch Artikel zur Fehlerbehebung lesen.
+Das [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) ist ein Support-Portal für Adobe Commerce, in dem qualifizierte Kunden Support-Tickets einreichen und verwalten können. Dort können Sie auch Artikel zur Fehlerbehebung lesen.
 
 ## SUPPORT-TICKETS {#support-tickets}
 
@@ -245,31 +245,31 @@ Durch die Anmeldung können Sie Fragen von Agenten zu Support-Tickets senden, ak
 
 Gehen Sie wie folgt vor, um sich beim Adobe Commerce Help Center anzumelden:
 
-1. Zugriff auf das Help Center unter <https://support.magento.com>.
-1. Klicks **Anmelden** in der oberen rechten Ecke.
+1. Rufen Sie das Hilfezentrum unter <https://support.magento.com> auf.
+1. Klicken Sie oben rechts auf **Anmelden** .
 
 Melden Sie sich mit Ihren Magento-Kontoanmeldeinformationen an. Weitere Informationen finden Sie unter [Ihr Magento-Konto](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html) in unserem Benutzerhandbuch.
 
-### <strong>Support-Ticket senden</strong> {#submit-ticket}
+### <strong>Senden eines Support-Tickets</strong> {#submit-ticket}
 
 Nach der erfolgreichen Anmeldung können Sie ein Support-Ticket über die Startseite des Help Center, Ihre Magento-Kontoseite und Ihre Magento Cloud-Kontoseite senden.
 
-* Wenn Sie **Kontoinhaber** Gehen Sie wie folgt vor:
-* Wenn Sie **Benutzer mit gemeinsamem Zugriff: Sie müssen zuerst zwischen Konten wechseln** [Zugriff auf freigegebene Konten (Konten wechseln)](#switch-accounts)und dann können Sie mit den folgenden Schritten fortfahren.
+* Wenn Sie der **Kontoinhaber** sind, führen Sie die folgenden Schritte aus.
+* Wenn Sie Benutzer von &quot;**Shared Access&quot;sind, müssen Sie zuerst die Konten &quot;** [Auf das freigegebene Konto zugreifen (Konten wechseln)&quot;](#switch-accounts)&quot;wechseln. Anschließend können Sie mit den folgenden Schritten fortfahren.
 
 #### Startseite von Help Center {#submit-ticket-help-center-start-page}
 
 Gehen Sie wie folgt vor, um über die Startseite des Adobe Commerce Help Center ein neues Support-Ticket zu senden:
 
-1. Navigieren Sie zu [Adobe Commerce Help Center](https://support.magento.com/hc/en-us).
-1. Klicks **Einreichen eines Tickets** oben rechts.
+1. Wechseln Sie zu [Adobe Commerce Help Center](https://support.magento.com/hc/en-us).
+1. Klicken Sie oben rechts auf **Ticket senden** .
 
    ![submit-a-ticket](assets/submit-a-ticket-4.png){width="800"}
 
 1. Füllen Sie die Felder aus.
-1. Klicks **Einsenden**.
+1. Klicken Sie auf **Senden**.
 
-You *muss* ein Konto sowohl auf https://account.adobe.com als auch auf https://account.magento.com und melden Sie sich dann mit Ihrem Adobe Commerce-Konto beim Help Center an, um ein Support-Ticket zu senden. Bis Sie angemeldet sind, [die **Einreichen eines Tickets** -Schaltfläche wird nicht angezeigt](#no-submit-link).
+Sie *müssen über ein Konto sowohl auf https://account.adobe.com als auch auf https://account.magento.com verfügen und sich dann mit Ihrem Adobe Commerce-Konto beim Help Center anmelden, um ein Support-Ticket zu senden.* Bis Sie angemeldet sind, wird [die Schaltfläche **Ticket senden** nicht angezeigt](#no-submit-link).
 
 >[!NOTE]
 >
@@ -285,39 +285,39 @@ You *muss* ein Konto sowohl auf https://account.adobe.com als auch auf https://a
 
 Gehen Sie wie folgt vor, um über Ihre Magento-Kontoseite ein neues Support-Ticket zu senden:
 
-1. Melden Sie sich bei Ihrem Magento-Konto an. Siehe [detaillierte Anweisungen](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) in unserem Benutzerhandbuch.
-1. Klicken Sie auf **Support** Registerkarte.
+1. Melden Sie sich bei Ihrem Magento-Konto an. Siehe [Detaillierte Anweisungen](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) in unserem Benutzerhandbuch.
+1. Klicken Sie auf die Registerkarte **Support** .
 
    ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
 
 1. Die Startseite von Help Center wird für Sie geladen.
-1. Klicks **Einreichen eines Tickets** in der oberen rechten Ecke.
+1. Klicken Sie oben rechts auf **Ticket senden** .
 1. Füllen Sie die Felder aus.
-1. Klicks **Einsenden**.
+1. Klicken Sie auf **Senden**.
 
 #### Cloud-Konsole {#submit-ticket-magento-cloud-account-page}
 
 Gehen Sie wie folgt vor, um über die Cloud Console ein neues Support-Ticket zu senden:
 
-1. Melden Sie sich bei [Cloud-Konsole](https://console.adobecommerce.com).
-1. Auswählen **[!UICONTROL Support]** im Benutzermenü.
-1. Die **[!UICONTROL My Tickets]** Seite lädt.
-1. Klicks **[!UICONTROL Submit a ticket]** in der oberen rechten Ecke.
+1. Melden Sie sich bei der [Cloud-Konsole](https://console.adobecommerce.com) an.
+1. Wählen Sie im Benutzermenü **[!UICONTROL Support]** aus.
+1. Die Seite **[!UICONTROL My Tickets]** wird geladen.
+1. Klicken Sie oben rechts auf **[!UICONTROL Submit a ticket]** .
 1. Füllen Sie die Felder aus.
-1. Klicks **Einsenden**.
-1. Klicks **[!UICONTROL Submit]**.
+1. Klicken Sie auf **Senden**.
+1. Klicken Sie auf **[!UICONTROL Submit]**.
 
 #### Informationen zum Support-Ticket {#info-in-support-ticket}
 
-Die mit einem roten Sternchen ( **\*** ), sind erforderlich und müssen ausgefüllt werden. Wenn Sie eines dieser Felder leer lassen, können Sie Ihr Ticket nicht senden.
+Die Felder, die mit einem roten Sternchen ( **\*** ) markiert sind, sind erforderlich und müssen ausgefüllt werden. Wenn Sie eines dieser Felder leer lassen, können Sie Ihr Ticket nicht senden.
 
-Siehe [Erläuterung der Ticketfelder](#ticket-fields-explained) unten finden Sie weitere Informationen.
+Weitere Informationen finden Sie unten unter [Ticket-Felder erklärt](#ticket-fields-explained) .
 
 ### Der Link &quot;Ticket senden&quot;wird nicht auf der Startseite des Adobe Commerce Help Center angezeigt {#no-submit-link}
 
 #### Problem
 
-Sie greifen auf das Adobe Commerce Help Center zu und möchten eine Support-Anfrage senden, aber die **Einreichen eines Tickets** -Link nicht auf der Startseite von Help Center angezeigt.
+Sie greifen auf das Adobe Commerce Help Center zu und möchten eine Support-Anfrage senden, aber der Link **Ticket senden** wird nicht auf der Startseite des Help Center angezeigt.
 
 #### Ursache
 
@@ -329,38 +329,38 @@ Eine der folgenden Ursachen könnte sein:
 
 #### Lösung
 
-[Bei Help Center anmelden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#provide-shared-access).
+[Melden Sie sich im Hilfezentrum an](/help/help-center-guide/help-center/magento-help-center-user-guide.md#provide-shared-access).
 
-Die **Einreichen eines Tickets** wird nur für Kunden angezeigt, deren E-Mail mit einer gültigen Supportvereinbarung verknüpft ist.
+Der Link **Ticket senden** wird nur für Kunden angezeigt, deren E-Mail mit einer gültigen Supportvereinbarung verknüpft ist.
 
 #### Freigegebenes Zugriffskonto verwenden
 
 Um das Konto für freigegebenen Zugriff zum Senden von Support-Tickets verwenden zu können, müssen Sie Folgendes ausführen (dies muss nur einmal durchgeführt werden):
 
-1. Nach Erhalt [freigegebener Zugriff](https://support.magento.com/hc/en-us/articles/360052444712#who-can-provide-shared-access)Melden Sie sich bei Ihrem [Magento Account auf der magento.com Website](https://account.magento.com/).
-1. Im **Wechseln von Konten** in der oberen rechten Ecke das freigegebene Zugriffskonto auswählen.
-1. Klicken Sie auf **Support** im linken Bereich. Dadurch wird sichergestellt, dass das Adobe Commerce Help Center über den SSO-Aufruf von Magento.com zum Adobe Commerce Help Center ordnungsgemäß konfiguriert ist.
+1. Nachdem Sie den [freigegebenen Zugriff](https://support.magento.com/hc/en-us/articles/360052444712#who-can-provide-shared-access) erhalten haben, melden Sie sich bei Ihrem [Magento-Konto auf der magento.com Website](https://account.magento.com/) an.
+1. Wählen Sie im Dropdown-Feld **Konten wechseln** oben rechts das freigegebene Zugriffskonto aus.
+1. Klicken Sie im linken Bereich auf die Registerkarte **Support** . Dadurch wird sichergestellt, dass das Adobe Commerce Help Center über den SSO-Aufruf von Magento.com zum Adobe Commerce Help Center ordnungsgemäß konfiguriert ist.
 
-#### Sie können die **Einreichen eines Tickets** link
+#### Der Link **Ticket senden** wird immer noch nicht angezeigt
 
-Wenn Sie **Freigegebene Konten** unter **Wechseln von Konten** Dropdown-Liste. Sie arbeiten jedoch für einen Client, der über eine Adobe Commerce-Lizenz verfügt, und bitten Sie ihn darum, Ihnen freigegebenen Zugriff zu gewähren. Weitere Informationen finden Sie unter [Freigegebenen Zugriff auf Magento-Konto gewähren](/help/help-center-guide/help-center/magento-help-center-user-guide.md#provide-shared-access).
+Wenn Sie unter der Dropdownliste **Konten wechseln** nicht über **gemeinsame Konten** verfügen, aber für einen Client arbeiten, der über eine Adobe Commerce-Lizenz verfügt, bitten Sie diesen, Ihnen den gemeinsamen Zugriff zu gewähren. Weitere Informationen finden Sie unter [Freigegebenen Zugriff auf Magento-Konto bereitstellen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#provide-shared-access).
 
-Wenn Sie Adobe Commerce-Lizenzinhaber sind, vergewissern Sie sich bitte, dass Sie keine Rechnung mit **Ausstehende Zahlung** -Status. Förderansprüche werden automatisch entsprechend dem Status der Rechnungszahlung gewährt oder widerrufen.
+Wenn Sie Adobe Commerce-Lizenzinhaber sind, vergewissern Sie sich bitte, dass Sie keine Rechnung mit dem Status **Ausstehende Zahlung** haben. Förderansprüche werden automatisch entsprechend dem Status der Rechnungszahlung gewährt oder widerrufen.
 
 <span class="wysiwyg-underline">Überprüfen des Zahlungsstatus</span>:
 
-1. Anmelden bei [magento.com](https://support.magento.com/).
-1. Klicken Sie auf **Rechnungsverlauf** auf der linken Seite.
-1. Wenn Sie **do** eine Rechnung mit **Ausstehende Zahlung** Status, **Wenden Sie sich an Ihr Adobe Account-Team** , um das Zahlungsproblem zu lösen.
+1. Melden Sie sich bei [magento.com](https://support.magento.com/) an.
+1. Klicken Sie links auf **Rechnungsverlauf** .
+1. Wenn Sie **do** eine Rechnung mit dem Status **Ausstehende Zahlung** haben, wenden Sie sich an **Ihr Adobe Account Team**, um das Zahlungsproblem zu beheben.
 
 Wir unterstützen nur Lizenzinhaber und Konten von Adobe Commerce, die über einen gemeinsamen Zugriff auf ein Konto mit einer Adobe Commerce-Lizenz verfügen. Wenn Sie Unterstützung für die Bearbeitung der Magento Open Source benötigen, nutzen Sie diese technischen Ressourcen zur Selbsthilfe:
 
 * [Adobe Commerce Help Center](https://support.magento.com/)
-* [Dokumentation für Adobe Commerce-Entwickler](https://developer.adobe.com/commerce/docs/)
+* [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs/)
 * [Adobe Commerce-Dokumentationsressourcen](https://experienceleague.adobe.com/docs/commerce.html)
 * [Magento-Foren](https://community.magento.com/?_ga=2.99592990.1084044056.1559046120-720752292.1551793747)
 
-Wenn Sie Probleme haben, sich bei Ihrem Konto anzumelden, oder der Ansicht sind, dass der Freigabezugriff ordnungsgemäß eingerichtet wurde, Sie jedoch trotzdem nicht sehen können **Einreichen eines Tickets** Schaltfläche, bitte E-Mail [Anmeldungsprobleme beim Help Center](mailto:grp-magento-helpcenterloginissues@adobe.com)und wir werden Ihre Kontoeinstellungen gerne überprüfen und Berechtigungen unterstützen.
+Wenn Sie Probleme haben, sich bei Ihrem Konto anzumelden oder der Meinung sind, dass der Freigabezugriff ordnungsgemäß eingerichtet wurde, Sie aber trotzdem die Schaltfläche &quot;**Ticket senden**&quot; nicht sehen können, wenden Sie sich bitte per E-Mail an &quot;[Anmeldungsprobleme beim Help Center](mailto:grp-magento-helpcenterloginissues@adobe.com)&quot;. Wir werden Ihre Kontoeinstellungen und die Berechtigungen gerne überprüfen.
 
 >[!NOTE]
 >
@@ -368,7 +368,7 @@ Wenn Sie Probleme haben, sich bei Ihrem Konto anzumelden, oder der Ansicht sind,
 
 ### Fehler &quot;Bitte überprüfen Sie Ihre E-Mail-Adresse&quot; auf der Magento-Kontoseite {#verify-email-address}
 
-Sie können kein Support-Ticket senden, wenn Sie die *Bitte überprüfen Sie Ihre E-Mail-Adresse* -Fehler ähnlich dem folgenden auf der [Magento-Kontoseite](https://account.magento.com/).
+Sie können kein Support-Ticket senden, wenn Sie den Fehler *Bitte überprüfen Sie Ihre E-Mail-Adresse* ähnlich dem Fehler unten auf der Seite [Magento-Konto](https://account.magento.com/) erhalten.
 
 ![Verify_Email_Address_Error](assets/Verify_Email_Address_Error.png){width="800"}
 
@@ -390,28 +390,28 @@ Die Lösung besteht darin, Ihre E-Mail-Adresse zu validieren:
 <span class="wysiwyg-underline">Zu reproduzierende Schritte</span>:
 
 1. Melden Sie sich über Ihr freigegebenes Konto beim Help Center an.
-1. Klicken Sie auf **Einreichen eines Tickets** -Link. Das Formular für die Übermittlung des Tickets wird geöffnet.
-1. Erweitern Sie die **Einrichtung** Dropdown-Feld zur Auswahl des Händlers.
+1. Klicken Sie auf den Link **Ticket senden** . Das Formular für die Übermittlung des Tickets wird geöffnet.
+1. Erweitern Sie das Dropdown-Feld **Organisation** , um den Händler auszuwählen.
 
 <span class="wysiwyg-underline">Erwartetes Ergebnis</span>:
 
-Der Händler, der dem freigegebenen Konto entspricht, wird im **Einrichtung** Optionen.
+Der Händler, der dem freigegebenen Konto entspricht, wird in den Optionen **Organisation** aufgeführt.
 
 <span class="wysiwyg-underline">Tatsächliches Ergebnis</span>:
 
-Der Händler, der dem verwendeten freigegebenen Konto entspricht, ist im **Einrichtung** Optionen.
+Der Händler, der dem verwendeten freigegebenen Konto entspricht, ist in den Optionen **Organisation** nicht verfügbar.
 
 #### Lösung
 
 Nachdem Sie vom Händler freigegebenen Zugriff erhalten haben, müssen Sie die folgenden Schritte ausführen (nur einmal):
 
-1. Melden Sie sich bei Ihrer [Magento Account auf der magento.com Website](https://account.magento.com/).
-1. Im **Wechseln von Konten** in der oberen rechten Ecke das Freigabekonto ein.
-1. Klicken Sie auf **Support** im linken Bereich. Dadurch wird sichergestellt, dass das Adobe Commerce Help Center über den SSO-Aufruf von Magento.com zum Adobe Commerce Help Center ordnungsgemäß konfiguriert ist.
+1. Melden Sie sich bei Ihrem [Magento-Konto auf der magento.com Website](https://account.magento.com/) an.
+1. Wählen Sie im Dropdown-Feld **Konten wechseln** oben rechts das freigegebene Zugriffskonto aus.
+1. Klicken Sie im linken Bereich auf die Registerkarte **Support** . Dadurch wird sichergestellt, dass das Adobe Commerce Help Center über den SSO-Aufruf von Magento.com zum Adobe Commerce Help Center ordnungsgemäß konfiguriert ist.
 
-Wenn Sie dies bereits getan haben, überprüfen Sie, ob Ihnen die Genehmigung erteilt wurde. *freigegebener Zugriff von mehr als einem Händler* durch Klicken auf die [[!UICONTROL Shared with me] Registerkarte Ihres Kontos](https://account.magento.com/grantor/manage/shared/):
-* Wenn nur eine [!UICONTROL Share Name] aufgelistet ist, d. h., Sie wurden nur von einem Händler bewilligt, *Sie sehen keine [!UICONTROL Organization] Dropdown*.
-* Wenn mehrere [!UICONTROL Share Names]kann es sein, dass die Stützungsberechtigungen des Händlers abgelaufen sind, da ihre Lizenz aufgrund von Zahlungsproblemen zuvor widerrufen wurde.
+Wenn Sie dies bereits getan haben, überprüfen Sie, ob Ihnen *gemeinsamer Zugriff von mehr als einem Händler* gewährt wurde, indem Sie auf die Registerkarte [[!UICONTROL Shared with me] in Ihrem Konto](https://account.magento.com/grantor/manage/shared/) klicken:
+* Wenn nur ein [!UICONTROL Share Name] aufgelistet ist, d. h., Sie wurden nur von einem Händler bewilligt, wird *kein [!UICONTROL Organization] Dropdown-Feld* angezeigt.
+* Wenn mehrere [!UICONTROL Share Names] -Berechtigungen vorhanden sind, können die Support-Berechtigungen des Händlers abgelaufen sein, da ihre Lizenz aufgrund von Zahlungsproblemen zuvor widerrufen wurde.
 
 ### Tickets verfolgen {#track-tickets}
 
@@ -422,23 +422,23 @@ Ihre Tickets sind die, die Sie:
 
 #### Tickets anzeigen
 
-Um alle Tickets aufzulisten, klicken Sie auf Ihr Profilmenü (obere rechte Ecke) auf der Startseite des Help-Center und wählen Sie **Meine Tickets**.
+Um alle Tickets aufzulisten, klicken Sie auf Ihr Profilmenü (obere rechte Ecke) auf der Startseite des Help-Center und wählen Sie **Meine Tickets** aus.
 
-![Festplattenkritischer Warnhinweis](assets/my-tickets-8.png){width-&quot;800&quot;}
+![kritische Warnung bezüglich der Festplatte](assets/my-tickets-8.png){width-&quot;800&quot;}
 
 Um zwischen Ihren Tickets und den Tickets zu wechseln, die Sie bereits aktiviert haben, klicken Sie auf den entsprechenden Tab:
 
 * **Meine Tickets**
-* **Eintrittskarten, die ich mitnehmen kann**
-* **OrganisationsTickets** (verfügbar, wenn Ihr Konto mit mehreren Organisationen verknüpft ist)
+* **Eintrittskarten, die ich am 1. Januar habe**
+* **Eintrittskarten für Organisationen** (verfügbar, wenn Ihr Konto mit mehreren Organisationen verknüpft ist)
 
 ![hc_my-tickets_tabs.png](assets/hc_my-tickets_tabs.png)
 
-Klicken Sie zum Sortieren von Tickets auf **Erstellt** oder **Letzte Aktivität** Spaltenüberschriften.
+Klicken Sie zum Sortieren von Tickets auf die Spaltenüberschriften **Erstellt** oder **Letzte Aktivität** .
 
 #### Tickets suchen
 
-Um Tickets zu finden, geben Sie Ihre Suchabfrage in die **Tickets suchen** field und press *Eingabe* auf Ihrer Tastatur. Auswählen [Status](#ticket-status) für zusätzliche Filtermöglichkeiten.
+Um Tickets zu finden, geben Sie Ihre Suchabfrage in das Feld **Suchtickets** ein und drücken Sie die *Eingabetaste* auf Ihrer Tastatur. Wählen Sie [einen Status](#ticket-status) für zusätzliche Filterung.
 
 ![hc_search-tickets.png](assets/hc_search-tickets.png)
 
@@ -448,23 +448,24 @@ Sie können den Support-Tickets folgen, die von den Mitgliedern Ihres Unternehme
 
 Wenn Sie Ihren Organisations-Tickets folgen, gehen Sie wie folgt vor:
 
-* kann Tickets innerhalb der **OrganisationsTickets** tab
+* Tickets können auf der Registerkarte **Unternehmenstickets** angezeigt werden.
 * erhalten E-Mail-Benachrichtigungen, wenn die neuen Tickets gesendet oder die vorhandenen Tickets geändert werden
 
 So folgen/folgen Sie den Tickets für eine Organisation:
 
-1. Navigieren Sie zu **Meine Tickets** > **OrganisationsTickets** Registerkarte.
-1. Wählen Sie eine Organisation im Menü aus und klicken Sie auf **Folgen/Unfolgen**.
+1. Gehen Sie zur Registerkarte **Meine Tickets** > **Organisations-Tickets** .
+1. Wählen Sie eine Organisation im Menü aus und klicken Sie auf **Folgen/UnFollow**.
 
 ![hc_follow-org-tickets.png](assets/hc_follow-org-tickets.png)
 
 ### Adobe Commerce P1-Hotline {#P1-hotline}
 
-**Anmeldung erforderlich** , um auf die [Adobe Commerce P1-Hotline](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) -Artikel, der die P1-Hotline-Nummern für Adobe Commerce bereitstellt, wenn Sie während eines P1-Vorfalls Hilfe benötigen, und erklärt, welche Informationen bereitgestellt werden sollen.
+**Die Anmeldung ist erforderlich**, um auf den Artikel [Adobe Commerce P1 Hotline](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) zuzugreifen, der die P1-Hotline-Nummern für Adobe Commerce bereitstellt, wenn Sie Hilfe bei einem P1-Vorfall suchen, und erklärt, welche Informationen bereitgestellt werden sollen.
 
 ### Betriebsmodell für gemeinsame Verantwortung von Adobe Commerce {#shared-responsibility-operational-model}
 
-Weitere Informationen finden Sie im Artikel [Betriebsmodell für gemeinsame Verantwortung von Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary), die darauf abzielt, die betrieblichen Verantwortlichkeiten für unser Pro-Infrastruktur-Angebot zu klären.
+Weitere Informationen finden Sie im Artikel zum Betriebsmodell für die gemeinsame Verantwortung mit Adobe Commerce [1 .
+, um die Betriebsverantwortung für unser Angebot an Pro-Infrastruktur zu klären.](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary)
 
 ### Erläuterung der Support-Ticketfelder {#ticket-fields-explained}
 
@@ -495,12 +496,12 @@ So fügen Sie CC mehrere E-Mails hinzu:
 >Der Benutzer in CC: muss über ein vorhandenes Konto unter https://account.magento.com verfügen. Ist dies nicht der Fall, muss zunächst ein Konto unter https://account.adobe.com erstellt und mit diesem Konto bei https://account.magento.com angemeldet werden.
 
 1. Geben Sie die E-Mail ein.
-1. Presse *Leerzeichen* auf Ihrer Tastatur, um die eingegebene E-Mail zu speichern. Die E-Mail wird in einem grauen Rahmen angezeigt.\
+1. Drücken Sie *Leertaste* auf Ihrer Tastatur, um die eingegebene E-Mail zu speichern. Die E-Mail wird in einem grauen Rahmen angezeigt.\
    ![hc_cc_emails.png](assets/hc_cc_emails.png)
 1. Geben Sie die nächste E-Mail ein.
-1. Speichern Sie alle anderen E-Mails, indem Sie *Leerzeichen*.
+1. Speichern Sie alle anderen E-Mails, indem Sie auf *Leerzeichen* drücken.
 
-Um E-Mails aus CC zu löschen, klicken Sie auf **x** in einer gerahmten E-Mail.
+Löschen von E-Mails aus CC: Klicken Sie in einer gerahmten E-Mail auf **x** .
 
 ![hc_cc_emails_remove.png](assets/hc_cc_emails_remove.png)
 
@@ -508,39 +509,39 @@ Um E-Mails aus CC zu löschen, klicken Sie auf **x** in einer gerahmten E-Mail.
 
 Wählen Sie den Typ des Adobe Commerce-Produkts aus, mit dem Sie arbeiten:
 
-* Adobe Commerce: Die **[!UICONTROL Implementation Type]** wird angezeigt, nachdem Sie diese Option ausgewählt haben (Einzelheiten finden Sie unten)
+* Adobe Commerce: Das Feld **[!UICONTROL Implementation Type]** wird angezeigt, nachdem Sie diese Option ausgewählt haben (Einzelheiten finden Sie unten).
 * Magento Order Management
-* Adobe Commerce-Berichterstellung: nicht eingeschlossen [Fortschrittliche Berichterstellung](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html)
+* Adobe Commerce-Berichterstellung: Nicht eingeschlossen [Fortschrittliche Berichterstellung](https://experienceleague.adobe.com/docs/commerce-admin/config/general/advanced-reporting.html)
 * Adobe Commerce [Zahlungsdienste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html)
-* Adobe Commerce Services: [Kanal-Manager](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) only
+* Adobe Commerce-Dienste: Nur [Kanal-Manager](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
 
 #### Implementierungstyp
 
-Dieses Feld wird erst angezeigt, nachdem Sie ausgewählt haben **[!UICONTROL Product]** = *Adobe Commerce*
+Dieses Feld wird nur angezeigt, nachdem Sie **[!UICONTROL Product]** = *Adobe Commerce* ausgewählt haben
 
 Geben Sie Ihre Implementierungsmethode an:
 
 * Cloud: Wählen Sie diese Option nur aus, wenn Sie mit Adobe Commerce on Cloud Infrastructure arbeiten.
-* Vor Ort: *Alle selbstgehosteten Instanzen sowie [AWS] Cloud-basiertes Hosting* (ohne Adobe Commerce on Cloud)
+* On-Premise: *Alle selbst gehosteten Instanzen sowie [AWS] Cloud-basiertes Hosting* (Adobe Commerce on Cloud ausgenommen)
 
 #### Cloud-Projekt-URL
 
-Geben Sie die URL für das Cloud Console-Projekt an, z. B. `https://console.adobecommerce.com/<owner-user-name>/<project-ID>`.
+Geben Sie die URL für das Cloud Console-Projekt ein, z. B. `https://console.adobecommerce.com/<owner-user-name>/<project-ID>`.
 
 Eine weitere Methode zum Abrufen der Projekt-URL lautet:
 
-1. Melden Sie sich bei [Cloud-Konsole](https://console.adobecommerce.com).
+1. Melden Sie sich bei der [Cloud-Konsole](https://console.adobecommerce.com) an.
 1. Klicken Sie auf das entsprechende Projekt.
 1. Kopieren Sie die URL.
 
 #### Kontaktgrund
 
-Die Kontaktgründe variieren je nach Produkt. Wählen Sie aus, welcher Kontaktgrund für Ihre Symptome am besten geeignet ist. Siehe Abschnitt [Beschreibungen der Gründe für Support-Tickets](/help/faq/general/support-ticket-contact-reason-descriptions.md) Artikel , um mehr darüber zu erfahren, welchen Kontaktgrund Sie auswählen sollten.
+Die Kontaktgründe variieren je nach Produkt. Wählen Sie aus, welcher Kontaktgrund für Ihre Symptome am besten geeignet ist. Weitere Informationen dazu, welchen Kontaktgrund Sie auswählen sollten, finden Sie im Artikel [Beschreibungen der Kontaktgründe für Support-Tickets](/help/faq/general/support-ticket-contact-reason-descriptions.md) .
 
 #### Adobe Commerce-Umgebungs-ID
 
-Dieses Feld wird erst angezeigt, nachdem Sie ausgewählt haben **[!UICONTROL Contact Reason]** = *Adobe Commerce Cloud-Anwendung*, gefolgt von **Adobe Commerce-Anwendungskontaktgrund** = *[!DNL Live Search]*.
-Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]** > **[!UICONTROL SaaS Identifier]** und stellen Sie die *[!UICONTROL Data Space ID]*.
+Dieses Feld wird nur angezeigt, nachdem Sie **[!UICONTROL Contact Reason]** = *Adobe Commerce Cloud Application* ausgewählt haben, gefolgt von **Adobe Commerce Application Contact Reason** = *[!DNL Live Search]*.
+Gehen Sie zu **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]** > **[!UICONTROL SaaS Identifier]** und geben Sie die *[!UICONTROL Data Space ID]* ein.
 
 #### (Daten) Integrationstyp (nur Adobe Commerce Reporting)
 
@@ -550,17 +551,17 @@ Wählen Sie den Integrationstyp aus, den Sie in Adobe Commerce Reporting verwend
 
 Geben Sie einen Überblick über Ihr Problem mit so vielen Details, wie Sie für vernünftig gehalten werden.
 
-Bitte machen Sie genaue Angaben und Schritte zur Reproduktion (mit Ausnahme der lokalen Adobe Commerce-Infrastruktur und der Cloud-Infrastruktur, in der eine separate [Zu reproduzierende Schritte](#steps) -Feld) und Symptome Ihres Problems oder Ihrer Anfrage. Stellen Sie sicher, dass Sie alle betroffenen SKUs, relevanten Datenpunkte und andere relevante Links einbeziehen.
+Bitte geben Sie genaue Details, Reproduktionsschritte (mit Ausnahme der lokalen Adobe Commerce- und Cloud-Infrastruktur, in der ein separates Feld mit den [Reproduktionsschritten](#steps) vorhanden ist) und Symptome Ihres Problems oder Ihrer Anfrage an. Stellen Sie sicher, dass Sie alle betroffenen SKUs, relevanten Datenpunkte und andere relevante Links einbeziehen.
 
 #### Umgebung (Adobe Commerce für Cloud-Infrastruktur, Adobe Commerce vor Ort, Adobe Commerce Reporting und Versand)
 
-Wählen Sie die **Umgebungstyp** auf der Sie das Problem haben:
+Wählen Sie den **Umgebungstyp** aus, bei dem das Problem auftritt:
 
-* Entwicklung (**Integrationsverzweigungen**)
+* Entwicklung (**Integrationszweige**)
 * Staging
 * Produktion
 
-Weitere Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen in [Pro Architektur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) in unserem Benutzerhandbuch.
+Weitere Informationen zu Adobe Commerce in Cloud-Infrastrukturumgebungen finden Sie im Artikel [Pro Architecture](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) in unserem Benutzerhandbuch.
 
 #### Anzahl der betroffenen Bestellungen (nur MOM)
 
@@ -586,17 +587,17 @@ Dieses Feld wird angezeigt, wenn Ihr Konto mit mehr als einer Organisation verkn
 >1. Suchen Sie das Dropdown-Menü für verfügbare Organisationen.
 >1. Wählen Sie die entsprechende Organisation aus.
 >
->![Dropdown-Liste der Organisation](/help/help-center-guide/help-center/assets/change_org.png)
+>![Organisation-Dropdown](/help/help-center-guide/help-center/assets/change_org.png)
 
 Darüber hinaus würde es uns dadurch möglich sein, ähnliche/duplizierte/verwandte Tickets, die für diese Organisation in der Vergangenheit eingereicht wurden, schnell miteinander zu vergleichen und Hinweise zu identifizieren, die bei der Untersuchung und Lösung des aktuellen Tickets hilfreich sein könnten.
 
-Wenn Sie über gemeinsamen Zugriff für mehrere Organisationen verfügen, dieses Feld jedoch nicht verfügbar ist, finden Sie weitere Informationen unter [Formular für die Übermittlung von Tickets: Der Händler wird nicht in der Dropdown-Liste &quot;Organisation&quot;angezeigt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#merchant-not-displayed)
+Wenn Sie über gemeinsamen Zugriff für mehrere Organisationen verfügen, dieses Feld jedoch nicht verfügbar ist, lesen Sie den Abschnitt zum Übermittlungsformular für Tickets: Der Händler wird nicht in der Dropdown-Liste &quot;Organisation&quot;angezeigt](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#merchant-not-displayed)[
 
 #### Name des Partners (Name des Händlers)
 
-Für Händler: **Partnername** den Namen der Entwicklungsorganisation (Adobe Commerce) [Technologiepartner](https://partners.magento.com/portal/directory/?&amp;partner_type=6) oder [Lösungspartner](https://partners.magento.com/portal/directory/?&amp;partner_type=1)), die an der Entwicklung Ihres Adobe Commerce-Stores beteiligt sind.
+Für Händler: **Partnername** ist der Name der Entwicklungsorganisation (Adobe Commerce [Technologiepartner](https://partners.magento.com/portal/directory/?&amp;partner_type=6) oder [Lösungspartner](https://partners.magento.com/portal/directory/?&amp;partner_type=1)), die an der Entwicklung Ihres Adobe Commerce-Stores beteiligt ist.
 
-Für Partner: **Merchant Name** ist der Name Ihres Kunden.
+Für Partner: **Name des Händlers** ist der Name Ihres Kunden.
 
 #### Projekt-URL (nur Commerce Cloud)
 
@@ -610,7 +611,7 @@ Geben Sie genaue schrittweise Anweisungen, um Ihr Problem zu reproduzieren, eins
 * Erwartetes Ergebnis
 * Tatsächliches Ergebnis
 
-*Empfehlung:* Angenommen, Sie schreiben diese Schritte für jemanden, der weiß **nichts** über Adobe Commerce:
+*Empfehlung:* Angenommen, Sie schreiben diese Schritte für jemanden, der **nichts** über Adobe Commerce weiß:
 
 * Erwähnen Sie jeden Schritt, auch wenn er einfach und offensichtlich erscheint
 * Verlassen Sie sich nicht auf die Annahme, dass Ihr Leser weiß, was Sie meinen
@@ -621,43 +622,43 @@ Schreiben Sie in einfacher Sprache mit kurzen Sätzen.
 
 Schließen Sie einen kurzen Überblick über Ihr Problem ein (z. B. *Fehler 404 auf allen Seiten*).
 
-**Vorgeschlagene Artikel:** Wenn Sie den Suchbegriff eingeben, wird eine Liste mit Adobe Commerce-Dokumentationsartikeln angezeigt, die möglicherweise mit Ihrem Problem in Zusammenhang stehen. Klicken Sie auf einen Artikel in der Liste, um ihn zu öffnen.
+**Vorgeschlagene Artikel:** Wenn Sie den Suchbegriff eingeben, wird eine Liste der Adobe Commerce-Dokumentationsartikel angezeigt, die möglicherweise mit Ihrem Problem in Verbindung stehen. Klicken Sie auf einen Artikel in der Liste, um ihn zu öffnen.
 
 ![hc_subject-recommended-articles.png](assets/hc_subject-suggested-articles.png)
 
-*Empfehlung:* Bitte beachten Sie die vorgeschlagenen Artikel sorgfältig. Sie können die Lösung enthalten, die Sie vom Adobe Commerce-Supportteam erwarten.
+*Empfehlung:* Beachten Sie die vorgeschlagenen Artikel sorgfältig. Sie können die Lösung enthalten, die Sie vom Adobe Commerce-Supportteam erwarten.
 
 #### Version (nur Adobe Commerce vor Ort, Adobe Commerce über Cloud-Infrastruktur und Versand)
 
 Bitte wählen Sie die Adobe Commerce-Version aus, für die Sie Hilfe anfordern. Alle unterstützten Versionen von Adobe Commerce sind oben aufgeführt. Ununterstützte Versionen werden unten mit Klammern aufgeführt. Wenn Sie sich in der Migration befinden, wählen Sie die neueste Version aus, um sicherzustellen, dass Sie unterstützt werden.
 
-Um die Version Ihrer Adobe Commerce (Cloud-Infrastruktur) zu finden, scrollen Sie nach unten [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) und aktivieren Sie die untere Mitte des Fensters.
+Um die Version Ihrer Adobe Commerce (Cloud-Infrastruktur) zu finden, scrollen Sie die Seite [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) nach unten und überprüfen Sie die untere Mitte des Fensters.
 
-![Kontaktgrund auf Adobe Commerce Cloud Application und Adobe Commerce Application Contact Reason auf Live Search gesetzt](assets/magento-env-id.png)
+![Kontaktgrund auf Adobe Commerce Cloud Application und Adobe Commerce Application Contact Reason auf Live Search eingestellt](assets/magento-env-id.png)
 
-Wenn Sie [Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview.html) oder [OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/aws-opensearch.html)nicht auswählen.
+Wenn Sie [Elasticsearch](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/overview.html) oder [OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/search-engine/aws-opensearch.html) verwenden, wählen Sie diese Option nicht aus.
 
-Um diese Informationen zu erhalten, navigieren Sie im Adobe Commerce-Admin zu **Marketing** > **Live Search** > **GraphQL Playground**, scrollen Sie nach unten zum Ende der Seite und klicken Sie auf **HTTP-HEADER**.
+Um diese Informationen zu erhalten, gehen Sie im Adobe Commerce-Admin zu &quot;**Marketing**&quot;> &quot;**Live Search**&quot;> &quot;**GraphQL Playground**&quot;, blättern Sie nach unten zur Seite und klicken Sie dann auf &quot;**HTTP-HEADERS**&quot;.
 
 ### Ticketstatus: Verarbeitung der Tickets {#ticket-status}
 
 Ihr Ticket kann einen dieser drei Status haben.
 
-#### **1. Öffnen**
+#### **1. Öffnen Sie**
 
-Ihr Ticket wurde nicht gelöst und wird vom Adobe Commerce-Supportteam verarbeitet. Wenn Sie alle Informationen bereitgestellt haben, die von Ihnen in einem bestimmten Schritt des Gesprächs erwartet werden, und der nächste Schritt vom Adobe Commerce-Support durchgeführt werden muss, hat Ihr Ticket die Funktion **Öffnen** -Status.
+Ihr Ticket wurde nicht gelöst und wird vom Adobe Commerce-Supportteam verarbeitet. Wenn Sie alle Informationen angegeben haben, die Sie in einem bestimmten Schritt der Konversation erwarten, und der nächste Schritt vom Adobe Commerce-Support durchgeführt werden muss, hat Ihr Ticket den Status **Öffnen** .
 
-#### **2. Abwarten der Antwort**
+#### **2. Warten auf Ihre Antwort**
 
 Der Adobe Commerce-Support erwartet Informationen von Ihnen.
 
-In Ihrer Antwort können Sie zusätzliche technische Details zu Ihrem Problem angeben, Eskalationsdetails angeben oder angeben, ob die vom Adobe Commerce-Support angebotene Lösung für Ihr Problem hilfreich war. Stellen Sie sicher, dass Sie Ihre Antworten so schnell wie möglich bereitstellen, da der Adobe Commerce-Support mit der Verarbeitung Ihres Tickets nicht fortfahren kann, während es sich in der **Abwarten der Antwort** -Status.
+In Ihrer Antwort können Sie zusätzliche technische Details zu Ihrem Problem angeben, Eskalationsdetails angeben oder angeben, ob die vom Adobe Commerce-Support angebotene Lösung für Ihr Problem hilfreich war. Stellen Sie sicher, dass Sie Ihre Antworten so schnell wie möglich bereitstellen, da der Adobe Commerce-Support mit der Verarbeitung Ihres Tickets nicht fortfahren kann, während es sich im Status **Erwarten der Antwort** befindet.
 
-Referenz: [Aktualisierung der Ticketlebenszyklus-Richtlinie durch Adobe Commerce](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md) Artikel für Details zur Timing- und Benachrichtigungsrichtlinie.
+Weitere Informationen zur Timing- und Benachrichtigungsrichtlinie finden Sie im Artikel Update der Adobe Commerce-Lebenszyklusrichtlinie für Support [-Unterstützung](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md) .
 
 #### **3. Gelöst**
 
-Der Adobe Commerce-Support bietet eine Lösung für Ihr Problem, und Sie haben zugestimmt, dass dies hilfreich war. Du bist es, der das Ticket als **Gelöst**. Wenn das Problem erneut behoben wird, können Sie das Ticket erneut öffnen und seinen Status auf **Öffnen**.
+Der Adobe Commerce-Support bietet eine Lösung für Ihr Problem, und Sie haben zugestimmt, dass dies hilfreich war. Du bist es, der das Ticket als **Gelöst** markiert. Wenn das Problem erneut behoben wird, können Sie das Ticket erneut öffnen und seinen Status auf **Öffnen** zurücksetzen.
 
 ### Unterhaltung in Ihrem Ticket {#conversation-in-ticket}
 
@@ -666,11 +667,11 @@ Die Unterhaltung in Ihrem Ticket vereint alle Kommentare, die von Ihnen oder dem
 Gehen Sie wie folgt vor, um einen Kommentar zur Konversation hinzuzufügen:
 
 1. Scrollen Sie zum unteren Ende Ihres Tickets.
-1. Klicken Sie auf **Konversation hinzufügen** -Feld, um mit dem Schreiben zu beginnen.
+1. Klicken Sie auf das Feld **Zu Konversation hinzufügen** , um mit dem Schreiben zu beginnen.
 
    ![hc_add-to-conversion.png](assets/hc_add-to-conversation.png)
 
-1. Um eine Person zu Ihrem Kommentar hinzuzufügen, geben Sie die E-Mail im **CC** -Feld des Kommentarfelds.
+1. Um eine Person zu Ihrem Kommentar hinzuzufügen, geben Sie die E-Mail im Feld **CC** des Kommentarfelds an.
 
    >[!NOTE]
    >
@@ -678,56 +679,56 @@ Gehen Sie wie folgt vor, um einen Kommentar zur Konversation hinzuzufügen:
 
    ![hc_conversion-write.png](assets/hc_conversation-write.png)
 
-1. Nachdem Sie mit Ihrem Kommentar fertig sind, klicken Sie auf **Einsenden**.
+1. Nachdem Sie mit Ihrem Kommentar fertig sind, klicken Sie auf **Senden**.
 
 ### Ticket lösen {#resolve-ticket}
 
-Um Ihr Ticket zu lösen, klicken Sie auf **Als gelöst markieren** am Ende Ihres Tickets.
+Um Ihr Ticket zu lösen, klicken Sie unten in Ihrem Ticket auf **Als gelöst markieren** .
 
 ### Öffnen Sie ein Folgenachticket. {#follow-up}
 
 Durch die Eröffnung eines Folgenachweises wird sichergestellt, dass das ursprüngliche Problem mit dem Folgeticket für die Kontinuität verknüpft ist.
 
-Klicken Sie auf das Symbol &quot;*eine Weiterverfolgung erstellen*&quot; am unteren Ende des Tickets, zu dem Sie ein Follow-up erstellen möchten.
+Um ein Follow-up-Ticket zu öffnen, klicken Sie auf den Link &quot;*Follow-up erstellen*&quot; am unteren Rand des Tickets, zu dem Sie eine Weiterverfolgung erstellen möchten.
 
 ## FREIGEGEBENER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO. {#shared-access}
 
-Sie können anderen Adobe Commerce-Kontoinhabern eingeschränkten Zugriff auf Ihr Konto gewähren. Insbesondere wird mithilfe des **freigegebener Zugriff** -Funktion nutzen, können Sie vertrauenswürdigen Mitarbeitern und Dienstleistern die Verwendung Ihres Help-Center-Kontos ermöglichen, damit sie mit Ihren Support-Tickets arbeiten können.
+Sie können anderen Adobe Commerce-Kontoinhabern eingeschränkten Zugriff auf Ihr Konto gewähren. Insbesondere können Sie mit der Funktion **Freigegebener Zugriff** Berechtigungen für vertrauenswürdige Mitarbeiter und Dienstleister bereitstellen, damit diese Ihr Hilfe-Center-Konto verwenden können, damit sie mit Ihren Support-Tickets arbeiten können.
 
-Sie können über Ihre Adobe Commerce-Kontoseite freigegebenen Zugriff bereitstellen und verwalten unter [https://account.magento.com](https://account.magento.com/).
+Sie können freigegebenen Zugriff über Ihre Adobe Commerce-Kontoseite unter [https://account.magento.com](https://account.magento.com/) bereitstellen und verwalten.
 
 ### Wer kann freigegebenen Zugriff gewähren? {#who-can-provide-shared-access}
 
 Nur der Kontoinhaber (Primärkontoinhaber) mit den entsprechenden Berechtigungen kann anderen Benutzern freigegebenen Zugriff gewähren.
 
-Die Verwaltung von Benutzern und deren Zugriff liegt in der Verantwortung des Kunden, insbesondere im Hinblick auf den gemeinsamen Zugriff. Daher kann das Adobe Commerce-Supportteam keinen freigegebenen Zugriff auf ein Adobe Commerce-Konto für einen Kunden bereitstellen. Kunden wird empfohlen, Benutzer mit gemeinsamem Zugriff selbst hinzuzufügen, indem sie die [Adobe Commerce-Kontoseite](https://account.magento.com/).
+Die Verwaltung von Benutzern und deren Zugriff liegt in der Verantwortung des Kunden, insbesondere im Hinblick auf den gemeinsamen Zugriff. Daher kann das Adobe Commerce-Supportteam keinen freigegebenen Zugriff auf ein Adobe Commerce-Konto für einen Kunden bereitstellen. Kunden wird empfohlen, über die [Adobe Commerce-Kontoseite](https://account.magento.com/) Benutzer mit freigegebenem Zugriff selbst hinzuzufügen.
 
 Benutzer, denen freigegebener Zugriff gewährt wurde, können diesen Zugriff nicht an andere Benutzer übertragen oder gewähren.
 
 ### Freigegebenen Zugriff gewähren {#provide-shared-access}
 
-Siehe [Commerce-Konto freigeben](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) Anweisungen zum Einrichten eines freigegebenen Kontos finden Sie im Erste-Schritte-Handbuch zu Adobe Commerce .
+Detaillierte Anweisungen zum Einrichten eines freigegebenen Kontos finden Sie im Abschnitt [Freigeben eines Commerce-Kontos](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) des Adobe Commerce-Erste-Schritte-Handbuchs.
 
-Nachdem ein neuer Benutzer freigegebenen Zugriff erhalten hat, sind die zugehörigen Informationen unter **Freigegebener Zugriff** > **Berechtigungen verwalten** auf Ihrer Adobe Commerce-Kontoseite.
+Nachdem Sie einem neuen Benutzer freigegebenen Zugriff gewährt haben, sind die entsprechenden Informationen auf der Seite &quot;**Freigegebener Zugriff**&quot;> &quot;**Berechtigungen verwalten**&quot;Ihrer Adobe Commerce-Kontoseite verfügbar.
 
 ![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
 ### Freigegebenen Zugriff sperren (löschen) {#revoke-shared-access}
 
-1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an unter [https://account.magento.com](https://account.magento.com/).
-1. Wählen Sie im Bereich auf der linken Seite unter &quot;Freigegebener Zugriff&quot;die Option **Verwalten von Berechtigungen.**
-1. Suchen Sie den Benutzer, von dem der freigegebene Zugriff widerrufen werden soll, und klicken Sie auf ![Symbol entfernen](assets/remove_icon.png){width="25"} in der Zeile des Benutzers (**Aktionen** Spalte).
-1. Klicks **Benutzer löschen** , um den Zugriff zu sperren, oder X in der oberen Ecke, um die Sperrung abzubrechen.
+1. Melden Sie sich bei Ihrem Adobe Commerce-Konto unter [https://account.magento.com](https://account.magento.com/) an.
+1. Wählen Sie im Bereich auf der linken Seite unter &quot;Freigegebener Zugriff&quot;die Option **Berechtigungen verwalten**.
+1. Suchen Sie den Benutzer, von dem der freigegebene Zugriff widerrufen werden soll, und klicken Sie in der Zeile des Benutzers auf ![Symbol &quot;Entfernen&quot;](assets/remove_icon.png){width="25"} ( Spalte **Aktionen** ).
+1. Klicken Sie auf **Benutzer löschen** , um den Zugriff zu widerrufen, oder auf X in der oberen Ecke, um die Sperrung abzubrechen.
 
-   ![cancel_shared_access](assets/revoke_shared_access.png){width="800"}
+   ![Revoke_shared_access](assets/revoke_shared_access.png){width="800"}
 
-   Sie können den freigegebenen Zugriff auch über die **Bearbeiten** Menü:
+   Sie können den freigegebenen Zugriff auch über das Menü **Bearbeiten** widerrufen:
 
-1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an unter [https://account.magento.com](https://account.magento.com/).
-1. Wählen Sie im Bereich auf der linken Seite unter &quot;Freigegebener Zugriff&quot;die Option **Verwalten von Berechtigungen.**
-1. Suchen Sie den Benutzer, von dem der freigegebene Zugriff widerrufen werden soll, und klicken Sie auf **Bearbeiten** in der Zeile des Benutzers (**Aktionen** Spalte).
-1. Klicks **Diesen Benutzer löschen** unten auf der Seite.
-1. Klicken Sie im Bestätigungs-Popup auf **Benutzer löschen** , um den Zugriff zu sperren, oder X in der oberen Ecke, um die Sperrung abzubrechen.
+1. Melden Sie sich bei Ihrem Adobe Commerce-Konto unter [https://account.magento.com](https://account.magento.com/) an.
+1. Wählen Sie im Bereich auf der linken Seite unter &quot;Freigegebener Zugriff&quot;die Option **Berechtigungen verwalten**.
+1. Suchen Sie den Benutzer, von dem der freigegebene Zugriff widerrufen werden soll, und klicken Sie in der Zeile des Benutzers auf **Bearbeiten** (**Aktionen** -Spalte).
+1. Klicken Sie unten auf der Seite auf **Diesen Benutzer löschen** .
+1. Klicken Sie im Bestätigungs-Popup auf **Benutzer löschen** , um den Zugriff zu sperren, oder auf X in der oberen Ecke, um die Sperrung abzubrechen.
 
 ### Wie kann ich Benutzer löschen, denen der gemeinsame Zugriff über ein Cloud-Projekt gewährt wurde? {#remove-cloud-shared-access-users}
 
@@ -737,45 +738,45 @@ Nachdem ein neuer Benutzer freigegebenen Zugriff erhalten hat, sind die zugehör
 
 <u>Ursache</u>
 
-Wenn Sie ein Adobe Commerce Cloud-Projekt durchgeführt haben/hatten und einen Benutzer zum Projekt hinzugefügt hatten, erhalten diese automatisch freigegebenen Zugriff auf die MAGE-ID des Projekteigentümers. Dies würde normalerweise im **[!UICONTROL Share Name]** Spalte anzeigen *Freigegebener Cloud-Zugriff über MAG[XYZ]*.
+Wenn Sie ein Adobe Commerce Cloud-Projekt durchgeführt haben/hatten und einen Benutzer zum Projekt hinzugefügt hatten, erhalten diese automatisch freigegebenen Zugriff auf die MAGE-ID des Projekteigentümers. Dies wird normalerweise in der Spalte **[!UICONTROL Share Name]** angezeigt, in der *Freigegebener Cloud-Zugriff von MAG[XYZ]* angezeigt wird.
 
 Wenn der DELETE-Link fehlt, bedeutet dies, dass der Freigegebene Zugriff automatisch über Commerce Cloud gewährt wurde.
 
 <u>Lösung</u>
 
-Es ist nicht möglich, die Liste der Benutzer mit gemeinsamem Zugriff mit dem Freigabenamen *Freigegebener Cloud-Zugriff über MAG[XYZ]* , wenn der freigegebene Zugriff nicht auf dieser Seite hinzugefügt/bereitgestellt wurde. Diese werden zu Informations-/Auditzwecken aufbewahrt.
+Es ist nicht möglich, die Liste der Benutzer mit freigegebenem Zugriff mit dem Freigabenamen &quot;*Cloud Shared Access&quot;von MAG[XYZ]*&quot;zu löschen, wenn der freigegebene Zugriff nicht auf dieser Seite hinzugefügt/bereitgestellt wurde. Diese werden zu Informations-/Auditzwecken aufbewahrt.
 
 Nachdem Sie die Berechtigungen für diese Benutzer mit gemeinsamem Zugriff widerrufen haben, haben sie diesen Zugriff jedoch nicht mehr.
 
-1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an unter [https://account.magento.com](https://account.magento.com/).
-1. Im Bedienfeld auf der linken Seite, unter *[!UICONTROL Shared Access]* auswählen **[!UICONTROL Manage Permissions]**.
-1. Suchen Sie den Benutzer, von dem der freigegebene Zugriff widerrufen werden soll, und klicken Sie auf **[!UICONTROL Edit]** in der Zeile des Benutzers (*[!UICONTROL Actions]* Spalte).
-1. Deaktivieren Sie alle Ressourcen unter *[!UICONTROL Grant Account Permissions]*.
+1. Melden Sie sich bei Ihrem Adobe Commerce-Konto unter [https://account.magento.com](https://account.magento.com/) an.
+1. Wählen Sie im Bedienfeld auf der linken Seite unter *[!UICONTROL Shared Access]* die Option **[!UICONTROL Manage Permissions]**.
+1. Suchen Sie den Benutzer, von dem der freigegebene Zugriff widerrufen werden soll, und klicken Sie in der Zeile des Benutzers (*[!UICONTROL Actions]* -Spalte) auf **[!UICONTROL Edit]** .
+1. Deaktivieren Sie alle Ressourcen unter &quot;*[!UICONTROL Grant Account Permissions]*&quot;.
 
 ![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
-Weitere Informationen finden Sie im Abschnitt [Benutzerzugriff verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) Dokumentation zu unserem Commerce on Cloud Infrastructure Guide.
+Weitere Informationen finden Sie in der Dokumentation [Verwalten des Benutzerzugriffs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) im Handbuch zu Commerce on Cloud Infrastructure.
 
 ### Zugriff auf freigegebene Konten (Konten wechseln) {#switch-accounts}
 
 Gehen Sie wie folgt vor, um den für Sie freigegebenen Zugriff zu verwenden:
 
-1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an unter [https://account.magento.com](https://account.magento.com/).
-1. Klicken Sie auf **Wechseln von Konten** und wählen Sie ein Konto.
+1. Melden Sie sich bei Ihrem Adobe Commerce-Konto unter [https://account.magento.com](https://account.magento.com/) an.
+1. Klicken Sie auf das Menü **Konten wechseln** und wählen Sie ein Konto aus.
 
    ![magento-account-shared-switch](assets/magento_account_shared_switch.png){width="800"}
 
-Informationen dazu, welches Konto Sie derzeit verwenden (Ihr eigenes natives Konto oder freigegebener Zugriff), finden Sie unter **Wechseln von Konten** Menü: Es wird das aktive Konto angezeigt.
+Informationen dazu, welches Konto Sie derzeit verwenden (Ihr eigenes natives Konto oder freigegebener Zugriff), finden Sie im Menü **Konten wechseln** : Es zeigt das aktive Konto an.
 
 ### Fehlerbehebung bei freigegebenen Zugriffen {#troubleshooting-shared-access}
 
-Weitere Informationen finden Sie unter [Artikel zur Fehlerbehebung bei freigegebenen Zugriffen](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md) in unserer Wissensdatenbank.
+Lesen Sie diesbezüglich auch den Artikel [Fehlerbehebung bei Problemen mit freigegebenen Zugriffen](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md) in unserer Support-Wissensdatenbank.
 
 ## FAQ ZUR ABRECHNUNG FÜR ADOBE COMMERCE {#billing-faq}
 
-Händler zahlen für unsere Dienstleistungen in der Regel per Kreditkartengeschäft (CC), und dies [Häufig gestellte Fragen zur Rechnungsstellung für Adobe Commerce](/help/faq/general/billing-faq-for-adobe-commerce.md) ist eine Ressource, die Ihnen bei der Zahlung Ihrer Rechnung hilft.
+Händler bezahlen unsere Dienstleistungen in der Regel mit einer Kreditkarten-Transaktion (CC). Diese [FAQ zur Rechnungsstellung für Adobe Commerce](/help/faq/general/billing-faq-for-adobe-commerce.md) ist eine Ressource, die Ihnen bei der Zahlung Ihrer Rechnung hilft.
 
 ## MAGENTO U IST JETZT TEIL VON ADOBE DIGITAL LERNDIENSTLEISTUNGEN {#magento-u}
 
-Magento U hat mit [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/).
+Magento U hat mit [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/) zusammengeführt.
 

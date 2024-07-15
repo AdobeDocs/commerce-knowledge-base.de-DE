@@ -14,11 +14,11 @@ ht-degree: 0%
 
 So prüfen Sie, wie viel Platz Sie für die einzelnen Adobe Commerce in der Cloud-Infrastruktur-Umgebung haben:
 
-1. Melden Sie sich bei [Cloud-Konsole](https://console.adobecommerce.com).
-1. Im **[!UICONTROL All projects]** Dashboard das entsprechende Projekt auswählen. Siehe Verfügbarkeit von Festplattenspeicher in der unteren Ecke.
+1. Melden Sie sich bei der [Cloud-Konsole](https://console.adobecommerce.com) an.
+1. Wählen Sie im Dashboard **[!UICONTROL All projects]** das entsprechende Projekt aus. Siehe Verfügbarkeit von Festplattenspeicher in der unteren Ecke.
 
    ![project_space.png](/help/how-to/general/assets/project_space.png)
 
 ## Verwandtes Lesen
 
-[Verwalten des Festplattenspeichers](https://devdocs.magento.com/cloud/project/manage-disk-space.html) in unserer Entwicklerdokumentation.
+[Verwalten Sie Speicherplatz](https://devdocs.magento.com/cloud/project/manage-disk-space.html) in unserer Entwicklerdokumentation.

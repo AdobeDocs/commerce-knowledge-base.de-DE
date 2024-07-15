@@ -18,7 +18,7 @@ Die folgenden häufig gestellten Fragen sollen Händlern, Entwicklern und Partne
 
 ### Wo finde ich die Software-Support-Daten für alle Versionen von Adobe Commerce?
 
-Sie finden die Adobe Commerce-Richtlinie zum Lebenszyklus von Software und die Daten für die Software-Unterstützung im Abschnitt [Adobe Commerce-Software-Lebenszyklusrichtlinie](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Außerdem veröffentlichen wir Daten zum Ende der Unterstützung (EOS) auf unserer [Seite zur Entwicklerdokumentation](https://devdocs.magento.com/release/released-versions.html).
+Sie finden die Adobe Commerce-Richtlinie zum Lebenszyklus von Software und die Daten für die Softwareunterstützung in der [Adobe Commerce Software Lifecycle Policy](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Außerdem veröffentlichen wir Enddaten des Supports (EOS) auf unserer [Entwicklerdokumentationsseite](https://devdocs.magento.com/release/released-versions.html).
 
 ### Was bedeutet es, wenn Adobe die Unterstützung für eine Version von Adobe Commerce-Software beendet?
 
@@ -35,20 +35,20 @@ Es wird dringend empfohlen, nur unterstützte Software zu verwenden.
 
 Wenn Sie sich dafür entscheiden, weiterhin Software zu verwenden, die den Support beendet hat, erhalten Sie keine wichtigen Produktaktualisierungen oder technischen Support mehr, der häufig die neuesten Sicherheitsupdates enthält. Die Verwendung nicht unterstützter Software kann sich auf die folgenden Bereiche auswirken:
 
-**Sichere Einkaufserlebnisse bieten:**
+**Sichere Einkaufserlebnisse bereitstellen:**
 
 * Sie müssen Ressourcen ausgeben, um Drittanbieter für Sicherheitsunterstützung, Fehlerbehebungen und Aktualisierungen auszuwerten und einzusetzen.
-* Sobald eine Version von Adobe Commerce-Software nicht mehr unterstützt wird, wird diese Version nicht mehr unterstützt. [PCI-konform](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security). In diesem Fall kann es zu Bußgeldern, der Entfernung von Kreditkartenverarbeitbarkeit oder anderen Strafen kommen.
+* Sobald eine Version der Adobe Commerce-Software nicht mehr unterstützt wird, ist diese Version nicht mehr [PCI-kompatibel](https://www.pcisecuritystandards.org/pci_security/maintaining_payment_security). In diesem Fall kann es zu Bußgeldern, der Entfernung von Kreditkartenverarbeitbarkeit oder anderen Strafen kommen.
 * Da die meisten Exploits auf Installationen abzielen, die nicht mit den neuesten Sicherheitsupdates auf dem neuesten Stand sind, empfehlen wir Händlern immer, ihre Software auf dem neuesten Stand zu halten und Sicherheitsupdates zu installieren, sobald sie verfügbar sind. Es ist Sache des Händlers, seinen Online-Store mit angemessenen Garantien und Sicherheitskontrollen zu schützen, um seine Website und die personenbezogenen Daten seiner Kunden zu schützen. Eine der besten Möglichkeiten dazu besteht darin, die neuesten Patches, Fehlerbehebungen und Software-Updates zu installieren und Ihre Site und Admin Console kontinuierlich auf ungewöhnliche Aktivitäten zu überwachen.
 
-**Effizientes und effizientes Arbeiten**
+**Effizientes und effektives Arbeiten**
 
 * Da nicht unterstützte Versionen von Adobe Commerce-Software alt sind, gibt es einen immer weniger werdenden Entwickler- und Partnerpool, der Unterstützung für veraltete Versionen bieten kann, da sie ihren Betrieb auf neuere Technologien ausrichten. Das Ergebnis ist im Allgemeinen, dass die Menge und Qualität des Talents für die Softwarewartung sinkt, während die Kosten für die Wartung der Software steigen.
 * Bei nicht unterstützter Adobe Commerce-Software können auch periphere Technologien und Abhängigkeiten ihren eigenen Lebenszyklus (z. B. PHP, MYSQL, REDIS, SOLR) erreichen. Dadurch wird es immer schwieriger, eine sichere und konforme Site zu verwalten und zu pflegen.
 * Auch die Entwickler von Erweiterungen konzentrieren sich zunehmend auf die neuesten Technologien und kompatiblen Plattformen. Daher unterhalten sie möglicherweise keine Erweiterungen für nicht unterstützte Versionen von Adobe Commerce.
 * Die Verwendung nicht unterstützter Adobe Commerce-Softwareversionen führt oft dazu, dass mehr Geld und Ressourcen ausgegeben werden, um eine alte Plattform zu erhalten, anstatt diese Ressourcen auf kontinuierliche Unternehmensinnovation und -wachstum anzuwenden.
 
-**Aggressives Wachstum**
+**Aggressives Wachsen**
 
 * Adobe investiert weiterhin in neue Technologien und Funktionen. Indem Sie die Software auf dem neuesten Stand halten, können Sie von neueren Technologien und Funktionen profitieren, die Ihrem Unternehmen helfen, strategischer zu arbeiten und noch schneller zu wachsen.
 
@@ -68,9 +68,9 @@ Es gibt mehrere Möglichkeiten, wie Sie erheblich von der Aktualität Ihrer Adob
 
 Ihre Commerce-Plattform ist ein wichtiges Business-System für Ihr Unternehmen. Aktuell und aktuell zu bleiben, ist eine wichtige ständige Investition in das Unternehmen. Die neuesten Technologie- und Sicherheitsupdates für Ihre digitale Storefront sind auf vielen Ebenen wichtig und können Innovationen und Wachstum fördern.
 
-Die Umstellung auf die neueste Version der Adobe Commerce-Software kann Zeit und Ressourcen erfordern, um gut ausgeführt zu werden. Es ist Best Practice für Sie, so weit wie möglich vor Ende des Supportzeitraums zu planen, um sicherzustellen, dass Sie über die erforderlichen Zeit und Ressourcen verfügen, um Ihre strategischen Ziele planmäßig und innerhalb des Budgets zu erreichen. Um Ihnen bei der nächsten Aktualisierung behilflich zu sein, hat Adobe die [2.4 Upgrade-Handbuch](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) enthält die Best Practices und die technischen Schritte, die zu befolgen sind, sowie die Tools und Ressourcen, die bei der Durchführung des Upgrades verwendet werden.
+Die Umstellung auf die neueste Version der Adobe Commerce-Software kann Zeit und Ressourcen erfordern, um gut ausgeführt zu werden. Es ist Best Practice für Sie, so weit wie möglich vor Ende des Supportzeitraums zu planen, um sicherzustellen, dass Sie über die erforderlichen Zeit und Ressourcen verfügen, um Ihre strategischen Ziele planmäßig und innerhalb des Budgets zu erreichen. Um Sie bei der nächsten Aktualisierung zu unterstützen, hat Adobe das [2.4 Upgrade-Handbuch](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) veröffentlicht, das die Best Practices und technischen Schritte sowie die Tools und Ressourcen enthält, die bei der Aktualisierung verwendet werden sollen.
 
-Ein weiterer wichtiger Aspekt ist die möglichst baldige Reservierung von Entwickler- und Partnerressourcen. Die Zeit und Ressourcen des Partners werden häufig deutlich vor dem Ende des Supports gebucht, was zu deutlich weniger Ressourcen für die Unterstützung von Migrationsprojekten führt. Es wird empfohlen, über einen dreijährigen Rollplan zu verfügen, den Sie mindestens einmal jährlich diskutieren, und sicherzustellen, dass das nächste Jahr geplant und geplant ist. Verwendung [Versionskalender der Adobe](https://devdocs.magento.com/release/) , um die Veröffentlichungsdaten zu verfolgen.
+Ein weiterer wichtiger Aspekt ist die möglichst baldige Reservierung von Entwickler- und Partnerressourcen. Die Zeit und Ressourcen des Partners werden häufig deutlich vor dem Ende des Supports gebucht, was zu deutlich weniger Ressourcen für die Unterstützung von Migrationsprojekten führt. Es wird empfohlen, über einen dreijährigen Rollplan zu verfügen, den Sie mindestens einmal jährlich diskutieren, und sicherzustellen, dass das nächste Jahr geplant und geplant ist. Verwenden Sie den Release-Kalender von [Adobe](https://devdocs.magento.com/release/), um die Veröffentlichungsdaten zu verfolgen.
 
 ### Kann ich einen Drittanbieter für Softwareunterstützung verwenden, wenn der Adobe Commerce-Support eingestellt wird?
 
@@ -102,7 +102,7 @@ Nein, Adobe priorisiert Support-Tickets nicht nach dem Ende des Supportzeitraums
 
 ### Gibt es eine Warnung für Support-Tickets, die vor dem Ende der Unterstützung geöffnet wurden, um Händler an das bevorstehende Ende der Unterstützung zu erinnern?
 
-Nein, es gibt keine Erinnerungswarnungen, die die Support-Ticketbenutzer über das bevorstehende Ende des Supportzeitraums informieren. Es liegt in der Verantwortung des Ticketöffners, die Enddaten der Unterstützung für die Adobe Commerce-Version zu kennen, auf der sie sich befinden. Diese Daten finden Sie in unserer [Adobe Commerce Software Lifecycle-Richtlinie](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+Nein, es gibt keine Erinnerungswarnungen, die die Support-Ticketbenutzer über das bevorstehende Ende des Supportzeitraums informieren. Es liegt in der Verantwortung des Ticketöffners, die Enddaten des Supports für die Adobe Commerce-Version zu kennen, auf der sie sich befinden. Diese Informationen finden Sie in unserer [Adobe Commerce Software Lifecycle Policy](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ### Wenn ein Support-Ticket für eine Software-Version nach dem Ende des Supportzeitraums für diese Version geöffnet wird, wird es dann dennoch für die Lösung bearbeitet?
 

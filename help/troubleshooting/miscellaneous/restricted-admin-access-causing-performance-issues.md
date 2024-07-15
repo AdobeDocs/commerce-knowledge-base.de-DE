@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Eingeschränkter Administratorzugriff, der Leistungsprobleme verursacht
 
-Dieser Artikel bietet Lösungen für den Fall, dass die Leistung durch die Verwendung von [Admin-Rollen mit eingeschränktem Rollenbereich nach Website](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) in unserem Benutzerhandbuch.
+Dieser Artikel bietet Lösungen für Fälle, in denen die Leistung negativ beeinflusst wird, indem in unserem Benutzerhandbuch [Admin-Rollen verwendet werden, deren Rollenumfang durch die Website](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) eingeschränkt ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,9 +30,9 @@ Das Problem wurde in Adobe Commerce 2.2.10 und 2.3.3 behoben.
 
 Im Folgenden finden Sie die Optionen, um das Problem zu vermeiden:
 
-* Aktualisieren Sie die Adobe Commerce-Anwendungsversion auf 2.2.10 oder 2.3.3. (Anweisungen hierzu finden Sie unter [Aktualisierung der Adobe Commerce-Version der Cloud-Infrastruktur](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation).
+* Aktualisieren Sie die Adobe Commerce-Anwendungsversion auf 2.2.10 oder 2.3.3. (Anweisungen finden Sie unter [Aktualisieren von Adobe Commerce auf Cloud-Infrastruktur-Version](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation).
 * Vermeiden Sie, den Umfang der Benutzerrollen für Administratoren nach Website zu beschränken, sofern möglich.
-* [Senden eines Magento Support-Tickets](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um einen Patch anzufordern, falls dieser verfügbar ist.
+* [Senden Sie ein Magento Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um einen Patch anzufordern, sofern dieser verfügbar ist.
 
 ## Verwandtes Lesen
 

@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51739: Fehler beim Anfordern `structure_id` in `CompanyTeam` GraphQL-Anfrage
+# ACSD-51739: Fehler beim Anfordern von `structure_id` in `CompanyTeam` GraphQL-Anfrage
 
-Der Patch ACSD-51739 behebt das Problem, bei dem ein Fehler zurückgegeben wird, wenn die Variable `structure_id` wird in einer `CompanyTeam` GraphQL-Anfrage. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.34 ist installiert. Die Patch-ID ist ACSD-51739. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
+Der Patch ACSD-51739 behebt das Problem, bei dem ein Fehler zurückgegeben wird, wenn in einer GraphQL-Anfrage `CompanyTeam` der Wert `structure_id` angefordert wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.34 installiert ist. Die Patch-ID ist ACSD-51739. Beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,20 +25,20 @@ Der Patch ACSD-51739 behebt das Problem, bei dem ein Fehler zurückgegeben wird,
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Ein Fehler wird zurückgegeben, wenn die Variable `structure_id` wird in einer `CompanyTeam` GraphQL-Anfrage.
+Ein Fehler wird zurückgegeben, wenn in einer `CompanyTeam` GraphQL-Anfrage die `structure_id` angefordert wird.
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Navigieren Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** und legen *[!UICONTROL Enable Company]* nach *Ja*.
+1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]** und legen Sie *[!UICONTROL Enable Company]* auf *Ja* fest.
 1. Erstellen Sie ein Unternehmen zusammen mit einem Unternehmensadministrator.
 1. Erstellen Sie einen neuen Kunden (*customer1*) und weisen Sie diesem Kunden das (oben erstellte) Unternehmen zu.
 1. Melden Sie sich am Frontend als Unternehmensadministrator an.
-1. Erstellen Sie ein Unternehmensteam und weisen Sie *customer1* per Drag-and-Drop zum Team hinzufügen.
-1. Führen Sie die folgende GraphQl-Abfrage des Unternehmens aus, die Folgendes enthält: `CompanyTeam` mit `structure_id`:
+1. Erstellen Sie ein Unternehmensteam und weisen Sie dem Team mithilfe von Drag &amp; Drop *customer1* zu.
+1. Führen Sie die folgende GraphQl-Abfrage des Unternehmens aus, die `CompanyTeam` mit `structure_id` enthält:
 
    ```GraphQL
    query{
@@ -77,7 +77,7 @@ Es werden keine Fehler zurückgegeben und alle angeforderten Daten sind in der G
 
 <u>Tatsächliche Ergebnisse</u>:
 
-* Die Antwort enthält eine *Interner Server-Fehler*.
+* Die Antwort enthält einen *internen Server-Fehler*.
 * `var/log/exception.log` enthält:
 
   ```
@@ -88,14 +88,14 @@ Es werden keine Fehler zurückgegeben und alle angeforderten Daten sind in der G
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

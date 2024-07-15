@@ -21,18 +21,18 @@ In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.2 beschriebe
 
 ## Problem
 
-<u>Bedingung</u> :
+<u>Precondition</u> :
 
 Aktivieren Sie die Venmo-Zahlung in der Braintree-Konfiguration.
 
 <u>Zu reproduzierende Schritte</u> :
 
 1. Fügen Sie in der Storefront beliebige Artikel zum Warenkorb hinzu.
-1. Fahren Sie mit **Checkout**.
+1. Fahren Sie mit **Checkout** fort.
 1. Wählen Sie die entsprechende Versandmethode aus.
-1. Auswählen **Venmo** als Zahlungsmethode.
-1. Klicks **Bezahlen mit Venmo**.
-1. Klicks **Reihenfolge**.
+1. Wählen Sie **Venmo** als Zahlungsmethode aus.
+1. Klicken Sie auf **Mit Venmo bezahlen**.
+1. Klicken Sie auf **Bestellung platzieren**.
 
 <u>Tatsächliche Ergebnisse</u>:
 

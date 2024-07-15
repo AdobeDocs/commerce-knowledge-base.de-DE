@@ -17,7 +17,7 @@ Dieser Artikel bietet eine Lösung für den Fall, dass ein benutzerdefiniertes S
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce zur Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problem
 
@@ -41,11 +41,11 @@ Adobe Commerce aktualisiert jedes Zertifikat, wenn es 30 Tage nach Ablauf ist.
 
 Wenn ein Händler sich dafür entscheidet, sein eigenes benutzerdefiniertes SSL-Zertifikat zu verwenden, muss es mehr als 30 Tage vor Ablauf des Zertifikats aktualisiert werden, um sicherzustellen, dass es nicht durch ein internes Adobe Commerce-SSL-Zertifikat ersetzt wird.
 
-Wenn Sie sich in einer Situation befinden, in der Ihr benutzerdefiniertes SSL durch unser internes SSL ersetzt wurde und Sie es durch Ihr aktualisiertes benutzerdefiniertes SSL-Zertifikat ersetzen möchten, wenden Sie sich an [Support-Anfrage senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit dem Speicherort, an den Sie die neuen Zertifikatdateien hochgeladen haben. Bitte geben Sie das Anfangsdatum der neuen SSL-Verschlüsselung an. Sobald wir über diese Informationen verfügen, können wir mit der Installation des neuen SSL-Zertifikats fortfahren.
+Wenn Sie sich in einer Situation befinden, in der Ihr benutzerdefiniertes SSL durch unser internes SSL ersetzt wurde und Sie es durch Ihr aktualisiertes benutzerdefiniertes SSL-Zertifikat ersetzen möchten, senden Sie bitte [eine Supportanfrage](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit dem Speicherort, an den Sie Ihre neuen Zertifikatdateien hochgeladen haben. Bitte geben Sie das Anfangsdatum der neuen SSL-Verschlüsselung an. Sobald wir über diese Informationen verfügen, können wir mit der Installation des neuen SSL-Zertifikats fortfahren.
 
 ## Verwandtes Lesen
 
-* [SSL-Zertifikate (TLS) für Magento Commerce Cloud: FAQ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) in unserer Wissensdatenbank.
+* [SSL-Zertifikate (TLS) für Magento Commerce Cloud: FAQ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) in unserer Support-Wissensdatenbank.
 * [Befehlszeilen-Tools-Referenz: magento-cloud-Zertifikat:add](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-cloud.html#certificateadd) in unserer Entwicklerdokumentation.
-* [Checkliste für Launch](https://devdocs.magento.com/cloud/live/site-launch-checklist.html)in unserer Entwicklerdokumentation.
+* [Checkliste für den Start](https://devdocs.magento.com/cloud/live/site-launch-checklist.html) in unserer Entwicklerdokumentation.
 * [Zugriff auf das Site-weite Analyse-Tool](https://docs.magento.com/user-guide/reports/site-wide-analysis-tool.html#step-2-access-site-wide-analysis-tool) in unserem Benutzerhandbuch.

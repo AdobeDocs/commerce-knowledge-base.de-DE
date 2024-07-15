@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Überprüfen des Bereitstellungsprotokolls, ob die Cloud-Benutzeroberfläche *Protokollausschnitt* error
+# Überprüfen des Bereitstellungsprotokolls, wenn in der Cloud-Benutzeroberfläche der Fehler *log snipped* auftritt
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem Adobe Commerce in der Benutzeroberfläche der Cloud-Infrastruktur die *Protokollausschnitt, da es zu lang war* Fehlermeldung beim Versuch, das Bereitstellungsprotokoll auf der Benutzeroberfläche des Cloud-Projekts anzuzeigen. (Gilt nicht für die [Adobe Commerce Cloud-Konsole](https://console.adobecommerce.com/).
+Dieser Artikel bietet eine Lösung für das Problem, bei dem in Adobe Commerce auf der Benutzeroberfläche der Cloud-Infrastruktur der *eingegebene Log angezeigt wird, da die Fehlermeldung* zu lang war, wenn versucht wurde, das Bereitstellungsprotokoll in der Benutzeroberfläche des Cloud-Projekts anzuzeigen. (Gilt nicht für die [Adobe Commerce Cloud-Konsole](https://console.adobecommerce.com/).)
 
 ## Betroffene Produkte
 
@@ -25,16 +25,16 @@ Beim Versuch, das Bereitstellungsprotokoll auf der Benutzeroberfläche des Cloud
 
 ## Zu reproduzierende Schritte
 
-1. Navigieren Sie zur Projekt-URL und klicken Sie auf die Schaltfläche **Status** des betreffenden Einsatzes.
+1. Wechseln Sie zur Projekt-URL und klicken Sie auf den **Status** der betreffenden Bereitstellung.
 1. Wenn das Protokoll zu lang ist, um in der Benutzeroberfläche angezeigt zu werden, wird die Fehlermeldung angezeigt: *Protokollausschnitt, da es zu lang war*.
 
 ## Ursache
 
-Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als &quot;Source of Truth&quot;behandelt werden sollte, insbesondere wenn Sie feststellen, dass die Site nach der Auflistung der Bereitstellung mit dem Status &quot;Success&quot;nicht reagiert oder ordnungsgemäß funktioniert. Sie sollten dies auch mit den Protokollen auf dem Server überprüfen. Siehe Abschnitt [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in unserer Entwicklerdokumentation.
+Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als &quot;Source of Truth&quot;behandelt werden sollte, insbesondere wenn Sie feststellen, dass die Site nach der Auflistung der Bereitstellung mit dem Status &quot;Success&quot;nicht reagiert oder ordnungsgemäß funktioniert. Sie sollten dies auch mit den Protokollen auf dem Server überprüfen. Weitere Informationen finden Sie unter [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in unserer Entwicklerdokumentation.
 
 ## Lösung
 
-1. Stellen Sie sicher, dass Sie [Magento Cloud-CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) in Ihrer lokalen Umgebung installiert.
+1. Stellen Sie sicher, dass [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) in Ihrer lokalen Umgebung installiert ist.
 1. Führen Sie den folgenden Befehl aus:
 
    ```bash
@@ -67,4 +67,4 @@ Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
 * [Adobe Commerce auf Cloud-Infrastruktur > Erstellen und Bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [Adobe Commerce auf Cloud-Infrastruktur > Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [Adobe Commerce in der Cloud-Infrastruktur > Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)

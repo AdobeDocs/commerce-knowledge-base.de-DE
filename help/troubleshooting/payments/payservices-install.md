@@ -25,14 +25,14 @@ Bei der Installation der Zahlungsdienst-Erweiterung wird möglicherweise eine Fe
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Versuchen Sie, [Installieren von Zahlungsdiensten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Versuchen Sie, [Zahlungsdienste zu installieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
 1. Siehe den folgenden Fehler:
 
-   *Es konnte keine passende Version von Package Magento/Payment-Services gefunden werden. Überprüfen Sie die Rechtschreibung des Pakets, Ihre Versionsbeschränkung und ob das Paket in einer Stabilität verfügbar ist, die Ihrer minimalen Stabilität (stabil) entspricht.*
+   *Es konnte keine passende Version von Package Magento/Payment-Services gefunden werden. Überprüfen Sie die Rechtschreibung des Pakets, Ihre Versionsbeschränkung und ob das Paket in einer Stabilität verfügbar ist, die Ihrer Mindeststabilität (stabil) entspricht.*
 
 <u>Erwartetes Ergebnis</u>:
 
-Sie können diesen [Installationsanweisungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) in unserer Entwicklerdokumentation zur erfolgreichen Installation von Zahlungsdiensten.
+Sie können diese [Installationsanweisungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) in unserer Entwicklerdokumentation befolgen, um Zahlungsdienste erfolgreich zu installieren.
 
 <u>Tatsächliches Ergebnis</u>:
 
@@ -44,7 +44,7 @@ Sie haben während der Installation falsche Composer-Schlüssel verwendet.
 
 ### Lösung
 
-Stellen Sie sicher, dass [Ihre Composer-Schlüssel sind mit der Magento-ID verknüpft.](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) bei der Registrierung von Zahlungsdiensten verwendet werden.
+Stellen Sie sicher, dass [Ihre Composer-Schlüssel mit der Magento ID](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) verknüpft sind, die bei der Registrierung von Zahlungsdiensten verwendet wird.
 
 ## Problem - Verwendung des gleichen Datenraums über mehrere Instanzen hinweg
 
@@ -59,7 +59,7 @@ Wenn Sie ein SaaS-Projekt erstellen, generiert Commerce je nach Ihrer Commerce-L
 * Adobe Commerce - Ein Produktionsdatenraum; zwei Testdatenbereiche
 * Magento Open Source - Ein Produktionsdatenraum; keine Testdatenbereiche
 
-Befolgen Sie die Anweisungen unter [Commerce-API-Schlüssel und privater Schlüssel](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) , um Ihre Zahlungsdiensterweiterung erfolgreich zu konfigurieren.
+Befolgen Sie die Anweisungen in [Commerce-API-Schlüssel und privater Schlüssel](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) , um Ihre Zahlungsdiensterweiterung erfolgreich zu konfigurieren.
 
 ## Problem - Nicht genügend Speicher für PHP
 
@@ -67,14 +67,14 @@ Bei der Installation der Zahlungsdienst-Erweiterung wird möglicherweise eine Fe
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Versuchen Sie, [Installieren von Zahlungsdiensten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
+1. Versuchen Sie, [Zahlungsdienste zu installieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
 1. Siehe folgenden Fehler oder Ähnliches:
 
-   *Schwerwiegender Fehler: Zulässige Speichergröße von 2146435072 Byte ausgeschöpft (versucht, 4096 Byte zuzuweisen) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php in Zeile 52*
+   *Schwerwiegender Fehler: Zulässige Speichergröße von 2146435072 Byte erschöpft (versucht, 4096 Byte zuzuweisen) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php in Zeile 52*
 
 <u>Erwartetes Ergebnis</u>:
 
-Sie können diesen [Installationsanweisungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) in unserer Entwicklerdokumentation zur erfolgreichen Installation von Zahlungsdiensten.
+Sie können diese [Installationsanweisungen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) in unserer Entwicklerdokumentation befolgen, um Zahlungsdienste erfolgreich zu installieren.
 
 <u>Tatsächliches Ergebnis</u>:
 
@@ -86,4 +86,4 @@ Der Grenzwert für PHP in Ihrer Umgebung ist nicht hoch genug.
 
 ### Lösung
 
-[Erhöhen Sie die Speicherbegrenzung für PHP.](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#not-enough-memory-for-php) in Ihrer Umgebung in `php.ini`.
+[Erhöhen Sie die Speicherbegrenzung für PHP](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#not-enough-memory-for-php) in Ihrer Umgebung in `php.ini`.

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Der Magento-Patch MDVA-23845 behebt das Problem, dass die E-Mail-Vorlage in Admin nicht in der Vorschau angezeigt werden kann, wenn die JS-Minimierung aktiviert ist.
 
-Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 ist installiert. Die Patch-ID lautet MDVA-23845. Bitte beachten Sie, dass das Problem in Magento Version 2.3.5 behoben wurde.
+Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.20 installiert ist. Die Patch-ID lautet MDVA-23845. Bitte beachten Sie, dass das Problem in Magento Version 2.3.5 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,21 +25,21 @@ Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/hel
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
 <u>Zu reproduzierende Schritte</u> :
 
-1. Aktivieren **JS-Minimierung** in **Admin > Stores > Konfiguration > JavaScript-Einstellungen > JavaScript-Dateien minimieren** = *Ja* .
+1. Aktivieren Sie **JS minification** in **Admin > Stores > Konfiguration > JavaScript-Einstellungen > Minify JavaScript Files** = *Ja* .
 1. Wechseln Sie Magento in den Produktionsmodus.
-1. Navigieren Sie zu **Admin > Marketing > Kommunikation > E-Mail-Vorlagen** .
-1. Klicks **Neue Vorlage hinzufügen** .
-1. Wählen Sie die **Neue Bestellung** Vorlage.
-1. Klicken Sie auf **Vorlage laden** Schaltfläche.
-1. Auffüllen **Vorlagenname** mit **Neue Bestellung.**
-1. Klicken Sie auf **Vorlage speichern** Schaltfläche.
-1. Klicken Sie im Raster E-Mail-Vorlagen auf **Vorschau** -Link in **Aktionen** Spalte.
+1. Gehen Sie zu **Admin > Marketing > Kommunikation > E-Mail-Vorlagen** .
+1. Klicken Sie auf **Neue Vorlage hinzufügen** .
+1. Wählen Sie die Vorlage **Neue Bestellung** aus.
+1. Klicken Sie auf die Schaltfläche **Vorlage laden** .
+1. Füllen Sie **Vorlagenname** mit **Neuer Auftrag** aus.
+1. Klicken Sie auf die Schaltfläche **Vorlage speichern** .
+1. Klicken Sie im Raster E-Mail-Vorlagen in der Spalte **Aktionen** auf den Link **Vorschau** .
 
 <u>Erwartete Ergebnisse</u> :
 
@@ -53,14 +53,14 @@ Die E-Mail-Vorlagenvorschau wird nicht im geöffneten Popup-Fenster angezeigt. D
 
 Um einzelne Patches anzuwenden, verwenden Sie je nach Magento-Produkt die folgenden Links:
 
-* Magento Commerce: DevDocs [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html) .
+* Magento Commerce: DevDocs [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html) .
 * Magento Commerce Cloud: DevDocs [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) .
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
-* [Überprüfen Sie den Patch auf ein Magento-Problem mit dem Quality Patches Tool.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) .
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) .
+* [Überprüfen Sie den Patch auf ein Magento-Problem mit dem Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) .
 
-Weitere Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) Abschnitt.
+Informationen zu anderen im QPT-Tool verfügbaren Patches finden Sie im Abschnitt [Im QPT-Tool verfügbare Patches](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) .

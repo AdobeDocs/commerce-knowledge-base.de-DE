@@ -20,15 +20,15 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.3.x, 2.4.x.
 
 Erstellen Sie eine &quot;gescrubbt&quot;-Dump vom Administrator:
 
-1. Navigieren Sie im Commerce-Admin zu **System** > **Support** > **Datenerfassung**.
-1. Klicks **Neues Backup**.
-1. Klicken Sie nach einigen Minuten auf **Status aktualisieren** (kann länger dauern, alle 5 Minuten wiederholen, bis sie abgeschlossen ist).
-1. Platzieren Sie die generierten Dump-Dateien aus der `/var/support` in den Stammordner von Adobe Commerce.
+1. Wechseln Sie in Commerce Admin zu **System** > **Support** > **Datenerfassung**.
+1. Klicken Sie auf **Neues Backup**.
+1. Klicken Sie nach einigen Minuten auf **Status aktualisieren** (kann länger dauern und alle 5 Minuten wiederholen, bis der Vorgang abgeschlossen ist).
+1. Platzieren Sie die generierten Dump-Dateien aus dem Ordner &quot;`/var/support`&quot;in den Stammordner von Adobe Commerce.
 
 Sie können dann angeben, um den direkten Download-Link zu den Dump-Dateien zu unterstützen (Ihre Store-Adresse und der Dateiname wie angezeigt).
 
-Wenn Sie Probleme beim Erstellen von Dumps aus dem Admin haben, sollten Sie die Verwendung von CLI-Befehlen in Erwägung ziehen, wie unter [Führen Sie die Hilfsprogramme aus](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) in unserer Entwicklerdokumentation.
+Wenn Sie Probleme beim Erstellen von Dumps aus dem Admin haben, sollten Sie die Verwendung von CLI-Befehlen in Erwägung ziehen, wie unter [Ausführen der Support-Dienstprogramme](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-spt-util.html) in unserer Entwicklerdokumentation beschrieben.
 
 ## Verwandtes Lesen
 
-* [Vollständige Datenbanksicherung für Adobe Commerce in der Cloud-Infrastruktur erstellen](/help/how-to/general/create-database-dump-on-cloud.md) in unserer Wissensdatenbank.
+* [Erstellen Sie eine vollständige Datenbanksicherung für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.

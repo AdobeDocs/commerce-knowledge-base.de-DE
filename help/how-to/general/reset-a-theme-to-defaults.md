@@ -41,4 +41,4 @@ Auf diese Weise wird kein Design auf der Store-Ansichtsebene festgelegt. Wenn Si
 
 ## Zusätzliche Informationen
 
-* [Löschen von Ordnern während der Entwicklung](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) in unserer Entwicklerdokumentation
+* [Löschen von Verzeichnissen während der Entwicklung](https://devdocs.magento.com/guides/v2.2/howdoi/php/php_clear-dirs.html) in unserer Entwicklerdokumentation

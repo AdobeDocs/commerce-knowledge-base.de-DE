@@ -23,9 +23,9 @@ Die Inkrement-ID, die in Clustern verwendet wird, wird aufgrund der Funktionswei
 Jeder der drei Server verwaltet seinen eigenen ID-Speicherplatz. Die verwendete Inkrementierung hängt davon ab, welcher MySQL-Haupt-Datenbankserver (je nach relativer Belastung) verwendet wird - also welche Lücken variieren.
 Wenn Sie SSH zu jedem Knoten verwenden und eine Verbindung zur lokalen MySQL-Instanz herstellen, die auf diesem Knoten ausgeführt wird, indem Sie Port 3307 verwenden (anstatt mit dem &quot;main&quot;auf dem Standardport 3306 bereitgestellt zu werden), sehen Sie die folgende Abbildung:
 
-![auto_inkrement](assets/auto_increment_id.png)
+![auto_increment](assets/auto_increment_id.png)
 
-Wenn beispielsweise der gewählte Haupt node 1 ist, wobei `auto_increment_offset = 1`, würde die ID um 1 inkrementiert. Wenn dann zu einem späteren Zeitpunkt ein neuer Hauptknoten ausgewählt wird, z. B. Knoten 3, wobei `auto_increment_offset = 3`, würde sie stattdessen um 3 erhöht werden.
+Wenn der gewählte Haupt beispielsweise node 1 ist, wobei `auto_increment_offset = 1` ist, wird die ID um 1 inkrementiert. Wenn dann zu einem späteren Zeitpunkt ein neuer Hauptknoten ausgewählt wird, z. B. Knoten 3 mit `auto_increment_offset = 3`, wird er stattdessen um 3 inkrementiert.
 
 ## Nützliche Links
 

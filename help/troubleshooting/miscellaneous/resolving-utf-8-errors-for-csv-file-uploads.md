@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # Beheben von UTF-8-Fehlern bei CSV-Datei-Uploads
 
-Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass Sie die Fehlermeldung &quot;CSV-Dateien müssen UTF-8-Kodierung verwenden&quot;erhalten. Diese Fehlermeldung bedeutet, dass die Datei, die Sie hochladen möchten, unzulässige Zeichen oder Zeichen enthält, die nicht zulässig sind. Während die UTF-8-Kodierung [die Zeichenanzahl](https://www.fileformat.info/info/charset/UTF-8/list.htm), sind einige nicht mit Magento BI kompatibel.
+Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass Sie die Fehlermeldung &quot;CSV-Dateien müssen UTF-8-Kodierung verwenden&quot;erhalten. Diese Fehlermeldung bedeutet, dass die Datei, die Sie hochladen möchten, unzulässige Zeichen oder Zeichen enthält, die nicht zulässig sind. Während die UTF-8-Kodierung [die meisten Zeichen](https://www.fileformat.info/info/charset/UTF-8/list.htm) zulässt, sind einige nicht mit Magento BI kompatibel.
 
 Um das Problem zu beheben, müssen Sie die Kodierung der Datei ändern. Das erneute Speichern der Datei mit der richtigen Kodierung löst in der Regel das Problem. Beachten Sie jedoch, dass Sie dabei einige Informationen verlieren können (z. B. die unzulässigen Zeichen werden entfernt).
 
-Wir empfehlen, [Sublime Text](https://www.sublimetext.com/2) , um die Datei zu speichern und zu kodieren.
+Es wird empfohlen, [Sublime-Text](https://www.sublimetext.com/2) zum Speichern und Kodieren der Datei zu verwenden.
 
 1. Öffnen Sie Ihre Datei in Microsoft Excel, Google Docs, Apple Numbers oder Ihrem gewünschten Programm.
-1. Klicken Sie auf &#x200B; &#x200B; **Datei** > **Speichern unter** &#x200B; &#x200B; und wählen Sie die &#x200B; &#x200B; aus. **Kommagetrennte Werte (.csv)** -Format, um die Datei zu speichern.
+1. Klicken Sie &#x200B; auf &#x200B; **Datei** > **Speichern unter** &#x200B; und wählen Sie das Format &#x200B; **Kommagetrennte Werte (.csv)** aus, um die Datei zu speichern.
 1. Öffnen Sie die CSV-Datei in Sublime Text.
-1. Navigieren Sie im Veröffentlichungstext zu &#x200B; &#x200B; **Datei** > **Mit Kodierung speichern** > **UTF-8\* &#x200B;** . Dadurch wird die CSV-Datei mit UTF-8-Kodierung gespeichert.    ![csv_file_UTF-8_sublime_3.2.2_magento_BI.png](assets/csv_file_UTF-8_sublime_3.2.2_magento_BI.png)
-1. [Hochladen der Daten](https://docs.magento.com/mbi/data-analyst/importing-data/connecting-data/using-file-uploader.html) (in unserem Benutzerhandbuch) zu einer neuen Tabelle in Magento BI.
+1. Navigieren Sie in &quot;Text veröffentlichen&quot;zu &#x200B; &#x200B; **Datei** > **Speichern mit Kodierung** > **UTF-8\* &#x200B;** . Dadurch wird die CSV-Datei mit UTF-8-Kodierung gespeichert.    ![csv_file_UTF-8_sublime_3.2.2_magento_BI.png](assets/csv_file_UTF-8_sublime_3.2.2_magento_BI.png)
+1. [Laden Sie die Daten](https://docs.magento.com/mbi/data-analyst/importing-data/connecting-data/using-file-uploader.html) (in unserem Benutzerhandbuch) in eine neue Tabelle in Magento BI hoch.

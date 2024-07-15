@@ -1,5 +1,5 @@
 ---
-title: Sicherheitslücken, die von Sicherheitsscans von Drittanbietern gefunden werden, sollten zu [!DNL HackerOne]
+title: Sicherheitslücken, die von Sicherheitsscans von Drittanbietern gefunden werden, sollten zu [!DNL HackerOne] gehen
 description: Dieser Artikel bietet eine Lösung, um Sicherheitslücken zu beheben, die von Sicherheitsscans von Drittanbietern gefunden werden.
 feature: Security
 role: Developer, Admin
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Sicherheitslücken, die von Sicherheitsscans von Drittanbietern gefunden werden, sollten zu [!DNL HackerOne]
+# Sicherheitslücken, die von Sicherheitsscans von Drittanbietern gefunden werden, sollten zu [!DNL HackerOne] gehen
 
 Dieser Artikel bietet eine Lösung, um Sicherheitslücken zu beheben, die von Sicherheitsscans von Drittanbietern gefunden werden.
 
@@ -25,4 +25,4 @@ Der Händler führte einen PEN-Test über eine unabhängige Sicherheitsagentur d
 
 ## Lösungen
 
-Sicherheitslücken, die von Sicherheitsprüfungen von Drittanbietern gefunden werden, sollten an die [!DNL HackerOne] Website. Adobe Commerce hat keinen direkten Ansprechpartner bei [!DNL HackerOne], damit Sie sich direkt an [!DNL HackerOne]. Adobe verarbeitet nur den Bericht MST (Magento Security Scan Tool).
+Sicherheitslücken, die von Sicherheitsprüfungen von Drittanbietern gefunden werden, sollten an die [!DNL HackerOne]-Website gesendet werden. Adobe Commerce hat keinen direkten Kontaktpunkt bei [!DNL HackerOne], daher sollten Sie direkt zu [!DNL HackerOne] gelangen. Adobe verarbeitet nur den Bericht MST (Magento Security Scan Tool).

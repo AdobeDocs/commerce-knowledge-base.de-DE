@@ -26,7 +26,7 @@ In diesem Artikel wird ein bekanntes B2B-Problem in Adobe Commerce 2.4.2 beschri
 
 <u>Zu reproduzierende Schritte</u> :
 
-1. Warenkorb erstellen **Preisregel** die mit einer Zahlungsmethode verknüpft ist (Beispiel: Paypal-Benutzer erhalten einen Rabatt von 20 %.)
+1. Erstellen Sie einen Warenkorb **Preisregel** , der an eine Zahlungsmethode gebunden ist (Beispiel: Paypal-Benutzer erhalten einen Rabatt von 20 %).
 1. Erstellen Sie eine Bestellung (Bestellformular) und wählen Sie Paypal als Zahlungsmethode aus. Der Rabatt wird angewendet.
 1. Die Bestellung wird genehmigt.
 1. Gehen Sie zur Zahlungsseite, um die Bestellung abzuschließen.
@@ -36,7 +36,7 @@ In diesem Artikel wird ein bekanntes B2B-Problem in Adobe Commerce 2.4.2 beschri
 
 Der Rabatt für die Zahlungsmethode bleibt auf die Bestellsumme angewendet.  Es wird keine Fehlermeldung angezeigt. Der Store-Eigentümer kann dies durch Überprüfen des Bestellverlaufs sehen.
 
-<u>Erwartete Ergebnisse</u> :Der Rabatt für die Zahlungsmethode wird wie erwartet aus der Bestellsumme entfernt.
+<u>Erwartete Ergebnisse</u> : Der Rabatt für die Zahlungsmethode wird wie erwartet aus der Bestellsumme entfernt.
 
 ## Lösung
 

@@ -21,13 +21,13 @@ Der Artikel enthält einen Link zum Patch für ein bekanntes Adobe Commerce 2.3.
 
 ## Problem
 
-Adobe Commerce fordert Kunden auf, sich anzumelden, indem sie diese Meldung anzeigen: *&quot;Dieses Konto wird nicht bestätigt. Klicken Sie hier, um die Bestätigungs-E-Mail erneut zu senden.&quot;*. Die **Hier klicken** -Link sollte die Seite mit dem Link zur Sendebestätigung öffnen, ist jedoch inaktiv.
+Adobe Commerce fordert Kunden auf, sich mit der folgenden Meldung anzumelden: *&quot;Dieses Konto wird nicht bestätigt. Klicken Sie hier , um die Bestätigungs-E-Mail &quot;* erneut zu senden. Der Link **Hier klicken** sollte die Seite mit dem Link zur Bestätigung des Versands öffnen, ist jedoch inaktiv.
 
 ## Lösung
 
-Ein Patch für dieses Problem ist in den technischen Ressourcen von Adobe Commerce verfügbar: [Patch zur Kontobestätigungs-E-Mail-Link-Ausgabe für Adobe Commerce 2.3.5 erneut senden](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). In Adobe Commerce 2.3.6, das ab 4. Quartal 2020 veröffentlicht werden soll, wird eine permanente Korrektur verfügbar sein.
+Ein Patch für dieses Problem ist in den technischen Ressourcen von Adobe Commerce verfügbar: [Patch zur Bestätigung des E-Mail-Links zur Kontobestätigung erneut senden für Adobe Commerce 2.3.5](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). In Adobe Commerce 2.3.6, das ab 4. Quartal 2020 veröffentlicht werden soll, wird eine permanente Korrektur verfügbar sein.
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen zum Anwenden eines Composer-Patches.
+Anweisungen zum Anwenden eines Composer-Patches finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Verwandtes Lesen
 
@@ -39,4 +39,4 @@ Artikel in unserer Support-Wissensdatenbank und Entwicklerdokumentation für bek
 * [Adobe Commerce fordert Kunden auf, sich über einen ungültigen Link anzumelden](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
 * [Bekanntes Problem bei der Produktanzahl für Massenaktionen in Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 * [Patch für Amazon Pay-out-Problem in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-* [Bekannte Probleme in Adobe Commerce 2.3.5](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+* [Bekannte Probleme mit Adobe Commerce 2.3.5](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

@@ -27,9 +27,9 @@ Während der Installation wird eine Meldung ähnlich der folgenden angezeigt:
 
 Versuchen Sie jeden der folgenden Schritte einzeln und versuchen Sie dann erneut, Ihre Installation durchzuführen.
 
-1. Führen Sie den Web-Setup-Assistenten aus. Die Module sind unter  **Erweiterte Modulkonfigurationen**. So deaktivieren Sie die **Magento\_BundleSampleData** -Modul, löschen Sie die **Magento\_BundleSampleData** aktivieren, wie in der folgenden Abbildung dargestellt.
+1. Führen Sie den Web-Setup-Assistenten aus. Module werden unter **Erweiterte Modulkonfigurationen** aufgeführt. Um das Modul **Magento\_BundleSampleData** zu deaktivieren, deaktivieren Sie das Kontrollkästchen **Magento\_BundleSampleData** , wie in der folgenden Abbildung dargestellt.
 
    ![tshooting_bundlesampledata.png](assets/tshoot_bundlesampledata.png)
 
 1. Löschen Sie den gesamten Browserverlauf und alle Daten aus Ihrem Webbrowser.
-1. Wenn Sie Chrome verwenden, löschen Sie alle Browserdaten, die mit Ihrer Site verbunden sind.  Navigieren Sie zu **Einstellungen** > **Erweiterte Optionen** > **Datenschutz** > **Inhaltseinstellungen** > **Alle Cookies und Site-Daten**. Klicken Sie in der Spalte Site auf die Adresse Ihres Adobe Commerce-Servers und klicken Sie auf **Alle löschen**.
+1. Wenn Sie über Chrome verfügen, löschen Sie alle Browserdaten, die mit Ihrer Site verbunden sind.  Navigieren Sie zu **Einstellungen** > **Erweiterte Optionen** > **Datenschutz** > **Inhaltseinstellungen** > **Alle Cookies und Site-Daten**. Klicken Sie in der Spalte &quot;Site&quot;auf die Adresse Ihres Adobe Commerce-Servers und klicken Sie auf **Alle entfernen**.

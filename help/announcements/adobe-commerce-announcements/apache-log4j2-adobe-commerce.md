@@ -14,4 +14,4 @@ ht-degree: 0%
 
 # Sicherheitslücke von Apache log4j2 in Adobe Commerce
 
-Weitere Informationen finden Sie unter [Sicherheitslücke bei Apache Log4j2 in Adobe Commerce](https://community.magento.com/t5/Magento-DevBlog/Apache-Log4j2-Vulnerability-in-Adobe-Commerce/ba-p/488683) DevBlog-Beitrag für die neueste Adobe Commerce-Kommunikation zur Sicherheitslücke der Apache log4j-Bibliothek.
+Im [Apache Log4j2-Schwachstelle in Adobe Commerce](https://community.magento.com/t5/Magento-DevBlog/Apache-Log4j2-Vulnerability-in-Adobe-Commerce/ba-p/488683) DevBlog-Beitrag finden Sie die aktuelle Adobe Commerce-Kommunikation zur Sicherheitslücke der Apache log4j-Bibliothek.

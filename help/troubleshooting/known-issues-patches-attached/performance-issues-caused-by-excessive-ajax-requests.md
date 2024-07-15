@@ -17,7 +17,7 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Leistungspr
 
 ## Problem
 
-Möglicherweise sendet Adobe Commerce redundante [Ajax-Anforderungen](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) von der Storefront zum Server, um die Bannerinformationen und Kundeninformationen zu erhalten. Diese Ajax-Anforderungen wirken sich auf die Leistung aus, insbesondere bei Bedingungen mit hoher Auslastung (hohes Volumen und hohes Traffic). Wenn die Banner-Funktion also nicht verwendet wird, wird empfohlen, [Deaktivieren der Ausgabe des Adobe Commerce-Bannermoduls](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) und wenden Sie den Patch an, um das Abrufen von Kundeninformationen zu verbessern.
+Adobe Commerce sendet möglicherweise redundante [Ajax-Anfragen](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) vom Store an den Server, um die Bannerinformationen und Kundeninformationen zu erhalten. Diese Ajax-Anforderungen wirken sich auf die Leistung aus, insbesondere bei Bedingungen mit hoher Auslastung (hohes Volumen und hohes Traffic). Wenn die Bannerfunktion also nicht verwendet wird, wird empfohlen, die Ausgabe des Adobe Commerce-Bannermoduls ](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) vollständig zu deaktivieren und den Patch anzuwenden, um das Abrufen von Kundeninformationen zu verbessern.[
 
 ## Patch
 
@@ -32,10 +32,10 @@ Der Patch gilt für die folgenden Produkte und Versionen:
 * Adobe Commerce auf Cloud-Infrastruktur 2.2.9
 * Adobe Commerce vor Ort 2.2.9
 
-Wenn Sie eine andere Version von Adobe Commerce haben, sollten Sie erwägen, auf die neueste Version 2.3.x zu aktualisieren. Wenn dies derzeit keine Option ist, bitten Sie [Adobe Commerce Support kontaktieren](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und fordern Sie einen Patch für Ihre Version an.
+Wenn Sie eine andere Version von Adobe Commerce haben, sollten Sie erwägen, auf die neueste Version 2.3.x zu aktualisieren. Wenn dies derzeit keine Option ist, wenden Sie sich bitte an den Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und fordern Sie einen Patch für Ihre Version an.[
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

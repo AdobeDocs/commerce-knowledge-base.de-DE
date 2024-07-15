@@ -42,11 +42,11 @@ Sie können die Bereitstellung erfolgreich durchführen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Sie werden nicht erfolgreich bereitgestellt. In den Protokollen wird ein Bereitstellungsfehler mit einer Meldung ähnlich der folgenden angezeigt: *Es gibt keine Befehle im Cache-Namespace*.
+Sie werden nicht erfolgreich bereitgestellt. In den Protokollen wird ein Bereitstellungsfehler mit einer Meldung ähnlich der folgenden *Es gibt keine Befehle im Cache-Namespace*.
 
 ### Ursache
 
-Die **core_config_data** -Tabelle enthält Konfigurationen für eine Store-ID oder Website-ID, die nicht mehr in der Datenbank vorhanden ist. Dies tritt auf, wenn Sie eine Datenbanksicherung aus einer anderen Instanz/Umgebung importiert haben und die Konfigurationen für diese Bereiche in der Datenbank verbleiben, obwohl die zugehörigen Stores/Websites gelöscht wurden.
+Die Tabelle **core_config_data** enthält Konfigurationen für eine Store-ID oder Website-ID, die nicht mehr in der Datenbank vorhanden ist. Dies tritt auf, wenn Sie eine Datenbanksicherung aus einer anderen Instanz/Umgebung importiert haben und die Konfigurationen für diese Bereiche in der Datenbank verbleiben, obwohl die zugehörigen Stores/Websites gelöscht wurden.
 
 ### Lösung
 
@@ -82,7 +82,7 @@ Um dieses Problem zu beheben, identifizieren Sie die ungültigen Zeilen, die aus
 
    `bin/magento`
 
-   Wenn Sie einen Fehler wie den folgenden erhalten, der anzeigt, dass die angeforderte Website mit der ID X nicht gefunden wurde, verbleiben Konfigurationen in der Datenbank von Website(en) sowie von gelöschten Stores.
+   Wenn Sie einen Fehler wie den folgenden erhalten, der anzeigt, dass die angeforderte Website mit der ID X nicht gefunden wurde, verbleiben Konfigurationen        in der Datenbank von der/den Website(s) sowie von den/den Stores, die gelöscht wurden.
 
    ```
    In WebsiteRepository.php line 110:
@@ -102,7 +102,7 @@ Um dieses Problem zu beheben, identifizieren Sie die ungültigen Zeilen, die aus
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
    ```
 
-Um sicherzustellen, dass die Lösung funktioniert hat, führen Sie die `bin/magento` erneut. Sie sollten die Fehler nicht mehr sehen und können sie erfolgreich bereitstellen.
+Um sicherzustellen, dass die Lösung funktioniert hat, führen Sie den Befehl `bin/magento` erneut aus. Sie sollten die Fehler nicht mehr sehen und können sie erfolgreich bereitstellen.
 
 ## Verwandtes Lesen
 

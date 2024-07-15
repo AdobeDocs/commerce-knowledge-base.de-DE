@@ -34,11 +34,11 @@ Diese Ausnahmen ergeben sich aus den Einstellungen für Dateisystemberechtigunge
 
 ### Lösung
 
-[Legen Sie die Berechtigungen für das Dateisystem erneut fest.](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) als Benutzer mit `root` -Berechtigungen.
+[Legen Sie als Benutzer mit `root` -Berechtigungen das Eigentum und die Berechtigungen des Dateisystems erneut fest](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html).
 
 ## Symptom (Produktionsmodus)
 
-Wenn Sie derzeit für [Produktionsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html), schlägt die Installation der Beispieldaten fehl, wenn Sie [Magento-Beispieldaten:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) command:
+Wenn Sie derzeit für den [Produktionsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) festgelegt sind, schlägt die Installation der Beispieldaten fehl, wenn Sie den Befehl [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) verwenden:
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -46,9 +46,9 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 ### Lösung
 
-Installieren Sie keine Beispieldaten im Produktionsmodus. Wechseln Sie in den Entwicklermodus und löschen Sie einige `var` und versuchen Sie es erneut.
+Installieren Sie keine Beispieldaten im Produktionsmodus. Wechseln Sie in den Entwicklermodus, löschen Sie einige `var`-Verzeichnisse und versuchen Sie es erneut.
 
-Geben Sie die folgenden Befehle in der Reihenfolge ein, die als [Adobe Commerce-Dateisysteminhaber](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
+Geben Sie die folgenden Befehle in der Reihenfolge ein, die als [Adobe Commerce-Dateisysteminhaber](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html) angezeigt wird:
 
 ```php
 cd <magento_root>
@@ -107,15 +107,15 @@ Dieser Fehler tritt auf, wenn die maximale konfigurierte Ausführungszeit Ihrer 
 
 ### Lösung
 
-Als Benutzer mit `root` Berechtigungen, ändern `php.ini` um den Wert von `max_execution_time` auf 600 oder mehr. (600 Sekunden sind 10 Minuten. Sie können den Wert beliebig erhöhen.) Sie sollten `max_execution_time` zurück zum vorherigen Wert, nachdem die Installation erfolgreich war.
+Ändern Sie als Benutzer mit `root` -Berechtigungen `php.ini`, um den Wert von `max_execution_time` auf 600 oder mehr zu erhöhen. (600 Sekunden sind 10 Minuten. Sie können den Wert beliebig erhöhen.) Sie sollten `max_execution_time` wieder auf den vorherigen Wert setzen, nachdem die Installation erfolgreich war.
 
-Wenn Sie sich nicht sicher sind, wo `php.ini` befindet, geben Sie den folgenden Befehl ein:
+Wenn Sie nicht sicher sind, wo sich `php.ini` befindet, geben Sie den folgenden Befehl ein:
 
 ```php
 php --ini
 ```
 
-Der Wert von `Loaded Configuration File` ist die `php.ini` müssen Sie ändern.
+Der Wert von `Loaded Configuration File` ist der `php.ini`, den Sie ändern müssen.
 
 >[!NOTE]
 >

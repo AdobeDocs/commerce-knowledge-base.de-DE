@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Anpassen der Designkonfiguration in der Commerce Admin
 
-Die aktuellsten Informationen zum Anpassen der Designkonfiguration in Commerce Admin finden Sie unter [Adobe Commerce Admin Design anpassen](https://devdocs.magento.com/guides/v2.4/howdoi/admin/customize_admin.html) in unserer Entwicklerdokumentation.
+Die aktuellsten Informationen zum Anpassen der Designkonfiguration in Commerce Admin finden Sie unter [Anpassen des Adobe Commerce Admin Designs](https://devdocs.magento.com/guides/v2.4/howdoi/admin/customize_admin.html) in unserer Entwicklerdokumentation.

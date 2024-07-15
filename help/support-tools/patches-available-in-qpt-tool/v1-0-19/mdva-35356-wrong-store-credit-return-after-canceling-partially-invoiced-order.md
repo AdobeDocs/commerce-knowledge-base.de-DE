@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-35356: Falsche Stornobestätigung nach Stornierung teilweise in Rechnung gestellter Bestellungen
 
-Der Patch MDVA-35356 behebt das Problem mit einer falschen Rückgabe von Store-Krediten nach teilweise fakturierter Auftragsstornierung. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.19 ist installiert. Die Patch-ID lautet MDVA-35356. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
+Der Patch MDVA-35356 behebt das Problem mit einer falschen Rückgabe von Store-Krediten nach teilweise fakturierter Auftragsstornierung. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.19 installiert ist. Die Patch-ID lautet MDVA-35356. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,16 +27,16 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.3.0-2.4.2
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie drei einfache Produkte.
-1. Erstellen Sie einen neuen Benutzer und weisen Sie eine Store-Gutschrift zu (Beispiel: Store-Gutschrift = *10 $,* einfache Produktpreise = *100$*, *200$*, und *300$*).
+1. Erstellen Sie einen neuen Benutzer und weisen Sie Speichergutschriften zu (Beispiel: Store Credit = *$10,* einfache Produktpreise = *$100*, *$200* und *$300*).
 1. Melden Sie sich mit dem obigen Benutzer an und fügen Sie die drei Produkte zum Warenkorb hinzu.
-1. Sehen Sie sich die drei Produkte im Warenkorb an und verwenden Sie die Gutschrift für einen Teil der Bestellung (Beispiel: bezahlt mit **Überprüfen/Monatsbestellung**).
+1. Sehen Sie sich die drei Produkte im Warenkorb an und verwenden Sie die Gutschrift für einen Teil der Bestellung (Beispiel: Bezahlt mit **Scheck-/Money-Bestellung**).
 1. Führen Sie zwei Rechnungen für die Bestellung über die API aus, eine für Produkt 1 und eine für Produkt 2:
 
    ```php
@@ -44,7 +44,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.3.0-2.4.2
    ```
 
 1. Beachten Sie, dass das Store-Guthaben vollständig auf die erste Rechnung angewendet wird.
-1. &#x200B; Beachten Sie, dass das Konto für das Geschäft *0*.
+1. &#x200B; beachten Sie, dass der Store-Guthaben = *0* ist.
 1. Abbrechen Sie die Bestellung und sehen Sie, dass zwei Elemente in Rechnung gestellt und das dritte Element abgebrochen wird.
 1. Beobachten Sie das Kreditkonto des Stores.
 
@@ -60,14 +60,14 @@ Der volle Store-Guthaben wird zurückgegeben: der Saldo beträgt 10 USD.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

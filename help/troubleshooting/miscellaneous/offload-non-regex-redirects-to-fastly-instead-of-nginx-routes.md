@@ -17,7 +17,7 @@ In diesem Thema wird eine Lösung für ein typisches Leistungsproblem vorgeschla
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur (alle Versionen) `Master/Production/Staging` Umgebungen nutzen
+* Adobe Commerce in Cloud-Infrastruktur (alle Versionen) `Master/Production/Staging`-Umgebungen, die Fastly nutzen
 
 ## Problem
 
@@ -25,9 +25,9 @@ In Adobe Commerce in der Cloud-Infrastruktur kann eine große Anzahl von Nicht-R
 
 ## Ursache
 
-Die `routes.yaml` in der Datei `.magento/routes.yaml` definiert Routen für Ihre Adobe Commerce in der Cloud-Infrastruktur.
+Die Datei &quot;`routes.yaml`&quot; im Ordner &quot;`.magento/routes.yaml`&quot; definiert Routen für Ihre Adobe Commerce in der Cloud-Infrastruktur.
 
-Wenn die Größe Ihrer `routes.yaml` -Datei 32 KB oder größer ist, sollten Sie Ihre Nicht-Regex-Umleitungen/Umschreibungen zu Fastly abladen.
+Wenn die Größe Ihrer `routes.yaml` -Datei 32 KB oder größer ist, sollten Sie Ihre Nicht-Regex-Umleitungen/Umschreibungen auf Fastly abladen.
 
 Diese Nginx-Ebene kann nicht viele Nicht-Regex-Umleitungen/Umschreibungen verarbeiten, da sonst Leistungsprobleme auftreten.
 
@@ -39,11 +39,11 @@ In den folgenden Schritten wird beschrieben, wie Sie Umleitungen auf Fastly stat
 
 1. Erstellen Sie ein Edge-Wörterbuch.
 
-   Sie können zunächst [VCL-Snippets in Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) , um ein Kantenwörterbuch zu definieren. Diese enthält die Umleitungen.
+   Zunächst können Sie [VCL-Snippets in Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) verwenden, um ein Kantenwörterbuch zu definieren. Diese enthält die Umleitungen.
 
    Einige Vorbehalte hierzu:
 
-   * Fastly kann Regex bei Wörterbucheinträgen nicht ausführen. Es ist nur eine genaue Übereinstimmung. Weitere Informationen zu diesen Einschränkungen finden Sie unter [Fastly-Dokumente zu Einschränkungen bei Edge-Wörterbüchern](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
+   * Fastly kann Regex bei Wörterbucheinträgen nicht ausführen. Es ist nur eine genaue Übereinstimmung. Weitere Informationen zu diesen Einschränkungen finden Sie unter [Fastly&#39;s docs on edge dictionary limits](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
    * Fastly hat eine Grenze von 1000 Einträgen in einem Wörterbuch. Fastly kann diese Grenze erweitern, aber das führt zum dritten Höhepunkt.
    * Jedes Mal, wenn Sie die Einträge aktualisieren und diese aktualisierte VCL auf allen Knoten bereitstellen, wird die geometrische Ladezeit mit erweiterten Wörterbüchern verlängert. Das bedeutet, dass ein 2000-Einträge-Wörterbuch tatsächlich 3 x 4 x 4 x langsamer lädt als ein 1000-Einträge-Wörterbuch. Dies ist jedoch nur ein Problem bei der Bereitstellung des VCL (Aktualisierung des Wörterbuchs oder Änderung des VCL-Funktionscodes).
 
@@ -59,7 +59,7 @@ In den folgenden Schritten wird beschrieben, wie Sie Umleitungen auf Fastly stat
 
    Wenn die URL-Suche erfolgt, wird der Vergleich durchgeführt, um den benutzerspezifischen Fehlercode anzuwenden, wenn eine Übereinstimmung gefunden wird.
 
-   Verwenden Sie ein anderes VCL-Snippet, um so etwas wie Folgendes hinzuzufügen: `vcl_recv`:
+   Verwenden Sie ein anderes VCL-Snippet, um `vcl_recv` etwa Folgendes hinzuzufügen:
 
    ```
         declare local var.redir-path STRING;
@@ -74,9 +74,9 @@ In den folgenden Schritten wird beschrieben, wie Sie Umleitungen auf Fastly stat
 
 1. Verwalten Sie die Umleitung.
 
-   Wenn eine Übereinstimmung gefunden wird, wird die Aktion ausgeführt, die dafür definiert ist `obj.status`, in diesem Fall eine 301 dauerhafte Umleitung.
+   Wenn eine Übereinstimmung gefunden wird, wird die Aktion ausgeführt, die für diesen `obj.status` definiert ist, in diesem Fall eine 301 dauerhafte Umleitung zum Verschieben.
 
-   Verwenden Sie einen endgültigen Ausschnitt in `vcl_error` , um die 301-Fehler-Codes zurück an den Client zu senden:
+   Verwenden Sie einen endgültigen Ausschnitt in `vcl_error`, um die 301-Fehlercodes zurück an den Client zu senden:
 
    ```
      if (obj.status == 912) {
@@ -87,7 +87,7 @@ In den folgenden Schritten wird beschrieben, wie Sie Umleitungen auf Fastly stat
           }
    ```
 
-   Mit diesem Block überprüfen wir, ob der Fehlercode von `vcl_recv` stimmt überein, und wenn ja, setzen wir den Speicherort auf die übergebene Fehlermeldung, ändern dann den Statuscode auf 301 und die Nachricht auf &quot;Dauerhaft verschoben&quot;. Zu diesem Zeitpunkt sollte die Antwort bereit sein, zum Client zurückzukehren.
+   Mit diesem Block überprüfen wir, ob der von `vcl_recv` übergebene Fehlercode übereinstimmt. Wenn ja, setzen wir den Speicherort auf die übergebene Fehlermeldung, ändern dann den Statuscode auf 301 und die Nachricht auf &quot;Dauerhaft verschoben&quot;. Zu diesem Zeitpunkt sollte die Antwort bereit sein, zum Client zurückzukehren.
 
 ### Staging-Service
 
@@ -100,6 +100,6 @@ Wenn Sie keine Adobe Commerce-Staging-Umgebung ausführen möchten, aber sehen m
 ## Verwandtes Lesen
 
 * [Fastly VCL-Referenz](https://docs.fastly.com/vcl/)
-* [Routen konfigurieren](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) in unserer Entwicklerdokumentation.
-* [Schnelles Einrichten](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) in unserer Entwicklerdokumentation.
+* [Konfigurieren von Routen](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) in unserer Entwicklerdokumentation.
+* [Richten Sie Fastly](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) in unserer Entwicklerdokumentation ein.
 * [VCL-Datenblatt für reguläre Ausdrücke](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) in unserer Entwicklerdokumentation.

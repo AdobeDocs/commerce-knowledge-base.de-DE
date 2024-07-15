@@ -1,6 +1,6 @@
 ---
 title: Fehler beim Platzieren der Bestellung bei Authorize.net Sandbox-Konto (Auf dem Server ist ein Fehler aufgetreten)
-description: Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung "*Auf dem Server ist ein Fehler aufgetreten*", wenn Sie eine Bestellung mit Authorize.Net Direct Post aufgeben.
+description: In diesem Artikel wird die Fehlermeldung "*Auf dem Server ist ein Fehler aufgetreten*"bei der Auftragserteilung mit Authorize.Net Direct Post korrigiert.
 exl-id: 764a550a-3373-483c-843d-d8c848dcee35
 feature: Compliance, Console, Customer Service, Orders, Payments
 role: Developer
@@ -13,34 +13,34 @@ ht-degree: 0%
 
 # Fehler beim Platzieren der Bestellung bei Authorize.net Sandbox-Konto (Auf dem Server ist ein Fehler aufgetreten)
 
-Dieser Artikel enthält eine Korrektur für *Auf dem Server ist ein Fehler aufgetreten.*&quot; Fehlermeldung bei der Bestellung mit Authorize.Net Direct Post.
+Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Ein Fehler ist auf dem Server*&quot;beim Platzieren einer Bestellung mit Authorize.Net Direct Post.
 
 >[!WARNING]
 >
->**Hinweis zu veralteten Versionen**
+>**Hinweis zur Einstellung der Verwendung**
 >
->Aufgrund der Zahlungsdienstrichtlinie [PSD2](https://docs.magento.com/user-guide/v2.3/stores/compliance-payment-services-directive.html) Aufgrund der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net veraltet wird und in Zukunft nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen Ihnen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zum entsprechenden [Commerce Marketplace-Erweiterung](https://marketplace.magento.com/extensions.html).
+>Aufgrund der Zahlungsdienstrichtlinie [PSD2](https://docs.magento.com/user-guide/v2.3/stores/compliance-payment-services-directive.html) und der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net veraltet wird und zukünftig nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen Ihnen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zur entsprechenden [Commerce Marketplace-Erweiterung](https://marketplace.magento.com/extensions.html) zu wechseln.
 >
->**Diese Integration wird aus der Adobe Commerce-Version 2.4.0 entfernt und ist von den aktuellen Versionen 2.3 veraltet.**
+>**Diese Integration wird aus der Adobe Commerce-Version 2.4.0 entfernt und ist von den aktuellen Versionen 2.3 entfernt.**
 >
->Weitere Informationen zum sicheren Übergang von veralteten Zahlungsintegrationen finden Sie in der [DevBlog](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Magento-core-payment-integrations/ba-p/426445).
+>Weitere Informationen zum Erstellen eines sicheren Übergangs von veralteten Zahlungsintegrationen finden Sie in unserem [DevBlog](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Magento-core-payment-integrations/ba-p/426445) .
 
 ## Problem
 
-Platzieren einer Bestellung mithilfe von [Authorize.Net Direct Post](https://docs.magento.com/user-guide/v2.3/payment/authorize-net-direct-post.html) Sandbox-Konto verursacht eine Fehlermeldung:
+Wenn Sie eine Bestellung mit dem Sandbox-Konto [Authorize.Net Direct Post](https://docs.magento.com/user-guide/v2.3/payment/authorize-net-direct-post.html) aufgeben, wird eine Fehlermeldung angezeigt:
 
 >>
 &quot;Auf dem Server ist ein Fehler aufgetreten. Versuchen Sie bitte, die Bestellung erneut aufzugeben.&quot;
 
 ## Ursache 1: Testmodus ist aktiviert
 
-Es scheint nicht offensichtlich zu sein, aber die **Testmodus** muss auf **Nein** auch beim Testen mit dem Sandbox-Konto.
+Es scheint nicht offensichtlich zu sein, aber die Einstellung **Testmodus** von Authorize.net muss auch beim Testen mit dem Sandbox-Konto auf **Nein** gesetzt werden.
 
 ## Lösung 1: Testmodus deaktivieren
 
-1. Navigieren Sie zu **Stores** > **Konfiguration** > **Vertrieb** > **Zahlungsmethoden** > **Andere Zahlungsmethoden** > **Authorize.net Briefpost**.
-1. Satz **Testmodus** auf &quot;Nein&quot;(Deaktivieren) **Systemwert verwenden** und wählen Sie dann im Menü &quot;Nein&quot; aus).
-1. Klicks **Konfiguration speichern**.
+1. Wechseln Sie zu **Geschäfte** > **Konfiguration** > **Verkauf** > **Zahlungsmethoden** > **Sonstige Zahlungsmethoden** > **Authorize.net Direkte Post**.
+1. Setzen Sie **Testmodus** auf &quot;Nein&quot;(deaktivieren Sie **Systemwert verwenden** und wählen Sie dann im Menü &quot;Nein&quot; aus).
+1. Klicken Sie auf **Konfiguration speichern**.
 
 ![authorize-net_test-mode_setting.png](/help/troubleshooting/miscellaneous/assets/authorize-net_test-mode_setting.png)
 
@@ -56,12 +56,12 @@ Die Einstellungen Authorize.net können falsche URL-Adressen für die kritischen
 
 ## Wenn nichts hilfreich ist: Debug-Informationen abrufen
 
-Wenn die Platzierung einer Bestellung mit Authorize.net mit einem nicht informativen Fehler fehlschlägt *&quot;Irgendetwas ist schiefgelaufen&quot;* Fehler, überprüfen Sie die Adobe Commerce `debug.log`.
+Wenn die Platzierung einer Bestellung mit Authorize.net mit einem nicht informativen Fehler *&quot;Irgendetwas ist schief gegangen&quot;* fehlschlägt, überprüfen Sie die Adobe Commerce `debug.log`.
 
 ### Transact.dll
 
-In diesem Fall `debug.log` leer ist, überprüfen Sie die **transact.dll** Antwort in der Konsole Ihres Webbrowsers:
+Wenn der `debug.log` leer ist, überprüfen Sie die Antwort **transact.dll** in der Konsole Ihres Webbrowsers:
 
 1. Öffnen Sie die Konsole.
-1. Bevor Sie eine Bestellung aufgeben, gehen Sie zu **Netzwerk** Registerkarte und wählen Sie **Protokoll beibehalten**.    ![web-console_network_preserve-log.png](assets/web-console_network_preserve-log.png)
-1. Antworten filtern nach **transact.dll** um eine Antwortmeldung mit einem möglichen Fehler anzuzeigen.    ![transact-dll_web-console_response.png](assets/transact-dll_web-console_response.png)
+1. Bevor Sie eine Bestellung aufgeben, gehen Sie zur Registerkarte **Netzwerk** und wählen Sie **Protokoll beibehalten** aus.    ![web-console_network_preserve-log.png](assets/web-console_network_preserve-log.png)
+1. Filtern Sie die Antworten nach **transact.dll**, um eine Antwortmeldung mit einem möglichen Fehler anzuzeigen.    ![transact-dll_web-console_response.png](assets/transact-dll_web-console_response.png)

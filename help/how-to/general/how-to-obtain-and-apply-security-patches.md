@@ -1,6 +1,6 @@
 ---
-title: Erhalten und Anwenden [!UICONTROL security patch]
-description: Dieser Artikel enthält Anweisungen zum Abrufen und Anwenden einer [!UICONTROL security patch] wurde veröffentlicht, Anweisungen sind jedoch nicht verfügbar.
+title: Abrufen und Anwenden von [!UICONTROL security patch]
+description: Dieser Artikel enthält Anweisungen zum Abrufen und Anwenden eines [!UICONTROL security patch] , das veröffentlicht wurde, Anweisungen jedoch nicht verfügbar sind.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
 source-git-commit: b15a1d008b6cc2bdce797768e6ee7029a747e6da
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# So erhalten und anwenden Sie eine [!UICONTROL security patch]
+# Abrufen und Anwenden eines [!UICONTROL security patch]
 
-Dieser Artikel enthält Anweisungen zum Abrufen und Anwenden einer [!UICONTROL security patch] wurde veröffentlicht, Anweisungen sind jedoch nicht verfügbar.
+Dieser Artikel enthält Anweisungen zum Abrufen und Anwenden eines [!UICONTROL security patch] , das veröffentlicht wurde, Anweisungen jedoch nicht verfügbar sind.
 
 ## Betroffene Produkte und Versionen
 
@@ -19,7 +19,7 @@ Adobe Commerce On-Premise und Cloud - Alle Versionen
 
 ## Ursache
 
-Am meisten [!UICONTROL Security Patches] freigegeben werden, ohne dass eine physische Datei oder ein Hotfix angewendet werden muss.
+Die meisten [!UICONTROL Security Patches] werden ohne jegliche physische Datei oder Hotfix veröffentlicht, die angewendet werden sollen.
 
 ## Lösung
 
@@ -28,7 +28,7 @@ Am meisten [!UICONTROL Security Patches] freigegeben werden, ohne dass eine phys
 
 Wenn eine physische Patch-Datei/ein Hotfix in den Versionshinweisen erwähnt wird:
 
-* Laden Sie die Datei aus dem Download-Abschnitt von herunter. [https://account.magento.com](https://account.magento.com/downloads/view/). (Benutzer mit gemeinsamem Zugriff müssen zunächst Download-Berechtigungen vom Kontoinhaber/Lizenzinhaber erhalten.)
+* Laden Sie die Datei aus dem Download-Abschnitt von [https://account.magento.com](https://account.magento.com/downloads/view/) herunter. (Benutzer mit gemeinsamem Zugriff müssen zunächst Download-Berechtigungen vom Kontoinhaber/Lizenzinhaber erhalten.)
 
 **Einschränkungen:**
 
@@ -45,15 +45,15 @@ Wenn eine physische Patch-Datei/-Hotfix in den Versionshinweisen nicht erwähnt 
 
 * **Cloud:**
 
-1. Einige [!UICONTROL Security Patches] möglicherweise in der neuesten Version der Cloud Tools Suite (ECE Tools) unter Cloud Patches für Commerce enthalten oder veröffentlicht werden - überprüfen Sie das [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)und wenn in der Version eine Sicherheitskorrektur erwähnt wird, aktualisieren Sie das Paket auf diese Version.
+1. Einige [!UICONTROL Security Patches] sind möglicherweise in der neuesten Version der Cloud Tools Suite (ECE Tools) unter Cloud Patches für Commerce enthalten/veröffentlicht. Überprüfen Sie die [Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite). Wenn in der Version eine Sicherheitskorrektur erwähnt wird, aktualisieren Sie das Paket auf diese Version.
 1. Wenn in den Versionshinweisen keine Sicherheitskorrektur erwähnt wird, lesen Sie weiter.
 
 * **Cloud oder On-Premise:**
 
-* Wenn keine physische Patch-Datei/kein Hotfix verfügbar ist, [Upgrade der Adobe Commerce-Version auf Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X auf die neueste Patch-Version 2.4.X-pY.
-* Wenn keine physische Patch-Datei/kein Hotfix verfügbar ist, [On-Premise-Upgrade der Adobe Commerce-Version](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X auf die neueste Patch-Version 2.4.X-pY.
+* Wenn keine physische Patch-Datei/kein Hotfix verfügbar ist, aktualisieren Sie die Adobe Commerce-Version auf Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X auf die neueste Patch-Version 2.4.X-pY.[
+* Wenn keine physische Patch-Datei/kein Hotfix verfügbar ist, aktualisieren Sie die Adobe Commerce-Version On-Premise](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X auf die neueste Patch-Version 2.4.X-pY.[
 
 ## Verwandtes Lesen
 
 * Siehe [Versionshinweise für Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) im *Handbuch zu Adobe Commerce on Cloud Infrastructure*.
-* Siehe [Upgrade der Adobe Commerce-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) im *Handbuch zu Adobe Commerce on Cloud Infrastructure*.
+* Siehe [Aktualisieren der Adobe Commerce-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) im *Handbuch zu Adobe Commerce on Cloud Infrastructure*.

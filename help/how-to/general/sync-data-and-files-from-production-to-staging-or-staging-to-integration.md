@@ -20,7 +20,7 @@ In diesem Artikel wird erläutert, wie Sie Ihre Produktionsumgebung mit Staging 
 
 ## So synchronisieren Sie Daten zwischen Umgebungen
 
-Um die Daten zu synchronisieren, müssen Sie die Datenbank manuell aus der Quellumgebung ablegen. Um Daten in eine andere Umgebung zu übertragen, müssen Sie die Quellablage in die Zielumgebung hochladen und importieren. Weitere Informationen finden Sie unter [Importieren von Adobe Commerce-Code in ein Cloud-Projekt > Importieren der Adobe Commerce-Datenbank](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html) in unserer Entwicklerdokumentation.
+Um die Daten zu synchronisieren, müssen Sie die Datenbank manuell aus der Quellumgebung ablegen. Um Daten in eine andere Umgebung zu übertragen, müssen Sie die Quellablage in die Zielumgebung hochladen und importieren. Weitere Informationen finden Sie unter [Adobe Commerce-Code in ein Cloud-Projekt importieren > Adobe Commerce-Datenbank importieren](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html) in unserer Entwicklerdokumentation.
 
 Für die Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur können Sie auch von der Staging- und Produktionsumgebung mit Ihrer Integrations-Master-Verzweigung synchronisieren. Bei dieser Synchronisierung wird nur Code abgerufen und gepusht, nicht Daten. Um Daten zu synchronisieren, müssen Sie die Datenbankdaten in die Datenbank einer anderen Umgebung übertragen.
 
@@ -30,7 +30,7 @@ Für die Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur können Sie 
 
 ## So synchronisieren Sie Dateien zwischen Umgebungen
 
-Verwenden Sie zum Synchronisieren von Dateien von einer Umgebung in eine andere den `rsync` Befehl. Weitere Informationen finden Sie unter [Bereitstellen von Code und Migrieren von statischen Dateien und Daten > Migrieren von Dateien mithilfe von Rsync](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) in unserer Entwicklerdokumentation.
+Verwenden Sie den Befehl `rsync` , um Dateien von einer Umgebung in eine andere zu synchronisieren. Weitere Informationen finden Sie unter [Bereitstellen von Code und Migrieren von statischen Dateien und Daten > Migrieren von Dateien mit rsync](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >

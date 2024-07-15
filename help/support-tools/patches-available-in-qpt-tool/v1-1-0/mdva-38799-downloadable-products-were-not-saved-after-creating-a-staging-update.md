@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-38799: Herunterladbare Produkte, die nach der Erstellung eines Staging-Updates nicht gespeichert wurden
 
-Der Patch MDVA-38799 behebt das Problem, dass herunterladbare Produkte nach der Erstellung eines Staging-Updates nicht gespeichert werden. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.0 ist installiert. Die Patch-ID lautet MDVA-38799. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
+Der Patch MDVA-38799 behebt das Problem, dass herunterladbare Produkte nach der Erstellung eines Staging-Updates nicht gespeichert werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-38799. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.3 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,11 +27,11 @@ Der Patch MDVA-38799 behebt das Problem, dass herunterladbare Produkte nach der 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
-Herunterladbare Produkte werden nach dem Erstellen eines Staging-Updates nicht gespeichert. Benutzer erhalten die Fehlermeldung: *Die herunterladbare Stichprobe ist nicht mit dem Produkt verbunden. Überprüfen Sie den Link und versuchen Sie es erneut*.
+Herunterladbare Produkte werden nach dem Erstellen eines Staging-Updates nicht gespeichert. Benutzer erhalten die Fehlermeldung: *Das herunterladbare Beispiel ist nicht mit dem Produkt verknüpft. Überprüfen Sie den Link und versuchen Sie es erneut*.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -39,13 +39,13 @@ Herunterladbare Produkte werden nach dem Erstellen eines Staging-Updates nicht g
 1. Klicken Sie auf das Dropdown-Menü neben Produkt hinzufügen und wählen Sie Herunterladbares Produkt aus.
    * Geben Sie den Namen, die SKU, den Preis und die Menge des Produkts an.
 1. Scrollen Sie nach unten zur Seite &quot;Download-Informationen&quot;.
-1. Klicken Sie unter Beispiele auf **Link hinzufügen**.
+1. Klicken Sie unter &quot;Beispiele&quot;auf **Link hinzufügen**.
    * Füllen Sie den Titel und die Upload-Datei aus (der Dateityp spielt keine Rolle).
-1. Klicks **Speichern**. Sie erhalten die folgende Nachricht: *Sie haben das Produkt gespeichert.*.
-1. Klicks **Neue Aktualisierung planen** oben auf der Seite.
+1. Klicken Sie auf **Speichern**. Sie erhalten die folgende Meldung: *Sie haben das Produkt gespeichert*.
+1. Klicken Sie oben auf der Seite auf **Neues Update planen** .
    * Geben Sie den Aktualisierungsnamen sowie ein gültiges Start- und Enddatum ein.
-1. Klicks **Speichern** bei der Staging-Aktualisierung.
-1. Klicks **Speichern** auf das Produkt.
+1. Klicken Sie beim Staging-Update auf **Speichern** .
+1. Klicken Sie auf **Speichern** für das Produkt.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -53,20 +53,20 @@ Das Produkt wird ohne Fehler gespeichert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Sie erhalten die Fehlermeldung: *Die herunterladbare Stichprobe ist nicht mit dem Produkt verbunden. Überprüfen Sie den Link und versuchen Sie es erneut*.
+Sie erhalten die Fehlermeldung: *Das herunterladbare Beispiel ist nicht mit dem Produkt verknüpft. Überprüfen Sie den Link und versuchen Sie es erneut*.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

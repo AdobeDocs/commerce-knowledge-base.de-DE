@@ -14,7 +14,7 @@ ht-degree: 0%
 Der Titel sollte das Problem kurz beschreiben. Maximal 70 Zeichen werden bevorzugt.<br/>
 (Beispiel: &quot;Fehler wegen zu wenig Arbeitsspeicher während der Installation oder Aktualisierung&quot;.)
 
-Siehe [Beitragen > Metadaten](../../CONTRIBUTING.md#metadata) für weitere Informationen zu Metadaten.
+Weitere Informationen zu Metadaten finden Sie unter [Beitragen > Metadaten](../../CONTRIBUTING.md#metadata) .
 
 Einleitung oder zwei Absätze: einen kurzen Überblick über das Thema. Die ersten 140 Zeichen sind für SEO-Zwecke wichtig.
 
@@ -23,7 +23,7 @@ Einleitung oder zwei Absätze: einen kurzen Überblick über das Thema. Die erst
 * Adobe Commerce On-Premise x.x.x
 * Adobe Commerce in der Cloud-Infrastruktur x.x.x
 
-(*Wenn die gleichen Versionen in der Cloud oder vor Ort betroffen sind, können Sie Folgendes sagen:*)
+(*Alternativ können Sie, wenn dieselben Versionen in der Cloud oder vor Ort betroffen sind, Folgendes angeben:*)
 
 Adobe Commerce (alle Bereitstellungsmethoden) x.x.x
 
@@ -67,7 +67,7 @@ Wenn es eine temporäre Problemumgehung gibt, geben Sie sie als separaten Abschn
 
 ## Verwandtes Lesen
 
-* [Artikelthema](https://docs.magento.com/user-guide/) in unserem Benutzerhandbuch.
-* [Artikelthema](https://devdocs.magento.com) in unserer Entwicklerdokumentation. Sie können auch angeben, zwischen Anweisungen in Entwicklern für Cloud- und On-Premise-Benutzer zu unterscheiden: &quot;[Artikelthema](https://devdocs.magento.com) in unserer Entwicklerdokumentation für Adobe Commerce zur Cloud-Infrastruktur.&quot; vs .[Artikelthema](https://devdocs.magento.com) in unserer Entwicklerdokumentation für Adobe Commerce vor Ort.&quot;
-* [Artikelthema](https://support.magento.com/hc/en-us) in unserer Wissensdatenbank.
+* [Artikel-Thema](https://docs.magento.com/user-guide/) in unserem Benutzerhandbuch.
+* [Artikel-Thema](https://devdocs.magento.com) in unserer Entwicklerdokumentation. Sie können auch sagen, dass Sie zwischen Anweisungen in Entwicklern für Cloud- und On-Premise-Benutzer unterscheiden können: &quot;[Artikel-Thema](https://devdocs.magento.com) in unserer Entwicklerdokumentation für Adobe Commerce zur Cloud-Infrastruktur.&quot; vs. &quot;[Artikelthema](https://devdocs.magento.com) in unserer Entwicklerdokumentation für Adobe Commerce vor Ort.&quot;
+* [Artikelthema](https://support.magento.com/hc/en-us) in unserer Support-Wissensdatenbank.
 * Alle zugehörigen Ressourcen (Blogs, Foren, StackOverflow usw.)

@@ -17,7 +17,7 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in 
 
 ## Problem
 
-Wenn Google Analytics für den Store aktiviert ist und ein Kunde mit installiertem Block oder einem anderen Anzeigenblocker zum Checkout übergeht, wird die `trackingCode.js` -Datei nicht geladen werden und RequireJS unterbricht den JS-Ausführungsfluss. Dies führt zu Problemen beim Laden der Checkout-Seite.
+Wenn Google Analytics für den Store aktiviert ist und ein Kunde mit installiertem Block oder einem anderen Anzeigenblocker zum Checkout übergeht, wird das Laden der `trackingCode.js` -Datei verhindert und RequireJS unterbricht den JS-Ausführungsfluss. Dies führt zu Problemen beim Laden der Checkout-Seite.
 
 <u>Zu reproduzierende Schritte</u> :
 
@@ -26,7 +26,7 @@ Voraussetzungen: Ein Werbedruck muss im Browser installiert und aktiv sein.
 1. Aktivieren und konfigurieren Sie in Commerce Admin die Google Analytics-Funktion.
 1. Öffnen Sie eine Produktseite auf der Storefront.
 1. Produkte zum Warenkorb hinzufügen.
-1. Klicken Sie auf **Zum Checkout gehen** -Link.
+1. Klicken Sie auf den Link **Zum Checkout wechseln** .
 
 <u>Erwartetes Ergebnis</u>: Checkout-Seite wird geladen und der Kunde kann den Checkout abschließen.
 
@@ -53,10 +53,10 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Nützliche Links
 
-* [Das auf GitHub diskutierte Problem](https://github.com/magento/magento2/pull/13061)
+* [Das Problem, das auf GitHub besprochen wurde](https://github.com/magento/magento2/pull/13061)
 
 ## Attached Files

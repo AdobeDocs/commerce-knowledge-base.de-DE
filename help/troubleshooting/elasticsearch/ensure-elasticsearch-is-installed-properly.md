@@ -16,14 +16,14 @@ In diesem Artikel werden Lösungen für Probleme beschrieben, die durch fehlerha
 
 >[!WARNING]
 >
->Beachten Sie bei Adobe Commerce zur Cloud-Infrastruktur, dass Service-Upgrades nicht ohne 48-Stunden-Benachrichtigung an unser Infrastrukturteam in die Produktionsumgebung gesendet werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Geben Sie die erforderliche Dienstaktualisierung an und geben Sie den Zeitpunkt an, zu dem die Aktualisierung beginnen soll.
+>Beachten Sie bei Adobe Commerce zur Cloud-Infrastruktur, dass Service-Upgrades nicht ohne 48-Stunden-Benachrichtigung an unser Infrastrukturteam in die Produktionsumgebung gesendet werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen, senden [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), in dem Sie Ihre erforderliche Service-Aktualisierung und den Zeitpunkt angeben, zu dem der Upgrade-Prozess beginnen soll.
 
 ## Elasticsearch-Versionskompatibilität mit Adobe Commerce
 
 * Adobe Commerce vor Ort und Adobe Commerce zur Cloud-Infrastruktur:
    * v2.2.3+ unterstützt ES 5.x
    * v2.2.8+ und v2.3.1+ unterstützen ES 6.x
-   * ES v2.x und v5.x werden aufgrund von [Ende der Lebensdauer](https://www.elastic.co/support/eol). Wenn Sie jedoch über Adobe Commerce v2.3.1 verfügen und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [Ändern des Elasticsearch-PHP-Clients](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * ES v2.x und v5.x werden aufgrund von [Ende der Lebensdauer](https://www.elastic.co/support/eol) nicht empfohlen. Wenn Sie jedoch über Adobe Commerce v2.3.1 verfügen und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [den Elasticsearch php Client ändern](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
 * Magento Open Source v2.3.0+ unterstützt ES 5.x und 6.x (es wird jedoch 6.x empfohlen).
 
 ## Problem
@@ -42,7 +42,7 @@ Die folgenden Symptome zeigen, dass Elasticsearch nicht richtig konfiguriert ist
   [YYYY-MM-DD HH:MM:SS] CRITICAL: Fix configuration with given suggestions:    - Elasticsearch version #<version> is not compatible with current version of magento    Upgrade elasticsearch version to ~5.0
   ```
 
-Wo *version* ist der Elasticsearch-Dienst, der in der Cloud-Umgebung ausgeführt wird.
+Dabei ist *version* der Elasticsearch-Dienst, der in der Cloud-Umgebung ausgeführt wird.
 
 ## Ursache
 
@@ -56,16 +56,16 @@ Elasticsearch ist nicht ordnungsgemäß installiert. Dies könnte folgende Grün
 
 So richten Sie Elasticsearch ordnungsgemäß ein:
 
-* Merchandising in Adobe Commerce in der Cloud-Infrastruktur kann den Schritten in unserer Entwicklerdokumentation folgen: [Elasticsearch-Dienst einrichten](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html).
+* Merchants auf Adobe Commerce in der Cloud-Infrastruktur können die Schritte in unserer Entwicklerdokumentation befolgen: [Einrichten des Elasticsearch-Dienstes](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html).
 * Händler in Adobe Commerce vor Ort und Magento Open Source können die Schritte in unserer Entwicklerdokumentation befolgen: [Installieren und Konfigurieren von Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
 
 Nachdem Sie Elasticsearch eingerichtet haben, überprüfen Sie, ob es korrekt konfiguriert ist:
 
 1. Melden Sie sich bei Ihrem Server an.
-1. Überprüfen Sie die Versionsnummer des Elasticsearchs (2.x, 5.x oder 6.x) in der Ausgabe der Ausführung des Befehls: `curl -XGET <Elasticsearch hostname>:<Elasticsearch server port>` Beispiel: In Adobe Commerce in der Cloud-Infrastruktur: `curl -XGET localhost:9200`
+1. Überprüfen Sie die Versionsnummer des Elasticsearchs (2.x, 5.x oder 6.x) in der Ausgabe der Ausführung des Befehls: `curl -XGET <Elasticsearch hostname>:<Elasticsearch server port>` Beispiel in Adobe Commerce in der Cloud-Infrastruktur: `curl -XGET localhost:9200`
 1. Überprüfen Sie, was in Adobe Commerce in der Cloud-Infrastrukturkonfiguration konfiguriert ist, indem Sie den Befehl ausführen: `php bin/magento config:show catalog/search`
-1. Überprüfen `catalog/search/engine` und stellen Sie sicher, dass sie mit der Versionsnummer des Elasticsearchs übereinstimmt. Beispiel: In Adobe Commerce in der Cloud-Infrastruktur:
+1. Aktivieren Sie `catalog/search/engine` und stellen Sie sicher, dass es mit der Versionsnummer des Elasticsearchs übereinstimmt. Beispiel: In Adobe Commerce in der Cloud-Infrastruktur:
    * Elasticsearch 5.x - elasticsearch5
    * Elasticsearch 6.X - elasticsearch6
    * Elasticsearch 2.X - Elasticsearch
-1. Überprüfen `index_prefix`. Wenn Sie mehrere Umgebungen haben, stellen Sie sicher, dass Sie unterschiedliche `index_prefix` -Werte.
+1. Überprüfen Sie `index_prefix`. Wenn Sie mehrere Umgebungen haben, stellen Sie sicher, dass Sie unterschiedliche `index_prefix` -Werte für sie haben.

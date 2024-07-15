@@ -41,23 +41,23 @@ In Adobe Commerce gibt es zwei Cache-Typen:
 
 ### Überprüfen, ob der Cache ungültig gemacht wurde
 
-Informationen zu den invalidierten Cache-Typen finden Sie im Abschnitt `<install_directory>/var/log/debug.log` -Datei.
+Informationen zu den invalidierten Cache-Typen finden Sie in der Datei &quot;`<install_directory>/var/log/debug.log`&quot;.
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Öffnen `<install_directory>/var/log/debug.log`
-1. Suchen Sie nach &quot; *cache\_invalidate* &quot;.
+1. Öffnen Sie `<install_directory>/var/log/debug.log`
+1. Suchen Sie nach der Meldung &quot;*cache\_invalidate* &quot;.
 1. Überprüfen Sie dann das angegebene Tag. Er gibt an, welcher Cache geleert wurde. Möglicherweise treten aufgrund des invalidierten Caches Probleme auf, wenn ein Tag ohne bestimmte Entitäts-ID angezeigt wird, z. B.:
    * `cat_p` - steht für den Cache des Katalogprodukts.
    * `cat_c` - Cache der Katalogkategorie.
    * `FPC` - Vollständiger Seiten-Cache.
    * `CONFIG` - Konfigurationscache.
 
-   Sogar eines von ihnen würde die Antwort der Website verlangsamen. Wenn das Tag beispielsweise eine Entitäts-ID enthält `category_product_1258`, würde dies den Cache für ein bestimmtes Produkt oder eine bestimmte Kategorie usw. angeben. Das Leeren des Caches für ein bestimmtes Produkt oder eine bestimmte Kategorie würde nicht dazu führen, dass die Reaktionszeit signifikant zurückgeht.
+   Sogar eines von ihnen würde die Antwort der Website verlangsamen. Wenn das Tag eine Entitäts-ID enthält, z. B. &quot;`category_product_1258`&quot;, würde dies den Cache für ein bestimmtes Produkt oder eine bestimmte Kategorie angeben usw. Das Leeren des Caches für ein bestimmtes Produkt oder eine bestimmte Kategorie würde nicht dazu führen, dass die Reaktionszeit signifikant zurückgeht.
 
-Im Folgenden finden Sie ein Beispiel für eine `debug.log` enthält Datensätze zu `cat_p` und `category_product_15044` Cache entfernt wurde:
+Im Folgenden finden Sie ein Beispiel eines `debug.log` mit Datensätzen zum geleerten `cat_p` - und `category_product_15044` -Cache:
 
-![Beispiel für den Inhalt von debug.log](assets/debug_log_sample.png)
+![Beispiel des debug.log-Inhalts](assets/debug_log_sample.png)
 
 In der Regel wird der Cache durch Folgendes ungültig gemacht:
 
@@ -67,4 +67,4 @@ In der Regel wird der Cache durch Folgendes ungültig gemacht:
 ## Empfehlung
 
 1. Vermeiden Sie das Leeren des Cache aus der Commerce-CLI.
-1. Konfigurieren von Indexern für **Nach Zeitplan aktualisieren** anstelle von **Im Speichermodus aktualisieren** weil letztere Trigger volle Neuindizierung. Weitere Informationen finden Sie unter [Indexer verwalten > Indexer konfigurieren](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) in unserer Entwicklerdokumentation.
+1. Konfigurieren Sie die Indexer auf **Aktualisieren nach Zeitplan** anstelle von **Aktualisieren im Speichermodus** , da letztere die vollständige Neuindizierung der Trigger durchführen. Weitere Informationen finden Sie unter [Verwalten der Indexer > Konfigurieren von Indexern](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) in unserer Entwicklerdokumentation.

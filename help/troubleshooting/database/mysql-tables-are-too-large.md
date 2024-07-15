@@ -28,10 +28,10 @@ Die Größe der MySQL-Tabellen wirkt sich nicht direkt auf die Site-Leistung aus
 
 Beachten Sie die folgenden Optionen, um eine Leistungsminderung zu vermeiden:
 
-* Erstellen Sie einen CRON-Auftrag, der große Tabellen bereinigt. Siehe [Große MySQL-Tabellen suchen](/help/how-to/general/find-large-mysql-tables.md) in unserer Wissensdatenbank zur Unterstützung von Empfehlungen zur Identifizierung großer Tabellen.
+* Erstellen Sie einen CRON-Auftrag, der große Tabellen bereinigt. Empfehlungen zur Identifizierung großer Tabellen finden Sie unter [Suchen großer MySQL-Tabellen](/help/how-to/general/find-large-mysql-tables.md) in unserer Support-Wissensdatenbank.
 * Verwenden Sie für Tabellen, die größer als 1 GB sind, eine für das Schreiben von Protokollen optimierte MySQL-Engine. Beispielsweise die Archive-Engine.
 * Aktualisieren Sie die Funktionalität, um zu verhindern, dass Protokolle in DB gespeichert werden.
 
 ## Verwandtes Lesen
 
-[Übermäßige Änderungsprotokolltabellen verursachen Verzögerungen bei der Aktualisierung von Entitäten](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md) in unserer Wissensdatenbank.
+[Überarbeitete Änderungsprotokolltabellen verursachen Verzögerungen bei der Aktualisierung von Entitäten](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md) in unserer Support-Wissensdatenbank.

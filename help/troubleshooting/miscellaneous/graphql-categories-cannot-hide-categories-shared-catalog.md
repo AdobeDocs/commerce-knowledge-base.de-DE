@@ -34,8 +34,8 @@ Dies geschieht bei allen Händlern in Adobe Commerce 2.4.3 mit PWA-Storefront, d
 1. Weisen Sie jeder dieser Kategorien einige Produkte zu.
 1. Weisen Sie dem benutzerdefinierten Katalog CAT1 zu und heben Sie die Zuweisung von CAT2 aus dem benutzerdefinierten privaten Katalog auf. Dadurch wird die Zuweisung aller Produkte von CAT2 aus dem freigegebenen Katalog aufgehoben.
 1. Speichern Sie den benutzerdefinierten Katalog.
-1. Legen Sie die Kategorieberechtigung für CAT2 auf *Ablehnen* Kategorie durchsuchen und die Kundengruppe auf den oben genannten privaten Katalog setzen.
-1. Führen Sie die `categoryList query` oder der Kategorienabfrage als Unternehmensbenutzer aus Schritt 3.
+1. Legen Sie die Kategorieberechtigung für CAT2 auf die Kategorie &quot;*Ablehnen* Durchsuchen&quot;fest und legen Sie für die Kundengruppe den oben genannten privaten Katalog fest.
+1. Führen Sie die Abfrage `categoryList query` oder die Kategorienabfrage als Unternehmensbenutzer aus Schritt 3 aus.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -51,8 +51,8 @@ Die Funktionalität wurde nicht implementiert.
 
 ## Lösung
 
-Das Problem wird in Version 2.4.4 behoben, und Händler sollten [Einreichen eines Tickets](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) um einen benutzerspezifischen Patch zu erhalten, wenn sie vor Version 2.4.4 eine Lösung benötigen.
+Das Problem wird in Version 2.4.4 behoben. Händler sollten [ein Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um einen benutzerdefinierten Patch zu erhalten, wenn sie vor Version 2.4.4 eine Lösung benötigen.
 
 ## Verwandtes Lesen
 
-* [Best Practice Adobe Commerce-Kategorienbeschränkungen](https://support.magento.com/hc/en-us/articles/360048176832) in unserer Wissensdatenbank.
+* [Best Practice Adobe Commerce-Kategorienbeschränkungen](https://support.magento.com/hc/en-us/articles/360048176832) in unserer Support-Wissensdatenbank.

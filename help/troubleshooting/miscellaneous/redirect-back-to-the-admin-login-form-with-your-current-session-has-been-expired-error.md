@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gehen Sie zurück zum Anmeldeformular für die Commerce Admin mit dem Fehler &quot;Ihre aktuelle Sitzung ist abgelaufen&quot;.
 
-In diesem Artikel finden Sie die möglichen Lösungen für das Commerce Admin-Anmeldeproblem, bei dem Sie mit der folgenden Fehlermeldung zurück zum Anmeldeformular weitergeleitet werden: *&quot;Ihre aktuelle Sitzung ist abgelaufen&quot;*. Zu den Lösungen gehören die Überprüfung auf Probleme bei der Serverzeiteinstellung und die Änderung der Einstellungen für die Sitzungsspeicherung.
+In diesem Artikel finden Sie die möglichen Lösungen für das Commerce Admin-Anmeldeproblem, bei dem Sie zum Anmeldeformular mit der folgenden Fehlermeldung zurückgeleitet werden: *&quot;Ihre aktuelle Sitzung ist abgelaufen&quot;*. Zu den Lösungen gehören die Überprüfung auf Probleme bei der Serverzeiteinstellung und die Änderung der Einstellungen für die Sitzungsspeicherung.
 
 ## Betroffene Versionen:
 
@@ -47,13 +47,13 @@ Im folgenden Abschnitt finden Sie Lösungen.
 
 ### Probleme mit den Serverzeiteinstellungen prüfen
 
-Überprüfen Sie den Sitzungsdatensatz, der im `admin_user_session` Tabelle. Wenn die Werte von `created_at` und/oder `updated_at` falsch sind, kann dies durch das Problem mit Serverzeiteinstellungen verursacht werden. Bitten Sie Ihren Serversystemadministrator, dies zu überprüfen. Beachten Sie, dass die Uhrzeit in DB standardmäßig auf UTC festgelegt ist.
+Überprüfen Sie den Sitzungsdatensatz, der in der Tabelle `admin_user_session` erstellt wurde. Wenn die Werte von `created_at` und/oder `updated_at` falsch sind, kann dies durch das Problem mit Serverzeiteinstellungen verursacht werden. Bitten Sie Ihren Serversystemadministrator, dies zu überprüfen. Beachten Sie, dass die Uhrzeit in DB standardmäßig auf UTC festgelegt ist.
 
 ### Sitzungsspeicher ändern
 
-Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem [Sitzungsdateien finden](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) in unserer Entwicklerdokumentation , um herauszufinden, wo Ihre Sitzung gespeichert ist, und es zu ändern, indem Sie die `app/etc/env.php` -Datei.
+Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem Artikel [Wie Sie Ihre Sitzungsdateien finden](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) in unserer Entwicklerdokumentation, um herauszufinden, wo Ihre Sitzung gespeichert ist, und ändern Sie sie durch Bearbeiten der Datei `app/etc/env.php`.
 
-Um beispielsweise die Sitzung im Dateisystem zu speichern, ändern Sie die `'session'` wie folgt:
+Um beispielsweise mit dem Speichern der Sitzung im Dateisystem zu beginnen, ändern Sie den Abschnitt `'session'` wie folgt:
 
 ```php
 ....
@@ -64,12 +64,12 @@ Um beispielsweise die Sitzung im Dateisystem zu speichern, ändern Sie die `'ses
 ....
 ```
 
-Führen Sie die `bin/magento app:config:import` -Befehl zum Importieren von Konfigurationsdaten.
+Führen Sie den Befehl `bin/magento app:config:import` aus, um Konfigurationsdaten zu importieren.
 
 
 ## Verwandtes Lesen
 
-* [Daten aus Konfigurationsdateien importieren](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) in unserer Entwicklerdokumentation
+* [Importieren von Daten aus Konfigurationsdateien](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) in unserer Entwicklerdokumentation
 * [Konfigurieren von Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) in unserer Entwicklerdokumentation
-* [Gehen Sie zurück zum Anmeldeformular für die Commerce Admin mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) in unserer Wissensdatenbank
-* [Kehren Sie beim Versuch, sich beim Commerce-Administrator anzumelden, ohne Fehler zum Anmeldeformular zurück.](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) in unserer Wissensdatenbank
+* [Kehren Sie zurück zum Anmeldeformular für Commerce Admin mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) in unserer Support-Wissensdatenbank.
+* [Kehren Sie ohne Fehler zum Anmeldeformular zurück, wenn Sie versuchen, sich bei Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) in unserer Support-Wissensdatenbank anzumelden.

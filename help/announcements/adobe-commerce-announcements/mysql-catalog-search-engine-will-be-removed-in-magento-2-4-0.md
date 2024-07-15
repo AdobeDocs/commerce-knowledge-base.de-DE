@@ -17,7 +17,7 @@ Adobe Commerce vor Ort, Adobe Commerce über Cloud-Infrastruktur und Magento Ope
 
 >[!WARNING]
 >
->Wenn Sie Elasticsearch 6/7 nicht installieren/konfigurieren, bevor Sie versuchen, ein Upgrade durchzuführen, kann dies zu schwerwiegenden Problemen mit Adobe Commerce führen. Bitte beachten Sie, dass Service-Upgrades auf der Cloud-Infrastruktur von Adobe Commerce nicht in die Produktionsumgebung übertragen werden können, ohne dass unser Infrastrukturteam 48 Geschäftszeiten benachrichtigt. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Geben Sie die erforderliche Dienstaktualisierung an und geben Sie den Zeitpunkt an, zu dem die Aktualisierung beginnen soll.
+>Wenn Sie Elasticsearch 6/7 nicht installieren/konfigurieren, bevor Sie versuchen, ein Upgrade durchzuführen, kann dies zu schwerwiegenden Problemen mit Adobe Commerce führen. Bitte beachten Sie, dass Service-Upgrades auf der Cloud-Infrastruktur von Adobe Commerce nicht in die Produktionsumgebung übertragen werden können, ohne dass unser Infrastrukturteam 48 Geschäftszeiten benachrichtigt. Dies ist erforderlich, da wir sicherstellen müssen, dass wir über einen Infrastruktur-Support-Mitarbeiter verfügen, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen [senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), in dem Sie Ihre erforderliche Service-Aktualisierung und den Zeitpunkt angeben, zu dem der Upgrade-Prozess beginnen soll.
 
 Der Grund für die Entfernung der MySQL-Suchmaschine liegt darin, dass Elasticsearch hervorragende Suchfunktionen sowie Katalogleistungsoptimierungen bietet.
 
@@ -40,11 +40,11 @@ Der Grund für die Entfernung der MySQL-Suchmaschine liegt darin, dass Elasticse
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch (ohne aufgeführte Version)</td>
-<td style="width: 478.2px;">Sie verwenden Elasticsearch 2 und müssen auf Elasticsearch 7 (empfohlen) oder 6 aktualisieren. Siehe <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Upgrade von Elasticsearch</a> und <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Commerce für die Verwendung von Elasticsearch konfigurieren</a> in unserer Entwicklerdokumentation .</td>
+<td style="width: 478.2px;">Sie verwenden Elasticsearch 2 und müssen auf Elasticsearch 7 (empfohlen) oder 6 aktualisieren. Weitere Informationen finden Sie unter <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Aktualisieren von Elasticsearch</a> und <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Konfigurieren von Commerce für die Verwendung von Elasticsearch</a> in unserer Entwicklerdokumentation.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 5</td>
-<td style="width: 478.2px;">Elasticsearch 5 hat seine <a href="https://www.elastic.co/support/eol">Ende der Lebensdauer</a> und wird in Adobe Commerce 2.4.0 nicht mehr unterstützt. Aktualisierung auf Elasticsearch 7 (empfohlen) oder 6.</td>
+<td style="width: 478.2px;">Elasticsearch 5 hat das <a href="https://www.elastic.co/support/eol">Ende der Lebensdauer</a> erreicht und wird in Adobe Commerce 2.4.0 nicht mehr unterstützt. Aktualisierung auf Elasticsearch 7 (empfohlen) oder 6.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch 6 oder 7</td>
@@ -61,7 +61,7 @@ Der Grund für die Entfernung der MySQL-Suchmaschine liegt darin, dass Elasticse
 
 Wenn Adobe Commerce lokal und Magento Open Source 2.4.0 veröffentlicht wird, ist Elasticsearch eine erforderliche Komponente. Daher müssen Sie vor der Installation von Version 2.4.0 über ein Elasticsearch-Host-Setup und eine Konfiguration verfügen. Siehe [Installieren und Konfigurieren von Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) in unserer Entwicklerdokumentation.
 
-Standardmäßig verwendet die Adobe Commerce-Suche Elasticsearch 7 als Suchmaschine und versucht, eine Verbindung zu einem Server unter localhost:9200 herzustellen. Elasticsearch 6.x wird ebenfalls unterstützt. Wenn Ihre Konfiguration nicht mit den Standardeinstellungen übereinstimmt, können Sie diese Einstellungen mit den an übergebenen Argumenten konfigurieren `setup:install`, ähnlich wie die Datenbankverbindung konfiguriert ist.
+Standardmäßig verwendet die Adobe Commerce-Suche Elasticsearch 7 als Suchmaschine und versucht, eine Verbindung zu einem Server unter localhost:9200 herzustellen. Elasticsearch 6.x wird ebenfalls unterstützt. Wenn Ihre Konfiguration nicht den Standardeinstellungen entspricht, können Sie diese Einstellungen mit den an `setup:install` übergebenen Argumenten konfigurieren, ähnlich wie die Datenbankverbindung konfiguriert ist.
 
 Beispiel: `setup:install --elasticsearch-host=es.mystore.com`
 

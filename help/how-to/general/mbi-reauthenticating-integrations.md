@@ -16,7 +16,7 @@ Dieser Artikel bietet Lösungen zum erneuten Autorisieren einer Integration, um 
 
 ## Integration von Datenbank und SaaS
 
-Eine Liste der Datenbankintegrationen und SaaS-Integrationen finden Sie unter [Externe Daten mithilfe einer Integration verbinden](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis auf der linken Seite zur Navigation).
+Listen zu Datenbank- und SaaS-Integrationen finden Sie unter [Verbinden externer Daten mithilfe einer Integration](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis auf der linken Seite zur Navigation).
 
 ## Haben Sie Verbindungsprobleme?
 
@@ -35,4 +35,4 @@ Der Status aller Integrationen befindet sich auf der Seite Integrationen ( **Dat
 
 Um sich erneut zu authentifizieren, müssen Sie möglicherweise Ihre Kontoanmeldeinformationen erneut eingeben. In einigen Fällen müssen Sie möglicherweise neue API-Schlüssel für die Problemintegration generieren. Klicken Sie auf den Namen der Problemintegration, um den Neuautorisierungsprozess zu starten.
 
-Wenn das Problem weiterhin besteht, bitte [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn das Problem weiterhin besteht, senden Sie bitte [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

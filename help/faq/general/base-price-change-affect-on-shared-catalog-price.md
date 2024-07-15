@@ -30,4 +30,4 @@ Wenn sich der Basispreis des Produkts ändert und unter dem entsprechenden gemei
 
 ## Verwandtes Lesen
 
-[Festlegen von Preisen und Struktur für einen freigegebenen Katalog](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) in unserem Benutzerhandbuch.
+[Legen Sie Preise und Struktur für einen freigegebenen Katalog fest](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) in unserem Benutzerhandbuch.

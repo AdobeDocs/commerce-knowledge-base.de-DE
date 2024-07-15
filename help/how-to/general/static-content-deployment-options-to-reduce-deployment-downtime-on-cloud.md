@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Bereitstellungsoptionen für statische Inhalte zur Reduzierung der Bereitstellungsunterbrechung in Cloud
 
-Weitere Informationen finden Sie unter [Implementierungsstrategien für statische Inhalte](https://devdocs.magento.com/guides/v2.3/cloud/deploy/static-content-deployment.html) in unserer Entwicklerdokumentation finden Sie Details zu den Optionen für die Bereitstellung statischer Inhalte (SCD), die dazu beitragen, den Bereitstellungsprozess zu beschleunigen und die Wartungsruhe in Adobe Commerce in der Cloud-Infrastruktur zu verkürzen.
+In der Entwicklerdokumentation finden Sie unter [Strategien für die Bereitstellung statischer Inhalte](https://devdocs.magento.com/guides/v2.3/cloud/deploy/static-content-deployment.html) weitere Informationen zu den Optionen für die Bereitstellung statischer Inhalte (SCD), die dazu beitragen, den Bereitstellungsprozess zu beschleunigen und die Wartungsruhe in Adobe Commerce in der Cloud-Infrastruktur zu verkürzen.

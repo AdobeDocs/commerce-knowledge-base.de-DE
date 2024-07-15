@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce [!DNL crons] deaktiviert ohne Intervention
-description: Verwenden Sie diesen Artikel, um das Problem zu beheben, bei dem [!DNL crons] sind ohne Eingriffe deaktiviert.
+title: Adobe Commerce [!DNL crons] deaktiviert ohne Eingriff
+description: Verwenden Sie diesen Artikel, um das Problem zu beheben, bei dem [!DNL crons] ohne Eingreifen deaktiviert sind.
 exl-id: 5172d2ae-53ad-4db6-ae00-7b27c96911e9
 source-git-commit: 9cd7cabc37c0f290c41f790b0fb06177c3156d48
 workflow-type: tm+mt
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Adobe Commerce-Kronen ohne Eingriffe deaktiviert
 
-Dieser Artikel bietet eine Lösung für den Zeitpunkt [!DNL crons] sind ohne Eingriffe deaktiviert.
+Dieser Artikel bietet eine Lösung für den Fall, dass [!DNL crons] ohne Eingriff deaktiviert ist.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützte Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 ## Problem
 
-Ihre [!DNL crons] nach der Bereitstellung deaktiviert werden.
+Ihre [!DNL crons] sind nach der Bereitstellung deaktiviert.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -27,22 +27,22 @@ Bereitstellen.
 
 <u>Erwartetes Ergebnis</u>:
 
-Ihre [!DNL crons] laufen.
+Ihre [!DNL crons] werden ausgeführt.
 
 <u>Tatsächliches Ergebnis</u>:
 
-Ihre [!DNL crons] nach der Bereitstellung deaktiviert werden.
+Ihre [!DNL crons] sind nach der Bereitstellung deaktiviert.
 
 ## Ursache
 
-Ein Problem mit der [!DNL OPcache] -Einstellungen.
+Ein Problem mit den [!DNL OPcache] -Einstellungen.
 
 ## Lösung
 
-Upgrade [!DNL ECE Tools] auf die neueste Version [2002.1.13](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html#v2002113).
+Aktualisieren Sie [!DNL ECE Tools] auf die neueste Version [2002.1.13](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html#v2002113).
 
 ## Verwandtes Lesen
 
-* [Langsame Leistung, Langsamkeit und Langsamkeit [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html) in unserer Wissensdatenbank.
-* [[!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) in unserer Wissensdatenbank.
-* [[!DNL Cron] Auftrag ist im Status &quot;Wird ausgeführt&quot;stecken](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) in unserer Wissensdatenbank.
+* [Langsame Leistung, langsame und lange Ausführung [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html) in unserer Wissensdatenbank.
+* [[!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) in unserer Support-Wissensdatenbank.
+* [[!DNL Cron] Auftrag ist in unserem Support-Wissensstamm im Status &quot;Wird ausgeführt&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) stecken geblieben.

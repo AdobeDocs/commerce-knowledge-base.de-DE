@@ -20,11 +20,11 @@ Dieser Artikel enthält eine Fehlerbehebung für Probleme bei der Kompatibilitä
 Die Art und Weise, wie Sie das Problem beheben, hängt davon ab, ob Sie über eine Ein- oder Zweibenutzer-Einrichtung verfügen:
 
 * *Ein Benutzer* bedeutet, dass Sie sich beim Adobe Commerce-Server als derselbe Benutzer anmelden, der auch den Webserver ausführt. Diese Art der Einrichtung ist in freigegebenen Hosting-Umgebungen üblich.
-* *Zwei Benutzer* bedeutet, dass *cannot* als Webserver-Benutzer anmelden oder zu ihm wechseln. Normalerweise melden Sie sich als ein Benutzer an und führen den Webserver als einen anderen Benutzer aus. Dies ist typisch für privates Hosting oder wenn Sie über einen eigenen Server verfügen.
+* *Zwei Benutzer* bedeutet, dass Sie sich in der Regel *nicht als Webserver-Benutzer anmelden oder zu ihm wechseln können.* Normalerweise melden Sie sich als ein Benutzer an und führen den Webserver als einen anderen Benutzer aus. Dies ist typisch für privates Hosting oder wenn Sie über einen eigenen Server verfügen.
 
 ## Auflösung für einen Benutzer
 
-Wenn Sie Zugriff auf die Befehlszeile haben, geben Sie den folgenden Befehl ein, vorausgesetzt Adobe Commerce ist in installiert. `/var/www/html/magento2`:
+Wenn Sie Zugriff auf die Befehlszeile haben, geben Sie den folgenden Befehl ein, vorausgesetzt Adobe Commerce ist in `/var/www/html/magento2` installiert:
 
 ```bash
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+w {} + && chmod u+x bin/magento
@@ -34,13 +34,13 @@ Wenn Sie keinen Befehlszeilenzugriff haben, verwenden Sie einen FTP-Client oder 
 
 ## Auflösung von zwei Benutzern
 
-Wenn Sie optional alle Befehle in einer Zeile eingeben möchten, geben Sie Folgendes ein (vorausgesetzt, Adobe Commerce ist in installiert) `/var/www/html/magento2` und der Webserver-Gruppenname `apache`:
+Wenn Sie optional alle Befehle in einer Zeile eingeben möchten, geben Sie Folgendes ein (vorausgesetzt, Adobe Commerce ist in `/var/www/html/magento2` installiert und der Webserver-Gruppenname ist `apache`):
 
 ```bash
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
-Wenn die Systemberechtigungen für die Ereignisdatei falsch festgelegt sind und vom Adobe Commerce-Dateisysteminhaber nicht geändert werden können, können Sie den Befehl als Benutzer mit `root` -Berechtigungen:
+Wenn die Systemberechtigungen für die Ereignisdatei falsch festgelegt sind und vom Eigentümer des Adobe Commerce-Dateisystems nicht geändert werden können, können Sie den Befehl als Benutzer mit `root` -Berechtigungen eingeben:
 
 ```bash
 $ cd /var/www/html/magento2 && sudo find var vendor

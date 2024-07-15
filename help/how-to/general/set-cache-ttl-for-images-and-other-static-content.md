@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Festlegen der Cache-TTL für Bilder und andere statische Inhalte
 
-Weitere Informationen finden Sie unter [Festlegen des Cache für statische Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) in unserem Benutzerhandbuch.
+Weitere Informationen finden Sie im Benutzerhandbuch unter [Cache für statische Dateien festlegen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/set-cache.html) .

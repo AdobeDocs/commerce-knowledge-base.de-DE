@@ -16,12 +16,12 @@ Wir verstehen die Wichtigkeit der Zugänglichkeit beim Adobe. Während die Veran
 
 Adobe Commerce ist in hohem Maße anpassbar, und unsere Kunden können das Luma-Design erweitern, ihre Barrierefreiheitsmodule erstellen und unsere Commerce Marketplace besuchen, um Erweiterungen zu finden, die ihren Barrierefreiheitsanforderungen entsprechen.
 
-Viele unserer Kunden verwenden die [W3C-Barrierefreiheitsstandards](https://www.w3.org/WAI/standards-guidelines/) und verwenden Sie die [Adobe Barrierefreiheitskonformitätsbericht für Adobe Commerce](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html).
+Viele unserer Kunden verwenden die [W3C Accessibility Standards](https://www.w3.org/WAI/standards-guidelines/) und verwenden den [Adobe Accessibility Conformance Report für Adobe Commerce](https://www.adobe.com/accessibility/compliance/adobe-commerce-2021-acr.html).
 
 Mithilfe von Entwicklertools, die dem Industriestandard entsprechen, können Sie mit einem wichtigen Barrierefreiheitspartner arbeiten oder Erweiterungen von der Commerce Marketplace implementieren, die auf spezifischen Kundenanforderungen oder/und dem Adobe-Konformitätsbericht basieren.
 
-Lösungen finden Sie im Abschnitt [Commerce Marketplace](https://marketplace.magento.com/).
+Lösungen finden Sie im [Commerce Marketplace](https://marketplace.magento.com/).
 
 ## Verwandtes Lesen
 
-* [Adobe Barrierefreiheit](https://www.adobe.com/accessibility.html)
+* [Adobe Accessibility](https://www.adobe.com/accessibility.html)

@@ -41,14 +41,14 @@ Der Pfad zu Bildern und Stylesheets ist nicht korrekt, entweder aufgrund einer f
 
 Um dies zu bestätigen, verwenden Sie einen Webbrowser-Inspektor, um die Pfade zu statischen Assets zu überprüfen und sicherzustellen, dass sich diese Assets im Dateisystem von Adobe Commerce oder Magento Open Source befinden.
 
-Statische Assets befinden sich unter `<magento_root>/pub/static/` innerhalb der `frontend` und `adminhtml` Verzeichnissen.
+Statische Assets befinden sich unter `<magento_root>/pub/static/` in den Verzeichnissen `frontend` und `adminhtml` .
 
 ## Lösung
 
 Die folgenden Lösungen sind je nach verwendeter Software und Ursache des Problems möglich:
 
-* Wenn Sie den Apache-Webserver verwenden, überprüfen Sie Ihre [Server-Neuschreibungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) und die Basis-URL des Adobe Commerce-/Magento Open Source-Servers festlegen und den Vorgang erneut ausführen. Wenn Sie den Apache einrichten `AllowOverride` nicht korrekt angegeben wurde, werden die statischen Dateien nicht vom richtigen Speicherort bereitgestellt.
+* Wenn Sie den Apache-Webserver verwenden, überprüfen Sie Ihre Einstellung [server rewrites](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html#apache-help-rewrite) und die Basis-URL Ihres Adobe Commerce-/Magento Open Source-Servers und versuchen Sie es erneut. Wenn Sie die Apache `AllowOverride`-Direktive falsch eingerichtet haben, werden die statischen Dateien nicht vom richtigen Speicherort bereitgestellt.
 * Wenn Sie den nginx-Webserver verwenden, stellen Sie sicher, dass Sie [eine virtuelle Host-Datei konfigurieren](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/nginx.html#configure-nginx-ubuntu). Die nginx-Virtual-Host-Datei muss die folgenden Kriterien erfüllen:
-   * Die `include` -Anweisung muss auf die Beispielkonfigurationsdatei nginx im Installationsverzeichnis von Adobe Commerce/Magento Open Source verweisen. Beispiel:    `include /var/www/html/magento2/nginx.conf.sample;`
-   * Die `server_name` muss mit der Basis-URL übereinstimmen, die Sie bei der Installation von Adobe Commerce/Magento Open Source angegeben haben. Beispiel: `server_name 192.186.33.10;`
-* Wenn die Anwendung in [Produktionsmodus](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode)versuchen Sie, statische Ansichtsdateien mit dem `magento setup:static-content:deploy` Befehl. Weitere Informationen zur Bereitstellung statischer Dateien finden Sie unter [Bereitstellen von statischen Ansichtsdateien](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) in unserer Entwicklerdokumentation.
+   * Die Anweisung `include` muss auf die Beispielkonfigurationsdatei nginx im Installationsverzeichnis von Adobe Commerce/Magento Open Source verweisen. Beispiel:    `include /var/www/html/magento2/nginx.conf.sample;`
+   * Die Anweisung `server_name` muss mit der Basis-URL übereinstimmen, die Sie bei der Installation von Adobe Commerce/Magento Open Source angegeben haben. Beispiel: `server_name 192.186.33.10;`
+* Wenn sich die Anwendung im [Produktionsmodus ](https://devdocs.magento.com/guides/v2.3/config-guide/bootstrap/magento-modes.html#production-mode) befindet, versuchen Sie, statische Ansichtsdateien mit dem Befehl `magento setup:static-content:deploy` bereitzustellen. Weitere Informationen zur Bereitstellung statischer Dateien finden Sie unter [Statische Ansichtsdateien bereitstellen](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) in unserer Entwicklerdokumentation.

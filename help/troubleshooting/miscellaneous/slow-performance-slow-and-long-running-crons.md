@@ -15,9 +15,9 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Da einige Erweiterungen nur mit flachen Tabellen funktionieren, besteht bei allen Adobe Commerce-Versionen die Gefahr, dass flache Tabellen deaktiviert werden. Wenn Sie wissen, dass Sie einige Erweiterungen haben, die leere Katalogindizes verwenden, müssen Sie dies bei der Festlegung dieser Werte auf &quot; *Nein* &quot;.
+>Da einige Erweiterungen nur mit flachen Tabellen funktionieren, besteht bei allen Adobe Commerce-Versionen die Gefahr, dass flache Tabellen deaktiviert werden. Wenn Sie wissen, dass Sie über einige Erweiterungen verfügen, die Indexer für flache Kataloge verwenden, müssen Sie dies bei der Festlegung dieser Werte auf &quot;*Nein* &quot;berücksichtigen.
 
-In diesem Artikel wird beschrieben, wie Sie Probleme mit der Site-Leistung und langsame und hängende Crons, die durch [flache Tabellen und Indexer](https://docs.magento.com/m2/ce/user_guide/catalog/catalog-flat.html) aktiviert wurde.
+In diesem Artikel wird beschrieben, wie Sie Probleme mit der Site-Leistung und langsame laufende und hängende Crons lösen können, die durch die Aktivierung von [flachen Tabellen und Indexern](https://docs.magento.com/m2/ce/user_guide/catalog/catalog-flat.html) verursacht wurden.
 
 BETROFFENE PRODUKTE UND VERSIONEN
 
@@ -40,22 +40,22 @@ Einfache Tabellen und Indexer aktiviert.
 
 Ab Adobe Commerce und Magento Open Source 2.1.x und höher ist die Verwendung eines reduzierten Katalogs keine Best Practice mehr und wird nicht empfohlen. Die kontinuierliche Verwendung dieser Funktion führt bekanntermaßen zu Leistungsbeeinträchtigungen und anderen Indizierungsproblemen. So deaktivieren Sie den flachen Katalog:
 
-1. Navigieren Sie im Admin zu **Stores** > **Einstellungen** > **Konfiguration**.
-1. Im Bedienfeld auf der linken Seite unter **Katalog** auswählen **Katalog**.
-1. Erweitern Sie die **Storefront** und gehen Sie wie folgt vor:
-   * Satz **Einfache Katalogkategorie verwenden** nach *Nein*.
-   * Satz **Einfache Katalogprodukte verwenden** nach *Nein*.
-1. Wenn Sie fertig sind, klicken Sie auf **Konfiguration speichern**. Aktualisieren Sie dann den Cache, wenn Sie dazu aufgefordert werden.
-1. Cache leeren durch Ausführen `php bin/magento cache:flush`.
+1. Navigieren Sie im Admin zu &quot;**Stores**&quot;> &quot;**Einstellungen**&quot;> &quot;**Konfiguration**&quot;.
+1. Wählen Sie im Bereich auf der linken Seite unter **Katalog** die Option **Katalog**.
+1. Erweitern Sie den Abschnitt **Storefront** und gehen Sie wie folgt vor:
+   * Setzen Sie **Kategorie des flachen Katalogs verwenden** auf *NEIN*.
+   * Setzen Sie **Flachkatalog-Produkt verwenden** auf *Nein*.
+1. Klicken Sie nach Abschluss des Vorgangs auf **Konfiguration speichern**. Aktualisieren Sie dann den Cache, wenn Sie dazu aufgefordert werden.
+1. Leeren Sie den Cache, indem Sie `php bin/magento cache:flush` ausführen.
 
-Wenn Sie die **Einfache Katalogkategorie verwenden** und **Einfache Katalogprodukte verwenden** nach *Nein* Da die Optionen ausgegraut sind, deaktivieren Sie flache Indexer in `app/etc/config.php`:
+Wenn Sie die Kategorie **Flachen Katalog verwenden** und die Kategorie **Flachkatalog-Produkt verwenden** nicht in *Nein* ändern können, da die Optionen ausgegraut sind, deaktivieren Sie flache Indexer in `app/etc/config.php`:
 
 1. Führen Sie diesen Befehl aus, um sicherzustellen, dass alle Indexer nach Zeitplan auf Aktualisieren eingestellt sind: `php bin/magento indexer:set-mode schedule`.
-1. Bearbeiten `app/etc/config.php` und suchen Sie die Zeilen mit `flat_catalog_product` und `flat_catalog_category` - Ändern Sie sie von 1 in 0, um sie zu deaktivieren.
-1. Führen Sie den Befehl aus `php bin/magento app:config:import`
+1. Bearbeiten Sie `app/etc/config.php` und suchen Sie die Zeilen mit `flat_catalog_product` und `flat_catalog_category` - ändern Sie sie von 1 in 0, um sie zu deaktivieren.
+1. Führen Sie den Befehl `php bin/magento app:config:import` aus.
 1. Führen Sie diesen Befehl aus, um sicherzustellen, dass die flachen Indexer deaktiviert sind: `php        bin/magento indexer:status`.
-1. Cache leeren durch Ausführen `php bin/magento cache:flush`.
+1. Leeren Sie den Cache, indem Sie `php bin/magento cache:flush` ausführen.
 
 ## Verwandte Informationen
 
-[Zurücksetzen von Adobe Commerce-Cron-Aufträgen manuell in Cloud zurücksetzen](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md) in unserer Wissensdatenbank.
+[Setzen Sie hängengebliebene Adobe Commerce-Cron-Aufträge manuell auf Cloud](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md) in unserer Support-Wissensdatenbank zurück.

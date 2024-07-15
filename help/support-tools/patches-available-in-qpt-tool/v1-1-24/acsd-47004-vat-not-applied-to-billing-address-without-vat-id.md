@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # ACSD-47004: MwSt. wird nicht auf Rechnungsadresse ohne MwSt.-ID angewandt
 
-Der Patch ACSD-47004 behebt das Problem, dass die Mehrwertsteuer nicht auf eine Rechnungsadresse ohne MwSt-ID angewendet wird. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)  1.1.24 ist installiert. Die Patch-ID ist ACSD-47004. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-47004 behebt das Problem, dass die Mehrwertsteuer nicht auf eine Rechnungsadresse ohne MwSt-ID angewendet wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.24 installiert ist. Die Patch-ID ist ACSD-47004. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch ACSD-47004 behebt das Problem, dass die Mehrwertsteuer nicht auf eine 
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -35,7 +35,7 @@ Die MwSt wird nicht auf eine Rechnungsadresse ohne MwSt-ID erhoben.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Öffnen Sie die [!UICONTROL Commerce Admin] > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Create New Account Options]** und legen Sie die **[!UICONTROL Enable Automatic Assignment to Customer Group]** nach *[!UICONTROL Yes]*.
+1. Öffnen Sie die [!UICONTROL Commerce Admin] > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Customer Configuration]** > **[!UICONTROL Create New Account Options]** und legen Sie die **[!UICONTROL Enable Automatic Assignment to Customer Group]** auf *[!UICONTROL Yes]* fest.
 1. Legen Sie unterschiedliche Gruppen für MwSt-ID-Überprüfungen fest. Beispiel:
    ![VAT-ID-validations](/help/support-tools/patches-available-in-qpt-tool/assets/vat-id-validations.png)
 1. Registrieren Sie einen neuen Kunden.
@@ -48,7 +48,7 @@ Die MwSt wird nicht auf eine Rechnungsadresse ohne MwSt-ID erhoben.
    T: 0900000000
    ```
 
-1. Stellen Sie sicher, dass die Kundengruppe unverändert bleibt. [!UICONTROL General].
+1. Stellen Sie sicher, dass die Gruppe des Kunden [!UICONTROL General] bleibt.
 1. Bearbeiten Sie diese Adresse und fügen Sie eine gültige MwSt-Nummer hinzu:
 
    ```
@@ -59,7 +59,7 @@ Die MwSt wird nicht auf eine Rechnungsadresse ohne MwSt-ID erhoben.
    VAT: DE329376919
    ```
 
-1. Stellen Sie sicher, dass die Gruppe des Kunden zu [!UICONTROL Retailer].
+1. Stellen Sie sicher, dass die Gruppe des Kunden auf [!UICONTROL Retailer] geändert wurde.
 1. Bearbeiten Sie die Adresse und entfernen Sie die MwSt.-Nummer:
 
    ```
@@ -71,24 +71,24 @@ Die MwSt wird nicht auf eine Rechnungsadresse ohne MwSt-ID erhoben.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Kundengruppe wird auf die Standardeinstellung [!UICONTROL General] automatisch hinzugefügt werden.
+Die Kundengruppe wird automatisch in die standardmäßige Gruppe [!UICONTROL General] geändert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Kundengruppe wird nicht auf die Standardeinstellung [!UICONTROL General] automatisch hinzugefügt werden.
+Die Kundengruppe wird nicht automatisch in die standardmäßige Gruppe [!UICONTROL General] geändert.
 
 ## Wenden Sie den Patch an
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Commerce on Cloud Infrastructure-Handbuch.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

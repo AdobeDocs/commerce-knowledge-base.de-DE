@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bekanntes Problem mit Adobe Commerce 2.4.0: Schaltfläche &quot;Neue Bestellung erstellen&quot;fehlt
 
-Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in der Commerce-Admin für zwei fehlende Schaltflächen auf der Seite zur Bestellerstellung. Bei der Erstellung einer neuen Bestellung für einen neuen oder vorhandenen Kunden ist es nicht möglich, Produkte zur Bestellung aus dem Katalog hinzuzufügen, da die Variable **Produkte nach SKU hinzufügen** und **Produkte hinzufügen** fehlen. Dies wird durch die Aktivierung des JS-Bundles verursacht. In Adobe Commerce 2.4.1 ist eine Fehlerbehebung verfügbar.
+Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in der Commerce-Admin für zwei fehlende Schaltflächen auf der Seite zur Bestellerstellung. Beim Erstellen einer neuen Bestellung für einen neuen oder vorhandenen Kunden ist es nicht möglich, Produkte zur Bestellung aus dem Katalog hinzuzufügen, da die Schaltflächen **Produkte von SKU hinzufügen** und **Produkte hinzufügen** fehlen. Dies wird durch die Aktivierung des JS-Bundles verursacht. In Adobe Commerce 2.4.1 ist eine Fehlerbehebung verfügbar.
 
 ## Betroffene Produkte und Versionen
 
@@ -24,17 +24,17 @@ Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in der Comm
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Navigieren Sie zu **Kunden > Alle Kunden**.
-1. Klicken Sie auf **Bearbeiten** auf einen Kunden verweisen.
-1. Klicken Sie auf **Bestellung erstellen** Schaltfläche.
+1. Wechseln Sie zu **Kunden > Alle Kunden**.
+1. Klicken Sie auf den Link **Bearbeiten** eines Kunden.
+1. Klicken Sie auf die Schaltfläche **Bestellung erstellen** .
 
 <u>Erwartetes Ergebnis</u>
 
-Die **Produkte nach SKU hinzufügen** und **Produkte hinzufügen** -Schaltflächen werden auf **Neue Bestellung erstellen** Seite.
+Die Schaltflächen **Produkte nach SKU hinzufügen** und **Produkte hinzufügen** werden auf der Seite **Neue Bestellung erstellen** angezeigt.
 
 <u>Tatsächliches Ergebnis</u>
 
-Die **Produkte nach SKU hinzufügen** und **Produkte hinzufügen** -Schaltflächen fehlen auf der **Neue Bestellung erstellen** Seite.
+Die Schaltflächen **Produkte nach SKU hinzufügen** und **Produkte hinzufügen** fehlen auf der Seite **Neue Bestellung erstellen** .
 
 ## Workaround
 

@@ -26,13 +26,13 @@ Betroffene Produkte und Versionen:
 
 ## Ursache
 
-Wenn Ihre Indexer [konfiguriert, um nach Zeitplan zu aktualisieren](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), kann das Problem durch eine oder mehrere Tabellen verursacht werden, deren Änderungsprotokolle zu groß sind oder die MySQL-Trigger nicht eingerichtet sind.
+Wenn Ihre Indexer [so konfiguriert sind, dass sie planmäßig aktualisiert werden](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), kann das Problem durch eine oder mehrere Tabellen verursacht werden, in denen Änderungsprotokolle zu groß sind oder MySQL-Trigger nicht eingerichtet sind.
 
 ### Oversized Änderungsprotokolltabellen
 
-Die Änderungsprotokolltabellen werden größer, wenn die `indexer_update_all_views` Der Cron-Auftrag wird nicht mehrmals erfolgreich abgeschlossen.
+Die Änderungsprotokolltabellen werden so groß, wenn der `indexer_update_all_views`-Cron-Auftrag nicht mehrmals erfolgreich abgeschlossen wurde.
 
-Änderungsprotokolltabellen sind die Datenbanktabellen, in denen die Änderungen an Entitäten verfolgt werden. Ein Datensatz wird in einer Änderungsprotokolltabelle gespeichert, solange die Änderung nicht angewendet wird, was von der `indexer_update_all_views` Cron-Auftrag. Es gibt mehrere Änderungsprotokolltabellen in einer Adobe Commerce-Datenbank. Sie werden nach folgendem Muster benannt: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, beispielsweise `catalog_category_product_cl`, `catalog_product_category_cl`. Weitere Informationen dazu, wie Änderungen in der Datenbank verfolgt werden, finden Sie im [Indizierungsübersicht > Ansicht](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) in unserer Entwicklerdokumentation.
+Änderungsprotokolltabellen sind die Datenbanktabellen, in denen die Änderungen an Entitäten verfolgt werden. Ein Datensatz wird in einer Änderungsprotokolltabelle gespeichert, solange die Änderung nicht angewendet wird, was vom `indexer_update_all_views`-Cron-Auftrag ausgeführt wird. Es gibt mehrere Änderungsprotokolltabellen in einer Adobe Commerce-Datenbank. Sie werden nach folgendem Muster benannt: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, z. B. `catalog_category_product_cl`, `catalog_product_category_cl`. Weitere Informationen dazu, wie Änderungen in der Datenbank verfolgt werden, finden Sie im Artikel [Indizierungsübersicht > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) in unserer Entwicklerdokumentation.
 
 ### MySQL-Datenbank-Trigger nicht eingerichtet
 
@@ -46,16 +46,16 @@ Wenn Sie nach dem Hinzufügen oder Ändern einer Entität (Trigger, Kategorie, Z
 
 ### Überdimensionierung von Änderungsprotokolltabellen vermeiden
 
-Stellen Sie sicher, dass `indexer_update_all_views` Der Cron-Auftrag wurde immer erfolgreich abgeschlossen.
+Stellen Sie sicher, dass der Cron-Auftrag `indexer_update_all_views` immer erfolgreich abgeschlossen wurde.
 
-Sie können die folgende SQL-Abfrage verwenden, um alle fehlgeschlagenen Instanzen der `indexer_update_all_views` Cron-Auftrag:
+Sie können die folgende SQL-Abfrage verwenden, um alle fehlgeschlagenen Instanzen des `indexer_update_all_views`-Cron-Auftrags abzurufen:
 
 ```sql
 select * from cron_schedule where job_code = "indexer_update_all_views" and status
   <> "success" and status <> "pending";
 ```
 
-Sie können auch den Status in den Protokollen überprüfen, indem Sie nach der `indexer_update_all_views` Einträge:
+Alternativ können Sie den Status in den Protokollen überprüfen, indem Sie nach den Einträgen `indexer_update_all_views` suchen:
 
 * `<install_directory>/var/log/cron.log` - für Versionen 2.3.1+ und 2.2.8+
 * `<install_directory>/var/log/system.log` - für frühere Versionen
@@ -71,7 +71,7 @@ Verwenden Sie den folgenden Befehl, um diesen Vorgang auszuführen.
 
 >[!WARNING]
 >
->Bevor Sie den Indexmodus wechseln, sollten Sie Ihre Website in [Wartung](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) Modus und [Cron-Aufträge deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) um Datenbanksperren zu vermeiden.
+>Bevor Sie den Indexmodus wechseln, sollten Sie Ihre Website in den Modus [Wartung](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) und in den Modus [Cron-Aufträge deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) , um Datenbanksperren zu vermeiden.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -83,5 +83,5 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Verwandtes Lesen
 
-<ul><li title="MySQL-Tabellen sind zu groß"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL-Tabellen sind zu groß</a> in unserer Wissensdatenbank.</li>
-<li title="MySQL-Tabellen sind zu groß"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Indexerübersicht &gt; Ansicht</a> in unserer Entwicklerdokumentation.</li></ul>
+<ul><li title="MySQL-Tabellen sind zu groß"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL-Tabellen sind in unserer Support-Wissensdatenbank zu groß</a>.</li>
+<li title="MySQL-Tabellen sind zu groß"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Indexerübersicht &gt; Mview</a> in unserer Entwicklerdokumentation.</li></ul>

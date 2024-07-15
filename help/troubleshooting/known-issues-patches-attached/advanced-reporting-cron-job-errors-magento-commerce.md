@@ -21,7 +21,7 @@ Adobe Commerce (alle Bereitstellungsoptionen) 2.3.x
 
 ## Problem
 
-Ein Kunde erhält einen 404-Fehler, wenn er versucht, auf die erweiterte Berichterstellung zuzugreifen, und in den Protokollen, die mit `analytics_collect_data job` .
+Ein Kunde erhält einen 404-Fehler, wenn er versucht, auf die erweiterte Berichterstellung zuzugreifen, und in den mit `analytics_collect_data job` verknüpften Protokollen sind Fehler enthalten.
 
 ## Kompatible Magento-Versionen:
 
@@ -35,13 +35,13 @@ Die Patches sind mit den folgenden Adobe Commerce-Versionen und -Editionen kompa
 
 Um das Problem zu beheben, wenden Sie bitte den entsprechenden Patch an, der an diesen Artikel angehängt ist. Um es herunterzuladen, klicken Sie auf die folgenden Links:
 
-* Herunterladen [MDVA-19391\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip)
-* Herunterladen [MDVA-15136\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip)
-* Herunterladen [MDVA-18980\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip)
+* Laden Sie [MDVA-19391\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip) herunter
+* Laden Sie [MDVA-15136\_EE\_2.2.6\_COMPOSER\_v1.patch](assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip) herunter
+* Laden Sie [MDVA-18980\_EE\_2.3.1\_COMPOSER\_v1.patch](assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip) herunter
 
 So überprüfen Sie, welcher Patch verwendet werden soll:
 
-<ol><li>Überprüfen Sie die Protokolle mithilfe des folgenden Befehls:<code>grep analytics_collect_data var/log/support_report.log var/log/support_report.log.1.gz</code>
+<ol><li>Überprüfen Sie die Protokolle mit dem folgenden Befehl:<code>grep analytics_collect_data var/log/support_report.log var/log/support_report.log.1.gz</code>
 </li><li>Wählen Sie je nach angezeigtem Fehler mithilfe der Informationen aus der folgenden Tabelle einen Patch aus.<table style="width: 826px;">
 <tbody>
 <tr>
@@ -52,21 +52,26 @@ So überprüfen Sie, welcher Patch verwendet werden soll:
 </tr>
 <tr>
 <td>
-<pre>report.CRITICAL: Fehler beim Ausführen eines Cron-Auftrags {"exception":"[object] (RuntimeException(code: 0): Fehler beim Ausführen eines Cron-Auftrags unter /srv/public_html/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php:327, TypeError(code: 0): substr_count() erwartet, dass Parameter 1 eine Zeichenfolge ist, Null angegeben unter /srv/public_html/vendor/magento/module-page-builder-analytics/Model/ContentTypeUsageReportProvider.php:106)"} []</pre>ODER<pre>report.ERROR: Cron Job analytics_collect_data hat einen Fehler: substr_count() erwartet, dass der Parameter 1 eine Zeichenfolge ist, null angegeben. Statistik: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384}
+<pre>report.CRITICAL: Fehler beim Ausführen eines Cron-Auftrags {"exception":"[object] (RuntimeException(code:
+  0): Fehler beim Ausführen eines Cron-Auftrags unter /srv/public_html/vendor/magento/module-cron/Observer/ProcessCronQueueObserver.php:327,
+  TypeError(code: 0): substr_count() erwartet, dass der Parameter 1 eine Zeichenfolge ist, Null, gegeben
+  unter /srv/public_html/vendor/magento/module-page-builder-analytics/Model/ContentTypeUsageReportProvider.php:106)"}
+  []</pre>ODER<pre>report.ERROR: Cron Job analytics_collect_data hat einen Fehler: substr_count() erwartet
+  Parameter 1 als Zeichenfolge, null angegebene. Statistiken: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384}
   [] []</pre>
 <p> </p>
 </td>
-<td>Anwenden<a href="assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch">MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip</a>, leeren Sie den Cache und warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.</td>
+<td>Wenden Sie<a href="assets/MDVA-19391_EE_2.3.1_COMPOSER_v1.patch">MDVA-19391_EE_2.3.1_COMPOSER_v1.patch.zip</a> an, leeren Sie den Cache und warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.</td>
 </tr>
 <tr>
 <td>
 <p><em>Fehler beim Öffnen der Datei /tmp/analytics/tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/../tmp/./tmp/./tmp//tmp/../tmp/../</em></p>
 </td>
-<td>Anwenden<a href="assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch">MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip</a>, leeren Sie den Cache und warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.</td>
+<td>Wenden Sie<a href="assets/MDVA-15136_EE_2.2.6_COMPOSER_v1.patch">MDVA-15136_EE_2.2.6_COMPOSER_v1.patch.zip</a> an, leeren Sie den Cache und warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.</td>
 </tr>
 <tr>
 <td><em>Ungültige Chiffre</em></td>
-<td>Anwenden<a href="assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch">MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip</a>, leeren Sie den Cache und warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.</td>
+<td>Wenden Sie<a href="assets/MDVA-18980_EE_2.2.6_COMPOSER_v1.patch">MDVA-18980_EE_2.2.6_COMPOSER_v1.patch.zip</a> an, leeren Sie den Cache und warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.</td>
 </tr>
 </tbody>
 </table>
@@ -74,7 +79,7 @@ So überprüfen Sie, welcher Patch verwendet werden soll:
 
 ## Anwenden des Pflasters
 
-Entpacken Sie die Datei und befolgen Sie die Anweisungen unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Entpacken Sie die Datei und befolgen Sie die Anweisungen unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Verwandte Informationen
 

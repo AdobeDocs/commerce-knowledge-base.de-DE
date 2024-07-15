@@ -17,11 +17,11 @@ Dieser Artikel enthält einen Patch für den bekannten Adobe-С-Commerce in Clou
 
 ## Problem
 
-Wenn Sie in Admin Kunden- oder Kundendatensätze zum Löschen auswählen, filtern Sie das Raster und wählen Sie dann die **Löschen** Aktion, werden alle Datensätze gelöscht.
+Wenn Sie in Admin Kunden- oder Client-Datensätze auswählen, die gelöscht werden sollen, das Raster filtern und dann die Aktion **Löschen** auswählen, werden alle Datensätze gelöscht.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Navigieren Sie zu **Katalog** > **Produkte** im Admin.
+1. Navigieren Sie im Admin zu **Katalog** > **Produkte** .
 1. Wählen Sie ein Produkt oder mehrere Produkte aus.
 1. Wählen Sie im Dropdown-Menü Aktionen die Option Löschen aus.
 
@@ -52,4 +52,4 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.

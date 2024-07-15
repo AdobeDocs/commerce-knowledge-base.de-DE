@@ -26,29 +26,29 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.0-Probl
 
 <u>Zu reproduzierende Schritte:</u>
 
-Navigieren Sie in Commerce Admin zu **Vertrieb** > **Braintree Virtual Terminal** . ** **
+Wechseln Sie in Commerce Admin zu **Sales** > **Braintree Virtual Terminal** . ** ** **
 
 <u>Erwartetes Ergebnis:</u>
 
-Die **Braintree Virtual Terminal** Seite wird mit der richtigen Benutzeroberfläche geladen.
+Die Seite **Braintree Virtual Terminal** wird mit der richtigen Benutzeroberfläche geladen.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Die Benutzeroberfläche der **Braintree Virtual Terminal** Seite ist kaputt.
+Die Benutzeroberfläche der Seite **Braintree Virtual Terminal** ist fehlerhaft.
 
 ### Szenario 2: Braintree-Zahlungsmethode ist konfiguriert
 
 <u>Zu reproduzierende Schritte:</u>
 
-Navigieren Sie in Commerce Admin zu **Vertrieb** > **Braintree Virtual Terminal** . ** **
+Wechseln Sie in Commerce Admin zu **Sales** > **Braintree Virtual Terminal** . ** ** **
 
 <u>Erwartetes Ergebnis:</u>
 
-Die **Braintree Virtual Terminal** -Seite mit der richtigen Benutzeroberfläche geladen wird und ein Warnhinweis angezeigt wird, der darüber informiert, dass Braintree noch nicht konfiguriert ist.
+Die Seite **Braintree Virtual Terminal** wird mit der richtigen Benutzeroberfläche geladen und es wird eine Warnung angezeigt, die Sie darauf hinweist, dass Braintree noch nicht konfiguriert ist.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Die Benutzeroberfläche der **Braintree Virtual Terminal** -Seite beschädigt ist und keine Warnung angezeigt wird.
+Die Benutzeroberfläche der Seite **Braintree Virtual Terminal** ist fehlerhaft und es wird kein Warnhinweis angezeigt.
 
 ## Lösung
 
@@ -69,6 +69,6 @@ Der Patch wurde für erstellt:
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) für Anweisungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
 
 ## Attached Files

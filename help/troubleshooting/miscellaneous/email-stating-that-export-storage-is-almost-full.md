@@ -1,9 +1,10 @@
 ---
-title: "E-Mail mit Angabe, dass der Exportspeicher fast voll ist"
+title: E-Mail mit der Meldung, dass der Exportspeicher fast vollständig ist
 description: Dieser Artikel bietet eine Lösung für das Problem, dass Sie eine E-Mail erhalten, in der Sie darauf hingewiesen werden, dass der Exportspeicher fast voll ist.
 feature: Cloud, Storage, Media
 role: Developer
-source-git-commit: 8f783cb4245911bded5e9946917e2f2c3e78a705
+exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
+source-git-commit: 89f985b832545f1fbccf94aac1d60f1e767b5bc4
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -20,15 +21,15 @@ Adobe Commerce in der Cloud-Infrastruktur (alle Versionen)
 
 ## Problem
 
-Sie erhalten eine E-Mail mit folgendem Inhalt, können jedoch die *Exporte* Ordner:
+Sie erhalten eine E-Mail mit folgendem Inhalt, können jedoch den Ordner *export* nicht finden:
 
-*Unser Monitoring hat festgestellt, dass der &quot;Export&quot;-Speicher in Ihrem Cluster XXX etwa &#39;85%&#39; voll ist.*
+*Unser Monitoring hat festgestellt, dass der &quot;Export&quot;-Speicher in Ihrem Cluster XXX ungefähr &#39;85 %&#39; voll ist.*
 *Überprüfen Sie bei Bedarf die Verwendung, führen Sie eine Bereinigung durch oder fordern Sie eine Aktualisierung an.*
 *Beachten Sie außerdem, dass wir automatisch eine Vergrößerung versuchen, wenn der Speicher den kritischen Schwellenwert erreicht.*
 
 ## Ursache
 
-Die E-Mail bezieht sich auf die **Exporte** storage, d. h. die Menge an Speicherplatz, die den Dateien/Medien zugeordnet ist, und nicht ein bestimmter Ordner mit dem Namen *Exporte*.
+Die E-Mail bezieht sich auf den Speicher **export**, der der den Dateien/Medien zugewiesenen Menge an Speicherplatz entspricht, und nicht auf einen bestimmten Ordner mit dem Namen *exports*.
 
 ## Lösung
 
@@ -36,12 +37,12 @@ Sie sollten die Verwendung der Dateien in der Umgebung überprüfen. Führen Sie
 
 `df -h |grep data`
 
-Die typischen Speicherorte, an denen die Dateispeicherung wahrscheinlich gefüllt wird, sind die *pub/media/catalog/product/cache* oder *var/log* Ordner. Um den von den Dateien verwendeten Speicherplatz zu bestimmen, führen Sie diesen Befehl mit dem entsprechenden Pfad aus */path/to/folder*:
+Die typischen Speicherorte, an denen der Dateispeicher wahrscheinlich gefüllt wird, sind die Ordner *pub/media/catalog/product/cache* oder *var/log* . Um den von den Dateien verwendeten Speicherplatz zu bestimmen, führen Sie diesen Befehl mit dem entsprechenden Pfad */path/to/folder* aus:
 
 `du -shc` */path/to/folder*
 
-Wenn die Nutzung des Mediums einen großen Teil des gesamten Festplattenspeichers ausmacht, sollten Sie die Aktivierung von [Fastly Deep Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization)und löschen Sie dann die Dateien im *pub/media/catalog/product/cache* -Ordner manuell auf dem Server.
+Wenn die Nutzung der Mediendatei einen großen Teil des gesamten Festplattenspeichers ausmacht, sollten Sie erwägen, die Option [Fastly Deep Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) zu aktivieren und dann die Dateien im Ordner *pub/media/catalog/product/cache* auf dem Server manuell zu löschen.
 
 ## Verwandte Informationen
 
-[Überprüfen dedizierter Cluster](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) in unserer Wissensdatenbank.
+[Überprüfen Sie dedizierte Cluster](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) in unserer Support-Wissensdatenbank.

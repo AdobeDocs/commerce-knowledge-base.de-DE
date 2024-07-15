@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30599: customer_is_Guest ist falsch eingestellt
 
-Der Patch MDVA-30599 behebt das Problem, dass mit API erstellte Gastangebote fälschlicherweise als Anführungszeichen für angemeldete Kunden markiert werden. Dieser Patch ist verfügbar, wenn die Variable [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 installiert ist. Das Problem wurde in Adobe Commerce 2.4.2 behoben.
+Der Patch MDVA-30599 behebt das Problem, dass mit API erstellte Gastangebote fälschlicherweise als Anführungszeichen für angemeldete Kunden markiert werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 installiert ist. Das Problem wurde in Adobe Commerce 2.4.2 behoben.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.3.4 - 2.4.0
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -36,8 +36,8 @@ Mit der API erstellte Gastangebote werden fälschlicherweise als Anführungszeic
 <u>Zu reproduzierende Schritte</u>:
 
 1. Fügen Sie in der Adobe Commerce-Storefront als Gastbenutzer ein Produkt zum Warenkorb hinzu.
-1. Suchen Sie in Ihrer Adobe Commerce-DB die entsprechende `quote_id_mask`.
-1. Senden einer API-Anfrage an `quoteGuestCartRepositoryV1` Warenkorb-Repository-Oberfläche für Gastkarts. Dies kann über Swagger oder cURL-Anfrage erfolgen.
+1. Suchen Sie in Ihrer Adobe Commerce-DB den entsprechenden `quote_id_mask`.
+1. Senden Sie eine API-Anfrage für Warenkorb-Warenkorb an die Oberfläche für das Warenkorb-Repository `quoteGuestCartRepositoryV1` . Dies kann über Swagger oder cURL-Anfrage erfolgen.
 
 ```curl
 curl -X GET "http://web2-73.sparta.corp.magento.com/dev/support/ee24dev/rest/all/V1/guest-carts/ToOwPtSBxkorkCLq6ztwupPd99y8zhky" -H "accept: application/json"
@@ -55,12 +55,12 @@ Als Antwort erhalten Sie `"customer_is_guest": false`
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Software-Aktualisierungshandbuch > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Zusätzliche Schritte, die nach der Patch-Installation erforderlich sind
 
-Der Patch wird für alle neuen Gastkarts wirksam sein. Wenn Sie bestehende Warenkorb korrigieren müssen, legen Sie `quote.customer_is_guest = 1` für die Aufzeichnungen, `quote.customer_id` ist NULL. Sie können eine Abfrage ausführen, die der folgenden ähnelt:
+Der Patch wird für alle neuen Gastkarts wirksam sein. Wenn Sie bestehende Gastkarts korrigieren müssen, setzen Sie für jene Datensätze, für die `quote.customer_id` NULL ist, den Wert &quot;`quote.customer_is_guest = 1`&quot;. Sie können eine Abfrage ausführen, die der folgenden ähnelt:
 
 ```sql
 UPDATE quote SET customer_is_guest = 1 WHERE customer_id IS NULL;
@@ -74,7 +74,7 @@ UPDATE quote SET customer_is_guest = 1 WHERE customer_id IS NULL;
 
 Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 
-* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Tools &quot;Qualitätsmuster&quot;, ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist.](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [In QPT verfügbare Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.

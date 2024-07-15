@@ -25,9 +25,9 @@ Unsere [Onboarding-Dokumentation](https://experienceleague.adobe.com/docs/commer
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. You [Installieren von Zahlungsdiensten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) und [Commerce Services konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
-1. Sie navigieren zu **Zahlungsdienste** im Admin und [Start-Sandbox-Onboarding](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/onboard.html).
-1. Im angezeigten Popup PayPal-Onboarding erstellen Sie ein neues Geschäftskonto (anstelle von [Anmelden mit einem zuvor erstellten PayPal-Sandbox-Konto](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html#test-in-sandbox-environment) während des Onboarding.
+1. Sie [installieren Zahlungsdienste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) und [konfigurieren Ihre Commerce-Dienste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. Navigieren Sie im Admin zu **Zahlungsdienste** und im Sandbox-Onboarding-Menü [starten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/onboard.html) .
+1. Im angezeigten Popup &quot;PayPal-Onboarding&quot;erstellen Sie beim Onboarding ein neues Geschäftskonto (anstelle von [Anmelden mit einem zuvor erstellten PayPal-Sandbox-Konto](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html#test-in-sandbox-environment) ).
 1. Sie haben das Onboarding von PayPal erfolgreich abgeschlossen.
 1. In Admin wird Ihnen eine Benachrichtigung angezeigt, dass Ihre Sandbox-Zahlungen ausstehen und Sie Ihre E-Mail-Adresse mit PayPal bestätigen müssen, um das Onboarding abzuschließen.
 
@@ -39,6 +39,6 @@ PayPal kann Ihr Sandbox-Konto nicht überprüfen und Sie können das Sandbox-Onb
 
 ## Lösung
 
-1. Verwenden eines Sandbox-Kontos, das im [PayPal-Entwickler](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) Portal.
-1. Klicks [Sandbox zurücksetzen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html#test-in-sandbox-environment) und starten Sie das Onboarding Ihrer Sandbox neu.
-1. [Support kontaktieren](mailto:payment-services-support@adobe.com) wenn Sie Ihre Kontoprobleme nicht beheben können, sodass Sie das Onboarding fortsetzen und Zahlungen annehmen können.
+1. Verwenden eines Sandbox-Kontos, das im Portal [PayPal Developer](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) erstellt wurde.
+1. Klicken Sie auf [Sandbox zurücksetzen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html#test-in-sandbox-environment) und starten Sie das Onboarding Ihrer Sandbox neu.
+1. [Wenden Sie sich an den Support](mailto:payment-services-support@adobe.com) , wenn Sie Ihre Kontoprobleme nicht beheben können, damit Sie das Onboarding fortsetzen und Zahlungen annehmen können.

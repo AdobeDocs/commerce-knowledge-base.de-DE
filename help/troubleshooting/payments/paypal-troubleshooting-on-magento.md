@@ -29,7 +29,7 @@ Vergewissern Sie sich, dass Sie dieselben Einstellungen angewendet und dieselben
 
 ### Problem mit Beispieleinstellungen
 
-Bei der Anwendung der PayPal Express Checkout-Lösung müssen Transaktionen, die auf AVS-/CSC-Antworten basieren, unter **PayPal Manager** (Diensteinstellungen > Einrichten > Sicherheitsoptionen) und in **Commerce Admin** ( **Stores** > Konfiguration > **Vertrieb** > **Zahlungsmethoden** ...).
+Bei der Anwendung der PayPal Express Checkout-Lösung müssen Transaktionen, die auf AVS-/CSC-Antworten basieren, in **PayPal Manager** (Diensteinstellungen > Einrichten > Sicherheitsoptionen) und in **Commerce Admin** ( **Geschäfte** > Konfiguration > **Verkauf** > **Zahlungsmethoden** ...) abgelehnt werden.
 ![magento_paypal_settings_2.4.1.png](assets/magento_paypal_settings_2.4.1.png)
 Weitere Informationen finden Sie in der Dokumentation: [PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm) und [Adobe Commerce](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html) in unserem Benutzerhandbuch.
 
@@ -41,14 +41,14 @@ Wenn Ihre PayPal-Zahlungsmethode API mit Abrechnungsvereinbarungen und Referenzt
 
 Siehe die folgenden Artikel:
 
-* [PayPal Gateway Anfrage abgelehnt - Problem mit doppelten Rechnungen](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) in unserer Wissensdatenbank.
-* [Inkrementierungs-ID für neue Store-Entität ändern](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) in unserer Wissensdatenbank.
+* [PayPal Gateway-Anfrage abgelehnt - Problem mit doppelten Rechnungen](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) in unserer Support-Wissensdatenbank.
+* [Ändern Sie die Inkrement-ID für die neue Store-Entität](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) in unserer Support-Wissensdatenbank.
 
 ## Support kontaktieren, um erweiterte Zahlungslogs zu erfassen
 
 Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam Sie bitten, einen speziellen Patch anzuwenden, um eine erweiterte Zahlungsprotokollierung zu ermöglichen. In diesem Fall sollten die folgenden Schritte ausgeführt werden:
 
-[Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit den folgenden Details:
+[Senden Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit den folgenden Details:
 
 * Geben Sie Ihr Problem mit so vielen Details wie möglich an.
 * Führen Sie die Schritte auf, die Sie mit diesem Artikel, der Wissensdatenbank und anderen Ressourcen versucht haben. Schließen Sie alle Ergebnisse ein.
@@ -57,5 +57,5 @@ Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam
 Wenn Sie den Patch &quot;Erweiterte Zahlungsprotokollierung&quot;erhalten:
 
 * Wenden Sie den Patch an.
-* Erfassen Sie Protokolle und fügen Sie sie an Ihre [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Erfassen Sie Protokolle und hängen Sie sie an Ihr [Supportticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) an.
 * Warten Sie auf weitere Empfehlungen des Adobe Commerce-Supportteams.

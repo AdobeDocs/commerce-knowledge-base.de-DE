@@ -24,30 +24,30 @@ In diesem Artikel gehen wir davon aus, dass Sie bereits über die böswilligen I
 
 Wenn Ihre Website von DDoS überlastet ist, können Sie sich möglicherweise nicht bei Ihrem Commerce-Administrator anmelden (und alle in diesem Artikel beschriebenen Schritte ausführen).
 
-Um Zugriff auf den Admin zu erhalten, stellen Sie Ihre Website in den Wartungsmodus, wie unter [Aktivieren oder Deaktivieren des Wartungsmodus](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html#instgde-cli-maint) und Ihre IP-Adresse auf die Whitelist setzen. Deaktivieren Sie den Wartungsmodus, nachdem dies abgeschlossen ist.
+Um Zugriff auf den Admin zu erhalten, stellen Sie Ihre Website in den Wartungsmodus, wie unter [Wartungsmodus aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html#instgde-cli-maint) beschrieben, und setzen Sie Ihre IP-Adresse auf die Whitelist. Deaktivieren Sie den Wartungsmodus, nachdem dies abgeschlossen ist.
 
 ## Blockieren des Datenverkehrs nach IP
 
 Für die Adobe Commerce im Cloud-Infrastrukturspeicher besteht die wirksamste Möglichkeit, den Traffic nach bestimmten IP-Adressen und Subnetzen zu blockieren, darin, im Commerce-Admin eine ACL für Fastly hinzuzufügen. Im Folgenden finden Sie die Schritte mit Links zu detaillierteren Anweisungen:
 
-1. Navigieren Sie in Commerce Admin zu **Stores** > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache** > **Schnelle Konfiguration**.
-1. [Neue ACL erstellen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/ACL.md) mit einer Liste von IP-Adressen oder Subnetzen, die Sie blockieren werden.
-1. Fügen Sie ihn der ACL-Liste und dem Block hinzu, wie im Abschnitt [Blockieren](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) Handbuch für das Fastly\_CDN-Modul für Adobe Commerce.
+1. Navigieren Sie im Commerce-Admin zu &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**Erweitert**&quot;> &quot;**System**&quot;> &quot;**Gesamter Seiten-Cache**&quot;> &quot;**Schnelle Konfiguration**&quot;.
+1. [Erstellen Sie eine neue ACL](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/ACL.md) mit einer Liste von IP-Adressen oder Subnetzen, die Sie blockieren werden.
+1. Fügen Sie ihn zur ACL-Liste und zum Block hinzu, wie im Handbuch [Blocking](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) für das Fastly\_CDN-Modul für Adobe Commerce beschrieben.
 
 ## Blockieren des Datenverkehrs nach Ländern
 
 Für die Adobe Commerce im Cloud-Infrastrukturspeicher besteht die wirksamste Möglichkeit, den Datenverkehr nach Ländern zu blockieren, darin, im Commerce-Administrator eine ACL für Fastly hinzuzufügen.
 
-1. Navigieren Sie in Commerce Admin zu **Stores** > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache** > **Schnelle Konfiguration**.
-1. Wählen Sie die Länder aus und konfigurieren Sie die Blockierung mithilfe der ACL, wie im Abschnitt [Blockieren](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) Handbuch für das Fastly\_CDN-Modul für Adobe Commerce.
+1. Navigieren Sie im Commerce-Admin zu &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**Erweitert**&quot;> &quot;**System**&quot;> &quot;**Gesamter Seiten-Cache**&quot;> &quot;**Schnelle Konfiguration**&quot;.
+1. Wählen Sie die Länder aus und konfigurieren Sie die Blockierung mithilfe von ACL, wie im Handbuch [Blocking](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/BLOCKING.md) für das Fastly\_CDN-Modul für Adobe Commerce beschrieben.
 
 ## Blockieren des Traffics durch den Benutzeragenten
 
 Um eine Blockierung basierend auf dem Benutzeragenten einzurichten, müssen Sie Ihrer Fastly-Konfiguration ein benutzerdefiniertes VCL-Snippet hinzufügen. Gehen Sie dazu wie folgt vor:
 
-1. Navigieren Sie in Commerce Admin zu **Stores** > **Konfiguration** > **Erweitert** > **System** > **Vollständiger Seiten-Cache**.
-1. Dann **Schnelle Konfiguration** > **Benutzerdefinierte VCL-Snippets**.
-1. Erstellen Sie das neue benutzerdefinierte Snippet wie im Abschnitt [Benutzerdefinierte VCL-Snippets](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) Handbuch für das Modul Fastly\_CDN. Sie können das folgende Codebeispiel verwenden. Dieses Beispiel deaktiviert den Traffic für die `AhrefsBot` und `SemrushBot` Benutzeragenten.
+1. Navigieren Sie im Commerce-Admin zu &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**Erweitert**&quot;> &quot;**System**&quot;> &quot;**Gesamter Seiten-Cache**&quot;.
+1. Dann **Fastly Configuration** > **Custom VCL Snippets**.
+1. Erstellen Sie das neue benutzerdefinierte Snippet wie im Handbuch [Benutzerdefinierte VCL-Snippets](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) für das Fastly\_Cdn-Modul beschrieben. Sie können das folgende Codebeispiel verwenden. In diesem Beispiel wird der Traffic für die Benutzeragenten `AhrefsBot` und `SemrushBot` deaktiviert.
 
 ```php
 name: block_bad_useragents
@@ -61,24 +61,24 @@ name: block_bad_useragents
 
 ## Ratenbegrenzung (experimentelle Fastly-Funktion)
 
-Es gibt eine experimentelle Fastly-Funktion für Adobe Commerce in der Cloud-Infrastruktur, mit der Sie das Ratenlimit für bestimmte Pfade und Crawler festlegen können. Bitte verweisen Sie auf [Dokumentation zu Fastly-Modulen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) für Details.
+Es gibt eine experimentelle Fastly-Funktion für Adobe Commerce in der Cloud-Infrastruktur, mit der Sie das Ratenlimit für bestimmte Pfade und Crawler festlegen können. Weitere Informationen finden Sie in der Dokumentation zum [Fastly-Modul](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/RATE-LIMITING.md) .
 
 Die Funktionalität muss vor der Verwendung in der Produktion umfassend auf dem Staging getestet werden, da dies legitimen Traffic blockieren kann.
 
 ## Empfohlen: Aktualisieren Sie robots.txt
 
-Aktualisieren Ihrer `robots.txt` -Datei kann helfen, bestimmte Suchmaschinen, Crawler und Roboter daran zu hindern, bestimmte Seiten zu durchsuchen. Beispiele für Seiten, die nicht durchsucht werden sollten, sind Suchergebnisseiten, Checkout, Kundeninformationen usw. Wenn Roboter diese Seiten nicht durchsuchen können, kann die Anzahl der von diesen Robotern generierten Anfragen reduziert werden.
+Durch die Aktualisierung Ihrer `robots.txt` -Datei können Sie verhindern, dass bestimmte Suchmaschinen, Crawler und Roboter bestimmte Seiten durchsuchen. Beispiele für Seiten, die nicht durchsucht werden sollten, sind Suchergebnisseiten, Checkout, Kundeninformationen usw. Wenn Roboter diese Seiten nicht durchsuchen können, kann die Anzahl der von diesen Robotern generierten Anfragen reduziert werden.
 
-Bei der Verwendung von `robots.txt`:
+Bei Verwendung von `robots.txt` sind zwei wichtige Aspekte zu beachten:
 
-* Roboter können Ihre `robots.txt`. Insbesondere Malware-Roboter, die das Web auf Sicherheitslücken scannen, und E-Mail-Adressen-Ernster, die von Spammern verwendet werden, werden keine Beachtung finden.
-* Die `robots.txt` -Datei ist eine öffentlich zugängliche Datei. Jeder kann sehen, welche Bereiche Ihres Servers Sie nicht von Robotern verwenden möchten.
+* Roboter können Ihre `robots.txt` ignorieren. Insbesondere Malware-Roboter, die das Web auf Sicherheitslücken scannen, und E-Mail-Adressen-Ernster, die von Spammern verwendet werden, werden keine Beachtung finden.
+* Die Datei &quot;`robots.txt`&quot; ist eine öffentlich verfügbare Datei. Jeder kann sehen, welche Bereiche Ihres Servers Sie nicht von Robotern verwenden möchten.
 
-Grundlegende Informationen und Standard-Adobe Commerce `robots.txt` -Konfiguration finden Sie im Abschnitt [Suchmaschinen-Roboter](https://docs.magento.com/m2/ee/user_guide/marketing/search-engine-robots.html) in unserer Entwicklerdokumentation.
+Die grundlegenden Informationen und die standardmäßige Adobe Commerce `robots.txt`-Konfiguration finden Sie im Artikel [Suchmaschinen-Roboter](https://docs.magento.com/m2/ee/user_guide/marketing/search-engine-robots.html) in unserer Entwicklerdokumentation.
 
-Allgemeine Informationen und Empfehlungen `robots.txt`, siehe:
+Allgemeine Informationen und Empfehlungen zu `robots.txt` finden Sie unter:
 
-* [Erstellen Sie robots.txt](https://developers.google.com/search/docs/advanced/robots/create-robots-txt) Datei vom Google-Support
+* [Erstellen Sie eine robots.txt](https://developers.google.com/search/docs/advanced/robots/create-robots-txt) -Datei durch den Google-Support
 * [Über /robots.txt](https://www.robotstxt.org/robotstxt.html) von robotstxt.org
 
 Arbeiten Sie mit Ihrem Entwickler und/oder SEO-Experte zusammen, um zu bestimmen, welche Benutzeragenten Sie zulassen möchten oder welche Sie nicht zulassen möchten.

@@ -26,12 +26,12 @@ Wenn einem Geschäft Amazon Pay und eine andere Zahlung zugewiesen ist und eines
 
 Eine Aktualisierung der Webseite ist eine Problemumgehung.
 
-Um dieses Problem zu beheben und den Fehler zu entfernen, haben wir eine [Patch](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip).
+Um dieses Problem zu beheben und den Fehler zu entfernen, haben wir einen [Patch](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) erstellt.
 
 <u>Voraussetzungen</u>:
 
 * Ein einfaches Produkt wird erstellt.
-* **Überprüfen/Monatsbestellung** ist nur für bestimmte Länder aktiviert (unter **Store** > **Konfiguration** > **Vertrieb** > **Zahlungsmethoden**).
+* **Check/Money Order** ist nur für bestimmte Länder aktiviert (unter **Store** > **Configuration** > **Sales** > **Zahlungsmethoden**).
 
 * Beispiel: Zahlung aus den betreffenden Ländern = spezifische Länder
 * Beispiel: Zahlungen aus bestimmten Ländern = Vereinigtes Königreich
@@ -45,38 +45,38 @@ Um dieses Problem zu beheben und den Fehler zu entfernen, haben wir eine [Patch]
 
    * Land = *Vereinigte Staaten*
 
-1. Wählen Sie die Versandrate aus und klicken Sie auf **Nächste**.
+1. Wählen Sie die Versandrate aus und klicken Sie auf **Weiter**.
 
    * Der Zahlungsschritt wird geöffnet.
    * Es gibt keine Zahlungen.
-   * Nachricht: **Keine Zahlungsmethode verfügbar.**
-   * Es gibt keine **Bestellung platzieren** Schaltfläche.
+   * Meldung: **Keine Zahlungsmethode verfügbar.**
+   * Es gibt keine Schaltfläche **Bestellung platzieren** .
 
-1. Gehen Sie zurück zu **Versandschritt** und ändern Sie den Wert in:
+1. Gehen Sie zurück zum **Versandschritt** und ändern Sie den Wert in:
 
-   * Land = *Vereinigtes*
+   * Land = *Vereinigtes Königreich*
 
-1. Wählen Sie die Versandrate aus und klicken Sie auf **Nächste**.
+1. Wählen Sie die Versandrate aus und klicken Sie auf **Weiter**.
 
 <u>Erwartetes Ergebnis</u>:
 
 Der Zahlungsschritt wird geöffnet.
 
-* **Bargeld bei Lieferung** angezeigt.
-* **Überprüfen/Monatsbestellung** angezeigt.
-* Die **Bestellung platzieren** angezeigt.
+* **Cash On Delivery** wird angezeigt.
+* **Check/Money order** wird angezeigt.
+* Die Schaltfläche **Bestellung platzieren** wird angezeigt.
 
 <u>Tatsächliches Ergebnis</u>:
 
 Der Zahlungsschritt wird geöffnet.
 
 * Es gibt keine Zahlungen.
-* Nachricht: *Keine Zahlungsmethode verfügbar.*
-* Es gibt keine **Bestellung platzieren** Schaltfläche.
+* Meldung: *Keine Zahlungsmethode verfügbar.*
+* Es gibt keine Schaltfläche **Bestellung platzieren** .
 
 ## Lösung
 
-[Wenden Sie den Patch an](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) unten.
+[Wenden Sie den Patch](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) unten an.
 
 ## Patch
 
@@ -97,6 +97,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe Commerce bereitgestellten Komponentenpatches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank für Anleitungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

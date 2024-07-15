@@ -30,7 +30,7 @@ Dieser Artikel enthält eine Korrektur für den Fall, dass der Wartungsmodus akt
 
 Die Wartungsseite wird angezeigt.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Storefront-Seiten werden wie gewohnt angezeigt.
 
@@ -41,8 +41,8 @@ Seiten werden weiterhin zwischengespeichert, sodass die Wartungsseite nicht ange
 ## Lösung für die Site, die trotz des Wartungsmodus sichtbar ist
 
 1. SSH in Ihrer Umgebung.
-1. Führen Sie die `php bin/magento cache:clean` Befehl.
+1. Führen Sie den Befehl `php bin/magento cache:clean` aus.
 
 ## Verwandtes Lesen
 
-[Aktivieren oder Deaktivieren des Wartungsmodus](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) in unserer Entwicklerdokumentation.
+[Aktivieren oder deaktivieren Sie den Wartungsmodus](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) in unserer Entwicklerdokumentation.

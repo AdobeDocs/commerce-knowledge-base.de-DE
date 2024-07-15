@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Benutzerdefinierte Server-seitige Skripte, die nicht im Pub-Medienverzeichnis ausgeführt werden
 
-Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass benutzerdefinierte serverseitige Skripte nicht ausgeführt werden, wenn sie im `./pub/media/` Verzeichnis Ihrer Adobe Commerce-Anwendung in der Cloud-Infrastruktur. Dies ist eine erwartete Sicherheitsbeschränkung, da die Variable `./pub/media/` -Verzeichnis schreibbar ist. Um Skripte ausführbar zu machen, platzieren Sie sie in nicht beschreibbaren Ordnern, z. B. `./app/code/` oder `./pub/`.
+Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass benutzerdefinierte serverseitige Skripte nicht ausgeführt werden, wenn sie im Ordner &quot;`./pub/media/`&quot;Ihrer Adobe Commerce-Anwendung in der Cloud-Infrastruktur abgelegt werden. Dies ist eine erwartete Sicherheitsbeschränkung, da das Verzeichnis `./pub/media/` schreibbar ist. Um Skripte ausführbar zu machen, platzieren Sie sie in nicht beschreibbaren Verzeichnissen wie `./app/code/` oder `./pub/`.
 
 ## Betroffene Versionen
 
@@ -23,16 +23,16 @@ Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass benutzerdefinier
 
 Benutzerdefinierte serverseitige Skripte können nicht ausgeführt werden, wenn sie initiiert werden.
 
-Wenn beispielsweise der Endbenutzer (Adobe Commerce-Käufer) auf den Link klickt, der zu der `\*.php` Datei mit dem Skript (wie *domain.com/media/directory/script.php* ), wird das Skript heruntergeladen, anstatt es auszuführen.
+Wenn beispielsweise der Endbenutzer (Adobe Commerce-Käufer) auf den Link klickt, der zur Datei &quot;`\*.php`&quot;mit dem Skript führt (z. B. &quot;*domain.com/media/directory/script.php*&quot;), wird das Skript heruntergeladen, anstatt es auszuführen.
 
 ## Ursache: falscher Speicherort der Skriptdatei
 
-Das Problem tritt auf, wenn sich die Skriptdateien im `./pub/media/` Verzeichnis der Adobe Commerce-Anwendung in der Cloud-Infrastruktur. Dies ist ein erwartetes Verhalten: Aufgrund von Sicherheitsbeschränkungen werden Dateien aus den beschreibbaren Verzeichnissen (`./pub/media/`) nie ausgeführt werden.
+Das Problem tritt auf, wenn sich die Skriptdateien im Ordner &quot;`./pub/media/`&quot;der Adobe Commerce-Anwendung in der Cloud-Infrastruktur befinden. Dies ist ein erwartetes Verhalten: Aufgrund von Sicherheitsbeschränkungen werden Dateien aus den beschreibbaren Verzeichnissen (`./pub/media/`) nie ausgeführt.
 
 ## Lösung: Platzieren Sie Skripte in nicht beschreibbaren Verzeichnissen
 
-Speichern Sie die serverseitigen Skripte in nicht schreibgeschützten Ordnern, z. B. `./app/code/` oder `./pub/`  &quot;
+Speichern Sie die Server-seitigen Skripte in nicht schreibgeschützten Verzeichnissen wie `./app/code/` oder `./pub/` &quot;
 
 ## Verwandte Dokumentation
 
-* [Cloud für Adobe Commerce > Projektstruktur > Schreibbare Ordner](https://devdocs.magento.com/guides/v2.3/cloud/project/project-start.html#write-dir) in unserer Entwicklerdokumentation.
+* [Cloud für Adobe Commerce > Projektstruktur > Schreibfähige Verzeichnisse](https://devdocs.magento.com/guides/v2.3/cloud/project/project-start.html#write-dir) in unserer Entwicklerdokumentation.

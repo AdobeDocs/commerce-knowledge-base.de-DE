@@ -26,20 +26,20 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.0-Probl
 
 1. Positionieren Sie eine Bestellung bei einer der folgenden Hauptversandmethoden: FedEx, DHL, UPS und USPS.
 1. Erstellen und autorisieren Sie die Rückgaben für diese Bestellung.
-1. Öffnen Sie eine autorisierte **Rückkehrinformationen** und klicken Sie auf **Versandtitel erstellen** Schaltfläche.
+1. Öffnen Sie eine autorisierte Seite **Rückgabeinformationen** und klicken Sie auf die Schaltfläche **Versandtitel erstellen** .
 1. Wählen Sie Versandmethode aus, fügen Sie ein Produkt zu einem Paket hinzu und klicken Sie auf Speichern.
 
 <u>Erwartetes Ergebnis:</u>
 
-Ein Versandtitel wurde erfolgreich erstellt und Sie erhalten eine Nachricht: *Sie haben einen Versandtitel erstellt.*
+Eine Versandbeschriftung wurde erfolgreich erstellt und Sie sehen eine Meldung: *Sie haben einen Versandtitel erstellt.*
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
-Die **Rückkehrinformationen** -Seite beschädigt ist und auf der Seite mit den Rückkehrinformationen eine Fehlermeldung angezeigt wird: *Allgemeine Informationsänderungen wurden an diesem Abschnitt vorgenommen, die nicht gespeichert wurden. Dieser Tab enthält ungültige Daten*.
+Die Seite **Rückkehrinformationen** ist beschädigt und auf der Seite &quot;Rückkehrinformationen&quot;wird eine Fehlermeldung angezeigt: *Allgemeine Informationsänderungen wurden an diesem Abschnitt vorgenommen, die nicht gespeichert wurden. Diese Registerkarte enthält ungültige Daten*.
 
 ## Lösung
 
-Anwenden [Patch](assets/MC-35984-2.4.0-CE-composer.patch.zip) in diesem Artikel angegeben.
+Wenden Sie den in diesem Artikel angegebenen [Patch](assets/MC-35984-2.4.0-CE-composer.patch.zip) an.
 
 ## Patch
 
@@ -47,11 +47,11 @@ Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach 
 
 [MC-35984-2.4.0-CE-composer.patch](assets/MC-35984-2.4.0-CE-composer.patch.zip)
 
-Der Patch kann auch in beiden heruntergeladen werden. `.git` und `.composer`, Formate in [Adobe Commerce-Downloads](https://magento.com/tech-resources/download) Seite, unter **Patches** in der linken Spaltennavigation. Suchen Sie nach dem Patch MC-35984 .
+Der Patch kann auch in den Formaten `.git` und `.composer` heruntergeladen werden, und zwar auf der Seite [Adobe Commerce-Downloads](https://magento.com/tech-resources/download) unter **Patches** in der linken Spaltennavigation. Suchen Sie nach dem Patch MC-35984 .
 
 ## Anwenden des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) auf unserer Support-Wissensseite.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches auf unserer Support-Wissensseite.
 
 ## Verwandte Lesungen in unserer Wissensdatenbank:
 

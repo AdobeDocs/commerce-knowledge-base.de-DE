@@ -21,7 +21,7 @@ Dieser Artikel enthält Informationen zum Composer-Plug-in, das für die Abhäng
 
 ## Problem
 
-Ein potenzieller Fall eines aktiven Abhängigkeitskonflikts wird durch mindestens eine der in `composer.json` vom Composer-Plug-in `magento/composer-dependency-version-audit-plugin` während der Installation/Aktualisierung des Composers.
+Ein potenzieller Fall eines aktiven Abhängigkeitskonflikts wird durch mindestens eine der direkten oder indirekten Abhängigkeiten erkannt, die vom Composer-Plug-in `magento/composer-dependency-version-audit-plugin` während der Installation/Aktualisierung des Composers in `composer.json` definiert wurden.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -47,5 +47,5 @@ Angreifer können diese Verwundbarkeit ausnutzen, wenn ein Paket nur über priva
 
 ### Erwartungen von Erweiterungsentwicklern
 
-* Es gibt keine Möglichkeit zu wissen, ob das Paket für ein Plugin, wenn von einem öffentlichen Repo, kompromittiert wurde oder nicht. Das Plug-in erkennt, wenn eine öffentliche Version eines Pakets unter packagist.org eine höhere Version aufweist als die Version, die von einem privaten Repo wie [repo.magento.com](https://repo.magento.com). Wir empfehlen dringend, dass Erweiterungsentwickler solche Situationen vermeiden und keine neueren Versionen veröffentlichen, als über verfügbar sind [repo.magento.com](https://repo.magento.com).
+* Es gibt keine Möglichkeit zu wissen, ob das Paket für ein Plugin, wenn von einem öffentlichen Repo, kompromittiert wurde oder nicht. Das Plug-in erkennt, wenn eine öffentliche Version eines Pakets unter packagist.org eine höhere Version aufweist als die von einem privaten Repo wie [repo.magento.com](https://repo.magento.com) verfügbare. Wir empfehlen dringend, dass Erweiterungsentwickler solche Situationen vermeiden und keine neueren Versionen veröffentlichen, als sie über [repo.magento.com](https://repo.magento.com) verfügbar sind.
 * Adobe Commerce weiß, dass der Marketplace-Überprüfungsprozess die Verfügbarkeit von Erweiterungen verzögern kann. Der Prozess ist jedoch erforderlich, um Händler sicher zu halten und Entwicklern von Erweiterungen zu helfen, versehentliche Fehler zu finden, die sie möglicherweise verpasst haben.

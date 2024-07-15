@@ -14,7 +14,7 @@ ht-degree: 0%
 # Fehler beim Bereinigen des Cache in Commerce Admin
 
 In diesem Artikel wird erläutert, wie Sie die Ursache einer Fehlermeldung identifizieren können, die beim Löschen des Caches in Commerce Admin auftritt. Wenn Sie versuchen, den Cache über den Admin zu bereinigen, erhalten Sie die folgende Nachricht:
-*Die Datei &quot;/app/project-id/pub/media/catalog/product/cache/directory/filename&quot;kann nicht gelöscht werden. Warnung!unlink(/app/project id/pub/media/catalog/product/cache/directory/filename): Keine solche Datei oder Verzeichnis*
+Die Datei &quot;*/app/project-id/pub/media/catalog/product/cache/directory/filename&quot;kann nicht gelöscht werden. Warnung!unlink(/app/project id/pub/media/catalog/product/cache/directory/filename): Keine solche Datei oder Verzeichnis*
 
 ## Betroffene Produkte und Versionen
 
@@ -26,14 +26,14 @@ Wenn Sie versuchen, den Cache über den Admin zu leeren, erhalten Sie eine Fehle
 
 <u>Zu reproduzierende Schritte:</u>
 
-1. Navigieren Sie im Admin zu **System** > **Instrumente** > **Cacheverwaltung**.
+1. Wechseln Sie im Admin zu **System** > **Tools** > **Cache-Verwaltung**.
 1. Wählen Sie eine der klaren Zwischenspeicheroptionen aus.
 
 <u>Erwartetes Ergebnis:</u>
 
 Der Adobe Commerce-Cache wurde ohne Fehler geleert.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Sie erhalten den Fehler &quot;Datei kann nicht gelöscht werden&quot;.
 
@@ -56,8 +56,8 @@ ls: cannot access 'pub/media/catalog/product/cache/directory/filename/': No such
 ```
 
 Es wurde versucht, die Dateien zu löschen, nachdem der Vorgang bereits abgeschlossen war. Dies ist kein Fehler; es handelt sich um ein Messaging-Problem bei gleichzeitigen Vorgängen, das manchmal auftreten wird. Es gibt kein Problem zur Fehlerbehebung.
-Wenn die Ausgabe jedoch zeigt, dass sich die Dateien noch im Cache befinden, müssen Sie [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn die Ausgabe jedoch zeigt, dass sich die Dateien noch im Cache befinden, müssen Sie [ein Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Verwandte Informationen
 
-* [Cacheverwaltung](https://docs.magento.com/user-guide/system/cache-management.html) in unserer Entwicklerdokumentation.
+* [Cache-Verwaltung](https://docs.magento.com/user-guide/system/cache-management.html) in unserer Entwicklerdokumentation.

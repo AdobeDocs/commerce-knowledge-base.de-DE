@@ -55,7 +55,7 @@ Für die Installation sind CLI-Befehle für Ihre Adobe Commerce-Instanz erforder
 
 #### Installieren von Google reCAPTCHA und Checkout-Formularaktualisierungen
 
-Die `magento/module-paypal-recaptcha` Das -Paket enthält die Integration mit Google reCAPTCHA- und Payflow Pro-Zahlungsformularaktualisierungen. Selbst wenn Sie das reCAPTCHA-Modul installiert und konfiguriert haben, empfehlen wir Ihnen, dieses Paket zu installieren.
+Das Paket `magento/module-paypal-recaptcha` enthält die Integration in Google reCAPTCHA- und Payflow Pro-Zahlungsformularaktualisierungen. Selbst wenn Sie das reCAPTCHA-Modul installiert und konfiguriert haben, empfehlen wir Ihnen, dieses Paket zu installieren.
 
 Führen Sie die folgenden Befehle aus, um sie zu installieren.
 
@@ -86,7 +86,7 @@ bin/magento cache:clean
 
 #### Checkout-Formularaktualisierungen für CAPTCHA installieren
 
-Die `magento/module-paypal-captcha` Das -Paket enthält die Integration mit dem nativen Adobe Commerce CAPTCHA-Modul.
+Das Paket `magento/module-paypal-captcha` enthält die Integration mit dem nativen Adobe Commerce CAPTCHA-Modul.
 
 Führen Sie die folgenden Befehle aus, um sie zu installieren:
 
@@ -129,13 +129,13 @@ Die neue Option für das Checkout-Formular lautet:
 
 ## PayPal-Unterstützung und -Kontakte
 
-Wenden Sie sich an den PayPal Payflow Merchant Support , um mehr über Betrugsschutzdienste zu erfahren. Sie können das PayPal-Supportteam bitten, die Aktivierung von [Grundlegende Dienstleistungen im Bereich Betrugsschutz](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) Filter, um eine möglichst strenge Kontrolle über Zahlungen zu ermöglichen, sodass Sie Zahlungen, die zu betrügerischen Transaktionen führen können, automatisch ablehnen und Zahlungen akzeptieren können, die normalerweise kein Problem darstellen. Bitte beachten Sie, dass es nach der Aktivierung der PayPal Fraud Protection Services-Filter bis zu 2 Stunden dauern kann, bis Transaktionen abgewickelt werden.
+Wenden Sie sich an den PayPal Payflow Merchant Support , um mehr über Betrugsschutzdienste zu erfahren. Sie können das PayPal-Supportteam bitten, die Filter [Grundlegende Betrugsschutzdienste](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) zu aktivieren, um eine möglichst strenge Kontrolle über Zahlungen zu ermöglichen, sodass Sie Zahlungen, die zu betrügerischen Transaktionen führen können, automatisch ablehnen und Zahlungen akzeptieren können, die normalerweise kein Problem darstellen. Bitte beachten Sie, dass es nach der Aktivierung der PayPal Fraud Protection Services-Filter bis zu 2 Stunden dauern kann, bis Transaktionen abgewickelt werden.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der KB von PayPal [&quot;Adobe hat mich über meine Payflow Pro-Integration kontaktiert. Was muss ich tun?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
+>Weitere Informationen finden Sie in der KB [-Adobe von PayPal, die mich über meine Payflow Pro-Integration kontaktiert hat. Was muss ich tun?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
 
-**Support-Details zu PayPal Payflow Merchant**
+**Details zur Unterstützung des PayPal-Payflow-Händlers**
 
 Die Geschäftszeiten des Payflow Merchant Supports sind Montag bis Freitag von 19:00 - 20:00 Uhr CST. Sie können sich an den Payflow Merchant-Support wenden, um Unterstützung per Telefon oder E-Mail zu erhalten:
 

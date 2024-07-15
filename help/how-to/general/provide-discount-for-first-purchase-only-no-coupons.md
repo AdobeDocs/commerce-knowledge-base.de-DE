@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Rabatt nur für Erstkauf (keine Gutscheine)
 
-Weitere Informationen finden Sie unter [Rabatt mit Erstkauf](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) in unserem Benutzerhandbuch.
+Weitere Informationen finden Sie im Artikel [Rabatt beim ersten Kauf](https://docs.magento.com/m2/ee/user_guide/marketing/price-rule-discount-first-purchase.html) in unserem Benutzerhandbuch.

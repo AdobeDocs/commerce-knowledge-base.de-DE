@@ -30,13 +30,13 @@ Der Bereitstellungsprozess erstellt eine Sicherungsdatei für jede Konfiguration
 * `app/etc/config.php.bak` - enthält systemspezifische Einstellungen und wird während des Builds automatisch generiert, wenn sie nicht vorhanden ist
 * `app/etc/env.php.bak` - enthält vertrauliche Konfigurationsdaten
 
-Sie können sie mithilfe der ECE-Tools wiederherstellen `backup:restore` Befehl.
+Sie können sie mithilfe des Befehls ECE-Tools `backup:restore` wiederherstellen.
 
 Die BAK-Dateien sind ein Produkt des Implementierungsprozesses. Wenn Sie eine Konfigurationsdatei nach der Bereitstellung manuell ändern, werden Ihre Änderungen nicht in den vorhandenen BAK-Dateien übernommen.
 
 Wiederherstellen der Konfigurationsdateien:
 
-1. Melden Sie sich über [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+1. Melden Sie sich mit [SSH](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) bei Ihrem Remote-Repository an.
 1. Geben Sie die verfügbaren Backup-Dateien an.
 
    ```
@@ -62,7 +62,7 @@ Wiederherstellen der Konfigurationsdateien:
    app/etc/config.php file exists! If you want to rewrite existed files use --force
    ```
 
-1. Verwenden Sie die `--force` -Option, um alle Dateien zu überschreiben.
+1. Verwenden Sie die Option &quot;`--force`&quot;, um alle Dateien zu überschreiben.
 
    ```
    ./vendor/bin/ece-tools backup:restore --force

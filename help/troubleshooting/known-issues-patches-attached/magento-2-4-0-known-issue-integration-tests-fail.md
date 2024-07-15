@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bekanntes Problem mit Adobe Commerce 2.4.0: Integrationstests schlagen fehl
 
-Dieser Artikel enthält einen Patch für das Adobe Commerce 2.4.0-Problem, bei dem Integrationstests aufgrund der Deklaration von `Dotdigitalgroup\Email\Test\Integration\Model\Sync\Importer\ImporterFailedTest::setUp()` ist nicht mit PHPUnit 9 kompatibel, das für 2.4.0 verwendet wird.
+Dieser Artikel enthält einen Patch für das Adobe Commerce 2.4.0-Problem, bei dem Integrationstests fehlschlagen, weil die Deklaration von `Dotdigitalgroup\Email\Test\Integration\Model\Sync\Importer\ImporterFailedTest::setUp()` nicht mit PHPUnit 9 kompatibel ist, das für 2.4.0 verwendet wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -32,7 +32,7 @@ Tests werden bestanden.
 
 <u>Tatsächliches Ergebnis</u>
 
-*PHP Fatal error: Deklaration von Dotdigitalgroup\\Email\\Test\\Integration\\Model\\Sync\\Importer\\ImporterFailedTest::setUp() muss mit PHPUnit\\Framework\\TestCase::setUp(): void in /var/www/vendor/dotmailer/dotmailer-magento2-extension/Test/Integration/Model/Sync/Importer/ImporterFailedTest.php in Zeile 36 kompatibel sein.*
+*PHP Schwerwiegender Fehler: Deklaration von Dotdigitalgroup\\Email\\Test\\Integration\\Model\\Sync\\Importer\\ImporterFailedTest::setUp() muss mit PHPUnit\\Framework\\TestCase::setUp(): void in /var/www/vendor/dotmailer/dotmailer-magento2-extension/Test/Integration/Model/Sync/Importer/ImporterFailedTest.php in Zeile 36* kompatibel sein.
 
 ## Lösung
 
@@ -53,6 +53,6 @@ Der Patch wurde für erstellt:
 
 ## Anwenden des Pflasters
 
-Siehe [Anwenden eines von Adobe bereitgestellten Composer-Patches](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank für Anleitungen.
+Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
 
 ## Attached Files

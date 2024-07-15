@@ -40,23 +40,23 @@ kann auch in der Befehlszeile angezeigt werden.
 
 ## Lösung {#solution}
 
-Wir empfehlen [2 GB Arbeitsspeicher für PHP zuweisen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) in unserer Entwicklerdokumentation, um sicherzustellen, dass Ihre Installation oder Aktualisierung erfolgreich ist.
+Wir empfehlen Ihnen in unserer Entwicklerdokumentation [2 GB Arbeitsspeicher für PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) zuzuweisen, um sicherzustellen, dass Ihre Installation oder Aktualisierung erfolgreich ist.
 
-Wenn Sie dies bereits getan haben, erstellen Sie eine Swap-Datei auf Ihrem Computer. Ein Linux-Computer verwendet *Speicherplatz wechseln* , wenn es mehr Speicherressourcen benötigt und der RAM voll ist. Der Austauschraum wird für inaktive Seiten im Speicher verwendet.
+Wenn Sie dies bereits getan haben, erstellen Sie eine Swap-Datei auf Ihrem Computer. Ein Linux-Computer verwendet *Swap-Speicherplatz* , wenn er mehr Speicherressourcen benötigt und der RAM voll ist. Der Austauschraum wird für inaktive Seiten im Speicher verwendet.
 
-Im Folgenden werden nur Vorschläge beschrieben. Es können weitere Optionen verfügbar sein. Wenden Sie sich an einen Netzwerkadministrator oder eine andere sachkundige Ressource, bevor Sie fortfahren. Sie müssen die Befehle ausführen, um eine Swap-Datei als Benutzer mit `root` -Berechtigungen.
+Im Folgenden werden nur Vorschläge beschrieben. Es können weitere Optionen verfügbar sein. Wenden Sie sich an einen Netzwerkadministrator oder eine andere sachkundige Ressource, bevor Sie fortfahren. Sie müssen die Befehle ausführen, um eine Swap-Datei als Benutzer mit `root` -Berechtigungen zu erstellen.
 
 ### Datei tauschen auf Ubuntu {#swap-file-on-ubuntu}
 
-Verwenden Sie die `fallocate` -Befehl, wie in diesen Verweisen beschrieben:
+Verwenden Sie den Befehl `fallocate` , wie in den folgenden Verweisen beschrieben:
 
 * [So fügen Sie Swap auf Ubuntu 14.04 (DigitalOcean) hinzu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
-* [Hinzufügen des Swap-Platzes auf Ubuntu 16.04 (DigitalOean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
+* [Hinzufügen von Swap-Speicherplatz auf Ubuntu 16.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
 * [SwapFAQ (help.ubuntu.com)](https://help.ubuntu.com/community/SwapFaq)
 
 ### Dateiaustausch auf CentOS {#swap-file-on-centos}
 
-Verwenden Sie die `mkswap` -Befehl, wie in diesen Verweisen beschrieben:
+Verwenden Sie den Befehl `mkswap` , wie in den folgenden Verweisen beschrieben:
 
 * [Hinzufügen von Swap auf CentOS 6 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
 * [Hinzufügen von Swap auf CentOS 7 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-46581: Der geschätzte Steuergesamtbetrag wird nach Auswahl eines Landes im Warenkorb nicht aktualisiert
 
-Dieser Patch ACSD-46581 behebt das Problem, dass der Steuersatz nach dem Wechsel des Landes in den Warenkorb nicht aktualisiert wird. Es wird nur aktualisiert, nachdem die Versandmethode ausgewählt wurde. Dieser Patch ist verfügbar, wenn die Variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 installiert ist. Die Patch-ID lautet ACSD-46581. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Dieser Patch ACSD-46581 behebt das Problem, dass der Steuersatz nach dem Wechsel des Landes in den Warenkorb nicht aktualisiert wird. Es wird nur aktualisiert, nachdem die Versandmethode ausgewählt wurde. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 installiert ist. Die Patch-ID lautet ACSD-46581. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,7 +25,7 @@ Dieser Patch ACSD-46581 behebt das Problem, dass der Steuersatz nach dem Wechsel
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] veröffentlicht. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie die `magento/quality-patches` auf die neueste Version zu aktualisieren und die Kompatibilität mit dem [[!DNL Quality Patches Tool]: Suchen Sie nach der Seite Patches .](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -34,11 +34,11 @@ Der Steuersatz wird nach dem Wechsel des Landes in den Warenkorb nicht aktualisi
 <u>Zu reproduzierende Schritte</u>:
 
 1. Navigieren Sie im Adobe Commerce-Admin zu **[!UICONTROL Stores]** > **[!UICONTROL Tax Zone and Rates]**.
-1. Neuen Steuersatz für **[!UICONTROL Country]** = _Vereinigte Staaten_, **[!UICONTROL State]** = _*_, **[!UICONTROL Rate]** = _8,25_.
-1. Neuen Steuersatz für **[!UICONTROL Country]** = _Indien_, **[!UICONTROL State]** = _*_, **[!UICONTROL Rate]** = _10_.
+1. Erstellen Sie einen neuen Steuersatz für **[!UICONTROL Country]** = _Vereinigte Staaten_, **[!UICONTROL State]** = _*_, **[!UICONTROL Rate]** = _8.25_.
+1. Erstellen Sie einen neuen Steuersatz für **[!UICONTROL Country]** = _Indien_, **[!UICONTROL State]** = _*_, **[!UICONTROL Rate]** = _10_.
 1. Erstellen Sie eine Steuerregelung mit Steuersätzen für die USA und Indien.
-1. Navigieren Sie zu **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Shipping Methods]** und mehrere Versandmethoden (_Pauschalsatz_ und _Kostenloser Versand_ zum Beispiel).
-1. Erstellen Sie ein einfaches Produkt mit dem **[!UICONTROL Taxable Goods]** Steuerklasse.
+1. Wechseln Sie zu **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Shipping Methods]** und aktivieren Sie mehr als eine Versandmethode (_Pauschalsatz_ und _Free Shipping_ zum Beispiel).
+1. Erstellen Sie ein einfaches Produkt mit der Steuerklasse **[!UICONTROL Taxable Goods]** .
 1. Fügen Sie dem Warenkorb auf der Vorderseite des Stores ein Produkt hinzu.
 1. Öffnen Sie den Warenkorb und überprüfen Sie den Steuerbetrag.
 1. Die Standardsteuereinstellungen für die USA werden angewendet und die Steuer wird auf der Grundlage eines Steuersatzes von 8,25 % berechnet.
@@ -56,14 +56,14 @@ Der Steuerbetrag bleibt im gesamten Abschnitt des Warenkorbs gleich.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool] Handbuch.
-* Adobe Commerce über Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu [!DNL Quality Patches Tool], siehe:
+Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Wissensdatenbank.
-* [Überprüfen Sie mithilfe von , ob der Patch für Ihr Adobe Commerce-Problem verfügbar ist. [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Wissensdatenbank.
+* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen Sie nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.

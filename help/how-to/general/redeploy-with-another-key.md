@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Dieser Artikel enthält Anweisungen dazu, wie Sie Adobe Commerce in der Cloud-Infrastruktur mit verschiedenen Authentifizierungsschlüsseln neu bereitstellen. Beispielsweise könnten Sie die Schlüssel für ein anderes Konto verwendet haben oder Sie haben anstelle von Adobe Commerce-Magento Open Sourcen möglicherweise-Schlüssel verwendet.
 
-Wenn Sie die falschen Schlüssel verwendet haben, schlägt die Bereitstellung fehl. Um das Projekt wiederherzustellen, müssen Sie es klonen, die richtigen Schlüssel zu `auth.json`und übertragen Sie die Änderung in die Masterverzweigung.
+Wenn Sie die falschen Schlüssel verwendet haben, schlägt die Bereitstellung fehl. Um das Projekt wiederherzustellen, müssen Sie es klonen, die richtigen Schlüssel zu `auth.json` hinzufügen und die Änderung an die Masterverzweigung übertragen.
 
-In diesem Artikel gehen wir davon aus, dass Ihr Projekt über eine `master` Nur Zweig (`master` ist die Standardverzweigung beim ersten Erstellen eines Projekts).
+In diesem Artikel gehen wir davon aus, dass Ihr Projekt nur über eine `master` -Verzweigung verfügt (`master` ist die Standardverzweigung, wenn Sie zum ersten Mal ein Projekt erstellen).
 
 So stellen Sie die Bereitstellung mit den richtigen Authentifizierungsschlüsseln erneut her:
 
@@ -27,14 +27,14 @@ So stellen Sie die Bereitstellung mit den richtigen Authentifizierungsschlüssel
    magento-cloud login
    ```
 
-1. Erstellen Sie eine Verzweigung, um den Code mit dem Namen zu aktualisieren `auth`:
+1. Erstellen Sie eine Verzweigung, um den Code mit dem Namen `auth` zu aktualisieren:
 
    ```
    magento-cloud environment:branch auth master
    ```
 
 1. Wechseln Sie zum Stammverzeichnis des Projekts.
-1. Öffnen `auth.json` in einem Texteditor.
+1. Öffnen Sie `auth.json` in einem Texteditor.
 
    ```json
    {
@@ -65,4 +65,4 @@ So stellen Sie die Bereitstellung mit den richtigen Authentifizierungsschlüssel
 
 1. Warten Sie, bis die Bereitstellung abgeschlossen ist.
 
-Meldungen geben an, ob die Bereitstellung erfolgreich war. Sie können eine erfolgreiche Implementierung bestätigen, indem Sie zu einem der **Umgebungsrouten** auf Ihrem Bildschirm angezeigt.
+Meldungen geben an, ob die Bereitstellung erfolgreich war. Sie können eine erfolgreiche Bereitstellung bestätigen, indem Sie zu einem der auf Ihrem Bildschirm angezeigten **Umgebungsrouten** navigieren.

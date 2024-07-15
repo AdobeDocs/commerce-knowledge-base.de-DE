@@ -1,6 +1,6 @@
 ---
-title: '[!DNL B2B] 1.4.0 Installation schlägt bei Adobe Commerce 2.4.6-p1 vor.'
-description: Dieser Artikel bietet eine Problemumgehung für das Problem mit Adobe Commerce 2.4.6-p1 vor Ort, bei dem [!DNL B2B] Installation der Version 1.4.0 schlägt fehl.
+title: '"[!DNL B2B] 1.4.0 Installation schlägt in Adobe Commerce 2.4.6-p1 vor, On-Premise'
+description: Dieser Artikel bietet eine Problemumgehung für das Problem, dass die Installation von Adobe Commerce 2.4.6-p1 vor Ort fehlschlägt, bei dem die Installation von [!DNL B2B] Version 1.4.0 fehlschlägt.
 feature: Install, Upgrade, B2B
 role: Developer
 exl-id: 4a557c13-7ec2-4cfe-b86e-bb0d1a441658
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # [!DNL B2B] 1.4.0 Installation schlägt bei Adobe Commerce 2.4.6-p1 vor Ort fehl
 
-Dieser Artikel bietet eine Problemumgehung für das Problem mit Adobe Commerce 2.4.6-p1 vor Ort, bei dem [!DNL B2B] Installation der Version 1.4.0 schlägt fehl.
+Dieser Artikel bietet eine Problemumgehung für das On-Premise-Problem mit Adobe Commerce 2.4.6-p1, bei dem die Installation von [!DNL B2B] Version 1.4.0 fehlschlägt.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce 2.4.6-p1 **vor Ort**
+* Adobe Commerce 2.4.6-p1 **lokal**
 * [!DNL B2B] Version 1.4.0
 
 >[!NOTE]
 >
->[!DNL B2B] Version 1.4.0 erfolgreich installiert auf **Adobe Commerce Cloud 2.4.6-p1**.
+>[!DNL B2B] Version 1.4.0 wird erfolgreich auf **Adobe Commerce Cloud 2.4.6-p1** installiert.
 
 ## Problem
 
@@ -34,7 +34,7 @@ Dieser Artikel bietet eine Problemumgehung für das Problem mit Adobe Commerce 2
    m2install.sh -s composer --ee -v 2.4.6-p1
    ```
 
-1. Versuchen Sie zu installieren [!DNL B2B] Version 1.4.0.
+1. Versuchen Sie, die [!DNL B2B] -Version 1.4.0 zu installieren.
 
    ```terminal
    composer require magento/extension-b2b:1.4.0
@@ -61,9 +61,9 @@ Installation failed, reverting ./composer.json and ./composer.lock to their orig
 
 ## Workaround
 
-Erfolgreiche Installation oder Aktualisierung auf [!DNL B2B] Version 1.4.0 auf Adobe Commerce 2.4.6-p1 durch Hinzufügen manueller Abhängigkeiten für die [!DNL B2B] Sicherheitspaket mit [Stabilitäts-Tag](https://getcomposer.org/doc/04-schema.md#package-links).
+Führen Sie die erfolgreiche Installation oder Aktualisierung auf [!DNL B2B] Version 1.4.0 unter Adobe Commerce 2.4.6-p1 durch, indem Sie manuelle Abhängigkeiten für das Sicherheitspaket [!DNL B2B] mit dem Tag [Stabilität](https://getcomposer.org/doc/04-schema.md#package-links) hinzufügen.
 
-1. Aktualisieren Sie im Adobe Commerce-Installationsordner die `composer.json` mit den erforderlichen Abhängigkeiten:
+1. Aktualisieren Sie im Adobe Commerce-Installationsordner `composer.json` mit den erforderlichen Abhängigkeiten:
 
    ```terminal
    composer require magento/module-re-captcha-company=1.0.3-beta1@beta magento/security-package-b2b=1.0.4-beta1@beta
@@ -92,7 +92,7 @@ Erfolgreiche Installation oder Aktualisierung auf [!DNL B2B] Version 1.4.0 auf A
    No security vulnerability advisories found
    ```
 
-1. Aktualisieren `composer.json` hinzugefügt werden [!DNL B2B] Version 1.4.0.
+1. Aktualisieren Sie `composer.json`, um die Version 1.4.0 von [!DNL B2B] hinzuzufügen.
 
    ```terminal
    composer require magento/extension-b2b=1.4.0
@@ -114,5 +114,5 @@ Erfolgreiche Installation oder Aktualisierung auf [!DNL B2B] Version 1.4.0 auf A
 
 1. Führen Sie die Installation oder Aktualisierung durch.
 
-   * [Installieren [!DNL B2B] zur Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
+   * [Installieren Sie [!DNL B2B] in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/b2b-module.html)
    * [Vor Ort installieren](https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html)

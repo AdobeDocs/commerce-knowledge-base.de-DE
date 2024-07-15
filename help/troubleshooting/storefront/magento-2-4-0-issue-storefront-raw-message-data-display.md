@@ -24,7 +24,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass alle Fehlermeldungen a
 
 <u>Zu reproduzierende Schritte:</u>
 
-1. Navigieren Sie zu **Neues Konto erstellen** auf der Storefront angezeigt.
+1. Rufen Sie die Seite **Neues Konto erstellen** auf der Storefront auf.
 1. Erstellen Sie ein neues Konto mit einer registrierten E-Mail. Die folgende Meldung wird angezeigt:
 
 `There+is+already+an+account+with+this+email+address.+If+you+are+sure+that+it+is+your+email+address,+click+here+to+get+your+password+and+access+your+account.`

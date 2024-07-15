@@ -17,75 +17,75 @@ Dieser Artikel ist ein Tool zur Fehlerbehebung für Kunden in Adobe Commerce, di
 
 ## Schritt 1: Verzeichnis mit Leerzeichen identifizieren {#step-1}
 
-+++**Haben Sie eine `/tmp` Problem durch fehlenden Speicherplatz?**
++++**Haben Sie ein `/tmp` -Problem, das durch einen Mangel an Platz verursacht wird?**
 
-Dies kann an einer Reihe von Symptomen wie dem `/tmp` Einbinden, da sie voll, Site-Down oder nicht in der Lage sind, SSH in einem Knoten zu platzieren. Möglicherweise treten auch Fehler wie _Auf dem Gerät verbleibender Speicherplatz (28)_. Für eine Liste der Fehler, die durch `/tmp` vollständig, Überprüfung [/tmp-Bereitstellung voll](/help/troubleshooting/miscellaneous/tmp-mount-full.md).
+Dies kann an einer Reihe von Symptomen erkennbar sein, z. B. dass die `/tmp` -Bereinigung voll ist, die Site heruntergefahren ist oder nicht in der Lage ist, SSH in einen Knoten zu setzen. Möglicherweise treten auch Fehler wie _Kein Speicherplatz auf dem Gerät (28)_ auf. Eine Liste der Fehler, die dadurch verursacht werden, dass `/tmp` voll ist, finden Sie unter [/tmp mountet full](/help/troubleshooting/miscellaneous/tmp-mount-full.md) .
 
-Oder haben Sie eine `/data/mysql` Problem durch fehlenden Speicherplatz? Dies lässt sich auch an einer Vielzahl von Symptomen erkennen, darunter Site-Ausfall, Kunden, die nicht in der Lage sind, Produkte zum Warenkorb hinzuzufügen, Verbindungsfehler zur Datenbank und Galeria-Fehler wie _SQLSTATE\[08S01\]: Kommunikationslink-Fehler: 1047 WSREP_. Eine Liste der Fehler, die durch geringen MySQL-Speicherplatz verursacht werden, finden Sie unter [MySQL-Speicherplatz in Adobe Commerce in der Cloud-Infrastruktur ist gering](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md).
+Oder haben Sie ein `/data/mysql`-Problem, das durch einen Platzmangel verursacht wird? Dies kann auch an verschiedenen Symptomen erkennbar sein, darunter Site-Ausfall, Kunden, die keine Produkte zum Warenkorb hinzufügen können, Verbindungsfehler zur Datenbank und Galeria-Fehler wie _SQLSTATE\[08S01\]: Kommunikationslink-Fehler: 1047 WSREP_. Eine Liste der Fehler, die aus geringem MySQL-Festplattenspeicher resultieren, finden Sie unter [MySQL-Speicherplatz auf Adobe Commerce in der Cloud-Infrastruktur ist gering](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md).
 
-Wenn Sie sich nicht sicher sind, ob Sie ein Problem mit dem Festplattenspeicher haben und ein New Relic-Konto haben, gehen Sie zu [New Relic Infrastructure Monitoring Hosts-Seite](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/). Klicken Sie dort auf die **Speicherung** ändern Sie die **Diagrammanzeigen** von 5 auf 20 Ergebnisse herabsetzen und in der Tabelle auf hohe Festplattenauslastung in der Grafik oder Tabelle Disc Used % nachsehen. Detaillierte Anweisungen finden Sie unter [New Relic Infrastructure Monitoring > Registerkarte &quot;Storage&quot;]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage).
+Wenn Sie sich nicht sicher sind, ob Sie ein Problem mit dem Festplattenspeicher haben und ein New Relic-Konto haben, gehen Sie zur Seite [New Relic Infrastructure monitoring Hosts page](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/). Klicken Sie dann auf die Registerkarte **Speicher**, ändern Sie die Dropdown-Liste **Diagrammanzeigen** von 5 auf 20 Ergebnisse und suchen Sie in der Tabelle nach einer hohen Festplattenauslastung im Diagramm bzw. in der Tabelle &quot;Verwendete Festplatten %&quot;. Weitere Informationen finden Sie unter [New Relic Infrastructure Monitoring > Storage tab]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage).
 
 Wenn eines der oben beschriebenen Symptome bei Ihnen auftritt, überprüfen Sie den Status Ihrer Inoden, um sicherzustellen, dass dies nicht durch Probleme mit der Dateinummer verursacht wird. Führen Sie dazu den folgenden Befehl im CLI/Terminal aus:\
 `df -ih`
 
 Ist IUse% > 90%?
 
-a. YES - Dies wird durch zu viele Dateien verursacht. Überprüfen Sie die Schritte zum sicheren Entfernen von Dateien unter [Sicheres Löschen von Dateien ohne Speicherplatz, Adobe Commerce in der Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md). Fahren Sie mit [Schritt 2](#step-2) nachdem Sie diese Schritte ausgeführt haben. Wenn Sie mehr Speicherplatz anfordern möchten, [Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NO - Prüfung der Leerzeichen. Ausführen `df -h | grep mysql` und dann `df -h | grep tmp` im CLI/Terminal, um die Festplattenspeicherplatznutzung im `/tmp` und `/data/mysql` Verzeichnissen. Fahren Sie mit [Schritt 3](#step-3).
+a. YES - Dies wird durch zu viele Dateien verursacht. Überprüfen Sie die Schritte zum sicheren Entfernen von Dateien in [Sicheres Löschen von Dateien, wenn nicht genügend Speicherplatz vorhanden ist, Adobe Commerce in der Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md). Fahren Sie mit [Schritt 2](#step-2) fort, nachdem Sie diese Schritte ausgeführt haben. Wenn Sie mehr Speicherplatz anfordern möchten, senden Sie [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+b. NO - Prüfung der Leerzeichen. Führen Sie `df -h | grep mysql` und dann `df -h | grep tmp` im CLI/Terminal aus, um die Festplattenspeicherplatznutzung in den Verzeichnissen `/tmp` und `/data/mysql` zu überprüfen. Fahren Sie mit [Schritt 3](#step-3) fort.
 
 +++
 
 ## Schritt 2: Überprüfen des Festplattenspeichers {#step-2}
 
-+++**Überprüfen Sie die Festplattenspeicherplatznutzung?**
++++**Überprüfen Sie die Speicherplatznutzung?**
 
-Nachdem Sie die Anzahl der Dateien reduziert haben, führen Sie `df -h | grep mysql` und dann `df -h | grep tmp` im CLI/Terminal, um die Festplattenspeicherplatznutzung in zu überprüfen. `/tmp` und `/data/mysql`. Ist größer als 70%, verwendet für `/tmp` oder `/data/mysql`?
+Nachdem Sie die Anzahl der Dateien reduziert haben, führen Sie `df -h | grep mysql` und dann `df -h | grep tmp` in der CLI/Terminal aus, um die Speicherplatznutzung in `/tmp` und `/data/mysql` zu überprüfen. Werden mehr als 70 % für `/tmp` oder `/data/mysql` verwendet?
 
-a. JA - fahren Sie mit [Schritt 3](#step-3).
-b. NO - Abfragen können die verfügbare Datenspeicherung erschöpfen. Dadurch kann der Knoten abstürzen, die Abfrage wird beendet und die `tmp` -Dateien. Untersuchen Sie die Ausgabe der `SHOW PROCESSLIST;` in der MySQL-CLI für Abfragen, die die Ursache des Problems sein können. [Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um mehr Speicherplatz anzufordern.
+a. JA - Fahren Sie mit [Schritt 3](#step-3) fort.
+b. NO - Abfragen können die verfügbare Datenspeicherung erschöpfen. Dadurch kann der Knoten abstürzen, die Abfrage wird beendet und die `tmp`-Dateien werden entfernt. Überprüfen Sie die Ausgabe von `SHOW PROCESSLIST;` in der MySQL-CLI auf Abfragen, die die Ursache des Problems sein können. [Senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um mehr Platz anzufordern.
 
 +++
 
 ## Schritt 3: Verzeichnis mit hoher Auslastung identifizieren {#step-3}
 
-+++**Welches Verzeichnis hat mehr als 70% verwendet?**
++++**Welcher Ordner hat mehr als 70 % verwendet?**
 
 Welches Verzeichnis hat mehr als 70% verwendet? `/tmp` oder `/data/mysql`?
 
 >[!NOTE]
 >
->Standardmäßig schreibt tmpdir in die Datenbank `/tmp`. Um zu überprüfen, ob Ihre Datenbankkonfiguration noch auf diesem Standard basiert, führen Sie den folgenden Befehl in MySQL CLI aus: `SHOW VARIABLES LIKE "TMPDIR";` Wenn der Datenbank-TMPdir noch schreibt in `/tmp`angezeigt wird, wird `/tmp` in der Spalte Wert .
+>Standardmäßig schreibt TMPdir der Datenbank in `/tmp`. Um zu überprüfen, ob Ihre Datenbankkonfiguration noch auf diesem Standard basiert, führen Sie den folgenden Befehl in MySQL CLI aus: `SHOW VARIABLES LIKE "TMPDIR";` Wenn der Datenbank-TMPdir noch in `/tmp` schreibt, wird in der Spalte &quot;Wert&quot;der Wert `/tmp` angezeigt.
 
-a. `/tmp` - Fahren Sie fort mit [Schritt 4](#step-4). \
-b. `/data/mysql` - Fahren Sie fort mit [Schritt 5](#step-5).
+a. `/tmp` - Fahren Sie mit [Schritt 4](#step-4) fort. \
+b. `/data/mysql` - Fahren Sie mit [Schritt 5](#step-5) fort.
 
 +++
 
 ## Schritt 4: Fehlerbehebung bei der vollständigen Bereitstellung von /tmp {#step-4}
 
-+++**Fehlerbehebung für die vollständige Bereitstellung von /tmp**
++++**Fehlerbehebung /tmp-Bereitstellung voll**
 
-[Fehlerbehebung für die vollständige Bereitstellung von /tmp für Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md), scrollen Sie nach unten und probieren Sie die Lösungen und Best Practices aus. Dann ausführen `df -h | grep mysql` und dann `df -h | grep tmp` im CLI/Terminal, um die Festplattenspeicherplatznutzung in zu überprüfen. `/tmp` und `/data/mysql` Verzeichnisse\
+[Fehlerbehebung /tmp-Bereitstellung für Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md), scrollen Sie nach unten und probieren Sie die Lösungen und Best Practices aus. Führen Sie dann `df -h | grep mysql` und dann `df -h | grep tmp` in der CLI/Terminal aus, um die Speichernutzung in den Verzeichnissen `/tmp` und `/data/mysql` zu überprüfen.\
   &lt; 70 % verwendet?
 
 >[!NOTE]
 >
->Die Lösungen in [Fehlerbehebung für die vollständige Bereitstellung von /tmp für Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) wurden für Händler entwickelt, die die Variablen für Datenbank-TMPdir nicht geändert haben, die standardmäßig in `/tmp`. Wenn Sie den tmpdir-Wert geändert haben, finden Sie die Anweisungen unter [Fehlerbehebung für die vollständige Bereitstellung von /tmp für Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) wird nicht helfen.
+>Die Lösungen in [Fehlerbehebung /tmp für Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) sind für Händler konzipiert, die die Variablen für den Datenbank-TMPdir nicht geändert haben, der standardmäßig in `/tmp` geschrieben wird. Wenn Sie den tmpdir-Wert geändert haben, sind die Anweisungen in [Fehlerbehebung /tmp-Bereitstellung für Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md) nicht hilfreich.
 
 a. JA - Sie haben das Problem gelöst. \
-b. NO - [Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um mehr Speicherplatz anzufordern.
+b. NO - [Senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um mehr Platz anzufordern.
 
 +++
 
 ## Schritt 5: Standardeinstellung überprüfen {#step-5}
 
-+++**Standardeinstellung aktivieren**
++++**Check default**
 
-Ihre Datenbankkonfiguration befindet sich möglicherweise nicht mehr in der ursprünglichen Standardeinstellung. Suchen Sie die Konfiguration des Datenbank-TMPdir , indem Sie sie in der MySQL-CLI ausführen: `SELECT @@DATADIR;`. Wenn `/data/mysql/` ausgegeben wird, schreibt der Datenbank-TMPdir jetzt in `/data/mysql/`. Versuchen Sie, den Speicherplatz in diesem Verzeichnis zu erhöhen, indem Sie die Schritte unter [MySQL-Speicherplatz auf Adobe Commerce in unserer Cloud-Infrastruktur ist gering](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md). Dann ausführen `df -h | grep mysql` und dann `df -h | grep tmp` im CLI/Terminal, um die Festplattenspeicherplatznutzung in zu überprüfen. `/data/mysql` und `/tmp`.\
+Ihre Datenbankkonfiguration befindet sich möglicherweise nicht mehr in der ursprünglichen Standardeinstellung. Suchen Sie die Konfiguration des Datenbank-TMPdir , indem Sie in der MySQL-CLI ausführen: `SELECT @@DATADIR;`. Wenn `/data/mysql/` ausgegeben wird, schreibt der Datenbank-TMPdir jetzt in `/data/mysql/`. Versuchen Sie, den Speicherplatz in diesem Verzeichnis zu erhöhen, indem Sie die Schritte unter [MySQL-Speicherplatz ist in Adobe Commerce in unserer Cloud-Infrastruktur gering](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) ausführen. Führen Sie dann `df -h | grep mysql` und dann `df -h | grep tmp` in der CLI/Terminal aus, um die Festplattenspeicherplatznutzung in `/data/mysql` und `/tmp` zu überprüfen.\
   &lt; 70 % verwendet?
 
 a. JA - Sie haben das Problem gelöst. \
-b. NO - [Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um mehr Speicherplatz anzufordern.
+b. NO - [Senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um mehr Platz anzufordern.
 
 +++
 

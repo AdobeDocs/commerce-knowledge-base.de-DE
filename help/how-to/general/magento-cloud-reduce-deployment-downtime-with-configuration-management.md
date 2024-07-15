@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Reduzieren von Bereitstellungsausfällen in Adobe Commerce in der Cloud-Infrastruktur
 
-Um Wartungs-Ausfallzeiten erheblich zu reduzieren und eine effiziente Konfiguration Ihres Stores in allen Umgebungen zu ermöglichen, bietet Adobe Commerce in der Cloud-Infrastruktur die **Konfigurationsverwaltung** Funktion. Bei Implementierungen von Adobe Commerce mit der Cloud-Infrastruktur 2.2.x und höher unterstützt diese Funktion Konzepte und Optionen zur Pipeline-Implementierung mit reduzierten Schritten.
+Um Wartungsausfälle erheblich zu reduzieren und eine effiziente Konfiguration Ihres Stores in allen Umgebungen zu ermöglichen, bietet Adobe Commerce in der Cloud-Infrastruktur die Funktion **Konfigurationsverwaltung** . Bei Implementierungen von Adobe Commerce mit der Cloud-Infrastruktur 2.2.x und höher unterstützt diese Funktion Konzepte und Optionen zur Pipeline-Implementierung mit reduzierten Schritten.
 
 ## Übersicht
 
@@ -20,12 +20,12 @@ Zu den schmerzhaften und zeitaufwendigen Problemen bei der Bereitstellung Ihres 
 
 * **Anwenden derselben Konfiguration auf alle Umgebungen.** Normalerweise würden Sie Konfigurationen manuell oder durch komplizierte Datenbankaktualisierungen eingeben. Mit Configuration Management exportieren Sie Konfigurationen aus der Datenbank in eine einzelne Datei, um sie später mit Ihrem Code von Ihrer lokalen Entwicklungsumgebung in die Integration, Staging und Produktion zu pushen.
 
-* **Site-Ausfallzeiten bei der Bereitstellung statischer Inhalte.** Normalerweise werden statische Inhalte während der [Bereitstellungsphase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase). Dies kann bis zu 30 Minuten oder länger dauern, was für Unternehmen nicht akzeptabel ist. Die Konfigurationsverwaltung verschiebt die Bereitstellung statischer Inhalte auf [Build-Phase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase), was keine Ausfallzeiten erfordert.
+* **Site-Ausfallzeiten bei der Bereitstellung statischer Inhalte.** Normalerweise werden statische Inhalte während der [Bereitstellungsphase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase) bereitgestellt. Dies kann bis zu 30 Minuten oder länger dauern, was für Unternehmen nicht akzeptabel ist. Configuration Management verschiebt die Bereitstellung statischer Inhalte in die [Build-Phase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase), für die keine Ausfallzeiten erforderlich sind.
 
 ## Technologieversionen
 
-* Adobe Commerce auf Cloud-Infrastruktur **2.1.4** und höher für die Konfigurationsverwaltung
-* Adobe Commerce auf Cloud-Infrastruktur **2,2** und höher für die Konfiguration/Pipeline-Bereitstellung
+* Adobe Commerce für Cloud-Infrastruktur **2.1.4** und höher für Configuration Management
+* Adobe Commerce für die Cloud-Infrastruktur **2.2** und höher für die Konfigurationsverwaltung/Pipeline-Bereitstellung
 
 ## Was ist Configuration Management?
 
@@ -33,15 +33,15 @@ Kurz gesagt: Der Prozess &quot;Configuration Management&quot;(auch als Pipeline-
 
 Dies bietet die folgenden Vorteile:
 
-* **Konsistente Einstellungen in allen Umgebungen:** Alle Einstellungen, die in die Konfigurationsdatei exportiert werden, werden gesperrt (die entsprechenden Felder im Commerce Admin sind schreibgeschützt), wodurch konsistente Konfigurationen beim Pushen der Datei über alle Umgebungen hinweg sichergestellt werden.
-* **Geringere Ausfallzeiten:** Die statische Dateibereitstellung verschiebt sich von der [Bereitstellungsphase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase) (was erfordert, dass sich die Site im Wartungsmodus befindet) bis zum [Build-Phase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase) (wenn sich die Site nicht im Wartungsmodus befindet und nicht heruntergefahren wird, wenn Fehler oder Probleme auftreten).
-* **Geschützte vertrauliche Daten:** mit Adobe Commerce auf Cloud-Infrastruktur 2.2 und höher exportiert der Prozess auch alle sensiblen Daten (z. B. Anmeldedaten für Zahlungsdenn-Gateway) in die `env.php` -Datei. Diese Datei sollte nur in der Umgebung gespeichert werden, in der sie erstellt wurde, und nicht mit Ihren Git-Verzweigungen gesendet werden.
+* **Konsistente Einstellungen in allen Umgebungen:** Alle Einstellungen, die in die Konfigurationsdatei exportiert werden, werden gesperrt (die entsprechenden Felder im Commerce Admin sind schreibgeschützt), wodurch konsistente Konfigurationen beim Pushen der Datei in allen Umgebungen gewährleistet sind.
+* **Reduzierte Ausfallzeit:** Die Bereitstellung statischer Dateien erfolgt von der [Bereitstellungsphase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#deploy-phase-deploy-phase) (für die die Site im Wartungsmodus sein muss) in die [Build-Phase](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process#build-phase-build-phase) (wenn sich die Site nicht im Wartungsmodus befindet und nicht heruntergefahren wird, wenn Fehler oder Probleme auftreten).
+* **Geschützte vertrauliche Daten:** Mit Adobe Commerce in der Cloud-Infrastruktur 2.2 und höher exportiert der Prozess auch alle sensiblen Daten (z. B. Payment Gateway-Anmeldeinformationen) in die Datei `env.php`. Diese Datei sollte nur in der Umgebung gespeichert werden, in der sie erstellt wurde, und nicht mit Ihren Git-Verzweigungen gesendet werden.
 
 Es wird dringend empfohlen, den Konfigurationsmanagement-Ansatz in Ihrer Implementierung anzuwenden.
 
 ## Konfigurationsverwaltung in unserer Entwicklerdokumentation
 
-* [Konfigurationsverwaltung für **2.1.X**](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) und [example](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) im *Anleitung zur Adobe Commerce-Cloud-Infrastruktur*
-* [Konfigurationsverwaltung für **2.2.X**](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) und [example](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) im *Anleitung zur Adobe Commerce-Cloud-Infrastruktur*
-* [Upgrade von 2.0.X oder 2.1.X](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html#upgrade-from-older-versions) Abschnitt *Aktualisierung von Adobe Commerce auf Cloud-Infrastruktur* topic
-* [Pipeline-Bereitstellung](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/overview.html) im *Konfigurationshandbuch für Adobe Commerce zur Cloud-Infrastruktur* - Für Adobe Commerce in der Cloud-Infrastruktur müssen Sie die Anweisungen in diesem Handbuch nicht befolgen. Der Inhalt dient nur als Referenz. Wir stellen den Build-Server, die Integrationsumgebungen und vieles mehr mit Adobe Commerce in der Cloud-Infrastruktur bereit.
+* [Konfigurationsverwaltung für **2.1.X**](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) und das [Beispiel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) im *Adobe Commerce on Cloud Infrastructure Guide*
+* [Konfigurationsverwaltung für **2.2.X**](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) und das [Beispiel](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html) im *Adobe Commerce on Cloud Infrastructure Guide*
+* Aktualisierung von 2.0.X oder 2.1.X](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html#upgrade-from-older-versions) im Abschnitt *Aktualisieren von Adobe Commerce auf Cloud-Infrastruktur*[
+* [Pipeline-Implementierung](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/overview.html) im *Adobe Commerce on Cloud Infrastructure Configuration Guide* - Für Adobe Commerce on Cloud Infrastructure müssen Sie die Anweisungen in diesem Handbuch nicht befolgen. Der Inhalt dient nur als Referenz. Wir stellen den Build-Server, die Integrationsumgebungen und vieles mehr mit Adobe Commerce in der Cloud-Infrastruktur bereit.

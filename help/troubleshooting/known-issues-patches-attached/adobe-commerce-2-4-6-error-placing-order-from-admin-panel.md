@@ -21,14 +21,14 @@ Wenn Sie eine Bestellung über das Admin-Bedienfeld aufgeben, bleiben Sie bei de
 
 <u>Zu reproduzierende Schritte</u>
 
-1. Navigieren Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]** und wählen Sie einen Kunden aus, um eine Bestellung zu erstellen.
+1. Gehen Sie zu **[!UICONTROL Sales]** > **[!UICONTROL Orders]** und wählen Sie einen Kunden aus, um eine Bestellung zu erstellen.
 2. Wählen Sie den Store aus, um die Bestellung im Bildschirm &quot;Store-Auswahl&quot;zu platzieren.
 
 <u>Erwartetes Ergebnis</u>
 
 Nach Auswahl des Stores können Sie die Bestellung abschließen.
 
-<u>Ergebnis:</u>
+<u>Tatsächliches Ergebnis:</u>
 
 Nachdem Sie den Store ausgewählt haben, werden Sie zurück zur Store-Auswahlseite weitergeleitet und Sie können keine Bestellung erstellen.
 
@@ -44,5 +44,5 @@ Der Patch wurde für und kompatibel mit Adobe Commerce in Cloud-Infrastruktur un
 
 ## Anwenden des Pflasters
 
-* Anweisungen zum Anwenden von Patches für Adobe Commerce auf Cloud-Infrastruktur finden Sie unter [Anwenden von Patches](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in unserem Commerce on Cloud Infrastructure Guide.
-* Eine Anleitung zur Anwendung von Patches für Adobe Commerce vor Ort finden Sie unter [Anwenden von Patches](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) in unserem Commerce Upgrade-Handbuch.
+* Anweisungen zum Anwenden von Patches für Adobe Commerce auf Cloud-Infrastruktur finden Sie unter [Anwenden von Patches](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) in unserem Commerce on Cloud Infrastructure-Handbuch.
+* Anweisungen zum Anwenden von Patches für Adobe Commerce vor Ort finden Sie unter [Anwenden von Patches](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) in unserem Commerce Upgrade-Handbuch.

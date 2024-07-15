@@ -20,8 +20,8 @@ In diesem Video erfahren Sie:
 * Warum es wichtig ist
 * Erstellen einer eigenen Kohortenanalyse in Magento BI
 
-Um sich das Video anzusehen, navigieren Sie zu [Commerce Intelligence - Report Builder der Kohorte](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) in Adobe Experience League.
+Um das Video anzuzeigen, gehen Sie in Adobe Experience League zu &quot;[Commerce Intelligence - Kohortenmodus&quot;](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) .
 
-**Willst du mitkommen?** Sehen Sie sich unsere [Kohorten-Report Builder-Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) für schriftliche Anweisungen.
+**Willst du mitmachen?** Sehen Sie sich unser Tutorial [Kohorten-Report Builder-Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) mit schriftlichen Anweisungen an.
 
-Nachdem Sie den Report Builder &quot;Kohorte&quot;bequem verwendet haben, sollten Sie die Erstellung eines **qualitativ** Kohortenanalyse? Sehen Sie sich die [Tutorial zur qualitativen Kohortenanalyse erstellen](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) für weitere Infos!
+Nachdem Sie den Kohortenanalysen-Report Builder bequem verwendet haben, warum sollten Sie sich nicht mit der Erstellung einer Kohortenanalyse vom Typ **Qualität** befassen? Weitere Informationen finden Sie im Tutorial zum Erstellen einer qualitativen Kohortenanalyse ](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) .[

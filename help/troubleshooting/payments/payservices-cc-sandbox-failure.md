@@ -18,11 +18,11 @@ In diesem Artikel wird erläutert, warum eine Test-Kreditkarte in einer Sandbox-
 ## Betroffene Produkte und Versionen
 
 
-* Adobe Commerce 2.4.0 - 2.4.4 , alle Bereitstellungsoptionen mit [Zahlungsdienste](https://marketplace.magento.com/magento-payment-services.html)
+* Adobe Commerce 2.4.0 - 2.4.4 , alle Bereitstellungsoptionen mit [Zahlungsdiensten](https://marketplace.magento.com/magento-payment-services.html)
 
 ## Problem
 
-Bei Verwendung einer Visa-Testkarte `4111 1111 1111 1111` von PayPal, manchmal scheitert es aufgrund von PayPal Betrug Richtlinien mit dem folgenden Fehler:
+Bei Verwendung einer Visa-Kreditkarte `4111 1111 1111 1111` von PayPal kann es manchmal aufgrund von PayPal-Betrugsrichtlinien mit folgendem Fehler fehlschlagen:
 
 ```terminal
 Error happened when processing the request. Please try again later.
@@ -36,6 +36,6 @@ Dieser Fehler wird angezeigt, wenn PayPal eine bestimmte Test-Kreditkartennummer
 
 Verwenden Sie eine andere Test-Kreditkarte. Zum Generieren von nachgeahmten Kreditkarten können Sie zum Testen verwenden:
 
-1. Wechseln Sie zum PayPal Developer Portal [Kreditkartengenerator](https://developer.paypal.com/developer/creditCardGenerator/) Seite.
+1. Gehen Sie zur Seite &quot;PayPal Developer Portal [Kreditkartengenerator](https://developer.paypal.com/developer/creditCardGenerator/)&quot;.
 1. Melden Sie sich beim PayPal Developer Portal-Dashboard an.
 1. Generieren Sie eine Test-Kreditkarte.

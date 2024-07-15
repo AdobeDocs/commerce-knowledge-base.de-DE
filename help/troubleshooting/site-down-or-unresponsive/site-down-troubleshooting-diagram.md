@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Dieses Adobe Commerce-Website-Down-Fehlerbehebungsdiagramm kann verwendet werden, um Ursachen einer Site-Site zu identifizieren und zu beheben.
 
-![Abbildung eines Website-Down-Fehlerdiagramms](assets/updated_site_down_1.jpeg)
+![Abbildung des Fehlerbehebungsdiagramms auf der Site nach unten](assets/updated_site_down_1.jpeg)

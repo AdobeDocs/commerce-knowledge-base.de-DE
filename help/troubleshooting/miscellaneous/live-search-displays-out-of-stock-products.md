@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Live Search] zeigt nicht vorrätige Produkte unabhängig von den Einstellungen für den Lagerstatus in der Admin-Konsole an.'
+title: '[!DNL Live Search] zeigt nicht vorrätige Produkte an, unabhängig von den Einstellungen für den Lagerstatus in der Admin-Konsole.'
 description: Dieser Artikel enthält Informationen zum bekannten Problem, bei dem die Produktlistungsseite (Product Listing Page, PLP) das Symbol *Wir können keine Produkte finden, die mit dem selection*-Fehler übereinstimmen, während das Such-Popup einige Elemente zurückgibt.
 exl-id: 2a351b83-407c-444a-a761-4932b5b88843
 feature: Admin Workspace, Categories, Orders, Products, Search
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] zeigt nicht vorrätige Produkte unabhängig von den Einstellungen für den Lagerstatus in der Admin-Konsole an
+# [!DNL Live Search] zeigt nicht vorrätige Produkte an, unabhängig von den Einstellungen für den Lagerstatus in der Admin-Konsole
 
 >[!IMPORTANT]
 >
->Dieses Problem wurde in [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html). Informationen zum Installieren der neuesten Version finden Sie unter [Aktualisieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#update) im Benutzerhandbuch.
+>Dieses Problem wurde in [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html) behoben. Informationen zum Installieren der neuesten Version finden Sie unter [Aktualisieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#update) im Benutzerhandbuch.
 
-Dieser Artikel enthält Informationen zum bekannten Problem, bei dem die Produktlistungsseite (Product Listing Page, PLP) die *Wir können keine Produkte finden, die der Auswahl entsprechen* -Fehler angezeigt, während das Such-Popup einige Elemente zurückgibt.
+Dieser Artikel enthält Informationen zum bekannten Problem, bei dem die Produktlistungsseite (Product Listing Page, PLP) den Fehler &quot;*Wir können keine Produkte finden, die mit dem Fehler &quot;selection*&quot;übereinstimmen, während das Such-Popup einige Elemente zurückgibt.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,28 +25,28 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.x
 
 ## Problem
 
-[!DNL Live Search] zeigt Suchergebnisse unabhängig von den Einstellungen für den Lagerstatus im Adobe Commerce Admin an. Auch wenn die **[!UICONTROL Display Out-of-Stock Products]** auf *Nein*, werden die Produkte angezeigt. Dies führt zum PLP-Fehler. *Wir können keine Produkte finden, die der Auswahl entsprechen*.
+[!DNL Live Search] zeigt Suchergebnisse unabhängig von den Einstellungen für den Lagerstatus im Adobe Commerce Admin an. Selbst wenn **[!UICONTROL Display Out-of-Stock Products]** auf *Nein* gesetzt ist, werden die Produkte angezeigt. Dies führt zum PLP-Fehler *Wir können keine Produkte finden, die der Auswahl* entsprechen.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Erstellen Sie eine Kategorie und fügen Sie Produkte hinzu. (Beispiel: Kategorie = _Jeans_, Product1 = _Blue Jeans_, Product2 = _Schwarze Jeans_)
+1. Erstellen Sie eine Kategorie und fügen Sie Produkte hinzu. (Beispiel: Kategorie = _Jeans_, Produkt1 = _Blue Jeans_, Produkt2 = _Black Jeans_)
 1. Alle Produkte der Kategorie sind nicht mehr vorrätig.
-1. Satz **[!UICONTROL Display Out-of-Stock Products]** nach *Nein*.
-1. Geben Sie in die Storefront ein. *Jeans* im Suchfeld.
-1. Klicks **[!UICONTROL View All]** im Popup-Fenster angezeigt.
+1. Setzen Sie **[!UICONTROL Display Out-of-Stock Products]** auf *Nein*.
+1. Geben Sie im Storefront *Jeans* in das Suchfeld ein.
+1. Klicken Sie im Popup auf &quot;**[!UICONTROL View All]**&quot;.
 
 <u>Erwartetes Ergebnis</u>:
 
-Sie sehen die *Wir können keine Produkte finden, die der Auswahl entsprechen* auf PLP angezeigt werden und keine Produkte im Popup-Fenster &quot;Suche&quot;angezeigt werden.
+Sie sehen die Meldung &quot;*Wir können keine Produkte finden, die mit der Auswahl-* -Meldung auf PLP übereinstimmen, und es werden keine Produkte im Such-Popup angezeigt.
 
 <u>Tatsächliches Ergebnis</u>:
 
-Sie sehen die *Wir können keine Produkte finden, die der Auswahl entsprechen* auf PLP angezeigt und beide Produkte werden im Such-Popup angezeigt.
+Sie sehen die Meldung &quot;*Wir können keine Produkte finden, die mit der Auswahl-* -Meldung auf PLP übereinstimmen, und beide Produkte werden im Such-Popup angezeigt.
 
 ## Lösung
 
-Es gibt derzeit keine Lösung für dieses Problem. Unsere [!DNL Live Search] Team wird in Kürze eine Einstellung zur Konfiguration [!DNL Live Search] , um Produkte korrekt anzuzeigen.
+Es gibt derzeit keine Lösung für dieses Problem. Unser [!DNL Live Search]-Team stellt in Kürze eine Einstellung bereit, mit der [!DNL Live Search] so konfiguriert werden kann, dass Produkte korrekt angezeigt werden.
 
 ## Verwandtes Lesen
 
-[Installieren [!DNL Live Search]](https://docs.magento.com/user-guide/live-search/install.html) in unserem Benutzerhandbuch.
+[Installieren Sie [!DNL Live Search]](https://docs.magento.com/user-guide/live-search/install.html) in unserem Benutzerhandbuch.

@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist* Fehler
-description: "In diesem Artikel wird erläutert, wie ein Bereitstellungsfehler untersucht wird: *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist*"
+description: "In diesem Artikel wird erläutert, wie ein Bereitstellungsfehler untersucht wird: *Post-deploy wird übersprungen, da die Bereitstellung fehlgeschlagen ist*"
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist* error
+# Adobe Commerce *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen war* Fehler
 
-In diesem Artikel wird erläutert, wie Sie einen Implementierungsfehler untersuchen: *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist* , das während der Bereitstellung in verschiedenen Umgebungen auftritt, z. B. bei der Aktualisierung.
+In diesem Artikel wird erläutert, wie ein Bereitstellungsfehler untersucht wird: *Post-deploy wird übersprungen, da die Bereitstellung fehlgeschlagen war*, was während der Bereitstellung in verschiedenen Umgebungen (z. B. bei der Aktualisierung) auftrat.
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce auf Cloud-Infrastruktur [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce in der Cloud-Infrastruktur [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
@@ -46,4 +46,4 @@ Nicht ermittelt - was diese Fehlermeldung verursacht, hängt vom bereitgestellte
     W:
 ```
 
-Um die Fehlerspur zur Bestimmung der tatsächlichen Ursache abzurufen, rufen Sie SSH auf den Server auf und überprüfen Sie die Protokolldatei. `var/log/install_upgrade.log`.
+Um die Fehlerverfolgung zur Bestimmung der tatsächlichen Ursache abzurufen, rufen Sie SSH auf den Server auf und überprüfen Sie die Protokolldatei `var/log/install_upgrade.log`.
