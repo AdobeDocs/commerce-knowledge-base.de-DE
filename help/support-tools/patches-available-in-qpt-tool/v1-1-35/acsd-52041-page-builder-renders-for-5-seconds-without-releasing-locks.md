@@ -4,9 +4,9 @@ description: Wenden Sie den Patch ACSD-52041 an, um das Adobe Commerce-Problem z
 feature: Page Builder
 role: Admin, Developer
 exl-id: f2a1fd36-2098-46a7-aa42-3a5a0014adc9
-source-git-commit: fc5dc9fcf610cae6f8c0a334b4ef15029c462c66
+source-git-commit: b5c253a5c0651c6027c0795edb2f230bd65f734a
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -23,25 +23,28 @@ Der Patch ACSD-52041 behebt das Problem, bei dem der Seitenaufbau fünf Sekunden
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.4-p8, 2.4.5 - 2.4.5-p7, 2.4.6 - 2.4.6-p6
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 und 2.4.6 - 2.4.6-p2.
+
+
 
 >[!NOTE]
 >
 >Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
+
 ## Problem
 
-Der Seitenaufbau wird fünf Sekunden lang gerendert, ohne Sperren freizugeben.
+Der **[!DNL Page Builder]** rendert für *5* Sekunden, ohne die Sperren zu lösen.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Bearbeiten Sie eine CMS-Seite, Produktseite oder alles, was über Page Builder verfügt.
+1. Bearbeiten Sie eine CMS-Seite, Produktseite oder alles, was über **[!DNL Page Builder]** verfügt.
 1. Speichern Sie die Änderungen.
 1. Beachten Sie die Seitenspeicherzeit.
 
 <u>Erwartete Ergebnisse</u>
 
-Der Inhalt wird gespeichert. Keine Fehler im Browserprotokoll gefunden.
+Der Inhalt wird gespeichert. Im Browserprotokoll werden keine Fehler gefunden.
 
 <u>Tatsächliche Ergebnisse</u>
 
@@ -50,7 +53,7 @@ Fehler in Konsole: ``Page Builder was rendering for 5 seconds without releasing 
 
 ## Wenden Sie den Patch an
 
-Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
+Um einzelne Patches für die Versionen **2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 und 2.4.6 - 2.4.6-p2** anzuwenden, verwenden Sie je nach Bereitstellungsmethode die folgenden Links:
 
 * Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) im [!DNL Quality Patches Tool]-Handbuch.
 * Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
