@@ -4,7 +4,7 @@ description: In diesem Artikel wird erläutert, warum eine Test-Kreditkarte in e
 exl-id: 65fd08e0-eefc-47f3-8964-bef3610e6182
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ In diesem Artikel wird erläutert, warum eine Test-Kreditkarte in einer Sandbox-
 
 Bei Verwendung einer Visa-Kreditkarte `4111 1111 1111 1111` von PayPal kann es manchmal aufgrund von PayPal-Betrugsrichtlinien mit folgendem Fehler fehlschlagen:
 
-```terminal
+```bash
 Error happened when processing the request. Please try again later.
 ```
 

@@ -4,7 +4,7 @@ description: In diesem Artikel werden die möglichen Lösungen für die Probleme
 exl-id: 1a6204ad-bd5a-46dc-8a8e-39655a174e09
 feature: Storage, Data Import/Export
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -24,7 +24,7 @@ In diesem Artikel werden die möglichen Lösungen für die Probleme bei der Erst
 
 Wenn die Adobe Commerce-Sicherungsfunktion nicht gestartet wird oder die folgende Meldung angezeigt wird, müssen Sie die Funktion vor der Sicherung aktivieren.
 
-```terminal
+```bash
 Backup functionality is disabled.
 Backup functionality is currently disabled. Please use other means for backups.
 ```

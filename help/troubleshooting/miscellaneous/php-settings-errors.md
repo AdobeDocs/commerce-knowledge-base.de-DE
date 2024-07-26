@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen für Fehler bei PHP-Einstellungen.
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -44,7 +44,7 @@ So erhöhen Sie die PHP-Speicherbegrenzung:
 
 Konfigurationen mit einer großen Anzahl von Storeviews, Produkten, Attributen oder Optionen können Formulare generieren, die die voreingestellte PHP-Grenze überschreiten. Wenn die Anzahl der gesendeten Werte die innerhalb von `php.ini` festgelegte Grenze von `max-input-vars` überschreitet (Standard ist 1000), werden die verbleibenden Daten nicht übertragen und diese Datenbankwerte werden nicht aktualisiert. Wenn dies eintritt, erscheint ein Warnhinweis im PHP-Protokoll:
 
-```terminal
+```bash
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
@@ -58,7 +58,7 @@ Siehe [Während der Installation Fehler xdebug maximum function nesting level er
 
 Fehlertext ist normalerweise:
 
-```terminal
+```bash
 Parse error: syntax error, unexpected 'data' (T_STRING)
 ```
 
