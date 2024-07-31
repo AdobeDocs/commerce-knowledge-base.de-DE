@@ -4,7 +4,7 @@ description: Der Patch MDVA-41229 behebt das Problem, dass im Backend verfügbar
 exl-id: 69d7374f-9f8b-4ec4-8a7f-135ee06135a3
 feature: Data Import/Export, Configuration, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 143a694fd573aeb2a52f47d194359e98f74f8033
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 2%
@@ -37,12 +37,15 @@ Im Backend verfügbare Bilder werden nach konfigurierbarem Produktimport nicht a
 
 1. Installieren Sie einen sauberen Adobe Commerce.
 1. Fügen Sie ein benutzerdefiniertes Attribut hinzu, indem Sie zu **Stores** > **Attribute** > **Produkt** > **Neues Attribut hinzufügen** mit den unten stehenden Einstellungen navigieren:
+
    * Eigenschaften:
       * Attributeigenschaften:
+
          * Standardbezeichnung: Größe festlegen
          * Katalogeingabetyp für Store Owner: Textmuster
          * Erforderliche Werte: nein
          * Update Product Preview Image: Ja
+
       * Muster verwalten (Werte Ihres Attributs):
 
         | Ist Standard | Admin Swatch | Administratorbeschreibung | Standardmuster für Store-Ansicht | Standardmäßige Store-Ansichtsbeschreibung |
@@ -52,17 +55,24 @@ Im Backend verfügbare Bilder werden nach konfigurierbarem Produktimport nicht a
         | no | 30 | 30 | 30 | 30 |
         | no | 60 | 60 | 60 | 60 |
         | no | 68 | 68 | 68 | 68 |
+
       * Erweiterte Attributeigenschaften:
+
          * Attributcode: set_size
          * Umfang: Global
          * Einzelwert: nein
          * Eingabevalidierung für Store Owner: Keine
          * Zu Spaltenoptionen hinzufügen: Nein
          * Verwendung in Filteroptionen: nein
+
    * Verwalten von Bezeichnungen:
+
       * Titel verwalten (Größe, Farbe usw.)
+
          * Standardspeicheransicht: Größe festlegen
+
    * Storefront-Eigenschaften:
+
       * In der Suche verwenden: Ja
       * Suchgewichtung: 1
       * In der erweiterten Suche sichtbar: nein
@@ -73,12 +83,17 @@ Im Backend verfügbare Bilder werden nach konfigurierbarem Produktimport nicht a
       * Auf Katalogseiten in der Storefront sichtbar: ja
       * Wird in der Produktliste verwendet: ja
       * Wird für die Sortierung in der Produktliste verwendet: nein
+
 1. Fügen Sie dieses Attribut zum standardmäßigen Attributsatz in der Produktdetailgruppe hinzu (**Stores** > **Attribute** > **Attributsatz**).
 1. Laden Sie Bilder herunter, die in den Ordner var im Stammverzeichnis von Adobe Commerce eingestellt sind.
 1. Wechseln Sie zu **System** > **Datenübertragung** > und importieren Sie die Datei mit den folgenden Optionen:
+
    * Importeinstellungen:
+
       * Entitätstyp: Produkte
+
    * Importverhalten:
+
       * Importverhalten: Hinzufügen/Aktualisieren
       * Validierungsstrategie: Bei Fehler stoppen
       * Anzahl zulässiger Fehler: 1
@@ -86,9 +101,12 @@ Im Backend verfügbare Bilder werden nach konfigurierbarem Produktimport nicht a
       * Trennzeichen für mehrere Werte: `,`
       * Attributwertkonstante: EMPTYVALUE
       * Feldeinteilung: deaktiviert
+
    * Zu importierende Datei:
+
       * Datei zum Importieren auswählen
       * Verzeichnis der Bilddateien: leer lassen
+
 1. Gehen Sie zur Storefront zur Seite `/product-set.html` und wechseln Sie zwischen verschiedenen Set-Größen. Für Set Size 24 gibt es keine Galerie.
 
 <u>Erwartete Ergebnisse</u>:
