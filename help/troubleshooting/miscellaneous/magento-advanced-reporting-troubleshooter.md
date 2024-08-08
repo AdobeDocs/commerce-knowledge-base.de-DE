@@ -4,9 +4,9 @@ description: Probleme mit erweiterten Berichten in Adobe Commerce können mit di
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 84b4ca4c4144381f0b404d2eae6684e7b21755df
+source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ b. NO - Fahren Sie mit [Schritt 4](#step-4) fort.
 
 +++**Ist die erweiterte Berichterstellung aktiviert?**
 
-Aktivieren Sie **Admin** > **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Erweitert**. Ausführliche Anweisungen finden Sie unter [Erweiterte Berichterstellung: Erweiterte Berichterstellung aktivieren](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
+Überprüfen Sie **Admin** > **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Fortschrittliche Berichterstellung**. Ausführliche Anweisungen finden Sie unter [Erweiterte Berichterstellung: Erweiterte Berichterstellung aktivieren](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
 
 a. YES - Fahren Sie mit [Schritt 5](#step-5) fort.\
 b. NO - [Aktivieren Sie die erweiterte Berichterstellung](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting), speichern und warten Sie 24 Stunden, bis Adobe Commerce und die erweiterte Berichterstellung synchronisiert werden. Überprüfen Sie, ob Ihre Daten jetzt geladen werden. Wenn es das Problem gelöst hat. Wenn nicht mit [Schritt 5](#step-5) fortgefahren wird.
