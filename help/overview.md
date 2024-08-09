@@ -4,9 +4,9 @@ description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-S
 exl-id: feacf38f-2803-4170-a64f-5d7c4567432d
 feature: Support
 role: Admin
-source-git-commit: 738a5455267647d294d222d5bb6149254dcb93dd
+source-git-commit: cfbe281941fbdc3e6fe7ee36385dc6732b46da26
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Die Informationen in dieser Wissensdatenbank ergänzen die [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs), den [Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) und andere Adobe Commerce-Veröffentlichungen. Es behandelt Fehlerbehebung und Best Practices, hostet Ankündigungen und Antworten FAQs und hebt spezifische Szenarien hervor, die (aus irgendeinem Grund) nicht in der offiziellen Dokumentation erwähnt wurden.
 
-## Was befindet sich in der Wissensdatenbank?
+## Was befindet sich in dieser Wissensdatenbank?
 
 | KATEGORIE | BESCHREIBUNG |
 | --- | --- |
