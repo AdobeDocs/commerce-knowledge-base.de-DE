@@ -3,9 +3,9 @@ title: Kann ich Aktualisierungen des Content Staging für Preise in einem freige
 description: Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
 
-Das bedeutet, dass Sie eine solche Preisaktualisierung nicht direkt über das Menü **Preise und Struktur festlegen** im Admin-Bedienfeld von Commerce planen können (in diesem Menü ist keine Schaltfläche **Neues Update planen** enthalten).
+Das bedeutet, dass Sie eine solche Preisaktualisierung nicht direkt über das Menü **Preise und Struktur festlegen** im Admin-Bereich von Commerce planen können (in diesem Menü ist keine Schaltfläche **Neues Update planen** enthalten).
 
 Sie können jedoch alternative Methoden verwenden und eine Preisaktualisierung für Folgendes planen:
 
