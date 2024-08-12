@@ -4,9 +4,9 @@ description: In diesem Artikel wird erläutert, wie ein Team-Mitglied in Support
 feature: Cloud, Support, Admin Workspace
 role: Admin, Developer
 exl-id: 63ea3f60-a509-447c-ac3d-bb2133141c80
-source-git-commit: 1c568d75534bbfe322d9f980b40c5dd64fc5b7a2
+source-git-commit: 771793d45000e65c1bf41137cd984d2977b0a9ff
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ In diesem Artikel wird erläutert, wie ein Team-Mitglied einbezogen werden kann,
 
 1. Navigieren Sie zu &quot;**[!DNL Cloud Project URL]**&quot;(Beispiel: `https://us-3.magento.cloud/projects/xxxxxx/edit`).
 1. Überprüfen Sie, ob das Teammitglied zum Projekt hinzugefügt wurde und eine [!DNL Super User] ist.
-
-Wenn Sie keinen [!DNL cloud project] -Zugriff benötigen, senden Sie eine [Support-Anfrage beim Adobe Commerce Support Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) an automatisch CC: sie für alle Tickets und geben Sie auch deren **[!DNL MAGE ID]** an (falls verfügbar).
 
 Wenn sie nicht zum Projekt hinzugefügt wurden, müssen Sie sie als [!DNL Super User] hinzufügen und [!DNL Shared Access] gewähren:
 
