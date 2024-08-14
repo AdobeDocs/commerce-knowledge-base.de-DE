@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: dfc68a101da26e8ce98295239d2bde7675c19401
+source-git-commit: abfd1e3a042f2756c27471b81004a3dcea0914ac
 workflow-type: tm+mt
-source-wordcount: '11093'
+source-wordcount: '11090'
 ht-degree: 0%
 
 ---
@@ -1118,7 +1118,6 @@ ht-degree: 0%
    * Bekannte Probleme {#known-issues-patches-attached}
       * [Sicherheitsupdate für Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
       * [Fehlerbehebung für die Verschlüsselungsschlüssel-Rotation: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
-      * [Ausgeblendeter Download-Test](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102-hidden-test.md)
       * [Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-40] wurde überarbeitet, um isolierten Patch für  [!DNL CVE-2024-34102] einzuschließen](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] Integrationsmigration der Versandmethode von  [!DNL SOAP] zu [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Support-Hotfix für die Ground Advantage Versandmethode für AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
