@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 23f19c3b8fff3b31bb42625d210c5330292b79b3
+source-git-commit: 38e67144f337c8359a5602e49d8a0ee91cd20b53
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2117'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,11 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 
    ![open-support-page](assets/click_support.png)
 
-1. Um den Aufnahmeprozess zu starten, klicken Sie im linken Menü auf **[!UICONTROL Open Ticket]** oder auf **[!UICONTROL Get Started]** auf der Karte *[!UICONTROL Open a support ticket]*.
+1. Um den Support-Aufnahmeprozess zu starten, stellen Sie sicher, dass Sie die entsprechende Organisation aus der Dropdown-Liste ausgewählt haben (sofern verfügbar), da Sie mehrere Organisationen mit ähnlichen Namen haben können, von denen jede über eigene Berechtigungen verfügt.
+
+   ![image](https://git.corp.adobe.com/storage/user/38345/files/230d6ecd-bce2-4170-b377-3989fa8be615)
+
+1. Klicken Sie im linken Menü auf **[!UICONTROL Open Ticket]** oder auf **[!UICONTROL Get Started]** auf der Karte *[!UICONTROL Open a support ticket]*.
 
    ![open-support-case](assets/open_support_case.png)
 
