@@ -4,9 +4,9 @@ description: Probleme mit erweiterten Berichten in Adobe Commerce können mit di
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
+source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
@@ -117,13 +117,13 @@ c. JA - Wenn es Datensätze gibt, aber ein Fehler auftritt, fahren Sie mit [Schr
 
 +++**Existiert die Datei `data.tgz` im System und sind Datensätze in den Zugriffsprotokollen enthalten?**
 
-Um zu überprüfen, ob die Datei `data.tgz` vorhanden ist, führen Sie den Befehl aus:
+Um zu überprüfen, ob die Datei `data.tgz` vorhanden ist, führen Sie diesen Befehl aus. Er sollte Ordner mit Hash-Namen zurückgeben:
 
 ```
-ls -ltr pub/media/analytics/<there should be a directory with hash name>/
+ls -ltr pub/media/analytics/
 ```
 
-Um zu überprüfen, ob in access.logs Einträge vorhanden sind, führen Sie den Befehl aus:
+Um zu überprüfen, ob in access.logs Einträge vorhanden sind, führen Sie folgenden Befehl aus:
 
 ```
 zgrep -i analytics /var/log/platform/[cluster_id|cluster_id_stg]/access.log* | grep MagentoBI
