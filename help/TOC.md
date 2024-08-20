@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: abfd1e3a042f2756c27471b81004a3dcea0914ac
+source-git-commit: 01d815edd76b749df036021d75d4456d9d7b5550
 workflow-type: tm+mt
-source-wordcount: '11090'
+source-wordcount: '11096'
 ht-degree: 0%
 
 ---
@@ -272,7 +272,7 @@ ht-degree: 0%
       * v1.1.3 {#v1-1-3}
          * [Übersicht: Quality Patches Tool (QPT) v1.1.3](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/overview.md)
          * [MDVA-31590: Attribute können nicht stapelweise mithilfe asynchroner MySQL-Warteschlangen aktualisiert werden](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-31590-unable-to-update-attributes-in-bulk-using-mysql-async-queues.md)
-         * [MDVA-33606: Benutzer erhalten beim Speichern der hierarchisch zugeordneten CMS-Seite einen Fehler.](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
+         * [MDVA-33606: Benutzer erhalten beim Speichern von der Hierarchie zugewiesener CMS-Seite einen Fehler](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
          * [MDVA-36309: Die Produktsuche nach Attributen ist in Admin Rastern langsam](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-36309-product-search-by-attributes-is-slow-in-the-admin-grids.md)
          * [MDVA-37234: Durch das mehrfache Hinzufügen eines Artikels zum Warenkorb wird ein doppelter Zeileneintrag erstellt](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-37234-adding-item-to-cart-multiple-times-creates-duplicate-item.md)
          * [MDVA-40262: GraphQL-Abfragen werden nicht in populären Suchbegriffen in Admin angezeigt](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-40262-graphql-queries-dont-show-in-popular-search-terms-in-admin.md)
@@ -289,7 +289,7 @@ ht-degree: 0%
          * [MDVA-40399: Teilrechnungen für dieselbe Bestellung können nicht gleichzeitig über API erstellt werden](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40399-partial-invoices-for-same-order-cannot-be-created-simultaneously-via-rest-api.md)
          * [MDVA-40401: Der Verwendungswert des Gutscheins ändert sich nach fehlgeschlagener Bestellung](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40401-coupon-usage-value-changes-even-after-failed-order.md)
          * [MDVA-40435: Der Rabatt auf das Bundle-Produkt wird nicht korrekt über GraphQL angewendet](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40435-discount-on-bundle-product-is-not-applied-correctly-via-graphql.md)
-         * [MDVA-40537: Das Erstellen einer Store-Ansicht gibt einen Fehler aus, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40537-creating-store-view-gives-error-when-multiple-cms-pages-with-same-url-keys-exist.md)
+         * [MDVA-40537: Beim Erstellen einer Store-Ansicht wird ein Fehler ausgegeben, wenn mehrere CMS-Seiten denselben URL-Schlüssel aufweisen.](/help/support-tools/patches-available-in-qpt-tool/v1-1-4/mdva-40537-creating-store-view-gives-error-when-multiple-cms-pages-with-same-url-keys-exist.md)
       * v1.1.5 {#v1-1-5}
          * [Übersicht: Quality Patches Tool (QPT) v1.1.5](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/overview.md)
          * [MDVA-31763: Katalogpreisregeln werden bis zur manuellen Neuindizierung zurückgesetzt](/help/support-tools/patches-available-in-qpt-tool/v1-1-5/mdva-31763-catalog-price-rules-are-reverted-until-manual-reindex.md)
@@ -705,7 +705,7 @@ ht-degree: 0%
          * [ACSD-54472: Kunden eines abgelehnten Unternehmens können sich weiterhin authentifizieren und Bestellungen aufgeben](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54472-customers-of-rejected-company-can-still-authenticate-and-place-orders.md)
          * [ACSD-54680: B2B-Anführungszeichen für ein Produkt mit mehreren zugewiesenen Quellen kann nicht verarbeitet werden](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54680-b2b-quote-submitted-for-a-product-with-multiple-assigneda-sources.md)
          * [ACSD-55004: Validator stürzt beim Hochladen einer Importdatei ab, die größer als der Wert ist](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-55004-validator-crashes-while-uploading-an-import-file-larger-than-the-value.md)
-         * [ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
+         * [ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen.](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
          * [ACSD-52657: Minicart wird beim zweiten Store, der die Subdomain verwendet, nicht aktualisiert](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-52657-minicart-not-updated-on-second-storeview.md)
          * [ACSD-54007: Undefinierter Array-Schlüssel _scope-Fehler beim Importieren von Kundendaten](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54007-undefined-array-key-scope-error-importing-customer-data.md)
          * [ASCD-54040: Das Feld [!UICONTROL Created] ist in den Bestelldetails leer, wenn B2B-Module aktiviert sind](/help/support-tools/patches-available-in-qpt-tool/v1-1-40/acsd-54040-created-field-is-blank-in-order-details-page.md)
@@ -754,7 +754,7 @@ ht-degree: 0%
          * [ACSD-53309: Unvollständige Steueranwendung für anpassbare Optionen und &#39;[!UICONTROL Regular Price]&#39; Beschriftung](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53309-incomplete-tax-application-for-customizable-options.md)
          * [ACSD-53790: Mehrere RMAs für ein einzelnes Produkt können über die Rest-API erstellt werden.](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
          * [ACSD-54739: [!UICONTROL Product Stock] Status wird nicht auf [!UICONTROL Related Product Rules] angewendet](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
-         * [ACSD-54983: Benutzer-UID des Unternehmens mit GraphQL ist bei inaktiven Benutzern nicht verfügbar](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
+         * [ACSD-54983: Unternehmensbenutzer UID mit GraphQL ist nicht für inaktive Benutzer verfügbar](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
       * v1.1.44 {#v1-1-44}
          * [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.44](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/overview.md)
          * [ACSD-55231: SKU konnte bei Verwendung der Funktion für schnelle Bestellungen keinen Fehler finden](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
@@ -823,6 +823,7 @@ ht-degree: 0%
       * [Versionsplanung 2024](/help/announcements/adobe-commerce-announcements/2024-release-schedule.md)
       * [Migration von Aufnahmeprozessen durch Adobe Commerce wird unterstützt zu Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
    * Hilfe-Center-Nachrichten {#news}
+      * [Stilllegung des Adobe Commerce Help Center](/help/announcements/help-center-news/decommissioning-of-adobe-commerce-help-center.md)
       * [Adobe Commerce-Support-Wissensdatenbank beginnt mit der Annahme von Beiträgen](/help/announcements/help-center-news/github-repo-for-external-contributions.md)
 * Fehlerbehebung {#troubleshooting}
    * [Fehlerbehebung - Übersicht](/help/troubleshooting/overview.md)
