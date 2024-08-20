@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: a1b049dab989d5d8594d86b64b778e6e277a9f41
+source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werd
 1. Wenn die korrekten Daten in `catalog_data_exporter_products` angezeigt werden, verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen:
 
    ```sql
-   select * from flag where flag_code = 'products-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. Wenn der Zeitstempel älter ist, können Sie mit dem folgenden Befehl entweder auf den nächsten Cron-Lauf warten oder ihn selbst Trigger haben:
@@ -111,7 +111,7 @@ Wenn die korrekten Daten in `catalog_data_exporter_product_attributes` angezeigt
 1. Verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen.
 
    ```sql
-   select * from flag where flag_code = 'product-attributes-feed-version';
+   select * from scopes_website_data_exporter;
    ```
 
 1. Wenn der Zeitstempel älter ist, können Sie mit dem folgenden Befehl entweder auf den nächsten Cron-Lauf warten oder ihn selbst Trigger haben:
@@ -133,4 +133,5 @@ bin/magento saas:resync --feed productattributes
 
 ## Verwandtes Lesen
 
-Siehe [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) in unserer Benutzerdokumentation.
+* Siehe [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) in unserer Benutzerdokumentation.
+* Siehe [Überprüfen Sie die Protokolle und führen Sie eine Fehlerbehebung für den Datenexport und die Synchronisierung mit Adobe Commerce SaaS durch](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) im Adobe Commerce SaaS-Datenexport-Handbuch.
