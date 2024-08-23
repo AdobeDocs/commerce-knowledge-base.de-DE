@@ -3,7 +3,7 @@ title: Fehlerkorrektur - In [!DNL Commerce Data Exporter] Feeds werden keine Dat
 description: Dieser Artikel bietet eine Lösung zum Beheben von Datensynchronisierungsproblemen, die durch die Verwendung der falschen Ansichts-ID im [!DNL Commerce Data Exporter mview] Abonnement verursacht werden.
 feature: Data Import/Export, Saas, Logs
 role: Developer
-source-git-commit: cf87b5f1280a2d1d23c7ace37616feb337b5142f
+source-git-commit: 3581e39e7054cf765403fd963e22a051457c1097
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -48,4 +48,4 @@ Das folgende Beispiel zeigt den Code, der die vom [!DNL Mview] -Abonnement verfo
 
 ## Verwandtes Lesen
 
-[[!DNL SaaS] Versionshinweise zur Datenexport-Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) im Adobe Commerce-Datenexportleitfaden für [!DNL SaaS] -Dienste.
+[[!DNL SaaS] Versionshinweise zur Datenexport-Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) im Adobe Commerce-Datenexportleitfaden für [!DNL SaaS] -Dienste
