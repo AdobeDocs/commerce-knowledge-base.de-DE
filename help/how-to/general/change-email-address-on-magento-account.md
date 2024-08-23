@@ -3,16 +3,20 @@ title: So ändern Sie die E-Mail-Adresse in einem magento.com Konto, wenn das Fe
 description: In diesem Artikel wird beschrieben, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern, wenn das Feld ausgegraut ist.
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 123027ee291b44ad4b234e561b9c3f4156af7c90
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # Wie ändere ich die E-Mail-Adresse in magento.com Konto, wenn das Feld ausgegraut ist?
 
-In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern können, wenn das Feld ausgegraut ist.
+In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com) -Konto ändern, wenn das Feld unter folgenden Umständen ausgegraut ist:
+
+* Sie oder der ursprüngliche Benutzer haben das Unternehmen verlassen.
+* Ihr Unternehmen wurde in eine neue E-Mail-Domäne migriert.
+* Sie wechseln zu einer Verteilungsliste oder einer Sammeladresse für E-Mails.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,7 +34,7 @@ E-Mail-Adresse eines Benutzers ändern, der über ein eigenes Konto bei <https:/
 
 <u>Lösung</u>
 
-1. Senden Sie eine E-Mail an Grp-magento-HelpCenterLoginIssues@adobe.com mit folgenden Informationen:
+1. [Senden Sie eine Support-Anfrage ](https://experienceleague.adobe.com/home#support) unter https://experienceleague.adobe.com/home#support und geben Sie Folgendes an:
 
    * Bestehende zu aktualisierende E-Mail-Adresse
    * Neue E-Mail-Adresse
@@ -59,3 +63,4 @@ Wenn Sie jedoch keinen Zugriff auf E-Mails haben, die an die [aktuelle Besitzer-
 ## Verwandtes Lesen
 
 [Vergessenes Kennwort zurücksetzen](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch.
+[Aktualisieren Sie Ihr Kontoprofil](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) im Creative Cloud-Benutzerhandbuch.
