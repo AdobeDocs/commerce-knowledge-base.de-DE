@@ -3,9 +3,9 @@ title: "ACSD-56979: Produktbilder wurden nach Löschen der Staging-Aktualisierun
 description: Wenden Sie den Patch ACSD-56979 an, um das Adobe Commerce-Problem zu beheben, bei dem Produktbilder nach dem Löschen eines Staging-Updates entfernt werden
 feature: Products
 role: Admin, Developer
-source-git-commit: e97850bcaa98b1ccc1522fb6ee0046cd38bf1c93
+source-git-commit: 8e916feab8be9d92d047fae8861a479070d448e8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Der Patch ACSD-56979 behebt das Problem, dass Produktbilder nach dem Löschen ei
 
 **Kompatibel mit Adobe Commerce- und Magento Open Source-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) >=2.4.3 &lt;2.4.7
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.3 - 2.4.6-p7
 
 >[!NOTE]
 >
