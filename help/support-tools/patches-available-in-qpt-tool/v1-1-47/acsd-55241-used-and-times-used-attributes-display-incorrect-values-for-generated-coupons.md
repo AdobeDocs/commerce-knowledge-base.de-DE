@@ -4,7 +4,7 @@ description: Wenden Sie den Patch ACSD-55241 an, um das Adobe Commerce-Problem z
 feature: Price Rules
 role: Admin, Developer
 exl-id: cfe0f8af-423a-4e12-a332-053392cbabed
-source-git-commit: 5d0b4743fe49d22c099102490f93dc4065ab4413
+source-git-commit: f830486ab3b00fca92dda897bbf0bfbae41543c1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -37,10 +37,10 @@ Die Attribute **Verwendet** und **Verwendet mal** zeigen falsche Werte für gene
 
 1. Erstellen Sie **[!UICONTROL Cart Price Rules]** von **[!UICONTROL Admin]** > **[!UICONTROL Marketing]** > **[!UICONTROL Promotion]** und fügen Sie alle Bedingungen hinzu, die beim Bestellen einer Bestellung übereinstimmen (Beispiel: Zwischensumme größer als *5$*)
 
-* Wenden Sie einen Rabatt an.
-* Wählen Sie **[!UICONTROL Auto Coupon]** aus.
-* Es werden einige Coupon-Codes aus **Couponcodes verwalten** generiert.
-* Neuindizieren und leeren Sie den Cache.
+   * Wenden Sie einen Rabatt an.
+   * Wählen Sie **[!UICONTROL Auto Coupon]** aus.
+   * Es werden einige Coupon-Codes aus **Couponcodes verwalten** generiert.
+   * Neuindizieren und leeren Sie den Cache.
 
 1. Erstellen Sie eine **[!UICONTROL customer account]** und melden Sie sich im Frontend an.
 1. Fügen Sie ein Produkt mit mehr als *2* Mengen im Warenkorb hinzu und wenden Sie einen Gutschein an.
