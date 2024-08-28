@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 575227bda74b12a7ae4c75a7e6b45cb80aa79e19
+source-git-commit: 1c3eadc58ce70ac8f70078e4d88705386477f6ae
 workflow-type: tm+mt
-source-wordcount: '11162'
+source-wordcount: '11172'
 ht-degree: 0%
 
 ---
@@ -808,6 +808,7 @@ ht-degree: 0%
          * [ACSD-56979: Produktbilder wurden nach dem Löschen der Staging-Aktualisierung entfernt](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
       * v1.1.50 {#v1-1-50}
          * [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
+         * [ACSD-46938: Leistungsprobleme mit DB-Triggern während der Einrichtung:Aktualisierung](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       * [Überprüfen Sie den Patch auf Adobe Commerce-Problem mit dem Tool für Qualitätsmuster .](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Mitteilungen {#announcements}
    * [Übersicht über Mitteilungen](/help/announcements/overview.md)
