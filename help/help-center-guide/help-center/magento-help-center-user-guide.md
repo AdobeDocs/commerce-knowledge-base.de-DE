@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 88a9fad5d4a38a82001175af4a1611acf6d4e413
+source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2500'
 ht-degree: 0%
 
 ---
@@ -89,14 +89,20 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 
 >[!INFO]
 >
->1. Wenn Sie mehreren Organisationen angehören, müssen Sie die entsprechende Organisation aus der Dropdown-Liste auswählen.
->1. Um einen Fall einzureichen, müssen Sie berechtigt sein, Unterstützung zu erhalten. Ist dies nicht der Fall, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Benutzer mit Supportberechtigung in der Organisation sind.
+>1. Um einen Fall einzureichen, müssen Sie berechtigt sein, das entsprechende Produkt zu unterstützen (z. B. Adobe Commerce, Adobe Commerce Intelligence, Experience Platform usw.). Wenn Sie nicht zur Unterstützung berechtigt sind, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Benutzer mit Supportberechtigung in der Organisation sind.
+>1. Wenn Sie mehreren Unternehmen angehören oder es mehrere Organisationen mit ähnlich aussehenden Namen gibt (jede Organisation repräsentiert eines der anderen Adobe-Produkte, für die sich das Unternehmen angemeldet hat), müssen Sie zunächst die entsprechende Organisation aus der Dropdown-Liste auswählen.
+
+>[!NOTE]
+>
+>Stellen Sie sicher, dass Sie die richtige Organisation ausgewählt haben, bevor Sie den Fall einreichen, und dass die ausgewählte Organisation über die entsprechenden Berechtigungen für das Produkt verfügt, für das Sie Support anfordern. Wenn Ihr Problem beispielsweise mit Adobe Commerce zusammenhängt, Sie jedoch Experience Platform als Produkt ausgewählt haben und der Fall erfolgreich eingereicht wurde, kann dies zu einer falschen Weiterleitung Ihres Falls und zu Verzögerungen bei den Antwortzeiten führen.
+>
+>Wenn die falsche Organisation ausgewählt wurde, kann Ihr Team den Fall nicht unter [!UICONTROL My Cases] für die entsprechende/richtige Organisation anzeigen. Das Supportteam kann die mit dem Fall verbundene Organisation in Zukunft nicht ändern.
 
 1. Klicken Sie in der Kopfzeile auf **Support** . Dadurch wird die Support-Homepage geöffnet.
 
    ![open-support-page](assets/click_support.png)
 
-1. Um den Support-Aufnahmeprozess zu starten, stellen Sie sicher, dass Sie die entsprechende Organisation aus der Dropdown-Liste ausgewählt haben (sofern verfügbar), da Sie mehrere Organisationen mit ähnlichen Namen haben können, von denen jede über eigene Berechtigungen verfügt.
+1. Um den Support-Aufnahmeprozess zu starten, stellen Sie sicher, dass Sie die entsprechende Organisation aus der Dropdown-Liste Organisation ausgewählt haben (sofern sichtbar).
 
    ![select_geeignete_org](assets/select_appropriate_org.png)
 
@@ -104,7 +110,7 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 
    ![open-support-case](assets/open_support_case.png)
 
-1. Wählen Sie ein Produkt aus dem Dropdown-Menü aus und geben Sie einen Falltitel und eine Beschreibung ein.
+1. Wählen Sie ein Produkt aus dem Dropdown-Menü aus und geben Sie einen Falltitel und eine Beschreibung ein. HINWEIS: Wenn im Dropdown-Menü keine Produkte oder Commerce nicht verfügbar sind, versuchen Sie, in der linken Spalte die Option Organisation zu wechseln und überprüfen Sie erneut.
 
    ![select_product](assets/support_case_product.png)
 
@@ -123,6 +129,18 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 >1. Wählen Sie Ihre Organisation aus dem Dropdown-Menü der Organisation aus. 
 >1. Wenn Ihr Unternehmen weiterhin nicht angezeigt wird, wenden Sie sich an Ihren Commerce-Administrator, um Support-Delegierungsrechte zu erhalten. Weitere Informationen finden Sie im Hilfeartikel [Commerce-Kontofreigabe](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) . 
 
+>[!NOTE]
+>
+>Warum die Organisation/das Produkt wichtig ist
+>
+>**Beispiel A**: Sie haben nur Zugriff auf ein Unternehmen und dieses Unternehmen hat Berechtigungen für zwei Adobe-Produkte: Product1 und Product2.
+>1. Da jede Organisation ein Produkt darstellt, werden Ihnen im Dropdown-Menü zwei Organisationen angezeigt, z. B. OrgA-Product1 und OrgB-Product2.
+>1. Wenn Sie Produkt = Produkt1 ausgewählt haben, Ihr Problem jedoch mit Produkt2 in Verbindung steht, wird der Fall an den Product2-Support weitergeleitet und es treten Verzögerungen bei der Übertragung des Falls auf den Product1-Support auf.
+>1. Wenn Sie den Fall für OrgA-Product1 eingereicht haben und in Zukunft [!UICONTROL My Cases] für diese Organisation überprüfen möchten, wird er nicht angezeigt, wenn Sie OrgA-Product2 als Organisation auswählen (Sie müssen nur die andere Organisation auswählen, verglichen mit Beispiel B).
+>
+>**Beispiel B**: Sie haben gemeinsamen Zugriff auf zwei Unternehmen und jedes Unternehmen hat nur Berechtigungen für Adobe Commerce.
+>1. Wenn Sie den Fall für OrgA eingereicht haben, sich das Problem jedoch tatsächlich auf OrgB auswirkt, können Mitglieder von OrgB diesen Fall in Zukunft nicht unter [!UICONTROL My Cases] sehen.
+>1. Darüber hinaus können Mitglieder von OrgA Fälle unter [!UICONTROL My Cases] sehen, die tatsächlich für OrgB vorgesehen sind, was zu Datenschutzproblemen führen kann.
 
 Sie müssen über ein Konto sowohl auf https://account.adobe.com als auch auf https://account.magento.com verfügen, um sich bei der Experience League anzumelden und einen Support-Fall einzureichen. Sie können erst dann einen Support-Fall einreichen, wenn Sie angemeldet sind.
 
