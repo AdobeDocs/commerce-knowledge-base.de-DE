@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: a57747c4c4dd994fed95686772bce71cf02ccc90
+source-git-commit: 3fab5cf6598e032d75992750bb58620a002cd9df
 workflow-type: tm+mt
-source-wordcount: '11253'
+source-wordcount: '11264'
 ht-degree: 0%
 
 ---
@@ -806,6 +806,7 @@ ht-degree: 0%
          * [ACSD-57643: Produkte mit benutzerdefinierten Optionen werden fälschlicherweise hinzugefügt](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57643-products-with-custom-options-are-incorrectly-added.md)
          * [ACSD-57588: Fehler bei der Verarbeitung der Regions-ID beim Versand an mehrere Adressen](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57588-region-id-error-when-shipping-to-multiple-addresses.md)
          * [ACSD-56979: Produktbilder wurden nach dem Löschen der Staging-Aktualisierung entfernt](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
+         * [ACSD-57941: Produktoptionen werden fälschlicherweise dem Admin Store zugewiesen](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57941-product-options-are-incorrectly-assigned-to-the-admin-store.md)
          * [ACSD-58739: Teilweise Neuindizierung gibt einen Fehler aus](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846: GraphQL-Produkte suchen mit Filtern nach Nullpreisen, ohne Ergebnisse zurückzugeben](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054: API-Token-Generierung für inaktive Kunden](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
