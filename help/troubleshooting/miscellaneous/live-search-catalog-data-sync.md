@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
+source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,11 @@ Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Ka
 
 ## Problem
 
-Ihre Katalogdaten werden nicht richtig synchronisiert oder ein neues Produkt wurde hinzugefügt, erscheint aber nicht in den Suchergebnissen.
+Ihre Katalogdaten werden nicht richtig synchronisiert oder ein neues Produkt wurde hinzugefügt, erscheint jedoch nicht in den Suchergebnissen.
+
+>[!NOTE]
+>
+>Die Tabellennamen `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes` werden jetzt als `cde_products_feed` und `cde_product_attributes_feed` ab [!DNL Live Search] Version 4.2.1 bezeichnet. Bei Händlern für Versionen vor 4.2.1 suchen Sie nach den Daten in den alten Tabellennamen, `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes`.
 
 <u>Zu reproduzierende Schritte</u>
 
@@ -59,20 +63,20 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werd
 1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die erwarteten Daten in der Spalte `feed_data` verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
 
    ```sql
-   select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Wenn die korrekten Daten nicht angezeigt werden, versuchen Sie, die Neuindizierung mit dem folgenden Befehl durchzuführen und führen Sie die SQL-Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen:
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_products
+   bin/magento indexer:reindex cde_products_feed
    ```
 
 1. Wenn immer noch nicht die korrekten Daten angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
 
 ### Zeitstempel des letzten Produktexports überprüfen
 
-1. Wenn die korrekten Daten in `catalog_data_exporter_products` angezeigt werden, verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen:
+1. Wenn die korrekten Daten in `cde_products_feed` angezeigt werden, verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen:
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -93,20 +97,20 @@ Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht richtig 
 1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die erwarteten Daten in der Spalte `feed_data` verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
 
    ```sql
-   select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Wenn die korrekten Daten nicht angezeigt werden, verwenden Sie den folgenden Befehl, um die SQL-Abfrage neu zu indizieren, und führen Sie dann die SQL-Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen.
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_product_attributes
+   bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
 1. Wenn immer noch nicht die korrekten Daten angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
 
 ### Zeitstempel des letzten Produktattributexports überprüfen
 
-Wenn die korrekten Daten in `catalog_data_exporter_product_attributes` angezeigt werden:
+Wenn die korrekten Daten in `cde_product_attributes_feed` angezeigt werden:
 
 1. Verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen.
 
