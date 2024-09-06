@@ -1,15 +1,16 @@
 ---
-source-git-commit: 1fe71f13dbfc433886db900c359b7de2c6d0e7f3
+source-git-commit: eadb0294b716cdd24bb378364bc01b61e48d0521
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 6%
 
 ---
-# Artikel beitragen
+# Contribute-Artikel
 
 Wir freuen uns über Beiträge von unserer Community sowie von Adobe-Mitarbeitern von außerhalb der Dokumentationsteams.
 
-## Adobe Open Source-Verhaltenskodex
+
+## Adobe Öffnen des Source-Verhaltenskodex
 
 Dieses Projekt beachtet den [Adobe Open Source Code of Conduct](code-of-conduct.md) bzw. den [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie in [diesem Artikel](contributing.md).
 
@@ -21,7 +22,7 @@ Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von �
 
 ### Geringfügige Änderungen
 
-Wenn Sie aus reiner Herzlichkeit kleinere Updates beitragen möchten, besuchen Sie den Artikel und klicken Sie auf die Schaltfläche **Bearbeiten** -Link im Artikel, der zur GitHub-Quelle für den Artikel führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Siehe Allgemein . [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) für weitere Informationen.
+Wenn Sie aus reiner Freundlichkeit kleinere Aktualisierungen vornehmen möchten, rufen Sie den Artikel auf und klicken Sie auf den Link **Bearbeiten** im Artikel, der zur GitHub-Quelle des Artikels führt. Verwenden Sie dann einfach die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen Leitfaden [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
 
 Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentationen und Codebeispiele in diesem Repository einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
 
@@ -35,7 +36,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Größere Änderungen von Adobe-Mitarbeitern
 
-Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihr Auftrag ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs`.
+Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams für eine Adobe Experience Cloud-Lösung sind und es Ihr Auftrag ist, technische Artikel zu erstellen oder zu diesen beizutragen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -43,7 +44,7 @@ Wenn Sie technischer Redakteur, Programmmanager oder Entwickler des Produktteams
 
 Community-Mitarbeiter können die GitHub-Benutzeroberfläche für die grundlegende Bearbeitung verwenden oder das Repository abspalten, um wichtige Beiträge zu leisten.
 
-Siehe [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) für Details.
+Weitere Informationen finden Sie im [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) .
 
 ## Verwenden von Markdown zum Formatieren Ihres Themas
 
@@ -57,4 +58,4 @@ Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie m
 Im öffentlichen Repository werden Pull-Anfragen automatisierte Beschriftungen zugewiesen, damit wir den Workflow für Pull-Anforderungen verwalten und Ihnen mitteilen können, was mit Ihrer Pull-Anforderung passiert:
 
 * **Änderung an Autor gesendet**: Der Autor wurde über die ausstehende Pull-Anforderung informiert.
-* **Bereit zum Zusammenführen**: Bereit zur Überprüfung durch unser Überprüfungsteam für Pull-Anforderungen.
+* **ready-to-merge**: Bereit zur Überprüfung durch unser Pull-Anforderungsteam.
