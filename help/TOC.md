@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: a4dfe41e3623e62e12cbefdc2889620b4015c6fd
+source-git-commit: 605a45ed14faed7f3283a7146e4193bf2d26b251
 workflow-type: tm+mt
-source-wordcount: '11313'
+source-wordcount: '11329'
 ht-degree: 0%
 
 ---
@@ -818,6 +818,7 @@ ht-degree: 0%
          * [ACSD-45049: Kundenattributeinstellung [!UICONTROL Is required] funktioniert nicht gemäß Website-Umfang in Admin](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
          * [ACSD-59378: Store-level [!DNL URL] schreibt beim Import falsch aktualisiert](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          * [ACSD-46938: Leistungsprobleme mit DB-Triggern während der Einrichtung:Aktualisierung](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
+         * [ACSD-58141: PHPSESSID wird bei POST-Anforderungen für angemeldete Kunden neu generiert, wenn der L2 Redis-Cache aktiviert ist](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229: Fehlzuweisung von Kundengruppendaten aufgrund eines veralteten X-Magento-Vary-Werts](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441: Beim Aktualisieren von Kunden über den API-Endpunkt V1/Customers [!DNL REST] wird ein Fehler ausgegeben](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          * [ACSD-59280: ReflectionUnionType::getName() error in 2.4.4-pX installationen](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
