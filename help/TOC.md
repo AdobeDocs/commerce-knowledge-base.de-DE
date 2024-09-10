@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 3ed9838bfb117888b3e4cfef052d39d7ada35b4b
+source-git-commit: 7bfbf1853dddc10199dcb97135535b9e8ee79293
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '11357'
 ht-degree: 0%
 
 ---
@@ -811,6 +811,7 @@ ht-degree: 0%
          * [ACSD-58739: Teilweise Neuindizierung gibt einen Fehler aus](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846: GraphQL-Produkte suchen mit Filtern nach Nullpreisen, ohne Ergebnisse zurückzugeben](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054: API-Token-Generierung für inaktive Kunden](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
+         * [ACSD-57045: URL-Neuschreibungen verursachen unendliche Seitenschleife, nachdem [!UICONTROL Website Root] von [!UICONTROL Hierarchy] deaktiviert wurde](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
          * [ACSD-58446: Durch das Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL erhalten Sie eine informative Fehlermeldung.](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/ascd-58446-deleting-a-team-with-child-users-or-teams-via-graphql-gives-an-uninformative-error-message.md)
          * [ACSD-58375: Falsch konfigurierter YouTube API-Schlüssel verursacht Fehler beim Hinzufügen von Videos auf Store-Ansichtsebene](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level.md)
       * v1.1.50 {#v1-1-50}
