@@ -3,7 +3,7 @@ title: 'ACSD-57045: URL-Neuschreibungen verursachen unendliche Seitenschleifen, 
 description: Wenden Sie den Patch ACSD-57045 an, um das Adobe Commerce-Problem zu beheben, bei dem URL-Neuschreibungen zu unendlichen Seitenschleifen führen, nachdem [!UICONTROL Website Root] von [!UICONTROL Hierarchy] deaktiviert wurde.
 feature: CMS
 role: Admin, Developer
-source-git-commit: df6cfc392f6afa4639a1ab9da52a85b8b15878d2
+source-git-commit: a39e5c857aae398a0b0ba44308ea417525a410d3
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Der Patch ACSD-57045 behebt das Problem, dass URL-Neuschreibungen dazu führen, 
 
 ## Problem
 
-URL-Neuschreibungen führen dazu, dass unendliche Seitenschleifen nach **[!UICONTROL Website Root]** von **[!UICONTROL Hierarchy]** entfernt werden.
+URL-Neuschreibungen führen dazu, dass unendliche Seitenschleifen nach **[!UICONTROL Website Root]** von **[!UICONTROL Hierarchy]** deaktiviert wird.
 
 <u>Zu reproduzierende Schritte</u>:
 
