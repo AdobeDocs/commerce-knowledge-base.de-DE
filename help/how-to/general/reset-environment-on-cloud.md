@@ -3,9 +3,9 @@ title: Zurücksetzen der Umgebung auf Adobe Commerce in der Cloud-Infrastruktur
 description: In diesem Artikel werden verschiedene Szenarien für die Zurücksetzung einer Umgebung in Adobe Commerce in der Cloud-Infrastruktur vorgestellt.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 4439ee25e929a1bdb2216cc10fa0d4506c4f3aed
+source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,9 @@ Bei einer geplanten Bereitstellung oder Aktualisierung wäre der Händler am ein
 
 <u>Am Tag der Änderungen</u>:
 
-1. Platzieren Sie die Website in [!UICONTROL Maintenance Mode].<br>
+1. Platzieren Sie die Website in [!UICONTROL Maintenance Mode].
 Weitere Informationen zu [Aktivieren oder Deaktivieren von [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) finden Sie in unserem Benutzerhandbuch und den [[!UICONTROL Maintenance Mode] Optionen für die Aktualisierung](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) in unserem Upgrade-Handbuch.
+1. Deaktivieren Sie Cron-Aufträge. Weitere Informationen zum Deaktivieren von Cron-Aufträgen finden Sie in unserem [Eigenschaftsleitfaden für Crons](<https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>).
 1. Nehmen Sie eine lokale [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html).
 
 <u>Wenn ein [!UICONTROL Rollback] erforderlich ist</u>:
@@ -123,7 +124,7 @@ Beim Zurücksetzen von [!DNL git] wird der Code in der Vergangenheit wieder in d
 1. Klonen Sie die Umgebung in Ihre lokale Entwicklungsumgebung. Sie können den Befehl in die Cloud-Konsole kopieren:    ![copy_git_clone.png](assets/copy_git_clone.png)
 1. Rufen Sie den Commits-Verlauf auf. Verwenden Sie `--reverse`, um den Verlauf für mehr Komfort in umgekehrter Reihenfolge anzuzeigen: `git log --reverse`
 1. Wählen Sie den Commit-Hash aus, für den Sie gut waren. Um den Code auf seinen authentischen Status (Vanilla) zurückzusetzen, suchen Sie den allerersten Commit, der Ihre Verzweigung (Umgebung) erstellt hat.
-   ![Auswählen eines Commit-Hashs in der Git-Konsole](assets/select_commit_hash.png)
+   ![alt text](image.png)
 1. Anwenden von Hard [!DNL git] reset: `git reset --h <commit_hash>`
 1. Push-Änderungen an Server: `git push --force <origin> <branch>`
 
