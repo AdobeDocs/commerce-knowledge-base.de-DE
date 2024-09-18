@@ -4,9 +4,9 @@ description: Dieser Artikel enthält eine Fehlerbehebung, wenn Sie die E-Mail ni
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 435a545adcf2a1d6b023abaec55c4b73e942ee1a
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,12 @@ Wenn Sie die Sender-E-Mail nicht richtig konfiguriert haben oder Ihre Domain in 
    ```
 
    * Wenn keine Ergebnisse zurückgegeben werden, bedeutet dies, dass die Absenderadresse nicht konfiguriert wurde.
+Da Sie keinen Zugriff auf den Administrator haben, müssen Sie die Konfiguration in die Datenbank einfügen. Fügen Sie die entsprechende E-Mail-Adresse ein und führen Sie die MySQL-Anweisung aus:
+
+   ```
+   insert into core_config_data (scope,scope_id,path,value) values ('default',0,'trans_email/ident_general/email', your-email@here.com)
+   ```
+
    * Wenn ein Ergebnis zurückgegeben wird, fahren Sie mit **Schritt 2** fort.
 
 1. Wenn die E-Mail in Ihrem Spam-Ordner erscheint, klicken Sie auf den Link in der E-Mail. Wenn der Link seither abgelaufen ist, versuchen Sie erneut, sich anzumelden, um den Vorgang zu wiederholen.
