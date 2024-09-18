@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
+source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an den [Experience L
 >[!NOTE]
 >
 >Der Adobe Commerce-Support wurde vom Adobe Commerce Help Center auf Experience League migriert. Verwenden Sie den Formularfluss &quot;Experience League Case&quot;, der [hier](#what-is-experience-support) beschrieben ist, um Support-Fälle zu senden.
+
+>[!NOTE]
+>
+>Um sich Ihre zuvor eingereichten Fälle im Adobe Commerce Help Center anzusehen, müssen Sie zu diesem Zeitpunkt zu https://support.magento.com/hc/en-us/requests gehen, da diese Fälle nicht zum neuen Support-Ticketsystem migriert wurden. Das Help Center ist jetzt schreibgeschützt. Um die Unterstützung für das ursprüngliche Problem weiterhin zu erhalten, müssen Sie ein Follow-up-Ticket an den [Experience League-Support](https://experienceleague.adobe.com/home#support) senden.
 
 >[!NOTE]
 >

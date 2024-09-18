@@ -4,9 +4,9 @@ description: '**Problem:** Sie möchten Ihrem vertrauenswürdigen Kollegen freig
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
+source-git-commit: ff863a9c8ebf3759c7ecf0549f79cc3a5efe4b46
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. Klicken Sie auf das **[!UICONTROL Shared Access]**-Konto, bei dem Probleme auftreten, und überprüfen Sie, auf welche Ressourcen Ihnen Zugriff gewährt wurde.
 1. Wenn die spezifische Ressource fehlt, wenden Sie sich an den Kontoinhaber (Primärer Kontoinhaber).
 
-Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team oder senden Sie eine E-Mail an grp-Magento-HelpCenterLoginIssues@adobe.com. Bitte geben Sie Ihren Namen und die mit Ihrem Konto verknüpfte E-Mail an.
+Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Bitte geben Sie Ihren Namen und die mit Ihrem Konto verknüpfte E-Mail an.
 
 ## Ich habe den freigegebenen Zugriff verwendet und auf [!UICONTROL Support] geklickt, aber beim Öffnen eines neuen Tickets wird das Dropdown-Menü [!UICONTROL Organization] nicht angezeigt
 
@@ -51,7 +51,7 @@ Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team ode
 1. Wechseln Sie zurück zu **[!UICONTROL My Account]**.
 1. Wenn nur ein **[!UICONTROL Shared Name]** aufgelistet wird, ist dies die *Standardorganisation*, unter der Ihre Tickets geöffnet werden.
 
-Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team oder senden Sie eine E-Mail an grp-Magento-HelpCenterLoginIssues@adobe.com. Geben Sie Ihren Namen und die mit Ihrem Konto verknüpfte E-Mail an.
+Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Geben Sie Ihren Namen und die mit Ihrem Konto verknüpfte E-Mail an.
 
 ## Ich habe den freigegebenen Zugriff verwendet, sehe aber trotzdem meine Tickets anstelle der freigegebenen
 
