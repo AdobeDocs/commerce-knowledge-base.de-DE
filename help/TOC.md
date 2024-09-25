@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 82313d2444230de7f4ea426a255bf0462a136334
+source-git-commit: f3d662d8843eded65eade4732d2016bf34ccd6a5
 workflow-type: tm+mt
-source-wordcount: '11456'
+source-wordcount: '11462'
 ht-degree: 0%
 
 ---
@@ -1166,6 +1166,7 @@ ht-degree: 0%
       * [Geringe Site- und API-Leistung](/help/troubleshooting/known-issues-patches-attached/low-site-and-api-performance.md)
       * [Abgelaufene Google-Bilddiagramme durch Bilddiagramme ersetzen](/help/troubleshooting/known-issues-patches-attached/replace-depreciated-google-image-charts-with-image-charts.md)
       * [Erweiterte Suche ohne relevanteste Ergebnisse](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
+      * [Fehler beim Filtern von Bestellungen in Admin](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [Benutzer, die kein Produkt zum Warenkorb hinzufügen können, wenn in Länder zulassen nichts ausgewählt ist](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
       * [Bestellungen werden nicht im Raster Bestellungen in der Admin-Konsole angezeigt](/help/troubleshooting/known-issues-patches-attached/orders-not-displayed-in-the-orders-grid-in-the-admin.md)
       * [MwSt-Nummer kann nicht validiert werden - Adobe Commerce in Cloud-Infrastruktur](/help/troubleshooting/known-issues-patches-attached/unable-to-validate-vat-number-magento-commerce-cloud.md)
