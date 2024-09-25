@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Sicherheit
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -100,8 +100,12 @@ Anzahl Der Sicherheits-Scan stellt alle Anfragen einzeln wie ein Benutzer. Aus d
 
 ### Wie lange bewahrt Adobe Commerce Sicherheitsscan-Berichte auf?
 
-Sie können die vorherigen 10 Berichte von Ihrem Ende generieren. Wenn ältere Berichte erforderlich sind, wenden Sie sich an den Adobe Commerce-Support. Bis zu einem Jahr zuvor können Sicherheitsüberprüfungsberichte eingeholt werden.
+Sie können die vorherigen 10 Berichte von Ihrem Ende generieren. Wenn ältere Berichte erforderlich sind, wenden Sie sich an den Adobe Commerce-Support.
 
 ### Welche Informationen sind beim Senden eines Support-Tickets erforderlich?
 
 Geben Sie unbedingt den Domänennamen an.
+
+### Was passiert, wenn ich meinen Speicher aus dem Scan-Tool-Scannen entfernt?
+
+Wenn Sie die Übermittlung des Stores löschen, werden alle damit verbundenen Daten, einschließlich Scan-Berichten, gelöscht. Dieser Vorgang kann nicht rückgängig gemacht werden. Durch die Übermittlung der Store-Domäne nach dem Löschen wird eine NEUE Übermittlung erstellt.
