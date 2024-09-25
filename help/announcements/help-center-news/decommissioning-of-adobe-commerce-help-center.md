@@ -3,9 +3,10 @@ title: Stilllegung des Adobe Commerce Help Center
 description: Alles, was Sie über die Stilllegung der Adobe Commerce Help Center-Site wissen müssen.
 feature: Support
 role: Admin
-source-git-commit: 243319f2e9cad48b6259698928e3c97239400fc0
+exl-id: 1dd74f62-9a05-4bd6-aefb-3c9083122d9e
+source-git-commit: 631bd27880bfebd63d2897915ea981587a770466
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -17,13 +18,19 @@ Am 29. Juli 2024 wurde das Adobe Commerce Help Center in einen schreibgeschützt
 
 >[!NOTE]
 >
->Der Adobe Commerce-Support wurde vom Adobe Commerce Help Center zu Adobe Experience League migriert.<br>**Verwenden Sie den Formularfluss &quot;Experience League Case&quot;, der [hier](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) beschrieben ist, um Support-Anfragen zu senden.**
+>**Verwenden Sie den Formularfluss &quot;Experience League Case&quot;, der [hier](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) beschrieben ist, um Support-Anfragen zu senden.**
+
+## Anzeigen historischer Fälle im Adobe Commerce Help Center
+
+Adobe hat die Sichtbarkeitsdauer für historische Fälle im Adobe Commerce Help Center auf den 1. Mai 2025 verlängert.
+
+**Ab dem 1. Mai 2025 ist der Zugriff auf das Adobe Commerce Help Center nicht mehr möglich und Benutzer können keine im System erstellten Support-Fälle mehr anzeigen.**
 
 ## Wann wird die Site des Adobe Commerce Help Center eingestellt?
 
-**Am 3. September 2024 ist der Zugriff auf das Adobe Commerce Help Center nicht mehr möglich** und Sie können keine veralteten Supportfälle mehr anzeigen, die in diesem System erstellt wurden.
-**<u>Speichern Sie alle Support-Fälle oder Informationen, die Sie beibehalten möchten, indem Sie sie vor dem 3. September 2024 in Ihrem Browser im PDF speichern.</u>**
-Wenn Sie frühere Support-Fälle überprüfen möchten, die nach dem 3. September 2024 im Adobe Commerce Help Center erstellt wurden, müssen Sie einen Support-Fall in Adobe Experience League öffnen und diese Informationen vom Supportteam anfordern.
+**<u>Speichern Sie alle Support-Fälle oder Informationen, die Sie beibehalten möchten, indem Sie sie vor dem 1. Mai 2025 in Ihrem Browser unter PDF speichern.</u>**
+
+Wenn Sie frühere Support-Fälle überprüfen möchten, die nach dem 1. Mai 2025 im Adobe Commerce Help Center erstellt wurden, müssen Sie einen Support-Fall in Adobe Experience League öffnen und diese Informationen vom Supportteam anfordern.
 
 >[!NOTE]
 >
