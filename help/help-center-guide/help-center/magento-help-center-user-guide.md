@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
+source-git-commit: 3cddfcb136147a5c0602a62585438313b3162900
 workflow-type: tm+mt
-source-wordcount: '2560'
+source-wordcount: '2586'
 ht-degree: 0%
 
 ---
@@ -82,10 +82,10 @@ Gehen Sie wie folgt vor, um sich beim Adobe Experience League-Support anzumelden
 
 ### Support-Fall einreichen {#support-case}
 
-Nach der erfolgreichen Anmeldung können Sie über die Adobe Experience League-Startseite, Ihre Adobe Commerce-Kontoseite und Ihre Adobe Commerce Cloud-Kontoseite einen Support-Fall einreichen.
+Nachdem Sie sich erfolgreich als Kontoinhaber oder Benutzer mit gemeinsamem Zugriff angemeldet haben, können Sie über die Adobe Experience League-Homepage, Ihre Adobe Commerce-Kontoseite und Ihre Adobe Commerce Cloud-Kontoseite einen Support-Vorgang senden.
 
-* Wenn Sie der Kontoinhaber sind, führen Sie die folgenden Schritte aus.
-* Wenn Sie Benutzer von Shared Access sind, müssen Sie zunächst zwischen Konten wechseln. Siehe [Zugriff auf freigegebene Konten (Wechsel der Konten)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts), und dann können Sie mit den folgenden Schritten fortfahren.
+* Wenn Sie der Kontoinhaber oder ein wiederkehrender Benutzer von Shared Access sind, führen Sie die folgenden Schritte aus.
+* Wenn Sie ein Benutzer mit gemeinsamem Zugriff sind und der Kontoinhaber Ihnen nur [freigegebenen Zugriff bereitgestellt hat](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access), müssen Sie zunächst die Konten wechseln, bevor Sie mit den folgenden Schritten fortfahren. Weitere Informationen finden Sie unter [Zugriff auf freigegebene Konten (Wechsel der Konten)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) .
 
 #### Startseite von Adobe Experience League {#experience-league-start-page}
 
