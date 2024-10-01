@@ -4,10 +4,10 @@ description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-S
 exl-id: feacf38f-2803-4170-a64f-5d7c4567432d
 feature: Support
 role: Admin
-source-git-commit: cfbe281941fbdc3e6fe7ee36385dc6732b46da26
+source-git-commit: 24c7783ca6d25f8cb13e7fe84efdb6cf09efcfa6
 workflow-type: tm+mt
-source-wordcount: '1395'
-ht-degree: 0%
+source-wordcount: '629'
+ht-degree: 1%
 
 ---
 
@@ -45,194 +45,67 @@ Die Informationen in dieser Wissensdatenbank ergänzen die [Adobe Commerce Devel
 
 <tr>
     <td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment">Die CLI <code>Magento-cloud</code> zeigt keine aktive Umgebung an:</a> Es gibt mehrere aktive Umgebungen, und Sie versuchen, mit einer Umgebung zu interagieren, indem Sie einen Magento-Cloud-CLI-Befehl (Befehlszeilen-Tool) ausführen. Die Aufforderung zur Auswahl der gewünschten Umgebung listet diese Umgebung jedoch nicht auf.
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported">Kundenprofile werden nicht in Experience Platform angezeigt:</a> Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Datenverbindungs-Erweiterung nicht in Experience Platform angezeigt werden.
     </td>
     <td>Neuer Artikel</td>
-    <td>30. Juli 2024</td>
+    <td>27. August 2024</td>
   </tr>
 
-<td>
-    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches">So rufen Sie einen Sicherheits-Patch ab und wenden ihn an:</a> Dieser Artikel enthält Anweisungen zum Abrufen und Anwenden eines Sicherheits-Patches, der veröffentlicht wurde, Anweisungen jedoch nicht verfügbar sind.  
+<tr>  
+    <td>
+    <a href = "https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect">Dashboard für Live-Suche und Rangfolge der Suchergebnisse sind nicht korrekt:</a> In diesem Artikel wird erläutert, warum die im Dashboard für Live-Suche angezeigten Daten falsch sein können oder warum die Rangfolge der Suchergebnisse nicht Ihren Erwartungen entspricht.  
     </td>
     <td>Neuer Artikel</td>
-    <td>30. Juli 2024</td>
+    <td>27. August 2024</td>
   </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch">Zurücksetzen auf Elasticsearch7, wenn die Suchmaschine auf OpenSearch gesetzt ist:</a> Dieser Artikel bietet eine Lösung für das Problem, wenn der Fehler "Falling back to Elasticsearch7"auftritt, wenn die Suchmaschine in Adobe Commerce auf OpenSearch gesetzt ist. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102">Fehlerbehebung beim Rotieren des Verschlüsselungsschlüssels: CVE-2024-34102:</a> Dieser Artikel soll Händlern bei der Fehlerbehebung bei der Verschlüsselungsschlüsselrotation helfen, nachdem sie die in diesem <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102">Artikel</a> auf CVE-2024-34102 beschriebenen Schritte bereits ausgeführt haben. 
     </td>
     <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
+    <td>27. August 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error">Bereitstellung fehlgeschlagen: Der Namespace-Fehler "cache"enthält keine Befehle:</a> Dieser Artikel bietet eine Lösung für das Problem, wenn Ihre Bereitstellung fehlschlägt und einer der im Protokoll angezeigten Fehler <em>Es sind keine Befehle im Namespace "cache"definiert</em>. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center">Stilllegung des Adobe Commerce-Hilfezentrums:</a> Damit unsere Journey besser mit der Lösungsfamilie von Adobe verbunden ist, hat Adobe Commerce unseren Support-Aufnahmeprozess vom Adobe Commerce Help Center nach Adobe Experience League migriert. 
     </td>
     <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
+    <td>27. August 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response">ACSD-5566: <code>mergeCart</code> Mutation schlägt mit internem Serverfehler in GraphQL-Antwort fehl:</a> Der Patch ACSD-55566 behebt das Problem, bei dem die <code>mergeCart</code>-Mutation mit einem internen Serverfehler in der GraphQL-Antwort fehlschlägt. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61">Sicherheitsupdate für Adobe Commerce - APSB24-61:</a> Dieses Update behebt kritische, wichtige und mäßige Sicherheitslücken. Eine erfolgreiche Nutzung könnte zu einer willkürlichen Codeausführung, beliebigem Lesen des Dateisystems, Umgehung von Sicherheitsfunktionen und Berechtigungseskalierung führen. Das Bulletin ist Adobe Security Bulletin (APSB24-61). 
     </td>
     <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
+    <td>27. August 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront">ACSD-56546: Konfigurierbare und Bundle-Produkte werden auf der Storefront als nicht vorrätig angezeigt:</a> Der Patch ACSD-56546 behebt das Problem, dass die konfigurierbaren und Bundle-Produkte auf der Storefront als nicht vorrätig angezeigt werden. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist.  
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted">Live-Suchfacetten sind nicht alphabetisch sortiert:</a> In diesem Artikel wird das Problem erläutert, bei dem alle Adobe Commerce-Storefront-Facetten alphabetisch mit Einzelauswahl-Optionen sortiert werden, unabhängig vom Eingabetyp, der dem entsprechenden Attribut zugewiesen ist. 
     </td>
     <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
+    <td>27. August 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information">ACSD-57565: Das Bestell-Dashboard zeigt falsche Bestellinformationen an:</a> Der Patch ACSD-57565 behebt das Problem, dass das Bestell-Dashboard falsche Bestellinformationen anzeigt, bis der Zeitraum aktualisiert wurde. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102">Anleitung zum Schützen Ihrer Speicher- und rotierenden Verschlüsselungsschlüssel: CVE-2024-34102:</a> Dieser Artikel enthält Anleitungen zum Schützen Ihrer Speicher- und Drehschlüsseln. 
     </td>
     <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
+    <td>27. August 2024</td>
+  </tr>
 
 <tr>
     <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql">ACSD-57394: Falsche Produktsortierung nach mehreren Sortierungsattributen in GraphQL:</a> Der Patch ACSD-57394 behebt das Problem, dass Produkte bei Verwendung mehrerer Sortierungsattribute in GraphQL falsch sortiert werden. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
+    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mdee-table-does-not-exist">Korrektur von Daten, die in Commerce Data Exporter-Feeds nicht aktualisiert wurden und Cron-Protokollfehler mit der Änderungstabelle sind nicht vorhanden:</a> Dieser Artikel bietet eine Lösung zum Beheben von Datensynchronisierungsproblemen, die durch die Verwendung der falschen Ansichts-ID im Data Exporter Mview-Abonnement verursacht werden. Mit dem Abonnement "Ansicht"können Sie Änderungen an Datenbanktabellen verfolgen. 
     </td>
     <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories-that-should-not-be-listed-in-the-category-aggregations">ACSD-57854: Die GraphQL-Antwort enthält deaktivierte Kategorien, die nicht in den Kategorieaggregationen aufgeführt werden sollten:</a> Der Patch ACSD-57854 behebt das Problem, dass die GraphQL-Antwort deaktivierte Kategorien enthält, die nicht in den Kategorieaggregationen aufgeführt werden sollten. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-57074-yes-no-custom-attribute-does-not-work-with-indexing">ACSD-57074: Ja/Kein benutzerdefiniertes Attribut mit dem Präfix <code>price_*</code> im Attribut <code>attribute_code</code> funktioniert nicht bei der Indizierung:</a> Der Patch ACSD-57074 behebt das Problem, dass das benutzerdefinierte Attribut <em>Ja/Nein</em> mit dem Präfix <code>price_*</code> im Attribut <code>attribute_code</code> nicht mit der Indizierung funktioniert. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-55241-used-and-times-used-attributes-display-incorrect-values-for-generated-coupons">ACSD-55241: Verwendete Attribute und Verwendete Zeiten zeigen falsche Werte für generierte Gutscheine an:</a> Der Patch ACSD-55241 behebt das Problem, dass die Attribute Verwendet und Verwendete Zeiten falsche Werte für generierte Gutscheine anzeigen. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-47/acsd-56760-admin-user-is-restricted-to-a-specific-website-and-is-unable-to-sort-or-add-new-products">ACSD-56760: Admin-Benutzer sind auf eine bestimmte Website beschränkt und können keine neuen Produkte sortieren oder hinzufügen:</a> Der Patch ACSD-56760 behebt das Problem, dass der Admin-Benutzer, der auf eine bestimmte Website beschränkt ist und keine neuen Produkte innerhalb einer Kategorie sortieren oder hinzufügen kann, falls der Webspeicher über eine eigene Stammkategorie verfügt. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.47 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56635-imported-customers-are-duplicated-with-the-same-email-address">ACSD-56635: Importierte Kunden werden mit derselben E-Mail-Adresse dupliziert, wenn die Kontofreigabe auf Global eingestellt ist:</a> Der Patch ACSD-56635 behebt das Problem, dass der importierte Kunde mit derselben E-Mail-Adresse dupliziert wird, wenn der Import mit der Kontofreigabe auf Global verwendet wird. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57315-new-transaction-created-in-paypal-payflow-pro-each-time-the-fetch-button-is-clicked">ACSD-57315: Jedes Mal, wenn auf die Abruf-Schaltfläche geklickt wird, wird in PayPal Payflow Pro eine neue Transaktion erstellt:</a> Der Patch ACSD-57315 behebt das Problem, dass in PayPal Payflow Pro jedes Mal, wenn auf die Abruf-Schaltfläche im Ansichtstransaktionsbildschirm in Admin geklickt wird, eine neue Transaktion erstellt wird. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-56741-database-setup-upgrade-error-with-custom-mysql-trigger">ACSD-56741: Fehlerbehebung bei Datenbanksetup-Fehlern mit benutzerdefinierten MySQL-Triggern:</a> Der Patch ACSD-56741 behebt das Problem, dass während <code>setup:upgrade</code> aufgrund eines benutzerspezifischen MySQL-Triggers in der Datenbank, der nicht mit der Indizierung und MView in Zusammenhang steht, eine Fehlermeldung angezeigt wird. . <em></em> Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear">ACSD-58008: Wenn das Enddatum leer ist, verschwindet das Zeitplanupdate:</a> Der Patch ACSD-58008 behebt das Problem, dass das Bearbeiten des Enddatums als leer führt, dass das Zeitplanupdate verschwindet. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies">ACSD-57337: Admin-Benutzer mit Zugriffsbeschränkungen konnten alle Unternehmen im Unternehmensraster anzeigen:</a> Der Patch ACSD-57337 behebt das Problem, dass ein Admin-Benutzer mit Zugriffsbeschränkungen auf bestimmte Websites Unternehmen von allen Websites im Unternehmensraster anzeigen konnte. Dieser Patch ist verfügbar, wenn <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html">[!DNL Quality Patches Tool (QPT)]</a> 1.1.48 installiert ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth">Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in <code>env:COMPOSER_AUTH</code> oder <code>auth.json</code> fehl:</a> Dieser Artikel bietet eine Lösung für das Problem, wenn Ihre Bereitstellung mit einem Fehler wie dem im Bereitstellungsprotokoll fehlschlägt. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-bypass-waf-for-graphql-requests">Umgehen von WAF für GraphQL-Anforderungen:</a> In diesem Artikel wird erläutert, wie WAF für GraphQL-Anforderungen umgangen wird, wenn der Fastly WAF Ihre GraphQL-Anforderungen blockiert. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full">E-Mail mit der Meldung, dass der Exportspeicher fast voll ist:</a> Dieser Artikel bietet eine Lösung für das Problem, dass Sie eine E-Mail erhalten, in der erklärt wird, dass der Exportspeicher fast voll ist. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud">Aktualisieren von MariaDB 10.4 auf 10.5 für Adobe Commerce in Cloud:</a> In diesem Artikel wird beschrieben, wie Sie von MariaDB 10.4 auf 10.5 aktualisieren, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions">Überarbeitete Patches für Google Maps-Zugriffsverlust für alle Adobe Commerce-Versionen:</a> Dieser Artikel enthält eine Fehlerbehebung für Adobe Commerce-Händler, die nicht mit aktuellen Google Maps-Versionen ab 3.54 kompatibel sind. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102">Sicherheitsupdate für Adobe Commerce - APSB24-40:</a> In diesem Artikel wird eine Aktualisierung im Zusammenhang mit CVE-2024-34102 beschrieben. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
-
-<tr>
-    <td>
-    <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/poor-performance-in-integration-environments">Schlechte Leistung in Integrationsumgebungen:</a> Dieser Artikel bietet eine Lösung für das Problem, dass die Pro-Integrationsumgebungen und Starter-Staging-Umgebungen nur schlecht funktionieren. 
-    </td>
-    <td>Neuer Artikel </td>
-    <td>30. Juli 2024</td>
- </tr>
+    <td>27. August 2024</td>
+  </tr>
 </table>
 
 ## Beliebte Artikel
