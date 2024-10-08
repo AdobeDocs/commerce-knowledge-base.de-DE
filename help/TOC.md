@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 5b1fc77a5ea4c6bf040b349cd4809d9e062d29f3
+source-git-commit: 41100a7a059abf86524d2c6f66a4d81ddf1eb41f
 workflow-type: tm+mt
-source-wordcount: '9808'
+source-wordcount: '9814'
 ht-degree: 0%
 
 ---
@@ -942,6 +942,7 @@ ht-degree: 0%
       * [Bereitstellung fehlgeschlagen: Es wurden keine Befehle im Namespace-Fehler &quot;cache&quot;definiert](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Bekannte Probleme {#known-issues-patches-attached}
+      * [Sicherheitsupdate für Adobe Commerce - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
       * [Hinweise zum Schützen Ihres Stores und Wechseln der Verschlüsselungsschlüssel: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
       * [Sicherheitsupdate für Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
       * [Fehlerbehebung für die Verschlüsselungsschlüssel-Rotation: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
