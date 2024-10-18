@@ -2,76 +2,53 @@
 title: Aktualisierung der Adobe Commerce Support-Ticketlebenszyklus-Richtlinie
 description: Dieser Artikel enthält Informationen zur Aktualisierung der Adobe Commerce Support-Ticketlebenszyklusrichtlinien.
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
 # Aktualisierung der Adobe Commerce Support-Ticketlebenszyklus-Richtlinie
 
-Dieser Artikel enthält Informationen zur Aktualisierung der Adobe Commerce Support-Ticketlebenszyklusrichtlinien.
+In dieser Dokumentation werden Verbesserungen am Adobe DX Support-Lebenszyklus beschrieben, um die Kommunikation zu verbessern und Kunden schnellstmöglich Lösungen zur Verfügung zu stellen, um den Kundenerfolg zu sichern. Dies finden Sie auch unter Überblick über Adobe-Erfolgspläne: Support-Lebenszyklus](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+[
+Im Folgenden finden Sie die Zeitpläne und Benachrichtigungen für verschiedene Szenarien, die während des Support-Prozesses aufgetreten sind:
 
-Die folgende Tabelle zeigt die aktualisierten Szenarien. Details zu den einzelnen Szenarien finden Sie im folgenden Abschnitt.
+## Erinnerungen für Fallnachverfolgung
 
-<table>
- <tbody>
- <tr>
- <td class="wysiwyg-text-align-center"> </td>
- <td class="wysiwyg-text-align-center"><strong>Ticketstatus</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Tage bis "Gelöst"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Tage bis "geschlossen"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Benachrichtigungszeitpunkt</strong></td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Ingenieur bietet Lösung</strong></td>
- <td class="wysiwyg-text-align-center">"Warten auf Ihre Antwort"</td>
- <td class="wysiwyg-text-align-center">3</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Tage 3 und 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Auf Informationen vom Kunden warten</strong></td>
- <td class="wysiwyg-text-align-center">"Warten auf Ihre Antwort"</td>
- <td class="wysiwyg-text-align-center">Nicht zutreffend</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Tage 1, 3 und 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Der Kunde setzt auf "Gelöst"oder fordert den Techniker auf, auf "Gelöst"festzulegen</strong></td>
- <td class="wysiwyg-text-align-center">"Gelöst"</td>
- <td class="wysiwyg-text-align-center">Sofort</td>
- <td class="wysiwyg-text-align-center">1</td>
- <td class="wysiwyg-text-align-center">Tag 1</td>
- </tr>
- </tbody>
- </table>
+| Benachrichtigung | Fallstatus | Benachrichtigungszeit | Tage bis zum Ende der Groß-/Kleinschreibung |
+|--- |--- |--- |--- |
+| **1.** | Ausstehende Antwort oder Auflösung bereitgestellt | 24 Stunden/1 Tag | 5 Tage |
+| **2nd** | Ausstehende Antwort oder Auflösung bereitgestellt | 72 Stunden / 3 Tage | 3 Tage |
+| **3rd** | Ausstehende Antwort oder Auflösung bereitgestellt | 120 Stunden / 5 Tage | 1 Tag |
+| **4th** | Ausstehende Antwort oder Auflösung geändert in &quot;Automatisch geschlossen&quot; | 144 Stunden / 6 Tage | geschlossen |
 
 ## Szenarien im Detail
 
-### Wenn ein Ingenieur eine Lösung bereitstellt
-
-1. Sobald einem Kunden eine Lösung bereitgestellt wurde, setzt der Techniker den Ticketstatus auf &quot;Warten auf Ihre Antwort&quot;.
-1. Wenn der Kunde 3 Tage lang keine Antwort erhält, nachdem der Status in &quot;Warten auf Ihre Antwort&quot;geändert wurde, wird das Ticket in &quot;Gelöst&quot;verschoben und der Kunde wird benachrichtigt.
-1. Wenn der Kunde 6 Tage lang keine Antwort erhält, nachdem der Status in &quot;Warten auf Ihre Antwort&quot;geändert wurde, wird das Ticket geschlossen und der Kunde wird benachrichtigt.
-
 ### Wenn von einem Kunden zusätzliche Informationen benötigt werden
 
-1. Wenn eine Aktualisierung des Kunden erforderlich ist, setzt der Techniker das Ticket auf &quot;Warten auf Ihre Antwort&quot;.
-1. An den Tagen 1 und 3 werden dem Kunden Benachrichtigungen gesendet, in denen er um Nachbearbeitung ersucht.
-1. Wenn der Kunde 6 Tage lang keine Antwort erhält, nachdem der Status in &quot;Warten auf Ihre Antwort&quot;geändert wurde, wird das Ticket geschlossen und der Kunde wird benachrichtigt.
+In diesem Szenario werden die folgenden Schritte ausgeführt, wenn von einem Kunden zusätzliche Informationen benötigt werden:
 
-### Ticket, das von einem Kunden auf &quot;gelöst&quot;gesetzt wurde
+* Der Techniker sendet eine Aktualisierung, die Informationen anfordert, und der Fallstatus ist auf &quot;Ausstehende Antwort&quot;eingestellt.
+* Am 1., 3. und 5. Tag nach der Statuseinstellung &quot;Ausstehende Antwort&quot;werden dem Kunden, der die zusätzlichen Informationen anfordert, Folgebenachrichtigungen gesendet.
+* Wenn der Kunde 6 Tage lang keine Antwort erhält, nachdem der Status auf &quot;Ausstehende Antwort&quot;festgelegt wurde, wird der Fall geschlossen und eine Schließbenachrichtigung gesendet.
 
-Wenn ein Ticket von einem Kunden auf &quot;Gelöst&quot;gesetzt wird, wird es an einem Tag geschlossen und der Kunde wird benachrichtigt.
+Kunden können einen geschlossenen Fall innerhalb von 14 Tagen erneut öffnen, um die Kommunikation fortzusetzen. Nach 14 Tagen kann ein neuer Support-Fall eröffnet werden, um die Kommunikation im Zusammenhang mit einem zuvor geschlossenen Fall fortzusetzen.
 
-### Der Kunde weist den Support an, das Ticket zu schließen
+### Wenn ein Ingenieur eine Lösung bereitstellt
 
-Wenn ein Kunde den Adobe Commerce-Support anweist, das Ticket zu schließen, wird es innerhalb eines Tages geschlossen und der Kunde wird benachrichtigt.
+In diesem Szenario werden die folgenden Schritte ausgeführt, wenn ein Ingenieur eine Lösung anbietet:
+
+* Der Ingenieur sendet eine Aktualisierung mit einer vorgeschlagenen Lösung und der Fallstatus ist auf &quot;Lösung bereitgestellt&quot;eingestellt.
+* Am 1., 3. und 5. Tag nach der Festlegung des Status auf &quot;Lösung bereitgestellt&quot;werden dem Kunden Folgebenachrichtigungen gesendet, die eine Bestätigung der bereitgestellten Lösung anfordern.
+* Wenn der Kunde 6 Tage lang keine Antwort erhält, nachdem der Status auf &quot;Lösung bereitgestellt&quot;festgelegt wurde, wird der Fall geschlossen und eine Schließbenachrichtigung gesendet.
+
+Kunden können einen geschlossenen Fall innerhalb von 14 Tagen erneut öffnen, um die Kommunikation fortzusetzen. Nach 14 Tagen kann ein neuer Support-Fall eröffnet werden, um die Kommunikation im Zusammenhang mit einem zuvor geschlossenen Fall fortzusetzen.
 
 ## Verwandtes Lesen
 
-* [Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)
-* [Der Link &quot;Ticket senden&quot;wird nicht auf der Startseite des Adobe Commerce Help Center angezeigt](/help/help-center-guide/help-center/magento-help-center-user-guide.md#no-submit-link)
-* [Formular für die Übermittlung von Tickets: Der Händler wird nicht in der Dropdown-Liste &quot;Organisation&quot;angezeigt](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed)
+* [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
+* [ Der Link &quot;Ticket senden&quot;wird nicht auf der Startseite des Adobe Commerce Help Center angezeigt](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [Formular für die Übermittlung des Tickets: Der Händler wird nicht in der Dropdown-Liste &quot;Organisation&quot;angezeigt](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
+* [Überblick über Adobe-Erfolgspläne: Lebenszyklus von Support-Fällen](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
