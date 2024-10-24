@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 3cddfcb136147a5c0602a62585438313b3162900
+source-git-commit: d8f832869916c04cacc0cefeeb9b45bd3c1f3b80
 workflow-type: tm+mt
-source-wordcount: '2586'
+source-wordcount: '2625'
 ht-degree: 0%
 
 ---
@@ -189,6 +189,10 @@ Folgende Support-Fälle stehen Ihnen zur Verfügung:
 Sie können die von Ihnen persönlich eingereichten Fälle durch Anklicken von **[!UICONTROL My Cases]** im linken Menü anzeigen.
 
 ![view-support-cases](assets/view_support_cases.png)
+
+#### Anzeigen historischer Fälle im Adobe Commerce Help Center
+
+Erfahren Sie mehr darüber, wie Sie **Ihre historischen Fälle anzeigen können** vom Adobe Commerce-Hilfezentrum in [Stilllegung des Adobe Commerce Help Center](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) in unserer Adobe Commerce-Wissensdatenbank.
 
 #### Überwachte Fälle anzeigen
 
