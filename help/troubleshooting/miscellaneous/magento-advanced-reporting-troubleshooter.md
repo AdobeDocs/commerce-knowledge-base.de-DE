@@ -4,7 +4,7 @@ description: Probleme mit erweiterten Berichten in Adobe Commerce können mit di
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
+source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -94,7 +94,7 @@ b. NO - Wenn die Abfrage nichts zurückgibt, gehen Sie wie folgt vor: 1. [Deakti
 
 Überprüfen Sie, ob der Auftrag `analytics_collect_data` ausgeführt wurde, indem Sie diese Abfrage ausführen: `SELECT * FROM cron_schedule WHERE job_code LIKE 'analytics_collect_data' \G`
 
-a. YES - Wenn es Datensätze gibt und in der Spalte **status** _ausgelassen_ steht, verwenden Sie den Patch in diesem KB-Artikel [Aktualisierung der erweiterten Berichterstellung für die Ausführung auf der eigenen Cron-Gruppe](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md).\
+a. YES - Wenn es Datensätze gibt und in der Spalte **Status** _ausgelassen_ steht, verwenden Sie den Patch in diesem KB-Artikel Update Advanced Reporting , um auf einer eigenen Cron-Gruppe auszuführen.\
 b. JA - Wenn es Datensätze gibt und in der Spalte **status** _success_ steht, fahren Sie mit [Schritt 9](#step-9) fort.\
 c. JA - Wenn Einträge vorhanden sind und in der Spalte **status** _error_ steht, fahren Sie mit [Schritt 8](#step-8) fort.\
 d. NO - Wenn keine Datensätze vorhanden sind, fahren Sie mit [Schritt 8](#step-8) fort.
@@ -138,9 +138,9 @@ b. NO - Fahren Sie mit [Schritt 10](#step-10) fort.
 
 +++**Gibt es eine Fehlermeldung, die vom Cron-Auftrag ausgegeben wird?**
 
-Beispiel: In der Tabelle `core_config_data` sehen Sie den Fehler *Die Datei &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0&quot;kann nicht gelöscht werden*. Warnung!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0?lang=en): Keine solche Datei oder Verzeichnis*
+Beispiel: In der Tabelle `core_config_data` wird der Fehler *Die Datei &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0&quot;kann nicht gelöscht werden*. Warnung!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0?lang=en): Keine solche Datei oder Verzeichnis*
 
-a. YES - Verwenden Sie den Patch ACSD-50165 in [Die Datei kann nicht gelöscht werden. Warnung!unlink: Kein solcher Datei- oder Verzeichnisfehler vom Admin](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md), warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es dann erneut.\
+a. JA - Verwenden Sie den Patch ACSD-50165 in [Die Datei kann nicht gelöscht werden. Warnung!unlink: Kein solcher Datei- oder Verzeichnisfehler vom Admin](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md), warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es dann erneut.\
 b. NO - Fahren Sie mit [Schritt 11](#step-11) fort.
 
 +++
@@ -151,7 +151,7 @@ b. NO - Fahren Sie mit [Schritt 11](#step-11) fort.
 
 Beispiel: `report.ERROR: Cron Job analytics_collect_data has an error: substr_count() expects parameter 1 to be string, null given. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384} [] []`
 
-a. JA - Verwenden Sie den Patch MDVA-19391 in den [Common Advanced Reporting-Cron-Auftragsfehlern auf Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md), warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.\
+a. JA - Verwenden Sie den Patch MDVA-19391 in Common Advanced Reporting cron Auftragsmehlern in Adobe Commerce, warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.\
 b. NO - [ein Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
