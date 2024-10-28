@@ -4,9 +4,9 @@ description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.3.5-Problem b
 exl-id: 3ede15d4-4c39-442a-8784-2d5e6650fe67
 feature: Products
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,5 @@ In Adobe Commerce 2.3.6, das ab 4. Quartal 2020 veröffentlicht werden soll, ist
    * [Multi-Versandaufträge mit einem virtuellen Produkt werden in Adobe Commerce 2.3.5 nicht korrekt verarbeitet](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
    * [Bekanntes Problem beim Produktvergleich in Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
    * [Ausgabe der Zahlungsmethode in Adobe Commerce auf Cloud-Infrastruktur und Adobe Commerce vor Ort 2.3.5 und 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
-   * [Adobe Commerce fordert Kunden auf, sich anzumelden, stellt jedoch einen ungültigen Link bereit](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
    * [Patch für Amazon Pay-out-Problem in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
    * [Bekannte Probleme mit Adobe Commerce 2.3.5 in unserer Entwicklerdokumentation](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

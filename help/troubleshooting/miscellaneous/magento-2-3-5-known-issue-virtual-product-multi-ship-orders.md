@@ -4,9 +4,9 @@ description: In diesem Artikel wird ein bekanntes Problem in Adobe Commerce 2.3.
 exl-id: 34ce79a2-5157-492b-8ee4-bdc09aae0c40
 feature: Orders, Products, Shipping/Delivery
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,6 @@ In unserer Support-Wissensdatenbank:
 * [Bekanntes Problem beim Produktvergleich in Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
 * [Bekanntes Problem bei der Produktanzahl für Massenaktionen in Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 * [Ausgabe der Zahlungsmethode in Adobe Commerce 2.3.5 und 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
-* [Adobe Commerce fordert Kunden auf, sich anzumelden, stellt jedoch einen ungültigen Link bereit](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
 * [Patch für Amazon Pay-out-Problem in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
 
 In unserer Entwicklerdokumentation:
