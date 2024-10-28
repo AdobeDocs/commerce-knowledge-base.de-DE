@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: d8f832869916c04cacc0cefeeb9b45bd3c1f3b80
+source-git-commit: 8ee52f47d9e230ecd633ead3429d864f9df7c33e
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,6 @@ Gehen Sie wie folgt vor, um sich beim Adobe Experience League-Support anzumelden
 
 Nachdem Sie sich erfolgreich als Kontoinhaber oder Benutzer mit gemeinsamem Zugriff angemeldet haben, können Sie über die Adobe Experience League-Homepage, Ihre Adobe Commerce-Kontoseite und Ihre Adobe Commerce Cloud-Kontoseite einen Support-Vorgang senden.
 
-* Wenn Sie der Kontoinhaber oder ein wiederkehrender Benutzer von Shared Access sind, führen Sie die folgenden Schritte aus.
-* Wenn Sie ein Benutzer mit gemeinsamem Zugriff sind und der Kontoinhaber Ihnen nur [freigegebenen Zugriff bereitgestellt hat](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access), müssen Sie zunächst die Konten wechseln, bevor Sie mit den folgenden Schritten fortfahren. Weitere Informationen finden Sie unter [Zugriff auf freigegebene Konten (Wechsel der Konten)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) .
-
 #### Startseite von Adobe Experience League {#experience-league-start-page}
 
 Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Adobe Experience League einzureichen:
@@ -106,7 +103,7 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 
    ![open-support-page](assets/click_support.png)
 
-1. Um den Support-Aufnahmeprozess zu starten, stellen Sie sicher, dass Sie die entsprechende Organisation aus der Dropdown-Liste Organisation ausgewählt haben (sofern sichtbar).
+1. Um den Support-Aufnahmeprozess zu starten, stellen Sie sicher, dass Sie die entsprechende Organisation aus der Dropdown-Liste Organisation ausgewählt haben (sofern sichtbar). Um eine Groß-/Kleinschreibung für Adobe Commerce einzureichen, wählen Sie den Unternehmensnamen aus, der auf &quot;*[!DNL Commerce]*&quot;endet.
 
    ![select_geeignete_org](assets/select_appropriate_org.png)
 
