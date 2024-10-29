@@ -1,17 +1,17 @@
 ---
-title: "'Freigabe fehlgeschlagen: Im Namespace-Fehler 'cache' sind keine Befehle definiert."
+title: "'Die Bereitstellung ist beim Leeren des Cache fehlgeschlagen: Im Namespace-Fehler 'cache' sind keine Befehle definiert.'"
 description: Dieser Artikel bietet eine Lösung für das Problem, wenn die Bereitstellung mit dem folgenden Fehler fehlschlägt **Im Cache-Namespace sind keine Befehle definiert**.
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: 1a8a4e1eada859a6712a43536d7bad26d1ce1244
+source-git-commit: e13be3ef9daa17b9463c8251933f68f6a35fedd2
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# Bereitstellung fehlgeschlagen: Es wurden keine Befehle im Namespace-Fehler &quot;cache&quot;definiert
+# Die Implementierung schlug beim Leeren des Cache fehl: &quot;Es sind keine Befehle im Namespace-Fehler &#39;cache&#39; definiert.&quot;
 
 >[!WARNING]
 >
