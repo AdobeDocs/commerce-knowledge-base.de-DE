@@ -1,17 +1,18 @@
 ---
-title: "'Die Bereitstellung ist beim Leeren des Cache fehlgeschlagen: Im Namespace-Fehler 'cache' sind keine Befehle definiert.'"
+title: '"Bereitstellung fehlgeschlagen beim Cache-Leeren: ''Es gibt keine Befehle, die im ''cache''-Namespace''-Fehler definiert sind.'''
 description: Dieser Artikel bietet eine Lösung für das Problem, wenn die Bereitstellung mit dem folgenden Fehler fehlschlägt **Im Cache-Namespace sind keine Befehle definiert**.
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: e13be3ef9daa17b9463c8251933f68f6a35fedd2
+source-git-commit: 7efa7b5363c7f77d76c02051c7e0e6a0f38ca87d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# Die Implementierung schlug beim Leeren des Cache fehl: &quot;Es sind keine Befehle im Namespace-Fehler &#39;cache&#39; definiert.&quot;
+
+# Die Bereitstellung ist beim Cache-Leeren fehlgeschlagen: Fehler &quot;Es sind keine Befehle im &#39;cache&#39;-Namespace definiert&quot;
 
 >[!WARNING]
 >
@@ -30,11 +31,11 @@ Dieser Artikel bietet eine Lösung für das Problem, wenn Ihre Bereitstellung fe
 
 Adobe Commerce auf Cloud-Infrastruktur 2.4.x
 
-## Problem  
+## Problem
 
 <u>Zu reproduzierende Schritte</u>:
 
-Versuchen Sie, sie bereitzustellen. 
+Versuchen Sie, sie bereitzustellen.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -66,16 +67,16 @@ Um dieses Problem zu beheben, identifizieren Sie die ungültigen Zeilen, die aus
    The store that was requested wasn't found. Verify the store and try again.
    ```
 
-1. Führen Sie diese MySql-Abfrage aus, um sicherzustellen, dass der Store nicht gefunden werden kann, was durch die Fehlermeldung in Schritt 2 angegeben wird. 
+1. Führen Sie diese MySql-Abfrage aus, um sicherzustellen, dass der Store nicht gefunden werden kann, was durch die Fehlermeldung in Schritt 2 angegeben wird.
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. Führen Sie die folgende MySql-Anweisung aus, um die ungültigen Zeilen zu löschen: 
+1. Führen Sie die folgende MySql-Anweisung aus, um die ungültigen Zeilen zu löschen:
 
    ```sql
-   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store); 
+   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
 1. Führen Sie diesen Befehl erneut aus:
