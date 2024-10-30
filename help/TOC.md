@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 61b3cc2fc40b320c3c657a7dd0c6ea2b9db71c75
+source-git-commit: a0b8fdf0e04cad2260a04af7c1049c6831d2921b
 workflow-type: tm+mt
-source-wordcount: '9626'
+source-wordcount: '9617'
 ht-degree: 0%
 
 ---
@@ -639,7 +639,6 @@ ht-degree: 0%
       * [Sicherheitslücke von Apache log4j2 in Adobe Commerce](/help/announcements/adobe-commerce-announcements/apache-log4j2-adobe-commerce.md)
       * [Entfernung von Blackfire-Zugriff für Adobe Commerce in der Cloud-Infrastruktur](/help/announcements/adobe-commerce-announcements/blackfire-access-removal-for-magento-commerce-cloud.md)
       * [Quality Patches Tool veröffentlicht: neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
-      * [2.4 Adobe Commerce-Upgrade-Workshop am 26. Januar 2022](/help/announcements/adobe-commerce-announcements/2-4-upgrade-webinar.md)
       * [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobe unterstützt den Zugriff auf Kundendaten und Datenschutz](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [UPS-APIs veraltet](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
@@ -938,7 +937,7 @@ ht-degree: 0%
       * [Bereitstellungsfehler: &quot;Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert&quot;](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Bereitstellungsfehler bei der Zuweisung falscher Dateien](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Bereitstellungsfehler, bei denen keine Patches gefunden wurden](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
-      * [Die Implementierung ist beim Cache-Leeren fehlgeschlagen: Es wurden keine Befehle im Namespace-Fehler &quot;cache&quot;definiert](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
+      * [Die Bereitstellung ist beim Cache-Leeren fehlgeschlagen: Fehler &quot;Es sind keine Befehle im &#39;cache&#39;-Namespace definiert&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Bekannte Probleme {#known-issues-patches-attached}
       * [Sicherheitsupdate für Adobe Commerce - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
