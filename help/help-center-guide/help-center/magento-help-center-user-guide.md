@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, freigegebenen Zugriff auf Konten gewähren und in der Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 8438978de04746c8a66816fe4f03d5f0d2d11521
+source-git-commit: 7a70f2c54396f82424e442aca7413c02ebecddb9
 workflow-type: tm+mt
-source-wordcount: '2649'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,8 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 
 >[!INFO]
 >
+>1. Um einen Fall einzureichen, müssen Sie berechtigt sein, das entsprechende Produkt zu unterstützen (z. B. Adobe Commerce, Adobe Commerce Intelligence, Experience Platform usw.). Wenn Sie nicht zur Unterstützung berechtigt sind, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Benutzer mit Supportberechtigung in der Organisation sind.
+>1. Wenn Sie mehreren Unternehmen angehören oder es mehrere Organisationen mit ähnlich aussehenden Namen gibt (jede Organisation repräsentiert eines der anderen Adobe-Produkte, für die sich das Unternehmen angemeldet hat), müssen Sie zunächst die entsprechende Organisation aus der Dropdown-Liste auswählen, die auf &quot;(Commerce)&quot;endet.
 >1. Um einen Fall einzureichen, müssen Sie berechtigt sein, das entsprechende Produkt zu unterstützen (z. B. Adobe Commerce, Adobe Commerce Reporting, Adobe Commerce Payment Services, Experience Platform usw.). Wenn Sie nicht zur Unterstützung berechtigt sind, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Benutzer mit Supportberechtigung in der Organisation sind. Um einen Fall für Commerce-bezogene Probleme einzureichen, müssen Sie zunächst den entsprechenden Organisationsnamen auswählen, der auf &quot;*[!DNL (Commerce)]*&quot;endet.
 >1. Wenn Sie mehreren Unternehmen angehören oder es mehrere Organisationen mit ähnlich aussehenden Namen gibt (jede Organisation repräsentiert eines der anderen Adobe-Produkte, für die sich das Unternehmen angemeldet hat), müssen Sie zunächst die entsprechende Organisation aus der Dropdown-Liste auswählen.
 >1. Wenn Adobe Commerce nicht im Dropdown-Menü [!UICONTROL Select a product] angezeigt wird, müssen Sie zunächst den [Freigegebenen Zugriff](#shared-access) vom Commerce-Kontoinhaber erhalten. Nachdem Sie freigegebenen Zugriff erhalten haben, müssen Sie Ihr Konto [synchronisieren](#switch-accounts), um den Prozess abzuschließen, bevor Sie einen Fall senden können.
@@ -98,7 +100,7 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 >
 >Stellen Sie sicher, dass Sie die richtige Organisation ausgewählt haben, bevor Sie den Fall einreichen, und dass die ausgewählte Organisation über die entsprechenden Berechtigungen für das Produkt verfügt, für das Sie Support anfordern. Wenn Ihr Problem beispielsweise mit Adobe Commerce zusammenhängt, Sie jedoch Experience Platform als Produkt ausgewählt haben und der Fall erfolgreich eingereicht wurde, kann dies zu einer falschen Weiterleitung Ihres Falls und zu Verzögerungen bei den Antwortzeiten führen.
 >
->Wenn die falsche Organisation ausgewählt wurde, kann Ihr Team den Fall nicht unter [!UICONTROL My Cases] für die entsprechende/richtige Organisation anzeigen. Das Supportteam kann die mit dem Fall verbundene Organisation in Zukunft nicht ändern.
+>Wenn die falsche Organisation zum Zeitpunkt der Einreichung des Falls ausgewählt wurde, kann Ihr Team den Fall nicht unter [!UICONTROL My Cases] für die entsprechende/richtige Organisation anzeigen. Das Adobe Commerce-Supportteam kann die mit dem Fall verbundene Organisation nicht ändern. Um dies zu beheben, müssen Sie den vorhandenen Fall schließen und einen neuen Fall mit den entsprechenden Details angeben/auswählen.
 
 1. Klicken Sie in der Kopfzeile auf **Support** . Dadurch wird die Support-Homepage geöffnet.
 
