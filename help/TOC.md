@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 2212ec66c04445db791c5bd852d7498161de410d
+source-git-commit: 5110233220a6db734be2802b792869759f46b8c0
 workflow-type: tm+mt
-source-wordcount: '9625'
+source-wordcount: '9627'
 ht-degree: 0%
 
 ---
@@ -841,7 +841,7 @@ ht-degree: 0%
       * [robots.txt gibt 404-Fehler Adobe Commerce in der Cloud-Infrastruktur 2.3.x](/help/troubleshooting/miscellaneous/robots-txt-gives-404-error-magento-commerce-cloud-2-3-x.md)
       * [Eingeschränkter Administratorzugriff, der Leistungsprobleme verursacht](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Cron-Aufgaben sperren Aufgaben von anderen Gruppen](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Gesperrte Felder in Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
+      * [Gesperrte (ausgegraute) Felder in Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
       * [Suchmaschine kann mit Commerce Admin nicht geändert werden (Menü &quot;Suchmaschine&quot;ist nicht verfügbar)](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [Fehler der maximalen Funktionsverschachtelungsstufe bei Installation xdebug](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [Entität Adobe Commerce-Backend kann nicht gespeichert werden](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)

@@ -2,9 +2,9 @@
 title: Suchmaschine in "app/etc/env.php"kann nicht geändert werden.
 description: Dieser Artikel bietet eine Lösung für das Problem, dass Sie versuchen, die Suchmaschine in der Commerce-Admin zu ändern, aber die Felder gesperrt sind.
 exl-id: 61006ce7-34f9-4e4d-a197-f3d627dd277f
-source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
+source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ Die Suchmaschinenkonfiguration ist in der Datei `app/etc/env.php` gesperrt oder 
 
 ## Verwandtes Lesen
 
-* [Gesperrte Felder in Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) im Handbuch zu Commerce on Cloud Infrastructure.
+* [ Gesperrte (ausgegraute) Felder in Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) in Commerce im Cloud Infrastructure Guide.
