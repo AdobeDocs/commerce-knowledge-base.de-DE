@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass Sie die Adob
 feature: Commerce Intelligence
 role: Developer
 exl-id: 56f6ad64-729d-4e3a-93a9-da1b91bc5c1d
-source-git-commit: b75328202952bf4c8f57ddc538b5c9e4318b2001
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Führen Sie die folgenden Schritte aus:
 
    ![Öffentlichen SSH-Schlüssel hinzufügen](/help/troubleshooting/miscellaneous/assets/add_ssh_key_mbi.png)
 
-1. Geben Sie die MySQL-Anmeldeinformationen von Business Intelligence Essentials an.
+1. Geben Sie die Anmeldedaten für Business Intelligence Essentials [!DNL MySQL] an.
 
    * Aktualisieren Sie Ihre `.magento/services.yaml`.
 
@@ -197,3 +197,7 @@ Führen Sie die folgenden Schritte aus:
 1. Klicken Sie auf **[!UICONTROL Save Integration]**.
 1. Sie haben jetzt eine erfolgreiche Verbindung zu Ihrem Commerce Intelligence Essentials-Konto hergestellt.
 1. Wenn Sie Adobe Commerce Intelligence Pro-Kunde sind, wenden Sie sich an Ihren Customer Success Manager oder an einen technischen Kundenberater, um die nächsten Schritte zu koordinieren.
+
+## Verwandtes Lesen
+
+[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

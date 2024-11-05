@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass es mehrer
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
 exl-id: 09d5c321-9c45-4041-b6f6-831efca0977e
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -67,5 +67,6 @@ Dies ist das erwartete Verhalten und führt nur zu Problemen, wenn es Abweichung
 
 ## Verwandtes Lesen
 
-* [Änderungen an Kategorien werden nicht in unserer Support-Wissensdatenbank gespeichert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html).
-* [Duplizieren Sie Einträge in der Katalogregeltabelle nach dem Bearbeiten des Enddatums eines Zeitplanaktualisierens](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) in unserer Support-Wissensdatenbank.
+* [Änderungen an Kategorien werden nicht in unserer Support-Wissensdatenbank gespeichert](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html)
+* [Duplizieren Sie Einträge in der Katalogregeltabelle, nachdem Sie das Enddatum eines Zeitplanaktualisierens bearbeitet haben](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) in unserer Support-Wissensdatenbank
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

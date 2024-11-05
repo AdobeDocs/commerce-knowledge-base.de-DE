@@ -1,19 +1,19 @@
 ---
 title: Änderungen in der Datenbank werden nicht in der Storefront angezeigt
-description: Dieser Artikel bietet Lösungen, um Verzögerungen oder Unterbrechungen bei der Anwendung von Entitätsaktualisierungen zu vermeiden. Dazu gehört auch, wie Sie vermeiden können, dass Log-Tabellen überdimensioniert werden, und wie Sie MySQL-Tabellen-Trigger einrichten.
+description: Dieser Artikel bietet Lösungen, um Verzögerungen oder Unterbrechungen bei der Anwendung von Entitätsaktualisierungen zu vermeiden. Dazu gehört auch, wie Sie vermeiden können, dass Log-Tabellen überdimensioniert werden, und wie Sie [!DNL MySQL] Tabellen-Trigger einrichten.
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Änderungen in der Datenbank werden nicht in der Storefront angezeigt
 
-Dieser Artikel bietet Lösungen, um Verzögerungen oder Unterbrechungen bei der Anwendung von Entitätsaktualisierungen zu vermeiden. Dazu gehört auch, wie Sie vermeiden können, dass Log-Tabellen überdimensioniert werden, und wie Sie MySQL-Tabellen-Trigger einrichten.
+Dieser Artikel bietet Lösungen, um Verzögerungen oder Unterbrechungen bei der Anwendung von Entitätsaktualisierungen zu vermeiden. Dazu gehört auch, wie Sie vermeiden können, dass Log-Tabellen überdimensioniert werden, und wie Sie [!DNL MySQL]-Tabellen-Trigger einrichten.
 
 Betroffene Produkte und Versionen:
 
@@ -34,7 +34,7 @@ Die Änderungsprotokolltabellen werden so groß, wenn der `indexer_update_all_vi
 
 Änderungsprotokolltabellen sind die Datenbanktabellen, in denen die Änderungen an Entitäten verfolgt werden. Ein Datensatz wird in einer Änderungsprotokolltabelle gespeichert, solange die Änderung nicht angewendet wird, was vom `indexer_update_all_views`-Cron-Auftrag ausgeführt wird. Es gibt mehrere Änderungsprotokolltabellen in einer Adobe Commerce-Datenbank. Sie werden nach folgendem Muster benannt: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, z. B. `catalog_category_product_cl`, `catalog_product_category_cl`. Weitere Informationen dazu, wie Änderungen in der Datenbank verfolgt werden, finden Sie im Artikel [Indizierungsübersicht > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) in unserer Entwicklerdokumentation.
 
-### MySQL-Datenbank-Trigger nicht eingerichtet
+### [!DNL MySQL] Trigger der Datenbank nicht eingerichtet
 
 Wenn Sie nach dem Hinzufügen oder Ändern einer Entität (Trigger, Kategorie, Zielregel usw.) keine Datensätze zur entsprechenden Änderungsprotokolltabelle hinzugefügt haben, wird der Verdacht entstehen, dass keine Datensätze in der Datenbank eingerichtet werden.
 
@@ -60,9 +60,9 @@ Alternativ können Sie den Status in den Protokollen überprüfen, indem Sie nac
 * `<install_directory>/var/log/cron.log` - für Versionen 2.3.1+ und 2.2.8+
 * `<install_directory>/var/log/system.log` - für frühere Versionen
 
-### MySQL-Tabellen-Trigger neu festlegen
+### Setzen Sie [!DNL MySQL] Tabellen-Trigger erneut ein.
 
-Um die fehlenden MySQL-Tabellen-Trigger einzurichten, müssen Sie den Indexermodus neu festlegen:
+Um die fehlenden [!DNL MySQL] -Tabellen-Trigger einzurichten, müssen Sie den Indexermodus neu festlegen:
 
 1. Wechseln Sie zu &quot;Bei Speichern&quot;.
 1. Wechseln Sie zurück zu &quot;Ein Zeitplan&quot;.
@@ -83,5 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Verwandtes Lesen
 
-<ul><li title="MySQL-Tabellen sind zu groß"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">MySQL-Tabellen sind in unserer Support-Wissensdatenbank zu groß</a>.</li>
-<li title="MySQL-Tabellen sind zu groß"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Indexerübersicht &gt; Mview</a> in unserer Entwicklerdokumentation.</li></ul>
+* [[!DNL MySQL] Tabellen sind in unserer Wissensdatenbank zu groß](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-tables-are-too-large)
+* [Indizierung: [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) in unserer Entwicklerdokumentation
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

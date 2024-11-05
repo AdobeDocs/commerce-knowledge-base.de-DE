@@ -1,18 +1,18 @@
 ---
-title: Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Kreditkarte usw.) in einem bestimmten Geschäft
-description: In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbank-Entität (DB) ändern (Bestellung, Rechnung, Kreditmemo usw.) in einem bestimmten Adobe Commerce-Store mithilfe der SQL-Anweisung "ALTER TABLE"ein.
+title: Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Kreditkarte usw.) in einem bestimmten Store
+description: In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbank-Entität (DB) (Bestellung, Rechnung, Credit Memo usw.) in einem bestimmten Adobe Commerce-Store mithilfe der SQL-Anweisung "ALTER TABLE"ändern.
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Kreditkarte usw.) in einem bestimmten Geschäft
+# Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Kreditkarte usw.) in einem bestimmten Store
 
-In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbank-Entität (DB) ändern (Bestellung, Rechnung, Kreditmemo usw.) in einem bestimmten Adobe Commerce-Store, der die SQL-Anweisung `ALTER TABLE` verwendet.
+In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbank-Entität (DB) (Bestellung, Rechnung, Kreditmemo usw.) in einem bestimmten Adobe Commerce-Store mithilfe der SQL-Anweisung `ALTER TABLE` ändern.
 
 ## Betroffene Versionen
 
@@ -86,5 +86,6 @@ Bevor Sie die `ALTER TABLE` -Abfrage in der Produktionsumgebung von Adobe Commer
 
 ## Verwandte Dokumentation
 
-* [Erstellen Sie einen Datenbank-Dump auf Cloud](/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.
-* [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) in unserer Entwicklerdokumentation.
+* [Erstellen Sie einen Datenbank-Dump auf Cloud](/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank
+* [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) in unserer Entwicklerdokumentation
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

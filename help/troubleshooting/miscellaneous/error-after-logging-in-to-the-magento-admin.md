@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für das Problem, bei dem Sie ei
 exl-id: f52b383b-87f2-4216-9bf4-e765db31ca6b
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,7 @@ Die Basis-URL ist nicht korrekt. Die Basis-URL muss:
 * Übereinstimmung mit der Groß-/Kleinschreibung des `web/unsecure/base_url` -Datensatzes in der `core_config_data`-Datenbanktabelle
 
 Führen Sie die Installation mit einem gültigen Wert erneut aus.
+
+## Verwandtes Lesen
+
+[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

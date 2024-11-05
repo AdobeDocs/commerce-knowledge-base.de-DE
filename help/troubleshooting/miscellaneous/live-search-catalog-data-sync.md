@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
@@ -60,13 +60,13 @@ Nach der Konfiguration und Verbindung kann es über 30 Minuten dauern, bis der I
 
 Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werden, gehen Sie wie folgt vor:
 
-1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die erwarteten Daten in der Spalte `feed_data` verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
+1. Verwenden Sie die folgende [!DNL SQL] -Abfrage und stellen Sie sicher, dass Sie über die in der Spalte `feed_data` erwarteten Daten verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
 
    ```sql
    select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Wenn die korrekten Daten nicht angezeigt werden, versuchen Sie, die Neuindizierung mit dem folgenden Befehl durchzuführen und führen Sie die SQL-Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen:
+1. Wenn die korrekten Daten nicht angezeigt werden, versuchen Sie, die Neuindizierung mithilfe des folgenden Befehls durchzuführen und die [!DNL SQL] -Abfrage in Schritt 1 erneut auszuführen, um die Daten zu überprüfen:
 
    ```bash
    bin/magento indexer:reindex cde_products_feed
@@ -76,7 +76,7 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werd
 
 ### Zeitstempel des letzten Produktexports überprüfen
 
-1. Wenn die korrekten Daten in `cde_products_feed` angezeigt werden, verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen:
+1. Wenn die korrekten Daten in `cde_products_feed` angezeigt werden, verwenden Sie die folgende [!DNL SQL]-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen:
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -94,13 +94,13 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werd
 
 Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht richtig synchronisiert werden, gehen Sie wie folgt vor:
 
-1. Verwenden Sie die folgende SQL-Abfrage und stellen Sie sicher, dass Sie über die erwarteten Daten in der Spalte `feed_data` verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
+1. Verwenden Sie die folgende [!DNL SQL] -Abfrage und stellen Sie sicher, dass Sie über die in der Spalte `feed_data` erwarteten Daten verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
 
    ```sql
    select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Wenn die korrekten Daten nicht angezeigt werden, verwenden Sie den folgenden Befehl, um die SQL-Abfrage neu zu indizieren, und führen Sie dann die SQL-Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen.
+1. Wenn die korrekten Daten nicht angezeigt werden, verwenden Sie den folgenden Befehl, um die Neuindizierung vorzunehmen, und führen Sie dann die [!DNL SQL]-Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen.
 
    ```bash
    bin/magento indexer:reindex cde_product_attributes_feed
@@ -112,7 +112,7 @@ Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht richtig 
 
 Wenn die korrekten Daten in `cde_product_attributes_feed` angezeigt werden:
 
-1. Verwenden Sie die folgende SQL-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen.
+1. Verwenden Sie die folgende [!DNL SQL] -Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen.
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -137,5 +137,6 @@ bin/magento saas:resync --feed productattributes
 
 ## Verwandtes Lesen
 
-* Siehe [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) in unserer Benutzerdokumentation.
-* Siehe [Überprüfen Sie die Protokolle und führen Sie eine Fehlerbehebung für den Datenexport und die Synchronisierung mit Adobe Commerce SaaS durch](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) im Adobe Commerce SaaS-Datenexport-Handbuch.
+* [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) in unserer Benutzerdokumentation
+* [Überprüfen Sie die Protokolle und führen Sie eine Fehlerbehebung für den Datenexport und die Synchronisierung von Adobe Commerce SaaS durch](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) im Adobe Commerce SaaS-Datenexport-Handbuch.
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

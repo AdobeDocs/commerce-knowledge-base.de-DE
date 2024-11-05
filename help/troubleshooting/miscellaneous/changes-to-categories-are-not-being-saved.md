@@ -4,9 +4,9 @@ description: Dieser Artikel enthält eine Fehlerbehebung für die Aktualisierung
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -89,3 +89,7 @@ Führen Sie die folgenden Schritte aus:
 1. Wählen Sie den Datensatz mit `row_id` = `entity_id` aus und kopieren Sie den Wert `updated_in` .
 1. Wählen Sie den Datensatz aus, bei dem `row_id` nicht gleich `entity_id` ist, und fügen Sie den kopierten `updated_in` -Wert als `created_in` -Wert ein. Siehe Screenshot unten als Abbildung.    ![Kopieren der Datei created_in value.png](assets/copy_created-in_value.png)
 1. Vergewissern Sie sich, dass der Kategorieaktualisierungsdatensatz, dessen `created_in` -Wert Sie aktualisiert haben (in Schritt 3), in der Tabelle `staging_update` vorhanden ist. *Beispiel:* WENN der kopierte `created_in` -Wert 1509281953 ist, muss die Entität mit `row_id` = 1509281953 in der Tabelle `staging_update` vorhanden sein.
+
+## Verwandtes Lesen
+
+[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

@@ -3,9 +3,10 @@ title: Kundenprofile werden nicht auf Experience Platform angezeigt
 description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Erweiterung [!DNL Data Connection] nicht auf der Experience Platform angezeigt werden.
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
-source-git-commit: a520ef45f1c55dbf34a98c4f4d3ab49814535434
+exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -95,7 +96,7 @@ Stellen Sie in Commerce Admin sicher, dass die folgenden Felder festgelegt sind:
 
 ### Tabelle &quot;Abfrage von Ereignisdaten - SaaS&quot;
 
-Verbinden Sie die folgende SQL-Abfrage und führen Sie sie aus, um zu überprüfen, ob Kundenprofildatensätze im
+Verbinden Sie die folgende [!DNL SQL] -Abfrage und führen Sie sie aus, um zu überprüfen, ob Kundenprofildatensätze in der Variablen
 `event_data_saas` und dass keine Fehler vorliegen:
 
 ```sql
@@ -124,4 +125,5 @@ select * from event_data_saas;
 
 ## Verwandtes Lesen
 
-Weitere Informationen finden Sie unter der Erweiterung [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) im Benutzerhandbuch zu Commerce Services.
+* Erweiterung [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) im Commerce Services-Benutzerhandbuch
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

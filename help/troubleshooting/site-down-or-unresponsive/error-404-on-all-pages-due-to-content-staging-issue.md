@@ -1,19 +1,19 @@
 ---
 title: Fehler 404 auf allen Seiten aufgrund eines Problems beim Staging von Inhalten
-description: Dieser Artikel enthält eine Fehlerbehebung für das Problem mit der Cloud-Infrastruktur in Adobe Commerce vor Ort und Adobe Commerce, bei dem beim Zugriff auf eine Storefront-Seite oder den Commerce-Administrator ein 404-Fehler ausgegeben wird.
+description: Dieser Artikel enthält eine Fehlerbehebung für das Problem mit der Cloud-Infrastruktur in Adobe Commerce vor Ort und Adobe Commerce, bei dem beim Zugriff auf eine Storefront-Seite oder die [!UICONTROL Commerce Admin] ein 404-Fehler ausgegeben wird.
 exl-id: 62d8ba6e-8550-4e1e-8e8d-8f319c92778a
 feature: CMS, Catalog Management, Categories, Page Content, Staging
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # Fehler 404 auf allen Seiten aufgrund eines Problems beim Staging von Inhalten
 
-Dieser Artikel enthält eine Fehlerbehebung für das Problem mit der Cloud-Infrastruktur in Adobe Commerce vor Ort und Adobe Commerce, bei dem beim Zugriff auf eine Storefront-Seite oder den Commerce-Administrator ein 404-Fehler ausgegeben wird.
+Dieser Artikel enthält eine Fehlerbehebung für das Problem mit der Cloud-Infrastruktur in Adobe Commerce vor Ort und Adobe Commerce, bei dem beim Zugriff auf eine Storefront-Seite oder die [!UICONTROL Commerce Admin] ein 404-Fehler ausgegeben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -24,7 +24,7 @@ Dieser Artikel enthält eine Fehlerbehebung für das Problem mit der Cloud-Infra
 
 >[!NOTE]
 >
->Dieser Artikel gilt nicht für die Situation, in der Sie einen 404-Fehler erhalten, wenn Sie versuchen, [eine Vorschau des Staging-Updates anzuzeigen](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). Wenn dieses Problem auftritt, öffnen Sie bitte ein [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+>Dieser Artikel gilt nicht für die Situation, in der Sie einen 404-Fehler erhalten, wenn Sie versuchen, [eine Vorschau des Staging-Updates anzuzeigen](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Wenn dieses Problem auftritt, öffnen Sie bitte ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 Der Zugriff auf eine Storefront-Seite oder den Admin-Server führt zum 404-Fehler (die Seite &quot;Ups, unser schlechtes ...&quot;), nachdem Vorgänge mit geplanten Aktualisierungen für Store-Content-Assets unter Verwendung von [Content Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) ausgeführt wurden (Aktualisierungen für Store-Inhalts-Assets, die mit dem [Magento\_Staging-Modul](https://developer.adobe.com/commerce/php/module-reference/) geplant wurden). Beispielsweise können Sie ein Produkt mit einer geplanten Aktualisierung gelöscht oder das Enddatum für die geplante Aktualisierung entfernt haben.
 
@@ -35,7 +35,7 @@ Ein Store-Inhalts-Asset umfasst:
 * Katalogpreisregel
 * Preisregel für Warenkorb
 * CMS-Seite
-* CMS-Block
+* CMS Block
 * Widget
 
 Einige Szenarien werden im Abschnitt Ursache weiter unten erläutert.
@@ -76,7 +76,7 @@ Wenn die Abfrage eine Tabelle zurückgibt, bei der der `update_exists`-Wert &quo
 
 ![updates_exists_1.png](assets/updates_exist_1.png)
 
-In diesem Fall finden Sie möglicherweise Informationen zur Fehlerbehebung in der [Site-Down-Fehlerbehebung](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md).
+In diesem Fall finden Sie möglicherweise Informationen zur Fehlerbehebung in der [Site-Down-Fehlerbehebung](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter).
 
 ## Lösung
 
@@ -86,6 +86,10 @@ In diesem Fall finden Sie möglicherweise Informationen zur Fehlerbehebung in de
    DELETE FROM flag WHERE flag_code = 'staging';
    ```
 
-1. Warten Sie, bis der Cron-Auftrag ausgeführt wird (wird bis zu fünf Minuten ausgeführt, wenn er ordnungsgemäß eingerichtet ist), oder führen Sie ihn manuell aus, wenn kein Cron eingerichtet ist.
+1. Warten Sie, bis der Auftrag [!DNL cron] ausgeführt wird (er wird bis zu fünf Minuten ausgeführt, wenn er ordnungsgemäß eingerichtet ist), oder führen Sie ihn manuell aus, wenn Sie [!DNL cron] nicht eingerichtet haben.
 
-Das Problem sollte sofort behoben werden, nachdem der ungültige Link behoben wurde. Wenn das Problem weiterhin besteht, senden [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Das Problem sollte sofort behoben werden, nachdem der ungültige Link behoben wurde. Wenn das Problem weiterhin besteht, senden [ein Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+
+## Verwandtes Lesen
+
+[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

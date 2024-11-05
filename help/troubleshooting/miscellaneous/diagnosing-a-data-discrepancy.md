@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für die Behebung von Diskrepanzen 
 exl-id: 7d1156cb-9e9b-4426-a0ca-8890b815c245
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -38,3 +38,7 @@ Je nach Komplexität Ihrer Analyse kann die Erstellung des entsprechenden MBI-Be
 1. Wenn in der Analyse verwendete Spalten nach dem Hinzufügen einer Zeile geändert werden können, überprüfen Sie mit der Unterstützung, dass diese Spalten auf Änderungen überprüft werden [](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) sowie die Häufigkeit der erneuten Überprüfung.
 
 **Noch nicht angehalten?** Keine Sorge - wir sind hier, um zu helfen. Senden Sie uns eine Anfrage mit [diesen Anweisungen](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md).
+
+## Verwandtes Lesen
+
+[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

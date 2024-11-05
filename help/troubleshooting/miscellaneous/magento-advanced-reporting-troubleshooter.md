@@ -4,9 +4,9 @@ description: Probleme mit erweiterten Berichten in Adobe Commerce können mit di
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,10 @@ b. NO - Führen Sie die erweiterten Berichterstellungsanforderungen für Ihre Si
 
 +++**Werden mehrere Basiswährungen verwendet?**
 
-Werden mehrere Basiswährungen verwendet (in Bestellungen und Konfiguration)? Führen Sie diesen SQL-Befehl aus, um die aktuelle Konfiguration abzurufen: `SELECT value FROM core_config_data WHERE path = 'currency/options/base';` .
+Werden mehrere Basiswährungen verwendet (in Bestellungen und Konfiguration)? Führen Sie diesen Befehl [!DNL SQL] aus, um die aktuelle Konfiguration zu erhalten: `SELECT value FROM core_config_data WHERE path = 'currency/options/base';` .
 
 a. YES - Wenn mehrere Zeilen von der Abfrage zurückgegeben werden, können Sie die erweiterte Berichterstellung nicht verwenden, da wir nur eine Währung unterstützen.\
-b. NO - Die Ausgabe zeigt nur eine Währung an. Beispiel: `USD`. Wurden schon mehrere Basiswährungen verwendet (in Bestellungen)? Führen Sie diesen SQL-Befehl aus, um Verlaufsbestellungsdaten abzurufen:\
+b. NO - Die Ausgabe zeigt nur eine Währung an. Beispiel: `USD`. Wurden schon mehrere Basiswährungen verwendet (in Bestellungen)? Führen Sie diesen Befehl [!DNL SQL] aus, um Verlaufsbestellungsdaten abzurufen:\
 `SELECT DISTINCT base_currency_code FROM sales_order;`.
 **HINWEIS: Dieser Befehl erfordert eine vollständige Tabellenüberprüfung. Bei Tabellen mit einer hohen Datensatzanzahl kann dies sich daher auf die Leistung auswirken, während die Abfrage ausgeführt wird**, um historische Auftragsdaten zu erhalten.
 Wenn mehrere Basiswährungen jemals verwendet wurden, können Sie keine erweiterte Berichterstellung verwenden, da wir nur eine Währung unterstützen. Wenn in der Ausgabe nur eine Währung angezeigt wird, fahren Sie mit [Schritt 3](#step-3) fort.
@@ -157,3 +157,7 @@ b. NO - [ein Support-Ticket senden](/help/help-center-guide/help-center/magento-
 +++
 
 [Zurück zu Schritt 1](#step-1)
+
+## Verwandtes Lesen
+
+[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

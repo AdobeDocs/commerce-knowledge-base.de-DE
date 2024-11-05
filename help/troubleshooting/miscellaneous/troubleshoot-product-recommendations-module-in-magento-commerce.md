@@ -4,9 +4,9 @@ description: In diesem Artikel werden Vorschläge zur Fehlerbehebung für das [!
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: af9ee28c5819a9d1b97411210816bfe8a9522614
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Wenn Sie die
 magento/product-recommendations
 ```
 
-korrekt hinzugefügt werden (Überprüfen Sie in unserer Entwicklerdokumentation [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).) Sie sehen jedoch keine Empfehlungen, versuchen Sie Folgendes:
+korrekt hinzugefügt werden (Überprüfen Sie [[!UICONTROL Product Recommendations - Install and Configure]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) in unserer Entwicklerdokumentation.), Sie jedoch keine Empfehlungen sehen, versuchen Sie Folgendes:
 
 * Es ist möglich, dass das Modul nicht genügend Zeit hatte, Verhaltensdaten zu erfassen. Lassen Sie das System 24 Stunden laufen, damit es mit der Datenerfassung beginnen kann. Erwägen Sie die Bereitstellung eines Empfehlungstyps, für den keine Verhaltensdaten erforderlich sind, z. B. &quot;*Mehr wie dieser*&quot;.
 
@@ -83,3 +83,5 @@ saas-export
 * [Erstellen Sie Produkt-Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create) im Handbuch für Produkt-Recommendations
 * [Überprüfen Sie die Protokolle und führen Sie eine Fehlerbehebung für ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) im [!DNL SaaS] Data Export Guide durch.
 * [[!DNL SaaS] Versionshinweise zur Datenexport-Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) im Adobe Commerce-Datenexportleitfaden für [!DNL SaaS] -Dienste
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+

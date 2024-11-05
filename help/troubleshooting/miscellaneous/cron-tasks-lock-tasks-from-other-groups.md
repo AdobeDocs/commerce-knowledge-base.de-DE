@@ -1,19 +1,19 @@
 ---
-title: Cron-Aufgaben sperren Aufgaben von anderen Gruppen
-description: Dieser Artikel bietet eine Lösung für die Adobe Commerce in Bezug auf Cloud-Infrastrukturprobleme im Zusammenhang mit bestimmten langfristigen Cron-Aufträgen, die andere Cron-Aufträge blockieren.
+title: '''[!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen'
+description: Dieser Artikel bietet eine Lösung für die Adobe Commerce zum Problem der Cloud-Infrastruktur im Zusammenhang mit bestimmten langfristigen [!DNL cron] Aufträgen, die andere [!DNL cron] Aufträge blockieren.
 exl-id: b5b9e8b3-373c-4f93-af9c-85da84dbc928
 feature: Configuration
 role: Developer
-source-git-commit: faa80e8233438fc15781341b3a9d5325269d6d20
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
 
-# Cron-Aufgaben sperren Aufgaben von anderen Gruppen
+# [!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen
 
-Dieser Artikel bietet eine Lösung für die Adobe Commerce in Bezug auf Cloud-Infrastrukturprobleme im Zusammenhang mit bestimmten langfristigen Cron-Aufträgen, die andere Cron-Aufträge blockieren.
+Dieser Artikel bietet eine Lösung für die Adobe Commerce zum Problem der Cloud-Infrastruktur im Zusammenhang mit bestimmten langfristigen [!DNL cron] Aufträgen, die andere [!DNL cron] Aufträge blockieren.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,22 +22,22 @@ Dieser Artikel bietet eine Lösung für die Adobe Commerce in Bezug auf Cloud-In
 
 ## Problem
 
-Wenn Sie in Adobe Commerce for Cloud komplexe Cron-Aufgaben (langfristige Aufgaben) haben, werden möglicherweise andere Aufgaben für die Ausführung gesperrt. Beispielsweise werden durch die Aufgabe der Indexer invalidierte Indexer neu indiziert. Es kann einige Stunden dauern, bis der Vorgang abgeschlossen ist. Außerdem werden andere standardmäßige Cron-Aufträge wie das Senden von E-Mails, das Generieren von Sitemaps, Kundenbenachrichtigungen und andere benutzerdefinierte Aufgaben gesperrt.
+Wenn Sie in Adobe Commerce for Cloud komplexe [!DNL cron] Aufgaben (langfristige Aufgaben) haben, werden diese möglicherweise andere Aufgaben für die Ausführung sperren. Beispielsweise werden durch die Aufgabe der Indexer invalidierte Indexer neu indiziert. Es kann einige Stunden dauern, bis andere standardmäßige [!DNL cron]-Aufträge, wie das Senden von E-Mails, das Generieren von Sitemaps, Kundenbenachrichtigungen und andere benutzerdefinierte Aufgaben, beendet werden.
 
 <u>Symptome</u>:
 
-Die von Cron-Aufträgen ausgeführten Prozesse werden nicht ausgeführt. Beispielsweise werden Produktaktualisierungen nicht stundenlang angewendet oder Kunden melden, dass sie keine E-Mails erhalten.
+Die von [!DNL cron] -Aufträgen ausgeführten Prozesse werden nicht ausgeführt. Beispielsweise werden Produktaktualisierungen nicht stundenlang angewendet oder Kunden melden, dass sie keine E-Mails erhalten.
 
 Wenn Sie die Datenbanktabelle `cron_schedule` öffnen, sehen Sie die Aufträge mit dem Status `missed` .
 
 ## Ursache
 
-Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server zum Ausführen von Cron-Aufträgen verwendet. Jenkins führt jeweils nur eine Instanz eines Auftrags aus. Folglich wird jeweils nur ein `bin/magento cron:run` -Prozess ausgeführt.
+Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server verwendet, um [!DNL cron] Aufträge auszuführen. Jenkins führt jeweils nur eine Instanz eines Auftrags aus. Folglich wird jeweils nur ein `bin/magento cron:run` -Prozess ausgeführt.
 
 ## Lösung
 
-1. Wenden Sie sich an den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , damit selbstverwaltete Crons aktiviert sind.
-1. Bearbeiten Sie die Datei &quot;`.magento.app.yaml`&quot; im Stammverzeichnis des Codes für Adobe Commerce in der Git-Verzweigung. Fügen Sie Folgendes hinzu:
+1. Wenden Sie sich an den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , damit die Self-Managed [!DNL crons] aktiviert ist.
+1. Bearbeiten Sie die Datei &quot;`.magento.app.yaml`&quot; im Stammverzeichnis des Codes für Adobe Commerce in der Verzweigung &quot;[!DNL Git]&quot;. Fügen Sie Folgendes hinzu:
 
    ```yaml
      crons:
@@ -50,25 +50,26 @@ Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server zum Ausführen von Cron
 
 >[!NOTE]
 >
->Es ist nicht erforderlich, alte Cron-Konfigurationen zu übertragen, bei denen mehrere `cron:run` vorhanden sind, um den neuen Cron-Zeitplan zu erhalten. Die normale `cron:run`-Aufgabe, die wie oben beschrieben hinzugefügt wurde, reicht aus. Es ist jedoch erforderlich, Ihre benutzerdefinierten Aufträge zu übertragen, falls vorhanden.
+>Es ist nicht erforderlich, alte [!DNL cron]-Konfigurationen zu übertragen, bei denen mehrere `cron:run` vorhanden sind, um den neuen [!DNL cron]-Zeitplan zu erhalten. Die normale `cron:run`-Aufgabe, die wie oben beschrieben hinzugefügt wurde, reicht aus. Es ist jedoch erforderlich, Ihre benutzerdefinierten Aufträge zu übertragen, falls vorhanden.
 
-### Überprüfen Sie, ob die selbst verwaltete Cron-Funktion aktiviert ist (nur für Cloud Pro Staging und Produktion).
+### Überprüfen Sie, ob Sie die selbst verwaltete [!DNL cron]-Funktion aktiviert haben (nur für Cloud Pro Staging und Produktion).
 
-Um zu überprüfen, ob der selbst verwaltete Cron aktiviert ist, führen Sie den Befehl `crontab -l` aus und beobachten Sie das Ergebnis:
+Um zu überprüfen, ob die selbst verwaltete [!DNL cron] aktiviert ist, führen Sie den Befehl `crontab -l` aus und beobachten Sie das Ergebnis:
 
-* Selbstverwalteter Cron ist aktiviert, wenn Sie die Aufgaben sehen können, z. B.:
+* Self-managed [!DNL cron] ist aktiviert, wenn Sie die Aufgaben sehen können, wie die folgenden:
 
   ```bash
   username@hostname:~$ crontab -l    # Crontab is managed by the system, attempts to edit it directly will fail.
   SHELL=/etc/platform/username/cron-run    MAILTO=""    # m h dom mon dow job_name    * * * * * cronrun
   ```
 
-* Der selbstverwaltete Cron ist nicht aktiviert, wenn Sie die Aufgaben nicht sehen und die Fehlermeldung &quot;*&quot;Sie dürfen dieses Programm nicht verwenden&quot;* erhalten können.
+* Die selbst verwaltete [!DNL cron]-Fehlermeldung &quot;*&quot;kann nicht angezeigt werden, wenn Sie die Aufgaben nicht sehen können und die Fehlermeldung &quot;* Sie dürfen dieses Programm nicht verwenden&quot; erhalten.
 
 >[!NOTE]
 >
->Der oben erwähnte Befehl, um zu überprüfen, ob selbstverwalteter Cron aktiviert ist, gilt nicht für einen Starter-Plan und in der Entwicklungs-/Integrationsumgebung.
+>Der oben erwähnte Befehl, um zu überprüfen, ob die selbstverwaltete [!DNL cron] aktiviert ist, gilt nicht für einen Starter-Plan und die Entwicklungs-/Integrationsumgebung.
 
 ## Verwandtes Lesen
 
-* [Richten Sie Cron-Aufträge ein](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation.
+* [ Richten Sie  [!DNL cron] jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation ein.
+* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
