@@ -4,9 +4,9 @@ description: Dieser Artikel enthält eine Fehlerbehebung für Blocker, die in Ad
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: 3dd44b72bc9f02fe808b70355c4331fc28aa3606
+source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,6 @@ Problem: Ohne ein gültiges und funktionierendes SSL-Zertifikat können Sie kein
 
 Empfehlung **:** Fordern Sie Ihr freigegebenes SSL-Zertifikat für Staging- oder Live-Domänennamen an.
 
-Weitere Informationen zu SSL-Zertifikaten finden Sie in diesem Artikel [Quick FAQ](/help/announcements/adobe-commerce-announcements/magento-ssl-tls-certificate-requirements-and-clean-up.md) in unserer Support-Wissensdatenbank.
 
 ## 3. Konfigurieren und Testen von 301-Weiterleitungen
 
