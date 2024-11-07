@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Problemumgehung, wenn Sie *contact* nich
 exl-id: eb340813-aba5-43a4-af5d-8fb64c93e021
 feature: CMS, Marketing Tools, Storefront
 role: Admin
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -63,5 +63,5 @@ Führen Sie die folgenden Schritte aus:
 
 ## Verwandtes Lesen
 
-* [URL schreibt ](https://docs.magento.com/user-guide/marketing/url-rewrite.html) in unser Benutzerhandbuch um.
-* [Best Practices für SEO](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) in unserem Benutzerhandbuch.
+* [URL schreibt ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unser Benutzerhandbuch um.
+* [Best Practices für SEO](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch.

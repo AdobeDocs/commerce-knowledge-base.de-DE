@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Problemumgehung, wenn Sie den Versand ni
 exl-id: df19b597-f615-4b19-82c1-59cc179fa720
 feature: Marketing Tools, Shipping/Delivery, Storefront
 role: Admin
-source-git-commit: 1ce963142a261a17e2b42f79dd567c8484ec5b3e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -122,5 +122,5 @@ Vermeiden Sie außerdem die Verwendung dieser Suchbegriffe, die als *reservierte
 
 ## Verwandtes Lesen
 
-* [URL schreibt ](https://docs.magento.com/user-guide/marketing/url-rewrite.html) in unserem Benutzerhandbuch zu Merchandising und Promotions um.
-* [Best Practices für SEO](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) in unserem Benutzerhandbuch für Merchandising und Promotions.
+* [URL schreibt ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unserem Benutzerhandbuch zu Merchandising und Promotions um.
+* [Best Practices für SEO](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch für Merchandising und Promotions.

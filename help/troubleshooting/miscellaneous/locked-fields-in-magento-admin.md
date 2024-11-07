@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für Fälle, in denen Sie keine 
 exl-id: 5fe0967a-4241-440b-bb0d-429fa5644bbc
 feature: Admin Workspace
 role: Developer
-source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -52,6 +52,6 @@ Stellen Sie sicher, dass die Konfiguration nicht in `app/etc/env.php` oder `app/
 
 ## Verwandte Informationen
 
-* [Exportieren Sie die Konfiguration](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-export.html#sensitive-or-system-specific-settings) in unsere Entwicklerdokumentation.
-* [Legen Sie Konfigurationswerte ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-config-mgmt-set.html#config-cli-config-set) in unserer Entwicklerdokumentation fest.
+* [Exportieren Sie die Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/export-configuration) in unsere Entwicklerdokumentation.
+* [Legen Sie Konfigurationswerte ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values) in unserer Entwicklerdokumentation fest.
 * [Adobe Commerce zur Cloud-Infrastruktur: Reduzieren Sie Bereitstellungsausfälle mit Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) in unserer Support-Wissensdatenbank.

@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie Maria
 exl-id: 707e20e0-faba-4bcd-884c-b54568787442
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Sie erhalten einen Warnhinweis, der in New Relic verwaltet wird, wenn Sie bis zu
 **Do!**
 
 * Beenden Sie alle geplanten Implementierungen, bis dieser Warnhinweis gelöscht ist.
-* Setzen Sie Ihre Site sofort in den Wartungsmodus, wenn Ihre Site vollständig oder gar nicht reagiert. Anweisungen finden Sie unter [Installationshandbuch > Wartungsmodus aktivieren oder deaktivieren](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten) in unserer Entwicklerdokumentation. Stellen Sie sicher, dass Sie Ihre IP-Adresse zur Liste der ausgenommenen IP-Adressen hinzufügen, um sicherzustellen, dass Sie weiterhin auf Ihre Website zugreifen können, um die Fehlerbehebung durchzuführen. Anweisungen hierzu finden Sie unter [Verwalten der Liste der ausgenommenen IP-Adressen](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=mainten#instgde-cli-maint-exempt).
+* Setzen Sie Ihre Site sofort in den Wartungsmodus, wenn Ihre Site vollständig oder gar nicht reagiert. Anweisungen finden Sie unter [Installationshandbuch > Wartungsmodus aktivieren oder deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation. Stellen Sie sicher, dass Sie Ihre IP-Adresse zur Liste der ausgenommenen IP-Adressen hinzufügen, um sicherzustellen, dass Sie weiterhin auf Ihre Website zugreifen können, um die Fehlerbehebung durchzuführen. Anweisungen hierzu finden Sie unter [Verwalten der Liste der ausgenommenen IP-Adressen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#instgde-cli-maint-exempt).
 * Beenden Sie Skripte wie Importe, die die Ursache des Warnhinweises sein können, wenn die Site-Leistung beeinträchtigt wird.
 
 **Nicht!**
@@ -56,7 +56,7 @@ Wenn Sie einen Warnhinweis zu DML-Abfragen erhalten, starten Sie in Schritt 1. W
 1. Suchen Sie nach Code-Optimierungen oder betrieblichen Optimierungen:
 1. Codeoptimierungen: Optimieren Sie Abfragen mit Masseneinfügungen/-aktualisierungen, minimieren Sie die Indexverwendung oder den Einschränkungscode.
 1. Betriebsoptimierungen: Laden Sie ressourcenintensive Datenänderungen zur Verringerung der Traffic-Zeit ab.
-1. Zusätzliche Optimierungen: Stellen Sie sicher, dass Sie die neueste Version der ECE-Tools verwenden. Anweisungen hierzu finden Sie in unserer Entwicklerdokumentation unter [Cloud für Adobe Commerce > Aktualisierung der ece-tools-Version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) .
+1. Zusätzliche Optimierungen: Stellen Sie sicher, dass Sie die neueste Version der ECE-Tools verwenden. Anweisungen hierzu finden Sie in unserer Entwicklerdokumentation unter [Cloud für Adobe Commerce > Aktualisierung der ece-tools-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) .
 
 ## Verwandte Informationen
 

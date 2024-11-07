@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass neue Umge
 exl-id: 279cd6d8-fd45-45ba-8456-8b397a01976f
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Das ist kein Fehler. Um eine übergeordnete Verzweigung für eine andere Verzwei
 
 ## Lösung
 
-Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Weitere Informationen finden Sie unter [Adobe Commerce unter Cloud-Infrastruktur > Bitbucket-Integration](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) in unserer Entwicklerdokumentation.
+Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Weitere Informationen finden Sie unter [Adobe Commerce unter Cloud-Infrastruktur > Bitbucket-Integration](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) in unserer Entwicklerdokumentation.
 
 Um ein übergeordnetes Element für die vorhandene Verzweigung auf dem Server zu aktualisieren, verwenden Sie den Befehl `magento-cloud environment:info` in der magento-cloud-CLI.
 
@@ -59,4 +59,4 @@ Dadurch wird die übergeordnete Verzweigung für die derzeit ausgecheckte Verzwe
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce über Cloud-Infrastruktur > magento-cloud-CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) in unserer Entwicklerdokumentation.
+* [Adobe Commerce über Cloud-Infrastruktur > magento-cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) in unserer Entwicklerdokumentation.

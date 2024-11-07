@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass Sie eine Ent
 exl-id: e45dc88a-2da0-4524-bd61-6634cfebb169
 feature: Admin Workspace, Marketing Tools
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Die Regel ist auf &quot;Inaktiv&quot;eingestellt.
 
 ## Ursache
 
-Dieses Problem bezieht sich auf die kürzlich eingeführten neuen Funktionen, die sich auf die maximale Sitzungsgröße ausgewirkt haben. Siehe [Sitzungsverwaltung](https://docs.magento.com/user-guide/stores/security-session-management.html) in unserer Entwicklerdokumentation.
+Dieses Problem bezieht sich auf die kürzlich eingeführten neuen Funktionen, die sich auf die maximale Sitzungsgröße ausgewirkt haben. Siehe [Sitzungsverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) in unserer Entwicklerdokumentation.
 
 ## Lösung
 
@@ -52,4 +52,4 @@ Erhöhen Sie den Wert &quot;Max. Sitzungsgröße&quot;in (**Speicher** > **Konfi
 
 ## Verwandtes Lesen
 
-* [Marketing-Menü](https://docs.magento.com/user-guide/marketing/marketing-menu.html) in unserem Benutzerhandbuch.
+* [Marketing-Menü](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu) in unserem Benutzerhandbuch.

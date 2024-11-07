@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für das Problem, wenn 
 exl-id: e4d9d60a-a0d1-4602-924e-a338e56de61d
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -46,5 +46,5 @@ Es wird außerdem empfohlen, den `customer_grid` -Indexer manuell neu zu indizie
 
 Links zu verwandten Themen in unserer Entwicklerdokumentation:
 
-* [Indizierungsübersicht](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
-* [Indexer verwalten](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)
+* [Indizierungsübersicht](https://developer.adobe.com/commerce/php/development/components/indexing/)
+* [Indexer verwalten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)

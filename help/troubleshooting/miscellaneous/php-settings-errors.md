@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen für Fehler bei PHP-Einstellungen.
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Konfigurationen mit einer großen Anzahl von Storeviews, Produkten, Attributen o
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-Es gibt keinen &quot;richtigen&quot;Wert für `max-input-vars`; er hängt von der Größe und Komplexität Ihrer Konfiguration ab. Ändern Sie den Wert in der Datei `php.ini` nach Bedarf. Siehe [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Es gibt keinen &quot;richtigen&quot;Wert für `max-input-vars`; er hängt von der Größe und Komplexität Ihrer Konfiguration ab. Ändern Sie den Wert in der Datei `php.ini` nach Bedarf. Siehe [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
 
 ## xdebug maximum function nesting level error
 
@@ -76,4 +76,4 @@ Mehrere Vorlagen haben eine Syntax für die Unterstützung der abstrakten Ebene 
 
 Weitere Informationen zu [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
 
-Bearbeiten Sie `php.ini` und legen Sie `asp_tags = off` fest. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Bearbeiten Sie `php.ini` und legen Sie `asp_tags = off` fest. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).

@@ -4,7 +4,7 @@ description: In diesem Artikel werden allgemeine Tools vorgestellt, die bei der 
 exl-id: c6603a2b-dc98-4022-ab29-c081c2b07415
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -29,24 +29,24 @@ Wenn Sie feststellen, dass es ein Problem mit den Funktionen Ihres benutzerdefin
    * [Adobe Commerce in der Cloud-Infrastruktur-Starter-Planarchitektur protokolliert ](/help/how-to/general/log-locations-directories-for-starter-plan.md) in unserer Support-Wissensdatenbank.
    * [Adobe Commerce in der Cloud Infrastructure Pro-Planarchitektur protokolliert ](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) in unserer Support-Wissensdatenbank.
 1. Je nach den gefundenen Fehlern werden in diesen Artikeln die folgenden Aktionen beschrieben, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten:
-   * [Aktivieren oder deaktivieren Sie Module](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-enable.html) in unserer Entwicklerdokumentation.
-   * [Deinstallieren Sie die Module](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-uninstall-mods.html) in unserer Entwicklerdokumentation.
+   * [Aktivieren oder deaktivieren Sie Module](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation.
+   * [Deinstallieren Sie die Module](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) in unserer Entwicklerdokumentation.
 
 ### Adobe Commerce in der Cloud-Infrastruktur, alle Versionen
 
-1. Speicherorte für Protokolle: [Adobe Commerce in Cloud-Infrastrukturprotokollen](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) in unserer Entwicklerdokumentation.
+1. Speicherorte für Protokolle: [Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
 1. Je nach den Fehlern, die Sie finden, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten, werden in diesen Artikeln in unserer Entwicklerdokumentation diese Aktionen beschrieben:
-   * [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://devdocs.magento.com/guides/v2.3/cloud/howtos/install-components.html).
-   * [Fehler bei der Komponentenbereitstellung](https://devdocs.magento.com/guides/v2.3/cloud/trouble/trouble_comp-deploy-fail.html).
+   * [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+   * [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
-* [Modulübersicht](https://devdocs.magento.com/guides/v2.3/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [Fehler beim Installieren optionaler Beispieldaten](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_sample-data.html)
-* [Ausnahmebehandlung](https://devdocs.magento.com/guides/v2.3/graphql/develop/exceptions.html)
-* [Ausnahmen während der Installation](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/tshoot_exceptions.html)
-* [Ausführen des Modul-Managers](https://devdocs.magento.com/guides/v2.3/comp-mgr/module-man/compman-checklist.html)
-* [Modulkonfigurationsdateien](https://devdocs.magento.com/guides/v2.3/config-guide/config/config-files.html)
-* [Fehler wegen zu wenig Arbeitsspeicher](https://devdocs.magento.com/guides/v2.3/comp-mgr/trouble/cman/out-of-memory.html)
+* [Modulübersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Fehler beim Installieren optionaler Beispieldaten](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
+* [Ausnahmebehandlung](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
+* [Ausnahmen während der Installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
+* [Ausführen des Modul-Managers](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
+* [Modulkonfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [Fehler wegen zu wenig Arbeitsspeicher](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)

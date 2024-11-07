@@ -4,7 +4,7 @@ description: In diesem Artikel wird beschrieben, wie Sie Probleme mit der Site-L
 exl-id: a78ca3c3-85b4-40a1-a693-4703dd3ef4b5
 feature: Best Practices, Cache, Categories, Catalog Management
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Da einige Erweiterungen nur mit flachen Tabellen funktionieren, besteht bei allen Adobe Commerce-Versionen die Gefahr, dass flache Tabellen deaktiviert werden. Wenn Sie wissen, dass Sie über einige Erweiterungen verfügen, die Indexer für flache Kataloge verwenden, müssen Sie dies bei der Festlegung dieser Werte auf &quot;*Nein* &quot;berücksichtigen.
 
-In diesem Artikel wird beschrieben, wie Sie Probleme mit der Site-Leistung und langsame laufende und hängende Crons lösen können, die durch die Aktivierung von [flachen Tabellen und Indexern](https://docs.magento.com/m2/ce/user_guide/catalog/catalog-flat.html) verursacht wurden.
+In diesem Artikel wird beschrieben, wie Sie Probleme mit der Site-Leistung und langsame laufende und hängende Crons lösen können, die durch die Aktivierung von [flachen Tabellen und Indexern](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat) verursacht wurden.
 
 BETROFFENE PRODUKTE UND VERSIONEN
 

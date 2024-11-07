@@ -1,9 +1,9 @@
 ---
 title: "MBI: Erweiterte berechnete Spalten erstellen und bearbeiten"
-description: '''[Admin-Benutzer](https://docs.magento.com/mbi/administrator/user-management/user-management.html) können bestimmte berechnete Spalten im Data Warehouse-Manager erstellen und bearbeiten. Mit diesen berechneten Spalten können Sie die Berichte einrichten, nach denen Sie zur Beantwortung wichtiger Geschäftsfragen suchen."'
+description: '''[Admin-Benutzer](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) können bestimmte berechnete Spalten im Data Warehouse-Manager erstellen und bearbeiten. Mit diesen berechneten Spalten können Sie die Berichte einrichten, nach denen Sie zur Beantwortung wichtiger Geschäftsfragen suchen."'
 exl-id: 713a5593-8103-4d74-be5e-0102678d0f97
 feature: Commerce Intelligence
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 # MBI: Erweiterte berechnete Spalten erstellen und bearbeiten
 
-[Admin-Benutzer](https://docs.magento.com/mbi/administrator/user-management/user-management.html) haben die Möglichkeit, bestimmte berechnete Spalten im Data Warehouse-Manager zu erstellen und zu bearbeiten. Mit diesen berechneten Spalten können Sie die Berichte einrichten, nach denen Sie zur Beantwortung wichtiger Geschäftsfragen suchen.
+[Admin-Benutzer](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management) haben die Möglichkeit, bestimmte berechnete Spalten im Data Warehouse-Manager zu erstellen und zu bearbeiten. Mit diesen berechneten Spalten können Sie die Berichte einrichten, nach denen Sie zur Beantwortung wichtiger Geschäftsfragen suchen.
 
 Eine Liste der berechneten Spalten, die Sie im Data Warehouse-Manager erstellen können, sowie eine Anleitung zur korrekten Einrichtung finden Sie in den folgenden Artikeln in unserem Benutzerhandbuch:
 
-* [Erstellen berechneter Spalten](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
-* [Berechnete Spaltentypen](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/calc-column-types.html)
-* [Grundlegendes zu und Auswerten von Tabellenbeziehungen](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/table-relationships.html)
-* [Pfade für berechnete Spalten erstellen](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
+* [Erstellen berechneter Spalten](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/creating-calculated-columns)
+* [Berechnete Spaltentypen](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/calc-column-types)
+* [Grundlegendes zu und Auswerten von Tabellenbeziehungen](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/table-relationships)
+* [Pfade für berechnete Spalten erstellen](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/create-paths-calc-columns)
 
 ## Ich brauche noch Hilfe!
 
@@ -35,7 +35,7 @@ Wenn du dir nicht sicher bist, wie du eine dieser Fragen beantworten kannst, mac
 
 ## Verwandtes Lesen
 
-* [MBI-Benutzerhandbuch](https://docs.magento.com/mbi)
+* [MBI-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview)
 * [MBI: Datendiskrepanzen](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
-* [MBI: Data Analyst](https://docs.magento.com/mbi/data-analyst.html)
-* [MBI: Hilfe mit Magento BI erhalten](https://docs.magento.com/mbi/getting-started/support.html)
+* [MBI: Data Analyst](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/data-analyst)
+* [MBI: Hilfe mit Magento BI erhalten](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/start/sign-in)

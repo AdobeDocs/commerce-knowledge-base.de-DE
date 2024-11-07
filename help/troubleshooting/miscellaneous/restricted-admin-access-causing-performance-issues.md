@@ -1,10 +1,10 @@
 ---
 title: Eingeschränkter Administratorzugriff, der Leistungsprobleme verursacht
-description: Dieser Artikel bietet Lösungen für Fälle, in denen die Leistung durch die Verwendung von [Admin-Rollen mit eingeschränktem Rollenumfang auf der Website](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) in unserem Benutzerhandbuch negativ beeinflusst wird.
+description: Dieser Artikel bietet Lösungen für Fälle, in denen die Leistung durch die Verwendung von [Admin-Rollen mit eingeschränktem Rollenumfang auf der Website](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) in unserem Benutzerhandbuch negativ beeinflusst wird.
 exl-id: da168d6b-9cda-41e2-aa3c-f3f0dccc803d
 feature: Admin Workspace, Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Eingeschränkter Administratorzugriff, der Leistungsprobleme verursacht
 
-Dieser Artikel bietet Lösungen für Fälle, in denen die Leistung negativ beeinflusst wird, indem in unserem Benutzerhandbuch [Admin-Rollen verwendet werden, deren Rollenumfang durch die Website](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html#step-2assign-resources) eingeschränkt ist.
+Dieser Artikel bietet Lösungen für Fälle, in denen die Leistung negativ beeinflusst wird, indem in unserem Benutzerhandbuch [Admin-Rollen verwendet werden, deren Rollenumfang durch die Website](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) eingeschränkt ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,10 +30,10 @@ Das Problem wurde in Adobe Commerce 2.2.10 und 2.3.3 behoben.
 
 Im Folgenden finden Sie die Optionen, um das Problem zu vermeiden:
 
-* Aktualisieren Sie die Adobe Commerce-Anwendungsversion auf 2.2.10 oder 2.3.3. (Anweisungen finden Sie unter [Aktualisieren von Adobe Commerce auf Cloud-Infrastruktur-Version](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation).
+* Aktualisieren Sie die Adobe Commerce-Anwendungsversion auf 2.2.10 oder 2.3.3. (Anweisungen finden Sie unter [Aktualisieren von Adobe Commerce auf Cloud-Infrastruktur-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) in unserer Entwicklerdokumentation).
 * Vermeiden Sie, den Umfang der Benutzerrollen für Administratoren nach Website zu beschränken, sofern möglich.
 * [Senden Sie ein Magento Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um einen Patch anzufordern, sofern dieser verfügbar ist.
 
 ## Verwandtes Lesen
 
-* [Benutzerrollen](https://docs.magento.com/m2/ee/user_guide/system/permissions-user-roles.html) in unserem Benutzerhandbuch.
+* [Benutzerrollen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) in unserem Benutzerhandbuch.

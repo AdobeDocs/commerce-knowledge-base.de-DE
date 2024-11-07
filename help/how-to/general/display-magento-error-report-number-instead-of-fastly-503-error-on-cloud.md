@@ -3,7 +3,7 @@ title: Adobe Commerce-Fehlerberichtsnummer anstelle des Fastly 503-Fehlers anzei
 description: 'Standardmäßig werden alle Adobe Commerce-Fehler schnell hinter dem Fehler **503 Service Nicht verfügbar** verborgen. Um die Berichtsnummer des Adobe Commerce-Fehlerprotokolls anzuzeigen (um ihn in den Protokollen zu finden und die Fehlerdetails anzuzeigen), öffnen Sie die Website, auf der die Schritte weggelassen werden:'
 exl-id: c0a4a9f8-a674-4cef-8088-e844594e6076
 feature: Cache, Cloud
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Standardmäßig werden alle Adobe Commerce-Fehler schnell hinter dem Fehler **50
 
 Wenn Sie den echten Adobe Commerce-Fehler und die Fehlerberichtsnummer sehen, erhalten Sie möglicherweise Details in der Fehlerberichtsdatei, indem Sie die folgenden Schritte ausführen:
 
-1. SSH in die betroffene Umgebung. Weitere Informationen finden Sie unter [SSH für eine Umgebung](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) in unserer Entwicklerdokumentation.
+1. SSH in die betroffene Umgebung. Weitere Informationen finden Sie unter [SSH für eine Umgebung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) in unserer Entwicklerdokumentation.
 1. Suchen Sie die Datei &quot;`./var/report/{error_number}`&quot;.
 
 ## Anwendungsdomäne und IP-Adresse zu Ihrer Hostdatei hinzufügen: detaillierte Schritte

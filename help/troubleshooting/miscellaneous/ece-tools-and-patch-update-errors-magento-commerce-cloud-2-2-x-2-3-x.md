@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass Fehlermel
 exl-id: b1658001-0ffd-4f8a-a15f-d785efcee51f
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
@@ -82,4 +82,4 @@ Bitte ändern Sie Ihren zusätzlichen Abschnitt entsprechend dem unten angegeben
 
 ## Verwandtes Lesen
 
-* [Upgrades und Patches](https://devdocs.magento.com/guides/v2.3/cloud/project/project-upgrade-parent.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=update%20ece%20tools) in unserer Entwicklerdokumentation.
+* [Upgrades und Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) in unserer Entwicklerdokumentation.

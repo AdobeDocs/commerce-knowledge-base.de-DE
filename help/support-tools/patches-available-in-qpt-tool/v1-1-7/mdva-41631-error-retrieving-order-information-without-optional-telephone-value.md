@@ -4,7 +4,7 @@ description: Der Patch MDVA-41631 behebt das Problem, dass Benutzer einen Fehler
 exl-id: 94b0b918-c1f9-4f5d-8fcd-8b92a9ca8c59
 feature: Orders
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.1 - 2.4.3-p1
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -37,8 +37,8 @@ Benutzer erhalten einen Fehler beim Abrufen von Bestellinformationen ohne option
 
 1. Wechseln Sie zu **Store** > **Konfiguration** > **Kunden** > **Kundenkonfiguration** > **Name und Adressenoptionen** > **Telefon anzeigen** und legen Sie die Telefonnummer als optional fest.
 1. Platzieren Sie eine Bestellung mithilfe der GraphQL-API als angemeldeter Kunde.
-   * Legen Sie die Telefonnummer nicht fest, wenn Sie die Abrechnungs- und Versandadressen festlegen. Befolgen Sie die Anweisungen in [GraphQL Checkout-Tutorial](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-customer.html) in unserer Entwicklerdokumentation.
-1. Rufen Sie die Bestellung mit der GraphQL [customerOrders-Abfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer-orders.html) ab.
+   * Legen Sie die Telefonnummer nicht fest, wenn Sie die Abrechnungs- und Versandadressen festlegen. Befolgen Sie die Anweisungen in [GraphQL Checkout-Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) in unserer Entwicklerdokumentation.
+1. Rufen Sie die Bestellung mit der GraphQL [customerOrders-Abfrage](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html) ab.
 
 <pre>
 <code class="language-graphql">
@@ -92,8 +92,8 @@ Benutzer erhalten den folgenden Fehler: *&quot;message&quot;: &quot;Interner Ser
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
@@ -102,4 +102,4 @@ Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 * [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
 * [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.

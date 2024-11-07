@@ -3,7 +3,7 @@ title: Produktdokumentation zu Adobe Commerce finden
 description: Die Knowledgebase des Adobe Commerce-Supports bietet Lösungen zur Fehlerbehebung und zur Vermeidung bekannter Probleme mit Adobe Commerce-Produkten, die vom Adobe Commerce-Supportteam bereitgestellt werden.
 exl-id: 03c5ec4a-ca1a-4c8e-b896-a13e08229531
 feature: B2B, Commerce Intelligence
-source-git-commit: 9491279d147eac9ed36ad236c227b08e7c6e0211
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Adobe Commerce auf Cloud-Infrastruktur</td>
 <td>[!DNL Order Management System (OMS)] für Adobe Commerce</td>
 <td>
 <p>Dokumentation zu Händlern (Endbenutzer) und Entwicklern (technisch):</p>
-<p><a href="https://omsdocs.magento.com/">https://omsdocs.magento.com/</a></p>
+<p><a href="https://commerce-docs.github.io/oms-documentation-archive/">https://commerce-docs.github.io/oms-documentation-archive/</a></p>
 </td>
 </tr>
 <tr>

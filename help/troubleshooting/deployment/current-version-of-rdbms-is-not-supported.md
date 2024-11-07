@@ -4,7 +4,7 @@ description: "Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereit
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -45,12 +45,12 @@ Ihre MariaDB-Version ist nicht mit der Adobe Commerce-Version kompatibel, auf di
 Sie müssen den MariaDB-Dienst auf eine kompatible Version aktualisieren, bevor Sie die Anwendung aktualisieren.
 
 
-Für die Integrationsverzweigung in Adobe Commerce auf der Cloud-Infrastruktur Pro-Planarchitektur (und allen Zweigen in der Starter-Architektur) folgen Sie den Anweisungen in [Dienst konfigurieren](https://devdocs.magento.com/cloud/project/services.html) in unserer Entwicklerdokumentation.
+Für die Integrationsverzweigung in Adobe Commerce auf der Cloud-Infrastruktur Pro-Planarchitektur (und allen Zweigen in der Starter-Architektur) folgen Sie den Anweisungen in [Dienst konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) in unserer Entwicklerdokumentation.
 
 Für die Planarchitektur Staging und Produktion in Adobe Commerce on Cloud Infrastructure Pro senden Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um eine Aktualisierung der Dienste vor der Bereitstellung des Adobe Commerce-Versionsupgrades anzufordern.[
 
 
 ## Verwandtes Lesen
 
-* [Best Practices für Builds und Bereitstellung](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) in unserer Entwicklerdokumentation.
+* [Best Practices für Builds und Bereitstellung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) in unserer Entwicklerdokumentation.
 * [Adobe Commerce 2.3.5-Upgrade: kompakt in dynamische Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) in unserer Knowledgebase der Unterstützung.

@@ -4,7 +4,7 @@ description: Dieser Artikel enthält einen Patch für die Adobe Commerce-Ausgabe
 exl-id: 8840aecb-21d9-4965-8c09-395e2d263aaa
 feature: Admin Workspace, Native Luma Frontend Development, Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Der Patch ist an diesen Artikel angehängt. Um es herunterzuladen, klicken Sie a
 
 >[!NOTE]
 >
->Zusätzlich zu Adobe Commerce für Cloud-Infrastruktur-Händler: Adobe hat die Fehlerbehebung in den Cloud-Patches für Commerce-Version 1.0.18 enthalten. Anweisungen zum Anwenden des neuesten Pakets finden Sie in der Entwicklerdokumentation unter [Cloud-Patches für Commerce-Versionshinweise](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) .
+>Zusätzlich zu Adobe Commerce für Cloud-Infrastruktur-Händler: Adobe hat die Fehlerbehebung in den Cloud-Patches für Commerce-Version 1.0.18 enthalten. Anweisungen zum Anwenden des neuesten Pakets finden Sie in der Entwicklerdokumentation unter [Cloud-Patches für Commerce-Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) .
 
 ### Kompatible Adobe Commerce-Versionen:
 

@@ -1,10 +1,10 @@
 ---
 title: Sicheres Löschen von Dateien, wenn in Adobe Commerce in der Cloud-Infrastruktur nicht genügend Speicherplatz vorhanden ist
-description: Dieser Artikel bietet eine Lösung für den Fall, dass Ihnen der Speicherplatz ausgeht und Sie Dateien sicher entfernen müssen. Bevor Sie diese Aktion in Erwägung ziehen, lesen Sie [Verwalten von Speicherplatz](https://devdocs.magento.com/cloud/project/manage-disk-space.html#no-space-left) in unserer Entwicklerdokumentation. Wenn die Schritte in diesem Artikel für Sie nicht geeignet sind oder das Problem nicht lösen, überprüfen Sie die Schritte in diesem Artikel.
+description: Dieser Artikel bietet eine Lösung für den Fall, dass Ihnen der Speicherplatz ausgeht und Sie Dateien sicher entfernen müssen. Bevor Sie diese Aktion in Erwägung ziehen, lesen Sie [Verwalten von Speicherplatz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) in unserer Entwicklerdokumentation. Wenn die Schritte in diesem Artikel für Sie nicht geeignet sind oder das Problem nicht lösen, überprüfen Sie die Schritte in diesem Artikel.
 exl-id: 6b0a5c1a-8db4-49d7-a785-b4e0bbaea0df
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 86515936f72bbd0a5778cb81f665993ed91e4707
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -59,4 +59,4 @@ In unserer Support-Wissensdatenbank:
 
 In unserer Entwicklerdokumentation:
 
-* [Verwalten des Festplattenspeichers](https://devdocs.magento.com/cloud/project/manage-disk-space.html)
+* [Verwalten des Festplattenspeichers](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)

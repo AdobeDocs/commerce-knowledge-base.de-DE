@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen für Probleme bei der Verwendung de
 exl-id: cbf54a15-b307-4bfc-90b7-cff98aeb4fce
 feature: Roles/Permissions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Dies sind die häufigsten Ursachen für Probleme:
 
 Während der Vorabversion sind Release-Pakete an zwei Orten verfügbar:
 
-1. Über Composer auf [magento.com](https://repo.magento.com/) mit der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [Installieren von Adobe Commerce mit Composer](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) in unserer Entwicklerdokumentation.
+1. Über Composer auf [magento.com](https://repo.magento.com/) mit der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [Installieren von Adobe Commerce mit Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
 1. **Mein Konto** > **Downloads** auf [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]

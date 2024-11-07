@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, bei dem der Ve
 exl-id: 5341be3a-a9d7-4a4b-9755-8c585c6922a4
 feature: Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Sie können den Patch MDVA-43395 nicht anwenden.
 
 ## Ursache
 
-Cloud-Händler müssen den MDVA-43395-Patch nicht separat anwenden, wenn sie [magento/magento-cloud-patches 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) installiert haben, das bereits den Patch enthält.
+Cloud-Händler müssen den MDVA-43395-Patch nicht separat anwenden, wenn sie [magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) installiert haben, das bereits den Patch enthält.
 
 ## Lösung
 
@@ -45,4 +45,4 @@ $ vendor/bin/magento-patches -n status |grep 43443
 ## Verwandtes Lesen
 
 * [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
-* [Cloud-Patches für Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) in unserer Entwicklerdokumentation.
+* [Cloud-Patches für Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) in unserer Entwicklerdokumentation.

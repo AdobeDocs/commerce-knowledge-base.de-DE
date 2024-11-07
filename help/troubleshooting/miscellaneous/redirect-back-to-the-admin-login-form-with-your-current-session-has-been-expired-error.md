@@ -4,7 +4,7 @@ description: '"Dieser Artikel enthält die möglichen Lösungen für das Anmelde
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Im folgenden Abschnitt finden Sie Lösungen.
 
 ### Sitzungsspeicher ändern
 
-Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem Artikel [Wie Sie Ihre Sitzungsdateien finden](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) in unserer Entwicklerdokumentation, um herauszufinden, wo Ihre Sitzung gespeichert ist, und ändern Sie sie durch Bearbeiten der Datei `app/etc/env.php`.
+Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem Artikel [Wie Sie Ihre Sitzungsdateien finden](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) in unserer Entwicklerdokumentation, um herauszufinden, wo Ihre Sitzung gespeichert ist, und ändern Sie sie durch Bearbeiten der Datei `app/etc/env.php`.
 
 Um beispielsweise mit dem Speichern der Sitzung im Dateisystem zu beginnen, ändern Sie den Abschnitt `'session'` wie folgt:
 
@@ -69,7 +69,7 @@ Führen Sie den Befehl `bin/magento app:config:import` aus, um Konfigurationsdat
 
 ## Verwandtes Lesen
 
-* [Importieren von Daten aus Konfigurationsdateien](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) in unserer Entwicklerdokumentation
+* [Importieren von Daten aus Konfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) in unserer Entwicklerdokumentation
 * [Konfigurieren Sie [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) in unserer Entwicklerdokumentation
 * [Kehren Sie zurück zum Anmeldeformular [!UICONTROL Commerce Admin] mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) in unserer Support-Wissensdatenbank.
 * [Kehren Sie ohne Fehler zum Anmeldeformular zurück, wenn Sie versuchen, sich bei [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) in unserer Support-Wissensdatenbank anzumelden

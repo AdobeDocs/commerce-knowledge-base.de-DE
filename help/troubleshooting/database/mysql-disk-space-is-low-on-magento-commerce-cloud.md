@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen für Fälle, in denen in Adobe Comm
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Das `/data/mysql` -Reittier kann aufgrund einer Reihe von Problemen voll sein, z
 
 Es gibt einen sofortigen Schritt, den Sie unternehmen können, um [!DNL MySQL] wieder auf die Spur zu bringen (oder zu verhindern, dass es hängenbleibt): Machen Sie Speicherplatz frei, indem Sie große Tabellen leeren.
 
-Eine langfristige Lösung würde jedoch mehr Speicherplatz zuweisen und den [Best Practices für die Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) folgen, einschließlich der Aktivierung der [Archiv für Bestellung/Rechnung/Sendung](https://docs.magento.com/user-guide/sales/order-archive.html) -Funktionalität.
+Eine langfristige Lösung würde jedoch mehr Speicherplatz zuweisen und den [Best Practices für die Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) folgen, einschließlich der Aktivierung der [Archiv für Bestellung/Rechnung/Sendung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) -Funktionalität.
 
 Im Folgenden finden Sie Details zu schnellen und langfristigen Lösungen.
 
@@ -124,7 +124,7 @@ Wenn die Option % verwenden > 70 % beträgt, müssen Sie Maßnahmen ergreifen, u
 
 >[!WARNING]
 >
->Es wird dringend empfohlen, eine Datenbanksicherung zu erstellen, bevor Sie Manipulationen durchführen und sie bei hohen Site-Ladezeiten vermeiden. Siehe [Dump your database](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump) in unserer Entwicklerdokumentation.
+>Es wird dringend empfohlen, eine Datenbanksicherung zu erstellen, bevor Sie Manipulationen durchführen und sie bei hohen Site-Ladezeiten vermeiden. Siehe [Dump your database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
 
 Überprüfen Sie, ob große Tabellen vorhanden sind, und überlegen Sie, ob eine davon geleert werden kann. Führen Sie dies auf dem primären (Quell-)Knoten durch.
 
@@ -132,7 +132,7 @@ Beispielsweise können Tabellen mit Berichten in der Regel geleert werden. Weite
 
 Wenn keine riesigen Berichtstabellen vorhanden sind, sollten Sie erwägen, `_index` -Tabellen zu leeren, um die Adobe Commerce-Anwendung wieder auf die richtige Weise zu übermitteln. `index_price` Tabellen wären die besten Kandidaten. Beispiel: `catalog_category_product_index_storeX` -Tabellen, wobei X Werte von &quot;1&quot;bis zur maximalen Speicheranzahl aufweisen kann. Beachten Sie bitte, dass Sie eine Neuindizierung durchführen müssen, um Daten in diesen Tabellen wiederherzustellen. Im Falle großer Kataloge kann diese Neuindizierung viel Zeit in Anspruch nehmen.
 
-Nachdem Sie sie geleert haben, warten Sie auf den Abschluss der Browsersynchronisierung. Sie können jetzt Backups erstellen und bedeutendere Schritte ausführen, um mehr Platz hinzuzufügen, z. B. mehr Speicherplatz zuzuweisen/zu erwerben und die Funktionalität des Archivs [Bestellung/Rechnungsstellung/Versand](https://docs.magento.com/user-guide/sales/order-archive.html) zu aktivieren.
+Nachdem Sie sie geleert haben, warten Sie auf den Abschluss der Browsersynchronisierung. Sie können jetzt Backups erstellen und bedeutendere Schritte ausführen, um mehr Platz hinzuzufügen, z. B. mehr Speicherplatz zuzuweisen/zu erwerben und die Funktionalität des Archivs [Bestellung/Rechnungsstellung/Versand](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) zu aktivieren.
 
 ### Überprüfen der binären Protokollierungseinstellungen
 

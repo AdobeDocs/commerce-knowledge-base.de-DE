@@ -4,7 +4,7 @@ description: Dieser Artikel enthält einen Patch für das bekannte Adobe Commerc
 exl-id: d05d1956-de23-496c-9234-c461a3cfdf36
 feature: Orders, Products, Shopping Cart
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
@@ -65,4 +65,4 @@ Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/ge
 
 ## Nützliche Links
 
-[Wenden Sie benutzerdefinierte Patches auf Adobe Commerce in der Cloud-Infrastruktur an](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+[Wenden Sie benutzerdefinierte Patches auf Adobe Commerce in der Cloud-Infrastruktur an](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.

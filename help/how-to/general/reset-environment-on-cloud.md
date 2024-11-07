@@ -3,7 +3,7 @@ title: Zurücksetzen der Umgebung auf Adobe Commerce in der Cloud-Infrastruktur
 description: In diesem Artikel werden verschiedene Szenarien für die Zurücksetzung einer Umgebung in Adobe Commerce in der Cloud-Infrastruktur vorgestellt.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -55,13 +55,13 @@ Wenn Sie dies mit dem Import eines lokalen [!UICONTROL Database Dump] vergleiche
 
 ## Szenario 2: Momentaufnahme wiederherstellen
 
-Lesen Sie: [Wiederherstellen einer Momentaufnahme auf Adobe Commerce in der Cloud-Infrastruktur](https://devdocs.magento.com/cloud/project/project-webint-snap.html#restore-snapshot) in unserer Entwicklerdokumentation.
+Lesen Sie: [Wiederherstellen einer Momentaufnahme auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >
 >Die Erstellung eines Schnappschusses muss unser erster Schritt nach dem Zugriff auf Adobe Commerce über das Cloud-Infrastrukturkonto und vor der Anwendung größerer Änderungen sein. Dies ist eine Best Practice und wird dringend empfohlen.
 
-Lesen Sie: [Erstellen Sie eine Momentaufnahme](https://devdocs.magento.com/cloud/project/project-webint-snap.html#create-snapshot) in unserer Entwicklerdokumentation.
+Lesen Sie: [Erstellen Sie eine Momentaufnahme](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) in unserer Entwicklerdokumentation.
 
 ## Szenario 3: Keine Momentaufnahme, Build-Stable (SSH-Verbindung verfügbar)
 

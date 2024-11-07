@@ -4,7 +4,7 @@ description: Dieses Thema behandelt eine Lösung, wenn eine hohe Belastung durch
 exl-id: c1f9d282-41d8-4850-8a24-336d55aa3140
 feature: Cloud, Observability, Paas, Services
 role: Developer
-source-git-commit: 075f55b94202f75839abd25bd47824eeb5226485
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Dieses Thema behandelt eine Lösung, wenn eine hohe Belastung durch MySQL in Ado
 * ECE Tools Version 2002.0.16 und höher
 * New Relic APM-Dienst (**Ihr Adobe Commerce-Konto für die Cloud-Infrastruktur enthält die Software für den New Relic-APM-Dienst** zusammen mit einem Lizenzschlüssel.)
 
-Weitere Informationen zum New Relic APM-Dienst und dessen Einrichtung mit Ihrem Adobe Commerce-Konto für die Cloud-Infrastruktur-Konto finden Sie unter [New Relic-Dienste](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) und [Einführung in New Relic APM](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
+Weitere Informationen zum New Relic APM-Dienst und dessen Einrichtung mit Ihrem Adobe Commerce-Konto für die Cloud-Infrastruktur-Konto finden Sie unter [New Relic-Dienste](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) und [Einführung in New Relic APM](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
 
 ## Problem
 
@@ -61,7 +61,7 @@ Adobe Commerce kann mehrere Datenbanken oder Redis asynchron lesen. Aktualisiere
 
    ![KB-372_image004.png](assets/KB-372_image004.png)
 
-   Weitere Informationen finden Sie unter [Bereitstellen von Variablen in DevDocs](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection).
+   Weitere Informationen finden Sie unter [Bereitstellen von Variablen in DevDocs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection).
 
 1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie.
 1. Durch das Übermitteln von Änderungen wird ein neuer Implementierungsprozess eingeleitet. Nachdem die Bereitstellung erfolgreich abgeschlossen wurde, sollte Ihre Adobe Commerce in der Cloud-Infrastrukturinstanz jetzt für die Verwendung von Slave-Verbindungen konfiguriert sein.
@@ -70,7 +70,7 @@ Adobe Commerce kann mehrere Datenbanken oder Redis asynchron lesen. Aktualisiere
 
 Im Folgenden finden Sie die häufig gestellten Fragen, die Sie stellen können, wenn Sie erwägen, die Slave-Verbindungsfunktion für Ihre Adobe Commerce im Cloud-Infrastrukturspeicher zu verwenden.
 
-* Gibt es bekannte Probleme oder Einschränkungen bei der Verwendung von Slave-Verbindungen? **Es sind keine bekannten Probleme bei der Verwendung von Slave-Verbindungen bekannt. Vergewissern Sie sich einfach, dass Sie das neueste aktualisierte ece-tools Paket verwenden. Anweisungen finden Sie hier unter [wie Sie Ihr Eece-Tools-Paket aktualisieren](https://devdocs.magento.com/cloud/project/ece-tools-update.html).**
+* Gibt es bekannte Probleme oder Einschränkungen bei der Verwendung von Slave-Verbindungen? **Es sind keine bekannten Probleme bei der Verwendung von Slave-Verbindungen bekannt. Vergewissern Sie sich einfach, dass Sie das neueste aktualisierte ece-tools Paket verwenden. Anweisungen finden Sie hier unter [wie Sie Ihr Eece-Tools-Paket aktualisieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package).**
 * Gibt es eine zusätzliche Latenz durch die Verwendung von Slave-Verbindungen? *Ja, die Latenz zwischen AZ-übergreifenden (Cross-Availability Zones) ist höher und verringert die Leistung einer Adobe Commerce in der Cloud-Infrastrukturinstanz, falls die Instanz nicht überlastet ist und die gesamte Last übertragen werden kann. Wenn die Instanz jedoch überlastet ist, hilft Master-Slave bei der Leistung, indem die Last auf die MySQL-Datenbank oder Redis über verschiedene Knoten verteilt wird.*
 
   **Bei nicht überladenen Clustern** - **Slave-Verbindungen verlangsamen die Leistung um 10-15 %**, was einer der Gründe ist, warum es nicht standardmäßig ist.
@@ -82,9 +82,9 @@ Im Folgenden finden Sie die häufig gestellten Fragen, die Sie stellen können, 
 
 In unserer Entwicklerdokumentation:
 
-* [Bereitstellen von Variablen](https://devdocs.magento.com/cloud/env/variables-deploy.html).
-* [Richten Sie die optionale Datenbankreplikation ein](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master_slavedb.html).
-* [ece-tools package](https://devdocs.magento.com/cloud/reference/ece-tools-reference.html).
+* [Bereitstellen von Variablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy).
+* [Richten Sie die optionale Datenbankreplikation ein](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
+* [ece-tools package](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview).
 
 >[!NOTE]
 >

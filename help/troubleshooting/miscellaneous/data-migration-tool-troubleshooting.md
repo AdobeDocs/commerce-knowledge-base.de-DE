@@ -4,9 +4,9 @@ description: Dieser Artikel enthält Lösungen für Fehler, die beim Ausführen 
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Ursache
 
-Eine Klasse aus der Adobe Commerce 1-Codebase konnte während des [EAV-Migrationsschritts](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) in unserer Entwicklerdokumentation nicht in der Adobe Commerce 2-Codebase gefunden werden. In den meisten Fällen gehört die fehlende Klasse zu einer [Erweiterung](https://glossary.magento.com/extension).
+Eine Klasse aus der Adobe Commerce 1-Codebase konnte während des [EAV-Migrationsschritts](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) in unserer Entwicklerdokumentation nicht in der Adobe Commerce 2-Codebase gefunden werden. In den meisten Fällen gehört die fehlende Klasse zu einer [Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/glossary#extension).
 
 ### Mögliche Lösungen
 
@@ -125,7 +125,7 @@ Die `Target path` in einer URL-Neuschreibungsoption muss durch ein eindeutiges P
 
 Aktivieren Sie die Option `auto_resolve_urlrewrite_duplicates` in Ihrer `config.xml` -Datei.
 
-Diese Konfiguration fügt den in Konflikt stehenden Datensätzen von [URL](https://glossary.magento.com/url) eine Hash-Zeichenfolge hinzu und zeigt das Auflösungsergebnis in Ihrer Befehlszeilenschnittstelle an.
+Diese Konfiguration fügt den in Konflikt stehenden Datensätzen von URL-Neuschreibungen eine Hash-Zeichenfolge hinzu und zeigt das Auflösungsergebnis in Ihrer Befehlszeilenschnittstelle an.
 
 ## Unstimmigkeiten zwischen Entitäten {#mismatch-of-entities}
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Ursache
 
-Dieser Fehler tritt während der [inkrementellen Migration](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) (in unserer Entwicklerdokumentation) von Datenänderungen auf. Dies bedeutet, dass Deltalog-Tabellen (mit dem Präfix &quot;`m2_cl_*`&quot;) nicht in der Adobe Commerce 1-Datenbank gefunden wurden. Das Tool installiert diese Tabellen während der [Datenmigration](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) (in unserer Entwicklerdokumentation) sowie Datenbank-Trigger, die Änderungen verfolgen und Löschtabellen ausfüllen.
+Dieser Fehler tritt während der [inkrementellen Migration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (in unserer Entwicklerdokumentation) von Datenänderungen auf. Dies bedeutet, dass Deltalog-Tabellen (mit dem Präfix &quot;`m2_cl_*`&quot;) nicht in der Adobe Commerce 1-Datenbank gefunden wurden. Das Tool installiert diese Tabellen während der [Datenmigration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (in unserer Entwicklerdokumentation) sowie Datenbank-Trigger, die Änderungen verfolgen und Löschtabellen ausfüllen.
 
 Ein Grund für den Fehler könnte sein, dass Sie versuchen, eine Migration von einem *copy* Ihres Live-Adobe Commerce 1-Stores durchzuführen und nicht vom Live Store selbst. Wenn Sie eine Kopie aus einem Live-Adobe Commerce 1-Store erstellen, der noch nie migriert wurde, enthält die Kopie nicht die Trigger und zusätzlichen Deltalog-Tabellen, die zum Abschließen einer Delta-Migration erforderlich sind. Daher schlägt die Migration fehl. Das Datenmigrationswerkzeug führt KEINE Vergleiche zwischen der DB von AC1 und AC2 durch, um die Unterschiede zu migrieren. Stattdessen verwendet das Tool die während der ersten Migration installierten Trigger und Deltalog-Tabellen, um nachfolgende Deltammigationen durchzuführen. In diesem Fall enthält Ihre Kopie der Live-Adobe Commerce 1-DB nicht die Trigger und Deltalog-Tabellen, die das Datenmigrationswerkzeug zum Ausführen einer Migration verwendet.
 

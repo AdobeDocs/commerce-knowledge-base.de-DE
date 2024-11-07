@@ -3,7 +3,7 @@ title: Synchronisieren von Daten und Dateien Produktion mit Staging oder Staging
 description: In diesem Artikel wird erläutert, wie Sie Ihre Produktionsumgebung mit Staging auf Adobe Commerce in der Cloud-Infrastruktur synchronisieren können. Dies ist nicht möglich.
 exl-id: e3d001d1-1b2a-41b5-9b4a-00e53dc9d001
 feature: Integration, Build
-source-git-commit: ef294ddc9c4a12b06ce7738cb4702253dd892f3b
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -20,7 +20,7 @@ In diesem Artikel wird erläutert, wie Sie Ihre Produktionsumgebung mit Staging 
 
 ## So synchronisieren Sie Daten zwischen Umgebungen
 
-Um die Daten zu synchronisieren, müssen Sie die Datenbank manuell aus der Quellumgebung ablegen. Um Daten in eine andere Umgebung zu übertragen, müssen Sie die Quellablage in die Zielumgebung hochladen und importieren. Weitere Informationen finden Sie unter [Adobe Commerce-Code in ein Cloud-Projekt importieren > Adobe Commerce-Datenbank importieren](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html) in unserer Entwicklerdokumentation.
+Um die Daten zu synchronisieren, müssen Sie die Datenbank manuell aus der Quellumgebung ablegen. Um Daten in eine andere Umgebung zu übertragen, müssen Sie die Quellablage in die Zielumgebung hochladen und importieren. Weitere Informationen finden Sie unter [Adobe Commerce-Code in ein Cloud-Projekt importieren > Adobe Commerce-Datenbank importieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) in unserer Entwicklerdokumentation.
 
 Für die Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur können Sie auch von der Staging- und Produktionsumgebung mit Ihrer Integrations-Master-Verzweigung synchronisieren. Bei dieser Synchronisierung wird nur Code abgerufen und gepusht, nicht Daten. Um Daten zu synchronisieren, müssen Sie die Datenbankdaten in die Datenbank einer anderen Umgebung übertragen.
 
@@ -30,7 +30,7 @@ Für die Adobe Commerce on Cloud Infrastructure Pro-Planarchitektur können Sie 
 
 ## So synchronisieren Sie Dateien zwischen Umgebungen
 
-Verwenden Sie den Befehl `rsync` , um Dateien von einer Umgebung in eine andere zu synchronisieren. Weitere Informationen finden Sie unter [Bereitstellen von Code und Migrieren von statischen Dateien und Daten > Migrieren von Dateien mit rsync](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) in unserer Entwicklerdokumentation.
+Verwenden Sie den Befehl `rsync` , um Dateien von einer Umgebung in eine andere zu synchronisieren. Weitere Informationen finden Sie unter [Bereitstellen von Code und Migrieren von statischen Dateien und Daten > Migrieren von Dateien mit rsync](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production#migrate-files-using-rsync) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >

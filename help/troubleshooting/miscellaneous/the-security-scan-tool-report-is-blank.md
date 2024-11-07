@@ -4,7 +4,7 @@ description: In diesem Artikel wird das Problem behoben, dass das Sicherheitssca
 exl-id: e5f7f8c6-2dd3-44e3-8d19-f1f38d06dd6c
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -23,7 +23,7 @@ In diesem Artikel wird das Problem behoben, dass das Sicherheitsscan-Tool anstel
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Konfigurieren Sie das Sicherheitsscan-Tool, um Ihre Website zu überprüfen, wie in [Sicherheitsprüfung](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) in unserem Benutzerhandbuch beschrieben.
+1. Konfigurieren Sie das Sicherheitsscan-Tool, um Ihre Website zu überprüfen, wie in [Sicherheitsprüfung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) in unserem Benutzerhandbuch beschrieben.
 1. Wählen Sie in der Spalte Aktionen die Option **Scan ausführen**.
 
 <u>Erwartete Ergebnisse</u>:
@@ -47,5 +47,5 @@ Versuchen Sie, Ihre Website zu öffnen.
 
 ## Verwandtes Lesen
 
-* [Go live and launch](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) in unserer Entwicklerdokumentation.
-* [Sicherheitsscan](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) in unserem Benutzerhandbuch.
+* [Go live and launch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) in unserer Entwicklerdokumentation.
+* [Sicherheitsscan](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) in unserem Benutzerhandbuch.

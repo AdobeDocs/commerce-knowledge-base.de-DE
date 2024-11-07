@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen, um Verzögerungen oder Unterbrechu
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -26,13 +26,13 @@ Betroffene Produkte und Versionen:
 
 ## Ursache
 
-Wenn Ihre Indexer [so konfiguriert sind, dass sie planmäßig aktualisiert werden](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), kann das Problem durch eine oder mehrere Tabellen verursacht werden, in denen Änderungsprotokolle zu groß sind oder MySQL-Trigger nicht eingerichtet sind.
+Wenn Ihre Indexer [so konfiguriert sind, dass sie planmäßig aktualisiert werden](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers), kann das Problem durch eine oder mehrere Tabellen verursacht werden, in denen Änderungsprotokolle zu groß sind oder MySQL-Trigger nicht eingerichtet sind.
 
 ### Oversized Änderungsprotokolltabellen
 
 Die Änderungsprotokolltabellen werden so groß, wenn der `indexer_update_all_views`-Cron-Auftrag nicht mehrmals erfolgreich abgeschlossen wurde.
 
-Änderungsprotokolltabellen sind die Datenbanktabellen, in denen die Änderungen an Entitäten verfolgt werden. Ein Datensatz wird in einer Änderungsprotokolltabelle gespeichert, solange die Änderung nicht angewendet wird, was vom `indexer_update_all_views`-Cron-Auftrag ausgeführt wird. Es gibt mehrere Änderungsprotokolltabellen in einer Adobe Commerce-Datenbank. Sie werden nach folgendem Muster benannt: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, z. B. `catalog_category_product_cl`, `catalog_product_category_cl`. Weitere Informationen dazu, wie Änderungen in der Datenbank verfolgt werden, finden Sie im Artikel [Indizierungsübersicht > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) in unserer Entwicklerdokumentation.
+Änderungsprotokolltabellen sind die Datenbanktabellen, in denen die Änderungen an Entitäten verfolgt werden. Ein Datensatz wird in einer Änderungsprotokolltabelle gespeichert, solange die Änderung nicht angewendet wird, was vom `indexer_update_all_views`-Cron-Auftrag ausgeführt wird. Es gibt mehrere Änderungsprotokolltabellen in einer Adobe Commerce-Datenbank. Sie werden nach folgendem Muster benannt: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, z. B. `catalog_category_product_cl`, `catalog_product_category_cl`. Weitere Informationen dazu, wie Änderungen in der Datenbank verfolgt werden, finden Sie im Artikel [Indizierungsübersicht > Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) in unserer Entwicklerdokumentation.
 
 ### [!DNL MySQL] Trigger der Datenbank nicht eingerichtet
 

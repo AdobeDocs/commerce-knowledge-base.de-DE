@@ -4,7 +4,7 @@ description: "In diesem Artikel wird erläutert, wie der Adobe Commerce in Bezug
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Wenn Ihre Lizenz aufgrund von Zahlungsproblemen zuvor widerrufen wurde und Sie d
 
 ### 2. Fügen Sie den Schlüsselwert in die Variable env:COMPOSER\_AUTH ein und überprüfen Sie, ob in auth.json dieselben Schlüssel angegeben sind.
 
-Weitere Informationen finden Sie in den Anweisungen und den zugehörigen Informationen unter [Vorbereiten Ihres vorhandenen Systems](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) und [Hinzufügen von Authentifizierungsschlüsseln](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie in den Anweisungen und den zugehörigen Informationen unter [Vorbereiten Ihres vorhandenen Systems](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) und [Hinzufügen von Authentifizierungsschlüsseln](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) in unserer Entwicklerdokumentation.
 
 ### 3. Aktualisieren oder Löschen von auth.json
 

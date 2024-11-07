@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung, um das Problem mit Composer-Plu
 exl-id: 7502ca9e-c307-4e8a-aa1d-4886e7be25da
 feature: Upgrade
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -64,7 +64,7 @@ Ab Juli 2022 ändert der Composer den Standardwert der [`allow-plugins`-Option](
 
 Fügen Sie Ihrer `composer.json` -Datei je nach der Installation von Adobe Commerce Folgendes hinzu:
 
-* Wenn das Projekt [mit dem Befehl `composer create-project` erstellt wurde](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage):
+* Wenn das Projekt [mit dem Befehl `composer create-project` erstellt wurde](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
 
   ```json
   "config": {

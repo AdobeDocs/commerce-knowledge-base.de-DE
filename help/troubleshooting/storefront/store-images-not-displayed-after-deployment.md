@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für Fälle, in denen Bilder nac
 exl-id: 7e6bcebd-edff-437a-9103-2743443d2ed9
 feature: Cache, Categories, Deploy, Storefront
 role: Admin
-source-git-commit: c4d586ca3980acbe4f33c5f2616ef7f3051bc7d3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -33,7 +33,7 @@ In diesem Fall können Sie den Magento-Befehl verwenden, um den Bild-Cache neu z
 
 Dazu benötigen Sie die SSH-Informationen und die Store-URL, die über die [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) verfügbar sind.
 
-1. SSH zu Ihrem Projekt, das eine Quelle für den [Datenbank-Dump](/help/how-to/general/create-database-dump-on-cloud.md) war, wie in der Entwicklerdokumentation unter [SSH in die Umgebung](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) beschrieben.
+1. SSH zu Ihrem Projekt, das eine Quelle für den [Datenbank-Dump](/help/how-to/general/create-database-dump-on-cloud.md) war, wie in der Entwicklerdokumentation unter [SSH in die Umgebung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) beschrieben.
 1. Regenerieren Sie den Bild-Cache, indem Sie Folgendes ausführen:
 
    ```bash

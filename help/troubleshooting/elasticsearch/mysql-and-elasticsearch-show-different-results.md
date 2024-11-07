@@ -2,7 +2,7 @@
 title: MySQL und Elasticsearch zeigen unterschiedliche Ergebnisse an
 description: Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.3, das sich auf das Abrufen verschiedener Suchergebnisse für dieselbe Suchabfrage mit MySQL und Elasticsearch bezieht.
 exl-id: 37a0164a-0237-4200-ab9c-e0dbad7e2062
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md) entfernt. Sie müssen den Elasticsearch-Host vor der Installation von Version 2.4.0 einrichten und konfigurieren lassen. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) in unserer Entwicklerdokumentation.
+> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md) entfernt. Sie müssen den Elasticsearch-Host vor der Installation von Version 2.4.0 einrichten und konfigurieren lassen. Weitere Informationen finden Sie unter [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation.
 
 Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.3, das sich auf das Abrufen verschiedener Suchergebnisse für dieselbe Suchabfrage mit MySQL und Elasticsearch bezieht.
 

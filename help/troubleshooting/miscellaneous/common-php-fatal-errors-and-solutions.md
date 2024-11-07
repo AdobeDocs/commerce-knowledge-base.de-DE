@@ -4,7 +4,7 @@ description: In diesem Artikel werden einige häufige PHP Fatal Error-Schnellbei
 exl-id: 3e42d38f-97bc-4d38-8e36-23b1453f81d9
 feature: Support
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Beispiel:
 
 `max_execution_time = 120`
 
-Lesen Sie den Artikel [php.ini-Einstellungen anpassen](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) .
+Lesen Sie den Artikel [php.ini-Einstellungen anpassen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) .
 
 ## Beispiel
 
@@ -35,7 +35,7 @@ Lesen Sie den Artikel [php.ini-Einstellungen anpassen](https://devdocs.magento.c
 
 ## Lösung
 
-Passen Sie Ihre `php.ini` -Einstellungen an. Lesen Sie diesen Artikel [php.ini-Einstellungen anpassen](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) .
+Passen Sie Ihre `php.ini` -Einstellungen an. Lesen Sie diesen Artikel [php.ini-Einstellungen anpassen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) .
 
 ## Beispiel
 
@@ -65,9 +65,9 @@ Der MySQL-Umgebung ist der Speicherplatz ausgegangen. Stellen Sie mehr Speicherp
 
 In unserer Entwicklerdokumentation:
 
-* [Fehler bei PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html)
-* [Erforderliche PHP-Einstellungen](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html)
-* [Überprüfung der Umkehrung](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
-* [Redis konfigurieren](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
-* [PHP-Speicherbegrenzungsfehler](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html#trouble-php-memory)
-* [Lösungen für häufige Probleme - Speicherbeschränkung](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)
+* [Fehler bei PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Überprüfung der Umkehrung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Redis konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [PHP-Speicherbegrenzungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Lösungen für häufige Probleme - Speicherbeschränkung](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)

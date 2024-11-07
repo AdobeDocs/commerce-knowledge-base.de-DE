@@ -4,7 +4,7 @@ description: Dieser Artikel enthält einen Patch für das Problem, dass die CAPT
 exl-id: 46ab7f4d-ee0a-4cc1-96cc-6eb408319e9c
 feature: Checkout, Orders
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Dieses bekannte Problem wird in unserer Entwicklerdokumentation erwähnt:
 
 <u>Für Adobe Commerce 2.3.6</u>:
 
-* [Versionshinweise zu Adobe Commerce 2.3.6: Bekannte Probleme](https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html#known-issues)
-* [Versionshinweise zu Magento Open Source 2.3.6: Bekannte Probleme](https://devdocs.magento.com/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
+* [Versionshinweise zu Adobe Commerce 2.3.6: Bekannte Probleme](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/commerce-2-3-6.html)
+* [Versionshinweise zu Magento Open Source 2.3.6: Bekannte Probleme](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/open-source-2-3-6.html#known-issues)
 
 <u>Für Adobe Commerce 2.4.1</u>:
 
-* [Adobe Commerce 2.4.1 - Versionshinweise: Bekannte Probleme](https://devdocs.magento.com/guides/v2.4/release-notes/commerce-2-4-1.html#known-issues)
-* [Versionshinweise zu Magento Open Source 2.4.1: Bekannte Probleme](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-1.html#known-issues)
+* [Adobe Commerce 2.4.1 - Versionshinweise: Bekannte Probleme](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-1#known-issues)
+* [Versionshinweise zu Magento Open Source 2.4.1: Bekannte Probleme](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-1#known-issues)
 
 ## Betroffene Produkte und Versionen
 
@@ -83,4 +83,4 @@ Informationen zum Patch für Composer finden Sie unter [Anwenden eines von Adobe
 
 <u>Git-Patch</u>
 
-Informationen zu Git-Patch-Anweisungen für Adobe Commerce/Magento Open Source finden Sie in der Entwicklerdokumentation [Anwenden von Patches: Benutzerdefinierte Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) .
+Informationen zu Git-Patch-Anweisungen für Adobe Commerce/Magento Open Source finden Sie in der Entwicklerdokumentation [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) .

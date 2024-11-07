@@ -3,7 +3,7 @@ title: Elasticsearch 5 ist konfiguriert, die Suchseite wird jedoch nicht mit dem
 description: "Hier wird beschrieben, wie Sie das Problem mit Elasticsearch 5 beheben, bei dem die Suchseite nicht geladen wird und die dem Folgenden ähnelnde Ausnahme ausgegeben wird:"
 exl-id: f5fa8144-4e7c-45ce-89d0-a8367e91d6db
 feature: Cache
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Das Ergebnis enthält eine Liste von Attributen, die für die Navigation mit Ebe
 Um das Problem zu beheben, müssen Sie `is_filterable` (d. h. verwendet in der Ebenennavigation) und `filterable_in_search` (d. h. in der Suchergebnisnavigation verwendet) auf &quot;0&quot;(nicht verwendet) setzen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

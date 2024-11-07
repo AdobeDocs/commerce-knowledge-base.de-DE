@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass der "/tmp"-B
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Wenn Sie nicht berechtigt sind, Dateien zu löschen, die von einem anderen Benut
 
 Um zu vermeiden, dass Probleme mit `/tmp` vollständig auftreten, befolgen Sie die folgenden Empfehlungen:
 
-* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche entfällt in der Regel die Notwendigkeit für die meisten schweren temporären Tabellen. Siehe [Konfigurieren von Adobe Commerce für die Verwendung von Elasticsearch](https://devdocs.magento.com/guides/v2.2/config-guide/elasticsearch/configure-magento.html) in unserer Entwicklerdokumentation.
+* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche entfällt in der Regel die Notwendigkeit für die meisten schweren temporären Tabellen. Siehe [Konfigurieren von Adobe Commerce für die Verwendung von Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) in unserer Entwicklerdokumentation.
 * Vermeiden Sie die Ausführung der `SELECT`-Abfrage für Spalten ohne Indizes, da diese eine große Menge temporären Speicherplatz beanspruchen. Sie können auch die Indizes hinzufügen.
 * Erstellen Sie einen Cron zum Bereinigen von `/tmp`, indem Sie den folgenden Befehl in der CLI ausführen:
 

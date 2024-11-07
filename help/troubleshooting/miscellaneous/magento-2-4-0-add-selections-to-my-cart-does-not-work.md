@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Problemumgehung für ein defektes Schalt
 exl-id: b0830ec2-2aea-4afb-8d02-e9c8f54283be
 feature: Orders, Shopping Cart
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Die Schaltfläche **Auswahl zu meinem Warenkorb hinzufügen** oben auf der Seite
 
 ## Verwandtes Lesen
 
-* [Verwalten eines Warenkorbs durch MerchDocs](https://docs.magento.com/user-guide/sales/shopping-assisted-cart-manage.html) in unserem Benutzerhandbuch.
+* [Verwalten eines Warenkorbs durch MerchDocs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) in unserem Benutzerhandbuch.
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Rohdaten von Nachrichten werden in der Storefront](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) in unserer Support-Wissensdatenbank angezeigt.
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) in unserer Support-Wissensdatenbank.
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Braintree-Zahlungsmethoden werden in unserer Support-Wissensdatenbank nicht beim Checkout mit mehreren Adressen angezeigt](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md).

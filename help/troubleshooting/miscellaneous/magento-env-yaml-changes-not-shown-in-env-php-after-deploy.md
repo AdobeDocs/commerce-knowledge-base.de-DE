@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass Änderung
 exl-id: 39ea7295-ba5a-40cc-bc68-a5e0b965c1a7
 feature: Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass Änderungen in der `.m
 
 <u>Zu reproduzierende Schritte:</u>
 
-Ändern Sie einen beliebigen Wert in `.magento.env.yaml` und pushen Sie ihn auf den Server, wo er die Konfiguration (und Bereitstellungseinstellungen) für die derzeit ausgecheckte Umgebung definieren sollte. Anweisungen finden Sie unter [Umgebungsvariablen > Variablen bereitstellen](https://devdocs.magento.com/cloud/env/variables-deploy.html) in unserer Entwicklerdokumentation.
+Ändern Sie einen beliebigen Wert in `.magento.env.yaml` und pushen Sie ihn auf den Server, wo er die Konfiguration (und Bereitstellungseinstellungen) für die derzeit ausgecheckte Umgebung definieren sollte. Anweisungen finden Sie unter [Umgebungsvariablen > Variablen bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) in unserer Entwicklerdokumentation.
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -45,11 +45,11 @@ Das Problem kann durch den falschen Wert des Parameters `opcache.enable_cli` in 
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass das System gemäß [Best Practices zur Adobe Commerce-Leistung > Softwareempfehlungen](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html) konfiguriert ist.
+1. Vergewissern Sie sich, dass das System gemäß [Best Practices zur Adobe Commerce-Leistung > Softwareempfehlungen](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/software) konfiguriert ist.
 1. Überprüfen Sie, ob die Anweisung `opcache.enable_cli` in `php.ini` auf `0` gesetzt ist, indem Sie Folgendes ausführen: `php -i | grep opcache.enable_cli`
 1. Wenn die Ausgabe wie `opcache.enable_cli=1` aussieht, bearbeiten Sie die Datei `php.ini` im Projektstammverzeichnis und ändern Sie `opcache.enable_cli=1` in `opcache.enable_cli=0`
 1. Stellen Sie das Projekt erneut bereit.
 
 ## Verwandtes Lesen
 
-* [Cloud für Adobe Commerce > Erstellen und Bereitstellen](https://devdocs.magento.com/cloud/project/magento-env-yaml.html).
+* [Cloud für Adobe Commerce > Erstellen und Bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).

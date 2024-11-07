@@ -3,7 +3,7 @@ title: Umleiten von HTTP zu HTTPS für alle Seiten in Adobe Commerce in der Clou
 description: Aktivieren Sie die Funktion "TLS erzwingen"von Fastly in Commerce Admin, um die globale HTTP-zu-HTTPS-Umleitung für alle Seiten Ihrer Adobe Commerce im Cloud-Infrastrukturspeicher zu aktivieren.
 exl-id: 71667f52-a99a-47a6-99d8-10532364870f
 feature: Cache, Cloud
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 0%
@@ -29,7 +29,7 @@ In diesem Schritt definieren wir die sicheren URLs für den Store. Wenn dies ber
 1. Stellen Sie die Einstellungen **Sichere URLs in Storefront verwenden** und **Sichere URLs in Admin** verwenden auf **Ja** ein.    ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
 1. Klicken Sie oben rechts auf **Konfiguration speichern** , um Änderungen anzuwenden.
 
-**Verwandte Dokumentation in unserem Benutzerhandbuch:**   [URLs speichern](https://docs.magento.com/m2/ee/user_guide/stores/store-urls.html).
+**Verwandte Dokumentation in unserem Benutzerhandbuch:**   [URLs speichern](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 ### Schritt 2: TLS erzwingen aktivieren {#step-2-enable-force-tls}
 

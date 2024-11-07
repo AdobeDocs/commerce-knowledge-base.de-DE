@@ -1,10 +1,10 @@
 ---
 title: Fehler "Erweiterte Berichterstellung 404"in der geteilten Datenbanklösung
-description: Dieser Artikel enthält einen Patch für Benutzer von Adobe Commerce 2.3.x mit der [split database solution](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html), bei dem beim Versuch, die erweiterte Berichterstellung zu verwenden, ein 404-Fehler auftritt.
+description: Dieser Artikel enthält einen Patch für Benutzer von Adobe Commerce 2.3.x mit der [split database solution](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master), bei dem beim Versuch, die erweiterte Berichterstellung zu verwenden, ein 404-Fehler auftritt.
 exl-id: b81d4ada-5f38-4882-bc5b-ab4ccd63fc5f
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Fehler &quot;Erweiterte Berichterstellung 404&quot;in der geteilten Datenbanklösung
 
-Dieser Artikel enthält einen Patch für Benutzer von Adobe Commerce 2.3.x mit der [aufgespalteten Datenbanklösung](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html), bei dem beim Versuch, die erweiterte Berichterstellung zu verwenden, ein 404-Fehler auftritt.
+Dieser Artikel enthält einen Patch für Benutzer von Adobe Commerce 2.3.x mit der [aufgespalteten Datenbanklösung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master), bei dem beim Versuch, die erweiterte Berichterstellung zu verwenden, ein 404-Fehler auftritt.
 
 ## Betroffene Produkte und Versionen
 

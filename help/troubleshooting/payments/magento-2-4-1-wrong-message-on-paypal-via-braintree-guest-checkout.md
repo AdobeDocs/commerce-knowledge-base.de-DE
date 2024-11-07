@@ -4,7 +4,7 @@ description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem b
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Ein unspezifischer Fehler wird angezeigt, wenn der Gast-Checkout aus dem Backend
 <u>Voraussetzungen</u>:
 
 1. Legen Sie in Commerce Admin unter **Stores** > **Konfiguration** > **Verkauf** > **Checkout** den Wert **Gastauscheck zulassen** = *Nein* fest.
-1. Aktivieren Sie PayPal über Braintree, wie im Benutzerhandbuch unter [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) beschrieben.
+1. Aktivieren Sie PayPal über Braintree, wie im Benutzerhandbuch unter [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) beschrieben.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -55,10 +55,10 @@ Der Kunde wird zur Seite Warenkorb weitergeleitet und die folgende Meldung wird 
 
 ## Workaround
 
-Die Lösung für dieses Problem besteht darin, dass sich der Kunde in einem Speicher anmelden kann (angemeldete Benutzer verwenden keinen Gastkasse). wo der Gastkauf deaktiviert ist. Dieses Problem wurde in Adobe Commerce-Version 2.4.2 behoben.
+Die Lösung für dieses Problem besteht darin, dass sich der Kunde in einem Speicher anmelden kann (angemeldete Benutzer verwenden keinen Gastkasse.), in dem der Gastkasse deaktiviert ist. Dieses Problem wurde in Adobe Commerce-Version 2.4.2 behoben.
 
 ## Verwandtes Lesen
 
 * [Best Practice für die Anzahl der Produkte im Warenkorb in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Support-Wissensdatenbank.
-* [Tutorial zur Bestellverarbeitung: Schritt 1. Hinzufügen von Artikeln zum Warenkorb](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) in unserer Entwicklerdokumentation
-* [Tutorial zum GraphQL-Checkout: Schritt 1. Produkte zum Warenkorb hinzufügen](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) in unserer Entwicklerdokumentation
+* [Tutorial zur Bestellverarbeitung: Schritt 1. Hinzufügen von Artikeln zum Warenkorb](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
+* [Tutorial zum GraphQL-Checkout: Schritt 1. Produkte zum Warenkorb hinzufügen](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-add-product-to-cart.html) in unserer Entwicklerdokumentation

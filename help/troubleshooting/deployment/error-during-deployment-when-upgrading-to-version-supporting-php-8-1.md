@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Fehler, der während de
 exl-id: bdc4a355-4f2b-49a7-9c5d-63c950f7ca30
 feature: Deploy, Observability
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Dieser Artikel bietet eine Lösung für den Fehler, der während der Implementie
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.4.4 und höher
 
-* Erweiterung oder Technologie (Fastly, New Relic usw.) Version PHP 8.1
+* Erweiterung oder Technologie (Fastly, New Relic, etc.) Version PHP 8.1
 
 ## Problem
 
@@ -45,4 +45,4 @@ Entfernen Sie JSON aus dem Abschnitt **Laufzeit** > **Erweiterungen** in `.magen
 
 ## Verwandtes Lesen
 
-[PHP-Anwendung](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) in unserer Entwicklerdokumentation.
+[PHP-Anwendung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) in unserer Entwicklerdokumentation.

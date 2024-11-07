@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, wenn Warenkorb
 exl-id: 9c81de40-65a3-422d-9053-3c894b863a0a
 feature: Orders
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -62,8 +62,8 @@ Fügen Sie den `sales.rule.update.coupon.usage` -Verbraucher zur Datei `app/etc/
 ...
 ```
 
-Ausführliche Anweisungen finden Sie unter [Verwalten von Nachrichtenwarteschlangen > Konfiguration](https://devdocs.magento.com/guides/v2.4/config-guide/mq/manage-message-queues.html#configuration) in unserer Entwicklerdokumentation.
+Ausführliche Anweisungen finden Sie unter [Verwalten von Nachrichtenwarteschlangen > Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-[Übersicht über Nachrichtenwarteschlangen](https://devdocs.magento.com/guides/v2.4/config-guide/mq/rabbitmq-overview.html) in unserer Entwicklerdokumentation.
+[Übersicht über Nachrichtenwarteschlangen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) in unserer Entwicklerdokumentation.

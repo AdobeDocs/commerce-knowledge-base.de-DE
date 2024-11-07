@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass die
 exl-id: 6f0b9f47-1901-4c43-88d8-fd992015d70f
 feature: Cloud, Marketing Tools, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -38,5 +38,5 @@ Wenn Sie die Self-Service-Funktion aktiviert haben, aktualisieren Sie bitte ECE-
 ## Verwandte Informationen
 
 * [Wie Sie böswilligen Traffic für Magento Commerce Cloud auf Fastly-Ebene blockieren](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) in unserer Support-Wissensdatenbank.
-* [Fügen Sie in unserer Entwicklerdokumentation Sitemap und Suchmaschinen-Roboter hinzu](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html).
+* [Fügen Sie in unserer Entwicklerdokumentation Sitemap und Suchmaschinen-Roboter hinzu](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap).
 * [Suchmaschinen-Roboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) in unserem Benutzerhandbuch.

@@ -4,7 +4,7 @@ description: Wenn Sie Adobe Commerce on Cloud Infrastructure Pro-Architekturkund
 exl-id: 4d08eaad-a3ce-4f6c-9c32-58e44e1d6534
 feature: Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Verwaltete Warnhinweise für Adobe Commerce
 
 
-Wir haben wichtige Dashboards und Warnhinweise eingerichtet, die Ihnen dabei helfen, zu verstehen, wann Ihre Site kritische Speicher- und Apdex-Ebenen erreicht (Benutzerzufriedenheit mit Anwendungen und Antwortzeiten von Diensten). Dies kann Ihnen dabei helfen, Maßnahmen zu ergreifen, bevor Sie langsame Reaktionszeiten oder einen Ausfall feststellen. Sie können die Warnhinweise mit den unten aufgeführten Artikeln beheben. Bevor Sie die Warnungen verwenden können, richten Sie zunächst Benachrichtigungskanäle ein. Weitere Informationen finden Sie unter [New Relic-Benachrichtigungskanäle konfigurieren](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) in unserer Entwicklerdokumentation.
+Wir haben wichtige Dashboards und Warnhinweise eingerichtet, die Ihnen dabei helfen, zu verstehen, wann Ihre Site kritische Speicher- und Apdex-Ebenen erreicht (Benutzerzufriedenheit mit Anwendungen und Antwortzeiten von Diensten). Dies kann Ihnen dabei helfen, Maßnahmen zu ergreifen, bevor Sie langsame Reaktionszeiten oder einen Ausfall feststellen. Sie können die Warnhinweise mit den unten aufgeführten Artikeln beheben. Bevor Sie die Warnungen verwenden können, richten Sie zunächst Benachrichtigungskanäle ein. Weitere Informationen finden Sie unter [New Relic-Benachrichtigungskanäle konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >

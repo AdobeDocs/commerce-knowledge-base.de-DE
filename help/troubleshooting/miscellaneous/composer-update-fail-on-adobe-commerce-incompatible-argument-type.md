@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass die Implemen
 exl-id: ba2dd229-29f6-43e2-9467-8bd1bf59e6ef
 feature: Console
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Alle Vor-Ort-Händler von Adobe Commerce 2.3.5 und höher sollten den folgenden 
 
 **Fehlerbehebung in Adobe Commerce in der Cloud-Infrastruktur:**
 
-Führen Sie die oben genannten Befehle aus oder aktualisieren Sie auf die neueste Version der ECE-Tools (ece-tools: 2002.1.7), die am Donnerstag, den 29. Juli verfügbar sein wird. Anweisungen hierzu finden Sie in unserer Entwicklerdokumentation unter [Cloud für Adobe Commerce > Aktualisierung der ece-tools-Version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) .
+Führen Sie die oben genannten Befehle aus oder aktualisieren Sie auf die neueste Version der ECE-Tools (ece-tools: 2002.1.7), die am Donnerstag, den 29. Juli verfügbar sein wird. Anweisungen hierzu finden Sie in unserer Entwicklerdokumentation unter [Cloud für Adobe Commerce > Aktualisierung der ece-tools-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) .
 
 Die vollständige Fehlerbehebung wird in Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 veröffentlicht.
 

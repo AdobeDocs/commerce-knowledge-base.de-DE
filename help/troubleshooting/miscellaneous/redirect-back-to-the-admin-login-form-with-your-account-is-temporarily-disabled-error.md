@@ -4,7 +4,7 @@ description: '"Dieser Artikel bietet die möglichen Lösungen für das Commerce 
 exl-id: 1c7ffa1c-1fb1-4f69-9534-77d1e119318a
 feature: Admin Workspace, Customer Service
 role: Developer
-source-git-commit: f87263cde5aa001f78abc368c949ce150feecb91
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Sie werden zum Anmeldeformular zurückgeleitet, wobei die folgende Fehlermeldung
 ## Lösung
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [[!DNL phpMyAdmin]](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die DB zu. Überprüfen Sie in der Datenbanktabelle `admin_user` für Ihren Administratorbenutzerdatensatz, ob `is_active` auf &quot;`1`&quot; und `lock_expires` auf &quot;`NULL`&quot; gesetzt ist. Setzen Sie diese Werte bei Bedarf zurück.
+1. Verwenden Sie ein Datenbank-Tool wie [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die DB zu. Überprüfen Sie in der Datenbanktabelle `admin_user` für Ihren Administratorbenutzerdatensatz, ob `is_active` auf &quot;`1`&quot; und `lock_expires` auf &quot;`NULL`&quot; gesetzt ist. Setzen Sie diese Werte bei Bedarf zurück.
 
 ## Verwandtes Lesen
 

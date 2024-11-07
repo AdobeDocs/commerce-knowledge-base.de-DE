@@ -4,7 +4,7 @@ description: Probleme mit erweiterten Berichten in Adobe Commerce können mit di
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -19,10 +19,10 @@ Probleme mit erweiterten Berichten in Adobe Commerce können mit diesem Tool zur
 
 +++**Erfüllt Ihre Website die erweiterten Berichterstellungsanforderungen?**
 
-Bei Verwendung der erweiterten Berichterstellung weist die Seite 404 Fehler auf. Erfüllt Ihre Website die [erweiterten Berichterstellungsanforderungen](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements)?
+Bei Verwendung der erweiterten Berichterstellung weist die Seite 404 Fehler auf. Erfüllt Ihre Website die [erweiterten Berichterstellungsanforderungen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
 
 a. YES - Fahren Sie mit [Schritt 2](#step-2) fort.\
-b. NO - Führen Sie die erweiterten Berichterstellungsanforderungen für Ihre Site aus, indem Sie die Schritte unter [Erweiterte Berichterstellungsanforderungen](https://docs.magento.com/user-guide/reports/advanced-reporting.html#requirements) ausführen. Fahren Sie dann mit [Schritt 2](#step-2) fort.
+b. NO - Führen Sie die erweiterten Berichterstellungsanforderungen für Ihre Site aus, indem Sie die Schritte unter [Erweiterte Berichterstellungsanforderungen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) ausführen. Fahren Sie dann mit [Schritt 2](#step-2) fort.
 
 +++
 
@@ -44,7 +44,7 @@ Wenn mehrere Basiswährungen jemals verwendet wurden, können Sie keine erweiter
 
 +++**Verwenden Sie eine aufgespaltete Datenbanklösung?**
 
-Verwenden Sie [split database solution](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html)?
+Verwenden Sie [split database solution](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
 
 a. YES - Verwenden Sie den Patch **MDVA-26831** im Fehler [Erweiterte Berichterstellung 404 für die Aufspaltungsdatenbanklösung](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-404-error-on-split-database-solution.md) und leeren Sie den Cache. Warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es erneut.\
 b. NO - Fahren Sie mit [Schritt 4](#step-4) fort.
@@ -55,10 +55,10 @@ b. NO - Fahren Sie mit [Schritt 4](#step-4) fort.
 
 +++**Ist die erweiterte Berichterstellung aktiviert?**
 
-Überprüfen Sie **Admin** > **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Fortschrittliche Berichterstellung**. Ausführliche Anweisungen finden Sie unter [Erweiterte Berichterstellung: Erweiterte Berichterstellung aktivieren](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
+Überprüfen Sie **Admin** > **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Fortschrittliche Berichterstellung**. Ausführliche Anweisungen finden Sie unter [Erweiterte Berichterstellung: Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
 
 a. YES - Fahren Sie mit [Schritt 5](#step-5) fort.\
-b. NO - [Aktivieren Sie die erweiterte Berichterstellung](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting), speichern und warten Sie 24 Stunden, bis Adobe Commerce und die erweiterte Berichterstellung synchronisiert werden. Überprüfen Sie, ob Ihre Daten jetzt geladen werden. Wenn es das Problem gelöst hat. Wenn nicht mit [Schritt 5](#step-5) fortgefahren wird.
+b. NO - [Aktivieren Sie die erweiterte Berichterstellung](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting), speichern und warten Sie 24 Stunden, bis Adobe Commerce und die erweiterte Berichterstellung synchronisiert werden. Überprüfen Sie, ob Ihre Daten jetzt geladen werden. Wenn es das Problem gelöst hat. Wenn nicht mit [Schritt 5](#step-5) fortgefahren wird.
 
 +++
 
@@ -81,9 +81,9 @@ b. NO - Wenn der Tokenwert NULL ist oder sich kein Datensatz in der Datenbank be
 
 a. JA - Gehen Sie wie folgt vor: 1. Führen Sie die folgende Abfrage aus:\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\. [Deaktivierung und Aktivierung des erweiterten Berichterstellungsmoduls](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) in den Einstellungen und [Neuautorisierung des Tokens](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active).\
+2\. [Deaktivierung und Aktivierung des erweiterten Berichterstellungsmoduls](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [Neuautorisierung des Tokens](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 3\. Warten Sie 24 Stunden, bis Adobe Commerce und die erweiterte Berichterstellung synchronisiert sind. Wenn Sie weiterhin keine Daten in der erweiterten Berichterstellung sehen können, senden Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[\
-b. NO - Wenn die Abfrage nichts zurückgibt, gehen Sie wie folgt vor: 1. [Deaktivierung und Aktivierung des erweiterten Berichterstellungsmoduls](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting) in den Einstellungen und [Neuautorisierung des Tokens](https://docs.magento.com/user-guide/reports/advanced-reporting.html#verify-that-the-integration-is-active).\
+b. NO - Wenn die Abfrage nichts zurückgibt, gehen Sie wie folgt vor: 1. [Deaktivierung und Aktivierung des erweiterten Berichterstellungsmoduls](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [Neuautorisierung des Tokens](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 2\. Warten Sie 24 Stunden, bis Adobe Commerce und die erweiterte Berichterstellung synchronisiert sind. Wenn Sie weiterhin keine Daten in der erweiterten Berichterstellung sehen können, senden Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
 
 +++

@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für das bekannte Probl
 exl-id: 97479615-bf3f-4544-a9c1-8f19ba74318e
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -57,8 +57,8 @@ Unable to apply data patch Magento\Wishlist\Setup\Patch\Data\CleanUpData for mod
 
 In unserer Entwicklerdokumentation:
 
-* [Adobe Commerce im Cloud-Infrastrukturleitfaden](https://devdocs.magento.com/cloud/bk-cloud.html)
-* [Adobe Commerce in der Cloud-Infrastruktur - Upgrade der Adobe Commerce-Version](https://devdocs.magento.com/cloud/project/project-upgrade.html)
-* [Adobe Commerce vor Ort und Magento Open Source - Aktualisierung der Adobe Commerce-Anwendung und -Module](https://devdocs.magento.com/guides/v2.3/comp-mgr/bk-compman-upgrade-guide.html)
-* [Wishlist item configure page](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/product-layouts.html#wishlist-item-configure-page)
-* [Module für erweiterte Berichterstellung](https://devdocs.magento.com/guides/v2.3/advanced-reporting/modules.html)
+* [Adobe Commerce im Cloud-Infrastrukturleitfaden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce in der Cloud-Infrastruktur - Upgrade der Adobe Commerce-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [Adobe Commerce vor Ort und Magento Open Source - Aktualisierung der Adobe Commerce-Anwendung und -Module](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+* [Wishlist item configure page](https://developer.adobe.com/commerce/frontend-core/guide/layouts/product-layouts/#wishlist-item-configure-page)
+* [Module für erweiterte Berichterstellung](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/)

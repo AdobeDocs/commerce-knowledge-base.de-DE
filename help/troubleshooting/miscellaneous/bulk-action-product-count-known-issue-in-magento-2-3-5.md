@@ -4,7 +4,7 @@ description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.3.5-Problem b
 exl-id: 3ede15d4-4c39-442a-8784-2d5e6650fe67
 feature: Products
 role: Developer
-source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 0%
@@ -35,4 +35,4 @@ In Adobe Commerce 2.3.6, das ab 4. Quartal 2020 veröffentlicht werden soll, ist
    * [Bekanntes Problem beim Produktvergleich in Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
    * [Ausgabe der Zahlungsmethode in Adobe Commerce auf Cloud-Infrastruktur und Adobe Commerce vor Ort 2.3.5 und 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
    * [Patch für Amazon Pay-out-Problem in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-   * [Bekannte Probleme mit Adobe Commerce 2.3.5 in unserer Entwicklerdokumentation](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)
+   * [Bekannte Probleme mit Adobe Commerce 2.3.5 in unserer Entwicklerdokumentation](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#known-issues)

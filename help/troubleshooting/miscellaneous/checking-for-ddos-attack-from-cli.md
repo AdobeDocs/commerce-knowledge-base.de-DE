@@ -4,7 +4,7 @@ description: In diesem Artikel wird die Frage besprochen, wie Sie versuchen, üb
 exl-id: dfdef289-cf51-42d7-b3fb-d4d2d3760951
 feature: Observability
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -35,8 +35,8 @@ Auch hier ist zu beachten, dass die Verwendung von Software, die speziell zur Id
 ## Lösungsschritte
 
 1. Überprüfen Sie Ihre Adobe Commerce-Protokolle, um zu sehen, ob neben einem DDoS-Angriff etwas Anderes auftritt. Weitere Informationen finden Sie in den folgenden Artikeln in unserer Entwicklerdokumentation:
-   * [Adobe Commerce- und Magento Open Source-Protokollspeicherorte](https://devdocs.magento.com/guides/v2.3/config-guide/cli/logging.html)
-   * [Adobe Commerce in Cloud-Infrastruktur protokolliert Standorte](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html)
+   * [Adobe Commerce- und Magento Open Source-Protokollspeicherorte](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging)
+   * [Adobe Commerce in Cloud-Infrastruktur protokolliert Standorte](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
 1. Beginnen Sie mit der Verwendung Ihrer CLI, um Ihre aktuellen Internetverbindungen mit dem Befehl `netstat` zu überprüfen: `netstat -na`. Dadurch werden alle aktiven eingerichteten Verbindungen zum Server angezeigt. Hier können Sie feststellen, dass zu viele Verbindungen von derselben IP-Adresse kommen.
 1. Verwenden Sie folgenden Befehl, um Ihre etablierten Verbindungen weiter auf die Verbindungen zu reduzieren, die über Port 80 (den HTTP-Anschluss für Ihre Website) verbunden sind, sodass Sie zu viele Verbindungen von einer IP-Adresse oder IP-Adressgruppe sortieren und erkennen können: `netstat -an | grep :80 | sort`. Sie können denselben Befehl für HTTPS an Port 443 wiederholen: `netstat -an | grep :443 | sort`. Eine andere Möglichkeit besteht darin, den ursprünglichen Befehl auf die Ports 80 und 443 zu erweitern: `netstat -an | egrep ":80|:443" | sort`.
 1. Um zu sehen, ob viele aktive `SYNC_REC` auf dem Server vorhanden sind, verwenden Sie den Befehl:     `netstat -n -p|grep SYN_REC | wc -l`     Normalerweise sind es weniger als 5, aber es könnte bei einem DDoS-Angriff viel höher sein, auch wenn bei einigen Servern eine höhere Zahl ein normaler Zustand sein könnte.
@@ -53,6 +53,6 @@ Wenn Sie feststellen, dass Sie unter einem DDoS-Angriff leiden, hängen die mög
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
-* [S-Schutz](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-fastly.html#ddos-protection)
-* [Verwenden von CLI-Befehlen](https://devdocs.magento.com/guides/v2.3/config-guide/deployment/pipeline/example/cli.html)
-* [Cloud-CLI für Commerce](https://devdocs.magento.com/guides/v2.3/cloud/reference/cli-ref-topic.html)
+* [S-Schutz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
+* [Verwenden von CLI-Befehlen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
+* [Cloud-CLI für Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)

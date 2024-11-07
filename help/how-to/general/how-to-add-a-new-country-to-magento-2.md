@@ -3,7 +3,7 @@ title: Hinzufügen eines neuen Landes zur Adobe Commerce
 description: In diesem Artikel wird beschrieben, wie Sie ein Land hinzufügen, das nicht in Adobe Commerce und der Zend Locale Library vorhanden ist. Dies erfordert Code- und Datenbankänderungen, die Kundenanpassungen gemäß Ihren jeweiligen Vertragsbedingungen darstellen. Bitte beachten Sie, dass die in diesem Artikel enthaltenen Beispielmaterialien "AS IS" ohne jegliche Garantie bereitgestellt werden. Weder Adobe noch verbundene Unternehmen sind verpflichtet, diese Materialien zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen. Hier werden wir die Grundprinzipien beschreiben, was zu tun ist, um dies zu erreichen.
 exl-id: af499add-4966-4a3a-972a-62a34c169a1b
 feature: Build, Cache
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -22,10 +22,10 @@ Sie müssen mit der Entwicklung von Adobe Commerce-Modulen vertraut sein, um ein
 
 Beachten Sie die folgenden Themen in unserer Entwicklerdokumentation, bevor Sie versuchen, ein neues Modul zu erstellen:
 
-* [PHP-Entwicklerhandbuch](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html)
-* [Modulübersicht](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [Neues Modul erstellen](https://devdocs.magento.com/videos/fundamentals/create-a-new-module/)
-* [Modulkonfigurationsdateien](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-files.html)
+* [PHP-Entwicklerhandbuch](https://developer.adobe.com/commerce/php/development/)
+* [Modulübersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Neues Modul erstellen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
+* [Modulkonfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## Erforderliche Informationen
 
@@ -35,7 +35,7 @@ Ein neues Land muss in Adobe Commerce über einen eindeutigen Namen, eine Lände
 
 In diesem Beispiel wird ein neues Modul namens \`ExtraCountries\` mit der folgenden Verzeichnisstruktur erstellt:
 
-(Weitere Informationen zur Modulstruktur finden Sie unter [Modulübersicht](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) in unserer Entwicklerdokumentation).
+(Weitere Informationen zur Modulstruktur finden Sie unter [Modulübersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/) in unserer Entwicklerdokumentation).
 
 <pre><ExtraCountries>
  |
@@ -97,7 +97,7 @@ In dieser XML-Datei wird eine neue Modulkonfiguration definiert. Die folgenden K
 </config>
 ```
 
-Weitere Informationen zu den Modulkonfigurationsdateien finden Sie im [PHP-Entwicklerhandbuch > Konfigurationsdateien definieren](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) in unserer Entwicklerdokumentation.
+Weitere Informationen zu den Modulkonfigurationsdateien finden Sie im [PHP-Entwicklerhandbuch > Konfigurationsdateien definieren](https://developer.adobe.com/commerce/php/development/build/required-configuration-files/) in unserer Entwicklerdokumentation.
 
 Beachten Sie, dass diese Änderungen optional sind und sich nur auf die Standardzugehörigkeit des neuen Landes zu den Listen &quot;Länder zulassen&quot;, &quot;Postleitzahl ist optional für&quot;und &quot;Länder der Europäischen Union&quot;auswirken. Wenn diese Datei aus der Modulstruktur übersprungen wird, wird weiterhin ein neues Land hinzugefügt, es muss jedoch manuell auf der Einstellungsseite **Admin** > **Geschäfte** > *Einstellungen* > **Konfiguration** > **Allgemein** > **Länderoptionen** konfiguriert werden.
 
@@ -123,7 +123,7 @@ Beispiel für `di.xml`
 
 In der Modulregistrierungsdatei müssen wir die Abhängigkeit für das Modul &quot;Adobe Commerce Directory&quot; angeben, um sicherzustellen, dass das Modul &quot;Extra Countries&quot; registriert und nach dem Verzeichnismodul ausgeführt wird.
 
-Weitere Informationen zu Modulabhängigkeiten finden Sie unter [Verwalten von Modulabhängigkeiten](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) in unserer Entwicklerdokumentation.
+Weitere Informationen zu Modulabhängigkeiten finden Sie unter [Verwalten von Modulabhängigkeiten](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies) in unserer Entwicklerdokumentation.
 
 Beispiel für `module.xml`
 
@@ -185,7 +185,7 @@ class TranslatedListsPlugin
 
 Dieser Datenpatch wird während der Installation/Aktualisierung von Adobe Commerce ausgeführt und fügt einen neuen Länderdatensatz zur Datenbank hinzu.
 
-Weitere Informationen zu Daten-Patches finden Sie unter [Entwickeln von Daten- und Schema-Patches](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) in unserer Entwicklerdokumentation.
+Weitere Informationen zu Daten-Patches finden Sie unter [Entwickeln von Daten- und Schema-Patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) in unserer Entwicklerdokumentation.
 
 Im folgenden Beispiel sehen Sie, dass das Array `$data` der Methode `apply()` Länderkennungen, ISO2- und ISO3-Codes für das neue Land enthält und diese Daten in die Datenbank eingefügt werden.
 
@@ -266,7 +266,7 @@ class AddDataForAbstractCountry implements DataPatchInterface, PatchVersionInter
 
 ### ExtraCountries/registration.php
 
-Dies ist ein Beispiel für die Datei registration.php . Weitere Informationen zur Modulregistrierung finden Sie im [PHP-Entwicklerhandbuch > Registrieren Ihrer Komponente](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) in unserer Entwicklerdokumentation.
+Dies ist ein Beispiel für die Datei registration.php . Weitere Informationen zur Modulregistrierung finden Sie im [PHP-Entwicklerhandbuch > Registrieren Ihrer Komponente](https://developer.adobe.com/commerce/php/development/build/component-registration/) in unserer Entwicklerdokumentation.
 
 ```php
 <?php
@@ -279,7 +279,7 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VendorName_ExtraCountr
 
 Dies ist ein Beispiel für die Datei &quot;composer.json&quot;.
 
-Weitere Informationen zu Composer.json finden Sie im [PHP-Entwicklerhandbuch > Die Datei &quot;Composer.json&quot;](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html) in unserer Entwicklerdokumentation.
+Weitere Informationen zu Composer.json finden Sie im [PHP-Entwicklerhandbuch > Die Datei &quot;Composer.json&quot;](https://developer.adobe.com/commerce/php/development/build/composer-integration/) in unserer Entwicklerdokumentation.
 
 ```json
 {
@@ -310,7 +310,7 @@ Weitere Informationen zu Composer.json finden Sie im [PHP-Entwicklerhandbuch > D
 
 ## Modulinstallation
 
-Informationen zum Installieren des Moduls finden Sie unter [Modulspeicherorte](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) in unserer Entwicklerdokumentation.
+Informationen zum Installieren des Moduls finden Sie unter [Modulspeicherorte](https://developer.adobe.com/commerce/php/architecture/modules/overview/#module-locations) in unserer Entwicklerdokumentation.
 
 Sobald sich das Modulverzeichnis an einem richtigen Speicherort befindet, führen Sie `bin/magento setup:upgrade` aus, um die Datenpatches anzuwenden und das Übersetzungs-Plug-in zu registrieren.
 

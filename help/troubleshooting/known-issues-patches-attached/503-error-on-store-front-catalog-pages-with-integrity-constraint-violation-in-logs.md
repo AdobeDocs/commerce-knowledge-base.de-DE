@@ -4,7 +4,7 @@ description: Dieser Artikel enthält einen Patch für das bekannte Adobe Commerc
 exl-id: ad363744-756a-48b9-ae11-58642e0ca6a4
 feature: Catalog Management, Logs
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dieser Artikel enthält einen Patch als Problemumgehung, aber das Problem wurde in Adobe Commerce in der Cloud-Infrastruktur-Version 2.3.3 dauerhaft behoben. Es wird empfohlen, ein Upgrade auf Version 2.3.3 durchzuführen. Führen Sie die Schritte unter [Aktualisieren der Adobe Commerce-Version](https://devdocs.magento.com/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation aus.
+>Dieser Artikel enthält einen Patch als Problemumgehung, aber das Problem wurde in Adobe Commerce in der Cloud-Infrastruktur-Version 2.3.3 dauerhaft behoben. Es wird empfohlen, ein Upgrade auf Version 2.3.3 durchzuführen. Führen Sie die Schritte unter [Aktualisieren der Adobe Commerce-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) in unserer Entwicklerdokumentation aus.
 
 Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.0 in Bezug auf den nicht zugänglichen Speicher von Front-Catalog-Seiten. Die Fehlermeldung ähnelt dem folgenden im Protokoll: *Verletzung der Integrationsbeschränkung: 1062 Doppelter Eintrag &#39;%entry%&#39; für Schlüssel &#39;PRIMÄR&#39;, Abfrage lautete: INSERT INTO \`search_tmp\_%number%*.
 
@@ -78,6 +78,6 @@ Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how
 
 * [Speicherort von Protokolldateien für Adobe Commerce in der Starter-Planarchitektur der Cloud-Infrastruktur](/help/how-to/general/log-locations-directories-for-starter-plan.md) in unserer Support-Wissensdatenbank.
 * [Speicherort von Protokolldateien für Adobe Commerce in der Cloud Infrastructure Pro-Planarchitektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) in unserer Support-Wissensdatenbank.
-* [Speicherort der Protokolldateien für Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) in unserer Entwicklerdokumentation.
+* [Speicherort der Protokolldateien für Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
 
 ## Attached Files

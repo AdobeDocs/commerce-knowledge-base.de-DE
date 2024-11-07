@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung, wie Sie eine Cache-Invalidierun
 exl-id: 7cb6a39f-923b-4acc-965d-23cf7b52c25a
 feature: Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -67,4 +67,4 @@ In der Regel wird der Cache durch Folgendes ungültig gemacht:
 ## Empfehlung
 
 1. Vermeiden Sie das Leeren des Cache aus der Commerce-CLI.
-1. Konfigurieren Sie die Indexer auf **Aktualisieren nach Zeitplan** anstelle von **Aktualisieren im Speichermodus** , da letztere die vollständige Neuindizierung der Trigger durchführen. Weitere Informationen finden Sie unter [Verwalten der Indexer > Konfigurieren von Indexern](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) in unserer Entwicklerdokumentation.
+1. Konfigurieren Sie die Indexer auf **Aktualisieren nach Zeitplan** anstelle von **Aktualisieren im Speichermodus** , da letztere die vollständige Neuindizierung der Trigger durchführen. Weitere Informationen finden Sie unter [Verwalten der Indexer > Konfigurieren von Indexern](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) in unserer Entwicklerdokumentation.

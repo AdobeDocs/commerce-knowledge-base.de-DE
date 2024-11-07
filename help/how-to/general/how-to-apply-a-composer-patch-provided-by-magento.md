@@ -3,7 +3,7 @@ title: Anwenden eines von Adobe bereitgestellten Composer-Patches
 description: In diesem Artikel wird beschrieben, wie Sie einen Composer-Patch für Adobe Commerce vor Ort, Adobe Commerce auf Cloud-Infrastruktur und Magento Open Source anwenden.
 exl-id: a9301ad8-1d4b-49f5-b679-758624928219
 feature: Cache
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -36,7 +36,7 @@ In diesem Artikel wird beschrieben, wie Sie einen Composer-Patch für Adobe Comm
    git push origin
    ```
 
-Weitere Informationen zum Anwenden von Patches auf Cloud-Projekte finden Sie unter [Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+Weitere Informationen zum Anwenden von Patches auf Cloud-Projekte finden Sie unter [Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ### Anwenden eines Composer-Patches für Adobe Commerce vor Ort und Magento Open Source {#commerce}
 

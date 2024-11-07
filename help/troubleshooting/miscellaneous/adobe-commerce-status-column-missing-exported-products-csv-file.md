@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, wenn Sie die S
 exl-id: 3cbe1e6c-fc73-4331-add7-1ebcb28a4580
 feature: Data Import/Export, Products
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -50,5 +50,5 @@ Das Statusattribut des Produkts wurde in der CSV-Datei umbenannt. Dies ist nun d
 
 ## Verwandtes Lesen
 
-* [Arbeiten mit CSV-Dateien](https://docs.magento.com/user-guide/system/data-csv.html) in unserem Benutzerhandbuch.
-* [Referenz zu Produktexport-Attributen](https://docs.magento.com/user-guide/system/data-attributes-product.html) in unserem Benutzerhandbuch.
+* [Arbeiten mit CSV-Dateien](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
+* [Referenz zu Produktexport-Attributen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.

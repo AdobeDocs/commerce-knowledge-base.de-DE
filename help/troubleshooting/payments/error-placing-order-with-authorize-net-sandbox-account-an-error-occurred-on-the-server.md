@@ -1,10 +1,10 @@
 ---
 title: Fehler beim Platzieren der Bestellung bei Authorize.net Sandbox-Konto (Auf dem Server ist ein Fehler aufgetreten)
-description: In diesem Artikel wird die Fehlermeldung "*Auf dem Server ist ein Fehler aufgetreten*"bei der Auftragserteilung mit Authorize.Net Direct Post korrigiert.
+description: Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung "*Auf dem Server ist ein Fehler aufgetreten*", wenn Sie eine Bestellung mit Authorize.Net Direct Post aufgeben.
 exl-id: 764a550a-3373-483c-843d-d8c848dcee35
 feature: Compliance, Console, Customer Service, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Fehler beim Platzieren der Bestellung bei Authorize.net Sandbox-Konto (Auf dem Server ist ein Fehler aufgetreten)
 
-Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Ein Fehler ist auf dem Server*&quot;beim Platzieren einer Bestellung mit Authorize.Net Direct Post.
+Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Ein Fehler ist auf dem Server*&quot;beim Platzieren einer Bestellung mit Authorize.Net Direct Post aufgetreten.
 
 >[!WARNING]
 >
 >**Hinweis zur Einstellung der Verwendung**
 >
->Aufgrund der Zahlungsdienstrichtlinie [PSD2](https://docs.magento.com/user-guide/v2.3/stores/compliance-payment-services-directive.html) und der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net veraltet wird und zukünftig nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen Ihnen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zur entsprechenden [Commerce Marketplace-Erweiterung](https://marketplace.magento.com/extensions.html) zu wechseln.
+>Aufgrund der Zahlungsdienstrichtlinie [PSD2](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) und der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net veraltet wird und zukünftig nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen Ihnen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zur entsprechenden [Commerce Marketplace-Erweiterung](https://marketplace.magento.com/extensions.html) zu wechseln.
 >
 >**Diese Integration wird aus der Adobe Commerce-Version 2.4.0 entfernt und ist von den aktuellen Versionen 2.3 entfernt.**
 >
@@ -27,7 +27,7 @@ Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Ein Fe
 
 ## Problem
 
-Wenn Sie eine Bestellung mit dem Sandbox-Konto [Authorize.Net Direct Post](https://docs.magento.com/user-guide/v2.3/payment/authorize-net-direct-post.html) aufgeben, wird eine Fehlermeldung angezeigt:
+Wenn Sie eine Bestellung mit dem Sandbox-Konto [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) aufgeben, wird eine Fehlermeldung angezeigt:
 
 >>
 &quot;Auf dem Server ist ein Fehler aufgetreten. Versuchen Sie bitte, die Bestellung erneut aufzugeben.&quot;

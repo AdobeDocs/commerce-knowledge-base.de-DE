@@ -3,7 +3,7 @@ title: Neuanordnen von Cloud-Verzweigungen in Adobe Commerce
 description: In diesem Artikel finden Sie die Schritte, die Sie unternehmen können, um Cloud-Verzweigungen in Adobe Commerce neu anzuordnen, wenn sie nicht gemäß der richtigen Hierarchie organisiert sind. Wenn die Verzweigungen nicht in der richtigen Hierarchie angeordnet sind, können Sie nicht mit der richtigen übergeordneten Verzweigung zusammenführen. Dies erfolgt über die vorhandene übergeordnete Verzweigung.
 exl-id: 4fc0de96-da66-4634-a38a-6a1536855f8f
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
@@ -34,7 +34,7 @@ So ordnen Sie Cloud-Verzweigungen neu an:
 1. Führen Sie den folgenden Befehl für die Verzweigungen aus, die verschoben werden müssen:
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-Hinweis: Sie können die übergeordnete Verzweigung beim Erstellen einer neuen Verzweigung angeben. Anweisungen hierzu finden Sie in unserer Entwicklerdokumentation unter [Erste Schritte - Erstellen von Zweigen](https://devdocs.magento.com/cloud/env/environments-start.html#getstarted).
+Hinweis: Sie können die übergeordnete Verzweigung beim Erstellen einer neuen Verzweigung angeben. Anweisungen hierzu finden Sie in unserer Entwicklerdokumentation unter [Erste Schritte - Erstellen von Zweigen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches).
 
 Mit dem Befehl `branch <environment-name> <parent-environment-ID>` magento-cloud-Umgebung können Sie eine neue Umgebungsverzweigung erstellen.
 
@@ -42,4 +42,4 @@ Es kann einige zusätzliche Zeit dauern, einen neuen Umgebungsverzweig zu erstel
 
 ## Verwandtes Lesen
 
-[Verwalten Sie Zweige mit dem  [!DNL CLI]](https://devdocs.magento.com/cloud/env/environments-start.html) in unserer Entwicklerdokumentation.
+[Verwalten Sie Zweige mit dem  [!DNL CLI]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in unserer Entwicklerdokumentation.

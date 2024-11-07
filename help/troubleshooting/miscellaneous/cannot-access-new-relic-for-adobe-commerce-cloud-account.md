@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für Fälle, in denen Sie nicht 
 exl-id: bafe2dd9-8a16-4249-b814-7e421e25e828
 feature: Cloud, Observability, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -33,4 +33,4 @@ Wenden Sie sich an den New Relic-Kontoinhaber und bitten Sie darum, Sie in [!DNL
 
 ## Verwandtes Lesen
 
-[Verwalten Sie [!DNL New Relic] account](https://devdocs.magento.com/cloud/project/new-relic.html#manage-new-relic-account) in unserer Entwicklerdokumentation.
+[Verwalten Sie [!DNL New Relic] account](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation.

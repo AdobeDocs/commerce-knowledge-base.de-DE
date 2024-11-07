@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Empfehlungen dazu, wie Sie Ihre Adobe Comme
 exl-id: 144df36b-6305-4e57-b813-46bbb0ddedda
 feature: Cache, Categories, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Wenn die Indexseite eine niedrige Trefferrate aufweist, können Sie sie beheben,
 
 Überprüfen der gesamten Cache-Trefferrate:
 
-1. [Schnelle Anmeldeinformationen](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) für Ihre Adobe Commerce in der Cloud-Infrastrukturumgebung abrufen.
+1. [Schnelle Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) für Ihre Adobe Commerce in der Cloud-Infrastrukturumgebung abrufen.
 1. Führen Sie den folgenden cURL-Befehl für Linux/macOS aus, um die Trefferrate für Ihre Site in den letzten 30 Minuten zu überprüfen, wobei Sie die Werte für Ihre Fastly-Anmeldedaten ersetzen:
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
@@ -82,8 +82,8 @@ Eine Trefferrate unter 0,85 oder 85 % kann auf ein Site-Konfigurationsproblem hi
 
 1. Bestimmen Sie mithilfe der Statistiken zur stündlichen und täglichen Trefferrate, wann die Trefferrate zu sinken begann. Wenn die Trefferrate plötzlich um den Zeitpunkt abstürzte, zu dem Sie eine Änderung auf Ihrer Site vorgenommen haben, sollten Sie erwägen, die Änderung so lange zurückzufahren, bis die Site-Last heruntergefahren ist.
 1. Überprüfen Sie die Konfiguration in Commerce Admin unter **Stores** > **Konfiguration** > Erweitert > **System** > **Gesamter Seiten-Cache**. Stellen Sie sicher, dass der Wert **TTL für den öffentlichen Inhalt** nicht zu niedrig eingestellt ist.
-1. Vergewissern Sie sich, dass Sie [die VCL-Snippets hochgeladen haben](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
-1. Wenn Sie benutzerdefinierte VCL-Snippets verwenden, debuggen Sie sie zur korrekten Verwendung der Aktionen &quot;pass&quot;oder &quot;pipe&quot;: Sie sollten sorgfältig und zumindest mit einer bestimmten Bedingung verwendet werden. Weitere Tipps finden Sie unter [Benutzerdefinierte Fastly VCL-Snippets](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) in unserer Entwicklerdokumentation.
+1. Vergewissern Sie sich, dass Sie [die VCL-Snippets hochgeladen haben](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
+1. Wenn Sie benutzerdefinierte VCL-Snippets verwenden, debuggen Sie sie zur korrekten Verwendung der Aktionen &quot;pass&quot;oder &quot;pipe&quot;: Sie sollten sorgfältig und zumindest mit einer bestimmten Bedingung verwendet werden. Weitere Tipps finden Sie unter [Benutzerdefinierte Fastly VCL-Snippets](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) in unserer Entwicklerdokumentation.
 
 ### Schritt 3: Identifizieren Sie die Websites, die die hohe Server-Last verursachen.
 

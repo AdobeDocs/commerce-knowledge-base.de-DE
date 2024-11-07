@@ -3,7 +3,7 @@ title: Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Kre
 description: In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbank-Entität (DB) (Bestellung, Rechnung, Credit Memo usw.) in einem bestimmten Adobe Commerce-Store mithilfe der SQL-Anweisung "ALTER TABLE"ändern.
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -18,7 +18,7 @@ In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Com
 
 * Adobe Commerce vor Ort: 2.x.x
 * Adobe Commerce in Cloud-Infrastruktur: 2.x.x
-* MySQL: beliebige [unterstützte Version](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements-tech.html#database)
+* MySQL: beliebige [unterstützte Version](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## Wann müssen Sie die Inkrement-ID ändern (Fälle)?
 
@@ -34,7 +34,7 @@ In diesen Fällen müssen Sie möglicherweise die Inkrement-ID für neue DB-Enti
 ## Erforderliche Schritte
 
 1. Suchen Sie Stores und Entitäten, für die die neue Inkrement-ID geändert werden soll.
-1. [Verbinden Sie](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) mit Ihrer MySQL-DB. Für Adobe Commerce in der Cloud-Infrastruktur müssen Sie zunächst [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) eingeben.
+1. [Verbinden Sie](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) mit Ihrer MySQL-DB. Für Adobe Commerce in der Cloud-Infrastruktur müssen Sie zunächst [SSH in Ihrer Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) eingeben.
 1. Überprüfen Sie den aktuellen Wert für auto\_increment für die Entitätssequenztabelle mithilfe der folgenden Abfrage:
 
 ```sql
@@ -53,7 +53,7 @@ Wenn der Wert der Spalte &quot;`auto_increment`&quot;den Wert &quot;*1234*&quot;
 
 ### Verwandte Dokumentation
 
-* [Richten Sie eine Remote-MySQL-Datenbankverbindung ein](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/mysql_remote.html) in unserer Entwicklerdokumentation.
+* [Richten Sie eine Remote-MySQL-Datenbankverbindung ein](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) in unserer Entwicklerdokumentation.
 
 ## Entität aktualisieren, um die Inkrement-ID zu ändern
 

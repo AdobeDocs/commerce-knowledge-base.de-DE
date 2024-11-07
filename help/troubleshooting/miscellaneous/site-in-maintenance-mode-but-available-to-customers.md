@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Korrektur für den Fall, dass der Wart
 exl-id: 61b81fbd-a382-44b5-94e9-5b6d72f11349
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -45,4 +45,4 @@ Seiten werden weiterhin zwischengespeichert, sodass die Wartungsseite nicht ange
 
 ## Verwandtes Lesen
 
-[Aktivieren oder deaktivieren Sie den Wartungsmodus](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) in unserer Entwicklerdokumentation.
+[Aktivieren oder deaktivieren Sie den Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.

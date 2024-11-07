@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, bei dem ein Be
 exl-id: 02104731-6666-47a6-abc6-215812f09915
 feature: Configuration
 role: Developer
-source-git-commit: 831a928dbe8fd6b37f3fe9ad5dc35ee80e11a578
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Der Benutzer erhält bei der Validierung der Fastly-Anmeldedaten einen Fehler.
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass Sie über die richtige Fastly-Dienst-ID und das richtige API-Token verfügen, und versuchen Sie erneut, die Überprüfung durchzuführen. Detaillierte Anweisungen finden Sie unter [Testen der Fastly-Anmeldedaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
+1. Vergewissern Sie sich, dass Sie über die richtige Fastly-Dienst-ID und das richtige API-Token verfügen, und versuchen Sie erneut, die Überprüfung durchzuführen. Detaillierte Anweisungen finden Sie unter [Testen der Fastly-Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
 1. Wenn die Überprüfung der Anmeldeinformationen fehlschlägt, führen Sie den folgenden curl-Befehl aus, um den Status des Dienstes zu bestätigen:
 
    ```curl
@@ -45,6 +45,6 @@ Der Benutzer erhält bei der Validierung der Fastly-Anmeldedaten einen Fehler.
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
-* [Cloud für Adobe Commerce > Schnell > Fastly-Service-Konto und -Anmeldedaten](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-service-account-and-credentials)
+* [Cloud für Adobe Commerce > Schnell > Fastly-Service-Konto und -Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud für Adobe Commerce > Schnelles Einrichten > Testen der Fastly-Anmeldedaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)
+* [Cloud für Adobe Commerce > Schnelles Einrichten > Testen der Fastly-Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

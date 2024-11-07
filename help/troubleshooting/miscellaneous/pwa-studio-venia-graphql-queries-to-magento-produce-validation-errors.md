@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Empfehlungen zur Lösung des Problems, bei 
 exl-id: ba268945-2a10-4af5-8089-cde21f0687bd
 feature: GraphQL
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -42,9 +42,9 @@ Dadurch wird ein Kompatibilitätsbericht angezeigt. Wenn Sie Inkompatibilitäten
 Anweisungen zum Aktualisieren finden Sie in der folgenden Dokumentation:
 
 * Suchen Sie für PWA Studio-Upgrades im Abschnitt &quot;Upgrade von einer früheren Version&quot;der [PWA-Versionshinweise](https://github.com/magento/pwa-studio/releases/) nach der Version, auf die Sie ein Upgrade durchführen müssen.
-* [Aktualisieren Sie Adobe Commerce auf die Cloud-Infrastrukturversion](https://devdocs.magento.com/cloud/project/project-upgrade.html) in unserer Entwicklerdokumentation
-* [Aktualisieren Sie Adobe Commerce lokal (installiert mit &quot;Composer create-project&quot;oder &quot;archive&quot;)](https://devdocs.magento.com/guides/v2.3/comp-mgr/cli/cli-upgrade.html) in unserer Entwicklerdokumentation
-* [Aktualisieren Sie Adobe Commerce lokal (installiert durch Klonen von Adobe Commerce Repo)](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/dev_update-magento.html) in unserer Entwicklerdokumentation
+* [Aktualisieren Sie Adobe Commerce auf die Cloud-Infrastrukturversion](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) in unserer Entwicklerdokumentation
+* [Aktualisieren Sie Adobe Commerce lokal (installiert mit &quot;Composer create-project&quot;oder &quot;archive&quot;)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) in unserer Entwicklerdokumentation
+* [Aktualisieren Sie Adobe Commerce lokal (installiert durch Klonen von Adobe Commerce Repo)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/developer/git-installs) in unserer Entwicklerdokumentation
 
 ## Verwandtes Lesen
 

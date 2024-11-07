@@ -4,7 +4,7 @@ description: In diesem Artikel werden einige häufige MySQL-Probleme (langsame A
 exl-id: cae02e4f-d8cb-4074-abac-24ead22bdc07
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -80,5 +80,5 @@ Dadurch lässt sich feststellen, ob der MySQL-Server aktiv ist und keine blockie
 
 * [MySQL-Syntax der Verarbeitungsliste anzeigen](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) in dev.mysql.com.
 * [MySQL Kill Syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html) in dev.mysql.com.
-* [Sicherheit, Leistung und Datenverarbeitung](https://devdocs.magento.com/guides/v2.3/ext-best-practices/extension-coding/security-performance-data-bp.html) in unserer Entwicklerdokumentation.
-* [MySQL-Hilfe](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/mysql.html) in unserer Entwicklerdokumentation.
+* [Sicherheit, Leistung und Datenverarbeitung](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) in unserer Entwicklerdokumentation.
+* [MySQL-Hilfe](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) in unserer Entwicklerdokumentation.

@@ -1,10 +1,10 @@
 ---
-title: "MDVA-40619: Hierarchieänderungen unterbrechen die Inline-Bearbeitung der CMS-Seite und verursachen 500 Fehler."
-description: Der Patch MDVA-40619 behebt das Problem, dass die CMS-Seitenhierarchie die CMS-Seite inline bearbeiten und "500-Fehler"ausgeben kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-40619. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+title: "MDVA-40619: Hierarchieänderungen unterbrechen die Inline-Bearbeitung der CMS-Seite und verursachen 500-Fehler."
+description: Der Patch MDVA-40619 behebt das Problem, dass die CMS-Seitenhierarchie die Inline-Bearbeitung der CMS-Seite unterbricht und "500-Fehler"auslöst. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-40619. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: c003d845-1ba0-49c0-9f1a-a4b0ec00f30c
 feature: CMS
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40619: Hierarchieänderungen unterbrechen die Inline-Bearbeitung der CMS-Seite und verursachen 500 Fehler
 
-Der Patch MDVA-40619 behebt das Problem, dass die CMS-Seitenhierarchie die CMS-Seite inline bearbeiten und &quot;500-Fehler&quot;ausgeben kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-40619. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+Der Patch MDVA-40619 behebt das Problem, dass die CMS-Seitenhierarchie die Inline-Bearbeitung der CMS-Seite unterbricht und &quot;500-Fehler&quot;auslöst. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-40619. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Der Patch MDVA-40619 behebt das Problem, dass die CMS-Seitenhierarchie die CMS-S
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -59,8 +59,8 @@ Sie erhalten den folgenden Fehler:
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

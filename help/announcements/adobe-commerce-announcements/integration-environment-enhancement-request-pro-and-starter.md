@@ -4,7 +4,7 @@ description: Wenn Sie Adobe Commerce on Cloud Infrastructure Pro Plan-Architektu
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Wenn Sie Adobe Commerce on Cloud Infrastructure Pro Plan-Architekturkunde sind u
 1. Der Händler muss [ein Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), das eine Aktualisierung auf erweiterte Integrationsumgebungen anfordert, und dabei den Kontaktgrund &quot;*Eine Änderung der Cloud-Konfiguration anfordern*&quot; verwenden.
 1. Das Adobe Customer Engineering-Team bestätigt die Anzahl der Integrationsumgebungen und beginnt mit der Änderung.
 1. Der Händler wird im Ticket benachrichtigt, wenn das Upgrade abgeschlossen ist.
-1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Zusammenführen einer Verzweigung](https://devdocs.magento.com/cloud/env/environments-start.html#merge) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch bei Ausführung: <pre>Git-Push-Herkunft <branch-name></pre>
+1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Zusammenführen einer Verzweigung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch bei Ausführung: <pre>Git-Push-Herkunft <branch-name></pre>
 
 Die verbesserte Leistung weist auf eine erfolgreiche Aktualisierung auf die erweiterten Integrationsumgebungen hin.
 
@@ -43,7 +43,7 @@ Die verbesserte Leistung weist auf eine erfolgreiche Aktualisierung auf die erwe
 1. Der Händler muss [ein Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und eine Aktualisierung auf erweiterte Integrationsumgebungen anfordern. Verwenden Sie dazu den Kontaktgrund *&quot;Cloud-Konfigurationsänderung anfordern&quot;* - **Ihre Staging-Umgebung ist eine benannte Integrationsumgebung**.
 1. Das Adobe Customer Engineering-Team bestätigt die Anzahl der Integrationsumgebungen und beginnt mit der Änderung.
 1. Der Händler wird im Ticket benachrichtigt, wenn das Upgrade abgeschlossen ist.
-1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Zusammenführen einer Verzweigung](https://devdocs.magento.com/cloud/env/environments-start.html#merge) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch bei Ausführung: <pre>Git-Push-Herkunft <branch-name></pre>
+1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Zusammenführen einer Verzweigung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch bei Ausführung: <pre>Git-Push-Herkunft <branch-name></pre>
 
 Die verbesserte Leistung weist auf eine erfolgreiche Aktualisierung auf die erweiterten Integrationsumgebungen hin.
 

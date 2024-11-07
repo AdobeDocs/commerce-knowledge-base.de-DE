@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass der Datenban
 exl-id: 6051cea1-8292-4a81-8908-eb516cb4a32b
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -42,7 +42,7 @@ web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Sie müssen mehr Speicherplatz für die Datenbank in Ihrem `services.yaml` zuweisen und bereitstellen, wenn Sie Speicherplatz nicht verwendet haben. Anweisungen finden Sie unter [Service Disk Space](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
+Sie müssen mehr Speicherplatz für die Datenbank in Ihrem `services.yaml` zuweisen und bereitstellen, wenn Sie Speicherplatz nicht verwendet haben. Anweisungen finden Sie unter [Service Disk Space](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
 
 Hinweis: Im Pro-Architekturplan können Sie den zugewiesenen Speicherplatz auf Ihrer Partition überprüfen, indem Sie den folgenden Befehl ausführen: `df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Verwandtes Lesen
 
-[Verwalten des Festplattenspeichers](https://devdocs.magento.com/cloud/project/manage-disk-space.html) in unserer Entwicklerdokumentation
+[Verwalten des Festplattenspeichers](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserer Entwicklerdokumentation

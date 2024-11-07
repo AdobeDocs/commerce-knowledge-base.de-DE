@@ -4,7 +4,7 @@ description: Klicken Sie auf jede Frage, um die Antwortdetails bei jedem Schritt
 exl-id: 10a2313e-cc82-4ffc-9247-624884f3e165
 feature: Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
@@ -80,7 +80,8 @@ b. NO - Fahren Sie mit [Schritt 7](#step-7) fort.
 
 +++**Haben Sie Elasticsearch-Fehler?**
 
-a. YES - Fahren Sie mit den Schritten zur Überprüfung von Elasticsearch](https://developer.adobe.com/commerce/php/module-reference/module-elasticsearch/) fort.[\
+a. YES - Fahren Sie mit den Schritten zur Überprüfung von Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) fort.
+[
 b. NO - Fahren Sie mit [Schritt 8](#step-8) fort.
 
 +++
@@ -116,7 +117,7 @@ b. NO - Fahren Sie mit [Schritt 11](#step-11) fort.
 
 +++**Haben Sie Redis-Fehler?**
 
-a. YES - Fahren Sie mit den Schritten fort, um [sicherzustellen, dass [!DNL Redis] ausgeführt wird](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/redis#troubleshooting-redis), und um [[!DNL Redis] Fehlerbehebung](https://redis.io/topics/problems) durchzuführen.\
+a. YES - Fahren Sie mit den Schritten fort, um [sicherzustellen, dass [!DNL Redis] ausgeführt wird](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection), und um [[!DNL Redis] Fehlerbehebung](https://redis.io/topics/problems) durchzuführen.\
 b. NO - Fahren Sie mit [Schritt 12](#step-12) fort.
 
 +++

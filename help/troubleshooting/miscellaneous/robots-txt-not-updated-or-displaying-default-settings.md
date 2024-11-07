@@ -4,7 +4,7 @@ description: Der Artikel bietet eine Lösung für Fälle, in denen Sie "robots.t
 exl-id: 629b1247-9282-49f9-ada3-a804ddbaa0f5
 feature: Configuration
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -42,8 +42,8 @@ Die Indizierung durch Suchmaschinen ist deaktiviert.
 
 ## Lösung
 
-Aktivieren Sie die Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung durch Suchmaschine](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) in unserer Entwicklerdokumentation.
+Aktivieren Sie die Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung durch Suchmaschine](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* [Fügen Sie in unserer Entwicklerdokumentation Sitemap und Suchmaschinen-Roboter hinzu](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html).
+* [Fügen Sie in unserer Entwicklerdokumentation Sitemap und Suchmaschinen-Roboter hinzu](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap).

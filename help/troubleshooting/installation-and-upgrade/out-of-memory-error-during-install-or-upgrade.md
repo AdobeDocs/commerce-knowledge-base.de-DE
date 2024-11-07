@@ -4,7 +4,7 @@ description: In diesem Artikel werden Lösungen für den Fehler bei der Installa
 exl-id: c0ed8228-9357-4a3b-a102-1119386ea52a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -40,7 +40,7 @@ kann auch in der Befehlszeile angezeigt werden.
 
 ## Lösung {#solution}
 
-Wir empfehlen Ihnen in unserer Entwicklerdokumentation [2 GB Arbeitsspeicher für PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) zuzuweisen, um sicherzustellen, dass Ihre Installation oder Aktualisierung erfolgreich ist.
+Wir empfehlen Ihnen in unserer Entwicklerdokumentation [2 GB Arbeitsspeicher für PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) zuzuweisen, um sicherzustellen, dass Ihre Installation oder Aktualisierung erfolgreich ist.
 
 Wenn Sie dies bereits getan haben, erstellen Sie eine Swap-Datei auf Ihrem Computer. Ein Linux-Computer verwendet *Swap-Speicherplatz* , wenn er mehr Speicherressourcen benötigt und der RAM voll ist. Der Austauschraum wird für inaktive Seiten im Speicher verwendet.
 

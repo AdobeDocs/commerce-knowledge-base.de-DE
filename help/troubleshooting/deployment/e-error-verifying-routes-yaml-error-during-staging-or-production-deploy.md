@@ -4,7 +4,7 @@ description: '"Dieser Artikel bietet eine Lösung für das Adobe Commerce-Proble
 exl-id: 7f58591a-5581-46cd-984d-09ac2c0f3903
 feature: Deploy, Routes, Staging
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Um die blockierte Bereitstellung aufzulösen, aktualisieren Sie die Datei &quot;
 
 1. С Sie Ihre Änderungen verschieben und verschieben, um Ihr Projekt erneut bereitzustellen.
 
-Detaillierte Anweisungen zum Aktualisieren der Routenkonfiguration finden Sie unter [Cloud für Adobe Commerce > Routen konfigurieren](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_routes.html) in unserer Entwicklerdokumentation.
+Detaillierte Anweisungen zum Aktualisieren der Routenkonfiguration finden Sie unter [Cloud für Adobe Commerce > Routen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >

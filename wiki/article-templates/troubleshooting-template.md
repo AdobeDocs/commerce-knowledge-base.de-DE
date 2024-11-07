@@ -1,7 +1,7 @@
 ---
 title: '...'
 labels: troubleshooting,...
-source-git-commit: 44795e84359a907de2105ffc775926612c726492
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Wenn es eine temporäre Problemumgehung gibt, geben Sie sie als separaten Abschn
 
 ## Verwandtes Lesen
 
-* [Artikel-Thema](https://docs.magento.com/user-guide/) in unserem Benutzerhandbuch.
-* [Artikel-Thema](https://devdocs.magento.com) in unserer Entwicklerdokumentation. Sie können auch sagen, dass Sie zwischen Anweisungen in Entwicklern für Cloud- und On-Premise-Benutzer unterscheiden können: &quot;[Artikel-Thema](https://devdocs.magento.com) in unserer Entwicklerdokumentation für Adobe Commerce zur Cloud-Infrastruktur.&quot; vs. &quot;[Artikelthema](https://devdocs.magento.com) in unserer Entwicklerdokumentation für Adobe Commerce vor Ort.&quot;
+* [Artikel-Thema](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) in unserem Benutzerhandbuch.
+* [Artikel-Thema](https://developer.adobe.com/commerce/docs/) in unserer Entwicklerdokumentation. Sie können auch sagen, dass Sie zwischen Anweisungen in Entwicklern für Cloud- und On-Premise-Benutzer unterscheiden können: &quot;[Artikel-Thema](https://developer.adobe.com/commerce/docs/) in unserer Entwicklerdokumentation für Adobe Commerce zur Cloud-Infrastruktur.&quot; vs. &quot;[Artikelthema](https://developer.adobe.com/commerce/docs/) in unserer Entwicklerdokumentation für Adobe Commerce vor Ort.&quot;
 * [Artikelthema](https://support.magento.com/hc/en-us) in unserer Support-Wissensdatenbank.
 * Alle zugehörigen Ressourcen (Blogs, Foren, StackOverflow usw.)

@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, wenn nach dem 
 exl-id: 7f7bf782-4b35-4067-aa94-417097079f1f
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Sie haben eine gültige CSV-Datei, die Bundle-Produkte enthält.
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Importieren Sie die Datei mit der [Importfunktion](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
+1. Importieren Sie die Datei mit der [Importfunktion](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import).
 1. Öffnen Sie die Paket-Produktseite.
 
 <u>Erwartete Ergebnisse</u>:
@@ -46,7 +46,7 @@ Die Position der Optionen wurde nicht explizit deklariert.
 
 ## Lösung
 
-1. Deklarieren Sie eine Position explizit für jede Option im Parameter `position` der Spalte `bundle_values` in der CSV-Datei. Detaillierte Anweisungen finden Sie unter [Bearbeiten der Produktdaten](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) in unserem Benutzerhandbuch.
+1. Deklarieren Sie eine Position explizit für jede Option im Parameter `position` der Spalte `bundle_values` in der CSV-Datei. Detaillierte Anweisungen finden Sie unter [Bearbeiten der Produktdaten](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) in unserem Benutzerhandbuch.
 1. Wiederholen Sie den Importvorgang.
 
-Allgemeine Informationen zum Import finden Sie im Benutzerhandbuch unter [Importieren von Bundle-Produkten](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) .
+Allgemeine Informationen zum Import finden Sie im Benutzerhandbuch unter [Importieren von Bundle-Produkten](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) .

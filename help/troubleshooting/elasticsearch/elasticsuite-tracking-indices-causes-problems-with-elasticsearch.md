@@ -2,7 +2,7 @@
 title: ElasticSuite-Trackingindizes verursachen Probleme mit Elasticsearch
 description: In diesem Artikel wird das Problem der Speicherprobleme des Elasticsearchs beschrieben, die durch Tracking-Indizes verursacht werden, die vom ElasticSuite-Plug-in erstellt wurden.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -68,5 +68,5 @@ Erstellen Sie einen Cron-Auftrag, um die Trackingindizes zu löschen. Mit diesem
 
 Wenn Sie Indizes mit einer festgelegten Zeitfrequenz löschen möchten, erstellen Sie einen Cron-Auftrag, indem Sie in unserer Entwicklerdokumentation auf die folgenden Artikel verweisen:
 
-* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer Cron-Gruppe (Tutorial)](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
-* [Einrichten von Cron-Aufträgen](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)
+* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer Cron-Gruppe (Tutorial)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Einrichten von Cron-Aufträgen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

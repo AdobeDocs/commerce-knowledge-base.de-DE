@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass das Magen
 exl-id: 19149d8c-ea24-46fb-8815-9f637afe46ca
 feature: System
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass das Magento Order Mana
 
 1. Installieren Sie Adobe Commerce in Ihrer lokalen Umgebung.
 1. Richten Sie ngrok ein, um einen Tunnel zu erstellen und Ihren lokalen Server verfügbar zu machen.
-1. Versuchen Sie, [eine Verbindung zu OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/) herzustellen.
+1. Versuchen Sie, [eine Verbindung zu OMS](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/) herzustellen.
 
 <u>Erwartetes Ergebnis</u>
 

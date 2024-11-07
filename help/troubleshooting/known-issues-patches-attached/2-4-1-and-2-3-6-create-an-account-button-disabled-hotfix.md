@@ -4,7 +4,7 @@ description: Dieser Artikel enthält einen Hotfix für das Problem, wenn Sie Sch
 exl-id: e6e65ede-8156-4e2b-b369-b18395bb3dbf
 feature: Customer Service
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -57,4 +57,4 @@ Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how
 ## Verwandtes Lesen
 
 * [GitHub Adobe Commerce > Ungültiges Formular zum Erstellen eines Kontos übermitteln lässt die Senden-Schaltfläche deaktiviert](https://github.com/magento/magento2/issues/30513)
-* [Adobe Commerce-Benutzerhandbuch > Erste Schritte > Erstellen eines Kontos](https://docs.magento.com/user-guide/magento/magento-account-create.html)
+* [Adobe Commerce-Benutzerhandbuch > Erste Schritte > Erstellen eines Kontos](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create)

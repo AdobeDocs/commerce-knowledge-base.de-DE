@@ -2,7 +2,7 @@
 title: Wiederherstellen eines DB-Schnappschusses aus Staging oder Produktion
 description: Dieser Artikel zeigt, wie Sie einen DB-Schnappschuss aus Staging oder Produktion in Adobe Commerce in der Cloud-Infrastruktur wiederherstellen können.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Die Schritte sind:
    ```
 
 1. Kopieren Sie die Datenbank [!DNL dump file] (z. B. `<cluster ID>.sql.gz` für [!DNL Production] oder `<cluster ID_stg>.sql.gz` für [!DNL Staging]) auf Ihren lokalen Computer.
-1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] so eingerichtet haben, dass eine Remote-Verbindung mit der Datenbank hergestellt wird: [[!DNL SSH] und  [!DNL sFTP]: [!DNL SSH tunneling]](https://devdocs.magento.com/cloud/env/environments-ssh.html#env-start-tunn).
+1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] so eingerichtet haben, dass eine Remote-Verbindung mit der Datenbank hergestellt wird: [[!DNL SSH] und  [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn).
 1. Stellen Sie eine Verbindung zur Datenbank her.
 
    ```sql
@@ -152,5 +152,5 @@ Die Schritte sind:
 
 In unserer Entwicklerdokumentation:
 
-* [Import-Code: Import the database](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html#cloud-import-db)
-* Verwaltung von [[!DNL Snapshots]  und  [!DNL backup] : [!DNL Dump] Ihre Datenbank](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump)
+* [Import-Code: Import the database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* Verwaltung von [[!DNL Snapshots]  und  [!DNL backup] : [!DNL Dump] Ihre Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)

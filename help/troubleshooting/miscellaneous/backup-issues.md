@@ -4,7 +4,7 @@ description: In diesem Artikel werden die möglichen Lösungen für die Probleme
 exl-id: 1a6204ad-bd5a-46dc-8a8e-39655a174e09
 feature: Storage, Data Import/Export
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Geben Sie den folgenden CLI-Befehl ein:
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
-Weitere Informationen zu Backups finden Sie unter [Sichern Sie das Dateisystem, die Medien und die Datenbank und führen Sie sie durch.](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-backup.html)
+Weitere Informationen zu Backups finden Sie unter [Sichern Sie das Dateisystem, die Medien und die Datenbank und führen Sie sie durch.](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/backup)
 
 ## Unzureichender Festplattenspeicher {#insufficient-disk-space-trouble-backup-space-}
 
@@ -55,6 +55,6 @@ Leider können wir aufgrund der Vielzahl von Fehlern, auf die Sie stoßen könne
 
 ## Backup schlägt fehl {#backup-fails-trouble-backup-all-}
 
-Wenn die Sicherung fehlschlägt oder alle Sicherungstests fehlschlagen, verfügt der [Adobe Commerce-Dateisysteminhaber](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/file-sys-perms-over.html) möglicherweise nicht über ausreichende Berechtigungen und das Eigentum des Adobe Commerce-Dateisystems. Beispielsweise könnten die Dateien einem anderen Benutzer gehören oder die Dateien sind möglicherweise schreibgeschützt.
+Wenn die Sicherung fehlschlägt oder alle Sicherungstests fehlschlagen, verfügt der [Adobe Commerce-Dateisysteminhaber](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) möglicherweise nicht über ausreichende Berechtigungen und das Eigentum des Adobe Commerce-Dateisystems. Beispielsweise könnten die Dateien einem anderen Benutzer gehören oder die Dateien sind möglicherweise schreibgeschützt.
 
-Achten Sie besonders auf Dateisystemberechtigungen und das Eigentum an dem Verzeichnis `<magento_root>/var` und den Unterverzeichnissen. Weitere Informationen finden Sie unter [Festlegen von Dateisystemberechtigungen und -eigentum](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-system-perms.html).
+Achten Sie besonders auf Dateisystemberechtigungen und das Eigentum an dem Verzeichnis `<magento_root>/var` und den Unterverzeichnissen. Weitere Informationen finden Sie unter [Festlegen von Dateisystemberechtigungen und -eigentum](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).

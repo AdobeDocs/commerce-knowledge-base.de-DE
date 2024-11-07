@@ -4,7 +4,7 @@ description: Der Patch MDVA-44147 behebt das Problem, dass GraphQL-Anfragen kein
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Der Patch MDVA-44147 behebt das Problem, dass GraphQL-Anfragen keine Anforderung
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
 
 ## Problem
 
@@ -36,8 +36,8 @@ GraphQL-Anfrage gibt keine Anforderungslisten zurück.
 <u>Zu reproduzierende Schritte</u>:
 
 1. Wechseln Sie zu **Store** > **Einstellungen** > **Konfiguration** > **Allgemein** > **B2B-Funktionen** und aktivieren Sie die Anforderungsliste.
-1. Melden Sie sich als Kunde an und fügen Sie der [Anforderungsliste](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html) ein Produkt hinzu.
-1. Erstellen Sie ein [Kunden-Token](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+1. Melden Sie sich als Kunde an und fügen Sie der [Anforderungsliste](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) ein Produkt hinzu.
+1. Erstellen Sie ein [Kunden-Token](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
     <code class="language-graphql">
@@ -52,7 +52,7 @@ GraphQL-Anfrage gibt keine Anforderungslisten zurück.
       </code>
       </pre>
 
-1. Verwenden Sie die folgende Abfrage, um alle Anforderungslisten vom Kunden abzurufen. Verwenden Sie die Kopfzeile **Autorisierung** mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im Artikel [Kundenabfrage](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) in unserer Entwicklerdokumentation.
+1. Verwenden Sie die folgende Abfrage, um alle Anforderungslisten vom Kunden abzurufen. Verwenden Sie die Kopfzeile **Autorisierung** mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im Artikel [Kundenabfrage](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) in unserer Entwicklerdokumentation.
 
    Anfrage:
 
@@ -177,8 +177,8 @@ Es werden keine Ergebnisse zurückgegeben.
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://devdocs.magento.com/cloud/project/project-patch.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
@@ -187,4 +187,4 @@ Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
 * [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
 * [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.

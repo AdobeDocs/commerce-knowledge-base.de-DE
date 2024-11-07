@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass der Zugriff 
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Die Herkunftsverdeckung ist eine Sicherheitsfunktion, mit der Adobe Commerce jeg
 ## Lösung
 
 * Wenn Ihre Cloud-Site live ist, wechseln Sie zu https://mydomain.com/.
-* Wenn Sie über eine aktive Site (nicht Cloud) verfügen, richten Sie mithilfe der Domäne &quot;https://mydomain.com/&quot;die Unterdomäne &quot;`mcprod.mydomain.com`&quot;ein und aktualisieren Sie Ihre **Basis-URL** stattdessen auf &quot;*https://mcprod.mydomain.com*&quot;. Anschließend verweisen [auf Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Wenn Sie über eine aktive Site (nicht Cloud) verfügen, richten Sie mithilfe der Domäne &quot;https://mydomain.com/&quot;die Unterdomäne &quot;`mcprod.mydomain.com`&quot;ein und aktualisieren Sie Ihre **Basis-URL** stattdessen auf &quot;*https://mcprod.mydomain.com*&quot;. Anschließend verweisen [auf Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Verwandtes Lesen
 

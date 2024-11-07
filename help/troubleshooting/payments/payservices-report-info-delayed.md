@@ -4,7 +4,7 @@ description: In diesem Artikel wird erläutert, warum sich die Berichterstellung
 exl-id: 2f3249d1-be12-45bc-aa73-bef9766509ae
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Nachdem Sie beispielsweise eine Bestellung in Rechnung gestellt (erfasst) oder e
 
 Voraussetzungen: Eine Bestellung wird mithilfe der Funktion Zahlungsdienste durchgeführt.
 
-1. Eine Bestellung wird in [Admin](https://docs.magento.com/user-guide/stores/admin.html) als [fakturiert](https://docs.magento.com/user-guide/sales/invoice-create.html) (oder [storniert](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) oder [durch Credit Memo](https://docs.magento.com/user-guide/sales/credit-memos.html) zurückerstattet).
+1. Eine Bestellung wird in [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) als [fakturiert](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (oder [storniert](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) oder [durch Credit Memo](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos) zurückerstattet).
 1. Navigieren Sie zum Bericht Bestellstatus , um Informationen zu dieser Bestellung anzuzeigen.
 1. Der Status wird als `AUTHORIZED` angezeigt, was dem Bestellstatus vor der Rechnungsstellung oder anderen Bestellaktionen entspricht.
 
@@ -37,7 +37,7 @@ Voraussetzungen: Eine Bestellung wird mithilfe der Funktion Zahlungsdienste durc
 
 >[!NOTE]
 >
->Dies ist nur ein gängiger Anwendungsfall. Es kann andere Anwendungsfälle geben, in denen eine [Bestellaktion](https://docs.magento.com/user-guide/sales/order-actions.html) auftritt und die Daten nicht sofort im entsprechenden Bericht verfügbar sind.
+>Dies ist nur ein gängiger Anwendungsfall. Es kann andere Anwendungsfälle geben, in denen eine [Bestellaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) auftritt und die Daten nicht sofort im entsprechenden Bericht verfügbar sind.
 
 <u>Erwartetes Ergebnis</u>:
 Berichtsdaten werden sofort ausgefüllt, nachdem eine Aktion für eine Bestellung erfolgt ist.

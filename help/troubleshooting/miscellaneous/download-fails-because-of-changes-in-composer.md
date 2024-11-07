@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für einen fehlgeschlag
 exl-id: 5abdab97-4b0c-466b-a68f-a2637d2826e5
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -52,5 +52,5 @@ So umgehen Sie es:
    * Upgrade von Composer auf eine Version nach dem 26. November 2015: `composer self-update`.
 
 1. Löschen Sie das Adobe Commerce-Verzeichnis und die Unterverzeichnisse.
-1. Versuchen Sie den Download erneut mit `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` oder `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
+1. Versuchen Sie den Download erneut mit `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` oder `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
 1. Nachdem Sie die Adobe Commerce-Software erfolgreich heruntergeladen haben, aktualisieren Sie Composer: `composer self-update`.

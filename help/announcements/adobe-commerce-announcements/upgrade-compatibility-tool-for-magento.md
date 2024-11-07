@@ -4,7 +4,7 @@ description: Das Upgrade-Kompatibilitätstool 1.1.0 ist ein Befehlszeilen-Tool, 
 exl-id: 312abc5a-1d6a-4f32-9929-a94f4962eddd
 feature: Upgrade
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Adobe Commerce-Kunden.
 
 ## Installieren des Upgrade-Kompatibilitätstools 1.1.0
 
-Installationsschritte finden Sie unter Adobe Commerce: [Upgrade-Kompatibilitätstool > Installieren](https://devdocs.magento.com/upgrade-compatibility-tool/install.html) in unserer Entwicklerdokumentation. Voraussetzungen für die Verwendung des Tools finden Sie unter Adobe Commerce: [Upgrade-Kompatibilitätstool](https://devdocs.magento.com/upgrade-compatibility-tool/prerequisites.html) in unserer Entwicklerdokumentation.
+Installationsschritte finden Sie unter Adobe Commerce: [Upgrade-Kompatibilitätstool > Installieren](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) in unserer Entwicklerdokumentation. Voraussetzungen für die Verwendung des Tools finden Sie unter Adobe Commerce: [Upgrade-Kompatibilitätstool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) in unserer Entwicklerdokumentation.
 
 ## Wie hoch ist die Zahl neben jedem Problem?
 
@@ -47,7 +47,7 @@ Die Fehlermeldungen des Upgrade-Kompatibilitätstools sind nach Ebene (kritische
 * Fehlercode: Die Adobe Commerce-Kennung, die der Fehlermeldung zugewiesen ist.
 * Fehlerbeschreibung: Eine Beschreibung, die die Fehlerursache zusammenfasst.
 * Fehlerempfehlung: Falls zutreffend, enthält Anleitungen zur Fehlerbehebung und Fehlerbehebung.
-* Codes werden auf der Referenzseite [Fehlermeldung](https://devdocs.magento.com/upgrade-compatibility-tool/errors.html) aufgeführt und beschrieben.
+* Codes werden auf der Referenzseite [Fehlermeldung](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages) aufgeführt und beschrieben.
 
 ## Wo kann ich Feedback zu dem Tool teilen?
 
@@ -56,4 +56,4 @@ Sie können sich an das UCT-Team in unserem Slack-Kanal [#upgrade-compatibility-
 ## Verwandte Informationen
 
 * Adobe Commerce-Blog: [Einführung des Upgrade-Kompatibilitätstools (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce: [Upgrade-Kompatibilitätstool](https://devdocs.magento.com/upgrade-compatibility-tool/introduction.html) in unserer Entwicklerdokumentation.
+* Adobe Commerce: [Upgrade-Kompatibilitätstool](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) in unserer Entwicklerdokumentation.

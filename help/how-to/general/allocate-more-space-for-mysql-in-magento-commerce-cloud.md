@@ -3,7 +3,7 @@ title: Mehr Speicherplatz für MySQL in Adobe Commerce in Cloud zuweisen
 description: Dieser Artikel enthält Anweisungen dazu, wie Sie in Adobe Commerce mehr Speicherplatz für MySQL in der Cloud-Infrastruktur zuweisen.
 exl-id: 98501aa0-5ec7-4ea1-8856-13d171ad0be9
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Weitere Informationen finden Sie im Artikel [Einrichten des MySQL-Dienstes](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-mysql.html) .
+Weitere Informationen finden Sie im Artikel [Einrichten des MySQL-Dienstes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) .
 
 Nachdem Sie die `.magento/services.yaml` -Datei geändert haben, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Die Push-Benachrichtigung Trigger den Bereitstellungsprozess.
 

@@ -4,7 +4,7 @@ description: '"In diesem Artikel werden die Ursachen und Lösungen für die Adob
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -78,11 +78,11 @@ Weitere Informationen zur Erhöhung des Festplattenspeichers, wenn Sie sich in d
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Verwenden Sie den Artikel [Aktualisieren auf ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) als Referenz.
+   Verwenden Sie den Artikel [Aktualisieren auf ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) als Referenz.
 
 1. Stellen Sie sicher, dass das ECE-Tools-Paket in der Datei `composer.lock` vorhanden ist, indem Sie den folgenden Befehl ausführen:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    Wenn sie angegeben werden, würde die Antwort wie im folgenden Beispiel aussehen:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
 
-Weitere Informationen finden Sie im Artikel [Aktualisierung auf ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) .
+Weitere Informationen finden Sie im Artikel [Aktualisierung auf ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) .
 
 ### Wird das Problem durch den Patch verursacht?
 

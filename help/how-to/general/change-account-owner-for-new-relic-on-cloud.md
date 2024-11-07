@@ -3,7 +3,7 @@ title: Kontoinhaber für New Relic in Cloud ändern
 description: Für Ihr Adobe Commerce-Projekt in der Cloud-Infrastruktur können Sie den New Relic-Kontoinhaber auf der Benutzeroberflächen-Seite von New Relic ändern. Ausführliche Anweisungen finden Sie unter [Ändern des Kontoinhabers](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/change-account-owner) in der New Relic-Dokumentation.
 exl-id: fbb778d5-7e5d-4cd9-849a-4071ca9e4bea
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -20,4 +20,4 @@ Wenn jemand als Benutzer hinzugefügt werden muss, aber kein bestehender Eigent�
 
 ## Verwandtes Lesen
 
-* [New Relic-Dienste](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) in unserer Entwicklerdokumentation.
+* [New Relic-Dienste](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation.

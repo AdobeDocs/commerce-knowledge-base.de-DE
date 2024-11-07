@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Problemumgehung für fehlende Erweiterun
 exl-id: bed8506d-39b9-449a-891b-466d214a0fe8
 feature: Extensions
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Dieser Artikel bietet eine Problemumgehung für fehlende Erweiterungen im Admin-
 
 Wenn Sie Erweiterungen über die Commerce Marketplace erwerben, können Sie sie nicht mit dem Adobe Commerce-Extension Manager installieren. Wenn Sie Ihre Zugriffsschlüssel hinzufügen und mit Marketplace synchronisieren, zeigt der Extension Manager keine Erweiterungen an.
 
-Die **Problemumgehung** besteht darin, die Befehlszeileninstallation von Adobe Commerce wie in der [allgemeinen CLI-Installation](https://devdocs.magento.com/extensions/install/) in unserer Entwicklerdokumentation beschrieben zu verwenden.
+Die **Problemumgehung** besteht darin, die Befehlszeileninstallation von Adobe Commerce wie in der [allgemeinen CLI-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) in unserer Entwicklerdokumentation beschrieben zu verwenden.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -44,4 +44,4 @@ Die Erweiterung wird im Extension Manager-Bereich des Commerce-Administrators an
 
 ## Workaround
 
-Verwenden Sie die Befehlszeileninstallation von Adobe Commerce, wie in der Entwicklerdokumentation unter [Allgemeine CLI-Installation](https://devdocs.magento.com/extensions/install/) dargestellt.
+Verwenden Sie die Befehlszeileninstallation von Adobe Commerce, wie in der Entwicklerdokumentation unter [Allgemeine CLI-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) dargestellt.

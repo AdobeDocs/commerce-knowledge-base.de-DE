@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass beim Versuch
 exl-id: 1b89da58-c872-481b-b2a0-aa48db8223db
 feature: Admin Workspace, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -43,9 +43,9 @@ Der Web-Einrichtungs-Assistent wurde für alle Adobe Commerce-Instanzen in Cloud
 
 Diese Funktion ist in Adobe Commerce in der Cloud-Infrastruktur deaktiviert.
 
-Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur finden Sie unter [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://devdocs.magento.com/cloud/howtos/install-components.html) in unserer Entwicklerdokumentation.
-Informationen zum Durchführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce vor Ort finden Sie unter [Schnellstart-Installation](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) in unserer Entwicklerdokumentation.
+Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur finden Sie unter [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) in unserer Entwicklerdokumentation.
+Informationen zum Durchführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce vor Ort finden Sie unter [Schnellstart-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* Siehe [Installieren einer Erweiterung](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) in unserer Entwicklerdokumentation.
+* Siehe [Installieren einer Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) in unserer Entwicklerdokumentation.

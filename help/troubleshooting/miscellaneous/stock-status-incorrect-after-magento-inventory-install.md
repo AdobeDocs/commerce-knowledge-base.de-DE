@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für den falschen Lager
 exl-id: ae32fbe3-deab-4f31-b427-95f8b54a476f
 feature: Install, Inventory, Orders
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -33,4 +33,4 @@ Bei der ersten Installation/Aktualisierung werden alle Ihre Produkte der Standar
 
 Wenn Sie mehr als eine Website haben, müssen Sie diese Websites als Sales Channel zum Standardbestand oder anderen benutzerdefinierten Lagern hinzufügen.
 
-Weitere Informationen dazu finden Sie im Abschnitt [Stock des Wiki/Benutzerhandbuchs](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) in unserem Benutzerhandbuch.
+Weitere Informationen dazu finden Sie im Abschnitt [Stock des Wiki/Benutzerhandbuchs](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) in unserem Benutzerhandbuch.

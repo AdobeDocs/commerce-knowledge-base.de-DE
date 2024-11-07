@@ -4,7 +4,7 @@ description: 'In diesem Artikel wird erläutert, wie Sie die Ursache einer Fehle
 exl-id: aa414e04-bc6d-46bd-b98f-0446b97bda14
 feature: Admin Workspace, Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -60,4 +60,4 @@ Wenn die Ausgabe jedoch zeigt, dass sich die Dateien noch im Cache befinden, mü
 
 ## Verwandte Informationen
 
-* [Cache-Verwaltung](https://docs.magento.com/user-guide/system/cache-management.html) in unserer Entwicklerdokumentation.
+* [Cache-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in unserer Entwicklerdokumentation.

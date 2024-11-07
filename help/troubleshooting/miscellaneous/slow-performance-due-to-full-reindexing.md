@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für eine mangelhafte L
 exl-id: 4f20a862-cf54-4196-8a88-101f0c80f8f1
 feature: Best Practices
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
@@ -53,9 +53,9 @@ Aktionen, die eine vollständige Neuindizierung ermöglichen, wurden von Admin a
 
 ### Lösung
 
-Führen Sie die Neuindizierung nur bei Bedarf aus. Anweisungen finden Sie unter [Indexer konfigurieren](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) in unserer Entwicklerdokumentation. Eine allgemeine Empfehlung und Best Practice besteht darin, dem Mechanismus für die partielle Neuindizierung die Möglichkeit zu geben, sich um die Neuindizierung von Daten zu kümmern, ohne dass von einem Händler manuelle Maßnahmen erforderlich sind. Alle Neuindizierungen sollten mit nativen Adobe Commerce-Funktionen (Mview) durchgeführt werden. Mview führt eine partielle Neuindizierung durch, was die effizienteste Methode zur Neuindizierung von Daten ist. Weitere Informationen zu Mview finden Sie unter [Indizierungsübersicht: Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) in unserer Entwicklerdokumentation.
+Führen Sie die Neuindizierung nur bei Bedarf aus. Anweisungen finden Sie unter [Indexer konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) in unserer Entwicklerdokumentation. Eine allgemeine Empfehlung und Best Practice besteht darin, dem Mechanismus für die partielle Neuindizierung die Möglichkeit zu geben, sich um die Neuindizierung von Daten zu kümmern, ohne dass von einem Händler manuelle Maßnahmen erforderlich sind. Alle Neuindizierungen sollten mit nativen Adobe Commerce-Funktionen (Mview) durchgeführt werden. Mview führt eine partielle Neuindizierung durch, was die effizienteste Methode zur Neuindizierung von Daten ist. Weitere Informationen zu Mview finden Sie unter [Indizierungsübersicht: Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) in unserer Entwicklerdokumentation.
 
 ## Verwandte Informationen
 
-* [Indizierungsübersicht: Anleitung zur Neuindizierung von ](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#how-to-reindex) in unserer Entwicklerdokumentation.
+* [Indizierungsübersicht: Anleitung zur Neuindizierung von ](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) in unserer Entwicklerdokumentation.
 * [Ungültiger Cache führt zu einer Verschlechterung der Reaktionszeit](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) in unserer Wissensdatenbank.

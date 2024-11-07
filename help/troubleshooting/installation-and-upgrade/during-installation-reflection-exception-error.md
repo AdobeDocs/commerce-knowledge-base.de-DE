@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für den Reflection Exception-Fe
 exl-id: aed5f297-1339-4171-9392-04b3f93277ee
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Während der Installation wird eine Meldung ähnlich der folgenden angezeigt:
 
 Löschen Sie alle Verzeichnisse und Dateien im Unterverzeichnis von Adobe Commerce `var` und installieren Sie die Adobe Commerce-Software erneut.
 
-Geben Sie als Inhaber des Adobe Commerce-Dateisystems ](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) oder als Benutzer mit `root` -Berechtigungen die folgenden Befehle ein:[
+Geben Sie als Inhaber des Adobe Commerce-Dateisystems ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) oder als Benutzer mit `root` -Berechtigungen die folgenden Befehle ein:[
 
 ```bash
 $ cd <your Magento install directory>/var

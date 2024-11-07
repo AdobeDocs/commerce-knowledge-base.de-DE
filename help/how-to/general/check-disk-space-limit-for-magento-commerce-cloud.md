@@ -3,7 +3,7 @@ title: Überprüfen der Speicherplatzbegrenzung für Adobe Commerce in der Cloud
 description: "So überprüfen Sie, wie viel Platz Sie für jede Adobe Commerce in der Cloud-Infrastruktur-Umgebung haben:"
 exl-id: 0dd613e4-161f-403e-95a1-d228303693d3
 feature: Cloud
-source-git-commit: fe258ac6eaa8e0825309cfa1ee5e101a9cbacaa3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 0%
@@ -21,4 +21,4 @@ So prüfen Sie, wie viel Platz Sie für die einzelnen Adobe Commerce in der Clou
 
 ## Verwandtes Lesen
 
-[Verwalten Sie Speicherplatz](https://devdocs.magento.com/cloud/project/manage-disk-space.html) in unserer Entwicklerdokumentation.
+[Verwalten Sie Speicherplatz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserer Entwicklerdokumentation.

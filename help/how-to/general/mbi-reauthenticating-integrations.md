@@ -3,7 +3,7 @@ title: "MBI: Integrationen erneut authentifizieren"
 description: Dieser Artikel bietet Lösungen zum erneuten Autorisieren einer Integration, um Magento Business Intelligence (MBI) die erforderlichen Berechtigungen zum Abrufen von Daten von einem Drittanbieterdienst zu gewähren. Eine erneute Autorisierung ist erforderlich, wenn diese Berechtigungen widerrufen werden.
 exl-id: c608d6f9-64a5-44f8-9d7b-9a85a2668775
 feature: Commerce Intelligence, Integration
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Dieser Artikel bietet Lösungen zum erneuten Autorisieren einer Integration, um 
 
 ## Integration von Datenbank und SaaS
 
-Listen zu Datenbank- und SaaS-Integrationen finden Sie unter [Verbinden externer Daten mithilfe einer Integration](https://docs.magento.com/mbi/data-analyst/importing-data/integrations/integrations.html) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis auf der linken Seite zur Navigation).
+Listen zu Datenbank- und SaaS-Integrationen finden Sie unter [Verbinden externer Daten mithilfe einer Integration](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis auf der linken Seite zur Navigation).
 
 ## Haben Sie Verbindungsprobleme?
 

@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für ein bekanntes Adob
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -69,8 +69,8 @@ Informationen zum Patchanweisungen für Composer finden Sie unter [Anwenden eine
 
 <u>Git Patch </u>
 
-* Informationen zu Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur finden Sie unter [Anwenden von Patches](https://devdocs.magento.com/cloud/project/project-patch.html) in der Entwicklerdokumentation.
-* Informationen zu Git-Patch-Anweisungen für Adobe Commerce finden Sie unter [Anwenden von Patches: Benutzerdefinierte Patches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) in der Entwicklerdokumentation.
+* Informationen zu Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur finden Sie unter [Anwenden von Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in der Entwicklerdokumentation.
+* Informationen zu Git-Patch-Anweisungen für Adobe Commerce finden Sie unter [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

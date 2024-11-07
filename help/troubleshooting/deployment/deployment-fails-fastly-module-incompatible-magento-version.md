@@ -4,7 +4,7 @@ description: "AKTUALISIERT: 29. Februar 2019"
 exl-id: aab77407-94e5-42de-92f4-2f0c19e24fa4
 feature: Deploy, Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Die Bereitstellung kann mit den folgenden Fehlermeldungen fehlschlagen:
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Wenn Sie Adobe Commerce in der Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im [Bereitstellungsprotokoll](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html#log-deploy-log) angezeigt. Bei der lokalen Adobe Commerce-Instanz wird der Fehler in der Befehlszeile angezeigt.
+Wenn Sie Adobe Commerce in der Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) angezeigt. Bei der lokalen Adobe Commerce-Instanz wird der Fehler in der Befehlszeile angezeigt.
 
 ## Ursache
 
@@ -70,4 +70,4 @@ Gehen Sie dazu wie folgt vor:
    * wenn das Fastly-Modul in das Magento-cloud-metapaket eingeschlossen ist:    <pre>Composer aktualisiert magento/magento-cloud-metapackage</pre>
    * wenn das Fastly-Modul separat installiert wurde (z. B. wenn Sie Adobe Commerce lokal verwenden, nicht die Cloud-Bearbeitung) <pre>Komponentenaktualisierung schnell/magento2</pre>
 1. Übertragen Sie die Änderungen und übernehmen Sie sie per Push-Benachrichtigung. Wenn dies nicht automatisch erfolgt, wird der Bereitstellungsprozess Trigger.
-1. Laden Sie im Admin [die neue VCL auf Fastly](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets) hoch.
+1. Laden Sie im Admin [die neue VCL auf Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets) hoch.

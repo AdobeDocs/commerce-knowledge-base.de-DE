@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Lösung für das Problem, wenn Sie einen
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -67,5 +67,5 @@ Um das Problem zu beheben, führen Sie die folgende [!DNL SQL] -Anweisung in der
 
 ## Verwandte Informationen
 
-* OMS Docs [OMS Connector-Setup-Tutorial](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/)
+* OMS Docs [OMS Connector-Setup-Tutorial](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
 * [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung

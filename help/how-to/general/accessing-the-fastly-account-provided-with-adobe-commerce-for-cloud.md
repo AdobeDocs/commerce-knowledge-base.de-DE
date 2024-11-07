@@ -3,7 +3,7 @@ title: Anmeldung bei einem mit Adobe Commerce in der Cloud-Infrastruktur bereitg
 description: In diesem Artikel wird beschrieben, wie Sie sich bei Ihrem mit Adobe Commerce bereitgestellten Fastly-Konto in der Cloud-Infrastruktur anmelden. Für Adobe Commerce in der Cloud-Infrastruktur ist kein dediziertes Fastly-Konto oder Kontoinhaber erforderlich. Sie können die Fastly-Dienste über den Commerce-Administrator mit den eindeutigen Fastly-Anmeldeinformationen (API-Token und Service-ID) konfigurieren und verwalten, die in jeder Staging- und Produktionsumgebung bereitgestellt werden. Diese Anmeldeinformationen sind auch erforderlich, um schnelle API-Anfragen zu senden.
 exl-id: 456eb8be-c9b8-4ca6-b3f6-14f43aabe15f
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -16,11 +16,11 @@ In diesem Artikel wird beschrieben, wie Sie sich bei Ihrem mit Adobe Commerce be
 
 ## Anzeigen Ihrer Fastly-Anmeldedaten
 
-Weitere Informationen finden Sie im Abschnitt [Fastly-Anmeldedaten abrufen](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie im Abschnitt [Fastly-Anmeldedaten abrufen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) in unserer Entwicklerdokumentation.
 
 ## Testen der Fastly-Anmeldedaten
 
-Weitere Informationen finden Sie im Abschnitt [Testen der Fastly-Anmeldedaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie im Abschnitt [Testen der Fastly-Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

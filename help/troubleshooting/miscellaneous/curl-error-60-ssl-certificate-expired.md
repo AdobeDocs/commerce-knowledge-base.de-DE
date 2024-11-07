@@ -4,7 +4,7 @@ description: "Dieser Artikel zeigt, wie Sie überprüfen können, wann eine Verz
 exl-id: 74f1db7e-ee2b-4e27-8fcc-fe462a9e72c3
 feature: Configuration
 role: Developer
-source-git-commit: 6f631ca35b663c386bca9efe6e56db266502c0b1
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Wechseln Sie zu , z. B. &quot;`https://demo.magento.cloud/#/projects/<project>/e
 In unserer Entwicklerdokumentation:
 
 * [Cloud Manager API: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
-* [Schnelles Einrichten: Bereitstellen von SSL-/TLS-Zertifikaten](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates)
+* [Schnelles Einrichten: Bereitstellen von SSL-/TLS-Zertifikaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
 
 In unserer Support-Wissensdatenbank:
 

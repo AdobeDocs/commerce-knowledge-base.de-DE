@@ -4,7 +4,7 @@ description: In diesem Artikel werden Lösungen für die Situation vorgeschlagen
 exl-id: 1b2c25d3-ca1b-4409-8d6b-378aa0952f94
 feature: Storage, Observability
 role: Developer
-source-git-commit: 9ee4145d5516a37fab1c092d539000627f242a93
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Lösungsoptionen:
 * Bereinigen Sie das Verzeichnis `var` .
 * Richten Sie einen Cron-Auftrag ein, um die Größe des Verzeichnisses `var` zu verfolgen und zu bereinigen.
 * Weisen Sie mehr Speicherplatz zu, wenn Sie noch nicht genügend Speicherplatz haben. (Im folgenden Abschnitt erfahren Sie, wie Sie überprüfen können, welche Leerzeichen Sie einschließen.)
-   * Für Starter-Pläne, alle Umgebungen und Pro-Plan-Integrationsumgebungen können Sie den Speicherplatz zuweisen, wenn Sie nicht belegt sind, wie unter [Speicherplatz verwalten: Festplattenspeicher zuweisen](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html#application-disk-space) beschrieben.
+   * Für Starter-Pläne, alle Umgebungen und Pro-Plan-Integrationsumgebungen können Sie den Speicherplatz zuweisen, wenn Sie nicht belegt sind, wie unter [Speicherplatz verwalten: Festplattenspeicher zuweisen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space) beschrieben.
    * Wenden Sie sich für Staging- und Produktionsumgebungen mit Pro-Plan an den Support, um mehr Speicherplatz zuzuweisen, wenn Sie noch nicht genügend Speicherplatz haben.
 * Wenn Sie Ihre Speicherplatzbeschränkung erreicht haben und dennoch Probleme mit wenig Speicherplatz auftreten, sollten Sie sich für weitere Informationen an Ihr Adobe Account Team wenden.
 
