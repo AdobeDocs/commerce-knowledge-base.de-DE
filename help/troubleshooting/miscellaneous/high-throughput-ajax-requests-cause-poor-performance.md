@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für Leistungsprobleme mit Adobe
 exl-id: 68dfca8a-826c-4476-acaf-a139052b5dcc
 feature: Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 3bcdbd0536ec71cb80ffa3afbcd53c4ae385d2e3
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Zu den Anforderungen mit hohem Durchsatz AJAX Anforderungen gehören Anforderung
 
 Es gibt drei Lösungen:
 
-* [Aktualisieren Sie auf Version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version). Wenn dies derzeit nicht möglich ist, installieren Sie [den Patch, der das Problem behebt](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md).
+* [Aktualisieren Sie auf Version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Stellen Sie leichtere Anforderungen sicher (Cache-Anforderungen oder Wechsel zum privaten Inhalt von Kunden).
 * Reduzieren Sie die Anzahl der Anforderungen.
 
