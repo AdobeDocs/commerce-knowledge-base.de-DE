@@ -1,10 +1,10 @@
 ---
-title: "ACSD-44938: VAT_ID kann in GraphQL-Anfrage für Gastbenutzer nicht angewendet werden"
+title: 'ACSD-44938: VAT_ID kann nicht in GraphQL-Anfragen für Gastbenutzer angewendet werden'
 description: Der Patch ACSD-44938 behebt das Problem, dass die VAT_ID nicht in einer GraphQL-Anfrage für einen Gastbenutzer angewendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-44938. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 18b3dfa5-b666-491e-a067-526a53294f39
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -35,12 +35,12 @@ Die Variable &quot;VAT_ID&quot;kann nicht in einer GraphQL-Anfrage für einen Ga
 
 <u>Zu reproduzierende Schritte</u>:
 
-1. Führen Sie die im Tutorial [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) in unserer Entwicklerdokumentation erwähnten Schritte aus, um einen Gastkarton zu erstellen.
+1. Führen Sie die im Tutorial [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in unserer Entwicklerdokumentation erwähnten Schritte aus, um einen Gastkarton zu erstellen.
 1. Versuchen Sie, die VAT_ID für den Gastbenutzer anzuwenden, der GraphQL verwendet.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Variable &quot;VAT_ID&quot;kann auf dieselbe Weise wie bei einem registrierten Kunden angewendet werden. Siehe Artikel [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) in unserer Entwicklerdokumentation.
+Die Variable &quot;VAT_ID&quot;kann auf dieselbe Weise wie bei einem registrierten Kunden angewendet werden. Siehe Artikel [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) in unserer Entwicklerdokumentation.
 
 <u>Tatsächliche Ergebnisse</u>:
 

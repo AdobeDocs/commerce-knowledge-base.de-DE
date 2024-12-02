@@ -1,10 +1,10 @@
 ---
-title: "Adobe Commerce 2.4.1: Falsche Nachricht beim PayPal-Braintree-Gast-Checkout"
+title: 'Adobe Commerce 2.4.1: Falsche Nachricht beim PayPal-Braintree-Gast-Checkout'
 description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem ein Gastkunden, der versucht, über Braintree eine Bestellung bei PayPal aufzugeben, eine nicht informative Fehlermeldung erhält, wenn der Gastkauf deaktiviert ist.
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -61,4 +61,4 @@ Die Lösung für dieses Problem besteht darin, dass sich der Kunde in einem Spei
 
 * [Best Practice für die Anzahl der Produkte im Warenkorb in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Support-Wissensdatenbank.
 * [Tutorial zur Bestellverarbeitung: Schritt 1. Hinzufügen von Artikeln zum Warenkorb](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
-* [Tutorial zum GraphQL-Checkout: Schritt 1. Produkte zum Warenkorb hinzufügen](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-add-product-to-cart.html) in unserer Entwicklerdokumentation
+* [Tutorial zum GraphQL-Checkout: Schritt 1. Produkte zum Warenkorb hinzufügen](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) in unserer Entwicklerdokumentation

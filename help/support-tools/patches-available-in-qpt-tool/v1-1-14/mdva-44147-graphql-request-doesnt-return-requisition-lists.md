@@ -1,10 +1,10 @@
 ---
-title: "MDVA-44147: GraphQL-Anfrage gibt keine Anforderungslisten zurück"
+title: 'MDVA-44147: GraphQL-Anfrage gibt keine Anforderungslisten zurück'
 description: Der Patch MDVA-44147 behebt das Problem, dass GraphQL-Anfragen keine Anforderungslisten zurückgeben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44147. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
@@ -52,7 +52,7 @@ GraphQL-Anfrage gibt keine Anforderungslisten zurück.
       </code>
       </pre>
 
-1. Verwenden Sie die folgende Abfrage, um alle Anforderungslisten vom Kunden abzurufen. Verwenden Sie die Kopfzeile **Autorisierung** mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im Artikel [Kundenabfrage](https://developer.adobe.com/commerce/webapi/graphql/queries/customer.html) in unserer Entwicklerdokumentation.
+1. Verwenden Sie die folgende Abfrage, um alle Anforderungslisten vom Kunden abzurufen. Verwenden Sie die Kopfzeile **Autorisierung** mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im Artikel [Kundenabfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) in unserer Entwicklerdokumentation.
 
    Anfrage:
 

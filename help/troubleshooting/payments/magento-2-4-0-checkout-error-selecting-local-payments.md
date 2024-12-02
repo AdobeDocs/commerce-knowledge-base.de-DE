@@ -1,10 +1,10 @@
 ---
-title: "Adobe Commerce 2.4.0: Checkout-Fehler bei Auswahl lokaler Zahlungen"
-description: '''In diesem Artikel wird über eine Lösung für ein bekanntes Problem in Adobe Commerce beim Checkout gesprochen, bei dem eine Fehlermeldung angezeigt wird, wenn eine lokale Zahlungsmethode für einige Länder ausgewählt wird. Dies trifft auf die Länder Belgien, Italien, Niederlande, Polen und Spanien zu."'
+title: 'Adobe Commerce 2.4.0: Checkout-Fehler bei Auswahl lokaler Zahlungen'
+description: In diesem Artikel wird über eine Lösung für ein bekanntes Problem in Adobe Commerce beim Checkout gesprochen, bei dem eine Fehlermeldung angezeigt wird, wenn eine lokale Zahlungsmethode für einige Länder ausgewählt wird. Dies trifft auf die Länder Belgien, Italien, Niederlande, Polen und Spanien zu.
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: a8cc7ad0cb9cb111f5b9636ff18aef3b6ed44329
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Die Fehlermeldung &quot;*Es sind derzeit keine Zahlungsmethoden verfügbar. Bitt
 
 * Adobe Commerce 2.4.0 ist installiert.
 * Erstellen Sie ein Produkt und eine Kategorie.
-* Konfigurieren Sie die [Braintree-Zahlungsmethode](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree.html).
+* Konfigurieren Sie die [Braintree-Zahlungsmethode](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
 
 <u>Zu reproduzierende Schritte</u>:
 

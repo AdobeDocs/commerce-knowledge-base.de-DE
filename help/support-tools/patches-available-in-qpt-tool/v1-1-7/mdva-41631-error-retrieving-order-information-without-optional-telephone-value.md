@@ -1,10 +1,10 @@
 ---
-title: '"MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen "Telefonwert"-Wert'
+title: 'MDVA-41631: Fehler beim Abrufen von Bestellinformationen ohne optionalen "Telefonwert"-Wert'
 description: Der Patch MDVA-41631 behebt das Problem, dass Benutzer einen Fehler beim Abrufen von Bestellinformationen ohne optionalen "Telefonwert"über GraphQL erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 installiert ist. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 94b0b918-c1f9-4f5d-8fcd-8b92a9ca8c59
 feature: Orders
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Benutzer erhalten einen Fehler beim Abrufen von Bestellinformationen ohne option
 
 1. Wechseln Sie zu **Store** > **Konfiguration** > **Kunden** > **Kundenkonfiguration** > **Name und Adressenoptionen** > **Telefon anzeigen** und legen Sie die Telefonnummer als optional fest.
 1. Platzieren Sie eine Bestellung mithilfe der GraphQL-API als angemeldeter Kunde.
-   * Legen Sie die Telefonnummer nicht fest, wenn Sie die Abrechnungs- und Versandadressen festlegen. Befolgen Sie die Anweisungen in [GraphQL Checkout-Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) in unserer Entwicklerdokumentation.
-1. Rufen Sie die Bestellung mit der GraphQL [customerOrders-Abfrage](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html) ab.
+   * Legen Sie die Telefonnummer nicht fest, wenn Sie die Abrechnungs- und Versandadressen festlegen. Befolgen Sie die Anweisungen in [GraphQL Checkout-Tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) in unserer Entwicklerdokumentation.
+1. Rufen Sie die Bestellung mit der GraphQL [customerOrders-Abfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/) ab.
 
 <pre>
 <code class="language-graphql">
