@@ -1,5 +1,5 @@
 ---
-title: "'Bereichscode ist nicht festgelegt'-Fehler beim Ausführen von Setup:upgrade"
+title: Fehler "Bereichscode nicht festgelegt"beim Ausführen von Setup:upgrade
 description: Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.3 in Zusammenhang mit dem Fehler "Bereichscode ist nicht festgelegt"beim Ausführen des Befehls setup:upgrade.
 exl-id: ace92331-6022-49fa-a776-d06d841b3b32
 feature: Install, Upgrade

@@ -1,10 +1,10 @@
 ---
 title: Die Installation von Adobe Commerce 2.4.0 schlägt mit veraltetem Speicher-Cache fehl
-description: "Dieser Artikel bietet eine Lösung für das Problem, bei dem Ihre Adobe Commerce 2.4.0-Installation mit der Fehlermeldung fehlschlägt: *Die Standardwebsite ist nicht definiert. Legen Sie die Website fest und versuchen Sie es erneut.* in der Konsole angezeigt."
+description: 'Dieser Artikel bietet eine Lösung für das Problem, bei dem Ihre Adobe Commerce 2.4.0-Installation mit der Fehlermeldung fehlschlägt: *Die Standardwebsite ist nicht definiert. Legen Sie die Website fest und versuchen Sie es erneut.* in der Konsole angezeigt.'
 exl-id: 0680199b-7e47-4a8c-91fe-9f6c32839a0e
 feature: B2B, Cache, Console, Install, Upgrade
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

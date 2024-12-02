@@ -1,6 +1,6 @@
 ---
-title: "ACSD-51120: GraphQL GET-Anforderungscache für CMS-Seiten mit CMS-Bausteinen nicht gelöscht"
-description: Wenden Sie den Patch ACSD-51120 an, um das Adobe Commerce-Problem zu beheben, bei dem der GraphQL-Anforderungscache für CMS-Seiten, die CMS-Blöcke enthalten, nicht gelöscht wird.
+title: 'ACSD-51120: GraphQL GET-Anforderungscache für CMS-Seiten mit CMS-Bausteinen nicht gelöscht'
+description: Wenden Sie den Patch ACSD-51120 an, um das Adobe Commerce-Problem zu beheben, bei dem der GraphQL-Anforderungscache für CMS-Seiten mit CMS-Bausteinen nicht gelöscht wird.
 exl-id: 22abba89-b697-45d7-972e-bf3233e5e9ec
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
@@ -29,12 +29,12 @@ Der Patch ACSD-51120 behebt das Problem, dass der GraphQL-Anforderungscache für
 
 ## Problem
 
-Der GraphQL GET-Anforderungscache wird nicht für CMS-Seiten gelöscht, die CMS-Bausteine enthalten, die über ein Staging-Update aktualisiert werden.
+Der GraphQL GET-Anforderungscache wird für CMS-Seiten mit CMS-Bausteinen, die über eine Staging-Aktualisierung aktualisiert werden, nicht gelöscht.
 
 <u>Zu reproduzierende Schritte</u>:
 
 1. Erstellen Sie einen CMS-Block.
-1. Schließen Sie den CMS-Block mit dem [!DNL Page Builder] in eine CMS-Seite ein.
+1. Schließen Sie den CMS-Block mithilfe von [!DNL Page Builder] in eine CMS-Seite ein.
 1. Rufen Sie die CMS-Seite mithilfe der angegebenen GraphQL-Abfrage mithilfe einer GET-Anfrage ab:
 
    ```GraphQL

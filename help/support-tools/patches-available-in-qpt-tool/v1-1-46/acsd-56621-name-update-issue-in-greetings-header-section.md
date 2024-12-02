@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-56621: Aktualisierte Namen, die nicht in der Grußkopfzeile für Unternehmensadministratoren angezeigt werden'
+title: 'ACSD-56621: Aktualisierte Namen werden in der Grußkopfzeile für Unternehmensadministratoren nicht angezeigt'
 description: Wenden Sie den Patch ACSD-56621 an, um das Adobe Commerce-Problem zu beheben, bei dem der aktualisierte Vor- und Nachname des Unternehmensadministrators nicht im Grußkopfbereich angezeigt wird.
 feature: Companies, B2B, User Account
 role: Admin, Developer

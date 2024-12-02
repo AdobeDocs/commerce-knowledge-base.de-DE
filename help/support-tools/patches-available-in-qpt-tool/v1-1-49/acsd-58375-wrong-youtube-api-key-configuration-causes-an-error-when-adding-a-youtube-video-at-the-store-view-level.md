@@ -1,9 +1,10 @@
 ---
-title: "ACSD-58375: Falsch konfigurierter YouTube API-Schlüssel verursacht Fehler beim Hinzufügen von Videos auf Store-Ansichtsebene"
+title: 'ACSD-58375: Falsch konfigurierter YouTube API-Schlüssel verursacht Fehler beim Hinzufügen von Videos auf Store-Ansichtsebene'
 description: Wenden Sie den Patch ACSD-58375 an, um das Adobe Commerce-Problem zu beheben, bei dem die falsche Konfiguration des YouTube-API-Schlüssels beim Hinzufügen eines YouTube-Videos auf der Store-Ansichtsebene einen Fehler verursacht.
 feature: Catalog Management, Configuration
 role: Admin, Developer
-source-git-commit: 1887a74b0c5545f9213f54602c58de7028d1ad72
+exl-id: e97f53a1-930b-417f-bd1a-8084bb168d68
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

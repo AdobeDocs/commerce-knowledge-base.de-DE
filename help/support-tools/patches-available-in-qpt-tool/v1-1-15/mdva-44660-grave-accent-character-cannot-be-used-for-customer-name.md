@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44660: Gravis accent character [`] cannot be used for customer's name"
+title: 'MDVA-44660: Gravis accent character [`] cannot be used for customer name'
 description: Der Patch MDVA-44660 behebt das Problem, dass das Gravis Acent Zeichen (`) nicht für den Namen eines Kunden verwendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-44660. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 696f2690-2af5-4770-a4a8-c88c423c6c16
 feature: Variables

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-43887: Falsche Details auf der Zahlungsseite für den Checkout angezeigt"
+title: 'ACSD-43887: Falsche Details auf der Zahlungsseite für den Checkout angezeigt'
 description: Der Patch ACSD-43887 behebt das Problem, dass falsche Details auf der Zahlungsseite für den Kassengang angezeigt werden, wenn die Option Bestellung für Unternehmen aktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 installiert ist. Die Patch-ID lautet ACSD-43887. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 07b17f96-5236-43a7-aeaf-6bfe36c551cf
 feature: B2B, Checkout, Orders, Payments, User Account

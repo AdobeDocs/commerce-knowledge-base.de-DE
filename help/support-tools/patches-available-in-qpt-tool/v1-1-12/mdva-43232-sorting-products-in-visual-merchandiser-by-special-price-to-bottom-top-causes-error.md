@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-43232: Das Sortieren von Produkten im visuellen Merchandiser nach "Sonderpreis nach oben (oder unten)"verursacht einen Fehler.'
+title: 'MDVA-43232: Das Sortieren von Produkten im visuellen Merchandiser nach "Special Price to Top"(oder "Bottom") verursacht einen Fehler'
 description: Der Patch MDVA-43232 behebt das Problem, bei dem das Sortieren von Produkten im visuellen Merchandiser nach "Sonderpreis nach oben"(oder "unten") beim Speichern der Kategorie einen Fehler verursacht. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-43232. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: e958a219-5e93-4ae4-94cb-f478f82ad060
 feature: Categories, Merchandising, Orders, Personalization, Products

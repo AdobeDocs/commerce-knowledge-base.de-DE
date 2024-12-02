@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-56415: Leistung von [!UICONTROL Partial Price Indexing] aufgrund der Abfrage "DELETE" verlangsamt.'
+title: 'ACSD-56415: Leistung von [!UICONTROL Partial Price Indexing] aufgrund der Abfrage "DELETE"verlangsamt'
 description: Wenden Sie den Patch ACSD-56415 an, um das Adobe Commerce-Problem zu beheben, bei dem die Performance von [!UICONTROL Partial Price Indexing] aufgrund einer "DELETE"-Abfrage verlangsamt wird, wenn die Datenbank über viele partielle Preisdaten zu indizieren hat.
 feature: Catalog Service
 role: Admin, Developer

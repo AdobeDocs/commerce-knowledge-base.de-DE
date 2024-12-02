@@ -1,15 +1,15 @@
 ---
-title: '"ACSD-59036: Eine Ausnahme tritt beim Laden von Produktpreisen auf, wobei sowohl die untere als auch die obere Grenze auf 0 USD gesetzt sind. '
+title: 'ACSD-59036: Beim Laden von Produktpreisen tritt eine Ausnahme auf, wenn sowohl die untere als auch die obere Grenze auf 0 USD gesetzt sind'
 description: Wenden Sie den Patch ACSD-59036 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Laden von Produktpreisen eine Ausnahme auftritt, wobei sowohl die untere als auch die obere Grenze auf *$0* festgelegt sind.
 feature: Categories, Products, Storefront, Search
 role: Admin, Developer
-source-git-commit: d711fb8ff8876a4a514daade6d7df4d7cf7e3593
+exl-id: 40f13aee-5cba-4367-94e2-d8c0e86e96c9
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59036: Beim Laden von Produktpreisen tritt eine Ausnahme auf, wenn sowohl die untere als auch die obere Grenze auf *$0* gesetzt sind
 

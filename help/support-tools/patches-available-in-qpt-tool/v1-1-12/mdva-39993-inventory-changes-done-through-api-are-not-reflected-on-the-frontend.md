@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39993: Über API vorgenommene Bestandsänderungen werden in Storefront nicht berücksichtigt"
+title: 'MDVA-39993: Über API durchgeführte Bestandsänderungen werden nicht auf der Storefront angezeigt'
 description: Der Patch MDVA-39993 behebt das Problem, dass die durch die API vorgenommenen Bestandsänderungen nicht in der Storefront angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39993. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 2d49b9b7-8a70-44f3-80bf-4460bb2e61d5
 feature: REST, Inventory, Orders, Storefront

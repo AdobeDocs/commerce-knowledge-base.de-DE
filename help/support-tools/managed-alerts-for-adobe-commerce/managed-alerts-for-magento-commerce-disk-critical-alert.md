@@ -1,5 +1,5 @@
 ---
-title: "Managed Warnhinweise für Adobe Commerce: Disk-critical alert"
+title: 'Verwaltete Warnhinweise für Adobe Commerce: Warnungen bezüglich der Festplatte'
 description: In diesem Artikel finden Sie Schritte zur Fehlerbehebung, wenn Sie einen kritischen Datenträgerwarnungen für Adobe Commerce in New Relic erhalten. Um dieses Problem zu beheben, sind sofortige Maßnahmen erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal für Warnhinweise ungefähr wie folgt aus.
 exl-id: 03e5694b-7689-4fbf-8781-636fa46ca0d3
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services

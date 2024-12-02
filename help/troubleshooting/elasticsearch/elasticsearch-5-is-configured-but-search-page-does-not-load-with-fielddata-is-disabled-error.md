@@ -1,6 +1,6 @@
 ---
 title: Elasticsearch 5 ist konfiguriert, die Suchseite wird jedoch nicht mit dem Fehler "Felddaten sind deaktiviert.."geladen.
-description: "Hier wird beschrieben, wie Sie das Problem mit Elasticsearch 5 beheben, bei dem die Suchseite nicht geladen wird und die dem Folgenden ähnelnde Ausnahme ausgegeben wird:"
+description: 'Hier wird beschrieben, wie Sie das Problem mit Elasticsearch 5 beheben, bei dem die Suchseite nicht geladen wird und eine ähnliche Ausnahme wie die folgende ausgegeben wird:'
 exl-id: f5fa8144-4e7c-45ce-89d0-a8367e91d6db
 feature: Cache
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733

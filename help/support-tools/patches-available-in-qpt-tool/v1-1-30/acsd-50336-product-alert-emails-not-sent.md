@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50336: E-Mails mit Produktwarnungen werden nicht gesendet"
+title: 'ACSD-50336: E-Mails mit Produktwarnung werden nicht gesendet'
 description: Wenden Sie den Patch ACSD-50336 an, um das Adobe Commerce-Problem zu beheben, bei dem E-Mails zur Produktwarnung nicht gesendet werden, wenn ein Produkt wieder auf Lager ist oder der Preis geändert wird.
 exl-id: 0fc51603-e74d-4ce7-9e67-42826ffbfab2
 feature: Communications, Personalization, Products

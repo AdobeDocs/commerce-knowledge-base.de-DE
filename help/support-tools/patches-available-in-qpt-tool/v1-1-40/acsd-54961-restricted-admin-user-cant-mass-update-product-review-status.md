@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54961: Eingeschränkte Administratoren können keine Massenaktualisierung durchführen [!UICONTROL Product Review status]"
+title: 'ACSD-54961: Eingeschränkte Administratoren können keine Massenaktualisierung durchführen [!UICONTROL Product Review status]'
 description: Wenden Sie den Patch ACSD-54961 an, um das Adobe Commerce-Problem zu beheben, bei dem ein eingeschränkter Admin-Benutzer den Status Produktprüfung nicht gebündelt aktualisieren kann.
 feature: Products
 role: Admin, Developer

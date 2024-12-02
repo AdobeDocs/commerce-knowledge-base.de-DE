@@ -1,6 +1,6 @@
 ---
-title: "Verwaltete Warnhinweise zu Adobe Commerce: MariaDB-Warnhinweise"
-description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie MariaDB-Warnhinweise für Adobe Commerce in New Relic erhalten. Die MariaDB-Warnhinweise überwachen eine hohe Abfragelast sowie übermäßige DML-Abfragen (Data Manipulation Language). Beide können zu einem eingeschränkten Benutzererlebnis oder sogar zu Ausfallzeiten führen. Sie können vier Arten von Warnungen erhalten:'
+title: 'Verwaltete Warnhinweise zu Adobe Commerce: MariaDB-Warnhinweise'
+description: 'Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie MariaDB-Warnhinweise für Adobe Commerce in New Relic erhalten. Die MariaDB-Warnhinweise überwachen eine hohe Abfragelast sowie übermäßige DML-Abfragen (Data Manipulation Language). Beide können zu einem eingeschränkten Benutzererlebnis oder sogar zu Ausfallzeiten führen. Sie können vier Arten von Warnungen erhalten:'
 exl-id: 707e20e0-faba-4bcd-884c-b54568787442
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin

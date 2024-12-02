@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54418: Fester Abzinsungsbetrag wurde fälschlicherweise zum untergeordneten Produkt des dynamisch primierten Bundles hinzugefügt."
+title: 'ACSD-54418: Fester Abzinsungsbetrag wurde fälschlicherweise zum untergeordneten Produkt eines dynamisch priorisierten Bundles hinzugefügt'
 description: Wenden Sie den Patch ACSD-54418 an, um das Adobe Commerce-Problem zu beheben, bei dem der feste Abzinsungsbetrag fälschlicherweise auf jedes untergeordnete Produkt des dynamisch primitierten Bundles angewendet wird.
 feature: Shopping Cart
 role: Admin, Developer

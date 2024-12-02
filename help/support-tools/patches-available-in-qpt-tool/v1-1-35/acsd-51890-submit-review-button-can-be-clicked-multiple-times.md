@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51890: [!UICONTROL Submit review] button can be clicked multiple times"
+title: 'ACSD-51890: [!UICONTROL Submit review] -Schaltfläche kann mehrmals angeklickt werden'
 description: Wenden Sie den Patch ACSD-51890 an, um das Adobe Commerce-Problem zu beheben, bei dem die Schaltfläche [!UICONTROL Submit Review] mehrmals ohne Validierung von  [!DNL Google reCAPTCHA v3] angeklickt werden kann.
 feature: Products
 role: Admin

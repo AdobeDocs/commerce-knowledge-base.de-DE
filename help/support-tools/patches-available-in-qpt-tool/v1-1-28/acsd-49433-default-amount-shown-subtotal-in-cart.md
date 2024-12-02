@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49433: Standardbetrag als Zwischensumme im Warenkorb für Geschenkkarte angezeigt"
+title: 'ACSD-49433: Standardbetrag als Zwischensumme im Warenkorb für Geschenkkarte angezeigt"'
 description: Wenden Sie den Patch ACSD-49433 an, um das Adobe Commerce-Problem zu beheben, bei dem der Standardbetrag als Zwischensumme im Warenkorb für Geschenkkarten mit einem offenen Betrag angezeigt wird.
 exl-id: e2a887bb-c15a-43a6-a145-b295deef399b
 feature: Admin Workspace, Gift, Orders, Shopping Cart

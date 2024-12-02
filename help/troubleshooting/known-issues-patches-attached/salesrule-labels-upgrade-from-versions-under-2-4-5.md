@@ -1,5 +1,5 @@
 ---
-title: '**[!UICONTROL salesRules]** kennzeichnet Probleme beim Upgrade von Versionen < 2.4.5'
+title: '**[!UICONTROL salesRules]** kennzeichnet Probleme bei der Aktualisierung von Versionen < 2.4.5'
 description: Wenden Sie einen Patch an, um die **[!UICONTROL salesRules]**-Probleme beim Upgrade von Adobe Commerce-Versionen < 2.4.5 zu beheben.
 source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt

@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42326: Kunden erhalten beim Checkout nach Sitzungs-Timeout einen Fehler."
+title: 'MDVA-42326: Kunden erhalten beim Checkout nach Sitzungs-Timeout einen Fehler'
 description: Der Patch MDVA-42326 behebt das Problem, dass Kunden nach dem Sitzungs-Timeout beim Checkout einen Fehler beim Checkout erhalten, selbst wenn der beständige Warenkorb aktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-42326. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: bc9b71de-510d-4c4e-8b0d-9abf9a3e447f
 feature: Checkout, Orders

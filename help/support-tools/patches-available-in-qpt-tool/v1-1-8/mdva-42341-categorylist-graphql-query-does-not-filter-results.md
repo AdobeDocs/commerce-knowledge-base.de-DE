@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-42341: "categoryList" GraphQL-Abfrage filtert keine Ergebnisse"'
+title: 'MDVA-42341: "categoryList" GraphQL-Abfrage filtert keine Ergebnisse'
 description: Der Patch MDVA-42341 behebt das Problem, dass die GraphQL-Abfrage "categoryList"keine Ergebnisse filtert, wenn eine Anfrage die Store-Kopfzeile aufweist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-42341. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 34aeb30a-9491-4102-b33e-dcd857b6a1c2
 feature: GraphQL, Categories

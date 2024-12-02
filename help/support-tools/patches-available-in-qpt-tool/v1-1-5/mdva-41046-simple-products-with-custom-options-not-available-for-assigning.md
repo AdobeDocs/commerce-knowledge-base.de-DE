@@ -1,5 +1,5 @@
 ---
-title: "MDVA-41046: Einfache Produkte mit benutzerdefinierten Optionen sind nicht für die Zuweisung verfügbar"
+title: 'MDVA-41046: Einfache Produkte mit benutzerdefinierten Optionen sind nicht für die Zuweisung verfügbar'
 description: Der Patch MDVA-41046 behebt das Problem, dass einfache Produkte mit benutzerdefinierten Optionen nicht für die Zuweisung zu konfigurierbaren/gruppierten Produkten verfügbar sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-41046. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 01229a69-c72a-4189-9be5-1761073b74ee
 feature: Products

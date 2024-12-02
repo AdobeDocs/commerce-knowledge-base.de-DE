@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39521: Versandadresse kann nicht über GraphQL auf Warenkörbe gesetzt werden"
+title: 'MDVA-39521: Versandadresse kann nicht über GraphQL auf Warenkörben gesetzt werden'
 description: Der Patch MDVA-39521 behebt das Problem, dass der Benutzer die Lieferadresse nicht über GraphQL auf Warenkörben mit einer leeren Telefonnummer setzen kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39521. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: b6bb4e83-ba65-4f15-82be-1252d9beb2fb
 feature: GraphQL, Orders, Shipping/Delivery, Shopping Cart

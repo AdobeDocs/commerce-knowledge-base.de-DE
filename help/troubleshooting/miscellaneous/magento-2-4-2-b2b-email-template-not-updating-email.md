@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.2 B2B: E-Mail-Vorlage nicht aktualisiert E-Mail"
+title: 'Adobe Commerce 2.4.2 B2B: E-Mail-Vorlage, die die E-Mail nicht aktualisiert'
 description: In diesem Artikel wird ein bekanntes B2B-Problem in Adobe Commerce 2.4.2 beschrieben, bei dem das Aktualisieren einiger Informationen in einer E-Mail-Vorlage in E-Mails nicht aktualisiert wird. Dieses Problem betrifft E-Mail-Inhalte wie Kundeninformationen, Währungsraten, Währungssymbol, E-Mail-Vorlagenänderungen usw. Es gibt derzeit keine Lösung, aber am Ende dieses Artikels gibt es eine Lösung.
 exl-id: 31b7086f-a941-4682-aa07-301ac31d543b
 feature: B2B, Communications

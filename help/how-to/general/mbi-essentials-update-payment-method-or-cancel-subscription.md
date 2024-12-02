@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce Intelligence Essentials: update payment method or cancel subscription"
+title: 'Adobe Commerce Intelligence Essentials: Zahlungsmethode aktualisieren oder Abonnement kündigen'
 description: In diesem Artikel wird erläutert, wie Adobe Commerce Intelligence Essentials-Kunden von Monat zu Monat ihre Abonnements stornieren oder ihre Zahlungsmethode für bestehende Abonnements aktualisieren können.
 exl-id: 45e95451-6d17-44c7-81d3-87f5876b5758
 feature: Commerce Intelligence

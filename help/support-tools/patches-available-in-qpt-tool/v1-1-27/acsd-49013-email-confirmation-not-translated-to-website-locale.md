@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49013: E-Mail-Bestätigung nicht in Website-Gebietsschema übersetzt"
+title: 'ACSD-49013: E-Mail-Bestätigung nicht in das Gebietsschema der Website übersetzt'
 description: Wenden Sie den Patch ACSD-49013 an, um das Adobe Commerce-Problem zu beheben, bei dem die E-Mail-Bestätigung beim Erstellen von Kunden mit Bulk API nicht in das Gebietsschema der Website übersetzt wird.
 exl-id: 68203bd4-021a-4736-a793-4b6663a9c66b
 feature: Admin Workspace, Communications

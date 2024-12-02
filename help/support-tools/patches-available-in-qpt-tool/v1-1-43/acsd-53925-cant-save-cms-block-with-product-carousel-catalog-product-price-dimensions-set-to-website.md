@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-53925: CMS-Block kann nicht mit [!UICONTROL Product Carousel] gespeichert werden'
+title: 'ACSD-53925: CMS-Block kann nicht mit [!UICONTROL Product Carousel] gespeichert werden'
 description: Wenden Sie den Patch ACSD-53925 an, um das Adobe Commerce-Problem zu beheben, bei dem der Administrator keinen CMS-Block mit dem Produktkarussell speichern kann, wenn der Dimensionsmodus für "catalog_product_price"auf "website"festgelegt ist.
 feature: CMS, Page Builder, Price Indexer, Products
 role: Admin, Developer

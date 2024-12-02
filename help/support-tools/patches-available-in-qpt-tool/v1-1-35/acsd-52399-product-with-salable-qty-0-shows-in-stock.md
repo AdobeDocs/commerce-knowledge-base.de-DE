@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52399: Produkt mit verkaufsfähiger Menge 0 zeigt Lager an"
+title: 'ACSD-52399: Produkt mit verkaufsfähiger Menge 0 wird vorrätig angezeigt'
 description: Wenden Sie den Patch ACSD-52399 an, um das Adobe Commerce-Problem zu beheben, bei dem die konfigurierbare Produktoption mit der Verkaufsmenge "0"auf der Produktseite *In Stock* angezeigt wird.
 feature: Products, Configuration
 role: Admin, Developer

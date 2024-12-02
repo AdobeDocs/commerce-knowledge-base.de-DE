@@ -1,7 +1,7 @@
 ---
 title: Identifizieren und Messen von Ausfällen für Adobe Commerce in der Cloud-Infrastruktur
 promoted: true
-description: '"Es gibt mehrere Möglichkeiten, wie ein Händler (oder jeder, der an der Gesundheit der Site interessiert ist) Site-Downs identifizieren kann, auch als Site-Ausfälle bezeichnet. Eine Site-down ist der Zeitraum, in dem die Site des Händlers nicht angemessen auf die Anforderungen des Kunden reagieren kann. Die Definition von Ausfällen und deren Auswirkungen auf Standorte ist breit gefasst. Der beigefügte Artikel beschreibt Folgendes:'''
+description: 'Es gibt mehrere Möglichkeiten, wie ein Händler (oder jeder, der an der Gesundheit der Site interessiert ist) Site-Downs identifizieren kann, die auch als Site-Ausfälle bezeichnet werden. Eine Site-down ist der Zeitraum, in dem die Site des Händlers nicht angemessen auf die Anforderungen des Kunden reagieren kann. Die Definition von Ausfällen und deren Auswirkungen auf Standorte ist breit gefasst. Der beigefügte Artikel beschreibt Folgendes:'
 exl-id: 204910b0-49d5-43df-921b-8c0c7a42524e
 feature: Cloud
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8

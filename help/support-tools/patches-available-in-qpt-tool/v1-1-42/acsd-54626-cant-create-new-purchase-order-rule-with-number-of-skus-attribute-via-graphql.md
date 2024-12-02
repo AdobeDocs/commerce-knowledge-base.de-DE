@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-54626: Neue Bestellregel mit NUMBER_OF_SKUS über GraphQL kann nicht erstellt werden'
+title: 'ACSD-54626: Neue Bestellregel mit NUMBER_OF_SKUS kann nicht über GraphQL erstellt werden'
 description: Wenden Sie den Patch ACSD-54626 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Kunde keine neue Bestellregel ("createPurchaseOrderApprovalRule") mit dem Attribut "NUMBER_OF_SKUS"über GraphQL erstellen kann.
 feature: Attributes, B2B, GraphQL, Purchase Orders
 role: Admin, Developer

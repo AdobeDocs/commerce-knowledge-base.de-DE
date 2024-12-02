@@ -1,6 +1,6 @@
 ---
-title: "ACSD-46213: Kategoriebaumanforderung beschränkt auf 20 Kategorien"
-description: Der Patch ACSD-46213 behebt das Problem, dass die Kategoriebaumanforderung auf 20 Kategorien beschränkt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46213. '
+title: 'ACSD-46213: Kategoriebaumanforderung beschränkt auf 20 Kategorien'
+description: 'Der Patch ACSD-46213 behebt das Problem, dass die Kategoriebaumanforderung auf 20 Kategorien beschränkt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46213. '
 exl-id: 27a18871-8552-4ecd-9e03-0dc38d037ea0
 feature: Categories
 role: Admin

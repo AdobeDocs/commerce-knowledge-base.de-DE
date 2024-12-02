@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49628: [!DNL Page Builder] CORS-Fehler verhindern das Speichern von Produkten"
+title: 'ACSD-49628: [!DNL Page Builder] CORS-Fehler verhindern das Speichern von Produkten'
 description: Wenden Sie den Patch ACSD-49628 an, um das Adobe Commerce-Problem zu beheben, bei dem die [!DNL Page Builder] CORS-Fehler das Speichern des Produkts verhindern.
 exl-id: c6e2f0b3-aea0-4caf-8b69-9644b38c909c
 feature: Categories, Page Builder, Products

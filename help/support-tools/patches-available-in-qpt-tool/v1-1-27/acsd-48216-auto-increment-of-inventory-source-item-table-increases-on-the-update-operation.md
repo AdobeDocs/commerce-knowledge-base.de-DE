@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-48216: *AUTO_INCREMENT of inventory_source_item* table increase on *UPDATE* operation'
+title: 'ACSD-48216: *AUTO_INCREMENT der Tabelle inventory_source_item* erhöht sich bei *UPDATE*-Vorgang'
 description: Wenden Sie den Patch ACSD-48216 an, um das Adobe Commerce-Problem zu beheben, bei dem *AUTO_INCREMENT der Tabelle inventory_source_item* beim Vorgang *UPDATE* zunimmt.
 exl-id: fb97f240-95c0-479e-ac5a-00f6792374ab
 feature: Admin Workspace, Inventory, Orders

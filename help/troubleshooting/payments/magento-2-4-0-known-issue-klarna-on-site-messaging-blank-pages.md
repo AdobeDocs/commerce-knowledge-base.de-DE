@@ -1,5 +1,5 @@
 ---
-title: "Bekanntes Problem mit Adobe Commerce 2.4.0: Klarna On-Site Messaging - leere Seiten"
+title: 'Bekanntes Problem mit Adobe Commerce 2.4.0: Klarna On-Site Messaging - leere Seiten'
 description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.0-Problem mit der Zahlungsmethode Klarna beschrieben, bei dem die Aktivierung von Klarna On-site-Messaging ohne Angabe eines Designthemas dazu führt, dass Produktseiten auf der Storefront nicht korrekt angezeigt werden (Produktseiten erscheinen leer).
 exl-id: f0f9edfc-eaad-4947-9200-41e217bfbe84
 feature: Orders, Payments

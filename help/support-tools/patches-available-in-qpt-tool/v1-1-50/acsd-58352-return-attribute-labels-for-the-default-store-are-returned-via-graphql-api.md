@@ -1,15 +1,15 @@
 ---
-title: '''ACSD-58352: Rückgabeattributbeschriftungen für den Standardspeicher werden über [!DNL GraphQL] API'' zurückgegeben.'
-description: Wenden Sie den Patch ACSD-58352 an, um das Adobe Commerce-Problem zu beheben, bei dem Rückgabeattributbeschriftungen für den Standardspeicher über die API zurückgegeben werden, wenn eine nicht standardmäßige Store-Ansicht im Anfrageheader angegeben ist. [!DNL GraphQL]
+title: 'ACSD-58352: Rückgabeattributbeschriftungen für den Standardspeicher werden über die API [!DNL GraphQL] zurückgegeben.'
+description: 'Wenden Sie den Patch ACSD-58352 an, um das Adobe Commerce-Problem zu beheben, bei dem Rückgabeattributbeschriftungen für den Standardspeicher über die API zurückgegeben werden, wenn eine nicht standardmäßige Store-Ansicht im Anfrageheader angegeben ist. [!DNL GraphQL] '
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: 6df1ec7e2cccfbadaa88b8233ca99faf40a208c5
+exl-id: 372a50bb-28e1-4259-97d1-011956b73d59
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58352: Rückgabe der Attributbeschriftungen für den Standardspeicher werden über die API [!DNL GraphQL] zurückgegeben
 

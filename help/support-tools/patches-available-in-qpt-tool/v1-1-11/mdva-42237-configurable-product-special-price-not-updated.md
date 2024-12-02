@@ -1,10 +1,10 @@
 ---
-title: "MDVA-42237: Konfigurierbarer Produktspezialpreis nicht aktualisiert"
+title: 'MDVA-42237: Konfigurierbarer Produktspezialpreis nicht aktualisiert'
 description: Der Patch MDVA-42237 behebt das Problem, dass der Sonderpreis des konfigurierbaren Produkts nach Änderungen des Produktpreises nicht aktualisiert wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.11 installiert ist. Die Patch-ID lautet MDVA-42237. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 3e890448-8368-4eb2-ab64-c04cdacf20bb
 feature: Admin Workspace, Configuration, Orders, Personalization, Products
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48212: Beim Produktimport wird das Produkt der falschen Quelle zugewiesen."
+title: 'ACSD-48212: Beim Produktimport wird das Produkt der falschen Quelle zugewiesen.'
 description: Wenden Sie den Patch ACSD-48212 an, um das Adobe Commerce-Problem zu beheben, bei dem der Produktimport das Produkt der falschen Quelle zuordnet.
 exl-id: b3426f62-f73a-4b76-8e0e-544a9133720f
 feature: Admin Workspace, Data Import/Export, Products

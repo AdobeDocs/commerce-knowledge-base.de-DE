@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39153: Rabattbetrag wird bei der Neubestellung in der Admin-Konsole falsch berechnet"
+title: 'MDVA-39153: Der Rabattbetrag wird bei der Neubestellung in der Admin-Konsole falsch berechnet'
 description: Der Patch MDVA-39153 behebt das Problem, dass der Rabattbetrag bei der Neubestellung in der Admin-Konsole falsch berechnet wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-39153. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: d4d11bea-a528-4eb5-8a57-8a7330975e4a
 feature: Admin Workspace, Orders, Personalization, Payments

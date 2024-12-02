@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce-Fehlerberichtsnummer anstelle des Fastly 503-Fehlers anzeigen
-description: 'Standardmäßig werden alle Adobe Commerce-Fehler schnell hinter dem Fehler **503 Service Nicht verfügbar** verborgen. Um die Berichtsnummer des Adobe Commerce-Fehlerprotokolls anzuzeigen (um ihn in den Protokollen zu finden und die Fehlerdetails anzuzeigen), öffnen Sie die Website, auf der die Schritte weggelassen werden:'
+description: 'Standardmäßig werden alle Adobe Commerce-Fehler schnell hinter dem Fehler **503 Service Nicht verfügbar** verborgen. Um die Berichtsnummer des Adobe Commerce-Fehlerprotokolls anzuzeigen (um ihn in den Protokollen zu finden und die Fehlerdetails anzuzeigen), öffnen Sie die Website, auf der Sie den Vorgang ausgelassen haben, indem Sie die folgenden Schritte ausführen:'
 exl-id: c0a4a9f8-a674-4cef-8088-e844594e6076
 feature: Cache, Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733

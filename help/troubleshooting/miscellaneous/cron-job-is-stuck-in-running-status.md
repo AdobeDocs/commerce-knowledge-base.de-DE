@@ -1,5 +1,5 @@
 ---
-title: '"[!DNL Cron] Auftrag ist im Status "Wird ausgeführt"stecken geblieben.'
+title: '[!DNL Cron] Auftrag ist im Status "running**"stecken geblieben'
 description: Dieser Artikel bietet Lösungen für den Fall, dass Adobe Commerce [!DNL cron] Aufträge nicht abgeschlossen werden und in einem "laufenden"Status bestehen bleiben, was verhindert, dass andere [!DNL cron] Aufträge ausgeführt werden. Dies kann verschiedene Gründe haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der Neubereitstellung.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration

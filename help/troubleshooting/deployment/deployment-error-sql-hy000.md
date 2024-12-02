@@ -1,5 +1,5 @@
 ---
-title: "Deployment error: SQLSTATE[HY000]"
+title: 'Bereitstellungsfehler: SQLSTATE[HY000]'
 description: Dieser Artikel bietet eine Lösung für das Problem, bei dem die Bereitstellung aufgrund des SQLSTATE[HY00]-Fehlers fehlschlägt.
 exl-id: c6da6275-9327-4a5c-99ed-93a53952ba42
 feature: Deploy

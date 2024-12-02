@@ -1,5 +1,5 @@
 ---
-title: "MDVA-32776: Lagerstatus nicht mit Bestellplatzierung aktualisiert"
+title: 'MDVA-32776: Lagerstatus nicht mit Bestellplatzierung aktualisiert'
 description: Der Patch MDVA-32776 behebt das Problem, dass der Lagerstatus nicht aktualisiert wird, wenn eine Bestellung aufgegeben, aber nicht versandt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-32776. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
 exl-id: 10e9458f-562a-480b-b813-104a93db4308
 feature: Orders

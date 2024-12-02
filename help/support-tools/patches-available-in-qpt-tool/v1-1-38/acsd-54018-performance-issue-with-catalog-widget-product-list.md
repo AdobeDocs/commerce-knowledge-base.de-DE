@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54018: Leistungsproblem mit Katalog-Widget-Produktliste"
+title: 'ACSD-54018: Leistungsproblem mit der Produktliste des Katalog-Widgets'
 description: Wenden Sie den Patch ACSD-54018 an, um das Adobe Commerce-Problem zu beheben, bei dem die Seite beim Hinzufügen einer Katalog-Widget-Produktliste mit dem booleschen Bedingungs- und Attributtyp langsam geladen wird.
 feature: Attributes, Catalog Management, Page Builder, Page Content, Storefront
 role: Admin, Developer

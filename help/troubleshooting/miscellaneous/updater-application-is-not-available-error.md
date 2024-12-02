@@ -1,5 +1,5 @@
 ---
-title: Fehler "Update application not available"
+title: Fehler "Aktualisierungsanwendung ist nicht verfügbar"
 description: In diesem Artikel wird die Lösung für das Problem "Update-Anwendung ist nicht verfügbar"beschrieben, mit der Sie möglicherweise konfrontiert sind, wenn Sie versuchen, Adobe Commerce lokal mit dem Web-Setup-Assistenten zu aktualisieren/zu installieren.
 exl-id: 85e55ed8-0bc9-4378-b722-46be98ce2638
 feature: Configuration

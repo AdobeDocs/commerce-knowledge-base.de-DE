@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-51636: Unternehmensadministrator kann keine neuen Benutzer aus dem Abschnitt "Kundenkonto"hinzufügen."'
+title: 'ACSD-51636: Unternehmensadministrator kann keine neuen Benutzer aus dem Abschnitt "Kundenkonto"hinzufügen'
 description: Wenden Sie den Patch ACSD-51636 an, um das Adobe Commerce-Problem zu beheben, bei dem der Unternehmensadministrator keine neuen Benutzer aus dem Abschnitt "Kundenkonto"hinzufügen kann, obwohl er über alle erforderlichen Rollen und Berechtigungen verfügt.
 feature: Admin Workspace, B2B, Companies, Customer Service
 role: Admin

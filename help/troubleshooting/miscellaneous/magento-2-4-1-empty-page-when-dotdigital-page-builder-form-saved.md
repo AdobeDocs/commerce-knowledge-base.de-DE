@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.1: leere Seite beim Speichern des digitalen Seitenaufbaus"
+title: 'Adobe Commerce 2.4.1: leere Seite beim Speichern des Digital Page Builder-Formulars'
 description: Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce 2.4.1, bei dem bei Verwendung des Safari-Browsers eine leere Webseite angezeigt wird, nachdem ein dotdigital Page Builder -Formular im Admin Panel gespeichert wurde.
 exl-id: 682eac73-1ad2-4093-acfb-6a8da4c05cf5
 feature: Page Builder

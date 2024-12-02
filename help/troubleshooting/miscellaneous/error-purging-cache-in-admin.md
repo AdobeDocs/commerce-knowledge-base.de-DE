@@ -1,6 +1,6 @@
 ---
 title: Fehler beim Bereinigen des Cache in Commerce Admin
-description: 'In diesem Artikel wird erläutert, wie Sie die Ursache einer Fehlermeldung identifizieren können, die beim Löschen des Caches in der Commerce Admin auftritt. Wenn Sie versuchen, den Cache über den Admin zu bereinigen, erhalten Sie die folgende Meldung:'
+description: 'In diesem Artikel wird erläutert, wie Sie die Ursache einer Fehlermeldung identifizieren können, die beim Löschen des Caches in Commerce Admin auftritt. Wenn Sie versuchen, den Cache über den Admin zu bereinigen, erhalten Sie die folgende Nachricht:'
 exl-id: aa414e04-bc6d-46bd-b98f-0446b97bda14
 feature: Admin Workspace, Cache
 role: Developer

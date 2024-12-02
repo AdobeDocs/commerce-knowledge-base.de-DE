@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45849: Videometadaten gehen nach der Staging-Aktualisierung verloren"
+title: 'ACSD-45849: Videometadaten gehen nach der Staging-Aktualisierung verloren'
 description: Der Patch ACSD-45849 behebt das Problem, dass die Video-Metadaten nach dem Anwenden eines Staging-Updates verloren gehen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-45849. Beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.
 exl-id: 071a535d-f96c-4731-a17c-0b7bf8a87372
 feature: Staging, Page Content

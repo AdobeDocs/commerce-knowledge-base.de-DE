@@ -1,5 +1,5 @@
 ---
-title: "ACSD-55004: Validator stürzt beim Hochladen einer Importdatei ab, die größer als der Wert ist"
+title: 'ACSD-55004: Validator stürzt beim Hochladen einer Importdatei ab, die größer als der Wert ist'
 description: Wenden Sie den Patch ACSD-55004 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Validator beim Hochladen einer Importdatei abstürzt, die größer ist als der in "php.ini"konfigurierte Wert.
 feature: Data Import/Export
 role: Admin, Developer

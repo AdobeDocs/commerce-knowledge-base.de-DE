@@ -1,6 +1,6 @@
 ---
-title: "Bekanntes Problem bei Adobe Commerce 2.3.7-p1: veraltete Bestellsumme für PayPal"
-description: "Dieser Artikel enthält einen Patch für ein bekanntes Problem in Adobe Commerce 2.3.7-p1: Wenn Sie PayPal Checkout verwenden, erhalten Kunden das zuvor bestellte Produkt mehr als einmal im Warenkorb, anstatt das neue Produkt zu bestellen."
+title: 'Bekanntes Problem in Adobe Commerce 2.3.7-p1: veraltete Bestellsumme für PayPal'
+description: 'Dieser Artikel enthält einen Patch für ein bekanntes Problem in Adobe Commerce 2.3.7-p1: Wenn Sie PayPal Checkout mehr als einmal verwenden, erhalten Kunden das zuvor bestellte Produkt im Warenkorb, anstatt das neue Produkt, das sie versuchen zu bestellen.'
 exl-id: ceb8f7ad-0cf7-4d42-aded-25d1dd947f5b
 feature: Orders, Payments
 role: Developer

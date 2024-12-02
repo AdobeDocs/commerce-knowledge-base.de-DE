@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-48313: [!UICONTROL configurable_variations] Spalte nicht geparst, wenn Attributwert Komma enthält.'
+title: 'ACSD-48313: [!UICONTROL configurable_variations] Spalte wird nicht geparst, wenn der Attributwert Komma enthält'
 description: Wenden Sie den Patch ACSD-48313 an, um das Adobe Commerce-Problem zu beheben, bei dem die Spalte [!UICONTROL configurable_variations] nicht analysiert wird, wenn der Attributwert ein Komma enthält.
 exl-id: 0ac3f8da-4da3-4308-bea4-98a5b6926b0d
 feature: Attributes, Configuration

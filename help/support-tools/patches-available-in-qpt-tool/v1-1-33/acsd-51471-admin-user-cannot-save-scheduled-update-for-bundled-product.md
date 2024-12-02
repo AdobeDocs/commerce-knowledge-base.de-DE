@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51471: Admin-Benutzer können geplante Updates für gebündelte Produkte nicht speichern."
+title: 'ACSD-51471: Admin-Benutzer können geplante Updates für gebündelte Produkte nicht speichern'
 description: Wenden Sie den Patch ACSD-51471 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Admin-Benutzer ein geplantes Update für ein gebündeltes Produkt, das ein einfaches Produkt mit geplantem Update verwendet, nicht speichern kann.
 exl-id: 7d80aef0-8505-4491-bde3-5b1a30b840f6
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

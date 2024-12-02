@@ -1,5 +1,5 @@
 ---
-title: "Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.33"
+title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.33'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.33 verfügbaren Patches behoben wurden.
 feature: Tools and External Services
 role: Admin
@@ -30,7 +30,7 @@ QPT v1.1.33 enthält die folgenden Patches:
 1. **ACSD-51792**: Behebung des Problems, bei dem eine Seite nicht über das Impressionsereignis verfügt, wenn [!DNL Google Tag Manager] 4 aktiviert ist.
 1. **ACSD-51471**: Behebung des Problems, bei dem ein Admin-Benutzer ein geplantes Update für ein gebündeltes Produkt, das ein einfaches Produkt verwendet, das selbst über eine geplante Aktualisierung verfügt, nicht speichern kann.
 1. **ACSD-51700**: Behebt den Fehler, der beim Wechseln von Store-Ansichten auf einer herunterladbaren Produktebearbeitungsseite im Admin auftritt.
-1. **ACSD-51120**: Behebung des Problems, bei dem der Cache von GraphQL-GET-Anforderungen für CMS-Seiten, die CMS-Blöcke enthalten, die über ein Staging-Update aktualisiert werden, nicht gelöscht wird.
+1. **ACSD-51120**: Behebung des Problems, bei dem der Cache von GraphQL-GET-Anforderungen für CMS-Seiten, die CMS-Bausteine enthalten, die über ein Staging-Update aktualisiert werden, nicht gelöscht wird.
 1. **ACSD-51240**: Behebung des Problems, bei dem die hochgeladene Datei fehlt, wenn die Registrierung über das Registrierungsformular für das Unternehmen erfolgt.
 1. **ACSD-51907**: Behebung des Problems, bei dem ein eingeschränkter Administrator kein Kreditmemo mit Offline-Rückerstattung erstellen kann.
 1. **ACSD-52148**: Behebung des Problems, bei dem die [!UICONTROL Google V3 reCAPTCHA Admin]-Anmeldung gelegentlich fehlschlägt.

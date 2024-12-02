@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.2 B2B: Rabatt bleibt Zahlungsmethodenänderung erhalten"
+title: 'Adobe Commerce 2.4.2 B2B: Rabatt bleibt Zahlungsmethodenänderung erhalten'
 description: In diesem Artikel wird ein bekanntes B2B-Problem in Adobe Commerce 2.4.2 beschrieben, bei dem ein durch die Zahlungsmethode gebundener Rabatt nach einer Änderung der Zahlungsmethode beim Checkout beibehalten wird. Derzeit steht keine Lösung zur Verfügung.
 exl-id: cd863852-403b-404f-8717-c78c238f5f33
 feature: B2B, Orders, Payments, Personalization

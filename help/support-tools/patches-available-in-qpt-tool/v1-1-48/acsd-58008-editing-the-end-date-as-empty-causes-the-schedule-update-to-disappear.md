@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-58008: Wird das Enddatum als "leer"geändert, wird der Zeitplan-Update nicht mehr angezeigt."'
+title: 'ACSD-58008: Wenn Sie das Enddatum als "leer"ändern, wird das Zeitplan-Update nicht mehr angezeigt.'
 description: Wenden Sie den Patch ACSD-58008 an, um das Adobe Commerce-Problem zu beheben, bei dem das Bearbeiten des Enddatums als *leer* dazu führt, dass die Zeitplanaktualisierung verschwindet.
 feature: Staging, Page Content
 role: Admin, Developer

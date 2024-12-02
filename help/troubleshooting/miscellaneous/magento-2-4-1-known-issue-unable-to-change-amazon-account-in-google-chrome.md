@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.1-Problem: Amazon-Konto in Chrome kann nicht geändert werden"
+title: 'Problem mit Adobe Commerce 2.4.1: Amazon-Konto in Chrome kann nicht geändert werden'
 description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.1 beschrieben, bei dem Kunden sich bei den zuvor verwendeten Amazon-Konten anmelden, anstatt sich anzumelden, wenn sie die Amazon-Zahlung während des Checkouts verwenden.
 exl-id: 8acffe99-b3ec-4b45-9434-61b66e963838
 feature: Customer Service

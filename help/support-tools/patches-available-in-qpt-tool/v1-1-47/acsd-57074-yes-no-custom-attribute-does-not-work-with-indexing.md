@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-57074: *Ja/Nein* benutzerdefiniertes Attribut mit dem Präfix "price_*"im Attribut "attribute_code"funktioniert nicht mit der Indizierung."'
+title: 'ACSD-57074: *Ja/Nein* benutzerdefiniertes Attribut mit dem Präfix "price_*"im Attribut "attribute_code"funktioniert nicht mit der Indizierung'
 description: Wenden Sie den Patch ACSD-57074 an, um das Adobe Commerce-Problem zu beheben, bei dem das benutzerdefinierte Attribut *Ja/Nein* mit dem Präfix `price_* im Attribut `attribute_code` nicht mit der Indizierung funktioniert.
 feature: Products, Categories, Catalog Management
 role: Admin, Developer

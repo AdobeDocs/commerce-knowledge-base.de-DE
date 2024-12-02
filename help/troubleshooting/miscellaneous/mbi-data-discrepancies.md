@@ -1,6 +1,6 @@
 ---
-title: "MBI: Datendiskrepanzen"
-description: "Sehen die Zahlen in einem bestimmten Bericht ungenau aus? Sehen Sie unerwartete NULL-Werte? Wenn Sie etwas sehen, das nicht richtig erscheint, empfehlen wir Ihnen, diese Ressourcen zu verwenden, um Ihnen bei der Fehlerbehebung zu helfen:"
+title: 'MBI: Datendiskrepanzen'
+description: 'Sehen die Zahlen in einem bestimmten Bericht ungenau aus? Sehen Sie unerwartete NULL-Werte? Wenn Sie etwas sehen, das nicht richtig erscheint, empfehlen wir Ihnen, diese Ressourcen zu verwenden, um Ihnen bei der Fehlerbehebung zu helfen:'
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer

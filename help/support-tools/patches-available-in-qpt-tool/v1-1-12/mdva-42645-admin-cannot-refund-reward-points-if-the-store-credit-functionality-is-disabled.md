@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42645: Administratoren können keine Bonuspunkte für deaktivierte Store-Gutschriften zurückerstatten."
+title: 'MDVA-42645: Administratoren können keine Bonuspunkte für deaktivierte Store-Gutschriften zurückerstatten'
 description: Der Patch MDVA-42645 behebt das Problem, dass der Administrator keine Bonuspunkte zurückgeben kann, wenn die Funktion zum Speichern von Guthaben deaktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-42645. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 8e8f8c07-c1a2-4031-a2fb-cb737165dc2c
 feature: Admin Workspace, Orders, Rewards, Returns

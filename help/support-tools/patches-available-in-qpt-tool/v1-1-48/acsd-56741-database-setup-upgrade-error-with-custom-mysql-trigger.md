@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-56741: Fehlerbehebung bei Datenbanksetup-Fehlern mit benutzerdefinierten MySQL-Triggern'
+title: 'ACSD-56741: Fehlerbehebung bei Datenbanksetup-Fehlern mit benutzerdefinierten MySQL-Triggern'
 description: Wenden Sie den Patch ACSD-56741 an, um das Adobe Commerce-Problem zu beheben, bei dem während des "setup:upgrade"-Vorgangs eine Fehlermeldung angezeigt wird *Versuchen, auf den Array-Offset vom Typ null zuzugreifen* aufgrund eines benutzerspezifischen MySQL-Triggers in der Datenbank, der nicht mit der Indizierung und  [!DNL MView] in Zusammenhang steht.
 feature: Install
 role: Admin, Developer

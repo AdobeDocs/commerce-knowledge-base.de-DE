@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44100: Alle FPTs werden dem letzten Produkt im Warenkorb zugewiesen."
+title: 'MDVA-44100: Alle FPTs werden dem letzten Produkt im Warenkorb zugewiesen'
 description: Der Patch MDVA-44100 behebt das Problem, dass alle FPTs dem letzten Produkt im Warenkorb zugewiesen werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44100. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: ab0f195c-fcc6-41ac-932d-d2603d068aa6
 feature: Orders, Products, Shopping Cart

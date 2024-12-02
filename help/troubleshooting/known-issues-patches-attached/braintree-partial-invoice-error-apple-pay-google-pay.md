@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.4: Teilrechnungen können nicht erstellt werden"
+title: 'Adobe Commerce 2.4.4: Teilrechnungen können nicht erstellt werden'
 description: Dieser Artikel enthält einen Hotfix für das Problem, bei dem Benutzer keine Teilrechnungen erstellen können, wenn sie Apple Pay oder Google Pay Through Braintree als Zahlungsmethoden verwenden.
 exl-id: bf78cc07-9dc7-4eb8-bfdf-57ea5131effb
 feature: Invoices, Orders, Payments

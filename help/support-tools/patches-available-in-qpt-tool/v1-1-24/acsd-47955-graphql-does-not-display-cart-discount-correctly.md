@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47955: GraphQL zeigt den Rabatt auf den Warenkorb nicht korrekt an"
+title: 'ACSD-47955: GraphQL zeigt den Rabatt nicht korrekt im Warenkorb an'
 description: Wenden Sie den Patch ACSD-47955 an, um das Adobe Commerce-Problem zu beheben, bei dem GraphQL den Rabatt für den Warenkorb nicht korrekt anzeigt.
 exl-id: 76b64f1c-9b69-4e8d-a93a-d6a355284105
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart

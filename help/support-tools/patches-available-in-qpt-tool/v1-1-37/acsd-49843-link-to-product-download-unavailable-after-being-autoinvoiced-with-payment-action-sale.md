@@ -1,5 +1,5 @@
 ---
-title: "ACSD 49843: Produkt-Download-Link nicht verfügbar, nachdem er automatisch mit [!UICONTROL Payment Action] = [!UICONTROL Intent Sale] berechnet wurde."
+title: 'ACSD 49843: Produkt-Download-Link nach der automatischen Rechnungsstellung mit [!UICONTROL Payment Action] = [!UICONTROL Intent Sale] nicht verfügbar'
 description: Wenden Sie den Patch ACSD-49843 an, um das Adobe Commerce-Problem zu beheben, bei dem der Produkt-Download-Link nicht verfügbar ist, nachdem der bestellte Artikel automatisch von einer Online-Zahlungsmethode in Rechnung gestellt wird, wenn [!UICONTROL Payment Action] auf [!UICONTROL Intent Sale] gesetzt ist.
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer

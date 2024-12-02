@@ -1,5 +1,5 @@
 ---
-title: "ACSD-56886: Konfigurierbares Produkt wird nicht mehr vorrätig, wenn untergeordnete Produkte deaktiviert sind"
+title: 'ACSD-56886: Konfigurierbares Produkt wird nicht mehr vorrätig, wenn untergeordnete Produkte deaktiviert sind'
 description: Wenden Sie den Patch ACSD-56886 an, um das Adobe Commerce-Problem zu beheben, bei dem das konfigurierbare Produkt nicht mehr vorrätig ist, wenn Produkte deaktiviert sind.
 feature: Products
 role: Admin, Developer

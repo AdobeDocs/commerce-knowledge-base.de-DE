@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49065: Anführungselemente sind in Admin nicht sichtbar."
+title: 'ACSD-49065: Anführungselemente sind in der Admin-Konsole nicht sichtbar'
 description: Wenden Sie den Patch ACSD-49065 an, um das Adobe Commerce-Problem zu beheben, bei dem die Anführungselemente nicht im Admin sichtbar sind, wenn sie nur dem benutzerdefinierten Lager zugewiesen sind.
 exl-id: 3a5ceb4c-4c94-4938-98d9-9171f2633056
 feature: Admin Workspace, B2B, Orders, Quotes

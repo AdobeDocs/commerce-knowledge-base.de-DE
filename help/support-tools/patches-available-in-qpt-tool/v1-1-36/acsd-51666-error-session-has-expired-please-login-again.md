@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-51666: Fehler "Die Sitzung ist abgelaufen, melden Sie sich bitte erneut an." nach der Anmeldung"'
+title: 'ACSD-51666: Fehler "Die Sitzung ist abgelaufen, bitte melden Sie sich erneut an." nach der Anmeldung'
 description: Wenden Sie den Patch ACSD-51666 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler *Die Sitzung ist abgelaufen ist. Melden Sie sich bitte erneut an.* tritt auf, nachdem Sie sich angemeldet haben.
 feature: Customers
 role: Admin, Developer

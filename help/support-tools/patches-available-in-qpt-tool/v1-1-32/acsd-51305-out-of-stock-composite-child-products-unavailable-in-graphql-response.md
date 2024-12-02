@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51305: Nicht vorrätige zusammengesetzte Kinderprodukte, die in der GraphQL-Antwort nicht verfügbar sind"
+title: 'ACSD-51305: Nicht vorrätige zusammengesetzte Kinderprodukte, die in der GraphQL-Antwort nicht verfügbar sind'
 description: Wenden Sie den Patch ACSD-51305 an, um das Adobe Commerce-Problem zu beheben, bei dem nicht vorrätige zusammengesetzte untergeordnete Produkte in der GraphQL-Antwort nicht verfügbar sind.
 exl-id: 0f33eb62-dfd3-4d07-b095-9ee6e9983c4d
 feature: Categories, GraphQL, Orders, Products

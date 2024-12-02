@@ -1,10 +1,10 @@
 ---
-title: '"ACSD-45781: Suchfeld "Vorderseite speichern"wird nicht auf Mobilgeräten angezeigt'
+title: 'ACSD-45781: Suchfeld "Vorderseite speichern"wird nicht auf einem Mobilgerät angezeigt'
 description: Der Patch MDVA-45781 behebt das Problem, dass das Feld für die Storefront-Suche nicht auf Mobilgeräten angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID lautet MDVA-45781. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: 0ae90f6d-1c04-4599-b21d-4d02fd6b36db
 feature: Cache, Native Luma Frontend Development, Search
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

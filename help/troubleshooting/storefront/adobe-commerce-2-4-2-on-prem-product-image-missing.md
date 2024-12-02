@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce vor Ort 2.4.2: Produktbild fehlt"
+title: 'Adobe Commerce vor Ort 2.4.2: Produktbild fehlt'
 description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce On-Premise 2.4.2 beschrieben, bei dem das Produktbild nicht auf die Produktseite hochgeladen wird. Dieses Problem soll in einer zukünftigen Version nach Version 2.4.3 behoben werden. Derzeit ist keine Lösung verfügbar, aber als Problemumgehung können Sie Nginx deaktivieren, um die Bildgröße zu ändern.
 exl-id: c4d9240e-5df5-4eab-bb4e-1f06f9bd3a1e
 feature: Iaas, Products, Storefront

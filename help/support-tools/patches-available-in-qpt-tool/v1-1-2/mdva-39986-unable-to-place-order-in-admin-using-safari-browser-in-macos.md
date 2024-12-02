@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39986: Bestellungen können nicht in der Admin-Konsole im Safari-Browser auf macOS platziert werden"
+title: 'MDVA-39986: Bestellungen können nicht in der Admin-Konsole des Safari-Browsers in macOS platziert werden'
 description: Der Patch MDVA-39986 behebt das Problem, dass Benutzer keine Bestellungen über den Safari-Browser in macOS im Admin aufgeben können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39986. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: a35b6253-e03f-4bdb-a3a3-fceb70588c6e
 feature: Admin Workspace, Orders

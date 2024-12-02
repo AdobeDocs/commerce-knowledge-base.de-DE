@@ -1,5 +1,5 @@
 ---
-title: "Bekanntes Problem mit Adobe Commerce 2.4.1: Fehler beim Hochladen beim Checkout mit PayPal-Braintree"
+title: 'Bekanntes Problem in Adobe Commerce 2.4.1: Fehler beim Aufrufen des Checkouts mit PayPal-Braintree'
 description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.1 beschrieben, bei dem eine Fehlermeldung angezeigt und im Abrechnungsschritt von Checkout ausgeblendet wird, wenn die PayPal-Braintree-Zahlung verwendet und mehrere Adressen gesendet werden.
 exl-id: db3830b2-4885-4d89-85cd-bdcbd4b396e6
 feature: Checkout, Orders, Payments

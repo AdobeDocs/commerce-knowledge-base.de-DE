@@ -1,5 +1,5 @@
 ---
-title: "Freigabe fehlgeschlagen: MDVA-43395-Patch kann nicht angewendet werden"
+title: 'Freigabe fehlgeschlagen: MDVA-43395-Patch kann nicht angewendet werden'
 description: Dieser Artikel bietet eine Lösung für das Problem, bei dem der Versuch, den MDVA-43395-Patch anzuwenden, zu einer fehlgeschlagenen Implementierung führt.
 exl-id: 5341be3a-a9d7-4a4b-9755-8c585c6922a4
 feature: Deploy

@@ -1,5 +1,5 @@
 ---
-title: 'SQL-Abfragen: Fehler bei Kosten erläutern'
+title: 'SQL-Abfragen: Fehler bei EXPLAIN-Kosten'
 description: Dieser Artikel enthält Lösungen für Fehler bei EXPLAIN-Kosten bei der Ausführung nicht erfolgreicher SQL-Abfragen. PostgreSQL verwendet etwas namens [EXPLAIN-Befehl](https://www.postgresql.org/docs/9.5/static/using-explain.html), um die Kosten von SQL-Abfragen zu ermitteln. Wir haben den SQL-Report Builder erstellt, um diesen Befehl ebenfalls zu verwenden. Das bedeutet, dass die Abfrage nicht ausgeführt wird und eine EXPLAIN-Meldung angezeigt wird, wenn die Kosten als zu hoch gelten - die für die Ausführung der Abfrage erforderliche Ressourcenmenge überschreitet die Schwellenwerte.
 exl-id: 6f6df66a-665e-46a8-ad4c-842a0270c4eb
 feature: Commerce Intelligence

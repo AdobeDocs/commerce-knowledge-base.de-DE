@@ -1,5 +1,5 @@
 ---
-title: "Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.36"
+title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.36'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.36 verfügbaren Patches behoben wurden.
 feature: Tools and External Services
 role: Admin

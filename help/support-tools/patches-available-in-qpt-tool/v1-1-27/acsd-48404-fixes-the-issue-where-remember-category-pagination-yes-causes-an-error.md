@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48404: *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* verursacht beim Drücken der Zurück-Taste des Browsers einen Fehler."
+title: 'ACSD-48404: *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* verursacht beim Drücken der Zurück-Taste des Browsers einen Fehler'
 description: Wenden Sie den Patch ACSD-48404 an, um das Adobe Commerce-Problem zu beheben, bei dem *[!UICONTROL Remember Category Pagination] = [!UICONTROL Yes]* beim Drücken der Zurück-Taste des Browsers einen Fehler verursacht.
 exl-id: b4b96198-dee6-4b3c-b60a-0983ef8ef7b2
 feature: Categories

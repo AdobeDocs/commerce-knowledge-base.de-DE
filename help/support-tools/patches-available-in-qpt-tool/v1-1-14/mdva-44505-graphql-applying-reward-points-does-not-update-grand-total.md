@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44505: GraphQL-Abfrage zur Anwendung von Belohnungspunkten im Warenkorb aktualisiert Gesamtsumme nicht"
+title: 'MDVA-44505: GraphQL-Abfrage zur Anwendung von Belohnungspunkten im Warenkorb aktualisiert Gesamtsumme nicht'
 description: Der Patch MDVA-44505 behebt das Problem, dass die GraphQL-Abfrage für einen Warenkorb, der belohnte Punkte anwendet, die Belohnungspunkte nicht berücksichtigt und einen falschen Gesamtwert zurückgibt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44505. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: 724273ba-b020-4dba-88ae-94968bbd83de
 feature: GraphQL, Orders, Rewards, Shopping Cart

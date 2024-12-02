@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51204: Produkt kehrt nach Erstellung des Kreditmemo nicht wieder auf Lager zurück."
+title: 'ACSD-51204: Produkt wird nach der Erstellung des Kreditprotokolls nicht wieder auf Lager'
 description: Wenden Sie den Patch ACSD-51204 an, um das Adobe Commerce-Problem zu beheben, bei dem das Produkt nach dem Erstellen des Kreditmemo nicht wieder auf Lager ist.
 feature: Orders, Products, Returns
 role: Admin

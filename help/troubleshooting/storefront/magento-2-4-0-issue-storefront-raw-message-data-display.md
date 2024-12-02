@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.0-Ausgabe: Anzeige von Storefront-Rohmeldungsdaten"
+title: 'Problem mit Adobe Commerce 2.4.0: Anzeige von Storefront-Rohmeldungsdaten'
 description: Dieser Artikel bietet eine Lösung für das Problem, dass alle Fehlermeldungen auf der Storefront mit einem "+"-Zeichen anstelle eines Leerzeichens angezeigt werden. Diese Lösung hilft dabei, Fehlermeldungen lesbar zu halten.
 exl-id: f44fe434-a320-4e7e-a876-9575921749f3
 feature: Storefront

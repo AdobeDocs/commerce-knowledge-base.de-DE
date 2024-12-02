@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47910: fehlende Bestellungen, Rechnungen, Sendungen, Kreditkarten in den jeweiligen Unternehmensnetzen"
+title: 'ACSD-47910: fehlende Bestellungen, Rechnungen, Sendungen, Kreditkarten in den jeweiligen Unternehmensnetzen'
 description: Wenden Sie den Patch ACSD-47910 an, um das Adobe Commerce-Problem zu beheben, das bei fehlenden Bestellungen, Rechnungen, Sendungen und Kreditkarten in den jeweiligen Entitätsrasten auftritt.
 exl-id: 4eb897ec-16e4-420e-89a6-c8f7c8740303
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery

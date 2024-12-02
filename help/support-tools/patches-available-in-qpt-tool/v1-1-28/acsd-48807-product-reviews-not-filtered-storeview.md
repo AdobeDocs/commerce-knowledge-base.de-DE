@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48807: Produktüberprüfungen nicht nach Storebericht gefiltert"
+title: 'ACSD-48807: Produktüberprüfungen nicht nach Storebericht gefiltert'
 description: Wenden Sie den Patch ACSD-48807 an, um das Adobe Commerce-Problem zu beheben, bei dem Produktüberprüfungen nicht durch die Storeübersicht über GraphQL gefiltert werden.
 exl-id: 754ef455-ff06-4832-9eb6-ad8cccec8799
 feature: Admin Workspace, Products

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46192: Problem mit dem Endpunkt async/bulk/V1/configuring-products/bySku/options"
+title: 'ACSD-46192: Problem mit dem Endpunkt async/bulk/V1/configuring-products/bySku/options'
 description: Der Patch ACSD-46192 behebt das Problem mit dem Endpunkt "async/bulk/V1/configuring-products/bySku/options". Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46192. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
 exl-id: fed49708-868a-48ec-8dbc-638d75506a40
 feature: Configuration, Products

@@ -1,6 +1,6 @@
 ---
 title: 'Die Bereitstellung schlägt fehl: Fastly-Modul-kompatible Adobe Commerce-Version'
-description: "AKTUALISIERT: 29. Februar 2019"
+description: 'AKTUALISIERT: 29. Februar 2019'
 exl-id: aab77407-94e5-42de-92f4-2f0c19e24fa4
 feature: Deploy, Extensions
 role: Developer

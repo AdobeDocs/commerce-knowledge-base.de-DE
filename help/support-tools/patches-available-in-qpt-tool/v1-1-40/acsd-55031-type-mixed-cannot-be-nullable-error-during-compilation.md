@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-55031: "Typ "gemischt"kann während der Kompilierung nicht null sein"-Fehler'
+title: 'ACSD-55031: Fehler "Typ "gemischt"kann nicht null sein"bei der Kompilierung'
 description: Wenden Sie den Patch ACSD-55031 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler *Typ "gemischt"während der Kompilierung nach der Installation einer benutzerdefinierten Erweiterung nicht null sein kann*.
 feature: Extensions
 role: Admin, Developer

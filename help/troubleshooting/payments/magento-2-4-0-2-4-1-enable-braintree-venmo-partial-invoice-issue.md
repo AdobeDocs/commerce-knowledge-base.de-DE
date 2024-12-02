@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.0, 2.4.1: Braintree Venmo-Teilrechnung aktivieren"
+title: 'Adobe Commerce 2.4.0, 2.4.1: Braintree Venmo-Teilrechnung aktivieren'
 description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.0 und 2.4.1 beschrieben, bei dem keine Teilrechnung für Bestellungen verfügbar ist, die über Venmo mit Braintree bestellt wurden.
 exl-id: ef6c8aa4-a2a7-4e07-a957-23173017baf2
 feature: Invoices, Orders, Payments

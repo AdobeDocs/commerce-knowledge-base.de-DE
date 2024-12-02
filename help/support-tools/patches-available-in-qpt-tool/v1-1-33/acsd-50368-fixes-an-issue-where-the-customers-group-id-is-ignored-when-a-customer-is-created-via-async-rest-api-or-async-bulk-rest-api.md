@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50368: Customers group_id wird ignoriert, wenn ein Kunde über die asynchrone REST-API oder asynchrone Bulk-REST-API erstellt wird."
+title: 'ACSD-50368: Customers group_id wird ignoriert, wenn ein Kunde über die asynchrone REST-API oder asynchrone Bulk-REST-API erstellt wird'
 description: Wenden Sie den Patch ACSD-50368 an, um das Adobe Commerce-Problem zu beheben, bei dem die group_id der Kunden ignoriert wird, wenn ein Kunde über die Async REST-API oder die Async Bulk REST-API erstellt wird.
 feature: REST
 role: Admin

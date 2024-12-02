@@ -1,15 +1,15 @@
 ---
-title: "ACSD-57086: Bestellungen von nicht standardmäßigen Websites mit aktivierten Nutzungsbedingungen werden falsch verarbeitet"
+title: 'ACSD-57086: Bestellungen von nicht standardmäßigen Websites mit aktivierten Nutzungsbedingungen werden falsch verarbeitet'
 description: Wenden Sie den Patch ACSD-57086 an, um das Adobe Commerce-Problem zu beheben, bei dem Bestellungen von nicht standardmäßigen Websites mit aktivierten Nutzungsbedingungen nicht korrekt verarbeitet werden.
 feature: Orders
 role: Admin, Developer
-source-git-commit: ab90568b0333415e73ca42b9c127a2a599f00aa7
+exl-id: 400e3673-9c61-4acd-8e37-e9a2e0bf9379
+source-git-commit: e61dd2874a2b6cb4c49aa6916c6273a2cb9f9e60
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57086: Bestellungen von nicht standardmäßigen Websites mit aktivierten Nutzungsbedingungen werden falsch verarbeitet
 

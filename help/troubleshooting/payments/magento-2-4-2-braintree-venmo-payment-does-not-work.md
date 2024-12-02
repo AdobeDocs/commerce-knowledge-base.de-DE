@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.2: Braintree Venmo-Zahlung funktioniert nicht"
+title: 'Adobe Commerce 2.4.2: Braintree Venmo-Zahlung funktioniert nicht'
 description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.2 beschrieben, bei dem Bestellungen nicht generiert werden, wenn während des Checkout Braintree Venmo verwendet wird. Derzeit steht keine Lösung zur Verfügung.
 exl-id: 1832ab64-5024-444b-915e-473b34979a6e
 feature: Orders, Payments

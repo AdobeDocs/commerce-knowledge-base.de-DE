@@ -1,5 +1,5 @@
 ---
-title: "Verwaltete Warnhinweise zu Adobe Commerce: Warnhinweis zur Speicheroptimierung überarbeitet"
+title: 'Verwaltete Warnhinweise zu Adobe Commerce: Warnhinweis zur Speicheroptimierung'
 description: In diesem Artikel finden Sie Schritte zur Fehlerbehebung, die durchgeführt werden müssen, wenn Sie einen Warnhinweis bezüglich Speicherinformationen für Adobe Commerce in New Relic erhalten. Zur Lösung des Problems ist eine sofortige Aktion erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal für Warnhinweise ungefähr wie folgt aus.
 exl-id: 28e1d879-d7ca-4439-8e81-52a1fbf3ecb0
 feature: Cache, Categories, Observability, Services, Support, Tools and External Services, Variables

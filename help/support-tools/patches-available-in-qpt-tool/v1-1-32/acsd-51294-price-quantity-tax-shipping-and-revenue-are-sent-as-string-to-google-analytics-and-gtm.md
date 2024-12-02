@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51294: Preis, Menge, Steuern, Versand, Umsatz als Zeichenfolge an [!DNL Google Analytics] und GTM gesendet"
+title: 'ACSD-51294: Preis, Menge, Steuern, Versand, Umsatz als Zeichenfolge an [!DNL Google Analytics] und GTM gesendet'
 description: Wenden Sie den Patch ACSD-51294 an, um das Adobe Commerce-Problem zu beheben, bei dem Preis, Menge, Steuer, Versand und Umsatz als Zeichenfolge an [!DNL Google Analytics] und GTM gesendet werden.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin

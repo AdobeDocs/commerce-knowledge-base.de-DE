@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51265: Optimieren der Neuindizierung für gebündelte Produkte"
+title: 'ACSD-51265: Optimieren der Neuindizierung für gebündelte Produkte'
 description: Wenden Sie den Patch ACSD-51265 an, um das Adobe Commerce-Problem zu beheben, bei dem die Neuindizierungsleistung von "catalog_product_price"gering ist, wenn im System zu viele gebündelte Produkte vorhanden sind.
 feature: Products, Price Indexer
 role: Admin

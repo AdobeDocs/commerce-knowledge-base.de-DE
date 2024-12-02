@@ -1,5 +1,5 @@
 ---
-title: "Bereitstellung schlägt fehl: inkompatible Elasticsearch- und Adobe Commerce-Versionen"
+title: 'Die Implementierung schlägt fehl: inkompatible Elasticsearch- und Adobe Commerce-Versionen'
 description: Weitere Informationen finden Sie im Abschnitt [Elasticsearch-Dienst einrichten &gt; Elasticsearch-Softwarekompatibilität](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
 exl-id: 7021df62-627c-45cf-a2f2-07c1a29ba1b2
 feature: Deploy, Search, Services

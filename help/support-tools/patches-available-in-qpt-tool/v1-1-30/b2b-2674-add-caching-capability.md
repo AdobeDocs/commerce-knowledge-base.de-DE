@@ -1,5 +1,5 @@
 ---
-title: "B2B-2674: Fügt der GraphQL-Abfrage customAttributeMetadata eine Caching-Funktion hinzu."
+title: 'B2B-2674: Fügt der GraphQL-Abfrage customAttributeMetadata eine Caching-Funktion hinzu'
 description: Wenden Sie den Patch B2B-2674 an, um der GraphQL-Abfrage customAttributeMetadata eine Caching-Funktion hinzuzufügen.
 feature: Attributes, B2B, Cache, GraphQL
 role: Admin

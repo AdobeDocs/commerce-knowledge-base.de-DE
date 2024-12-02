@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39713: Benutzer kann die Startzeit einer geplanten aktiven Aktualisierung bearbeiten"
+title: 'MDVA-39713: Benutzer kann die Startzeit einer geplanten aktiven Aktualisierung bearbeiten'
 description: Der Patch MDVA-39713 behebt das Problem, dass ein Benutzer die Startzeit eines aktiven geplanten Updates bearbeiten kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39713. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: c7221fdb-5fc0-4179-8d4c-c9e1f0d00692
 feature: CMS

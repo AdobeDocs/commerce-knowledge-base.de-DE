@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50815: Dezimalmenge für einfache Produkte kann nicht für neue gebündelte Produktoptionen verwendet werden"
+title: 'ACSD-50815: Dezimalmenge für einfache Produkte kann nicht für neue gebündelte Produktoptionen verwendet werden'
 description: Wenden Sie den Patch ACSD-50815 an, um das Adobe Commerce-Problem zu beheben, bei dem die Dezimalzahl für ein einfaches Produkt nicht für eine neue gebündelte Produktoption verwendet werden kann.
 feature: Products
 role: Admin

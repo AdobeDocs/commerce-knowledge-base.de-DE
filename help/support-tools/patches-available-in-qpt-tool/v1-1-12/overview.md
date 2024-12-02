@@ -1,5 +1,5 @@
 ---
-title: "Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.12"
+title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.12'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.12 verfügbaren Patches behoben wurden.
 exl-id: 749dbfd5-9ded-4919-8c57-0f66c85751e9
 feature: Tools and External Services

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-42807: Benutzerdefiniertes Währungszeichen nicht auf Storefront angezeigt"
+title: 'ACSD-42807: Benutzerdefiniertes Währungszeichen wird nicht auf der Storefront angezeigt'
 description: Der Patch ACSD-42807 behebt das Problem, dass das benutzerdefinierte Währungszeichen nicht auf der Storefront angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 installiert ist. Die Patch-ID lautet ACSD-42807. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 21bd17b4-d9d8-4c40-8f89-d6f7b930b475
 feature: Storefront

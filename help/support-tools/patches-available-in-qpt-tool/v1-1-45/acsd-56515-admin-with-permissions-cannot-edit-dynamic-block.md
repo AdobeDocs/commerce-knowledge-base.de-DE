@@ -1,5 +1,5 @@
 ---
-title: "ACSD-56515: Admin mit Berechtigungen auf Website-Ebene kann [!UICONTROL Dynamic Block] nicht bearbeiten."
+title: 'ACSD-56515: Administrator mit Berechtigungen auf Website-Ebene kann [!UICONTROL Dynamic Block] nicht bearbeiten'
 description: Wenden Sie den Patch ACSD-56515 an, um das Adobe Commerce-Problem zu beheben, bei dem der Administrator mit Berechtigungen auf Website-Ebene die [!UICONTROL Dynamic Block] nicht hinzufügen oder bearbeiten kann.
 feature: Roles/Permissions, Admin Workspace
 role: Admin, Developer

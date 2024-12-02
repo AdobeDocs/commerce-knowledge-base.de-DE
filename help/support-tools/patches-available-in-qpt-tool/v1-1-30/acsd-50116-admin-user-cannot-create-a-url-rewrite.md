@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50116: Ein Admin-Benutzer kann keine URL-Neufassung für die Unterkategorien der Stufe 3 oder niedriger erstellen."
+title: 'ACSD-50116: Ein Admin-Benutzer kann keine URL-Neufassung für die Unterkategorien der Stufe 3 oder niedriger erstellen'
 description: Wenden Sie den Patch ACSD-50116 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Admin-Benutzer keine URL-Neufassung für die Unterkategorien der Stufe 3 oder niedriger erstellen kann.
 exl-id: 3fa8ebc1-b55d-437e-9dc7-bf6c300b9bbe
 feature: Admin Workspace, Categories

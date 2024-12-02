@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen zur aktualisierten Lebenszyklusrichtlinie für Adobe Commerce-Versionen
-description: "Adobe Commerce bietet Qualitätsverbesserungen für eine Nebenversion für mindestens 12 Monate ab dem allgemeinen Verfügbarkeitsdatum der nächsten kleineren Softwareversion. Die Art und Weise, wie wir während dieses Zeitraums Qualitätsverbesserungen vornehmen, ändert sich:"
+description: 'Adobe Commerce bietet Qualitätsverbesserungen für eine Nebenversion von mindestens 12 Monaten ab dem allgemeinen Verfügbarkeitsdatum der nächsten kleineren Softwareversion. Die Art und Weise, wie wir während dieses Zeitraums Qualitätsverbesserungen bereitstellen, ändert sich:'
 exl-id: 4aa601d0-ee1d-4f1f-a684-188772a58dd1
 feature: Compliance, Support
 role: Admin

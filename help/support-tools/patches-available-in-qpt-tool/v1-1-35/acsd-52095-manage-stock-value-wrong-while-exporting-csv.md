@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-52095: Lagerwert verwalten ist beim Exportieren von CSV falsch'
+title: 'ACSD-52095: Lagerwert verwalten ist beim Exportieren von CSV falsch'
 description: Wenden Sie den Patch ACSD-52095 an, um das Adobe Commerce-Problem zu beheben, bei dem der Lagerwert für das Produktmanagement beim Exportieren von CSV falsch ist.
 feature: Inventory, Products
 role: Admin, Developer

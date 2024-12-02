@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-48366: Produktbild wird nicht in der [!UICONTROL Back to Stock] E-Mail-Vorlage angezeigt.'
+title: 'ACSD-48366: Produktbild wird nicht in der E-Mail-Vorlage [!UICONTROL Back to Stock] angezeigt'
 description: Wenden Sie den Patch ACSD-48366 an, um das Adobe Commerce-Problem zu beheben, bei dem das Miniaturbild des Produkts nicht in der Warn-E-Mail mit dem Lagerbestand des Produkts angezeigt wird.
 exl-id: 57b549b0-6e97-4d5f-927e-9585f3257872
 feature: Admin Workspace, Communications, Orders, Products

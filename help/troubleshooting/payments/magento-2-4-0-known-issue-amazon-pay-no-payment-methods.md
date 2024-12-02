@@ -1,5 +1,5 @@
 ---
-title: "Bekanntes Adobe Commerce 2.4.0-Problem: Amazon-Zahlungsmittel, keine Zahlungsmethoden"
+title: 'Bekanntes Problem in Adobe Commerce 2.4.0: Amazon-Zahlung, keine Zahlungsmethoden'
 description: Dieser Artikel bietet eine Lösung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Zahlungsmethoden fehlen, wenn Kunden **Zurück zum standardmäßigen Checkout** verwenden, nachdem sie die Amazon-Zahlung aktiviert haben.
 exl-id: efd792c7-8970-4366-b9d1-4bf284ea96db
 feature: B2B, Orders, Payments

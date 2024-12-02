@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54965: [!UICONTROL Visual Merchandising] grid does not display the richtige stock"
+title: 'ACSD-54965: [!UICONTROL Visual Merchandising] Raster zeigt nicht das richtige Lager an'
 description: Wenden Sie den Patch ACSD-54965 an, um das Adobe Commerce-Problem zu beheben, bei dem das Raster "[!UICONTROL Visual Merchandising]"nicht das richtige Lager anzeigt, wenn ein Produkt einem benutzerdefinierten Lager zugewiesen ist.
 feature: Merchandising, Categories
 role: Admin, Developer

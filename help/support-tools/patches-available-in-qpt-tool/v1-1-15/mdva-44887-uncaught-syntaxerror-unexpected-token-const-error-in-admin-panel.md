@@ -1,6 +1,6 @@
 ---
-title: "MDVA-44887: 'Uncaught SyntaxError: Unexpected token const' error in Admin Panel"
-description: "Der Patch MDVA-44887 behebt das Problem, dass der Admin-Benutzer nicht auf eine Menüoption klicken kann. Der Fehler *Uncaught SyntaxError: Unerwartete Token const* wird im Admin-Bedienfeld angezeigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-44887. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben werden soll."
+title: 'MDVA-44887: Fehler "Uncaught SyntaxError: Unexpected Token const"im Admin Panel'
+description: 'Der Patch MDVA-44887 behebt das Problem, dass der Admin-Benutzer nicht auf eine Menüoption klicken kann. Der Fehler *Uncaught SyntaxError: Unerwartete Token const* wird im Admin-Bedienfeld angezeigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-44887. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.'
 exl-id: 66555e66-49d0-4f80-8f77-84ee107ab12e
 feature: Admin Workspace, Orders
 role: Admin

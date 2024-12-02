@@ -1,5 +1,5 @@
 ---
-title: "MDVA-41597: Fehler beim Hinzufügen mehrerer konfigurierbarer Produkte zum Warenkorb"
+title: 'MDVA-41597: Fehler beim Hinzufügen mehrerer konfigurierbarer Produkte zum Warenkorb'
 description: Der Patch MDVA-41597 behebt das Problem, dass Benutzer beim Hinzufügen von mehr als einem konfigurierbaren Produkt zum Warenkorb mit GraphQL einen Fehler erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-41597. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 777e0f9c-80e3-4cfb-9328-c20eb038f74a
 feature: Configuration, Orders, Products, Shopping Cart

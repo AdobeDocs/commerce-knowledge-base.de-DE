@@ -1,5 +1,5 @@
 ---
-title: 'Offload non-[!DNL regex] redirects to [!DNL Fastly] anstelle von [!DNL Nginx] (routes)'
+title: Umleitungen von nicht-[!DNL regex] werden zu [!DNL Fastly] anstelle von [!DNL Nginx] (Routen) abgeladen.
 description: In diesem Thema wird eine Lösung für ein typisches Leistungsproblem vorgeschlagen, das auftreten könnte, wenn Sie Umleitungen von Nicht-[!DNL regex] in der Cloud-Infrastruktur zu [!DNL Fastly] anstelle von [!DNL Nginx] in Adobe Commerce abladen.
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-56616: Storefront-Anzeige gebündelter Produkte bei einfacher Lagerhaltung"
+title: 'ACSD-56616: Anzeige von gebündelten Produkten in Storefront bei einfacher Lagerhaltung'
 description: Wenden Sie den Patch ACSD-56616 an, um das Adobe Commerce-Problem zu beheben, bei dem gebündelte Produkte unerwartet auf der Storefront angezeigt werden, wenn alle zugehörigen einfachen Produkte nicht vorrätig sind.
 feature: Products
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43862: Kunde kann aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers keine Warenkorbelemente aktualisieren."
+title: 'MDVA-43862: Kunde kann aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers keine Warenkorbelemente aktualisieren'
 description: Der Patch MDVA-43862 behebt das Problem, dass der Kunde aufgrund eines GraphQL UpdateCartItems-Mutationsfehlers keine Warenkorbelemente aktualisieren kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43862. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 5f0a2970-34a8-4a25-baf8-15c007f97084
 feature: GraphQL, Orders, Shopping Cart

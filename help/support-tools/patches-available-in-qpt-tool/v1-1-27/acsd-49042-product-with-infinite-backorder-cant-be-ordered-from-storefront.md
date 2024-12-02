@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49042: Produkt mit unendlichem Backorder kann nicht von der Storefront bestellt werden"
+title: 'ACSD-49042: Produkt mit unendlichem Backorder kann nicht von der Storefront bestellt werden'
 description: Wenden Sie den Patch ACSD-49042 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Produkt mit unendlichem Backorder nicht über die Storefront bestellt werden kann.
 exl-id: b9227296-f300-447c-a241-30ccc0691c9a
 feature: Admin Workspace, Orders, Products, Storefront

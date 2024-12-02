@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52689: Bilder können nicht über die REST-API in den Amazon S3-Speicher hochgeladen werden"
+title: 'ACSD-52689: Bilder können nicht über die REST-API in den Amazon S3-Speicher hochgeladen werden'
 description: Wenden Sie den Patch ACSD-52689 an, um das Adobe Commerce-Problem zu beheben, bei dem die Bilder nicht über die REST-API in den Amazon S3-Speicher hochgeladen werden können.
 feature: REST, Storage, Iaas
 role: Admin

@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-49502: Downloadfähiger Link nach [!DNL staging] Update'' nicht korrekt aktualisiert'
+title: 'ACSD-49502: Download-Link nach dem [!DNL staging] Update nicht korrekt aktualisiert'
 description: Wenden Sie den Patch ACSD-49502 an, um das Adobe Commerce-Problem zu beheben, bei dem der herunterladbare Link nicht ordnungsgemäß aktualisiert wird, nachdem ein [!DNL staging] Update auf das herunterladbare Produkt angewendet wurde.
 exl-id: 9e7f0c06-4b7d-42c4-8ec7-cdeefd7e8a08
 feature: Staging

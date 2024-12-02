@@ -1,6 +1,6 @@
 ---
-title: '"MDVA-43824: Aktion zum Abbrechen der Bestellung fehlgeschlagen mit Fehler "Sie haben den Artikel nicht abgebrochen"'
-description: '''Der Patch MDVA-43824 behebt das Problem, bei dem die Löschaktion der Bestellung mit dem Fehler fehlschlug: *Sie haben den Artikel nicht abgebrochen*. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43824. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben werden soll."'
+title: 'MDVA-43824: Aktion zum Abbrechen der Bestellung fehlgeschlagen mit Fehler "Sie haben den Artikel nicht abgebrochen"'
+description: 'Der Patch MDVA-43824 behebt das Problem, bei dem die Löschaktion der Bestellung mit dem Fehler fehlschlug: *Sie haben den Artikel nicht abgebrochen*. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-43824. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.'
 exl-id: e4d839d6-84ed-4157-80a1-fd482fef897c
 feature: Orders
 role: Admin

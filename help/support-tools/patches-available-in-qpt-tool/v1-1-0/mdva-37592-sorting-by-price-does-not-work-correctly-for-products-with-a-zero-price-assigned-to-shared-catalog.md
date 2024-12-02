@@ -1,5 +1,5 @@
 ---
-title: "MDVA-37592: Sortierung nach Preis, die nicht für Produkte mit Preis Null funktioniert"
+title: 'MDVA-37592: Sortierung nach Preis, die nicht für Produkte mit Preis Null funktioniert'
 description: Der MDVA-37592 Adobe Commerce-Patch behebt das Problem, dass eine Sortierung nach Preis für Produkte mit einem gemeinsamen Katalog ohne Preis nicht ordnungsgemäß funktioniert. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.0 installiert ist. Die Patch-ID lautet MDVA-37592. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 30ac1e87-c32d-4e79-9ed9-d1861061d760
 feature: B2B, Catalog Management, Categories, Orders, Products

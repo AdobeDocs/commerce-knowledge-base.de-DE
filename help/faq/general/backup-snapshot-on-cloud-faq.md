@@ -1,5 +1,5 @@
 ---
-title: "Backup (Snapshot) in Cloud: FAQ"
+title: 'Backup (Schnappschuss) in Cloud: FAQ'
 description: In diesem Artikel werden die Grundlagen zum Sichern Ihrer Umgebungen mit Momentaufnahmen in Adobe Commerce in der Cloud-Infrastruktur beschrieben.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas

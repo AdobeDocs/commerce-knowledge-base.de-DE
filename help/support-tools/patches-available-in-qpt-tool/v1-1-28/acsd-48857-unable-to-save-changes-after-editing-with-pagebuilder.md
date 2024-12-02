@@ -1,5 +1,5 @@
 ---
-title: '''ACSD-48857: Änderungen können nach der Bearbeitung mit [!DNL Page Builder] nicht gespeichert werden'
+title: 'ACSD-48857: Änderungen können nach der Bearbeitung mit [!DNL Page Builder] nicht gespeichert werden'
 description: Wenden Sie den Patch ACSD-48857 an, um das Adobe Commerce-Problem zu beheben, bei dem der Benutzer nach der Bearbeitung mit [!DNL Page Builder] keine Änderungen speichern kann.
 exl-id: c95b354d-8954-4e9c-9e92-8a64f62f0a68
 feature: Admin Workspace, CMS, Page Builder

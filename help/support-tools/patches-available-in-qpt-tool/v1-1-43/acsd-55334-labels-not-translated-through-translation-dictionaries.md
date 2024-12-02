@@ -1,5 +1,5 @@
 ---
-title: "ACSD-55334: Beschriftungen, die nicht über Übersetzungswörterbücher in der GraphQL-Antwort übersetzt wurden"
+title: 'ACSD-55334: Beschriftungen, die in der GraphQL-Antwort nicht über Übersetzungswörterbücher übersetzt wurden'
 description: Wenden Sie den Patch ACSD-55334 an, um das Adobe Commerce-Problem zu beheben, bei dem Beschriftungen nicht über Übersetzungswörterbücher in der GraphQL-Antwort übersetzt werden.
 feature: Categories, GraphQL
 role: Admin, Developer

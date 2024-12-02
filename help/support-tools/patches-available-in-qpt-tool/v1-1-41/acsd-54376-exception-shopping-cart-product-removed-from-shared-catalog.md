@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54376: Ausnahme im Warenkorb, wenn Produkt aus [!UICONTROL shared catalog] entfernt wurde"
+title: 'ACSD-54376: Ausnahme im Warenkorb, wenn das Produkt aus [!UICONTROL shared catalog] entfernt wurde'
 description: Wenden Sie den Patch ACSD-54376 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Ausnahme im Warenkorb auftritt, wenn ein Produkt aus dem [!UICONTROL shared catalog] entfernt wird, nachdem es zum Warenkorb hinzugefügt wurde.
 feature: Shopping Cart, B2B
 role: Admin, Developer

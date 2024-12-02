@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47232: Coupon wird nicht angewendet, wenn [!UICONTROL Same as Billing Address] aktiviert ist"
+title: 'ACSD-47232: Gutschein wird nicht angewendet, wenn [!UICONTROL Same as Billing Address] aktiviert ist'
 description: Wenden Sie den Patch ACSD-47232 an, um das Adobe Commerce-Problem zu beheben, bei dem Coupon nicht angewendet wird, wenn [!UICONTROL Same as Billing Address] aktiviert ist.
 exl-id: 29b95a0b-8792-4830-a1e5-ce977f8453ec
 feature: Orders, Shipping/Delivery

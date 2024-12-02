@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39043: Admin-Benutzer erhalten Fehler beim Hinzufügen von Widgets zur CMS-Seite."
+title: 'MDVA-39043: Admin-Benutzer erhalten Fehler beim Hinzufügen von Widgets zur CMS-Seite'
 description: Der Patch MDVA-39043 behebt das Problem, dass Admin-Benutzer mit eingeschränktem Zugriff beim Hinzufügen des Widgets "Produkte"zur CMS-Seite einen Fehler erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39043. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 63057351-e972-4575-9bf0-e818f590b40a
 feature: Admin Workspace, CMS, Products

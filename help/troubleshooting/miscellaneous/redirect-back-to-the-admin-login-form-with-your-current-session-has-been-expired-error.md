@@ -1,6 +1,6 @@
 ---
-title: '''Weiterleiten zum [!UICONTROL Commerce Admin] Anmeldeformular mit dem Fehler "Ihre aktuelle Sitzung ist abgelaufen"'
-description: '"Dieser Artikel enthält die möglichen Lösungen für das Anmeldeproblem [!UICONTROL Commerce Admin], bei dem Sie zum Anmeldeformular mit der folgenden Fehlermeldung zurückgeleitet werden: *"Ihre aktuelle Sitzung ist abgelaufen"*. Zu den Lösungen gehören die Überprüfung auf Probleme bei der Serverzeiteinstellung und die Änderung der Einstellungen für die Sitzungsspeicherung."'
+title: Gehen Sie zurück zum Anmeldeformular [!UICONTROL Commerce Admin] mit dem Fehler "Ihre aktuelle Sitzung ist abgelaufen".
+description: 'In diesem Artikel finden Sie die möglichen Lösungen für das Anmeldeproblem [!UICONTROL Commerce Admin], bei dem Sie mit der folgenden Fehlermeldung zum Anmeldeformular zurückgeleitet werden: *"Ihre aktuelle Sitzung ist abgelaufen"*. Zu den Lösungen gehören die Überprüfung auf Probleme bei der Serverzeiteinstellung und die Änderung der Einstellungen für die Sitzungsspeicherung.'
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer

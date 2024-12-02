@@ -1,10 +1,10 @@
 ---
-title: "Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.17"
+title: 'Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.17'
 description: Dieser Unterabschnitt enthält eine detaillierte Beschreibung der Probleme, die durch die in [!DNL Quality Patches Tool]  (QPT) v1.1.17 verfügbaren Patches behoben wurden.
 exl-id: fd7dd8b0-e7f3-4951-be93-a1ffc1e2b2e6
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%

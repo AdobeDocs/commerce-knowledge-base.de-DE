@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51853: Kopierte Textstile werden nicht mit dem Seitenaufbau angewendet."
+title: 'ACSD-51853: Kopierte Textstile werden nicht mit dem Seitenaufbau angewendet'
 description: Wenden Sie den Patch ACSD-51853 an, um das Adobe Commerce-Problem zu beheben, bei dem die kopierten Textstile nicht angewendet werden, wenn der Seiten-Builder verwendet wird.
 feature: Page Builder
 role: Admin

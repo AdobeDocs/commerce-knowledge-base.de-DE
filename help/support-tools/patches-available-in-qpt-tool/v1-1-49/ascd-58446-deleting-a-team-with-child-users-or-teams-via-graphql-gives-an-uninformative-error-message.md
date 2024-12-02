@@ -1,11 +1,12 @@
 ---
-title: "ACSD-58446: Das Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL gibt eine informative Fehlermeldung."
+title: 'ACSD-58446: Durch das Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL erhalten Sie eine informative Fehlermeldung.'
 description: Wenden Sie den Patch ACSD-58446 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL eine nicht informative Fehlermeldung zurückgegeben wird, die nicht mit der Benutzeroberfläche übereinstimmt.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: d64689d83943691883fc853af22631288d4999a8
+exl-id: df9eca9d-4d7a-4d4c-b6aa-59ac538b1aa0
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---

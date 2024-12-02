@@ -1,5 +1,5 @@
 ---
-title: '"Adobe Commerce 2.4.0: "Auswahl zu meinem Warenkorb hinzufügen"funktioniert nicht.'
+title: 'Adobe Commerce 2.4.0: "Auswahl zum Warenkorb hinzufügen"funktioniert nicht'
 description: Dieser Artikel bietet eine Problemumgehung für ein defektes Schaltflächenkartell, das im Commerce-Administrator bei der Verwaltung des Warenkorbs eines Kunden bekannt ist. Beim Versuch, ausgewählte Produkte zum Warenkorb eines Kunden hinzuzufügen, funktioniert die Schaltfläche **Auswahl zu meinem Warenkorb hinzufügen** unten im Abschnitt nicht. Dieses Problem tritt auf jeder Seite des Admin-Bedienfelds auf, die zwei Schaltflächen **Auswahl zu meinem Warenkorb hinzufügen** enthält. In Adobe Commerce 2.4.1 wird eine permanente Korrektur verfügbar sein.
 exl-id: b0830ec2-2aea-4afb-8d02-e9c8f54283be
 feature: Orders, Shopping Cart

@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-60441: Beim Aktualisieren von Kunden über den API-Endpunkt V1/customer [!DNL REST] wird ein Fehler ausgegeben.'
+title: 'ACSD-60441: Beim Aktualisieren von Kunden über den API-Endpunkt V1/Customers [!DNL REST] wird ein Fehler ausgegeben'
 description: Wenden Sie den Patch ACSD-60441 an, um das Adobe Commerce-Problem zu beheben, bei dem bei der Aktualisierung von Kunden über die API V1/customer [!DNL REST] API bei der Verwendung des vom Backend generierten Integrationszugriffs-Tokens ein Fehler ausgegeben wird.
 feature: REST, Customers
 role: Admin, Developer
-source-git-commit: ea62d2387ab0c04fe44291df431f42d78a0d2f2a
+exl-id: fdc18060-5c6d-4f95-84d3-9ad120fe3a7d
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-60441: Beim Aktualisieren von Kunden über den API-Endpunkt `V1/customers` [!DNL REST] wird ein Fehler ausgegeben
 

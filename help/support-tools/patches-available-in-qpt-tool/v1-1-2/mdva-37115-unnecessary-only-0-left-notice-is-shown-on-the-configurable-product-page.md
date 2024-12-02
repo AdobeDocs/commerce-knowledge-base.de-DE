@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-37115: Der Hinweis "Nur 0 links"wird auf der Produktseite angezeigt."'
+title: 'MDVA-37115: Der Hinweis "Nur 0 links"wird auf der Produktseite angezeigt'
 description: Der Patch MDVA-37115 behebt das Problem, dass der unnötige Hinweis *Nur 0 links* auf der konfigurierbaren Produktseite angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37115. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: 08aa6ac7-13ae-44c1-9db4-d449c3d8c985
 feature: Configuration, Products, Orders

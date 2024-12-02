@@ -1,5 +1,5 @@
 ---
-title: "MDVA-37725: E-Mails, die über nicht standardmäßige Websites gesendet werden, enthalten die Standard-Logo-URLs der Site."
+title: 'MDVA-37725: E-Mails, die über nicht standardmäßige Websites gesendet werden, enthalten die Standard-Logo-URLs der Site'
 description: Der Patch MDVA-37725 behebt das Problem, dass asynchrone E-Mails über nicht standardmäßige Websites mit Logo-URLs von der Standardwebsite gesendet werden.
 exl-id: c0d1b9a3-01bb-445b-b7da-f9be6952eaeb
 feature: Communications, Orders

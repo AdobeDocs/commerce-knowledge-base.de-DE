@@ -1,5 +1,5 @@
 ---
-title: "MDVA-37364: Benutzerdefiniertes Kundenattribut des Datumstyps bricht die Rasterbenutzeroberfläche aus"
+title: 'MDVA-37364: Benutzerdefiniertes Kundenattribut des Datumstyps bricht die Raster-Benutzeroberfläche aus'
 description: Der Patch MDVA-37364 behebt das Problem, dass das benutzerdefinierte Kundenattribut des Datumstyps die Benutzeroberfläche des Kundenrasters beschädigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37364. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.4 behoben werden soll.
 exl-id: d25baabf-45eb-403c-9f88-9c2448cc7b49
 feature: Attributes, Cache

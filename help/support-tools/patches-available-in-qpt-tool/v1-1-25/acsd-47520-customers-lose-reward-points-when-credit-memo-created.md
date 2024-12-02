@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47520: Kunden verlieren Bonuspunkte, wenn ein Kreditmemo erstellt wird."
+title: 'ACSD-47520: Kunden verlieren Bonuspunkte, wenn ein Kreditmemo erstellt wird'
 description: Wenden Sie den Patch ACSD-47520 an, um das Adobe Commerce-Problem zu beheben, bei dem Kunden bei der Erstellung eines Kreditmemo Punkte verlieren.
 exl-id: 748b4e05-981d-49f6-a4f5-b121d57085f4
 feature: Admin Workspace, Cache, Orders, Rewards, Returns

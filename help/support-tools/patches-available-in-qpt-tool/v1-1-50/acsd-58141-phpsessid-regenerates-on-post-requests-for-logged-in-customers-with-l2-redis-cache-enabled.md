@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58141: PHPSESSID wird bei POST-Anforderungen für angemeldete Kunden mit aktiviertem L2 Redis-Cache neu generiert."
+title: 'ACSD-58141: PHPSESSID wird bei POST-Anforderungen für angemeldete Kunden mit aktiviertem L2 Redis-Cache neu generiert'
 description: Wenden Sie den Patch ACSD-58141 an, um das Adobe Commerce-Problem zu beheben, bei dem "PHPSESSID"bei POST-Anforderungen im Storefront-Bereich für einen angemeldeten Kunden mit L2 Redis-Cache neu generiert und der Kunde von Admin aktualisiert wird.
 feature: Customers, Cache
 role: Admin, Developer
-source-git-commit: 488699c5d880baee2f7191d963368415f90c3340
+exl-id: 72ae2ed4-bbac-472b-b257-3234f86000f4
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58141: PHPSESSID wird bei [!DNL POST] -Anforderungen für angemeldete Kunden neu generiert, wenn der L2 Redis-Cache aktiviert ist
 

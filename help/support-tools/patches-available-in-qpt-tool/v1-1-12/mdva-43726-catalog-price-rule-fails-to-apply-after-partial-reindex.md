@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43726: Katalogpreisregel wird nach partieller Neuindizierung nicht angewendet"
+title: 'MDVA-43726: Katalogpreisregel wird nach partieller Neuindizierung nicht angewendet'
 description: Der Patch MDVA-43726 behebt das Problem, dass die Katalogpreisregel, die auf einer Attributübereinstimmung auf Store-Ebene basiert, nach einer partiellen Neuindizierung nicht angewendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-43726. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 70e7e1d2-e601-4fed-9274-a1a619de29e1
 feature: Catalog Management, Categories, Orders, Price Rules

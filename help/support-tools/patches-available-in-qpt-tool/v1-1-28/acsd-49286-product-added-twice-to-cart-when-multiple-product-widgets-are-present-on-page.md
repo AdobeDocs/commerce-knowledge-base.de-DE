@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49286: Produkt zweimal zum Warenkorb hinzugefügt, wenn mehrere Produkt-Widgets vorhanden sind"
+title: 'ACSD-49286: Produkt zweimal zum Warenkorb hinzugefügt, wenn mehrere Produkt-Widgets vorhanden sind'
 description: Wenden Sie den Patch ACSD-49286 an, um das Adobe Commerce-Problem zu beheben, bei dem das Produkt zweimal zum Warenkorb hinzugefügt wird, wenn mehrere Produkt-Widgets auf der Seite vorhanden sind.
 exl-id: b1764943-945d-4ef9-9bbe-3f3c8383b5b1
 feature: Admin Workspace, Orders, Products, Shopping Cart

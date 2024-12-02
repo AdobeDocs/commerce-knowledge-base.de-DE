@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49822: Aktualisierungen auf der Anforderungslistenseite werden nicht in der Liste der Druckanforderungen angezeigt."
+title: 'ACSD-49822: Aktualisierungen auf der Anforderungslistenseite werden nicht in der Liste der Druckanforderungen angezeigt'
 description: Wenden Sie den Patch ACSD-49822 an, um das Adobe Commerce-Problem zu beheben, bei dem Aktualisierungen auf der Anforderungslistenseite nicht in der Druckanforderungsliste angezeigt werden.
 exl-id: 584e3fcd-9153-41aa-8857-cf1fa41269c9
 feature: Admin Workspace, B2B

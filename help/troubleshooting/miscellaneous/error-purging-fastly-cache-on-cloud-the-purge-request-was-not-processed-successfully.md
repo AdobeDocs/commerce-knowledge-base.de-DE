@@ -1,6 +1,6 @@
 ---
 title: Fehler beim Bereinigen des Fastly-Cache in Cloud (Die Bereinigungsanforderung wurde nicht erfolgreich verarbeitet)
-description: '''Dieser Artikel enthält eine Korrektur für den Fall, dass Sie eine Option zur schnellen Bereinigung verwenden und den Fehler erhalten: *Die Bereinigungsanfrage wurde nicht erfolgreich verarbeitet*. Fastly ist ein CDN- und Caching-Dienst, der in Adobe Commerce in Cloud-Infrastrukturplänen und -Implementierungen enthalten ist. Wenn Sie versuchen, eine Option zur schnellen Bereinigung zu verwenden, die nicht verarbeitet wird, liegen möglicherweise falsche Anmeldeinformationen in Ihrer Umgebung vor oder es ist möglicherweise ein Problem aufgetreten."'
+description: 'Dieser Artikel enthält eine Korrektur für den Fall, dass Sie eine Option zur schnellen Bereinigung verwenden und den Fehler erhalten: *Die Bereinigungsanfrage wurde nicht erfolgreich verarbeitet*. Fastly ist ein CDN- und Caching-Dienst, der in Adobe Commerce in Cloud-Infrastrukturplänen und -Implementierungen enthalten ist. Wenn Sie versuchen, eine Option zur schnellen Bereinigung zu verwenden, die nicht verarbeitet wird, liegen möglicherweise falsche Anmeldeinformationen in Ihrer Umgebung vor oder es ist ein Problem aufgetreten.'
 exl-id: 568b1f4c-2ccb-4740-a6e4-d227a55fcfe6
 feature: Cache, Cloud, Paas
 role: Developer

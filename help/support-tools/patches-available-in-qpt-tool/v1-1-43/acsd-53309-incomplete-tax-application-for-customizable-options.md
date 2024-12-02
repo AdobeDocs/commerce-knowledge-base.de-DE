@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53309: Unvollständiger Steuerantrag für anpassbare Optionen und [!UICONTROL Regular Price] Beschriftung"
+title: 'ACSD-53309: Unvollständige Steueranwendung für anpassbare Optionen und [!UICONTROL Regular Price] Beschriftung'
 description: Wenden Sie den Patch ACSD-53309 an, um das Adobe Commerce-Problem zu beheben, bei dem die Steuer nicht vollständig auf die Beschriftung '[!UICONTROL Regular Price]' angewendet wird, wenn eine anpassbare Option ausgewählt ist.
 feature: Taxes, Shipping/Delivery
 role: Admin, Developer

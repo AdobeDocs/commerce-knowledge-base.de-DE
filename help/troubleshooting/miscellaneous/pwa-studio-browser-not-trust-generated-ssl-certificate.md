@@ -1,5 +1,5 @@
 ---
-title: '''PWA Studio: Browser nicht vertrauenswürdig generiertes SSL-Zertifikat'
+title: 'PWA Studio: Browser vertraut nicht auf generiertes SSL-Zertifikat'
 description: Dieser Artikel bietet eine Lösung für eine nicht vertrauenswürdige, generierte SSL-Zertifikatwarnung in Ihrem Browser, wenn Sie während der Entwicklung zu einer lokalen Instanz Ihres PWA Studio-Storefront navigieren.
 exl-id: b7bfe1e6-5832-4472-9e51-f04b8583428a
 feature: Configuration

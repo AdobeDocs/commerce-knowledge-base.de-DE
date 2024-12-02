@@ -1,6 +1,6 @@
 ---
-title: '"Bereitstellung schlägt mit "Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen"'
-description: '"In diesem Artikel werden die Ursachen und Lösungen für die Adobe Commerce im Zusammenhang mit Cloud-Infrastrukturproblemen erläutert, bei denen die Build-Phase des Implementierungsprozesses fehlschlägt, und die Fehlermeldung wird wie folgt zusammengefasst: *"Fehler beim Erstellen des Projekts: Der Build-Erweiterungspunkt ist mit Status-Code 1 fehlgeschlagen"*."'
+title: 'Die Bereitstellung schlägt mit "Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen.'
+description: 'In diesem Artikel werden die Ursachen und Lösungen für die Adobe Commerce zum Problem der Cloud-Infrastruktur beschrieben, bei dem die Build-Phase des Implementierungsprozesses fehlschlägt und die Fehlermeldung mit folgendem Wortlaut zusammengefasst wird: *"Fehler beim Erstellen des Projekts: Der Build-Erweiterungspunkt ist mit Status-Code 1 fehlgeschlagen"*.'
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer

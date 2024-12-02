@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46617: **[!UICONTROL Continue to Checkout]** Schaltfläche grau ausgeblendet, wenn die Zwischensumme größer als der konfigurierte Mindestauftragsbetrag ist."
+title: 'ACSD-46617: **[!UICONTROL Continue to Checkout]** Schaltfläche grau ausgeblendet, wenn die Zwischensumme größer als der konfigurierte Mindestauftragsbetrag ist'
 description: Wenden Sie den Patch ACSD-46617 an, um das Adobe Commerce-Problem zu lösen, bei dem die Schaltfläche **[!UICONTROL Continue to Checkout]** ausgegraut ist, selbst wenn die Zwischensumme größer als der konfigurierte Mindestbestellbetrag ist.
 exl-id: 42fe02bd-f48b-4c6d-8643-ea2c1aa98c94
 feature: Checkout, Orders

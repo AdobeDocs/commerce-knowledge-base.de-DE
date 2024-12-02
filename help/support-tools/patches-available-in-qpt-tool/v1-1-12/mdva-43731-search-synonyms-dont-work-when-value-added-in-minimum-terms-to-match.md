@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-43731: Suchsynonyme funktionieren nicht, wenn unter "Mindestbegriffe für Übereinstimmung"ein Wert hinzugefügt wird."'
+title: 'MDVA-43731: Suchsynonyme funktionieren nicht, wenn unter "Mindestbegriffe"ein Wert hinzugefügt wird.'
 description: Der Patch MDVA-43731 behebt das Problem, dass Suchsynonyme nicht mehr funktionieren, wenn ein Wert unter "Mindestbegriffe"hinzugefügt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-43731. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: b795989c-d10b-443e-aebe-f3859930396a
 feature: Cache, Marketing Tools, Search

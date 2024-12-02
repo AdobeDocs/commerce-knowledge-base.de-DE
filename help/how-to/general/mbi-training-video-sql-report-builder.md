@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce Intelligence-Schulungsvideo: SQL-Report Builder"
+title: 'Adobe Commerce Intelligence-Schulungsvideo: SQL Report Builder'
 description: Denken Sie daran, **Sie benötigen Administratorberechtigungen für den Zugriff auf SQL Report Builder!**
 exl-id: bbe47df3-c7f2-4a35-bc48-c93a67bd2ce2
 feature: Commerce Intelligence

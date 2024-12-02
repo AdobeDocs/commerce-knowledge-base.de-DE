@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40830: Bei Bestellung mehrfach angewendete Store-Gutschriften"
+title: 'MDVA-40830: Bei Bestellung mehrfach angewendete Store-Gutschriften'
 description: Der Patch MDVA-40830 behebt das Problem, dass der Store-Kredit während der Bestellplatzierung mehrmals angewendet wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.11 installiert ist. Die Patch-ID lautet MDVA-40830. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 218a100a-4500-4ef5-bbdb-fbbd12f2fa26
 feature: Orders, Returns

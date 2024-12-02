@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen'
+title: '[!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen'
 description: Dieser Artikel bietet eine Lösung für die Adobe Commerce zum Problem der Cloud-Infrastruktur im Zusammenhang mit bestimmten langfristigen [!DNL cron] Aufträgen, die andere [!DNL cron] Aufträge blockieren.
 exl-id: b5b9e8b3-373c-4f93-af9c-85da84dbc928
 feature: Configuration

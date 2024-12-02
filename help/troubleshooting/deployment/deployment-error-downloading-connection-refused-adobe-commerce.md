@@ -1,6 +1,6 @@
 ---
-title: 'Freigabefehler: *Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert*'
-description: '"Dieser Artikel bietet eine Lösung für den Bereitstellungsfehler: *"Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert"*."'
+title: 'Bereitstellungsfehler: *Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert*'
+description: 'Dieser Artikel bietet eine Lösung für den Bereitstellungsfehler: *"Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert"*.'
 exl-id: 520cf50f-3682-441d-87a7-8e05301a2b0c
 feature: Cache, Deploy
 role: Developer

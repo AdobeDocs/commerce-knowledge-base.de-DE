@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-53722: Preisänderungen bei gebündelten Produktoptionen auf 0 USD'
+title: 'ACSD-53722: Preisänderungen bei gebündelten Produktoptionen auf 0 USD'
 description: Wenden Sie den Patch ACSD-53722 an, um das Adobe Commerce-Problem zu beheben, bei dem sich der Preis der gebündelten Produktoptionen auf 0 USD ändert, wenn geplante Aktualisierungen für verschiedene Bereiche aktiv werden.
 feature: Products
 role: Admin, Developer

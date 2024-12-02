@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45169: Visual Merchandiser zeigt fehlerhafte Lager- und Preisangaben für konfigurierbare Produkte an."
+title: 'ACSD-45169: Visual Merchandiser zeigt fehlerhafte Lager- und Preisangaben für konfigurierbare Produkte an'
 description: Der Patch ACSD-45169 behebt das Problem, dass der Visual Merchandiser nach dem Anwenden eines Staging-Updates nicht den richtigen Lager- und Preis für ein konfigurierbares Produkt anzeigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 installiert ist. Die Patch-ID ist ACSD-45169. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 5a7987c8-f276-4917-98f7-645402f4c454
 feature: Categories, Configuration, Merchandising, Orders, Products

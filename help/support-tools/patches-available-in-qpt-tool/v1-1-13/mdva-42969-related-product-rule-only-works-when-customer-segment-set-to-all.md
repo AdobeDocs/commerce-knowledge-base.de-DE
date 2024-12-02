@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-42969: Zugehörige Produktregel funktioniert nur, wenn das Kundensegment auf "Alle"gesetzt ist.'
+title: 'MDVA-42969: Zugehörige Produktregel funktioniert nur, wenn das Kundensegment auf alle eingestellt ist'
 description: Der Patch MDVA-42969 behebt das Problem, dass die zugehörige Produktregel nur funktioniert, wenn das Kundensegment auf "Alle"gesetzt ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-42969. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 2877ba7a-2681-4de2-9c37-228de232424f
 feature: Customer Service, Marketing Tools, Products

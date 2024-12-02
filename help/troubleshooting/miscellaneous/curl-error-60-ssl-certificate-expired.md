@@ -1,6 +1,6 @@
 ---
-title: 'cURL error 60: SSL-Zertifikat abgelaufen'
-description: "Dieser Artikel zeigt, wie Sie überprüfen können, wann eine Verzweigung nach dem Erhalt eines cURL-Fehlers 60 zum letzten Mal bereitgestellt wurde: SSL-Zertifikat ist in den Master- oder Integrationszweigen in Adobe Commerce in der Cloud-Infrastruktur abgelaufen."
+title: 'cURL-Fehler 60: SSL-Zertifikat abgelaufen'
+description: 'Dieser Artikel zeigt, wie Sie überprüfen können, wann eine Verzweigung nach dem letzten Bereitstellen des cURL-Fehlers 60 bereitgestellt wurde: Das SSL-Zertifikat ist in den Master- oder Integrationszweigen in Adobe Commerce in der Cloud-Infrastruktur abgelaufen.'
 exl-id: 74f1db7e-ee2b-4e27-8fcc-fe462a9e72c3
 feature: Configuration
 role: Developer

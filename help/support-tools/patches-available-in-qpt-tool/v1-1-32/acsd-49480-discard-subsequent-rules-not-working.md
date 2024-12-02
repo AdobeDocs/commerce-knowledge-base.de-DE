@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49480: Nachfolgende Regeln verwerfen funktioniert nicht"
+title: 'ACSD-49480: Nachfolgende Regeln verwerfen funktioniert nicht'
 description: Wenden Sie den Patch ACSD-49480 an, um das Adobe Commerce-Problem zu beheben, bei dem der [!UICONTROL Cart Price Rule - Discard Subsequent Rules] nicht wie gewünscht funktioniert.
 exl-id: 8d306a9e-ed1a-4295-8130-81700cbf31a6
 feature: Price Rules

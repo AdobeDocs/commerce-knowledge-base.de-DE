@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54106: Korrigieren der türkischen Zeichensortierung in der Produktkategorie"
+title: 'ACSD-54106: Korrigieren der Zeichensortierung türkischer Akzentzeichen in der Produktkategorie'
 description: Wenden Sie den Patch ACSD-54106 an, um das Adobe Commerce-Problem zu beheben, bei dem die Sortierung von Kategorieprodukten nach Namen für türkische Akzentzeichen falsch ist.
 feature: Categories, Products, Search
 role: Admin

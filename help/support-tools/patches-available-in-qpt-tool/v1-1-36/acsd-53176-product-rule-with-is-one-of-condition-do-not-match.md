@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-53176: Produktregel mit der Bedingung "ist eins von" stimmt nicht überein."'
+title: 'ACSD-53176: Die Produktregel mit der Bedingung "ist eins von"stimmt nicht überein mit'
 description: Wenden Sie den Patch ACSD-53176 an, um das Adobe Commerce-Problem zu beheben, bei dem die zugehörige Produktregel "ist eine von"-Bedingung für "Produkte, die übereinstimmen"nicht richtig funktioniert.
 feature: Marketing Tools
 role: Admin

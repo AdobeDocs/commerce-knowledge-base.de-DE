@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45241: falsch berechnete Lagerbestände des Virtual-Product-Produkts"
+title: 'ACSD-45241: falsch berechnete Lagerbestände des Virtual-Produkts'
 description: Der Patch ACSD-45241 behebt das Problem, bei dem die Lagermenge des virtuellen Produkts nach der Erstellung eines Kreditmemos falsch berechnet wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 installiert ist. Die Patch-ID lautet ACSD-45241. Beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.
 exl-id: 4be97da9-d399-419a-816e-cf65f15cc3be
 feature: Orders, Products

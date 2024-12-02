@@ -1,5 +1,5 @@
 ---
-title: 'Log locations (directories) for Pro plan: Integration, Staging, Production'
+title: 'Protokollspeicherorte (Verzeichnisse) für Pro-Plan: Integration, Staging, Produktion'
 description: Siehe [Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) im *Commerce on Cloud Infrastructure Guide*, um zu erfahren, wo Sie die Build- und Bereitstellungs-, Anwendungs- und Service-Protokolle für Ihr Projekt finden.
 exl-id: daa79b73-68c2-4c89-bf5e-51c105762774
 feature: Integration, Logs

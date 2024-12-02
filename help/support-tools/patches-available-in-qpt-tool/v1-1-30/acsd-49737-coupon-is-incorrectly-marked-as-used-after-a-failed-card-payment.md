@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49737: Gutschein wird fälschlicherweise als nach einer fehlgeschlagenen Kartenzahlung verwendet gekennzeichnet"
+title: 'ACSD-49737: Gutschein wird fälschlicherweise als nach einer fehlgeschlagenen Kartenzahlung verwendet gekennzeichnet'
 description: Wenden Sie den Patch ACSD-49737 an, um das Adobe Commerce-Problem zu beheben, bei dem der Gutschein fälschlicherweise als nach einer fehlgeschlagenen Kartenzahlung als verwendet markiert wurde.
 exl-id: 77b5ec9c-3c4c-4da3-ba7e-8be3ccea04d0
 feature: Orders, Payments

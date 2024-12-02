@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Admin] Anmeldung funktioniert nicht - zulässige Sitzungsmax-Größe überschritten'
+title: '[!DNL Admin] Anmeldung funktioniert nicht - zulässige maximale Sitzungsgröße überschritten'
 description: Lösen Sie das Problem, wenn Sie versuchen, sich bei Ihrem [!DNL Admin] Bedienfeld anzumelden, das Formular aktualisiert wird und Sie sich nicht anmelden können.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
 source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1

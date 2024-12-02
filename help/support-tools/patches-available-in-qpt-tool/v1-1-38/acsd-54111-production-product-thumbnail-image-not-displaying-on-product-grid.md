@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54111: Produktminiaturbild wird nicht angezeigt"
+title: 'ACSD-54111: Produktminiaturbild wird nicht angezeigt'
 description: Wenden Sie den Patch ACSD-54111 an, um das Adobe Commerce-Problem zu beheben, bei dem alle Bilder durch das standardmäßige Produkt-Platzhalterbild ersetzt werden.
 feature: Products
 role: Admin, Developer

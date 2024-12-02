@@ -1,5 +1,5 @@
 ---
-title: "MDVA-36021: Benutzer erhalten beim Öffnen der Bestelldetails eine Fehlermeldung."
+title: 'MDVA-36021: Benutzer erhalten beim Öffnen der Bestelldetails eine Fehlermeldung'
 description: Der Patch MDVA-36021 behebt das Problem, dass Benutzer beim Versuch, Bestelldetails zu öffnen, die Fehlermeldung *Aufruf an eine Mitgliederfunktion getId()* erhalten. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-36021. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 73b1f3c6-5dc4-48e4-8f3f-681be84f7638
 feature: Orders

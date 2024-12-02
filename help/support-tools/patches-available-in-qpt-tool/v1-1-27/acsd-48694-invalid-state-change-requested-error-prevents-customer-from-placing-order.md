@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48694: Ungültiger Statusänderungsfehler verhindert, dass der Kunde eine Bestellung aufgibt."
+title: 'ACSD-48694: Ungültiger Fehler bei angeforderten Statusänderungen verhindert, dass der Kunde eine Bestellung aufgibt'
 description: Wenden Sie den Patch ACSD-48694 an, um das Adobe Commerce-Problem zu beheben, bei dem der Fehler *Ungültige Statusänderung angefordert* verhindert, dass ein Kunde eine Bestellung aufgibt.
 exl-id: edf79424-6c4f-4cfd-ab7e-19f95b9bc685
 feature: Admin Workspace, Orders

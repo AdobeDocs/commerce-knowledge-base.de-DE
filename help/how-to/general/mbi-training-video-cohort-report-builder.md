@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce Intelligence-Schulungsvideo: Kohorten-Report Builder"
+title: 'Adobe Commerce Intelligence-Schulungsvideo: Kohorten-Report Builder'
 description: Wollten Sie schon einmal untersuchen, wie sich unterschiedliche Untergruppen Ihrer Benutzer im Laufe der Zeit verhalten? Haben Sie sich beispielsweise schon einmal gefragt, ob Benutzer, die sich während eines Promo-Zeitraums registrieren, einen höheren durchschnittlichen Lebenszeitumsatz haben als diejenigen, die dies nicht tun? Wenn die Antwort "Ja!" lautet, dann ist der Kohorten-Report Builder das perfekte Werkzeug für Sie. Commerce Intelligence wurde speziell für diese Analyse optimiert, um sie für Ihr Unternehmen relevant zu machen.
 exl-id: c3e2415a-7251-46ae-9ddc-a5b86c85602c
 feature: Commerce Intelligence

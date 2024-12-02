@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47908: *Ein Wert kleiner oder gleich 0 wird erwartet* Fehler beim Checkout."
+title: 'ACSD-47908: *Ein Wert kleiner oder gleich 0 wird erwartet* Fehler beim Checkout'
 description: Wenden Sie den Patch ACSD-47908 an, um den Adobe Commerce-Fehler zu beheben *Ein Wert kleiner oder gleich 0 wird erwartet* bei der Auswahl der Quelle und Menge im Versandschritt während des Checkouts.
 exl-id: fec90e4b-9cb8-4cd9-9e85-ccada840c896
 feature: Admin Workspace, Checkout, Orders

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49748: Einladungen per E-Mail können nicht gesendet werden"
+title: 'ACSD-49748: Einladungen per E-Mail können nicht gesendet werden'
 description: Wenden Sie den Patch ACSD-49748 an, um das Adobe Commerce-Problem zu beheben, bei dem die Benutzer keine E-Mail-Einladungen senden können.
 exl-id: 65de8ea9-e65c-463b-8cba-d35767d4343d
 feature: Admin Workspace, Communications, Marketing Tools

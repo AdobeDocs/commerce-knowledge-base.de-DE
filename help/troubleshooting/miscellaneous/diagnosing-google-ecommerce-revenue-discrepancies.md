@@ -1,6 +1,6 @@
 ---
 title: Google-eCommerce-Umsatzdiskrepanzen diagnostizieren
-description: '"Dieser Artikel bietet Lösungen für Diskrepanzen zwischen Google und Magento Business Intelligence (MBI). Das Google eCommerce-Tracking ermöglicht sowohl Ihr Google Analytics-Konto als auch Ihre MBI-Dashboards, aber es stellt viele Kunden in Frage: Sollten beide Tools die gleiche Anzahl von **Bestellungen** und **Umsatz** melden?'''
+description: 'Dieser Artikel bietet Lösungen für Diskrepanzen zwischen Google und Magento Business Intelligence (MBI). Das Google eCommerce-Tracking ermöglicht sowohl Ihr Google Analytics-Konto als auch Ihre MBI-Dashboards. Viele Kunden fragen uns jedoch: Sollten beide Tools die gleiche Anzahl von **Bestellungen** und **Umsatz** melden?'
 exl-id: b2e43e70-d234-4338-ae81-fa401416be5a
 feature: Commerce Intelligence
 role: Developer

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50794: Kann Geschenkverpackungen nicht aus Kundenbestellung über GraphQL entfernen."
+title: 'ACSD-50794: Geschenkverpackung kann nicht aus der Kundenbestellung über GraphQL entfernt werden'
 description: Wenden Sie den Patch ACSD-50794 an, um das Adobe Commerce-Problem zu beheben, bei dem Benutzer die Geschenkverpackung nicht aus der Kundenbestellung über GraphQL entfernen können.
 exl-id: 4983910c-9ea0-451e-a2b6-81485184bbce
 feature: Gift, GraphQL, Orders

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51645: Speichern einer neuen Warenkorbpreisregel, wenn die Erweiterung Magento_OfflineShipping deaktiviert ist"
+title: 'ACSD-51645: Speichern einer neuen Warenkorbpreisregel, wenn die Erweiterung Magento_OfflineShipping deaktiviert ist'
 description: Wenden Sie den Patch ACSD-51645 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Speichern einer neuen Warenkorbpreisregel ein Fehler auftritt, wenn die Erweiterung Magento_OfflineShipping deaktiviert ist.
 exl-id: 301086bb-7aab-4e74-93e6-9080eebcb026
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

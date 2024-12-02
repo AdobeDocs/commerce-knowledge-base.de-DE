@@ -1,6 +1,6 @@
 ---
 title: Zugriff auf das Adobe Commerce-Support-Handbuch
-description: '"Das Adobe Commerce-Handbuch für den Kundensupport erläutert die Angebote des Kundensupport und deren Nutzung. Dazu gehören Best Practices für die Unterstützungsbeziehung, das Erfassen der für die Diagnose benötigten Informationen, die Priorität des Kundendienstes, das Senden einer Supportanfrage und Links zu Ressourcen. Auf dieses Handbuch können Sie über den Abschnitt Downloads auf Ihrer Magento-Kontoseite zugreifen. Zugriff auf:'''
+description: 'Im Adobe Commerce-Handbuch für den Kundensupport werden Support-Angebote und deren Nutzung erläutert. Dazu gehören Best Practices für die Unterstützungsbeziehung, das Erfassen der für die Diagnose benötigten Informationen, die Priorität des Kundendienstes, das Senden einer Supportanfrage und Links zu Ressourcen. Auf dieses Handbuch können Sie über den Abschnitt Downloads auf Ihrer Magento-Kontoseite zugreifen. So greifen Sie auf zu:'
 exl-id: 4acd471d-7d94-49a6-ac2d-80661d77a569
 source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
 workflow-type: tm+mt

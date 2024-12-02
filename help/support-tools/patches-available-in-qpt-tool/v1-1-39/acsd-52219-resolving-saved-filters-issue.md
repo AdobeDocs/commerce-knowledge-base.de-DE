@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52219: Beheben des Problems mit dem Administrator-Raster-Filter beim Wechseln der Lesezeichenansicht"
+title: 'ACSD-52219: Problem mit Admin-Raster-Filtern beim Wechseln der Lesezeichenansicht behoben'
 description: Wenden Sie den Patch ACSD-52219 an, um das Adobe Commerce-Problem zu beheben, bei dem die gespeicherten Filter der Admin-Raster nicht wie erwartet funktionieren, wenn häufig zwischen Lesezeichenansichten gewechselt wird.
 feature: Admin Workspace
 role: Admin

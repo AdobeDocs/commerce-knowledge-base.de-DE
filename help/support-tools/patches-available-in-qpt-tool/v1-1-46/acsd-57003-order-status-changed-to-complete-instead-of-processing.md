@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-57003: Der Bestellstatus ändert sich in *Complete*, anstatt zu *Processing* zu wechseln.'
+title: 'ACSD-57003: Der Bestellstatus ändert sich in *Complete*, anstatt zu *Processing* zu wechseln.'
 description: Wenden Sie den Patch ACSD-57003 an, um das Adobe Commerce-Problem zu beheben, bei dem der Auftragsstatus zu *Complete* geändert wird, anstatt zu *Processing* zu wechseln.
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer

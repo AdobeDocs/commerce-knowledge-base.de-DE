@@ -1,5 +1,5 @@
 ---
-title: "Vertex Address Cleansing: unterschiedliche Adressen nicht erlaubt"
+title: 'Reklamationsbereinigung: Verschiedene Adressen sind nicht zulässig'
 description: In diesem Artikel wird über die Lösung für das Problem gesprochen, bei dem der Benutzer versucht, eine **andere** Abrechnungs- und Versandadresse einzugeben, bei der die Überprüfung der Vertex-Adresse aktiviert ist, die Storefront den Benutzer nicht zur Eingabe berechtigt.
 exl-id: a481b044-3b74-4792-abc6-249a182c49e1
 feature: B2B, Orders, Shipping/Delivery, Checkout

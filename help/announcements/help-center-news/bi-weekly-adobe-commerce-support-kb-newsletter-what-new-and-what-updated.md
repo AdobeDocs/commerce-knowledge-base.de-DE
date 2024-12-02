@@ -1,10 +1,10 @@
 ---
-title: "Zweiwöchiger Newsletter zur Adobe Commerce-Support-KB-Support: neue Artikel und Updates"
-description: '**NEXT UPDATE**: 27. September 2022.'
+title: 'Zweiwöchige Newsletter zur Adobe Commerce-Support-Wissensdatenbank: Neue Artikel und Updates'
+description: '**NÄCHSTE UPDATE**: 27. September 2022.'
 exl-id: 1f28086d-3567-4828-b5ee-b3d7953cff82
 feature: Support
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%

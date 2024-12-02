@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39935: GraphQL gibt konfigurierbare Kinderprodukte zurück, die auf Website-Ebene deaktiviert sind"
+title: 'MDVA-39935: GraphQL gibt konfigurierbare Kinderprodukte zurück, die auf Website-Ebene deaktiviert sind."'
 description: Der Adobe Commerce-Patch MDVA-39935 behebt das Problem, dass GraphQL konfigurierbare untergeordnete Produkte zurückgibt, die auf Website-Ebene deaktiviert sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39935. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 45bd6bd9-3572-4477-a689-d6b952a3290a
 feature: GraphQL, Configuration, Products

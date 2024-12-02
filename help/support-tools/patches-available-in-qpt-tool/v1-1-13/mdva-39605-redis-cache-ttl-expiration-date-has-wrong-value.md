@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39605: Redis cache TTL (Ablaufdatum) hat falschen Wert"
+title: 'MDVA-39605: Redis cache TTL (Ablaufdatum) hat falschen Wert'
 description: Der MDVA-39605-Patch behebt das Problem, bei dem die Redis-Cache-TTL (Ablaufdatum) einen falschen Wert hat. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-39605. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 7283838b-702d-4ddc-aa03-829dbf5aa91f
 feature: Cache, Console, Services

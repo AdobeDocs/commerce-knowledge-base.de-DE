@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52160: Ergebnis der Produktvalidierung anhand der Preisregel des Warenkorbs"
+title: 'ACSD-52160: Ergebnis der Produktvalidierung anhand der Preisregel für den Warenkorb'
 description: Wenden Sie den Patch ACSD-52160 an, um das Adobe Commerce-Problem zu beheben, bei dem das Ergebnis der Produktvalidierung anhand der Preisregel für den Warenkorb nicht ordnungsgemäß anhand der Regelbedingung *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]* bewertet wird.
 exl-id: a371c539-4440-4c84-baa4-774c32f66e41
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

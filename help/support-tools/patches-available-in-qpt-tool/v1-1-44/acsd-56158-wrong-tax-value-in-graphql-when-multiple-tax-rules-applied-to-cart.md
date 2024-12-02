@@ -1,5 +1,5 @@
 ---
-title: "ACSD-56158: Falscher Steuerwert in GraphQL-Antwort bei Anwendung mehrerer Steuerregeln auf den Warenkorb"
+title: 'ACSD-56158: Falscher Steuerwert in GraphQL-Antwort, wenn mehrere Steuerregeln auf den Warenkorb angewendet werden'
 description: Wenden Sie den Patch ACSD-56158 an, um das Adobe Commerce-Problem zu beheben, bei dem das Steuerwert-Rendering in der GraphQL-Antwort falsch ist, wenn mehrere Steuerregeln auf den Warenkorb angewendet werden.
 feature: GraphQL, Taxes
 role: Admin, Developer

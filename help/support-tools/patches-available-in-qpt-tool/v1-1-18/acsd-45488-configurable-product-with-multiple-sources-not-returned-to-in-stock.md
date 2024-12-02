@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45488: Konfigurierbares Produkt mit mehreren Quellen, die nicht automatisch auf Lager sind"
+title: 'ACSD-45488: Konfigurierbares Produkt mit mehreren Quellen, die nicht automatisch auf Lager sind'
 description: Der Patch ACSD-45488 behebt das Problem, dass ein konfigurierbares Produkt mit mehreren Quellen nicht automatisch auf Lager zurückgegeben wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 installiert ist. Die Patch-ID lautet ACSD-45488. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 83332226-b14e-4d36-bf65-170f55fff270
 feature: Configuration, Orders, Products, Returns

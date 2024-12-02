@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48058: Neuindizierung des Produktpreises funktioniert nicht, wenn einem gebündelten Produkt keine Website zugewiesen wurde"
+title: 'ACSD-48058: Neuindizierung des Produktpreises funktioniert nicht, wenn einem gebündelten Produkt keine Website zugewiesen wurde'
 description: Wenden Sie den Patch ACSD-48058 an, um das Adobe Commerce-Problem zu beheben, bei dem die Neuindizierung des Produktpreises nicht funktioniert, wenn das gebündelte Produkt keiner Website zugewiesen ist.
 exl-id: 691371f1-7f10-4be6-80e4-821e7cf664a6
 feature: Admin Workspace, Orders, Products

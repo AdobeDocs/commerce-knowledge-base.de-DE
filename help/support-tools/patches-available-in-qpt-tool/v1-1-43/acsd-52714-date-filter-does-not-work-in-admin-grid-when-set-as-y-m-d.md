@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52714: Der Datumsfilter funktioniert im Admin-Raster nicht, wenn er auf y-m-d gesetzt ist."
+title: 'ACSD-52714: Der Datumsfilter funktioniert im Admin-Raster nicht, wenn er als y-m-d festgelegt ist.'
 description: Wenden Sie den Patch ACSD-52714 an, um das Adobe Commerce-Problem zu beheben, bei dem der Datumsfilter im Admin-Raster nicht funktioniert, wenn das Datumsformat y-m-d festgelegt ist.
 feature: Attributes
 role: Admin, Developer

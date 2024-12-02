@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-51739: Fehler beim Anfordern von "structure_id"in "CompanyTeam"GraphQL-Anfrage"'
+title: 'ACSD-51739: Fehler beim Anfordern von "structure_id"in "CompanyTeam"GraphQL-Anfrage'
 description: Wenden Sie den Patch ACSD-51739 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Fehler zurückgegeben wird, wenn in einer GraphQL-Anfrage "UnternehmenTeam"die "structure_id"angefordert wird.
 exl-id: 31c085e0-c8be-4709-9620-80ff360dca9a
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

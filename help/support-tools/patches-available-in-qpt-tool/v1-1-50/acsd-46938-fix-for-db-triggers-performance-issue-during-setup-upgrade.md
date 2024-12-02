@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-46938: Leistungsprobleme mit DB-Triggern während "setup:upgrade"'
+title: 'ACSD-46938: Leistungsprobleme mit DB-Triggern während "Setup:Upgrade"'
 description: Wenden Sie den Patch ACSD-46938 an, um das Adobe Commerce-Problem zu beheben, bei dem der Befehl "setup:upgrade"den Indexmodus von geplant zu speichern ändert und zu erheblichen Leistungseinbußen führt.
 feature: Upgrade
 role: Admin, Developer
-source-git-commit: cbd16ac7c6d6d7a4e3786880409475a10964c070
+exl-id: 967727ed-f490-4233-a2b0-fcb2fa3f964b
+source-git-commit: 151e5b70433fbebf0e2b1376d7fc540850978bb0
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

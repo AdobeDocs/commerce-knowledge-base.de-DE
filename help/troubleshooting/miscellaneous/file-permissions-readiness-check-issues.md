@@ -1,6 +1,6 @@
 ---
 title: Probleme bei der Überprüfung der Dateiberechtigungen
-description: '''Dieser Artikel enthält eine Fehlerbehebung für Probleme bei der Vorbereitung auf Dateiberechtigungen. Verzeichnisse im Adobe Commerce-Dateisystem müssen vom Webserver-Benutzer und gegebenenfalls vom Adobe Commerce-Dateisysteminhaber schreibbar sein. Wenn Ihre Berechtigungen nicht richtig festgelegt sind, wird im Web-Einrichtungs-Assistenten ein Fehler ähnlich dem folgenden angezeigt:"'
+description: 'Dieser Artikel enthält eine Fehlerbehebung für Probleme bei der Kompatibilitätsprüfung für Dateiberechtigungen. Verzeichnisse im Adobe Commerce-Dateisystem müssen vom Webserver-Benutzer und gegebenenfalls vom Adobe Commerce-Dateisysteminhaber schreibbar sein. Ein Fehler ähnlich dem folgenden wird im Web-Einrichtungs-Assistenten angezeigt, wenn Ihre Berechtigungen nicht ordnungsgemäß festgelegt sind:'
 exl-id: 252e6e7d-5269-44ce-b3ce-6fc2ea6a1c5c
 feature: Roles/Permissions
 role: Developer

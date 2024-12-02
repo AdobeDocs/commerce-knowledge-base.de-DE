@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-48773: E-Mail-Vorlage für Punkte-Bonuspunkte, die aus dem falschen Speicher genommen wurde'
+title: 'ACSD-48773: E-Mail-Vorlage für Rewards-Punkte, die aus einem falschen Speicher stammt'
 description: Wenden Sie den Patch ACSD-48773 an, um das Adobe Commerce-Problem zu beheben, bei dem die E-Mail-Vorlage für die Punkte, die belohnt werden, aus dem falschen Store stammt.
 exl-id: 96dda97c-5177-4883-ad2b-709928cb5f4d
 feature: Admin Workspace, Communications, Marketing Tools, Orders, Personalization, Rewards

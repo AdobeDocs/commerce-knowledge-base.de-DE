@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46146: Zwei E-Mails zur Bestellbestätigung, die nach der Bestellung des Administrators gesendet werden"
+title: 'ACSD-46146: Zwei E-Mails zur Bestellbestätigung, die nach der Bestellung durch den Administrator gesendet werden'
 description: Der Patch ACSD-46146 behebt das Problem, dass zwei E-Mails zur Bestellbestätigung gesendet werden, nachdem ein Administrator eine Bestellung aufgegeben hat. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 installiert ist. Die Patch-ID ist ACSD-46146. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 3bf2cccf-7a40-48ca-ab51-ffb5939f8802
 feature: Admin Workspace, Communications, Orders

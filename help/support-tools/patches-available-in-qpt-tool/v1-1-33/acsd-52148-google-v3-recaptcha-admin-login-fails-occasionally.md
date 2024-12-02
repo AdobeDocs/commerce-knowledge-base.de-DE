@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52148: Google v3 reCAPTCHA-Administratoranmeldung schlägt gelegentlich fehl."
+title: 'ACSD-52148: Google v3 reCAPTCHA-Administratoranmeldung schlägt gelegentlich fehl'
 description: Wenden Sie den Patch ACSD-52148 an, um das Adobe Commerce-Problem zu beheben, bei dem die reCAPTCHA-Administratoranmeldung für Google v3 gelegentlich fehlschlägt.
 feature: Admin Workspace
 role: Admin

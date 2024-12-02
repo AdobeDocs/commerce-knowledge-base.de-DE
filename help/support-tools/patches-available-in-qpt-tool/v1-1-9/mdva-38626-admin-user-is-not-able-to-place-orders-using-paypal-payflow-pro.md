@@ -1,5 +1,5 @@
 ---
-title: "MDVA-38626: Admin-Benutzer kann mit PayPal Payflow Pro keine Bestellungen aufgeben."
+title: 'MDVA-38626: Admin-Benutzer können keine Bestellungen mit PayPal Payflow Pro tätigen'
 description: Der Patch MDVA-38626 behebt das Problem, dass der Admin-Benutzer nicht in der Lage ist, eine Bestellung über die PayPal Payflow Pro Zahlungsmethode im Backend aufzugeben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-38626. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: b9257d42-d8df-4dd6-b2b4-70ddd6f3e414
 feature: Admin Workspace, Orders, Payments

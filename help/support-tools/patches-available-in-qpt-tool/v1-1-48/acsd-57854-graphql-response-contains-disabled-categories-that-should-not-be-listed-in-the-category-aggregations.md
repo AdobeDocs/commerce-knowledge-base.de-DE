@@ -1,5 +1,5 @@
 ---
-title: "ACSD-57854: *GraphQL* Antwort enthält deaktivierte Kategorien, die nicht in Kategorieaggregationen aufgeführt werden sollten"
+title: 'ACSD-57854: *GraphQL* Antwort enthält deaktivierte Kategorien, die nicht in den Kategorieaggregationen aufgeführt werden sollten'
 description: Wenden Sie den Patch ACSD-57854 an, um das Adobe Commerce-Problem zu beheben, bei dem die * GraphQL*-Antwort deaktivierte Kategorien enthält, die nicht in den Kategorieaggregationen aufgeführt werden sollten.
 feature: GraphQL
 role: Admin, Developer

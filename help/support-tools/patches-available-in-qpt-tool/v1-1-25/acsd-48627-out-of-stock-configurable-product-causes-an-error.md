@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48627: Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler"
+title: 'ACSD-48627: Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler'
 description: Wenden Sie den Patch ACSD-48627 an, um das Adobe Commerce-Problem zu beheben, bei dem das konfigurierbare nicht vorrätige Produkt beim Senden einer GraphQL-Anfrage zum Abrufen von Warenkorbdetails einen Fehler verursacht.
 exl-id: e3048a91-1112-49a7-afcc-e6bb23208351
 feature: Admin Workspace, Configuration, Orders, Products

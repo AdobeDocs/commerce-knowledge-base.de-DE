@@ -1,5 +1,5 @@
 ---
-title: "ACSD-55352: Erstellen von Kreditkarten mit Bonuspunkten"
+title: 'ACSD-55352: Erstellen von Kreditkarten mit Bonuspunkten'
 description: Wenden Sie den Patch ACSD-55352 an, um das Adobe Commerce-Problem zu beheben, bei dem nach dem Erstellen eines partiellen Kreditmemo mit Kundenbelohnungspunkten der Auftragsstatus zu *geschlossen* geändert wird und die Kreditmemo-Optionen auf der Seite "Admin-Bestellung"nicht mehr angezeigt werden.
 feature: Checkout, Orders
 role: Admin, Developer

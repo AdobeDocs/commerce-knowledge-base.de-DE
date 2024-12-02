@@ -1,6 +1,6 @@
 ---
-title: '"ACSD-54890: `aggregate_sales_report_bestsellers_data` reasons [!DNL MySQL] errors'''
-description: Wenden Sie den Patch ACSD-54890 an, um das Adobe Commerce-Problem zu beheben, bei dem "aggregate_sales_report_bestsellers_data"Fehler verursacht, die durch "/tmpdisk"verursacht werden. [!DNL MySQL]
+title: 'ACSD-54890: `aggregate_sales_report_bestsellers_data` verursacht [!DNL MySQL] Fehler'
+description: 'Wenden Sie den Patch ACSD-54890 an, um das Adobe Commerce-Problem zu beheben, bei dem "aggregate_sales_report_bestsellers_data"Fehler verursacht, die durch "/tmpdisk"verursacht werden. [!DNL MySQL] '
 feature: Attributes
 role: Admin, Developer
 exl-id: 21a675dc-0750-4dc6-8cce-33e301f601bd

@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-42269: Admin-Benutzer können sich aufgrund des "TypeError"-Fehlers nicht bei Admin anmelden'
+title: 'MDVA-42269: Admin-Benutzer können sich aufgrund des "TypeError"-Fehlers nicht bei Admin anmelden'
 description: Der Patch MDVA-42269 behebt das Problem, dass sich Admin-Benutzer aufgrund von TypeError nicht beim Admin anmelden können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.11 installiert ist.  Die Patch-ID lautet MDVA-42269.  Das aktuelle Patch-Update ist in QPT 1.1.15 verfügbar. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 66d744a2-054e-493c-a060-9ed78447e35b
 feature: Admin Workspace

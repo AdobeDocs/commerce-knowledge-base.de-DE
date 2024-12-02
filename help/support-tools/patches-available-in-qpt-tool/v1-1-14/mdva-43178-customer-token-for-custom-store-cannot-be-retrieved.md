@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43178: Kunden-Token für benutzerdefinierten Store kann in GraphQL nicht abgerufen werden"
+title: 'MDVA-43178: Kunden-Token für benutzerdefinierten Store können in GraphQL nicht abgerufen werden'
 description: Der Patch MDVA-43178 behebt das Problem, dass das Kunden-Token für einen benutzerdefinierten Store nicht in GraphQL abgerufen werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-43178. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: b2a8bf96-7534-41d2-b83b-58d8e0b6d076
 feature: GraphQL

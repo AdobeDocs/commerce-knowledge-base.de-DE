@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42855: Neue Kundenadresse wird beim Checkout nicht im Adressbuch gespeichert."
+title: 'MDVA-42855: Neue Kundenadresse wird beim Checkout nicht im Adressbuch gespeichert '
 description: Der Patch MDVA-42855 behebt das Problem, dass die neue Kundenadresse beim Checkout nicht im Adressbuch gespeichert wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-42855. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 37fc51f4-773e-4bef-9fb1-e6629562b94a
 feature: Checkout, Orders, Shipping/Delivery

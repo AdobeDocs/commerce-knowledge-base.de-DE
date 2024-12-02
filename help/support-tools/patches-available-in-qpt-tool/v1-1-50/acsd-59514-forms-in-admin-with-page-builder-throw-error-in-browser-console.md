@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-59514: Forms in Admin mit dem Fehler [!DNL Page Builder] Throw error in der Browser-Konsole'
+title: 'ACSD-59514: Forms in Admin mit  [!DNL Page Builder] Fehler in der Browserkonsole ausgeben'
 description: Wenden Sie den Patch ACSD-59514 an, um das Adobe Commerce-Problem zu beheben, bei dem Formulare in Admin mit  [!DNL Page Builder] den Fehler "[!DNL Page Builder] wurde 5 Sekunden lang gerendert, ohne Sperren freizugeben". in der Browser-Konsole nach dem Senden des Formulars, und die Änderungen können nicht gespeichert werden.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: 19ecaa6b287d63bfae00c51911b53e1ed7ab5ed8
+exl-id: 4bb17d7b-9ea4-44c2-a42b-d0117e5f8f9a
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59514: Forms in Admin mit [!DNL Page Builder] Fehler in der Browserkonsole auslösen
 

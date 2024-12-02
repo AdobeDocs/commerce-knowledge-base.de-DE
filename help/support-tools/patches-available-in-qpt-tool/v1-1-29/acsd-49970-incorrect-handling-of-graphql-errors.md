@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49970: Falsche Handhabung von GraphQL-Fehlern"
+title: 'ACSD-49970: Falsche Handhabung von GraphQL-Fehlern'
 description: Wenden Sie den Patch ACSD-49970 an, um das Adobe Commerce-Problem zu beheben, bei dem GraphQL-Fehler falsch verarbeitet werden, wenn [!UICONTROL New Relic Reporting] aktiviert ist.
 exl-id: 70acade5-02a5-4769-86e2-5c566b2af709
 feature: GraphQL, Observability

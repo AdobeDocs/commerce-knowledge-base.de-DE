@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47937: Preisabsturzbenachrichtigungen aufgrund von Zwischenspeicherung auf Anwendungsebene nicht gesendet"
+title: 'ACSD-47937: aufgrund von Caching auf Anwendungsebene nicht gesendete Preisabsturzbenachrichtigungen'
 description: Wenden Sie den Patch ACSD-47937 an, um das Adobe Commerce-Problem zu beheben, bei dem aufgrund der Zwischenspeicherung auf Anwendungsebene nicht immer Preisabbruchbenachrichtigungen gesendet werden.
 exl-id: f39c9ef6-4689-427f-bd61-3a52dec88be2
 feature: Admin Workspace, Cache, Orders

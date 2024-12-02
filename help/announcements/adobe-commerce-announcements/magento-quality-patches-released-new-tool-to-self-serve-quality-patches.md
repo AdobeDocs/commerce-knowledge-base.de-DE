@@ -1,5 +1,5 @@
 ---
-title: "Quality Patches Tool veröffentlicht: neues Tool zur Selbstbedienung von Qualitätspatches"
+title: 'Quality Patches Tool veröffentlicht: neues Tool zur Selbstbedienung von Qualitätspatches'
 description: Adobe hat das Tool für Qualitätsmuster für die allgemeine Verfügbarkeit veröffentlicht - ein Tool, mit dem Sie allgemeine Informationen über Qualitätspatches, die für Ihre installierte Adobe Commerce-Version (sowohl lokal als auch in der Cloud-Infrastruktur) verfügbar sind, anwenden, wiederherstellen und anzeigen können.
 exl-id: e6a79d16-84be-4a71-a41d-ef2b43ec98d9
 feature: Tools and External Services

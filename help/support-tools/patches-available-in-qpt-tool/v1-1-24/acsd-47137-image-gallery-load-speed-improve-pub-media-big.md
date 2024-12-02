@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-47137: Bildgalerie-Ladegeschwindigkeit verbessern "pub/media" Ordner "big"'
+title: 'ACSD-47137: Bildgalerie-Ladegeschwindigkeit verbessern `pub/media` Ordner groß'
 description: Wenden Sie den Patch ACSD-47137 an, um die Ladegeschwindigkeit der Bildergalerie zu verbessern, wenn der Ordner "pub/media"sehr groß ist.
 exl-id: 43268909-6845-4d1d-b6b8-4ae0ce40fd5e
 feature: Cache, Catalog Management, Categories, Media

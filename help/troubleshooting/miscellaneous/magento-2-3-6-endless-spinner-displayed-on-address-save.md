@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.3.6: beim Speichern der Adresse angezeigter endloser Spinner"
+title: 'Adobe Commerce 2.3.6: Auf Adressspeicherung angezeigter endloser Spinner'
 description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.3.6 beschrieben, bei dem der Wartewirt unbegrenzt angezeigt wird, wenn eine Adresse in Mein Konto auf der Storefront gespeichert wird.
 exl-id: 63841114-167e-4915-b6ed-ee0ef4eae36e
 feature: Shipping/Delivery, Orders, Checkout

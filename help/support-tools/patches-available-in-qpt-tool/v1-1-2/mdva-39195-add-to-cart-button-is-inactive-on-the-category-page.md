@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-39195: "Add to Cart is inactive on Category Page"'
+title: 'MDVA-39195: "Zum Warenkorb hinzufügen"ist auf Kategorieseite inaktiv'
 description: Der Patch MDVA-39195 behebt das Problem, dass die Schaltfläche "Zum Warenkorb hinzufügen"auf der Kategorieseite inaktiv ist, wenn die Umleitung zum Warenkorb aktiviert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39195. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: de434908-e13a-4ab5-abb1-570bcc59c83d
 feature: Categories, Orders, Shopping Cart

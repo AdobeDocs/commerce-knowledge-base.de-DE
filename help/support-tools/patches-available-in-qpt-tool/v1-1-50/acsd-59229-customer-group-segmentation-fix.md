@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59229: Fehlzuordnung von Kundengruppendaten aufgrund eines veralteten X-Magento-Vary-Werts"
+title: 'ACSD-59229: Fehlzuweisung von Kundengruppendaten aufgrund eines veralteten X-Magento-Vary-Werts'
 description: Wenden Sie den Patch ACSD-59229 an, um das Adobe Commerce-Problem zu beheben, bei dem gruppenbezogene Kundeninformationen aufgrund eines veralteten X-Magento-Vary-Werts in der Anfrage im falschen Segment gespeichert werden.
 feature: Customers, Personalization, Marketing Tools
 role: Admin, Developer
-source-git-commit: 41d502a85a0cbb4eb8d186e4c1e1256aec3f8740
+exl-id: 090b674a-5103-48cd-9426-41166bf9272c
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 0%

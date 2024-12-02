@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49527: GraphQL-Unternehmensrollen zeigen die Paginierung nicht korrekt an."
+title: 'ACSD-49527: GraphQL-Unternehmensrollen zeigen die Paginierung nicht korrekt an'
 description: Wenden Sie den Patch ACSD-49527 an, um das Adobe Commerce-Problem zu beheben, bei dem die GraphQL-Unternehmensrollen die Paginierung nicht korrekt anzeigen.
 exl-id: e2d50081-8002-490e-9476-a19ba6623bda
 feature: B2B, GraphQL, Companies, Roles/Permissions

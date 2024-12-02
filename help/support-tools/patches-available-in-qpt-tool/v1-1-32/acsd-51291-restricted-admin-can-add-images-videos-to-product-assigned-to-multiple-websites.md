@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51291: Eingeschränkte Administratoren können Bildern/Videos zu Produkten hinzufügen, die mehreren Websites zugewiesen sind"
+title: 'ACSD-51291: Eingeschränkte Administratoren können Bildern/Videos zu Produkten hinzufügen, die mehreren Websites zugewiesen sind'
 description: Wenden Sie den Patch ACSD-51291 an, um das Adobe Commerce-Problem zu beheben, bei dem eingeschränkte Administratoren mit Zugriff auf eine Website Bilder/Videos zu einem Produkt hinzufügen können, das mehreren Websites zugewiesen ist.
 feature: Admin Workspace, Products, Page Content
 role: Admin

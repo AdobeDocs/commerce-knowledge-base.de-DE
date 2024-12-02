@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44940: SQL-Fehler beim Speichern der Kategorie von Administratoren"
+title: 'MDVA-44940: SQL-Fehler beim Speichern der Kategorie unter Admin'
 description: Der Patch MDVA-44940 behebt das Problem, dass beim Speichern einer Kategorie vom Administrator ein SQL-Fehler auftritt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-44940. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: cae6f231-3b91-441f-af56-824db0fa2d32
 feature: Admin Workspace, Categories, Sales Channels

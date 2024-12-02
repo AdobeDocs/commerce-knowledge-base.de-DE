@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce Intelligence-Schulungsvideo: Filtersätze"
+title: 'Adobe Commerce Intelligence-Schulungsvideo: Filtersätze'
 description: Möchten Sie nur bestimmte Teile Ihrer Geschäftsdaten analysieren? Müde von manueller Reinigung Dinge? In Adobe Commerce Intelligence können Sie die Filtersatzfunktion verwenden, um diesen Vorgang zu vereinfachen.
 exl-id: 2756f1f0-1465-4a7b-b249-7a3b36674e43
 feature: Commerce Intelligence

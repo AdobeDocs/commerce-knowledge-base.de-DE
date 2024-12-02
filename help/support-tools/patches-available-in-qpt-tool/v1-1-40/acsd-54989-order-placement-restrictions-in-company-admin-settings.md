@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-54989: Unternehmensadministrator kann keine Bestellung aufgeben, wenn [!UICONTROL Enable Purchase Orders] auf "Ja"und [!UICONTROL Purchase Order] auf "Nein"gesetzt ist'
+title: 'ACSD-54989: Unternehmensadministrator kann keine Bestellung aufgeben, wenn [!UICONTROL Enable Purchase Orders] auf "Ja"und [!UICONTROL Purchase Order] auf "Nein"gesetzt ist'
 description: Wenden Sie den Patch ACSD-54989 an, um das Adobe Commerce-Problem zu beheben, bei dem Unternehmensadministratoren keine Bestellungen aufgeben können, wenn [!UICONTROL Enable Purchase Orders] auf Ja und [!UICONTROL Purchase Order] auf Nein gesetzt ist.
 feature: Orders, Companies, Purchase Orders
 role: Admin, Developer

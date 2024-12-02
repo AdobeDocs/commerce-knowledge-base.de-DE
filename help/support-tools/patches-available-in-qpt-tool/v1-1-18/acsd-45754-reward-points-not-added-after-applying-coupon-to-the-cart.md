@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45754: Belohnungspunkte, die nach Anwendung des Gutscheins auf den Warenkorb nicht hinzugefügt wurden"
+title: 'ACSD-45754: Bonuspunkte, die nach Anwendung des Gutscheins auf den Warenkorb nicht hinzugefügt wurden'
 description: Der Patch ACSD-45754 behebt das Problem, dass nach dem Anwenden eines Gutscheins auf den Warenkorb keine Belohnungspunkte hinzugefügt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 installiert ist. Die Patch-ID ist ACSD-45754. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 957713c0-3e2e-4dc9-8924-2ae84c817e47
 feature: Orders, Rewards, Shopping Cart

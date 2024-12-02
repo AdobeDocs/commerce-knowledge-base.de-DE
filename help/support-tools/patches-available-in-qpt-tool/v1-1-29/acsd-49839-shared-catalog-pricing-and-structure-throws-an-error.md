@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49839: Freigegebene Katalogpreisstruktur und -struktur lösen einen Fehler aus"
+title: 'ACSD-49839: Gemeinsame Katalogpreisstruktur und -struktur lösen einen Fehler aus'
 description: Wenden Sie den Patch ACSD-49839 an, um das Adobe Commerce-Problem zu beheben, bei dem die gemeinsame Katalogpreisstruktur und -struktur einen Fehler im Admin auslöst, wenn Produkte einfache oder doppelte Anführungszeichen in der SKU aufweisen.
 exl-id: 4c477ae8-602b-452e-83f0-b72a29547ef9
 feature: Admin Workspace, Catalog Management, Categories

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54680: B2B-Anführungszeichen für ein Produkt mit mehreren zugewiesenen Quellen kann nicht verarbeitet werden"
+title: 'ACSD-54680: B2B-Anführungszeichen für ein Produkt mit mehreren zugewiesenen Quellen kann nicht verarbeitet werden'
 description: Wenden Sie den Patch ACSD-54680 an, um das Adobe Commerce-Problem zu beheben, bei dem das B2B-Angebot für ein Produkt mit mehreren zugewiesenen Quellen nicht verarbeitet werden kann.
 feature: B2B
 role: Admin, Developer

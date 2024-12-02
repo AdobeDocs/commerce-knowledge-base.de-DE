@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44562: Store-ID für Anführungszeichen-Elemente, die durch die Standard-Store-ID überschrieben werden"
+title: 'MDVA-44562: Store-ID für Anführungselemente, die durch die standardmäßige Store-ID überschrieben werden'
 description: Der Patch MDVA-44562 behebt das Problem, dass die standardmäßige Store-ID die Store-ID für Anführungselemente für GraphQL-Anforderungen überschreibt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-44562. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 902bfc05-411d-4a6c-a6e8-cd7376629b0c
 feature: Quotes

@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-51884: Pfad des Produktbild-Caches beim Größenänderungsbefehl falsch'
+title: 'ACSD-51884: Cache-Pfad des Produktbilds beim Größenbefehl falsch'
 description: Wenden Sie den Patch ACSD-51884 an, um das Adobe Commerce-Problem zu beheben, bei dem der Cache-Pfad für das Produktbild nach dem Ausführen des Befehls zum Ändern der Größe falsch wird.
 feature: Products
 role: Admin

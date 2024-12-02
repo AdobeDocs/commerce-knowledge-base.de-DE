@@ -1,5 +1,5 @@
 ---
-title: "Verwaltete Warnhinweise für Adobe Commerce: CPU-Warnhinweis"
+title: 'Verwaltete Warnhinweise für Adobe Commerce: CPU-Warnhinweis'
 description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie eine CPU-Warnmeldung für Adobe Commerce in New Relic erhalten. Um dieses Problem zu beheben, sind sofortige Maßnahmen erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal für Warnhinweise ungefähr wie folgt aus.
 exl-id: 03686684-3b7e-430a-a05a-a96f38345322
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services

@@ -1,15 +1,15 @@
 ---
-title: "ACSD-57846: GraphQL-Produkte suchen mit Filtern nach Nullpreisen, ohne Ergebnisse zurückzugeben"
+title: 'ACSD-57846: GraphQL-Produkte suchen mit Filtern nach Nullpreisen, ohne Ergebnisse zurückzugeben'
 description: Wenden Sie den Patch ACSD-57846 an, um das Adobe Commerce-Problem zu beheben, bei dem das Filtern von Produkten zum Preis von null zu einer fehlerhaften Anforderung zu [!DNL OpenSearch] führt und keine Ergebnisse zurückgibt.
 feature: GraphQL, Products
 role: Admin, Developer
-source-git-commit: 490c7449761ded6aef10a838f27e1ea7671c6cc8
+exl-id: 6676cfec-b833-4895-a7c4-c81fcd042e54
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57846: GraphQL-Produkte suchen mit Filtern nach Nullpreisen, ohne Ergebnisse zurückzugeben
 

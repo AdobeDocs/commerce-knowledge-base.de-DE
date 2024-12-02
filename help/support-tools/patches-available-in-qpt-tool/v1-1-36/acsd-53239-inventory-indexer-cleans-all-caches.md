@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53239: Inventarindexer löscht alle Caches"
+title: 'ACSD-53239: Inventsindex bereinigt alle Caches'
 description: Wenden Sie den Patch ACSD-53239 an, um das Adobe Commerce-Problem zu beheben, bei dem der Inventarindexer alle Caches im Modus [!UICONTROL Update on Schedule] löscht.
 feature: GraphQL, Inventory, Catalog Management
 role: Admin, Developer

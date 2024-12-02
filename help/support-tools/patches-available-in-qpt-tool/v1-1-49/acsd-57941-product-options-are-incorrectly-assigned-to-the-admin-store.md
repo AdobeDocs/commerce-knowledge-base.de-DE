@@ -1,15 +1,15 @@
 ---
-title: "ACSD-57941: Produktoptionen werden fälschlicherweise dem Admin Store zugewiesen."
+title: 'ACSD-57941: Produktoptionen werden fälschlicherweise dem Admin Store zugewiesen'
 description: Wenden Sie den Patch ACSD-57941 an, um das Adobe Commerce-Problem zu beheben, bei dem Produktoptionen fälschlicherweise dem Admin Store und nicht den entsprechenden Stores zugewiesen wurden.
 feature: Products
 role: Admin, Developer
-source-git-commit: 1cc673716b75bda6cfe7b3d597ec94e4510fa7e4
+exl-id: 7aa6f5c0-b718-4c3a-be0f-d86ae15e31a2
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57941: Produktoptionen werden fälschlicherweise dem Admin Store zugewiesen
 

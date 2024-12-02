@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43348: Gift Card GraphQL request show error"
+title: 'MDVA-43348: Gift Card GraphQL-Anfrage zeigt Fehler an'
 description: Der Patch MDVA-43348 behebt das Problem, bei dem die Gift Card GraphQL-Anfrage einen Fehler anzeigt, wenn `gift_card_options` "uid"enthält. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-43348. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: a9c0e1da-6698-463a-a6a8-60522f029b53
 feature: Gift, GraphQL

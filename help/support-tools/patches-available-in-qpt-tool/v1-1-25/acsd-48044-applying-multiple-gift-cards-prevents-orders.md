@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48044: Das Anwenden mehrerer Geschenkkarten verhindert, dass Bestellungen aufgegeben werden"
+title: 'ACSD-48044: Das Anwenden mehrerer Geschenkkarten verhindert, dass Bestellungen aufgegeben werden'
 description: Wenden Sie den Patch ACSD-48044 an, um das Adobe Commerce-Problem zu beheben, bei dem die Anwendung mehrerer Geschenkkarten auf eine einzige Bestellung mit mehreren Sendungen verhindert, dass Bestellungen aufgegeben werden.
 exl-id: fe57063c-d69c-4b80-a59c-912c2603f6af
 feature: Admin Workspace, Gift, Orders

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47004: MwSt nicht auf Rechnungsadresse ohne MwSt-ID angewendet"
+title: 'ACSD-47004: MwSt. wird nicht auf Rechnungsadresse ohne MwSt.-ID angewandt'
 description: Wenden Sie den Patch ACSD-47004 an, um das Adobe Commerce-Problem zu beheben, bei dem die MwSt nicht auf eine Rechnungsadresse ohne MwSt-ID angewendet wird.
 exl-id: 04706219-be1d-4d9a-a8bf-f5c24b45076d
 feature: Customer Service, Shipping/Delivery, Orders

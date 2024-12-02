@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53979: JS-Fehler tritt auf der Homepage auf"
+title: 'ACSD-53979: JS-Fehler tritt auf der Homepage auf'
 description: Wenden Sie den Patch ACSD-53979 an, um das Adobe Commerce-Problem zu beheben, bei dem auf der Homepage ein JavaScript-Fehler auftritt, wenn die Willkommensnachricht ein einfaches Anführungszeichen enthält.
 feature: Page Content
 role: Admin, Developer

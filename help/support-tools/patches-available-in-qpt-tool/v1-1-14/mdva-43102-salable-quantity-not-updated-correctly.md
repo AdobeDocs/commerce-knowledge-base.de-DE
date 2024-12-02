@@ -1,5 +1,5 @@
 ---
-title: "MDVA-43102: Verkaufsmenge nicht korrekt aktualisiert"
+title: 'MDVA-43102: Verkaufsmenge nicht korrekt aktualisiert'
 description: Der Patch MDVA-43102 behebt das Problem, dass die Verkaufsmenge nicht korrekt aktualisiert wird, wenn eine Rückerstattung über die REST-API erfolgt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-43102. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: c51bc45b-a7e0-4581-a318-9c4736e6661c
 feature: Variables

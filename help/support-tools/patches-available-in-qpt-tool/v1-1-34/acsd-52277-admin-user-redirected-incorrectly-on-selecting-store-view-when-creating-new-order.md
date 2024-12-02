@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-52277: Admin-Benutzer hat beim Auswählen der Store-Ansicht beim Erstellen einer neuen Bestellung fälschlicherweise umgeleitet.'
+title: 'ACSD-52277: Admin-Benutzer hat beim Erstellen einer neuen Bestellung fälschlicherweise die Auswahl der Store-Ansicht umgeleitet'
 description: Wenden Sie den Patch ACSD-52277 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Admin-Benutzer nach Auswahl der Store-Ansicht beim Erstellen einer neuen Bestellung in Admin nicht ordnungsgemäß umgeleitet wird.
 exl-id: 6f0b86ae-f6f1-44cf-aef5-64def5f14824
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

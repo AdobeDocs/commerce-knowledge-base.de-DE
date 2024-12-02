@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51683: Die anpassbare Option kann nicht mit GraphQL zum Warenkorb hinzugefügt werden."
+title: 'ACSD-51683: Die anpassbare Option kann nicht mit GraphQL zum Warenkorb hinzugefügt werden'
 description: Wenden Sie den Patch ACSD-51683 an, um das Adobe Commerce-Problem zu beheben, bei dem die anpassbare Option nicht mit GraphQL zum Warenkorb hinzugefügt werden kann.
 feature: GraphQL
 role: Admin

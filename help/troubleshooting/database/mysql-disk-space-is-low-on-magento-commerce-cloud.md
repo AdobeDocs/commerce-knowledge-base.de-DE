@@ -1,5 +1,5 @@
 ---
-title: "[!DNL MySQL] Speicherplatz ist in Adobe Commerce in der Cloud-Infrastruktur gering"
+title: '[!DNL MySQL] Speicherplatz ist in Adobe Commerce in der Cloud-Infrastruktur gering'
 description: Dieser Artikel bietet Lösungen für Fälle, in denen in Adobe Commerce in der Cloud-Infrastruktur nur sehr wenig Platz oder kein Platz für [!DNL MySQL] vorhanden ist. Zu den Symptomen zählen Site-Ausfälle, Kunden, die nicht in der Lage sind, Produkte zum Warenkorb hinzuzufügen, nicht in der Lage, eine Verbindung zur Datenbank herzustellen, remote auf die Datenbank zuzugreifen und SSH nicht in den Knoten integrieren zu können. Zu den Symptomen gehören auch Galera-, Umgebungs-, PHP-, Datenbank- und Bereitstellungsfehler, wie unten aufgeführt. Klicken Sie auf [Lösung](https://support.magento.com/hc/en-us/articles/360058472572#solution), um direkt zum Lösungsabschnitt zu springen.
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services

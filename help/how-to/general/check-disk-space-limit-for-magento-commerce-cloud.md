@@ -1,6 +1,6 @@
 ---
 title: Überprüfen der Speicherplatzbegrenzung für Adobe Commerce in der Cloud-Infrastruktur
-description: "So überprüfen Sie, wie viel Platz Sie für jede Adobe Commerce in der Cloud-Infrastruktur-Umgebung haben:"
+description: 'So prüfen Sie, wie viel Platz Sie für die einzelnen Adobe Commerce in der Cloud-Infrastruktur-Umgebung haben:'
 exl-id: 0dd613e4-161f-403e-95a1-d228303693d3
 feature: Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733

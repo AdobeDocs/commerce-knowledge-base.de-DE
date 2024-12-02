@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52657: Minicart wird im zweiten Speicher, der Subdomain verwendet, nicht aktualisiert."
+title: 'ACSD-52657: Minicart wird beim zweiten Store, der die Subdomain verwendet, nicht aktualisiert'
 description: Wenden Sie den Patch ACSD-52657 an, um das Adobe Commerce-Problem zu beheben, bei dem der Minicart beim zweiten Store, der eine Subdomain verwendet, nicht aktualisiert wird.
 feature: Shopping Cart
 role: Admin, Developer

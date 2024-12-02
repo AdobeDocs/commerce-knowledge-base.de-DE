@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50527: Fehler beim Speichern einer Seite mit leerem dynamischen Block"
+title: 'ACSD-50527: Fehler beim Speichern einer Seite mit leerem dynamischen Block'
 description: Wenden Sie den Patch ACSD-50527 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Speichern einer Seite mit einem leeren dynamischen Block ein Fehler auftritt.
 exl-id: 419201f4-7721-47ee-9692-127145f85496
 feature: Page Content

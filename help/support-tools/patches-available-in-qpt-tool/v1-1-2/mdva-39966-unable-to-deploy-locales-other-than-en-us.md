@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39966: Lokale, die nicht en_US sind, können nicht bereitgestellt werden."
+title: 'MDVA-39966: Andere Gebietsschemata als en_US können nicht bereitgestellt werden'
 description: Der Patch MDVA-39966 behebt das Problem, dass der Benutzer keine anderen Gebietsschemas als en_US bereitstellen kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39966. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.1 behoben wurde.
 exl-id: fc0f5ef4-f6be-4f0d-af8d-803b411510a9
 feature: Deploy

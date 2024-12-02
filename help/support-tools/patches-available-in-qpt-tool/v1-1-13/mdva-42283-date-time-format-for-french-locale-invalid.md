@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42283: Date-time format for French locale is invalid"
+title: 'MDVA-42283: Das Datum/Uhrzeit-Format für das französische Gebietsschema ist ungültig'
 description: Der Patch MDVA-42283 behebt das Problem, dass das Datum/Uhrzeit-Format im Admin-Bestellraster für das französische Gebietsschema ungültig ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-42283. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 9b470e7b-4b73-4100-9a9d-1a45a5ac628b
 feature: CMS

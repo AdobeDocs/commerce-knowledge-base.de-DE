@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.2-p1: Rechnungsschein mit falschem Wert"
+title: 'Adobe Commerce 2.4.2-p1: Rechnungsschein mit falschem Wert'
 description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.2-p1-Problem beschrieben, bei dem eine Rechnungsnote mit einem falschen Wert generiert wird, wenn die Kundengruppe beim Erstellen der Bestellung geändert wird. Dieses Problem wurde in Version 2.4.3 behoben.
 exl-id: bde90251-625f-4c9d-8e5a-9a2019656125
 feature: Customer Service, Invoices

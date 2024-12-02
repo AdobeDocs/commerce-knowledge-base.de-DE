@@ -1,6 +1,6 @@
 ---
-title: "Bekanntes Problem mit Adobe Commerce 2.4.0: Bestellungen zeigen Fehler an"
-description: "Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce bei einem Auftragsanzeigefehler. Wenn angemeldete Kunden ihre Bestellungen im Menü **Mein Konto** (**Mein Konto &gt; Meine Bestellungen**) überprüfen, kann das Bestellraster die Anzahl der Bestellungen pro Seite nicht von Seite 2 auf 20 umstellen, wenn 11 Bestellungen vorhanden sind. Wenn beim Navigieren zur letzten Seite mit Bestellungen mehr Bestellungen vorhanden sind, als für die Anzeige pro Seite konfiguriert ist, erzeugt die Änderung der Anzahl der pro Seite angezeigten Bestellungen die Fehlermeldung: *Sie haben keine Bestellungen aufgegeben*. Dieses Problem wird in Adobe Commerce 2.4.1 behoben."
+title: 'Bekanntes Problem mit Adobe Commerce 2.4.0: Bestellungen zeigen Fehler an'
+description: 'Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce bei einem Auftragsanzeigefehler. Wenn angemeldete Kunden ihre Bestellungen im Menü **Mein Konto** (**Mein Konto &gt; Meine Bestellungen**) überprüfen, kann das Bestellraster die Anzahl der Bestellungen pro Seite nicht von Seite 2 auf 20 umstellen, wenn 11 Bestellungen vorhanden sind. Wenn beim Navigieren zur letzten Seite mit Bestellungen mehr Bestellungen vorhanden sind, als für die Anzeige pro Seite konfiguriert ist, erzeugt die Änderung der Anzahl der pro Seite angezeigten Bestellungen die Fehlermeldung: *Sie haben keine Bestellungen aufgegeben*. Dieses Problem wird in Adobe Commerce 2.4.1 behoben.'
 exl-id: a6d300e1-1cbc-42b9-997d-d72f8765517b
 feature: B2B, Categories, Storefront
 role: Admin

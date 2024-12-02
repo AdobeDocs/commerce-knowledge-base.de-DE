@@ -1,10 +1,10 @@
 ---
-title: "ACSD-50949: Der Preisfilter in der erweiterten Suche liefert keine korrekten Ergebnisse, wenn er zusammen mit dem SKU-Filter verwendet wird."
+title: 'ACSD-50949: Der Preisfilter in der erweiterten Suche liefert keine korrekten Ergebnisse, wenn er zusammen mit dem SKU-Filter verwendet wird.'
 description: Wenden Sie den Patch ACSD-50949 an, um das Adobe Commerce-Problem zu beheben, bei dem der Preisfilter bei der erweiterten Suche keine richtigen Ergebnisse liefert, wenn er zusammen mit dem SKU-Filter verwendet wird.
 feature: Orders, Search
 role: Admin
 exl-id: 3e1f88dc-07f6-4e10-b4b7-163648076cbc
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 1%

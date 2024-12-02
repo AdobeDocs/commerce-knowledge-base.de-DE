@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49773: Produktexport schlägt fehl, wenn AWS S3 als Remote-Speicher verwendet wird"
+title: 'ACSD-49773: Produktexport schlägt fehl, wenn AWS S3 als Remote-Speicher verwendet wird'
 description: Wenden Sie den Patch ACSD-49773 an, um das Adobe Commerce-Problem zu beheben, bei dem der Produktexport fehlschlägt, wenn AWS S3 als Remote-Speicher verwendet wird.
 exl-id: 5ef853c3-8080-4403-836b-6fff93ec71c6
 feature: Data Import/Export, Iaas, Products, Storage

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45520: Musteroptionen nicht auf der Produktdetailseite ausgewählt"
+title: 'ACSD-45520: Auf der Produktdetailseite nicht ausgewählte Musteroptionen'
 description: Der Patch ACSD-45520 behebt das Problem, dass Musteroptionen nicht auf der Produktdetailseite vorausgewählt sind, wenn ein Benutzer konfigurierbare Produkte aus dem Warenkorb bearbeitet. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 installiert ist. Die Patch-ID ist ACSD-45520. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 941f4a45-bc3c-44c0-a582-ddfe179fa8c3
 feature: Products

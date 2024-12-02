@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46404: Admin-Benutzer können sich nach einem Upgrade auf 2.4.4 nicht anmelden."
+title: 'ACSD-46404: Admin-Benutzer können sich nach einem Upgrade auf 2.4.4 nicht mehr anmelden'
 description: Der Patch ACSD-46404 behebt das Problem, dass sich ein Admin-Benutzer nach einem Upgrade auf 2.4.4 nicht anmelden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46404. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
 exl-id: 0aebc879-1128-4be2-a6a8-90d5812c7602
 feature: Admin Workspace

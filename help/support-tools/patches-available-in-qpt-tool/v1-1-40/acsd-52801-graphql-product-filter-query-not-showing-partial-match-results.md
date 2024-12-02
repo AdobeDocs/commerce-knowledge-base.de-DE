@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52801: GraphQL-Produktfilterabfrage zeigt keine partiellen Übereinstimmungsergebnisse an"
+title: 'ACSD-52801: GraphQL-Produktfilterabfrage zeigt keine partiellen Übereinstimmungsergebnisse an'
 description: Wenden Sie den Patch ACSD-52801 an, um das Adobe Commerce-Problem zu beheben, bei dem die GraphQL-Produktfilterabfrage keine partiellen Übereinstimmungsergebnisse anzeigt.
 feature: Products
 role: Admin, Developer

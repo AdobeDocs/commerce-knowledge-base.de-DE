@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39711: Nach dem Löschen der Website kann nicht auf das Kundennetz zugegriffen werden."
+title: 'MDVA-39711: Nach dem Löschen einer Website kann nicht auf das Kundennetz zugegriffen werden'
 description: Der Patch MDVA-39711 behebt das Problem, dass der Admin-Benutzer nach dem Löschen der Website nicht auf das Kundennetz zugreifen kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 installiert ist. Die Patch-ID lautet MDVA-39711. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: 46bef304-9360-4b69-b064-631725de381c
 feature: Configuration

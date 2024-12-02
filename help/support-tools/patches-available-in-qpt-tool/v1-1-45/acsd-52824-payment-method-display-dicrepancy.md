@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52824: Für Unternehmenskunden angezeigte Zahlungsmethoden deaktiviert"
+title: 'ACSD-52824: Deaktivierte Zahlungsmethoden für Unternehmenskunden'
 description: Wenden Sie den Patch ACSD-52824 an, um das Adobe Commerce-Problem zu beheben, bei dem [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] Zahlungsmethoden für Unternehmenskunden angezeigt werden, obwohl sie in den Unternehmenseinstellungen deaktiviert wurden.
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer

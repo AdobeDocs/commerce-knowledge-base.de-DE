@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47704: Gebündeltes Produkt zeigt nur den Preis für Lagerprodukte an."
+title: 'ACSD-47704: Gebündeltes Produkt zeigt nur den Preis von Lagerprodukten an'
 description: Wenden Sie den Patch ACSD-47704 an, um das Adobe Commerce-Problem zu beheben, bei dem ein gebündeltes Produkt nur den Preis von in Lagerprodukten anzeigt.
 exl-id: 91fbeaf7-4bc2-49b1-a561-c3e63f193eaa
 feature: Admin Workspace, Customer Service, Orders, Products

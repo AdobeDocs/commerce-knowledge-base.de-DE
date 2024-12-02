@@ -1,5 +1,5 @@
 ---
-title: '''ACSD-52606: Fehlermeldung angezeigt, wenn der Benutzer auf "Auftrag für Abruf benachrichtigen"klickt'
+title: 'ACSD-52606: Fehlermeldung angezeigt, wenn der Benutzer auf "Auftrag wird für Abruf bereit benachrichtigt"klickt'
 description: Wenden Sie den Patch ACSD-52606 an, um das Adobe Commerce-Problem zu beheben, bei dem eine Fehlermeldung angezeigt wird, wenn der Benutzer auf **[!UICONTROL Notify Order is Ready for Pickup]** klickt.
 feature: Orders, User Account
 role: Admin, Developer

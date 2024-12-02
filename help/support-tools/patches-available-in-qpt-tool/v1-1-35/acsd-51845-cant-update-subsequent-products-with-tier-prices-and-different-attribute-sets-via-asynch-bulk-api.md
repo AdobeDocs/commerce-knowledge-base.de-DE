@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51845: Nachfolgende Produkte können nicht mit Stufenpreisen und verschiedenen Attributsätzen über asynch bulk aktualisiert werden [!DNL API]"
+title: 'ACSD-51845: Nachfolgende Produkte können nicht mit Stufenpreisen und verschiedenen Attributsätzen über asynch bulk aktualisiert werden [!DNL API]'
 description: Wenden Sie den Patch ACSD-51845 an, um das Adobe Commerce-Problem zu beheben, bei dem Sie nachfolgende Produkte nicht mit Stufenpreisen und verschiedenen Attributsätzen über asynchrones Bulk aktualisieren können [!DNL REST API].
 feature: REST, Products
 role: Admin

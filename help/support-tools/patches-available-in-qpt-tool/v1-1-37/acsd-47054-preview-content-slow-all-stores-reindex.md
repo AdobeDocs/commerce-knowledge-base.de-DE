@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47054: Anzeigen der Inhaltsvorschau langsam wie alle Stores reindex"
+title: 'ACSD-47054: Anzeigen der Inhaltsvorschau langsam wie alle Stores reindex'
 description: Wenden Sie den Patch ACSD-47054 an, um das Adobe Commerce-Problem zu beheben, bei dem die Vorschauseite aufgrund der Neuindizierung aller Stores langsam geladen wird.
 feature: Page Content
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47657: Fügt einen Caching-Mechanismus für AWS-Anmeldeinformationen hinzu."
+title: 'ACSD-47657: Fügt einen Caching-Mechanismus für AWS-Anmeldeinformationen hinzu'
 description: Wenden Sie den Patch ACSD-47657 an, um das Adobe Commerce-Problem zu beheben, das bei einer hohen Anzahl von Anfragen an AWS S3 auftritt, indem Sie einen Caching-Mechanismus für AWS-Anmeldeinformationen hinzufügen.
 feature: Cache
 role: Admin, Developer

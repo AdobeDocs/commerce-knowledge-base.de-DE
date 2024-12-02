@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45257: GraphQL zeigt den Rabatt nicht korrekt im Warenkorb an."
+title: 'ACSD-45257: GraphQL zeigt den Rabatt nicht korrekt im Warenkorb an'
 description: Der Patch ACSD-45257 behebt das Problem, dass GraphQL den Rabatt nicht richtig anzeigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 installiert ist. Die Patch-ID ist ACSD-45257. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 64576fa3-1160-4fc3-8458-4e622c30af74
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart

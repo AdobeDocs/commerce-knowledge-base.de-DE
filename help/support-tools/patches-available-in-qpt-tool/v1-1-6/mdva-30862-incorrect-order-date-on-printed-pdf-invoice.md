@@ -1,5 +1,5 @@
 ---
-title: "MDVA-30862: Falsches Bestelldatum auf gedruckter PDF-Rechnung"
+title: 'MDVA-30862: Falsches Bestelldatum auf gedruckter PDF-Rechnung'
 description: Der Patch MDVA-30862 behebt das Problem, dass ein falsches Bestelldatum auf der PDF-Rechnung ausgedruckt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-30862. Beachten Sie, dass das Problem in Adobe Commerce 2.4.0 behoben wurde.
 exl-id: 695f530e-6abf-4883-972d-5d9c379493a2
 feature: Invoices, Orders

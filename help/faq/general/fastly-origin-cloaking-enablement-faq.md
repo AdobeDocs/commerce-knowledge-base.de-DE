@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Fastly] Häufig gestellte Fragen zur Aktivierung der Ursprungsverschlüsselung"
-description: In diesen häufig gestellten Fragen werden häufig gestellte Fragen zur Aktivierung der Herkunftsverdeckung in Adobe Commerce (die seit 2021 vollständig implementiert ist) behandelt. [!DNL Fastly]
+title: Häufig gestellte Fragen zur Aktivierung der Ursprungsverschlüsselung[!DNL Fastly]
+description: 'In diesen häufig gestellten Fragen werden häufig gestellte Fragen zur Aktivierung der Herkunftsverdeckung in Adobe Commerce (die seit 2021 vollständig implementiert ist) behandelt. [!DNL Fastly] '
 exl-id: d608abe7-7d64-44ce-bea1-34b201c29113
 source-git-commit: 1021a1ab81481f92e850bd49330f1742fe9a21f2
 workflow-type: tm+mt
@@ -19,7 +19,7 @@ Die Herkunftsverdeckung ist eine Sicherheitsfunktion, mit der Adobe Commerce in 
 
 ## Was sind die Vorteile der Ursprungsverschleierung?
 
-Das Ursprungs-Cloaking soll verhindern, dass der Traffic die [!DNL Fastly Web Application Firewall] (WAF) umgeht und durch den genau definierten Fluss von **[!DNL Fastly]** > **Lastenausgleich** > **Instanzen** weiterleitet. Mit dieser Implementierung wird garantiert der gesamte Traffic durch die [!DNL Fastly]-WAF sowie die interne WAF geleitet, die in den Lastenausgleich integriert ist.
+Das Ursprungs-Cloaking soll verhindern, dass der Traffic die [!DNL Fastly Web Application Firewall] (WAF) umgeht und durch den genau definierten Fluss von **[!DNL Fastly]** > **Lastenausgleich** > **Instanzen** weiterleitet. Mit dieser Implementierung wird garantiert der gesamte Traffic durch die [!DNL Fastly] WAF sowie die interne WAF geleitet, die in den Lastenausgleich integriert ist.
 
 ## Warum geschieht diese Ursprungs-Maskierung?
 

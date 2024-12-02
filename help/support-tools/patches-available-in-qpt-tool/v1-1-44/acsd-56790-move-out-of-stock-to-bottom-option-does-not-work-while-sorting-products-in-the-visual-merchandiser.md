@@ -1,5 +1,5 @@
 ---
-title: 'Die Option "ACSD-56790: **[!UICONTROL move out of stock to bottom]*** funktioniert nicht beim Sortieren von Produkten in der  [!DNL Visual Merchandiser]"'
+title: 'ACSD-56790: **[!UICONTROL move out of stock to bottom]** funktioniert nicht beim Sortieren von Produkten in der  [!DNL Visual Merchandiser]'
 description: Wenden Sie den Patch ACSD-56790 an, um das Adobe Commerce-Problem zu beheben, bei dem die Option "Von Lager zu Ende wechseln"beim Sortieren von Produkten im Visual Merchandiser nicht funktioniert.
 feature: Products, Categories
 role: Admin, Developer

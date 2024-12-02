@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53378: Verbessertes Kassenerlebnis für Kunden mit umfangreichen Adressbüchern"
+title: 'ACSD-53378: Verbessertes Kassenerlebnis für Kunden mit umfangreichen Adressbüchern'
 description: Wenden Sie den Patch ACSD-53378 an, um das Adobe Commerce-Problem zu beheben, bei dem Leistungsprobleme durch große Kundenadressenvolumen verursacht werden.
 feature: Customers, Checkout
 role: Admin

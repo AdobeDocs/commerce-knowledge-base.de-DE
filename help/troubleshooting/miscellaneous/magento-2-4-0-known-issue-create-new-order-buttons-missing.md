@@ -1,5 +1,5 @@
 ---
-title: '''Bekanntes Problem mit Adobe Commerce 2.4.0: Schaltfläche "Neues Sortiment erstellen"fehlt'
+title: 'Bekanntes Problem mit Adobe Commerce 2.4.0: Schaltfläche "Neue Bestellung erstellen"fehlt'
 description: Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in der Commerce-Admin für zwei fehlende Schaltflächen auf der Seite zur Bestellerstellung. Beim Erstellen einer neuen Bestellung für einen neuen oder vorhandenen Kunden ist es nicht möglich, Produkte zur Bestellung aus dem Katalog hinzuzufügen, da die Schaltflächen **Produkte über SKU hinzufügen** und **Produkte hinzufügen** fehlen. Dies wird durch die Aktivierung des JS-Bundles verursacht. In Adobe Commerce 2.4.1 ist eine Fehlerbehebung verfügbar.
 exl-id: 24ae880e-6d74-4444-9165-2744b12af81a
 feature: B2B

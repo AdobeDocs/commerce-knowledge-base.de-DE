@@ -1,5 +1,5 @@
 ---
-title: "Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für Index"
+title: 'Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für Index'
 description: In diesem Artikel finden Sie Schritte zur Fehlerbehebung, die durchgeführt werden müssen, wenn Sie einen Warnhinweis für Adobe Commerce in New Relic erhalten. Der Apdex-Wert misst die Zufriedenheit der Benutzer mit der Reaktionszeit von Webanwendungen und -diensten. Um dieses Problem zu beheben, sind sofortige Maßnahmen erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal für Warnhinweise ungefähr wie folgt aus.
 exl-id: 6e3f28ae-734b-468f-b6a5-c4f2edb1cb4b
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-56023: Widget-Inhalt wird auf der CMS-Seite nicht aktualisiert"
+title: 'ACSD-56023: Widget-Inhalt wird auf der CMS-Seite nicht aktualisiert'
 description: Wenden Sie den Patch ACSD-56023 an, um das Adobe Commerce-Problem zu beheben, bei dem der Widget-Inhalt auf der CMS-Seite nicht aktualisiert wird.
 feature: CMS
 role: Admin, Developer

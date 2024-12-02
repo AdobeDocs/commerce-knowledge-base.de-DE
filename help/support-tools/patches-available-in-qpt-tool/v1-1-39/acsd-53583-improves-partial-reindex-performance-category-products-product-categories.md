@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53583: Verbessern der partiellen Neuindizierungsleistung für [!UICONTROL Category Products] und [!UICONTROL Product Categories] Indexer"
+title: 'ACSD-53583: Verbessern der partiellen Neuindizierungsleistung für [!UICONTROL Category Products] - und [!UICONTROL Product Categories] -Indexer'
 description: Wenden Sie den Patch ACSD-53585 an, um die partielle Neuindizierungsleistung für Indizes für Kategorie-Produkte und Produktkategorien zu verbessern.
 feature: Products, Categories
 role: Admin, Developer

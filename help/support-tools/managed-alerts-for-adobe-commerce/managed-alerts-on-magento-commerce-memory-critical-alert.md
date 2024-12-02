@@ -1,5 +1,5 @@
 ---
-title: "Verwaltete Warnhinweise zu Adobe Commerce: speicherkritischer Warnhinweis"
+title: 'Verwaltete Warnhinweise zu Adobe Commerce: speicherkritische Warnhinweise'
 description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie eine speicherkritische Warnung für Adobe Commerce in New Relic erhalten. Um dieses Problem zu beheben, sind sofortige Maßnahmen erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal für Warnhinweise ungefähr wie folgt aus.
 exl-id: feed7998-c50b-4cbf-a92d-cbfc65745a1c
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services

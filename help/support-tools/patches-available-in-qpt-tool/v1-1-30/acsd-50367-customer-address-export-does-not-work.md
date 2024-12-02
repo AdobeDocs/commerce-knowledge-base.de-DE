@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50367: Export von Kundenadressen funktioniert nicht mit Attribut mit Mehrfachauswahl"
+title: 'ACSD-50367: Export von Kundenadressen funktioniert nicht mit Attribut mit Mehrfachauswahl'
 description: Wenden Sie den Patch ACSD-50367 an, um das Adobe Commerce-Problem zu beheben, bei dem der Export von Kundenadressen nicht funktioniert, wenn ein Attribut mit Mehrfachauswahl **"Kundenadresse"** ohne Werte erstellt wird.
 exl-id: 688831d4-b49e-48fa-b4db-1328cda09a2b
 feature: Admin Workspace, Attributes, Data Import/Export, Shipping/Delivery

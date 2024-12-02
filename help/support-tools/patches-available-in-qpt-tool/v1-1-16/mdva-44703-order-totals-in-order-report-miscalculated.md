@@ -1,5 +1,5 @@
 ---
-title: "MDVA-44703: Die Bestellsummen im Bestellbericht werden falsch berechnet"
+title: 'MDVA-44703: Die Bestellsummen im Bestellbericht werden falsch berechnet'
 description: Der Patch MDVA-44703 behebt das Problem, dass die Bestellsummen im Bestellbericht für den eingeschränkten Admin-Benutzer falsch berechnet werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-44703. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: d8c31e47-ace6-4dba-a57c-941e722a6aad
 feature: Orders

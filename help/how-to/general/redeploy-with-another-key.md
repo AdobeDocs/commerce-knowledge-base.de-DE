@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce on cloud: change authentication keys and redeploy"
+title: 'Adobe Commerce in Cloud: Authentifizierungsschlüssel ändern und erneut bereitstellen'
 description: Dieser Artikel enthält Anweisungen dazu, wie Sie Adobe Commerce in der Cloud-Infrastruktur mit verschiedenen Authentifizierungsschlüsseln neu bereitstellen. Beispielsweise könnten Sie die Schlüssel für ein anderes Konto verwendet haben oder Sie haben anstelle von Adobe Commerce-Magento Open Sourcen möglicherweise-Schlüssel verwendet.
 exl-id: 47407c81-5c52-406f-812f-6c6b3ca5cafa
 feature: Cloud, Deploy

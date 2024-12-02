@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Live Search] zeigt nicht vorrätige Produkte an, unabhängig von den Einstellungen für den Lagerstatus in der Admin-Konsole.'
+title: '[!DNL Live Search] zeigt nicht vorrätige Produkte an, unabhängig von den Einstellungen für den Lagerstatus in der Admin-Konsole'
 description: Dieser Artikel enthält Informationen zum bekannten Problem, bei dem die Produktlistungsseite (Product Listing Page, PLP) das Symbol *Wir können keine Produkte finden, die mit dem selection*-Fehler übereinstimmen, während das Such-Popup einige Elemente zurückgibt.
 exl-id: 2a351b83-407c-444a-a761-4932b5b88843
 feature: Admin Workspace, Categories, Orders, Products, Search

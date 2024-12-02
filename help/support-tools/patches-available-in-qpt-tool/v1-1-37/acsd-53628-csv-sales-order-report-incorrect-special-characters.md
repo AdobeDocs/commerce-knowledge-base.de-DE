@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53628: CSV-Verkaufsauftragsbericht zeigt falsche Sonderzeichen an"
+title: 'ACSD-53628: CSV-Verkaufsauftragsbericht zeigt falsche Sonderzeichen an'
 description: Wenden Sie den Patch ACSD-53628 an, um das Adobe Commerce-Problem zu beheben, bei dem der CSV-Verkaufsauftragsbericht falsche Sonderzeichen anzeigt.
 feature: Orders, Data Import/Export
 role: Admin, Developer

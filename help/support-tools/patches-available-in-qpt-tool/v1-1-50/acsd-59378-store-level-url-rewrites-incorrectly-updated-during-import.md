@@ -1,15 +1,15 @@
 ---
-title: "ACSD-59378: Store-level [!DNL URL] schreibt beim Import falsch aktualisiert neu"
+title: 'ACSD-59378: Auf Store-Ebene [!DNL URL] schreibt fälschlicherweise während des Imports aktualisiert'
 description: Wenden Sie den Patch ACSD-59378 an, um das Adobe Commerce-Problem zu beheben, bei dem Store-Level [!DNL URL] Rewrites beim Import falsch aktualisiert werden.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 3f400c3e325c3f377a5e12170b08615ebeadbcd1
+exl-id: 4ba567e3-323d-4068-90cc-50aacd45d397
+source-git-commit: 06f751e43ef825c0eb29cb9b42eb41f07c308625
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59378: [!DNL URL] auf Store-Ebene schreibt beim Import falsch aktualisiert
 

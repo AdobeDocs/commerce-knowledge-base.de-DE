@@ -1,6 +1,6 @@
 ---
 title: Barrierefreiheit für Web-Inhalte für Adobe Commerce
-description: '"Wir verstehen die Wichtigkeit der Zugänglichkeit bei Adobe. Während die Verantwortung für die Barrierefreiheit beim Partner/Händler liegt, verbessern wir unsere Barrierefreiheit auch mit jeder Version, die auch in unsere Pläne zur Verbesserung der Barrierefreiheit für 2022 aufgenommen wird.  '''
+description: 'Wir verstehen die Wichtigkeit der Zugänglichkeit beim Adobe. Während die Verantwortung für die Barrierefreiheit beim Partner/Händler liegt, verbessern wir unsere Barrierefreiheit auch mit jeder Version, die auch in unsere Pläne zur Verbesserung der Barrierefreiheit für 2022 aufgenommen wird.  '
 exl-id: f3b4025e-37ef-44fc-9a18-b0d159994062
 feature: Compliance
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8

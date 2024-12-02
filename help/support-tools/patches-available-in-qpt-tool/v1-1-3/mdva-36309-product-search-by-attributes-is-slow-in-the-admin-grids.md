@@ -1,5 +1,5 @@
 ---
-title: "MDVA-36309: Die Produktsuche nach Attributen ist in Admin Rastern langsam."
+title: 'MDVA-36309: Die Produktsuche nach Attributen ist in Admin Rastern langsam'
 description: Der Patch MDVA-36309 behebt das Problem, dass die Produktsuche nach Attributen in den Admin Rastern langsam ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-36309. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: 5e6b426b-201d-44a2-8c03-8ed5de8ed203
 feature: Admin Workspace, Attributes, Products, Search

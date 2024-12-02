@@ -1,5 +1,5 @@
 ---
-title: '''PWA Studio: Browser zeigt "Proxy zu Fehler nicht möglich"an'
+title: 'PWA Studio: Browser zeigt den Fehler "Proxy zu nicht möglich"an'
 description: Dieses Thema behandelt eine Lösung, wenn Ihr Webbrowser ein "*Kann nicht Proxy zu"anzeigt und die Konsole ein
 exl-id: de689633-34b8-4a25-bbd0-a58742c4d03c
 feature: Console

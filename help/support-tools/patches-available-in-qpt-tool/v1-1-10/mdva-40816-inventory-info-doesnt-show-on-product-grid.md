@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40816: Bestandsdaten werden nicht im Produktnetz angezeigt"
+title: 'MDVA-40816: Bestandsdaten werden nicht im Produktnetz angezeigt'
 description: Der Patch MDVA-40816 behebt das Problem, dass Inventarinformationen nicht im Produktraster angezeigt werden, wenn eine Produkt-SKU Sonderzeichen enthält. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-40816. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: 88c05c88-33be-4d72-a302-23a1510c401c
 feature: Admin Workspace, Inventory, Orders, Products

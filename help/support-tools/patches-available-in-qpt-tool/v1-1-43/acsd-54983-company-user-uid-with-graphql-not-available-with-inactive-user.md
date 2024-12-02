@@ -1,6 +1,6 @@
 ---
-title: "ACSD-54983: Benutzer-UID des Unternehmens mit GraphQL ist bei inaktiven Benutzern nicht verfügbar"
-description: Wenden Sie den Patch ACSD-54983 an, um das Adobe Commerce-Problem zu beheben, bei dem es nicht möglich ist, die Benutzer-UID des Unternehmens mit GraphQL-Anfrage abzurufen, wenn der Benutzerstatus auf "Inaktiv"gesetzt ist.
+title: 'ACSD-54983: Unternehmensbenutzer UID mit GraphQL ist nicht für inaktive Benutzer verfügbar'
+description: Wenden Sie den Patch ACSD-54983 an, um das Adobe Commerce-Problem zu beheben, bei dem es nicht möglich ist, den Unternehmensbenutzer UID mit GraphQL-Anfrage abzurufen, wenn der Benutzerstatus auf "Inaktiv"festgelegt ist.
 feature: GraphQL
 role: Admin, Developer
 exl-id: 57e7b9ca-3421-4b50-86b4-abdf1b3d79d1
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54983: Benutzer-UID des Unternehmens mit GraphQL ist bei inaktiven Benutzern nicht verfügbar
+# ACSD-54983: Unternehmensbenutzer UID mit GraphQL ist nicht für inaktive Benutzer verfügbar
 
-Der Patch ACSD-54983 behebt das Problem, bei dem es nicht möglich ist, die Benutzer-UID des Unternehmens mit der GraphQL-Anfrage abzurufen, wenn der Benutzerstatus auf &quot;Inaktiv&quot;gesetzt ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.43 installiert ist. Die Patch-ID ist ACSD-54983. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-54983 behebt das Problem, bei dem es nicht möglich ist, den Unternehmensbenutzer UID mit GraphQL-Anfrage abzurufen, wenn der Benutzerstatus auf &quot;Inaktiv&quot;gesetzt ist. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.43 installiert ist. Die Patch-ID ist ACSD-54983. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
 ## Betroffene Produkte und Versionen
 
@@ -31,7 +31,7 @@ Der Patch ACSD-54983 behebt das Problem, bei dem es nicht möglich ist, die Benu
 
 ## Problem
 
-Die Benutzer-UID des Unternehmens kann nicht mit der GraphQL-Anfrage abgerufen werden, wenn der Benutzerstatus auf &quot;Inaktiv&quot;festgelegt ist.
+Der Unternehmensbenutzer UID mit GraphQL-Anfrage kann nicht abgerufen werden, wenn der Benutzerstatus auf &quot;Inaktiv&quot;festgelegt ist.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -46,11 +46,11 @@ Die Benutzer-UID des Unternehmens kann nicht mit der GraphQL-Anfrage abgerufen w
 
 <u>Erwartete Ergebnisse</u>:
 
-Es ist möglich, die Benutzer-UID des Unternehmens abzurufen, wenn der Status auf &quot;Inaktiv&quot;festgelegt ist.
+Sie können den Unternehmensbenutzer UID abrufen, wenn der Status auf &quot;Inaktiv&quot;festgelegt ist.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die inaktiven Kunden sind nicht in der Liste enthalten. Die Benutzer-UID des Unternehmens kann nicht abgerufen werden, wenn der Status auf &quot;Inaktiv&quot;festgelegt ist.
+Die inaktiven Kunden sind nicht in der Liste enthalten. Der Unternehmensbenutzer UID kann nicht abgerufen werden, wenn der Status auf &quot;Inaktiv&quot;festgelegt ist.
 
 ## Wenden Sie den Patch an
 

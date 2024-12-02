@@ -1,5 +1,5 @@
 ---
-title: "ACSD-45071: Standardquelle beim Import zum Produkt hinzugefügt"
+title: 'ACSD-45071: Standardquelle beim Import zum Produkt hinzugefügt'
 description: Der Patch ACSD-45071 behebt das Problem, dass die Standardquelle dem Produkt beim Import hinzugefügt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 installiert ist. Die Patch-ID ist ACSD-45071. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
 exl-id: 8d8dbb06-6133-4d7a-939a-8bf18caec81c
 feature: Data Import/Export, Products

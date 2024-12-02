@@ -1,5 +1,5 @@
 ---
-title: "ACSD-50849: Das Hinzufügen eines neuen Produkts nach dem Löschen des Cache führt zu Inkongruenzen"
+title: 'ACSD-50849: Das Hinzufügen eines neuen Produkts nach dem Löschen des Cache führt zu inkonformen Ergebnissen'
 description: Wenden Sie den Patch ACSD-50849 an, um das Adobe Commerce-Problem zu beheben, bei dem das Hinzufügen eines neuen Produkts zur Kategorie nach dem Löschen des Caches zu einer Inkongruenz zwischen Positionen und Auswahl der vorhandenen Produkte führt.
 feature: Cache, Categories, Products
 role: Admin

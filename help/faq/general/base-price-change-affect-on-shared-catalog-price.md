@@ -1,6 +1,6 @@
 ---
 title: Änderung des Basispreises beeinflusst den gemeinsamen Katalogpreis
-description: "Dieser Artikel beantwortet die Frage: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Basispreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt im freigegebenen Katalog?"
+description: 'In diesem Artikel wird die Frage beantwortet: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Basispreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt im freigegebenen Katalog?'
 exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
 source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0

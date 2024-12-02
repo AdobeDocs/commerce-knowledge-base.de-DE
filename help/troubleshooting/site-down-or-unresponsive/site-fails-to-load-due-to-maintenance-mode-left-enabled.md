@@ -1,6 +1,6 @@
 ---
 title: Site kann aufgrund des Wartungsmodus, der aktiviert bleibt, nicht geladen werden
-description: "Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass Ihre Site nicht geladen wird, da der Wartungsmodus deaktiviert bleibt oder nicht automatisch deaktiviert wurde. Möglicherweise erhalten Sie eine Fehlermeldung: *Dienst vorübergehend nicht verfügbar Der Server kann Ihre Anfrage aufgrund von Wartungs-Ausfallzeiten oder Kapazitätsproblemen vorübergehend nicht bearbeiten.*"
+description: 'Dieser Artikel enthält eine Korrektur für den Fall, dass Ihre Site nicht geladen wird, da der Wartungsmodus aktiviert bzw. nicht automatisch deaktiviert wurde. Möglicherweise erhalten Sie eine Fehlermeldung: *Dienst vorübergehend nicht verfügbar Der Server kann Ihre Anfrage aufgrund von Wartungs-Ausfallzeiten oder Kapazitätsproblemen vorübergehend nicht bearbeiten.*'
 exl-id: 77e01588-e135-4d24-a0c4-1a6ee123f4a8
 feature: Support
 role: Developer

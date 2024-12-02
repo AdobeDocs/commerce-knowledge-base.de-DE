@@ -1,5 +1,5 @@
 ---
-title: "MDVA-26005: Die Kategorie im Baum kann nicht für die Regelbedingungen für den Warenkorbpreis ausgewählt werden."
+title: 'MDVA-26005: Kategorie im Baum kann nicht für Regelbedingungen zum Warenkorbpreis ausgewählt werden'
 description: Der Patch MDVA-26005 behebt das Problem, dass Benutzer keine Kategorie in der Kategoriestruktur für die Regelbedingungen des Warenkorbs auswählen können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-26005. Beachten Sie, dass das Problem in Adobe Commerce 2.3.6 behoben wurde.
 exl-id: d3b8efc3-fd0a-4706-8851-4cecb7d3126a
 feature: Categories, Orders, Price Rules, Shopping Cart

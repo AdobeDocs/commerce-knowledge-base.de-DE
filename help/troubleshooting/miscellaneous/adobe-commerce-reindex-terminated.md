@@ -1,6 +1,6 @@
 ---
-title: '"Adobe Commerce cloud: reindex wird mit der Meldung "Killed" beendet'
-description: "* Adobe Commerce auf Cloud-Infrastruktur (alle Versionen)"
+title: 'Adobe Commerce-Cloud: reindex wird mit der Meldung "gekühlt"beendet'
+description: '* Adobe Commerce in der Cloud-Infrastruktur (alle Versionen)'
 exl-id: 36ed9c9f-8280-41db-9df3-fe842dade4b1
 feature: Cloud, Paas
 role: Developer

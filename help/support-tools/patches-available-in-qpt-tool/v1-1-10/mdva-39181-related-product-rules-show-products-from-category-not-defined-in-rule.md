@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39181: Verwandte Produktregeln zeigen Produkte aus der Kategorie, die in der Regel nicht definiert sind"
+title: 'MDVA-39181: Verwandte Produktregeln zeigen Produkte aus Kategorien an, die in der Regel nicht definiert sind'
 description: Der Patch MDVA-39181 behebt das Problem, dass verwandte Produktregeln Produkte aus einer Kategorie zeigen, die in der Regel nicht definiert ist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 installiert ist. Die Patch-ID lautet MDVA-39181. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: b6364d1c-2480-483a-9a83-ac91feeb14b9
 feature: Categories, Products

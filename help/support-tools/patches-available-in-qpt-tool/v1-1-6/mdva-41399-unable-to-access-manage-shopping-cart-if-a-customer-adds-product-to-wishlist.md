@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-41399: Zugriff auf den "Warenkorb verwalten"ist nicht möglich, wenn ein Kunde Produkte auf die Wunschliste setzt."'
+title: 'MDVA-41399: Zugriff auf den Warenkorb verwalten nicht möglich, wenn ein Kunde Produkte auf die Wunschliste setzt'
 description: Der Patch MDVA-41399 behebt das Problem, dass Admin-Benutzer nicht auf die Seite "Warenkorb verwalten"zugreifen können, wenn ein Kunde ein Produkt zur Wunschliste hinzufügt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-41399. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
 exl-id: 227653c6-2d20-4475-b973-b9fa58db815b
 feature: Orders, Products, Shopping Cart

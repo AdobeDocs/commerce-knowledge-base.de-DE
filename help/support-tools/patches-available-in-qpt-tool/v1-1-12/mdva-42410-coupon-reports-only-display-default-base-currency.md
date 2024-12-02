@@ -1,5 +1,5 @@
 ---
-title: "MDVA-42410: Gutscheinberichte zeigen nur die Standardgrundwährung an"
+title: 'MDVA-42410: Gutscheinberichte zeigen nur die Standardgrundwährung an'
 description: Der Patch MDVA-42410 behebt das Problem, dass die Gutscheinberichte nur die Basiswährung anzeigen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-42410. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
 exl-id: b442a2ce-1bd4-4f09-95fd-2c626e32f509
 feature: Orders

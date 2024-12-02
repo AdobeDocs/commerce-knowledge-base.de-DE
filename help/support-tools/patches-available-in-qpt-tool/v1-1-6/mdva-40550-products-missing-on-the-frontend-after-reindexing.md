@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40550: Produkte, die nach der Neuindizierung auf der Vorderseite fehlen"
+title: 'MDVA-40550: Produkte, die nach der Neuindizierung auf der Vorderseite fehlen'
 description: Der Patch MDVA-40550 löst das Problem, dass die Neuindizierung dazu führt, dass einige oder alle Storefront-Kategorien Produkte fehlen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-40550. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 0aca6eb2-6eb2-4ac4-8ae1-052f671c14e5
 feature: Categories, Console, Products

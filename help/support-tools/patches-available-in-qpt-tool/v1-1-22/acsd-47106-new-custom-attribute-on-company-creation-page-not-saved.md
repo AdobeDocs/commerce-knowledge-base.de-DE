@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47106: Neues benutzerdefiniertes Attribut auf der Seite zur Unternehmenserstellung nicht gespeichert"
+title: 'ACSD-47106: neues benutzerdefiniertes Attribut auf der Seite zur Unternehmenserstellung nicht gespeichert'
 description: Wenden Sie den Patch ACSD-47106 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Wert nicht in einem neuen benutzerdefinierten Attribut auf einer Seite zur Unternehmenserstellung gespeichert werden kann.
 exl-id: 941d6d8f-36eb-4b50-980f-e4afe6bf33df
 feature: Attributes, B2B, Companies

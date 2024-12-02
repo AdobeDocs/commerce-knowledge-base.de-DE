@@ -1,5 +1,5 @@
 ---
-title: "MDVA-31763: Katalogpreisregeln werden bis zur manuellen Neuindizierung zurückgesetzt"
+title: 'MDVA-31763: Katalogpreisregeln werden bis zur manuellen Neuindizierung zurückgesetzt'
 description: Der Patch MDVA-31763 löst das Problem, dass Katalogpreisregeln bis zu einer manuellen Neuindizierung zurückgesetzt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-31763. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: eb2dfd1a-6d12-4676-82c1-bf92c6fa9fda
 feature: Catalog Management, Orders, Price Rules

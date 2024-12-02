@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce in der Cloud-Infrastruktur: Überprüfen der CPU-Konfiguration des Hosts"
+title: 'Adobe Commerce in der Cloud-Infrastruktur: Überprüfen der CPU-Konfiguration des Hosts'
 promoted: true
 description: Der angehängte Artikel enthält detaillierte Richtlinien zu den Schritten und Abfragen, die ein Benutzer ausführen kann, um die CPU-Konfiguration eines Hosts zu überprüfen. Der Benutzer kann diese Schritte anwenden, um eine Größenänderung zu identifizieren, den Zeitpunkt der Änderung zu bestimmen und alle Änderungen der Hardware-Konfiguration, die gegebenenfalls zu einem beliebigen Zeitpunkt vor oder nach der Größenänderung vorgenommen wurden, anzuzeigen.
 exl-id: 34c28744-9ebb-45b6-af12-a66dc4c7d943

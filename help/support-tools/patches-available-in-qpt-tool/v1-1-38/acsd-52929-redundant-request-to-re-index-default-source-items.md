@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52929: Redundante Anfrage zur Neuindizierung von Standardquellelementen"
+title: 'ACSD-52929: Redundante Anfrage zum Neuindizieren von Standardquellelementen'
 description: Wenden Sie den Patch ACSD-52929 an, um das Adobe Commerce-Problem zu beheben, bei dem eine redundante Anfrage zur Neuindizierung der Standardquellelemente vorliegt, wenn der Inventarindexer im asynchronen Modus konfiguriert ist.
 feature: Configuration, Inventory
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54319: Produktpreis zeigt null im *[!UICONTROL Products in Carts]* Bericht an"
+title: 'ACSD-54319: Produktpreis zeigt Null im *[!UICONTROL Products in Carts]* Bericht an'
 description: Wenden Sie den Patch ACSD-54319 an, um das Adobe Commerce-Problem zu beheben, bei dem der Produktpreis im Bericht *[!UICONTROL Products in Carts]* null anzeigt.
 feature: Reporting, Products
 role: Admin, Developer

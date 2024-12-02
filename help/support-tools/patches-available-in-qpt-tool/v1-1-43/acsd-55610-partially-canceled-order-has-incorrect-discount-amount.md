@@ -1,5 +1,5 @@
 ---
-title: "ACSD-55610: Teilweise stornierte Bestellung hat falschen Rabattbetrag"
+title: 'ACSD-55610: Teilweise stornierte Bestellung hat falschen Rabattbetrag'
 description: Wenden Sie den Patch ACSD-55610 an, um das Adobe Commerce-Problem zu beheben, bei dem eine teilweise stornierte Bestellung einen falschen Rabattbetrag aufweist.
 feature: Invoices, Orders, Price Rules, Shopping Cart
 role: Admin, Developer

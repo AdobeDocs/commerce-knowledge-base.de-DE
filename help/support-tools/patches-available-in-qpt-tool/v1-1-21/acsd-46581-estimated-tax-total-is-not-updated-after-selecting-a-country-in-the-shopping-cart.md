@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46581: Der geschätzte Steuergesamtbetrag wird nach Auswahl eines Landes im Warenkorb nicht aktualisiert."
+title: 'ACSD-46581: Der geschätzte Steuergesamtbetrag wird nach Auswahl eines Landes im Warenkorb nicht aktualisiert'
 description: Wenden Sie den Patch ACSD-46581 an, um das Adobe Commerce-Problem zu beheben, bei dem der Steuersatz nach dem Wechsel des Landes in den Warenkorb nicht aktualisiert wird.
 exl-id: 17334f7b-e5a2-4091-8196-eff80875c003
 feature: Orders, Shopping Cart

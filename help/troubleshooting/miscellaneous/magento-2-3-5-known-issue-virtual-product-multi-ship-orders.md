@@ -1,5 +1,5 @@
 ---
-title: "Bekanntes Problem mit Adobe Commerce 2.3.5: Bestellungen mit mehreren Sendungen virtueller Produkte"
+title: 'Bekanntes Problem mit Adobe Commerce 2.3.5: Multi-ship-Bestellungen für virtuelle Produkte'
 description: In diesem Artikel wird ein bekanntes Problem in Adobe Commerce 2.3.5 erläutert, bei dem eine Bestellung mit mehreren Sendungen, die ein virtuelles Produkt enthalten, nicht ordnungsgemäß verarbeitet wird.
 exl-id: 34ce79a2-5157-492b-8ee4-bdc09aae0c40
 feature: Orders, Products, Shipping/Delivery

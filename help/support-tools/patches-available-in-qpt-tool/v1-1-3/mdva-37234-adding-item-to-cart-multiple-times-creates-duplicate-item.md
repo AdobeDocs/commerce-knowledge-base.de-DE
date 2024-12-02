@@ -1,5 +1,5 @@
 ---
-title: "MDVA-37234: Wenn Artikel mehrmals zum Warenkorb hinzugefügt werden, wird ein doppelter Zeileneintrag erstellt."
+title: 'MDVA-37234: Durch das mehrfache Hinzufügen eines Artikels zum Warenkorb wird ein doppelter Zeileneintrag erstellt'
 description: Der Patch MDVA-37234 behebt das Problem, dass beim mehrfachen Hinzufügen eines Artikels zum Warenkorb (parallele Anfrage) für dieselbe SKU ein doppeltes Zeilenelement für dieselbe Warenkorb-ID erstellt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-37234. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 8f0dc249-10b2-4f2c-abca-1f5b7aea204d
 feature: Orders, Shopping Cart

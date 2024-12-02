@@ -1,5 +1,5 @@
 ---
-title: '"MDVA-37897: Falsche Umleitung beim Hinzufügen von Produkten aus "Kürzlich angesehen"'
+title: 'MDVA-37897: Falsche Umleitung beim Hinzufügen von Produkten aus "Kürzlich angesehen"'
 description: Der Patch MDVA-37897 löst das Problem der falschen Umleitung, wenn Benutzer versuchen, Produkte mit Optionen aus dem Widget "Kürzlich angesehen"hinzuzufügen. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-37897. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.4 behoben werden soll.
 exl-id: f0a86e02-b357-4d2d-8386-e9cc045bcf06
 feature: Products

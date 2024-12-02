@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54040: Das Feld [!UICONTROL Created] ist in den Bestelldetails leer, wenn B2B-Module aktiviert sind."
+title: 'ACSD-54040: Das Feld [!UICONTROL Created] ist in den Bestelldetails leer, wenn B2B-Module aktiviert sind'
 description: Wenden Sie den Patch ACSD-54040 an, um das Adobe Commerce-Problem zu beheben, bei dem das Feld [!UICONTROL Created] auf der Bestelldetailseite leer ist, wenn B2B-Module aktiviert sind.
 feature: B2B
 role: Admin, Developer

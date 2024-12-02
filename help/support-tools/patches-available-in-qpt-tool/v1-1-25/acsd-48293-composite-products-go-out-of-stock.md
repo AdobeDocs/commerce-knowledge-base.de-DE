@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48293: nicht vorrätige zusammengesetzte Erzeugnisse bei der Wiederbestockung ausverkaufter kindergesicherter Produkte"
+title: 'ACSD-48293: Nicht vorrätige zusammengesetzte Produkte bei ausverkauften, wieder aufgestockten Kinderprodukten'
 description: Wenden Sie den Patch ACSD-48293 an, um das Adobe Commerce-Problem zu beheben, bei dem die zusammengesetzten Produkte nicht mehr vorrätig sind, wenn die ausverkauften untergeordneten Produkte wieder vorrätig sind.
 exl-id: 74ca34fe-e015-4daf-a608-4756c8ab3558
 feature: Admin Workspace, Orders, Products

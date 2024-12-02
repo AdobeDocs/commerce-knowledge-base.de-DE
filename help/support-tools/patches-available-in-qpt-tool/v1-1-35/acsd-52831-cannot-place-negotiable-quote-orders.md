@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52831: Kann keine begebbaren Anführungsaufträge platzieren, wenn [!DNL Google reCAPTCHA v3 Invisible] aktiviert ist"
+title: 'ACSD-52831: Kann keine begebbaren Anführungsaufträge platzieren, wenn [!DNL Google reCAPTCHA v3 Invisible] aktiviert ist'
 description: Wenden Sie den Patch ACSD-52831 an, um das Adobe Commerce-Problem zu beheben, bei dem Sie nicht in der Lage sind, begebbare Anführungsaufträge zu platzieren, wenn [!DNL Google reCAPTCHA v3 Invisible] aktiviert ist.
 feature: Quotes, B2B, Checkout
 role: Admin

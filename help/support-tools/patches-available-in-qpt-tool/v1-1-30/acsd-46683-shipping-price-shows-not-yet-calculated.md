@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46683: Versandpreis zeigt *Noch nicht berechnet* an."
+title: 'ACSD-46683: Versandpreis wird angezeigt *Noch nicht berechnet*'
 description: Wenden Sie den Patch ACSD-46683 an, um das Adobe Commerce-Problem zu beheben, bei dem der Versandpreis *Noch nicht berechnet* anzeigt.
 exl-id: 77986612-87b7-4f50-afaf-1cfe9a4feb6f
 feature: Marketing Tools, Orders, Shipping/Delivery

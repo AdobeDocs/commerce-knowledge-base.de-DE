@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen."
+title: 'ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen.'
 description: Wenden Sie den Patch ACSD-53414 an, um das Adobe Commerce-Problem zu beheben, bei dem ein eingeschränkter Administrator CMS-Seiten außerhalb des Berechtigungsbereichs anzeigen kann.
 feature: CMS
 role: Admin, Developer
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen
+# ACSD-53414: Eingeschränkte Administratoren können CMS-Seiten außerhalb ihres Berechtigungsbereichs anzeigen.
 
 Der Patch ACSD-53414 behebt das Problem, dass ein eingeschränkter Administrator CMS-Seiten außerhalb des Berechtigungsbereichs anzeigen kann. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.40 installiert ist. Die Patch-ID ist ACSD-53414. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
 
@@ -31,7 +31,7 @@ Der Patch ACSD-53414 behebt das Problem, dass ein eingeschränkter Administrator
 
 ## Problem
 
-Eingeschränkte Admin-Benutzer können CMS-Seiten über ihren Berechtigungsbereich hinaus sehen.
+Eingeschränkte Admin-Benutzer können CMS-Seiten über ihren Berechtigungsbereich hinaus anzeigen.
 
 <u>Zu reproduzierende Schritte</u>:
 
@@ -44,7 +44,7 @@ Eingeschränkte Admin-Benutzer können CMS-Seiten über ihren Berechtigungsberei
    * [!UICONTROL 503 Service Unavailable] > Standardmäßige Storeübersicht
 
 1. Melden Sie sich mit dem in Schritt 3 erstellten Admin-Benutzer bei Admin an.
-1. Überprüfen Sie das Raster der CMS-Seiten.
+1. Überprüfen Sie das CMS-Seitenraster.
 
 <u>Erwartete Ergebnisse</u>:
 

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46703: Die Drag & Drop-Anpassung von Produkten funktioniert nicht."
+title: 'ACSD-46703: Drag & Drop zur Produktanpassung funktioniert nicht'
 description: Dieser Artikel bietet eine Lösung für das Problem, dass das Ziehen und Ablegen der anpassbaren Produktoptionen nicht wie erwartet funktioniert.
 exl-id: 49b29495-d225-4f34-ac76-b7294a86aea6
 feature: Products

@@ -1,5 +1,5 @@
 ---
-title: '"ACSD-51408: Bestellelementstatus falsch auf [!UICONTROL backordered] gesetzt'
+title: 'ACSD-51408: Bestellelementstatus falsch auf [!UICONTROL backordered] gesetzt'
 description: Wenden Sie den Patch ACSD-51408 an, um das Adobe Commerce-Problem zu beheben, bei dem der Bestellelementstatus fälschlicherweise auf [!UICONTROL backordered] festgelegt ist.
 feature: B2B, Orders
 role: Admin

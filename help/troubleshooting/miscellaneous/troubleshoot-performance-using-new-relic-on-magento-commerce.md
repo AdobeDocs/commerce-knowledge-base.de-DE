@@ -1,6 +1,6 @@
 ---
 title: Fehlerbehebung bei der Leistung von New Relic auf Adobe Commerce
-description: '"Dieser Artikel enthält Schritte zur Fehlerbehebung bei Adobe Commerce zur Lösung von Problemen mit der Cloud-Infrastruktur-Performance mithilfe von New Relic. Es stellt auch Ressourcen für weitere Informationen bereit. Im Folgenden finden Sie eine Liste der Probleme. Klicken Sie auf , um die Schritte zur Fehlerbehebung in unserer Support-Wissensdatenbank zu sehen:'''
+description: 'In diesem Artikel finden Sie Schritte zur Fehlerbehebung bei Problemen mit der Cloud-Infrastruktur-Performance von Adobe Commerce mit New Relic. Es stellt auch Ressourcen für weitere Informationen bereit. Im Folgenden finden Sie eine Liste der Probleme. Klicken Sie auf , um die Schritte zur Fehlerbehebung in unserer Support-Wissensdatenbank anzuzeigen:'
 exl-id: 0a22beb7-18b0-47eb-a6b8-63b7322b392c
 feature: Observability
 role: Developer

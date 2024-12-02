@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46618: Produktlisten-Widget zeigt falsche zwischengespeicherte Preise für angemeldete Kunden an"
+title: 'ACSD-46618: Produktlisten-Widget zeigt falsche zwischengespeicherte Preise für angemeldete Kunden an'
 description: Wenden Sie einen Patch an, um das Adobe Commerce-Problem zu beheben, bei dem das Produktlisten-Widget falsche Preise im Cache für einen angemeldeten Kunden anzeigt.
 exl-id: 8b182822-1d3d-4793-871b-cdf4565d0712
 feature: Cache, Orders, Products

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48813: Suche zeigt keine relevanten Ergebnisse basierend auf der Suchgewichtung von Attributen an."
+title: 'ACSD-48813: Suche zeigt keine relevanten Ergebnisse basierend auf der Suchgewichtung von Attributen an'
 description: Wenden Sie den Patch ACSD-48813 an, um das Adobe Commerce-Problem zu beheben, bei dem die Suche keine relevanten Ergebnisse basierend auf der Suchgewichtung der Attribute anzeigt.
 exl-id: 089e3ab3-0dfa-4f81-85c7-f6060f326d97
 feature: Admin Workspace, Attributes, Search

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51358: Zeitplanaktualisierungen fehlen"
+title: 'ACSD-51358: Zeitplanaktualisierungen fehlen'
 description: Wenden Sie den Patch ACSD-51358 an, um das Adobe Commerce-Problem zu beheben, bei dem Änderungen bei der geplanten Aktualisierung ohne Enddatum dazu führen, dass andere geplante Aktualisierungen für dieselbe Entität entfernt werden.
 feature: Staging
 role: Admin, Developer

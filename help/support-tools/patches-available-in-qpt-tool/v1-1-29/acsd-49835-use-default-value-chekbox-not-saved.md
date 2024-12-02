@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-49835: [!UICONTROL Use Default Value] Kontrollkästchen wird nicht gespeichert.'
+title: 'ACSD-49835: [!UICONTROL Use Default Value] Kontrollkästchen wird nicht gespeichert'
 description: Wenden Sie den Patch ACSD-49835 an, um das Adobe Commerce-Problem zu beheben, bei dem das Kontrollkästchen [!UICONTROL Use Default Value] nicht ordnungsgemäß auf einer Store-Ebene für ein Attribut mit Mehrfachauswahl gespeichert wird.
 exl-id: 84270551-c8a9-4b08-a055-ffdcc538c33d
 feature: Storefront

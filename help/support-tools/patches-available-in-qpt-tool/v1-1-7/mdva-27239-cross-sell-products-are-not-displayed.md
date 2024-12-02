@@ -1,5 +1,5 @@
 ---
-title: "MDVA-27239: Cross-Sell-Produkte werden nicht angezeigt"
+title: 'MDVA-27239: Querverkaufsprodukte werden nicht angezeigt'
 description: Der Patch MDVA-27239 behebt das Problem, dass Crosssell-Produkte nicht angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.7 installiert ist. Beachten Sie, dass das Problem in Adobe Commerce 2.3.6 behoben wurde.
 exl-id: a0392a07-645d-4811-8547-2c67e20b6313
 feature: Products

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49706: Standardwert, der für das Attribut für visuelle Muster gespeichert wird, wenn kein Wert ausgewählt ist"
+title: 'ACSD-49706: Standardwert, der für das visuelle Farbfeldattribut gespeichert wird, wenn kein Wert ausgewählt ist'
 description: Wenden Sie den Patch ACSD-49706 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Standardwert für ein visuelles Farbfeldattribut gespeichert wird, wenn kein Wert ausgewählt ist.
 exl-id: fe6071df-f2a4-443a-acfa-67f3d253c5e4
 feature: Admin Workspace, Attributes

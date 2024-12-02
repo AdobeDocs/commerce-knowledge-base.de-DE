@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52613: Cache und Indizes werden ohne Aktualisierungen aktualisiert"
+title: 'ACSD-52613: Cache und Indizes werden ohne Aktualisierungen aktualisiert'
 description: Wenden Sie den Patch ACSD-52613 an, um das Adobe Commerce-Problem zu beheben, bei dem der Cache und die Indizes aktualisiert werden, wenn bis  [!DNL REST API] keine Aktualisierungen an den Elementen "Inventory_source"vorgenommen werden.
 feature: REST
 role: Admin

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-48164: Eingeschränkter Administrator kann Wert auf Website-Ebene nicht speichern"
+title: 'ACSD-48164: Eingeschränkter Administrator kann Wert auf Website-Ebene nicht speichern'
 description: Wenden Sie den Patch ACSD-48164 an, um das Adobe Commerce-Problem zu beheben, bei dem ein eingeschränkter Administrator keinen Wert auf Website-Ebene speichern kann.
 exl-id: 6ec15163-ad30-4566-a46c-5756bfd9f8d4
 feature: Admin Workspace

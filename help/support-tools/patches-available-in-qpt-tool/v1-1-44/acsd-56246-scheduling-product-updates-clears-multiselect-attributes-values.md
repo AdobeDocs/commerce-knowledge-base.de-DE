@@ -1,5 +1,5 @@
 ---
-title: "ACSD-56246: Durch die Planung von Produktaktualisierungen werden die multiselect-Attributwerte gelöscht."
+title: 'ACSD-56246: Durch die Planung von Produktaktualisierungen werden die Mehrfachauswahlattributwerte gelöscht.'
 description: Wenden Sie den Patch ACSD-56246 an, um das Adobe Commerce-Problem zu beheben, bei dem durch die Planung von Produktaktualisierungen die Multiselect-Attributwerte gelöscht werden.
 feature: Products, Attributes, Staging
 role: Admin, Developer

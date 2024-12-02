@@ -1,5 +1,5 @@
 ---
-title: "ACSD-54472: Kunden eines abgelehnten Unternehmens können sich weiterhin authentifizieren."
+title: 'ACSD-54472: Kunden eines abgelehnten Unternehmens können sich weiterhin authentifizieren'
 description: Wenden Sie den Patch ACSD-54472 an, um das Adobe Commerce-Problem zu beheben, bei dem Kunden eines abgelehnten Unternehmens sich weiterhin authentifizieren können und Kunden eines blockierten und abgelehnten Unternehmens weiterhin Bestellungen aufgeben können.
 feature: B2B
 role: Admin, Developer

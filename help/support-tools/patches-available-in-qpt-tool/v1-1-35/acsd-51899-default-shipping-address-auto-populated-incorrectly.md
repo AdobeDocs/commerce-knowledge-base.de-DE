@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51899: Standard-Versandadresse falsch ausgefüllt"
+title: 'ACSD-51899: Standardmäßige Versandadresse falsch ausgefüllt'
 description: Wenden Sie den Patch ACSD-51899 an, um das Adobe Commerce-Problem zu beheben, bei dem die standardmäßige Versandadresse automatisch mit einer falschen Adresse gefüllt wird.
 feature: Checkout
 role: Admin

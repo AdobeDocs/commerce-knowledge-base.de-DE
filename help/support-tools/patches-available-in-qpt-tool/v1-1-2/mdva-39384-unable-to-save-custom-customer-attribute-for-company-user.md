@@ -1,5 +1,5 @@
 ---
-title: "MDVA-39384: Benutzerdefiniertes Kundenattribut für Unternehmensbenutzer kann nicht gespeichert werden"
+title: 'MDVA-39384: Benutzerdefiniertes Kundenattribut für Unternehmensbenutzer kann nicht gespeichert werden'
 description: Der Patch MDVA-39384 behebt das Problem, dass das benutzerdefinierte Kundenattribut für einen Unternehmensbenutzer nicht gespeichert wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-39384. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: b9864ca6-307b-4649-b764-4512abc503d3
 feature: Attributes, B2B, Companies

@@ -1,5 +1,5 @@
 ---
-title: "MDVA-38393: Katalogregeln funktionieren für konfigurierbare Produkte nicht mehr, wenn ihr einfaches Produkt neu benannt ist."
+title: 'MDVA-38393: Katalogregeln funktionieren für konfigurierbare Produkte nicht mehr, wenn ihr einfaches Produkt neu benannt ist'
 description: Der Patch MDVA-38393 behebt das Problem, dass Katalogregeln für ein konfigurierbares Produkt nicht mehr funktionieren, wenn sein einfaches Produkt neu benannt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-38393. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: a20856c4-8aff-427b-a404-7afe706be06f
 feature: Catalog Management, Categories, Configuration, Products

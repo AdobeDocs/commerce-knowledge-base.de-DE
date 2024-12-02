@@ -1,5 +1,5 @@
 ---
-title: "ACSD-51792: Seite hat kein Impressionsereignis"
+title: 'ACSD-51792: Seite hat kein Impressionsereignis'
 description: Wenden Sie den Patch ACSD-51792 an, um das Adobe Commerce-Leistungsproblem zu beheben, bei dem eine Seite nicht über das Impressionsereignis verfügt, wenn Google Tag Manager 4 aktiviert ist.
 exl-id: 59194d4c-c387-4372-a0ff-1cdd74f8c6df
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc

@@ -1,5 +1,5 @@
 ---
-title: "Verwaltete Warnhinweise zu Adobe Commerce: CPU-kritischer Warnhinweis"
+title: 'Verwaltete Warnhinweise zu Adobe Commerce: CPU-kritischer Warnhinweis'
 description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Sie einen CPU-kritischen Warnhinweis für Adobe Commerce in New Relic erhalten. Um dieses Problem zu beheben, sind sofortige Maßnahmen erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal für Warnhinweise ungefähr wie folgt aus.
 exl-id: 45b8ced0-b12f-428b-9838-2a9c26b9874b
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services

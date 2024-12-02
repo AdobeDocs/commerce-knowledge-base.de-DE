@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53998: Dynamischer Block, der auf dem Kundensegment basiert, funktioniert nach dem Abmelden nicht richtig."
+title: 'ACSD-53998: Dynamischer Block, der auf dem Kundensegment basiert, funktioniert nach dem Abmelden falsch'
 description: Wenden Sie den Patch ACSD-53998 an, um das Adobe Commerce-Problem zu beheben, bei dem ein dynamischer Block, der auf einem Kundensegment basiert, nach dem Abmelden von einem Kundenkonto nicht ordnungsgemäß funktioniert.
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer

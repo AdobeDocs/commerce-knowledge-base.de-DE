@@ -1,5 +1,5 @@
 ---
-title: "ACSD-52921: Fehler beim Anfordern von Details zum Warenkorb von GraphQL für konfigurierbares nicht vorrätiges Produkt"
+title: 'ACSD-52921: Fehler beim Anfordern von Details zum Warenkorb von GraphQL für konfigurierbare nicht vorrätige Produkte'
 description: Wenden Sie den Patch ACSD-52921 an, um das Adobe Commerce-Problem zu beheben, bei dem ein interner Fehler auftritt, wenn bei GraphQL Warenkorbdetails für ein konfigurierbares nicht vorrätiges Produkt angefordert werden.
 feature: GraphQL, Configuration, Products, Shopping Cart
 role: Admin

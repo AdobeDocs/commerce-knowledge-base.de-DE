@@ -1,5 +1,5 @@
 ---
-title: "Adobe Commerce 2.4.0: Braintree not in Multiple Addresses Checkout"
+title: 'Adobe Commerce 2.4.0: Braintree nicht an mehreren Adressen checkout'
 description: Dieser Artikel bietet eine Problemumgehung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Braintree-Zahlungsmethoden nicht beim Arbeiten mit dem Checkout für mehrere Adressen enthalten sind. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 exl-id: efde0bba-fd4a-490b-becb-856cb9ea58a5
 feature: Checkout, Compliance, Orders, Payments, Shipping/Delivery

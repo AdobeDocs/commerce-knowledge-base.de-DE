@@ -1,6 +1,6 @@
 ---
-title: "Verwaltete Warnhinweise bei Adobe Commerce: Warnhinweis bezüglich Speichermangel überarbeiten"
-description: "Dieser Artikel enthält Schritte zur Fehlerbehebung, die durchgeführt werden müssen, wenn Sie einen Warnhinweis für Adobe Commerce in New Relic erhalten. Zur Lösung des Problems ist eine sofortige Aktion erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal in etwa wie folgt aus:"
+title: 'Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis zur Speicherüberarbeitung'
+description: 'In diesem Artikel finden Sie Schritte zur Fehlerbehebung, die durchgeführt werden müssen, wenn Sie einen Warnhinweis für Adobe Commerce in New Relic erhalten. Zur Lösung des Problems ist eine sofortige Aktion erforderlich. Der Warnhinweis sieht je nach ausgewähltem Benachrichtigungskanal wie folgt aus:'
 exl-id: b7867a42-3817-4cb4-93cf-d69acee33a41
 feature: Categories, Marketing Tools, Observability, Services, Support, Tools and External Services, Variables
 role: Admin

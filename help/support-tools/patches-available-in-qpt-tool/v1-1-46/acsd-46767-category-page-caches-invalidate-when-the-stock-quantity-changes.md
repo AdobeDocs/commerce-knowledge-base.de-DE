@@ -1,5 +1,5 @@
 ---
-title: "ACSD-46767: [!UICONTROL Category] Seite speichert ungültig, wenn sich die Bestandsmenge ändert"
+title: 'ACSD-46767: [!UICONTROL Category] Seiten-Caches invalidieren, wenn sich die Lagermenge ändert'
 description: Wenden Sie den Patch ACSD-46767 an, um das Adobe Commerce-Problem zu beheben, bei dem die Seite [!UICONTROL Category] invalidiert, wenn sich die Lagermenge ändert, selbst wenn das Produkt noch auf Lager ist.
 feature: Cache, Products, Inventory
 role: Admin, Developer

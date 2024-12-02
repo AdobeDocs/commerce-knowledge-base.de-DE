@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49513: Remote-Speichersynchronisation schlägt fehl"
+title: 'ACSD-49513: Remote-Speichersynchronisation schlägt fehl'
 description: Wenden Sie den Patch ACSD-49513 an, um das Adobe Commerce-Problem zu beheben, bei dem die Remote-Speichersynchronisierung aufgrund von 0-Byte-Dateien fehlschlägt.
 exl-id: fce5f60f-d21f-40cd-8d8a-a1a26e0fbe75
 feature: Iaas, Storage

@@ -1,5 +1,5 @@
 ---
-title: "ACSD-53824: Bereitstellung schlägt beim Setup-Upgrade fehl."
+title: 'ACSD-53824: Bereitstellung schlägt beim Setup-Upgrade fehl'
 description: Wenden Sie den Patch ACSD-53824 an, um das Adobe Commerce-Problem zu beheben, bei dem die Bereitstellung beim Setup-Upgrade fehlschlägt.
 feature: Attributes, Upgrade
 role: Admin, Developer

@@ -1,5 +1,5 @@
 ---
-title: "MDVA-34948: Verlangsamung der Website"
+title: 'MDVA-34948: Verlangsamung der Website'
 description: Der MDVA-34948 Adobe Commerce Patch behebt das Problem der Verlangsamung der Website. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.1 installiert ist. Die Patch-ID lautet MDVA-34948. Bitte beachten Sie, dass das Problem in Adobe Commerce Version 2.4.1 behoben wurde.
 exl-id: ba5417b3-a71c-4f1b-877b-4e7206f86660
 feature: Observability, Configuration

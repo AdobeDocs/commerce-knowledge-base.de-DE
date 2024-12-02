@@ -1,6 +1,6 @@
 ---
 title: Fehler "Aktuelle Version von RDBMS nicht unterstützt"bei der Implementierung
-description: "Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereitstellung fehlschlägt und Sie im Bereitstellungsprotokoll den folgenden Fehler haben: *Die aktuelle Version von RDBMS wird nicht unterstützt*."
+description: 'Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereitstellung fehlschlägt und Sie im Bereitstellungsprotokoll den folgenden Fehler haben: *Die aktuelle Version von RDBMS wird nicht unterstützt*.'
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer

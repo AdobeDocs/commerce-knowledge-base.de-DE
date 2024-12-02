@@ -1,5 +1,5 @@
 ---
-title: "MDVA-31590: Attribute können nicht stapelweise mithilfe asynchroner MySQL-Warteschlangen aktualisiert werden"
+title: 'MDVA-31590: Attribute können nicht stapelweise mithilfe asynchroner MySQL-Warteschlangen aktualisiert werden'
 description: Der Patch MDVA-31590 behebt das Problem, dass die Benutzer keine Attribute stapelweise mit asynchronen MySQL-Warteschlangen aktualisieren können. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-31590. Beachten Sie, dass das Problem in Adobe Commerce 2.4.2 behoben wurde.
 exl-id: 57db28dd-a739-4a77-927d-6339af4fa4a6
 feature: Attributes, Services
@@ -60,7 +60,7 @@ Benutzer können Attribute nicht stapelweise mit MySQL async aktualisieren.
 1. Neue Datensätze werden in den Tabellen `queue_message` und `queue_message_status` erstellt.
 1. Die Tabelle `queue_message_status` enthält Datensätze mit Fehlerstatus (Statuswert &quot;6&quot;).
 1. `system.log` enthält einen Fehler ähnlich dem folgenden:
-   *main.CRITICAL: Nachricht wurde abgelehnt: SQLSTATE[23000]: Integrity constraint verletzungen: 1048 Column &#39;operation_key&#39; cannot be null, query was: INSERT IN {{magento_operation}} ({{id}}, {{bulk_uuid}}, {{topic_name}}, {{serialized_data}}, {{result_serialized_data}}, {{status}}, {{error_code}}, {{result_message}}, {{operation_key}}) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, [][]*
+   *main.CRITICAL: Nachricht wurde abgelehnt: SQLSTATE[23000]: Integrity constraint verletzungen: 1048 Column &#39;operation_key&#39; cannot be null, query was: INSERT INTO {{magento_operation}} ({{id}}, {{bulk_uuid}}, {{topic_name}}, {{serialized_data}}, {{result_serialized_data}}, {{status}}, {{error_code}}, 1}, {{operation_key}}) WERTE (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [][]*{{result_message}}
 
 ## Wenden Sie den Patch an
 

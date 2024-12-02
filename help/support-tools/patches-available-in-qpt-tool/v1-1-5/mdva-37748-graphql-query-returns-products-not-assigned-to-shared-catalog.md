@@ -1,5 +1,5 @@
 ---
-title: "MDVA-37748: GraphQL-Abfrage gibt Produkte zurück, die nicht dem freigegebenen Katalog zugewiesen sind"
+title: 'MDVA-37748: GraphQL-Abfrage gibt Produkte zurück, die nicht einem freigegebenen Katalog zugewiesen sind'
 description: Der Patch MDVA-37748 behebt das Problem, dass eine GraphQL-Abfrage Produkte zurückgibt, die keinem freigegebenen Katalog zugeordnet sind. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5 installiert ist. Die Patch-ID lautet MDVA-37748. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: 1f441882-dc14-433c-aa03-ff22483ce5a7
 feature: B2B, GraphQL, Catalog Management, Categories, Products

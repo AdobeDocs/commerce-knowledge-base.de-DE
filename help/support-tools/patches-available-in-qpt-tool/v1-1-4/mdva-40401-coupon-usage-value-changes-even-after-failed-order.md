@@ -1,5 +1,5 @@
 ---
-title: "MDVA-40401: Änderung des Verwendungswerts des Gutscheins nach fehlgeschlagener Bestellung"
+title: 'MDVA-40401: Der Verwendungswert des Gutscheins ändert sich nach fehlgeschlagener Bestellung'
 description: Der Patch MDVA-40401 behebt das Problem, dass sich der Wert der Couponnutzung auch nach einer fehlgeschlagenen Bestellung ändert. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40401. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
 exl-id: c497ee84-9c20-4c75-ad3a-3b71f699acbf
 feature: Orders

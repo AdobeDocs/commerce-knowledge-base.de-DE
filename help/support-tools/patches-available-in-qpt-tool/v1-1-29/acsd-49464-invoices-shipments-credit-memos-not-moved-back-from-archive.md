@@ -1,5 +1,5 @@
 ---
-title: "ACSD-49464: Rechnungen, Sendungen und Kreditkarten, die nicht aus dem Archiv zurückgezogen wurden"
+title: 'ACSD-49464: Rechnungen, Sendungen und Kreditkarten werden nicht aus dem Archiv zurückgezogen'
 description: Wenden Sie den Patch ACSD-49464 an, um das Adobe Commerce-Problem zu beheben, bei dem Rechnungen, Sendungen und Credit Memos nicht aus dem Archiv verschoben werden, wenn die orderId unterschiedlich ist.
 exl-id: 845f9878-5f7e-4e58-8f8a-b02af17b3f11
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
