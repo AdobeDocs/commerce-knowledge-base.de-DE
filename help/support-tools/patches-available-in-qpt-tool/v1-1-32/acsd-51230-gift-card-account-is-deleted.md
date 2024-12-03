@@ -4,7 +4,7 @@ description: Wenden Sie den Patch ACSD-51230 an, um das Adobe Commerce-Problem z
 exl-id: 4322a175-3641-468a-8a0f-fcbad90c758f
 feature: Customer Service, Gift, Marketing Tools
 role: Admin
-source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 0%

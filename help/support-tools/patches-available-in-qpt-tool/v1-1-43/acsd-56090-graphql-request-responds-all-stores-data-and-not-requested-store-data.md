@@ -4,7 +4,7 @@ description: Wenden Sie den Patch ACSD-56090 an, um das Adobe Commerce-Problem z
 feature: GraphQL
 role: Admin, Developer
 exl-id: 129491e0-1a77-4ccc-8aba-cd0afdb26176
-source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
+source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

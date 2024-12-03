@@ -4,7 +4,7 @@ description: Wenden Sie den Patch ACSD-48070 an, um das Adobe Commerce-Problem z
 feature: Catalog Management, Categories
 role: Admin
 exl-id: 047813e3-4659-4a94-9dd8-e3534387a890
-source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
+source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%

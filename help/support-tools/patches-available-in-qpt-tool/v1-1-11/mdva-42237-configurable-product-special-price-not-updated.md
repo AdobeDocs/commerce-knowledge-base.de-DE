@@ -4,7 +4,7 @@ description: Der Patch MDVA-42237 behebt das Problem, dass der Sonderpreis des k
 exl-id: 3e890448-8368-4eb2-ab64-c04cdacf20bb
 feature: Admin Workspace, Configuration, Orders, Personalization, Products
 role: Admin
-source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

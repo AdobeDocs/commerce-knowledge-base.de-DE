@@ -4,7 +4,7 @@ description: Der MDVA-42509-Patch behebt das Problem, dass eine CSV-Datei nicht 
 exl-id: 7aa0e710-9a28-4531-b9cb-c82f654487f4
 feature: B2B, Orders
 role: Admin
-source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

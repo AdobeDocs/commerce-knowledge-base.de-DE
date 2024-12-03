@@ -4,7 +4,7 @@ description: Wenden Sie den Patch ACSD-48784 an, um das Adobe Commerce-Problem z
 exl-id: 6be11fd0-5c93-4ac7-8664-7e2a289c9e38
 feature: Admin Workspace, Cache, Customer Service, Orders
 role: Admin
-source-git-commit: 8b6bf1cdada7edb0cdb0bb3e90ed15ee8cebf77e
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
