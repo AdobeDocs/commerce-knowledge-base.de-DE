@@ -1,19 +1,19 @@
 ---
 title: Die .csv-Datei der exportierten Produkte wird nicht angezeigt
-description: In diesem Artikel wird das Problem behoben, dass Sie versuchen, Produkte in eine CSV-Datei in Commerce Admin zu exportieren, die Datei jedoch nicht angezeigt wird.
+description: In diesem Artikel wird das Problem behoben, dass Sie versuchen, den gewünschten Entitätstyp in eine CSV-Datei in Commerce Admin zu exportieren, die Datei jedoch nicht angezeigt wird.
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
+source-git-commit: b6f1222918b027eaecda42b767e6f83b2cf0f5d0
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
 # Die .csv-Datei der exportierten Produkte wird nicht angezeigt
 
-In diesem Artikel wird das Problem behoben, dass Sie versuchen, Produkte in eine CSV-Datei in Commerce Admin zu exportieren, die Datei jedoch nicht angezeigt wird.
+Dieser Artikel bietet eine Lösung für das Problem, dass beim Exportieren des gewünschten Entitätstyps in eine CSV-Datei im Commerce Admin die Datei nicht angezeigt wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,7 +30,7 @@ Voraussetzungen: Die Option **Geheimen Schlüssel zu URLs hinzufügen** ist auf 
    ![magento_export_products_2.3.4.png](assets/magento_export_products_2.3.4.png)
 
 1. Auswählen
-   * **Entitätstyp**: *Produkte*
+   * **Entitätstyp**: Die Entität, die exportiert werden soll
    * **Dateiformat exportieren**: *CSV*
    * **Feldeingabe**: Lassen Sie die Option deaktiviert.
 1. Klicken Sie auf **Weiter**.
@@ -38,11 +38,11 @@ Voraussetzungen: Die Option **Geheimen Schlüssel zu URLs hinzufügen** ist auf 
 
 <u>Erwartetes Ergebnis</u>
 
-Die .csv -Datei mit den exportierten Produkten wird in wenigen Minuten im Raster angezeigt.
+Die .csv-Datei, die den exportierten gewünschten Entitätstyp enthält, wird innerhalb weniger Minuten im Raster angezeigt.
 
 <u>Tatsächliches Ergebnis</u>
 
-Die .csv -Datei mit den exportierten Produkten wird nicht mehr als 10 Minuten im Raster angezeigt.
+Die .csv-Datei, die den exportierten gewünschten Entitätstyp enthält, wird nicht mehr als 10 Minuten im Raster angezeigt.
 
 ## Ursache
 
