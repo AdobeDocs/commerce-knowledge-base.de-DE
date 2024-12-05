@@ -3,9 +3,9 @@ title: Anzeigen der vCPU-Umgebungsebene in Ihrem Cluster auf Adobe Commerce
 promoted: true
 description: In diesem Artikel wird erläutert, wie Sie Ihre vCPU-Stufenzuordnung mithilfe der Registerkarte New Relic Infra unter Beobachtung für Adobe Commerce überprüfen. Beobachtung für Adobe Commerce ist ein New Relic-Nerdlet, das den Zustand Ihrer Adobe Commerce-Site, aktuelle und vergangene Ansichten anzeigt.
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
-source-git-commit: 309fda5284de3b8be54e95bf2bfd8ff1777b6c90
+source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,3 @@ So greifen Sie auf das Nerdlet New Relic Observation for Adobe Commerce zu und m
    * Das erste Diagramm zeigt die **vCPU-Statusansicht im Zeitleistensegment GRÖSSER 2 Wochen (Sie müssen eine Zeitleiste auswählen, die GRÖSSER als 2 Wochen ist). HINWEIS: Die Stichprobenrate wird pro Tag berechnet. Wenn Cluster-Uploads/Downloads an einem Tag stattfinden, wird die Größe der Endstufe am folgenden Tag angezeigt**.
    * Das zweite Diagramm zeigt die **vCPU-Statusansicht über die Zeitleistensegment (Zeitleistensegment muss GRÖSSER als 24 Stunden, aber nicht länger als 2 Wochen ausgewählt werden)**.
    * Das dritte Diagramm zeigt die **vCPU-Tier-Ansicht über die Timeline BY NODE, sollte sich die Timeline LESS than 24 hours** ansehen.
-
-## Verwandtes Lesen
-
-* [Beobachtung für Adobe Commerce - Übersicht](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) in unserer Support-Wissensdatenbank.

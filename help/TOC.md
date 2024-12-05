@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 63664230a110a4ebf37c058e3bde71f6a359ac13
+source-git-commit: 80b0dc119058ec7533124919d5917cdd219552fe
 workflow-type: tm+mt
-source-wordcount: '9478'
+source-wordcount: '9469'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,6 @@ ht-degree: 0%
    * Site-weites Analyse-Tool {#site-wide-analysis-tool}
       * [Site-weites Analyse-Tool nach Adobe: Übersicht](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
       * [Häufig gestellte Fragen zu Berichten zum Site-weiten Analyse-Tool für Adobe Commerce](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
-   * Beobachtung für Adobe Commerce {#observation}
-      * [Beobachtung für Adobe Commerce - Übersicht](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md)
    * Verwaltete Warnhinweise für Adobe Commerce {#managed-alerts}
       * [Verwaltete Warnhinweise zu Adobe Commerce: Warnhinweis zur Speicheroptimierung](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
       * [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für Datenträger](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
