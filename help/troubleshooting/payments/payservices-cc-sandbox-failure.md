@@ -4,7 +4,7 @@ description: In diesem Artikel wird erläutert, warum eine Test-Kreditkarte in e
 exl-id: 65fd08e0-eefc-47f3-8964-bef3610e6182
 feature: Orders, Payments
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 16fc1b45e7df32ef05dac6a245d6604bbbbef13a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -36,6 +36,6 @@ Dieser Fehler wird angezeigt, wenn PayPal eine bestimmte Test-Kreditkartennummer
 
 Verwenden Sie eine andere Test-Kreditkarte. Zum Generieren von nachgeahmten Kreditkarten können Sie zum Testen verwenden:
 
-1. Gehen Sie zur Seite &quot;PayPal Developer Portal [Kreditkartengenerator](https://developer.paypal.com/developer/creditCardGenerator/)&quot;.
+1. Gehen Sie zur Seite &quot;PayPal Developer Portal [Kreditkartengenerator](https://developer.paypal.com/api/rest/sandbox/card-testing/#link-creditcardgenerator)&quot;.
 1. Melden Sie sich beim PayPal Developer Portal-Dashboard an.
 1. Generieren Sie eine Test-Kreditkarte.
