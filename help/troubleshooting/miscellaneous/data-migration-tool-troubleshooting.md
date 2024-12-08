@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Lösungen für Fehler, die beim Ausführen 
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 16fc1b45e7df32ef05dac6a245d6604bbbbef13a
+source-git-commit: 958067830d32b1f10ffa669307ec76d1e14b82a4
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 0%
@@ -166,3 +166,4 @@ Wir empfehlen, den Migrationsprozess von einer Kopie Ihrer Adobe Commerce 1-Date
 ## Verwandtes Lesen
 
 [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+
