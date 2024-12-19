@@ -1,6 +1,6 @@
 ---
-title: Aktuelle E-Mail-Adresse des Adobe-Kontos ändern
-description: Erfahren Sie, wie Sie die im Adobe-Konto registrierte E-Mail-Adresse in eine neue Adresse ändern, die derzeit nicht im Adobe- oder Magento-Konto registriert ist.
+title: E-Mail-Adresse des aktuellen Adobe-Kontos ändern
+description: Erfahren Sie, wie Sie die aktuelle E-Mail-Adresse, die im Adobe-Konto registriert ist, in eine neue Adresse ändern, die derzeit nicht im Adobe- oder Magento-Konto registriert ist.
 exl-id: ca549d38-0d62-4206-9727-0ed85b733dc3
 feature: Communications
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# Aktuelle E-Mail-Adresse des Adobe-Kontos ändern
+# E-Mail-Adresse des aktuellen Adobe-Kontos ändern
 
-In diesem Artikel wird erläutert, wie Sie die aktuelle E-Mail-Adresse, die im [Adobe-Konto](https://account.adobe.com/) registriert ist, in eine neue Adresse ändern können, die derzeit nicht im [Adobe-Konto](https://account.adobe.com/) oder im [Magento-Konto](https://account.magento.com/) registriert ist.
+In diesem Artikel wird erläutert, wie Sie die aktuelle E-Mail-Adresse, die im [Adobe-](https://account.adobe.com/) registriert ist, in eine neue Adresse ändern, die derzeit nicht im [Adobe-Konto ](https://account.adobe.com/) dem [Magento-Konto registriert ](https://account.magento.com/).
 
 ## Betroffene Produkte und Versionen
 
@@ -20,14 +20,14 @@ In diesem Artikel wird erläutert, wie Sie die aktuelle E-Mail-Adresse, die im [
 
 ## Voraussetzungen
 
-Der Eigentümer der neuen E-Mail-Adresse muss Zugriff auf die aktuelle E-Mail-Adresse haben.
+Der Inhaber der neuen E-Mail-Adresse muss Zugriff auf die aktuelle E-Mail-Adresse haben.
 
-Wenn Sie keinen Zugriff auf die aktuelle E-Mail-Adresse haben, richten Sie die E-Mail-Weiterleitung der E-Mail des aktuellen Eigentümers an eine neue E-Mail mithilfe der E-Mail-Server-Konfiguration des Unternehmens ein.
+Wenn Sie keinen Zugriff auf die aktuelle E-Mail-Adresse haben, richten Sie mithilfe der E-Mail-Server-Konfiguration des Unternehmens die E-Mail-Weiterleitung von der E-Mail-Adresse des aktuellen Besitzers an eine neue E-Mail-Adresse ein.
 
 ## Schritte zum Ändern der E-Mail-Adresse
 
-Führen Sie die folgenden Schritte aus, um die E-Mail-Adresse zu ändern:
+Gehen Sie wie folgt vor, um die E-Mail-Adresse zu ändern:
 
-1. Setzen Sie das mit der alten E-Mail-Adresse verwendete Kennwort zurück. Befolgen Sie die Anweisungen unter [Vergessenes Passwort zurücksetzen](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Adobe Helpx.
-1. Der Link zum Zurücksetzen des Kennworts wird mit Anweisungen an das Postfach des aktuellen Eigentümers gesendet.
-1. Navigieren Sie zur Seite [Adobe-Konto](https://account.adobe.com) , um sich mit der neuen E-Mail anzumelden und das Kennwort einzurichten.
+1. Setzt das mit der alten E-Mail-Adresse verwendete Passwort zurück. Befolgen Sie die Anweisungen unter [Vergessenes Kennwort zurücksetzen](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) in der Adobe-Hilfe.
+1. Der Link zum Zurücksetzen des Kennworts wird mit Anweisungen an das Postfach des aktuellen Besitzers gesendet.
+1. Navigieren Sie zur [Adobe-Kontoseite](https://account.adobe.com) um sich mit der neuen E-Mail anzumelden und das Kennwort einzurichten.

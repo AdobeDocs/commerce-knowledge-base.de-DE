@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-39993: Über API durchgeführte Bestandsänderungen werden nicht auf der Storefront angezeigt'
-description: Der Patch MDVA-39993 behebt das Problem, dass die durch die API vorgenommenen Bestandsänderungen nicht in der Storefront angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39993. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+title: 'MDVA-39993: Inventaränderungen, die über API durchgeführt werden, werden nicht in der Storefront angezeigt'
+description: Mit dem Patch MDVA-39993 wird das Problem behoben, dass die Inventaränderungen, die über die API vorgenommen werden, nicht in der Storefront angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39993. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 exl-id: 2d49b9b7-8a70-44f3-80bf-4460bb2e61d5
 feature: REST, Inventory, Orders, Storefront
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-39993: Über API durchgeführte Bestandsänderungen werden nicht auf der Storefront angezeigt
+# MDVA-39993: Inventaränderungen, die über API durchgeführt werden, werden nicht in der Storefront angezeigt
 
-Der Patch MDVA-39993 behebt das Problem, dass die durch die API vorgenommenen Bestandsänderungen nicht in der Storefront angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39993. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Mit dem Patch MDVA-39993 wird das Problem behoben, dass die Inventaränderungen, die über die API vorgenommen werden, nicht in der Storefront angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 installiert ist. Die Patch-ID lautet MDVA-39993. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,23 +27,23 @@ Der Patch MDVA-39993 behebt das Problem, dass die durch die API vorgenommenen Be
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die Bestandsänderungen, die über die API vorgenommen werden, werden nicht auf der Produktseite der Storefront angezeigt.
+Die über die API vorgenommenen Bestandsänderungen werden nicht auf der Storefront-Produktseite angezeigt.
 
 <u>Voraussetzungen</u>:
 
-Inventarmodule installiert.
+Installierte Inventarmodule.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Stellen Sie sicher, dass die Warteschlange so eingestellt ist, dass sie mit Cron ausgeführt wird und Cron installiert und ausgeführt wird.
+1. Stellen Sie sicher, dass die Warteschlange so eingestellt ist, dass sie mit cron ausgeführt wird und cron installiert und ausgeführt wird.
 1. Erstellen Sie ein konfigurierbares Produkt (COC001) mit zwei Farben (Schwarz und Rot) und zwei Größen (M und L).
-1. Eine Option aus dem Lager entfernen (COC001-Red-M).
-1. Laden Sie die konfigurierbare Produktseite in die Storefront und versuchen Sie, auf jede Farbe zu klicken. Wenn Sie auf **Rot** klicken, sollte die Größe **M** durchkreuzt werden, da sie nicht vorrätig ist.
-1. Machen Sie COC001-Red-M mit dem folgenden API-Endpunkt und der Payload auf Lager:
+1. Mache eine Option nicht vorrätig (COC001-Red-M).
+1. Laden Sie die konfigurierbare Produktseite in die Storefront und versuchen Sie, auf jede Farbe zu klicken. Wenn Sie auf **Rot** klicken, **die Größe M** durchgestrichen werden, da sie nicht vorrätig ist.
+1. Stellen Sie COC001-Red-M mit dem folgenden API-Endpunkt und der Payload auf Lager:
 
    ```json
    POST http://{domain}/rest/V1/inventory/source-items
@@ -60,29 +60,29 @@ Inventarmodule installiert.
    }
    ```
 
-1. Überprüfen Sie dieses einfache Produkt aus dem Backend und stellen Sie sicher, dass es auf &quot;In Stock&quot;aktualisiert wurde.
-1. Laden Sie das konfigurierbare Produkt vom Frontend und klicken Sie auf jede Farbe. Beachten Sie die Größe **M**, wenn Sie auf **Rot** klicken.
+1. Überprüfen Sie dieses einfache Produkt vom Backend und überprüfen Sie, ob es auf Lager aktualisiert wurde.
+1. Laden Sie das konfigurierbare Produkt aus dem Frontend und klicken Sie auf jede Farbe. Beachten Sie die Größe **M**, wenn Sie auf **Rot** klicken.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Option COC001-Red-M ist nicht durchkreuzt, da sie über die API auf In Stock aktualisiert wurde.
+Die Option COC001-Red-M ist nicht durchgestrichen, da wir sie über die API auf Lager aktualisiert haben.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Option COC001-Red-M ist immer noch ausgekreuzt, obwohl sie auf Lager ist.
+COC001-Red-M Option ist noch gestrichen, obwohl es auf Lager ist.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

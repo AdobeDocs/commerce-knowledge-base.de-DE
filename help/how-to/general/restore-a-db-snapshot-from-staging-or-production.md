@@ -1,6 +1,6 @@
 ---
-title: Wiederherstellen eines DB-Schnappschusses aus Staging oder Produktion
-description: Dieser Artikel zeigt, wie Sie einen DB-Schnappschuss aus Staging oder Produktion in Adobe Commerce in der Cloud-Infrastruktur wiederherstellen können.
+title: Wiederherstellen eines DB-Snapshots aus der Staging- oder Produktionsumgebung
+description: Dieser Artikel zeigt, wie Sie einen DB-Snapshot aus der Staging- oder Produktionsumgebung in Adobe Commerce in der Cloud-Infrastruktur wiederherstellen.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# Wiederherstellen eines DB-Snapshots von [!DNL Staging] oder [!DNL Production]
+# Wiederherstellen eines DB-Snapshots aus [!DNL Staging] oder [!DNL Production]
 
-In diesem Artikel wird gezeigt, wie eine DB [!DNL snapshot] von [!DNL Staging] oder [!DNL Production] in der Cloud Pro-Infrastruktur von Adobe Commerce wiederhergestellt wird.
+Dieser Artikel zeigt, wie Sie eine DB-[!DNL snapshot] aus [!DNL Staging] oder [!DNL Production] in Adobe Commerce in der Cloud Pro-Infrastruktur wiederherstellen.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
-Wählen Sie die für Ihren Fall am besten geeignete Option aus:
+Wählen Sie das für Ihren Fall am besten geeignete aus:
 
-* [Methode 1: Übertragen Sie die Datenbank [!DNL dump] auf Ihren lokalen Computer und importieren Sie sie](#meth2).
-* [Methode 2: Importieren Sie die Datenbank [!DNL dump] direkt vom Server](#meth3).
+* [Methode 1: Übertragen Sie die  [!DNL dump]  auf Ihren lokalen Computer und importieren Sie sie](#meth2).
+* [Methode 2: Importieren Sie die  [!DNL dump]  direkt vom Server](#meth3).
 
-## Methode 1: Übertragen Sie die Datenbank [!DNL dump] auf Ihren lokalen Computer und importieren Sie sie. {#meth2}
+## Methode 1: Übertragen Sie die [!DNL dump] auf Ihren lokalen Computer und importieren Sie sie {#meth2}
 
 Die Schritte sind:
 
-1. Navigieren Sie mit [!DNL SFTP] zu dem Speicherort, an dem die Datenbank [!DNL snapshot] platziert wurde, in der Regel auf dem ersten Server/Knoten Ihrer [!DNL cluster] (z. B. `/mnt/recovery-<recovery_id>`). HINWEIS: Wenn Ihr Projekt Azure-basiert ist, d. h. Ihre Projekt-URL ungefähr https://us-a1.magento.cloud/projects/&lt;cluster_id> aussieht, wird der Schnappschuss stattdessen in `/mnt/shared/<cluster ID>/all-databases.sql.gz` oder `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` platziert.
+1. Navigieren Sie mithilfe von [!DNL SFTP] zu dem Speicherort, an dem die [!DNL snapshot] platziert wurde, normalerweise auf dem ersten Server/Knoten Ihrer [!DNL cluster] (zum Beispiel: `/mnt/recovery-<recovery_id>`). HINWEIS: Wenn Ihr Projekt Azure-basiert ist, d. h. Ihre Projekt-URL in etwa wie https://us-a1.magento.cloud/projects/&lt;cluster_id> aussieht, wird der Schnappschuss stattdessen in `/mnt/shared/<cluster ID>/all-databases.sql.gz` oder `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` platziert.
 
-   HINWEIS: Das Format der Momentaufnahme bei Azure-Projekten ist anders und enthält andere Datenbanken, die nicht importiert werden können. Vor dem Import des Snapshots werden Sie     vor dem Import des Dump zusätzliche Schritte durchführen müssen, um die entsprechende Datenbank zu extrahieren.
+   HINWEIS: Das Format der Momentaufnahme in Azure-Projekten ist unterschiedlich und enthält andere Datenbanken, die nicht importiert werden können. Bevor Sie den Schnappschuss importieren, werden Sie     Sie müssen zusätzliche Schritte ausführen, um die entsprechende Datenbank zu extrahieren, bevor Sie den Dump importieren.
 
    Für die Produktion:
 
@@ -61,23 +61,23 @@ Die Schritte sind:
    --init-command="SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT ;SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS ;SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION ;SET NAMES utf8 ;SET @OLD_TIME_ZONE=@@TIME_ZONE ;SET TIME_ZONE='+00:00' ;SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 ;SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 ;SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' ;SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0;"
    ```
 
-1. Kopieren Sie die Datenbank [!DNL dump file] (z. B. `<cluster ID>.sql.gz` für [!DNL Production] oder `<cluster ID_stg>.sql.gz` für [!DNL Staging]) auf Ihren lokalen Computer.
-1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] so eingerichtet haben, dass eine Remote-Verbindung mit der Datenbank hergestellt wird: [[!DNL SSH] und  [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn).
+1. Kopieren Sie die [!DNL dump file] (z. B.: `<cluster ID>.sql.gz` für [!DNL Production] oder `<cluster ID_stg>.sql.gz` für [!DNL Staging]) auf Ihren lokalen Computer.
+1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] eingerichtet haben, um eine Remote-Verbindung zur Datenbank herzustellen[[!DNL SSH]  „and [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn)&quot;.
 1. Stellen Sie eine Verbindung zur Datenbank her.
 
    ```sql
    mysql -h <db-host> -P <db-port> -p -u <db-user> <db-name>
    ```
 
-1. [!DNL Drop] die Datenbank; geben Sie an der Eingabeaufforderung [!DNL MariaDB] Folgendes ein:
+1. [!DNL Drop] der Datenbank; geben Sie bei der [!DNL MariaDB] ein:
 
-   (Für [!DNL Production])
+   (für [!DNL Production])
 
    ```sql
    drop database <cluster ID>;
    ```
 
-   (Für [!DNL Staging])
+   (für [!DNL Staging])
 
    ```sql
    drop database <cluster ID_stg>;
@@ -85,38 +85,38 @@ Die Schritte sind:
 
 1. Geben Sie den folgenden Befehl ein, um die [!DNL snapshot] zu importieren:
 
-   (Für [!DNL Production])
+   (für [!DNL Production])
 
    ```sql
    zcat <cluster ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -P <db-port> -p -u   <db-user> <db-name>
    ```
 
-   (Für [!DNL Staging])
+   (für [!DNL Staging])
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -P <db-port> -p -u   <db-user> <db-name>
    ```
 
-## Methode 2: Import der Datenbank [!DNL dump] direkt vom Server {#meth3}
+## Methode 2: Importieren des Datenbank-[!DNL dump] direkt vom Server {#meth3}
 
 Die Schritte sind:
 
-1. Navigieren Sie zu dem Speicherort, an dem die Datenbank [!DNL snapshot] platziert wurde, in der Regel auf dem ersten Server/Knoten Ihres [!DNL cluster] (z. B. `/mnt/recovery-<recovery_id>`).
-1. Um [!DNL drop] zu verwenden und die Cloud-Datenbank neu zu erstellen, stellen Sie zunächst eine Verbindung zur Datenbank her:
+1. Navigieren Sie zu dem Speicherort, an dem die [!DNL snapshot] platziert wurde, normalerweise auf dem ersten Server/Knoten Ihrer [!DNL cluster] (zum Beispiel: `/mnt/recovery-<recovery_id>`).
+1. Um die Cloud-Datenbank zu [!DNL drop] und neu zu erstellen, stellen Sie zunächst eine Verbindung zur -Datenbank her:
 
    ```sql
    mysql -h 127.0.0.1 -P <db-port> -p -u <db-user> <db-name>
    ```
 
-1. [!DNL Drop] die Datenbank; geben Sie an der Eingabeaufforderung [!DNL MariaDB] Folgendes ein:
+1. [!DNL Drop] der Datenbank; geben Sie bei der [!DNL MariaDB] ein:
 
-   (Für [!DNL Production])
+   (für [!DNL Production])
 
    ```sql
    drop database <cluster ID>;
    ```
 
-   (Für [!DNL Staging])
+   (für [!DNL Staging])
 
    ```sql
    drop database <cluster ID_stg>;
@@ -124,25 +124,25 @@ Die Schritte sind:
 
 1. Geben Sie den folgenden Befehl ein, um die [!DNL snapshot] zu importieren:
 
-   (Für den Import der Datenbanksicherung von [!DNL Production])
+   (Zum Importieren der Datenbanksicherung aus [!DNL Production])
 
    ```sql
    zcat <cluster ID>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
-   (Für den Import der Datenbanksicherung von [!DNL Staging])
+   (Zum Importieren der Datenbanksicherung aus [!DNL Staging])
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
-   (Für den Import einer Datenbanksicherung aus einer anderen Umgebung)
+   (Zum Importieren einer Datenbanksicherung aus einer beliebigen anderen Umgebung)
 
    ```sql
    zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
-   (Für den Import einer Datenbanksicherung aus einer anderen Umgebung)
+   (Zum Importieren einer Datenbanksicherung aus einer beliebigen anderen Umgebung)
 
    ```sql
    zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
@@ -152,5 +152,5 @@ Die Schritte sind:
 
 In unserer Entwicklerdokumentation:
 
-* [Import-Code: Import the database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* Verwaltung von [[!DNL Snapshots]  und  [!DNL backup] : [!DNL Dump] Ihre Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Importcode: Importieren Sie die Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] AND [!DNL backup] MANAGEMENT: [!DNL Dump] Ihre Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44147: GraphQL-Anfrage gibt keine Anforderungslisten zurück'
-description: Der Patch MDVA-44147 behebt das Problem, dass GraphQL-Anfragen keine Anforderungslisten zurückgeben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44147. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+description: Der Patch MDVA-44147 behebt das Problem, dass die GraphQL-Anfrage keine Anforderungslisten zurückgibt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44147. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 exl-id: c7a526f2-638c-4172-8750-aa076724851a
 feature: B2B, GraphQL
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-44147: GraphQL-Anfrage gibt keine Anforderungslisten zurück
 
-Der Patch MDVA-44147 behebt das Problem, dass GraphQL-Anfragen keine Anforderungslisten zurückgeben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44147. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der Patch MDVA-44147 behebt das Problem, dass die GraphQL-Anfrage keine Anforderungslisten zurückgibt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 installiert ist. Die Patch-ID lautet MDVA-44147. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,16 +27,16 @@ Der Patch MDVA-44147 behebt das Problem, dass GraphQL-Anfragen keine Anforderung
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
 GraphQL-Anfrage gibt keine Anforderungslisten zurück.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Wechseln Sie zu **Store** > **Einstellungen** > **Konfiguration** > **Allgemein** > **B2B-Funktionen** und aktivieren Sie die Anforderungsliste.
-1. Melden Sie sich als Kunde an und fügen Sie der [Anforderungsliste](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists) ein Produkt hinzu.
+1. Melden Sie sich als Kunde an und fügen Sie ein Produkt zur [Anforderungsliste“ ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
 1. Erstellen Sie ein [Kunden-Token](https://developer.adobe.com/commerce/webapi/graphql/mutations/generate-customer-token.html).
 
    <pre>
@@ -52,7 +52,7 @@ GraphQL-Anfrage gibt keine Anforderungslisten zurück.
       </code>
       </pre>
 
-1. Verwenden Sie die folgende Abfrage, um alle Anforderungslisten vom Kunden abzurufen. Verwenden Sie die Kopfzeile **Autorisierung** mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im Artikel [Kundenabfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/) in unserer Entwicklerdokumentation.
+1. Mit der folgenden Abfrage können Sie alle Anforderungslisten des Kunden abrufen. Verwenden Sie den **Authorization**-Header mit dem Wert `Bearer <customer_token>`. Weitere Informationen finden Sie im [Kundenabfrage](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer/)-Artikel in unserer Entwicklerdokumentation.
 
    Anfrage:
 
@@ -126,7 +126,7 @@ GraphQL-Anfrage gibt keine Anforderungslisten zurück.
       </code>
       </pre>
 
-1. Kopieren Sie die UID eines beliebigen Elements aus der zurückgegebenen Liste (MQ==) und verwenden Sie die folgende Abfrage, um die Liste durch die UID gefiltert zu bekommen.
+1. Kopieren Sie die UID eines beliebigen Elements aus der zurückgegebenen Liste (MQ==) und verwenden Sie die folgende Abfrage, um die von der UID gefilterte Liste abzurufen.
 
    <pre>
     <code class="language-graphql">
@@ -173,18 +173,18 @@ Ein Ergebnis wird zurückgegeben.
 
 Es werden keine Ergebnisse zurückgegeben.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

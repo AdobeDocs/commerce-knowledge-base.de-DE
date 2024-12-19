@@ -1,6 +1,6 @@
 ---
-title: Site aufgrund der Ursprungsverdeckung nicht zugänglich
-description: Dieser Artikel bietet eine Lösung für den Fall, dass der Zugriff auf Ihre Adobe Commerce in der Staging- oder Produktions-Site-Storefront und/oder -Admin-Umgebung nicht möglich ist.
+title: Site aufgrund von Ursprungsverdeckung nicht zugänglich
+description: Dieser Artikel bietet eine Lösung für den Fall, dass die Storefront und/oder der Admin Ihrer Adobe Commerce-Cloud-Infrastruktur bzw. Ihrer Staging- oder Produktions-Site nicht zugänglich ist.
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Site aufgrund der Ursprungsverdeckung nicht zugänglich
+# Site aufgrund von Ursprungsverdeckung nicht zugänglich
 
-Dieser Artikel bietet eine Lösung für den Fall, dass der Zugriff auf Ihre Adobe Commerce in der Staging- oder Produktions-Site-Storefront und/oder -Admin-Umgebung nicht möglich ist.
+Dieser Artikel bietet eine Lösung für den Fall, dass die Storefront und/oder der Admin Ihrer Adobe Commerce-Cloud-Infrastruktur bzw. Ihrer Staging- oder Produktions-Site nicht zugänglich ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,34 +21,34 @@ Dieser Artikel bietet eine Lösung für den Fall, dass der Zugriff auf Ihre Adob
 
 ## Problem
 
-https: &#x200B;//mydomain.com.c.&lt;projektid>.magento.cloud/ ist nicht mehr verfügbar.
+https:&#x200B;//mydomain.com.c.&lt;projectid>.magento.cloud/ ist nicht mehr zugänglich.
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
 1. Melden Sie sich bei Ihrem Projekt an.
-1. Klicken Sie auf **Projekt aufrufen** , um eine Liste der URLs und SSH anzuzeigen.
+1. Klicken Sie **Projekt aufrufen**, um eine Liste der URLs und SSH anzuzeigen.
 
 <u>Tatsächliche Ergebnisse:</u>
 
-Seite kann mit dem folgenden Fehler nicht geladen werden:
+Die Seite kann nicht geladen werden und es wird der folgende Fehler angezeigt:
 
 *NET::ERR\_CERT\_INVALID* *TLS-Warnhinweis, ungültiges Zertifikat (554):*
 
 <u>Erwartete Ergebnisse:</u>
 
-Seite wurde erfolgreich geladen.
+Die Seite wurde geladen.
 
 ## Ursache
 
-Die Origin Cloaking wurde aktiviert, sodass der Ursprung nicht mehr direkt zugänglich ist.
+Das Verdecken des Ursprungs wurde aktiviert, sodass der Ursprung nicht mehr direkt zugänglich ist.
 
-Die Herkunftsverdeckung ist eine Sicherheitsfunktion, mit der Adobe Commerce jeglichen nicht schnellen Traffic, der zur Cloud-Infrastruktur (Ursprung) geleitet wird, blockieren kann, um DDoS-Angriffe zu verhindern.
+Origin Cloaking ist eine Sicherheitsfunktion, mit der Adobe Commerce jeden Nicht-Fastly-Traffic blockieren kann, der an die Cloud-Infrastruktur (Herkunft) geleitet wird, um DDoS-Angriffe zu verhindern.
 
 ## Lösung
 
 * Wenn Ihre Cloud-Site live ist, wechseln Sie zu https://mydomain.com/.
-* Wenn Sie über eine aktive Site (nicht Cloud) verfügen, richten Sie mithilfe der Domäne &quot;https://mydomain.com/&quot;die Unterdomäne &quot;`mcprod.mydomain.com`&quot;ein und aktualisieren Sie Ihre **Basis-URL** stattdessen auf &quot;*https://mcprod.mydomain.com*&quot;. Anschließend verweisen [auf Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
+* Wenn Sie eine aktive Website (nicht die Cloud) haben, richten Sie mithilfe der Domain https://mydomain.com/ eine Subdomain-`mcprod.mydomain.com` ein und aktualisieren Sie Ihre **Basis-URL** stattdessen auf *https://mcprod.mydomain.com*, dann [verweisen Sie den DNS auf Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Verwandtes Lesen
 
-[Häufig gestellte Fragen zur Aktivierung der frühzeitigen Ursprungsverschlüsselung](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) in unserer Support-Wissensdatenbank.
+[Häufig gestellte Fragen zur Aktivierung der Ursprünglichen Cloaking](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) in unserer Support-Wissensdatenbank.

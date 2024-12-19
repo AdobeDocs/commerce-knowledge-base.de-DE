@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist* Fehler
-description: "In diesem Artikel wird erläutert, wie ein Bereitstellungsfehler untersucht wird: *Post-deploy wird übersprungen, da die Bereitstellung fehlgeschlagen ist*"
+title: Adobe Commerce wird nach der Bereitstellung übersprungen, da die Bereitstellung fehlgeschlagen ist. Fehler
+description: 'In diesem Artikel wird erläutert, wie Sie einen Bereitstellungsfehler untersuchen: *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist.*'
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,23 +10,23 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen war* Fehler
+# Adobe Commerce *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist* Fehler
 
-In diesem Artikel wird erläutert, wie ein Bereitstellungsfehler untersucht wird: *Post-deploy wird übersprungen, da die Bereitstellung fehlgeschlagen war*, was während der Bereitstellung in verschiedenen Umgebungen (z. B. bei der Aktualisierung) auftrat.
+In diesem Artikel wird erläutert, wie Sie einen Bereitstellungsfehler untersuchen können: *Nach der Bereitstellung wird übersprungen, da die Bereitstellung fehlgeschlagen ist* was bei der Bereitstellung in verschiedenen Umgebungen auftritt, z. B. beim Upgrade.
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce in der Cloud-Infrastruktur [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce auf Cloud-Infrastruktur [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Die Bereitstellung schlägt fehl und gibt eine allgemeine Fehlermeldung zurück, sodass nicht klar ist, wie der Fehler zu beheben ist.
+Die Bereitstellung schlägt fehl und gibt eine allgemeine Fehlermeldung zurück, sodass nicht klar ist, wie der Fehler behoben werden soll.
 
 ## Ursache
 
-Nicht ermittelt - was diese Fehlermeldung verursacht, hängt vom bereitgestellten Code und der Datenbank ab.
+Unbestimmt : Die Ursache für diese Fehlermeldung hängt vom bereitgestellten Code und der bereitgestellten Datenbank ab.
 
-## Ermitteln des Implementierungsfehlers
+## Untersuchen des Bereitstellungsfehlers
 
 ```
 [20XX-XX-XX XX:XX:XX] DEBUG: Running step: is-deploy-failed
@@ -46,4 +46,4 @@ Nicht ermittelt - was diese Fehlermeldung verursacht, hängt vom bereitgestellte
     W:
 ```
 
-Um die Fehlerverfolgung zur Bestimmung der tatsächlichen Ursache abzurufen, rufen Sie SSH auf den Server auf und überprüfen Sie die Protokolldatei `var/log/install_upgrade.log`.
+Um den Fehlertrace zur Bestimmung der eigentlichen Ursache zu erhalten, SSH an den Server senden und die Protokolldatei `var/log/install_upgrade.log` überprüfen.

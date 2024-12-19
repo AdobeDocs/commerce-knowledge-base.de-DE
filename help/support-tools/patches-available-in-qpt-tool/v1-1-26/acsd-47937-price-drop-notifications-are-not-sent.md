@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-47937: aufgrund von Caching auf Anwendungsebene nicht gesendete Preisabsturzbenachrichtigungen'
-description: Wenden Sie den Patch ACSD-47937 an, um das Adobe Commerce-Problem zu beheben, bei dem aufgrund der Zwischenspeicherung auf Anwendungsebene nicht immer Preisabbruchbenachrichtigungen gesendet werden.
+title: 'ACSD-47937: Preisabfallbenachrichtigungen werden aufgrund von Caching auf Anwendungsebene nicht gesendet'
+description: Wenden Sie den Patch ACSD-47937 an, um das Adobe Commerce-Problem zu beheben, bei dem aufgrund des Caching auf Anwendungsebene nicht immer Preisabfallbenachrichtigungen gesendet werden.
 exl-id: f39c9ef6-4689-427f-bd61-3a52dec88be2
 feature: Admin Workspace, Cache, Orders
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47937: aufgrund von Caching auf Anwendungsebene nicht gesendete Preisabsturzbenachrichtigungen
+# ACSD-47937: Preisabfallbenachrichtigungen werden aufgrund von Caching auf Anwendungsebene nicht gesendet
 
-Der Patch ACSD-47937 behebt das Problem, dass aufgrund der Zwischenspeicherung auf Anwendungsebene nicht immer Preisabbruchbenachrichtigungen gesendet werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.26 installiert ist. Die Patch-ID ist ACSD-47937. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Mit dem Patch ACSD-47937 wird das Problem behoben, dass aufgrund der Zwischenspeicherung auf Anwendungsebene nicht immer Preisabfallbenachrichtigungen gesendet werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.26 installiert ist. Die Patch-ID ist ACSD-47937. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,33 +27,33 @@ Der Patch ACSD-47937 behebt das Problem, dass aufgrund der Zwischenspeicherung a
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Kunden erhalten keine E-Mail zum Produktpreisverfall für nachfolgende Produktpreisänderungen.
+Kunden erhalten keine E-Mail zu Produktpreisrückgängen für nachfolgende Produktpreisänderungen.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Aktivieren Sie **[!UICONTROL Product Alert]** sowohl für *[!UICONTROL Price Changes]* als auch für *[!UICONTROL Back in Stock]* in **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Product Alert]**.
-1. Aktivieren Sie **[!UICONTROL Display Out of Stock Products]**.
-1. Erstellen Sie ein einfaches Produkt (ABC) mit qty = 0.
-1. Erstellen Sie einen Kunden aus der Storefront und abonnieren Sie das obige Produkt, um Produktwarnungen für Preisrückgänge zu erhalten.
-1. Starten Sie die Produktwarnung für Kunden.
+1. Aktivieren Sie **[!UICONTROL Product Alert]** für *[!UICONTROL Price Changes]* und *[!UICONTROL Back in Stock]* in **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Product Alert]**.
+1. **[!UICONTROL Display Out of Stock Products]** aktivieren.
+1. Einfaches Produkt (ABC) mit Menge = 0 erstellen.
+1. Erstellen Sie eine Kundin oder einen Kunden aus der Storefront und abonnieren Sie das obige Produkt, um Produktbenachrichtigungen für Preisrückgänge zu erhalten.
+1. Starten Sie den Warnhinweis für Kunden.
 
    ```PHP
    bin/magento queue:consumers:start product_alert
    ```
 
-1. Legen Sie den Preis für das ABC-Produkt ab.
-1. Trigger des Produkt-Warnhinweis-Crons.
+1. Senken Sie den Preis für das ABC-Produkt.
+1. Trigger des Warnhinweiscron des Produkts.
 
    ```PHP
    php n98-magerun2.phar sys:cron:run catalog_product_alert
    ```
 
-1. Legen Sie den Preis für das ABC-Produkt erneut ab.
-1. Trigger des Produkt-Warnhinweis-Crons.
+1. Senken Sie den Preis für das ABC-Produkt erneut.
+1. Trigger des Warnhinweiscron des Produkts.
 
    ```PHP
    php n98-magerun2.phar sys:cron:run catalog_product_alert
@@ -61,28 +61,28 @@ Kunden erhalten keine E-Mail zum Produktpreisverfall für nachfolgende Produktpr
 
 >[!NOTE]
 >
->Wenn Sie nicht mit dem [!DNL n98]-Tool vertraut sind, können Sie `bin/magento cron:run command` wie gewohnt ausführen und die `cron_schedule`-Tabelle überwachen, um sicherzustellen, dass `catalog_product_alert` Auftrag den Erfolgsstatus erhält.
+>Wenn Sie mit [!DNL n98] Tool nicht vertraut sind, können Sie `bin/magento cron:run command` wie gewohnt ausführen und `cron_schedule` Tabelle überwachen, um sicherzustellen, dass `catalog_product_alert` Auftrag den Status „Erfolg“ erhält.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die zweite Preissenkungs-E-Mail wird gesendet.
+Die zweite Preis-Dropdown-E-Mail wird gesendet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die zweite Preissenkungs-E-Mail wird nicht gesendet.
+Die zweite Preis-Dropdown-E-Mail wird nicht gesendet.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

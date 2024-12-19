@@ -1,6 +1,6 @@
 ---
-title: Die .csv-Datei der exportierten Produkte wird nicht angezeigt
-description: In diesem Artikel wird das Problem behoben, dass Sie versuchen, den gewünschten Entitätstyp in eine CSV-Datei in Commerce Admin zu exportieren, die Datei jedoch nicht angezeigt wird.
+title: Exportierte .csv-Produktdatei wird nicht angezeigt
+description: Dieser Artikel bietet eine Lösung für das Problem, dass Sie versuchen, den gewünschten Entitätstyp in eine CSV-Datei im Commerce-Admin zu exportieren, die Datei jedoch nicht angezeigt wird.
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
@@ -11,71 +11,71 @@ ht-degree: 0%
 
 ---
 
-# Die .csv-Datei der exportierten Produkte wird nicht angezeigt
+# Exportierte .csv-Produktdatei wird nicht angezeigt
 
-Dieser Artikel bietet eine Lösung für das Problem, dass beim Exportieren des gewünschten Entitätstyps in eine CSV-Datei im Commerce Admin die Datei nicht angezeigt wird.
+Dieser Artikel bietet eine Lösung für den Fall, dass der Export des gewünschten Entitätstyps in eine CSV-Datei in der Commerce Admin dazu führt, dass die Datei nicht angezeigt wird.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce auf Cloud-Infrastruktur, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>
+<u>Schritte zur Reproduktion</u>
 
-Voraussetzungen: Die Option **Geheimen Schlüssel zu URLs hinzufügen** ist auf *Ja* eingestellt. Die Option wird im Commerce-Admin unter **Geschäfte** > **Konfiguration** > **Erweitert** > **Admin** > **Sicherheit** konfiguriert.
+Voraussetzungen: Die Option **Geheimen Schlüssel zu URLs hinzufügen** ist auf &quot;*&quot;*. Die Option wird im Commerce Admin unter **Stores** > **Configuration** > **Advanced** > **Admin** > **Security** konfiguriert.
 
-1. Navigieren Sie im Admin zu &quot;**System**&quot;> &quot;**Datenübertragung**&quot;> &quot;**Export**&quot;.
+1. Navigieren Sie in der Admin zu **System** > **Datenübertragung** > **Exportieren**.
 
    ![magento_export_products_2.3.4.png](assets/magento_export_products_2.3.4.png)
 
 1. Auswählen
-   * **Entitätstyp**: Die Entität, die exportiert werden soll
+   * **Entitätstyp**: Die zu exportierende Entität
    * **Dateiformat exportieren**: *CSV*
-   * **Feldeingabe**: Lassen Sie die Option deaktiviert.
-1. Klicken Sie auf **Weiter**.
-1. Die folgende Meldung wird angezeigt: *&quot;Nachricht wird der Warteschlange hinzugefügt, warten Sie, bis Sie Ihre Datei bald erhalten&quot;*.
+   * **Feldgehäuse**: nicht markieren.
+1. Klicken Sie **Weiter**.
+1. Die folgende Meldung wird angezeigt: *„Nachricht wird der Warteschlange hinzugefügt, bitte warten, bis die Datei bald verfügbar ist“*.
 
 <u>Erwartetes Ergebnis</u>
 
-Die .csv-Datei, die den exportierten gewünschten Entitätstyp enthält, wird innerhalb weniger Minuten im Raster angezeigt.
+Die CSV-Datei, die den exportierten gewünschten Entitätstyp enthält, wird innerhalb weniger Minuten im Raster angezeigt.
 
 <u>Tatsächliches Ergebnis</u>
 
-Die .csv-Datei, die den exportierten gewünschten Entitätstyp enthält, wird nicht mehr als 10 Minuten im Raster angezeigt.
+Die CSV-Datei, die den exportierten gewünschten Entitätstyp enthält, wird nicht in 10 Minuten oder länger im Raster angezeigt.
 
 ## Ursache
 
-Ein bekanntes Problem mit der Exportfunktion in der Adobe Commerce-Programmteil-Version 2.3.2.
+Ein bekanntes Problem mit der Exportfunktion in der Adobe Commerce-Programmteilversion 2.3.2.
 
 ## Lösung
 
 Es gibt zwei mögliche Lösungen für dieses Problem:
 
 * Deaktivieren Sie die Option Geheimen Schlüssel zur URL hinzufügen .
-* Führen Sie den Befehl `bin/magento queue:consumers:start exportProcessor` manuell aus und konfigurieren Sie ihn optional für die Ausführung durch Cron.
+* Führen Sie den `bin/magento queue:consumers:start exportProcessor` Befehl manuell aus und konfigurieren Sie ihn optional so, dass er von cron ausgeführt wird.
 
 Weitere Informationen zu beiden Optionen finden Sie in den folgenden Absätzen.
 
 ### Deaktivieren Sie die Option Geheimen Schlüssel zur URL hinzufügen .
 
-1. Navigieren Sie im Admin zu &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**Erweitert**&quot;> &quot;**Admin**&quot;> &quot;**Sicherheit**&quot;.
-1. Setzen Sie die Option **Geheimen Schlüssel zu URLs hinzufügen** auf *Nein.*
-1. Klicken Sie auf **Konfiguration speichern**.
-1. Cache unter **System** > **Tools** > **Cache-Verwaltung** bereinigen oder durch Ausführen von    ```bash    bin/magento cache:clean``` oder im Admin.
+1. Navigieren Sie in Admin zu **Stores** > **Konfiguration** > **Erweitert** > **Admin** > **Sicherheit**.
+1. Setzen Sie die **Geheimschlüssel zu URLs hinzufügen** auf *Nein.*
+1. Klicken Sie **Konfiguration speichern**.
+1. Bereinigen Sie den Cache unter **System** > **Tools** > **Cache-Verwaltung** oder indem Sie Folgendes ausführen    ```bash    bin/magento cache:clean``` oder in der Admin.
 
 ### Führen Sie den Exportbefehl manuell aus und fügen Sie ihn optional als Cron-Auftrag hinzu
 
-Um die Exportdatei zu erhalten, führen Sie den Befehl `bin/magento queue:consumers:start exportProcessor` aus. Nach der Ausführung sollte die Datei im Raster angezeigt werden.
+Um die Exportdatei abzurufen, führen Sie den `bin/magento queue:consumers:start exportProcessor` Befehl aus. Danach sollte die Datei im Raster angezeigt werden.
 
 
-Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die Variable `CRON_CONSUMERS` zur Datei `.magento.env.yaml` hinzufügen.
+Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CONSUMERS` Variable zur `.magento.env.yaml`-Datei hinzufügen.
 
 #### Prozess als Cron-Auftrag hinzufügen (optional)
 
-1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere Informationen finden Sie unter [Einrichten von Cron-Aufträgen](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) .
-1. Führen Sie den folgenden Befehl aus, um eine Liste der Verbraucher in der Nachrichtenwarteschlange zurückzugeben:     `./bin/magento queue:consumers:list`
-1. Fügen Sie Ihrer `.magento.env.yaml` -Datei im Stammverzeichnis der Anwendung Folgendes hinzu und schließen Sie die Verbraucher ein, die Sie hinzufügen möchten. Hier ist beispielsweise der für die Exportverarbeitung erforderliche Verbraucher:
+1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [ finden Sie unter „Einrichten ](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) Cron-Aufträgen“.
+1. Führen Sie den folgenden Befehl aus, um eine Liste der Nachrichtenwarteschlangen-Verbraucher zurückzugeben:     `./bin/magento queue:consumers:list`
+1. Fügen Sie Ihrer `.magento.env.yaml`-Datei im Stammverzeichnis der Anwendung Folgendes hinzu und schließen Sie die Verbraucher ein, die Sie hinzufügen möchten. Hier finden Sie beispielsweise den Verbraucher, der für die Exportverarbeitung erforderlich ist:
 
    ```yaml
    stage:
@@ -87,16 +87,16 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die Variable
                    - exportProcessor
    ```
 
-   Pushen Sie dann diese aktualisierte Datei und stellen Sie Ihre Umgebung erneut bereit. Weitere Informationen finden Sie unter [Hinzufügen benutzerdefinierter Cron-Aufträge zu Ihrem Projekt](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) in unserer Entwicklerdokumentation.
+   Pushen Sie dann diese aktualisierte Datei und stellen Sie Ihre Umgebung erneut bereit. Verweisen Sie auch [Benutzerdefinierte Cron-Aufträge zu Ihrem Projekt hinzufügen](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >
->Wenn Sie die Datei &quot;`.magento.env.yaml`&quot; für Ihre Umgebung nicht finden können und der Eindruck haben, dass sie gelöscht wurde, müssen Sie eine neue &quot;`.magento.env.yaml`&quot;erstellen. Es kann anfangs leer sein. Sie können dort bei Bedarf Informationen hinzufügen. Verweisen Sie in unserer Entwicklerdokumentation auf die folgenden Artikel: [Umgebungsvariablen für die Bereitstellung konfigurieren](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) und [Umgebungsvariablen](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) .
+>Wenn Sie die `.magento.env.yaml`-Datei für Ihre Umgebung nicht finden können und der Meinung sind, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml` erstellen. Möglicherweise ist es zunächst leer. Sie können dort nach Bedarf weitere Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel[ „Konfigurieren von Umgebungsvariablen für ](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)&quot; und [Umgebungsvariablen](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in Ihrer Entwicklerdokumentation.
 
 >[!TIP]
 >
->Bei [YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) wird zwischen Groß- und Kleinschreibung unterschieden und Tabs sind nicht zulässig. Achten Sie darauf, einen konsistenten Einzug in der .magento.env.yaml-Datei zu verwenden, da Ihre Konfiguration sonst nicht wie erwartet funktioniert. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden einen Einzug von zwei Leerzeichen. Überprüfen Sie Ihre Konfiguration mit dem Befehl ece-tools validate .
+>[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) wird zwischen Groß- und Kleinschreibung unterschieden und es werden keine Registerkarten zugelassen. Achten Sie darauf, in der gesamten Datei &quot;.magento.env.yaml“ einen konsistenten Einzug zu verwenden. Andernfalls funktioniert Ihre Konfiguration möglicherweise nicht wie erwartet. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden eine Einrückung mit zwei Leerzeichen. Verwenden Sie den Befehl ECE-Tools validate , um Ihre Konfiguration zu überprüfen.
 
 >[!NOTE]
 >
->Bei Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [Auto-Crons Feature](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) in Ihrer Adobe Commerce-Cloud-Infrastruktur aktiviert sein, bevor Sie benutzerdefinierte Cron-Aufträge in Staging- und Produktionsumgebungen mit `.magento.app.yaml` hinzufügen können. Wenn diese Funktion nicht aktiviert ist, erstellen Sie [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.
+>In Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [automatische Krone](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) in Ihrer Adobe Commerce in der Cloud-Infrastruktur aktiviert sein, bevor Sie mithilfe von `.magento.app.yaml` benutzerdefinierte Cron-Aufträge zu Staging- und Produktionsumgebungen hinzufügen können. Wenn diese Funktion nicht aktiviert ist[ erstellen Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.

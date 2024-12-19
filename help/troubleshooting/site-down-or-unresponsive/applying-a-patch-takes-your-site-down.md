@@ -1,6 +1,6 @@
 ---
-title: Durch Anwenden eines Pflasters wird Ihre Website heruntergefahren
-description: In diesem Artikel wird über das Problem gesprochen, dass ein Patch, den Sie gerade angewendet haben, Ihre Website herunterfährt. Um es zu beheben, können Sie den Patch entfernen.
+title: Durch das Anwenden eines Patches wird Ihre Site heruntergefahren
+description: In diesem Artikel wird über das Problem gesprochen, dass ein soeben von Ihnen angewendeter Patch Ihre Website herunterfährt. Um dies zu beheben, können Sie den Patch entfernen.
 exl-id: dc765bcd-0761-4efd-a345-46a908d61272
 feature: Cache
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Durch Anwenden eines Pflasters wird Ihre Website heruntergefahren
+# Durch das Anwenden eines Patches wird Ihre Site heruntergefahren
 
-In diesem Artikel wird über das Problem gesprochen, dass ein Patch, den Sie gerade angewendet haben, Ihre Website herunterfährt. Um es zu beheben, können Sie den Patch entfernen.
+In diesem Artikel wird über das Problem gesprochen, dass ein soeben von Ihnen angewendeter Patch Ihre Website herunterfährt. Um dies zu beheben, können Sie den Patch entfernen.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,25 +22,25 @@ In diesem Artikel wird über das Problem gesprochen, dass ein Patch, den Sie ger
 
 ## Problem
 
-Nachdem Sie einen Patch angewendet haben, geht Ihre Site verloren.
+Nachdem Sie ein Pflaster aufgeklebt haben, wird Ihre Site heruntergefahren.
 
 ## Ursache
 
-Dieses Problem tritt möglicherweise aufgrund einer Versionsinkompatibilität zwischen dem Patch, den Sie gerade auf Ihre Website angewendet haben, Ihren Anpassungen, anderen Patches, die Sie in der Vergangenheit angewendet haben, oder einem anderen Fehler auf.
+Dieses Problem kann durch eine Versionsinkompatibilität zwischen dem soeben auf Ihrer Website angewendeten Patch, Ihren Anpassungen, anderen in der Vergangenheit angewendeten Patches oder durch einen anderen Fehler verursacht werden.
 
 ## Lösung
 
-Entfernen Sie den Patch. Die Methode zur Patch-Entfernung unterscheidet sich bei Adobe Commerce in der Cloud-Infrastruktur von der in Adobe Commerce vor Ort und Magento Open Source.
+Entfernen Sie das Pflaster. Die Methode zum Entfernen von Patches unterscheidet sich für Adobe Commerce in der Cloud-Infrastruktur von der für Adobe Commerce On-Premise und Magento Open Source.
 
-### Magento Open Source, alle 1.X-Versionen
+### Magento Open Source, alle 1.x-Versionen
 
-Für Magento Open Source 1.x:
+Für Magento Open Source 1.x-Versionen
 
 * Führen Sie den folgenden SSH-Befehl aus: `h SUPEE_patch --revert `
 
-### Adobe Commerce vor Ort, Magento Open Source, alle 2.x-Versionen
+### Adobe Commerce On-Premise, Magento Open Source, alle 2.x-Versionen
 
-Für Adobe Commerce On-Premise und Magento Open Source 2.x-Versionen:
+Für lokale Adobe Commerce-Versionen und Magento Open Source 2.x
 
 1. Führen Sie den folgenden SSH-Befehl aus:
 
@@ -48,16 +48,16 @@ Für Adobe Commerce On-Premise und Magento Open Source 2.x-Versionen:
    patch -p1 -R %patch_name%.composer.patch
    ```
 
-   (Wenn der obige Befehl nicht funktioniert, verwenden Sie `-p2` anstelle von `-p1`)
+   (Wenn der obige Befehl nicht funktioniert, versuchen Sie, `-p2` statt `-p1` zu verwenden.)
 
 1. Damit die Änderungen übernommen werden, aktualisieren Sie den Cache im Admin unter **System** > **Cache-Verwaltung**.
 
-### Adobe Commerce in der Cloud-Infrastruktur, alle Versionen
+### Adobe Commerce auf Cloud-Infrastruktur, alle Versionen
 
-Für Adobe Commerce in der Cloud-Infrastruktur werden alle Versionen
+Für Adobe Commerce in der Cloud-Infrastruktur: alle Versionen,
 
-1. Entfernen Sie die Datei(en) `%patch_name%.composer.patch` aus dem Verzeichnis `m2-hotfixes` .
-1. Übernehmen und pushen Sie Ihre Code-Änderungen:
+1. Entfernen Sie die `%patch_name%.composer.patch` Datei(en) aus dem `m2-hotfixes`.
+1. Code-Änderungen übertragen und übertragen:
 
    ```
    git commit -m "Remove %patch_name%.composer.patch patch" && git push origin
@@ -65,4 +65,4 @@ Für Adobe Commerce in der Cloud-Infrastruktur werden alle Versionen
 
 ## Verwandtes Lesen
 
-* [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
+* [So wenden Sie einen Composer-Patch von Adobe an](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank.

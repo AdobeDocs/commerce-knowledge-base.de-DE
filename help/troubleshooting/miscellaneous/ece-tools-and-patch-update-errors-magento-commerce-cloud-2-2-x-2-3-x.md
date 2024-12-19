@@ -1,6 +1,6 @@
 ---
-title: ECE-Tools und Patch-Update-Fehler Adobe Commerce Cloud-Infrastruktur 2.2.x, 2.3.x
-description: Dieser Artikel bietet eine Lösung für das Problem, dass Fehlermeldungen wie "*failed to open stream:*"oder "*No such file or directory*"angezeigt werden, wenn Sie versuchen, Updates für ECE-Tools, Patches oder andere Änderungen bereitzustellen.
+title: ECE-Tools und Patch-Aktualisierungsfehler Adobe Commerce Cloud Infrastructure 2.2.x., 2.3.x
+description: Dieser Artikel bietet eine Lösung für das Problem, bei dem Fehlermeldungen wie "*Fehler beim Öffnen des Streams:*" oder "*Keine solche Datei oder Verzeichnis*" angezeigt werden, wenn versucht wird, Aktualisierungen für ECE-Tools, Patches oder andere Änderungen bereitzustellen.
 exl-id: b1658001-0ffd-4f8a-a15f-d785efcee51f
 feature: Cloud, Paas
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ECE-Tools und Patch-Update-Fehler Adobe Commerce Cloud-Infrastruktur 2.2.x, 2.3.x
+# ECE-Tools und Patch-Aktualisierungsfehler Adobe Commerce Cloud Infrastructure 2.2.x., 2.3.x
 
-Dieser Artikel bietet eine Lösung für das Problem, dass Fehlermeldungen wie &quot;*failed to open stream:*&quot;oder &quot;*No such file or directory*&quot;angezeigt werden, wenn Sie versuchen, Updates für ECE-Tools, Patches oder andere Änderungen bereitzustellen.
+Dieser Artikel bietet eine Lösung für das Problem, bei dem Fehlermeldungen wie &quot;*Fehler beim Öffnen von stream:*&quot; oder &quot;*Keine solche Datei oder derartiges Verzeichnis* beim Versuch angezeigt werden, Aktualisierungen für ECE-Tools, Patches oder andere Änderungen bereitzustellen.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,7 +21,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.2.x, 2.3.x
 
 ## Problem
 
-Fehler bei der Bereitstellung von Updates für ECE-Tools, Patches oder andere Änderungen umfassen: PHP-Fehler in der Cloud-Konsole und im `var/log/cloud.log`
+Fehler bei der Bereitstellung von Updates für ECE-Tools, Patches oder anderen Änderungen sind: PHP-Fehler in der Cloud-Konsole und in der `var/log/cloud.log`
 
 ```
 W: PHP Warning: require(<path to file>): failed to open stream: No such file or directory in <path to file> on line 70
@@ -65,13 +65,13 @@ on line 63 in /app/vendor/magento/framework/App/ErrorHandler.php:61
 
 ## Ursache
 
-Fehlkonfiguration Ihrer `composer.json` -Datei.
+Fehlerhafte Konfiguration der `composer.json`.
 
 ## Lösung
 
-Wenn in Ihrer `composer.json` -Datei eine Einstellung fehlt, werden einige Verzeichnisse nicht aus der Adobe Commerce-Codebasis kopiert. Das Paket und das Update/Patch können nicht angewendet werden, da Dateien nicht gefunden werden.
+Wenn in der `composer.json`-Datei eine Einstellung fehlt, werden einige Verzeichnisse nicht aus der Adobe Commerce-Code-Basis kopiert. Das Paket und das Update/Patch können nicht angewendet werden, da keine Dateien gefunden werden.
 
-Bitte ändern Sie Ihren zusätzlichen Abschnitt entsprechend dem unten angegebenen Abschnitt und versuchen Sie die Bereitstellung erneut.
+Bitte den zusätzlichen Abschnitt an den unten angegebenen Abschnitt anpassen und die Bereitstellung erneut versuchen.
 
 ```
 "extra":{

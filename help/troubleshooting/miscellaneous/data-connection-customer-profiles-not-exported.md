@@ -1,6 +1,6 @@
 ---
-title: Kundenprofile werden nicht auf Experience Platform angezeigt
-description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Erweiterung [!DNL Data Connection] nicht auf der Experience Platform angezeigt werden.
+title: Kundenprofile werden nicht in Experience Platform angezeigt
+description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Erweiterung  [!DNL Data Connection]  nicht auf der Experience Platform angezeigt werden.
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
 exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
@@ -11,39 +11,39 @@ ht-degree: 0%
 
 ---
 
-# Kundenprofile werden nicht auf Experience Platform angezeigt
+# Kundenprofile werden nicht in Experience Platform angezeigt
 
-In diesem Artikel finden Sie Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Datenverbindungs-Erweiterung nicht auf der Experience Platform angezeigt werden.
+Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Datenverbindungserweiterung nicht auf der Experience Platform angezeigt werden.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce 2.4.x mit installierter [!DNL Data Connection]-Erweiterung
+* Adobe Commerce 2.4.x mit installierter [!DNL Data Connection]
 
 ## Problem
 
-Sie haben die Erweiterung [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) installiert und konfiguriert und die Übermittlung von Kundenprofildaten an die Experience Platform aktiviert, aber diese Profildaten werden nicht auf der Experience Platform angezeigt.
+Sie haben die [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)-Erweiterung installiert und konfiguriert und das Senden von Kundenprofildaten an die Experience Platform aktiviert, diese Profildaten werden jedoch nicht auf der Experience Platform angezeigt.
 
 ## Lösung
 
-Wenn Kundenprofilinformationen nicht auf der Experience Platform angezeigt werden, überprüfen Sie Folgendes:
+Wenn die Kundenprofilinformationen nicht auf der Experience Platform angezeigt werden, überprüfen Sie Folgendes:
 
-### Vergewissern Sie sich, dass die neueste Version von [!DNL Data Connection] installiert ist
+### Überprüfen Sie, ob die neueste Version von [!DNL Data Connection] installiert ist
 
-Stellen Sie sicher, dass Sie die neueste Version der `experience-platform-connector` -Erweiterung installiert haben.
+Vergewissern Sie sich, dass Sie die neueste Version der `experience-platform-connector`-Erweiterung installiert haben.
 
-Weitere Informationen zur neuesten Version finden Sie in den Versionshinweisen zur Erweiterung [[!DNL Data Connection]  .](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes)
+In den [[!DNL Data Connection] Versionshinweisen zur Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes) finden Sie Informationen zur neuesten Version.
 
 >[!NOTE]
 >
->Die neueste Version der [!DNL Data Connection] -Erweiterung enthält das `customers-connector` -Modul, das für das Senden von Profildaten an die Experience Platform verantwortlich ist. Das Modul `customers-connector` sollte Version `1.2.0` oder höher sein.
+>Die neueste Version der [!DNL Data Connection]-Erweiterung enthält das `customers-connector`-Modul, das für das Senden von Profildaten an die Experience Platform verantwortlich ist. Das `customers-connector` sollte Version `1.2.0` oder höher sein.
 
-### Bestätigen der Konfiguration des Kunden-Connector-Moduls
+### Überprüfen, ob das Modul „customers-connector“ konfiguriert ist
 
-Vergewissern Sie sich, dass das `customers-connector`-Modul basierend auf Ihrem Installationsszenario konfiguriert ist.
+Bestätigen Sie, dass das `customers-connector` entsprechend Ihrem Installationsszenario konfiguriert ist.
 
-#### Adobe Commerce on Cloud-Infrastruktur
+#### Adobe Commerce auf Cloud-Infrastruktur
 
-1. Aktivieren Sie die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Infos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
+1. Aktivieren Sie die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
 
    ```bash
        stage:
@@ -51,13 +51,13 @@ Vergewissern Sie sich, dass das `customers-connector`-Modul basierend auf Ihrem 
                ENABLE_EVENTING: true
    ```
 
-1. Übernehmen und pushen Sie aktualisierte Dateien in die Cloud-Umgebung. Wenn die Bereitstellung abgeschlossen ist, aktivieren Sie das Senden von Ereignissen mit dem folgenden Befehl:
+1. Übertragen und Übertragen aktualisierter Dateien in die Cloud-Umgebung. Wenn die Bereitstellung abgeschlossen ist, aktivieren Sie das Senden von Ereignissen mit dem folgenden Befehl:
 
    ```bash
        bin/magento config:set adobe_io_events/eventing/enabled 1
    ```
 
-#### Vor-Ort-Installation von Adobe Commerce
+#### Adobe Commerce On-Premise-Installation
 
 Führen Sie die folgenden Befehle aus, um die Codegenerierung und Adobe Commerce-Ereignisse zu aktivieren:
 
@@ -69,14 +69,14 @@ Führen Sie die folgenden Befehle aus, um die Codegenerierung und Adobe Commerce
    bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 
-### Bestätigen, dass Sie die Erfassung und Übermittlung von Profildaten an Experience Platform aktiviert haben
+### Bestätigen Sie, dass die Profildaten erfasst und an Experience Platform gesendet werden konnten.
 
 Stellen Sie in Commerce Admin sicher, dass die folgenden Felder festgelegt sind:
 
-* Überprüfen Sie in **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Data Connection]**, ob die Kontrollkästchen [!UICONTROL Back office events] und [!UICONTROL Customer profiles] aktiviert sind.
-* Stellen Sie sicher, dass das Feld *[!UICONTROL Profile Dataset ID]* korrekt ist und einen anderen Datensatz enthält als den, den Sie derzeit für Verhaltens- und Back-Office-Ereignisdaten verwenden.
+* Stellen Sie in **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Data Connection]** sicher, dass die Kontrollkästchen [!UICONTROL Back office events] und [!UICONTROL Customer profiles] aktiviert sind.
+* Stellen Sie sicher, dass das *[!UICONTROL Profile Dataset ID]* korrekt ist und es sich um einen anderen Datensatz handelt als den, den Sie derzeit für Verhaltens- und Backoffice-Ereignisdaten verwenden.
 
-### Überprüfen, ob Ereignisse zu Staging oder Produktion weitergeleitet werden
+### Überprüfen, ob Ereignisse zur Staging- oder Produktionsumgebung weitergeleitet werden
 
 1. Führen Sie den folgenden Befehl aus, um die aktuelle Adobe Developer-Umgebung anzuzeigen:
 
@@ -86,7 +86,7 @@ Stellen Sie in Commerce Admin sicher, dass die folgenden Felder festgelegt sind:
    adobe_io_events/integration/adobe_io_environment
    ```
 
-1. Wenn die Umgebung auf *[!UICONTROL Stage]* festgelegt ist, ändern Sie sie mit dem folgenden Befehl in *[!UICONTROL Production]*:
+1. Wenn die Umgebung auf *[!UICONTROL Stage]* eingestellt ist, ändern Sie sie mithilfe des folgenden Befehls in *[!UICONTROL Production]*:
 
    ```bash
    Copy code
@@ -94,17 +94,17 @@ Stellen Sie in Commerce Admin sicher, dass die folgenden Felder festgelegt sind:
    production
    ```
 
-### Tabelle &quot;Abfrage von Ereignisdaten - SaaS&quot;
+### SaaS-Tabelle für Abfrageereignisdaten
 
-Verbinden Sie die folgende [!DNL SQL] -Abfrage und führen Sie sie aus, um zu überprüfen, ob Kundenprofildatensätze in der Variablen
-`event_data_saas` und dass keine Fehler vorliegen:
+Stellen Sie eine Verbindung her und führen Sie die folgende [!DNL SQL] aus, um zu überprüfen, ob Kundenprofildatensätze in der
+Tabelle `event_data_saas` und dass keine Fehler auftreten:
 
 ```sql
 Copy code
 select * from event_data_saas;
 ```
 
-### Fehler bei der Ereignisveröffentlichung beheben
+### Verarbeiten von Fehlern bei der Ereignisveröffentlichung
 
 1. Wenn der folgende Fehler auftritt, stellen Sie sicher, dass die Sandbox- und Produktions-SaaS-Connector-Schlüssel korrekt sind:
 
@@ -116,14 +116,14 @@ select * from event_data_saas;
    "error_code": "403003" } } }
    ```
 
-1. Rufen Sie die Seite &quot;*[!UICONTROL Commerce Services Connector]*&quot;im Admin auf und stellen Sie sicher, dass die angegebenen [!UICONTROL sandbox/production]-Schlüssel korrekt konfiguriert sind. Bestätigen Sie außerdem, dass die Einstellungen für das Commerce-Konto [!UICONTROL sandbox/production] mit denen in der [!UICONTROL Commerce Services Connector] übereinstimmen. Lernen Sie [mehr](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
+1. Navigieren Sie zur Seite *[!UICONTROL Commerce Services Connector]* in der Admin Console und stellen Sie sicher, dass die angegebenen [!UICONTROL sandbox/production] korrekt konfiguriert sind. Bestätigen Sie außerdem, dass die Einstellungen der Commerce-[!UICONTROL sandbox/production] mit den in der [!UICONTROL Commerce Services Connector] angezeigten übereinstimmen. Weitere [ (](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
 
-### Überprüfen Sie, ob sich die Dienst-ID in der Zulassungsliste &quot;&quot;befindet, und bestätigen Sie mit dem Adobe Commerce-Support.
+### Überprüfen Sie, ob sich die Service-ID in der Zulassungsliste befindet, und bestätigen Sie dies mit dem Adobe Commerce-Support
 
-1. Stellen Sie sicher, dass die [!UICONTROL Commerce Services Connector] `serviceId` in der Zulassungsliste in Adobe Commerce angezeigt wird.
-1. Wenden Sie sich an den [Adobe Commerce-Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) , um den Status der Zulassungsliste zu bestätigen.
+1. Auf die Zulassungsliste setzen Stellen Sie sicher, dass die [!UICONTROL Commerce Services Connector] `serviceId` in der Adobe Commerces angezeigt wird.
+1. Wenden Sie sich an den [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)Support, um den Status der Zulassungsliste zu bestätigen.
 
 ## Verwandtes Lesen
 
-* Erweiterung [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) im Commerce Services-Benutzerhandbuch
-* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+* [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) im Commerce Services-Benutzerhandbuch
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

@@ -1,6 +1,6 @@
 ---
 title: Änderungen an Kategorien werden nicht gespeichert
-description: Dieser Artikel enthält eine Fehlerbehebung für die Aktualisierung von Produktkategorien über den Commerce-Administrator. Die Änderungen werden nicht in der Admin- und Storefront angezeigt. Das Problem wird durch die beschädigten Daten in der Tabelle "catalog_category_entity"verursacht. Um das Problem zu beheben, beheben oder entfernen Sie die problematischen Kategorieaktualisierungsdatensätze in der Tabelle. Danach sollten Sie Produktkategorien mit dem Admin aktualisieren können.
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass beim Aktualisieren von Produktkategorien über den Commerce-Admin die Änderungen nicht in der Admin- und Storefront angezeigt werden. Das Problem wird durch die beschädigten Daten in der Tabelle „CATALOG_CATEGORY_ENTITY“ verursacht. Um das Problem zu beheben, beheben oder entfernen Sie die problematischen Datensätze für die Kategorieaktualisierung in der Tabelle. Danach sollten Sie in der Lage sein, Produktkategorien mithilfe des Administrators zu aktualisieren.
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer
@@ -13,54 +13,54 @@ ht-degree: 0%
 
 # Änderungen an Kategorien werden nicht gespeichert
 
-Dieser Artikel enthält eine Fehlerbehebung für die Aktualisierung von Produktkategorien über den Commerce-Administrator. Die Änderungen werden nicht in der Admin- und Storefront angezeigt. Das Problem wird durch die beschädigten Daten in der Tabelle `catalog_category_entity` verursacht. Um das Problem zu beheben, beheben oder entfernen Sie die problematischen Kategorieaktualisierungsdatensätze in der Tabelle. Danach sollten Sie Produktkategorien mit dem Admin aktualisieren können.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass beim Aktualisieren von Produktkategorien über den Commerce-Admin die Änderungen nicht in der Admin- und Storefront angezeigt werden. Das Problem wird durch die beschädigten Daten in der `catalog_category_entity` verursacht. Um das Problem zu beheben, beheben oder entfernen Sie die problematischen Datensätze für die Kategorieaktualisierung in der Tabelle. Danach sollten Sie in der Lage sein, Produktkategorien mithilfe des Administrators zu aktualisieren.
 
 ## Problem
 
-Nachdem Sie in Admin Änderungen an einer Produktkategorie vorgenommen und gespeichert haben, werden die neuen Aktualisierungen weder in Admin noch im Storefront gespeichert und angezeigt.
+Nachdem Sie Änderungen an einer Produktkategorie im Admin- und Speicherbereich vorgenommen haben, werden die neuen Aktualisierungen weder gespeichert noch in der Admin- und Storefront angezeigt.
 
-### Zu reproduzierende Schritte
+### Schritte zur Reproduktion
 
-1. Navigieren Sie zu **Katalog** > **Kategorien**.
-1. Wählen Sie eine Kategorie aus.
+1. Navigieren Sie **Katalog** > **Kategorien**.
+1. Kategorie auswählen.
 1. Nehmen Sie Änderungen vor und klicken Sie dann auf **Speichern**.
-1. Die Nachricht wird angezeigt: *Sie haben die Kategorie* gespeichert.
+1. Die Meldung wird angezeigt: *Sie haben die Kategorie gespeichert*.
 1. Beachten Sie, dass die von Ihnen vorgenommene Änderung nicht gespeichert wurde.
 
-## Mögliche Ursache: Beschädigte Daten in der Tabelle `catalog_category_entity`
+## Mögliche Ursache: Beschädigte Daten in der `catalog_category_entity`
 
-Das Problem wird durch dieselben Werte in der Spalte `created_in` der betroffenen Kategorieeinträge in der Datenbank (DB) verursacht.
+Das Problem wird durch dieselben Werte in der Spalte `created_in` der betroffenen Kategoriedatensätze in der Datenbank verursacht (DB).
 
 ![Beschädigte Daten in der Tabelle catalog_category_entity](assets/catalog_category_entity.png)
 
 Details:
 
-* Die DB-Tabelle `catalog_category_entity` enthält zwei oder mehr Datensätze für die betroffene Kategorie (diese Datensätze haben denselben `entity_id` -Wert).
-* Diese Kategorieeinträge haben **die gleichen Werte in der Spalte `created_in`**.
+* Die `catalog_category_entity` DB-Tabelle enthält zwei oder mehr Datensätze für die betroffene Kategorie (diese Datensätze haben denselben `entity_id`).
+* Diese Kategoriedatensätze haben **dieselben Werte in der `created_in` Spalte**.
 
-### Wie wird der zweite DB-Eintrag (und alle nächsten) in DB für eine und dieselbe Kategorie angezeigt?
+### Wie wird der zweite DB-Eintrag (und alle nächsten) in der DB für ein und dieselbe Kategorie angezeigt?
 
-Der zweite DB-Datensatz (und möglicherweise der nächste) für die betroffene Kategorie bedeutet, dass Kategorieaktualisierungen mit dem Magento\_Staging-Modul geplant wurden. Das Modul führt einen zusätzlichen Datensatz für eine Kategorie in der `catalog_category_entity` aus. Dies ist das erwartete Anwendungsverhalten. Das Problem besteht darin, dass die Datensätze dieselben Werte für die Spalte `created_in` aufweisen.
+Der zweite DB-Eintrag (und möglicherweise die nächsten) für die betroffene Kategorie bedeutet, dass Kategorienaktualisierungen mit dem Magento\_Staging-Modul geplant wurden. Das Modul erstellt einen zusätzlichen Datensatz für eine Kategorie im `catalog_category_entity`. Dies ist das erwartete Anwendungsverhalten. Das Problem besteht darin, dass die Datensätze dieselben Werte für die `created_in` Spalte aufweisen.
 
 ### Wie werden dieselben Werte angezeigt?
 
-Wir können die Ursachen für Datenbeschädigungen nicht mit Sicherheit nennen. Mögliche Gründe sind:
+Wir können die Gründe für die Datenbeschädigung nicht mit Sicherheit angeben. Mögliche Gründe können sein:
 
 * Anpassungen (Code, Designs usw.)
-* falsche Datenmigration
-* falsche Datenwiederherstellung aus der Sicherung
+* Falsche Datenmigration
+* Falsche Datenwiederherstellung aus der Sicherung
 
-Nach unserem besten Wissen ist eine solche Datenbeschädigung nicht typisch für die &quot;saubere&quot;(vordefinierte) Adobe Commerce-Instanz und kann nicht bei einer Adobe Commerce-Installation ohne Anpassungen reproduziert werden.
+Nach unserem Kenntnisstand ist eine solche Datenbeschädigung nicht typisch für die „bereinigte“ (vordefinierte) Adobe Commerce-Instanz und kann nicht ohne Anpassungen auf einer Adobe Commerce-Installation reproduziert werden.
 
 ### Überprüfen, ob dies Ihr Problem ist
 
-Die Tabelle `catalog_category_entity` sollte mehrere Datensätze für die betroffene Kategorie enthalten (Datensätze sollten denselben `entity_id` -Wert aufweisen) und mindestens zwei dieser Datensätze sollten über dieselben `created_in` -Werte verfügen. Danach werden die geplanten Staging-Aktualisierungen nicht im Commerce-Administrator angezeigt. Sie sehen nur den leeren Baustein Geplante Änderungen .
+Die `catalog_category_entity` Tabelle sollte mehrere Datensätze für die betroffene Kategorie enthalten (Datensätze sollten denselben `entity_id` haben) und mindestens zwei dieser Datensätze sollten dieselben `created_in` Werte haben. Bei diesem Vorgang werden die geplanten Aktualisierungen des Staging nicht im Commerce Admin angezeigt, sondern es wird nur der leere Block Geplante Änderungen angezeigt.
 
 #### Zu überprüfende Schritte
 
-1. Rufen Sie die Tabelle catalog\_category\_entity in Ihrer Datenbank auf.
-1. Entitäten nach entity\_id filtern, wobei entity\_id die betroffene Kategorie angibt.
-1. Wenn die Werte in der Spalte created\_in für verschiedene Einträge mit derselben entity\_id identisch sind, ist dies unser Fall. Normalerweise unterscheiden sich die `created_in` -Werte für jeden Datensatz.
+1. Zugreifen auf die Tabelle catalog\_category\_entity in Ihrer Datenbank
+1. Entitäten nach entity\_id filtern, wobei entity\_id die betroffene Kategorie identifiziert.
+1. Wenn die Werte in der Spalte Erstellt\_in für verschiedene Einträge mit derselben entity\_id gleich sind, ist dies der Fall. Normalerweise sind die `created_in` für jeden Datensatz unterschiedlich.
 
 ![Beschädigte Daten in der Tabelle catalog_category_entity](assets/catalog_category_entity.png)
 
@@ -68,28 +68,28 @@ Die Tabelle `catalog_category_entity` sollte mehrere Datensätze für die betrof
 
 Sie können eine der folgenden Lösungen wählen:
 
-1. **Löschen** der Datensätze zur Aktualisierung problematischer Kategorien
-1. **Reparieren** der problematischen Kategorieaktualisierungsdatensätze
+1. **Löschen** der Datensätze zur Aktualisierung der problematischen Kategorien
+1. **Reparieren** der Datensätze für die Aktualisierung der problematischen Kategorien
 
-### Löschen Sie die problematischen Aktualisierungsdatensätze der Kategorie
+### Löschen der Einträge zur Aktualisierung der problematischen Kategorien
 
-In dieser Lösung müssen Sie den richtigen `updated_in` -Wert für den anfänglichen Kategoriedatensatz festlegen und alle anderen Datensätze für diese Kategorie löschen. Dadurch werden alle geplanten Kategorieaktualisierungen entfernt.
+In dieser Lösung müssen Sie den richtigen `updated_in` für den ursprünglichen Kategoriedatensatz festlegen und alle anderen Datensätze für diese Kategorie löschen. Dadurch werden alle geplanten Kategorieaktualisierungen entfernt.
 
 Führen Sie die folgenden Schritte aus:
 
-1. Suchen Sie die DB-Datensätze mit dem Wert `entity_id` der betroffenen Kategorie.
+1. Suchen Sie die DB-Datensätze mit dem `entity_id` der betroffenen Kategorie.
 1. Wählen Sie den Datensatz mit der größten Ganzzahl in der Spalte `updated_in` aus.
-1. Kopieren Sie den Wert `updated_in` aus dem ausgewählten Datensatz.
-1. Wählen Sie den Datensatz mit `row_id` = `entity_id` (erster Kategorieeintrag) aus und fügen Sie den kopierten Wert in die Spalte `updated_in` dieses Datensatzes ein.
-1. Löschen Sie Zeilen mit `row_id` nicht gleich `entity_id` .
+1. Kopieren Sie den `updated_in` aus dem ausgewählten Datensatz.
+1. Wählen Sie den Datensatz mit `row_id` = `entity_id` aus (erster Kategoriedatensatz) und fügen Sie den kopierten Wert in die `updated_in` Spalte dieses Datensatzes ein.
+1. Zeile(n) mit `row_id` ungleich `entity_id` löschen.
 
-### Beheben Sie die problematischen Aktualisierungsdatensätze der Kategorie
+### Reparieren der Einträge für die Aktualisierung problematischer Kategorien
 
-1. Suchen Sie die Kategorieeinträge mit demselben `entity_id` und demselben `created_in` -Wert.
-1. Wählen Sie den Datensatz mit `row_id` = `entity_id` aus und kopieren Sie den Wert `updated_in` .
-1. Wählen Sie den Datensatz aus, bei dem `row_id` nicht gleich `entity_id` ist, und fügen Sie den kopierten `updated_in` -Wert als `created_in` -Wert ein. Siehe Screenshot unten als Abbildung.    ![Kopieren der Datei created_in value.png](assets/copy_created-in_value.png)
-1. Vergewissern Sie sich, dass der Kategorieaktualisierungsdatensatz, dessen `created_in` -Wert Sie aktualisiert haben (in Schritt 3), in der Tabelle `staging_update` vorhanden ist. *Beispiel:* WENN der kopierte `created_in` -Wert 1509281953 ist, muss die Entität mit `row_id` = 1509281953 in der Tabelle `staging_update` vorhanden sein.
+1. Suchen Sie die Kategoriedatensätze mit demselben `entity_id` und demselben `created_in`.
+1. Wählen Sie den Datensatz aus, bei dem `row_id` = `entity_id`, und kopieren Sie den `updated_in`.
+1. Wählen Sie den Datensatz aus, bei dem `row_id` nicht gleich `entity_id` ist, und fügen Sie den kopierten `updated_in` als `created_in` ein. Siehe den Screenshot unten als Illustration.    ![Kopieren der Datei created_in value.png](assets/copy_created-in_value.png)
+1. Überprüfen Sie, ob der Kategorie-Update-Datensatz, dessen `created_in` Sie aktualisiert haben (in Schritt 3), in der `staging_update` vorhanden ist. *Beispiel:* WENN der kopierte `created_in`-Wert 1509281953 ist, MUSS die Entität mit `row_id` = 1509281953 in der `staging_update`-Tabelle vorhanden sein.
 
 ## Verwandtes Lesen
 
-[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

@@ -1,41 +1,42 @@
 ---
-title: Überarbeitete Patches für Google Maps-Zugriffsverluste für alle Adobe Commerce-Versionen
-description: "Dieser Artikel enthält eine Fehlerbehebung für Adobe Commerce-Händler, die nicht mit aktuellen [!DNL Google Maps] Versionen ab Version 3.54 kompatibel sind."
+title: Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen
+description: Dieser Artikel bietet eine Fehlerbehebung für Adobe Commerce-Händler, die mit keiner der neuesten  [!DNL Google Maps]  ab Version 3.54 kompatibel sind.
 feature: Install, Upgrade
 role: Developer
-source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
+exl-id: 6151e89a-3190-40cb-b599-94ae5530488b
+source-git-commit: d7e58d6a9ed8e9b369ea41165cbdd6b362e40824
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# Überarbeitete Patches für den [!DNL Google Maps]-Zugriffsverlust bei allen Adobe Commerce-Versionen
+# Überarbeitete Patches für [!DNL Google Maps] Zugriffsverlust in allen Adobe Commerce-Versionen
 
-Dieser Artikel enthält eine Fehlerbehebung für Adobe Commerce-Händler, die nicht mit aktuellen [!DNL Google Maps]-Versionen ab Version 3.54 kompatibel sind. Mit dieser Korrektur wird das Problem behoben, bei dem Adobe Commerce-Händler in keiner Version von Adobe Commerce mehr Zugriff auf [!DNL Google Maps] haben.
+Dieser Artikel bietet eine Fehlerbehebung für Adobe Commerce-Händler, die mit keiner aktuellen [!DNL Google Maps] ab Version 3.54 kompatibel sind. Mit dieser Fehlerbehebung wird das Problem behoben, dass Adobe Commerce-Händler in keiner Version von Adobe Commerce mehr Zugriff auf [!DNL Google Maps] haben.
 
 ## Betroffene Versionen und Produkte
 
 * Versionen von Adobe Commerce und/oder anderen verwendeten Technologien.
-* Adobe Commerce *2.4.4* - *2.4.7* für Cloud- und On-Premises-Versionen.
+* Adobe Commerce *2.4.4* - *2.4.7* auf Cloud- und On-Premise-Versionen.
 
 ## Problem
 
-Am *14. Juni 2024* [!DNL Google Maps] Version *3,53* erreichte das Ende des Lebenszyklus und wurde um [!DNL Google] abgeschaltet.
+Am *14. Juni* erreichte [!DNL Google Maps] Version *3.53* das Ende des Lebenszyklus und wurde von [!DNL Google] abgeschaltet.
 
 Weitere Informationen finden Sie unter [[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
-Adobe Commerce war nicht mit aktuellen [!DNL  Google Maps]-Versionen ab Version 3.54 kompatibel.
+Adobe Commerce war mit keiner der aktuellen [!DNL  Google Maps] ab Version 3.54 kompatibel.
 
-Die Inkompatibilität wurde durch das veraltete `prototype.js script` verursacht, das durch `lib/web/legacy-build.min.js` geladen wird, die native Array.from-Funktion außer Kraft setzt, was zu einem direkten Konflikt mit der [!DNL  Google Maps]-API führt.
+Die Inkompatibilität wurde durch ältere `prototype.js script` verursacht, die durch geladen wurden, `lib/web/legacy-build.min.js` die native Funktion Array.from überschreibt, was zu einem direkten Konflikt mit [!DNL  Google Maps] API führt.
 
 Siehe [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices).
 
-<u>Zu reproduzierende Schritte</u> :
+<u>Schritte zur Reproduktion</u> :
 
 1. Klicken Sie auf **[!UICONTROL Content]** > **[!UICONTROL Pages]** > und wählen Sie eine **[!UICONTROL New Page]** aus.
 1. Erweitern Sie den Inhaltsbaustein und klicken Sie auf die Schaltfläche **[!DNL PageBuilder]** bearbeiten .
-1. Ziehen Sie den Baustein Inhalt zuordnen aus dem Menü **[!DNL PageBuilder]** auf die Seite.
+1. Ziehen Sie den Block Inhalt zuordnen aus dem Menü **[!DNL PageBuilder]** auf die Seite.
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -43,13 +44,13 @@ Siehe [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps
 
 <u> Tatsächliches Ergebnis:</u>
 
-Wenn Sie den Baustein Inhalt zuordnen aus dem Menü **[!DNL PageBuilder]** auf der Seite ablegen, wird eine Fehlermeldung wie *&quot;Entschuldigung! Etwas ist schiefgelaufen&quot;* wird angezeigt.
+Wenn Sie den Block „Inhalt zuordnen“ aus **[!DNL PageBuilder]** Menü auf die Seite ziehen, wird eine Fehlermeldung wie *angezeigt. Etwas ist schiefgelaufen“* wird angezeigt.
 
 ## Lösung
 
-* Alle Händler in Patch-Versionen 2.4.4, 2.4.5, 2.4.6 oder 2.4.7 sollten diese Patches auf ihre Version anwenden.
+* Alle Händler, die mit einer Patch-Version 2.4.4, 2.4.5, 2.4.6 oder 2.4.7 arbeiten, sollten diese entsprechenden Patches auf ihre Version anwenden.
 
-## Patch
+## Fleck
 
 Verwenden Sie je nach Adobe Commerce-Version die folgenden angehängten Patches:
 
@@ -67,9 +68,9 @@ Verwenden Sie je nach Adobe Commerce-Version die folgenden angehängten Patches:
 
 **Bitte beachten**
 
-Dieses Problem wird im Rahmen der Sicherheits-Patch-Versionen vom August dauerhaft behoben:
+Dieses Problem wird im Rahmen der Patch-Versionen, die nur für die Sicherheit im August gelten, dauerhaft behoben:
 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10
 
-## Verwandte Informationen
+## Verwandtes Lesen
 
-[Anwenden eines von Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) bereitgestellten Composer-Patches
+[Wie man einen Composer Patch von Adobe aufbringt](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)

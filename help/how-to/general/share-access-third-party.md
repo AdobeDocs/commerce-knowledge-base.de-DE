@@ -1,6 +1,6 @@
 ---
-title: Tipps zum Testen von Drittanbietern für Adobe Commerce in der Cloud-Infrastruktur
-description: Dieser Artikel bietet Optionen zum Freigeben des Zugriffs für einen Drittanbieter für Tests/Validierungen, wenn Sie ein Problem mit einer Erweiterung für Adobe Commerce in der Cloud-Infrastruktur haben.
+title: Tipps von Drittanbietern zum Testen von Adobe Commerce in Cloud-Infrastrukturen
+description: Dieser Artikel bietet Optionen zum Freigeben des Zugriffs für einen Drittanbieter zum Testen/Validieren, wenn Sie ein Problem mit einer Erweiterung für Adobe Commerce in der Cloud-Infrastruktur haben.
 exl-id: e2d80aa9-8b68-48ed-bec5-68e128611a1e
 feature: Best Practices, Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
@@ -10,32 +10,32 @@ ht-degree: 0%
 
 ---
 
-# Tipps zum Testen von Drittanbietern für Adobe Commerce in der Cloud-Infrastruktur
+# Tipps von Drittanbietern zum Testen von Adobe Commerce in Cloud-Infrastrukturen
 
-Dieser Artikel bietet Optionen zum Freigeben des Zugriffs für einen Drittanbieter für Tests/Validierungen, wenn Sie ein Problem mit einer Erweiterung für Adobe Commerce in der Cloud-Infrastruktur haben.
-Bei der Entscheidung, wie der Zugang zu einem Dritten ermöglicht werden soll, sollten Sie die entsprechenden internen Datensicherheitsverfahren und -anforderungen befolgen.
+Dieser Artikel bietet Optionen zum Freigeben des Zugriffs für einen Drittanbieter zum Testen/Validieren, wenn Sie ein Problem mit einer Erweiterung für Adobe Commerce in der Cloud-Infrastruktur haben.
+Bei der Entscheidung, wie Dritten Zugang gewährt werden soll, sollten Sie sich an die entsprechenden internen Verfahren und Anforderungen zur Datensicherheit halten.
 
 ## Betroffene Produkte und Versionen:
 
-* Adobe Commerce für Cloud-Infrastruktur 2.3.0 - 2.3.7-p1, 2.4.0 - 2.4.3
+* Adobe Commerce auf Cloud-Infrastruktur 2.3.0 - 2.3.7-p1, 2.4.0 - 2.4.3
 
-## Welche Umgebungen zum Testen zu verwenden sind
+## Für Tests zu verwendende Umgebungen
 
-Abhängig von Ihren internen Sicherheitsstandards können Sie die Fehlerbehebung bei Drittanbietern in einer lokalen Umgebung durchführen. Wenn das Problem nicht lokal reproduziert werden kann, sollten Sie Zugriff auf Ihre Cloud-Umgebung gewähren. Wenn Sie dies tun möchten, stellen Sie bitte sicher, dass Sie innerhalb Ihrer internen Sicherheitsstandards arbeiten. Stellen Sie bei der Bereitstellung des Zugriffs auf eine Ihrer Cloud-Umgebungen sicher, dass Ihr Drittanbieter genau weiß, was getan werden kann und welche Genehmigung für Dinge wie Replikation nur erforderlich ist oder Codeänderungen möglich sind. Dies ist besonders für Produktionsumgebungen wichtig.
+Abhängig von Ihren internen Sicherheitsstandards können Sie die Fehlerbehebung von Drittanbietern in einer lokalen Umgebung durchführen lassen. Wenn das Problem nicht lokal reproduziert werden kann, können Sie Zugriff auf Ihre Cloud-Umgebung gewähren. Wenn Sie sich dafür entscheiden, stellen Sie sicher, dass Sie im Rahmen Ihrer internen Sicherheitsstandards arbeiten. Wenn Sie Zugriff auf eine Ihrer Cloud-Umgebungen gewähren, stellen Sie sicher, dass Ihr Drittanbieter weiß, was getan werden kann und welche Genehmigung für Dinge wie die ausschließliche Replikation oder die Zulassung von Code-Änderungen erforderlich ist. Dies ist besonders für Produktionsumgebungen wichtig.
 
-## Zugriff auf und Daten von Drittanbietern
+## Bereitstellung von Zugriff und Daten für Dritte
 
-* Gewähren Sie Ihrem Drittanbieter Zugriff auf die Cloud-Umgebung. Verwandte Artikel:
+* Ermöglichen Sie Ihrem Drittanbieter Zugriff auf die Cloud-Umgebung. Verwandte Artikel:
 
-   * [Adobe Commerce Help Center-Benutzerhandbuch > FREIGEGEBENER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) IN unserer Support-Wissensdatenbank.
-   * [Freigeben Ihres Commerce-Kontos](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) in unserem Benutzerhandbuch.
+   * [Benutzerhandbuch für Adobe Commerce Help Center > GEMEINSAMER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) in unserer Support-Wissensdatenbank.
+   * [Freigeben Ihres Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) in unserem Benutzerhandbuch.
 
-* Erstellen Sie eine Datenbank-Ablage (oder gewähren Sie dem Drittanbieter Zugriff darauf). Dies kann über die CLI oder im Commerce Admin erfolgen. Dieser DB-Dump verschleiert Kundendaten, sodass sie nur Code- und Produkt-SKUs usw. erhalten, keine proprietären/Kundendaten. Verwenden Sie als Referenz [Freigeben Ihres Commerce-Kontos] (/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.
-* Stellen Sie nach Abschluss des Tests sicher, dass Sie den freigegebenen Zugriff auf Ihre Cloud-Umgebung widerrufen, wie unter [Benutzerhandbuch für das Adobe Commerce Help Center > Sperren (freigegebenen Zugriff löschen)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) in unserer Support-Wissensdatenbank beschrieben.
+* Erstellen Sie einen Datenbank-Dump (oder gewähren Sie Drittanbietern Zugriff). Dies kann über die CLI oder in der Commerce Admin Console erfolgen. Dieser DB-Dump verschleiert Kundendaten, sodass sie nur Code- und Produkt-SKUs usw. erhalten, keine proprietären/Kundendaten. Verwenden Sie als Referenz [Sharing Your Commerce Account] (/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.
+* Nachdem die Tests abgeschlossen sind, stellen Sie sicher, dass Sie den freigegebenen Zugriff auf Ihre Cloud-Umgebung widerrufen, wie in [Benutzerhandbuch für das Adobe Commerce Help Center > Widerrufen (freigegebenen Zugriff löschen)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) in unserer Support-Wissensdatenbank beschrieben.
 
-## Best Practice testen
+## Best Practice für Tests
 
-Es wird üblich, eine Fehlerbehebung in einer lokalen Umgebung durchzuführen. Wenn das Problem nicht lokal reproduziert werden kann, gehen Sie zu Staging. Möglicherweise muss der Drittanbieter die Produktion überprüfen. Stellen Sie sicher, dass Ihr Drittanbieter weiß, dass er nur versuchen soll, das Problem in Produktion und Staging zu reproduzieren und keine Code-Änderungen vorzunehmen. Wenn er Codeänderungen vornehmen muss, muss er zunächst Ihre Berechtigung erhalten.
+Die Standardpraxis besteht in der Fehlerbehebung in einer lokalen Umgebung. Wenn das Problem nicht lokal reproduziert werden kann, navigieren Sie zu Staging . Der Drittanbieter muss möglicherweise die Produktion überprüfen. Stellen Sie sicher, dass Ihr Drittanbieter weiß, dass er nur versuchen soll, das Problem in Produktion und Staging zu reproduzieren und keine Code-Änderungen vorzunehmen. Wenn er Code-Änderungen vornehmen muss, muss er zunächst Ihre Erlaubnis einholen.
 
 ## Verwandtes Lesen
 

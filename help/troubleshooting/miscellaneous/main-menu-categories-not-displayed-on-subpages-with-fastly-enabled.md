@@ -1,6 +1,6 @@
 ---
-title: Hauptmenü (Kategorien) wird nicht auf Unterseiten mit Fastly-Aktivierung angezeigt
-description: Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü "Top-Navigation"](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
+title: Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü für die obere Navigation der Kategorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer
@@ -11,51 +11,51 @@ ht-degree: 0%
 
 ---
 
-# Hauptmenü (Kategorien) wird nicht auf Unterseiten mit Fastly-Aktivierung angezeigt
+# Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist
 
-Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das oberste Navigationsmenü der Kategorie [in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *Blog/Seite*), wenn Fastly oder Varnish aktiviert ist.](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html)
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü „Navigation oben“ ](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
 
-**Ursache:** das nicht zulässige `/` Zeichen (Schrägstrich) im Parameter *URL-Schlüssel* der Seite (Suchmaschinenoptimierungseinstellungen). Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort) fälschlicherweise anstelle von *URL-Schlüssel* angegeben wird: Beispiel: *blog/page\_name* anstelle von nur *page\_name*.
+**Ursache:** das nicht zulässige `/` (Schrägstrich) im Parameter *URL-Schlüssel* der Seite (Einstellungen für die Suchmaschinenoptimierung). Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort) versehentlich anstelle des *URL-Schlüssels* angegeben wird, z. B. *blog/page\_name* anstelle von *page\_name*.
 
-**Lösung:** Entfernen Sie das Zeichen `/` (Schrägstrich). Geben Sie für den Parameter *URL-Schlüssel* nur den Seitennamen an.
+**Lösung:** entfernen Sie das `/` Zeichen (Schrägstrich). Geben Sie für den Parameter *URL-Schlüssel* nur den Seitennamen an.
 
 ## Betroffene Versionen
 
-* Adobe Commerce On-Premise 2.X.X
-* Adobe Commerce auf Cloud-Infrastruktur 2.X.X
-* Fastal oder Varnisch
+* Adobe Commerce On-Premises 2.X.X
+* Adobe Commerce auf Cloud-Infrastruktur 2.x.x
+* Fastly oder Lack
 
 ## Problem
 
-Das Hauptmenü (in unserem Benutzerhandbuch auch als [Kategorieoberer Navigationsmenü](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) bezeichnet) wird nicht auf der Storefront für Unterseiten angezeigt, wenn Fastly oder andere auf Varnish basierende Dienste aktiviert sind.
+Das Hauptmenü (in unserem Benutzerhandbuch auch als [Kategorie-Navigationsmenü oben](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) bezeichnet) wird auf der Storefront für Unterseiten nicht angezeigt, wenn Fastly oder andere lackbasierte Dienste aktiviert sind.
 
 ## Ursache
 
-Das Problem wird durch das nicht zulässige `/` -Zeichen (Schrägstrich) verursacht, das zum Parameter *URL-Schlüssel* hinzugefügt wurde (Suchmaschinenoptimierungseinstellungen).
+Das Problem wird durch das nicht zulässige `/` (Schrägstrich) verursacht, das zum Parameter *URL-Schlüssel* hinzugefügt wurde (Einstellungen für die Suchmaschinenoptimierung).
 
-Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort, einschließlich der übergeordneten Ressource/des Ordners der Seite) fälschlicherweise anstelle von *URL-Schlüssel* angegeben wird: Beispiel: *blog/page\_name* anstelle von nur *page\_name*.
+Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort, einschließlich der übergeordneten Ressource/des übergeordneten Verzeichnisses der Seite) versehentlich anstelle von *URL-Schlüssel* angegeben wird, z. B. *blog/page\_name* anstelle von nur *page\_name*.
 
 ![URL-Schlüsselparameter für SEO-Einstellungen](assets/seo_url_key.png)
 
 ## Lösung
 
-Entfernen Sie das Zeichen `/` (Schrägstrich) aus dem Parameter *URL-Schlüssel* für alle Seiten Ihres Stores.
+Entfernen Sie das `/` (Schrägstrich) aus dem *URL Key*-Parameter für alle Seiten Ihres Stores.
 
-Verwenden Sie also *URL-Schlüssel* anstelle von *URL-Pfad*: Erwähnen Sie nur den Seitennamen ohne übergeordnete Ressource/Verzeichnis.
+Mit anderen Worten: Verwenden Sie *URL-Schlüssel* anstelle von *URL-Pfad*: geben Sie nur den Seitennamen an, ohne die übergeordnete Ressource/das übergeordnete Verzeichnis.
 
 ### Recommendations in Seitenhierarchie und SEO
 
-Verwenden Sie zum Festlegen der Seitenhierarchie den Abschnitt **Hierarchie** im Menü &quot;Seite bearbeiten&quot;.
+Um die Seitenhierarchie festzulegen, verwenden Sie den **Hierarchie** des Menüs Seite bearbeiten .
 
 ![Hierarchieeinstellungen](assets/hierarchy_hr.png)
 
-Für komplexere Hierarchielösungen können Sie auch das Menü **Inhalt** > **Elemente** > **Hierarchie** verwenden.
+Sie können auch das Menü **Inhalt** > **Elemente** > **Hierarchie** für komplexere Hierarchielösungen verwenden.
 
 Verwenden Sie für SEO-Zwecke auf Produktseiten URL-Neuschreibungen (**Marketing** > **SEO und Suche** > **URL-Neuschreibungen**).
 
-## Weitere Informationen finden Sie in unserem Benutzerhandbuch
+## Weitere Informationen in unserem Benutzerhandbuch
 
-Der Parameter *URL-Schlüssel* für SEO:
+Der *URL-Schlüssel* für SEO:
 
 * [Suchmaschinenoptimierung](/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
 * [Hinzufügen einer neuen Seite](/docs/commerce-admin/content-design/elements/pages/page-add.html)
@@ -63,4 +63,4 @@ Der Parameter *URL-Schlüssel* für SEO:
 Seitenhierarchie:
 
 * [Übersicht](/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html)
-* [Knoten hinzufügen](/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html#add-a-hierarchy-node)
+* [Hinzufügen eines Knotens](/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html#add-a-hierarchy-node)

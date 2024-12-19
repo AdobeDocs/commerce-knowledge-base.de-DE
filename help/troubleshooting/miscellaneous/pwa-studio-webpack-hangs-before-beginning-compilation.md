@@ -1,6 +1,6 @@
 ---
-title: 'PWA Studio: Webpack hängt vor Beginn der Kompilierung'
-description: In diesem Artikel wird von einer empfohlenen Lösung gesprochen, wenn ein JavaScript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) lange Zeit hängt, bevor mit der Kompilierung in Progressive Web App Studio (PWA Studio) begonnen wird.
+title: 'PWA Studio: Webpack hängt vor Kompilierung'
+description: In diesem Artikel wird eine empfohlene Lösung für den Fall vorgestellt, dass ein JavaScript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) lange Zeit hängen bleibt, bevor mit der Kompilierung in Progressive Web App Studio (PWA Studio) begonnen wird.
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# PWA Studio: Webpack hängt vor Beginn der Kompilierung
+# PWA Studio: Webpack hängt vor Kompilierung
 
-In diesem Artikel wird von einer empfohlenen Lösung gesprochen, wenn ein JavaScript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) lange Zeit hängt, bevor mit der Kompilierung in Progressiv Web App Studio (PWA Studio) begonnen wird.
+In diesem Artikel wird über eine vorgeschlagene Lösung gesprochen, um zu erkennen, wenn ein JavaScript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) lange Zeit hängen bleibt, bevor die Kompilierung in Progressive Web App Studio (PWA Studio) beginnt.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,21 +21,21 @@ In diesem Artikel wird von einer empfohlenen Lösung gesprochen, wenn ein JavaSc
 
 ## Problem
 
-[Überprüfen Sie, was die neueste Version des pwa-buildpack ist](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack), und die
+[Überprüfen Sie, was die neueste Version des pwa-buildpack ist](https://github.com/magento/pwa-studio/tree/master/packages/pwa-buildpack) und die
 
 ```yaml
 pwa-buildpack
 ```
 
-Die Versionsnummer befindet sich neben der Liste mit dem Dateinamen &quot;`package.json`&quot;. Wenn Sie eine alte Version des
+Die Versionsnummer befindet sich neben der `package.json` Dateinamenliste. Wenn Sie über eine alte Version von verfügen
 
 ```yaml
 pwa-buildpack
 ```
 
--Projekt, kann das Webpack lange Zeit hängen, bevor mit der Kompilierung begonnen wird.
+-Projekt, kann das webpack lange hängen, bevor mit der Kompilierung begonnen wird.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 <u>Voraussetzungen</u>: Richten Sie eine PWA Studio-Storefront wie Venia mit einer lokalen Adobe Commerce-Instanz ein und führen Sie eine
 
@@ -53,12 +53,12 @@ Befehl.
 
 <u>Erwartetes Ergebnis</u>:
 
-* Wenn Sie die    ```yaml    build    ```    -Befehl, generiert es normalerweise die Build-Artefakte für Venia.
-* Wenn Sie die    ```yaml    watch    ```    -Befehl, wird die Venia-Storefront normal gestartet.
+* Bei Verwendung von    ```yaml    build    ```    generiert die Build-Artefakte für Venia normalerweise.
+* Bei Verwendung von    ```yaml    watch    ```    -Befehl, startet sie die Venia-Storefront normal.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Ihre
+Ihr
 
 ```yaml
 build
@@ -70,7 +70,7 @@ oder
 watch
 ```
 
--Befehl erscheint angehalten und wird nicht abgeschlossen, und es werden auch keine Fehler angezeigt.
+Der Befehl scheint angehalten zu sein und wird nicht abgeschlossen, und es werden keine Fehler angezeigt.
 
 ## Lösungen
 
@@ -80,20 +80,20 @@ Aktualisieren Sie Ihr Projekt mit dem folgenden Befehl:
 yarn upgrade
 ```
 
-Stellen Sie mithilfe des folgenden Befehls sicher, dass Sie eine aktuelle Version von openssl auf Ihrem System haben:
+Stellen Sie mit dem folgenden Befehl sicher, dass Sie eine aktuelle Version von OpenSSL auf Ihrem System haben:
 
 ```yaml
 openssl version
 ```
 
-Die Version sollte 1.0 oder höher sein (oder LibreSSL 2, im Falle von OSX High Sierra.).
+Die Version sollte 1.0 oder höher sein (oder LibreSSL 2, im Fall von OSX High Sierra.).
 
-Sie können höhere Versionen von OpenSSL mit [Homebrew](https://brew.sh/) unter OSX, [Chocolatey](https://chocolatey.org/) unter Windows oder dem Paketmanager Ihrer Linux-Distribution installieren.
+Sie können höhere Versionen von OpenSSL mit [Homebrew](https://brew.sh/) unter OSX, [Chocolatey](https://chocolatey.org/) unter Windows oder dem Package Manager Ihrer Linux-Distribution installieren.
 
 ## Verwandtes Lesen
 
-* [Javascript-Webpack: Konzepte](https://webpack.js.org/concepts/)
+* [JavaScript Webpack: Konzepte](https://webpack.js.org/concepts/)
 * [Venia-Storefront-Setup](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
-* [PWA Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
-* [buildpack-Befehlszeilenschnittstelle](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
+* [PWA-Buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/)
+* [Buildpack-Befehlszeilenschnittstelle](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
 * [Tools und Bibliotheken: buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)

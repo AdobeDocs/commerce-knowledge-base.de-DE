@@ -1,6 +1,6 @@
 ---
-title: '"Magento-cloud"zeigt keine aktive Umgebung an. [!DNL CLI] '
-description: In diesem Artikel wird ein bekanntes Adobe Commerce-Problem beschrieben, bei dem "Magento-cloud" [!DNL CLI]  (Befehlszeilen-Tool) keine aktive Umgebung anzeigt.
+title: Die "Magento-Cloud [!DNL CLI]  zeigt keine aktive Umgebung
+description: In diesem Artikel wird ein bekanntes Adobe Commerce-Problem beschrieben, bei dem "Magento-Cloud“ [!DNL CLI] (Befehlszeilen-Tool) keine aktive Umgebung anzeigt.
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 ## Problem
 
-Es gibt mehrere aktive Umgebungen. Sie versuchen, mit einer Umgebung zu interagieren, indem Sie einen Befehl `Magento-cloud` [!DNL CLI] (Befehlszeilen-Tool) ausführen. (Beispiel: `ssh`, `db:size`, `db:sql` usw.)
-Die Aufforderung zur Auswahl der gewünschten Umgebung listet diese Umgebung jedoch nicht auf. (Beispiel: die Integrationsumgebung)
+Es gibt mehrere aktive Umgebungen, und Sie versuchen, mit einer Umgebung zu interagieren, indem Sie einen `Magento-cloud` [!DNL CLI]-Befehl (Befehlszeilen-Tool) ausführen. (Beispiel: `ssh`, `db:size`, `db:sql` usw.)
+Die Aufforderung zur Auswahl der gewünschten Umgebung führt diese Umgebung jedoch nicht auf. (Beispiel: die Integrationsumgebung)
 
 ```
 Enter a number to choose an environment:
@@ -30,11 +30,11 @@ Default: master
 
 ## Ursache
 
-Die Umgebung ist möglicherweise nicht verfügbar, da eine Implementierung ausgeführt wird, blockiert ist oder fehlgeschlagen ist.
+Die Umgebung ist möglicherweise nicht verfügbar, da eine Bereitstellung in Bearbeitung ist, hängen geblieben ist oder fehlgeschlagen ist.
 
 ## Lösung
 
-Sie müssen die Umgebung manuell mit dem Flag `e|-environment` angeben.
+Sie müssen die Umgebung manuell mit dem `e|-environment`-Flag angeben.
 
 1. Suchen Sie die Liste der aktiven Umgebungen und notieren Sie sich die Umgebungsnamen:
 
@@ -50,6 +50,6 @@ Your environments are:
 |          Integration 2 | Integration 2    | Active       | Development    |
 ```
 
-2. Geben Sie die Kennung der Umgebung mit Ihrem Befehl an:
+2. Geben Sie mit Ihrem Befehl die Umgebungskennung an:
 
 `magento-cloud ssh -e integration`

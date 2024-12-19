@@ -1,6 +1,6 @@
 ---
-title: Geringer Dateispeicher, bestimmte Seitenladevorgänge sind langsam
-description: Dieser Artikel bietet eine Lösung für das Problem des geringen Festplattenspeicherplatzes, der durch große, Rich-Bilder verursacht wird.
+title: Der Dateispeicher ist niedrig, bestimmte Seitenladevorgänge sind langsam
+description: Dieser Artikel bietet eine Lösung für das Problem des geringen Festplattenspeichers, der durch große, umfangreiche Bilder verursacht wird.
 exl-id: 640c8f0d-f714-4cc1-a401-9264cfaf8e37
 feature: Storage, Observability
 role: Developer
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 ---
 
-# Geringer Dateispeicher, bestimmte Seitenladevorgänge sind langsam
+# Der Dateispeicher ist niedrig, bestimmte Seitenladevorgänge sind langsam
 
-Dieser Artikel bietet eine Lösung für das Problem des geringen Festplattenspeicherplatzes, der durch große, Rich-Bilder verursacht wird.
+Dieser Artikel bietet eine Lösung für das Problem des geringen Festplattenspeichers, der durch große, umfangreiche Bilder verursacht wird.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle unterstützten Versionen
-* Adobe Commerce vor Ort, alle unterstützten Versionen
+* Adobe Commerce auf Cloud-Infrastruktur, alle unterstützten Versionen
+* Adobe Commerce On-Premise, alle unterstützten Versionen
 * Magento Open Source, alle unterstützten Versionen
 
 ## Problem
 
-Geringer Festplattenspeicher und langsame Seitenladevorgänge können durch große, umfassende Bilder verursacht werden, die in `pub/media/catalog/products` hohe Speichermengen verwenden und Speicherplatz zwischen Staging und Produktion freigeben (es sei denn, es wird eine dedizierte Staging-Umgebung bereitgestellt).
+Geringer Festplattenspeicher und langsame Seitenladevorgänge können durch große, umfangreiche Bilder verursacht werden, die große Mengen an Speicher in `pub/media/catalog/products` verwenden, und durch die gemeinsame Nutzung von Festplattenspeicher zwischen Staging und Produktion (es sei denn, eine dedizierte Staging-Umgebung wird bereitgestellt).
 
 ## Ursache
 
-Bilder werden nicht optimiert, um die Leistung mit der Anzeigequalität in Einklang zu bringen.
+Bilder sind nicht optimiert, um Leistung und Anzeigequalität in Einklang zu bringen.
 
 ## Lösung
 
-Optimieren und komprimieren Sie sie vor dem Hochladen von Bildern, um die Leistung mit der Anzeigequalität in Einklang zu bringen. Dadurch wird der Speicherplatz erhöht und die Seitenladezeiten verkürzt. PNGs bieten kleinere Bildgrößen mit großen einfarbigen Bereichen. JPEG geben kleinere Größen für alles andere an. Verwenden Sie die höchste Komprimierung (ohne spürbaren Abbau). Dies beträgt in der Regel 60-80 %.
+Optimieren und komprimieren Sie Bilder vor dem Hochladen, um ein ausgewogenes Verhältnis zwischen Leistung und Anzeigequalität zu erzielen. Dies erhöht den Speicherplatz und reduziert die Seitenladezeiten. PNG-Dateien bieten kleinere Größen für Bilder mit großen einfarbigen Bereichen. JPEG geben für alles andere kleinere Größen. Verwenden Sie die höchste Komprimierung (ohne merkliche Beeinträchtigung). Das sind in der Regel 60-80%.
 
-Verwenden Sie [Fastly image optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html), um speichereffizientere Bilder zu erzeugen.
+Verwenden Sie [Fastly Image Optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html), um speichereffizientere Bilder zu erstellen.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Verwalten des Festplattenspeichers (wenn Sie sich in Adobe Commerce in der Cloud-Infrastruktur befinden) finden Sie unter [Verwalten des Festplattenspeichers in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) im Commerce on Cloud Infrastructure Guide.
+Informationen zum Verwalten des Festplattenspeichers (wenn Sie sich in der Cloud-Infrastruktur von Adobe Commerce befinden) finden Sie unter [Verwalten des Festplattenspeichers in der Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) im Handbuch zu Commerce in der Cloud-Infrastruktur.

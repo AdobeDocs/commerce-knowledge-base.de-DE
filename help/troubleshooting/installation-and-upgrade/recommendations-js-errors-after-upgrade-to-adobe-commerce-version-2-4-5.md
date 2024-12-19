@@ -1,6 +1,6 @@
 ---
 title: '[!UICONTROL Recommendations] [!DNL JS] Fehler nach der Aktualisierung auf Adobe Commerce Version 2.4.5'
-description: Dieser Artikel enthält eine Fehlerbehebung für Fälle, in denen nach der Aktualisierung auf Adobe Commerce (alle Bereitstellungsmethoden) in der Konsole  [!DNL JS] Fehler im Zusammenhang mit den Produkt-Modulen [!UICONTROL Recommendations] auftreten.
+description: Dieser Artikel bietet eine Korrektur für den Fall, dass nach dem Upgrade auf Adobe Commerce (alle Bereitstellungsmethoden)  [!DNL JS]  Konsolenfehler im Zusammenhang mit den [!UICONTROL Recommendations] auftreten.
 feature: Install, Upgrade
 role: Developer
 exl-id: 51d899eb-48f7-48c5-8bda-bd72a4d28945
@@ -11,36 +11,36 @@ ht-degree: 0%
 
 ---
 
-# [!UICONTROL Recommendations] [!DNL JS] Fehler nach der Aktualisierung auf Adobe Commerce Version 2.4.5
+# [!UICONTROL Recommendations] [!DNL JS] nach der Aktualisierung auf Adobe Commerce Version 2.4.5
 
-Dieser Artikel enthält eine Fehlerbehebung für Fälle, in denen nach der Aktualisierung auf Adobe Commerce (alle Bereitstellungsmethoden) in der Konsole [!DNL JS] Fehler im Zusammenhang mit den Produkt-Modulen/Einheiten [!UICONTROL Recommendations] aufgetreten sind.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass nach dem Upgrade auf Adobe Commerce (alle Bereitstellungsmethoden) in der Konsole [!DNL JS] Fehler im Zusammenhang mit den Produktmodulen/-[!UICONTROL Recommendations] auftreten.
 
 Es gibt derzeit keine Pläne, dieses Problem in zukünftigen Versionen zu beheben.
 
 ## Betroffene Versionen und Produkte
 
-* Adobe Commerce (alle Bereitstellungsmethoden) bei der Aktualisierung auf Version 2.4.5
+* Adobe Commerce (alle Bereitstellungsmethoden) beim Upgrade auf Version 2.4.5
 
 ## Problem
 
-Das Problem wird durch die Storefront-Webseite verursacht, die immer noch auf einige gelöschte Produkt- [!UICONTROL Recommendations] -Module/Einheiten (Bausteine und/oder Widgets) auf ihrer Startseite [!DNL CMS] verweist.
+Das Problem wird dadurch verursacht, dass die Web-Seite der Storefront weiterhin auf einige gelöschte [!UICONTROL Recommendations] (Blöcke und/oder Widgets) auf ihrer Startseite [!DNL CMS] verweist.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Upgrade auf Adobe Commerce 2.4.5.
-1. Rufen Sie die Storefront-Webseite auf.
-1. Klicken Sie mit der rechten Maustaste und wählen Sie **Inspect** aus, um den Webinspektor in Ihrem Webbrowser zu öffnen.
+1. Aktualisieren Sie auf Adobe Commerce 2.4.5.
+1. Rufen Sie die Web-Seite der Storefront auf.
+1. Klicken Sie mit der rechten Maustaste, und wählen Sie **Inspect**, um den Web-Inspektor in Ihrem Webbrowser zu öffnen.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Console]** .
-1. Überprüfen Sie die [!DNL JS] -Fehler.
+1. Überprüfen Sie die [!DNL JS].
 
 <u>Erwartete Ergebnisse</u>:
 
-Erfolgreiches Upgrade ohne [!DNL JS]-Fehler.
+Erfolgreiches Upgrade ohne [!DNL JS].
 
 <u>Tatsächliche Ergebnisse</u>:
 
-In der Webbrowser-Konsole werden verschiedene Typen von [!DNL JS] -Fehlern angezeigt.
+In der Konsole des Webbrowsers werden verschiedene Arten von [!DNL JS] angezeigt.
 
-## Workaround
+## Abhilfe
 
-Als Problemumgehung können Sie alle auf der Seite verwendeten [!UICONTROL Recommendations] Einheiten überprüfen und alle gelöschten Einheiten entfernen.
+Als Problemumgehung können Sie alle [!UICONTROL Recommendations] Einheiten überprüfen, die Sie auf der Seite verwendet haben, und gelöschte Einheiten entfernen.

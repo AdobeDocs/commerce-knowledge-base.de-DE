@@ -5,17 +5,17 @@ source-wordcount: '574'
 ht-degree: 0%
 
 ---
-# KB-Formatierungsanleitung
+# Handbuch zur KB-Formatierung
 
 ## Autor in Markdown
 
-Im Allgemeinen verwenden wir [Adobe Experience League Markdown Syntax Style Guide](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), es gibt jedoch einige Unterschiede und Ausnahmen. Außerdem sind bestimmte HTML-Tags in bestimmten Fällen erforderlich.
+Im Allgemeinen verwenden wir das Stilhandbuch zur [Adobe Experience League Markdown-Syntax](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en) es gibt jedoch einige Unterschiede und Ausnahmen. Außerdem sind in bestimmten Fällen bestimmte HTML-Tags erforderlich.
 
-Im Folgenden finden Sie Beispiele für die Markdown-Formatierung, die am häufigsten in unserem Repo verwendet wird.
+Im Folgenden finden Sie Beispiele für die Markdown-Formatierung, die am häufigsten in unserem Repository verwendet wird.
 
 ## Grundlegende Formatierung
 
-Um Text fett zu formatieren, fügen Sie ihn in zwei Sternchen ein:
+Um Text fett zu formatieren, setzen Sie ihn in zwei Sternchen ein:
 
 `This will be **bold** text`
 
@@ -23,11 +23,11 @@ Um Text kursiv zu formatieren, verwenden Sie ein einzelnes Sternchen:
 
 `This text will be *italics*`
 
-Um Text wie unterstrichen zu formatieren, verwenden Sie das Tag `<ins>` :
+Um Text wie unterstrichen zu formatieren, verwenden Sie das `<ins>`-Tag:
 
 `<ins>This text will be underlined</ins>`
 
-Verwenden Sie zum Hinzufügen eines Zeilenumbruchs das Tag `<br>` HTML .
+Um einen Zeilenumbruch hinzuzufügen, verwenden Sie das Tag `<br>` HTML .
 
 
 ## Kopfzeilen
@@ -42,22 +42,22 @@ Verwenden Sie die folgende Formatierung für Kopfzeilen von H2 bis H5. H1 wird n
 
 `##### Header 5`
 
-## Inline-Code und Blöcke
+## Inline-Code und -Blöcke
 
-Verwenden Sie einzelne Backticks, um das Codeelement einzuschließen, das Sie hervorheben möchten:
+Schließen Sie das Codeelement, das Sie hervorheben möchten, mit einzelnen Backticks ein:
 
-Dies ist \&quot;Inline-Code\&quot; in einem Textabsatz.
+Dies ist \`inline code\` innerhalb eines Textabsatzes.
 
-### Codeblöcke
+### Code-Blöcke
 
-Um einen Codeblock einzufügen, fügen Sie den Codeblock in drei Backticks ein und geben Sie die Sprache nach dem Öffnen von drei Backticks an:
+Um einen Code-Block einzufügen, schließen Sie den Code-Block in drei Backticks ein und geben Sie die Sprache nach dem Öffnen von drei Backticks an:
 
-\`\`\` sql
+\`\`\` SQL
 
-SELECT TABLE_NAME AS `Table`,
+WÄHLEN SIE TABLE_NAME ALS `Table`,
 ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
-VON information_schema.TABLES
-WOBEI TABLE_SCHEMA = &quot;%project_id%&quot;
+FROM information_schema.TABLES
+WOBEI TABLE_SCHEMA = &quot;%PROJECT_ID%&quot;
 ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 
 \`\`\`
@@ -72,11 +72,11 @@ WHERE TABLE_SCHEMA = "%project_id%"
 ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 ```
 
-Gemäß unseren Linking-Regeln müssen Sie immer eine Sprache für den Codeblock angeben.
+Gemäß unseren Verknüpfungsregeln müssen Sie immer eine Sprache für den Code-Block angeben.
 
 Eine Liste der unterstützten Sprachen finden Sie unter https://github.com/github/linguist/blob/master/lib/linguist/languages.yml.
 
-Wenn die Hervorhebung für eine bestimmte Sprache in Markdown nicht funktioniert (d. h. die Sprache wird nicht unterstützt), verwenden Sie folgende HTML, um sie mindestens bei der Veröffentlichung unter https://support.magento.com/hc/en-us/ hervorgehoben zu machen:
+Wenn die Hervorhebung in Markdown für eine bestimmte Sprache nicht funktioniert (d. h., die Sprache wird nicht unterstützt), verwenden Sie die folgende HTML, um sie bei der Veröffentlichung auf https://support.magento.com/hc/en-us/ zumindest hervorzuheben:
 
 ```html
 <pre><code class="language-%language-code%"
@@ -84,11 +84,11 @@ your code here
 </pre></code>
 ```
 
-Wobei ``%language-code%`` die von [Prism.js unterstützten Sprachen](https://prismjs.com/#supported-languages) definierten Codes sind.
+``%language-code%`` sind die von [Prism.js unterstützten Sprachen](https://prismjs.com/#supported-languages) definierten Codes.
 
 ## Listen
 
-Trennen Sie Listen immer vom Rest des Inhalts durch leere Zeilen. Der Liste sollte eine leere Zeile vorangestellt werden.
+Listen werden immer durch leere Zeilen vom Rest des Inhalts getrennt. Listen sollten eine Leerzeile vorangestellt und von dieser gefolgt werden.
 
 Verwenden Sie die folgende Formatierung für sortierte Listen:
 
@@ -99,7 +99,7 @@ Verwenden Sie die folgende Formatierung für sortierte Listen:
 1. Last numbered list item.
 ```
 
-Um eine ungeordnete Liste mit Aufzählungszeichen zu erstellen, beginnen Sie eine Zeile mit *, oder + oder -. Wählen Sie jedoch eine Methode aus und verwenden Sie sie durchgängig im gesamten Artikel.
+Um eine ungeordnete Aufzählungsliste zu erstellen, beginnen Sie eine Zeile mit *, oder +, oder -. Wählen Sie jedoch eine Methode aus und verwenden Sie sie konsistent im gesamten Artikel.
 
 Beispiel:
 
@@ -110,7 +110,7 @@ Beispiel:
 * Last unordered list item.
 ```
 
-Um Inhalte zwischen Listenelementen hinzuzufügen, fügen Sie am Anfang der Zeile vier Leerzeichen hinzu:
+Um Inhalt zwischen Listenelementen hinzuzufügen, fügen Sie vier Leerzeichen am Anfang der Zeile hinzu:
 
 ```markdown
 * List item.
@@ -121,9 +121,9 @@ Um Inhalte zwischen Listenelementen hinzuzufügen, fügen Sie am Anfang der Zeil
 
 Sie können Listen auch auf diese Weise einbetten.
 
-## Links
+## Relationen
 
-Externe Links sind einfach:
+Externe Links sind unkompliziert:
 
 ```markdown
 [Adobe](https://www.adobe.com)
@@ -131,15 +131,15 @@ Externe Links sind einfach:
 
 ### Links zu Anlagen
 
-Jede Art von Anlage sollte in den Formaten .png, .jpg und .jpeg vorliegen. Aus Sicherheitsgründen akzeptieren wir nur Anhänge, die in einem der drei Formate enthalten sind.
+Jede Art von Anhang sollte die Formate .png, .jpg und .jpeg aufweisen. Aus Sicherheitsgründen akzeptieren wir nur Anhänge, die in einem der drei Formate vorliegen.
 
-Um ein Bild einzufügen, platzieren Sie das Bild in den Unterordner *assets* im selben Abschnittsordner wie der Artikel und verwenden Sie die folgende Syntax, um das Bild in Ihren Artikel einzufügen:
+Um ein Bild einzufügen, platzieren Sie das Bild in *Assets*-Unterordner im selben Abschnittsordner wie den Artikel und verwenden Sie die folgende Syntax, um das Bild in Ihren Artikel einzufügen:
 
 ```markdown
 ![alt text](assets/image.png)
 ```
 
-Wenn Sie die Bildgröße anpassen möchten, müssen Sie dies mit dem folgenden HTML-Tag tun:
+Wenn Sie die Bildgröße anpassen möchten, müssen Sie dazu das folgende HTML-Tag verwenden:
 
 ```html
 <img src = "assets/image.png" alt = "your alt text" width="custom width, ex: 250px">
@@ -149,9 +149,9 @@ Wenn Sie die Bildgröße anpassen möchten, müssen Sie dies mit dem folgenden H
 [asset_title](assets/%file_name%).
 ```
 
-### Links zu bestimmten Abschnitten im Artikel
+### Links zu bestimmten Abschnitten des Artikels
 
-Wenn Sie einen Abschnitt in Ihrem Artikel referenzieren müssen, müssen Sie keinen separaten Anker erstellen. Sie werden automatisch zum Zeitpunkt der Veröffentlichung für alle H2-H6-Überschriften generiert. Die Anker werden aus der Kopfzeile generiert, indem sie alle Wörter in Kleinbuchstaben schreiben und &quot;-&quot;zur Trennung von Wörtern verwenden.
+Wenn Sie einen Abschnitt innerhalb Ihres Artikels referenzieren müssen, müssen Sie keinen separaten Anker erstellen. Sie werden zur Veröffentlichungszeit automatisch für alle H2-H6-Überschriften generiert. Die Referenzzeichen werden aus dem -Header generiert, indem alle Wörter klein geschrieben werden und &quot;-&quot; zum Trennen der Wörter verwendet wird.
 
 Beispiel:
 
@@ -165,22 +165,22 @@ Dies ist ein Link zu dieser Kopfzeile:
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-Wenn Sie auf ein anderes Element als die Kopfzeile verweisen müssen, verwenden Sie HTML, um das hinzuzufügende Element zu definieren, und verwenden Sie das Attribut [id](https://www.w3schools.com/html/html_id.asp). Sie können dann Markdown oder HTML verwenden, um auf diese ID zu verweisen.
+Wenn Sie auf ein anderes Element als die Kopfzeile verweisen müssen, definieren Sie mithilfe von HTML das hinzuzufügende Element und verwenden [id](https://www.w3schools.com/html/html_id.asp). Sie können dann Markdown oder HTML verwenden, um auf diese ID zu verweisen.
 
 ### Relative Links und Links zu anderen Artikeln
 
-Verwenden Sie keine relativen Links, um auf unsere Support-Knowledge Base-Artikel zu verweisen. Diese Links funktionieren nicht, wenn Ihr Artikel im [Adobe Commerce Help Center](https://support.magento.com/hc/en-us) veröffentlicht wird.
-Verwenden Sie vollständige Hyperlinks aus dem [Adobe Commerce Help Center](https://support.magento.com/hc/en-us).
+Verwenden Sie keine relativen Links, um auf unsere Artikel in der Support-Wissensdatenbank zu verweisen. Diese Links funktionieren nicht, wenn Ihr Artikel im [Adobe Commerce-Hilfezentrum veröffentlicht ](https://support.magento.com/hc/en-us).
+Verwenden Sie vollständige Hyperlinks aus dem [Adobe Commerce-Hilfezentrum](https://support.magento.com/hc/en-us).
 
 
 ## Tabellen
 
-Verwenden Sie die [HTML-Formatierung für Tabellen](https://www.w3schools.com/html/html_tables.asp).
+Verwenden Sie [HTML-Formatierung für Tabellen](https://www.w3schools.com/html/html_tables.asp).
 
 
 ## Warnungen und Informationsblöcke
 
-Block der Erfolgserfassung:
+Block mit Erfolgsnotizen:
 
 ```
 >![success]
@@ -188,7 +188,7 @@ Block der Erfolgserfassung:
 >This is a success note
 ```
 
-Warnungsblock:
+Warnblock:
 
 ```
 >![warning]
@@ -196,7 +196,7 @@ Warnungsblock:
 >This is a warning
 ```
 
-Info-Hinweisblock:
+Informationsnotizblock:
 
 ```
 >![info]

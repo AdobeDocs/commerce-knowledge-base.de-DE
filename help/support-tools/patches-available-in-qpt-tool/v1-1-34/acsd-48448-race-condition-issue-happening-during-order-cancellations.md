@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48448: Problem mit Race-Bedingungen bei Auftragsabbrüchen, wodurch duplizierter Eintrag in der Tabelle inventory_reservation verursacht wird'
-description: Wenden Sie den Patch ACSD-48448 an, um das Leistungsproblem von Adobe Commerce zu beheben, bei dem das Problem mit der Race-Bedingung während der Auftragsabbrüche auftritt, was zu duplizierten Einträgen in der Tabelle inventory_reservation führt.
+title: 'ACSD-48448: Race-Condition-Problem bei Auftragsstornierungen, das zu doppelten Einträgen in der Inventory_Reservation-Tabelle führt'
+description: Wenden Sie den Patch ACSD-48448 an, um das Leistungsproblem von Adobe Commerce zu beheben, bei dem das Problem mit den Race-Bedingungen während der Stornierungen der Bestellung auftritt, was zu doppelten Einträgen in der Tabelle inventory_reservation führt.
 feature: Orders, Checkout
 role: Admin
 exl-id: 69d00219-bc9f-4531-9e85-38476c2258ed
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48448: *[!UICONTROL Race]* Bedingungsfehler bei Auftragsabbrüchen, der zu einem doppelten Eintrag in der Tabelle `inventory_reservation` führte
+# ACSD-48448: *[!UICONTROL Race]* Problem mit einer Bedingung bei Stornierungen von Bestellungen, was zu einer doppelten Eingabe in `inventory_reservation` Tabelle führt
 
-Der Patch ACSD-48448 behebt das Problem, dass das Problem mit der *[!UICONTROL Race]*-Bedingung während der Auftragsabbrüche auftritt, was zu duplizierten Einträgen in der `inventory_reservation`-Tabelle führt. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.34 installiert ist. Die Patch-ID lautet ACSD-48448. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-48448 wird das Problem behoben, dass bei Auftragsstornierungen ein *[!UICONTROL Race]* auftritt, was zu doppelten Einträgen in der `inventory_reservation` führt. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.34 installiert ist. Die Patch-ID ist ACSD-48448. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,17 +27,17 @@ Der Patch ACSD-48448 behebt das Problem, dass das Problem mit der *[!UICONTROL R
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Das Problem mit der *[!UICONTROL Race]* -Bedingung tritt während der Stornierung einer Bestellung auf, was zu duplizierten Einträgen in der `inventory_reservation` -Tabelle führt.
+*[!UICONTROL Race]* Problem mit Bedingungen tritt bei Stornierungen von Bestellungen auf, was zu doppelten Einträgen in der `inventory_reservation` führt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Bestellung aufgeben.
-1. Überprüfen Sie die Tabelle `inventory_reservation` , um sicherzustellen, dass ein Datensatz für das Ereignis `order_placed` vorhanden ist.
-1. Führen Sie das angehängte Skript aus, um die Bestellung parallel abzubrechen (denken Sie daran, URL und orderID zu ändern).
+1. Überprüfen Sie die `inventory_reservation`, um sicherzustellen, dass ein Datensatz für das `order_placed` Ereignis vorhanden ist.
+1. Führen Sie das angehängte Skript aus, um die Bestellung parallel abzubrechen (denken Sie daran, die URL und orderID zu ändern).
 
 `bash cancel_order.sh`
 
@@ -65,24 +65,24 @@ wait
 
 <u>Erwartete Ergebnisse</u>:
 
-Datensätze werden nicht dupliziert.
+Einträge werden nicht dupliziert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Duplizierte Datensätze werden in der Tabelle `inventory_reservation` für `order_canceled` erstellt.
+In der `inventory_reservation`-Tabelle werden doppelte Einträge für die `order_canceled` erstellt.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

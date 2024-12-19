@@ -1,5 +1,5 @@
 ---
-title: 'Adobe Commerce über Cloud-Infrastruktur: Berechnung der CPU-Zuordnung'
+title: 'Adobe Commerce auf Cloud-Infrastruktur: Berechnung der CPU-Zuordnung'
 promoted: true
 description: Der angehängte Artikel enthält detaillierte Richtlinien dazu, welche Metriken bei Entscheidungen über die CPU-Zuordnung verwendet werden sollten und wie sie berechnet werden.
 exl-id: 2fe93b96-f975-4ac6-81d2-e24002ce69db
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce über Cloud-Infrastruktur: Berechnung der CPU-Zuordnung
+# Adobe Commerce auf Cloud-Infrastruktur: Berechnung der CPU-Zuordnung
 
 Der angehängte Artikel enthält detaillierte Richtlinien dazu, welche Metriken bei Entscheidungen über die CPU-Zuordnung verwendet werden sollten und wie sie berechnet werden.
 
@@ -19,6 +19,6 @@ Der angehängte Artikel enthält detaillierte Richtlinien dazu, welche Metriken 
 
 Adobe Commerce auf Cloud-Infrastruktur 2.3.x, 2.4.x.
 
-## Attached files
+## Angehängte Dateien
 
-Klicken Sie auf die Datei &quot;[Anhang .pdf](assets/CPU_Allocation.pdf)&quot;, um den Artikel herunterzuladen.
+Klicken Sie auf die [angehängte .pdf](assets/CPU_Allocation.pdf)-Datei, um den Artikel herunterzuladen.

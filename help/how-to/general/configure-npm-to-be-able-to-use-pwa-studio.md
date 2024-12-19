@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von NPM für die Verwendung von PWA Studio
-description: '[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) ist ein neues Projekt, das für Adobe Commerce in der Cloud-Infrastruktur 2.3.x oder höher verfügbar ist. Um PWA Studio verwenden und installieren zu können, müssen Sie die NPM Package Manager-Version auf 5.x oder höher setzen, um Unterstützung für Node.js 8.x zu erhalten. Dies geschieht im Abschnitt "hooks:build"der Konfigurationsdatei ".magento.app.yaml".'
+description: '[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) ist ein neues Projekt, das für Adobe Commerce unter Cloud-Infrastrukturen 2.3.x oder höher verfügbar ist. Um PWA Studio verwenden und installieren zu können, müssen Sie die NPM-Paketmanager-Version auf 5.x oder höher festlegen, um Unterstützung für Node.js 8.x zu erhalten. Dies geschieht im Abschnitt „hooks:build“ der Konfigurationsdatei ".magento.app.yaml“.'
 exl-id: 3854fc94-e8ad-45d8-bf3e-73462364220d
 source-git-commit: 37ac9cca1f876a48092467aa38f2f2f013c83dd9
 workflow-type: tm+mt
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Konfigurieren von NPM für die Verwendung von PWA Studio
 
-[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) ist ein neues Projekt, das für Adobe Commerce in der Cloud-Infrastruktur 2.3.x oder höher verfügbar ist. Um PWA Studio verwenden und installieren zu können, müssen Sie die NPM Package Manager-Version auf 5.x oder höher setzen, um Unterstützung für Node.js 8.x zu erhalten. Dies geschieht im Abschnitt `hooks:build` der Konfigurationsdatei `.magento.app.yaml` .
+[Progressive Web Apps (PWA) Studio](https://magento.github.io/pwa-studio/) ist ein neues Projekt, das für Adobe Commerce unter Cloud-Infrastrukturen 2.3.x oder höher verfügbar ist. Um PWA Studio verwenden und installieren zu können, müssen Sie die NPM-Paketmanager-Version auf 5.x oder höher festlegen, um Unterstützung für Node.js 8.x zu erhalten. Dies geschieht im Abschnitt `hooks:build` der `.magento.app.yaml`-Konfigurationsdatei.
 
 ## Umwelt und Technologien
 
-* Adobe Commerce auf Cloud-Infrastruktur 2.3.X
+* Adobe Commerce auf Cloud-Infrastruktur 2.3.x
 * PWA für Adobe Commerce
 
-## Festlegen der NPM-Version: Schritte
+## NPM-Version festlegen: Schritte
 
-Um die benötigte NPM-Version festzulegen, geben Sie sie in der Konfigurationsdatei `.magento.app.yaml` an. Führen Sie die folgenden Schritte aus:
+Um die erforderliche NPM-Version festzulegen, geben Sie sie in der `.magento.app.yaml`-Konfigurationsdatei an. Führen Sie die folgenden Schritte aus:
 
-1. Suchen Sie in Ihrer lokalen Entwicklungsumgebung die Konfigurationsdatei `.magento.app.yaml` .
-1. Öffnen Sie die Datei zur Bearbeitung mit Ihrem Texteditor oder Ihrer IDE.
+1. Suchen Sie in Ihrer lokalen Entwicklungsumgebung die `.magento.app.yaml`.
+1. Öffnen Sie die Datei zur Bearbeitung mit dem Nur-Text-Editor oder der IDE.
 1. Legen Sie die erforderliche Version im Abschnitt `hooks:build` fest. Im folgenden Beispiel ist die Konfiguration so eingestellt, dass NPM v9.5.0 installiert wird, die derzeit höchste verfügbare Version (4. Februar 2019):
 
    ```yaml
@@ -38,7 +38,7 @@ Um die benötigte NPM-Version festzulegen, geben Sie sie in der Konfigurationsda
 
    >[!NOTE]
    >
-   >Wenn Sie Node.JS in Ihrer Anwendung und nicht nur im Build ausführen möchten, fügen Sie die folgenden Befehle hinzu, um Ihren Build-Hook zu ändern:
+   >Wenn Sie Node.js in Ihrer Anwendung und nicht nur in Ihrem Build ausführen möchten, fügen Sie die folgenden Befehle hinzu, um Ihren Build-Hook zu ändern:
    > 
    ```
    > echo 'unset NPM_CONFIG_PREFIX' >> .environment
@@ -47,11 +47,11 @@ Um die benötigte NPM-Version festzulegen, geben Sie sie in der Konfigurationsda
    > echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> .environment
    > ```
 
-1. Speichern Sie die Änderungen in der Datei.
-1. Git pushen Sie die bearbeitete Datei in Ihre [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md).
+1. Speichert Änderungen in der Datei.
+1. Git überträgt die bearbeitete Datei in Ihre [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md).
 
-Die Änderungen treten in Kraft, nachdem Sie Git die aktualisierte YAML-Datei in die Umgebung gepusht haben.
+Die Änderungen treten in Kraft, nachdem Sie die aktualisierte YAML-Datei per Git in die Umgebung übertragen haben.
 
 ## Verwandte Dokumentation
 
-* [Anwendungskonfiguration: hooks](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) in unserem Adobe Commerce on Cloud Infrastructure Guide.
+* [Anwendungskonfiguration: Erweiterungspunkte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) in unserem Handbuch zu Adobe Commerce in Cloud-Infrastrukturen.

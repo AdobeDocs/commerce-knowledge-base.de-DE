@@ -1,6 +1,6 @@
 ---
-title: Fehler der maximalen Funktionsverschachtelungsstufe bei Installation xdebug
-description: Dieser Artikel enthält eine Fehlerbehebung für den Fehler "xdebug maximum function nesting level"während der Installation.
+title: Installation xdebug Fehler für maximale Verschachtelungsebene der Funktion
+description: Dieser Artikel enthält eine Fehlerbehebung für den Fehler der maximalen Verschachtelungsebene der xdebug-Funktion während der Installation.
 exl-id: 1f64a9bb-59a7-41df-92a4-890d9d32bcbe
 feature: Install
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Fehler der maximalen Funktionsverschachtelungsstufe bei Installation xdebug
+# Installation xdebug Fehler für maximale Verschachtelungsebene der Funktion
 
-Dieser Artikel enthält eine Fehlerbehebung für den Fehler &quot;xdebug maximum function nesting level&quot;während der Installation.
+Dieser Artikel enthält eine Fehlerbehebung für den Fehler der maximalen Verschachtelungsebene der xdebug-Funktion während der Installation.
 
 ## Details
 
@@ -21,10 +21,10 @@ Während der Installation von Adobe Commerce wird eine Meldung ähnlich der folg
 
 `PHP Fatal error: Maximum function nesting level of '100' reached, aborting! in <path>/ClassLoader.php`
 
-Es wird dringend empfohlen, `xdebug` NICHT in einer Produktionsumgebung zu VERWENDEN!
+Es wird dringend empfohlen, `xdebug` NICHT in einer Produktionsumgebung zu verwenden!
 
 ## Lösung
 
-Es gibt ein bekanntes Problem mit `xdebug`, das sich auf Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder Commerce Admin nach der Installation auswirken kann.
+Es gibt ein bekanntes Problem mit `xdebug`, das sich nach der Installation auf Adobe Commerce-Installationen oder den Zugriff auf die Storefront oder Commerce Admin auswirken kann.
 
 Weitere Informationen finden Sie unter [Bekanntes Problem mit xdebug](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md) in unserer Support-Wissensdatenbank.

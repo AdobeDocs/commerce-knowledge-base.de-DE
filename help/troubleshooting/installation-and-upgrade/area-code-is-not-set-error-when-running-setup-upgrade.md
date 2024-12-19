@@ -1,6 +1,6 @@
 ---
-title: Fehler "Bereichscode nicht festgelegt"beim Ausführen von Setup:upgrade
-description: Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.3 in Zusammenhang mit dem Fehler "Bereichscode ist nicht festgelegt"beim Ausführen des Befehls setup:upgrade.
+title: Fehler 'Die Ortskennzahl ist nicht festgelegt' beim Ausführen des Setups:upgrade
+description: Dieser Artikel enthält einen Patch für das bekannte Problem Adobe Commerce on Cloud Infrastructure 2.2.3 im Zusammenhang mit dem Fehler *Area Code is not set* beim Ausführen des Befehls setup:upgrade.
 exl-id: ace92331-6022-49fa-a776-d06d841b3b32
 feature: Install, Upgrade
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Fehler &quot;Bereichscode ist nicht festgelegt&quot;bei Ausführung von `setup:upgrade`
+# Fehler &#39;Die Ortskennzahl ist nicht festgelegt&#39; bei der Ausführung von `setup:upgrade`
 
-Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce-Problem in der Cloud-Infrastruktur 2.2.3 in Zusammenhang mit dem Abrufen des Fehlers &quot;*&quot;Area code is not set&quot;*&quot;, wenn der folgende Befehl ausgeführt wird:
+Dieser Artikel enthält einen Patch für das bekannte Problem Adobe Commerce on Cloud Infrastructure 2.2.3 im Zusammenhang mit dem Abrufen des *Fehlers &quot;* ist nicht festgelegt“ bei Ausführung des folgenden Befehls:
 
 ```bash
 setup:upgrade
@@ -31,26 +31,26 @@ Beim Ausführen von
 bin/magento setup:upgrade
 ```
 
-erhalten Sie die folgende Fehlermeldung: *&quot;Modul &#39;Magento\_AdvancedSalesRule&#39;: Installieren von Daten...Gebietscode nicht festgelegt: Gebietscode muss vor Beginn einer Sitzung festgelegt werden&quot;* und die Ausführung des Befehls wird unterbrochen. Das Problem wird angezeigt, da die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Der Patch ermöglicht das Auffinden des Fehlers und nicht das Unterbrechen des Aktualisierungsprozesses.
+wird folgende Fehlermeldung angezeigt: *„MODULE &#39;Magento\_AdvancedSalesRule&#39;: Installing data…Area code not set: Area code must be set before starting a session“* und die Befehlsausführung wird unterbrochen. Das Problem tritt auf, weil die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Mit dem Patch kann der Fehler erkannt werden, ohne dass der Upgrade-Prozess unterbrochen wird.
 
-## Patch
+## Fleck
 
-Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link:
+Der Patch ist diesem Artikel beigefügt. Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link:
 
 [MDVA-10439\_EE\_2.2.3\_COMPOSER\_v1.patch herunterladen](assets/MDVA-10439_EE_2.2.3_COMPOSER_v1.patch.zip)
 
 ## Kompatible Adobe Commerce-Versionen:
 
-Der Patch wurde für erstellt:
+Der Patch wurde erstellt für:
 
-* Adobe Commerce in Cloud-Infrastruktur 2.2.3
+* Adobe Commerce auf Cloud-Infrastruktur 2.2.3
 
-Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kompatibel (löst das Problem jedoch möglicherweise nicht):
+Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kompatibel (kann das Problem jedoch nicht beheben):
 
-* Adobe Commerce über Cloud-Infrastruktur und Adobe Commerce vor Ort 2.2.0 - 2.2.3
+* Adobe Commerce on Cloud Infrastructure und Adobe Commerce On-Premises 2.2.0 - 2.2.3
 
-## Anwenden des Pflasters
+## Anbringen des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
+Anweisungen finden Sie unter [So wenden Sie einen von Adobe bereitgestellten Composer-Patch ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) unserer Support-Wissensdatenbank an.
 
-## Attached Files
+## Angehängte Dateien

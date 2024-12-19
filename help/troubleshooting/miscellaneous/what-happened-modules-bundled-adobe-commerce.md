@@ -1,6 +1,6 @@
 ---
-title: Fehlende Module in Adobe Commerce 2.4.4
-description: Dieser Artikel bietet eine Lösung für das Problem, wenn in früheren Adobe Commerce-Versionen enthaltene Module in Version 2.4.4 nicht vorhanden sind.
+title: Module fehlen in Adobe Commerce 2.4.4
+description: Dieser Artikel bietet eine Lösung für das Problem, wenn in früheren Adobe Commerce-Versionen enthaltene Module in 2.4.4 nicht vorhanden sind.
 exl-id: c0335b66-803b-44d7-b966-7d60a5f21d8d
 feature: Extensions
 role: Developer
@@ -11,28 +11,28 @@ ht-degree: 0%
 
 ---
 
-# Fehlende Module in Adobe Commerce 2.4.4
+# Module fehlen in Adobe Commerce 2.4.4
 
-Dieser Artikel bietet eine Lösung für den Fall, dass in früheren Adobe Commerce-Versionen enthaltene Module in Version 2.4.4 nicht vorhanden sind.
+Dieser Artikel bietet eine Lösung für Fälle, in denen in früheren Adobe Commerce-Versionen enthaltene Module in 2.4.4 nicht vorhanden sind.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce (alle Bereitstellungsmethoden) alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce (alle Bereitstellungsmethoden) - alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Sie können kein Drittanbietermodul installieren oder festgestellt haben, dass einige der Kernerweiterungen bei der Aktualisierung auf Adobe Commerce 2.4.4 nicht vorhanden sind. Dies sollte sich nur aus der Installation eines Drittanbietermoduls ergeben, für das eine der gebündelten Erweiterungen aus Adobe Commerce 2.4.4 entfernt werden muss, oder wenn das Projekt einen Teil der Funktionalität eines der entfernten Module nutzt.
+Sie können kein Modul eines Drittanbieters installieren oder haben festgestellt, dass einige der gebündelten Kernerweiterungen beim Upgrade auf Adobe Commerce 2.4.4 nicht vorhanden sind. Dies sollte nur durch die Installation eines Drittanbietermoduls erfolgen, für das eine der gebündelten Erweiterungen aus Adobe Commerce 2.4.4 entfernt werden muss, oder wenn das Projekt einige der Funktionen eines der entfernten Module nutzt.
 
-* Szenario 1: Das Projekt hat eine der Funktionen des Kernpakets verwendet. Das verwendete gebündelte Modul ist nicht in Adobe Commerce 2.4.4 enthalten. Nach der erfolgreichen Aktualisierung auf Adobe Commerce 2.4.4 ist Ihnen klar, dass das Modul und die bereitgestellten Funktionen fehlen.
+* Szenario 1: Das Projekt hat eine der Funktionen des gebündelten Kernmoduls genutzt. Das verwendete Bundle-Modul ist nicht in Adobe Commerce 2.4.4 enthalten. Nach dem erfolgreichen Upgrade auf Adobe Commerce 2.4.4 stellen Sie fest, dass das -Modul und die bereitgestellte Funktionalität fehlen.
 
-* Szenario 2: Sie haben ein Modul in Ihrem aktuellen Projekt installiert, das von einem der entfernten gebündelten Module abhängig ist.
+* Szenario 2: Sie haben ein Modul in Ihrem aktuellen Projekt installiert, das eine Abhängigkeit von einem der entfernten gebündelten Module aufweist.
 
-Dies ist ein erwartetes Verhalten, da die Vendor-Bundle-Erweiterungen aus der Codebasis von Adobe Commerce 2.4.4 entfernt wurden.
+Dieses Verhalten ist zu erwarten, da die vom Anbieter gebündelten Erweiterungen aus der Code-Basis von Adobe Commerce 2.4.4 entfernt wurden.
 
 ## Lösung
 
-Installieren/erwerben Sie die offiziellen Erweiterungen separat. Diese sind auf der [Commerce Marketplace](https://marketplace.magento.com/extensions.html) verfügbar.
+Installieren/kaufen Sie die offiziellen Erweiterungen separat. Diese sind auf der [Commerce Marketplace ](https://marketplace.magento.com/extensions.html).
 
 ## Verwandtes Lesen
 
-[Vendor-Bundle-Erweiterungen](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) in der Adobe Commerce-Dokumentation > Versionsinformationen > Versionshinweise zu Adobe Commerce 2.4.4.
+[Herstellerspezifische Erweiterungen](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) finden Sie in der Dokumentation zu Adobe Commerce > Versionsinformationen > Versionshinweise zu Adobe Commerce 2.4.4.

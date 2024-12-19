@@ -1,6 +1,6 @@
 ---
-title: Hinzufügen eines neuen Landes zur Adobe Commerce
-description: In diesem Artikel wird beschrieben, wie Sie ein Land hinzufügen, das nicht in Adobe Commerce und der Zend Locale Library vorhanden ist. Dies erfordert Code- und Datenbankänderungen, die Kundenanpassungen gemäß Ihren jeweiligen Vertragsbedingungen darstellen. Bitte beachten Sie, dass die in diesem Artikel enthaltenen Beispielmaterialien "AS IS" ohne jegliche Garantie bereitgestellt werden. Weder Adobe noch verbundene Unternehmen sind verpflichtet, diese Materialien zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen. Hier werden wir die Grundprinzipien beschreiben, was zu tun ist, um dies zu erreichen.
+title: Hinzufügen eines neuen Landes zu Adobe Commerce
+description: In diesem Artikel wird erläutert, wie man ein Land hinzufügt, das in Adobe Commerce und der Zend-Gebietsschema-Bibliothek nicht vorhanden ist. Dies erfordert Code- und Datenbankänderungen, die Kundenanpassungen gemäß Ihren geltenden Vertragsbedingungen darstellen. Bitte beachten Sie, dass die in diesem Artikel enthaltenen Beispielmaterialien „wie besehen“ und ohne Gewährleistung jeglicher Art bereitgestellt werden. Weder Adobe noch eine verbundene Organisation ist verpflichtet, diese Materialien zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen. Hier werden wir die Grundprinzipien beschreiben, was zu tun ist, um dies zu erreichen.
 exl-id: af499add-4966-4a3a-972a-62a34c169a1b
 feature: Build, Cache
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
@@ -10,30 +10,30 @@ ht-degree: 0%
 
 ---
 
-# Hinzufügen eines neuen Landes zur Adobe Commerce
+# Hinzufügen eines neuen Landes zu Adobe Commerce
 
-In diesem Artikel wird beschrieben, wie Sie ein Land hinzufügen, das nicht in Adobe Commerce und der Zend Locale Library vorhanden ist. Dies erfordert Code- und Datenbankänderungen, die Kundenanpassungen gemäß Ihren jeweiligen Vertragsbedingungen darstellen. Bitte beachten Sie, dass die in diesem Artikel enthaltenen Beispielmaterialien &quot;AS IS&quot; ohne jegliche Garantie bereitgestellt werden. Weder Adobe noch verbundene Unternehmen sind verpflichtet, diese Materialien zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen. Hier werden wir die Grundprinzipien beschreiben, was zu tun ist, um dies zu erreichen.
+In diesem Artikel wird erläutert, wie man ein Land hinzufügt, das in Adobe Commerce und der Zend-Gebietsschema-Bibliothek nicht vorhanden ist. Dies erfordert Code- und Datenbankänderungen, die Kundenanpassungen gemäß Ihren geltenden Vertragsbedingungen darstellen. Bitte beachten Sie, dass die in diesem Artikel enthaltenen Beispielmaterialien „wie besehen“ und ohne Gewährleistung jeglicher Art bereitgestellt werden. Weder Adobe noch eine verbundene Organisation ist verpflichtet, diese Materialien zu pflegen, zu korrigieren, zu aktualisieren, zu ändern, zu ändern oder anderweitig zu unterstützen. Hier werden wir die Grundprinzipien beschreiben, was zu tun ist, um dies zu erreichen.
 
-In diesem Beispiel erstellen wir ein neues Adobe Commerce-Modul mit einem Daten-Patch, der bei der Installation oder Aktualisierung von Adobe Commerce angewendet wird, und fügen ein Abstract-Land mit dem Ländercode XX zu Adobe Commerce hinzu. Das Verzeichnis [Adobe Commerce](https://developer.adobe.com/commerce/php/module-reference/module-directory/) erstellt eine erste Länderliste und verwendet dann Setup-Patches, um Gebiete an diese Liste anzuhängen. In diesem Artikel wird erläutert, wie ein neues Modul erstellt wird, das ein neues Land an die Liste anhängt. Sie können den Code des vorhandenen Adobe Commerce Directory-Moduls zur Referenz überprüfen. Dies liegt daran, dass das folgende Beispielmodul den Verzeichnismodulauftrag zum Erstellen einer Liste von Ländern und Regionen fortsetzt und Teile des Codes der Adobe Commerce-Ordnermodul-Setup-Patches wiederverwendet.
+In diesem Beispiel erstellen wir ein neues Adobe Commerce-Modul mit einem Daten-Patch, der bei der Installation oder dem Upgrade von Adobe Commerce angewendet wird und Adobe Commerce ein abstraktes Land mit dem Länder-Code XX hinzufügt. Das [Adobe Commerce-Verzeichnis](https://developer.adobe.com/commerce/php/module-reference/module-directory/) erstellt eine anfängliche Länderliste und verwendet dann Setup-Patches, um Gebiete an diese Liste anzuhängen. In diesem Artikel wird erläutert, wie Sie ein neues Modul erstellen, das ein neues Land an die Liste anhängt. Sie können den Code des bestehenden Adobe Commerce Directory-Moduls als Referenz überprüfen. Dies liegt daran, dass das folgende Beispielmodul den Verzeichnismodulauftrag zum Erstellen einer Liste von Ländern und Regionen fortsetzt und Teile des Codes der Setup-Patches für das Adobe Commerce-Verzeichnismodul wiederverwendet.
 
 ## Empfohlene Dokumentation
 
-Sie müssen mit der Entwicklung von Adobe Commerce-Modulen vertraut sein, um eine neue erstellen zu können.
+Sie müssen mit der Entwicklung von Adobe Commerce-Modulen vertraut sein, um ein neues erstellen zu können.
 
-Beachten Sie die folgenden Themen in unserer Entwicklerdokumentation, bevor Sie versuchen, ein neues Modul zu erstellen:
+Lesen Sie die folgenden Themen in unserer Entwicklerdokumentation, bevor Sie versuchen, ein neues Modul zu erstellen:
 
 * [PHP-Entwicklerhandbuch](https://developer.adobe.com/commerce/php/development/)
-* [Modulübersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [Neues Modul erstellen](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
-* [Modulkonfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [Modul - Übersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Erstellen Sie ein neues Modul](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
+* [Module-Konfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## Erforderliche Informationen
 
-Ein neues Land muss in Adobe Commerce über einen eindeutigen Namen, eine Länderkennung, ISO2- und ISO3-Codes verfügen.
+Ein neues Land muss in Adobe Commerce über einen eindeutigen Namen, eine eindeutige Länder-ID, einen eindeutigen ISO2- und einen eindeutigen ISO3-Code verfügen.
 
 ## Modulstruktur
 
-In diesem Beispiel wird ein neues Modul namens \`ExtraCountries\` mit der folgenden Verzeichnisstruktur erstellt:
+In diesem Beispiel wird ein neues Modul mit dem Namen \`ExtraCountries\` mit der folgenden Verzeichnisstruktur erstellt:
 
 (Weitere Informationen zur Modulstruktur finden Sie unter [Modulübersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/) in unserer Entwicklerdokumentation).
 
@@ -66,16 +66,16 @@ In diesem Beispiel wird ein neues Modul namens \`ExtraCountries\` mit der folgen
 
 >[!NOTE]
 >
->Jeder Kopfzeilenabschnitt dieses Artikels beschreibt Dateien aus dem Abschnitt zur Modulstruktur.
+>In jedem Kopfzeilenabschnitt dieses Artikels werden Dateien aus dem Abschnitt Modulstruktur beschrieben.
 
 ## ExtraCountries/etc/config.xml
 
-In dieser XML-Datei wird eine neue Modulkonfiguration definiert. Die folgenden Konfigurationen und Tags können bearbeitet werden, um die neuen Standardeinstellungen für Länder anzupassen.
+In dieser XML-Datei wird eine neue Modulkonfiguration definiert. Die folgenden Konfigurationen und Tags können bearbeitet werden, um die neuen Standardeinstellungen für das Land anzupassen.
 
-* `allow` - Um das neu hinzugefügte Land standardmäßig der Liste &quot;Länder zulassen&quot;hinzuzufügen, hängen Sie den neuen Ländercode an das Ende des `allow` -Tag-Inhalts an. Ländercodes sind kommagetrennt. Beachten Sie, dass dieses Tag die Daten aus der `Directory`-Modulkonfigurationsdatei *(Directory/etc/config.xml)* `allow` überschreiben wird. Deshalb wiederholen wir alle Codes hier und fügen den neuen hinzu.
-* `optional_zip_countries` - Wenn die Postleitzahl für das neu hinzugefügte Land optional sein soll, hängen Sie den Ländercode an das Ende des Inhalts des `optional_zip_countries` -Tags an. Ländercodes sind kommagetrennt. Beachten Sie, dass dieses Tag die Daten aus der `Directory`-Modulkonfigurationsdatei *(Directory/etc/config.xml)* `optional_zip_countries` überschreiben wird. Deshalb wiederholen wir alle Codes hier und fügen den neuen hinzu.
-* `eu_countries` - Wenn das neu hinzugefügte Land standardmäßig Teil der Liste der Länder der Europäischen Union sein muss, hängen Sie den Ländercode an das Ende des Inhalts des Tags `eu_countries` an. Ländercodes sind kommagetrennt. Beachten Sie, dass dieses Tag die Daten aus dem Tag `Store` der Modulkonfigurationsdatei *(\_Store/etc/config.xml\_)* `eu_countries` überschreibt. Deshalb wiederholen wir alle Codes hier und fügen den neuen hinzu.
-* Beispiel einer Datei `config.xml`
+* `allow` - Um das neu hinzugefügte Land standardmäßig der Liste „Länder zulassen“ hinzuzufügen, fügen Sie den neuen Länder-Code an das Ende des `allow` Tag-Inhalts an. Länder-Codes sind durch Kommata getrennt. Bitte beachten Sie, dass dieses Tag die Daten aus der `Directory`-Modul-Konfigurationsdatei *(Directory/etc/config.xml)* `allow` Tag überschreibt. Deshalb wiederholen wir alle Codes hier und fügen den neuen hinzu.
+* `optional_zip_countries` - Wenn die Postleitzahl für das neu hinzugefügte Land optional sein soll, hängen Sie die Ländercode an das Ende des Inhalts des `optional_zip_countries`-Tags an. Länder-Codes sind durch Kommata getrennt. Bitte beachten Sie, dass dieses Tag die Daten aus der `Directory`-Modul-Konfigurationsdatei *(Directory/etc/config.xml)* `optional_zip_countries` Tag überschreibt. Deshalb wiederholen wir alle Codes hier und fügen den neuen hinzu.
+* `eu_countries` - Wenn das neu hinzugefügte Land standardmäßig Teil der Liste der Länder der Europäischen Union sein muss, hängen Sie den Länder-Code am Ende des Inhalts des `eu_countries`-Tags an. Länder-Codes sind durch Kommata getrennt. Bitte beachten Sie, dass dieses Tag die Daten aus der `Store`-Modul-Konfigurationsdatei *(\_Store/etc/config.xml\_)* `eu_countries` Tag überschreibt. Deshalb wiederholen wir alle Codes hier und fügen den neuen hinzu.
+* Beispiel für eine `config.xml`
 
 ```xml
 <?xml version="1.0"?>
@@ -97,17 +97,17 @@ In dieser XML-Datei wird eine neue Modulkonfiguration definiert. Die folgenden K
 </config>
 ```
 
-Weitere Informationen zu den Modulkonfigurationsdateien finden Sie im [PHP-Entwicklerhandbuch > Konfigurationsdateien definieren](https://developer.adobe.com/commerce/php/development/build/required-configuration-files/) in unserer Entwicklerdokumentation.
+Weitere Informationen zu den Modulkonfigurationsdateien finden Sie unter [PHP-Entwicklerhandbuch > Konfigurationsdateien definieren](https://developer.adobe.com/commerce/php/development/build/required-configuration-files/) in unserer Entwicklerdokumentation.
 
-Beachten Sie, dass diese Änderungen optional sind und sich nur auf die Standardzugehörigkeit des neuen Landes zu den Listen &quot;Länder zulassen&quot;, &quot;Postleitzahl ist optional für&quot;und &quot;Länder der Europäischen Union&quot;auswirken. Wenn diese Datei aus der Modulstruktur übersprungen wird, wird weiterhin ein neues Land hinzugefügt, es muss jedoch manuell auf der Einstellungsseite **Admin** > **Geschäfte** > *Einstellungen* > **Konfiguration** > **Allgemein** > **Länderoptionen** konfiguriert werden.
+Beachten Sie, dass diese Änderungen optional sind und sich nur auf die Standardzugehörigkeit des neuen Landes zu den Listen „Länder zulassen“, „Postleitzahl ist optional für“ und „Länder der Europäischen Union“ auswirken. Wenn diese Datei aus der Modulstruktur übersprungen wird, wird ein neues Land hinzugefügt, aber es muss manuell auf der Seite **Admin** > **Stores** > *Settings* > **Configuration** > **General** > **Country Options** konfiguriert werden.
 
 ### ExtraCountries/etc/di.xml
 
-Die Datei `di.xml` konfiguriert, welche Abhängigkeiten vom Objektmanager eingefügt werden. Weitere Informationen zu `di.xml` finden Sie unter <a>PHP Developer Guide > The di.xml</a> in unserer Entwicklerdokumentation.
+Die `di.xml`-Datei konfiguriert, welche Abhängigkeiten vom Objekt-Manager eingefügt werden. Siehe <a>PHP-Entwicklerhandbuch > The di.xml</a> in unserer Entwicklerdokumentation für weitere Informationen zu `di.xml`.
 
-In unserem Beispiel müssen wir einen `_TranslatedListsPlugin_` registrieren, der neu eingeführte Ländercodes in vollständige Ländernamen übersetzt, wenn in den Lokalisierungsdaten der Zend Locale Library keine Codes vorhanden sind.
+In unserem Beispiel müssen wir einen `_TranslatedListsPlugin_` registrieren, der neu eingeführte Länder-Codes in vollständige Länder-Namen übersetzt, wenn in den Lokalisierungsdaten der Zend-Locale-Bibliothek keine Codes vorhanden sind.
 
-Beispiel für `di.xml`
+`di.xml` Beispiel
 
 ```xml
 <?xml version="1.0"?>
@@ -121,11 +121,11 @@ Beispiel für `di.xml`
 
 ### ExtraCountries/etc/module.xml
 
-In der Modulregistrierungsdatei müssen wir die Abhängigkeit für das Modul &quot;Adobe Commerce Directory&quot; angeben, um sicherzustellen, dass das Modul &quot;Extra Countries&quot; registriert und nach dem Verzeichnismodul ausgeführt wird.
+In der Modulregistrierungsdatei müssen wir die Abhängigkeit für das Modul &quot;Adobe Commerce Directory“ angeben, um sicherzustellen, dass das Modul „Extra Countries“ registriert und nach dem Modul „Directory“ ausgeführt wird.
 
-Weitere Informationen zu Modulabhängigkeiten finden Sie unter [Verwalten von Modulabhängigkeiten](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies) in unserer Entwicklerdokumentation.
+Weitere Informationen [ Modulabhängigkeiten finden Sie ](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies)Verwalten von Modulabhängigkeiten“ in unserer Entwicklerdokumentation.
 
-Beispiel für `module.xml`
+`module.xml` Beispiel
 
 ```xml
 <?xml version="1.0"?>
@@ -140,7 +140,7 @@ Beispiel für `module.xml`
 
 ### ExtraCountries/Plugin/Framework/Locale/TranslatedListsPlugin.php
 
-In der Plug-in-Methode `aroundGetCountryTranslation()` müssen wir einen Ländercode in einen vollständigen Ländernamen übersetzen. Dies ist ein erforderlicher Schritt für Länder, denen kein vollständiger Name mit einem neuen Ländercode in der Zend Locale Library zugeordnet ist.
+Bei der `aroundGetCountryTranslation()`-Plugin-Methode müssen wir einen Ländercode in einen vollständigen Ländernamen übersetzen. Dies ist ein erforderlicher Schritt für Länder, die keinen vollständigen Namen mit einem neuen Länder-Code in der Zend Locale Library haben.
 
 ```php
 <?php
@@ -183,11 +183,11 @@ class TranslatedListsPlugin
 
 ### ExtraCountries/Setup/Patch/Data/AddDataForAbstractCountry.php
 
-Dieser Datenpatch wird während der Installation/Aktualisierung von Adobe Commerce ausgeführt und fügt einen neuen Länderdatensatz zur Datenbank hinzu.
+Dieser Daten-Patch wird während der Installation/Aktualisierung von Adobe Commerce ausgeführt und fügt der Datenbank einen neuen Länderdatensatz hinzu.
 
-Weitere Informationen zu Daten-Patches finden Sie unter [Entwickeln von Daten- und Schema-Patches](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) in unserer Entwicklerdokumentation.
+Weitere [ zu Daten-Patches finden Sie ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) unserer Entwicklerdokumentation unter „Entwickeln von Daten- und Schema-Patches“.
 
-Im folgenden Beispiel sehen Sie, dass das Array `$data` der Methode `apply()` Länderkennungen, ISO2- und ISO3-Codes für das neue Land enthält und diese Daten in die Datenbank eingefügt werden.
+Im folgenden Beispiel sehen Sie, dass das `$data` Array der Methode `apply()` Länder-ID, ISO2- und ISO3-Codes für das neue Land enthält. Diese Daten werden in die Datenbank eingefügt.
 
 ```php
 <?php
@@ -266,7 +266,7 @@ class AddDataForAbstractCountry implements DataPatchInterface, PatchVersionInter
 
 ### ExtraCountries/registration.php
 
-Dies ist ein Beispiel für die Datei registration.php . Weitere Informationen zur Modulregistrierung finden Sie im [PHP-Entwicklerhandbuch > Registrieren Ihrer Komponente](https://developer.adobe.com/commerce/php/development/build/component-registration/) in unserer Entwicklerdokumentation.
+Dies ist ein Beispiel für die Datei registration.php. Weitere Informationen zur Modulregistrierung finden Sie unter [PHP-Entwicklerhandbuch > Registrieren Ihrer Komponente](https://developer.adobe.com/commerce/php/development/build/component-registration/) in unserer Entwicklerdokumentation.
 
 ```php
 <?php
@@ -277,9 +277,9 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VendorName_ExtraCountr
 
 ### ExtraCountries/composer.json
 
-Dies ist ein Beispiel für die Datei &quot;composer.json&quot;.
+Dies ist ein Beispiel für die Datei „composer.json“.
 
-Weitere Informationen zu Composer.json finden Sie im [PHP-Entwicklerhandbuch > Die Datei &quot;Composer.json&quot;](https://developer.adobe.com/commerce/php/development/build/composer-integration/) in unserer Entwicklerdokumentation.
+Weitere Informationen zu composer.json finden Sie unter [PHP-Entwicklerhandbuch > Die Datei composer.json](https://developer.adobe.com/commerce/php/development/build/composer-integration/) in unserer Entwicklerdokumentation.
 
 ```json
 {
@@ -310,8 +310,8 @@ Weitere Informationen zu Composer.json finden Sie im [PHP-Entwicklerhandbuch > D
 
 ## Modulinstallation
 
-Informationen zum Installieren des Moduls finden Sie unter [Modulspeicherorte](https://developer.adobe.com/commerce/php/architecture/modules/overview/#module-locations) in unserer Entwicklerdokumentation.
+Informationen zur Installation des Moduls finden Sie unter [Module Locations](https://developer.adobe.com/commerce/php/architecture/modules/overview/#module-locations) in unserer Entwicklerdokumentation.
 
-Sobald sich das Modulverzeichnis an einem richtigen Speicherort befindet, führen Sie `bin/magento setup:upgrade` aus, um die Datenpatches anzuwenden und das Übersetzungs-Plug-in zu registrieren.
+Sobald das Modulverzeichnis an einem richtigen Speicherort abgelegt ist, führen Sie `bin/magento setup:upgrade` aus, um die Daten-Patches anzuwenden und das Übersetzungs-Plug-in zu registrieren.
 
 Möglicherweise müssen Sie den Browser-Cache bereinigen, damit die neuen Änderungen funktionieren.

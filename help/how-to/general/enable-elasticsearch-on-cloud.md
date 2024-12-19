@@ -1,6 +1,6 @@
 ---
-title: Elasticsearch in Cloud aktivieren
-description: Weitere Informationen zum Einrichten von Elasticsearch für Adobe Commerce in der Cloud-Infrastruktur finden Sie im Artikel [Elasticsearch-Service einrichten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
+title: Elasticsearch in der Cloud aktivieren
+description: Informationen zum Einrichten von Elasticsearch für Adobe Commerce in Cloud-Infrastrukturen finden Sie im Artikel [Einrichten des Elasticsearch-Services](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
 exl-id: 19cdd34e-4180-4dee-8e51-89ae1ba8c246
 feature: Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
@@ -10,6 +10,6 @@ ht-degree: 0%
 
 ---
 
-# Elasticsearch in Cloud aktivieren
+# Elasticsearch in der Cloud aktivieren
 
-Informationen zum Einrichten von Elasticsearch für Adobe Commerce in der Cloud-Infrastruktur finden Sie im Artikel [Einrichten des Elasticsearch-Dienstes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
+Informationen zum Einrichten von Elasticsearch [ Adobe Commerce in der Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)Infrastruktur finden Sie im Artikel „Einrichten des Elasticsearch-Service“ in unserer Entwicklerdokumentation.

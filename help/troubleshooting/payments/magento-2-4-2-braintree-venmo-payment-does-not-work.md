@@ -1,6 +1,6 @@
 ---
-title: 'Adobe Commerce 2.4.2: Braintree Venmo-Zahlung funktioniert nicht'
-description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.2 beschrieben, bei dem Bestellungen nicht generiert werden, wenn während des Checkout Braintree Venmo verwendet wird. Derzeit steht keine Lösung zur Verfügung.
+title: 'Adobe Commerce 2.4.2: Braintree Venmo Zahlung funktioniert nicht'
+description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.2-Problem beschrieben, bei dem keine Bestellungen generiert werden, wenn beim Checkout Braintree Venmo verwendet wird. Derzeit ist keine Lösung verfügbar.
 exl-id: 1832ab64-5024-444b-915e-473b34979a6e
 feature: Orders, Payments
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.4.2: Braintree Venmo-Zahlung funktioniert nicht
+# Adobe Commerce 2.4.2: Braintree Venmo Zahlung funktioniert nicht
 
-In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.2 beschrieben, bei dem Bestellungen nicht generiert werden, wenn während des Checkout Braintree Venmo verwendet wird. Derzeit steht keine Lösung zur Verfügung.
+In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.2-Problem beschrieben, bei dem keine Bestellungen generiert werden, wenn beim Checkout Braintree Venmo verwendet wird. Derzeit ist keine Lösung verfügbar.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,27 +21,27 @@ In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.2 beschriebe
 
 ## Problem
 
-<u>Precondition</u> :
+<u>Voraussetzung</u> :
 
-Aktivieren Sie die Venmo-Zahlung in der Braintree-Konfiguration.
+Venmo-Zahlung in der Braintree-Konfiguration aktivieren.
 
-<u>Zu reproduzierende Schritte</u> :
+<u>Schritte zur Reproduktion</u> :
 
-1. Fügen Sie in der Storefront beliebige Artikel zum Warenkorb hinzu.
+1. Fügen Sie in der Storefront einen beliebigen Artikel zum Warenkorb hinzu.
 1. Fahren Sie mit **Checkout** fort.
-1. Wählen Sie die entsprechende Versandmethode aus.
+1. Wählen Sie die entsprechende Versandart aus.
 1. Wählen Sie **Venmo** als Zahlungsmethode aus.
-1. Klicken Sie auf **Mit Venmo bezahlen**.
-1. Klicken Sie auf **Bestellung platzieren**.
+1. Klicken Sie **Mit Venmo bezahlen**.
+1. Klicken Sie **Bestellung aufgeben**.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Bestellung wird nicht im Adobe Commerce-Code erstellt, nachdem der Kunde von der Venmo-App zum Store zurückgeleitet wurde, und es wird keine Fehlermeldung angezeigt. Die Reihenfolge wird in Braintree erstellt.
+Die Bestellung wird nicht im Adobe Commerce-Code erstellt, nachdem der Kunde von der Venmo-App zurück zum Store weitergeleitet wurde, und es wird keine Fehlermeldung angezeigt. Die Bestellung wird in Braintree erstellt.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Bestellung wird in Adobe Commerce erstellt, nachdem der Kunde von der Venmo-App zurück zum Store zurückgeleitet wurde und die Bestellung wie erwartet in Braintree erstellt wurde.
+Die Bestellung wird in Adobe Commerce erstellt, nachdem der Kunde von der Venmo-App zurück zum Store geleitet wurde, und die Bestellung wird wie erwartet auf Braintree erstellt.
 
 ## Lösung
 
-Derzeit steht keine Lösung zur Verfügung.
+Derzeit ist keine Lösung verfügbar.

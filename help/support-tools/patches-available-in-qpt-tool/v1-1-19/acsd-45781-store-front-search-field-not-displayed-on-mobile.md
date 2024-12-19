@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-45781: Suchfeld "Vorderseite speichern"wird nicht auf einem Mobilgerät angezeigt'
-description: Der Patch MDVA-45781 behebt das Problem, dass das Feld für die Storefront-Suche nicht auf Mobilgeräten angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID lautet MDVA-45781. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+title: 'ACSD-45781: Feld für die Storefront-Suche wird auf Mobilgerät nicht angezeigt'
+description: Der Patch MDVA-45781 löst das Problem, dass das Suchfeld „Storefront“ auf Mobilgeräten nicht angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID lautet MDVA-45781. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: 0ae90f6d-1c04-4599-b21d-4d02fd6b36db
 feature: Cache, Native Luma Frontend Development, Search
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-45781: Suchfeld &quot;Vorderseite speichern&quot;wird nicht auf einem Mobilgerät angezeigt
+# ACSD-45781: Feld für die Storefront-Suche wird auf Mobilgerät nicht angezeigt
 
-Der Patch MDVA-45781 behebt das Problem, dass das Feld für die Storefront-Suche nicht auf Mobilgeräten angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID lautet MDVA-45781. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+Der Patch MDVA-45781 löst das Problem, dass das Suchfeld „Storefront“ auf Mobilgeräten nicht angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID lautet MDVA-45781. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,42 +27,42 @@ Der Patch MDVA-45781 behebt das Problem, dass das Feld für die Storefront-Suche
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Das Suchfeld &quot;Vorderseite speichern&quot;wird nicht auf einem Mobilgerät angezeigt
+Das Suchfeld „Storefront“ wird auf einem Mobilgerät nicht angezeigt
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Navigieren Sie zu Commerce Admin > **Stores** > **Konfiguration** > **Katalog** > **Katalogsuche** und legen Sie Folgendes fest:
-   * Aktivieren Sie Search Recommendations auf *Nein* .
-   * Suchvorschläge aktivieren auf *Nein*
-1. Klicken Sie auf die Schaltfläche **Konfiguration speichern** .
-1. Cache leeren.
-1. Verwenden Sie das standardmäßige Luma-Design und suchen Sie mit Mobilgeräten.
-1. Klicken Sie auf die Schaltfläche **Suchen** .
+1. Navigieren Sie zu Commerce Admin > **Stores** > **Configuration** > **Catalog** > **Catalog Search** und legen Sie Folgendes fest:
+   * Recommendations-Suche aktivieren auf *Nein*
+   * Aktivieren von Suchvorschlägen auf *Nein*
+1. Klicken Sie auf die Schaltfläche **Konfiguration speichern**.
+1. Cache bereinigen.
+1. Verwenden Sie das Standard-Luma-Design, um mit Mobile zu suchen.
+1. Klicken Sie auf die Schaltfläche **Suchen**.
 
 <u>Erwartete Ergebnisse</u>:
 
-Das Suchformular für die Eingabe wird angezeigt.
+Das Eingabesuchformular wird angezeigt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
 Nichts passiert.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

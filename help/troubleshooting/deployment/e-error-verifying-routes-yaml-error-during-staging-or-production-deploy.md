@@ -1,6 +1,6 @@
 ---
-title: 'E: Fehler beim Überprüfen von routes.yaml-Fehler während der Staging- oder Produktionsimplementierung'
-description: 'Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem mit der Cloud-Infrastruktur, bei dem Sie die Fehlermeldung *"E: Error while verifying routes.yaml"* erhalten, wenn Sie versuchen, das Projekt in der Staging- oder Produktionsumgebung bereitzustellen.'
+title: 'E: Fehler beim Überprüfen von routes.yaml-Fehler während der Staging- oder Produktionsbereitstellung'
+description: 'Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem mit der Cloud-Infrastruktur, bei dem beim Versuch, das Projekt in der Staging- oder Produktionsumgebung bereitzustellen, die Fehlermeldung *„E: Fehler beim Überprüfen von routes.yaml“* angezeigt wird.'
 exl-id: 7f58591a-5581-46cd-984d-09ac2c0f3903
 feature: Deploy, Routes, Staging
 role: Developer
@@ -11,63 +11,63 @@ ht-degree: 0%
 
 ---
 
-# E: Fehler beim Überprüfen von routes.yaml-Fehler während der Staging- oder Produktionsimplementierung
+# E: Fehler beim Überprüfen von routes.yaml-Fehler während der Staging- oder Produktionsbereitstellung
 
-Dieser Artikel bietet eine Lösung für das Problem mit der Cloud-Infrastruktur von Adobe Commerce, bei dem Sie die Fehlermeldung &quot;*&quot;E: Error while verifying routes.yaml&quot;*&quot;erhalten, wenn Sie versuchen, das Projekt in der Staging- oder Produktionsumgebung bereitzustellen.
+*Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem mit der Cloud-Infrastruktur, bei dem beim Versuch, das Projekt in der Staging- oder Produktionsumgebung bereitzustellen, die Fehlermeldung „E: Fehler beim Überprüfen* routes.yaml“ angezeigt wird.
 
 ## Betroffene Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle Versionen
+* Adobe Commerce auf Cloud-Infrastruktur, alle Versionen
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 Trigger einer Bereitstellung durch Pushen des Codes in die Staging- oder Produktionsumgebung.
 
-<u>Erwartetes Verhalten</u>:
+<u>Erwartetes </u>:
 
-Die Implementierung ist erfolgreich.
+Die Bereitstellung war erfolgreich.
 
-<u>Tatsächliches Verhalten</u>:
+<u>Tatsächliches </u>:
 
 Die Bereitstellung ist blockiert und die folgende Fehlermeldung wird im Protokoll angezeigt:
 
-<pre>Bereitstellen von Anwendungen Überprüfen der Konfiguration E: Fehler beim Überprüfen von routes.yaml.
-Die folgenden Domänen sind für Ihren Cluster konfiguriert, haben jedoch keine Routen in Ihrer Datei routes.yaml definiert:
+<pre>Anwendungen werden bereitgestellt Konfiguration wird überprüft E: Fehler beim Überprüfen von routes.yaml.
+Die folgenden Domains sind für Ihren Cluster konfiguriert, in Ihrer Datei „routes.yaml“ sind jedoch keine Routen definiert:
 
 - store1.example.com
 - store2.example.com
 - test-store.example.com
 
-Mit der aktuellen Konfiguration von routes.yaml
-  Diese Domains würden NICHT bedient!
+Mit Ihrer aktuellen „routes.yaml“-Konfiguration
+  diese Domains NICHT bedient werden!
 
 Um fortzufahren, finden Sie hier Anweisungen zur Fehlerbehebung:
  /help/troubleshooting/deployment/e-error-verifying-routes-yaml-error-during-staging-or-production-deploy.md</pre>
 
 ## Ursache
 
-Dieser Fehler tritt auf, wenn die Routenkonfiguration für zusätzliche Domänen, die zum Projekt hinzugefügt wurden, in der Datei &quot;`routes.yaml`&quot;fehlt.
+Dieser Fehler tritt auf, wenn die Routenkonfiguration für alle zusätzlichen Domains, die Ihrem Projekt hinzugefügt wurden, in der `routes.yaml`-Datei fehlt.
 
-Im Rahmen der Adobe Commerce-Selbstdienstaktivierungs-Aktualisierung für die Self-Service-Routenkonfiguration wurde eine Überprüfung vor der Bereitstellung hinzugefügt, um sicherzustellen, dass für alle Domänen in Ihrem Projekt Routen konfiguriert sind, die in der Datei &quot;`routes.yaml`&quot;konfiguriert sind. Wenn bei einer Domain die Routenkonfiguration fehlt, wird die Bereitstellung blockiert.
+Im Rahmen der Aktualisierung der Adobe Commerce-Self-Service-Aktivierung für die Self-Service-Routenkonfiguration haben wir eine Prüfung vor der Bereitstellung hinzugefügt, um sicherzustellen, dass für alle Domains in Ihrem Projekt Routen in der `routes.yaml` konfiguriert sind. Wenn bei einer Domain die Routenkonfiguration fehlt, wird die Bereitstellung blockiert.
 
 ## Lösung
 
-Um die blockierte Bereitstellung aufzulösen, aktualisieren Sie die Datei &quot;`routes.yaml`&quot;, um Routen für die in der Fehlermeldung aufgeführten Domänen mithilfe einer der folgenden Methoden zu konfigurieren:
+Um die blockierte Bereitstellung zu beheben, aktualisieren Sie die `routes.yaml`-Datei, um Routen für die in der Fehlermeldung aufgelisteten Domains zu konfigurieren, indem Sie eine der folgenden Methoden verwenden:
 
 * Wenden Sie den von Adobe Commerce während des Aktualisierungsprozesses bereitgestellten Patch an.
-* Fügen Sie der Datei `routes.yaml` manuell die fehlende Routenkonfiguration hinzu.
+* Fügen Sie die fehlende Routenkonfiguration manuell zur `routes.yaml` hinzu.
 
-### Methode 1: Wenden Sie das von Adobe Commerce bereitgestellte Patch an.
+### Methode 1: Wenden Sie das von Adobe Commerce bereitgestellte Patch an
 
-1. Suchen Sie nach einem kürzlich veröffentlichten Adobe Commerce-Supportticket mit dem Titel &quot;*Self-Service-Funktionen für &lt;project\_ID> aktivieren&quot;*.
+1. Suchen Sie nach einem aktuellen Adobe Commerce-Support-Ticket mit dem Titel &quot;*Self-Service-Funktionen für &lt;project\_ID> aktivieren“.*
 1. Befolgen Sie die Anweisungen im Ticket, um den Patch anzuwenden, der die Routenkonfiguration für Ihre Cloud-Umgebung aktualisiert.
-1. С Sie die Änderungen an und übertragen Sie sie, um Ihr Projekt erneut bereitzustellen.
+1. СÜbergeben und Übertragen der Änderungen, um das Projekt erneut bereitzustellen.
 
 ### Methode 2: Manuelles Hinzufügen der fehlenden Routenkonfiguration
 
-1. Um alle Domänen in Ihrem Projekt mit derselben Routenkonfiguration bereitzustellen, aktualisieren Sie die Datei &quot;`routes.yaml`&quot;, indem Sie Routenvorlagen für die Standarddomäne und alle anderen Domänen in Ihrem Projekt hinzufügen, wie im folgenden Beispiel gezeigt:
+1. Um alle Domains in Ihrem Projekt mit derselben Routenkonfiguration zu bedienen, aktualisieren Sie die `routes.yaml`-Datei, indem Sie Routenvorlagen für die Standarddomäne und alle anderen Domains in Ihrem Projekt hinzufügen, wie im folgenden Beispiel gezeigt:
 
    ```yaml
    "http://{default}/":
@@ -78,10 +78,10 @@ Um die blockierte Bereitstellung aufzulösen, aktualisieren Sie die Datei &quot;
        upstream: "mymagento:http"
    ```
 
-1. С Sie Ihre Änderungen verschieben und verschieben, um Ihr Projekt erneut bereitzustellen.
+1. СÜbergeben und Übertragen von Änderungen, um das Projekt erneut bereitzustellen.
 
 Detaillierte Anweisungen zum Aktualisieren der Routenkonfiguration finden Sie unter [Cloud für Adobe Commerce > Routen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >
->Wenn Ihre Projektkonfiguration Domänen angibt, die nicht mehr verwendet werden, führen Sie die folgenden Schritte aus, um sie so schnell wie möglich aus Ihrem Projekt zu entfernen: 1. Senden Sie ein Support-Ticket mit einer Liste von Domänen, die Sie aus Ihren Projektumgebungen entfernen möchten. 2. Nachdem das Supportteam die Domänen entfernt hat, aktualisieren Sie die Datei &quot;`routes.yaml`&quot;, um alle Verweise auf die veralteten Domänen zu entfernen.
+>Wenn Ihre Projektkonfiguration Domänen angibt, die nicht mehr verwendet werden, führen Sie die folgenden Schritte aus, um sie so schnell wie möglich aus Ihrem Projekt zu entfernen: 1. Senden Sie ein Support-Ticket mit einer Liste von Domains, die aus Ihren Projektumgebungen entfernt werden sollen. 2. Nachdem das Support-Team die Domains entfernt hat, aktualisieren Sie die `routes.yaml`-Datei, um alle Verweise auf die veralteten Domains zu entfernen.

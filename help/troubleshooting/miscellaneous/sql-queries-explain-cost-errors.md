@@ -1,6 +1,6 @@
 ---
-title: 'SQL-Abfragen: Fehler bei EXPLAIN-Kosten'
-description: Dieser Artikel enthält Lösungen für Fehler bei EXPLAIN-Kosten bei der Ausführung nicht erfolgreicher SQL-Abfragen. PostgreSQL verwendet etwas namens [EXPLAIN-Befehl](https://www.postgresql.org/docs/9.5/static/using-explain.html), um die Kosten von SQL-Abfragen zu ermitteln. Wir haben den SQL-Report Builder erstellt, um diesen Befehl ebenfalls zu verwenden. Das bedeutet, dass die Abfrage nicht ausgeführt wird und eine EXPLAIN-Meldung angezeigt wird, wenn die Kosten als zu hoch gelten - die für die Ausführung der Abfrage erforderliche Ressourcenmenge überschreitet die Schwellenwerte.
+title: 'SQL-Abfragen: Fehler bei EXPLAIN COST'
+description: Dieser Artikel bietet Lösungen für ERKLÄRUNGSKOSTENFEHLER beim Ausführen nicht erfolgreicher SQL-Abfragen. PostgreSQL verwendet einen [EXPLAIN-Befehl](https://www.postgresql.org/docs/9.5/static/using-explain.html), um die Kosten von SQL-Abfragen zu ermitteln. Wir haben den SQL-Report Builder so erstellt, dass auch dieser Befehl verwendet wird. Das bedeutet, dass die Abfrage nicht ausgeführt wird und eine ERKLÄRUNGSMELDUNG angezeigt wird, wenn die Kosten als zu hoch erachtet werden - die für die Ausführung der Abfrage erforderliche Ressourcenmenge überschreitet unsere Schwellenwerte.
 exl-id: 6f6df66a-665e-46a8-ad4c-842a0270c4eb
 feature: Commerce Intelligence
 role: Developer
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# SQL-Abfragen: Fehler bei EXPLAIN-Kosten
+# SQL-Abfragen: Fehler bei EXPLAIN COST
 
-Dieser Artikel enthält Lösungen für Fehler bei EXPLAIN-Kosten bei der Ausführung nicht erfolgreicher SQL-Abfragen. PostgreSQL verwendet etwas namens [EXPLAIN-Befehl](https://www.postgresql.org/docs/9.5/static/using-explain.html), um die Kosten von SQL-Abfragen zu ermitteln. Wir haben den SQL-Report Builder erstellt, um diesen Befehl ebenfalls zu verwenden. Das bedeutet, dass die Abfrage nicht ausgeführt wird und eine EXPLAIN-Meldung angezeigt wird, wenn die Kosten als zu hoch gelten - die für die Ausführung der Abfrage erforderliche Ressourcenmenge überschreitet die Schwellenwerte.
+Dieser Artikel bietet Lösungen für ERKLÄRUNGSKOSTENFEHLER beim Ausführen nicht erfolgreicher SQL-Abfragen. PostgreSQL verwendet einen so genannten [EXPLAIN-Befehl](https://www.postgresql.org/docs/9.5/static/using-explain.html), um die Kosten von SQL-Abfragen zu ermitteln. Wir haben den SQL-Report Builder so erstellt, dass auch dieser Befehl verwendet wird. Das bedeutet, dass die Abfrage nicht ausgeführt wird und eine ERKLÄRUNGSMELDUNG angezeigt wird, wenn die Kosten als zu hoch erachtet werden - die für die Ausführung der Abfrage erforderliche Ressourcenmenge überschreitet unsere Schwellenwerte.
 
-Es gibt einige Gründe, warum das passieren könnte. Hier finden Sie die Nachrichten, die Sie erhalten können, was sie bedeuten und wie Sie sie beheben können.
+Es gibt einige Gründe, warum dies passieren könnte. Im Folgenden finden Sie Informationen über mögliche Probleme, ihre Bedeutung und Möglichkeiten zur Fehlerbehebung.
 
-## Abfrage kann nicht ausgeführt werden. Der &quot;EXPLAIN&quot;-Kostenwert von \[xxx\] ist zu hoch, um diese Abfrage ausführen zu können.
+## Abfrage kann nicht ausgeführt werden. Der Wert von \[xxx\] für die ERKLÄRUNGSKOSTEN ist zu hoch, um diese Abfrage auszuführen.
 
-Wenn diese Meldung angezeigt wird, bedeutet dies, dass die Ausführung der Abfrage als zu teuer erachtet wurde. Wir haben zwei Empfehlungen für diese Situation: eine besteht darin, alle ORDER BY-Klauseln aus Ihrer Abfrage zu streichen, da es sich um kostspielige Vorgänge handelt. Die zweite besteht darin, die Tipps in unserem [Optimierungsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) zu befolgen, um Ihre Abfrage anzupassen.
+Wenn Sie diese Meldung sehen, bedeutet dies, dass die Ausführung der Abfrage als zu teuer erachtet wurde. Für diese Situation haben wir zwei Empfehlungen: Erstens, alle ORDER BY-Klauseln aus Ihrer Abfrage zu entfernen, da es sich um kostspielige Operationen handelt. Die zweite Möglichkeit besteht darin, den Tipps in unserem [Optimierungsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) zu folgen, um Ihre Abfrage anzupassen.
 
-## Abfrage kann nicht ausgeführt werden. Diese Abfrage gibt \[xxx\] Zeilen zurück, die unseren Grenzwert von 10.000 überschreiten.
+## Abfrage kann nicht ausgeführt werden. Diese Abfrage gibt \[xxx\] Zeilen zurück, was unseren Grenzwert von 10.000 überschreitet
 
-In diesem Fall überschreitet die mögliche Anzahl von Ergebnissen die für den SQL-Report Builder festgelegte Höchstzahl. Es gibt verschiedene Möglichkeiten, die Anzahl der Ergebnisse zu reduzieren:
+In diesem Fall überschreitet die mögliche Anzahl von Ergebnissen das für den SQL-Report Builder festgelegte Maximum. Es gibt einige Möglichkeiten, die Anzahl der Ergebnisse zu reduzieren:
 
 * Versuchen Sie, Ihrer Abfrage einige Filter hinzuzufügen.
-* Verwenden Sie LIMIT, wenn Sie können. Einige Tabellen haben eine große Anzahl von Zeilen. Durch die Beschränkung der Ergebnisse bleiben Sie möglicherweise unter der Zeilenbegrenzung.
+* Verwenden Sie LIMIT, falls möglich. Einige Tabellen enthalten eine große Anzahl von Zeilen, und durch die Begrenzung der Ergebnisse können Sie unter der Zeilenbegrenzung bleiben.
 
-## EXPLAIN-Antwort kann nicht analysiert werden.
+## Antwort von EXPLAIN kann nicht analysiert werden.
 
-Oh, Diese Nachricht bedeutet normalerweise, dass auf unserer Seite wahrscheinlich etwas schiefgelaufen ist. Wenn Sie diesen Fehler weiterhin erhalten, wenden Sie sich an den Support.
+Hoppla. Diese Meldung bedeutet normalerweise, dass bei uns wahrscheinlich etwas schiefgelaufen ist. Wenn Sie diesen Fehler weiterhin erhalten, wenden Sie sich bitte an den Support.

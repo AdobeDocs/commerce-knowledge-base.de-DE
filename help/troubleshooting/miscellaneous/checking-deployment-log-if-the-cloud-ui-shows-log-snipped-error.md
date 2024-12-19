@@ -1,6 +1,6 @@
 ---
-title: Überprüfen des Bereitstellungsprotokolls, wenn die Cloud-Benutzeroberfläche den Fehler "Log Snipped" aufweist
-description: Dieser Artikel bietet eine Lösung für das Problem, bei dem die Adobe Commerce auf der Benutzeroberfläche der Cloud-Infrastruktur die Fehlermeldung *log-Snipped anzeigt, da sie zu lang war*, wenn versucht wurde, das Bereitstellungsprotokoll auf der Benutzeroberfläche des Cloud-Projekts anzuzeigen.
+title: Überprüfen des Bereitstellungsprotokolls, wenn in der Cloud-Benutzeroberfläche der Fehler „Protokoll abgeschnitten“ auftritt
+description: Dieser Artikel bietet eine Lösung für das Problem, dass in der Benutzeroberfläche von Adobe Commerce in der Cloud-Infrastruktur die Fehlermeldung „Protokoll abgeschnitten, da zu lang war“ angezeigt wird, wenn versucht wird, das Bereitstellungsprotokoll in der Benutzeroberfläche von Cloud Project anzuzeigen.
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
@@ -11,26 +11,26 @@ ht-degree: 0%
 
 ---
 
-# Überprüfen des Bereitstellungsprotokolls, wenn in der Cloud-Benutzeroberfläche der Fehler *log snipped* auftritt
+# Bereitstellungsprotokoll wird überprüft, wenn in der Cloud-Benutzeroberfläche ein Fehler *Protokollausschnitt* auftritt
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem in Adobe Commerce auf der Benutzeroberfläche der Cloud-Infrastruktur der *eingegebene Log angezeigt wird, da die Fehlermeldung* zu lang war, wenn versucht wurde, das Bereitstellungsprotokoll in der Benutzeroberfläche des Cloud-Projekts anzuzeigen. (Gilt nicht für die [Adobe Commerce Cloud-Konsole](https://console.adobecommerce.com/).)
+Dieser Artikel bietet eine Lösung für das Problem, dass in der Benutzeroberfläche von Adobe Commerce in der Cloud-Infrastruktur die Fehlermeldung *Protokoll abgeschnitten, weil es zu lang war* beim Versuch, das Bereitstellungsprotokoll in der Benutzeroberfläche des Cloud-Projekts anzuzeigen, angezeigt wird. (Gilt nicht für die [Adobe Commerce Cloud-Konsole](https://console.adobecommerce.com/).)
 
 ## Betroffene Produkte
 
-Adobe Commerce in der Cloud-Infrastruktur (alle unterstützten Versionen)
+Adobe Commerce auf Cloud-Infrastruktur (alle unterstützten Versionen)
 
 ## Problem
 
-Beim Versuch, das Bereitstellungsprotokoll auf der Benutzeroberfläche des Cloud-Projekts anzuzeigen, zeigt Adobe Commerce auf der Benutzeroberfläche der Cloud-Infrastruktur die folgende Fehlermeldung an: *Protokollausschnitt, da es zu lang war*.
+Beim Versuch, das Bereitstellungsprotokoll in der Benutzeroberfläche des Cloud-Projekts anzuzeigen, zeigt Adobe Commerce in der Benutzeroberfläche der Cloud-Infrastruktur die folgende Fehlermeldung an: *Protokoll abgeschnitten, weil es zu lang war*.
 
-## Zu reproduzierende Schritte
+## Schritte zur Reproduktion
 
-1. Wechseln Sie zur Projekt-URL und klicken Sie auf den **Status** der betreffenden Bereitstellung.
-1. Wenn das Protokoll zu lang ist, um in der Benutzeroberfläche angezeigt zu werden, wird die Fehlermeldung angezeigt: *Protokollausschnitt, da es zu lang war*.
+1. Wechseln Sie zur Projekt-URL und klicken Sie auf **Status** der betreffenden Bereitstellung.
+1. Wenn das Protokoll zu lang ist, um in der Benutzeroberfläche angezeigt zu werden, wird die folgende Fehlermeldung angezeigt: *Protokoll abgeschnitten, weil es zu lang war*.
 
 ## Ursache
 
-Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als &quot;Source of Truth&quot;behandelt werden sollte, insbesondere wenn Sie feststellen, dass die Site nach der Auflistung der Bereitstellung mit dem Status &quot;Success&quot;nicht reagiert oder ordnungsgemäß funktioniert. Sie sollten dies auch mit den Protokollen auf dem Server überprüfen. Weitere Informationen finden Sie unter [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in unserer Entwicklerdokumentation.
+Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als Datenquelle behandelt werden sollte, insbesondere wenn Sie feststellen, dass die Site nicht reagiert oder nicht richtig funktioniert, nachdem die Bereitstellung mit dem Status Erfolgreich aufgeführt wurde. Sie sollten auch mit den Protokollen auf dem Server überprüfen. Siehe [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in unserer Entwicklerdokumentation.
 
 ## Lösung
 
@@ -41,7 +41,7 @@ Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als
    magento-cloud activity -p <project id> -e <environment>
    ```
 
-1. Es wird eine Ausgabe zurückgegeben, die der folgenden ähnelt:
+1. Es wird eine Ausgabe ähnlich der folgenden zurückgegeben:
 
    ```bash
    Activities on the project <project name> (project id), environment <environment>:
@@ -58,7 +58,7 @@ Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als
    magento-cloud activity:log <activity ID> -p <project id> -e <environment>
    ```
 
-   Beispiel zur Überprüfung des Protokolls der fehlgeschlagenen Bereitstellung:
+   Beispiel zur Untersuchung des Protokolls der fehlgeschlagenen Bereitstellung:
 
    ```bash
    magento-cloud activity:log raah5xrhqz3wg -p <project id> -e <environment>
@@ -66,5 +66,5 @@ Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
-* [Adobe Commerce auf Cloud-Infrastruktur > Erstellen und Bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [Adobe Commerce in der Cloud-Infrastruktur > Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [Adobe Commerce in Cloud-Infrastruktur > Erstellen und bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
+* [Adobe Commerce in Cloud-Infrastruktur > Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)

@@ -5,22 +5,22 @@ source-wordcount: '93'
 ht-degree: 0%
 
 ---
-# Dokumentation zum Adobe Commerce-Support-Knowledge Base-Repository
+# Adobe Commerce Support Knowledge Base-Repository-Dokumentation
 
-Willkommen auf der Startseite der Dokumentation zur Knowledge Base-Repository des Adobe Commerce-Supports.
-Hier finden Sie Dokumente, die Ihnen dabei helfen, am besten passende Beiträge und Vorlagen zu erstellen, die dem gleichen Zweck dienen.
-Wenn Sie mehr über den allgemeinen Beitragsfluss erfahren müssen, gehen Sie zum [Leitfaden für Beitragende](../.github/CONTRIBUTING.md).
+Willkommen auf der Startseite der Dokumentation zum Adobe Commerce Support Knowledge Base-Repository.
+Hier finden Sie Dokumente, die Ihnen dabei helfen, die am besten passenden Beiträge und Vorlagen zu erstellen, die demselben Zweck dienen.
+Weitere Informationen zum allgemeinen Beitragsfluss finden Sie im [Handbuch für Mitwirkende](../.github/CONTRIBUTING.md).
 
 ## Handbücher
 
-* [Beitragsbelohnungen und -punkte](contribution-points.md)
-* [Stilhandbuch der Wissensdatenbank](guides/support-kb-styleguide.md)
-* [Support Knowledge Base-Formatierungsanleitung](guides/kb-formatting-guide.md)
-* [Handbuch zu Support-Knowledge Base-Beschriftungen](guides/kb-labels-guide.md)
+* [Beitragsbelohnungen und Punkte](contribution-points.md)
+* [Support-Knowledgebase-Stilhandbuch](guides/support-kb-styleguide.md)
+* [Support-Handbuch zur Wissensdatenbankformatierung](guides/kb-formatting-guide.md)
+* [Handbuch zu Support-Knowledgebase-Beschriftungen](guides/kb-labels-guide.md)
 
 ## Vorlagen
 
-Kopieren Sie beim Erstellen eines neuen Artikels die entsprechende Vorlage und ersetzen Sie die Platzhalterinformationen.
+Wenn Sie einen neuen Artikel erstellen, kopieren Sie die entsprechende Vorlage und ersetzen Sie die Platzhalterinformationen.
 
-* [Fehlerbehebung bei der Artikelvorlage](article-templates/troubleshooting-template.md)
-* [Best Practice-Artikelvorlage](article-templates/best-practice-template.md)
+* [Fehlerbehebung für Artikelvorlage](article-templates/troubleshooting-template.md)
+* [Best-Practice-Artikelvorlage](article-templates/best-practice-template.md)

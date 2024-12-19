@@ -1,6 +1,6 @@
 ---
-title: Bereitstellungsfehler bei der Aktivierung des Frühalphanumermoduls
-description: Beim Einsatz des Baler-Moduls in einer Produktionsumgebung treten beim Händler Bereitstellungsfehler auf, da sich die Funktion derzeit in der frühen Phase der Alpha-Entwicklung befindet.
+title: Bereitstellungsfehler durch Aktivierung des Alpha-Ballenpressenmoduls
+description: Bei der Verwendung des Ballenmoduls in einer Produktionsumgebung treten Bereitstellungsfehler auf, da sich die Funktion derzeit in der frühen Alpha-Entwicklungsphase befindet.
 exl-id: 6cdac0a5-eaeb-467d-8369-9017aed6219e
 feature: Build, Deploy, Extensions, SCD, Variables
 role: Developer
@@ -11,35 +11,35 @@ ht-degree: 0%
 
 ---
 
-# Bereitstellungsfehler bei der Aktivierung des Frühalphanumermoduls
+# Bereitstellungsfehler durch Aktivierung des Alpha-Ballenpressenmoduls
 
-Beim Einsatz des Baler-Moduls in einer Produktionsumgebung treten beim Händler Bereitstellungsfehler auf, da sich die Funktion derzeit in der frühen Phase der Alpha-Entwicklung befindet.
+Bei der Verwendung des Ballenmoduls in einer Produktionsumgebung treten Bereitstellungsfehler auf, da sich die Funktion derzeit in der frühen Alpha-Entwicklungsphase befindet.
 
 >[!WARNING]
 >
->Das frühe Alpha-Baler-JavaScript-Bundling ist noch nicht einsatzbereit und wird auf eigene Gefahr verwendet.
+>Das Early-Alpha Baller JavaScript Bundling ist nicht produktionsbereit und wird auf eigenes Risiko verwendet.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce auf Cloud-Infrastruktur 2.3.x und 2.4.x.
-* Adobe Commerce vor Ort 2.3.x und 2.4.x.
+* Adobe Commerce auf Cloud-Infrastrukturen 2.3.x und 2.4.x.
+* Adobe Commerce On-Premises 2.3.x und 2.4.x.
 
 ## Problem
 
-Wir empfehlen Händlern nicht, das Baler-Modul in einer Produktionsumgebung zu verwenden, da es sich derzeit in der frühen Alpha-Entwicklungsphase befindet. Die Verwendung dieser Funktion kann zu Implementierungsfehlern führen.
+Wir raten davon ab, dass Händler das Modul Ballenpresse in einer Produktionsumgebung verwenden, da es sich derzeit in der frühen Alpha-Entwicklungsphase befindet. Die Verwendung kann zu Bereitstellungsfehlern führen.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Der Händler versucht, die Variable **SCD\_USE\_BALER** in die Build-Phase der Datei `.magento.env.yaml` einzufügen, wodurch das Baler-JavaScript-Bundle-Paket aktiviert wird.
-1. Der Händler fügt außerdem die Abhängigkeit des Baler Composer hinzu: `"magento/module-baler": "1.0.0-alpha"` zum Abschnitt `require` von `composer.json`.
+1. Der Händler versucht, die Variable **SCD\_USE\_BALER** in der Build-Phase der `.magento.env.yaml`-Datei einzufügen, wodurch das Baler-JavaScript-Bundling-Paket aktiviert wird.
+1. Der Händler fügt auch die Abhängigkeit Ballenpressen-Komponist hinzu: `"magento/module-baler": "1.0.0-alpha"` zu `require` Abschnitt der `composer.json`.
 
 <u>Erwartetes Ergebnis</u>:
 
-Erfolgreiche Implementierung.
+Erfolgreiche Bereitstellung.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Der Händler sieht in den Bereitstellungsprotokollen in der Cloud die folgende Fehlermeldung: `<project home>/var/log/cloud.log` bei der Bereitstellung statischer Inhalte:
+Der Händler sieht die folgende Fehlermeldung in den Bereitstellungsprotokollen in der Cloud, die beim Bereitstellungsschritt des statischen Inhalts `<project home>/var/log/cloud.log` wird:
 
 ```
 [2020-08-19 12:06:12] WARNING: [1007] Baler JS bundling cannot be used because of the following issues:
@@ -48,13 +48,13 @@ Der Händler sieht in den Bereitstellungsprotokollen in der Cloud die folgende F
 
 ## Ursache
 
-Das Baler-Modul befindet sich derzeit in der Anfangsphase der Alpha-Entwicklung und der Installationsprozess der Baler-Erweiterung ist komplex.
+Das Modul Ballenpresse befindet sich derzeit in der frühen Alpha-Entwicklungsphase, und der Installationsprozess der Ballenpresse-Erweiterung ist komplex.
 
 ## Lösung
 
-Sie können die vorhandene Baler-Alpha-Dokumentation unter [Github/Magento/Baler/Erste Schritte mit dem Alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md) lesen. Es ist jedoch nicht einsatzbereit und wird auf eigene Gefahr verwendet. Stattdessen wird empfohlen, JavaScript-Dateien (JS) mithilfe des integrierten Adobe Commerce-Bundles (Basis-Bundling) zur Dateioptimierung zusammenzuführen oder zu bündeln.
+Die aktuelle Dokumentation zum Baler Alpha finden Sie unter [Github/Magento/Baler/Getting Started with the alpha](https://github.com/magento/baler/blob/master/docs/ALPHA.md). Es ist jedoch nicht für die Verwendung in der Produktion bereit und wird auf eigenes Risiko verwendet. Es wird stattdessen empfohlen, JavaScript (JS)-Dateien mithilfe des integrierten Bundles (Basic Bundling) von Adobe Commerce zusammenzuführen oder zu bündeln, um die Datei zu optimieren.
 
-* Sie können das Zusammenführen oder Bundling im Admin aktivieren (das Zusammenführen und Bundling kann nicht gleichzeitig aktiviert werden): **Stores** > **Einstellungen** > **Konfiguration** > **Erweitert** > **Entwickler** > **JavaScript-Einstellungen**.
-* Sie können auch das integrierte Bundling (Basis-Bundling) von Adobe Commerce über die Befehlszeile aktivieren: `php -f bin/magento config:set dev/js/enable_js_bundling 1`
+* Sie können die Zusammenführung oder Bündelung im Admin aktivieren (Zusammenführung und Bündelung können nicht gleichzeitig aktiviert werden): **Stores** > **Settings** > **Configuration** > **Advanced** > **Developer** > **JavaScript Settings**.
+* Sie können auch die integrierte Bündelung von Adobe Commerce (einfache Bündelung) über die Befehlszeile aktivieren: `php -f bin/magento config:set dev/js/enable_js_bundling 1`
 
-Weitere Informationen finden Sie unter [CSS- und JavaScript-Dateioptimierung in Adobe Commerce für Cloud-Infrastruktur und Adobe Commerce On-Premise](https://support.magento.com/hc/en-us/articles/360044482152).
+Weitere Informationen finden Sie unter [CSS- und JavaScript-Dateioptimierung auf Adobe Commerce in Cloud-Infrastrukturen und Adobe Commerce On-Premise](https://support.magento.com/hc/en-us/articles/360044482152).

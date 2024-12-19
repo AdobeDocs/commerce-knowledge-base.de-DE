@@ -1,6 +1,6 @@
 ---
-title: 'Quality Patches Tool veröffentlicht: neues Tool zur Selbstbedienung von Qualitätspatches'
-description: Adobe hat das Tool für Qualitätsmuster für die allgemeine Verfügbarkeit veröffentlicht - ein Tool, mit dem Sie allgemeine Informationen über Qualitätspatches, die für Ihre installierte Adobe Commerce-Version (sowohl lokal als auch in der Cloud-Infrastruktur) verfügbar sind, anwenden, wiederherstellen und anzeigen können.
+title: 'Quality Patches Tool veröffentlicht: Neues Tool zur Selbstbedienung hochwertiger Patches'
+description: Adobe hat das Quality Patches Tool für allgemeine Verfügbarkeit veröffentlicht - ein Tool, das das Anwenden, Zurücksetzen und Anzeigen allgemeiner Informationen zu Qualitäts-Patches ermöglicht, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind.
 exl-id: e6a79d16-84be-4a71-a41d-ef2b43ec98d9
 feature: Tools and External Services
 role: Admin
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# Quality Patches Tool veröffentlicht: neues Tool zur Selbstbedienung von Qualitätspatches
+# Quality Patches Tool veröffentlicht: Neues Tool zur Selbstbedienung hochwertiger Patches
 
-Adobe hat das Tool für Qualitätsmuster für die allgemeine Verfügbarkeit veröffentlicht - ein Tool, mit dem Sie allgemeine Informationen über Qualitätspatches, die für Ihre installierte Adobe Commerce-Version (sowohl lokal als auch in der Cloud-Infrastruktur) verfügbar sind, anwenden, wiederherstellen und anzeigen können.
+Adobe hat das Quality Patches Tool für allgemeine Verfügbarkeit veröffentlicht - ein Tool, das das Anwenden, Zurücksetzen und Anzeigen allgemeiner Informationen zu Qualitäts-Patches ermöglicht, die für Ihre installierte Version von Adobe Commerce (sowohl lokal als auch in der Cloud-Infrastruktur) oder Magento Open Source verfügbar sind.
 
-Das Tool ermöglicht eine schnellere Problembehebung bei Self-Service, sodass Sie einfach vom Adobe Commerce-Support vorgeschlagene Patches auf Probleme anwenden können, die mit Adobe Commerce auftreten können.
+Das Tool bietet eine schnellere Self-Service-Problembehebung, sodass Sie einfach von der Adobe Commerce-Unterstützung vorgeschlagene Patches für Probleme anwenden können, die möglicherweise mit Adobe Commerce auftreten.
 
 >[!NOTE]
 >
->Sie sollten das Tool verwenden, um die erforderlichen Qualitätsverbesserungen nach Bedarf von Fall zu Fall durchzuführen und nicht als langfristigen Ansatz zur Pflege von Adobe Commerce- und Magento Open Source-Code. Die Aktualisierung auf die neueste Version von Adobe Commerce oder Magento Open Source ist nach wie vor die beste Methode zur Lösung von Qualitätsproblemen und sollte priorisiert werden.
+>Sie sollten das Tool verwenden, um die erforderlichen Qualitätskorrekturen nach Bedarf nur von Fall zu Fall abzurufen, und nicht als langfristigen Ansatz zur Pflege von Adobe Commerce und Magento Open Source-Code. Die Aktualisierung auf die neueste Version von Adobe Commerce oder Magento Open Source ist weiterhin die beste Methode zur Lösung von Qualitätsproblemen und sollte priorisiert werden.
 
-## Tool für Qualitätsmuster abrufen und verwenden
+## Abrufen und Verwenden des Quality Patches Tools
 
-Das Tool ist als Composer-Paket verfügbar. Für Adobe Commerce in Cloud-Infrastrukturen ist das Paket im ECE-Tools-Paket enthalten.
+Das Tool ist als Composer-Paket verfügbar. Für Adobe Commerce auf Cloud-Infrastrukturen ist das Paket im Paket ECE-Tools enthalten.
 
-Nachdem Sie das Tool installiert haben, können Sie jederzeit nach verfügbaren Patches suchen, diese anwenden oder wiederherstellen.
+Nachdem Sie das Tool installiert haben, können Sie nach verfügbaren Patches suchen, diese jederzeit anwenden oder zurücksetzen.
 
-Weitere Informationen finden Sie in unserer Entwicklerdokumentation .
+Weitere Informationen finden Sie in der Entwicklerdokumentation:
 
-* [Im Tool für Qualitätsmuster verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
-* [Versionshinweise zum Werkzeug für Qualitätsmuster](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Patches im Quality Patches Tool verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
+* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)

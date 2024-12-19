@@ -1,6 +1,6 @@
 ---
 title: Fehler während der Bereitstellung beim Upgrade auf eine Version, die PHP 8.1 unterstützt
-description: Dieser Artikel bietet eine Lösung für den Fehler, der während der Implementierung auftritt, wenn auf eine Version aktualisiert wird, die PHP 8.1 unterstützt.
+description: Dieser Artikel bietet eine Lösung für den Fehler, der während der Bereitstellung beim Upgrade auf eine Version auftritt, die PHP 8.1 unterstützt.
 exl-id: bdc4a355-4f2b-49a7-9c5d-63c950f7ca30
 feature: Deploy, Observability
 role: Developer
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # Fehler während der Bereitstellung beim Upgrade auf eine Version, die PHP 8.1 unterstützt
 
-Dieser Artikel bietet eine Lösung für den Fehler, der während der Implementierung auftritt, wenn auf eine Version aktualisiert wird, die PHP 8.1 unterstützt.
+Dieser Artikel bietet eine Lösung für den Fehler, der während der Bereitstellung beim Upgrade auf eine Version auftritt, die PHP 8.1 unterstützt.
 
 ## Betroffene Produkte und Versionen
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.4.4 und höher
 
-* Erweiterung oder Technologie (Fastly, New Relic, etc.) Version PHP 8.1
+* Erweiterungs- oder Technologieversion (Fastly, New Relic usw.) PHP 8.1
 
 ## Problem
 
-Der folgende Fehler tritt während der Implementierung auf, wenn auf eine Version aktualisiert wird, die PHP 8.1 unterstützt.
+Beim Upgrade auf eine Version, die PHP 8.1 unterstützt, tritt während der Bereitstellung der folgende Fehler auf.
 
 ```PHP
 {{E: Error parsing configuration files:
@@ -37,7 +37,7 @@ E: Error: Invalid configuration files, aborting build}}
 
 ## Ursache
 
-PHP 8.1 beinhaltet bereits JSON-Unterstützung und erfordert nicht, dass die Erweiterung separat installiert wird.
+PHP 8.1 enthält bereits JSON-Unterstützung und erfordert keine separate Installation der Erweiterung.
 
 ## Lösung
 

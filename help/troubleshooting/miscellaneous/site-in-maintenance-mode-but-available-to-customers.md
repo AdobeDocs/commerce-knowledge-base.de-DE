@@ -1,6 +1,6 @@
 ---
 title: Site im Wartungsmodus, aber für Kunden verfügbar
-description: Dieser Artikel enthält eine Korrektur für den Fall, dass der Wartungsmodus aktiviert ist (ein Adobe Commerce zum Problem mit der Cloud-Infrastruktur), aber die Storefront für Kunden weiterhin verfügbar ist.
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass der Wartungsmodus aktiviert ist (ein Problem mit Adobe Commerce in der Cloud-Infrastruktur), die Storefront jedoch weiterhin für Kunden verfügbar ist.
 exl-id: 61b81fbd-a382-44b5-94e9-5b6d72f11349
 feature: Cache
 role: Developer
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Site im Wartungsmodus, aber für Kunden verfügbar
 
-Dieser Artikel enthält eine Korrektur für den Fall, dass der Wartungsmodus aktiviert ist (ein Adobe Commerce zum Problem mit der Cloud-Infrastruktur), aber die Storefront für Kunden weiterhin verfügbar ist.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass der Wartungsmodus aktiviert ist (ein Problem mit Adobe Commerce in der Cloud-Infrastruktur), die Storefront jedoch weiterhin für Kunden verfügbar ist.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur (alle Versionen)
+* Adobe Commerce auf Cloud-Infrastruktur (alle Versionen)
 
 ## Problem
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
 1. Aktivieren Sie den Wartungsmodus für die Site.
 1. Navigieren Sie zur Storefront.
@@ -38,11 +38,11 @@ Storefront-Seiten werden wie gewohnt angezeigt.
 
 Seiten werden weiterhin zwischengespeichert, sodass die Wartungsseite nicht angezeigt wird.
 
-## Lösung für die Site, die trotz des Wartungsmodus sichtbar ist
+## Lösung für Standort trotz Wartungsmodus sichtbar
 
-1. SSH in Ihrer Umgebung.
-1. Führen Sie den Befehl `php bin/magento cache:clean` aus.
+1. SSH in Ihre Umgebung.
+1. Führen Sie den `php bin/magento cache:clean` Befehl aus.
 
 ## Verwandtes Lesen
 
-[Aktivieren oder deaktivieren Sie den Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.
+[Wartungsmodus aktivieren oder deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.

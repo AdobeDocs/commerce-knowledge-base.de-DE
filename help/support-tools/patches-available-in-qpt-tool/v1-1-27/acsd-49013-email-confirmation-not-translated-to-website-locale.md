@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-49013: E-Mail-Bestätigung nicht in das Gebietsschema der Website übersetzt'
-description: Wenden Sie den Patch ACSD-49013 an, um das Adobe Commerce-Problem zu beheben, bei dem die E-Mail-Bestätigung beim Erstellen von Kunden mit Bulk API nicht in das Gebietsschema der Website übersetzt wird.
+title: 'ACSD-49013: E-Mail-Bestätigung nicht ins Website-Gebietsschema übersetzt'
+description: Wenden Sie den ACSD-49013-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem die E-Mail-Bestätigung beim Erstellen von Kunden, die die Massen-API verwenden, nicht in das Website-Gebietsschema übersetzt wird.
 exl-id: 68203bd4-021a-4736-a793-4b6663a9c66b
 feature: Admin Workspace, Communications
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-49013: E-Mail-Bestätigung nicht in das Gebietsschema der Website übersetzt
+# ACSD-49013: E-Mail-Bestätigung nicht ins Website-Gebietsschema übersetzt
 
-Der Patch ACSD-49013 behebt das Problem, dass die E-Mail-Bestätigung beim Erstellen von Kunden mit Bulk API nicht in das Gebietsschema der Website übersetzt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 installiert ist. Die Patch-ID lautet ACSD-49013. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-49013 wird das Problem behoben, dass E-Mail-Bestätigungen beim Erstellen von Kunden, die die Massen-API verwenden, nicht in das Website-Gebietsschema übersetzt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 installiert ist. Die Patch-ID ist ACSD-49013. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,20 +27,20 @@ Der Patch ACSD-49013 behebt das Problem, dass die E-Mail-Bestätigung beim Erste
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die E-Mail-Bestätigung wird beim Erstellen von Kunden mithilfe der Bulk API nicht in das Gebietsschema der Website übersetzt.
+Die E-Mail-Bestätigung wird beim Erstellen von Kunden mit der Bulk-API nicht in das Website-Gebietsschema übersetzt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Installieren Sie ein anderes Gebietsschema wie `de_DE`.
-1. Konfigurieren Sie *RabbitMQ*.
+1. *RabbitMQ*.
 1. Führen Sie `bin/magento setup:upgrade` aus, um die Warteschlangen in RabbitMQ zu installieren und das Sprachpaket einzurichten.
 1. Erstellen Sie eine zusätzliche Website unter [!UICONTROL Admin] > **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**.
-1. Setzen Sie das Gebietsschema dieser neuen Website auf `de_DE` in [!UICONTROL Admin] > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale Options]**.
-1. Führen Sie einen API-Aufruf aus, um ein Kundenkonto mit der Bulk API zu erstellen. Verwenden Sie den entsprechenden `website_id`.
+1. Legen Sie unter [!UICONTROL Admin] > **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale Options]** das Gebietsschema dieser neuen Website auf `de_DE` fest.
+1. Führen Sie einen API-Aufruf aus, um mithilfe der Bulk-API ein Kundenkonto zu erstellen. Verwenden Sie die entsprechende `website_id`.
 
    `Endpoint: /rest/async/bulk/V1/customers`
 
@@ -56,30 +56,30 @@ Die E-Mail-Bestätigung wird beim Erstellen von Kunden mithilfe der Bulk API nic
    }]
    ```
 
-1. Führen Sie `bin/magento queue:consumers:start async.operations.all --single-thread --max-messages=10` aus.
+1. `bin/magento queue:consumers:start async.operations.all --single-thread --max-messages=10` ausführen.
 1. Sie können sehen, dass das Kundenkonto auf der angegebenen Website korrekt erstellt wurde.
-1. Überprüfen Sie die E-Mail, die zur Kundenregistrierung empfangen wurde.
+1. Überprüfen Sie die für die Kundenregistrierung erhaltene E-Mail.
 
 <u>Erwartete Ergebnisse</u>:
 
-Da der Kunde auf einer bestimmten Website erstellt wird, wird die Registrierungs-E-Mail mit dem Gebietsschema dieser Website gesendet.
+Da der Kunde auf einer bestimmten Website erstellt wird, wird die Registrierungs-E-Mail über das Gebietsschema dieser Website gesendet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Kunde wird ordnungsgemäß auf der angegebenen Website erstellt, die Registrierungs-E-Mail wird jedoch mit dem Standardgebietsschema gesendet, wenn die Bulk-API verwendet wird.
+Der Kunde wird auf der angegebenen Website korrekt erstellt, die Registrierungs-E-Mail wird jedoch unter Verwendung des Standardgebietsschemas gesendet, wenn die Massen-API verwendet wird.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

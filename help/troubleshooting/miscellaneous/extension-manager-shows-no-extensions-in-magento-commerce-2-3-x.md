@@ -1,5 +1,5 @@
 ---
-title: Extension Manager zeigt keine Erweiterungen in Adobe Commerce 2.3.x an
+title: Extension Manager zeigt in Adobe Commerce 2.3.x keine Erweiterungen an
 description: Dieser Artikel bietet eine Problemumgehung für fehlende Erweiterungen im Admin-Extension Manager in Adobe Commerce 2.3.x, nachdem Sie Erweiterungen über die Commerce Marketplace erworben haben.
 exl-id: bed8506d-39b9-449a-891b-466d214a0fe8
 feature: Extensions
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Extension Manager zeigt keine Erweiterungen in Adobe Commerce 2.3.x an
+# Extension Manager zeigt in Adobe Commerce 2.3.x keine Erweiterungen an
 
 Dieser Artikel bietet eine Problemumgehung für fehlende Erweiterungen im Admin-Extension Manager in Adobe Commerce 2.3.x, nachdem Sie Erweiterungen über die Commerce Marketplace erworben haben.
 
@@ -21,27 +21,27 @@ Dieser Artikel bietet eine Problemumgehung für fehlende Erweiterungen im Admin-
 
 ## Problem
 
-Wenn Sie Erweiterungen über die Commerce Marketplace erwerben, können Sie sie nicht mit dem Adobe Commerce-Extension Manager installieren. Wenn Sie Ihre Zugriffsschlüssel hinzufügen und mit Marketplace synchronisieren, zeigt der Extension Manager keine Erweiterungen an.
+Wenn Sie Erweiterungen über die Commerce Marketplace erwerben, können Sie sie nicht mit dem Adobe Commerce-Extension Manager installieren. Wenn Sie Ihre Zugriffsschlüssel hinzufügen und mit dem Marketplace synchronisieren, zeigt der Extension Manager keine Erweiterungen an.
 
-Die **Problemumgehung** besteht darin, die Befehlszeileninstallation von Adobe Commerce wie in der [allgemeinen CLI-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) in unserer Entwicklerdokumentation beschrieben zu verwenden.
+Die **Problemumgehung** besteht darin, die Befehlszeilen-Adobe Commerce-Installation zu verwenden, wie in [Allgemeine CLI-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) in unserer Entwicklerdokumentation beschrieben.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Kaufen Sie eine Erweiterung über die Commerce Marketplace.
-1. Fügen Sie die Zugriffsschlüssel Ihrer Erweiterung hinzu und synchronisieren Sie sie mit dem Marketplace.
-1. Navigieren Sie zum Bereich Extension Manager des Administrators.
+1. Erwerben Sie eine Erweiterung über die Commerce Marketplace.
+1. Fügen Sie die Zugriffsschlüssel Ihrer Erweiterung hinzu und synchronisieren Sie mit dem Marketplace.
+1. Navigieren Sie zum Abschnitt Extension Manager des Admin-Bereichs.
 
 <u>Erwartetes Ergebnis</u>:
 
-Die Erweiterung wird im Extension Manager-Bereich des Commerce-Administrators angezeigt.
+Die Erweiterung wird im Abschnitt Extension Manager der Commerce Admin angezeigt.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-**Im Extension Manager-Bereich des Commerce-Administrators wird keine Erweiterung angezeigt, ähnlich wie in unten stehendem Bild:**
+**Im Abschnitt Extension Manager der Commerce Admin wird keine Erweiterung angezeigt, ähnlich der folgenden Abbildung:**
 
 
 ![KB-607_Image_1.png](assets/KB-607_Image_1.png)
 
-## Workaround
+## Abhilfe
 
-Verwenden Sie die Befehlszeileninstallation von Adobe Commerce, wie in der Entwicklerdokumentation unter [Allgemeine CLI-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) dargestellt.
+Verwenden Sie die Befehlszeilen-Adobe Commerce-Installation, wie unter [Allgemeine CLI-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) in unserer Entwicklerdokumentation beschrieben.

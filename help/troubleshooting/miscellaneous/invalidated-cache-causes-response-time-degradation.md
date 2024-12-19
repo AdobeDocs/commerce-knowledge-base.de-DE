@@ -1,6 +1,6 @@
 ---
-title: Invalidierter Cache führt zu einer Verschlechterung der Reaktionszeit
-description: Dieser Artikel bietet eine Lösung, wie Sie eine Cache-Invalidierung vermeiden können, was die Leistung eines Adobe Commerce-Stores verlangsamen kann.
+title: Invalidierter Cache führt zu einer Verschlechterung der Antwortzeit
+description: Dieser Artikel bietet eine Lösung, wie Sie die Cache-Invalidierung vermeiden können, die die langsame Leistung eines Adobe Commerce-Stores verursachen könnte.
 exl-id: 7cb6a39f-923b-4acc-965d-23cf7b52c25a
 feature: Cache, Catalog Management, Categories
 role: Developer
@@ -11,60 +11,60 @@ ht-degree: 0%
 
 ---
 
-# Invalidierter Cache führt zu einer Verschlechterung der Reaktionszeit
+# Invalidierter Cache führt zu einer Verschlechterung der Antwortzeit
 
-Dieser Artikel bietet eine Lösung, wie Sie eine Cache-Invalidierung vermeiden können, was die Leistung eines Adobe Commerce-Stores verlangsamen kann.
+Dieser Artikel bietet eine Lösung, wie Sie die Cache-Invalidierung vermeiden können, die die langsame Leistung eines Adobe Commerce-Stores verursachen könnte.
 
 BETROFFENE PRODUKTE UND VERSIONEN:
 
-* Adobe Commerce lokal 2.2.x, 2.3.x
+* Adobe Commerce On-Premises 2.2.x, 2.3.x
 * Adobe Commerce auf Cloud-Infrastruktur 2.2.x, 2.3.x
 
 ## Problem
 
-Langsame Site-Antwort.
+Langsame Site-Reaktion.
 
 ## Ursache
 
-Eine lange Reaktionszeit kann dadurch verursacht werden, dass der Cache invalidiert (geleert) wird.
+Lange Antwortzeiten können dadurch verursacht werden, dass der Cache invalidiert (geleert) wird.
 
-Der Cache wird verwendet, um schnelle Antworten auf die Anforderungen der Site-Besucher zu generieren. Wenn keine entsprechenden Cachedaten verfügbar sind, ruft die Adobe Commerce-Anwendung die Daten aus der Datenbank ab, berechnet und aggregiert die Daten und speichert sie im Cache-Speicher. Der Cache-Generierungsprozess erfordert zusätzliche Systemressourcen, die zu einer vollständigen Verschlechterung der Antwortzeit führen.
+Der Cache wird verwendet, um schnelle Antworten auf die Anfragen der Site-Besucher zu generieren. Wenn keine geeigneten Cache-Daten verfügbar sind, ruft die Adobe Commerce-Anwendung die Daten aus der Datenbank ab, berechnet und aggregiert die Daten und speichert sie im Cache-Speicher. Der Cache-Erzeugungsprozess erfordert zusätzliche Systemressourcen, was zu einer vollständigen Beeinträchtigung der Reaktionszeit führt.
 
-In Adobe Commerce gibt es zwei Cache-Typen:
+In Adobe Commerce gibt es zwei Arten von Cache:
 
 1. Intern:
-   * speichert Daten auf dem Server
-   * speichert bestimmte Daten (Konfiguration, Produktdetails, Kategoriedetails usw.)
+   * Speichert Daten auf dem Server
+   * speichert bestimmte Daten (Konfiguration, Produktdetails, Kategoriedaten usw.),
 1. Extern:
-   * CDN oder Varnish (im Fall von Adobe Commerce über Cloud-Infrastruktur - Schnelles CDN)
-   * speichert bereits generierte vollständige Seiten. Beispiel: Katalog/Kategorie, Katalog/Produktseiten usw.
+   * CDN oder Lack (im Fall von Adobe Commerce auf Cloud-Infrastruktur - Fastly CDN)
+   * Speichert bereits generierte vollständige Seiten. Beispiel: Katalog/Kategorie, Katalog/Produktseiten usw.
 
 ### Überprüfen, ob der Cache ungültig gemacht wurde
 
-Informationen zu den invalidierten Cache-Typen finden Sie in der Datei &quot;`<install_directory>/var/log/debug.log`&quot;.
+Informationen zu den ungültigen Cache-Typen finden Sie in der `<install_directory>/var/log/debug.log`.
 
 Gehen Sie dazu folgendermaßen vor:
 
-1. Öffnen Sie `<install_directory>/var/log/debug.log`
-1. Suchen Sie nach der Meldung &quot;*cache\_invalidate* &quot;.
-1. Überprüfen Sie dann das angegebene Tag. Er gibt an, welcher Cache geleert wurde. Möglicherweise treten aufgrund des invalidierten Caches Probleme auf, wenn ein Tag ohne bestimmte Entitäts-ID angezeigt wird, z. B.:
-   * `cat_p` - steht für den Cache des Katalogprodukts.
-   * `cat_c` - Cache der Katalogkategorie.
+1. `<install_directory>/var/log/debug.log` öffnen
+1. Suchen Sie nach *cache\_invalidate* &quot;.
+1. Überprüfen Sie dann das angegebene Tag. Dies zeigt an, welcher Cache geleert wurde. Möglicherweise treten aufgrund des ungültigen Caches Probleme auf, wenn ein Tag ohne bestimmte Entitäts-ID angezeigt wird, z. B.:
+   * `cat_p` - steht für Catalog Product Cache.
+   * `cat_c` - Katalog-Kategorie-Cache.
    * `FPC` - Vollständiger Seiten-Cache.
-   * `CONFIG` - Konfigurationscache.
+   * `CONFIG` - Konfigurations-Cache.
 
-   Sogar eines von ihnen würde die Antwort der Website verlangsamen. Wenn das Tag eine Entitäts-ID enthält, z. B. &quot;`category_product_1258`&quot;, würde dies den Cache für ein bestimmtes Produkt oder eine bestimmte Kategorie angeben usw. Das Leeren des Caches für ein bestimmtes Produkt oder eine bestimmte Kategorie würde nicht dazu führen, dass die Reaktionszeit signifikant zurückgeht.
+   Selbst eine Bereinigung würde die Reaktion der Website verlangsamen. Wenn das Tag eine Entitäts-ID enthält, z. B. `category_product_1258`, würde dies den Cache für ein bestimmtes Produkt oder eine bestimmte Kategorie angeben usw. Das Leeren des Caches für ein bestimmtes Produkt oder eine bestimmte Kategorie würde nicht dazu führen, dass die Reaktionszeit signifikant abnimmt.
 
-Im Folgenden finden Sie ein Beispiel eines `debug.log` mit Datensätzen zum geleerten `cat_p` - und `category_product_15044` -Cache:
+Im Folgenden finden Sie ein Beispiel für eine `debug.log` mit Datensätzen über die geleerte `cat_p` und `category_product_15044` Cache:
 
-![Beispiel des debug.log-Inhalts](assets/debug_log_sample.png)
+![Beispiel für den debug.log-Inhalt](assets/debug_log_sample.png)
 
-In der Regel wird der Cache durch Folgendes ungültig gemacht:
+Normalerweise wird der Cache aus folgenden Gründen ungültig:
 
 * Vollständige Neuindizierung.
-* Zwischenspeicher aus CLI (manuell oder mithilfe von Cron) erfassen.
+* Flash-Cache von CLI, entweder manuell oder mithilfe von Cron.
 
 ## Empfehlung
 
-1. Vermeiden Sie das Leeren des Cache aus der Commerce-CLI.
-1. Konfigurieren Sie die Indexer auf **Aktualisieren nach Zeitplan** anstelle von **Aktualisieren im Speichermodus** , da letztere die vollständige Neuindizierung der Trigger durchführen. Weitere Informationen finden Sie unter [Verwalten der Indexer > Konfigurieren von Indexern](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) in unserer Entwicklerdokumentation.
+1. Vermeiden Sie es, den Cache über die Commerce-CLI zu leeren.
+1. Konfigurieren Sie Indexer so **dass sie nach Zeitplan aktualisiert werden** anstelle von **Aktualisieren im Speichermodus** da letzterer eine vollständige Neuindizierung Trigger. Weitere Informationen finden Sie unter [Indexer verwalten > Indexer konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) in unserer Entwicklerdokumentation.

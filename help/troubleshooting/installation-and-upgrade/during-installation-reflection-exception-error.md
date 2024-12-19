@@ -1,5 +1,5 @@
 ---
-title: Während der Installation wird der Reflektions-Ausnahmefehler angezeigt
+title: Während der Installation tritt bei Reflection Exception ein Fehler auf
 description: Dieser Artikel bietet eine Lösung für den Reflection Exception-Fehler während der Installation.
 exl-id: aed5f297-1339-4171-9392-04b3f93277ee
 feature: Install, Upgrade
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Während der Installation wird der Reflektions-Ausnahmefehler angezeigt
+# Während der Installation tritt bei Reflection Exception ein Fehler auf
 
 Dieser Artikel bietet eine Lösung für den Reflection Exception-Fehler während der Installation.
 
@@ -25,9 +25,9 @@ Während der Installation wird eine Meldung ähnlich der folgenden angezeigt:
 
 ## Lösung {#solution}
 
-Löschen Sie alle Verzeichnisse und Dateien im Unterverzeichnis von Adobe Commerce `var` und installieren Sie die Adobe Commerce-Software erneut.
+Löschen Sie alle Ordner und Dateien im `var`-Unterverzeichnis von Adobe Commerce und installieren Sie die Adobe Commerce-Software erneut.
 
-Geben Sie als Inhaber des Adobe Commerce-Dateisystems ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) oder als Benutzer mit `root` -Berechtigungen die folgenden Befehle ein:[
+Geben Sie als [Eigentümer des Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview)Dateisystems oder als Benutzer mit `root` die folgenden Befehle ein:
 
 ```bash
 $ cd <your Magento install directory>/var

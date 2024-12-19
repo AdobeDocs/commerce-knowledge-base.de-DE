@@ -1,6 +1,6 @@
 ---
-title: robots.txt wird nicht aktualisiert oder zeigt Standardeinstellungen an
-description: Der Artikel bietet eine Lösung für Fälle, in denen Sie "robots.txt"richtig konfiguriert haben, z. B. per [Best Practices für Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931), aber die Datei "robots.txt"wird nicht aktualisiert oder zeigt die Standardeinstellungen an.
+title: robots.txt nicht aktualisiert oder zeigt Standardeinstellungen an
+description: Der Artikel bietet eine Lösung für den Fall, dass Sie „robots.txt“ korrekt konfiguriert haben, z. B. gemäß [Best Practices für Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931), aber „robots.txt“ nicht aktualisiert wird oder die Standardeinstellungen anzeigt.
 exl-id: 629b1247-9282-49f9-ada3-a804ddbaa0f5
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# robots.txt wird nicht aktualisiert oder zeigt Standardeinstellungen an
+# robots.txt nicht aktualisiert oder zeigt Standardeinstellungen an
 
-Der Artikel bietet eine Lösung für Fälle, in denen Sie `robots.txt` richtig konfiguriert haben, z. B. gemäß den Best Practices für Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931) , die `robots.txt` jedoch nicht aktualisiert wird oder die Standardeinstellungen anzeigt.[
+Der Artikel bietet eine Lösung für den Fall, dass Sie `robots.txt` richtig konfiguriert haben, z. B. [Best Practices für Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931), die `robots.txt` jedoch nicht aktualisiert wird oder die Standardeinstellungen anzeigt.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,20 +21,20 @@ Der Artikel bietet eine Lösung für Fälle, in denen Sie `robots.txt` richtig k
 
 ## Problem
 
-Die Standardeinstellung `robots.txt` kann nicht geändert werden.
+Die `robots.txt` kann nicht geändert werden.
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
 1. Rufen Sie das Admin-Bedienfeld auf.
-1. Fügen Sie Inhalt zu **Inhalt** > Design > **Konfiguration** > **Benutzerdefinierte Anweisung der Datei`robots.txt`** hinzu, z. B. den Text &quot;hello&quot;und speichern Sie die Änderungen.
-1. Besuchen Sie die URL `robots.txt` .
+1. Fügen Sie Inhalte zu **Inhalt** > Design > **Konfiguration** > **Bearbeiten Sie benutzerdefinierte Anweisungen`robots.txt`** Datei, z. B. den Text „Hallo“ und speichern Sie die Änderungen.
+1. Rufen Sie die `robots.txt` URL auf.
 
 <u>Erwartetes Ergebnis:</u>
 `robots.txt` hat den gespeicherten Text.
 
 <u>Tatsächliches Ergebnis:</u>
 
-Die Datei &quot;`robots.txt`&quot; ändert sich nicht.
+`robots.txt` Datei ändert sich nicht.
 
 ## Ursache
 
@@ -42,8 +42,8 @@ Die Indizierung durch Suchmaschinen ist deaktiviert.
 
 ## Lösung
 
-Aktivieren Sie die Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung durch Suchmaschine](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) in unserer Entwicklerdokumentation.
+Aktivieren der Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung nach ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine)) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* [Fügen Sie in unserer Entwicklerdokumentation Sitemap und Suchmaschinen-Roboter hinzu](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap).
+* [Hinzufügen von Sitemap- und Suchmaschinenrobotern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) in unserer Entwicklerdokumentation.

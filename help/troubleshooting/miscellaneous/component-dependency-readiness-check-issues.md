@@ -1,5 +1,5 @@
 ---
-title: Probleme bei der Kompatibilitätsprüfung für Komponenten
+title: Probleme bei der Prüfung der Komponentenabhängigkeit
 description: Dieser Artikel bietet Lösungen für Konflikte mit Komponentenabhängigkeiten.
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# Probleme bei der Kompatibilitätsprüfung für Komponenten
+# Probleme bei der Prüfung der Komponentenabhängigkeit
 
 Dieser Artikel bietet Lösungen für Konflikte mit Komponentenabhängigkeiten.
 
-## Beheben von Komponentenabhängigkeitskonflikten {#resolve-component-dependency-conflicts}
+## Konflikte mit Komponentenabhängigkeiten lösen {#resolve-component-dependency-conflicts}
 
 Wir empfehlen Ihnen, die folgenden Lösungen in der angegebenen Reihenfolge auszuprobieren:
 
-1. [Konfliktabhängigkeiten](#trouble-depend-conflict)
+1. [Widersprüchliche Abhängigkeiten](#trouble-depend-conflict)
 1. [Probleme mit Dateisystemberechtigungen](#trouble-depend-permission)
 1. [Der Status der Komponentenabhängigkeitsprüfung ändert sich nie](#trouble-depend-state)
 
-### Konfliktabhängigkeiten {#trouble-depend-conflict}
+### Widersprüchliche Abhängigkeiten {#trouble-depend-conflict}
 
-Die Meldung &quot;*Wir haben in Konflikt stehende Komponentenabhängigkeiten gefunden*&quot;wird angezeigt, wenn der Composer nicht bestimmen kann, welche Komponenten installiert oder aktualisiert werden sollen. Um Probleme mit der Komponentenabhängigkeit zu lösen, sollten Sie eine technische Person sein, die genau versteht, wie Composer funktioniert.
+Die Meldung *Wir haben widersprüchliche Komponentenabhängigkeiten gefunden* wird angezeigt, wenn Composer nicht ermitteln kann, welche Komponenten installiert oder aktualisiert werden sollen. Um Probleme mit der Komponentenabhängigkeit zu lösen, sollten Sie eine technische Person sein, die gründlich versteht, wie Composer funktioniert.
 
-Im Folgenden finden Sie eine Beispielfehlermeldung:
+Im Folgenden finden Sie ein Beispiel für eine Fehlermeldung:
 
 ```bash
 We found conflicting component dependencies.
@@ -38,9 +38,9 @@ We found conflicting component dependencies.
 
 >[!NOTE]
 >
->Die angezeigte Nachricht unterscheidet sich wahrscheinlich.
+>Die angezeigte Nachricht ist wahrscheinlich anders.
 
-Weitere Informationen zu einer Lösung finden Sie unter ](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) in unserer Support-Wissensdatenbank unter [Konflikte zwischen Komponentenabhängigkeiten .
+Siehe [Widersprüchliche Komponentenabhängigkeiten für eine Lösung](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) in unserer Support-Wissensdatenbank.
 
 ## Probleme mit Dateisystemberechtigungen {#trouble-depend-permission}
 
@@ -51,10 +51,10 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Stellen Sie sicher, dass Sie Dateisystemberechtigungen festlegen, wie im Artikel [Überblick über Eigentümer und Berechtigungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) in unserer Entwicklerdokumentation beschrieben.
+Stellen Sie sicher, dass Sie die Dateisystemberechtigungen so festlegen, wie im Artikel [Übersicht über Eigentümerschaft und Berechtigungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) in unserer Entwicklerdokumentation beschrieben.
 
 ## Der Status der Komponentenabhängigkeitsprüfung ändert sich nie {#trouble-depend-state}
 
-In einigen Fällen ändert sich der Status der Prüfung der Komponentenabhängigkeit nicht, selbst wenn Sie versuchen, Probleme zu beheben. In diesem Fall können Sie Dateien mit den Namen `<magento_root>/var/.update_cronjob_status` und `<magento_root>/var/.setup_cronjob_status` löschen oder umbenennen und den Komponenten-Manager erneut ausführen.
+In einigen Fällen ändert sich der Status der Komponentenabhängigkeitsprüfung nicht, selbst wenn Sie versuchen, Probleme zu beheben. In diesem Fall können Sie Dateien mit den Namen `<magento_root>/var/.update_cronjob_status` und `<magento_root>/var/.setup_cronjob_status` löschen oder umbenennen und erneut versuchen, den Komponenten-Manager auszuführen.
 
-Das Umbenennen oder Entfernen dieser Dateien zwingt den Komponenten-Manager dazu, die Prüfungen erneut auszuführen.
+Das Umbenennen oder Entfernen dieser Dateien zwingt den Komponenten-Manager, die Prüfungen erneut auszuführen.

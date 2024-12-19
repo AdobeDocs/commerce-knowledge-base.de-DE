@@ -1,5 +1,5 @@
 ---
-title: Store-Bilder werden nach der Implementierung nicht angezeigt
+title: Bilder speichern, die nach der Bereitstellung nicht angezeigt werden
 description: Dieser Artikel bietet eine Lösung für Fälle, in denen Bilder nach der Bereitstellung nicht korrekt angezeigt werden.
 exl-id: 7e6bcebd-edff-437a-9103-2743443d2ed9
 feature: Cache, Categories, Deploy, Storefront
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Store-Bilder werden nach der Implementierung nicht angezeigt
+# Bilder speichern, die nach der Bereitstellung nicht angezeigt werden
 
 Dieser Artikel bietet eine Lösung für Fälle, in denen Bilder nach der Bereitstellung nicht korrekt angezeigt werden.
 
@@ -21,20 +21,20 @@ Dieser Artikel bietet eine Lösung für Fälle, in denen Bilder nach der Bereits
 
 ## Problem
 
-Wenn Sie ein Storefront-Design mit einer Bildgröße verwenden, werden die Bilder bei der Bereitstellung nicht auf den Katalogseiten angezeigt oder verschwinden.
+Wenn Sie ein Storefront-Design mit einer Bildgrößenanpassung verwenden, werden die Bilder bei der Bereitstellung nicht auf den Katalogseiten angezeigt oder verschwinden nicht.
 
 ## Ursache
 
-Dies kann durch das Laden der Bilder aus dem Cache geschehen.
+Dies kann durch Laden der Bilder aus dem Cache verursacht werden.
 
 ## Lösung
 
-In diesem Fall können Sie den Magento-Befehl verwenden, um den Bild-Cache neu zu generieren und die Bilder korrekt anzuzeigen.
+In diesem Fall können Sie den Befehl Magento verwenden, um den Bildcache neu zu generieren und die Bilder korrekt anzuzeigen.
 
-Dazu benötigen Sie die SSH-Informationen und die Store-URL, die über die [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) verfügbar sind.
+Dazu benötigen Sie die SSH-Informationen und die Store-URL, die über die [Cloud-Konsole“ verfügbar ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
 
-1. SSH zu Ihrem Projekt, das eine Quelle für den [Datenbank-Dump](/help/how-to/general/create-database-dump-on-cloud.md) war, wie in der Entwicklerdokumentation unter [SSH in die Umgebung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) beschrieben.
-1. Regenerieren Sie den Bild-Cache, indem Sie Folgendes ausführen:
+1. SSH zu Ihrem Projekt, das eine Quelle für den [Datenbank-Dump](/help/how-to/general/create-database-dump-on-cloud.md) war, wie unter [SSH in ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) in unserer Entwicklerdokumentation beschrieben.
+1. Generieren Sie den Bild-Cache neu, indem Sie Folgendes ausführen:
 
    ```bash
    php bin/magento catalog:images:resize

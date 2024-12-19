@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-42341: "categoryList" GraphQL-Abfrage filtert keine Ergebnisse'
-description: Der Patch MDVA-42341 behebt das Problem, dass die GraphQL-Abfrage "categoryList"keine Ergebnisse filtert, wenn eine Anfrage die Store-Kopfzeile aufweist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-42341. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+title: 'MDVA-42341: GraphQL-Abfrage „categoryList“ filtert die Ergebnisse nicht'
+description: Der Patch MDVA-42341 löst das Problem, dass die GraphQL-Abfrage „categoryList“ die Ergebnisse nicht filtert, wenn eine Anfrage die Store-Kopfzeile aufweist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-42341. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 exl-id: 34aeb30a-9491-4102-b33e-dcd857b6a1c2
 feature: GraphQL, Categories
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-42341: &quot;categoryList&quot; GraphQL-Abfrage filtert keine Ergebnisse
+# MDVA-42341: GraphQL-Abfrage „categoryList“ filtert die Ergebnisse nicht
 
-Der Patch MDVA-42341 behebt das Problem, dass die GraphQL-Abfrage &quot;categoryList&quot;keine Ergebnisse filtert, wenn eine Anfrage die Store-Kopfzeile aufweist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-42341. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+Der Patch MDVA-42341 löst das Problem, dass die GraphQL-Abfrage „categoryList“ die Ergebnisse nicht filtert, wenn eine Anfrage die Store-Kopfzeile aufweist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.8 installiert ist. Die Patch-ID lautet MDVA-42341. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Der Patch MDVA-42341 behebt das Problem, dass die GraphQL-Abfrage &quot;category
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die GraphQL-Abfrage &quot;categoryList&quot;filtert keine Ergebnisse, wenn eine Anforderung über die Kopfzeile &quot;Store&quot;verfügt.
+Die GraphQL-Abfrage „categoryList“ filtert die Ergebnisse nicht, wenn eine Anfrage die Store-Kopfzeile enthält.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie eine neue Stammkategorie und nennen Sie sie **root2**.
+1. Erstellen Sie eine neue Stammkategorie und benennen Sie sie **root2**.
 1. Erstellen Sie eine zweite Website/Store/Storeview und weisen Sie **root2** dem neuen Store zu.
 1. Erstellen Sie eine neue Kategorie unter Standardstammkategorie = Kategorie1.
-1. Rufen Sie mit einer GraphQL-Anfrage eine Kategorienliste für die zweite Website ab (verwenden Sie Header Store = neu).
+1. Rufen Sie mithilfe einer GraphQL-Anfrage eine Kategorieliste für die zweite Website ab (verwenden Sie den Header-Store = Neu).
 
 <pre>
 <code class="language-graphql">
@@ -60,24 +60,24 @@ Die GraphQL-Abfrage &quot;categoryList&quot;filtert keine Ergebnisse, wenn eine 
 
 <u>Erwartete Ergebnisse</u>:
 
-Kategorien aus der standardmäßigen Stammkategorie werden als Antwort nicht aufgeführt, da wir einen &quot;neuen&quot;Store-Header verwenden.
+Kategorien aus der standardmäßigen Stammkategorie werden nicht als Antwort aufgelistet, da wir eine „neue“ Store-Kopfzeile verwenden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Kategorien aus der standardmäßigen Stammkategorie sind in den Ergebnissen verfügbar.
+Kategorien aus der Standardstammkategorie sind in den Ergebnissen verfügbar.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

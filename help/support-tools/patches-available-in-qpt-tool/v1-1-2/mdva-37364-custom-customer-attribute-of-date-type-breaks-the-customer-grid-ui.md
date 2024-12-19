@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-37364: Benutzerdefiniertes Kundenattribut des Datumstyps bricht die Raster-Benutzeroberfläche aus'
-description: Der Patch MDVA-37364 behebt das Problem, dass das benutzerdefinierte Kundenattribut des Datumstyps die Benutzeroberfläche des Kundenrasters beschädigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37364. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.4 behoben werden soll.
+title: 'MDVA-37364: Benutzerdefiniertes Kundenattribut des Datentyps unterbricht die Rasterbenutzeroberfläche'
+description: Der Patch MDVA-37364 löst das Problem, dass das benutzerdefinierte Kundenattribut vom Datentyp die Benutzeroberfläche des Kundenrasters beschädigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37364. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
 exl-id: d25baabf-45eb-403c-9f88-9c2448cc7b49
 feature: Attributes, Cache
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-37364: Benutzerdefiniertes Kundenattribut des Datumstyps bricht die Raster-Benutzeroberfläche aus
+# MDVA-37364: Benutzerdefiniertes Kundenattribut des Datentyps unterbricht die Rasterbenutzeroberfläche
 
-Der Patch MDVA-37364 behebt das Problem, dass das benutzerdefinierte Kundenattribut des Datumstyps die Benutzeroberfläche des Kundenrasters beschädigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37364. Bitte beachten Sie, dass das Problem in Adobe Commerce-Version 2.4.4 behoben werden soll.
+Der Patch MDVA-37364 löst das Problem, dass das benutzerdefinierte Kundenattribut vom Datentyp die Benutzeroberfläche des Kundenrasters beschädigt. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.2 installiert ist. Die Patch-ID lautet MDVA-37364. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce Version 2.4.4 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,46 +27,46 @@ Der Patch MDVA-37364 behebt das Problem, dass das benutzerdefinierte Kundenattri
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Benutzerdefiniertes Kundenattribut des Datumstyps beschädigt die Benutzeroberfläche des Kundenrasters.
+Beim benutzerdefinierten Kundenattribut des Datentyps ist die Benutzeroberfläche des Kundenrasters nicht mehr verfügbar.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein benutzerdefiniertes Attribut mit Datentyp:
-   * Gehen Sie zu **Stores** > **Attribute** > **Attribut hinzufügen**.
-   * Legen Sie den Eingabetyp auf Datum fest.
-   * Setzen Sie die Option Zu Spaltenoptionen hinzufügen auf Ja.
+1. Benutzerdefiniertes Attribut mit Datentyp erstellen:
+   * Navigieren Sie **Stores** > **Attribute** > **Attribut hinzufügen**.
+   * Legen Sie den Eingabetyp auf „Datum“ fest.
+   * Legen Sie die Option Zu Spaltenoptionen hinzufügen auf Ja fest.
    * Speichern Sie das Attribut.
-1. Navigieren Sie zu **Admin** > **Kunden** > **Alle Kunden**.
-   * Fügen Sie das neu hinzugefügte benutzerdefinierte Attribut über die Spaltenoption zum Raster hinzu.
-1. Erstellen/bearbeiten Sie einen Kunden und legen Sie den Wert des erstellten benutzerdefinierten Datumsattributfelds fest.
-1. Speichern, Neuindizieren und leeren Sie den Cache.
-1. Wechseln Sie zu **Kunden** > **Alle Kunden**.
+1. Navigieren Sie **Admin** > **Kunden** > **Alle Kunden**.
+   * Fügen Sie das neu hinzugefügte benutzerdefinierte Attribut dem Raster aus der Option Spalten hinzu.
+1. Erstellen/Bearbeiten eines Kunden und Festlegen des Werts des erstellten benutzerdefinierten Datumsattributfelds.
+1. Speichern, neu indizieren und den Cache löschen.
+1. Navigieren Sie **Kunden** > **Alle Kunden**.
    * Überprüfen Sie das Kundenraster.
 
 <u>Erwartete Ergebnisse</u>:
 
-Das Admin-Kundenraster zeigt alle Daten einschließlich des neuen benutzerdefinierten Datumsattributs an, ohne dass die Kundenraster-Benutzeroberfläche beschädigt wird.
+Das Admin-Kundenraster zeigt alle Daten an, einschließlich des neuen benutzerdefinierten Datumsattributs, ohne dass die Benutzeroberfläche des Kundenrasters beschädigt wird.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Administrator-Benutzeroberfläche für das Kundenraster ist fehlerhaft.
+Die Admin-Benutzeroberfläche für Kundenraster ist fehlerhaft.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitätspatches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
-* [Überprüfen Sie mithilfe des Qualitätssicherungswerkzeugs](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md), ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Überprüfen Sie mit dem Quality Patches Tool, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) verfügbare Patches.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

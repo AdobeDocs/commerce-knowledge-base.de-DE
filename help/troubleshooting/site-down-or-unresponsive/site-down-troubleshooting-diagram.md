@@ -1,6 +1,6 @@
 ---
-title: Abbildung der Fehlerbehebung auf der Site
-description: Dieses Adobe Commerce-Website-Down-Fehlerbehebungsdiagramm kann verwendet werden, um Ursachen einer Site-Site zu identifizieren und zu beheben.
+title: Fehlerbehebungsdiagramm für Site-Downs
+description: Dieses Fehlerbehebungsdiagramm für Adobe Commerce Sites Down kann verwendet werden, um die Ursachen für den Ausfall einer Site zu identifizieren und zu beheben.
 exl-id: 2e9ab006-bfae-4412-aedd-3d5729ea2824
 feature: Support
 role: Developer
@@ -11,8 +11,8 @@ ht-degree: 0%
 
 ---
 
-# Abbildung der Fehlerbehebung auf der Site
+# Fehlerbehebungsdiagramm für Site-Downs
 
-Dieses Adobe Commerce-Website-Down-Fehlerbehebungsdiagramm kann verwendet werden, um Ursachen einer Site-Site zu identifizieren und zu beheben.
+Dieses Fehlerbehebungsdiagramm für Adobe Commerce Sites Down kann verwendet werden, um die Ursachen für den Ausfall einer Site zu identifizieren und zu beheben.
 
-![Abbildung des Fehlerbehebungsdiagramms auf der Site nach unten](assets/updated_site_down_1.jpeg)
+![Abbildung: Fehlerbehebung bei Site-Downs](assets/updated_site_down_1.jpeg)

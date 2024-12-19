@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-51471: Admin-Benutzer können geplante Updates für gebündelte Produkte nicht speichern'
-description: Wenden Sie den Patch ACSD-51471 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Admin-Benutzer ein geplantes Update für ein gebündeltes Produkt, das ein einfaches Produkt mit geplantem Update verwendet, nicht speichern kann.
+title: 'ACSD-51471: Admin-Benutzer kann geplante Aktualisierungen für gebündeltes Produkt nicht speichern'
+description: Wenden Sie den Patch ACSD-51471 an, um das Adobe Commerce-Problem zu beheben, bei dem ein Administrator bzw. eine Administratorin keine geplante Aktualisierung für ein gebündeltes Produkt speichern kann, das ein einfaches Produkt mit einer geplanten Aktualisierung verwendet.
 exl-id: 7d80aef0-8505-4491-bde3-5b1a30b840f6
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51471: Admin-Benutzer können geplante Updates für gebündelte Produkte nicht speichern
+# ACSD-51471: Admin-Benutzer kann geplante Aktualisierungen für gebündeltes Produkt nicht speichern
 
-Der Patch ACSD-51471 behebt das Problem, dass ein Administrator ein geplantes Update für ein gebündeltes Produkt, das ein einfaches Produkt mit geplantem Update verwendet, nicht speichern kann. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.33 installiert ist. Die Patch-ID ist ACSD-51471. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-51471 wird das Problem behoben, dass ein Admin-Benutzer ein geplantes Update für ein gebündeltes Produkt, das ein einfaches Produkt mit einem geplanten Update verwendet, nicht speichern kann. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.33 installiert ist. Die Patch-ID ist ACSD-51471. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,16 +25,16 @@ Der Patch ACSD-51471 behebt das Problem, dass ein Administrator ein geplantes Up
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Admin-Benutzer können keine geplante Aktualisierung für ein gebündeltes Produkt speichern, das ein einfaches Produkt verwendet, für das selbst eine geplante Aktualisierung geplant ist.
+Admin-Benutzer können keine geplante Aktualisierung für ein gebündeltes Produkt speichern, das ein einfaches Produkt verwendet, das selbst eine geplante Aktualisierung hat.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie ein einfaches Produkt.
-1. Fügen Sie eine geplante Aktualisierung für das einfache Produkt hinzu, für das nur das *Startdatum* und das keine *Enddatum* verwendet wurde.
+1. Fügen Sie ein geplantes Update für das einfache Produkt mit nur *Startdatum* und ohne *Enddatum* hinzu.
 1. Nachdem die Aktualisierung angewendet wurde, ändern Sie die SKU des Produkts.
 1. Erstellen Sie ein gebündeltes Produkt und fügen Sie das in Schritt 1 erstellte einfache Produkt als untergeordnetes Produkt hinzu.
 1. Erstellen Sie ein geplantes Update für das gebündelte Produkt, um das gebündelte Produkt zu aktivieren. Geben Sie sowohl *Startdatum* als auch *Enddatum* für die geplante Aktualisierung an.
@@ -46,20 +46,20 @@ Die geplante Aktualisierung wurde erfolgreich gespeichert.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der folgende Fehler tritt beim Speichern der geplanten Aktualisierung auf: *Das angeforderte Produkt existiert nicht. Überprüfen Sie das Produkt und versuchen Sie es erneut.*
+Beim Speichern der geplanten Aktualisierung tritt der folgende Fehler auf: *Das angeforderte Produkt existiert nicht. Überprüfen Sie das Produkt und versuchen Sie es erneut.*
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

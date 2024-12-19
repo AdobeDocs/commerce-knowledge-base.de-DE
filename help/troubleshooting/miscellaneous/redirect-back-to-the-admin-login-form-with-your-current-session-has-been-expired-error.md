@@ -1,6 +1,6 @@
 ---
-title: Gehen Sie zurück zum Anmeldeformular [!UICONTROL Commerce Admin] mit dem Fehler "Ihre aktuelle Sitzung ist abgelaufen".
-description: 'In diesem Artikel finden Sie die möglichen Lösungen für das Anmeldeproblem [!UICONTROL Commerce Admin], bei dem Sie mit der folgenden Fehlermeldung zum Anmeldeformular zurückgeleitet werden: *"Ihre aktuelle Sitzung ist abgelaufen"*. Zu den Lösungen gehören die Überprüfung auf Probleme bei der Serverzeiteinstellung und die Änderung der Einstellungen für die Sitzungsspeicherung.'
+title: Leiten Sie mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ zurück zum [!UICONTROL Commerce Admin] Anmeldeformular
+description: 'In diesem Artikel finden Sie die möglichen Lösungen für das [!UICONTROL Commerce Admin] Anmeldeproblem, bei dem Sie zurück zum Anmeldeformular mit der folgenden Fehlermeldung geleitet werden: *„Ihre aktuelle Sitzung ist abgelaufen“*. Zu den Lösungen gehören das Überprüfen auf Probleme bei der Server-Zeiteinstellung und das Ändern der Sitzungsspeichereinstellungen.'
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
@@ -11,49 +11,49 @@ ht-degree: 0%
 
 ---
 
-# Gehen Sie zurück zum Anmeldeformular [!UICONTROL Commerce Admin] mit dem Fehler &quot;Ihre aktuelle Sitzung ist abgelaufen&quot;.
+# Leiten Sie mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ zurück zum [!UICONTROL Commerce Admin] Anmeldeformular
 
-In diesem Artikel finden Sie die möglichen Lösungen für das Anmeldeproblem [!UICONTROL Commerce Admin], bei dem Sie zum Anmeldeformular mit der folgenden Fehlermeldung zurückgeleitet werden: *&quot;Ihre aktuelle Sitzung ist abgelaufen&quot;*. Zu den Lösungen gehören die Überprüfung auf Probleme bei der Serverzeiteinstellung und die Änderung der Einstellungen für die Sitzungsspeicherung.
+In diesem Artikel finden Sie die möglichen Lösungen für das [!UICONTROL Commerce Admin] Anmeldeproblem, bei dem Sie mit der folgenden Fehlermeldung zurück zum Anmeldeformular geleitet werden: *„Ihre aktuelle Sitzung ist abgelaufen“*. Zu den Lösungen gehören das Überprüfen auf Probleme bei der Server-Zeiteinstellung und das Ändern der Sitzungsspeichereinstellungen.
 
-## Betroffene Versionen:
+## Betroffene Editionen und Versionen:
 
 Alle Adobe Commerce-Versionen und -Editionen
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Gehen Sie zur Seite &quot;**[!UICONTROL Commerce Admin]**&quot;.
+1. Navigieren Sie zur Seite **[!UICONTROL Commerce Admin]** .
 1. Geben Sie Ihre Anmeldedaten ein und klicken Sie auf **Anmelden**.
 
 <u>Erwartetes Ergebnis</u>:
 
-Sie werden bei [!UICONTROL Commerce Admin] angemeldet.
+Sie werden beim [!UICONTROL Commerce Admin] angemeldet.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Sie werden zum Anmeldeformular zurückgeleitet, wobei die folgende Fehlermeldung angezeigt wird: *&quot;Ihre aktuelle Sitzung ist abgelaufen&quot;*.
+Sie werden zurück zum Anmeldeformular weitergeleitet, wobei die folgende Fehlermeldung angezeigt wird: *„Ihre aktuelle Sitzung ist abgelaufen“*.
 
 ## Ursache
 
-Es kann zwei mögliche Gründe für das Problem geben:
+Es könnte zwei mögliche Gründe für das Problem geben:
 
-* Problem mit Serverzeiteinstellungen
-* Problem mit Sitzungsspeicherung
+* Ein Problem mit den Server-Zeiteinstellungen
+* Ein Problem mit dem Sitzungsspeicher
 
-Im folgenden Abschnitt finden Sie Lösungen.
+Suchen Sie im folgenden Abschnitt nach Lösungen.
 
 ## Lösung
 
-### Probleme mit den Serverzeiteinstellungen prüfen
+### Überprüfen auf Probleme mit den Server-Zeiteinstellungen
 
-Überprüfen Sie den Sitzungsdatensatz, der in der Tabelle `admin_user_session` erstellt wurde. Wenn die Werte von `created_at` und/oder `updated_at` falsch sind, kann dies durch das Problem mit Serverzeiteinstellungen verursacht werden. Bitten Sie Ihren Serversystemadministrator, dies zu überprüfen. Beachten Sie, dass die Uhrzeit in DB standardmäßig auf UTC festgelegt ist.
+Überprüfen Sie den in der `admin_user_session` erstellten Sitzungsdatensatz. Wenn die Werte von `created_at` und/oder `updated_at` falsch sind, kann dies durch ein Problem mit den Server-Zeiteinstellungen verursacht werden. Bitten Sie Ihren Server-Systemadministrator, dies zu überprüfen. Beachten Sie, dass die Zeit in DB standardmäßig auf UTC eingestellt ist.
 
-### Sitzungsspeicher ändern
+### Ändern des Sitzungsspeichers
 
-Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem Artikel [Wie Sie Ihre Sitzungsdateien finden](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) in unserer Entwicklerdokumentation, um herauszufinden, wo Ihre Sitzung gespeichert ist, und ändern Sie sie durch Bearbeiten der Datei `app/etc/env.php`.
+Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem Artikel [So finden Sie Ihre Sitzungsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) in unserer Entwicklerdokumentation, um herauszufinden, wo Ihre Sitzung gespeichert ist, und ändern Sie sie, indem Sie die `app/etc/env.php`-Datei bearbeiten.
 
-Um beispielsweise mit dem Speichern der Sitzung im Dateisystem zu beginnen, ändern Sie den Abschnitt `'session'` wie folgt:
+Um beispielsweise mit dem Speichern einer Sitzung im Dateisystem zu beginnen, ändern Sie den Abschnitt `'session'` wie folgt:
 
 ```php
 ....
@@ -64,14 +64,14 @@ Um beispielsweise mit dem Speichern der Sitzung im Dateisystem zu beginnen, änd
 ....
 ```
 
-Führen Sie den Befehl `bin/magento app:config:import` aus, um Konfigurationsdaten zu importieren.
+Führen Sie den `bin/magento app:config:import` Befehl aus, um Konfigurationsdaten zu importieren.
 
 
 ## Verwandtes Lesen
 
-* [Importieren von Daten aus Konfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) in unserer Entwicklerdokumentation
-* [Konfigurieren Sie [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) in unserer Entwicklerdokumentation
-* [Kehren Sie zurück zum Anmeldeformular [!UICONTROL Commerce Admin] mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) in unserer Support-Wissensdatenbank.
-* [Kehren Sie ohne Fehler zum Anmeldeformular zurück, wenn Sie versuchen, sich bei [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) in unserer Support-Wissensdatenbank anzumelden
-* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+* [Daten aus Konfigurationsdateien importieren](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) in unserer Entwicklerdokumentation
+* [Konfigurieren [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) in unserer Entwicklerdokumentation
+* [Umleiten zurück zum [!UICONTROL Commerce Admin]-Anmeldeformular mit dem Fehler „Ihr Konto ist vorübergehend deaktiviert“ ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) unserer Support-Wissensdatenbank
+* [Führen Sie ohne Fehler zurück zum Anmeldeformular, wenn Sie versuchen, sich bei der [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) in unserer Support-Wissensdatenbank anzumelden
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
 

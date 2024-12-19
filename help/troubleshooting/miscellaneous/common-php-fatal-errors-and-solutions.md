@@ -1,6 +1,6 @@
 ---
-title: Häufige Fehler und Lösungen bei PHP
-description: In diesem Artikel werden einige häufige PHP Fatal Error-Schnellbeispiele aufgelistet, die Sie beim Durchsuchen Ihrer Adobe Commerce-Protokolle und der Lösungen für Probleme finden können, auf die sie hinweisen.
+title: Häufige schwerwiegende PHP Fehler und Lösungen
+description: Dieser Artikel listet einige häufige Beispiele für schwerwiegende PHP-Fehler auf, die Sie beim Durchsuchen Ihrer Adobe Commerce-Protokolle finden konnten, sowie die Lösungen für Probleme, auf die sie hinweisen.
 exl-id: 3e42d38f-97bc-4d38-8e36-23b1453f81d9
 feature: Support
 role: Developer
@@ -11,43 +11,43 @@ ht-degree: 0%
 
 ---
 
-# Häufige Fehler und Lösungen bei PHP
+# Häufige schwerwiegende PHP Fehler und Lösungen
 
-In diesem Artikel werden einige häufige PHP Fatal Error-Schnellbeispiele aufgelistet, die Sie beim Durchsuchen Ihrer Adobe Commerce-Protokolle und der Lösungen für Probleme finden können, auf die sie hinweisen.
+Dieser Artikel listet einige häufige Beispiele für schwerwiegende PHP-Fehler auf, die Sie beim Durchsuchen Ihrer Adobe Commerce-Protokolle finden konnten, sowie die Lösungen für Probleme, auf die sie hinweisen.
 
 ## Beispiel
 
-*&#39;PHP Fatal error: Maximale Ausführungszeit von 60 Sekunden überschritten in ...&#39;*
+Schwerwiegender Fehler bei *&#39;PHP: Maximale Ausführungszeit von 60 Sekunden überschritten in….&#39;*
 
 ## Lösung
 
-Sie können die maximale Ausführungsdauer aktualisieren, indem Sie in Ihrer `php.ini` -Datei einen benutzerdefinierten `max_execution_time` -Wert festlegen und die Bereitstellung erneut vornehmen.
+Sie können die maximale Ausführungszeit aktualisieren, indem Sie einen benutzerdefinierten `max_execution_time` in Ihrer `php.ini` festlegen und erneut bereitstellen.
 
 Beispiel:
 
 `max_execution_time = 120`
 
-Lesen Sie den Artikel [php.ini-Einstellungen anpassen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) .
+Lesen Sie den Artikel [Anpassen der php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)Einstellungen.
 
 ## Beispiel
 
-*&#39;PHP Fatal error: Zulässige Speichergröße von 792723456 Byte erschöpft&#39;* (Dies ist nur eine Beispiel-Byte-Größe.)
+*&#39;Schwerwiegender PHP-Fehler: Zulässige Speichergröße von 792723456 Bytes erschöpft&#39;* (Das ist nur eine Beispiel-Byte-Größe.)
 
 ## Lösung
 
-Passen Sie Ihre `php.ini` -Einstellungen an. Lesen Sie diesen Artikel [php.ini-Einstellungen anpassen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) .
+`php.ini` anpassen. Lesen Sie diesen [Anpassen der php.ini-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Beispiel
 
-*&#39;PHP-Warnung: Unbekannt: Nicht bekannt: Fehler beim Öffnen des Streams: Keine solche Datei oder Verzeichnis&#39;*
+*&#39;PHP Warning: Unknown: failed to open stream: No such file or directory&#39;*
 
 ## Lösung
 
-Entfernen Sie nicht die Windows-Stilendungen in der Datei &quot;`php.ini`&quot;. Unter Windows werden Zeilenende mit einer Kombination aus einem Wagenrücklauf (ASCII 0x0d oder \r) und einem Zeilenumbruch (\n) beendet, der auch als CR/LF bezeichnet wird.
+Stellen Sie sicher, dass Sie die Windows-ähnlichen Endungen in der `php.ini`-Datei nicht entfernen. Unter Windows werden Zeilenenden durch eine Kombination aus Wagenrücklauf (ASCII 0x0d oder \r) und Zeilenumbruch (\n), auch CR/LF genannt, beendet.
 
 ## Beispiel
 
-*&#39;PHP Schwerwiegender Fehler: Uncaught PDOException: SQLSTATE\[HY000\] \[1040\] Zu viele Verbindungen in&#39;*
+*&#39;Schwerwiegender PHP-Fehler: Nicht abgefangener PDOException: SQLSTATE\[HY000\] \[1040\] Zu viele Verbindungen in&#39;*
 
 ## Lösung
 
@@ -55,19 +55,19 @@ Der MySQL-Umgebung ist der Speicherplatz ausgegangen. Stellen Sie mehr Speicherp
 
 ## Beispiel
 
-*&#39;PHP Fatal error: Uncaught TypeError: Return value of Magento&#39;*
+*&#39;PHP Schwerwiegender Fehler: Nicht abgefangener TypeError: Rückgabewert von Magento&#39;*
 
 ## Lösung
 
-Überprüfen Sie den Ordner &quot;`<root>/tmp`&quot;, da er wahrscheinlich voll ist. Wenn es voll ist, geben Sie mehr Speicherplatz im Verzeichnis an. Dazu kann es gehören, einfach Dateien in ein anderes Verzeichnis zu verschieben oder sie zu löschen.
+Überprüfen Sie das `<root>/tmp` Verzeichnis, da es wahrscheinlich voll ist. Wenn er voll ist, geben Sie mehr Speicherplatz im Verzeichnis an. Dies kann bedeuten, dass Dateien einfach in ein anderes Verzeichnis verschoben oder gelöscht werden.
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
-* [Fehler bei PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [PHP-Einstellungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
 * [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Überprüfung der Umkehrung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Redis konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [PHP-Speicherbegrenzungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Lösungen für häufige Probleme - Speicherbeschränkung](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)
+* [Redis-Überprüfung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Konfigurieren von Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [Fehler bei der PHP-Speicherbegrenzung](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Lösungen für häufige Probleme - Speicherbegrenzung](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)

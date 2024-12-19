@@ -1,6 +1,6 @@
 ---
-title: Benutzer, die kein Produkt zum Warenkorb hinzufügen können, wenn in Länder zulassen nichts ausgewählt ist
-description: Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.4 mit PHP 8.1-Problem, bei dem Benutzer keine Produkte zum Warenkorb hinzufügen können, wenn die Option Länder zulassen deaktiviert ist.
+title: Benutzende können kein Produkt in den Warenkorb legen, wenn in „Länder zulassen“ nichts ausgewählt ist.
+description: Dieser Artikel enthält einen Patch für das bekannte Problem Adobe Commerce 2.4.4 mit PHP 8.1, bei dem Benutzende keine Produkte zum Warenkorb hinzufügen können, wenn die Option Länder zulassen deaktiviert ist.
 exl-id: d05d1956-de23-496c-9234-c461a3cfdf36
 feature: Orders, Products, Shopping Cart
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Benutzer, die kein Produkt zum Warenkorb hinzufügen können, wenn in Länder zulassen nichts ausgewählt ist
+# Benutzende können kein Produkt in den Warenkorb legen, wenn in „Länder zulassen“ nichts ausgewählt ist.
 
-Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.4 mit PHP 8.1-Problem, bei dem Benutzer keine Produkte zum Warenkorb hinzufügen können, wenn die Option Länder zulassen deaktiviert ist.
+Dieser Artikel enthält einen Patch für das bekannte Problem Adobe Commerce 2.4.4 mit PHP 8.1, bei dem Benutzende keine Produkte zum Warenkorb hinzufügen können, wenn die Option Länder zulassen deaktiviert ist.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,15 +21,15 @@ Adobe Commerce 2.4.4 mit PHP 8.1
 
 ## Problem
 
-Benutzer können keine Produkte zum Warenkorb hinzufügen, wenn die Option Länder zulassen deaktiviert ist.
+Benutzende können keine Produkte in den Warenkorb legen, wenn die Option „Länder zulassen“ deaktiviert ist.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Melden Sie sich bei Commerce Admin an.
-1. Wechseln Sie zu **Store** > **Konfiguration** > **Allgemein** > **Länderoptionen** .
-1. Heben Sie die Auswahl aller Optionen im Feld **Länder zulassen** auf.
-1. Klicken Sie auf **Konfiguration speichern** , um die Konfiguration zu speichern.
-1. Gehen Sie zur Storefront und versuchen Sie, dem Warenkorb ein Produkt hinzuzufügen.
+1. Melden Sie sich beim Commerce Admin an.
+1. Wechseln Sie **Store** > **Configuration** > **General** > **country options**
+1. Deaktivieren Sie alle Optionen im Feld **Länder zulassen**.
+1. Klicken Sie **Konfiguration speichern** um die Konfiguration zu speichern.
+1. Gehen Sie zur Storefront und versuchen Sie, ein Produkt zum Warenkorb hinzuzufügen.
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -37,7 +37,7 @@ Sie können ein Produkt zum Warenkorb hinzufügen.
 
 <u>Tatsächliches Ergebnis:</u>
 
-Sie können dem Warenkorb kein Produkt hinzufügen. Sie erhalten den folgenden Konsolenfehler:
+Sie können kein Produkt zum Warenkorb hinzufügen. Es wird der folgende Konsolenfehler angezeigt:
 
 ```bash
 Failed to load resource: the server responded with a status of 400 (Bad Request)
@@ -51,18 +51,18 @@ customer-data.js:87 Uncaught Error: [object Object]
 
 ## Ursache
 
-Die Adobe Commerce-Konfiguration ruft `null` ab, wenn in einer Multiselect-Konfiguration keine Elemente ausgewählt sind. Diese Konfiguration, wenn sie in PHP-Versionen vor 8.1 erfolgreich weiterverarbeitet wurde. In PHP 8.1 funktioniert es jedoch nicht richtig, da die Fehler durch die &quot;[Deprecate&quot;-Übergabe von null an nicht nullbare Argumente der internen Funktionen in PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg) verursacht werden.
+Die Adobe Commerce-Konfiguration ruft `null` ab, wenn in einer Mehrfachauswahl-Konfiguration keine ausgewählten Elemente vorhanden sind. Diese Konfiguration wird weiterverarbeitet, wenn sie in PHP-Versionen vor 8.1 erfolgreich weiterverarbeitet wurde. In PHP 8.1 funktioniert es jedoch aufgrund der Fehler, die durch &quot;[Deprecate übergibt null an nicht-löschbare Argumente interner Funktionen in PHP 8.1“ verursacht ](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg), nicht richtig.
 
 ## Lösungen
 
-Um das Problem zu beheben, wenden Sie den folgenden Patch an:
+Um das Problem zu beheben, führen Sie den folgenden Patch durch:
 
 [AC-2655_2.4.4.patch.zip](assets/AC-2655_2.4.4.patch.zip)
 
-## Anwenden des Pflasters
+## Anbringen des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
+Anweisungen [ Sie in unserer Support](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)Wissensdatenbank unter „Anwenden eines von Adobe Commerce bereitgestellten Composer-Patches“.
 
 ## Nützliche Links
 
-[Wenden Sie benutzerdefinierte Patches auf Adobe Commerce in der Cloud-Infrastruktur an](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+[Wenden Sie benutzerdefinierte Patches auf Adobe Commerce in der Cloud-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) an“ in unserer Entwicklerdokumentation.

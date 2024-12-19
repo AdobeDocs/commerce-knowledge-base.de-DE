@@ -1,6 +1,6 @@
 ---
-title: 'Adobe Commerce 2.3.6: Auf Adressspeicherung angezeigter endloser Spinner'
-description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.3.6 beschrieben, bei dem der Wartewirt unbegrenzt angezeigt wird, wenn eine Adresse in Mein Konto auf der Storefront gespeichert wird.
+title: 'Adobe Commerce 2.3.6: Endlosspinner wird beim Speichern der Adresse angezeigt'
+description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.3.6-Problem beschrieben, bei dem beim Speichern einer Adresse im Bereich Mein Konto in der Storefront auf unbestimmte Zeit der Spinner angezeigt wird.
 exl-id: 63841114-167e-4915-b6ed-ee0ef4eae36e
 feature: Shipping/Delivery, Orders, Checkout
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.3.6: Auf Adressspeicherung angezeigter endloser Spinner
+# Adobe Commerce 2.3.6: Endlosspinner wird beim Speichern der Adresse angezeigt
 
-In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.3.6 beschrieben, bei dem der Wartewirt unbegrenzt angezeigt wird, wenn eine Adresse in Mein Konto auf der Storefront gespeichert wird.
+In diesem Artikel wird ein bekanntes Adobe Commerce 2.3.6-Problem beschrieben, bei dem beim Speichern einer Adresse im Bereich Mein Konto in der Storefront auf unbestimmte Zeit der Spinner angezeigt wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,9 +21,9 @@ In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.3.6 beschriebe
 
 ## Problem
 
-Beim Speichern einer Adresse im Abschnitt Mein Konto auf der Storefront wird manchmal der Wartewirt aufgrund eines Fehlers in Vertex Core JS unbegrenzt angezeigt.
+Beim Speichern einer Adresse im Abschnitt Mein Konto auf der Storefront wird manchmal der Spinner für die Wartezeit aufgrund eines Fehlers in Vertex Core JS auf unbestimmte Zeit angezeigt.
 
-## Workaround
+## Abhilfe
 
 Problemumgehung: Verwenden Sie einen alternativen Browser zu Firefox.
 
@@ -31,5 +31,5 @@ Das Problem wurde in Adobe Commerce 2.3.1 behoben.
 
 ## Verwandtes Lesen
 
-* [Verschiedene Adressen, die bei der Aufhebung der Auswahl von &quot;Meine Abrechnungs- und Lieferadresse sind identisch&quot;nicht zulässig sind, werden mit VertexAddress Cleansing](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) in unserer Support-Wissensdatenbank verwendet.
-* [Adobe Commerce 2.4.1 Vertex Address validation message post address update](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) in unserer Support-Wissensdatenbank.
+* [Unterschiedliche Adressen sind nicht zulässig, wenn Sie in unserer Support-Wissensdatenbank die Option „Meine Abrechnungs- und Versandadresse sind identisch“ ](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) VertexAddress Cleansing deaktivieren.
+* [Adobe Commerce 2.4.1 Vertex-Adressvalidierungsmeldung nach ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) Aktualisierung der Adresse in unserer Support-Wissensdatenbank.

@@ -1,6 +1,6 @@
 ---
-title: 'Bekanntes Problem mit Adobe Commerce 2.4.0: Klarna On-Site Messaging - leere Seiten'
-description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.0-Problem mit der Zahlungsmethode Klarna beschrieben, bei dem die Aktivierung von Klarna On-site-Messaging ohne Angabe eines Designthemas dazu führt, dass Produktseiten auf der Storefront nicht korrekt angezeigt werden (Produktseiten erscheinen leer).
+title: 'Bekanntes Problem in Adobe Commerce 2.4.0: Klarna Seiten zum Messaging vor Ort leer'
+description: Dieser Artikel beschreibt ein bekanntes Adobe Commerce 2.4.0 Problem mit der Bezahlmethode Klarna, bei dem die Aktivierung von Klarna-Onsite-Messaging ohne Angabe eines Design-Designs dazu führt, dass Produktseiten in der Storefront nicht korrekt angezeigt werden (Produktseiten erscheinen leer).
 exl-id: f0f9edfc-eaad-4947-9200-41e217bfbe84
 feature: Orders, Payments
 role: Developer
@@ -11,28 +11,28 @@ ht-degree: 0%
 
 ---
 
-# Bekanntes Problem mit Adobe Commerce 2.4.0: Klarna On-Site Messaging - leere Seiten
+# Bekanntes Problem in Adobe Commerce 2.4.0: Klarna Seiten zum Messaging vor Ort leer
 
-In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.0-Problem mit der Zahlungsmethode Klarna beschrieben, bei dem die Aktivierung von Klarna On-site-Messaging ohne Angabe eines Designthemas dazu führt, dass Produktseiten auf der Storefront nicht korrekt angezeigt werden (Produktseiten erscheinen leer).
+Dieser Artikel beschreibt ein bekanntes Adobe Commerce 2.4.0 Problem mit der Bezahlmethode Klarna, bei dem die Aktivierung von Klarna-Onsite-Messaging ohne Angabe eines Design-Designs dazu führt, dass Produktseiten in der Storefront nicht korrekt angezeigt werden (Produktseiten erscheinen leer).
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce vor Ort 2.4.0
+* Adobe Commerce On-Premises 2.4.0
 * Adobe Commerce auf Cloud-Infrastruktur 2.4.0
 
-<u>Voraussetzungen:</u> Die Zahlungsmethode Klarna ist aktiviert.
+<u>Voraussetzungen: </u> Zahlungsmethode Klarna ist aktiviert.
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
-1. Navigieren Sie im Commerce-Admin zu &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**Verkauf**&quot;> &quot;**Zahlungsmethoden**&quot;> &quot;**Klarna**&quot;> &quot;**Klarna On-Site Messaging**&quot;.
-1. Setzen Sie **Enable** auf *Yes*.
-1. Lassen Sie das Feld **Design theme** leer.
-1. Speichern Sie die Konfiguration durch Klicken auf **Konfiguration speichern**.
-1. Gehen Sie zur Storefront und navigieren Sie zu einer beliebigen Produktseite.
+1. Wechseln Sie in Commerce Admin zu **Stores** > **Configuration** > **Sales** > **Zahlungsmethoden** > **Klarna** > **Klarna On-Site Messaging**.
+1. Setzen Sie **Aktivieren** auf *Ja*.
+1. Lassen Sie das Feld **Design** leer.
+1. Speichern Sie die Konfiguration, indem **Konfiguration speichern** klicken.
+1. Gehen Sie zu Storefront und navigieren Sie zu einer beliebigen Produktseite.
 
 <u>Erwartetes Ergebnis:</u>
 
-Die Seite wurde erfolgreich geladen, wobei das Standarddesign-Design für Klarna-On-site-Nachrichten angewendet wurde.
+Die Seite wird mit dem für Klarna-Messaging vor Ort angewendeten Standard-Design erfolgreich geladen.
 
 <u>Tatsächliches Ergebnis:</u>
 
@@ -40,4 +40,4 @@ Eine leere Seite wird angezeigt.
 
 ## Lösung
 
-Wenn Sie die On-site-Benachrichtigung von Klarna aktivieren, stellen Sie sicher, dass das Feld **Design theme** nicht leer ist.
+Wenn Sie das Klarna-Messaging vor Ort aktivieren, stellen Sie immer sicher, dass das Feld **Design** nicht leer ist.

@@ -1,6 +1,6 @@
 ---
-title: Die Installation hält bei etwa 70 % an
-description: Dieser Artikel enthält eine Fehlerbehebung für , wenn die Installation bei etwa 70 % beendet wird.
+title: Installation stoppt bei ca. 70%
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass die Installation bei etwa 70 % beendet wird.
 exl-id: 04aa3572-3c42-4565-9f7f-b4d90df96df2
 feature: Install, Upgrade
 role: Developer
@@ -11,42 +11,42 @@ ht-degree: 0%
 
 ---
 
-# Die Installation hält bei etwa 70 % an
+# Installation stoppt bei ca. 70%
 
-Dieser Artikel enthält eine Fehlerbehebung für , wenn die Installation bei etwa 70 % beendet wird.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass die Installation bei etwa 70 % beendet wird.
 
 ## Problem
 
-Während der Installation mit dem Einrichtungs-Assistenten wird der Prozess bei etwa 70 % beendet (mit oder ohne Beispieldaten). Auf dem Bildschirm werden keine Fehler angezeigt.
+Während der Installation mithilfe des Setup-Assistenten stoppt der Vorgang bei etwa 70 % (mit oder ohne Beispieldaten). Auf dem Bildschirm werden keine Fehler angezeigt.
 
 ## Ursache
 
 Häufige Ursachen für dieses Problem sind:
 
 * Die PHP-Einstellung für [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
-* Timeout-Werte für nginx und Varnish
+* Zeitüberschreitungswerte für nginx und varnish
 
 ## Lösung:
 
 Legen Sie alle folgenden Einstellungen wie gewünscht fest.
 
-### Alle Webserver und Server verschwinden {#all-web-servers-and-varnish}
+### Alle Webserver und Lackierung {#all-web-servers-and-varnish}
 
-1. Suchen Sie Ihre `php.ini` mithilfe einer [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software) -Datei.
-1. Als Benutzer mit `root` -Berechtigungen öffnen Sie `php.ini` in einem Texteditor.
-1. Suchen Sie die Einstellung &quot;`max_execution_time`&quot;.
+1. Suchen Sie Ihr `php.ini` mithilfe einer [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. Wenn Sie ein Benutzer mit `root` Berechtigungen sind, öffnen Sie `php.ini` in einem Texteditor.
+1. Suchen Sie die `max_execution_time`.
 1. Ändern Sie den Wert in `18000` .
 1. Speichern Sie Ihre Änderungen in `php.ini` und beenden Sie den Texteditor.
-1. Starten Sie Apache neu:
+1. Apache neu starten:
 
    * CentOS: `service httpd restart`
    * Ubuntu: `service apache2 restart`
 
-   Wenn Sie Nginx oder Varnish verwenden, fahren Sie mit den folgenden Abschnitten fort.
+   Wenn Sie nginx oder Lack verwenden, fahren Sie mit den folgenden Abschnitten fort.
 
-### nur nginx {#nginx-only}
+### Nur nginx {#nginx-only}
 
-Wenn Sie nginx verwenden, verwenden Sie unseren eingeschlossenen `nginx.conf.sample` oder fügen Sie wie folgt in der nginx-Host-Konfigurationsdatei eine Zeitüberschreitungseinstellung zum Abschnitt `location ~ ^/setup/index.php` hinzu:
+Wenn Sie nginx verwenden, verwenden Sie unsere enthaltene `nginx.conf.sample` oder fügen Sie eine Zeitüberschreitungseinstellung in der Konfigurationsdatei des nginx-Hosts wie folgt zum Abschnitt `location ~ ^/setup/index.php` hinzu:
 
 ```php
 location ~ ^/setup/index.php {
@@ -58,9 +58,9 @@ location ~ ^/setup/index.php {
 
 Nginx neu starten: `service nginx restart`
 
-### Nur Varnisch {#varnish-only}
+### Nur lackieren {#varnish-only}
 
-Wenn Sie &quot;Varnish&quot;verwenden, bearbeiten Sie `default.vcl` und fügen Sie dem Stanza `backend` einen Timeout-Grenzwert wie folgt hinzu:
+Wenn Sie „Varnish“ verwenden, bearbeiten Sie `default.vcl` und fügen Sie der `backend`-Strophe einen Timeout-Grenzwert wie folgt hinzu:
 
 ```php
 backend default {
@@ -69,7 +69,7 @@ backend default {
 }
 ```
 
-Starten Sie Varnish neu.
+Lack neu starten.
 
 ```php
 service varnish restart

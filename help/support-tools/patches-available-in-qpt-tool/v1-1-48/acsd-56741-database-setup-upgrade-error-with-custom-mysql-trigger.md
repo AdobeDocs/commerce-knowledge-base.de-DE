@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-56741: Fehlerbehebung bei Datenbanksetup-Fehlern mit benutzerdefinierten MySQL-Triggern'
-description: Wenden Sie den Patch ACSD-56741 an, um das Adobe Commerce-Problem zu beheben, bei dem während des "setup:upgrade"-Vorgangs eine Fehlermeldung angezeigt wird *Versuchen, auf den Array-Offset vom Typ null zuzugreifen* aufgrund eines benutzerspezifischen MySQL-Triggers in der Datenbank, der nicht mit der Indizierung und  [!DNL MView] in Zusammenhang steht.
+description: Wenden Sie den Patch ACSD-56741 an, um das Adobe Commerce-Problem zu beheben, bei dem während „setup:upgrade“ eine Fehlermeldung „Zugriff auf Array-Offset mit dem Wert null“ angezeigt wird, da ein benutzerdefinierter MySQL-Trigger in der Datenbank nicht mit der Indizierung und  [!DNL MView] in Zusammenhang steht.
 feature: Install
 role: Admin, Developer
 exl-id: 97839140-03c5-44f0-ba75-935d62f5bf90
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ACSD-56741: Fehlerbehebung bei Datenbanksetup-Fehlern mit benutzerdefinierten MySQL-Triggern
 
-Der Patch ACSD-56741 behebt das Problem, dass während `setup:upgrade` aufgrund eines benutzerspezifischen MySQL-Triggers in der Datenbank, der nicht mit der Indizierung und dem [!DNL MView] in Zusammenhang steht, die Fehlermeldung &quot;*Versuchen, auf den Array-Offset vom Typ null* zuzugreifen&quot; angezeigt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 installiert ist. Die Patch-ID ist ACSD-56741. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.5.0 behoben werden soll.
+Der Patch ACSD-56741 behebt das Problem, dass *Fehlermeldung „Zugriff auf Array-Offset bei Wert vom Typ null“* der `setup:upgrade` angezeigt wird, da ein benutzerdefinierter MySQL-Trigger in der Datenbank nicht mit der Indizierung und [!DNL MView] in Zusammenhang steht. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 installiert ist. Die Patch-ID ist ACSD-56741. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.5.0 behoben wird
 
 ## Betroffene Produkte und Versionen
 
@@ -23,19 +23,19 @@ Der Patch ACSD-56741 behebt das Problem, dass während `setup:upgrade` aufgrund 
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6 - p4
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p4
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Während `setup:upgrade` wird eine Fehlermeldung *Versuchen, auf den Array-Offset vom Typ null zuzugreifen, angezeigt, da ein benutzerdefinierter MySQL-Trigger in der Datenbank nicht mit Indizierung und [!DNL MView] in Zusammenhang steht.*
+Bei der `setup:upgrade` wird *Fehlermeldung „Zugriff auf den Array-Offset bei einem Wert vom Typ null* angezeigt, da ein benutzerdefinierter MySQL-Trigger in der Datenbank nicht mit der Indizierung und der [!DNL MView] in Zusammenhang steht.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Führen Sie `php bin/magento indexer:set-mode schedule` aus.
+1. `php bin/magento indexer:set-mode schedule` ausführen.
 
    ```
    DELIMITER //
@@ -45,31 +45,31 @@ Während `setup:upgrade` wird eine Fehlermeldung *Versuchen, auf den Array-Offse
        -> END //
    ```
 
-1. Führen Sie `php bin/magento c:f` aus.
-1. Führen Sie `php bin/magento setup:upgrade` aus.
+1. `php bin/magento c:f` ausführen.
+1. `php bin/magento setup:upgrade` ausführen.
 
 <u>Erwartete Ergebnisse</u>:
 
-Das Setup-Upgrade wird ohne Fehler beendet.
+Das Setup-Upgrade wird fehlerfrei abgeschlossen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
 Das Setup-Upgrade wird mit einer Fehlermeldung beendet:
 
-*Warnung: Versuchen Sie, auf den Array-Versatz für den Wert des Typs null* zuzugreifen.
+*Warnung: Versuch, auf den Array-Offset für einen Wert vom Typ null zuzugreifen*.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

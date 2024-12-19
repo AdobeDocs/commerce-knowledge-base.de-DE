@@ -1,6 +1,6 @@
 ---
-title: Implementierung hängt mit dem Fehler "Anwendung kann nicht in den Remote-Cluster hochgeladen werden"
-description: 'Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem, bei dem die Bereitstellung blockiert wird und die folgende Fehlermeldung im Bereitstellungsprotokoll zu finden ist: *"Fehler: Anwendung kann nicht in den Remote-Cluster hochgeladen werden"*.'
+title: Bereitstellung blockiert mit dem Fehler „Anwendung kann nicht auf den Remote-Cluster hochgeladen werden“
+description: 'Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem, bei dem die Bereitstellung hängen bleibt und die folgende Fehlermeldung im Bereitstellungsprotokoll zu finden ist: *„Fehler: Die Anwendung kann nicht in den Remote-Cluster hochgeladen werden“*.'
 exl-id: 30f0ec31-db27-429c-b065-cf7770a72194
 feature: Deploy
 role: Developer
@@ -11,27 +11,27 @@ ht-degree: 0%
 
 ---
 
-# Implementierung hängt mit dem Fehler &quot;Anwendung kann nicht in den Remote-Cluster hochgeladen werden&quot;
+# Bereitstellung blockiert mit dem Fehler „Anwendung kann nicht auf den Remote-Cluster hochgeladen werden“
 
-Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem, bei dem die Bereitstellung blockiert wird und die folgende Fehlermeldung im Bereitstellungsprotokoll zu finden ist: *&quot;Error: Unable to upload the application to the remote cluster&quot;*.
+Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem, bei dem die Bereitstellung hängen bleibt und die folgende Fehlermeldung im Bereitstellungsprotokoll zu finden ist: *„Fehler: Die Anwendung kann nicht in den Remote-Cluster hochgeladen werden“*.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle Versionen
+* Adobe Commerce auf Cloud-Infrastruktur, alle Versionen
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Trigger manuell bereitstellen oder eine Zusammenführung, Push-Benachrichtigung oder Synchronisation Ihrer Umgebung durchführen.
+Trigger-Bereitstellung manuell oder durch eine Zusammenführung, Push-Benachrichtigung oder Synchronisierung Ihrer Umgebung.
 
 <u>Erwartetes Ergebnis</u>:
 
-Die Implementierung wurde erfolgreich abgeschlossen.
+Bereitstellung wurde erfolgreich abgeschlossen.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Die Bereitstellung hängt fest. Im Fehlerprotokoll zur Bereitstellung in der Cloud-Benutzeroberfläche wird die folgende Fehlermeldung angezeigt: *&quot;Fehler: Die Anwendung kann nicht in den Remote-Cluster hochgeladen werden&quot;, das nach der fehlgeschlagenen Bereitstellung im Bereitstellungsprotokoll gefunden wurde, auf der Site wird möglicherweise der Fehler &quot;503 first byte timeout&quot;* angezeigt.
+Die Bereitstellung bleibt stecken und in der Cloud-Benutzeroberfläche wird die folgende Fehlermeldung angezeigt: *Fehler: Anwendung kann nicht in den Remote-Cluster hochgeladen werden“. Im Bereitstellungsprotokoll nach fehlgeschlagener Bereitstellung wurde der Fehler „503 First Byte Timeout“*.
 
 ## Ursache
 
@@ -39,13 +39,13 @@ Das Problem wird durch den Ausfall des verfügbaren Speichers verursacht.
 
 ## Lösung
 
-Sie können erwägen, die Protokollverzeichnisse zu bereinigen und/oder den Speicherplatz zu erhöhen.
+Sie können die Protokollordner bereinigen und/oder den Festplattenspeicher erhöhen.
 
-Für die Bereinigung berücksichtigte Verzeichnisse:
+Verzeichnisse, die für die Bereinigung infrage kommen:
 
 * `var/log`
 * `var/report`
 * `var/debug/`
 * `var`
 
-Weitere Informationen zur Erhöhung des Festplattenspeichers, wenn Sie mit der Adobe Commerce-Planarchitektur für Cloud-Infrastruktur-Starter arbeiten, finden Sie unter [Erhöhen des Festplattenspeichers für die Integrationsumgebung in Cloud](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md) in unserer Wissensdatenbank zur Unterstützung. Dieselbe Anleitung kann verwendet werden, um den Raum der Adobe Commerce in der Umgebung der Cloud Infrastructure Pro-Planarchitektur-Integrationsumgebung zu vergrößern. Für Pro Production/Staging müssen Sie [ein Ticket an den Adobe Commerce-Support senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) und mehr Speicherplatz anfordern. In der Regel müssen Sie sich jedoch nicht mit dem Staging/der Produktion des Pro-Plans befassen, da Adobe Commerce diese Parameter für Sie überwacht und Warnungen sendet und/oder vertragsgemäß tätig wird.
+Weitere Informationen zum Erhöhen des Festplattenspeichers in der Starterplanarchitektur für Adobe Commerce in Cloud-Infrastrukturen finden Sie unter [Erhöhen des Festplattenspeichers für die Integrationsumgebung in der Cloud](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md) in unserer Support-Wissensdatenbank. Die gleichen Anweisungen können verwendet werden, um den Speicherplatz der Adobe Commerce in der Cloud Infrastructure Pro Plan Architecture Integration-Umgebung zu erhöhen. Für Pro Production/Staging müssen Sie [ein Ticket beim Adobe Commerce Support einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) und mehr Speicherplatz anfordern. In der Regel müssen Sie dies jedoch nicht im Staging/in der Produktion des Pro-Plans tun, da Adobe Commerce diese Parameter für Sie und Warnhinweise überwacht und/oder vertraglich vereinbarte Maßnahmen ergreift.

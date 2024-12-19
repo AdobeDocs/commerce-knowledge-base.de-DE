@@ -1,6 +1,6 @@
 ---
 title: Fehler beim Installieren optionaler Beispieldaten
-description: In diesem Thema werden Lösungen für Fehler besprochen, bei denen die Installation optionaler Beispieldaten auftreten kann.
+description: In diesem Abschnitt werden Lösungen für Fehler bei der Installation optionaler Beispieldaten beschrieben.
 exl-id: 14692e3a-188c-45f1-9df5-ac873cc9eff0
 feature: Console, Install, Upgrade
 role: Developer
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Fehler beim Installieren optionaler Beispieldaten
 
-In diesem Thema werden Lösungen für Fehler besprochen, bei denen die Installation optionaler Beispieldaten auftreten kann.
+In diesem Abschnitt werden Lösungen für Fehler bei der Installation optionaler Beispieldaten beschrieben.
 
 ## Symptom (Dateisystemberechtigungen)
 
-Fehler im Konsolenprotokoll während der Installation der Beispieldaten mithilfe des Einrichtungs-Assistenten:
+Fehler im Konsolenprotokoll während der Installation von Beispieldaten mithilfe des Setup-Assistenten:
 
 ```php
 Module 'Magento_CatalogRuleSampleData':
@@ -30,15 +30,15 @@ Next exception 'ReflectionException' with message 'Class Magento\CatalogRule\Mod
 (more)
 ```
 
-Diese Ausnahmen ergeben sich aus den Einstellungen für Dateisystemberechtigungen.
+Diese Ausnahmen resultieren aus den Einstellungen für Dateisystemberechtigungen.
 
 ### Lösung
 
-[Legen Sie als Benutzer mit `root` -Berechtigungen das Eigentum und die Berechtigungen des Dateisystems erneut fest](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html).
+[Legen Sie die Eigentümerschaft und Berechtigungen des Dateisystems erneut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html), als Benutzer mit `root` Berechtigungen.
 
 ## Symptom (Produktionsmodus)
 
-Wenn Sie derzeit für den [Produktionsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) festgelegt sind, schlägt die Installation der Beispieldaten fehl, wenn Sie den Befehl [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) verwenden:
+Wenn Sie derzeit für den [Produktionsmodus) eingestellt sind](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) schlägt die Installation der Beispieldaten fehl, wenn Sie den Befehl [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) verwenden:
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -46,9 +46,9 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 ### Lösung
 
-Installieren Sie keine Beispieldaten im Produktionsmodus. Wechseln Sie in den Entwicklermodus, löschen Sie einige `var`-Verzeichnisse und versuchen Sie es erneut.
+Installieren Sie keine Beispieldaten im Produktionsmodus. Wechseln Sie in den Entwicklermodus, löschen Sie einige `var` Verzeichnisse und versuchen Sie es erneut.
 
-Geben Sie die folgenden Befehle in der Reihenfolge ein, die als [Adobe Commerce-Dateisysteminhaber](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html) angezeigt wird:
+Geben Sie die folgenden Befehle in der Reihenfolge ein, die als Eigentümer des Dateisystems [Adobe Commerce angezeigt wird](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
 
 ```php
 cd <magento_root>
@@ -67,12 +67,12 @@ PHP Fatal error: Call to undefined method Magento\Catalog\Model\Resource\Product
 
 ### Lösung
 
-Deaktivieren Sie während der Installation der Beispieldaten SELinux mit einer Ressource wie:
+Deaktivieren Sie während der Installation der Beispieldaten SELinux mithilfe einer Ressource wie der folgenden:
 
 * [www.ibm.com](https://www.ibm.com/docs/ja/ahts/4.0?topic=t-disabling-selinux)
 * [Dokumentation zu CentOS](https://docs.centos.org/en-US/docs/)
 
-## Symptom (Entwicklungszweig)
+## Symptom (Verzweigung entwickeln)
 
 Andere Fehler werden angezeigt, z. B.:
 
@@ -82,7 +82,7 @@ Andere Fehler werden angezeigt, z. B.:
 
 ### Lösung
 
-Es gibt bekannte Probleme bei der Verwendung von Beispieldaten mit der Adobe Commerce-Entwicklungsverzweigung. Verwenden Sie stattdessen die Masterverzweigung. Sie können wie folgt zur Masterverzweigung wechseln:
+Es gibt bekannte Probleme bei der Verwendung von Beispieldaten mit der Adobe Commerce-Entwicklungsverzweigung. Verwenden Sie stattdessen die primäre Verzweigung. Sie können wie folgt zur primären Verzweigung wechseln:
 
 ```php
 cd <magento_root>
@@ -92,7 +92,7 @@ git pull origin master
 
 ## Symptom (max_execution_time)
 
-Die Installation wird beendet, bevor die Beispieldateninstallation abgeschlossen ist. Ein Beispiel:
+Die Installation wird angehalten, bevor die Installation der Beispieldaten abgeschlossen ist. Es folgt ein Beispiel:
 
 ```php
 (more)
@@ -101,13 +101,13 @@ Module 'Magento_CustomerSampleData':
 Installing data...
 ```
 
-Die Installation der Beispieldaten ist nicht abgeschlossen.
+Die Installation der Beispieldaten ist noch nicht abgeschlossen.
 
-Dieser Fehler tritt auf, wenn die maximale konfigurierte Ausführungszeit Ihrer PHP-Skripte überschritten wird. Da das Laden von Beispieldaten lange dauern kann, können Sie den Wert während der Installation erhöhen.
+Dieser Fehler tritt auf, wenn die konfigurierte maximale Ausführungszeit Ihrer PHP-Skripte überschritten wird. Da das Laden von Beispieldaten sehr lange dauern kann, können Sie den Wert während der Installation erhöhen.
 
 ### Lösung
 
-Ändern Sie als Benutzer mit `root` -Berechtigungen `php.ini`, um den Wert von `max_execution_time` auf 600 oder mehr zu erhöhen. (600 Sekunden sind 10 Minuten. Sie können den Wert beliebig erhöhen.) Sie sollten `max_execution_time` wieder auf den vorherigen Wert setzen, nachdem die Installation erfolgreich war.
+Wenn Sie ein Benutzer mit `root` Berechtigungen sind, ändern Sie `php.ini`, um den Wert von `max_execution_time` auf 600 oder mehr zu erhöhen. (600 Sekunden sind 10 Minuten. Sie können den Wert nach Belieben erhöhen.) Sie sollten `max_execution_time` nach erfolgreicher Installation wieder auf den vorherigen Wert zurücksetzen.
 
 Wenn Sie nicht sicher sind, wo sich `php.ini` befindet, geben Sie den folgenden Befehl ein:
 
@@ -119,4 +119,4 @@ Der Wert von `Loaded Configuration File` ist der `php.ini`, den Sie ändern müs
 
 >[!NOTE]
 >
->Wir wissen, dass dieser Artikel immer noch branchenübliche Softwarebegriffe enthalten kann, die einige rassistisch, sexistisch oder unterdrückend finden und die den Leser verletzen, traumatisiert oder unerwünscht machen können. Adobe arbeitet daran, diese Begriffe aus unserem Code, unserer Dokumentation und unseren Benutzererlebnissen zu entfernen.
+>Wir sind uns bewusst, dass dieser Artikel immer noch branchenübliche Softwarebegriffe enthalten kann, die manche als rassistisch, sexistisch oder repressiv empfinden und die den Leser verletzen, traumatisieren oder unwillkommen machen können. Adobe arbeitet daran, diese Begriffe aus unserem Code, unserer Dokumentation und unseren Benutzererlebnissen zu entfernen.

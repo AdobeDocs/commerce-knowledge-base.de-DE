@@ -1,6 +1,6 @@
 ---
-title: Mehr Speicherplatz für MySQL in Adobe Commerce in Cloud zuweisen
-description: Dieser Artikel enthält Anweisungen dazu, wie Sie in Adobe Commerce mehr Speicherplatz für MySQL in der Cloud-Infrastruktur zuweisen.
+title: Mehr Speicherplatz für MySQL in Adobe Commerce in der Cloud zuweisen
+description: Dieser Artikel enthält Anweisungen dazu, wie Sie in Adobe Commerce in der Cloud-Infrastruktur mehr Speicherplatz für MySQL zuweisen.
 exl-id: 98501aa0-5ec7-4ea1-8856-13d171ad0be9
 feature: Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
@@ -10,12 +10,12 @@ ht-degree: 0%
 
 ---
 
-# Mehr Speicherplatz für MySQL in Adobe Commerce in Cloud zuweisen
+# Mehr Speicherplatz für MySQL in Adobe Commerce in der Cloud zuweisen
 
 
-## Weisen Sie Platz für Starter-Plan und Pro-Plan-Integration zu
+## Platz auf Starter-Plan und Pro-Plan-Integration zuweisen
 
-Für alle Starter-Planumgebungen und die Pro-Plan [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) können Sie in der Datei `.magento/services.yaml` mehr Speicherplatz für MySQL zuweisen, indem Sie den Parameter `mysql: disk:` erhöhen. Beispiel:
+Für alle Starter-Planumgebungen und Pro-Plan [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) können Sie mehr Speicherplatz für MySQL in der `.magento/services.yaml`-Datei zuweisen, indem Sie den `mysql: disk:` erhöhen. Beispiel:
 
 ```yaml
 mysql:
@@ -23,19 +23,19 @@ mysql:
     disk: 2048
 ```
 
-Weitere Informationen finden Sie im Artikel [Einrichten des MySQL-Dienstes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) .
+Siehe den Artikel [Einrichten des MySQL-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql)) als Referenz.
 
-Nachdem Sie die `.magento/services.yaml` -Datei geändert haben, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Die Push-Benachrichtigung Trigger den Bereitstellungsprozess.
+Nachdem Sie die `.magento/services.yaml` geändert haben, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Mit der Push-Benachrichtigung wird der Bereitstellungsprozess Trigger.
 
 >[!WARNING]
 >
->Eine Starter-Plan-Partition sollte niemals kleiner werden (z. B. von 30 GB auf 20 GB), da dies wahrscheinlich zu einer katastrophalen Datenbeschädigung führen wird.
+>Eine Starterplanpartition sollte niemals kleiner gemacht werden (z. B. von 30 GB auf 20 GB), da dies wahrscheinlich zu einer katastrophalen Datenbeschädigung führen wird.
 
-## Speicherplatz für Pro-Plan-Staging oder -Produktion zuweisen
+## Platz auf Pro Plan Staging oder Produktion zuweisen
 
-Um diese Änderungen für die Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie ein [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed) erstellen. Beim Senden eines Support-Tickets zur Erhöhung des Speichers muss der Support wissen, wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Eine Anfrage zur Erhöhung des Speicherplatzes erfordert die Genehmigung durch Ihr Adobe Account-Team, das vor der Validierung Ihre berechtigte Speichermenge (gemäß Bestellformular) überprüft.
+Um diese Änderungen an der Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie ein [Support-Ticket“ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Wenn Sie ein Support-Ticket einreichen, um den Speicher zu erhöhen, muss der Support wissen, auf wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Für eine Anfrage zur Speichererhöhung ist eine Genehmigung durch Ihr Adobe-Account-Team erforderlich, das Ihre zulässige Speichermenge (gemäß Bestellformular) vor der Genehmigung überprüft.
 
-## Verringerter zugewiesener Speicherplatz nicht verfügbar (Pro- und Starter-Plan)
+## Verringernder zugewiesener Platz nicht verfügbar (Pro- und Starter-Plan)
 
-Der Adobe Commerce-Support kann eine Partition (`/mysql` oder `/exports`) vergrößern, eine Partition jedoch nicht verkleinern. Dies birgt die Gefahr von Datenbeschädigungen, weshalb eine Verringerung des Speicherplatzes für eine Partition nicht verfügbar ist.
-Dies gilt auch für den Starter-Plan, bei dem Sie den zugewiesenen Platz selbst vergrößern können: Eine Reduzierung wird dringend nicht empfohlen und könnte zu katastrophalen Datenbeschädigungen führen.
+Der Adobe Commerce-Support kann eine Partition erweitern (`/mysql` oder `/exports`), aber eine Partition nicht verkleinern. Dadurch besteht das Risiko einer Datenbeschädigung, weshalb kein abnehmender Speicher für eine Partition verfügbar ist.
+Dies gilt auch für den Starter-Plan, bei dem Sie den zugewiesenen Speicherplatz selbst erhöhen können: Senken wird dringend nicht empfohlen und kann zu einer katastrophalen Datenbeschädigung führen.

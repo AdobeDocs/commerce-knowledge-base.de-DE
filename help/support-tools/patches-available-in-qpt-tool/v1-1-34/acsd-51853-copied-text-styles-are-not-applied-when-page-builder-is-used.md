@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-51853: Kopierte Textstile werden nicht mit dem Seitenaufbau angewendet'
-description: Wenden Sie den Patch ACSD-51853 an, um das Adobe Commerce-Problem zu beheben, bei dem die kopierten Textstile nicht angewendet werden, wenn der Seiten-Builder verwendet wird.
+title: 'ACSD-51853: Kopierte Textstile werden nicht mit Page Builder angewendet'
+description: Wenden Sie den Patch ACSD-51853 an, um das Adobe Commerce-Problem zu beheben, bei dem die kopierten Textstile bei Verwendung von Page Builder nicht angewendet werden.
 feature: Page Builder
 role: Admin
 exl-id: 1efd3147-1ae0-468b-af04-1632fbaaefda
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-51853: Kopierte Textstile werden nicht mit dem Seitenaufbau angewendet
+# ACSD-51853: Kopierte Textstile werden nicht mit Page Builder angewendet
 
-Der Patch ACSD-51853 behebt das Problem, dass die kopierten Textstile nicht angewendet werden, wenn der Seiten-Builder verwendet wird. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.34 installiert ist. Die Patch-ID ist ACSD-51853. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch „ACSD-51853“ wird das Problem behoben, dass die kopierten Textstile bei Verwendung von Page Builder nicht angewendet werden. Dieser Patch ist verfügbar, wenn [!DNL Quality Patches Tool (QPT)] 1.1.34 installiert ist. Die Patch-ID ist ACSD-51853. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,18 +27,18 @@ Der Patch ACSD-51853 behebt das Problem, dass die kopierten Textstile nicht ange
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Kopierte Textstile werden nicht angewendet, wenn der Seitenaufbau verwendet wird
+Kopierte Textstile werden bei Verwendung des Seiten-Builders nicht angewendet
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Melden Sie sich bei Admin an.
-1. Navigieren Sie zu > **content** > **pages** > **Öffnen Sie eine beliebige Seite** > **Mit Seitenaufbau bearbeiten**.
-1. Ziehen Sie Zeilen und *Text* aus **[!UICONTROL Elements]**.
-1. Kopieren Sie **angereicherter Inhalt**, fügen Sie diesen Text in ein **[!UICONTROL Page Builder]** ein.
+1. Bei Admin anmelden.
+1. Navigieren Sie zu **Inhalt** > **Seiten** > **Beliebige Seite öffnen** > **Mit Page Builder bearbeiten**.
+1. Ziehen Sie Zeile und *Text* aus **[!UICONTROL Elements]**.
+1. Kopieren **angereicherter Inhalt** und fügen Sie diesen Text in eine **[!UICONTROL Page Builder]** ein.
 
 <u>Erwartete Ergebnisse</u>
 
@@ -46,20 +46,20 @@ Der kopierte Text wird mit allen Stilen eingefügt.
 
 <u>Tatsächliche Ergebnisse</u>
 
-Der kopierte Text wird als Klartext eingefügt und alle Stile gehen verloren.
+Der kopierte Text wird als Nur-Text eingefügt, und alle Stile gehen verloren.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

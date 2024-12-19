@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40488: Konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten werden nicht in der richtigen Preisspanne angezeigt'
-description: Der Patch MDVA-40488 behebt das Problem, dass konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten nicht in ihrer korrekten Preisspanne angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-40488. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+description: Der MDVA-40488 Patch löst das Problem, dass konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten nicht in der richtigen Preisklasse angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-40488. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 exl-id: 0c4b9f5e-ae41-409e-b244-1d7cf948ed6f
 feature: Configuration, Orders, Products
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40488: Konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten werden nicht in der richtigen Preisspanne angezeigt
 
-Der Patch MDVA-40488 behebt das Problem, dass konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten nicht in ihrer korrekten Preisspanne angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-40488. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben sein soll.
+Der MDVA-40488 Patch löst das Problem, dass konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten nicht in der richtigen Preisklasse angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 installiert ist. Die Patch-ID lautet MDVA-40488. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,48 +27,48 @@ Der Patch MDVA-40488 behebt das Problem, dass konfigurierbare Produkte mit nicht
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten werden nicht in der korrekten Preisspanne angezeigt.
+Konfigurierbare Produkte mit nicht vorrätigen untergeordneten Produkten werden nicht in der richtigen Preisspanne angezeigt.
 
 <u>Voraussetzungen</u>:
 
-Gehen Sie zu Commerce Admin > **stores** > **configuration** > **catalog** > **Inventory** > **stock options** und stellen Sie die Konfiguration **Nicht vorrätige Produkte anzeigen** auf *Ja* ein.
+Wechseln Sie zur Konfiguration Commerce Admin > **Stores** > **configuration** > **catalog** > **Inventory** > **Stock-Optionen** und **Display Out of Stock Products** auf *Yes*.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein konfigurierbares Produkt mit zwei zugehörigen Produkten. Beispiel: einfache Produkte Rot und Braun.
-1. Legen Sie den Bestand des einfachen Produkts Rot fest, legen Sie den Lagerstatus auf *Auf Lager* fest und setzen Sie dann den Status Produkt aktivieren auf *Nein*.
-1. Legen Sie den Bestand des einfachen Produkts Braun fest und setzen Sie dann den Status Produkt aktivieren auf *Ja*.
-1. Stellen Sie sicher, dass der konfigurierbare Produktspeicherstatus *Auf Lager* ist.
-1. Ändern Sie den Lagerbestand des einfachen Produkts braun auf 0 und legen Sie den Lagerstatus auf *Nicht auf Lager* fest.
-1. An dieser Stelle ist der konfigurierbare Produktspeicherstatus immer noch *Auf Lager*.
-1. Führen Sie eine Neuindizierung durch.
+1. Erstellen Sie ein konfigurierbares Produkt mit zwei zugehörigen Produkten. Zum Beispiel: einfache Produkte Rot und Braun.
+1. Setzen Sie den Bestand des einfachen Produkts auf Rot, und setzen Sie den Lagerstatus auf *Auf Lager*, und setzen Sie dann den Produktstatus aktivieren auf *Nein*.
+1. Legen Sie den Bestand des einfachen braunen Produkts fest und setzen Sie dann den Produktstatus aktivieren auf *Ja*.
+1. Stellen Sie sicher, dass der konfigurierbare Produktlagerstatus &quot;*&quot;*.
+1. Ändern Sie den Bestand des einfachen braunen Produkts auf 0 und setzen Sie den Lagerstatus auf *Nicht vorrätig*.
+1. Zu diesem Zeitpunkt ist der konfigurierbare Produktbestandsstatus noch &quot;*&quot;*.
+1. Neuindizierung durchführen.
 1. Überprüfen Sie die `min_price` und `max_price` für das konfigurierbare Produkt in der `catalog_product_index_price` DB-Tabelle. Die beiden Werte sind auf 0 gesetzt.
-1. Wenn wir jedoch den konfigurierbaren Produktstatus auf *Nicht vorrätig* setzen und eine Neuindizierung vornehmen, können wir die Werte ungleich null `min_price` und `max_price` des konfigurierbaren Produkts sehen.
+1. Wenn wir jedoch den Lagerstatus des konfigurierbaren Produkts auf *Nicht vorrätig* setzen und eine Neuindizierung durchführen, können wir `min_price` und `max_price` Werte ungleich null des konfigurierbaren Produkts sehen.
 
 <u>Erwartete Ergebnisse</u>:
 
-Wenn alle untergeordneten Produkte *nicht auf Lager* sind und das konfigurierbare Produkt selbst ebenfalls *nicht auf Lager ist*, wird der Preis anhand aller untergeordneten Produkte berechnet.
+Wenn alle untergeordneten Produkte *nicht vorrätig* und das konfigurierbare Produkt selbst ebenfalls *nicht vorrätig* ist, wird der Preis anhand aller untergeordneten Produkte berechnet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Werte `min_price` und `max_price` für das konfigurierbare Produkt in der `catalog_product_index_price` DB-Tabelle werden auf 0 gesetzt, wenn der konfigurierbare Bestandsstatus *Auf Lager* ist, aber wenn es *Nicht auf Lager* ist, werden sie zu Werten ungleich null.
+Die `min_price`- und `max_price` für das konfigurierbare Produkt in der `catalog_product_index_price` DB-Tabelle werden auf 0 gesetzt, wenn der konfigurierbare Lagerstatus „Auf Lager *ist*, aber wenn er *Nicht vorrätig* ist, werden sie zu Werten ungleich null.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

@@ -1,6 +1,6 @@
 ---
-title: Redis unserialize error `setup:static-content:deploy`
-description: Dieser Artikel enthält eine Fehlerbehebung für den Fehler "Redis unserialize", wenn "magento setup:static-content:deploy" ausgeführt wird.
+title: Redis-Deserialisierungsfehler „setup:static-content:deploy“
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fehler „Redis Deserialize“ bei der Ausführung von „magento setup:static-content:deploy“.
 exl-id: 4bc88933-3bf9-4742-b864-b82d3c1b07a9
 feature: Cache, Deploy, Page Content, SCD, Services, Variables
 role: Developer
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Redis unserialize error `setup:static-content:deploy`
+# Redis-Deserialisierungs-`setup:static-content:deploy`
 
-Dieser Artikel enthält eine Fehlerbehebung für den Redis-Deserialisierungs-Fehler bei der Ausführung von `magento setup:static-content:deploy`.
+Dieser Artikel bietet eine Fehlerbehebung für den Fehler „Redis serialize“ bei der Ausführung von `magento setup:static-content:deploy`.
 
-Wird `magento setup:static-content:deploy` ausgeführt, wird der Redis-Fehler ausgegeben:
+Das Ausführen von `magento setup:static-content:deploy` verursacht den Redis-Fehler:
 
 ```
 [Exception]
@@ -23,27 +23,27 @@ Notice: unserialize(): Error at offset 0 of 1 bytes in
 /var/www/domain.com/vendor/magento/module-config/App/Config/Type/System.php on line 214
 ```
 
-Das Problem wird durch parallele Störprozesse in der Redis-Verbindung verursacht.
+Das Problem wird durch parallele Störvorgänge an der Redis-Verbindung verursacht.
 
-Führen Sie zum Auflösen `setup:static-content:deploy` in einem Einzelthread-Modus aus, indem Sie die folgende Umgebungsvariable festlegen:
+Führen Sie zur Auflösung `setup:static-content:deploy` in einem Einzelthreadmodus aus, indem Sie die folgende Umgebungsvariable festlegen:
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-oder führen Sie den Befehl `setup:static-content:deploy` aus, gefolgt vom Argument `-j 1` (oder `--jobs=1` ).
+Oder führen Sie den `setup:static-content:deploy`-Befehl aus, gefolgt vom `-j 1`-Argument (oder `--jobs=1` ).
 
-Beachten Sie, dass das Deaktivieren der Multithreading-Funktion die Bereitstellung statischer Assets verlangsamt.
+Beachten Sie, dass die Deaktivierung von Multithreading die Bereitstellung statischer Assets verlangsamt.
 
 ## Betroffene Versionen
 
-* Adobe Commerce vor Ort: 2.1.2 und höher
+* Adobe Commerce On-Premises: 2.1.2 und höher
 * Adobe Commerce auf Cloud-Infrastruktur 2.1.2 und höher
 * Redis, beliebige Version
 
 ## Problem
 
-Wenn Sie den Befehl `setup:static-content:deploy` ausführen, tritt der Fehler &quot;Redis&quot;auf:
+Die Ausführung des `setup:static-content:deploy`-Befehls verursacht den Redis-Fehler:
 
 ```php
 )
@@ -77,27 +77,27 @@ Command php ./bin/magento setup:static-content:deploy --jobs=3  en_US  returned 
 
 ## Ursache
 
-Das Problem wird durch parallele Interferenzprozesse in der Redis-Verbindung verursacht.
+Das Problem wird durch parallele, störende Prozesse auf der Redis-Verbindung verursacht.
 
-Hier erwartete ein Prozess in `App/Config/Type/System.php` eine Antwort für `system_defaultweb`, erhielt jedoch eine Antwort für `system_cache_exists`, die von einem anderen Prozess ausgeführt wurde. Weitere Informationen finden Sie in der detaillierten Erklärung unter [Jason Woods&#39; post](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
+Hier erwartete ein Prozess in `App/Config/Type/System.php` eine Antwort für `system_defaultweb`, erhielt aber eine Antwort für `system_cache_exists`, die von einem anderen Prozess vorgenommen wurde. Siehe die detaillierte Erklärung in [Jason Woods&#39; Beitrag](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
 
 ## Lösung
 
-Deaktivieren Sie die Parallelität und führen Sie `setup:static-content:deploy` in einem Einzelthread-Modus aus, indem Sie die folgende Umgebungsvariable festlegen:
+Deaktivieren Sie die Parallelität und führen Sie `setup:static-content:deploy` in einem Einzelthreadmodus aus, indem Sie die folgende Umgebungsvariable festlegen:
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-Sie können auch den Befehl `setup:static-content:deploy` gefolgt vom Argument `-j 1` (oder `--jobs=1`) ausführen.
+Außerdem können Sie den `setup:static-content:deploy`-Befehl ausführen, gefolgt vom `-j 1`-Argument (oder dem `--jobs=1`-Argument).
 
 >[!NOTE]
 >
->Im Einzelthread-Modus kann die Bereitstellung statischer Inhalte viermal länger dauern.
+>Im Single-Thread-Modus kann der Bereitstellungsprozess statischer Inhalte viermal länger dauern.
 
 ## Weitere Informationen
 
 In unserer Entwicklerdokumentation:
 
-* [Redis konfigurieren](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
-* [Befehlszeilenaktualisierung](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)
+* [Konfigurieren von Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
+* [Befehlszeilen-Upgrade](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)

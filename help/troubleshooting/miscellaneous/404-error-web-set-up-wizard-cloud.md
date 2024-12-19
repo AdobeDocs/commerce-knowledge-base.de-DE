@@ -1,6 +1,6 @@
 ---
-title: Fehler 404 beim Zugriff auf den Web-Setup-Assistenten über das Admin-Bedienfeld nicht gefunden
-description: Dieser Artikel bietet eine Lösung für den Fall, dass beim Versuch, über das Admin-Bedienfeld auf den Web-Setup-Assistenten zuzugreifen, ein Fehler vom Typ 404 (nicht gefunden) auftritt.
+title: 404 Fehler „Nicht gefunden“ beim Zugriff auf den Websetup-Assistenten über das Admin-Bedienfeld
+description: Dieser Artikel bietet eine Lösung für den Fall, dass beim Versuch, über das Admin-Bedienfeld auf den Websetup-Assistenten zuzugreifen, der Fehler 404 Nicht gefunden angezeigt wird.
 exl-id: 1b89da58-c872-481b-b2a0-aa48db8223db
 feature: Admin Workspace, Cloud, Paas
 role: Developer
@@ -11,40 +11,40 @@ ht-degree: 0%
 
 ---
 
-# Fehler 404 beim Zugriff auf den Web-Setup-Assistenten über das Admin-Bedienfeld nicht gefunden
+# 404 Fehler „Nicht gefunden“ beim Zugriff auf den Websetup-Assistenten über das Admin-Bedienfeld
 
-Dieser Artikel bietet eine Lösung für den Fall, dass beim Versuch, über das Admin-Bedienfeld auf den Web-Setup-Assistenten zuzugreifen, ein Fehler vom Typ 404 (nicht gefunden) auftritt.
+Dieser Artikel bietet eine Lösung für den Fall, dass beim Versuch, über das Admin-Bedienfeld auf den Websetup-Assistenten zuzugreifen, der Fehler 404 Nicht gefunden angezeigt wird.
 
 ## Betroffene Produkte und Versionen
 
-* Die Funktion des Websetup-Assistenten wurde in Adobe Commerce (alle Bereitstellungsmethoden) 2.3.6 eingestellt und in Version 2.4.0 entfernt.
+* Die Funktion Websetup-Assistent wird in Adobe Commerce (alle Bereitstellungsmethoden) 2.3.6 nicht mehr unterstützt und in 2.4.0 entfernt.
 
 ## Problem
 
-Bei der Installation einer Erweiterung mit dem Web-Einrichtungs-Assistenten wird eine Seite 404 angezeigt.
+Beim Installieren einer Erweiterung mithilfe des Websetup-Assistenten wird eine 404-Seite angezeigt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Der Händler klickt auf den Web-Einrichtungs-Assistenten, um ein neues Modul/eine neue Integration zu installieren.
+Der Händler klickt auf den Websetup-Assistenten, um ein neues Modul/eine neue Integration zu installieren.
 
 <u>Erwartetes Ergebnis</u>:
 
-Module/Integration wird installiert.
+Module/Integrationen werden installiert.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Es wird ein 404-Fehler angezeigt.
+Ein 404-Fehler wird angezeigt.
 
 ## Ursache
 
-Der Web-Einrichtungs-Assistent wurde für alle Adobe Commerce-Instanzen in Cloud-Infrastrukturinstanzen deaktiviert. Es ist nicht möglich, ihn zu aktivieren. Erweiterungen müssen über Composer installiert werden.
+Der Websetup-Assistent wurde für alle Adobe Commerce auf Cloud-Infrastrukturinstanzen deaktiviert. Er kann nicht aktiviert werden. Erweiterungen müssen über Composer installiert werden.
 
 ## Lösung
 
 Diese Funktion ist in Adobe Commerce in der Cloud-Infrastruktur deaktiviert.
 
-Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur finden Sie unter [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) in unserer Entwicklerdokumentation.
-Informationen zum Durchführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce vor Ort finden Sie unter [Schnellstart-Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
+Siehe [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) in unserer Entwicklerdokumentation, um Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur zu erhalten.
+Informationen [ Ausführen von Aktualisierungen oder Installieren externer Module ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) Adobe Commerce On-Premise finden Sie in unserer Entwicklerdokumentation unter „Schnellstartanleitung“.
 
 ## Verwandtes Lesen
 

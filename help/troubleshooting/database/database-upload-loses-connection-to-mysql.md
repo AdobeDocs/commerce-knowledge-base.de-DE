@@ -1,5 +1,5 @@
 ---
-title: Beim Hochladen der Datenbank wird die Verbindung zu MySQL unterbrochen
+title: Datenbank-Upload verliert Verbindung zu MySQL
 description: Dieser Artikel bietet eine Lösung für den Fall, dass der Datenbank-Upload die Verbindung zu MySQL verliert.
 exl-id: 6051cea1-8292-4a81-8908-eb516cb4a32b
 feature: Services
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Beim Hochladen der Datenbank wird die Verbindung zu MySQL unterbrochen
+# Datenbank-Upload verliert Verbindung zu MySQL
 
 Dieser Artikel bietet eine Lösung für den Fall, dass der Datenbank-Upload die Verbindung zu MySQL verliert.
 
@@ -21,7 +21,7 @@ Adobe Commerce auf Cloud-Infrastruktur 2.2.x, 2.3.x
 
 ## Problem
 
-Die Datenbank wird nicht in Primär-/Integrationszweige in Adobe Commerce in der Cloud Infrastructure Pro-Planarchitektur oder in einer Zweigstelle in Adobe Commerce in der Starter-Planarchitektur der Cloud-Infrastruktur hochgeladen, wobei das Symptom die Unfähigkeit ist, eine Verbindung herzustellen. Sie sehen diesen Fehler in der CLI.
+Die Datenbank wird nicht in Primär-/Integrationszweige in Adobe Commerce in der Cloud-Infrastruktur-Planarchitektur Pro oder in eine Verzweigung in Adobe Commerce in der Cloud-Infrastruktur-Starterplanarchitektur hochgeladen, mit dem Symptom, dass keine Verbindung hergestellt werden kann. Dieser Fehler wird in der CLI angezeigt.
 
 ```
 web@ddc35c264bd89a72042f1f3e5a:~$ mysql -h database.internal -u user -p main
@@ -31,22 +31,22 @@ ERROR 2013 (HY000): Lost connection to MySQL server at 'reading initial communic
 
 ## Ursache
 
-Dies liegt in der Regel an mangelndem Speicherplatz für den Import der Datenbank.
+Dies ist in der Regel auf einen Mangel an Speicherplatz zum Importieren der Datenbank zurückzuführen.
 
 ## Lösung
 
-Überprüfen Sie, ob nicht genügend Festplattenspeicher vorhanden ist. Führen Sie dazu den Befehl `netcat` in der CLI für den Datenbankanschluss 3306 aus. Wenn er voll ist, wird eine vollständige Meldung auf dem Datenträger ausgegeben:
+Überprüfen Sie, ob nicht genügend Speicherplatz vorhanden ist. Führen Sie dazu den `netcat`-Befehl in der CLI für den Datenbank-Port 3306 aus. Wenn er voll ist, wird die Meldung „Disk Full“ (Datenträger voll) angezeigt:
 
 ```
 web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Sie müssen mehr Speicherplatz für die Datenbank in Ihrem `services.yaml` zuweisen und bereitstellen, wenn Sie Speicherplatz nicht verwendet haben. Anweisungen finden Sie unter [Service Disk Space](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
+Sie müssen mehr Speicherplatz für die Datenbank in Ihrem `services.yaml` zuweisen und bereitstellen, wenn Sie noch ungenutzten Speicherplatz haben. Anweisungen hierzu finden Sie [Service-Speicherplatz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
 
 Hinweis: Im Pro-Architekturplan können Sie den zugewiesenen Speicherplatz auf Ihrer Partition überprüfen, indem Sie den folgenden Befehl ausführen: `df -h`
 
-Erwarten Sie eine Ausgabe ähnlich der folgenden Ausgabe. In diesem Beispiel werden 10 GB des zugewiesenen 25 GB-Speichers verwendet, wobei 15 GB MySQL-Speicherplatz nicht verwendet werden.
+Erwarten Sie eine Ausgabe ähnlich der folgenden. In diesem Beispiel werden 10 GB der zugewiesenen 25 GB verwendet, wobei 15 GB MySQL-Speicherplatz nicht verwendet werden.
 
 ```
 f240jestone3wt@i-087r2a25fdac80726:~$ df -h|grep 'File\|xvd'
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Verwandtes Lesen
 
-[Verwalten des Festplattenspeichers](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserer Entwicklerdokumentation
+[Speicherplatz verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserer Entwicklerdokumentation

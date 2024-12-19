@@ -1,6 +1,6 @@
 ---
-title: 'Bekanntes Problem in Adobe Commerce 2.4.1: Fehler beim Aufrufen des Checkouts mit PayPal-Braintree'
-description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.1 beschrieben, bei dem eine Fehlermeldung angezeigt und im Abrechnungsschritt von Checkout ausgeblendet wird, wenn die PayPal-Braintree-Zahlung verwendet und mehrere Adressen gesendet werden.
+title: 'Bekanntes Problem in Adobe Commerce 2.4.1: Fehler beim Bestellen mit PayPal Braintree'
+description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem eine Fehlermeldung beim Abrechnungsschritt der Kasse angezeigt wird, wenn eine PayPal-Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden.
 exl-id: db3830b2-4885-4d89-85cd-bdcbd4b396e6
 feature: Checkout, Orders, Payments
 role: Developer
@@ -11,39 +11,39 @@ ht-degree: 0%
 
 ---
 
-# Bekanntes Problem in Adobe Commerce 2.4.1: Fehler beim Aufrufen des Checkouts mit PayPal-Braintree
+# Bekanntes Problem in Adobe Commerce 2.4.1: Fehler beim Bestellen mit PayPal Braintree
 
-In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce 2.4.1 beschrieben, bei dem eine Fehlermeldung angezeigt und im Abrechnungsschritt von Checkout ausgeblendet wird, wenn die PayPal-Braintree-Zahlung verwendet und mehrere Adressen gesendet werden.
+In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem eine Fehlermeldung beim Abrechnungsschritt der Kasse angezeigt wird, wenn eine PayPal-Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in Cloud-Infrastruktur 2.4.1
-* Adobe Commerce vor Ort 2.4.1
+* Adobe Commerce auf Cloud-Infrastruktur 2.4.1
+* Adobe Commerce On-Premises 2.4.1
 
 ## Problem
 
-Eine Fehlermeldung wird angezeigt und verschwindet im Schritt &quot;Rechnungsstellung&quot;des Checkout, wenn die PayPal-Braintree-Zahlung verwendet und mehrere Adressen gesendet werden.
+Wenn PayPal-Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden, wird beim Abrechnungsschritt der Kasse eine Fehlermeldung angezeigt und ausgeblendet.
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
-1. Melden Sie sich auf der Storefront als Kunde an (optional kann es sich um einen Gast-Checkout handeln, wenn er in Admin aktiviert ist).
-1. Fügen Sie dem Warenkorb ein Produkt hinzu.
-1. Klicken Sie auf , um die Vorschau des Warenkorbs zu öffnen.
-1. Klicken Sie auf **Warenkorb anzeigen und bearbeiten**.
-1. Klicken Sie auf der Seite &quot;Warenkorb&quot;auf **Mit mehreren Adressen auschecken**.
-1. Klicken Sie auf **Zu Versandinformationen wechseln** und geben Sie die Adressen an.
-1. Klicken Sie auf **Weiter zu Rechnungsinformationen**.
-1. Wählen Sie **PayPal Braintree** und klicken Sie auf die Schaltfläche **PayPal** .
-1. Klicken Sie im Popup-Fenster auf **Zustimmen und Bezahlen**.
+1. Melden Sie sich in der Storefront als Kunde an (optional kann es sich um einen Gast-Checkout handeln, wenn er in Admin aktiviert ist).
+1. Fügen Sie ein Produkt zum Warenkorb hinzu.
+1. Klicken, um die Warenkorbvorschau zu öffnen.
+1. Klicken Sie **Warenkorb anzeigen und bearbeiten**.
+1. Klicken Sie auf der Warenkorbseite auf **Mit mehreren Adressen auschecken**.
+1. Klicken Sie **Zu Versandinformationen gehen** und geben Sie die Adressen an.
+1. Klicken Sie **Weiter zu Rechnungsinformationen**.
+1. Wählen Sie **PayPal-Braintree** und klicken Sie auf die Schaltfläche **PayPal**.
+1. Klicken Sie im Popup-Fenster auf **Zustimmen und bezahlen**.
 
 <u>Erwartetes Ergebnis:</u>
 
-Die Bestellung wird ohne Fehler aufgegeben.
+Die Bestellung erfolgt fehlerfrei.
 
 <u>Tatsächliches Ergebnis:</u>
 
-Die Reihenfolge wird platziert, jedoch mit einem Fehler. Der *PayPal Checkout konnte nicht initialisiert werden. Bitte kontaktieren Sie den Store-Eigentümer*.  -Fehler wird für eine Sekunde angezeigt und verschwindet.
+Die Bestellung wird aufgegeben, jedoch mit einem Fehler. Der *PayPal-Checkout konnte nicht initialisiert werden. Bitte kontaktieren Sie den Geschäftsinhaber*.  Der Fehler wird eine Sekunde lang angezeigt und verschwindet.
 
 ## Fehlerbehebung
 
-Da die Bestellplatzierung nicht blockiert wird, müssen keine Problemumgehungsschritte ausgeführt werden.
+Da die Auftragserteilung nicht blockiert wird, müssen keine Problemumgehungsschritte ausgeführt werden.

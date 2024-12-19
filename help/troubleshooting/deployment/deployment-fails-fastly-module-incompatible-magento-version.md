@@ -1,5 +1,5 @@
 ---
-title: 'Die Bereitstellung schlägt fehl: Fastly-Modul-kompatible Adobe Commerce-Version'
+title: Bereitstellung schlägt fehl Fastly-Modul inkompatible Adobe Commerce-Version
 description: 'AKTUALISIERT: 29. Februar 2019'
 exl-id: aab77407-94e5-42de-92f4-2f0c19e24fa4
 feature: Deploy, Extensions
@@ -11,31 +11,31 @@ ht-degree: 0%
 
 ---
 
-# Die Bereitstellung schlägt fehl: Fastly-Modul-kompatible Adobe Commerce-Version
+# Bereitstellung schlägt fehl Fastly-Modul inkompatible Adobe Commerce-Version
 
 AKTUALISIERT: 29. Februar 2019
 
-Dieser Artikel enthält eine Korrektur für den Fall, dass die Bereitstellung fehlschlägt, da das Fastly-Modul nicht mit Ihrer aktuellen Adobe Commerce-Version kompatibel ist.
+Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass die Bereitstellung fehlschlägt, da das Fastly-Modul mit Ihrer aktuellen Adobe Commerce-Version inkompatibel ist.
 
-**Problem:** Die Bereitstellung schlägt nach einem neuen Commit und Push fehl, wobei die Fehlermeldung in etwa wie folgt lautet:
+**Problem** Die Bereitstellung schlägt nach einem neuen Commit und einer Push-Benachrichtigung fehl, wobei die Fehlermeldung in etwa wie folgt aussieht:
 
->\[Ausnahme\] Warnung: Fehlendes Argument 3 für Fastly\\Cdn\\Plugin\\.., aufgerufen in /app/vendor/magento/framework/Interception/Interceptor.php ... und definiert in /app/vendor/fastly/magento2/Plugin/ExcludeFilesFromMinification.php ...
+>\[Exception\] Warnung: Fehlendes Argument 3 für Fastly\\Cdn\\Plugin\\…, aufgerufen in /app/vendor/magento/framework/Interception/Interceptor.php … und definiert in /app/vendor/fastly/magento2/Plugin/ExcludeFilesFromMinification.php …
 
-**Ursache:** Abwärtsinkompatible Änderungen im Fastly-Modul v1.2.79.
+**Ursache:** rückwärts inkompatible Änderungen im Fastly-Modul v1.2.79.
 
-**Lösung (temporär):** Aktualisieren Sie das Fastly-Modul auf Version 1.2.82 oder höher und laden Sie eine neue VCL in den Commerce Admin hoch. Übertragen Sie dann Ihre Änderungen und übertragen Sie sie auf eine erfolgreiche Implementierung des Triggers.
+**Lösung (temporär):** Aktualisieren Sie das Fastly-Modul auf Version 1.2.82 oder höher und laden Sie eine neue VCL in Commerce Admin hoch. Übergeben Sie dann Ihre Änderungen und übertragen Sie sie auf den Trigger einer erfolgreichen Bereitstellung.
 
 ## Betroffene Versionen
 
-* Adobe Commerce vor Ort 2.1.X
-* Adobe Commerce auf Cloud-Infrastruktur 2.1.X
+* Adobe Commerce On-Premises 2.1.x
+* Adobe Commerce auf Cloud-Infrastruktur 2.1.x
 * Fastly-Modul 1.2.79
 
 ## Problem
 
-Wenn Sie Ihre Änderungen in die Integration-, Produktions- oder Staging-Umgebung übernehmen und in diese übertragen, löst der nächste Schritt normalerweise den Bereitstellungsprozess aus. Dies geschieht automatisch in Adobe Commerce zur Bearbeitung der Cloud-Infrastruktur und manuell in Adobe Commerce vor Ort.
+Wenn Sie einen Commit ausführen und Ihre Änderungen in die Integrations-, Produktions- oder Staging-Umgebung pushen, wird in der Regel der Bereitstellungsprozess durch den nächsten Schritt ausgelöst. Dies geschieht automatisch in Adobe Commerce in der Cloud Infrastructure Edition und manuell in Adobe Commerce On-Premise.
 
-Die Bereitstellung kann mit den folgenden Fehlermeldungen fehlschlagen:
+Die Bereitstellung schlägt möglicherweise mit den folgenden Fehlermeldungen fehl:
 
 ```
 [2019-01-23 00:00:00] INFO: php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US
@@ -54,11 +54,11 @@ Die Bereitstellung kann mit den folgenden Fehlermeldungen fehlschlagen:
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Wenn Sie Adobe Commerce in der Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) angezeigt. Bei der lokalen Adobe Commerce-Instanz wird der Fehler in der Befehlszeile angezeigt.
+Wenn Sie Adobe Commerce in einer Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im &quot;[&quot; ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations). Bei On-Premise-Adobe Commerce wird der Fehler in der Befehlszeile angezeigt.
 
 ## Ursache
 
-Das Problem wird durch die abwärtskompatiblen Änderungen des Fastly-Moduls v1.2.79 verursacht.
+Das Problem wird durch die abwärtsinkompatiblen Änderungen im Fastly-Modul v1.2.79 verursacht.
 
 ## Lösung
 
@@ -67,7 +67,7 @@ Aktualisieren Sie das Fastly-Modul auf Version 1.2.82 oder höher.
 Gehen Sie dazu wie folgt vor:
 
 1. Führen Sie einen der folgenden Befehle aus:
-   * wenn das Fastly-Modul in das Magento-cloud-metapaket eingeschlossen ist:    <pre>Composer aktualisiert magento/magento-cloud-metapackage</pre>
-   * wenn das Fastly-Modul separat installiert wurde (z. B. wenn Sie Adobe Commerce lokal verwenden, nicht die Cloud-Bearbeitung) <pre>Komponentenaktualisierung schnell/magento2</pre>
-1. Übertragen Sie die Änderungen und übernehmen Sie sie per Push-Benachrichtigung. Wenn dies nicht automatisch erfolgt, wird der Bereitstellungsprozess Trigger.
-1. Laden Sie im Admin [die neue VCL auf Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets) hoch.
+   * wenn das Fastly-Modul im magento-cloud-metapaket enthalten ist:    <pre>Composer-Update Magento/Magento-Cloud-Metapaket</pre>
+   * wenn das Fastly-Modul separat installiert wurde (z. B. wenn Sie Adobe Commerce lokal verwenden, nicht die Cloud-Edition) <pre>Composer Update Fastly/Magento2</pre>
+1. Übergeben Sie die Änderungen, übertragen Sie sie und führen Sie einen Trigger des Bereitstellungsprozesses aus, wenn er nicht automatisch durchgeführt wird.
+1. Laden Sie in der Admin [die neue VCL in Fastly hoch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).

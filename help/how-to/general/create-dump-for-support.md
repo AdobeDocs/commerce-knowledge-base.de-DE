@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer "gescrubten"-Ablage auf Anforderung durch den Support-Mitarbeiter
-description: In diesem Artikel erfahren Sie, wie Sie eine gescannte Sicherungskopie (Backup) Ihrer Datenbank erstellen und vom Adobe Commerce-Administrator Code bereitstellen können, wenn Sie von einem Adobe Commerce-Support-Mitarbeiter dazu aufgefordert werden. In diesem Dump werden Ihre Mediendateien ausgeschlossen, um den Prozess zu beschleunigen und eine wesentlich kleinere Datei zu erzeugen. Alle sensiblen Daten werden beim Erstellen der Datenbanksicherung gehasht.
+title: Erstellen eines „Bereinigungs“-Dump auf Anfrage des Support-Mitarbeiters
+description: Dieser Artikel enthält Informationen dazu, wie Sie einen „Bereinigten“ Dump (Backup) Ihrer Datenbank und Ihres Codes vom Adobe Commerce-Administrator erstellen, wenn Sie von einem Adobe Commerce-Support-Agenten dazu aufgefordert werden. Dieser Dump schließt Ihre Mediendateien aus, um den Prozess zu beschleunigen und eine viel kleinere Datei zu erhalten. Bei der Datenbanksicherung werden alle sensiblen Daten gehasht.
 exl-id: ad088bd2-3f92-416e-89f0-d037d53cd6a9
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
@@ -9,26 +9,26 @@ ht-degree: 0%
 
 ---
 
-# Erstellen einer &quot;gescrubten&quot;-Ablage auf Anforderung durch den Support-Mitarbeiter
+# Erstellen eines „Bereinigungs“-Dump auf Anfrage des Support-Mitarbeiters
 
 
 ## Betroffene Produkte und Versionen
 
 Adobe Commerce (alle Bereitstellungsmethoden) 2.3.x, 2.4.x.
 
-## Erstellen einer &quot;gescrubten&quot;-Dump
+## Erstellen eines „bereinigten“ Speicherauszugs
 
-Erstellen Sie eine &quot;gescrubbt&quot;-Dump vom Administrator:
+Erstellen Sie einen „bereinigten“ Dump vom Administrator:
 
 1. Wechseln Sie in Commerce Admin zu **System** > **Support** > **Datenerfassung**.
-1. Klicken Sie auf **Neues Backup**.
-1. Klicken Sie nach einigen Minuten auf **Status aktualisieren** (kann länger dauern und alle 5 Minuten wiederholen, bis der Vorgang abgeschlossen ist).
-1. Platzieren Sie die generierten Dump-Dateien aus dem Ordner &quot;`/var/support`&quot;in den Stammordner von Adobe Commerce.
+1. Klicken Sie **Neue Sicherung**.
+1. Klicken Sie nach einigen Minuten auf **Status aktualisieren** (kann länger dauern und alle 5 Minuten bis zum Abschluss wiederholt werden).
+1. Verschieben Sie die generierten Dump-Dateien aus dem `/var/support` in das Adobe Commerce-Stammverzeichnis.
 
-Sie können dann angeben, um den direkten Download-Link zu den Dump-Dateien zu unterstützen (Ihre Store-Adresse und der Dateiname wie angezeigt).
+Sie können dann für den Support den direkten Download-Link zu den Dump-Dateien angeben (Ihre Store-Adresse und der Dateiname wie angezeigt).
 
-Wenn Sie Probleme beim Erstellen von Dumps aus dem Admin haben, sollten Sie die Verwendung von CLI-Befehlen in Erwägung ziehen, wie unter [Ausführen der Support-Dienstprogramme](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) in unserer Entwicklerdokumentation beschrieben.
+Wenn Sie beim Erstellen von Dumps über die Admin Probleme haben, sollten Sie CLI-Befehle verwenden, wie unter [Ausführen der Support-Dienstprogramme](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) in unserer Entwicklerdokumentation beschrieben.
 
 ## Verwandtes Lesen
 
-* [Erstellen Sie eine vollständige Datenbanksicherung für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.
+* [Erstellen Sie vollständige Datenbanksicherung für Adobe Commerce in der Cloud](/help/how-to/general/create-database-dump-on-cloud.md)Infrastruktur in unserer Support-Wissensdatenbank.

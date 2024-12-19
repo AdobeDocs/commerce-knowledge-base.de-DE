@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Live Search] Facetten sind nicht alphabetisch sortiert'
-description: Dieser Artikel enthält Informationen zur Fehlerbehebung, wenn die [!DNL Live Search] Facetten nicht alphabetisch sortiert sind.
+description: Dieser Artikel enthält Informationen zur Fehlerbehebung, wenn  [!DNL Live Search]  Facetten nicht alphabetisch sortiert sind.
 feature: Admin Workspace, Categories, Search
 role: Developer
 exl-id: 59f86727-c2a6-4418-8753-40f7937e059c
@@ -15,24 +15,24 @@ ht-degree: 0%
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce-Versionen 2.4.x und neuer
+Adobe Commerce-Versionen 2.4.x und höher
 
 ## Problem
 
-Alle Adobe Commerce Storefront-Facetten werden alphabetisch mit Einzelauswahl-Optionen sortiert, unabhängig vom Eingabetyp, der dem entsprechenden Attribut zugewiesen ist.
+Alle Facetten der Adobe Commerce-Storefront werden alphabetisch mit Einzelauswahloptionen sortiert, unabhängig vom Eingabetyp, der dem entsprechenden Attribut zugewiesen ist.
 
-## Workaround
+## Abhilfe
 
-In bestimmten Sonderfällen werden Facetten jedoch möglicherweise nicht alphabetisch sortiert, wie im Arbeitsbereich [[!DNL Live Search] Faceting](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) eingerichtet.
+In bestimmten Randfällen werden Facetten jedoch möglicherweise nicht alphabetisch sortiert, wie dies im Arbeitsbereich [[!DNL Live Search] Facettierung“ ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) wurde.
 
-Als Problemumgehung können Sie Produktattribute im Abschnitt [!UICONTROL Admin] -Attribute sortieren.
+Als Problemumgehung können Sie Produktattribute im Abschnitt [!UICONTROL Admin] sortieren.
 
-1. Wechseln Sie in der Seitenleiste **[!UICONTROL Admin]** zu **Stores** > *Attribute* > **Produkt**.
+1. Navigieren Sie in der **[!UICONTROL Admin]** Seitenleiste zu **Stores** > *Attribute* > **Product**.
 1. Wählen Sie ein Attribut aus der Tabelle aus.
 
    ![Attributliste](assets/attribute-list.png)
 
-1. Öffnen Sie das Attribut mit den Werten, die Sie sortieren möchten, und wählen Sie **Attributinformationen** > **Eigenschaften** aus.
+1. Öffnen Sie das Attribut mit den Werten, die Sie sortieren möchten, und wählen Sie **Attributinformationen** > **Eigenschaften**.
 1. Unter **Optionen verwalten** können Sie die Attributwerte sortieren.
 
-   ![Sortierattribute](assets/sort-attributes.png)
+   ![Attribute sortieren](assets/sort-attributes.png)

@@ -1,6 +1,6 @@
 ---
 title: 503-Fehler beim Zugriff auf Adobe Commerce im Webbrowser
-description: Dieser Artikel bietet eine mögliche Lösung für das Problem, dass beim Zugriff auf Adobe Commerce Storefront und/oder Admin ein 503-Fehler auftritt.
+description: Dieser Artikel bietet eine mögliche Lösung für das Problem, dass beim Versuch, auf die Adobe Commerce-Storefront und/oder Admin zuzugreifen, der Fehler „503“ auftritt.
 exl-id: 4232aa21-40c2-41b0-9fb0-fc8cd4db8e39
 feature: Storefront
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 503-Fehler beim Zugriff auf Adobe Commerce im Webbrowser
 
-Dieser Artikel bietet eine mögliche Lösung für das Problem, dass beim Zugriff auf Adobe Commerce Storefront und/oder Admin ein 503-Fehler auftritt.
+Dieser Artikel bietet eine mögliche Lösung für das Problem, dass beim Versuch, auf die Adobe Commerce-Storefront und/oder Admin zuzugreifen, der Fehler „503“ auftritt.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,11 +21,11 @@ Adobe Commerce 2.3.x
 
 ## Problem {#symptoms}
 
-<u>Zu reproduzierende Schritte</u>
+<u>Schritte zur Reproduktion</u>
 
-(Voraussetzungen: Stellen Sie sicher, dass sich der Store nicht im [Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show) befindet.)
+(Voraussetzungen: Stellen Sie sicher, dass sich der Speicher nicht im [Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show) befindet.
 
-Navigieren Sie in einem Webbrowser zu Ihrem Commerce-Administrator oder Ihrer Storefront.
+Navigieren Sie in einem Webbrowser zu Ihrer Commerce Admin oder Storefront.
 
 <u>Erwartetes Ergebnis</u>
 
@@ -33,9 +33,9 @@ Die Seite wird geladen.
 
 <u>Tatsächliches Ergebnis</u>
 
-Sie erhalten den Fehler HTTP 503 (Dienst nicht verfügbar). Der Apache `error.log` enthält die folgende Meldung:
+Der HTTP-Fehler 503 (Dienst nicht verfügbar) wird angezeigt. Der Apache-`error.log` enthält die folgende Meldung:
 
-*Ungültiger Befehl &#39;Bestellung&#39;, möglicherweise falsch geschrieben oder von einem Modul definiert, das nicht in der Serverkonfiguration enthalten ist.*
+*Ungültiger Befehl „order“, möglicherweise falsch geschrieben oder von einem Modul definiert, das nicht in der Server-Konfiguration enthalten ist.*
 
 ## Ursache {#details}
 
@@ -43,32 +43,32 @@ Das Apache 2.4-Kompatibilitätsmodul `mod_access_compat` ist deaktiviert, was da
 
 ## Lösung {#suggested-solution}
 
-Aktivieren Sie das Apache-Modul `mod_access_compat` und starten Sie Apache neu, indem Sie Folgendes als Benutzer mit den Berechtigungen &quot;root&quot;ausführen:
+Aktivieren Sie das `mod_access_compat` Apache-Modul und starten Sie Apache neu, indem Sie Folgendes als Benutzer mit „Root“-Berechtigungen ausführen:
 
 ```bash
 a2enmod access_compat
 service <name> restart
 ```
 
-Unter CentOS:
+Unter CentOS
 
 ```bash
 <name>
 ```
 
-is
+ist
 
 ```bash
 httpd
 ```
 
-. Ubuntu:
+. Auf Ubuntu,
 
 ```bash
 <name>
 ```
 
-is
+ist
 
 ```bash
 apache2
@@ -80,5 +80,5 @@ apache2
 
 * [Apache-Dokumentation zu mod\_access\_compat](https://httpd.apache.org/docs/current/mod/mod_access_compat.html)
 * [Apache-Dokumentation zu mod\_authz\_host](https://httpd.apache.org/docs/current/mod/mod_authz_host.html)
-* [Bestellen, Zulassen, Ablehnen aus dem Apache-Definitionsleitfaden](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
+* [Reihenfolge, Zulassen, Ablehnen über das Apache-Handbuch](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
 * [askubuntu.com](https://askubuntu.com/questions/335228/changes-in-apache-config-between-12-04-2-and-12-04-3-lts)

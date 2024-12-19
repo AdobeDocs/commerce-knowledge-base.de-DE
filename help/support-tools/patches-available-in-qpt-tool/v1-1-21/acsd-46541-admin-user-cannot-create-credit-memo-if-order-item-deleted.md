@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-46541: Ein Administrator kann kein Kreditmemo erstellen, wenn ein Bestellelement gelöscht wird'
-description: Wenden Sie den Patch ACSD-46541 an, um das Adobe Commerce-Problem zu beheben, bei dem Sie nach dem Löschen eines Produkts kein Kreditmemo in der Adobe Commerce Admin erstellen können.
+title: 'ACSD-46541: Ein Administrator kann keine Gutschrift erstellen, wenn ein Bestellartikel gelöscht wird'
+description: Wenden Sie den ACSD-46541 Patch an, um das Adobe Commerce-Problem zu beheben, bei dem Sie nach dem Löschen eines Produkts keine Gutschrift in Adobe Commerce Admin erstellen können.
 exl-id: ff3f8f21-76c1-41b5-bf02-349403a46fc1
 feature: Admin Workspace, Orders, Returns
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46541: Ein Administrator kann kein Kreditmemo erstellen, wenn ein Bestellelement gelöscht wird
+# ACSD-46541: Ein Administrator kann keine Gutschrift erstellen, wenn ein Bestellartikel gelöscht wird
 
-Der Patch ACSD-46541 behebt das Problem, dass ein Admin-Benutzer kein Kreditmemo erstellen kann, wenn ein Bestellelement gelöscht wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 installiert ist. Die Patch-ID ist ACSD-46541. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch ACSD-46541 behebt das Problem, dass ein Administrator keine Gutschrift erstellen kann, wenn ein Bestellartikel gelöscht wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.21 installiert ist. Die Patch-ID ist ACSD-46541. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -23,45 +23,45 @@ Der Patch ACSD-46541 behebt das Problem, dass ein Admin-Benutzer kein Kreditmemo
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.0 - 2.4.3 - p3
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.0 - 2.4.3-p3
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Nachdem ein Produkt gelöscht wurde, können Sie in der Commerce Admin kein Kreditmemo erstellen.
+Nachdem ein Produkt gelöscht wurde, können Sie keine Gutschrift mehr in Commerce Admin erstellen.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Melden Sie sich bei Commerce Admin an.
+1. Melden Sie sich beim Commerce Admin an.
 1. Erstellen Sie eine Bestellung.
-1. Rechnungsstellung.
+1. Rechnung der Bestellung.
 1. Löschen Sie das Produkt aus der Bestellung.
-1. Klicken Sie auf der Seite zur Bestellbearbeitung auf den Link **[!UICONTROL Credit Memo]** .
-1. Klicken Sie auf **[!UICONTROL Refund Offline]** , um ein Kreditmemo zu erstellen.
+1. Klicken Sie auf den Link **[!UICONTROL Credit Memo]** auf der Seite zur Bearbeitung der Bestellung.
+1. Klicken Sie auf **[!UICONTROL Refund Offline]** , um eine Gutschrift zu erstellen.
 
 <u>Erwartete Ergebnisse</u>:
 
-Ein Kreditmemo wurde erfolgreich erstellt.
+Eine Gutschrift wurde erfolgreich erstellt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die folgenden _Produkte mit angeforderten SKUs wurden nicht gefunden: SKU001_-Fehler wird angezeigt.
+Die _Produkte mit angeforderten SKUs wurden nicht gefunden: SKU001_ Fehleranzeigen.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

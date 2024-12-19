@@ -1,6 +1,6 @@
 ---
 title: Häufig gestellte Fragen zum Adobe Commerce Security Scan Tool
-description: In diesem Artikel werden einige häufig gestellte Fragen (FAQ) zum Adobe Commerce Security Scan Tool beantwortet.
+description: In diesem Artikel werden einige häufig gestellte Fragen (FAQ) zum Adobe Commerce-Sicherheits-Scan-Tool beantwortet.
 exl-id: 380ce617-e3d9-491b-b425-8489abd3c541
 feature: Compliance
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -12,42 +12,42 @@ ht-degree: 0%
 
 # Häufig gestellte Fragen zum Adobe Commerce Security Scan Tool
 
-In diesem Artikel werden einige häufig gestellte Fragen (FAQ) zum Adobe Commerce Security Scan Tool beantwortet.
+In diesem Artikel werden einige häufig gestellte Fragen (FAQ) zum Adobe Commerce-Sicherheits-Scan-Tool beantwortet.
 
-## Was ist das Sicherheitsscan-Tool, und für wen ist es geschrieben? {#what-is-the-magento-security-scan-tool-and-who-is-it-written-for}
+## Was ist das Security Scan Tool und für wen ist es geschrieben? {#what-is-the-magento-security-scan-tool-and-who-is-it-written-for}
 
-Das Security Scan Tool ist ein kostenloses Tool, das unseren Händlern, Entwicklern und den von ihnen als verantwortlich bezeichneten Mitarbeitern zur Verfügung steht, um ihre Websites auf Sicherheitsrisiken zu überwachen. Es kann proaktiv und effizient Malware in Händlern erkennen und Händler darüber informieren, ob es Sicherheitsrisiken, Malware oder Bedrohungen gibt.
+Das Security Scan Tool ist ein kostenloses Tool, mit dem unsere Händler, Entwickler und das von ihnen als verantwortlich benannte Personal ihre Websites auf Sicherheitsrisiken überwachen können. Es kann proaktiv und effizient Malware in Händlern erkennen und Händler benachrichtigen, wenn Sicherheitsrisiken, Malware oder Bedrohungen vorliegen.
 
-## Ist das Sicherheits-Scan-Tool für alle Adobe Commerce-Händler verfügbar? {#is-magento-security-scan-tool-available-to-all-magento-merchants}
+## Ist das Security Scan Tool für alle Adobe Commerce-Händler verfügbar? {#is-magento-security-scan-tool-available-to-all-magento-merchants}
 
-Ja, das Sicherheitsscan-Tool ist für alle Adobe Commerce- und Magento Open Source-Händler verfügbar.
+Ja, das Security Scan Tool steht allen Adobe Commerce- und Magento Open Source-Händlern zur Verfügung.
 
-## Kann jemand meine Website mit dem Security Scan Tool scannen? {#can-anyone-scan-my-site-with-the-magento-security-scan-tool}
+## Kann jemand meine Website mit dem Security Scan Tool durchsuchen? {#can-anyone-scan-my-site-with-the-magento-security-scan-tool}
 
-Nein, ein Händler verknüpft seine Site mit seinem Adobe Commerce-Konto, wenn er eine Prüfung über ein Token anfordert. Dies ist pro Site eindeutig.
+Nein, ein Händler verknüpft seine Site mit seinem Adobe Commerce-Konto, wenn er eine Überprüfung mit einem Token anfordert. Dies ist pro Site eindeutig.
 
 ## Kann das Tool Nicht-Adobe Commerce-Seiten in meinem Webstore scannen? {#can-the-tool-scan-non-magento-pages-on-my-webstore}
 
-Das Sicherheitsscan-Tool wurde entwickelt, um Schwachstellen auf Adobe Commerce-Domänen zu überprüfen. Das Scannen von Nicht-Adobe Commerce-Seiten auf Sicherheitslücken mithilfe des Sicherheitsscan-Tools kann zu unzuverlässigen Ergebnissen führen. Wir empfehlen unseren Händlern dringend, das Sicherheitsscan-Tool nicht zu verwenden, um Seiten zu überprüfen, die von anderen Nicht-Adobe Commerce-Plattformen generiert wurden.
+Das Security Scan Tool ist für die Suche nach Sicherheitslücken in Adobe Commerce Domains konzipiert. Das Überprüfen von Nicht-Adobe Commerce-Seiten auf Sicherheitslücken mithilfe des Security Scan Tools kann zu unzuverlässigen Ergebnissen führen. Wir empfehlen unseren Händlern dringend, das Security Scan Tool nicht zum Durchsuchen von Seiten zu verwenden, die von anderen Plattformen als Adobe Commerce generiert wurden.
 
 ## Kann ich bestimmte Sicherheitstests vom Scan-Tool ausschließen? {#can-i-exclude-specific-security-tests-from-magento-scan-tool}
 
-Die Händler des Sicherheits-Scan-Tools können bestimmte Sicherheitstests nicht von den Prüfungen des Sicherheitsscan-Tools für Adobe Commerce ausschließen. Jeder Sicherheitstest für das Security Scan Tool wurde geschrieben, um Händler bei der Identifizierung von Sicherheitsrisiken, Malware und Bedrohungen zu unterstützen.
+Die Händler des Security Scan Tools können bestimmte Sicherheitstests nicht von den Scans des Security Scan Tools für Adobe Commerce ausschließen. Jeder Security Scan Tool-Sicherheitstest dient dazu, Händler bei der Identifizierung von Sicherheitsrisiken, Malware und Bedrohungen zu unterstützen.
 
-## Was kostet es? {#what-does-it-cost}
+## Was kostet das? {#what-does-it-cost}
 
-Das Sicherheitsscan-Tool ist kostenlos. Händler müssen einen Haftungsausschluss akzeptieren, der Adobe Commerce von der Haftung entbindet, die auf den Ergebnissen des Sicherheitsscan oder der Konfiguration ihrer Website basiert.
+Das Security Scan Tool ist kostenlos. Händler müssen einen Haftungsausschluss akzeptieren, der Adobe Commerce von der Haftung auf der Grundlage der Ergebnisse der Sicherheitsprüfung oder der Konfiguration ihrer Website freistellt.
 
-## Wie funktioniert das Sicherheitsscan-Tool? {#how-does-the-magento-security-scan-tool-work}
+## Wie funktioniert das Security Scan Tool? {#how-does-the-magento-security-scan-tool-work}
 
-Das Sicherheitsscan-Tool ist webbasiert und kann über das Online-Adobe Commerce-Konto des Händlers ([account.magento.com](https://account.magento.com/)) aufgerufen werden. Die Sicherheitsprüfung erfolgt über HTTP und HTTPS. Es sucht nach bekannten Sicherheitsproblemen und erkennt fehlende Adobe Commerce-Patches und -Updates.
+Das Security Scan Tool ist webbasiert und kann über das Adobe Commerce-Online-Konto des Händlers ([account.magento.com) ](https://account.magento.com/) werden. Die Sicherheitsprüfung läuft sowohl über HTTP als auch über HTTPS. Er sucht nach bekannten Sicherheitsproblemen und identifiziert fehlende Adobe Commerce-Patches und -Updates.
 
-## Wie melde ich mich für die Verwendung des Sicherheits-Scan-Tools an? {#how-do-i-sign-up-to-use-the-magento-security-scan-tool}
+## Wie melde ich mich an, um das Security Scan Tool zu verwenden? {#how-do-i-sign-up-to-use-the-magento-security-scan-tool}
 
-Händler können sich registrieren, um mit dem Sicherheitsscan-Tool ihre Webstores über ihr Adobe Commerce-Konto ([account.magento.com](https://account.magento.com)) zu überprüfen. Folgen Sie dem Link zur Anmeldung für das Sicherheitsscan-Tool [hier](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
+Händler können sich registrieren, um das Security Scan Tool zu verwenden und ihre Webshops über ihr Adobe Commerce-Konto zu durchsuchen ([account.magento.com](https://account.magento.com)). Folgen Sie dem Link, um sich für das Security Scan Tool anzumelden [hier](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
 
-## Was mache ich, wenn ich im Scan-Bericht auf ein falsch-positives Ergebnis treffe? {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
+## Was kann ich tun, wenn ich im Scan-Bericht auf einen falsch positiven Wert stoße? {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
-Wir empfehlen unseren Händlern, alle fehlgeschlagenen Prüfungen zu untersuchen und geeignete Schritte zur Lösung solcher Probleme zu unternehmen. Wenn Händler nach der Untersuchung auf ein Überprüfungsergebnis stoßen, das als falsch positiv erscheint, bitten wir den Händler, Adobe zu benachrichtigen, geeignete Maßnahmen zu ergreifen.
+Wir empfehlen unseren Händlern, alle fehlgeschlagenen Scans zu untersuchen und geeignete Schritte zur Lösung solcher Probleme zu unternehmen. Wenn Händler nach der Untersuchung auf ein Scan-Ergebnis stoßen, das als falsch positiv erscheint, bitten wir den Händler, Adobe zu benachrichtigen, damit es entsprechende Maßnahmen ergreift.
 
-Um einen falsch positiven Bericht einzureichen, geben Sie ein Ticket beim Adobe Commerce-Händler-Support ein, damit wir den falsch-positiven Bericht auswerten, erforderliche Änderungen vornehmen und/oder Empfehlungen bereitstellen können, um zu verhindern, dass solche Benachrichtigungen in Zukunft angezeigt werden. Händler können auch einen Falsch-Positiv-Wert melden, indem sie uns eine E-Mail an [securityscan@magento.com](mailto:securityscan@magento.com) schicken.
+Um einen falsch positiven Bericht zu senden, geben Sie ein Ticket beim Adobe Commerce-Händlersupport ein, damit wir den falsch positiven Bericht bewerten, die erforderlichen Änderungen vornehmen und/oder Empfehlungen geben können, um solche Benachrichtigungen in Zukunft zu vermeiden. Händler können auch einen falsch positiven Wert melden, indem sie uns eine E-Mail an [securityscan@magento.com](mailto:securityscan@magento.com) senden.

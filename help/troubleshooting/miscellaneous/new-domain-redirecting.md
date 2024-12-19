@@ -1,6 +1,6 @@
 ---
-title: Neue Domäne leitet zur Standarddomäne um
-description: Dieser Artikel enthält eine Fehlerbehebung für das Problem, dass die neue Domäne in der vorhandenen oder anderen Umgebung zur Standarddomäne weiterleitet.
+title: Neue Domain leitet zur Standard-Domain um
+description: Dieser Artikel bietet eine Lösung für das Problem, dass die neue Domain in der vorhandenen oder einer anderen Umgebung zur Standard-Domain umgeleitet wird.
 exl-id: 88e9eb3f-9b82-4ca3-aa80-e49f360b3eb9
 feature: Configuration
 role: Developer
@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# Neue Domäne leitet zur Standarddomäne um
+# Neue Domain leitet zur Standard-Domain um
 
-Dieser Artikel enthält eine Fehlerbehebung für das Problem, dass die neue Domäne in der vorhandenen oder anderen Umgebung zur Standarddomäne weiterleitet.
+Dieser Artikel bietet eine Lösung für das Problem, dass die neue Domain in der vorhandenen oder einer anderen Umgebung zur Standard-Domain umgeleitet wird.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce auf Cloud-interne Infrastruktur (alle Versionen)
+* Adobe Commerce auf Cloud Pro-Infrastruktur (alle Versionen)
 
 ## Problem
 
-Die neue Domäne leitet zur Standarddomäne in der aktuellen Umgebung oder zur Standarddomäne einer anderen Umgebung um.
+Die neue Domain leitet zur Standard-Domain in der aktuellen Umgebung oder zur Standard-Domain einer anderen Umgebung um.
 
 ## Ursache
 
-Dies geschieht, wenn die Variablen nicht aktualisiert werden, nachdem eine neue Domäne hinzugefügt wurde oder der falsche [!DNL Fastly] -Dienst in der Umgebung konfiguriert wurde.
+Dies geschieht, wenn die Variablen nicht aktualisiert werden, nachdem eine neue Domain hinzugefügt wurde oder der falsche [!DNL Fastly]-Service in der Umgebung konfiguriert wurde.
 
 ## Lösung
 
-1. Wenn die Domäne innerhalb derselben Umgebung umleitet, stellen Sie sicher, dass Sie die [Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables) konfiguriert haben.
-1. Wenn die Domäne zu einer anderen Umgebung umleitet, überprüfen Sie, ob Sie den richtigen [!DNL Fastly]-Dienst konfiguriert haben, indem Sie den folgenden Befehl ausführen: `bin/magento fastly:conf:get -s`
+1. Wenn die Domain innerhalb derselben Umgebung umgeleitet wird, stellen Sie sicher, dass Sie die [Variablen“ konfiguriert ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables).
+1. Wenn die Domain zu einer anderen Umgebung umleitet, überprüfen Sie, ob Sie den richtigen [!DNL Fastly]-Service konfiguriert haben, indem Sie den folgenden Befehl ausführen: `bin/magento fastly:conf:get -s`
 
 >[!NOTE]
 >
->Sie finden die [!DNL Fastly] -API-Anmeldeinformationen, indem Sie sich bei jeder Umgebung (Staging/Produktion) anmelden und die Datei `/mnt/shared/fastly_tokens.txt` überprüfen. Weitere Informationen finden Sie unter [Konfigurieren von [!DNL Fastly] Diensten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) im Handbuch zu Commerce on Cloud Infrastructure.
+>Sie können die [!DNL Fastly] API-Anmeldeinformationen finden, indem Sie sich bei jeder Umgebung (Staging/Produktion) anmelden und die `/mnt/shared/fastly_tokens.txt` Datei überprüfen. Weitere Informationen finden Sie unter [configure [!DNL Fastly] services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) im Handbuch Commerce on Cloud Infrastructure.
 
-Wenn beide oben genannten Konfigurationen korrekt sind, senden Sie ein Support-Ticket.
+Wenn beide oben genannten Konfigurationen korrekt sind, reichen Sie ein Support-Ticket ein.
 
 ## Verwandtes Lesen
 
-* [Checkliste zum Einrichten einer neuen Domäne](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html) in unserer Support-Wissensdatenbank.
+* [Checkliste für die Einrichtung einer neuen Domain](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html) in unserer Support-Wissensdatenbank.

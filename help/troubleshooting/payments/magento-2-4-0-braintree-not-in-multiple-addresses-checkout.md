@@ -1,6 +1,6 @@
 ---
-title: 'Adobe Commerce 2.4.0: Braintree nicht an mehreren Adressen checkout'
-description: Dieser Artikel bietet eine Problemumgehung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Braintree-Zahlungsmethoden nicht beim Arbeiten mit dem Checkout für mehrere Adressen enthalten sind. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
+title: 'Adobe Commerce 2.4.0: Braintree nicht im Checkout für mehrere Adressen'
+description: Dieser Artikel bietet eine Problemumgehung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Braintree-Zahlungsmethoden nicht in die Arbeit mit dem Checkout für mehrere Adressen einbezogen sind. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 exl-id: efde0bba-fd4a-490b-becb-856cb9ea58a5
 feature: Checkout, Compliance, Orders, Payments, Shipping/Delivery
 role: Developer
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.4.0: Braintree nicht an mehreren Adressen checkout
+# Adobe Commerce 2.4.0: Braintree nicht im Checkout für mehrere Adressen
 
-Dieser Artikel bietet eine Problemumgehung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Braintree-Zahlungsmethoden nicht beim Arbeiten mit dem Checkout für mehrere Adressen enthalten sind. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
+Dieser Artikel bietet eine Problemumgehung für ein bekanntes Adobe Commerce 2.4.0-Problem, bei dem Braintree-Zahlungsmethoden nicht in die Arbeit mit dem Checkout für mehrere Adressen einbezogen sind. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 
-Hinweis: Adobe Commerce empfiehlt die Verwendung der [Commerce Marketplace-Braintree-Erweiterung](https://marketplace.magento.com/paypal-module-braintree.html) für Versionen 2.3 und höher, um die PSD-Konformität zu wahren. Die Erweiterung bietet keine Funktion zum Auschecken mehrerer Adressen.
+Hinweis: Adobe Commerce empfiehlt die Verwendung der [Commerce Marketplace-Braintree-Erweiterung](https://marketplace.magento.com/paypal-module-braintree.html) für Version 2.3 und höher, um die PSD-Konformität zu wahren. Die Erweiterung bietet nicht die Funktion zum Auschecken über mehrere Adressen.
 
 ## Betroffene Produkte und Versionen
 
@@ -26,34 +26,34 @@ Hinweis: Adobe Commerce empfiehlt die Verwendung der [Commerce Marketplace-Brain
 
 <u>Voraussetzungen</u>:
 
-Die Core-Braintree-Integration wird verwendet.
+Die Core Braintree-Integration wird verwendet.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Gehen Sie zur Storefront.
+1. Geh zum Laden.
 1. Melden Sie sich als Kunde an.
-1. Fügen Sie dem Warenkorb ein Produkt hinzu.
-1. Öffnen Sie Ihren Warenkorb.
+1. Fügen Sie ein Produkt zum Warenkorb hinzu.
+1. Öffnen Sie den Warenkorb.
 1. Drücken Sie **Warenkorb anzeigen und bearbeiten**.
 1. Drücken Sie **Mit mehreren Adressen auschecken**.
-1. Drücken Sie die Taste **Gehe zu Versandinformationen**.
+1. Drücken Sie **Zu Versandinformationen gehen**.
 1. Drücken Sie **Weiter zu Rechnungsinformationen**.
 
 <u>Erwartetes Ergebnis</u>:
 
-Braintree ist als Zahlungsmethode erhältlich.
+Braintree ist als Zahlungsmethode verfügbar.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
 Braintree ist nicht als Zahlungsmethode verfügbar.
 
-## Workaround
+## Abhilfe
 
-Aktivieren Sie bei Verwendung von Braintree in Adobe Commerce 2.4.0 keine Optionen für mehrere Adressen. Dieses Problem wurde in Adobe Commerce 2.4.1 behoben.
+Aktivieren Sie keine Optionen für mehrere Adressen, wenn Sie Braintree in Adobe Commerce 2.4.0 verwenden. Dieses Problem wurde in Adobe Commerce 2.4.1 behoben.
 
-## Verwandtes Lesen in unserer Wissensdatenbank
+## Lesen Sie diesbezüglich in unserer Support-Wissensdatenbank
 
-* [Bekanntes Problem mit Adobe Commerce 2.4.0 - Aktualisierung der Kundenaktivitäten funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Bekanntes Problem mit Adobe Commerce 2.4.0: Rohdaten werden in Storefront angezeigt](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
-* [Bekanntes Problem in Adobe Commerce 2.4.0 - Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
-* [Bekanntes Problem in Adobe Commerce 2.4.0: Schaltfläche &quot;Auswahl zum Warenkorb hinzufügen&quot;funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
+* [Bekanntes Problem in Adobe Commerce 2.4.0 - Aktualisierung der Aktivitäten des Kunden funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
+* [Bekanntes Problem in Adobe Commerce 2.4.0: Rohnachrichtendaten werden in der Storefront angezeigt](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
+* [Adobe Commerce 2.4.0 bekanntes Problem - Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
+* [Bekanntes Problem in Adobe Commerce 2.4.0: Die Schaltfläche „Auswahl zu meinem Warenkorb hinzufügen“ funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

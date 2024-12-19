@@ -1,6 +1,6 @@
 ---
-title: Probleme mit Composer-Plug-ins bei der Aktualisierung auf Adobe Commerce 2.4.4
-description: Dieser Artikel bietet eine Lösung, um das Problem mit Composer-Plug-ins beim Aktualisieren von Adobe Commerce 2.4.3 und früher auf Adobe Commerce 2.4.4 oder höher zu vermeiden (wenn zukünftige Versionen veröffentlicht werden).
+title: Composer-Plug-ins-Probleme beim Upgrade auf Adobe Commerce 2.4.4
+description: Dieser Artikel bietet eine Lösung, um das Problem mit Composer-Plug-ins beim Upgrade von Adobe Commerce 2.4.3 und früher auf Adobe Commerce 2.4.4 oder höher (wenn zukünftige Versionen veröffentlicht werden) zu vermeiden.
 exl-id: 7502ca9e-c307-4e8a-aa1d-4886e7be25da
 feature: Upgrade
 role: Developer
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 ---
 
-# Probleme mit Composer-Plug-ins bei der Aktualisierung auf Adobe Commerce 2.4.4
+# Composer-Plug-ins-Probleme beim Upgrade auf Adobe Commerce 2.4.4
 
-Dieser Artikel bietet eine Lösung, um Probleme mit Composer-Plug-ins beim Upgrade von Adobe Commerce 2.4.3 und früher auf Adobe Commerce 2.4.4 oder höher zu vermeiden (wenn zukünftige Versionen veröffentlicht werden).
+Dieser Artikel bietet eine Lösung, um Probleme mit Composer-Plug-ins beim Upgrade von Adobe Commerce 2.4.3 und früher auf Adobe Commerce 2.4.4 oder höher (wenn zukünftige Versionen veröffentlicht werden) zu vermeiden.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce vor Ort, jede Version bei Aktualisierung auf 2.4.4 oder höher (bei Veröffentlichung)
-* Adobe Commerce in der Cloud-Infrastruktur, alle Versionen beim Aktualisieren auf 2.4.4 oder höher (bei Veröffentlichung)
-* Magento Open Source, alle Versionen beim Aktualisieren auf 2.4.4 oder höher (wenn veröffentlicht)
+* Adobe Commerce On-Premises, jede Version bei der Aktualisierung auf 2.4.4 oder höher (bei Veröffentlichung)
+* Adobe Commerce auf Cloud-Infrastruktur, jede Version bei der Aktualisierung auf 2.4.4 oder höher (bei Veröffentlichung)
+* Magento Open Source, jede Version bei der Aktualisierung auf 2.4.4 oder höher (bei Veröffentlichung)
 
 ## Problem
 
-Beim Aktualisieren auf Adobe Commerce 2.4.4 oder höher nach Juli 2022 erhalten Sie möglicherweise eine Warnung vom Composer bezüglich Plugins.
+Bei der Aktualisierung auf Adobe Commerce 2.4.4 oder höher nach Juli 2022 erhalten Sie möglicherweise eine Warnung von Composer zu Plug-ins.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 Voraussetzungen: Adobe Commerce 2.4.3 oder früher ist installiert.
 
-1. Starten Sie das Upgrade wie in [Führen Sie ein Upgrade durch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) beschrieben.
-1. Führen Sie den Befehl `composer update` aus, um die Adobe Commerce-Anwendung zu aktualisieren.
+1. Starten Sie das Upgrade wie unter [Durchführen eines Upgrades](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) beschrieben.
+1. Führen Sie den `composer update` Befehl aus, um die Adobe Commerce-Anwendung zu aktualisieren.
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Aktualisierung ist erfolgreich.
+Upgrade ist erfolgreich.
 
 <u>Tatsächliche Ergebnisse</u>:
 
@@ -58,13 +58,13 @@ Plugin initialization failed (require(app/etc/NonComposerComponentRegistration.p
 
 ## Ursache
 
-Ab Juli 2022 ändert der Composer den Standardwert der [`allow-plugins`-Option](https://getcomposer.org/doc/06-config.md#allow-plugins) in `{}` und Plug-ins werden nicht mehr geladen, es sei denn, dies ist zulässig.
+Nach Juli 2022 ändert Composer den Standardwert der [`allow-plugins` Option ](https://getcomposer.org/doc/06-config.md#allow-plugins) in `{}` und Plug-ins werden nicht mehr geladen, es sei denn, sie sind erlaubt.
 
 ## Lösung
 
-Fügen Sie Ihrer `composer.json` -Datei je nach der Installation von Adobe Commerce Folgendes hinzu:
+Fügen Sie je nach Installation von Adobe Commerce Folgendes zu Ihrer `composer.json` hinzu:
 
-* Wenn das Projekt [mit dem Befehl `composer create-project` erstellt wurde](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
+* Wenn das Projekt erstellt wurde [mit dem `composer create-project` Befehl](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
 
   ```json
   "config": {
@@ -76,7 +76,7 @@ Fügen Sie Ihrer `composer.json` -Datei je nach der Installation von Adobe Comme
   }
   ```
 
-* Wenn das Projekt auf andere Weise erstellt wurde und nicht über `"dealerdirect/phpcodesniffer-installer"` im Abschnitt `"require-dev"` verfügt:
+* Wenn das Projekt auf eine andere Weise erstellt wurde und in `"require-dev"` Abschnitt keine `"dealerdirect/phpcodesniffer-installer"` enthält:
 
   ```json
   "config": {
@@ -87,4 +87,4 @@ Fügen Sie Ihrer `composer.json` -Datei je nach der Installation von Adobe Comme
   }
   ```
 
-Führen Sie nach dem Aktualisieren der Datei `composer.json` den Befehl `composer update` aus und starten Sie den Aktualisierungsprozess neu.
+Führen Sie nach dem Aktualisieren der `composer.json` den Befehl `composer update` aus und starten Sie den Aktualisierungsprozess neu.

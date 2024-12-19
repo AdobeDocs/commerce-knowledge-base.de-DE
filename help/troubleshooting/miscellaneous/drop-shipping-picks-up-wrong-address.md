@@ -1,6 +1,6 @@
 ---
-title: Ablegen des Versands nimmt falsche Adresse auf
-description: Die Versandlösung nimmt die Adresse der Produktquelle nicht auf.
+title: Der Versand nimmt die falsche Adresse an
+description: Die Versandlösung erfasst nicht die Adresse der Quelle des Produkts.
 exl-id: ce89713f-d506-4e4f-bf49-cdee3e6d29b5
 feature: Customer Service, Orders, Shipping/Delivery
 role: Developer
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 ---
 
-# Ablegen des Versands nimmt falsche Adresse auf
+# Der Versand nimmt die falsche Adresse an
 
 ## Problem
 
-Die Versandlösung nimmt die Adresse der Produktquelle nicht auf.
+Die Versandlösung erfasst nicht die Adresse der Quelle des Produkts.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur (alle Versionen) mit installiertem Magento-Inventar
-* Adobe Commerce On-Premise 2.3.0 und höher, mit installiertem Magento Inventory
-* Magento Open Source 2.3.0 und höher mit installiertem Magento Inventory
+* Adobe Commerce auf Cloud-Infrastruktur (alle Versionen), mit installiertem Magento-Inventar
+* Adobe Commerce On-Premises 2.3.0 und höher, mit installiertem Magento-Inventar
+* Magento Open Source 2.3.0 und höher, mit installiertem Magento Inventory
 
 ### Ursache
 
-Magento Inventory unterstützt derzeit nicht die Verwendung der Berechnung von Drops-Versandraten basierend auf der Quelladresse während des Checkouts. Stattdessen wird in allen Fällen die standardmäßige Speicheradresse aus der Konfiguration verwendet.
+Magento Inventory unterstützt derzeit nicht die Berechnung von Drop-Versand-Raten basierend auf der Quelladresse während des Checkouts. Stattdessen wird in allen Fällen die standardmäßige Speicheradresse aus der Konfiguration verwendet.
 
-## Verwandte Informationen
+## Verwandtes Lesen
 
-* [Magento Inventar-FAQ](https://github.com/magento/inventory/wiki/MSI-FAQs) in GitHub.
+* [Häufig gestellte Fragen zum Magento-](https://github.com/magento/inventory/wiki/MSI-FAQs) in GitHub.

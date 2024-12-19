@@ -1,6 +1,6 @@
 ---
-title: "Die Datei kann nicht gelöscht werden. Warnung! unlink: Kein solcher Datei- oder Verzeichnisfehler von  [!DNL Admin]"
-description: Dieser Artikel bietet eine Lösung für das Problem, bei dem ein Fehler angezeigt wird *Die Datei kann nicht gelöscht werden. Warnung!unlink Kein solcher Datei- oder Verzeichnisfehler* aus dem [!DNL Admin] beim Löschen von [!DNL Javascript/CSS] Leerzeichen.
+title: 'Die Datei kann nicht gelöscht werden. Warnung! Unlink: Keine derartige Datei oder Verzeichnisfehler im [!DNL Admin]'
+description: Dieser Artikel bietet eine Lösung für das Problem, dass ein Fehler angezeigt wird. *Die Datei kann nicht gelöscht werden. Warnung!Unlink No such file or directory error* from the [!DNL Admin] when you do a [!DNL Javascript/CSS] flush.
 feature: Admin Workspace, Observability
 role: Developer
 exl-id: db265e3c-a809-4404-839a-273001e81d22
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# *Die Datei kann nicht gelöscht werden. Warning!unlink: No such file or directory error* from the [!DNL Admin]
+# *Die Datei kann nicht gelöscht werden. Warnung!unlink: Kein solcher Datei- oder* im [!DNL Admin]
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem der Fehler *Die Datei kann nicht gelöscht werden. Warnung!unlink: Kein solcher Datei- oder Verzeichnisfehler* aus dem [!DNL Commerce Admin], wenn Sie eine [!DNL JavaScript/CSS] Leerung durchführen.
+Dieser Artikel bietet eine Lösung für den Fall, dass ein Fehler angezeigt wird *Die Datei kann nicht gelöscht werden. Warnung!unlink: Kein solcher Datei- oder* aus dem [!DNL Commerce Admin], wenn Sie eine [!DNL JavaScript/CSS] Leerung durchführen.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,40 +21,40 @@ Dieser Artikel bietet eine Lösung für das Problem, bei dem der Fehler *Die Dat
 
 ## Problem
 
-Wenn Sie eine [!DNL JS/CSS]-Leerung durchführen, tritt ein Fehler auf:
+Beim Ausführen einer [!DNL JS/CSS] Flush tritt ein Fehler auf:
 
-*Die Datei &quot;/app/pub/static/_cache/merge/.nfsa42d0e64799fd10000001b&quot;kann nicht gelöscht werden. Warnung!unlink(/app/pub/static/cache/merge/.nfsa42d0e64799fd100000001b): Keine solche Datei oder dieses Verzeichnis*
+*Die Datei &quot;/app/pub/static/_cache/merged/.nfsa42d064799fd1000000001b“ kann nicht gelöscht werden. Warnung!unlink(/app/pub/static/_cache/merged/.nfsa42d0e64799fd1000000001b): Keine derartige Datei oder derartiges Verzeichnis*
 
-Oder: Sie sehen den oben genannten Fehler im [!DNL Admin] und/oder einen ähnlichen Fehler in [!DNL New Relic] oder in den Bereitstellungsprotokollen.
+Oder: Der obige Fehler wird in der [!DNL Admin] und/oder ein ähnlicher Fehler in der [!DNL New Relic] oder in den Bereitstellungsprotokollen angezeigt.
 
-Oder: Sie können nicht auf die erweiterte Berichterstellung zugreifen und der cron-Auftrag analytics_collect_data schlägt mit diesem Fehler fehl:
+Oder: Sie können nicht auf erweiterte Berichte zugreifen, und der Cron-Vorgang analytics_collect_data schlägt mit diesem Fehler fehl:
 
-*Die Datei &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd4588a000850c0&quot;kann nicht gelöscht werden. Warnung!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a000850c0): Keine solche Datei oder Verzeichnis*
+*Die Datei &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0“ kann nicht gelöscht werden. Warnung!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0): Keine derartige Datei oder derartiges Verzeichnis*
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
 Methode 1:
 
-1. Melden Sie sich bei [!DNL Admin] an.
-1. Gehen Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Melden Sie sich beim [!DNL Admin] an.
+1. Navigieren Sie zu **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
 1. Klicken Sie auf **[!UICONTROL Flush][!DNL JavaScript/CSS][!UICONTROL Cache]**.
 
 Methode 2:
 
-1. Melden Sie sich bei [!DNL Admin] an.
-1. Gehen Sie zu **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]**.
-1. Nehmen Sie Änderungen an den [!UICONTROL Base URL] oder [!UICONTROL Base URL (Secure)] vor.
+1. Melden Sie sich beim [!DNL Admin] an.
+1. Navigieren Sie zu **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]**.
+1. Nehmen Sie Änderungen am [!UICONTROL Base URL] oder [!UICONTROL Base URL (Secure)] vor.
 1. Klicken Sie auf **[!UICONTROL Save Config]**.
 
 ## Lösung
 
-Wenn Sie in der Cloud-Infrastruktur von Adobe Commerce arbeiten und [!DNL magento/magento-cloud-patches] 1.0.22 installiert haben, die den Patch enthalten, müssen Sie ACSD-50165 nicht separat installieren.
+Wenn Sie sich in der Cloud-Infrastruktur von Adobe Commerce befinden und [!DNL magento/magento-cloud-patches] 1.0.22 installiert haben, die den Patch enthalten, müssen Sie ACSD-50165 nicht separat installieren.
 
-Adobe Commerce on Cloud-Infrastruktur: Aktualisieren Sie Cloud-Patches für Commerce auf Version 1.0.22 (**oder neuer**), die folgende Fehlerbehebung enthält: [Cloud-Patches für Commerce](/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
+Adobe Commerce auf Cloud-Infrastruktur: Aktualisieren Sie Cloud-Patches für Commerce auf 1.0.22 (**oder höher**), das diese Fehlerbehebung enthält: [Cloud-Patches für Commerce](/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
 
-Adobe Commerce vor Ort: Wenden Sie ACSD-50165 mithilfe von [Tools für Qualitätspatches > Nutzung](/docs/commerce-operations/tools/quality-patches-tool/usage.html) an. Der Patch ACSD-50165 enthält [!DNL QPT] [v1.1.30.](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html#v1-1-30)
+Adobe Commerce On-Premise: Wenden Sie ACSD-50165 mithilfe von [Quality Patches Tools > Usage](/docs/commerce-operations/tools/quality-patches-tool/usage.html) an. Der Patch ACSD-50165 ist im Lieferumfang von [!DNL QPT] [v1.1.30.](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html#v1-1-30) enthalten
 
 ## Verwandtes Lesen
 
-* [[!DNL Quality Patches Tool] > Versionshinweise](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) im Handbuch zu Commerce Tools.
-* [[!DNL Quality Patches Tool]: Suchen Sie im Commerce Tools-Handbuch nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+* [[!DNL Quality Patches Tool] > Versionshinweise](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) im Handbuch zu Commerce-Tools.
+* [[!DNL Quality Patches Tool]: Suchen Sie im Handbuch ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) Commerce-Tools nach Patches.

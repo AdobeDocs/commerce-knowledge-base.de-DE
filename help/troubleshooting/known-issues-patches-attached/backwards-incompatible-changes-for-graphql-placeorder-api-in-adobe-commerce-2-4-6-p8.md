@@ -1,44 +1,45 @@
 ---
-title: "Abwärtsinkompatible Änderungen für [!DNL GraphQL] `placeOrder` [!DNL API] in Adobe Commerce 2.4.6-p8"
+title: Abwärtsinkompatible Änderungen für [!DNL GraphQL] `placeOrder` [!DNL API] in Adobe Commerce 2.4.6-p8
 promoted: true
-description: Dieser Artikel enthält einen Patch für die bekannte Adobe Commerce-Version 2.4.6-p8 Cloud und das On-Premise-Problem, bei dem "placeOrder" [!DNL GraphQL API] keine erwartete Fehlerantwort zurückgibt, wie in früheren Patch-Versionen 2.4.6 gezeigt. Dies kann dazu führen, dass Kaufleute, die eine PWA-Storefront oder eine andere [!DNL GraphQL API]-basierte Storefront für ihre Geschäfte verwenden, nicht mehr auschecken können.
+description: Dieser Artikel enthält einen Patch für das bekannte Cloud- und On-Premise-Problem der Adobe Commerce-Version 2.4.6-p8, bei dem „placeOrder [!DNL GraphQL API]  keine erwartete Fehlerantwort zurückgibt, wie in vorherigen Patch-Versionen von 2.4.6 zu sehen. Dies kann zu einem fehlerhaften Kauferlebnis führen, wenn Händler die PWA-Storefront oder eine andere  [!DNL GraphQL API]-basierte Storefront für ihre Stores verwenden.
 feature: Checkout, REST, GraphQL
 role: Developer
-source-git-commit: 01b79c75df34de20f1ff50ab40c0a8d608ffa779
+exl-id: eacfb785-89e1-4bb7-8b6d-f7073746c9fa
+source-git-commit: a84c3d296deb49d419be78f454696177a974d923
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
-# Abwärtskompatible Änderungen für [!DNL GraphQL] `placeOrder` [!DNL API] in Adobe Commerce 2.4.6-p8
+# Abwärtsinkompatible Änderungen für [!DNL GraphQL] `placeOrder` [!DNL API] in Adobe Commerce 2.4.6-p8
 
-Dieser Artikel enthält einen Patch für die bekannte Adobe Commerce-Version 2.4.6-p8 Cloud und das On-Premise-Problem, bei dem die `placeOrder` [!DNL GraphQL API] keine erwartete Fehlerantwort zurückgibt, wie in früheren Patch-Versionen 2.4.6 gezeigt. Dies kann dazu führen, dass Kaufleute, die eine [!DNL PWA] Storefront oder eine andere [!DNL GraphQL API]-basierte Storefront für ihre Geschäfte verwenden, nicht mehr auschecken können.
+Dieser Artikel enthält einen Patch für das bekannte Cloud- und On-Premise-Problem der Adobe Commerce-Version 2.4.6-p8, bei dem der `placeOrder`-[!DNL GraphQL API] keine erwartete Fehlerantwort zurückgibt, wie in vorherigen Patch-Versionen von 2.4.6 zu sehen. Dies kann zu einem fehlerhaften Checkout-Erlebnis für Händler führen, die [!DNL PWA] Storefront oder eine andere [!DNL GraphQL API] Storefront für ihre Stores verwenden.
 
 >[!NOTE]
 >
->Wenden Sie sich an den Support Services , wenn Probleme beim Anwenden des Patches auftreten.
+>Wenden Sie sich an den Support-Service, wenn beim Anwenden des Patches Probleme auftreten.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce auf Cloud 2.4.6-p8
-* Adobe Commerce vor Ort 2.4.6-p8
+* Adobe Commerce in Cloud 2.4.6-p8
+* Adobe Commerce On-Premises 2.4.6-p8
 
 ## Problem
 
-Nach dem Upgrade auf den Sicherheits-Patch für Adobe Commerce 2.4.6-p8 gibt der Patch [`placeOrder` [!DNL GraphQL API]](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/place-order/) keine erwartete Fehlerantwort zurück, wie in früheren Patch-Versionen 2.4.6 zu sehen war. Dies kann dazu führen, dass Kaufleute, die eine [!DNL PWA] Storefront oder eine andere [!DNL GraphQL API]-basierte Storefront für ihre Geschäfte verwenden, nicht mehr auschecken können.
+Nach dem Upgrade auf Adobe Commerce 2.4.6-p8 Nur-Sicherheits-Patch gibt der [`placeOrder` [!DNL GraphQL API]](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/place-order/) keine erwartete Fehlerantwort zurück, wie in allen vorherigen Patch-Versionen von 2.4.6 zu sehen ist. Dies kann zu einem fehlerhaften Checkout-Erlebnis für Händler führen, die [!DNL PWA] Storefront oder eine andere [!DNL GraphQL API] Storefront für ihre Stores verwenden.
 
-<u>Schritt zum Reproduzieren</u>:
+<u>Schritt zur Reproduktion</u>:
 
-Führen Sie die `placeOrder` [!DNL GraphQL] -Anfrage aus, bei der Sie eine Fehlerantwort erwarten.
+Führen Sie die `placeOrder` [!DNL GraphQL]-Anfrage aus, wenn Sie eine Fehlerantwort erwarten.
 
 <u>Erwartetes Ergebnis</u>:
 
 Sie erhalten eine erwartete Fehlerantwort.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Anstelle einer erwarteten Fehlerantwort erhalten Sie eine erfolgreiche Antwort, jedoch mit einem neuen `errors` -Schlüssel, der wie folgt aussieht:
+Anstelle einer erwarteten Fehlerantwort erhalten Sie eine erfolgreiche Antwort, jedoch mit einem neuen `errors`, der wie folgt aussieht:
 
 ```
 {
@@ -51,27 +52,27 @@ Anstelle einer erwarteten Fehlerantwort erhalten Sie eine erfolgreiche Antwort, 
 }
 ```
 
-## Lösung für Adobe Commerce auf Cloud- und Adobe Commerce-On-Premise-Software
+## Lösung für Adobe Commerce on Cloud und lokale Adobe Commerce-Software
 
-Um das Problem zu lösen, wenden Sie den Patch an.
-Um es herunterzuladen, klicken Sie auf den folgenden Link:
+Um das Problem zu beheben, wenden Sie den Patch an.
+Um ihn herunterzuladen, klicken Sie auf den folgenden Link:
 
 [ac-13283-composer-patch.zip](assets/ac-13283-composer-patch.zip)
 
-## Anwenden des Pflasters
+## Anbringen des Pflasters
 
-Entpacken Sie die Datei und finden Sie Anweisungen unter [Anwenden eines von Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
 
-## Nur für Adobe Commerce für Cloud-Händler - Ermitteln, ob Patches angewendet wurden
+## Nur für Adobe Commerce on Cloud-Händler - Ermitteln, ob Patches angewendet wurden
 
-Da es nicht einfach zu überprüfen ist, ob das Problem gepatcht wurde, sollten Sie überprüfen, ob der Patch erfolgreich angewendet wurde.
+Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde, sollten Sie überprüfen, ob der Patch erfolgreich angewendet wurde.
 
-<u>Gehen Sie dazu wie folgt vor, indem Sie die Beispieldatei `VULN-27015-2.4.7_COMPOSER.patch` **als Beispiel</u>** verwenden:
+<u>Sie können dazu die folgenden Schritte ausführen, indem Sie die Beispieldatei `VULN-27015-2.4.7_COMPOSER.patch`als Beispiel **verwenden</u>**:
 
-1. [Installieren Sie den  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
-1. Führen Sie den Befehl aus:<br>
-   ![ac-13283-tell-if-patch-apply-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
-1. Sie sollten die Ausgabe ähnlich der folgenden sehen, bei der VULN-27015 den Status *Angewandt* zurückgibt:
+1. [Installieren Sie  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. Führen Sie den folgenden Befehl aus:<br>
+   ![ac-13283-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
+1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der VULN-27015 den Status *Angewendet* zurückgibt:
 
    ```bash
    ║ Id            │ Title                                                        │ Category        │ Origin                 │ Status      │ Details                                          ║ ║ N/A           │ ../m2-hotfixes/VULN-27015-2.4.7_COMPOSER_patch.patch      │ Other           │ Local                  │ Applied     │ Patch type: Custom                                
@@ -82,4 +83,3 @@ Da es nicht einfach zu überprüfen ist, ob das Problem gepatcht wurde, sollten 
     vendor/bin/magento-patches -n status |grep "27015\|Status"
      ```
 -->
-

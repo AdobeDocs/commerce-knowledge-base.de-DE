@@ -1,6 +1,6 @@
 ---
 title: Fehlende oder geänderte Konfigurationsdatei
-description: Beheben Sie das Problem mit fehlender oder geänderter Konfigurationsdatei für Adobe Commerce.
+description: Beheben Sie das Problem mit fehlenden oder geänderten Konfigurationsdateien für Adobe Commerce.
 exl-id: d80bf981-8ba6-4357-a841-57bf5d3f2a3f
 feature: Configuration
 role: Developer
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Fehlende oder geänderte Konfigurationsdatei
 
-In diesem Artikel wird beschrieben, wie Sie das Problem lösen können, bei dem Ihre Konfigurationsdateien geändert wurden oder fehlen.
+In diesem Artikel wird beschrieben, wie Sie das Problem lösen können, dass Ihre Konfigurationsdateien geändert wurden oder fehlen.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle Versionen
+* Adobe Commerce auf Cloud-Infrastruktur, alle Versionen
 
 ## Problem
 
@@ -25,19 +25,19 @@ Konfigurationsdateien `config.php` und/oder `env.php` wurden falsch geändert od
 
 ## Lösung
 
-Der Bereitstellungsprozess erstellt eine Sicherungsdatei für jede Konfigurationsdatei:
+Beim Bereitstellungsprozess wird für jede Konfigurationsdatei eine Sicherungsdatei erstellt:
 
-* `app/etc/config.php.bak` - enthält systemspezifische Einstellungen und wird während des Builds automatisch generiert, wenn sie nicht vorhanden ist
+* `app/etc/config.php.bak` - Enthält systemspezifische Einstellungen und wird beim Build automatisch generiert, wenn es noch nicht vorhanden ist
 * `app/etc/env.php.bak` - enthält vertrauliche Konfigurationsdaten
 
 Sie können sie mithilfe des Befehls ECE-Tools `backup:restore` wiederherstellen.
 
-Die BAK-Dateien sind ein Produkt des Implementierungsprozesses. Wenn Sie eine Konfigurationsdatei nach der Bereitstellung manuell ändern, werden Ihre Änderungen nicht in den vorhandenen BAK-Dateien übernommen.
+Die BAK-Dateien sind ein Produkt des Bereitstellungsprozesses. Wenn Sie eine Konfigurationsdatei nach der Bereitstellung manuell ändern, werden Ihre Änderungen nicht in den vorhandenen BAK-Dateien übernommen.
 
-Wiederherstellen der Konfigurationsdateien:
+So stellen Sie die Konfigurationsdateien wieder her:
 
-1. Melden Sie sich mit [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) bei Ihrem Remote-Repository an.
-1. Geben Sie die verfügbaren Backup-Dateien an.
+1. Melden Sie sich mit „SSH[ bei Ihrem Remote-Repository ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
+1. Listet die verfügbaren Backup-Dateien auf.
 
    ```
    ./vendor/bin/ece-tools backup:list
@@ -49,7 +49,7 @@ Wiederherstellen der Konfigurationsdateien:
    app/etc/config.php
    ```
 
-1. Wiederherstellen der Konfigurationsdateien.
+1. Stellen Sie die Konfigurationsdateien wieder her.
 
    ```
    ./vendor/bin/ece-tools backup:restore
@@ -62,7 +62,7 @@ Wiederherstellen der Konfigurationsdateien:
    app/etc/config.php file exists! If you want to rewrite existed files use --force
    ```
 
-1. Verwenden Sie die Option &quot;`--force`&quot;, um alle Dateien zu überschreiben.
+1. Verwenden Sie die Option `--force` , um alle Dateien zu überschreiben.
 
    ```
    ./vendor/bin/ece-tools backup:restore --force

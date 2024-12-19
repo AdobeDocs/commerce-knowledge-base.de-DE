@@ -1,6 +1,6 @@
 ---
-title: Änderung des Basispreises beeinflusst den gemeinsamen Katalogpreis
-description: 'In diesem Artikel wird die Frage beantwortet: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Basispreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt im freigegebenen Katalog?'
+title: Einfluss der Basispreisänderung auf den Preis des freigegebenen Katalogs
+description: 'Dieser Artikel beantwortet die Frage: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Grundpreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt dann im freigegebenen Katalog?'
 exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
 source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
@@ -10,24 +10,24 @@ ht-degree: 0%
 
 ---
 
-# Änderung des Basispreises beeinflusst den gemeinsamen Katalogpreis
+# Einfluss der Basispreisänderung auf den Preis des freigegebenen Katalogs
 
-In diesem Artikel wird die Frage beantwortet: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Basispreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt im freigegebenen Katalog?
+Dieser Artikel beantwortet die Frage: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Grundpreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt dann im freigegebenen Katalog?
 
-## Wenn der benutzerdefinierte Preis auf Prozentsatz gesetzt ist, ändert sich auch der gemeinsame Katalogpreis
+## Wenn der benutzerdefinierte Preis auf „Prozentsatz“ gesetzt ist, ändert sich auch der Preis des freigegebenen Katalogs
 
-Wenn der benutzerdefinierte Preis für ein Produkt in einem freigegebenen Katalog auf &quot;Prozent&quot;festgelegt wurde, wird der freigegebene Katalogpreis des Produkts implizit aktualisiert, nachdem der Basispreis geändert wurde.
+Wenn der benutzerdefinierte Preis für ein Produkt in einem freigegebenen Katalog auf Prozent festgelegt wurde, wird der Preis für den freigegebenen Katalog des Produkts implizit aktualisiert, nachdem der Grundpreis geändert wurde.
 
-Mit anderen Worten: Wenn der Basispreis aktualisiert wird (über eine normale oder geplante Aktualisierung), ändert sich auch der freigegebene Katalogpreis nach Anwendung des Prozentsatzes.
+Mit anderen Worten, wenn der Basispreis aktualisiert wird (über eine normale oder geplante Aktualisierung), ändert sich der Preis des geteilten Katalogs auch nach Anwendung des prozentualen Rabatts.
 
-## Wenn der benutzerdefinierte Preis auf &quot;Fest&quot;gesetzt ist, ändert sich der freigegebene Katalogpreis nicht
+## Wenn der benutzerdefinierte Preis auf „Fester, freigegebener Katalogpreis“ gesetzt ist, ändert sich dieser nicht
 
-Wenn der benutzerdefinierte Preis für ein Produkt in einem freigegebenen Katalog auf &quot;Fest&quot;gesetzt wurde, ändert sich der Preis im freigegebenen Katalog nie - ganz gleich, wie wir den Basispreis aktualisieren (über geplante Aktualisierung, Adobe Commerce-Admin, API oder Import).
+Wenn der benutzerdefinierte Preis für ein Produkt in einem freigegebenen Katalog auf Festgelegt festgelegt wurde, ändert sich der Preis im freigegebenen Katalog nie - unabhängig davon, wie wir den Grundpreis aktualisieren (über geplante Aktualisierung, Adobe Commerce Admin, API oder Import).
 
-## Storefront zeigt immer den niedrigsten verfügbaren Preis an
+## Die Storefront zeigt immer den niedrigsten verfügbaren Preis an
 
-Wenn sich der Basispreis des Produkts ändert und unter dem entsprechenden gemeinsamen Katalogpreis liegt, zeigt die Storefront den Basispreis als den niedrigsten im System verfügbaren Preis an.
+Wenn sich der Grundpreis des Produkts ändert und niedriger als der entsprechende freigegebene Katalogpreis wird, zeigt die Storefront den Grundpreis als niedrigsten im System verfügbaren Preis an.
 
 ## Verwandtes Lesen
 
-[Legen Sie Preise und Struktur für einen freigegebenen Katalog fest](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) in unserem Benutzerhandbuch.
+[Festlegen von Preisen und Strukturen für einen freigegebenen ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html)) in unserem Benutzerhandbuch.

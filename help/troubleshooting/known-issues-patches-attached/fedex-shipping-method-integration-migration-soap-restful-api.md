@@ -1,7 +1,7 @@
 ---
-title: '[!DNL FedEx] Migration der Versandmethode-Integration von SOAP zu RESTful-API'
+title: Migration der Integration der Versandmethode von der SOAP zur RESTful-API [!DNL FedEx]
 promoted: true
-description: Wenden Sie einen Patch an, um die Migration der [!DNL FedEx] Versandmethode-Integration von SOAP auf die RESTful-API für Adobe Commerce 2.4.4-p4 - 2.4.6-pX zu behandeln.
+description: Patch für die Migration der Versandmethode  [!DNL FedEx]  der SOAP zur RESTful-API für Adobe Commerce 2.4.4-p4-2.4.6-pX anwenden.
 feature: Shipping/Delivery
 role: Developer
 exl-id: 7e11a171-6924-41d0-a5c7-7b794d0da84c
@@ -12,74 +12,74 @@ ht-degree: 0%
 
 ---
 
-# Migration der Versandmethode von der SOAP zur RESTful-API[!DNL FedEx]
+# Migration der Integration der Versandmethode von der SOAP zur RESTful-API [!DNL FedEx]
 
-Dieser Artikel enthält einen Patch zum Beheben von Problemen bei der Migration der Versandmethode von SOAP zu RESTful-API für Adobe Commerce 2.4.4-p4 - 2.4.6-pX.[!DNL FedEx]
+Dieser Artikel enthält einen Patch zur Behebung von Problemen mit der Migration der [!DNL FedEx] Versandmethodenintegration von SOAP zur RESTful-API für Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
 
-[!DNL FedEx Web Services] tracking, Address Validation, and Validate Postal Codes Web Services Definition Languages (WSDLS) wird am 15. Mai 2024 eingestellt. Das SOAP basierte [!DNL FedEx Web Services] befindet sich in der Entwicklungseindämmung und wurde durch [!DNL FedEx] RESTFUL-APIs ersetzt. Weitere Informationen finden Sie unter [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+[!DNL FedEx Web Services]-Tracking, Adressvalidierung und Validieren von Postleitzahlen Web Services Definition Languages (WSDLS) werden am 15. Mai 2024 eingestellt. Die SOAP-basierte [!DNL FedEx Web Services] befindet sich in der Entwicklungsbeschränkung und wurde durch [!DNL FedEx] RESTFUL-APIs ersetzt. Weitere Informationen finden Sie unter [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
 
-Diese Änderung wirkt sich auf unsere aktuelle Implementierung der Versandmethode für [!DNL FedEx] in Adobe Commerce aus und erfordert, dass wir unsere aktuelle Implementierung reparieren und von veralteten SOAP-APIs zu den neuesten [!DNL FedEx] RESTFUL-APIs migrieren.
+Diese Änderung wirkt sich auf unsere aktuelle Implementierung der [!DNL FedEx] Versandmethode in Adobe Commerce aus und erfordert, dass wir unsere aktuelle Implementierung korrigieren und von veralteten SOAP-APIs zu den neuesten [!DNL FedEx] RESTFUL-APIs migrieren.
 
-Ab dem 15. Mai 2024 können Adobe Commerce-Kunden unsere aktuelle [!DNL FedEx] -Versandmethodenintegration nicht mehr verwenden. Adobe veröffentlicht daher diesen Hotfix, mit dem Adobe Commerce 2.4.4+-Kunden die neuesten [!DNL FedEx] RESTFUL-APIs anstelle der veralteten SOAP verwenden können.
+Ab dem 15. Mai 2024 können Adobe Commerce-Kunden unsere aktuelle [!DNL FedEx] Versandmethodenintegration nicht mehr verwenden. Daher veröffentlicht Adobe diesen Hotfix, der es Kunden von Adobe Commerce 2.4.4 oder höher ermöglicht, die neuesten [!DNL FedEx] RESTFUL-APIs anstelle der veralteten SOAP-APIs zu verwenden.
 
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce über Cloud-Infrastruktur und On-Premise und Magento Open Source:
+Adobe Commerce auf Cloud-Infrastruktur und On-Premise und Magento Open Source:
 
 * 2.4.4-p4
 * 2,4,5
-* 2.4.5-pX
+* 2,4,5-pX
 * 2,4,6
 * 2.4.6-pX
 
 ## Ursache
 
-Die [!DNL FedEx] veralteten ihre SOAP-basierten APIs und ersetzten sie stattdessen durch die RESTful-APIs. Siehe [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+Die [!DNL FedEx] haben ihre SOAP-basierten APIs veraltet und stattdessen durch die RESTful-APIs ersetzt. Siehe [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
 
 ## Lösung
 
-Verwenden Sie die folgenden angehängten Patches je nach Adobe Commerce-/Magento Open Source-Version:
+Verwenden Sie je nach Adobe Commerce-/Magento Open Source-Version die folgenden angehängten Patches:
 
 Um das Problem in den Versionen 2.4.4+, 2.4.5+ und 2.4.6+ zu beheben, müssen Sie den entsprechenden Patch auf Ihre Version von Adobe Commerce/Magento Open Source unten anwenden.
 
-## Patch
+## Fleck
 
-Verwenden Sie die folgenden angehängten Patches je nach Adobe Commerce-/Magento Open Source-Version:
+Verwenden Sie je nach Adobe Commerce-/Magento Open Source-Version die folgenden angehängten Patches:
 
-### Für Versionen 2.4.4-p4:
-
-* [FedexPatch-Composer-245p5-244p6develop.patch.zip](assets/FedexPatch-Composer-245p5-244p6develop.patch.zip)
-
-### Für Versionen 2.4.5, 2.4.5-pX:
+### Für die Versionen 2.4.4-p4:
 
 * [FedexPatch-Composer-245p5-244p6develop.patch.zip](assets/FedexPatch-Composer-245p5-244p6develop.patch.zip)
 
+### Für die Versionen 2.4.5, 2.4.5-pX:
 
-### Für Versionen 2.4.6, 2.4.6-pX:
+* [FedexPatch-Composer-245p5-244p6develop.patch.zip](assets/FedexPatch-Composer-245p5-244p6develop.patch.zip)
+
+
+### Für die Versionen 2.4.6, 2.4.6-pX:
 
 
 * [FedexPatch-Composer-246p3develop.patch.zip](assets/FedexPatch-Composer-246p3develop.patch.zip)
 
 
-## Anwenden des Pflasters
+## Anbringen des Pflasters
 
-Entpacken Sie die Datei und finden Sie Anweisungen unter [Anwenden eines von Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
 
-## Ermitteln, ob die Patches angewendet wurden
+## Wie man feststellt, ob die Patches angewendet wurden
 
-Da es nicht einfach zu überprüfen ist, ob das Problem gepatcht wurde, sollten Sie überprüfen, ob der Patch erfolgreich angewendet wurde. Dabei wird (Beispiel: *AC-9363*) als zu prüfender Patch verwendet.
+Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde, sollten Sie überprüfen, ob der Patch erfolgreich angewendet wurde. Hierbei wird (Beispiel: *AC-9363*) als zu überprüfender Patch verwendet.
 
 <u>Sie können dies tun, indem Sie die folgenden Schritte ausführen</u>:
 
-1. [Installieren Sie den  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installieren Sie  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 1. Führen Sie den Befehl aus:
 
    ```bash
    vendor/bin/magento-patches -n status |grep "9363|Status"
    ```
 
-1. Die Ausgabe sollte in etwa so angezeigt werden, bei der AC-9363 den Status *Angewandt* zurückgibt:
+1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der AC-9363 den Status *Angewendet* zurückgibt:
 
    ```bash
    ║ Id            │ Title                                                        │ Category        │ Origin                 │ Status      │ Details                                          ║ ║ N/A           │ ../m2-hotfixes/AC-9363_USPS_Ground_Advantage_shipping_method_COMPOSER_patch.patch      │ Other           │ Local                  │ Applied     │ Patch type: Custom                                

@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-56842: Verzögerte Proxys und Proxy-Fabriken fehlen nach Ausführung von "setup:di:compile"'
-description: Wenden Sie den Patch ACSD-56842 an, um das Adobe Commerce-Problem zu beheben, bei dem die verzögerten Proxys und Proxy-Fabriken nach der Ausführung von "setup:di:compile"fehlen.
+title: 'ACSD-56842: Verzögerte Proxys und Proxy-Factories fehlen nach der Ausführung von „setup:di:compile“'
+description: Wenden Sie den Patch ACSD-56842 an, um das Adobe Commerce-Problem zu beheben, bei dem die verzögerten Proxys und Proxy-Factories nach der Ausführung von „setup:di:compile“ fehlen.
 feature: Deploy, Catalog Management
 role: Admin, Developer
 exl-id: 2d12e36c-d8b7-4253-91d8-28b50477ccd9
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-56842: Verzögerte Proxys und Proxy-Fabriken fehlen nach Ausführung von `setup:di:compile`
+# ACSD-56842: Verzögerte Proxys und Proxy-Factories fehlen nach der Ausführung von `setup:di:compile`
 
-Der Patch ACSD-56842 behebt das Problem, dass die verzögerten Proxys und Proxy-Fabriken nach der Ausführung von `setup:di:compile` fehlen. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 installiert ist. Die Patch-ID ist ACSD-56842. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Der Patch ACSD-56842 behebt das Problem, dass die zurückgestellten Proxys und Proxy-Factories fehlen, nachdem `setup:di:compile` ausgeführt wurde. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.46 installiert ist. Die Patch-ID ist ACSD-56842. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,16 +27,16 @@ Der Patch ACSD-56842 behebt das Problem, dass die verzögerten Proxys und Proxy-
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die verzögerten Proxys und Proxy-Fabriken fehlen nach Ausführung von `setup:di:compile`.
+Die verzögerten Proxys und Proxy-Factories fehlen nach der Ausführung von `setup:di:compile`.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie ein benutzerdefiniertes Modul mit dem Namen *Magento_CustomModule*.
-1. Erstellen Sie im Ordner *[!UICONTROL etc]* des Moduls einen `di.xml` mit diesem Inhalt:
+1. Erstellen Sie im *[!UICONTROL etc]* des Moduls eine `di.xml` mit diesem Inhalt:
 
    ```xml
     <?xml version="1.0"?>
@@ -65,9 +65,9 @@ Die verzögerten Proxys und Proxy-Fabriken fehlen nach Ausführung von `setup:di
      </config>
    ```
 
-1. Legen Sie den Modus [!UICONTROL Production] fest: `bin/magento deploy:mode:set production`.
+1. Legen Sie den [!UICONTROL Production] fest: `bin/magento deploy:mode:set production`.
 1. Löschen Sie den generierten Ordner aus dem Magento-Stamm.
-1. Führen Sie den Befehl `bin/magento setup:di:compile` aus.
+1. Führen Sie den `bin/magento setup:di:compile` aus.
 1. Überprüfen Sie den generierten Ordner.
 
 <u>Erwartete Ergebnisse</u>:
@@ -77,20 +77,20 @@ Die verzögerten Proxys und Proxy-Fabriken fehlen nach Ausführung von `setup:di
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Im generierten Ordner wird die Proxy-Datei für Proxy-Argumente generiert, die ohne Zeilenumbruch angegeben werden, und nicht für die Argumente, die mit einem Zeilenumbruch angegeben werden.
+Im generierten Ordner wird die Proxy-Datei für Proxy-Argumente generiert, die ohne Zeilenumbruch gegeben werden, und nicht für die Argumente, die mit einem Zeilenumbruch gegeben werden.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

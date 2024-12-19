@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-46404: Admin-Benutzer können sich nach einem Upgrade auf 2.4.4 nicht mehr anmelden'
-description: Der Patch ACSD-46404 behebt das Problem, dass sich ein Admin-Benutzer nach einem Upgrade auf 2.4.4 nicht anmelden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46404. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
+title: 'ACSD-46404: Administratorbenutzer kann sich nach der Aktualisierung auf 2.4.4 nicht anmelden'
+description: Mit dem Patch ACSD-46404 wird das Problem behoben, dass sich ein Administrator nach einem Upgrade auf 2.4.4 nicht anmelden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46404. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
 exl-id: 0aebc879-1128-4be2-a6a8-90d5812c7602
 feature: Admin Workspace
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-46404: Admin-Benutzer können sich nach einem Upgrade auf 2.4.4 nicht mehr anmelden
+# ACSD-46404: Administratorbenutzer kann sich nach der Aktualisierung auf 2.4.4 nicht anmelden
 
-Der Patch ACSD-46404 behebt das Problem, dass sich ein Admin-Benutzer nach einem Upgrade auf 2.4.4 nicht anmelden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46404. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
+Mit dem Patch ACSD-46404 wird das Problem behoben, dass sich ein Administrator nach einem Upgrade auf 2.4.4 nicht anmelden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.19 installiert ist. Die Patch-ID ist ACSD-46404. Beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,38 +27,38 @@ Der Patch ACSD-46404 behebt das Problem, dass sich ein Admin-Benutzer nach einem
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Der Administrator kann sich nach einem Upgrade auf 2.4.4 nicht mehr anmelden.
+Nach der Aktualisierung auf 2.4.4 kann sich der Administrator nicht anmelden.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Melden Sie sich beim Admin Panel an
-1. Navigieren Sie zu Store > **Einstellungen** > **Konfiguration** > **Erweitert** > **System** > **Sicherheit**.
-1. Setzen Sie die maximale Sitzungsgröße im Admin auf **0** und speichern Sie sie.
+1. Navigieren Sie zu Store **Einstellungen** > **Konfiguration** > **Erweitert** > **System** > **Sicherheit**.
+1. Legen Sie im Administrator für die maximale Sitzungsgröße **0“ fest** speichern Sie sie.
 
 <u>Erwartete Ergebnisse</u>:
 
-Der Admin-Benutzer kann sich erfolgreich anmelden.
+Der Administrator kann sich erfolgreich anmelden.
 
 <u>Tatsächliche Ergebnisse</u>:
 
 Der Administrator wird abgemeldet und kann sich nicht anmelden.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

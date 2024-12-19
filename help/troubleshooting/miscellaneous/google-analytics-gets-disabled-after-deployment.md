@@ -1,6 +1,6 @@
 ---
-title: Google Analytics werden nach der Implementierung deaktiviert
-description: In diesem Thema wird eine Lösung für ein typisches Problem besprochen, das bei der Implementierung mit Google Analytics auftreten könnte.
+title: Google Analytics werden nach der Bereitstellung deaktiviert
+description: In diesem Abschnitt wird eine Lösung für ein typisches Problem beschrieben, das bei der Bereitstellung von Google Analytics auftreten kann.
 exl-id: ecf6a277-2dfa-45cf-b86f-9a27f39017f4
 feature: Build, Deploy, Variables
 role: Developer
@@ -11,26 +11,26 @@ ht-degree: 0%
 
 ---
 
-# Google Analytics werden nach der Implementierung deaktiviert
+# Google Analytics werden nach der Bereitstellung deaktiviert
 
-In diesem Thema wird eine Lösung für ein typisches Problem besprochen, das bei der Implementierung mit Google Analytics auftreten könnte.
+In diesem Abschnitt wird eine Lösung für ein typisches Problem beschrieben, das bei der Bereitstellung von Google Analytics auftreten kann.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle Versionen
+* Adobe Commerce auf Cloud-Infrastruktur, alle Versionen
 
 ## Problem
 
-Bei der Bereitstellung des Codes in allen Umgebungen überprüfen die Build- und Bereitstellungsskripte, dass die Verzweigung `master/production/staging` bereitgestellt wird, damit die Google Analytics aktiviert bleibt. Bei der Bereitstellung von (oder untergeordneten) Zweigen des Master in Entwicklungsumgebungen (Integration) deaktiviert das Bereitstellungsskript Google Analytics.
+Wenn Sie Ihren Code umgebungsübergreifend bereitstellen, überprüfen die Build- und Bereitstellungsskripte, ob die `master/production/staging`-Verzweigung bereitgestellt wird, damit die Google Analytics aktiviert bleiben. Beim Bereitstellen von Entwicklungs- (oder untergeordneten) Verzweigungen von Master- in Entwicklungsumgebungen (Integration) deaktiviert das Bereitstellungsskript Google Analytics.
 
 ## Ursache
 
-Diese Funktion soll sicherstellen, dass Entwicklerdaten und -interaktionen nicht an Google Analytics gesendet oder von diesen nachverfolgt werden.
+Mit dieser Funktion soll sichergestellt werden, dass Entwicklerdaten und -interaktionen nicht an Google Analytics gesendet oder von ihnen verfolgt werden.
 
 ## Lösung
 
-Wenn Sie möchten, dass Google Analytics immer aktiviert ist, legen Sie die Bereitstellungsvariable `ENABLE_GOOGLE_ANALYTICS = true` fest, wie in der Entwicklerdokumentation unter [Variablen bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) beschrieben.
+Wenn Sie möchten, dass Google Analytics immer aktiviert sind, legen Sie die `ENABLE_GOOGLE_ANALYTICS = true` der Bereitstellungsvariablen fest, wie unter [Bereitstellungsvariablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) in unserer Entwicklerdokumentation beschrieben.
 
 >[!NOTE]
 >
->Wir wissen, dass dieser Artikel immer noch branchenübliche Softwarebegriffe enthalten kann, die einige rassistisch, sexistisch oder unterdrückend finden und die den Leser verletzen, traumatisiert oder unerwünscht machen können. Adobe arbeitet daran, diese Begriffe aus unserem Code, unserer Dokumentation und unseren Benutzererlebnissen zu entfernen.
+>Wir sind uns bewusst, dass dieser Artikel immer noch branchenübliche Softwarebegriffe enthalten kann, die manche als rassistisch, sexistisch oder repressiv empfinden und die den Leser verletzen, traumatisieren oder unwillkommen machen können. Adobe arbeitet daran, diese Begriffe aus unserem Code, unserer Dokumentation und unseren Benutzererlebnissen zu entfernen.

@@ -1,6 +1,6 @@
 ---
-title: Sicherheitslücken, die von Sicherheitsscans von Drittanbietern gefunden werden, sollten zu [!DNL HackerOne] gehen
-description: Dieser Artikel bietet eine Lösung, um Sicherheitslücken zu beheben, die von Sicherheitsscans von Drittanbietern gefunden werden.
+title: Sicherheitslücken, die bei Sicherheitsüberprüfungen von Drittanbietern gefunden wurden, sollten Sie aufrufen unter [!DNL HackerOne]
+description: Dieser Artikel bietet eine Lösung für Sicherheitslücken, die bei Sicherheitsüberprüfungen von Drittanbietern gefunden wurden.
 feature: Security
 role: Developer, Admin
 exl-id: db2e15f0-11e3-48ed-84b4-94567a50fe5f
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Sicherheitslücken, die von Sicherheitsscans von Drittanbietern gefunden werden, sollten zu [!DNL HackerOne] gehen
+# Sicherheitslücken, die bei Sicherheitsüberprüfungen von Drittanbietern gefunden wurden, sollten nach [!DNL HackerOne]
 
-Dieser Artikel bietet eine Lösung, um Sicherheitslücken zu beheben, die von Sicherheitsscans von Drittanbietern gefunden werden.
+Dieser Artikel bietet eine Lösung für Sicherheitslücken, die bei Sicherheitsüberprüfungen von Drittanbietern gefunden wurden.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,8 +21,8 @@ Dieser Artikel bietet eine Lösung, um Sicherheitslücken zu beheben, die von Si
 
 ## Probleme
 
-Der Händler führte einen PEN-Test über eine unabhängige Sicherheitsagentur durch und eine Schwachstelle wurde gekennzeichnet.
+Merchant führte einen PEN-Test über eine unabhängige Sicherheitsbehörde durch, und eine Sicherheitslücke wurde erkannt.
 
 ## Lösungen
 
-Sicherheitslücken, die von Sicherheitsprüfungen von Drittanbietern gefunden werden, sollten an die [!DNL HackerOne]-Website gesendet werden. Adobe Commerce hat keinen direkten Kontaktpunkt bei [!DNL HackerOne], daher sollten Sie direkt zu [!DNL HackerOne] gelangen. Adobe verarbeitet nur den Bericht MST (Magento Security Scan Tool).
+Sicherheitslücken, die bei Sicherheitsüberprüfungen von Drittanbietern gefunden wurden, sollten an die [!DNL HackerOne]-Website gesendet werden. Adobe Commerce hat keinen direkten Ansprechpartner unter [!DNL HackerOne]. Sie sollten sich daher direkt an [!DNL HackerOne] wenden. Adobe verarbeitet nur den MST-Bericht (Magento Security Scan Tool).

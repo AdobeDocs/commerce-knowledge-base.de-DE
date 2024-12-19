@@ -1,6 +1,6 @@
 ---
-title: Umleiten zur übergeordneten Umgebung beim Zugriff auf die neue Integrationsumgebung
-description: Dieser Artikel enthält Anweisungen zur Fehlerbehebung für die Adobe Commerce zum Problem der Cloud-Infrastruktur, bei dem der Versuch, auf die neu erstellte Integrationsumgebung zuzugreifen, Sie stattdessen zur übergeordneten Umgebung führt.
+title: Beim Zugriff auf eine neue Integrationsumgebung zur übergeordneten Umgebung umleiten
+description: Dieser Artikel enthält Anweisungen zur Fehlerbehebung für das Adobe Commerce-Problem mit der Cloud-Infrastruktur, bei dem der Versuch, auf die neu erstellte Integrationsumgebung zuzugreifen, stattdessen zur übergeordneten Umgebung führt.
 exl-id: d1d40c8d-d43c-442e-95c9-76f3cdcafb0e
 feature: Cache, Integration, Variables
 role: Developer
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# Umleiten zur übergeordneten Umgebung beim Zugriff auf die neue Integrationsumgebung
+# Beim Zugriff auf eine neue Integrationsumgebung zur übergeordneten Umgebung umleiten
 
-Dieser Artikel enthält Anweisungen zur Fehlerbehebung für die Adobe Commerce zum Problem der Cloud-Infrastruktur, bei dem der Versuch, auf die neu erstellte Integrationsumgebung zuzugreifen, Sie stattdessen zur übergeordneten Umgebung führt.
+Dieser Artikel enthält Anweisungen zur Fehlerbehebung für das Adobe Commerce-Problem mit der Cloud-Infrastruktur, bei dem der Versuch, auf die neu erstellte Integrationsumgebung zuzugreifen, stattdessen zur übergeordneten Umgebung führt.
 
-Um dies zu beheben, müssen Sie den base\_url -Wert in der Datenbank korrigieren und sicherstellen, dass der Variablenwert `UPDATE_URLS` auf `true` gesetzt ist. Weitere Informationen finden Sie in den folgenden Abschnitten.
+Um dies zu beheben, müssen Sie den base\_url-Wert in der Datenbank korrigieren und sicherstellen, dass der `UPDATE_URLS` Variablenwert auf `true` gesetzt ist. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
-Betroffene Versionen und Editionen:
+Betroffene Versionen und Ausgaben:
 
-* Adobe Commerce auf Cloud-Infrastruktur 2.X.X
+* Adobe Commerce auf Cloud-Infrastruktur 2.x.x
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Klonen Sie die vorhandene Integrationsverzweigung.
 1. Klicken Sie auf die URL für den Zugriff auf die neue Umgebung.
@@ -32,19 +32,19 @@ Betroffene Versionen und Editionen:
 
 Sie gelangen zur neu erstellten Umgebung.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Sie werden zur Umgebung im übergeordneten Zweig weitergeleitet.
+Sie werden zur -Umgebung auf der übergeordneten Verzweigung umgeleitet.
 
 ## Lösung
 
-Um das Problem zu beheben, müssen Sie die `base_url` -Werte (sicher und unsicher) in der Datenbank der benutzerdefinierten Umgebung korrigieren und die `UPDATE_URL` -Variable in der Datei `.magento.env.yaml` festlegen.
+Um das Problem zu beheben, müssen Sie die `base_url` (sicher und unsicher) in der Datenbank der benutzerdefinierten Umgebung korrigieren und die `UPDATE_URL` in der `.magento.env.yaml` festlegen.
 
-### Richtige base\_url-Werte in der Datenbank
+### Korrigieren der base\_url-Werte in der Datenbank
 
-Änderungen an der Datenbank können entweder manuell oder über die Adobe Commerce-CLI vorgenommen werden, wenn Sie Version 2.2.0 oder höher verwenden.
+Änderungen an der Datenbank können manuell oder über die Adobe Commerce-CLI vorgenommen werden, wenn Sie Version 2.2.0 oder höher verwenden.
 
-#### Manuelles Korrigieren der Werte in der DB
+#### Die Werte in der DB manuell korrigieren
 
 1. Stellen Sie eine Verbindung zur Datenbank her.
 1. Führen Sie die folgenden Befehle aus:
@@ -57,9 +57,9 @@ UPDATE core_config_data SET value = %your_new_environment_unsecure_url% WHERE pa
 update core_config_data set value = %your_new_environment_secure_url% where path="web/secure/base_url"
 ```
 
-#### Datenbank mithilfe von Adobe Commerce CLI korrigieren (verfügbar für Version 2.2.X)
+#### Korrigieren Sie die Datenbank mit Adobe Commerce CLI (verfügbar für Version 2.2.X).
 
-1. Melden Sie sich als [Adobe Commerce-Dateisysteminhaber](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html) an oder wechseln Sie zu ihm.
+1. Melden Sie sich als [ Adobe Commerce-Dateisystembesitzer an oder wechseln Sie zu diesem](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html).
 1. Führen Sie die folgenden Befehle aus:
 
 ```bash
@@ -67,9 +67,9 @@ php <your_magento_install_dir>/bin/magento config:set web/unsecure/base_url http
 php <your_magento_install_dir>/bin/magento config:set web/secure/base_url https://example.com
 ```
 
-### Variable `UPDATE_URLS` festlegen
+### Festlegen der `UPDATE_URLS`
 
-In Ihrer lokalen Codebasis in der `.magento.env.yaml` -Datei:
+In der lokalen Codebasis im `.magento.env.yaml`:
 
 ```
  stage:
@@ -77,9 +77,9 @@ In Ihrer lokalen Codebasis in der `.magento.env.yaml` -Datei:
         UPDATE_URLS: true
 ```
 
-### Konfigurationscache löschen
+### Konfigurations-Cache löschen
 
-Um die Änderungen anzuwenden, leeren Sie den Konfigurationscache, indem Sie den folgenden Befehl ausführen:
+Damit die Änderungen angewendet werden, bereinigen Sie den Konfigurations-Cache, indem Sie den folgenden Befehl ausführen:
 
 ```bash
 php <your_magento_install_dir>/bin/magento cache:clean config
@@ -87,4 +87,4 @@ php <your_magento_install_dir>/bin/magento cache:clean config
 
 ## Verwandter Artikel in unserer Entwicklerdokumentation:
 
-[Bereitstellen von Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)
+[Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)

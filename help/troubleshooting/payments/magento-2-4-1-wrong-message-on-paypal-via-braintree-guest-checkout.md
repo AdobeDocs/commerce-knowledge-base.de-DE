@@ -1,6 +1,6 @@
 ---
-title: 'Adobe Commerce 2.4.1: Falsche Nachricht beim PayPal-Braintree-Gast-Checkout'
-description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem ein Gastkunden, der versucht, über Braintree eine Bestellung bei PayPal aufzugeben, eine nicht informative Fehlermeldung erhält, wenn der Gastkauf deaktiviert ist.
+title: 'Adobe Commerce 2.4.1: Falsche Meldung beim PayPal-Braintree-Gast-Checkout'
+description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem ein Gast, der versucht, über Braintree eine Bestellung bei PayPal aufzugeben, eine nicht-informative Fehlermeldung erhält, wenn der Gast-Checkout deaktiviert ist.
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
@@ -11,54 +11,54 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.4.1: Falsche Nachricht beim PayPal-Braintree-Gast-Checkout
+# Adobe Commerce 2.4.1: Falsche Meldung beim PayPal-Braintree-Gast-Checkout
 
-In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem ein Gastkunden, der versucht, über Braintree eine Bestellung bei PayPal aufzugeben, eine nicht informative Fehlermeldung erhält, wenn der Gastkauf deaktiviert ist.
+In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem ein Gast, der versucht, über Braintree eine Bestellung bei PayPal aufzugeben, eine nicht-informative Fehlermeldung erhält, wenn der Gast-Checkout deaktiviert ist.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce vor Ort 2.4.0, 2.4.1
+* Adobe Commerce On-Premises 2.4.0, 2.4.1
 * Adobe Commerce auf Cloud-Infrastruktur 2.4.0, 2.4.1
 
 ## Problem
 
-Ein unspezifischer Fehler wird angezeigt, wenn der Gast-Checkout aus dem Backend deaktiviert ist und die Option PayPal through Braintree Payment aus dem Mini-Warenkorb oder Warenkorb ausgewählt wird.
+Ein unspezifischer Fehler wird angezeigt, wenn der Gast-Checkout im Backend deaktiviert ist und die Zahlungsoption PayPal über Braintree aus dem Mini-Warenkorb oder Warenkorb ausgewählt wird.
 
 <u>Voraussetzungen</u>:
 
-1. Legen Sie in Commerce Admin unter **Stores** > **Konfiguration** > **Verkauf** > **Checkout** den Wert **Gastauscheck zulassen** = *Nein* fest.
-1. Aktivieren Sie PayPal über Braintree, wie im Benutzerhandbuch unter [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) beschrieben.
+1. Legen Sie im Commerce Admin unter **Stores** > **Configuration** > **Sales** > **Checkout** **Allow Guest Checkout** = *No* fest.
+1. Aktivieren Sie PayPal per Braintree, wie in der [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) in unserem Benutzerhandbuch beschrieben.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Fügen Sie das Produkt als Gast zum Warenkorb hinzu.
+1. Produkt als Gast in den Warenkorb legen.
 1. Wählen Sie **Mini-Warenkorb** und klicken Sie auf **Mit PayPal bezahlen**.
-1. Schließen Sie den Paypal-Checkout ab, und landen Sie dann auf der Seite &quot;Bestellübersicht&quot;.
-1. Wählen Sie **Versandmethode** aus.
-1. Klicken Sie auf **Bestellung platzieren**.
+1. Schließen Sie den PayPal-Checkout ab und landen Sie dann auf der Seite „Bestellübersicht“.
+1. Wählen Sie **Versandart**.
+1. Klicken Sie **Bestellung aufgeben**.
 
 <u>Erwartete Ergebnisse</u>:
 
-Wenn ein Kunde auf die Schaltfläche PayPal auf der Seite &quot;Mini-Warenkorb&quot;oder &quot;Warenkorb&quot;klickt, sollte dem Kunden die folgende Nachricht angezeigt werden:
+Wenn ein Kunde auf die PayPal-Schaltfläche auf der Seite „Mini-Warenkorb“ oder „Warenkorb“ klickt, sollte dem Kunden die folgende Meldung angezeigt werden:
 
 <pre><code class="language-bash">To check out, please sign in with your email address.</code></pre>
 
-Wenn Sie &quot;direct Paypal&quot;aktivieren, ohne Braintree zu verwenden, verhält sich dieses Szenario anders. Es ermöglicht dem Gastbenutzer nicht, den Zahlungsprozess fortzusetzen. Es wird die folgende Meldung angezeigt, wenn der Gastbenutzer auf die Schaltfläche PayPal im Mini-Warenkorb klickt:
+Wenn Sie Direct Paypal ohne Braintree aktivieren, verhält sich dieses Szenario anders. Der Gastbenutzer kann den Zahlungsprozess nicht fortsetzen. Wenn der Gastnutzer auf die PayPal-Schaltfläche im Mini-Warenkorb klickt, wird die folgende Meldung angezeigt:
 
 <pre><code class="language-bash">To check out, please sign in with your email address.</code></pre>
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Der Kunde wird zur Seite Warenkorb weitergeleitet und die folgende Meldung wird angezeigt:
+Der Kunde wird zur Seite „Warenkorb“ weitergeleitet und die folgende Meldung wird angezeigt:
 
 <pre><code class="language-bash">The customer email is missing. Enter and try again.</code></pre>
 
-## Workaround
+## Abhilfe
 
-Die Lösung für dieses Problem besteht darin, dass sich der Kunde in einem Speicher anmelden kann (angemeldete Benutzer verwenden keinen Gastkasse.), in dem der Gastkasse deaktiviert ist. Dieses Problem wurde in Adobe Commerce-Version 2.4.2 behoben.
+Die Problemumgehung besteht darin, dass sich der Kunde bei einem Store anmelden kann (angemeldete Benutzer verwenden keinen Gast-Checkout), bei dem der Gast-Checkout deaktiviert ist. Dieses Problem wurde in Adobe Commerce Version 2.4.2 behoben.
 
 ## Verwandtes Lesen
 
-* [Best Practice für die Anzahl der Produkte im Warenkorb in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Support-Wissensdatenbank.
-* [Tutorial zur Bestellverarbeitung: Schritt 1. Hinzufügen von Artikeln zum Warenkorb](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
-* [Tutorial zum GraphQL-Checkout: Schritt 1. Produkte zum Warenkorb hinzufügen](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) in unserer Entwicklerdokumentation
+* [Best Practice für die Anzahl der in den Warenkorb befindlichen Produkte in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Support-Wissensdatenbank.
+* [Tutorial zur Bestellabwicklung: Schritt 1. Artikel zum Warenkorb hinzufügen, ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
+* [Tutorial zum GraphQL-Checkout: Schritt 1. Fügen Sie Produkte zum Warenkorb hinzu](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) in unserer Entwicklerdokumentation

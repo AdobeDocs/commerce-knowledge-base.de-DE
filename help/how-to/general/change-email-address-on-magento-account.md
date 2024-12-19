@@ -1,5 +1,5 @@
 ---
-title: So ändern Sie die E-Mail-Adresse in einem magento.com Konto, wenn das Feld ausgegraut ist
+title: Ändern der E-Mail-Adresse im Konto magento.com , wenn das Feld ausgegraut ist
 description: In diesem Artikel wird beschrieben, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern, wenn das Feld ausgegraut ist.
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
@@ -10,57 +10,57 @@ ht-degree: 0%
 
 ---
 
-# Wie ändere ich die E-Mail-Adresse in magento.com Konto, wenn das Feld ausgegraut ist?
+# Wie ändere ich eine E-Mail-Adresse in einem magento.com Konto, wenn das Feld ausgegraut ist?
 
-In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com) -Konto ändern, wenn das Feld unter folgenden Umständen ausgegraut ist:
+In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern, wenn das Feld unter Umständen ausgegraut ist, z. B.:
 
 * Sie oder der ursprüngliche Benutzer haben das Unternehmen verlassen.
-* Ihr Unternehmen wurde in eine neue E-Mail-Domäne migriert.
-* Sie wechseln zu einer Verteilungsliste oder einer Sammeladresse für E-Mails.
+* Ihr Unternehmen ist zu einer neuen E-Mail-Domain migriert.
+* Sie wechseln zu einer Verteilerliste oder einer Catch-all-E-Mail-Adresse.
 
 ## Betroffene Produkte und Versionen
 
-* Alle Adobe Commerce-Versionen und Infrastrukturtypen
+* Alle Adobe Commerce-Versionen und -Infrastrukturtypen
 
 ## Ursache
 
-Die E-Mail-Adresse Ihres [Magento.com](https://account.magento.com)-Kontos ist mit Ihrem Adobe-Konto unter <https://account.adobe.com> verknüpft und muss dort aktualisiert werden.
+Die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ist mit Ihrem Adobe-Konto unter <https://account.adobe.com> verknüpft und muss dort aktualisiert werden.
 
 ## Schritte zum Ändern der E-Mail-Adresse
 
 ### Fall I:
 
-E-Mail-Adresse eines Benutzers ändern, der über ein eigenes Konto bei <https://account.adobe.com> verfügt
+Ändern der E-Mail-Adresse für einen Benutzer, der über ein eigenes Konto unter <https://account.adobe.com> verfügt
 
 <u>Lösung</u>
 
-1. [Senden Sie eine Support-Anfrage ](https://experienceleague.adobe.com/home#support) unter https://experienceleague.adobe.com/home#support und geben Sie Folgendes an:
+1. [Senden einer Support-Anfrage](https://experienceleague.adobe.com/home#support) unter https://experienceleague.adobe.com/home#support mit folgenden Informationen:
 
-   * Bestehende zu aktualisierende E-Mail-Adresse
+   * Zu aktualisierende vorhandene E-Mail-Adresse
    * Neue E-Mail-Adresse
-   * MAGE-ID des neuen Kontos (falls verfügbar)
+   * BILD-ID des neuen Kontos (falls verfügbar)
 
-1. Fordern Sie das Team auf, beide Konten zusammenzuführen, um die E-Mail-Adresse für das vorhandene Konto zu aktualisieren.
+1. Bitten Sie das Team, beide Konten zusammenzuführen, um die E-Mail-Adresse im vorhandenen Konto zu aktualisieren.
 
 ### Fall II:
 
-E-Mail-Adresse für einen Benutzer ändern, der derzeit kein eigenes Konto bei <https://account.adobe.com> hat
+Ändern der E-Mail-Adresse für Benutzende, die derzeit kein eigenes Konto bei <https://account.adobe.com> haben
 
 <u>Lösung</u>
 
-Wenn Sie Zugriff auf das Postfach der [aktuellen Eigentümer-E-Mail] haben, setzen Sie das Kennwort für die E-Mail des aktuellen Eigentümers gemäß dem Handbuch [Zurücksetzen oder ändern Sie Ihr Adobe-Kennwort](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch zurück.
+Wenn Sie Zugriff auf das Postfach der E[Mail des aktuellen Besitzers] haben, setzen Sie das Kennwort für die E-Mail des aktuellen Besitzers zurück, indem Sie der Anleitung [Zurücksetzen oder Ändern des Adobe-](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch folgen.
 
-1. Suchen Sie den Link zum Zurücksetzen des Kennworts, der mit Anweisungen an das Postfach des aktuellen Eigentümers gesendet wird.
-1. Legen Sie ein neues Kennwort fest und ändern Sie die E-Mail in [E-Mail-Adresse des neuen Eigentümers].
-1. Navigieren Sie zum [IMS-Konto](https://account.adobe.com/) , um sich mit der neuen E-Mail anzumelden, und ändern Sie das Kennwort.
-1. Nachdem Sie die E-Mail-Adresse und das Kennwort geändert haben, navigieren Sie zu [Magento.com](https://account.magento.com) , um sich mit der [neuen Besitzer-E-Mail] anzumelden.
+1. Suchen Sie den Link zum Zurücksetzen des Kennworts, der mit Anweisungen an das Postfach des aktuellen Besitzers gesendet wird.
+1. Legen Sie ein neues Kennwort fest und ändern Sie die E-Mail in [E-Mail für neue Inhaber].
+1. Navigieren Sie zum [IMS-Konto](https://account.adobe.com/), um sich mit der neuen E-Mail anzumelden, und ändern Sie das Kennwort.
+1. Nachdem Sie die E-Mail-Adresse und das Passwort geändert haben, navigieren Sie zu [Magento.com](https://account.magento.com), um sich mit der E-[ „neuer Inhaber“ ].
 
-Wenn Sie jedoch keinen Zugriff auf E-Mails haben, die an die [aktuelle Besitzer-E-Mail] gesendet werden, führen Sie die folgenden Schritte aus:
+Wenn Sie jedoch keinen Zugriff auf E-Mails haben, die an den aktuellen [ gesendet werden] führen Sie die folgenden Schritte aus:
 
-1. Richten Sie die E-Mail-Weiterleitung von der [aktuellen Eigentümer-E-Mail] an eine neue E-Mail mithilfe der E-Mail-Server-Konfiguration Ihres Unternehmens ein.
-1. Fahren Sie nun mit den vorhergehenden Schritten fort.
+1. Richten Sie mithilfe der Mailserver-Konfiguration Ihres Unternehmens die E[Mail-Weiterleitung von der ]E-Mail-Adresse des aktuellen Inhabers) an eine neue E-Mail ein.
+1. Fahren Sie nun mit den vorherigen Schritten fort.
 
 ## Verwandtes Lesen
 
-[Vergessenes Kennwort zurücksetzen](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch.
-[Aktualisieren Sie Ihr Kontoprofil](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) im Creative Cloud-Benutzerhandbuch.
+[Reset Forgotten Password](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch.
+[Kontoprofil aktualisieren](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) im Creative Cloud-Benutzerhandbuch.

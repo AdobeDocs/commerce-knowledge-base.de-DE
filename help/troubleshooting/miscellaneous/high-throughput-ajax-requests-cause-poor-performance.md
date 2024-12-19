@@ -1,6 +1,6 @@
 ---
-title: Hohe Durchsatzraten AJAX Anforderungen führen zu schlechter Leistung
-description: Dieser Artikel bietet eine Lösung für Leistungsprobleme mit Adobe Commerce On-Premise oder Adobe Commerce auf Cloud-Infrastruktur-Sites, da einige Anforderungen mit hohem Durchsatz zu beträchtlicher Serverlast und Traffic führen.
+title: AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung
+description: Dieser Artikel bietet eine Lösung für Leistungsprobleme mit Adobe Commerce On-Premise oder Adobe Commerce auf Cloud-Infrastruktur-Sites aufgrund einiger Anfragen mit hohem Durchsatz, die zu erheblicher Server-Last und Traffic führen.
 exl-id: 68dfca8a-826c-4476-acaf-a139052b5dcc
 feature: Cache
 role: Developer
@@ -11,47 +11,47 @@ ht-degree: 0%
 
 ---
 
-# Hohe Durchsatzraten AJAX Anforderungen führen zu schlechter Leistung
+# AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung
 
-Dieser Artikel bietet eine Lösung für Leistungsprobleme mit Adobe Commerce On-Premise oder Adobe Commerce auf Cloud-Infrastruktur-Sites, da einige Anforderungen mit hohem Durchsatz zu beträchtlicher Serverlast und Traffic führen.
+Dieser Artikel bietet eine Lösung für Leistungsprobleme mit Adobe Commerce On-Premise oder Adobe Commerce auf Cloud-Infrastruktur-Sites aufgrund einiger Anfragen mit hohem Durchsatz, die zu erheblicher Server-Last und Traffic führen.
 
 ## Betroffene Produkte und Versionen
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.2.x, 2.3.x
-* Adobe Commerce lokal 2.2.x, 2.3.x
+* Adobe Commerce On-Premises 2.2.x, 2.3.x
 
 >[!NOTE]
 >
->Das Problem wurde in Version 2.3.4 von Adobe Commerce in der Cloud-Infrastruktur und in Adobe Commerce vor Ort behoben.
+>Das Problem wurde in Version 2.3.4 sowohl von Adobe Commerce on Cloud Infrastructure als auch von Adobe Commerce On-Premise behoben.
 
 ### Problem
 
-Die Leistung der Site ist aufgrund von Anforderungen mit hohem Durchsatz, wie z. B. kritischen AJAX, langsam.
+Die Site weist aufgrund von Anfragen mit hohem Durchsatz, wie kritischen AJAX-Anfragen, eine langsame Leistung auf.
 
 ### Ursache
 
-Zu den Anforderungen mit hohem Durchsatz AJAX Anforderungen gehören Anforderungen im Zusammenhang mit privaten Inhalten von Kunden.
+AJAX-Anfragen mit hohem Durchsatz beziehen sich auf diejenigen, die mit den privaten Inhalten der Kunden zusammenhängen.
 
 ### Lösung
 
 Es gibt drei Lösungen:
 
 * [Aktualisieren Sie auf Version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
-* Stellen Sie leichtere Anforderungen sicher (Cache-Anforderungen oder Wechsel zum privaten Inhalt von Kunden).
-* Reduzieren Sie die Anzahl der Anforderungen.
+* Stellen Sie leichtere Anfragen sicher (Cache-Anfragen oder Verschieben in den privaten Inhalt von Kunden).
+* Reduzieren Sie die Anzahl der Anfragen.
 
-<u>Sicherstellen von leichteren Anforderungen (Cache-Anforderungen oder Wechsel zum privaten Inhalt von Kunden)</u>
+<u>Stellen Sie leichtere Anfragen sicher (Cache-Anfragen oder Verschieben in private Inhalte von Kunden)</u>
 
-Wenn auf jeder Seite AJAX Anforderungen von Drittanbietern ausgelöst werden, versuchen Sie, diese Anforderungen zwischenzuspeichern oder in den privaten Inhalt des Kunden zu verschieben. Der Händler kann dies tun, indem er sicherstellt, dass benutzerdefinierte AJAX-Anfragen mithilfe der GET-HTTP-Methoden aufgerufen werden. Dadurch werden diese Anfragen von Fastly zwischenspeicherbar. Wenn es benutzerdefinierte AJAX-Anforderungen gibt, die nicht zwischengespeichert werden sollen, sollten sie entsprechend der Funktion für private Inhalte umstrukturiert werden. Anweisungen finden Sie unter [Private Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in unserer Entwicklerdokumentation.
+Wenn auf jeder Seite AJAX-Anfragen von Drittanbietern ausgelöst werden, versuchen Sie, diese Anfragen zwischenzuspeichern oder in den privaten Inhalt der Kunden zu verschieben. Der Händler kann dies tun, indem er sicherstellt, dass benutzerdefinierte AJAX-Anfragen mit den GET-HTTP-Methoden aufgerufen werden. Dadurch können diese Anfragen von Fastly zwischengespeichert werden. Wenn es benutzerdefinierte AJAX-Anfragen gibt, die nicht zwischengespeichert werden sollen, sollten sie gemäß der Funktion für private Inhalte umgestaltet werden. Anweisungen hierzu finden Sie [Privater Inhalt](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in unserer Entwicklerdokumentation.
 
-<u>Reduzieren der Anzahl der Anforderungen</u>
+<u>Reduzieren Sie die Anzahl der Anfragen</u>
 
-* Deaktivieren Sie den beständigen Warenkorb, da dadurch die Anzahl der `customer/section/load` -Anfragen erhöht werden kann. Führen Sie die Schritte unter [Persistente Einkaufswagenpfade](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) in unserer Entwicklerdokumentation aus, um zu sehen, ob der beständige Warenkorb aktiviert ist.
-* Wenn Sie Inhalte in `sections.xml` neu laden oder ungültig machen müssen, führen Sie die Schritte unter [Privater Inhalt: Ungültiges privates Inhalt](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) in unserer Entwicklerdokumentation aus. Stellen Sie sicher, dass Sie die `customerData.reload()` -Methode nicht direkt in Ihren Anpassungen verwenden.
-* Überprüfen Sie andere POST AJAX Anforderungen auf derselben Seite. Öffnen Sie das Google Chrome-Entwickler-Tool im Google Chrome-Browser. Klicken Sie auf die Registerkarte &quot;**Netzwerk**&quot;und dann auf die Registerkarte &quot;**XHR**&quot;. Daraufhin wird eine Liste aller AJAX Anforderungen von der jeweiligen Seite angezeigt. Klicken Sie dann auf jede Anforderung und im Feld Anforderungsmethode sollten die GET-Anforderungen angegeben werden. Hinweis: Google Chrome wird als Beispiel verwendet. Dies ist auch in anderen Browsern möglich.
-* Überprüfen Sie die Google Tag Manager (GTM)-Funktionalität, bei der es sich um eine bestimmte AJAX handelt. Der Benutzer kann diese AJAX entfernen und seine Anpassung durch private Funktionen umgestalten, um die Gesamtzahl der Anforderungen an den Server zu reduzieren.
+* Deaktivieren Sie den beständigen Warenkorb, da er die Anzahl der `customer/section/load` Anfragen erhöhen kann. Befolgen Sie die Schritte unter [Pfade zum beständigen Warenkorb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) in unserer Entwicklerdokumentation, um zu sehen, ob der beständige Warenkorb aktiviert ist.
+* Wenn Sie Inhalte in neu laden oder ungültig machen müssen, befolgen Sie `sections.xml` Schritte unter [Privater Inhalt: Invalidierung privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) in unserer Entwicklerdokumentation. Stellen Sie sicher, dass Sie die `customerData.reload()`-Methode nicht direkt in Ihren Anpassungen verwenden.
+* Überprüfen Sie andere POST-AJAX-Anfragen auf derselben Seite. Öffnen Sie das Google Chrome-Entwickler-Tool im Google Chrome-Browser. Klicken Sie auf **Registerkarte** und dann auf die Registerkarte **XHR**. Daraufhin wird eine Liste aller AJAX-Anfragen von der jeweiligen Seite angezeigt. Klicken Sie dann auf jede Anfrage. Im Feld Anfragemethode sollten die GET-Anfragen angezeigt werden. Hinweis: Google Chrome wird als Beispiel verwendet. Dies ist auch in anderen Browsern möglich.
+* Überprüfen Sie die Funktion von Google Tag Manager (GTM), die eine bestimmte AJAX-Anfrage ist. Der Benutzer kann diese AJAX entfernen und ihre Anpassung mit privater Funktion refaktorieren, um die Gesamtzahl der Anfragen an den Server zu reduzieren.
 * Überprüfen Sie, ob das Adobe Commerce-Banner aktiviert, aber nicht verwendet ist. Möglicherweise müssen Sie [Adobe Commerce-Bannerausgabe deaktivieren, um die Site-Leistung zu verbessern](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md).
 
-### Verwandte Informationen
+### Verwandtes Lesen
 
 Weitere Informationen zu Inhalten privater Kunden finden Sie unter [Private Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/) in unserer Entwicklerdokumentation.

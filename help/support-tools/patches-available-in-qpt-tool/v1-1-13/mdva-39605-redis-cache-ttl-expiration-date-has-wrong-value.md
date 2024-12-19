@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-39605: Redis cache TTL (Ablaufdatum) hat falschen Wert'
-description: Der MDVA-39605-Patch behebt das Problem, bei dem die Redis-Cache-TTL (Ablaufdatum) einen falschen Wert hat. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-39605. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+title: 'MDVA-39605: Redis-Cache-TTL (Ablaufdatum) hat falschen Wert'
+description: Der MDVA-39605 Patch löst das Problem, dass die Redis-Cache-TTL (Ablaufdatum) einen falschen Wert aufweist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-39605. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 exl-id: 7283838b-702d-4ddc-aa03-829dbf5aa91f
 feature: Cache, Console, Services
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-39605: Redis cache TTL (Ablaufdatum) hat falschen Wert
+# MDVA-39605: Redis-Cache-TTL (Ablaufdatum) hat falschen Wert
 
-Der MDVA-39605-Patch behebt das Problem, bei dem die Redis-Cache-TTL (Ablaufdatum) einen falschen Wert hat. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-39605. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der MDVA-39605 Patch löst das Problem, dass die Redis-Cache-TTL (Ablaufdatum) einen falschen Wert aufweist. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.13 installiert ist. Die Patch-ID lautet MDVA-39605. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,43 +27,43 @@ Der MDVA-39605-Patch behebt das Problem, bei dem die Redis-Cache-TTL (Ablaufdatu
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Die TTL des Redis-Cache (Ablaufdatum) hat einen falschen Wert.
+Die Redis-Cache-TTL (Ablaufdatum) hat einen falschen Wert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Um die Fehlerbehebung zu testen, leeren Sie den Cache und öffnen Sie ein konfigurierbares Produkt auf der Storefront. Öffnen Sie dann ein Terminal (Konsole) und führen Sie die folgenden Schritte aus:
+Um die Fehlerbehebung zu testen, leeren Sie den Cache und öffnen Sie ein konfigurierbares Produkt in der Storefront. Öffnen Sie dann ein Terminal (Konsole) und führen Sie die folgenden Schritte aus:
 
-1. Führen Sie den Befehl aus: `redis-cli`.
-1. Führen Sie `KEYS "*PRICE"` aus (im Ergebnis sollte nur ein Schlüssel enthalten sein, z. B. `zc:ti:e54_PRICE`). Kopieren Sie den Schlüssel.
-1. Führen Sie `SMEMBERS` aus, gefolgt vom Schlüssel aus dem vorherigen Schritt (z. B. `SMEMBERS zc:ti:e54_PRICE`). Kopieren Sie einen beliebigen Schlüssel aus dem Ergebnis (z. B. e54_4E67B390D5C28FC7C3D9BB0D37AB3F7B5E576421).
-1. Führen Sie `KEYS "*<key>"` mit dem Schlüsselnamen aus dem vorherigen Schritt aus, um den vollständigen Schlüsselnamen zu erhalten (z. B. `KEYS "*e54_4E67B390D5C28FC7C3D9BB0D37AB3F7B5E576421"`). Das Ergebnis sollte nur einen Schlüssel enthalten (z. B. `zc:k:e54_4E67B390D5C28FC7C3D9BB0D37AB3F7B5E576421`). Wie Sie vielleicht feststellen, ist der vollständige Schlüsselname einfach der Schlüsselname mit dem Präfix &quot;`zc:k:`&quot;. Kopieren Sie nun den vollständigen Schlüsselnamen.
-1. Führen Sie `HGETALL` aus, gefolgt vom vollständigen Schlüsselnamen aus Schritt 4, um den Wert zu überprüfen. Der Wert sollte serialisierte Daten verknüpfter Produkte eines zugehörigen konfigurierbaren Produkts enthalten.
-1. Führen Sie `TTL` und dann den vollständigen Schlüsselnamen aus Schritt 4 aus, um zu überprüfen, ob der Schlüssel abläuft. Das Ergebnis sollte sich von **-1** und **-2** unterscheiden und ungefähr 2592000 (30 Tage) betragen. Die im Code festgelegte Gültigkeit beträgt zwar ein Jahr, die in Adobe Commerce verwendete Redis-Bibliothek hat jedoch eine feste maximale Ablaufgrenze von 2592000 Sekunden.
+1. Führen Sie den Befehl `redis-cli` aus.
+1. Führen Sie `KEYS "*PRICE"` aus (das Ergebnis sollte nur einen Schlüssel enthalten, z. B. `zc:ti:e54_PRICE`). Kopieren Sie den Schlüssel.
+1. Führen Sie `SMEMBERS` aus, gefolgt vom Schlüssel aus dem vorherigen Schritt (zum Beispiel `SMEMBERS zc:ti:e54_PRICE`). Kopieren Sie einen beliebigen Schlüssel aus dem Ergebnis (beispielsweise e54_4E67B390D5C28FC7C3D9BB0D37AB3F7B5E576421).
+1. Führen Sie `KEYS "*<key>"` mit dem Namen des Schlüssels aus dem vorherigen Schritt aus, um den vollständigen Schlüsselnamen abzurufen (z. B. `KEYS "*e54_4E67B390D5C28FC7C3D9BB0D37AB3F7B5E576421"`). Das Ergebnis sollte nur einen Schlüssel enthalten (z. B. `zc:k:e54_4E67B390D5C28FC7C3D9BB0D37AB3F7B5E576421`). Wie Sie vielleicht bemerken, ist der vollständige Schlüsselname einfach der Schlüsselname mit dem Präfix &quot;`zc:k:`&quot;. Kopieren Sie nun den vollständigen Schlüsselnamen.
+1. Führen Sie `HGETALL` aus, gefolgt vom vollständigen Schlüsselnamen aus Schritt 4, um den Wert zu überprüfen. Der Wert sollte serialisierte Daten von zugehörigen Produkten eines zugehörigen konfigurierbaren Produkts enthalten.
+1. Führen Sie `TTL` aus, gefolgt vom vollständigen Schlüsselnamen aus Schritt 4, um zu überprüfen, ob der Schlüssel ein Ablaufdatum hat. Das Ergebnis sollte von **-1** und **-2** abweichen und ungefähr 2592000 (30 Tage) sein. Obwohl die im Code festgelegte Gültigkeitsdauer ein Jahr beträgt, gilt für die in Adobe Commerce verwendete Redis-Bibliothek eine feste maximale Gültigkeitsdauer von 2592000s.
 
 <u>Erwartete Ergebnisse</u>:
 
-Das Ablauflimit beträgt 2592000s.
+Ablaufdatum ist 2592000s
 
 <u>Tatsächliche Ergebnisse</u>:
 
 Das Ablauflimit ist auf **-1** oder **-2** festgelegt.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

@@ -1,6 +1,6 @@
 ---
-title: Login-Umleitung bei der Anmeldung bei Commerce Admin
-description: In diesem Artikel finden Sie die möglichen Lösungen für das Commerce Admin-Anmeldeproblem, bei dem Sie beim Versuch, sich beim Administrator anzumelden, zum Anmeldeformular zurückgeleitet werden und keine Fehlermeldung angezeigt wird. Dazu gehören das Korrigieren der Zeitzoneneinstellungen des Servers und das Löschen der Cookie-Einstellungen in Adobe Commerce.
+title: Anmeldeumleitung bei Anmeldung bei Commerce Admin
+description: In diesem Artikel finden Sie die möglichen Lösungen für das Commerce Admin-Anmeldeproblem, bei dem Sie beim Anmeldeversuch bei Admin zurück zum Anmeldeformular weitergeleitet werden und keine Fehlermeldung angezeigt wird. Dazu gehören die Korrektur der Zeitzoneneinstellungen des Servers und das Löschen der Cookie-Einstellungen in Adobe Commerce.
 exl-id: ff3114fd-8690-4983-8221-cf807f083b15
 feature: Admin Workspace, Cache
 role: Developer
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 ---
 
-# Login-Umleitung bei der Anmeldung bei Commerce Admin
+# Anmeldeumleitung bei Anmeldung bei Commerce Admin
 
-In diesem Artikel finden Sie die möglichen Lösungen für das Commerce Admin-Anmeldeproblem, bei dem Sie beim Versuch, sich beim Administrator anzumelden, zum Anmeldeformular zurückgeleitet werden und keine Fehlermeldung angezeigt wird. Dazu gehören das Korrigieren der Zeitzoneneinstellungen des Servers und das Löschen der Cookie-Einstellungen in Adobe Commerce.
+In diesem Artikel finden Sie die möglichen Lösungen für das Commerce Admin-Anmeldeproblem, bei dem Sie beim Anmeldeversuch bei Admin zurück zum Anmeldeformular weitergeleitet werden und keine Fehlermeldung angezeigt wird. Dazu gehören die Korrektur der Zeitzoneneinstellungen des Servers und das Löschen der Cookie-Einstellungen in Adobe Commerce.
 
-## Betroffene Versionen:
+## Betroffene Editionen und Versionen:
 
 Alle Adobe Commerce-Versionen und -Editionen.
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Rufen Sie Ihre Commerce-Admin-Seite auf.
+1. Navigieren Sie zu Ihrer Commerce Admin-Seite.
 1. Geben Sie Ihre Anmeldedaten ein und klicken Sie auf Anmelden.
 
 <u>Erwartete Ergebnisse</u>:
@@ -32,33 +32,33 @@ Sie werden beim Commerce-Administrator angemeldet.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Sie werden ohne Fehlermeldungen zum Anmeldeformular zurückgeleitet.
+Sie werden ohne Fehlermeldungen zurück zum Anmeldeformular weitergeleitet.
 
 ## Ursache
 
 Es gibt mehrere mögliche Gründe für das Problem:
 
-* Falsche Zeitzone auf Browserebene (was dazu führt, dass die Admin-Sitzung als abgelaufen gilt, selbst wenn ihre tatsächliche Lebensdauer noch nicht abgelaufen ist).
-* Falsche Cookie-Einstellungen, was dazu führt, dass die festgelegte Sitzung von Adobe Commerce nicht verwendet wird.
+* Falsche Zeitzone auf Browser-Ebene festgelegt (was dazu führt, dass die Admin-Sitzung als abgelaufen betrachtet wird, auch wenn ihre tatsächliche Lebensdauer noch nicht abgelaufen ist).
+* Falsche Cookie-Einstellungen, was dazu führt, dass die eingerichtete Sitzung von Adobe Commerce nicht verwendet wird.
 
-In den nächsten Absätzen finden Sie Lösungen für jeden Fall.
+In den nächsten Absätzen finden Sie jeweils Lösungen.
 
 ## Lösungen
 
-### Problem bei der Lebensdauer der Admin-Sitzung
+### Problem mit der Lebensdauer der Admin-Sitzung
 
-Versuchen Sie, einen anderen Browser zu verwenden und die Lebensdauer der Admin-Sitzung zu erhöhen, wenn sie weniger als eine Stunde beträgt.
+Versuchen Sie, einen anderen Browser zu verwenden und die Lebensdauer der Admin-Sitzung zu verlängern, wenn sie weniger als eine Stunde beträgt.
 
-Gehen Sie wie folgt vor, um die Lebensdauer der Admin-Sitzung zu erhöhen:
+Um die Lebensdauer der Admin-Sitzung zu verlängern, führen Sie die folgenden Schritte aus:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
    ```
 
-1. Bereinigen Sie den Konfigurationscache, indem Sie den folgenden Befehl ausführen:
+1. Bereinigen Sie den Konfigurations-Cache, indem Sie den folgenden Befehl ausführen:
 
    ```bash
    php <your_magento_install_dir>/bin/magento cache:clean config
@@ -66,22 +66,22 @@ Gehen Sie wie folgt vor, um die Lebensdauer der Admin-Sitzung zu erhöhen:
 
 ### Falsche Cookie-Einstellungen
 
-Gehen Sie wie folgt vor, um die Werte der Cookie-Einstellungen zu überprüfen und zu löschen:
+Gehen Sie wie folgt vor, um die Cookie-Einstellungswerte zu überprüfen und zu löschen:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie über die Befehlszeile manuell auf die DB zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");
    ```
 
-1. Wenn die Antworten der Werte nicht leer sind, setzen Sie sie durch Ausführen auf NULL:
+1. Wenn die Antworten der Werte nicht leer sind, legen Sie sie durch Ausführen von auf NULL fest:
 
    ```sql
    UPDATE core_config_data SET value = NULL WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");
    ```
 
-1. Bereinigen Sie den Konfigurationscache, indem Sie den folgenden Befehl ausführen:
+1. Bereinigen Sie den Konfigurations-Cache, indem Sie den folgenden Befehl ausführen:
 
    ```bash
    php <your_magento_install_dir>/bin/magento cache:clean config
@@ -89,5 +89,5 @@ Gehen Sie wie folgt vor, um die Werte der Cookie-Einstellungen zu überprüfen u
 
 ## Verwandte Artikel
 
-* [Kehren Sie zum Formular für die Admin-Anmeldung mit dem Fehler &quot;Ihr Konto ist vorübergehend deaktiviert&quot;zurück](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) in unserer Support-Wissensdatenbank.
-* [Kehren Sie zum Formular für die Admin-Anmeldung mit dem Fehler &quot;Ihre aktuelle Sitzung ist abgelaufen&quot;zurück](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) in unserer Support-Wissensdatenbank.
+* [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihr Konto ist vorübergehend deaktiviert“ ](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) unserer Support-Wissensdatenbank.
+* [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ ](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) unserer Support-Wissensdatenbank.

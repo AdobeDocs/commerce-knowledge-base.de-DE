@@ -1,6 +1,6 @@
 ---
-title: Download schlägt aufgrund von Änderungen in Composer fehl
-description: Dieser Artikel enthält eine Fehlerbehebung für einen fehlgeschlagenen Adobe Commerce-Download- und Ausnahmefehler.
+title: Der Download schlägt aufgrund von Änderungen im Composer fehl
+description: Dieser Artikel enthält eine Fehlerbehebung für einen fehlgeschlagenen Adobe Commerce-Download und einen Ausnahmefehler.
 exl-id: 5abdab97-4b0c-466b-a68f-a2637d2826e5
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Download schlägt aufgrund von Änderungen in Composer fehl
+# Der Download schlägt aufgrund von Änderungen im Composer fehl
 
-Dieser Artikel enthält eine Fehlerbehebung für einen fehlgeschlagenen Adobe Commerce-Download- und Ausnahmefehler.
+Dieser Artikel enthält eine Fehlerbehebung für einen fehlgeschlagenen Adobe Commerce-Download und einen Ausnahmefehler.
 
 ## Problem
 
@@ -26,30 +26,30 @@ Während des Downloads wird der folgende Fehler angezeigt:
 
 ## Ursache
 
-Dies geschieht aufgrund von Änderungen in bestimmten Versionen von Composer. Die Lösung besteht darin, Composer auf eine frühere Version herabzustufen und den Adobe Commerce-Download erneut auszuführen.
+Dies geschieht aufgrund von Änderungen in bestimmten Versionen von Composer. Die Problemumgehung besteht darin, Composer auf eine frühere Version herunterzuladen und den Adobe Commerce-Download erneut zu versuchen.
 
 ## Lösung
 
-Dieses Problem tritt in jeder Version des Composers auf, die vom 21. November bis 26. November 2015 datiert wurde. Um zu bestätigen, dass dieses Problem mit der Composer-Version in Verbindung steht, geben Sie den folgenden Befehl ein:
+Jede Version von Composer datiert zwischen 21. November und 26. November 2015 hat dieses Problem. Um zu bestätigen, dass dieses Problem mit der Composer-Version zusammenhängt, geben Sie den folgenden Befehl ein:
 
 ```php
 composer -v
 ```
 
-Die Version weist folgendes Format auf:
+Die Version wird ähnlich der folgenden angezeigt:
 
 ```php
 Composer version 1.0-dev (2b14f0a047dd4f3545ec82381f65c36ea93a4c81) 2015-11-25 17:13:09
 ```
 
-Beachten Sie, dass das Datum 2015-11-25 ist, was darauf hinweist, dass der Composer dieses Problem hat.
+Beachten Sie, dass das Datum 2015-11-25 ist, was darauf hinweist, dass Composer dieses Problem hat.
 
-So umgehen Sie es:
+So umgehen Sie das Problem:
 
-1. Ändern Sie Ihre Version von Composer, damit Sie die Adobe Commerce-Software herunterladen können, indem Sie einen der folgenden Schritte ausführen:
+1. Ändern Sie Ihre Composer-Version, um die Adobe Commerce-Software herunterladen zu können, indem Sie einen der folgenden Schritte ausführen:
 
-   * Aktualisieren Sie Composer mit dem folgenden Befehl: `composer self-update 1.0.0-alpha11`.
-   * Upgrade von Composer auf eine Version nach dem 26. November 2015: `composer self-update`.
+   * Downgrade Composer mit dem folgenden Befehl: `composer self-update 1.0.0-alpha11`.
+   * Aktualisieren Sie Composer auf eine Version nach dem 26. November 2015: `composer self-update`.
 
 1. Löschen Sie das Adobe Commerce-Verzeichnis und die Unterverzeichnisse.
 1. Versuchen Sie den Download erneut mit `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` oder `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.

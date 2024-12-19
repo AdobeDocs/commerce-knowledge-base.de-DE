@@ -1,7 +1,7 @@
 ---
-title: Technische Tipps für die Commerce-Urlaubsbereitschaft
+title: Technische Tipps für Commerce Holiday Readiness
 promoted: true
-description: Das angehängte PDF-Dokument enthält Tipps dazu, wie Sie Ihre Infrastruktur auf hohen Traffic vorbereiten, Ausfallzeiten verhindern und die Leistung in der Urlaubszeit optimieren können.
+description: Die angehängte PDF-Datei enthält Tipps, wie Sie Ihre Infrastruktur auf hohen Traffic vorbereiten, Ausfallzeiten verhindern und die Leistung in der Urlaubszeit optimieren können.
 feature: Cloud, Configuration, Paas, Logs, Iaas, Build, Best Practices
 role: Admin, Developer
 exl-id: b61955ba-bc52-42de-8a55-07c19bf42596
@@ -12,14 +12,14 @@ ht-degree: 0%
 
 ---
 
-# Technische Tipps für die Commerce-Urlaubsbereitschaft
+# Technische Tipps für Commerce Holiday Readiness
 
-Das angehängte PDF-Dokument enthält Tipps dazu, wie Sie Ihre Infrastruktur auf hohen Traffic vorbereiten, Ausfallzeiten verhindern und die Leistung in der Urlaubszeit optimieren können.
+Die angehängte PDF-Datei enthält Tipps, wie Sie Ihre Infrastruktur auf hohen Traffic vorbereiten, Ausfallzeiten verhindern und die Leistung in der Urlaubszeit optimieren können.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* Adobe Commerce auf Cloud-Infrastruktur, alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 ## PDF herunterladen
 
-Klicken Sie auf [Techtipps für Commerce-Urlaubsbereitschaft.pdf](assets/tech-tips-for-commerce-holiday-readiness.pdf) , um das PDF-Dokument herunterzuladen.
+Klicken Sie auf [Technische Tipps für Commerce Holiday Readiness.pdf](assets/tech-tips-for-commerce-holiday-readiness.pdf), um die PDF herunterzuladen.

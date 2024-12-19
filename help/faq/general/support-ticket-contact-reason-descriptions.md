@@ -1,6 +1,6 @@
 ---
-title: Beschreibungen der Gründe für Support-Tickets
-description: In diesem Artikel werden die Optionen des Support-Tickets im Feld **Kontaktgrund** und detailliertere Beschreibungen der einzelnen Felder aufgelistet.
+title: Support-Ticket - Beschreibung der Kontaktgründe
+description: In diesem Artikel werden die Feldoptionen für Support**Tickets (**) und detailliertere Beschreibungen für jede Option aufgeführt.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
 source-git-commit: b7444c3b2360b38b7e382645991a441c649009b8
 workflow-type: tm+mt
@@ -9,23 +9,23 @@ ht-degree: 0%
 
 ---
 
-# Beschreibungen der Gründe für Support-Tickets
+# Support-Ticket - Beschreibung der Kontaktgründe
 
-In diesem Artikel werden die Feldoptionen für das Support-Ticket **Kontaktgrund** und detailliertere Beschreibungen der einzelnen Felder aufgelistet.
+In diesem Artikel werden die Optionen für das Support **Ticket &quot;** Grund“ und detailliertere Beschreibungen für jede Option aufgeführt.
 
 ## Kontaktgründe
 
 <table class="tg">
 <thead>
   <tr>
-    <th><span style="font-weight:bold;font-style:normal">Kontaktgrund</span></th>
+    <th><span style="font-weight:bold;font-style:normal">Grund des Kontakts</span></th>
     <th><span style="font-weight:700;font-style:normal">Beschreibung</span></th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Store ist nicht verfügbar (Bestellungen, Sendungen oder E-Mails können nicht verarbeitet werden)</td>
-    <td>Ihre Adobe Commerce-Storefront ist ausgefallen und Sie können keine geschäftskritischen Aufgaben wie die Verarbeitung von Bestellungen, Sendungen oder den Versand von E-Mails durchführen.</td>
+    <td>Speicher ist ausgefallen (Bestellungen, Sendungen oder E-Mails können nicht verarbeitet werden)</td>
+    <td>Ihre Adobe Commerce-Storefront ist ausgefallen und Sie können keine wichtigen Geschäftsaufgaben wie die Verarbeitung von Bestellungen, Sendungen oder den Versand von E-Mails ausführen.</td>
   </tr>
   <tr>
     <td>Sicherheit</td>
@@ -33,14 +33,14 @@ In diesem Artikel werden die Feldoptionen für das Support-Ticket **Kontaktgrund
   </tr>
   <tr>
     <td>Adobe Commerce-Anwendung</td>
-    <td>Sie benötigen Hilfe bei Ihrer Adobe Commerce-Anwendung.</td>
+    <td>Sie benötigen Hilfe bei Ihrem Adobe Commerce-Programm.</td>
   </tr>
   <tr>
     <td>Adobe Commerce Cloud-Infrastruktur</td>
-    <td>Sie benötigen Hilfe bei Ihrer Adobe Commerce Cloud-Infrastruktur oder haben eine Konfigurationsänderungsanfrage.</td>
+    <td>Sie benötigen Hilfe bei Ihrer Adobe Commerce Cloud-Infrastruktur oder haben eine Anfrage zur Konfigurationsänderung.</td>
   </tr>
   <tr>
-    <td>Proaktive Ausfälle-Benachrichtigung</td>
+    <td>Proaktive Ausfallbenachrichtigung</td>
     <td>Nicht zutreffend</td>
   </tr>
   <tr>
@@ -52,7 +52,7 @@ In diesem Artikel werden die Feldoptionen für das Support-Ticket **Kontaktgrund
 
 ## Gründe für Adobe Commerce-Anwendungen
 
-Diese Optionen werden angezeigt, wenn **Adobe Commerce Application** als **Kontaktgrund** ausgewählt ist:
+Dies sind die Optionen, die angezeigt werden, wenn **Adobe Commerce** Programm als &quot;**&quot; ausgewählt**:
 
 <table class="tg">
 <thead>
@@ -63,24 +63,24 @@ Diese Optionen werden angezeigt, wenn **Adobe Commerce Application** als **Konta
 </thead>
 <tbody>
   <tr>
-    <td>Probleme bei der Installation oder Aktualisierung von Adobe Commerce-Anwendungen</td>
+    <td>Probleme beim Installieren oder Aktualisieren der Adobe Commerce-Anwendung</td>
     <td>Fragen oder Probleme im Zusammenhang mit der Installation oder Aktualisierung Ihrer Adobe Commerce-Anwendung auf eine neuere Version</td>
   </tr>
   <tr>
-    <td>Leistung (Anwendung)</td>
-    <td>Fragen oder Probleme im Zusammenhang mit der Leistung Ihrer Adobe Commerce-Storefront und glauben, dass sie anwendungsbezogen sind</td>
+    <td>Leistung (Programm)</td>
+    <td>Fragen oder Probleme mit der Leistung Ihrer Adobe Commerce-Storefront und ob sie mit Anwendungen zusammenhängen</td>
   </tr>
   <tr>
-    <td>Catalog Service (SaaS)</td>
-    <td>Fragen oder Probleme im Zusammenhang mit dem Catalog Service.  Geben Sie die Umgebungs-ID ein, die im Adobe Commerce-Admin unter System &gt; Commerce Services Connector angegeben ist.</td>
+    <td>Katalog-Service (SaaS)</td>
+    <td>Fragen oder Probleme im Zusammenhang mit dem Katalog-Service.  Bitte geben Sie die Umgebungs-ID an, die im Adobe Commerce-Admin unter System &gt; Commerce Services Connector angegeben ist.</td>
   </tr>
   <tr>
     <td>Produkt-Recommendations (SaaS)</td>
-    <td>Fragen oder Probleme im Zusammenhang mit Produkt-Recommendations. Geben Sie die Umgebungs-ID ein, die im Adobe Commerce-Admin unter System &gt; Commerce Services Connector angegeben ist.</td>
+    <td>Fragen oder Probleme im Zusammenhang mit der Recommendations. Bitte geben Sie die Umgebungs-ID an, die im Adobe Commerce-Admin unter System &gt; Commerce Services Connector angegeben ist.</td>
   </tr>
   <tr>
     <td>Live Search (SaaS)</td>
-    <td>Fragen oder Probleme im Zusammenhang mit der Live-Suche. Geben Sie die Umgebungs-ID ein, die im Adobe Commerce-Admin unter System &gt; Commerce Services Connector angegeben ist.</td>
+    <td>Fragen oder Probleme im Zusammenhang mit der Live-Suche. Bitte geben Sie die Umgebungs-ID an, die im Adobe Commerce-Admin unter System &gt; Commerce Services Connector angegeben ist.</td>
   </tr>
   <tr>
     <td>PWA Studio</td>
@@ -88,14 +88,14 @@ Diese Optionen werden angezeigt, wenn **Adobe Commerce Application** als **Konta
   </tr>
   <tr>
     <td>Hauptanwendung (Sonstige)</td>
-    <td>Fragen oder Probleme im Zusammenhang mit einem Teil der Adobe Commerce-Anwendung, der zuvor nicht in der Optionsliste angegeben wurde</td>
+    <td>Fragen oder Probleme im Zusammenhang mit einem Teil des Adobe Commerce-Programms, der zuvor nicht in der Optionsliste angegeben wurde</td>
   </tr>
 </tbody>
 </table>
 
-## Gründe für die Adobe Commerce Cloud-Infrastruktur
+## Adobe Commerce Cloud-Infrastrukturgründe
 
-Diese Optionen werden angezeigt, wenn **Adobe Commerce Cloud Infrastructure** als **Kontaktgrund** ausgewählt ist:
+Diese Optionen werden angezeigt, wenn **Adobe Commerce Cloud Infrastructure** als &quot;**&quot; ausgewählt**:
 
 <table class="tg">
 <thead>
@@ -106,48 +106,48 @@ Diese Optionen werden angezeigt, wenn **Adobe Commerce Cloud Infrastructure** al
 </thead>
 <tbody>
   <tr>
-    <td>Stuckbereitstellung</td>
-    <td>Ihre Adobe Commerce Cloud-Umgebung verfügt über eine blockierte Implementierung.</td>
+    <td>Stack-Bereitstellung</td>
+    <td>In Ihrer Adobe Commerce Cloud-Umgebung ist die Bereitstellung blockiert.</td>
   </tr>
   <tr>
     <td>Leistung (Infrastruktur)</td>
-    <td>Fragen oder Probleme im Zusammenhang mit der Leistung Ihrer Adobe Commerce-Storefront und glauben, dass sie mit der Infrastruktur zusammenhängen</td>
+    <td>Fragen oder Probleme im Zusammenhang mit der Leistung Ihrer Adobe Commerce-Storefront und deren Infrastrukturabhängigkeit</td>
   </tr>
   <tr>
-    <td>Neue Domänen hinzufügen (Fastly und Nginx)</td>
-    <td>Neue Domänen zum Fastly-Dienst und Nginx hinzufügen</td>
+    <td>Neue Domains hinzufügen (Fastly und Nginx)</td>
+    <td>Hinzufügen neuer Domains zum Fastly-Service und Nginx</td>
   </tr>
   <tr>
-    <td>Anforderung zur Datenträger-/Speicherkapazität</td>
-    <td>Erhöhen Sie den Festplattenspeicher in der Staging- und/oder Produktionsumgebung(en) für Ihre Adobe Commerce Cloud Pro-Projekte.</td>
+    <td>Anfrage zur Festplatten-/Speicherkapazität</td>
+    <td>Vergrößern Sie den Festplattenspeicher in Staging- und/oder Produktionsumgebungen für Ihre Adobe Commerce Cloud Pro-Projekte</td>
   </tr>
   <tr>
     <td>2FA deaktivieren</td>
-    <td>Zwei-Faktor-Authentifizierung für Ihre Adobe Commerce Cloud-Umgebung deaktivieren</td>
+    <td>Deaktivieren der Zwei-Faktor-Authentifizierung für Ihre Adobe Commerce Cloud-Umgebung</td>
   </tr>
   <tr>
     <td>2FA aktivieren</td>
-    <td>Zweifaktorauthentifizierung für Ihre Adobe Commerce Cloud-Umgebung aktivieren</td>
+    <td>Aktivieren der Zwei-Faktor-Authentifizierung für Ihre Adobe Commerce Cloud-Umgebung</td>
   </tr>
   <tr>
-    <td>Anforderung von Holiday-Überkapazitäten</td>
-    <td>Zusätzliche Ressourcen für die Überlastungskapazität in Ihrer Adobe Commerce Cloud-Umgebung vor Spitzenzeiten</td>
+    <td>Kapazitätsanforderung für Feiertagsstoß</td>
+    <td>Fügen Sie Ihrer Adobe Commerce Cloud-Umgebung vor den Spitzenverkaufszeiten Kapazitätsressourcen für Spitzenbelastungen hinzu</td>
   </tr>
   <tr>
-    <td>Aktualisierung der Infrastruktur</td>
-    <td>Anforderung zur Änderung der Infrastruktur für Ihre Staging-/Produktions-Umgebung(en) von Adobe Commerce Cloud, d. h. Ändern von Dienstversionen, Erstellen von FTP-Benutzern usw.</td>
+    <td>Infrastruktur-Service-Upgrade</td>
+    <td>Anfrage zu Infrastrukturänderungen für Ihre Staging- und/oder Produktionsumgebung(en) von Adobe Commerce Cloud, d. h. Änderung der Service-Versionen, FTP-Benutzererstellung usw.</td>
   </tr>
   <tr>
-    <td>Aktualisierte temporäre Cloud-Projekte (vCPU)</td>
-    <td>Fügen Sie in Ihrer Adobe Commerce Cloud-Umgebung Ressourcen für eine bevorstehende Promotion hinzu. Es ist mindestens 48 Stunden Vorankündigung erforderlich.</td>
+    <td>Temporäre Cloud-Projekt-Upsize-Funktion (vCPU)</td>
+    <td>Fügen Sie Ihrer Adobe Commerce Cloud-Umgebung Kapazitätsressourcen für eine bevorstehende Promotion hinzu. Es ist eine Frist von mindestens 48 Stunden einzuhalten.</td>
   </tr>  
   <tr>
-    <td>Infrastruktur (sonstige)</td>
-    <td>Fragen oder Probleme im Zusammenhang mit einem Teil des Adobe Commerce Infrastructure Stacks, der zuvor nicht in der Optionsliste angegeben wurde</td>
+    <td>Infrastruktur (andere)</td>
+    <td>Fragen oder Probleme im Zusammenhang mit einem Teil des Adobe Commerce-Infrastrukturstapels, der zuvor nicht in der Optionsliste angegeben wurde</td>
   </tr>
 </tbody>
 </table>
 
-## Verwandte Informationen
+## Verwandtes Lesen
 
-Weitere Informationen zu anderen Formularfeldern für die Einnahme von Tickets finden Sie unter [Hilfe-Center-Handbuch > Support-Ticketfelder erläutert](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) .
+Unter [Hilfe-Center-Handbuch > Support-Ticket-Felder](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-tickets) finden Sie Details zu anderen Feldern im Ticket-Erfassungsformular.

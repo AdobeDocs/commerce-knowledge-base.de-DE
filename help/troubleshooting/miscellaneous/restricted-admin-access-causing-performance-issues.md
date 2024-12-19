@@ -1,6 +1,6 @@
 ---
-title: Eingeschränkter Administratorzugriff, der Leistungsprobleme verursacht
-description: Dieser Artikel bietet Lösungen für Fälle, in denen die Leistung durch die Verwendung von [Admin-Rollen mit eingeschränktem Rollenumfang auf der Website](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) in unserem Benutzerhandbuch negativ beeinflusst wird.
+title: Eingeschränkter Admin-Zugriff, der Leistungsprobleme verursacht
+description: Dieser Artikel bietet Lösungen für den Fall, dass die Leistung durch die Verwendung von [Administratorrollen mit durch die Website eingeschränktem Rollenbereich](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) in unserem Benutzerhandbuch beeinträchtigt wird.
 exl-id: da168d6b-9cda-41e2-aa3c-f3f0dccc803d
 feature: Admin Workspace, Cache
 role: Developer
@@ -11,28 +11,28 @@ ht-degree: 0%
 
 ---
 
-# Eingeschränkter Administratorzugriff, der Leistungsprobleme verursacht
+# Eingeschränkter Admin-Zugriff, der Leistungsprobleme verursacht
 
-Dieser Artikel bietet Lösungen für Fälle, in denen die Leistung negativ beeinflusst wird, indem in unserem Benutzerhandbuch [Admin-Rollen verwendet werden, deren Rollenumfang durch die Website](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) eingeschränkt ist.
+Dieser Artikel bietet Lösungen für den Fall, dass die Leistung durch die Verwendung von [Administratorrollen mit durch die Website eingeschränktem Rollenbereich](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) in unserem Benutzerhandbuch beeinträchtigt wird.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce lokal 2.2.x, 2.3.x
+* Adobe Commerce On-Premises 2.2.x, 2.3.x
 * Adobe Commerce auf Cloud-Infrastruktur 2.2.x, 2.3.x
 
 ## Problem
 
-Wenn ein Admin-Benutzer mit eingeschränktem Rollenumfang auf der Website Vorgänge im Admin-Bedienfeld ausführt (einschließlich Anmelden, Speichern von Produkten usw.), erstellt Adobe Commerce den gespeicherten Cache neu. Die Neuerstellung des Caches wirkt sich negativ auf die Leistung aus und kann zu einem Site-Ausfall führen, insbesondere während Geschäftszeiten und/oder Zeiten mit hohem Traffic.
+Wenn ein Administrator bzw. eine Administratorin mit einem durch die Website eingeschränkten Rollenbereich Vorgänge im Admin-Bedienfeld ausführt (einschließlich der Anmeldung, des Speicherns von Produkten usw.), erstellt Adobe Commerce den gespeicherten Cache neu. Die Neuerstellung des Cache wirkt sich negativ auf die Leistung aus und kann zu einem Ausfall der Site führen, insbesondere während der Geschäftszeiten und/oder bei hohem Traffic.
 
 Das Problem wurde in Adobe Commerce 2.2.10 und 2.3.3 behoben.
 
 ## Lösung
 
-Im Folgenden finden Sie die Optionen, um das Problem zu vermeiden:
+Im Folgenden finden Sie die Optionen zum Vermeiden des Problems:
 
-* Aktualisieren Sie die Adobe Commerce-Anwendungsversion auf 2.2.10 oder 2.3.3. (Anweisungen finden Sie unter [Aktualisieren von Adobe Commerce auf Cloud-Infrastruktur-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) in unserer Entwicklerdokumentation).
-* Vermeiden Sie, den Umfang der Benutzerrollen für Administratoren nach Website zu beschränken, sofern möglich.
-* [Senden Sie ein Magento Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um einen Patch anzufordern, sofern dieser verfügbar ist.
+* Aktualisieren Sie die Adobe Commerce-Anwendungsversion auf 2.2.10 oder 2.3.3. (Anweisungen finden Sie unter [Upgrade von Adobe Commerce auf Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)Infrastrukturversion in unserer Entwicklerdokumentation).
+* Vermeiden Sie es nach Möglichkeit, den Umfang der Administratorrolle auf die Website einzuschränken.
+* [Senden Sie ein Magento-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)-Ticket, um einen Patch anzufordern, falls er verfügbar ist.
 
 ## Verwandtes Lesen
 

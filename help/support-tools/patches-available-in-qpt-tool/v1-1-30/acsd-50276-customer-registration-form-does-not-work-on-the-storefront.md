@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-50276: Das Formular zur Kundenregistrierung funktioniert nicht auf der Storefront, wenn das Kundenattribut mit Mehrfachauswahl erstellt wird'
-description: Wenden Sie den Patch ACSD-50276 an, um das Adobe Commerce-Problem zu beheben, bei dem das Anmeldeformular für Kunden auf der Storefront nicht funktioniert, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wird.
+title: 'ACSD-50276: Das Kundenregistrierungsformular funktioniert nicht in der Storefront, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wurde'
+description: Wenden Sie den ACSD-50276-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem das Kundenregistrierungsformular nicht in der Storefront funktioniert, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wird.
 exl-id: 542eb93a-3719-4e2d-bb1b-87817f0812b4
 feature: Attributes, Storefront
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-50276: Das Formular zur Kundenregistrierung funktioniert nicht auf der Storefront, wenn das Kundenattribut mit Mehrfachauswahl erstellt wird
+# ACSD-50276: Das Kundenregistrierungsformular funktioniert nicht in der Storefront, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wurde
 
-Der Patch ACSD-50276 behebt das Problem, dass das Formular zur Kundenregistrierung auf der Storefront nicht funktioniert, wenn ein Kundenattribut mit Mehrfachauswahl erstellt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 installiert ist. Die Patch-ID ist ACSD-50276. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ACSD-50276 wird das Problem behoben, dass das Kundenregistrierungsformular in der Storefront nicht funktioniert, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wird. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 installiert ist. Die Patch-ID ist ACSD-50276. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,20 +27,20 @@ Der Patch ACSD-50276 behebt das Problem, dass das Formular zur Kundenregistrieru
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Das Formular zur Kundenregistrierung funktioniert nicht auf der Storefront, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wird.
+Das Formular zur Kundenregistrierung funktioniert nicht in der Storefront, wenn ein Kundenattribut mit mehreren Auswahlen erstellt wird.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein neues Kundenattribut mit Mehrfachauswahl mit den folgenden Einstellungen:
+1. Erstellen Sie ein neues Kundenattribut mit mehreren Auswahlen mit den folgenden Einstellungen:
 
    * *[!UICONTROL Required = Yes]*
-   * *[!UICONTROL Show on storefront = Yes]*, wählen Sie *[!UICONTROL Customer registration form]* aus.
+   * Wählen Sie *[!UICONTROL Show on storefront = Yes]* *[!UICONTROL Customer registration form]* aus.
 
-1. Öffnen Sie das Formular zur Kundenregistrierung auf der Storefront.
+1. Öffnen Sie das Formular zur Kundenregistrierung in der Storefront.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -55,18 +55,18 @@ Das Formular zur Kundenregistrierung wurde erfolgreich geladen.
   report. CRITICAL: Exception: Deprecated Functionality: explode(): Passing null to parameter #2 ($string) of type string is deprecated in vendor/magento/module-custom-attribute-management/Block/Form/Renderer/Multiselect.php
   ```
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

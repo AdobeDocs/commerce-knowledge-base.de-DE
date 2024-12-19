@@ -1,6 +1,6 @@
 ---
 title: 'cURL-Fehler 60: SSL-Zertifikat abgelaufen'
-description: 'Dieser Artikel zeigt, wie Sie überprüfen können, wann eine Verzweigung nach dem letzten Bereitstellen des cURL-Fehlers 60 bereitgestellt wurde: Das SSL-Zertifikat ist in den Master- oder Integrationszweigen in Adobe Commerce in der Cloud-Infrastruktur abgelaufen.'
+description: 'In diesem Artikel wird gezeigt, wie Sie überprüfen können, wann die letzte Bereitstellung einer Verzweigung nach Erhalt eines cURL-Fehlers 60 erfolgte: SSL-Zertifikat ist in den Master- oder Integrationsverzweigungen in Adobe Commerce in der Cloud-Infrastruktur abgelaufen.'
 exl-id: 74f1db7e-ee2b-4e27-8fcc-fe462a9e72c3
 feature: Configuration
 role: Developer
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # cURL-Fehler 60: SSL-Zertifikat abgelaufen
 
-In diesem Artikel wird gezeigt, wie geprüft wird, wann ein Zweig das letzte Mal bereitgestellt wurde, nachdem ein `cURL error 60` erhalten wurde: [!DNL SSL certificate] ist in den Verzweigungen [!DNL Master] oder [!DNL Integration] in Adobe Commerce in der Cloud-Infrastruktur abgelaufen.
+In diesem Artikel wird gezeigt, wie Sie überprüfen können, wann die letzte Bereitstellung einer Verzweigung nach Erhalt einer `cURL error 60` erfolgte: [!DNL SSL certificate] abgelaufen in der [!DNL Master] oder [!DNL Integration] Verzweigungen in Adobe Commerce auf Cloud-Infrastruktur.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Ursache
 
-Die [!DNL SSL certificates] in diesen Verzweigungen sind nur für 30 Tage gültig und der Zweig wurde möglicherweise innerhalb von 30 Tagen nicht erneut bereitgestellt.
+Die [!DNL SSL certificates] in diesen Verzweigungen sind nur 30 Tage gültig und die Verzweigung wurde möglicherweise in mehr als 30 Tagen nicht erneut bereitgestellt.
 
 Der Fehler sieht in etwa so aus:
 
@@ -31,33 +31,33 @@ cURL error 60: SSL certificate problem: certificate has expired
 
 ## Lösung
 
-Überprüfen Sie, wann die Verzweigung zuletzt bereitgestellt wurde. Wenn Sie den Schwellenwert von 30 Tagen überschreiten, stellen Sie die Verzweigung erneut bereit.
+Überprüfen Sie, wann die Verzweigung zuletzt bereitgestellt wurde. Wenn der Schwellenwert von 30 Tagen überschritten hat, stellen Sie die Verzweigung erneut bereit.
 
 Zwei Methoden, um zu überprüfen, wann die letzte Bereitstellung durchgeführt wurde:
 
-* [Methode 1: Verwenden Sie  [!DNL magento-cloud] CLI](#meth2).
-* [Methode 2: Öffnen Sie den  [!DNL Project URL]](#meth3).
+* [Methode 1: Use [!DNL magento-cloud] CLI](#meth2).
+* [Methode 2: Öffnen Sie die  [!DNL Project URL]](#meth3).
 
-Wenn die Bereitstellung erfolgreich abgeschlossen wurde, wird der [!DNL SSL certificate] automatisch erneuert.
+Wenn die Bereitstellung erfolgreich abgeschlossen wurde, wird die [!DNL SSL certificate] automatisch erneuert.
 
-Wenn die Bereitstellung fehlschlägt und Sie Hilfe beim Auflösen benötigen, senden [ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Wenn die Bereitstellung fehlschlägt und Sie Hilfe bei der Lösung benötigen, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
-### Methode 1: Verwenden von [!DNL magento-cloud] CLI {#meth2}
+### Methode 1: Verwenden [!DNL magento-cloud] CLI {#meth2}
 
 Führen Sie diesen Befehl aus: `magento-cloud activity:list`
 
-### Methode 2: Öffnen Sie den [!DNL Project URL] {#meth3}
+### Methode 2: Öffnen Sie die [!DNL Project URL] {#meth3}
 
-Wechseln Sie zu , z. B. &quot;`https://demo.magento.cloud/#/projects/<project>/environments/<environment>`&quot;, und überprüfen Sie, wann die letzte Bereitstellung durchgeführt wurde.
+Navigieren Sie zu beispielsweise: `https://demo.magento.cloud/#/projects/<project>/environments/<environment>` und überprüfen Sie, wann die letzte Bereitstellung durchgeführt wurde.
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
-* [Cloud Manager API: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
+* [Cloud Manager-API: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
 * [Schnelles Einrichten: Bereitstellen von SSL-/TLS-Zertifikaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
 
 In unserer Support-Wissensdatenbank:
 
-* [Ablaufinformationen des benutzerdefinierten SSL-Zertifikats](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.html)
-* [SSL-Zertifikate (TLS) für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html)
+* [Informationen zum Ablauf von benutzerdefinierten SSL-Zertifikaten](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.html)
+* [SSL (TLS)-Zertifikate für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/ssl-tls-certificates-for-magento-commerce-cloud-faq.html)

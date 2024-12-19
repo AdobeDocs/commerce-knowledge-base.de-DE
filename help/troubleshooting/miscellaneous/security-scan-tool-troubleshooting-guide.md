@@ -1,6 +1,6 @@
 ---
-title: Handbuch zur Fehlerbehebung bei Adobe Commerce Security Scan-Tools
-description: Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Sicherheitsscan-Tool für Adobe Commerce und Magento Open Source beheben können.
+title: Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool
+description: Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Security Scan Tool für Adobe Commerce und Magento Open Source beheben können.
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
@@ -11,27 +11,27 @@ ht-degree: 0%
 
 ---
 
-# Handbuch zur Fehlerbehebung bei Adobe Commerce Security Scan-Tools
+# Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool
 
-Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Sicherheitsscan-Tool für Adobe Commerce und Magento Open Source beheben können.
+Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Security Scan Tool für Adobe Commerce und Magento Open Source beheben können.
 
 ## Problem: Die Site kann nicht gesendet werden
 
-Das Sicherheitsscan-Tool erfordert, dass Sie den Besitz Ihrer Site nachweisen, bevor die Domäne zum Sicherheitsscan-Tool hinzugefügt werden kann. Dies kann durch Hinzufügen eines Bestätigungscodes zu Ihrer Site mithilfe eines HTML-Kommentars oder des Tags `<meta>` erfolgen. Der HTML-Kommentar sollte innerhalb des `<body>` -Tags platziert werden, z. B. im Fußzeilenabschnitt. Das Tag `<meta>` sollte im Abschnitt `<head>` der Seite platziert werden.
+Das Security Scan Tool erfordert, dass Sie die Eigentümerschaft Ihrer Website nachweisen, bevor die Domain zum Security Scan Tool hinzugefügt werden kann. Dies kann durch Hinzufügen eines Bestätigungscodes zu Ihrer Site mithilfe eines HTML-Kommentars oder des `<meta>`-Tags erfolgen. Der HTML-Kommentar sollte innerhalb des `<body>`-Tags platziert werden, z. B. im Fußzeilenbereich. Das `<meta>`-Tag sollte im `<head>` der Seite platziert werden.
 
-Ein häufig auftretendes Problem bei Händlern tritt auf, wenn das Sicherheitsscan-Tool nicht in der Lage ist, den Site-Besitz des Händlers zu bestätigen.
+Ein häufiges Problem, mit dem Händler konfrontiert sind, tritt auf, wenn das Sicherheits-Scan-Tool den Site-Eigentümer des Händlers nicht bestätigen kann.
 
-Wenn Sie einen Fehler erhalten und Ihre Site nicht für die Prüfung einreichen können, lesen Sie den Artikel [Fehlermeldung beim Hinzufügen von Sites zu Sicherheitsscan](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) zur Fehlerbehebung in unserer Support-Wissensdatenbank.
+Wenn Sie einen Fehler erhalten und Ihre Website nicht zur Suche einreichen können, lesen Sie den Artikel [Fehlermeldung beim Hinzufügen von Websites zur Sicherheits](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)Suche) in unserer Support-Wissensdatenbank.
 
-## Problem: Leere Berichte, die vom Sicherheitsscan-Tool generiert wurden
+## Problem: Leere, vom Sicherheits-Scan-Tool generierte Berichte
 
-Sie erhalten leere Scan-Berichte vom Sicherheitsscan-Tool oder erhalten Berichte mit nur einem Fehler, z. B. dass das Sicherheitstool die Basis-URL *nicht erreichen konnte oder die Magento-Installation unter der angegebenen URL* nicht gefunden wurde.**
+Sie erhalten leere Suchberichte vom Security Scan Tool oder Berichte, die nur einen einzigen Fehler enthalten, wie *Das Security Tool konnte die Basis-URL nicht erreichen* oder *die Magento-Installation wurde auf der angegebenen URL nicht gefunden*.
 
 ### Lösung
 
-1. Stellen Sie sicher, dass 52.87.98.44, 34.196.167.176 und 3.218.25.102 IPs bei 80 und 443 Ports nicht blockiert werden.
-1. Überprüfen Sie die gesendete URL auf Umleitungen (z. B. Umleitungen von `https://mystore.com` zu `https://www.mystore.com` oder umgekehrt oder Umleitungen zu anderen Domänennamen).
-1. Untersuchen Sie WAF-/Webserver-Zugriffsprotokolle auf abgelehnte/nicht erfüllte Anfragen. HTTP 403 `Forbidden` und HTTP 500 `Internal server error` sind die häufigsten Serverantworten, die die Erstellung leerer Berichte verursachen. Hier ist ein Beispiel für einen Bestätigungscode, der Anforderungen von Benutzeragenten blockiert:
+1. Stellen Sie sicher, dass 52.87.98.44-, 34.196.167.176- und 3.218.25.102-IPs nicht an den Ports 80 und 443 blockiert sind.
+1. Überprüfen Sie die gesendete URL auf Weiterleitungen (z. B. `https://mystore.com` Weiterleitungen zu `https://www.mystore.com` oder umgekehrt oder Weiterleitungen zu anderen Domain-Namen).
+1. Untersuchen Sie die WAF-/Webserver-Zugriffsprotokolle auf abgelehnte/nicht erfüllte Anfragen. HTTP 403 `Forbidden` und HTTP 500 `Internal server error` sind die gebräuchlichen Serverantworten, die die Erstellung leerer Berichte verursachen. Im Folgenden finden Sie ein Beispiel für den Bestätigungs-Code, der Anfragen von Benutzeragenten blockiert:
 
 ```code block
 if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent_allowlist)
@@ -39,73 +39,73 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 {   error 403;   }
 ```
 
-Weitere Informationen finden Sie auch in unserem Artikel [Der Bericht zum Sicherheitsscan-Tool ist leer](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md) in unserer Support-Wissensdatenbank.
+Weitere Informationen finden Sie auch [ Artikel in unserer Support](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)Wissensdatenbank unter Der Bericht zum Security Scan Tool ist leer.
 
-## Problem: Das Sicherheitsproblem wurde behoben, wurde aber beim Scannen weiterhin als gefährdet angezeigt
+## Problem: Das Sicherheitsproblem wurde behoben, wird aber in der Suche weiterhin als verwundbar angezeigt
 
-Sie haben ein Sicherheitsproblem behoben und erwarten, dass der Sicherheitsscan zeigt, dass Sie nicht mehr anfällig für das neu gelöste Problem sind. Stattdessen werden Sie in dem vom Sicherheitsscan erstellten Bericht weiterhin als anfällig für das Sicherheitsproblem gemeldet.
-
-### Ursache
-
-Die Metadaten der Cloud-Instanz werden nur für `active` - und `live` Cloud-Projekte erfasst und sind KEIN Echtzeitprozess.
-
-Das Skript zur Statistikerfassung wird einmal täglich ausgeführt. Danach muss das Sicherheitsscan-Tool die neuen Daten später abrufen.
-
-Die erwartete Latenz des Synchronisierungszyklus beträgt bis zu eine Woche und dauert mindestens 24 Stunden.
-
-Die folgenden Status können in Prüfungen angezeigt werden:
-
-1. **Pass**: Das Sicherheitsscan-Tool hat Ihre aktualisierten Daten gescannt und die Änderungen genehmigt.
-1. **Unbekannt**: Das Sicherheitsscan-Tool enthält noch keine Daten zu Ihrer Domäne. Warten Sie auf den nächsten Synchronisierungszyklus.
-1. **Fail**: Wenn der Status fehlschlägt, müssen Sie das Problem beheben (2FA aktivieren, Administrator-URL ändern usw.) und warten Sie auf den nächsten Synchronisierungszyklus.
-
-Wenn 24 Stunden vergangen sind, seit die Änderungen an der Instanz vorgenommen wurden und sie nicht im Bericht Sicherheitsscan enthalten sind, können Sie [ein Support-Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Geben Sie die Store-URL beim Senden des Tickets an.
-
-## BotNet-Fehler bei Verdacht
-
-Sie erhalten eine Benachrichtigung bezüglich des Fehlers &quot;BotNet Suspect&quot;.
+Sie haben ein Sicherheitsproblem behoben und erwarten, dass die Sicherheitsprüfung zeigt, dass Sie für das neu behobene Problem nicht mehr anfällig sind. Stattdessen werden Sie in dem Bericht, der durch die Sicherheitsprüfung generiert wurde, weiterhin als anfällig für das Sicherheitsproblem gemeldet.
 
 ### Ursache
 
-1. Der Name der Store-Domäne wurde 2019 in die &quot;Liste potenzieller BotNet-Teilnehmer&quot;aufgenommen und die Admin-Bedienfeld-, Download- oder RSS-Funktionen wurden öffentlich verfügbar gemacht. Die URL wurde in den CC-Skimming-Foren erwähnt.
-1. Der Warnhinweis kann durch Anzeichen von Store-Kompromissen und/oder Malware verursacht werden, wie JavaScript auf der Seite.
-1. Es handelt sich dabei nicht unbedingt um ein laufendes Thema. Wenn der Laden zuvor kompromittiert wurde, kann sein Hostname immer noch als &#39;Opfer&#39;-Name um das dunkle Netz schwimmen.
-1. Dies kann auch nicht durch Adobe Commerce, sondern durch einen Systemkompromiss (auf Betriebssystemebene) verursacht werden.
+Die Metadaten der Cloud-Instanz werden nur für `active` und `live` Cloud-Projekte erfasst und sind KEIN Echtzeit-Prozess.
+
+Das Statistiksammlungsskript wird einmal täglich ausgeführt, dann muss das Security Scan Tool die neuen Daten später abholen.
+
+Die erwartete Latenz des Synchronisierungszyklus beträgt bis zu einer Woche und dauert mindestens 24 Stunden.
+
+Die folgenden Status können bei Prüfungen angezeigt werden:
+
+1. **Pass**: Das Security Scan Tool hat Ihre aktualisierten Daten überprüft und die Änderungen genehmigt.
+1. **Unbekannt**: Das Security Scan Tool enthält noch keine Daten zu Ihrer Domain. Warten Sie auf den nächsten Synchronisierungszyklus.
+1. **Fehlgeschlagen**: Wenn der Status „Fehlgeschlagen“ anzeigt, müssen Sie das Problem beheben (2FA aktivieren, Admin-URL ändern usw.) und auf den nächsten Synchronisierungszyklus warten.
+
+Wenn seit der Vornahme der Änderungen an der Instanz 24 Stunden vergangen sind und sie nicht im Bericht zur Sicherheitsprüfung angezeigt werden, können [ ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Geben Sie beim Senden des Tickets die Store-URL an.
+
+## BotNet-Verdächtiger Fehler
+
+Sie erhalten eine Benachrichtigung über den Fehler „BotNet-Verdächtiger“.
+
+### Ursache
+
+1. Der Domain-Name des Stores wurde bereits 2019 in eine „Liste potenzieller BotNet-Teilnehmer“ aufgenommen, und das Admin-Bedienfeld, der Downloader oder die RSS-Funktion wurden öffentlich zugänglich gemacht, und/oder seine URL wurde in den CC-Skimming-Foren erwähnt.
+1. Der Warnhinweis kann durch Anzeichen einer Geschäftsgefährdung und/oder Malware verursacht werden, wie z. B. JavaScript auf der Seite.
+1. Es handelt sich nicht unbedingt um ein laufendes Problem. Wenn der Store zuvor kompromittiert wurde, kann sein Hostname weiterhin als „Opfername“ im dunklen Web schwebend sein.
+1. Sie kann auch nicht durch Adobe Commerce verursacht werden, sondern durch einen Systemkompromiss (auf Betriebssystemebene).
 
 ### Lösung
 
-1. Suchen Sie nach den neu erstellten SSH-Konten, Dateisystemänderungen usw.
+1. Überprüfen Sie die neu erstellten SSH-Konten, Dateisystemänderungen usw.
 1. Führen Sie eine Sicherheitsüberprüfung durch.
-1. Überprüfen Sie die Adobe Commerce-Version und das Upgrade, insbesondere wenn noch Magento 1 ausgeführt wird, was nicht mehr unterstützt wird.
-1. Wenn das Problem weiterhin besteht, senden Sie [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL an.
+1. Überprüfen Sie die Adobe Commerce-Version und das Upgrade, insbesondere wenn weiterhin Magento 1 ausgeführt wird, was nicht mehr unterstützt wird.
+1. Wenn das Problem weiterhin besteht, [ Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL an.
 
-## Problem: Versagen der Kompromittion
+## Problem: Kompromisseinspritzung fehlgeschlagen
 
-Sie erhalten eine Fehlermeldung bezüglich eines Fehlers bei der &quot;Kompromissionsinjektion&quot;.
+Sie erhalten eine Fehlermeldung bezüglich eines „Compromising Injection“-Fehlers.
 
 ### Lösung
 
-1. Überprüfen Sie die im Tool-Bericht Sicherheitsscan angegebenen Skripte.
-1. Überprüfen Sie den Quelltext der Homepage auf Inline-Skriptinjektionen.
-1. Führen Sie eine Überprüfung der Systemkonfigurationsänderungen durch, insbesondere der benutzerdefinierten Werte für `HTML head` und `Miscellaneous HTML` im Abschnitt `footer`.
-1. Führen Sie eine Code- und Datenbanküberprüfung auf unbekannte Änderungen und Anzeichen von injizierter Malware durch.
+1. Überprüfen Sie die im Bericht des Security Scan Tools angegebenen Skripte.
+1. Überprüfen Sie den Quelltext der Startseite für Inline-Skript-Injektionen.
+1. Führen Sie eine Überprüfung der Systemkonfigurationsänderungen durch, insbesondere der benutzerdefinierten `HTML head` und `Miscellaneous HTML` in `footer` Abschnittswerten.
+1. Code- und Datenbanküberprüfung auf unbekannte Änderungen und Anzeichen von injizierter Malware durchführen.
 
-Wenn keiner der oben genannten Punkte hilft, senden [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL und die Fehlermeldung aus dem Bericht an.
+Wenn keiner der oben genannten Punkte hilft, [senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL und die Fehlermeldung aus dem Bericht an.
 
 ## Häufig gestellte Fragen
 
-### Wirkt sich die Sicherheitsprüfung auf die Leistung auf meiner Website aus?
+### Beeinträchtigt die Sicherheitsüberprüfung die Leistung meiner Website?
 
-Anzahl Der Sicherheits-Scan stellt alle Anfragen einzeln wie ein Benutzer. Aus diesem Grund sollte der Sicherheits-Scan die Leistung der Website nicht beeinträchtigen.
+Anzahl Bei der Sicherheitsprüfung werden alle Anfragen einzeln, wie bei einem einzelnen Benutzer, durchgeführt. Aus diesem Grund sollte die Sicherheitsprüfung die Leistung der Website nicht beeinträchtigen.
 
-### Wie lange bewahrt Adobe Commerce Sicherheitsscan-Berichte auf?
+### Wie lange bewahrt Adobe Commerce Berichte zur Sicherheitsprüfung auf?
 
-Sie können die vorherigen 10 Berichte von Ihrem Ende generieren. Wenn ältere Berichte erforderlich sind, wenden Sie sich an den Adobe Commerce-Support.
+Sie können die 10 vorherigen Berichte von Ihrem Ende aus generieren. Wenn ältere Berichte erforderlich sind, wenden Sie sich an den Adobe Commerce-Support.
 
-### Welche Informationen sind beim Senden eines Support-Tickets erforderlich?
+### Welche Informationen werden beim Einreichen eines Support-Tickets benötigt?
 
-Geben Sie unbedingt den Domänennamen an.
+Stellen Sie sicher, dass Sie den Domain-Namen angeben.
 
-### Was passiert, wenn ich meinen Speicher aus dem Scan-Tool-Scannen entfernt?
+### Was passiert, wenn ich meinen Speicher aus dem Scan-Tool entferne?
 
-Wenn Sie die Übermittlung des Stores löschen, werden alle damit verbundenen Daten, einschließlich Scan-Berichten, gelöscht. Dieser Vorgang kann nicht rückgängig gemacht werden. Durch die Übermittlung der Store-Domäne nach dem Löschen wird eine NEUE Übermittlung erstellt.
+Wenn Sie die Store-Übermittlung löschen, werden alle damit verbundenen Daten einschließlich der Scanberichte gelöscht. Dieser Vorgang kann nicht rückgängig gemacht werden. Durch die Übermittlung der Store-Domain nach dem Löschen wird eine NEUE Übermittlung erstellt.

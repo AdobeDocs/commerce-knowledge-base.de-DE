@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-55334: Beschriftungen, die in der GraphQL-Antwort nicht über Übersetzungswörterbücher übersetzt wurden'
-description: Wenden Sie den Patch ACSD-55334 an, um das Adobe Commerce-Problem zu beheben, bei dem Beschriftungen nicht über Übersetzungswörterbücher in der GraphQL-Antwort übersetzt werden.
+title: 'ACSD-55334: Kennzeichnungen werden in GraphQL-Antworten nicht durch Übersetzungswörterbücher übersetzt'
+description: Wenden Sie den Patch ACSD-55334 an, um das Adobe Commerce-Problem zu beheben, dass Kennzeichnungen in der GraphQL-Antwort nicht durch Übersetzungswörterbücher übersetzt werden.
 feature: Categories, GraphQL
 role: Admin, Developer
 exl-id: c9d34a86-0c69-4fde-a46b-6583eff8b948
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-55334: Beschriftungen, die in der GraphQL-Antwort nicht über Übersetzungswörterbücher übersetzt wurden
+# ACSD-55334: Kennzeichnungen werden in GraphQL-Antworten nicht durch Übersetzungswörterbücher übersetzt
 
-Der Patch ASCD-55334 behebt das Problem, dass Beschriftungen in der GraphQL-Antwort nicht über Übersetzungswörterbücher übersetzt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.43 installiert ist. Die Patch-ID ist ASCD-55334. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.7 behoben sein soll.
+Mit dem Patch ASCD-55334 wird das Problem behoben, dass Kennzeichnungen in der GraphQL-Antwort nicht durch Übersetzungswörterbücher übersetzt werden. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.43 installiert ist. Die Patch-ID ist ASCD-55334. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.7 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,13 +27,13 @@ Der Patch ASCD-55334 behebt das Problem, dass Beschriftungen in der GraphQL-Antw
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Beschriftungen werden in der GraphQL-Antwort nicht über Übersetzungswörterbücher übersetzt.
+Kennzeichnungen werden in der GraphQL-Antwort nicht durch Übersetzungswörterbücher übersetzt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Installieren Sie ein Sprachpaket.
 1. Senden Sie eine GraphQL-Anfrage wie:
@@ -57,20 +57,20 @@ Die Bezeichnung *[!UICONTROL Category]* wird übersetzt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Bezeichnung *[!UICONTROL Category]* wird nicht übersetzt.
+Die Bezeichnung *[!UICONTROL Category]* ist nicht übersetzt.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

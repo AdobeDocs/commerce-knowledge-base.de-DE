@@ -1,6 +1,6 @@
 ---
-title: Bereitstellungsfehler, bei denen keine Patches gefunden wurden
-description: "Dieser Artikel bietet eine Lösung für das Problem, dass Sie einen Fehler sehen *Nächste Patches wurden nicht gefunden: MDVA-XXXXX, ACSD-XXXXX. Bitte überprüfen Sie die Verfügbarkeit dieser Patches mit dem Befehl 'status' für die aktuelle Magento-Version*."
+title: Bereitstellungsfehler, wenn keine Patches gefunden wurden
+description: 'Dieser Artikel bietet eine Lösung für das Problem, bei dem ein Fehler angezeigt wird *Die nächsten Patches wurden nicht gefunden: MDVA-XXXXX, ACSD-XXXXX. Bitte überprüfen Sie mit dem Befehl ''status'', ob diese Patches für die aktuelle Magento-Version* verfügbar sind.'
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
 source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
 workflow-type: tm+mt
@@ -9,13 +9,13 @@ ht-degree: 0%
 
 ---
 
-# Bereitstellungsfehler, bei denen keine Patches gefunden wurden
+# Bereitstellungsfehler, wenn keine Patches gefunden wurden
 
-Dieser Artikel bietet eine Lösung für das Problem, dass beim Aktualisieren Ihrer Instanz die Bereitstellung fehlschlägt und in den Bereitstellungsprotokollen ein Fehler auftritt: *Die nächsten Patches wurden nicht gefunden: MDVA-XXXXX, ACSD-XXXXXXX. Bitte überprüfen Sie mit der &quot;status&quot;-Befehlsverfügbarkeit dieser Patches für die aktuelle Magento-Version*.
+Dieser Artikel bietet eine Lösung für das Problem, dass beim Upgrade Ihrer Instanz die Bereitstellung fehlschlägt und ein Fehler in den Bereitstellungsprotokollen angezeigt wird: *Nächste Patches wurden nicht gefunden: MDVA-XXXXX, ACSD-XXXXX. Bitte überprüfen Sie mit dem Befehl „status“ die Verfügbarkeit dieser Patches für die aktuelle Magento-Version*.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 
 ## Problem
@@ -24,11 +24,11 @@ Beim Aktualisieren von Adobe Commerce tritt ein Fehler auf: *Die nächsten Patch
 
 ## Ursache
 
-Zuvor angewendete Patches für Ihre älteren Versionen sind für Ihre neue Version nicht verfügbar oder nicht mehr verfügbar.
+Zuvor angewendete Patches für Ihre ältere(n) Version(en) sind nicht anwendbar oder nicht mehr für Ihre neue Version verfügbar.
 
 ## Lösung
 
-1. Überprüfen Sie Ihre `.magento.env.yaml`-Datei im Abschnitt QUALITY_PATCH, z. B.
+1. Überprüfen Sie Ihre `.magento.env.yaml` unter dem Abschnitt QUALITY_PATCH, z. B.
 
    ```yaml
    QUALITY_PATCHES:
@@ -36,10 +36,10 @@ Zuvor angewendete Patches für Ihre älteren Versionen sind für Ihre neue Versi
     - ACSD-XXXXX
    ```
 
-1. Überprüfen Sie anhand der Patch-IDs in den Versionshinweisen zu [Qualitätspatches](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) , ob jede Patch-ID auf die neue Version von Adobe Commerce angewendet werden kann, auf die Sie aktualisieren.
-1. Wenn der Patch nicht für die neue Version von Adobe Commerce gilt, auf die Sie aktualisieren möchten, entfernen Sie die Patch-ID aus der Datei &quot;`.magento.env.yaml`&quot;.
-1. Nachdem Sie alle Patch-IDs geprüft haben, die durch den Fehler gekennzeichnet sind, pushen Sie die Änderungen und stellen Sie sie erneut bereit.
+1. Suchen Sie die Patch-IDs in den [Versionshinweisen zu Qualitäts-Patches](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html), um zu überprüfen, ob jede dieser IDs auf die neue Version von Adobe Commerce angewendet werden kann, auf die Sie ein Upgrade durchführen.
+1. Wenn der Patch nicht für die neue Version von Adobe Commerce gilt, auf die Sie ein Upgrade durchführen möchten, entfernen Sie die Patch-ID aus der `.magento.env.yaml`.
+1. Nachdem Sie alle durch den Fehler angegebenen Patch-IDs überprüft haben, übertragen Sie die Änderungen und stellen Sie sie erneut bereit.
 
 ## Verwandtes Lesen
 
-* [Wenden Sie Patches in Commerce auf Cloud Infrastructure Guide an.](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment)
+* [Patches anwenden](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) in Commerce im Handbuch zur Cloud-Infrastruktur.

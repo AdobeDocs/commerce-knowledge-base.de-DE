@@ -1,6 +1,6 @@
 ---
-title: '[!DNL MySQL] Speicherplatz ist in Adobe Commerce in der Cloud-Infrastruktur gering'
-description: Dieser Artikel bietet Lösungen für Fälle, in denen in Adobe Commerce in der Cloud-Infrastruktur nur sehr wenig Platz oder kein Platz für [!DNL MySQL] vorhanden ist. Zu den Symptomen zählen Site-Ausfälle, Kunden, die nicht in der Lage sind, Produkte zum Warenkorb hinzuzufügen, nicht in der Lage, eine Verbindung zur Datenbank herzustellen, remote auf die Datenbank zuzugreifen und SSH nicht in den Knoten integrieren zu können. Zu den Symptomen gehören auch Galera-, Umgebungs-, PHP-, Datenbank- und Bereitstellungsfehler, wie unten aufgeführt. Klicken Sie auf [Lösung](https://support.magento.com/hc/en-us/articles/360058472572#solution), um direkt zum Lösungsabschnitt zu springen.
+title: '[!DNL MySQL] Speicherplatz auf Adobe Commerce in der Cloud-Infrastruktur ist knapp'
+description: Dieser Artikel bietet Lösungen für Fälle, in denen nur sehr wenig oder kein Speicherplatz für  [!DNL MySQL] -on Adobe Commerce in der Cloud-Infrastruktur vorhanden ist. Zu den Symptomen zählen Standortausfälle, Kunden, die keine Produkte in den Warenkorb legen können, keine Verbindung zur Datenbank herstellen können, Remote-Zugriff auf die Datenbank und keine Möglichkeit, SSH in den Knoten einzufügen. Zu den Symptomen gehören auch Galera-, Umgebungs-, PHP-, Datenbank- und Bereitstellungsfehler, wie unten aufgeführt. Klicken Sie auf [Lösung](https://support.magento.com/hc/en-us/articles/360058472572#solution), um direkt zum Abschnitt Lösung zu springen.
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services
 role: Developer
@@ -11,58 +11,58 @@ ht-degree: 0%
 
 ---
 
-# [!DNL MySQL] Speicherplatz ist in Adobe Commerce in der Cloud-Infrastruktur gering
+# [!DNL MySQL] Speicherplatz auf Adobe Commerce in der Cloud-Infrastruktur ist knapp
 
-Dieser Artikel bietet Lösungen für Fälle, in denen in Adobe Commerce in der Cloud-Infrastruktur nur sehr wenig Platz oder kein Platz für [!DNL MySQL] vorhanden ist. Zu den Symptomen zählen Site-Ausfälle, Kunden, die nicht in der Lage sind, Produkte zum Warenkorb hinzuzufügen, nicht in der Lage, eine Verbindung zur Datenbank herzustellen, remote auf die Datenbank zuzugreifen und SSH nicht in den Knoten integrieren zu können. Zu den Symptomen gehören auch Galera-, Umgebungs-, PHP-, Datenbank- und Bereitstellungsfehler, wie unten aufgeführt. Klicken Sie auf [Lösung](https://support.magento.com/hc/en-us/articles/360058472572#solution) , um direkt zum Lösungsabschnitt zu springen.
+Dieser Artikel bietet Lösungen für Fälle, in denen nur sehr wenig oder kein Speicherplatz für [!DNL MySQL] auf Adobe Commerce in der Cloud-Infrastruktur vorhanden ist. Zu den Symptomen zählen Standortausfälle, Kunden, die keine Produkte in den Warenkorb legen können, keine Verbindung zur Datenbank herstellen können, Remote-Zugriff auf die Datenbank und keine Möglichkeit, SSH in den Knoten einzufügen. Zu den Symptomen gehören auch Galera-, Umgebungs-, PHP-, Datenbank- und Bereitstellungsfehler, wie unten aufgeführt. Klicken Sie auf [Lösung](https://support.magento.com/hc/en-us/articles/360058472572#solution), um direkt zum Abschnitt „Lösung“ zu springen.
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce für Cloud-Infrastruktur 2.3.0-2.3.6-p1, 2.4.0-2.4.2
+Adobe Commerce auf Cloud-Infrastruktur 2.3.0-2.3.6-p1, 2.4.0-2.4.2
 
 ## Problem
 
-Die Datenbank wird zu groß. Zu den Symptomen zählen der Verlust der Datenbankverbindung, ein Fehler beim Hochladen der Datenbank und eine Vielzahl anderer Probleme.
+Die Datenbank wird zu groß. Zu den Symptomen zählen u. a. der Verlust der Datenbankverbindung, ein Fehler beim Hochladen der Datenbank und eine Vielzahl anderer Probleme.
 
-Eventuelle Fehler:
+Fehler, auf die Sie stoßen können:
 
 Galera:
 
-* *SQLSTATE\[08S01\]: Kommunikationslink-Fehler: 1047 WSREP hat den Knoten noch nicht für die Anwendungsnutzung vorbereitet*   *Importfehler:*
-* *SQLSTATE\[HY000\]: Allgemeiner Fehler: 1180 Fehler 5 &quot;Input/output error&quot;*
-* *SQLSTATE\[08S01\]: Kommunikationslink-Fehler: 1047 WSREP hat den Knoten noch nicht für die Anwendungsnutzung vorbereitet*
+* *SQLSTATE\[08S01\]: Kommunikationsverbindungsfehler: 1047 WSREP hat den Knoten noch nicht für die Verwendung durch die Anwendung vorbereitet*   *Importfehler:*
+* *SQLSTATE\[HY000\]: Allgemeiner Fehler: 1180 Fehler 5 „Eingabe/Ausgabe-Fehler“*
+* *SQLSTATE\[08S01\]: Kommunikationsverbindungsfehler: 1047 WSREP hat den Knoten noch nicht für die Verwendung durch die Anwendung vorbereitet*
 
 Fehler bei der Umgebungssynchronisierung:
 
-* *SQLSTATE: Allgemeiner Fehler: 1180 Got error 5 &quot;Input/output error&quot; during COMMIT*
+* *SQLSTATE: Allgemeiner Fehler: 1180 hat Fehler 5 „Eingabe/Ausgabe-Fehler“ während des COMMIT erhalten*
 
 PHP-Fehler:
 
-* *php: PDO:\_\_struct(): [!DNL MySQL] Server ist weg.*
-* *php errors: PDO::\_\_struct(): Fehler beim Lesen des Grußpakets. PID=NNN.*
-* *ERROR 2013 (HY000): Verlorene Verbindung zum [!DNL MySQL]-Server bei &#39;Lesen des anfänglichen Kommunikationspakets&#39;, Systemfehler: 0 &quot;Interner Fehler/Prüfung (kein Systemfehler)&quot;.*
+* *php: PDO::\_\_struct(): [!DNL MySQL] Server ist verschwunden.*
+* *php-Fehler: PDO::\_\_struct(): Fehler beim Lesen des Grußpakets. PID=NNN.*
+* *ERROR 2013 (HY000): Verbindung zu [!DNL MySQL] Server beim &#39;Lesen des ersten Kommunikationspakets&#39; unterbrochen, Systemfehler: 0 „Interner Fehler/Überprüfung (Nicht Systemfehler)“.*
 
 Datenbankfehler:
 
-* *Fehler\_code: 1114*
-* *InnoDB: Fehler (Nicht genügend Speicherplatz) beim Schreiben des Wortknotens in die FTS-Hilfsindextabelle.*
+* *ERROR\_CODE: 1114*
+* *InnoDB: Fehler (Nicht genügend Speicherplatz) beim Schreiben des Word-Knotens in die FTS-Hilfs-Indextabelle.*
 * *SQLSTATE\[HY000\]: Allgemeiner Fehler: 2006 [!DNL MySQL] Server wurde entfernt*
-* *\[FEHLER\] Slave SQL: Fehler &#39;Die Tabelle `<table\_name>` ist voll&#39; bei der Abfrage.*
-* *Unit mysql.service ist in den Fehlerstatus versetzt.*
-* *Fehler: &#39;Kann nicht über den Socket &#39;/var/run/mysqld/mysqld.sock&#39; eine Verbindung zum lokalen [!DNL MySQL]-Server herstellen (111 &quot;Verbindung verweigert&quot;)&#39;*
-* *1205 Zeitüberschreitung bei Sperrung überschritten; Versuch, die Transaktion neu zu starten, Abfrage lautete: IN \`cron\_schedule\` (\`job\_code\`, \`status\`, \`created\_at\`, \`scheduled\_at\`) WERTE (?, ?, `YYYY-02-07 HH:MM:SS`, `YYYY-MM-DD HH:MM:SS`)*
+* *\[ERROR\] Slave SQL: Fehler &#39;Die `<table\_name>` ist voll&#39; bei der Abfrage.*
+* *Unit mysql.service ist in den Fehlerstatus übergegangen.*
+* *Fehler: &#39;Verbindung zum lokalen [!DNL MySQL]-Server über Socket &#39;/var/run/mysqld/mysqld.sock&#39; nicht möglich (111 „Verbindung verweigert„)&#39;*
+* *1205 Sperrwartezeitlimit überschritten. Versuchen Sie, die Transaktion neu zu starten. Abfrage war: INSERT INTO \`cron\_schedule\` (\`job\_code\`, \`status\`, \`created\_at\`, \`scheduled\_at\`) VALUES (?, ?, `YYYY-02-07 HH:MM:SS`, `YYYY-MM-DD HH:MM:SS`)*
 
 Bereitstellungsfehler:
 
-* *E: Befehl &#39;\[&#39;sudo&#39;, &#39;-u&#39;, `<environment name>`, &#39;bash&#39;, &#39;-c&#39;, &#39;/etc/platform/`<environment name>`/post\_deploy.sh&#39;\]&#39; gibt den Ausstiegsstatus &quot;Nicht null&quot;zurück. 255*
-* *E: Befehl &#39;\[&#39;ssh&#39;, u`<node IP address>`, &#39;sudo /usr/bin/sv -w 30 Neustart Site-`<environment name>`g-nginx&#39;\]&#39; gibt nicht null* zurück
-* *Schema aktualisieren.. SQLSTATE\[HY000\]: Allgemeiner Fehler: 1114 Die Tabelle `<table\_name>` ist voll*
+* *E: Befehl &#39;\[&#39;sudo&#39;, &#39;-u&#39;, `<environment name>`, &#39;bash&#39;, &#39;-c&#39;, &#39;/etc/platform/`<environment name>`/post\_deploy.sh&#39;\]&#39; hat den Exitstatus 255 zurückgegeben, der nicht null ist*
+* *E: Befehl &#39;\[&#39;ssh&#39;, u`<node IP address>`, &#39;sudo /usr/bin/sv -w 30 restart site-`<environment name>`g-nginx&#39;\]&#39; ergab einen Wert ungleich null*
+* *Schema wird aktualisiert.. SQLSTATE\[HY000\]: Allgemeiner Fehler: 1114 Die Tabelle `<table\_name>` ist voll*
 * *SQLSTATE\[HY000\]: Allgemeiner Fehler: 3 Fehler beim Schreiben der Datei ./`<environment name>`/\#*
-* *W: `<filename>` (Fehler: 28 &quot;Kein Speicherplatz auf Gerät mehr&quot;)* *Indizierungsfehler (zusammen mit verwaisten temporären .ibd-Dateien in /tmp):*
-* *Der Indexer für Katalogregeln gibt eine Ausnahme aus. Die temporären Tabellen werden im Nachhinein nicht bereinigt und füllen dann die Festplatte auf dem aktuellen [!DNL MySQL] Master-Knoten* aus
+* *W: `<filename>` (Errcode: 28 „No space left on device„)* *Indizierungsfehler (zusammen mit verwaisten temporären .ibd-Dateien in /tmp):*
+* *Katalogregel-Indexer löst eine Ausnahme aus. Die temporären Tabellen werden im Anschluss nicht bereinigt und füllen dann die Festplatte auf dem aktuellen [!DNL MySQL] Master-Knoten*
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Sie können überprüfen, ob der `/data/mysql` (oder wo auch immer der [!DNL MySQL]-Datenspeicher konfiguriert ist) voll ist, indem Sie den folgenden Befehl in der CLI ausführen:
+Sie können unter anderem überprüfen, ob die `/data/mysql` (oder wo auch immer [!DNL MySQL] Datenspeicher konfiguriert ist) voll ist, indem Sie den folgenden Befehl in der CLI ausführen:
 
 ```bash
 df -h
@@ -72,19 +72,19 @@ Weniger als 10 % des freien Speichers auf [!DNL MySQL] Festplatte ist ein primä
 
 ## Ursache
 
-Das `/data/mysql` -Reittier kann aufgrund einer Reihe von Problemen voll sein, z. B. aufgrund des Fehlens von genügend Inoden, verfügbarem Speicherplatz und schlechter Abfragen, die temporäre Tabellen generieren.
+Die `/data/mysql`-Bereitstellung könnte aufgrund einer Reihe von Problemen ausgelastet sein, z. B. weil nicht genügend Inodes, verfügbarer Speicherplatz und fehlerhafte Abfragen vorhanden sind, die temporäre Tabellen generieren.
 
 ## Lösung
 
-Es gibt einen sofortigen Schritt, den Sie unternehmen können, um [!DNL MySQL] wieder auf die Spur zu bringen (oder zu verhindern, dass es hängenbleibt): Machen Sie Speicherplatz frei, indem Sie große Tabellen leeren.
+Es gibt einen sofortigen Schritt, den Sie unternehmen können, um [!DNL MySQL] wieder auf den richtigen Weg zu bringen (oder zu verhindern, dass es stecken bleibt): Machen Sie Platz frei, indem Sie große Tische spülen.
 
-Eine langfristige Lösung würde jedoch mehr Speicherplatz zuweisen und den [Best Practices für die Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) folgen, einschließlich der Aktivierung der [Archiv für Bestellung/Rechnung/Sendung](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) -Funktionalität.
+Eine langfristige Lösung bestünde jedoch darin, mehr Speicherplatz zuzuweisen und den Best Practices für [Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) zu folgen, einschließlich der Aktivierung der Funktion [Bestellung/Rechnung/Versand](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 Im Folgenden finden Sie Details zu schnellen und langfristigen Lösungen.
 
-### Checken und Freigeben von Anschlüssen
+### Überprüfen und Freigeben von Knoten
 
-Stellen Sie sicher, dass genügend verfügbare Nodes vorhanden sind. Führen Sie dazu den folgenden Befehl aus:
+Stellen Sie sicher, dass ausreichend Knoten verfügbar sind. Führen Sie dazu den folgenden Befehl aus:
 
 ```bash
 df -i
@@ -97,9 +97,9 @@ Filesystem Inodes   Used   Free Use% Mounted on
 /dev/nvme2n1 655360    1695  653665    1% /data/mysql
 ```
 
-Stellen Sie sicher, dass &quot;Use %&quot;&lt; 70 % ist. Knoten werden mit Dateien korreliert. Wenn Sie Dateien aus der Partition entfernen, werden Sie Inodes freigeben.
+Überprüfen, ob % Verwendung &lt; 70 % ist. Inodes sind mit Dateien korreliert. Wenn Sie Dateien aus der Partition entfernen, werden Inodes freigegeben.
 
-### Speicherplatz einchecken und freigeben
+### Überprüfen und Freigeben von Speicherplatz
 
 Überprüfen Sie den verfügbaren Speicherplatz. Führen Sie dazu Folgendes aus:
 
@@ -107,48 +107,48 @@ Stellen Sie sicher, dass &quot;Use %&quot;&lt; 70 % ist. Knoten werden mit Datei
 df -k
 ```
 
-Die Ausgabe würde der folgenden ähneln:
+Die Ausgabe würde in etwa wie folgt aussehen:
 
 ```bash
 Size Used Avail Use% Mounted on·
        50G 49G 95M 100% /data/mysql
 ```
 
-Wenn die Option % verwenden > 70 % beträgt, müssen Sie Maßnahmen ergreifen, um Speicherplatz freizugeben/hinzuzufügen.
+Wenn der Wert % > 70 % ist, müssen Sie Maßnahmen ergreifen, um Speicherplatz freizugeben bzw. hinzuzufügen.
 
-### Überprüfen auf große `ibtmp1` -Dateien
+### Auf große `ibtmp1` prüfen
 
-Überprüfen Sie auf eine große `ibtmp1` -Datei auf `/data/mysql` jedes Knotens: Diese Datei ist der Tablespace für temporäre Tabellen. Bei fehlerhaften Abfragen, die temporäre Tabellen generieren, sind diese in der Datei &quot;`ibtmp1`&quot;enthalten. Diese Datei wird nur entfernt, wenn die Datenbank neu gestartet wird. Wenn der gesamte verfügbare Speicherplatz belegt wird, muss die Datenbank neu gestartet werden. Bei fehlerhaften Abfragen wird sie erneut erstellt.
+Auf große `ibtmp1`-Dateien `/data/mysql` jedem Knoten prüfen: Diese Datei ist der Tablespace für temporäre Tabellen. Wenn es ungültige Abfragen gibt, die temporäre Tabellen generieren, sind diese in der `ibtmp1` enthalten. Diese Datei wird nur entfernt, wenn die Datenbank neu gestartet wird. Wenn sie den gesamten verfügbaren Speicherplatz belegt, muss die Datenbank neu gestartet werden. Wenn ungültige Abfragen vorhanden sind, wird sie erneut erstellt.
 
-### Große Tabellen leeren
+### Große Tabellen spülen
 
 >[!WARNING]
 >
->Es wird dringend empfohlen, eine Datenbanksicherung zu erstellen, bevor Sie Manipulationen durchführen und sie bei hohen Site-Ladezeiten vermeiden. Siehe [Dump your database](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
+>Es wird dringend empfohlen, ein Datenbank-Backup zu erstellen, bevor Sie Änderungen durchführen und diese in Zeiten hoher Site-Auslastung vermeiden. Siehe [Dump Ihrer Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
 
-Überprüfen Sie, ob große Tabellen vorhanden sind, und überlegen Sie, ob eine davon geleert werden kann. Führen Sie dies auf dem primären (Quell-)Knoten durch.
+Überprüfen Sie, ob große Tabellen vorhanden sind, und prüfen Sie, ob eine davon geleert werden kann. Gehen Sie dazu auf dem primären Knoten (Quellknoten) vor.
 
-Beispielsweise können Tabellen mit Berichten in der Regel geleert werden. Weitere Informationen zum Suchen großer Tabellen finden Sie im Artikel [Große [!DNL MySQL] Tabellen suchen](/help/how-to/general/find-large-mysql-tables.md) .
+Beispielsweise können Tabellen mit Berichten normalerweise geleert werden. Weitere Informationen zum Suchen großer Tabellen finden Sie im Artikel [Suchen  [!DNL MySQL]  großen Tabellen](/help/how-to/general/find-large-mysql-tables.md).
 
-Wenn keine riesigen Berichtstabellen vorhanden sind, sollten Sie erwägen, `_index` -Tabellen zu leeren, um die Adobe Commerce-Anwendung wieder auf die richtige Weise zu übermitteln. `index_price` Tabellen wären die besten Kandidaten. Beispiel: `catalog_category_product_index_storeX` -Tabellen, wobei X Werte von &quot;1&quot;bis zur maximalen Speicheranzahl aufweisen kann. Beachten Sie bitte, dass Sie eine Neuindizierung durchführen müssen, um Daten in diesen Tabellen wiederherzustellen. Im Falle großer Kataloge kann diese Neuindizierung viel Zeit in Anspruch nehmen.
+Wenn keine großen Berichtstabellen vorhanden sind, sollten Sie `_index` Tabellen leeren, um die Adobe Commerce-Anwendung wieder auf den richtigen Weg zu bringen. `index_price` Tabellen wären die besten Kandidaten. Beispiel: `catalog_category_product_index_storeX` Tabellen, bei denen X Werte von „1“ bis zur maximalen Speicheranzahl aufweisen kann. Beachten Sie, dass Sie eine Neuindizierung durchführen müssen, um die Daten in diesen Tabellen wiederherzustellen. Bei großen Katalogen kann diese Neuindizierung sehr lange dauern.
 
-Nachdem Sie sie geleert haben, warten Sie auf den Abschluss der Browsersynchronisierung. Sie können jetzt Backups erstellen und bedeutendere Schritte ausführen, um mehr Platz hinzuzufügen, z. B. mehr Speicherplatz zuzuweisen/zu erwerben und die Funktionalität des Archivs [Bestellung/Rechnungsstellung/Versand](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) zu aktivieren.
+Warten Sie nach dem Leeren auf den Abschluss der WSREP-Synchronisierung. Sie können jetzt Sicherungskopien erstellen und wichtigere Schritte ausführen, um mehr Speicherplatz hinzuzufügen, z. B. mehr Speicherplatz zuweisen/kaufen und die Funktion [Bestellung/Rechnung/](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) aktivieren.
 
 ### Überprüfen der binären Protokollierungseinstellungen
 
-Überprüfen Sie die Einstellungen für die binäre Protokollierung des [!DNL MySQL] -Servers: `log_bin` und `log_bin_index`. Wenn die Einstellungen aktiviert sind, werden die Protokolldateien möglicherweise riesig. [Erstellen Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit der Anforderung, große binäre Protokolldateien zu bereinigen. Stellen Sie außerdem sicher, dass die binäre Protokollierung korrekt konfiguriert ist, damit Protokolle regelmäßig bereinigt werden und nicht zu viel Platz benötigt wird.
+Überprüfen Sie die Binärprotokollierungseinstellungen Ihres [!DNL MySQL]-Servers: `log_bin` und `log_bin_index`. Wenn die Einstellungen aktiviert sind, können die Protokolldateien sehr groß werden. [Erstellen Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit der Aufforderung, große Binärlogdateien zu bereinigen. Vergewissern Sie sich außerdem, dass die Binärprotokollierung korrekt konfiguriert ist, sodass Protokolle regelmäßig bereinigt werden und nicht zu viel Speicherplatz beanspruchen.
 
-Wenn Sie keinen Zugriff auf die [!DNL MySQL] -Servereinstellungen haben, bitten Sie um Unterstützung, diese zu überprüfen.
+Wenn Sie keinen Zugriff auf [!DNL MySQL] Server-Einstellungen haben, bitten Sie den Support um Überprüfung.
 
 ### Mehr Speicherplatz zuweisen/kaufen
 
-Weisen Sie mehr Speicherplatz für [!DNL MySQL] zu, wenn Sie nicht mehr verwendet haben. Weitere Informationen dazu, wie Sie überprüfen können, ob Sie freien Speicherplatz haben, finden Sie im Artikel [Überprüfen des Festplattenspeicherplatzlimits](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md) .
+Weisen Sie mehr Speicherplatz für [!DNL MySQL] zu, wenn Sie nicht verwendeten Speicherplatz haben. Informationen [ Überprüfen, ob Sie über freien Speicherplatz verfügen](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md) finden Sie im Artikel „Überprüfen des Speicherplatzlimits“.
 
-* Für den Starter-Plan, alle Umgebungen und die Pro-Plan-Integrationsumgebungen können Sie den Festplattenspeicher zuweisen, wenn Sie nicht mehr verwendet werden. Weitere Informationen finden Sie unter [Mehr Platz für  [!DNL MySQL]](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md) zuweisen .
-* Wenden Sie sich bei Staging- und Produktionsumgebungen für Pro-Plan an den [Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , um mehr Speicherplatz zuzuweisen, wenn Sie noch nicht genügend Speicherplatz haben.
+* Für den Starter-Plan, alle Umgebungen und Pro-Plan-Integrationsumgebungen können Sie den Speicherplatz zuweisen, wenn Sie einige ungenutzte haben. Weitere Informationen finden Sie unter [Mehr Platz zuweisen für [!DNL MySQL]](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md).
+* Bei Pro Plan Staging- und Produktionsumgebungen [wenden Sie sich an den ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um bei ungenutzten Festplatten mehr Speicherplatz zuzuweisen.
 
-Wenn Sie Ihre Speicherplatzbeschränkung erreicht haben und dennoch Probleme mit wenig Speicherplatz auftreten, sollten Sie sich für weitere Informationen an Ihr Adobe Account Team wenden.
+Wenn Sie Ihr Speicherplatzlimit erreicht haben und weiterhin Probleme mit wenig Speicherplatz haben, sollten Sie ggf. weiteren Speicherplatz kaufen. Wenden Sie sich für weitere Informationen an Ihr Adobe-Account-Team.
 
 ## Verwandtes Lesen
 
-[Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

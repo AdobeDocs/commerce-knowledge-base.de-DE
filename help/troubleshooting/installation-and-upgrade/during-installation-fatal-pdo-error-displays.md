@@ -1,6 +1,6 @@
 ---
 title: Während der Installation wird ein schwerwiegender PDO-Fehler angezeigt
-description: Dieser Artikel enthält eine Fehlerbehebung für einen Ausnahmefehler bei PDO während der Installation.
+description: Dieser Artikel bietet eine Fehlerbehebung für einen schwerwiegenden PDO-Fehler bei der Installation.
 exl-id: d69908f0-71c9-48de-9369-6ada22f2b393
 feature: Install, Upgrade
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Während der Installation wird ein schwerwiegender PDO-Fehler angezeigt
 
-Dieser Artikel enthält eine Fehlerbehebung für einen Ausnahmefehler bei PDO während der Installation.
+Dieser Artikel bietet eine Fehlerbehebung für einen schwerwiegenden PDO-Fehler bei der Installation.
 
 ## Problem
 
@@ -23,4 +23,4 @@ PHP Fatal error:  Class 'PDO' not found in /var/www/html/magento2/setup/module/M
 
 ## Lösung
 
-Stellen Sie sicher, dass Sie alle [erforderlichen PHP-Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) installieren.
+Installieren Sie unbedingt alle [erforderlichen PHP-Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).

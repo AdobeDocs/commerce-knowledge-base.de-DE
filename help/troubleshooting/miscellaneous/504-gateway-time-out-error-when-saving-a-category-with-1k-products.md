@@ -1,6 +1,6 @@
 ---
-title: 504 Gateway-Zeitüberschreitungsfehler beim Speichern einer Kategorie mit 1k+ Produkten
-description: In diesem Artikel wird eine Lösung für das Problem mit der Zeitüberschreitung vorgeschlagen, das bei der Ausführung von Vorgängen mit großen Kategorien (1 k+ Produkte) auftreten kann.
+title: 504 Gateway-Zeitüberschreitungsfehler beim Speichern einer Kategorie mit 1K+-Produkten
+description: In diesem Artikel wird eine Lösung für das Zeitüberschreitungsproblem vorgeschlagen, das bei der Durchführung von Vorgängen mit großen Kategorien (1k+ plus Produkte) auftreten kann.
 exl-id: 1f4b0385-215d-4d3d-8704-986c090824aa
 feature: Cache, Categories, Marketing Tools, Products
 role: Developer
@@ -11,57 +11,57 @@ ht-degree: 0%
 
 ---
 
-# 504 Gateway-Zeitüberschreitungsfehler beim Speichern einer Kategorie mit 1k+ Produkten
+# 504 Gateway-Zeitüberschreitungsfehler beim Speichern einer Kategorie mit 1K+-Produkten
 
-In diesem Artikel wird eine Lösung für das Problem mit der Zeitüberschreitung vorgeschlagen, das bei der Ausführung von Vorgängen mit großen Kategorien (1 k+ Produkte) auftreten kann.
+In diesem Artikel wird eine Lösung für das Zeitüberschreitungsproblem vorgeschlagen, das bei der Durchführung von Vorgängen mit großen Kategorien (1k+ plus Produkte) auftreten kann.
 
 ## Betroffene Produkte und Versionen:
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.3.3
-* Adobe Commerce vor Ort 2.3.3
+* Adobe Commerce On-Premises 2.3.3
 * Magento Open Source 2.3.3
 
 ## Problem
 
-Voraussetzungen: Die Option **Stores** > **Konfiguration** > **KATALOG** > **Katalog** > **Kategoriepfad für Produkt-URLs verwenden** ist für Ihre Store-Ansicht auf *Ja* eingestellt.
+Voraussetzungen: Die Option **Stores** > **Configuration** > **CATALOG** > **CATALOG** > **Verwenden des Kategorienpfads für Produkt-URLs** ist für Ihre Store-Ansicht auf *Yes* festgelegt.
 
-<u>Zu reproduzierende Schritte</u>
+<u>Schritte zur Reproduktion</u>
 
-1. Navigieren Sie im Commerce Admin zu **Katalog** > **Kategorien**.
+1. Wechseln Sie in der Commerce-Admin zu **Katalog** > **Kategorien**.
 1. Öffnen Sie eine große Kategorie, z. B. mehr als 1000 zugewiesene Produkte.
 1. Fügen Sie der Kategorie ein Produkt hinzu.
-1. Klicken Sie auf **Kategorie speichern**.
+1. Klicken Sie **Kategorie speichern**.
 
 <u>Erwartetes Ergebnis:</u>
 
-Die Kategorie wurde erfolgreich gespeichert.
+Kategorie wurde gespeichert.
 
 <u>Tatsächliches Ergebnis:</u>
 
-Nach fünf Minuten Speichervorgang wird die Fehlerseite 504 Gateway Timeout angezeigt.
+Nach fünf Minuten des Speichervorgangs wird die Fehlerseite 504 Gateway Timeout angezeigt.
 
 ## Ursache
 
-Der Prozess dauert länger als der konfigurierte Timeout des Servers.
+Der Prozess dauert länger als die konfigurierte Zeitüberschreitung des Servers.
 
 ## Lösung
 
-Durch Deaktivieren der Option **URL-Neuschreibungen für Kategorie/Produkt generieren** werden alle Kategorie-/Produkt-URL-Neuschreibungen aus der Datenbank entfernt und die für Vorgänge mit großen Kategorien erforderliche Zeit erheblich verringert.
+Wenn Sie die Option **Neuschreibungen der Kategorie-/Produkt-URL generieren** deaktivieren, werden alle Neuschreibungen der Kategorie-/Produkt-URLs aus der Datenbank entfernt, was die Zeit für die Vorgänge mit großen Kategorien erheblich verkürzt.
 
 >[!WARNING]
 >
->Wenn Sie diese Option deaktivieren, werden Kategorie-/Produkt-URL-Neuschreibungen dauerhaft entfernt, ohne dass eine Wiederherstellung möglich ist.
+>Wenn Sie diese Option deaktivieren, werden die Neuschreibungen der Kategorie-/Produkt-URLs dauerhaft entfernt, ohne dass sie wiederhergestellt werden können.
 
-So deaktivieren Sie die Option **URL-Neuschreibungen für Kategorie/Produkt generieren**:
+So deaktivieren Sie **Option „URL-Neuschreibungen für Kategorie/Produkt**&quot;:
 
-1. Navigieren Sie im Commerce-Admin zu &quot;**Stores**&quot;> &quot;**Konfiguration**&quot;> &quot;**KATALOG**&quot;> &quot;**Katalog**&quot;.
-1. Legen Sie in der oberen linken Ecke der Konfigurationsseite im Feld **Umfang** den Konfigurationsbereich auf *Standardkonfiguration* fest.
-1. Setzen Sie **URL &quot;Kategorie/Produkt&quot;generieren, schreibt** neu auf *Nein*.
-1. Klicken Sie auf **Konfiguration speichern**.
-1. Cache bereinigen durch Ausführen    ```bash    bin/magento cache:clean    ```    oder im Commerce Admin unter **System** > **Tools** > **Cache-Verwaltung**.
+1. Navigieren Sie in der Commerce Admin zu **Stores** > **Configuration** > **CATALOG** > **CATALOG**.
+1. Legen Sie oben links auf der Konfigurationsseite im Feld **Umfang** Ihren Konfigurationsbereich auf &quot;*&quot;*.
+1. Setzen **„Kategorie-/Produkt-URL-Neuschreibungen generieren** auf *Nein*.
+1. Klicken Sie **Konfiguration speichern**.
+1. Cache durch Ausführen von bereinigen    ```bash    bin/magento cache:clean    ```    oder in der Commerce Admin unter **System** > **Tools** > **Cache-Verwaltung**.
 
-Jetzt können Sie Produkte zu Kategorien hinzufügen oder Kategorien mit einer großen Anzahl von Produkten verschieben. Diese Vorgänge werden viel weniger Zeit in Anspruch nehmen und sollten keinen Timeout verursachen.
+Jetzt können Sie mit dem Hinzufügen von Produkten zu Kategorien oder dem Verschieben von Kategorien mit einer großen Anzahl von Produkten fortfahren. Diese Vorgänge benötigen viel weniger Zeit und sollten keine Zeitüberschreitung verursachen.
 
 ## Verwandtes Lesen
 
-[Automatische Produktumleitungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) in unserem Benutzerhandbuch.
+[Automatische Produktweiterleitungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) in unserem Benutzerhandbuch.

@@ -1,64 +1,65 @@
 ---
-title: Sicherheitsupdate für Adobe Commerce - [!DNL APSB24-61]
+title: Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-61]
 promoted: true
-description: Wenden Sie einen isolierten Patch an, um [!DNL CVE-2024-39397] für Adobe Commerce 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 und frühere Instanzen zu beheben, die nur auf [!DNL Apache] ausgeführt werden.
+description: Wenden Sie einen isolierten Patch an,  [!DNL CVE-2024-39397]  die Instanzen Adobe Commerce 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 und frühere Versionen nur ausgeführt werden [!DNL Apache].
 feature: Compliance, Security
 role: Developer
-source-git-commit: 76ff7669a0a57925a176e08031e0789ced0a7f0e
+exl-id: 340b7066-e6d9-4d91-adb0-5b8860c2a5a0
+source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
-# Sicherheitsupdate für Adobe Commerce - [!DNL APSB24-61]
+# Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-61]
 
-Am 13. August 2024 veröffentlichte Adobe ein regelmäßig geplantes Sicherheitsupdate für Adobe Commerce, Magento Open Source und das Adobe Commerce Webhooks Plugin.
-Durch diese Aktualisierung werden [[!DNL critical, important]- und  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html)-Schwachstellen behoben. Eine erfolgreiche Nutzung könnte zu einer willkürlichen Codeausführung, beliebigem Lesen des Dateisystems, Umgehung von Sicherheitsfunktionen und Berechtigungseskalierung führen. Das Bulletin ist [Adobe-Sicherheitsbulletin ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
-
->[!NOTE]
->
->**[!DNL CVE-2024-39397], aufgeführt im Sicherheitsbulletin oben, ist nur bei Verwendung des [!DNL Apache] -Webservers anwendbar.** Um sicherzustellen, dass die Behebung für diese Verwundbarkeit so schnell wie möglich angewendet werden kann, hat Adobe auch einen Isolated Patch veröffentlicht, der [!DNL CVE-2024-39397] löst.
-
-**Bitte wenden Sie so bald wie möglich die neuesten Sicherheitsupdates an. Wenn Sie dies nicht tun, sind Sie anfällig für diese Sicherheitsprobleme, und Adobe verfügt über begrenzte Mittel zur Behebung von Problemen.**
+Am 13. August 2024 veröffentlichte Adobe ein regelmäßig geplantes Sicherheits-Update für Adobe Commerce, Magento Open Source und das Adobe Commerce Webhooks-Plug-in.
+Dieses Update behebt [[!DNL critical, important] und  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) Schwachstellen. Eine erfolgreiche Ausnutzung kann zur Ausführung von beliebigem Code, zum Lesen beliebiger Dateisysteme, zur Umgehung von Sicherheitsfunktionen und zur Erweiterung von Berechtigungen führen. Das Bulletin ist [Adobe-Sicherheitsbulletin ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 >[!NOTE]
 >
->Wenden Sie sich an Support Services , wenn Probleme beim Anwenden des Sicherheits-Patches/isolierten Patches auftreten.
+>**[!DNL CVE-2024-39397], die im obigen Sicherheitsbulletin aufgeführt sind, gilt nur bei Verwendung des [!DNL Apache]-Webservers.** Um sicherzustellen, dass die Behebung dieser Sicherheitslücke so schnell wie möglich angewendet werden kann, hat Adobe auch einen isolierten Patch veröffentlicht, der [!DNL CVE-2024-39397] behebt.
+
+**Bitte wenden Sie die neuesten Sicherheitsupdates so bald wie möglich an. Wenn Sie dies nicht tun, sind Sie anfällig für diese Sicherheitsprobleme, und Adobe hat nur begrenzte Mittel, um Abhilfe zu schaffen.**
+
+>[!NOTE]
+>
+>Wenden Sie sich an den Support, wenn beim Anwenden des Sicherheits-Patches/isolierten Patches Probleme auftreten.
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce on Cloud, Adobe Commerce vor Ort und Magento Open Source:
+Adobe Commerce on Cloud, Adobe Commerce On-Premise und Magento Open Source:
 
-* 2.4.7-p1 und früher
-* 2.4.6-p6 und früher
-* 2.4.5-p8 und früher
-* 2.4.4-p9 und früher
+* 2.4.7-P1 und früher
+* 2.4.6-P6 und früher
+* 2.4.5-P8 und früher
+* 2.4.4-P9 und früher
 
-## Lösung für Adobe Commerce auf Cloud, lokal verfügbare Adobe Commerce-Software und Magento Open Source
+## Lösung für Adobe Commerce on Cloud, Adobe Commerce On-Premise-Software und Magento Open Source
 
-Um die Verwundbarkeit für die betroffenen Produkte und Versionen zu beheben, müssen Sie den [!DNL CVE-2024-39397] Isolated Patch anwenden.
+Um die Sicherheitsanfälligkeit für die betroffenen Produkte und Versionen zu beheben, müssen Sie den [!DNL CVE-2024-39397] isolierten Patch anwenden.
 
-## Details zum isolierten Patch
+## Details zu isolierten Patches
 
-Verwenden Sie das folgende angehängte Isolated Patch:
+Verwenden Sie das folgende beigefügte isolierte Pflaster:
 
 * [acsd-60551-composer-patch.zip](assets/acsd-60551-composer-patch.zip)
 
-## Anwenden des isolierten Pflasters
+## Anbringen des isolierten Pflasters
 
-Entpacken Sie die Datei und finden Sie Anweisungen unter [Anwenden eines von Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
 
-## Nur für Adobe Commerce on Cloud-Merchants - Ermitteln, ob die isolierten Patches angewendet wurden
+## Nur für Adobe Commerce on Cloud-Händler - Ermitteln, ob die isolierten Patches angewendet wurden
 
-Angenommen, es ist nicht einfach zu überprüfen, ob das Problem gepatcht wurde, sollten Sie überprüfen, ob der [!DNL CVE-2024-39397] Isolated Patch erfolgreich angewendet wurde.
+Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde, sollten Sie überprüfen, ob der [!DNL CVE-2024-39397] isolierte Patch erfolgreich angewendet wurde.
 
-<u>Gehen Sie dazu wie folgt vor, indem Sie die Datei `VULN-27015-2.4.7_COMPOSER.patch` als Beispiel </u> verwenden:
+<u>Sie können dies tun, indem Sie die folgenden Schritte ausführen und dabei die Datei `VULN-27015-2.4.7_COMPOSER.patch` als Beispiel verwenden</u>:
 
-1. [Installieren Sie das Tool &quot;Qualitätsmuster&quot;](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
-1. Führen Sie den Befehl aus:<br>
-   ![cve-2024-34102-tell-if-patch-apply-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
-1. Sie sollten die Ausgabe ähnlich der folgenden sehen, bei der VULN-27015 den Status *Angewandt* zurückgibt:
+1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. Führen Sie den folgenden Befehl aus:<br>
+   ![CVE-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
+1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der VULN-27015 den Status *Angewendet* zurückgibt:
 
    ```bash
    ║ Id            │ Title                                                        │ Category        │ Origin                 │ Status      │ Details                                          ║ ║ N/A           │ ../m2-hotfixes/VULN-27015-2.4.7_COMPOSER_patch.patch      │ Other           │ Local                  │ Applied     │ Patch type: Custom                                
@@ -70,7 +71,7 @@ Angenommen, es ist nicht einfach zu überprüfen, ob das Problem gepatcht wurde,
      ```
 -->
 
-## Sicherheitsaktualisierungen
+## Sicherheits-Updates
 
 Für Adobe Commerce verfügbare Sicherheitsupdates:
 

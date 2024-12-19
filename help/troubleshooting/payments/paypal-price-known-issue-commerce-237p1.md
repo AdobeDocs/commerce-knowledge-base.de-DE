@@ -1,6 +1,6 @@
 ---
-title: 'Bekanntes Problem in Adobe Commerce 2.3.7-p1: veraltete Bestellsumme für PayPal'
-description: 'Dieser Artikel enthält einen Patch für ein bekanntes Problem in Adobe Commerce 2.3.7-p1: Wenn Sie PayPal Checkout mehr als einmal verwenden, erhalten Kunden das zuvor bestellte Produkt im Warenkorb, anstatt das neue Produkt, das sie versuchen zu bestellen.'
+title: 'Adobe Commerce 2.3.7-p1 Bekanntes Problem: Veraltete Bestellsumme für PayPal'
+description: 'Dieser Artikel enthält einen Patch für ein bekanntes Problem in Adobe Commerce 2.3.7-p1: Wenn Sie PayPal Checkout mehr als einmal verwenden, erhalten Kundinnen und Kunden das zuvor bestellte Produkt in den Warenkorb anstatt des neuen, das sie zu bestellen versuchen.'
 exl-id: ceb8f7ad-0cf7-4d42-aded-25d1dd947f5b
 feature: Orders, Payments
 role: Developer
@@ -11,35 +11,35 @@ ht-degree: 0%
 
 ---
 
-# Bekanntes Problem in Adobe Commerce 2.3.7-p1: veraltete Bestellsumme für PayPal
+# Adobe Commerce 2.3.7-p1 Bekanntes Problem: Veraltete Bestellsumme für PayPal
 
-Dieser Artikel enthält einen Patch für ein bekanntes Problem in Adobe Commerce 2.3.7-p1: Wenn Sie PayPal Checkout mehr als einmal verwenden, erhalten Kunden das zuvor bestellte Produkt im Warenkorb, anstatt das neue Produkt, das sie versuchen zu bestellen.
-Sie können den Patch von diesem Artikel herunterladen und er ist auch über das Quality Patches Tool (QPT) verfügbar.
+Dieser Artikel enthält einen Patch für ein bekanntes Problem in Adobe Commerce 2.3.7-p1: Wenn Sie PayPal Checkout mehr als einmal verwenden, erhalten Kundinnen und Kunden das zuvor bestellte Produkt in den Warenkorb anstatt des neuen, das sie zu bestellen versuchen.
+Sie können den Patch aus diesem Artikel herunterladen. Er ist auch über das Quality Patches Tool (QPT) verfügbar.
 
 ## Betroffene Versionen
 
 * Adobe Commerce (alle Bereitstellungsoptionen) 2.3.7-p1
-* Magento Open Source 2.3.7-p1
+* Magento Open Source 2.3.7-P1
 
 ## Problem
 
-Wenn Sie eine Bestellung mit der Zahlungsmethode PayPal Express Checkout aufgeben, wird das zuvor bestellte Produkt in die Bestellung aufgenommen und nicht die eigentliche.
+Wenn Sie eine Bestellung mit der Zahlungsmethode PayPal Express Checkout aufgeben, wird das zuvor bestellte gekaufte Produkt in die Bestellung anstelle des tatsächlichen Produkts eingefügt.
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
-1. Fügen Sie auf der Storefront ein Produkt zum Warenkorb hinzu (Produkt A, Preis 50 USD).
+1. Fügen Sie auf der Ladenfront jedes Produkt zum Warenkorb hinzu (Produkt A, Preis 50 $).
 1. Klicken Sie auf den Link Warenkorb , um den Warenkorb zu öffnen.
-1. Klicken Sie auf die Schaltfläche **PayPal Checkout** .
-1. Verwenden Sie Ihre PayPal-Anmeldedaten, um sich bei PayPal anzumelden und die Zahlung abzuschicken.
-1. Beenden Sie die Bestellplatzierung auf der Store-Seite.
-1. Gehen Sie zurück zum Katalog und fügen Sie dem Warenkorb ein anderes Produkt hinzu (Produkt B, Preis 100 USD).
+1. Klicken Sie auf die **PayPal Checkout** Schaltfläche.
+1. Verwenden Sie Ihre PayPal-Anmeldedaten, um sich bei PayPal anzumelden und die Zahlung zu übermitteln.
+1. Platzierung der Bestellung auf der Ladenseite beenden.
+1. Gehen Sie zurück zum Katalog und fügen Sie ein anderes Produkt (Produkt B, Preis $100) zum Warenkorb hinzu.
 1. Klicken Sie auf den Link Warenkorb , um den Warenkorb zu öffnen.
-1. Klicken Sie auf die Schaltfläche **PayPal Checkout** .
+1. Klicken Sie auf die **PayPal Checkout** Schaltfläche.
 
 <u>Tatsächliches Ergebnis:</u>
 
-Der Produktpreis im Warenkorb beträgt 50 USD anstelle von 100 USD.<br/>
-Auf der Seite des Stores enthält die Bestellung Produkt A anstelle von Produkt B.
+Der Produktpreis im Warenkorb beträgt $50 statt $100.<br/>
+Auf der Ladenseite enthält die Bestellung Produkt A anstelle Produkt B.
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -47,9 +47,9 @@ Produkt B wird der Bestellung hinzugefügt.
 
 ## Lösung
 
-Wenden Sie den in diesem Artikel bereitgestellten Patch an.
+Wenden Sie das in diesem Artikel vorgesehene Patch an.
 
-## Patch
+## Fleck
 
 Verwenden Sie den folgenden Link, um eine ZIP-Datei mit dem Patch herunterzuladen: [MC42674-composer.patch.zip](assets/MC42674-composer.patch.zip).
 
@@ -60,4 +60,4 @@ Verwenden Sie den folgenden Link, um eine ZIP-Datei mit dem Patch herunterzulade
 ## Anwenden der Patches
 
 1. Entpacken Sie die heruntergeladene ZIP-Datei.
-1. Weitere Informationen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches.
+1. Weitere [ finden Sie unter „Anwenden eines Composer-Patches ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) Adobe&quot;.
