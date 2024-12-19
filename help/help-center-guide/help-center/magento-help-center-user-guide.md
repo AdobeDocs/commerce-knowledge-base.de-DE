@@ -3,9 +3,9 @@ title: Experience League-Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, gemeinsamen Zugriff auf Konten gewähren und durch die Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 014ad52f459f31433f1b35bdfaf7568eabaf7146
+source-git-commit: 16511a9bcc0e229297916f5c48ee8b606e10edbe
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
@@ -339,13 +339,15 @@ Nachdem Sie einem neuen Benutzer gemeinsamen Zugriff gewährt haben, sind die zu
 
 <u>Ursache</u>
 
-Wenn Sie ein Adobe Commerce Cloud-Projekt haben/hatten und eine Benutzerin bzw. einen Benutzer zum Projekt hinzugefügt hätten, hätte ihr bzw. ihm automatisch gemeinsamer Zugriff auf die BILD-ID des Projektbesitzers gewährt werden. Dies wird normalerweise in der Spalte &quot;**[!UICONTROL Share Name]**&quot; angezeigt, die &quot;*freigegebenen Cloud-Zugriff von MAG_[&quot;]*.
+Wenn Sie ein Adobe Commerce Cloud-Projekt haben bzw. hatten und eine Benutzerin bzw. einen Benutzer zum Projekt hinzugefügt haben, wurde ihr bzw. ihm möglicherweise automatisch gemeinsamer Zugriff auf die Bild-ID des Projektbesitzers gewährt. Dies wird normalerweise in der Spalte &quot;**[!UICONTROL Share Name]**&quot; angezeigt, die &quot;*freigegebenen Cloud-Zugriff von MAG_[&quot;]*.
 
-Wenn der DELETE-Link fehlt, bedeutet dies, dass der freigegebene Zugriff automatisch über Commerce Cloud gewährt wurde.
+>[!NOTE]
+>
+>Wenn der DELETE-Link fehlt, bedeutet dies, dass der freigegebene Zugriff automatisch über Commerce Cloud gewährt wurde.
 
 <u>Lösung</u>
 
-Es ist nicht möglich, die Liste der Benutzer mit freigegebenem Zugriff mit dem Freigabenamen *Cloud Shared Access von MAG[XYZ) zu löschen]* wenn der freigegebene Zugriff nicht auf dieser Seite hinzugefügt/gewährt wurde. Diese werden zu Informations-/Prüfungszwecken aufbewahrt.
+Es ist nicht möglich, die Liste der Benutzer mit freigegebenem Zugriff mit dem Freigabenamen *Cloud Shared Access von MAG[XYZ) zu löschen]* wenn der freigegebene Zugriff nicht hinzugefügt/[ wurde](https://account.magento.com/grantor/manage/). Diese werden zu Informations-/Prüfungszwecken aufbewahrt.
 
 Nachdem Sie jedoch die Berechtigungen für diese Benutzer mit freigegebenem Zugriff widerrufen haben, verfügen sie nicht mehr über diesen Zugriff.
 
