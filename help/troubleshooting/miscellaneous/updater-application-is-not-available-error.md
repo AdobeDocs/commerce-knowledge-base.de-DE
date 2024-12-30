@@ -1,6 +1,6 @@
 ---
-title: Fehler "Aktualisierungsanwendung ist nicht verfügbar"
-description: In diesem Artikel wird die Lösung für das Problem "Update-Anwendung ist nicht verfügbar"beschrieben, mit der Sie möglicherweise konfrontiert sind, wenn Sie versuchen, Adobe Commerce lokal mit dem Web-Setup-Assistenten zu aktualisieren/zu installieren.
+title: Fehler „Aktualisierungsanwendung ist nicht verfügbar“
+description: In diesem Artikel wird die Lösung des Problems „Aktualisierungsanwendung ist nicht verfügbar“ beschrieben, das auftreten kann, wenn Sie versuchen, Adobe Commerce On-Premise mithilfe des Websetup-Assistenten zu aktualisieren/installieren.
 exl-id: 85e55ed8-0bc9-4378-b722-46be98ce2638
 feature: Configuration
 role: Developer
@@ -11,22 +11,22 @@ ht-degree: 0%
 
 ---
 
-# Fehler &quot;Aktualisierungsanwendung ist nicht verfügbar&quot;
+# Fehler „Aktualisierungsanwendung ist nicht verfügbar“
 
-In diesem Artikel wird die Lösung für das Problem &quot;Update-Anwendung ist nicht verfügbar&quot;beschrieben, mit der Sie möglicherweise konfrontiert sind, wenn Sie versuchen, Adobe Commerce lokal mit dem Web-Setup-Assistenten zu aktualisieren/zu installieren.
+In diesem Artikel wird die Lösung des Problems „Aktualisierungsanwendung ist nicht verfügbar“ beschrieben, das auftreten kann, wenn Sie versuchen, Adobe Commerce On-Premise mithilfe des Websetup-Assistenten zu aktualisieren/installieren.
 
 ## Problem
 
-Die folgende Meldung wird in der Bereitschaftsprüfung angezeigt:
+Die folgende Meldung wird bei der Bereitschaftsprüfung angezeigt:
 
 ![screen_shot_2019-08-29_at_1.39.12_PM.png](assets/Screen_Shot_2019-08-29_at_1.39.12_PM.png)
 
 ## Betroffene Produkte/Versionen
 
-* Adobe Commerce lokal 2.2.x, 2.3.x
+* Adobe Commerce On-Premises 2.2.x, 2.3.x
 * Magento Open Source 2.2.x, 2.3.x
 
 
 ## Lösung
 
-Um dieses Problem zu beheben, überprüfen Sie, ob ein &quot;`<magento_root>/update`&quot;-Ordner vorhanden ist, der Dateien und Unterverzeichnisse enthält. Weitere Informationen finden Sie unter [Einrichten des Aktualisierungsdienstes](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) in unserer Entwicklerdokumentation.
+Um dieses Problem zu beheben, überprüfen Sie, ob es ein `<magento_root>/update`-Verzeichnis gibt, das Dateien und Unterverzeichnisse enthält. Andernfalls finden Sie weitere Informationen unter [Einrichten des ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error)) in unserer Entwicklerdokumentation.

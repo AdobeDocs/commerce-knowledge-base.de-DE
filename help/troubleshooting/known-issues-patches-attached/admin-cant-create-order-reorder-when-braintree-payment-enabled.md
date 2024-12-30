@@ -1,6 +1,6 @@
 ---
 title: Der Administrator kann keine Bestellung/Neuanordnung erstellen, wenn die Braintree-Zahlung aktiviert ist
-description: Dieser Artikel enthält einen Patch für die Adobe Commerce-Ausgabe 2.4.5, in der ein Admin-Benutzer keine Bestellungen erstellen und keine Neubestellungen für Kunden erstellen kann, wenn die Braintree-Zahlungsmethode aktiviert ist.
+description: Dieser Artikel enthält einen Patch für das Problem Adobe Commerce 2.4.5, bei dem ein Admin-Benutzer keine Bestellungen erstellen oder für Kunden neu bestellen kann, wenn die Braintree-Zahlungsmethode aktiviert ist.
 exl-id: 8840aecb-21d9-4965-8c09-395e2d263aaa
 feature: Admin Workspace, Native Luma Frontend Development, Orders, Payments
 role: Developer
@@ -13,30 +13,30 @@ ht-degree: 0%
 
 # Der Administrator kann keine Bestellung/Neuanordnung erstellen, wenn die Braintree-Zahlung aktiviert ist
 
-Dieser Artikel enthält einen Patch für die Adobe Commerce-Ausgabe 2.4.5, in der ein Admin-Benutzer keine Bestellungen erstellen und keine Neubestellungen für Kunden erstellen kann, wenn die Braintree-Zahlungsmethode aktiviert ist.
+Dieser Artikel enthält einen Patch für das Problem Adobe Commerce 2.4.5, bei dem ein Admin-Benutzer keine Bestellungen erstellen oder für Kunden neu bestellen kann, wenn die Braintree-Zahlungsmethode aktiviert ist.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in Cloud-Infrastruktur 2.4.5
-* Adobe Commerce vor Ort 2.4.5
+* Adobe Commerce auf Cloud-Infrastruktur 2.4.5
+* Adobe Commerce On-Premises 2.4.5
 * Magento Open Source 2.4.5
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Die Core-Braintree-Integration wird verwendet (**Speicher** > **Konfigurationen** > **Verkauf** > **Zahlungsmethode** > **Braintree**).
-1. Platzieren Sie eine Bestellung über die Storefront von Luma.
-1. Wechseln Sie zu Admin-Benutzeroberfläche > **Vertrieb**.
-1. Versuchen Sie entweder, eine neue Bestellung für einen Kunden zu erstellen, oder gehen Sie zu einer zuvor platzierten Bestellung und klicken Sie auf **Neu anordnen**.
+1. Die Braintree-Kernintegration wird verwendet (**Stores** > **Configurations** > **Sales** > **Payment Method** > **Braintree**).
+1. Geben Sie mit der Luma-Storefront eine Bestellung auf.
+1. Gehen Sie zu Admin UI > **Sales**.
+1. Versuchen Sie entweder, eine neue Bestellung für einen Kunden zu erstellen, oder gehen Sie zu einer zuvor aufgegebenen Bestellung und klicken Sie auf **Neu**.
 
 <u>Erwartetes Ergebnis</u>:
 
-Administratoren können bei Aktivierung der Braintree-Zahlungsmethode erfolgreich Bestellungen und Neubestellungen für Kunden erstellen.
+Admin-Benutzer können erfolgreich Bestellungen und Neubestellungen für Kunden erstellen, wenn die Braintree-Zahlungsmethode aktiviert ist.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Admin-Benutzer können keine Bestellungen oder Neuaufträge für Kunden erstellen, wenn die Braintree-Zahlungsmethode aktiviert ist, und gibt den folgenden Fehler zurück:
+Admin-Benutzer können keine Bestellungen oder Neubestellungen für Kunden erstellen, wenn die Braintree-Zahlungsmethode aktiviert ist, und gibt den folgenden Fehler zurück:
 
 ```bash
 report.CRITICAL: Error: Call to a member function getMethodInstance() on null in /app/vendor/paypal/module-braintree-core/Block/Form.php:174
@@ -48,30 +48,30 @@ Falsche Klassenabhängigkeiten (`vendor/paypal/module-braintree-core/Block/Form.
 
 ## Lösung
 
-Wenden Sie den in diesem Artikel bereitgestellten Patch an.
+Wenden Sie das in diesem Artikel vorgesehene Patch an.
 
-## Patch
+## Fleck
 
-Der Patch ist an diesen Artikel angehängt. Um es herunterzuladen, klicken Sie auf den folgenden Link:
+Der Patch ist diesem Artikel beigefügt. Um ihn herunterzuladen, klicken Sie auf den folgenden Link:
 
 [BUNDLE-3137-composer.patch.zip](assets/BUNDLE-3137-composer.patch.zip)
 
 >[!NOTE]
 >
->Zusätzlich zu Adobe Commerce für Cloud-Infrastruktur-Händler: Adobe hat die Fehlerbehebung in den Cloud-Patches für Commerce-Version 1.0.18 enthalten. Anweisungen zum Anwenden des neuesten Pakets finden Sie in der Entwicklerdokumentation unter [Cloud-Patches für Commerce-Versionshinweise](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) .
+>Zusätzlich für Händler, die mit Adobe Commerce in der Cloud-Infrastruktur arbeiten: Adobe hat die Fehlerbehebung in die Cloud-Patches für Commerce Version 1.0.18 aufgenommen. Siehe [Cloud-Patches für Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) in unserer Entwicklerdokumentation, um Anweisungen zum Anwenden des neuesten Pakets zu erhalten.
 
 ### Kompatible Adobe Commerce-Versionen:
 
-Der Patch wurde für erstellt:
+Der Patch wurde erstellt für:
 
-* Adobe Commerce in Cloud-Infrastruktur 2.4.5
-* Adobe Commerce vor Ort 2.4.5
+* Adobe Commerce auf Cloud-Infrastruktur 2.4.5
+* Adobe Commerce On-Premises 2.4.5
 * Magento Open Source 2.4.5
 
 >[!NOTE]
 >
->Der Patch ist nicht mit anderen Adobe Commerce- und Magento Open Source-Versionen und -Editionen kompatibel.
+>Der Patch ist mit keiner anderen Adobe Commerce- und Magento Open Source-Version kompatibel.
 
-## Anwenden des Pflasters
+## Anbringen des Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) bereitgestellten Composer-Patches in unserer Support-Wissensdatenbank.
+Anleitungen finden [ in unserer Support](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)Wissensdatenbank unter „So wenden Sie einen Composer-Patch an, der von Adobe bereitgestellt wird“.

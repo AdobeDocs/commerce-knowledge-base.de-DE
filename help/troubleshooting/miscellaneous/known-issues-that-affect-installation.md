@@ -1,6 +1,6 @@
 ---
-title: Bekannte Probleme, die sich auf die Installation von xdebug auswirken
-description: Dieser Artikel bietet eine Lösung für Fälle, in denen ein Ausnahmefehler auftritt, wenn Sie die optionale PHP-Erweiterung "xdebug"verwenden.
+title: Bekannte Probleme, die die xdebug-Installation betreffen
+description: Dieser Artikel bietet eine Lösung für den Fall, dass ein Ausnahmefehler auftritt, wenn Sie die optionale PHP-Erweiterung „xdebug“ verwenden.
 exl-id: 5090ea99-e0c3-436a-809b-109701740927
 feature: Install
 role: Developer
@@ -11,12 +11,12 @@ ht-degree: 0%
 
 ---
 
-# Bekannte Probleme, die sich auf die Installation von xdebug auswirken
+# Bekannte Probleme, die die xdebug-Installation betreffen
 
-Dieser Artikel bietet eine Lösung für Fälle, in denen bei Verwendung der optionalen PHP-Erweiterung `xdebug` ein Ausnahmefehler auftritt.
+Dieser Artikel bietet eine Lösung für den Fall, dass ein Ausnahmefehler auftritt, wenn Sie die optionale PHP-`xdebug` verwenden.
 
 * Während der Installation
-* Zugriff auf Commerce Admin oder Storefront nach erfolgreicher Installation
+* Zugriff auf Commerce Admin oder die Storefront nach erfolgreicher Installation
 
 Beispielausnahme:
 
@@ -24,12 +24,12 @@ Beispielausnahme:
 Fatal error: Maximum function nesting level of '100' reached, aborting!
 ```
 
-Um dieses Problem zu beheben, können Sie:
+Um dieses Problem zu beheben, haben Sie folgende Möglichkeiten:
 
-* Deaktivieren Sie die Erweiterung `xdebug` .
-* Setzen Sie den Wert von `xdebug.max_nesting_level` auf einen Wert größer/gleich 200. Weitere Informationen finden Sie in der [xdebug-Dokumentation](http://xdebug.org/docs/basic#max_nesting_level).
+* Deaktivieren Sie die `xdebug`.
+* Legen Sie den Wert von `xdebug.max_nesting_level` auf einen Wert von 200 oder höher fest. Weitere Informationen finden Sie unter [xdebug-Dokumentation](http://xdebug.org/docs/basic#max_nesting_level).
 
-Nachdem Sie die Konfiguration von `xdebug` geändert oder deaktiviert haben, starten Sie Apache neu:
+Nachdem Sie die Konfiguration von geändert oder `xdebug` deaktiviert haben, starten Sie Apache neu:
 
 * CentOS: `sudo service httpd restart`
 * Ubuntu: `sudo service apache2 restart`

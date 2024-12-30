@@ -1,6 +1,6 @@
 ---
-title: 'PWA Studio: Browser zeigt den Fehler "Proxy zu nicht möglich"an'
-description: Dieses Thema behandelt eine Lösung, wenn Ihr Webbrowser ein "*Kann nicht Proxy zu"anzeigt und die Konsole ein
+title: 'PWA Studio: Der Browser zeigt den Fehler „Proxy kann nicht verwendet werden“ an'
+description: In diesem Thema wird eine Lösung erläutert, wenn im Webbrowser "*Kein Proxy für*" angezeigt wird und in der Konsole eine
 exl-id: de689633-34b8-4a25-bbd0-a58742c4d03c
 feature: Console
 role: Developer
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 ---
 
-# PWA Studio: Browser zeigt den Fehler &quot;Proxy zu nicht möglich&quot;an
+# PWA Studio: Der Browser zeigt den Fehler „Proxy kann nicht verwendet werden“ an
 
-Dieses Thema behandelt eine Lösung, wenn Ihr Webbrowser einen &quot;*Kann nicht auf* proxytieren&quot;anzeigt und die Konsole einen
+In diesem Thema wird eine Lösung erläutert, wenn im Webbrowser &quot;*Proxy für nicht möglich“* und in der Konsole eine
 
 ```
 ENOTFOUND
 ```
 
-bei Verwendung von Progressive Web App (PWA) Studio für Adobe Commerce.
+Fehler bei Verwendung von Progressive Web App (PWA) Studio für Adobe Commerce.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,17 +27,17 @@ bei Verwendung von Progressive Web App (PWA) Studio für Adobe Commerce.
 
 ## Problem
 
-<u>Schritt zum Reproduzieren</u>:
+<u>Schritt zur Reproduktion</u>:
 
-* Laden Sie Ihren Adobe Commerce-Store in einen Browser.
+* Laden Sie Ihren Adobe Commerce-Store in einem Browser.
 
 <u>Erwartetes Ergebnis</u>:
 
-* Der Adobe Commerce-Store wird normal in Ihren Browser geladen.
+* Der Adobe Commerce-Store wird normal in Ihrem Browser geladen.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-* Ihr Webbrowser zeigt den Fehler &quot;*Kann nicht auf*&quot;an und die Konsole zeigt einen Fehler wie den folgenden an:
+* Ihr Webbrowser zeigt den Fehler &quot;*kann keinen Proxy für* erstellen“ und die Konsole zeigt einen Fehler wie den folgenden an:
 
 ```
     ENOTFOUND
@@ -50,10 +50,10 @@ NodeJS kann den Hostnamen Ihres Adobe Commerce-Stores nicht auflösen.
 
 ## Lösung
 
-1. Stellen Sie sicher, dass Ihr Adobe Commerce Store in mehr als einem Webbrowser geladen wird.
-1. Wenn Sie einen lokalen DNS-Server oder VPN ausführen, fügen Sie Ihrer Hostdatei (in `/etc/hosts`) einen Eintrag hinzu und ordnen Sie diese Domäne manuell zu ([Allgemeine Anweisungen zur Bearbeitung von Hostdateien](https://linuxize.com/post/how-to-edit-your-hosts-file/)), sodass NodeJS sie auflösen kann.
+1. Stellen Sie sicher, dass Ihr Adobe Commerce-Store in mehr als einem Webbrowser geladen wird.
+1. Wenn Sie einen lokalen DNS-Server oder ein VPN ausführen, fügen Sie der Hostdatei (in `/etc/hosts`) einen Eintrag hinzu und ordnen Sie diese Domain manuell zu ([Allgemeine Anweisungen zur Bearbeitung von Hostdateien](https://linuxize.com/post/how-to-edit-your-hosts-file/)), damit NodeJS sie auflösen kann.
 
 ## Verwandtes Lesen
 
-* [PWA Studio für Adobe Commerce-Dokumentation](https://magento.github.io/pwa-studio/)
+* Dokumentation zu [PWA Studio für Adobe Commerce](https://magento.github.io/pwa-studio/)
 * [Tools und Bibliotheken](https://magento.github.io/pwa-studio/technologies/tools-libraries/)

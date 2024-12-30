@@ -1,6 +1,6 @@
 ---
-title: Fehler "Klasse kann nicht im Codeverzeichnis gespeichert werden"
-description: In diesem Artikel wird beschrieben, wie Sie das Problem beheben, bei dem die Art und Weise, wie Sie Abhängigkeiten angegeben haben, verhindert, dass Klassen dynamisch automatisch generiert werden und Sie die Fehlermeldung *"Klasse kann nicht im generierten/Code-Verzeichnis gespeichert werden"* erhalten.
+title: Fehler „Klasse kann nicht im Codeverzeichnis gespeichert werden“
+description: In diesem Artikel wird beschrieben, wie Sie das Problem beheben können, dass die Art und Weise, wie Sie Abhängigkeiten angegeben haben, verhindert, dass Klassen automatisch im laufenden Betrieb generiert werden, und Sie die Fehlermeldung *„Klasse kann nicht im Verzeichnis "/code“ gespeichert werden.
 exl-id: e2c00d4d-31c3-4446-a317-a8ac92c707d5
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Fehler &quot;Klasse kann nicht im Codeverzeichnis gespeichert werden&quot;
+# Fehler „Klasse kann nicht im Codeverzeichnis gespeichert werden“
 
-In diesem Artikel wird beschrieben, wie Sie das Problem beheben, bei dem die Art und Weise, wie Sie Abhängigkeiten angegeben haben, verhindert, dass Klassen dynamisch automatisch generiert werden und Sie die Fehlermeldung *&quot;Klasse kann nicht im generierten/Codeverzeichnis gespeichert werden&quot;* erhalten.
+In diesem Artikel wird beschrieben, wie Sie das Problem beheben können, dass die Art und Weise, wie Sie Abhängigkeiten angegeben haben, verhindert, dass Klassen automatisch im laufenden Betrieb generiert werden, und Sie die Fehlermeldung *Klasse kann nicht im Verzeichnis &quot;/code“ gespeichert*.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,39 +21,39 @@ In diesem Artikel wird beschrieben, wie Sie das Problem beheben, bei dem die Art
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>
+<u>Schritte zur Reproduktion</u>
 
 1. Schreiben Sie in Ihrer lokalen Umgebung eine benutzerdefinierte Klasse mit einer Abhängigkeit von der automatisch generierten Klasse.
-1. Führen Sie das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird, und überprüfen Sie, ob sie ordnungsgemäß funktioniert.
-1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie in die Integrationsumgebung. Dies würde den Bereitstellungsprozess Trigger. Die Implementierung ist erfolgreich.
-1. Führen Sie in der [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
+1. Führen Sie das Szenario aus, in dem die benutzerdefinierte Klasse ausgelöst wird, und sehen Sie, wie sie ordnungsgemäß funktioniert.
+1. Übergeben Sie Ihre Änderungen und übertragen Sie sie in die Integrationsumgebung. Dadurch würde der Bereitstellungsprozess Trigger. Die Bereitstellung war erfolgreich.
+1. Führen Sie in [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
 
 <u>Erwartetes Ergebnis</u>
 
-Alles funktioniert ordnungsgemäß, genauso wie in Ihrer lokalen Umgebung.
+Alles funktioniert wie in Ihrer lokalen Umgebung.
 
 <u>Tatsächliches Ergebnis</u>
 
-Fehler mit der Fehlermeldung, dass Ihre Klasse nicht im Verzeichnis `generated/code` gespeichert werden kann.
+Fehler mit der Fehlermeldung, dass die Klasse nicht im `generated/code` gespeichert werden kann.
 
 ## Ursache
 
-Die Ursache des Problems ist, dass die Klasse, von der Sie abhängig sind, während der Bereitstellung nicht generiert wird und später nicht sofort generiert werden kann, wenn die Klasse ausgelöst wird, da das Verzeichnis `generated/code` nach Abschluss der Bereitstellung nicht zum Schreiben verfügbar ist.
+Die Ursache des Problems besteht darin, dass die Klasse, von der Sie abhängig sind, während der Bereitstellung nicht generiert wird und beim Auslösen der Klasse nicht später spontan generiert werden kann, da das `generated/code` nach Abschluss der Bereitstellung nicht zum Schreiben verfügbar ist.
 
-Es gibt zwei Hauptgründe dafür:
+Dafür gibt es zwei Hauptgründe:
 
-* Fall 1: Die Klasse mit Abhängigkeiten von automatisch generierten Klassen befindet sich im Einstiegspunkt (wie `index.php` ), der während der Bereitstellung nicht auf Abhängigkeiten überprüft wird.
-* Fall 2: Die Abhängigkeit zur automatisch generierten Klasse wird direkt angegeben (im Vergleich zur empfohlenen Verwendung des Konstruktors zum Deklarieren der Abhängigkeit).
+* 1. Fall: Die Klasse mit Abhängigkeiten von automatisch generierten Klassen befindet sich im Einstiegspunkt (z. B. `index.php` ), der während der Bereitstellung nicht auf Abhängigkeiten überprüft wird.
+* 2. Fall: Die Abhängigkeit von der automatisch generierten Klasse wird direkt angegeben (im Vergleich zur empfohlenen Verwendung des -Konstruktors zum Deklarieren der Abhängigkeit).
 
 ## Lösung
 
-Eine gängige Lösung für beide Fälle wäre die Schaffung einer echten Fabrik anstelle der automatisch generierten Klasse.
+Eine gemeinsame Lösung für beide Fälle wäre die Erstellung einer echten Factory anstelle der automatisch generierten Klasse.
 
 Oder es gibt für jeden Fall eine bestimmte Lösung.
 
-### Fall-1-spezifische Lösung
+### Fallspezifische Lösung 1
 
-Verschieben Sie Ihren Klassencode vom Einstiegspunkt in ein separates Modul und verwenden Sie ihn dann im Einstiegspunkt.
+Verschieben Sie den Klassencode vom Einstiegspunkt in ein separates Modul und verwenden Sie ihn dann im Einstiegspunkt.
 
 <u>Beispiel</u>
 
@@ -83,9 +83,9 @@ $someObject = $bootstrap->getObjectManager()->create(SomeClass::class);
 // There is some code that uses $someObject
 ```
 
-Führen Sie die folgenden Schritte aus:
+Sie müssen die folgenden Schritte ausführen:
 
-1. Verschieben Sie die Klassendefinition auf `app/code/YourVendor/YourModule`:
+1. Klassendefinition nach `app/code/YourVendor/YourModule` verschieben:
 
    ```php
       <?php
@@ -114,9 +114,9 @@ Führen Sie die folgenden Schritte aus:
      // Some code using $someObject
    ```
 
-### Fall 2 - spezifische Lösung
+### Case 2-spezifische Lösung
 
-Verschieben Sie die Abhängigkeitsdeklaration in den Konstruktor.
+Verschiebt die Abhängigkeitsdeklaration in den Konstruktor.
 
 <u>Beispiel</u>
 
@@ -170,4 +170,4 @@ class YourClass
 
 ## Verwandtes Lesen
 
-* [Codegenerierung](https://developer.adobe.com/commerce/php/development/components/code-generation/) in unserer Entwicklerdokumentation.
+* [Code-Generierung](https://developer.adobe.com/commerce/php/development/components/code-generation/) in unserer Entwicklerdokumentation.

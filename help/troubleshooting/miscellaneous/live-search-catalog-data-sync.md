@@ -1,6 +1,6 @@
 ---
-title: Live-Suchkatalog nicht synchronisiert
-description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Katalogdaten bei Verwendung der Live Search-Erweiterung nicht richtig synchronisiert werden.
+title: Live Search-Katalog nicht synchronisiert
+description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Katalogdaten bei Verwendung der Live Search-Erweiterung nicht korrekt synchronisiert werden.
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Live-Suchkatalog nicht synchronisiert
+# Live Search-Katalog nicht synchronisiert
 
-Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Katalogdaten bei Verwendung der Live Search-Erweiterung nicht richtig synchronisiert werden.
+Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Katalogdaten bei Verwendung der Live Search-Erweiterung nicht korrekt synchronisiert werden.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,114 +21,114 @@ Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Ka
 
 ## Problem
 
-Ihre Katalogdaten werden nicht richtig synchronisiert oder ein neues Produkt wurde hinzugefügt, erscheint jedoch nicht in den Suchergebnissen.
+Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Produkt hinzugefügt, es wird jedoch nicht in den Suchergebnissen angezeigt.
 
 >[!NOTE]
 >
->Die Tabellennamen `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes` werden jetzt als `cde_products_feed` und `cde_product_attributes_feed` ab [!DNL Live Search] Version 4.2.1 bezeichnet. Bei Händlern für Versionen vor 4.2.1 suchen Sie nach den Daten in den alten Tabellennamen, `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes`.
+>Die Tabellennamen `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes` werden ab [!DNL Live Search] Version 4.2.1 nun `cde_products_feed` und `cde_product_attributes_feed` genannt. Händler, die mit Versionen vor 4.2.1 arbeiten, suchen nach den Daten in den alten Tabellennamen, `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes`.
 
-<u>Zu reproduzierende Schritte</u>
+<u>Schritte zur Reproduktion</u>
 
-1. Konfigurieren und verbinden Sie die Live-Suche für Ihre Adobe Commerce-Instanz, wie in der Benutzerdokumentation unter [Live-Suche installieren > API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) beschrieben.
-1. Überprüfen Sie nach 30 Minuten die exportierten Katalogdaten, wie in unserer Benutzerdokumentation unter [Live-Suche installieren > Export überprüfen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) beschrieben.
-1. Testen Sie die Verbindung nach 30 Minuten wie unter [Live-Suche installieren > Verbindung testen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) in unserer Benutzerdokumentation beschrieben.
+1. Konfigurieren und verbinden Sie die Live Search für Ihre Adobe Commerce-Instanz, wie in [Live Search installieren > API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) in unserer Benutzerdokumentation beschrieben.
+1. Überprüfen Sie nach 30 Minuten die exportierten Katalogdaten, wie unter [Live-Suche installieren > Export überprüfen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) in unserer Benutzerdokumentation beschrieben.
+1. Testen Sie nach 30 Minuten die Verbindung, wie unter [Live Search installieren > Verbindung testen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) in unserer Benutzerdokumentation beschrieben.
 
-Oder
+oder
 
-1. Fügen Sie dem Katalog ein neues Produkt hinzu.
-1. Versuchen Sie, eine Suchabfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen nach 15-20 Minuten nach der Ausführung von Magento-Indexer + Cron auszuführen, um Daten mit dem Backend-Service zu synchronisieren.
+1. Fügen Sie ein neues Produkt zum Katalog hinzu.
+1. Versuchen Sie, eine Suchanfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen auszuführen, nachdem 15-20 Minuten nach dem Zeitpunkt, zu dem Magento-Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren, vergangen sind.
 
 <u>Erwartetes Ergebnis</u>
 
 * Exportierte Katalogdaten können überprüft werden
-* Verbindung erfolgreich hergestellt
-* In den Suchergebnissen wird ein neues Produkt angezeigt.
+* Verbindung erfolgreich
+* Neues Produkt wird in den Suchergebnissen angezeigt.
 
 <u>Tatsächliches Ergebnis</u>
 
-Der exportierte Katalog kann nicht überprüft werden und/oder die Verbindung wird nicht hergestellt, da sich der API-Schlüssel geändert hat.
+Exportierte Kataloge können nicht verifiziert werden und/oder die Verbindung wurde nicht hergestellt, da sich der API-Schlüssel geändert hat.
 
 ## Lösung
 
-Es gibt verschiedene Möglichkeiten, die Probleme bei der Katalogsynchronisierung zu beheben.
+Es gibt mehrere Möglichkeiten, die Katalogsynchronisierungsprobleme zu beheben.
 
-### Warten Sie, bis die Änderungen übernommen wurden
+### Auf die Anwendung von Änderungen warten
 
-Nach der Konfiguration und Verbindung kann es über 30 Minuten dauern, bis der Index in ES (Elasticsearch) erstellt und Suchergebnisse zurückgegeben werden. Nachfolgende einmalige Produktaktualisierungen werden voraussichtlich innerhalb weniger Minuten indiziert.
+Nachdem Sie konfiguriert und eine Verbindung hergestellt haben, kann es über 30 Minuten dauern, bis der Index in ES (Elasticsearch) erstellt und Suchergebnisse zurückgegeben werden. Nachfolgende einmalige Produktaktualisierungen werden voraussichtlich innerhalb weniger Minuten indiziert.
 
-### Produktdaten für eine bestimmte SKU synchronisieren
+### Synchronisieren von Produktdaten für eine bestimmte SKU
 
-Wenn Ihre Produktdaten für eine bestimmte SKU nicht richtig synchronisiert werden, gehen Sie wie folgt vor:
+Wenn Ihre Produktdaten für eine bestimmte SKU nicht korrekt synchronisiert werden, gehen Sie wie folgt vor:
 
-1. Verwenden Sie die folgende [!DNL SQL] -Abfrage und stellen Sie sicher, dass Sie über die in der Spalte `feed_data` erwarteten Daten verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
+1. Verwenden Sie die folgende [!DNL SQL]-Abfrage und stellen Sie sicher, dass die erwarteten Daten in der Spalte `feed_data` vorhanden sind. Notieren Sie sich auch den `modified_at` Zeitstempel.
 
    ```sql
    select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Wenn die korrekten Daten nicht angezeigt werden, versuchen Sie, die Neuindizierung mithilfe des folgenden Befehls durchzuführen und die [!DNL SQL] -Abfrage in Schritt 1 erneut auszuführen, um die Daten zu überprüfen:
+1. Wenn nicht die richtigen Daten angezeigt werden, versuchen Sie, die Neuindizierung mit dem folgenden Befehl durchzuführen und führen Sie die [!DNL SQL] Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen:
 
    ```bash
    bin/magento indexer:reindex cde_products_feed
    ```
 
-1. Wenn immer noch nicht die korrekten Daten angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
+1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Zeitstempel des letzten Produktexports überprüfen
 
-1. Wenn die korrekten Daten in `cde_products_feed` angezeigt werden, verwenden Sie die folgende [!DNL SQL]-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen:
+1. Wenn in `cde_products_feed` die richtigen Daten angezeigt werden, verwenden Sie die folgende [!DNL SQL]-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Er sollte nach dem `modified_at` Zeitstempel liegen:
 
    ```sql
    select * from scopes_website_data_exporter;
    ```
 
-1. Wenn der Zeitstempel älter ist, können Sie mit dem folgenden Befehl entweder auf den nächsten Cron-Lauf warten oder ihn selbst Trigger haben:
+1. Wenn der Zeitstempel älter ist, können Sie entweder auf die nächste Cron-Ausführung warten oder ihn mithilfe des folgenden Befehls selbst Trigger machen:
 
    ```bash
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Warten Sie auf `<>` Zeit (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten immer noch nicht angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
+1. Warten Sie `<>` (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
-### Synchronisieren spezifischer Attributcode
+### Spezifischen Attributcode synchronisieren
 
-Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht richtig synchronisiert werden, gehen Sie wie folgt vor:
+Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht korrekt synchronisiert sind, gehen Sie wie folgt vor:
 
-1. Verwenden Sie die folgende [!DNL SQL] -Abfrage und stellen Sie sicher, dass Sie über die in der Spalte `feed_data` erwarteten Daten verfügen. Notieren Sie sich auch den Zeitstempel `modified_at` .
+1. Verwenden Sie die folgende [!DNL SQL]-Abfrage und stellen Sie sicher, dass die erwarteten Daten in der Spalte `feed_data` vorhanden sind. Notieren Sie sich auch den `modified_at` Zeitstempel.
 
    ```sql
    select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
-1. Wenn die korrekten Daten nicht angezeigt werden, verwenden Sie den folgenden Befehl, um die Neuindizierung vorzunehmen, und führen Sie dann die [!DNL SQL]-Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen.
+1. Wenn nicht die richtigen Daten angezeigt werden, verwenden Sie den folgenden Befehl, um die Daten neu zu indizieren, und führen Sie dann die [!DNL SQL] Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen.
 
    ```bash
    bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
-1. Wenn immer noch nicht die korrekten Daten angezeigt werden, erstellen Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).[
+1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
-### Zeitstempel des letzten Produktattributexports überprüfen
+### Zeitstempel des letzten Produktattribut-Exports überprüfen
 
-Wenn die korrekten Daten in `cde_product_attributes_feed` angezeigt werden:
+Wenn die richtigen Daten in `cde_product_attributes_feed` angezeigt werden:
 
-1. Verwenden Sie die folgende [!DNL SQL] -Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Sie sollte nach dem Zeitstempel `modified_at` liegen.
+1. Verwenden Sie die folgende [!DNL SQL]-Abfrage, um den Zeitstempel des letzten Exports zu überprüfen. Er sollte nach dem `modified_at` Zeitstempel liegen.
 
    ```sql
    select * from scopes_website_data_exporter;
    ```
 
-1. Wenn der Zeitstempel älter ist, können Sie mit dem folgenden Befehl entweder auf den nächsten Cron-Lauf warten oder ihn selbst Trigger haben:
+1. Wenn der Zeitstempel älter ist, können Sie entweder auf die nächste Cron-Ausführung warten oder ihn mithilfe des folgenden Befehls selbst Trigger machen:
 
    ```bash
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Warten Sie 15-20 Minuten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten immer noch nicht angezeigt werden, erstellen Sie bitte [ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. 15-20 Minuten warten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
-### Synchronisieren nach Änderung der API-Konfiguration
+### Nach API-Konfigurationsänderung synchronisieren
 
-(Bekanntes Problem) Wenn Sie Ihre API-Konfiguration geändert haben, was zu einer Änderung Ihrer Data Space ID führt und feststellen kann, dass Ihre Katalogänderungen nicht mehr synchronisiert werden, führen Sie die folgenden Befehle aus:
+(Bekanntes Problem) Wenn Sie Ihre API-Konfiguration geändert haben, was zu einer Änderung Ihrer Datenraum-ID führt, und feststellen, dass Ihre Katalogänderungen nicht mehr synchronisiert werden, führen Sie die folgenden Befehle aus:
 
 ```bash
 bin/magento saas:resync --feed products
@@ -137,6 +137,6 @@ bin/magento saas:resync --feed productattributes
 
 ## Verwandtes Lesen
 
-* [Onboard Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) in unserer Benutzerdokumentation
-* [Überprüfen Sie die Protokolle und führen Sie eine Fehlerbehebung für den Datenexport und die Synchronisierung von Adobe Commerce SaaS durch](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) im Adobe Commerce SaaS-Datenexport-Handbuch.
-* [Best Practices für die Änderung von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Playbook für die Commerce-Implementierung
+* [Onboarding Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) in unserer Benutzerdokumentation
+* [Überprüfen Sie Protokolle und Fehlerbehebung bei Adobe Commerce SaaS-Datenexporten und -](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) im Adobe Commerce SaaS-Datenexporthandbuch
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

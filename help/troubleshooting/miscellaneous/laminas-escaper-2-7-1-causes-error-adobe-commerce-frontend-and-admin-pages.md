@@ -1,6 +1,6 @@
 ---
-title: laminas/laminas-escaper 2.7.1 verursacht Fehler beim Adobe Commerce Frontend und Admin-Seiten
-description: Dieser Artikel bietet eine Lösung für das Problem, dass die Veröffentlichung von Laminas/Laminas-Escaper:2.7.1 die Funktionalität von Adobe Commerce in Produktmanagement, Kategorien und Produktseiten beeinträchtigt. Dieses Problem wird in Adobe Commerce 2.4.3 behoben.
+title: laminas/laminas-escaper 2.7.1 verursacht Fehler auf Adobe Commerce Frontend- und Admin-Seiten
+description: Dieser Artikel bietet eine Lösung für das Problem, dass die Veröffentlichung von laminas/laminas-escaper:2.7.1 die Funktionalität von Adobe Commerce in der Produktverwaltung, in Kategorien und auf Produktseiten beeinträchtigt. Dieses Problem wird in Adobe Commerce 2.4.3 behoben.
 exl-id: 89de6827-7b90-4f08-92fb-56ed31ae2672
 feature: Admin Workspace, Categories
 role: Developer
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# laminas/laminas-escaper 2.7.1 verursacht Fehler beim Adobe Commerce Frontend und Admin-Seiten
+# laminas/laminas-escaper 2.7.1 verursacht Fehler auf Adobe Commerce Frontend- und Admin-Seiten
 
 
 ## Betroffene Produkte und Versionen
@@ -23,22 +23,22 @@ ht-degree: 0%
 
 Nach der Aktualisierung auf laminas/laminas-escaper:2.7.1 wird eine Fehlermeldung auf der Seite angezeigt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Laminas/Laminas-Escaper auf 2.7.1 aktualisieren.
+Aktualisieren Sie laminas/laminas-escaper auf 2.7.1.
 
 <u>Erwartetes Ergebnis</u>:
 
 Kein Fehler.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Nach der Aktualisierung auf laminas/laminas-escaper:2.7.1 wird auf einer Seite zur Produktbearbeitung (oder Produktverwaltung) eine Fehlermeldung angezeigt: *TypeError: rawurlencode() erwartet, dass Parameter 1 eine Zeichenfolge ist, int angegeben in /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
-Dieser Fehler tritt auf den Frontend- und Admin-Seiten auf, wodurch der Seiteninhalt verzerrt wird.
+Nach der Aktualisierung auf laminas/laminas-escaper:2.7.1 wird eine Fehlermeldung auf einer Seite zur Produktbearbeitung (oder Produktverwaltung) angezeigt: *TypeError: rawurlencode() erwartet, dass Parameter 1 eine Zeichenfolge ist, int angegeben in /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
+Dieser Fehler tritt auf den Frontend- und Admin-Seiten auf, wodurch der Inhalt der Seite verzerrt wird.
 
 ## Ursache
 
-Laminas/Laminas-Escaper 2.7.1 begann mit der strengen Typvalidierung für die Escaper-Klasse.
+laminas/laminas-escaper 2.7.1 begann mit der strikten Typvalidierung für die Escaper-Klasse.
 
 ## Lösung
 
@@ -46,4 +46,4 @@ Führen Sie `composer require laminas/laminas-escaper:2.7.0` im Stammverzeichnis
 
 ## Verwandtes Lesen
 
-Laminas-Dokumentation: [laminas-escaper](https://docs.laminas.dev/laminas-escaper/)
+Laminas Dokumentation: [laminas-escaper](https://docs.laminas.dev/laminas-escaper/)

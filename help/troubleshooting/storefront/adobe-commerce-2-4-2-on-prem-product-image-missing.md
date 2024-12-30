@@ -1,6 +1,6 @@
 ---
-title: 'Adobe Commerce vor Ort 2.4.2: Produktbild fehlt'
-description: In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce On-Premise 2.4.2 beschrieben, bei dem das Produktbild nicht auf die Produktseite hochgeladen wird. Dieses Problem soll in einer zukünftigen Version nach Version 2.4.3 behoben werden. Derzeit ist keine Lösung verfügbar, aber als Problemumgehung können Sie Nginx deaktivieren, um die Bildgröße zu ändern.
+title: 'Adobe Commerce On-Premises 2.4.2: Produktimage fehlt'
+description: In diesem Artikel wird ein bekanntes Adobe Commerce On-Premises 2.4.2-Problem beschrieben, bei dem das Produktbild nicht auf die Produktseite hochgeladen wird. Dieses Problem soll in einer zukünftigen Version nach Version 2.4.3 behoben werden. Derzeit ist keine Lösung verfügbar, aber Sie können Nginx deaktivieren, um die Größe von Bildern zu ändern.
 exl-id: c4d9240e-5df5-4eab-bb4e-1f06f9bd3a1e
 feature: Iaas, Products, Storefront
 role: Admin
@@ -11,31 +11,31 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce vor Ort 2.4.2: Produktbild fehlt
+# Adobe Commerce On-Premises 2.4.2: Produktimage fehlt
 
-In diesem Artikel wird ein bekanntes Problem mit Adobe Commerce On-Premise 2.4.2 beschrieben, bei dem das Produktbild nicht auf die Produktseite hochgeladen wird. Dieses Problem soll in einer zukünftigen Version nach Version 2.4.3 behoben werden. Derzeit ist keine Lösung verfügbar, aber als Problemumgehung können Sie Nginx deaktivieren, um die Bildgröße zu ändern.
+In diesem Artikel wird ein bekanntes Adobe Commerce On-Premises 2.4.2-Problem beschrieben, bei dem das Produktbild nicht auf die Produktseite hochgeladen wird. Dieses Problem soll in einer zukünftigen Version nach Version 2.4.3 behoben werden. Derzeit ist keine Lösung verfügbar, aber Sie können Nginx deaktivieren, um die Größe von Bildern zu ändern.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce vor Ort 2.4.2
+* Adobe Commerce On-Premises 2.4.2
 
 ## Problem
 
-Das Produktbild wird im Bucket `s3` gespeichert, aber nicht wieder mit dem Verzeichnis `pub/media` synchronisiert. Dieses Problem tritt nur bei Verwendung von beidem auf:
+Das Produktbild wird im `s3`-Bucket gespeichert, es wird jedoch nicht mit dem `pub/media` synchronisiert. Dieses Problem tritt nur auf, wenn beide verwendet werden:
 
-* Site-aktivierter Nginx zur Größenanpassung von Bildern
+* Site-aktiviertes Nginx zum Ändern der Bildgröße
 * AWS `s3` als Medienspeicher
 
 <u>Voraussetzungen</u>:
 
-Adobe Commerce wird mit Nginx installiert.
+Adobe Commerce mit Nginx installiert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Konfigurieren Sie Adobe Commerce für die Verwendung von AWS `s3` als Medienspeicher.
-1. Konfigurieren Sie Nginx mithilfe der Konfigurationsdatei &quot;`nginx.conf.sample`&quot;, die im Adobe Commerce-Installationsverzeichnis bereitgestellt wird, und eines virtuellen Nginx-Hosts. Siehe [Konfigurieren von Nginx](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) in unserer Entwicklerdokumentation.
+1. Konfigurieren Sie Nginx mithilfe der `nginx.conf.sample` Konfigurationsdatei im Adobe Commerce-Installationsverzeichnis und einem virtuellen Nginx-Host. Siehe [Konfigurieren von ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx)&quot; in unserer Entwicklerdokumentation.
 1. Erstellen Sie ein einfaches Produkt mit einem Produktbild.
-1. Nginx verfügt über eine nicht kommentierte Konfiguration für die Bildgröße in `nginx.conf.sample`, die der folgenden ähnelt:
+1. Nginx hat eine unkommentierte Konfiguration für die Größenänderung von Bildern in `nginx.conf.sample`, die etwa wie folgt aussieht:
 
 ```conf
 load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
@@ -62,6 +62,6 @@ Das Produktbild wird auf die Produktseite hochgeladen.
 
 Das Produktbild wird nicht auf die Produktseite hochgeladen.
 
-## Workaround
+## Abhilfe
 
 Deaktivieren Sie Nginx, um die Bildgröße zu ändern.

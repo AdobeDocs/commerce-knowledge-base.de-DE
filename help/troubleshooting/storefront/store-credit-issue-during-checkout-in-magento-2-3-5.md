@@ -1,6 +1,6 @@
 ---
-title: Kreditausfall beim Checkout in Adobe Commerce 2.3.5
-description: Dieser Artikel bietet eine Problemumgehung für das bekannte Problem, das beim Checkout in Adobe Commerce 2.3.5 mit Store-Gutschriften in Zusammenhang steht und bei dem Käufer beim Checkout nach Auswahl und späterer Entfernung der Nutzung von Store-Gutschriften Fehler erhalten. In Adobe Commerce 2.3.6 wird eine permanente Korrektur verfügbar sein.
+title: Speicherkreditproblem beim Checkout in Adobe Commerce 2.3.5
+description: Dieser Artikel bietet eine Problemumgehung für das bekannte Problem mit dem Store-Guthaben beim Checkout in Adobe Commerce 2.3.5, bei dem Käufer beim Checkout Fehler erhalten, nachdem sie die Verwendung des Store-Guthabens ausgewählt und später entfernt haben. In Adobe Commerce 2.3.6 ist eine dauerhafte Fehlerbehebung verfügbar.
 exl-id: a0cca226-4d95-40b3-bd37-f13d28591366
 feature: Checkout, Orders, Storefront
 role: Admin
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# Kreditausfall beim Checkout in Adobe Commerce 2.3.5
+# Speicherkreditproblem beim Checkout in Adobe Commerce 2.3.5
 
-Dieser Artikel bietet eine Problemumgehung für das bekannte Problem, das beim Checkout in Adobe Commerce 2.3.5 mit Store-Gutschriften in Zusammenhang steht und bei dem Käufer beim Checkout nach Auswahl und späterer Entfernung der Nutzung von Store-Gutschriften Fehler erhalten. In Adobe Commerce 2.3.6 wird eine permanente Korrektur verfügbar sein.
+Dieser Artikel bietet eine Problemumgehung für das bekannte Problem mit dem Store-Guthaben beim Checkout in Adobe Commerce 2.3.5, bei dem Käufer beim Checkout Fehler erhalten, nachdem sie die Verwendung des Store-Guthabens ausgewählt und später entfernt haben. In Adobe Commerce 2.3.6 ist eine dauerhafte Fehlerbehebung verfügbar.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce vor Ort 2.3.5
-* Adobe Commerce in Cloud-Infrastruktur 2.3.5
+* Adobe Commerce On-Premises 2.3.5
+* Adobe Commerce auf Cloud-Infrastruktur 2.3.5
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Der Kunde fügt Produkte zum Warenkorb hinzu und fährt mit dem Checkout fort.
-1. Der Kunde gibt die Store-Gutschrift als Zahlungsmethode an.
-1. Der Kunde entfernt die Gutschrift für den Store und ändert die Zahlungsmethode.
-1. Der Kunde fährt mit dem Checkout fort.
+1. Der Kunde fügt Produkte zum Warenkorb hinzu und geht zur Kasse.
+1. Kunde gibt „Gutschrift speichern“ als Zahlungsmethode an.
+1. Der Kunde entfernt das Speicherguthaben und ändert die Zahlungsmethode.
+1. Der Kunde geht durch den Checkout vor.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -35,23 +35,23 @@ Alle Bestellinformationen werden korrekt angezeigt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Adobe Commerce gibt im Abschnitt &quot;Bestellübersicht&quot;der Bestellseite einen Fehler aus.
+Adobe Commerce gibt auf der Bestellseite im Abschnitt „Bestellzusammenfassung“ einen Fehler aus.
 
 ## Lösung
 
-Kunden können die Bestellseite aktualisieren. Die Informationen in der Bestellübersicht werden korrekt geladen. In Adobe Commerce 2.3.6, das ab 4. Quartal 2020 veröffentlicht werden soll, ist eine Korrektur verfügbar.
+Kunden können die Seite „Bestellung“ aktualisieren, und die Informationen in der Bestellübersicht werden korrekt geladen. Eine Fehlerbehebung wird in Adobe Commerce 2.3.6 verfügbar sein, die im 4. Quartal 2020 veröffentlicht werden soll.
 
 ## Verwandtes Lesen
 
-Artikel zu bekannten Problemen mit Adobe Commerce 2.3.5 in unserer Support-Wissensdatenbank:
+Artikel zu Adobe Commerce 2.3.5 Bekannte Probleme in unserer Support-Wissensdatenbank:
 
-* [Multi-Versandaufträge mit einem virtuellen Produkt werden in Adobe Commerce 2.3.5 nicht korrekt verarbeitet](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
+* [Mehrfach versendete Bestellungen mit einem virtuellen Produkt werden in Adobe Commerce 2.3.5 nicht korrekt verarbeitet](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
 
-* [Bekanntes Problem bei der Produktanzahl für Massenaktionen in Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
+* [Bekanntes Problem mit der Produktzahl für Massenaktionen in Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 
-* [Patch für Amazon Pay-out-Problem in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
+* [Patch für das Problem mit der gebührenpflichtigen Kasse von Amazon in Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
 
-* [Produktvergleichsfehler in Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
+* [Problem mit dem Produktvergleich in Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
 
 In unserer Entwicklerdokumentation:
 

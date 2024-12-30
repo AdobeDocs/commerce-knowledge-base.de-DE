@@ -5,54 +5,54 @@ source-wordcount: '476'
 ht-degree: 0%
 
 ---
-# Anleitung für KB-Beschriftungen
+# Handbuch zu KB-Kennzeichnungen
 
-Dieses Dokument enthält Richtlinien zum Hinzufügen von Bezeichnungen zu Artikeln in der Knowledge Base des Adobe Commerce-Supports.
-Beschriftungen (auch als Tags bezeichnet) verbessern das Sucherlebnis in der [Wissensdatenbank der Adobe Commerce-Unterstützung](https://support.magento.com/hc/en-us).
-Beschriftungen werden im Feld &quot;Beschriftungen&quot;im Metadatenabschnitt einer Artikeldatei hinzugefügt, durch Kommas getrennt, kein Leerzeichen zwischen einem Komma und der nächsten Beschriftung.
-Weitere Informationen finden Sie unter [../../.github/CONTRIBUTING.md#metadata] .
+Dieses Dokument enthält Richtlinien zum Hinzufügen von Beschriftungen zu Artikeln in der Adobe Commerce-Support-Wissensdatenbank.
+Beschriftungen (auch als Tags bezeichnet) verbessern das Sucherlebnis in der Wissensdatenbank zum [Adobe Commerce-Support](https://support.magento.com/hc/en-us).
+Kennzeichnungen werden im Feld „Kennzeichnungen“ im Metadatenabschnitt einer Artikeldatei hinzugefügt, durch Kommas getrennt, kein Leerzeichen zwischen einem Komma und der nächsten Kennzeichnung.
+github/CONTRIBUTING.md Weitere Informationen finden Sie unter [../../.#metadata].
 
 ## Allgemeine Bestimmungen
 
-Fügen Sie für jeden Artikel die folgenden Beschriftungstypen hinzu:
+Fügen Sie für jeden Artikel die folgenden Titeltypen hinzu:
 
-* Beschriftung(n) für das/die Produkt(e). (erforderlich)
-* Beschriftungen für betroffene Versionen. (erforderlich, mit Ausnahme von Artikeln, die sich auf allgemeine Unterstützung beziehen)
-* Beschriftung für den Inhaltstyp. (erforderlich)
+* Etikett(e) für Produkt(e). (erforderlich)
+* Titel der betroffenen Versionen. (Erforderlich, mit Ausnahme von Artikeln, die sich auf den allgemeinen Support beziehen)
+* Titel für Inhaltstyp. (erforderlich)
 * Beschriftungen für wichtige technische Komponenten.(falls zutreffend)
-* Beschriftungen für Prozesse/Funktionen, bei denen eine Fehlerbehebung durchgeführt/beschrieben wird. (falls zutreffend)
-* Beschriftungen für das Problem, das behoben/beschrieben wird. (falls zutreffend)
+* Kennzeichnungen für Prozesse/Funktionen, bei denen eine Fehlerbehebung durchgeführt/beschrieben wird. (falls zutreffend)
+* Kennzeichnungen für das zu behebende/beschriebene Problem. (falls zutreffend)
 
-In den folgenden Abschnitten finden Sie ausführliche Empfehlungen zum Definieren von Bezeichnungen für die einzelnen Bezeichnungstypen.
+In den folgenden Abschnitten finden Sie detaillierte Empfehlungen zum Definieren von Kennzeichnungen für jeden dieser Kennzeichnungstypen.
 
-## Beschriftungen für Produkte
+## Kennzeichnungen für Produkte
 
 <table>
 <tbody>
   <tr>
     <th>Produktname</th>
-    <th>Titel</th>
+    <th>Bezeichnung</th>
   </tr>
   <tr>
     <td>Adobe Commerce (alle Bereitstellungsmethoden) </td>
     <td>
-    "Adobe Commerce,Cloud-Infrastruktur,On-Premise"
+    "Adobe Commerce,Cloud-Infrastruktur,On-Premise“
     </td>
   </tr>
   <tr>
     <td>Adobe Commerce auf Cloud-Infrastruktur</td>
     <td>
-      "Adobe Commerce,Cloud-Infrastruktur"
+      "Adobe Commerce, Cloud-Infrastruktur“
     </td>
   </tr>
   <tr>
-    <td>Adobe Commerce vor Ort</td>
-    <td>"Adobe Commerce, vor Ort"</td>
+    <td>Adobe Commerce On-Premises</td>
+    <td>"Adobe Commerce, On-Premises“</td>
   </tr>
   <tr>
     <td>Magento Business Intelligence (MBI)</td>
     <td>
-        "Magento Business Intelligence,MBI"
+        "Magento Business Intelligence,MBI“
     </td>
   </tr>
    <tr>
@@ -63,7 +63,7 @@ In den folgenden Abschnitten finden Sie ausführliche Empfehlungen zum Definiere
   </tr>
   <tr>
     <td>B2B für Adobe Commerce</td>
-    <td>"B2B"</td>
+    <td>„B2B“</td>
   </tr>
   <tr>
     <td>PWA für Adobe Commerce</td>
@@ -71,89 +71,89 @@ In den folgenden Abschnitten finden Sie ausführliche Empfehlungen zum Definiere
   </tr>
   <tr>
     <td>Venia-Storefront-Projekt</td>
-    <td>"Venia"</td>
+    <td>Venia</td>
   </tr>
   <tr>
     <td>Quality Patches Tool, QPT</td>
-    <td>"Quality Patches Tool,QPT Patches"</td>
+    <td>„Quality Patches Tool, QPT Patches“</td>
   </tr>
   </tbody>
 </table>
 
 ## Beschriftungen für Produktversionen
 
-* Fügen Sie für jede Version von Adobe Commerce eine separate Bezeichnung hinzu. Beispiel: &quot;2.3.7&quot;
-* Fügen Sie keine Bezeichnungen für Intervalle hinzu.
-Das heißt, wenn 2.3.0-2.3.5 betroffen ist, wird Folgendes hinzugefügt: &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot;
-NICHT &quot;2.3.0-2.3.5&quot;
-* Fügen Sie keine Bezeichnungen mit .x hinzu. Beispiel: &quot;2.3.x&quot;
+* Fügen Sie für jede Version von Adobe Commerce einen separaten Titel hinzu. Beispiel: „2.3.7“
+* Keine Beschriftungen für Intervalle hinzufügen.
+Wenn 2.3.0-2.3.5 betroffen sind, fügen Sie hinzu: „2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2“
+NICHT 2.3.0-2.3.5
+* Keine Bezeichnungen mit .x hinzufügen. Beispiel: „2.3.x“
 
-## Beschriftungen für den Inhaltstyp (basierend auf der Kategorie)
+## Kennzeichnungen für den Inhaltstyp (basierend auf der Kategorie)
 
 <table>
   <tbody>
     <tr>
       <th>Kategorie</th>
-      <th>Titel</th>
+      <th>Bezeichnung</th>
     </tr>
     <tr>
       <td>Best Practices</td>
-      <td>"Best Practices"(nicht "Best Practice"oder "Best Practice")</td>
+      <td>„Best Practices“ (nicht „Best Practices“ oder „Best Practices„)</td>
     </tr>
     <tr>
       <td>
         Fehlerbehebung
       </td>
       <td>
-      "Fehlerbehebung"
+      „Fehlerbehebung“
       </td>
     </tr>
     <tr>
       <td>Anleitung</td>
-      <td>"How to"</td>
+      <td>„Anleitung“</td>
     </tr>
     <tr>
       <td>FAQs</td>
-      <td >"FAQs"</td>
+      <td >„FAQs“</td>
     </tr>
   </tbody>
 </table>
 
 ## Beschriftungen für wichtige technische Komponenten
 
-* Verwenden Sie die Groß-/Kleinschreibung gemäß der offiziellen Komponentenbenennung.
-* Verwenden Sie keine Synonyme, eine Bezeichnung für eine Komponente.
-* Eine Wortbeschriftung ist vorzuziehen. Wenn der Komponentenname jedoch mehrere Wörter enthält, verwenden Sie mehrere Wörter. Fügen Sie keine Problembeschreibungen hinzu. Das heißt, setzen Sie &quot;Elasticsearch&quot;anstelle von &quot;Elasticsearch-Probleme&quot;.
-* Wenn der Inhalt nur für eine bestimmte Version der Komponente relevant ist, fügen Sie eine Beschriftung mit Name und Version hinzu.\
-  Beispiel: &quot;Elasticsearch 5&quot;. Wenn es für mehrere Versionen relevant ist, fügen Sie mehrere Beschriftungen dieses Typs hinzu. Beispiel: &quot;Elasticsearch 5&quot;, &quot;Elasticsearch 6&quot;. Verwenden Sie gegebenenfalls &quot;x&quot;für mehrere Versionen. Beispiel: &quot;Elasticsearch 2.x&quot;
+* Verwenden Sie die Groß-/Kleinschreibung gemäß der offiziellen Benennung der Komponente.
+* Verwenden Sie keine Synonyme, sondern nur eine Bezeichnung für eine Komponente.
+* Beschriftungen mit einem Wort sind vorzuziehen. Wenn der Komponentenname jedoch mehrere Wörter enthält, verwenden Sie mehrere Wörter. Keine Problembeschreibungen hinzufügen. Das heißt, stellen Sie &quot;Elasticsearch&quot; statt &quot;Elasticsearch Probleme“.
+* Wenn der Inhalt nur für eine bestimmte Version der Komponente relevant ist, fügen Sie eine Bezeichnung hinzu, die Name + Version enthält.\
+  Beispiel: &quot;Elasticsearch 5“. Wenn es für mehrere bestimmte Versionen relevant ist, fügen Sie mehrere Bezeichnungen dieses Typs hinzu. Beispiel: &quot;Elasticsearch 5“, &quot;Elasticsearch 6“. Verwenden Sie gegebenenfalls „x“ für mehrere Versionen. Beispiel: &quot;Elasticsearch 2.x“
 
 Beispiele:
 
 * &quot;Elasticsearch&quot;
-* &quot;New Relic&quot;
-* &quot;Web-Setup-Assistent&quot;
+* &quot;New Relic
+* „Websetup-Assistent“
 
-## Beschriftungen für Prozess/Funktionalität, die behoben/beschrieben werden
+## Kennzeichnungen für Prozesse/Funktionen, bei denen eine Fehlerbehebung durchgeführt/beschrieben wird
 
-* Verwenden Sie niedrige Groß-/Kleinschreibung, mit Ausnahme von Eigennamen.
-* Verwenden Sie keine Synonyme, sondern eine Bezeichnung für eine Entität.
-* Eine Wortbezeichnung ist vorzuziehen. Fügen Sie keine Problembeschreibung hinzu. Setzen Sie also &quot;Datenbank&quot;anstelle von &quot;Datenbankabstürzen&quot;.
+* Verwenden Sie Kleinbuchstaben, mit Ausnahme von Eigennamen.
+* Verwenden Sie keine Synonyme, nur eine Bezeichnung für eine Entität.
+* Eine Wortbezeichnung ist vorzuziehen. Keine Problembeschreibung hinzufügen. Das heißt, setzen Sie „Datenbank“ anstelle von „Datenbank-Abstürze“.
 
 Beispiele: 
 
-* &quot;database&quot;
-* &quot;cron&quot;
-* &quot;deployment&quot;
-* &quot;gebündelte Aktualisierung&quot;
+* „Datenbank“
+* „Cron“
+* „Bereitstellung“
+* „Massenaktualisierung“
 
-## Beschriftungen für das Problem, das behoben/beschrieben wird
+## Kennzeichnungen für das zu behebende/beschriebene Problem
 
-* Verwenden Sie niedrige Groß-/Kleinschreibung, mit Ausnahme von Eigennamen.
-* Verwenden Sie keine Synonyme, sondern eine Bezeichnung für eine Entität.
-* Eine Wortbezeichnung ist vorzuziehen. Konvertieren Sie keine Fehlermeldung in eine Beschriftung.
+* Verwenden Sie Kleinbuchstaben, mit Ausnahme von Eigennamen.
+* Verwenden Sie keine Synonyme, nur eine Bezeichnung für eine Entität.
+* Eine Wortbezeichnung ist vorzuziehen. Konvertieren Sie keine Fehlermeldung in eine Bezeichnung.
 
 Beispiele:
 
-* &quot;site down&quot;
-* &quot;500 error&quot;
-* &quot;hängengebliebene Krone&quot;
+* „Site Down“
+* „500-Fehler“
+* „stecken geblieben“

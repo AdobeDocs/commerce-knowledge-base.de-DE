@@ -1,6 +1,6 @@
 ---
-title: Magento GitHub-Repository kann nicht geklont werden
-description: Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass Sie das Magento-GitHub-Repository nicht klonen können.
+title: Klonen des Magento-GitHub-Repositorys nicht möglich
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Sie das Magento-GitHub-Repository nicht klonen können.
 exl-id: 65de77b5-496d-42a3-ab2e-1fff9df97160
 feature: Data Import/Export
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Magento GitHub-Repository kann nicht geklont werden
+# Klonen des Magento-GitHub-Repositorys nicht möglich
 
-Dieser Artikel enthält eine Fehlerbehebung für den Fall, dass Sie das Magento-GitHub-Repository nicht klonen können.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Sie das Magento-GitHub-Repository nicht klonen können.
 
 ## Detail {#detail}
 
-Fehler ähnelt dem folgenden:
+Der Fehler ähnelt dem folgenden:
 
 ```bash
 Cloning into 'magento2'...
@@ -27,4 +27,4 @@ fatal: The remote end hung up unexpectedly
 
 ## Lösung {#solution}
 
-Laden Sie Ihren SSH-Schlüssel auf GitHub hoch, wie in [der GitHub-Hilfeseite](https://help.github.com/articles/generating-ssh-keys) beschrieben.
+Laden Sie Ihren SSH-Schlüssel auf GitHub hoch, wie auf [GitHub-Hilfeseite“ beschrieben](https://help.github.com/articles/generating-ssh-keys).

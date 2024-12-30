@@ -1,6 +1,6 @@
 ---
 title: Ausnahmen während der Installation
-description: Dieser Artikel bietet eine mögliche Lösung für die Probleme bei der Installation von Adobe Commerce mit dem Web-Einrichtungs-Assistenten.
+description: Dieser Artikel bietet eine mögliche Lösung für die Probleme bei der Installation von Adobe Commerce mithilfe des Websetup-Assistenten.
 exl-id: f9b8ba2d-c8bd-4020-9e95-7194cc51317c
 feature: Install, Upgrade
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Ausnahmen während der Installation
 
-Dieser Artikel bietet eine mögliche Lösung für die Probleme bei der Installation von Adobe Commerce mit dem Web-Einrichtungs-Assistenten.
+Dieser Artikel bietet eine mögliche Lösung für die Probleme bei der Installation von Adobe Commerce mithilfe des Websetup-Assistenten.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,7 +22,7 @@ Dieser Artikel bietet eine mögliche Lösung für die Probleme bei der Installat
 
 ## Problem
 
-Ausnahmen werden während der Installation angezeigt. Benutzer haben eine Reihe von Ausnahmen gemeldet, darunter die folgenden:
+Bei der Installation werden Ausnahmen angezeigt. Benutzende haben eine Vielzahl von Ausnahmen gemeldet, darunter die folgenden:
 
 ```bash
 Module 'Magento_Indexer':
@@ -43,10 +43,10 @@ Object(Magento\Indexer\Model\Resource\Indexer\State\Collection), 'indexer_config
 
 ## Lösung
 
-Löschen Sie die Ordner `<magento_root>/generated/code` und andere unter `var` und `generated` wie folgt:
+Löschen Sie die `<magento_root>/generated/code` und andere Ordner unter `var` und `generated` wie folgt:
 
 ```bash
 rm -rf <magento_root>/generated/code/* <magento_root>/generated/metadata/* <magento_root>/var/cache/*
 ```
 
-Nachdem Sie die Verzeichnisse gelöscht haben, versuchen Sie die Installation erneut.
+Nachdem Sie die Ordner gelöscht haben, versuchen Sie die Installation erneut.

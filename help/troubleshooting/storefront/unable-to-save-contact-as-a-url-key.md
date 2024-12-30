@@ -1,6 +1,6 @@
 ---
-title: '*contact* kann nicht als URL-Schlüssel gespeichert werden'
-description: Dieser Artikel bietet eine Problemumgehung, wenn Sie *contact* nicht als URL-Schlüssel (z. B. "/contact") für Produkte oder CMS-Seiten speichern können. Wenn Sie versuchen, den URL-Schlüssel zu speichern, erhalten Sie einen Fehler, der anzeigt, dass der URL-Schlüssel eine doppelte URL ist.
+title: '*Kontakt* kann nicht als URL-Schlüssel gespeichert werden'
+description: Dieser Artikel bietet eine Problemumgehung, wenn Sie *Kontakt* nicht als URL-Schlüssel (z. B. "/contact„) für Produkte oder CMS-Seiten speichern können. Beim Versuch, den URL-Schlüssel zu speichern, wird eine Fehlermeldung angezeigt, die darauf hinweist, dass es sich bei dem URL-Schlüssel um eine doppelte URL handelt.
 exl-id: eb340813-aba5-43a4-af5d-8fb64c93e021
 feature: CMS, Marketing Tools, Storefront
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# *contact* kann nicht als URL-Schlüssel gespeichert werden
+# {*} kann nicht* URL-Schlüssel gespeichert werden
 
-Dieser Artikel bietet eine Problemumgehung, wenn Sie *contact* nicht als URL-Schlüssel (z. B. &quot;/contact&quot;) für Produkte oder CMS-Seiten speichern können.
+Dieser Artikel bietet eine Problemumgehung, wenn Sie *Kontakt“ nicht als* (z. B. &quot;/contact„) für Produkte oder CMS-Seiten speichern können.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,19 +21,19 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.x
 
 ## Problem
 
-Sie können ein Produkt oder eine CMS-Seite nicht mit dem Begriff *contact* als URL-Schlüssel speichern. Wenn Sie versuchen, den URL-Schlüssel zu speichern, erhalten Sie einen Fehler, der anzeigt, dass der URL-Schlüssel eine doppelte URL ist.
+Sie können ein Produkt oder eine CMS-Seite nicht mit dem Begriff *Kontakt* als URL-Schlüssel speichern. Beim Versuch, den URL-Schlüssel zu speichern, wird eine Fehlermeldung angezeigt, die darauf hinweist, dass es sich bei dem URL-Schlüssel um eine doppelte URL handelt.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Erstellen Sie eine CMS-Seite mit *contact* als URL-Schlüssel.
+Erstellen Sie eine CMS-Seite mit *Kontakt* als URL-Schlüssel.
 
 <u>Erwartetes Ergebnis</u>:
 
-Die Seite wird mit *contact* als URL-Schlüssel gespeichert.
+Die Seite wird mit &quot;*&quot;* URL-Schlüssel gespeichert.
 
-<u>Tatsächliches Ergebnis</u>:
+<u>Tatsächliches </u>:
 
-Sie können die Seite nicht speichern. Sie erhalten den Fehler: *Der im Feld URL-Schlüssel angegebene Wert generiert eine bereits vorhandene URL.*
+Sie können die Seite nicht speichern. Sie erhalten die folgende Fehlermeldung: *Der im Feld URL-Schlüssel angegebene Wert würde eine bereits vorhandene URL generieren.*
 
 ## Ursache
 
@@ -49,19 +49,19 @@ Sie können die Seite nicht speichern. Sie erhalten den Fehler: *Der im Feld URL
 
 ## Lösung
 
-Sie können den Begriff *contact* nicht als URL-Schlüssel verwenden. Sie können jedoch den Begriff *contact* in Verbindung mit einem anderen Brief oder einer anderen Nummer verwenden (z. B. *contact1* und *contact2*). Der Begriff muss zwar nicht &quot;*contact+\&lt;andere Zahl oder Buchstabe\>*&quot;lauten, der Begriff kann jedoch eine beliebige Zeichenfolge sein, solange die Länge 255 Zeichen nicht überschreitet.
+Sie können den Begriff *Kontakt* nicht als URL-Schlüssel verwenden. Sie können jedoch den Begriff *Kontakt* in Kombination mit einem anderen Buchstaben oder einer anderen Nummer verwenden (z. B. *contact1* und *contact2*). Obwohl der Begriff nicht unbedingt *Kontakt+\&lt;eine andere Zahl oder ein anderer Buchstabe\>* sein muss, kann der Begriff eine beliebige Zeichenfolge sein, solange die Länge 255 Zeichen nicht überschreitet.
 
 Führen Sie die folgenden Schritte aus:
 
-1. Melden Sie sich bei Commerce Admin an.
-1. Gehen Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
+1. Anmelden bei Commerce Admin.
+1. Navigieren Sie zu **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
 1. Klicken Sie auf **[!UICONTROL Add URL Rewrite]**.
-1. Wählen Sie *[!UICONTROL Custom]* in der Dropdownliste [!UICONTROL Create URL Rewrite] aus.
-   1. Geben Sie in das Feld [!UICONTROL Request Path] &quot;contact&quot;ein. Beachten Sie, dass der [!UICONTROL Request Path] ist, was ein Benutzer in den Browser eingibt, und der [!UICONTROL Target Path] ist, zu dem er umleiten soll.
-   1. Geben Sie im [!UICONTROL Target Path] den neuen URL-Schlüssel ein (z. B. &quot;contact1&quot;).
-   1. Wählen Sie *[!UICONTROL No]* in der Dropdownliste [!UICONTROL Redirect] aus.
+1. Wählen Sie *[!UICONTROL Custom]* in der Dropdown-Liste [!UICONTROL Create URL Rewrite] aus.
+   1. Geben Sie in der [!UICONTROL Request Path] „Kontakt“ ein. Beachten Sie, dass der [!UICONTROL Request Path] von einem Benutzer im Browser eingegeben wird und der [!UICONTROL Target Path] ist, zu dem er umgeleitet werden soll.
+   1. Geben Sie im [!UICONTROL Target Path] den neuen URL-Schlüssel ein (z. B. „contact1„).
+   1. Wählen Sie *[!UICONTROL No]* in der Dropdown-Liste [!UICONTROL Redirect] aus.
 
 ## Verwandtes Lesen
 
-* [URL schreibt ](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unser Benutzerhandbuch um.
-* [Best Practices für SEO](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch.
+* [URL-Neuschreibungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unserem Benutzerhandbuch.
+* [SEO Best Practices](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch.

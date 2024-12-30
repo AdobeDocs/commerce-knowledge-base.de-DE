@@ -1,6 +1,6 @@
 ---
-title: Google Tag Manager wird durch das Widget [!DNL Live Search] beschädigt.
-description: Dieser Artikel bietet eine Lösung für den [!DNL Live Search Product Listing Widget] und führt dazu, dass [!DNL Google Tag Manager] nicht mehr funktioniert.
+title: Google Tag Manager ist durch das Widget  [!DNL Live Search]  beschädigt.
+description: Dieser Artikel bietet eine Lösung für das Problem [!DNL Live Search Product Listing Widget] verursachend [!DNL Google Tag Manager] , dass nicht mehr funktioniert.
 feature: Install, Search, Best Practices
 role: Admin, Developer
 exl-id: 485f8ccb-cba2-4785-a8e1-a1e98c88b21e
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Google Tag Manager] wird durch das Widget [!DNL Live Search] beschädigt
+# [!DNL Google Tag Manager] wird durch das [!DNL Live Search] Widget beschädigt
 
 Dieser Artikel bietet eine Lösung für die [!DNL Live Search Product Listing Widget], die dazu führt, dass [!DNL Google Tag Manager] nicht mehr funktioniert.
 
@@ -21,16 +21,16 @@ Dieser Artikel bietet eine Lösung für die [!DNL Live Search Product Listing Wi
 
 ## Problem
 
-Die [!DNL Live Search Product Listing Widget] bewirkt, dass [!DNL Google Tag Manager] nicht mehr funktioniert.
+Die [!DNL Live Search Product Listing Widget] führt dazu, dass [!DNL Google Tag Manager] nicht mehr funktioniert.
 
 ## Lösung
 
-Um sicherzustellen, dass [!DNL Google Tag Manager] mit [!DNL Live Search] funktioniert, verwenden Sie den *Suchadapter*.
+Um sicherzustellen, dass [!DNL Google Tag Manager] mit [!DNL Live Search] funktioniert, verwenden Sie *Suchadapter*.
 
-Deaktivieren Sie dazu das Widget im Admin. [!DNL Live Search] verwendet dann standardmäßig den *Suchadapter*.
+Deaktivieren Sie dazu das Widget im Admin-Bereich. [!DNL Live Search] verwendet dann standardmäßig den *Suchadapter*.
 
 ## Verwandtes Lesen
 
-* [[!DNL Live Search] Guide Overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) in unserer Adobe Commerce Live Search-Dokumentation
+* [[!DNL Live Search] Anleitung - Übersicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) in unserer Dokumentation zur Adobe Commerce Live Search
 
-* [Installieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) in unserer Adobe Commerce Live Search-Dokumentation
+* [Installieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) in unserer Dokumentation zur Adobe Commerce Live Search

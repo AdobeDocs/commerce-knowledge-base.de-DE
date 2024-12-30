@@ -1,6 +1,6 @@
 ---
-title: 'Adobe Commerce 2.4.1: leere Seite beim Speichern des Digital Page Builder-Formulars'
-description: Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce 2.4.1, bei dem bei Verwendung des Safari-Browsers eine leere Webseite angezeigt wird, nachdem ein dotdigital Page Builder -Formular im Admin Panel gespeichert wurde.
+title: 'Adobe Commerce 2.4.1: Leere Seite beim Speichern des dotdigital Page Builder-Formulars'
+description: Dieser Artikel bietet eine Problemumgehung für ein bekanntes Problem in Adobe Commerce 2.4.1, um nach dem Speichern eines dotdigital Page Builder-Formulars im Admin Panel eine leere Webseite anzuzeigen, wenn der Safari-Browser verwendet wird.
 exl-id: 682eac73-1ad2-4093-acfb-6a8da4c05cf5
 feature: Page Builder
 role: Developer
@@ -11,40 +11,40 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.4.1: leere Seite beim Speichern des Digital Page Builder-Formulars
+# Adobe Commerce 2.4.1: Leere Seite beim Speichern des dotdigital Page Builder-Formulars
 
-Dieser Artikel bietet eine Behelfslösung für ein bekanntes Problem in Adobe Commerce 2.4.1, bei dem bei Verwendung des Safari-Browsers eine leere Webseite angezeigt wird, nachdem ein dotdigital Page Builder -Formular im Admin Panel gespeichert wurde.
+Dieser Artikel bietet eine Problemumgehung für ein bekanntes Problem in Adobe Commerce 2.4.1, um nach dem Speichern eines dotdigital Page Builder-Formulars im Admin Panel eine leere Webseite anzuzeigen, wenn der Safari-Browser verwendet wird.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce vor Ort 2.4.1
-* Adobe Commerce in Cloud-Infrastruktur 2.4.1
+* Adobe Commerce On-Premises 2.4.1
+* Adobe Commerce auf Cloud-Infrastruktur 2.4.1
 
 ## Problem
 
-<u>Zu reproduzierende Schritte</u>
+<u>Schritte zur Reproduktion</u>
 
-1. Wechseln Sie zu **Admin-Bedienfeld** > **Inhalt** > **Seiten** und wählen Sie **Bearbeiten** einer beliebigen Seite aus.
-1. Wechseln Sie zu **Inhalt** und klicken Sie auf die Schaltfläche **Mit Seitenaufbau bearbeiten** .
-1. Ziehen Sie den Block **dotdigital form** und wählen Sie **Edit** aus.
-1. Wählen Sie eines der Testformulare aus, wählen Sie dann den Modus **Eingebettet** und speichern Sie das Formular.
+1. Wechseln Sie zu **Admin** > **Inhalt** > **Seiten** und wählen Sie **Bearbeiten** einer beliebigen Seite.
+1. Wechseln Sie zu **Inhalt** und klicken Sie auf die Schaltfläche **Bearbeiten mit Page Builder**.
+1. Ziehen Sie den **dotdigital** Block und wählen Sie **Bearbeiten**.
+1. Wählen Sie eines der Testformulare aus, wählen Sie dann **Eingebetteter** Modus aus und speichern Sie das Formular.
 1. Speichern Sie die Seitenänderung.
 
 <u>Erwartetes Ergebnis:</u>
 
-Die Webseite sollte erfolgreich gespeichert werden.
+Die Web-Seite sollte erfolgreich gespeichert werden.
 
 <u>Tatsächliches Ergebnis:</u>
 
-Die Webseite ist leer. Nach dem erneuten Laden der Webseite werden die Änderungen übernommen.
+Die Webseite ist leer. Nach dem Neuladen der Web-Seite werden die Änderungen angewendet.
 
-## Workaround
+## Abhilfe
 
-Die Lösung besteht darin, einen alternativen Browser zu Safari zu verwenden. Das Problem wird in der nächsten Version, Adobe Commerce 2.4.2, im 1. Quartal 2021 behoben.
+Die Lösung besteht darin, einen alternativen Browser zu Safari zu verwenden. Das Problem wird voraussichtlich in der nächsten Version, Adobe Commerce 2.4.2, im 1. Quartal 2021 behoben.
 
 ## Verwandtes Lesen
 
 * [Was ist Page Builder?](https://developer.adobe.com/commerce/frontend-core/page-builder/) in unserer Entwicklerdokumentation.
-* [Einrichten des Seitenaufbaus](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) in unserer Entwicklerdokumentation.
-* [Seitenaufbau](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/introduction) in unserem Benutzerhandbuch.
-* [Seitenaufbau - Elemente](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/workspace#elements) in unserem Benutzerhandbuch.
+* [Page Builder-Setup](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) in unserer Entwicklerdokumentation.
+* [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/introduction) in unserem Benutzerhandbuch.
+* [Page Builder - Elemente](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/workspace#elements) in unserem Benutzerhandbuch.

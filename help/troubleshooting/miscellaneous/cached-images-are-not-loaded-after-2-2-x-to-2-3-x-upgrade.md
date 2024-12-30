@@ -1,6 +1,6 @@
 ---
-title: Zwischengespeicherte Bilder werden nach der Aktualisierung von 2.2.X auf 2.3.X nicht geladen
-description: Dieser Artikel bietet die Lösung für das Problem, dass zwischengespeicherte Bilder nach einem Upgrade von Adobe Commerce auf Cloud-Infrastruktur 2.2.X auf 2.3.X nicht angezeigt werden.
+title: Zwischengespeicherte Bilder werden nach dem Upgrade von 2.2.x auf 2.3.x nicht geladen
+description: Dieser Artikel bietet die Lösung für das Problem, dass zwischengespeicherte Bilder nach dem Upgrade von Adobe Commerce auf Cloud-Infrastruktur 2.2.x auf 2.3.x nicht angezeigt werden.
 exl-id: 3e6bd5aa-bd5d-4880-8b78-64f280647abe
 feature: Cache, Upgrade
 role: Developer
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# Zwischengespeicherte Bilder werden nach der Aktualisierung von 2.2.X auf 2.3.X nicht geladen
+# Zwischengespeicherte Bilder werden nach dem Upgrade von 2.2.x auf 2.3.x nicht geladen
 
-Dieser Artikel bietet die Lösung für das Problem, dass zwischengespeicherte Bilder nach einem Upgrade von Adobe Commerce auf Cloud-Infrastruktur 2.2.X auf 2.3.X nicht angezeigt werden.
+Dieser Artikel bietet die Lösung für das Problem, dass zwischengespeicherte Bilder nach dem Upgrade von Adobe Commerce auf Cloud-Infrastruktur 2.2.x auf 2.3.x nicht angezeigt werden.
 
-## Betroffene Versionen und Editionen:
+## Betroffene Versionen und Ausgaben:
 
-* Adobe Commerce auf Cloud-Infrastruktur Pro-Planarchitektur 2.2.X, 2.3.X
+* Adobe Commerce auf Cloud-Infrastruktur Pro planarchitektur 2.2.x, 2.3.x
 
 ## Problem
 
-Nachdem Adobe Commerce von 2.2.X auf 2.3.X aktualisiert wurde, sind die zwischengespeicherten Produktbilder nicht verfügbar und stattdessen wird eine 404-Seite angezeigt.
+Nach der Aktualisierung von Adobe Commerce von 2.2.x auf 2.3.x sind die zwischengespeicherten Produktbilder nicht mehr verfügbar und stattdessen wird eine 404-Seite angezeigt.
 
-Das Problem wird durch die falsche Nginx-Konfiguration verursacht, die in `.magento.app.yaml` festgelegt ist: `index.php` (oder keine) wird für den `"/media"` -Speicherort anstelle von `passthru: /get.php` verwendet.
+Das Problem wird durch die falsche Nginx-Konfiguration verursacht, die in `.magento.app.yaml` festgelegt ist: `index.php` (oder keine) wird für den `"/media"` Speicherort anstelle von `passthru: /get.php` verwendet.
 
 ## Lösung
 
-1. Überprüfen Sie Ihre `.magento.app.yaml` -Konfigurationsdatei am Speicherort `"/media"`. Die richtige Konfiguration sieht wie folgt aus:
+1. Überprüfen Sie Ihre `.magento.app.yaml`-Konfigurationsdatei am `"/media"` Speicherort. Die korrekte Konfiguration sieht wie folgt aus:
 
    ```yaml
    "/media":
@@ -38,13 +38,13 @@ Das Problem wird durch die falsche Nginx-Konfiguration verursacht, die in `.mage
        passthru: "/get.php"
    ```
 
-1. Wenn `passthru` nicht auf `"/get.php"` und `expires` nicht gesetzt ist, führen Sie die folgenden Schritte aus.
+1. Wenn `passthru` nicht auf `"/get.php"` und `expires` nicht eingestellt ist, führen Sie die folgenden Schritte aus.
 1. Korrigieren Sie die Konfigurationsdatei.
-   * Starter Plan: Korrigieren Sie die Datei selbst und übertragen Sie die Änderungen.
+   * Starterplan: Korrigieren Sie die Datei selbst und übertragen Sie die Änderungen.
    * Pro Plan:
-   * Integration: Korrigieren Sie die Datei selbst und übertragen Sie die Änderungen per Push.
-   * Staging und Produktion: Korrigieren Sie die Datei selbst, pushen Sie die Änderungen und erstellen Sie ein [Adobe Commerce-Supportticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) , damit es angewendet wird.
+   * Integration: Korrigieren Sie die Datei selbst und übertragen Sie die Änderungen.
+   * Staging und Produktion: Korrigieren Sie die Datei selbst, übertragen Sie die Änderungen und erstellen Sie ein [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)Ticket, um sie anzuwenden.
 
-1. Aktivieren Sie die Fastly-Bildoptimierung in Commerce Admin (Schnell muss zuvor konfiguriert werden), wie in <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization> beschrieben.
+1. Aktivieren Sie die Fastly-Bildoptimierung in Commerce Admin (Fastly muss zuvor konfiguriert werden), wie in <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization> beschrieben.
 
-Wenn die Konfiguration korrekt ist, Sie jedoch weiterhin mit dem Problem konfrontiert sind, setzen Sie die Untersuchung fort oder kontaktieren Sie den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn die Konfiguration korrekt ist, das Problem jedoch weiterhin auftritt, setzen Sie die Untersuchung fort oder wenden Sie sich an den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

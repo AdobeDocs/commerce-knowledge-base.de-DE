@@ -1,6 +1,6 @@
 ---
-title: Ausführen des Problems "setup:static-content:deploy" deploy_version.txt
-description: Dieser Artikel enthält eine Fehlerbehebung für "deploy_version.txt"ist kein schreibbarer Fehler, wenn der Befehl "setup:static-content:deploy"manuell ausgeführt wird.
+title: Problem „setup:static-content:deploy„_version.txt ausführen
+description: Dieser Artikel enthält eine Fehlerbehebung für den Fehler „deployed_version.txt“ ist nicht schreibbar, wenn der Befehl „setup:static-content:deploy“ manuell ausgeführt wird.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# Problem mit der Ausführung von `setup:static-content:deploy` deploy_version.txt
+# Problem `setup:static-content:deploy` deploy_version.txt ausführen
 
-Dieser Artikel enthält eine Fehlerbehebung für `deployed_version.txt` ist kein schreibbarer Fehler, wenn der Befehl `setup:static-content:deploy` manuell ausgeführt wird.
+Dieser Artikel bietet eine Fehlerbehebung für den Fehler &quot;`deployed_version.txt` ist nicht schreibbar“, wenn der `setup:static-content:deploy`-Befehl manuell ausgeführt wird.
 
 ## Problem
 
-Wenn Sie den Adobe Commerce-Empfehlungen zur Cloud-Infrastruktur folgen, um [Konfigurationsverwaltung](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) zu verwenden (und die Generierung statischer Assets in die Build-Phase verschieben, um die Ausfallzeit von Websites während der Bereitstellung zu verringern), kann beim manuellen Ausführen des Befehls `setup:static-content:deploy` der folgende Fehler auftreten:
+Wenn Sie die Empfehlungen für die Verwendung der [Konfigurationsverwaltung“ von Adobe Commerce in der Cloud](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md)Infrastruktur befolgen (und die Generierung statischer Assets in die Build-Phase verschieben, um Website-Ausfallzeiten während der Bereitstellung zu reduzieren), tritt möglicherweise die folgende Fehlermeldung auf, wenn Sie den `setup:static-content:deploy`-Befehl manuell ausführen:
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy
@@ -30,13 +30,13 @@ The path "deployed_version.txt:///app/{{cloud-project-id}}_stg/pub/static/app/{{
 
 ## Ursache
 
-Wir haben den Bereitstellungsprozess optimiert, um Ausfallzeiten zu reduzieren, und Symlinks zu statischen Asset-Dateien erstellt, anstatt sie zu kopieren. Der Speicherort, an dem die statischen Assets gespeichert sind, ist schreibgeschützt. Daher erhalten Sie die oben aufgeführte Fehlermeldung.
+Wir haben den Bereitstellungsprozess optimiert, um Ausfallzeiten zu reduzieren, und haben Symlinks zu statischen Asset-Dateien erstellt, anstatt sie zu kopieren. Der Speicherort der statischen Assets ist schreibgeschützt. Daher wird die obige Fehlermeldung angezeigt.
 
-Es wird dringend davon abgeraten, die Bereitstellung statischer Inhalte manuell auszuführen, da alle Assets bereits generiert wurden und es keinen Unterschied zwischen Dateien gibt, wenn Sie dies manuell tun (die Designdateien sind ebenfalls schreibgeschützt, Sie können sie nicht ändern). Daher ist ein solcher Vorgang sinnlos.
+Es wird dringend empfohlen, die Bereitstellung statischer Inhalte nicht manuell durchzuführen, da alle Assets bereits generiert wurden und es bei manueller Ausführung keinen Unterschied zwischen den Dateien gibt (die Design-Dateien sind ebenfalls schreibgeschützt, Sie können sie nicht ändern). Daher ist ein solcher Vorgang nicht sinnvoll.
 
 ## Lösung
 
-Wenn Sie weiterhin die Bereitstellung statischer Inhalte ausführen möchten, entfernen Sie symlinks im Verzeichnis `pub/static` und führen Sie den Befehl `setup:static-content:deploy` erneut aus:
+Wenn Sie die Bereitstellung statischer Inhalte dennoch ausführen möchten, entfernen Sie Symlinks im `pub/static` und führen Sie den `setup:static-content:deploy` Befehl erneut aus:
 
 ```
 find pub/static/ -maxdepth 1 -type l -delete

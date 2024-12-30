@@ -1,6 +1,6 @@
 ---
-title: Neue Umgebungen, die beim Verschieben aus Git in die Produktionsumgebung eingefügt werden
-description: Dieser Artikel bietet eine Lösung für das Problem, dass neue Umgebungen in der Produktionsumgebung von Adobe Commerce in der Cloud-Infrastruktur platziert werden, wenn sie vom Git-Versionskontrollsystem übertragen werden.
+title: Neue Umgebungen werden in die Produktion verschoben, wenn sie von Git gepusht werden
+description: Dieser Artikel bietet eine Lösung für das Problem, dass neue Umgebungen unter der Produktionsumgebung in Adobe Commerce auf der Cloud-Infrastruktur platziert werden, wenn sie vom Git-Versionskontrollsystem gepusht werden.
 exl-id: 279cd6d8-fd45-45ba-8456-8b397a01976f
 feature: Cloud, Paas
 role: Developer
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# Neue Umgebungen, die beim Verschieben aus Git in die Produktionsumgebung eingefügt werden
+# Neue Umgebungen werden in die Produktion verschoben, wenn sie von Git gepusht werden
 
-Dieser Artikel bietet eine Lösung für das Problem, dass neue Umgebungen in der Produktionsumgebung von Adobe Commerce in der Cloud-Infrastruktur platziert werden, wenn sie vom Git-Versionskontrollsystem übertragen werden.
+Dieser Artikel bietet eine Lösung für das Problem, dass neue Umgebungen unter der Produktionsumgebung in Adobe Commerce auf der Cloud-Infrastruktur platziert werden, wenn sie vom Git-Versionskontrollsystem gepusht werden.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
 <u>Voraussetzungen</u>:
 
-Lassen Sie einen lokalen Git-gesteuerten Klon des Projekts haben.
+Verwenden Sie einen lokalen, von Git gesteuerten Klon des Projekts.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 Sie müssen eine Integrationsverzweigung aus der Staging-Verzweigung erstellen:
 
@@ -39,24 +39,24 @@ Die neue Verzweigung wird unter der Staging-Verzweigung erstellt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die neue Verzweigung wurde im Produktionszweig erstellt.
+Die neue Verzweigung wurde unter der Produktionsverzweigung erstellt.
 
 ## Ursache
 
-Das ist kein Fehler. Um eine übergeordnete Verzweigung für eine andere Verzweigung festzulegen, sollte der Händler die Befehlszeilenschnittstelle magento-cloud verwenden.
+Das ist kein Bug. Zum Einrichten einer übergeordneten Verzweigung für eine andere Verzweigung sollte der Händler die Magento-Cloud-CLI verwenden.
 
 ## Lösung
 
-Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Weitere Informationen finden Sie unter [Adobe Commerce unter Cloud-Infrastruktur > Bitbucket-Integration](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) in unserer Entwicklerdokumentation.
+Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Siehe [Adobe Commerce in der Cloud-Infrastruktur > Bitbucket-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) in unserer Entwicklerdokumentation.
 
-Um ein übergeordnetes Element für die vorhandene Verzweigung auf dem Server zu aktualisieren, verwenden Sie den Befehl `magento-cloud environment:info` in der magento-cloud-CLI.
+Um eine übergeordnete Seite für die vorhandene Verzweigung auf dem Server zu aktualisieren, verwenden Sie den Befehl `magento-cloud environment:info` in der Magento-Cloud-CLI.
 
 Anwendungsbeispiel:
 
 `magento-cloud environment:info parent Staging`
 
-Dadurch wird die übergeordnete Verzweigung für die derzeit ausgecheckte Verzweigung auf &quot;Staging&quot;gesetzt.
+Dadurch wird die übergeordnete Verzweigung für die aktuell ausgecheckte Verzweigung auf „Staging“ gesetzt.
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce über Cloud-Infrastruktur > magento-cloud-CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) in unserer Entwicklerdokumentation.
+* [Adobe Commerce auf Cloud-Infrastruktur > magento-cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) in unserer Entwicklerdokumentation.

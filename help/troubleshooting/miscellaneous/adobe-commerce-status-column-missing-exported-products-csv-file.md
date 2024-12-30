@@ -1,6 +1,6 @@
 ---
-title: Adobe Commerce-Statusspalte fehlt exportierte Produkt-CSV-Datei
-description: Dieser Artikel bietet eine Lösung für das Problem, wenn Sie die Statusspalte in der CSV-Datei, die exportierte Produkte enthält, nicht finden können.
+title: In der Adobe Commerce-Statusspalte fehlt die exportierte Produkt-CSV-Datei
+description: Dieser Artikel bietet eine Lösung für das Problem, wenn Sie die Statusspalte in der CSV-Datei mit exportierten Produkten nicht finden können.
 exl-id: 3cbe1e6c-fc73-4331-add7-1ebcb28a4580
 feature: Data Import/Export, Products
 role: Developer
@@ -11,28 +11,28 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce-Statusspalte fehlt exportierte Produkt-CSV-Datei
+# In der Adobe Commerce-Statusspalte fehlt die exportierte Produkt-CSV-Datei
 
-Dieser Artikel bietet eine Lösung für das Problem, wenn Sie die Statusspalte (d. h. Angabe, ob das Produkt aktiviert oder deaktiviert ist) nicht in der CSV-Datei mit den exportierten Produkten finden können. Der Status des Produkts wird durch die Spalte [!UICONTROL product_online] angegeben.
+Dieser Artikel bietet eine Lösung für das Problem, wenn Sie die Statusspalte (d. h. die Angabe, ob das Produkt aktiviert oder deaktiviert ist) in der CSV-Datei, die exportierte Produkte enthält, nicht finden können. Der Status des Produkts wird durch die Spalte [!UICONTROL product_online] angezeigt.
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce (alle Bereitstellungsmethoden) alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce (alle Bereitstellungsmethoden) - alle [unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Sie können die Spalte [!UICONTROL status] nicht in der CSV-Datei mit den exportierten Produkten finden. Sie exportieren beispielsweise eine CSV-Datei aller SKUs mit ihrem Status, der Tabelle fehlt jedoch die Spalte [!UICONTROL status] .
+Die [!UICONTROL status] Spalte kann nicht in der CSV-Datei gefunden werden, die exportierte Produkte enthält. Sie exportieren also beispielsweise eine CSV-Datei aller SKUs mit ihrem Status, aber der Tabelle scheint die [!UICONTROL status] Spalte zu fehlen.
 
-<u>Zu reproduzierende Schritte:</u>
+<u>Schritte zur Reproduktion:</u>
 
-1. Wählen Sie im Adobe Commerce-Admin **[!UICONTROL System]** unter **[!UICONTROL Data Transfer]** die Option **[!UICONTROL Export]** aus.
-1. Wählen Sie im Abschnitt **[!UICONTROL Export Settings]** im Dropdown-Menü **[!UICONTROL Entity Type]** die Option **[!UICONTROL Products]** aus.
-1. Suchen Sie nach &quot;**[!UICONTROL status]**&quot;, aufgeführt unter &quot;**[!UICONTROL Attribute Code]**&quot;. Sie sehen diesen Attributcode in der Liste der verfügbaren Attribute (**[!UICONTROL Enable Product]**).
+1. Wählen Sie in Adobe Commerce Admin die Option **[!UICONTROL System]** und **[!UICONTROL Data Transfer]** dann **[!UICONTROL Export]** aus.
+1. Wählen Sie im **[!UICONTROL Export Settings]** Abschnitt die Option in der Dropdown-**[!UICONTROL Products]** **[!UICONTROL Entity Type]** aus.
+1. Suchen Sie nach **[!UICONTROL status]**, die unter **[!UICONTROL Attribute Code]** aufgeführt sind. Dieser Attributcode wird in der Liste der verfügbaren Attribute angezeigt (**[!UICONTROL Enable Product]**).
 1. Klicken Sie auf **[!UICONTROL Export]**.
 
 <u>Erwartetes Ergebnis:</u>
 
-In der soeben exportierten CSV-Datei sehen Sie eine Spalte mit der Bezeichnung [!UICONTROL status].
+In der soeben exportierten CSV-Datei wird eine Spalte mit der Bezeichnung [!UICONTROL status] angezeigt.
 
 <u>Tatsächliches Ergebnis:</u>
 
@@ -40,15 +40,15 @@ In der exportierten CSV-Datei wird keine Spalte mit der Bezeichnung [!UICONTROL 
 
 ## Ursache
 
-Das Statusattribut des Produkts wurde in der CSV-Datei umbenannt. Dies ist nun die Spalte &quot;[!UICONTROL product_online]&quot;.
+Das Statusattribut des Produkts wurde in der CSV-Datei umbenannt. Sie ist jetzt die Spalte [!UICONTROL product_online] .
 
 ## Lösung
 
-1. Wählen Sie &quot;**[!UICONTROL System]**&quot;, unter &quot;**[!UICONTROL Data Transfer]**&quot;die Option &quot;**[!UICONTROL Import]**&quot;.
+1. Wählen Sie **[!UICONTROL System]** und unter **[!UICONTROL Data Transfer]** wählen Sie **[!UICONTROL Import]** aus.
 1. Klicken Sie auf **[!UICONTROL Download Sample File]**.
-1. Sie können die Spalte [!UICONTROL product_online] in der CSV-Datei sehen.
+1. Die Spalte [!UICONTROL product_online] wird in der CSV-Datei angezeigt.
 
 ## Verwandtes Lesen
 
-* [Arbeiten mit CSV-Dateien](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
-* [Referenz zu Produktexport-Attributen](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.
+* [Arbeiten mit CSV-](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
+* [Produktexport-Attribute-Referenz](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.

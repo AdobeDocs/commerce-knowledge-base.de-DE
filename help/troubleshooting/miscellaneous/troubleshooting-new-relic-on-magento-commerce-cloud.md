@@ -1,6 +1,6 @@
 ---
-title: Fehlerbehebung bei New Relic auf Adobe Commerce in der Cloud-Infrastruktur
-description: Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Commerce in der Cloud-Infrastruktur.
+title: Fehlerbehebung bei New Relic in Adobe Commerce auf Cloud-Infrastruktur
+description: Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Commerce in Cloud-Infrastrukturen.
 exl-id: ea763291-5c9b-4575-b2ee-820dbc367743
 feature: Cloud, Observability, Paas
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Fehlerbehebung bei New Relic auf Adobe Commerce in der Cloud-Infrastruktur
+# Fehlerbehebung bei New Relic in Adobe Commerce auf Cloud-Infrastruktur
 
-Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Commerce in der Cloud-Infrastruktur.
+Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Commerce in Cloud-Infrastrukturen.
 
 <table>
 <tbody>
@@ -27,14 +27,14 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 </tr>
 <tr>
 <td>
-<p><u>Projekte in New Relic können nicht angezeigt werden.</u></p>
-<p>Sie melden sich bei <em>New Relic</em> an, können jedoch keine Projekte anzeigen, für die Sie berechtigt sein sollten, darauf zuzugreifen.</p>
+<p><u>Projekte in New Relic werden nicht angezeigt.</u></p>
+<p>Sie melden sich bei <em>New Relic an</em> sehen jedoch keine Projekte, für die Sie über die Berechtigung zum Anzeigen/Zugreifen verfügen.</p>
 </td>
 <td>
-<p>In diesen Fällen muss ein Administrator Sie zum Projekt hinzufügen.</p>
+<p>In diesen Fällen muss Sie ein Administrator bzw. eine Administratorin zum Projekt hinzufügen.</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Zugriff auf New Relic-Dienste</a> in unserer Wissensdatenbank.</p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Zugriff auf New Relic-</a> in unserer Support-Wissensdatenbank.</p>
 </td>
 </tr>
 <tr>
@@ -43,12 +43,12 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 <tr>
 <td>
 <p><u>Fehlende Daten nach der Installation.</u></p>
-<p>Verwenden Sie das Dienstprogramm <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">New Relic Diagnostics</a>, um die Ursache zu ermitteln. Wenn dies nicht hilfreich ist, sollten Sie sich agentenspezifische Lösungen ansehen. Links zu Artikeln, die diese Lösungen enthalten, befinden sich in der rechten Spalte.</p>
+<p>Mit dem <a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/new-relic-diagnostics">New Relic-Diagnosedienstprogramm</a> können Sie die Ursache ermitteln. Wenn dies nicht hilfreich ist, schauen Sie sich die agentenspezifischen Lösungen an. Links zu Artikeln, die diese Lösungen enthalten, finden Sie in der rechten Spalte.</p>
 </td>
 <td>
 <p>Fehlende Daten können unterschiedliche Ursachen haben. Möglicherweise müssen Sie:</p>
 <ul>
-<li>Überprüfen Sie, ob der Agent installiert ist.</li>
+<li>Stellen Sie sicher, dass der Agent installiert ist.</li>
 <li>Überprüfen Sie Ihren App-Namen und Ihren Lizenzschlüssel.</li>
 <li>Starten Sie den Webserver neu.</li>
 <li>Stellen Sie sicher, dass Ihr System die Kompatibilitätsanforderungen erfüllt.</li>
@@ -57,22 +57,22 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 </td>
 <td>
 <ul>
-<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#apm-agents">New Relic-Dokumentation &gt; APM-Agenten &gt; Keine Daten anzeigen</a></li>
-<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#browser-agent">New Relic-Dokumentation &gt; New Relic-Browser &gt; Nicht anzeigen von Daten</a></li>
-<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#infrastructure-agents">New Relic-Dokumentation &gt; New Relic-Infrastruktur &gt; Nicht anzeigen von Daten</a></li>
-<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#mobile-agents">New Relic-Dokumentation &gt; New Relic Mobile &gt; Keine Daten anzeigen</a></li>
+<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#apm-agents">New Relic-Dokumentation &gt; APM-Agenten &gt; Daten werden nicht angezeigt</a></li>
+<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#browser-agent">New Relic-Dokumentation &gt; New Relic-Browser &gt; Daten werden nicht angezeigt</a></li>
+<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#infrastructure-agents">New Relic-Dokumentation &gt; New Relic-Infrastruktur &gt; Daten werden nicht angezeigt</a></li>
+<li><a href="https://docs.newrelic.com/docs/agents/manage-apm-agents/troubleshooting/not-seeing-data#mobile-agents">New Relic-Dokumentation &gt; New Relic Mobile &gt; Daten werden nicht angezeigt</a></li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>
-<p><u>Diskrepanz bei Transaktionszeitstempeln.</u> Sie können mit der New Relic-Benutzeroberfläche Schwierigkeiten haben, lange Transaktionen (mehr als 5 Minuten) zu finden. Sie können auch Transaktionen finden, die außerhalb des erwarteten Zeitrahmens angezeigt werden.</p>
+<p><u>Diskrepanz beim Transaktionszeitstempel.</u> Sie können Schwierigkeiten haben, lange Transaktionen (mehr als 5 Minuten) über die New Relic-Benutzeroberfläche zu finden. Möglicherweise werden auch Transaktionen außerhalb des erwarteten Zeitraums angezeigt.</p>
 </td>
 <td>
-<p>In der New Relic-Benutzeroberfläche wird der Zeitpunkt des Transaktionsendes und nicht der Zeitpunkt des Transaktionsbeginns angezeigt.</p>
+<p>Die New Relic-Benutzeroberfläche zeigt den Zeitpunkt des Transaktionsendes an, nicht den Zeitpunkt, zu dem die Transaktion begann.</p>
 </td>
 <td>
-<p>Um den Anfang der Transaktion mithilfe der New Relic-Benutzeroberfläche zu berechnen, überprüfen Sie die Dauer der Transaktion. Ziehen Sie den Betrag der Dauer vom Zeitstempel (Transaktionsende) ab, der von der Benutzeroberfläche von New Relic bereitgestellt wird.</p>
+<p>Um den Beginn der Transaktion mithilfe der New Relic-Benutzeroberfläche zu berechnen, überprüfen Sie die Dauer der Transaktion. Ziehen Sie den Dauerbetrag vom Zeitstempel (Transaktionsende) ab, der von der New Relic-Benutzeroberfläche bereitgestellt wird.</p>
 </td>
 </tr>
 <tr>
@@ -80,21 +80,21 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 <p><u>NerdGraph GraphQL <code>curl</code> Abfragen mit Sonderzeichen wie <code>|</code> und <code>%</code> funktionieren nicht</u>.</p>
 </td>
 <td>
-<p>Die New Relic-Funktion "Copy to curl"in NerdGraph bietet derzeit keine Möglichkeit, Sonderzeichen wie <code>|</code> und <code>%</code> zu verarbeiten.</p>
+<p>Die New Relic-Funktion „Kopieren in cURL“ in NerdGraph bietet derzeit keine Möglichkeit, Sonderzeichen wie <code>|</code> und <code>%</code> zu verarbeiten.</p>
 </td>
 <td>
-<p>Verwenden Sie eine andere API-Bibliothek, um das Problem mit Sonderzeichen zu lösen. Beispiel: GraphQLClient-Bibliothek für GraphQL-API in Python oder Apache.commons nach Java-Sprachaufrufen. Überprüfen Sie Client-Bibliotheken auf <a href="https://graphql.org/code/">GraphQL</a>.</p>
+<p>Verwenden Sie eine andere API-Bibliothek, um das Problem mit Sonderzeichen zu lösen. Beispielsweise die GraphQL-Client-Bibliothek für die GraphQL-API in Python oder Apache.commons nach Java-Sprachaufrufen. Überprüfen Sie Client-Bibliotheken auf <a href="https://graphql.org/code/">GraphQL</a>.</p>
 </td>
 </tr>
 <tr>
 <td>
-<p><u>Anzeigeprobleme mit Diagrammen und Dashboards</u></p>
+<p><u>Probleme in Diagrammen und Dashboards anzeigen.</u></p>
 </td>
 <td>
-<p>Beheben Sie fehlende Diagramme, indem Sie New Relic-Domänen zur Zulassungsliste hinzufügen oder die Browsererweiterung deinstallieren, was zu Problemen führt.</p>
+<p>Beheben Sie fehlende Diagramme, indem Sie der Zulassungsliste New Relic-Domains hinzufügen oder die Browser-Erweiterung deinstallieren, was die Probleme verursacht.</p>
 </td>
 <td>
-<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">New Relic-Dokumentation &gt; Diagramme fehlen oder nicht rendern</a> </p>
+<p><a href="https://docs.newrelic.com/docs/apm/new-relic-apm/troubleshooting/charts-missing-or-do-not-render">New Relic-Dokumentation &gt; Diagramme fehlen oder werden nicht gerendert</a> </p>
 </td>
 </tr>
 <tr>
@@ -102,13 +102,13 @@ Dieser Artikel enthält Ressourcen zur Fehlerbehebung bei New Relic in Adobe Com
 </tr>
 <tr>
 <td>
-<p><u>Der PHP Agent zeigt nicht die richtige Instanzanzahl an.</u></p>
+<p><u>Der PHP-Agent zeigt nicht die richtige Anzahl an Instanzen an.</u></p>
 </td>
 <td>
-<p>Die Anzahl der Instanzen kann in Abhängigkeit von Back-End-Prozessen und -Durchsatz steigen. Unterschiede zwischen Serverwerten können auf Prozesse zurückzuführen sein, die auf einem Server, aber nicht auf dem anderen Server ausgeführt werden.</p>
+<p>Die Anzahl der Instanzen kann je nach Back-End-Prozessen und Durchsatz steigen. Unterschiede zwischen den Server-Werten können durch Prozesse verursacht werden, die auf einem Server ausgeführt werden, aber nicht auf dem anderen Server.</p>
 </td>
 <td>
-<p><a href="https://docs.newrelic.com/docs/agents/php-agent/troubleshooting/troubleshoot-php-agent-instance-count">New Relic-Dokumentation &gt; Fehlerbehebung bei der Anzahl der PHP-Agent-Instanzen</a> </p>
+<p><a href="https://docs.newrelic.com/docs/agents/php-agent/troubleshooting/troubleshoot-php-agent-instance-count">New Relic-Dokumentation &gt; Fehlerbehebung bei der PHP-Agenteninstanzanzahl</a> </p>
 </td>
 </tr>
 </tbody>

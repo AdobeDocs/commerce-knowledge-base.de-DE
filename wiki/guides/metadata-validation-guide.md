@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Handbuch zur Metadatenvalidierung
 
-Um die korrekte Formatierung von Metadaten in MD-Dateien sicherzustellen, haben wir einen Metadaten-Validierungstest durchgeführt. Dieses Dokument enthält Richtlinien, die Beitragende dabei unterstützen, einige der häufigsten Metadaten-Validierungsfehler zu vermeiden.
+Um die korrekte Formatierung von Metadaten in MD-Dateien sicherzustellen, haben wir einen Metadaten-Validierungstest eingerichtet. Dieses Dokument enthält Richtlinien, die den Mitwirkenden helfen, einige der häufigsten Fehler bei der Validierung von Metadaten zu vermeiden.
 
 **Beispiel für Metadaten:**
 
@@ -26,7 +26,7 @@ Im Folgenden finden Sie einige der häufigsten Szenarien, in denen Fehler bei de
 
 ### Doppelpunkt in Metadaten
 
-Ein Validierungsfehler tritt auf, wenn entweder der Titel oder die Titel oder beide Doppelpunkte aufweisen.
+Ein Validierungsfehler tritt auf, wenn entweder der Titel oder die Kennzeichnungen oder beide Doppelpunkte aufweisen.
 
 **Beispiel:**
 
@@ -37,7 +37,7 @@ labels: patch: 2041.1,article,labels,tags
 ---
 ```
 
-Um diesen Fehler zu vermeiden, schließen Sie den Titel oder die Beschriftungen (oder beide, wenn beide Doppelpunkte aufweisen) in **einfache Anführungszeichen** ein.
+Um diesen Fehler zu vermeiden, schließen Sie den Titel oder die Beschriftungen (oder beide, wenn beide Doppelpunkte aufweisen) in **einfache Anführungszeichen)**.
 
 **Beispiel:**
 
@@ -48,9 +48,9 @@ labels: 'patch: 2041.1,article,labels,tags'
 ---
 ```
 
-### Doppelpunkt und einfaches Anführungszeichen oder Apostroph in Metadaten
+### Doppelpunkt und einfache Anführungszeichen oder Apostroph in Metadaten
 
-Die vorherige Lösung funktioniert nicht, wenn der Titel oder die Titel Doppelpunkte, einfache Anführungszeichen oder Apostrophe enthalten.
+Die vorherige Lösung funktioniert nicht, wenn der Titel oder die Bezeichnungen Doppelpunkte, einfache Anführungszeichen oder Apostrophe enthalten.
 
 **Beispiel:**
 
@@ -61,7 +61,7 @@ labels: patch: 2041.1,'article',labels,tags
 ---
 ```
 
-Dieser Fehler wird behoben, indem der Titel oder die Beschriftungen (oder beide) in **doppelte Anführungszeichen** eingeschlossen werden.
+Dieser Fehler wird behoben, indem der Titel oder die Beschriftungen (oder beides) in **doppelte Anführungszeichen)** werden.
 
 **Beispiel:**
 
@@ -72,7 +72,7 @@ labels: "patch: 2041.1,'article',labels,tags"
 ---
 ```
 
-### Doppelpunkt, doppeltes Anführungszeichen und einfaches Anführungszeichen oder Apostroph in Metadaten
+### Doppeltes Anführungszeichen, einfaches Anführungszeichen oder Apostroph in Metadaten
 
 **Beispiel:**
 
@@ -83,7 +83,7 @@ labels: patch: 2041.1,'article',"labels",can't,tags
 ---
 ```
 
-Schließen Sie in diesem Fall den Titel oder die Beschriftungen (oder beide) in **doppelte Anführungszeichen** ein und verwenden Sie einen **umgekehrten Schrägstrich**, um alle doppelten Anführungszeichen im Titel und in den Beschriftungen zu maskieren.
+Wenn dies eintritt, schließen Sie den Titel oder die Beschriftungen (oder beides) in **doppelte Anführungszeichen** ein und verwenden Sie einen **umgekehrten Schrägstrich**, um alle doppelten Anführungszeichen im Titel und in den Beschriftungen mit Escape-Zeichen zu versehen.
 
 **Beispiel:**
 
@@ -96,7 +96,7 @@ labels: "patch: 2041.1,'article',\"labels\",can't,tags"
 
 ### Fehlende Felder in Metadaten
 
-Ein Validierungsfehler tritt auf, wenn das Feld für Titel oder Titel in den Metadaten fehlt.
+Ein Validierungsfehler tritt auf, wenn entweder das Feld Titel oder das Feld Beschriftungen in den Metadaten fehlt.
 
 **Beispiel:**
 

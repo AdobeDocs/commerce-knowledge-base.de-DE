@@ -1,6 +1,6 @@
 ---
-title: Pakete wurden nach der Aktualisierung von 2.4.4 auf 2.4.4-p1 heruntergestuft
-description: Dieser Artikel bietet ein Hotfix für das Problem, wenn Händler in Version 2.4.4 den Befehl "Composer update"ausführen und dann die unten aufgeführten Pakete (Module) auf frühere Versionen heruntergestuft werden, die nicht mit Version 2.4.4 kompatibel sind und nur mit Version 2.4.5 und höher verwendet werden sollen.
+title: Nach dem Upgrade von 2.4.4 auf 2.4.4-p1 heruntergestufte Pakete
+description: Dieser Artikel bietet einen Hotfix für das Problem, wenn Händler in Version 2.4.4 den Befehl „composer update“ ausführen und dann die unten aufgeführten Pakete (Module) auf ihre früheren Versionen heruntergestuft werden, die nicht mit Version 2.4.4 kompatibel sind und nur mit Version 2.4.5 und höher verwendet werden sollen.
 exl-id: 4ebdbcd7-6905-4647-b071-1e4413455f38
 feature: Upgrade
 role: Developer
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 ---
 
-# Pakete wurden nach der Aktualisierung von 2.4.4 auf 2.4.4-p1 heruntergestuft
+# Nach dem Upgrade von 2.4.4 auf 2.4.4-p1 heruntergestufte Pakete
 
-Dieser Artikel enthält einen Hotfix für das Problem, wenn Händler in Version 2.4.4 den Befehl `composer update` ausführen und dann die unten aufgeführten Pakete (Module) auf frühere Versionen heruntergestuft werden, die nicht mit Version 2.4.4 kompatibel sind und nur mit Version 2.4.5 und höher verwendet werden sollen.
+Dieser Artikel enthält einen Hotfix für das Problem, dass Händler mit Version 2.4.4 den Befehl `composer update` ausführen und dann die unten aufgeführten Pakete (Module) auf ihre früheren Versionen heruntergestuft werden, die nicht mit Version 2.4.4 kompatibel sind und nur mit Version 2.4.5 und höher verwendet werden sollen.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce in Cloud-Infrastruktur 2.4.4
-* Adobe Commerce vor Ort 2.4.4
+* Adobe Commerce auf Cloud-Infrastruktur 2.4.4
+* Adobe Commerce On-Premises 2.4.4
 * Magento Open Source 2.4.4
 
 ## Problem
 
-Es gibt zwei Szenarien, in denen dieses Problem auftreten kann und wie es reproduziert werden kann:
+Es gibt zwei Szenarien, wie dieses Problem auftreten kann und wie es reproduziert werden kann:
 
 ### Szenario 1
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 Beim Upgrade von 2.4.4 auf 2.4.4-p1 gibt es eine Reihe von Paketen (Modulen), die mit ähnlicher Ausgabe heruntergestuft werden:
 
@@ -76,13 +76,13 @@ Das Upgrade von Version 2.4.4 auf 2.4.4-p1 führt zu den richtigen Paketen (Modu
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Während des Upgrades von Version 2.4.4 auf Version 2.4.4-p1 werden diese Pakete (Module&#39;) herabgestuft. Diese Meldungen können jedoch ignoriert werden und die Funktionalität ist davon nicht betroffen.
+Während des Upgrades von Version 2.4.4 auf 2.4.4-p1 werden die Versionen dieser Pakete (Module) heruntergestuft. Diese Meldungen können jedoch ignoriert werden und die Funktionalität wird nicht beeinträchtigt.
 
 ### Szenario 2
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Wenn Händler 2.4.4 den Befehl `composer update` ausführen, werden dieselben Pakete (Module), die oben in **Szenario 1** aufgeführt sind, auf ihre neueren Versionen aktualisiert, die nur mit Version 2.4.5 kompatibel sind und nicht mit Version 2.4.4 verwendet werden sollten.
+Wenn Händler für Version 2.4.4 den Befehl `composer update` ausführen, werden dieselben Pakete (Module), die oben unter **Szenario 1) aufgeführt sind,** auf ihre neueren Versionen aktualisiert, die nur mit Version 2.4.5 kompatibel sind und nicht mit Version 2.4.4 verwendet werden sollen.
 
 <u>Erwartete Ergebnisse</u>:
 
@@ -90,55 +90,55 @@ Das Upgrade von Version 2.4.4 auf 2.4.4-p1 führt zu den richtigen Paketen (Modu
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Pakete (Module) werden nach der Aktualisierung von Version 2.4.4 auf Version 2.4.4-p1 heruntergestuft.
+Pakete (Module) werden nach dem Upgrade von Version 2.4.4 auf 2.4.4-p1 heruntergestuft.
 
-## Problemumgehung 1: Patch
+## Lösung 1: Patch
 
-Der Patch ist an diesen Artikel angehängt. Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link: [Download ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip)
+Der Patch ist diesem Artikel beigefügt. Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie auf den Dateinamen oder auf den folgenden Link: [Download ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip)
 
 ## Kompatible Adobe Commerce- und Magento Open Source-Versionen:
 
-Der Patch wurde für erstellt:
+Der Patch wurde erstellt für:
 
-* Adobe Commerce in Cloud-Infrastruktur 2.4.4
-* Adobe Commerce vor Ort 2.4.4
+* Adobe Commerce auf Cloud-Infrastruktur 2.4.4
+* Adobe Commerce On-Premises 2.4.4
 * Magento Open Source 2.4.4
 
 >[!NOTE]
 >
->Der Patch ist nicht mit anderen Adobe Commerce- und Magento Open Source-Versionen und -Editionen kompatibel.
+>Der Patch ist mit keiner anderen Adobe Commerce- und Magento Open Source-Version kompatibel.
 
-## Anwenden des Pflasters
+## Anwenden des Patches
 
-Verwenden Sie das angehängte Bash-Skript [ACPLTSRV-2017-fix.sh.zip](assets/ACPLTSRV-2017-fix.sh.zip) als Problemumgehung für dieses Problem.
+Verwenden Sie das angehängte Bash-Skript {0](assets/ACPLTSRV-2017-fix.sh.zip)ACPLTSRV-2017-fix.sh.zip} als Problemumgehung.[
 
 **Genaue Anweisungen zur Verwendung des Skripts:**
 
-### In Adobe Commerce zur Cloud-Infrastruktur:
+### Adobe Commerce auf Cloud-Infrastruktur:
 
-1. Laden Sie die Bash-Skriptdatei `ACPLTSRV-2017-fix.sh` zum lokalen Checkout Ihrer Cloud-Codebase herunter.
+1. Laden Sie die Bash-Skriptdatei `ACPLTSRV-2017-fix.sh` zum lokalen Auschecken Ihrer Cloud-Codebasis herunter.
 1. Führen Sie die Bash-Skriptdatei `ACPLTSRV-2017-fix.sh` aus, um die Composer-Dateien lokal zu ändern.
 1. Fügen Sie die geänderten Composer-Dateien hinzu und übertragen Sie sie in Ihr Git-Repository.
 
-### Auf Adobe Commerce oder in der Magento Open Source vor Ort:
+### On Adobe Commerce oder Magento Open Source On-Premise:
 
-1. Platzieren Sie das Bash-Skript `ACPLTSRV-2017-fix.sh` im Ordner `root` Ihrer Adobe Commerce/Magento Open Source 2.4.4-Installation (der Ordner &quot;`composer.json`&quot;).
-1. Führen Sie das Bash-Skript mit dem Argument `apply` aus, um die betroffenen Pakete (Module) auf ihre 2.4.4-Versionen zu sperren:
+1. Platzieren Sie die Bash-Skript-`ACPLTSRV-2017-fix.sh` im `root`-Ordner Ihrer Adobe Commerce/Magento Open Source 2.4.4-Installation (im selben Ordner wie die `composer.json`).
+1. Führen Sie das Bash-Skript mit einem `apply`-Argument aus, um die betroffenen Pakete (Module) auf ihre Version 2.4.4 zu sperren:
 
    ```bash
    sh ACPLTSRV-2017-fix.sh apply
    ```
 
 1. Führen Sie Composer aktualisiert aus, um die gesperrten Pakete (Module) zu installieren.
-1. Sobald Sie auf 2.4.5 oder 2.4.4-p1 aktualisieren können, führen Sie das Skript mit einem `rollback` -Argument aus:
+1. Sobald Sie bereit sind, auf 2.4.5 oder 2.4.4-p1 zu aktualisieren, führen Sie das Skript mit einem `rollback` Argument aus:
 
    ```bash
    sh ACPLTSRV-2017-fix.sh rollback
    ```
 
-   Das Überspringen dieses Schritts führt zu Aktualisierungsfehlern aufgrund von Anforderungen an in Konflikt stehende Pakete (Module).
-1. Nach Abschluss der oben genannten Schritte können Sie mit der Aktualisierung beginnen.
+   Das Überspringen dieses Schritts führt zu Upgrade-Fehlern aufgrund widersprüchlicher Paket- (Modul-)Anforderungen.
+1. Nach Abschluss der oben genannten Schritte können Sie mit dem Upgrade beginnen.
 
-## Problemumgehung 2
+## Problemumgehen 2
 
-Die zweite Lösung für dieses Problem besteht darin, den Befehl `composer update` nicht ohne Argumente auszuführen.
+Die zweite Problemumgehung besteht darin, den `composer update`-Befehl nicht ohne Argumente auszuführen.

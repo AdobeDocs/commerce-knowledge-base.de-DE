@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung - Übersicht
+title: Übersicht über die Fehlerbehebung
 description: Bewährte Self-Service-Lösungen und Patches vom Adobe Commerce-Supportteam.
 exl-id: df225ffd-14f4-438b-932a-555020c67b61
 feature: Support
@@ -11,6 +11,6 @@ ht-degree: 84%
 
 ---
 
-# Fehlerbehebung - Übersicht
+# Übersicht über die Fehlerbehebung
 
 Bewährte Self-Service-Lösungen und Patches vom Adobe Commerce-Supportteam.

@@ -1,6 +1,6 @@
 ---
-title: Cron stoppt aufgrund von falsch konfigurierten oder fehlenden [!DNL OpCache] Einstellungen
-description: Dieser Artikel bietet eine Lösung für den Fall, dass die Crons aufgrund von falsch konfigurierten oder fehlenden [!DNL OpCache] Einstellungen nicht mehr funktionieren.
+title: 'Cron stoppt aufgrund falsch konfigurierter oder fehlender  [!DNL OpCache] '
+description: Dieser Artikel bietet eine Lösung für den Fall, dass Crons aufgrund falsch konfigurierter oder fehlender  [!DNL OpCache]  nicht mehr funktionieren.
 exl-id: 30643ea9-969f-41c8-8e62-b24e56d690cf
 feature: Cache
 role: Developer
@@ -11,21 +11,21 @@ ht-degree: 0%
 
 ---
 
-# Cron wurde aufgrund einer falsch konfigurierten oder fehlenden [!DNL OpCache]-Einstellungen angehalten
+# Cron wurde aufgrund falsch konfigurierter oder fehlender [!DNL OpCache] gestoppt
 
-Dieser Artikel bietet eine Lösung für den Fall, dass Cron aufgrund fehlender oder falsch konfigurierter [!DNL OpCache]-Einstellungen nicht mehr funktioniert.
+Dieser Artikel bietet eine Lösung für den Fall, dass Cron aufgrund fehlender oder falsch konfigurierter [!DNL OpCache] nicht mehr funktioniert.
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problem
 
-Der Cron funktionierte nicht mehr.
+Der Cron hat aufgehört zu funktionieren.
 
 ## Ursache
 
-Das [!DNL OpCache] -Modul wurde auf eine neuere Version aktualisiert, mit der ein [!DNL GraphQL] -Plug-in eingeführt wurde, das die `env.php` in der Laufzeit neu schreibt und die Cron-Einstellung überschreiben könnte, was das Problem verursacht haben könnte. Die [!DNL OpCache] -Konfiguration muss aktualisiert werden, um Probleme mit dem `env.php file` zu vermeiden. Dies wurde in der [Version 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) des [!DNL ECE Tools] -Pakets behoben.
+Das [!DNL OpCache] wurde auf eine neuere Version aktualisiert, wodurch ein [!DNL GraphQL]-Plug-in eingeführt wurde, das die `env.php` zur Laufzeit neu schreibt und die Cron-Einstellung überschreiben könnte, was das Problem verursacht haben könnte. Die [!DNL OpCache] muss aktualisiert werden, um Probleme mit dem `env.php file` zu vermeiden. Dies wurde in [Version 2002.1.13](/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) des [!DNL ECE Tools]-Pakets behoben.
 
 ## Lösung
 
@@ -35,9 +35,9 @@ Option 1: Führen Sie im Befehlszeilen-Tool Folgendes aus:
 bin/magento cron:run
 ```
 
-Eine Meldung kann anzeigen, dass der Cron deaktiviert ist.
+Es wird möglicherweise eine Meldung angezeigt, dass die Cron-Funktion deaktiviert ist.
 
-Option 2: Öffnen Sie die Datei &quot;`app/etc/env.php`&quot;. Wenn Sie die unten stehende Abbildung sehen, wurde der Cron manuell deaktiviert, war aufgrund einer fehlgeschlagenen Bereitstellung nicht erneut aktiviert oder das Problem bezog sich auf die Einstellungen &quot;[!DNL OpCache]&quot;.
+Option 2: Öffnen Sie die `app/etc/env.php`-Datei. Wenn Sie das unten sehen, wurde die Cron-Funktion manuell deaktiviert, wurde aufgrund einer fehlgeschlagenen Bereitstellung nicht erneut aktiviert oder das Problem stand im Zusammenhang mit den [!DNL OpCache].
 
 ```php
   'cron' =>
@@ -46,16 +46,16 @@ Option 2: Öffnen Sie die Datei &quot;`app/etc/env.php`&quot;. Wenn Sie die unte
   ),
 ```
 
-1. Wenn der Cron deaktiviert ist, führen Sie diesen Befehl aus, um den Cron erneut zu aktivieren: `vendor/bin/ece-tools cron:enable`
-1. Stellen Sie sicher, dass Sie die neueste Version von [!DNL ECE Tools] verwenden. Ist dies nicht der Fall, aktualisieren Sie (oder überspringen Sie auf Artikel 3). Führen Sie folgenden Befehl aus, um Ihre vorhandene Version zu überprüfen:
+1. Wenn die Cron-Funktion deaktiviert ist, führen Sie diesen Befehl aus, um die Cron-Funktion erneut zu aktivieren: `vendor/bin/ece-tools cron:enable`
+1. Stellen Sie sicher, dass Sie die neueste Version von [!DNL ECE Tools] verwenden. Falls nicht, führen Sie ein Upgrade durch (oder fahren Sie mit Punkt 3 fort). Führen Sie diesen Befehl aus, um Ihre vorhandene Version zu überprüfen:
    `composer show magento/ece-tools`
-1. Wenn Sie bereits die neueste Version von [!DNL ECE Tools] verwenden, überprüfen Sie, ob die Datei `op-exclude.txt` vorhanden ist. Führen Sie dazu folgenden Befehl aus:
+1. Wenn Sie bereits die neueste Version von [!DNL ECE Tools] verwenden, überprüfen Sie, ob die `op-exclude.txt` vorhanden ist. Führen Sie dazu diesen Befehl aus:
    `ls op-exclude.txt`.
-Wenn diese Datei nicht vorhanden ist, fügen Sie https://github.com/magento/magento-cloud/blob/master/op-exclude.txt zu Ihrem Repo hinzu, übernehmen Sie die Änderung und stellen Sie sie erneut bereit.
-1. Ohne Aktualisierung von [!DNL ECE Tools] können Sie auch einfach https://github.com/magento/magento-cloud/blob/master/op-exclude.txt in Ihrem Repo hinzufügen/ändern, die Änderung dann übernehmen und erneut bereitstellen.
+Wenn diese Datei nicht vorhanden ist, fügen Sie https://github.com/magento/magento-cloud/blob/master/op-exclude.txt zu Ihrem Repository hinzu, übertragen Sie dann die Änderung und stellen Sie sie erneut bereit.
+1. Ohne [!DNL ECE Tools] aktualisieren zu müssen, können Sie auch einfach https://github.com/magento/magento-cloud/blob/master/op-exclude.txt in Ihrem Repository hinzufügen/ändern, dann die Änderung übernehmen und erneut bereitstellen.
 
 ## Verwandtes Lesen
 
-* [Probleme bei der Cron-Bereitschaft-Überprüfung](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
+* [Probleme mit der Cron-Bereitschaftsprüfung](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
 * [Crons-Eigenschaft](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)
-* [Cron-Auftrag bleibt im Status &quot;Wird ausgeführt&quot; stecken](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+* [Cron-Auftrag steckt im Status „Läuft“ fest](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
