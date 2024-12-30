@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-47179: Massenlöschung von Produktüberprüfungen funktioniert nicht, wenn als eingeschränkte Benutzerrolle angemeldet.'
-description: Wenden Sie den Patch ACSD-47179 an, um das Adobe Commerce-Problem zu beheben, bei dem das Massenlöschen von Produktüberprüfungen nicht funktioniert, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind.
+title: 'ACSD-47179: Das massenhafte Löschen von Produktbewertungen funktioniert nicht, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind'
+description: Wenden Sie den Patch ACSD-47179 an, um das Adobe Commerce-Problem zu beheben, bei dem die Massenlöschung von Produktüberprüfungen nicht funktioniert, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind.
 exl-id: 85d7ce63-7dd6-4df4-b314-278d18e69fbb
 feature: Marketing Tools, Products, Roles/Permissions
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47179: Massenlöschung von Produktüberprüfungen funktioniert nicht, wenn als eingeschränkte Benutzerrolle angemeldet.
+# ACSD-47179: Das massenhafte Löschen von Produktbewertungen funktioniert nicht, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind
 
-Der Patch ACSD-47179 behebt das Problem, dass das Massenlöschen von Produktüberprüfungen nicht funktioniert, wenn sie als eingeschränkte Benutzerrolle angemeldet sind. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.23 installiert ist. Die Patch-ID ist ACSD-47179. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Mit dem Patch ACSD-47179 wird das Problem behoben, dass das massenhafte Löschen von Produktüberprüfungen nicht funktioniert, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.23 installiert ist. Die Patch-ID ist ACSD-47179. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,44 +27,44 @@ Der Patch ACSD-47179 behebt das Problem, dass das Massenlöschen von Produktübe
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Das gebündelte Löschen von Produktüberprüfungen funktioniert nicht, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind.
+Das massive Löschen von Produktüberprüfungen funktioniert nicht, wenn Sie als eingeschränkte Benutzerrolle angemeldet sind.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Erstellen Sie eine sekundäre Website.
-1. Erstellen Sie eine Benutzerrolle, die auf die sekundäre Website beschränkt ist und über die vollständige Berechtigung für die folgenden Abschnitte verfügt:
+1. Erstellen Sie eine Benutzerrolle, die auf die sekundäre Website mit voller Berechtigung für die folgenden Abschnitte beschränkt ist:
    * Katalog
-   * Kunde
+   * KUNDE
    * Marketing
 1. Erstellen Sie ein Produkt und weisen Sie es der sekundären Website zu.
-1. Fügen Sie dem Produkt zwei Bewertungen vom Frontend hinzu.
-1. Melden Sie sich mit dem soeben erstellten eingeschränkten Administratorbenutzer bei [!DNL Commerce] Admin an.
-1. Versuchen Sie, ausstehende Überprüfungen gebündelt zu löschen.
+1. Fügen Sie dem Produkt zwei Bewertungen aus dem Frontend hinzu.
+1. Melden Sie sich beim [!DNL Commerce] Admin mit dem soeben erstellten eingeschränkten Admin-Benutzer an.
+1. Versuchen, ausstehende Überprüfungen massenweise zu löschen.
 
 <u>Erwartete Ergebnisse</u>:
 
-Ein Administrator mit ausreichenden Berechtigungen kann ausstehende Prüfungen in großem Umfang löschen.
+Ein Administrator mit ausreichenden Berechtigungen kann ausstehende Überprüfungen massenweise löschen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Sie erhalten den folgenden Fehler: _Irgendetwas ist schiefgelaufen. Ausnahme, die in support_report.log_ generiert wurde
+Sie erhalten die folgende Fehlermeldung: _Etwas ist schiefgelaufen. In support_report.log generierte Ausnahme_
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

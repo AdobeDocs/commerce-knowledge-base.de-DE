@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48627: Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler'
-description: Wenden Sie den Patch ACSD-48627 an, um das Adobe Commerce-Problem zu beheben, bei dem das konfigurierbare nicht vorrätige Produkt beim Senden einer GraphQL-Anfrage zum Abrufen von Warenkorbdetails einen Fehler verursacht.
+title: 'ACSD-48627: Nicht vorrätiges konfigurierbares Produkt verursacht einen Fehler'
+description: Wenden Sie den ACSD-48627-Patch an, um das Adobe Commerce-Problem zu beheben, bei dem das nicht vorrätige konfigurierbare Produkt einen Fehler verursacht, wenn eine GraphQL-Anfrage gesendet wird, um Details zum Warenkorb abzurufen.
 exl-id: e3048a91-1112-49a7-afcc-e6bb23208351
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48627: Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler
+# ACSD-48627: Nicht vorrätiges konfigurierbares Produkt verursacht einen Fehler
 
-Der Patch ACSD-48627 behebt das Problem, bei dem das konfigurierbare nicht vorrätige Produkt beim Senden einer GraphQL-Anfrage zum Abrufen von Warenkorbdetails einen Fehler verursacht. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 installiert ist. Die Patch-ID lautet ACSD-48627. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.6 behoben sein soll.
+Der Patch von ACSD-48627 behebt das Problem, dass das nicht vorrätige konfigurierbare Produkt einen Fehler verursacht, wenn eine GraphQL-Anfrage gesendet wird, um Warenkorbdetails abzurufen. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 installiert ist. Die Patch-ID ist ACSD-48627. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.6 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,19 +27,19 @@ Der Patch ACSD-48627 behebt das Problem, bei dem das konfigurierbare nicht vorr�
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler beim Senden einer GraphQL-Anfrage zum Abrufen von Warenkorbdetails.
+Nicht vorrätiges konfigurierbares Produkt verursacht einen Fehler beim Senden einer GraphQL-Anfrage zum Abrufen von Warenkorbdetails.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Erstellen Sie ein Kundenkonto.
+1. Kundenkonto erstellen.
 1. Fügen Sie einige Produkte zum Warenkorb hinzu, einschließlich eines konfigurierbaren Produkts.
-1. Wechseln Sie zum Admin-Backend und bearbeiten Sie das konfigurierbare Produkt, indem Sie alle untergeordneten Produkte auf 0 setzen.
-1. Das konfigurierbare Produkt wird nicht mehr vorrätig, da alle untergeordneten Produkte nicht mehr vorrätig sind.
-1. Überprüfen Sie die Tabelle `catalog_product_index_price` . Der Datensatz mit diesem Produkt ist leer.
+1. Wechseln Sie zum Admin-Backend und bearbeiten Sie das konfigurierbare Produkt, indem Sie für alle untergeordneten Produkte die Menge auf 0 festlegen.
+1. Das konfigurierbare Produkt ist nicht mehr vorrätig, da alle untergeordneten Produkte nicht mehr vorrätig sind.
+1. Überprüfen Sie die `catalog_product_index_price`. Der Datensatz mit diesem Produkt ist leer.
 1. Stellen Sie eine GraphQL-Anfrage, um das Kunden-Token abzurufen.
 
    ```GraphQL
@@ -53,7 +53,7 @@ Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler beim Senden ein
                }
    ```
 
-1. Stellen Sie eine GraphQL-Anfrage, um cartId zu erhalten.
+1. Stellen Sie eine GraphQL-Anfrage, um die cartId zu erhalten.
 
    ```GraphQL
    Headers: Authentication => Bearer [customer token in step 6]
@@ -75,7 +75,7 @@ Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler beim Senden ein
                    }
    ```
 
-1. Stellen Sie eine GraphQL-Anfrage, um die Details zum Warenkorb abzurufen.
+1. Stellen Sie eine GraphQL-Anfrage, um die Warenkorbdetails zu erhalten.
 
    ```GraphQL
    Headers: Authentication => Bearer [customer token in step 6]
@@ -266,24 +266,24 @@ Nicht vorrätig konfigurierbares Produkt verursacht einen Fehler beim Senden ein
 
 <u>Erwartete Ergebnisse</u>:
 
-Kein *Interner Server-Fehler* in der Antwort.
+Kein *interner Server-Fehler* in der Antwort.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die Antwort enthält einen *internen Server-Fehler*.
+In der *ist ein „Interner Server* Fehler“ enthalten.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-48313: [!UICONTROL configurable_variations] Spalte wird nicht geparst, wenn der Attributwert Komma enthält'
-description: Wenden Sie den Patch ACSD-48313 an, um das Adobe Commerce-Problem zu beheben, bei dem die Spalte [!UICONTROL configurable_variations] nicht analysiert wird, wenn der Attributwert ein Komma enthält.
+title: 'ACSD-48313: [!UICONTROL configurable_variations] Spalte wird nicht geparst, wenn der Attributwert ein Komma enthält'
+description: Wenden Sie den Patch ACSD-48313 an, um das Adobe Commerce-Problem zu beheben, bei dem die [!UICONTROL configurable_variations] nicht geparst wird, wenn der Attributwert ein Komma enthält.
 exl-id: 0ac3f8da-4da3-4308-bea4-98a5b6926b0d
 feature: Attributes, Configuration
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48313: **[!UICONTROL configurable_variations]** Spalte wird nicht geparst, wenn der Attributwert Komma enthält
+# ACSD-48313: **[!UICONTROL configurable_variations]** Spalte wird nicht geparst, wenn der Attributwert ein Komma enthält
 
-Der Patch ACSD-48313 behebt das Problem, dass die Spalte **[!UICONTROL configurable_variations]** nicht analysiert wird, wenn der Attributwert ein Komma enthält. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 installiert ist. Die Patch-ID lautet ACSD-48313. Die Version, in der dieses Problem behoben wird, ist noch nicht verfügbar.
+Der Patch ACSD-48313 löst das Problem, dass **[!UICONTROL configurable_variations]** Spalte nicht geparst wird, wenn der Attributwert ein Komma enthält. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.25 installiert ist. Die Patch-ID ist ACSD-48313. Die Version, in der dieses Problem behoben wird, ist noch nicht verfügbar.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,28 +25,28 @@ Der Patch ACSD-48313 behebt das Problem, dass die Spalte **[!UICONTROL configura
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Nach dem Export konfigurierbarer Produkte kann die resultierende Datei aufgrund eines Formatierungsproblems mit dem Attribut **[!UICONTROL configurable_variations]** nicht erneut importiert werden. Dies geschieht, wenn Attributoptionen vorhanden sind, die ein Komma enthalten.
+Nach dem Export von konfigurierbaren Produkten kann die resultierende Datei aufgrund eines Formatierungsproblems mit dem Attribut **[!UICONTROL configurable_variations]** nicht erneut importiert werden. Dies geschieht, wenn Attributoptionen vorhanden sind, die ein Komma enthalten.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
 1. Gehen Sie zu **[!UICONTROL Stores]** > **[!UICONTROL Attributes]** > **[!UICONTROL Product]** und erstellen Sie ein neues Attribut _Größe_:
-1. Katalogeingabetyp für Store Owner: **[!UICONTROL Dropdown]**
+1. Katalogeingabetyp für Store-Inhaber: **[!UICONTROL Dropdown]**.
 1. Erstellen Sie Optionen mit einem Komma, z. B.:
    * 10,2 cm
    * 15,5 cm
 1. **[!UICONTROL Advanced Attribute Properties]** - Umfang: _Global_.
-1. Erstellen Sie ein neues konfigurierbares Produkt mithilfe der Funktion Konfigurationen erstellen .
-1. Wählen Sie das obige Attribut _Größe_ und die beiden Optionen, die das Komma enthalten.
-1. Gehen Sie zu **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Export]** und erstellen Sie einen neuen Produktexport (führen Sie den Cron aus, um die Erstellung der CSV-Datei Trigger).
-1. Gehen Sie zu **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]** und versuchen Sie, dieselbe CSV-Datei erneut zu importieren, die oben erstellt wurde.
+1. Erstellen Sie ein neues konfigurierbares Produkt mit der Funktion Konfigurationen erstellen .
+1. Wählen Sie das obige Attribut _Größe_ und die beiden Optionen aus, die das Komma enthalten.
+1. Gehen Sie zu **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Export]** und erstellen Sie einen neuen Produktexport (führen Sie den cron-Trigger aus, um die CSV-Dateigenerierung zu starten).
+1. Wechseln Sie zu **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]** und versuchen Sie, dieselbe oben erstellte CSV-Datei erneut zu importieren.
 
 <u>Erwartete Ergebnisse</u>:
 
-Benutzer sollten die Datei importieren können.
+Der Benutzer sollte in der Lage sein, die Datei zu importieren.
 
 <u>Tatsächliche Ergebnisse</u>:
 
@@ -56,19 +56,19 @@ Benutzer sollten die Datei importieren können.
 3. Column configurable_variations: Invalid option value for attribute "size" in row(s): 3
 ```
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-42509: CSV konnte nicht für schnelle Bestellung hochgeladen werden, was zu dem Fehler "Cookie kann nicht gesendet werden"führte'
-description: Der MDVA-42509-Patch behebt das Problem, dass eine CSV-Datei nicht für eine schnelle Bestellung hochgeladen werden konnte, was dazu führte, dass der Cookie-Fehler nicht gesendet werden konnte. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-42509. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+title: 'MDVA-42509: CSV konnte für die Schnellreihenfolge nicht hochgeladen werden, was zu der Fehlermeldung „Cookie kann nicht gesendet werden“ führte'
+description: Der Patch MDVA-42509 löst das Problem, dass eine CSV-Datei nicht hochgeladen werden konnte, um eine schnelle Reihenfolge zu erhalten, was zu der Fehlermeldung führte, dass das Cookie nicht gesendet werden konnte. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-42509. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 exl-id: 7aa0e710-9a28-4531-b9cb-c82f654487f4
 feature: B2B, Orders
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-42509: CSV konnte nicht für schnelle Bestellung hochgeladen werden, was zu dem Fehler &quot;Cookie kann nicht gesendet werden&quot;führte
+# MDVA-42509: CSV konnte für die Schnellreihenfolge nicht hochgeladen werden, was zu der Fehlermeldung „Cookie kann nicht gesendet werden“ führte
 
-Der Patch MDVA-42509 behebt das Problem, dass eine CSV-Datei nicht für eine schnelle Bestellung hochgeladen werden konnte, was dazu führte, dass der Fehler *Cookie konnte nicht gesendet werden* angezeigt wurde. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-42509. Bitte beachten Sie, dass das Problem in Adobe Commerce 2.4.5 behoben sein soll.
+Der Patch MDVA-42509 löst das Problem, dass eine CSV-Datei nicht hochgeladen werden konnte, um eine schnelle Reihenfolge zu erhalten, was zu dem Fehler *Das Cookie kann nicht gesendet werden* führte. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.16 installiert ist. Die Patch-ID lautet MDVA-42509. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,38 +27,38 @@ Der Patch MDVA-42509 behebt das Problem, dass eine CSV-Datei nicht für eine sch
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Wenn Sie mithilfe einer CSV-Datei eine schnelle Bestellung mit einer großen Anzahl von Produkten erstellen, wird ein Cookie-Fehler angezeigt: *Cookie kann nicht gesendet werden*
+Bei der Erstellung einer Schnellbestellung mit einer großen Anzahl von Produkten über eine CSV-Datei wird ein Cookie-Fehler angezeigt: *Cookie kann nicht gesendet werden*
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Aktivieren Sie die Schnellreihenfolge, indem Sie zu **Stores** > **Einstellungen** > **Konfigurationen** > **Allgemein** > **B2B-Funktionen** navigieren.
-1. Erstellen Sie ein Kundenkonto und gehen Sie zu **Quick Order** am oberen Link.
-1. Versuchen Sie, eine schnelle Bestellung mithilfe einer CSV-Datei mit mehr als 100 SKUs zu erstellen.
+1. Aktivieren Sie die Schnellbestellung, indem Sie zu **Stores** > **Einstellungen** > **Konfigurationen** > **Allgemein** > **B2B-Funktionen** navigieren.
+1. Erstellen Sie ein Kundenkonto und navigieren Sie **Schnellbestellung** über den oberen Link.
+1. Versuchen Sie, eine Schnellbestellung mit einer CSV-Datei zu erstellen, die über 100 SKUs enthält.
 
 <u>Erwartete Ergebnisse</u>:
 
-Sie können eine schnelle Bestellung mit einer großen Anzahl von SKUs erstellen.
+Sie können eine Schnellbestellung mit einer großen Anzahl von SKUs erstellen.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Eine Fehlermeldung wird in Bezug auf die Cookie-Größe angezeigt.
+Es wird eine Fehlermeldung bezüglich der Cookie-Größe angezeigt.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches, die in QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) verfügbar sind, in unserer Entwicklerdokumentation.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [Patches in QPT verfügbar](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.

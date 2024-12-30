@@ -1,6 +1,6 @@
 ---
-title: Überprüfen Sie den Patch auf Adobe Commerce-Problem mit dem Tool für Qualitätsmuster .
-description: Dieser Artikel bietet einen Überblick über das Quality Patches Tool (QPT) und Links zu Ressourcen, die erklären, wie es verwendet wird.
+title: Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen
+description: Dieser Artikel bietet einen Überblick über das Quality Patches Tool (QPT) und Links zu Ressourcen, die seine Verwendung erklären.
 exl-id: 43393708-3939-449f-a764-b2ac6326165f
 feature: Tools and External Services
 role: Admin
@@ -11,52 +11,52 @@ ht-degree: 0%
 
 ---
 
-# Überprüfen Sie den Patch auf Adobe Commerce-Problem mit dem Tool für Qualitätsmuster .
+# Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen
 
-Dieser Artikel bietet einen Überblick über das Quality Patches Tool (QPT) und Links zu Ressourcen, die erklären, wie es verwendet wird.
+Dieser Artikel bietet einen Überblick über das Quality Patches Tool (QPT) und Links zu Ressourcen, die seine Verwendung erklären.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce vor Ort, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-* Adobe Commerce in der Cloud-Infrastruktur, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce On-Premise, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce auf Cloud-Infrastruktur, alle [unterstützten Versionen](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
-## Qualitätsmuster-Werkzeug
+## Was sind Quality Patches Tool?
 
-Das [Quality Patches Tool](https://github.com/magento/quality-patches) (QPT) sind individuelle Patches, die von Adobe und der Magento Open Source Community entwickelt wurden.
+Das [Quality Patches Tool](https://github.com/magento/quality-patches) (QPT) sind individuelle Patches, die von Adobe und der Magento Open Source-Community entwickelt wurden.
 
 Damit können Sie:
 
-* Anwendung von Qualitätspatches, die im Paket enthalten sind
-* Zurücksetzen zuvor angewendeter Patches
-* Hier finden Sie allgemeine Informationen zu Qualitätspatches, die für die installierte Version von Adobe Commerce verfügbar sind.
+* Anwenden von Qualitäts-Patches, die im Paket enthalten sind
+* Zuvor angewendete Patches wiederherstellen
+* Sehen Sie sich die allgemeinen Informationen über Qualitäts-Patches an, die für die installierte Version von Adobe Commerce verfügbar sind.
 
-Im Folgenden finden Sie ein Beispiel für die Statustabelle, die Sie aufrufen können, um die verfügbaren Patches anzuzeigen:
+Im Folgenden finden Sie ein Beispiel für die Statustabelle, die Sie erhalten können, um die verfügbaren Patches anzuzeigen:
 
-![Magento_patches_list](assets/status_table.png)
+![Magento_PATCHES_LIST](assets/status_table.png)
 
-Das Tool soll Ihnen die Möglichkeit geben, Patches für Probleme, die mit Adobe Commerce auftreten können, selbst zu bedienen oder einfach durch den Adobe Commerce-Support vorgeschlagene Patches anzuwenden.
+Das Tool soll Ihnen die Möglichkeit geben, selbst Patches für Probleme zu erstellen, die möglicherweise bei Adobe Commerce auftreten, oder einfach Patches anzuwenden, die vom Adobe Commerce-Support vorgeschlagen werden.
 
 >[!NOTE]
 >
->QPT ist nur für Qualitäts-Patches geeignet. Sicherheits-Patches sind im [Magento Security Center](https://magento.com/security/patches) verfügbar.
+>QPT ist nur für qualitativ hochwertige Patches. Sicherheits-Patches sind im [Magento-Sicherheitscenter](https://magento.com/security/patches) verfügbar.
 
-## Im Werkzeug für Qualitätsmuster verfügbare Patches
+## Im Quality Patches Tool verfügbare Patches
 
-Eine Liste der verfügbaren Patches finden Sie in der Entwicklerdokumentation unter [Qualitätsmuster-Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) .
+Eine Liste der verfügbaren Patches finden Sie [Quality Patches Tool](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) in unserer Entwicklerdokumentation.
 
-## Installieren und Verwenden des Tools &quot;Qualitätsmuster&quot;
+## Installieren und Verwenden des Quality Patches Tools
 
-Die Installations- und Nutzungsbefehle unterscheiden sich für Adobe Commerce On-Premise und Adobe Commerce in der Cloud-Infrastruktur, da für Cloud das QPT-Paket im ece-Tools-Paket enthalten ist.
+Die Installations- und Verwendungsbefehle für Adobe Commerce On-Premise und Adobe Commerce On Cloud Infrastructure unterscheiden sich, da das QPT-Cloud-Paket im Paket ece-tools enthalten ist.
 
-### Installation und Verwendung von QPT für Adobe Commerce vor Ort
+### Installieren und Verwenden von QPT für Adobe Commerce On-Premise
 
-Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Wiederherstellen von Patches finden Sie in der Entwicklerdokumentation unter [Handbuch für Software-Aktualisierung > Patchen](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) .
+Weitere Informationen [ Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches finden Sie unter ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage)Software-Update-Handbuch > Patching“ in unserer Entwicklerdokumentation.
 
 ### Installieren und Verwenden von QPT für Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen zum Installieren und Verwenden von QPT für das Anwenden und Wiederherstellen von Patches auf Adobe Commerce in der Cloud-Infrastruktur finden Sie unter [Cloud für Adobe Commerce > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Zurücksetzen von Patches auf [ Cloud-Infrastruktur finden Sie unter „Cloud ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) für Adobe Commerce Adobe Commerce > Patches anwenden in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* [Versionshinweise zum Qualitätsmuster-Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) in unserer Entwicklerdokumentation.
-* [Anwenden von Composer-Patches, die von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank bereitgestellt werden.
+* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) in unserer Entwicklerdokumentation.
+* [Anwenden von Composer-Patches von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank.
