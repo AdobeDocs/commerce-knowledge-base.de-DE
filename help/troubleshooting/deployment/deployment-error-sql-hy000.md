@@ -1,6 +1,6 @@
 ---
 title: 'Bereitstellungsfehler: SQLSTATE[HY000]'
-description: Dieser Artikel bietet eine Lösung für das Problem, bei dem die Bereitstellung aufgrund des SQLSTATE[HY00]-Fehlers fehlschlägt.
+description: Dieser Artikel bietet eine Lösung für den Fall, dass die Bereitstellung aufgrund des SQLSTATE[HY000]-Fehlers fehlschlägt.
 exl-id: c6da6275-9327-4a5c-99ed-93a53952ba42
 feature: Deploy
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bereitstellungsfehler: SQLSTATE[HY000]
 
-Dieser Artikel bietet eine Lösung für das Problem, bei dem die Bereitstellung aufgrund des SQLSTATE[HY000] -Fehlers fehlschlägt.
+Dieser Artikel bietet eine Lösung für das Problem, dass die Bereitstellung aufgrund des SQLSTATE.[.]-Fehlers fehlschlägt.
 
 ## Betroffene Produkte und Versionen
 
@@ -34,5 +34,5 @@ Cron wird während der Bereitstellung ausgeführt.
 
 ## Lösung
 
-Um das Problem zu beheben, stoppen Sie die Ausführung von cron, indem Sie die Befehlszeile öffnen und den folgenden Befehl ausführen:
+Um das Problem zu beheben, stoppen Sie die Ausführung von Cron, indem Sie die Befehlszeile öffnen und den folgenden Befehl ausführen:
 `./vendor/bin/ece-tools cron:disable`.

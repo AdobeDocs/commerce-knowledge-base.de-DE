@@ -1,6 +1,6 @@
 ---
-title: "MDVA-40537: Das Erstellen einer Store-Ansicht gibt einen Fehler aus, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben."
-description: Der Patch MDVA-40537 behebt das Problem, dass Benutzer beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
+title: 'MDVA-40537: Beim Erstellen der Store-Ansicht wird ein Fehler ausgegeben, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.'
+description: Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 exl-id: d92400c9-0c5a-4416-820d-99ab4ba34003
 feature: CMS
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-40537: Beim Erstellen einer Store-Ansicht wird ein Fehler ausgegeben, wenn mehrere CMS-Seiten denselben URL-Schlüssel aufweisen.
+# MDVA-40537: Beim Erstellen der Store-Ansicht wird ein Fehler ausgegeben, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.
 
-Der Patch MDVA-40537 behebt das Problem, dass Benutzer beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
+Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,16 +27,16 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.3.4 - 2.4.0-p1
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 
 ## Problem
 
-Benutzer erhalten beim Erstellen einer Store-Ansicht eine Fehlermeldung, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.
+Benutzende erhalten eine Fehlermeldung beim Erstellen einer Store-Ansicht, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Wechseln Sie zum Bereich **Admin-Bereich** > **Stores** > **Alle Stores** und erstellen Sie zwei Store-Ansichten.
+1. Gehen Sie zum **Admin-Bedienfeld** > **Stores** > **Alle Stores** und erstellen Sie zwei Store-Ansichten.
 
    ```sql
    Name: German
@@ -50,7 +50,7 @@ Benutzer erhalten beim Erstellen einer Store-Ansicht eine Fehlermeldung, wenn me
    Status: Enabled
    ```
 
-1. Gehen Sie zum Bereich **Admin Panel** > **Inhalt** > **Seiten** und erstellen Sie zwei Seiten.
+1. Gehen Sie zum **Admin-Bedienfeld** > **Inhalt** > **Seiten** und erstellen Sie zwei Seiten.
 
    ```sql
    Page Title: About Us
@@ -64,7 +64,7 @@ Benutzer erhalten beim Erstellen einer Store-Ansicht eine Fehlermeldung, wenn me
    Store View: German
    ```
 
-1. Gehen Sie zum Bereich **Admin Panel** > **Stores** > **Alle Stores** und erstellen Sie eine neue Store-Ansicht.
+1. Gehen Sie zu **Admin-Bedienfeld** > **Stores** > **Alle Stores** und erstellen Sie eine neue Store-Ansicht.
 
    ```sql
    Name: Spanish
@@ -74,28 +74,28 @@ Benutzer erhalten beim Erstellen einer Store-Ansicht eine Fehlermeldung, wenn me
 
 <u>Erwartete Ergebnisse</u>:
 
-Die Speicheransicht wurde erfolgreich erstellt.
+Shop-Ansicht wurde erfolgreich erstellt.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Die folgende Fehlermeldung wird angezeigt: *Beim Speichern ist etwas schief gelaufen. Überprüfen Sie das Fehlerprotokoll.* Das Protokoll enthält eine Ausnahme wie die folgende:
+Die folgende Fehlermeldung wird angezeigt: *Beim Speichern ist ein Fehler aufgetreten. Bitte überprüfen Sie das Fehlerprotokoll.* Das Protokoll enthält eine Ausnahme wie:
 
 ```sql
 Exception message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'about-us-4' for key 'URL_REWRITE_REQUEST_PATH_STORE_ID', query was: INSERT  INTO }}url_rewrite{{ (}}redirect_type{{,}}is_autogenerated{{,}}metadata{{,}}description{{,}}store_id{{,}}entity_type{{,}}entity_id{{,}}request_path{{,}}target_path{{) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?)
 ```
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) verfügbare Patches.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-).

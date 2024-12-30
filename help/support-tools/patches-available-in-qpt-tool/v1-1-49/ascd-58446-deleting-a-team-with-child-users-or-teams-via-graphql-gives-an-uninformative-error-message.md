@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-58446: Durch das Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL erhalten Sie eine informative Fehlermeldung.'
-description: Wenden Sie den Patch ACSD-58446 an, um das Adobe Commerce-Problem zu beheben, bei dem beim Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL eine nicht informative Fehlermeldung zurückgegeben wird, die nicht mit der Benutzeroberfläche übereinstimmt.
+title: 'ACSD-58446: Beim Löschen eines Teams mit untergeordneten Benutzenden oder Teams über GraphQL wird eine informative Fehlermeldung angezeigt'
+description: Wenden Sie den Patch ACSD-58446 an, um das Adobe Commerce-Problem zu beheben, bei dem das Löschen eines Teams mit untergeordneten Benutzenden oder Teams über GraphQL eine informative Fehlermeldung zurückgibt, die nicht mit der Benutzeroberfläche übereinstimmt.
 feature: GraphQL
 role: Admin, Developer
 exl-id: df9eca9d-4d7a-4d4c-b6aa-59ac538b1aa0
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-58446: Durch das Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL erhalten Sie eine informative Fehlermeldung.
+# ACSD-58446: Beim Löschen eines Teams mit untergeordneten Benutzenden oder Teams über GraphQL wird eine informative Fehlermeldung angezeigt
 
-Der Patch ACSD-58446 behebt das Adobe Commerce-Problem, bei dem beim Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL eine nicht informative Fehlermeldung zurückgegeben wird, die nicht mit der Benutzeroberfläche übereinstimmt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.49 installiert ist. Die Patch-ID ist ACSD-58446. Bitte beachten Sie, dass das Problem in Adobe Commerce B2B 1.5.1 behoben sein soll
+Der Patch ACSD-58446 behebt das Adobe Commerce-Problem, dass beim Löschen eines Teams mit untergeordneten Benutzenden oder Teams über GraphQL eine nicht informative Fehlermeldung zurückgegeben wird, die nicht mit der Benutzeroberfläche übereinstimmt. Dieser Patch ist verfügbar, wenn [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.49 installiert ist. Die Patch-ID ist ACSD-58446. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce B2B 1.5.1 behoben wird
 
 ## Betroffene Produkte und Versionen
 
@@ -23,30 +23,30 @@ Der Patch ACSD-58446 behebt das Adobe Commerce-Problem, bei dem beim Löschen ei
 
 **Kompatibel mit Adobe Commerce-Versionen:**
 
-* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6 - p7
+* Adobe Commerce (alle Bereitstellungsmethoden) 2.4.6 - 2.4.6-p7
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit neuen [!DNL Quality Patches Tool] -Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen [!DNL Quality Patches Tool]-Versionen auch für andere Versionen gelten. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Beim Löschen eines Teams mit untergeordneten Benutzern oder Teams über GraphQL wird eine nicht informative Fehlermeldung zurückgegeben, die mit der Benutzeroberfläche nicht konsistent ist.
+Beim Löschen eines Teams mit untergeordneten Benutzenden oder Teams über GraphQL wird eine informative Fehlermeldung zurückgegeben, die nicht mit der Benutzeroberfläche übereinstimmt.
 
 ## Voraussetzungen:
 
 Adobe Commerce B2B-Module installiert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Aktivieren Sie die Funktion &quot;*[!UICONTROL Company]*&quot;.
+1. Aktivieren Sie die *[!UICONTROL Company]*.
 1. Erstellen Sie ein neues Unternehmenskonto.
-1. Melden Sie sich bei **[!UICONTROL Admin]** an und aktivieren Sie das Unternehmenskonto.
-1. Markieren Sie die E-Mail und legen Sie ein Kennwort für das neue Unternehmenskonto fest.
-1. Erstellen Sie ein neues Team für das Unternehmen.
-1. Melden Sie sich als Unternehmensbenutzer in der Storefront an und fügen Sie einen neuen Benutzer für das erstellte Team hinzu.
-1. Melden Sie sich bei **[!UICONTROL Admin]** an, deaktivieren Sie den Unternehmensbenutzer und legen Sie *[!UICONTROL Customer Active]* = *Nein* fest.
-1. Löschen Sie das erstellte Team unbedingt über GraphQL.
+1. Melden Sie sich bei der **[!UICONTROL Admin]** an und aktivieren Sie das Unternehmenskonto.
+1. Überprüfen Sie die E-Mail und legen Sie ein Kennwort für das neue Unternehmenskonto fest.
+1. Erstellen Sie ein neues Team für die Firma.
+1. Melden Sie sich als Unternehmensbenutzer an der Storefront an und fügen Sie einen neuen Benutzer für das erstellte Team hinzu.
+1. Melden Sie sich bei der **[!UICONTROL Admin]** an, deaktivieren Sie den Firmenbenutzer und legen Sie *[!UICONTROL Customer Active]* = *Nein* fest
+1. Stellen Sie sicher, dass Sie das erstellte Team über GraphQL löschen.
 
    ```
    mutation {
@@ -60,24 +60,24 @@ Adobe Commerce B2B-Module installiert.
 
 <u>Erwartete Ergebnisse</u>:
 
-Es wird eine informative Fehlermeldung zurückgegeben, die der Benutzeroberfläche entspricht.
+Eine informative Fehlermeldung, die mit der Benutzeroberfläche konsistent ist, wird zurückgegeben.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Es wird eine generische Fehlermeldung für den internen Server zurückgegeben, die nicht mit der Benutzeroberfläche konsistent ist.
+Es wird eine generische interne Server-Fehlermeldung zurückgegeben, die nicht mit der Benutzeroberfläche übereinstimmt.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool]-Handbuch.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch Commerce on Cloud Infrastructure.
+* Adobe Commerce oder Magento Open Source On-Premise: [[!DNL Quality Patches Tool] > Nutzung](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) im [!DNL Quality Patches Tool].
+* Adobe Commerce in Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) im Handbuch zu Commerce in Cloud-Infrastruktur.
 
 ## Verwandtes Lesen
 
 Weitere Informationen zu [!DNL Quality Patches Tool] finden Sie unter:
 
-* [[!DNL Quality Patches Tool] release: ein neues Tool zur Selbstbedienung von Qualitätspatches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie anhand von  [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [[!DNL Quality Patches Tool] Veröffentlicht: Ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool] -Handbuch.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie unter [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) im [!DNL Quality Patches Tool].

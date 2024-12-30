@@ -1,6 +1,6 @@
 ---
-title: 'Bereitstellungsfehler: *Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert*'
-description: 'Dieser Artikel bietet eine Lösung für den Bereitstellungsfehler: *"Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert"*.'
+title: 'Bereitstellungsfehler: *Fehler 7 beim Herunterladen … Port 443: Verbindung verweigert*'
+description: 'Dieser Artikel bietet eine Lösung für den Bereitstellungsfehler: *„Fehler 7 beim Herunterladen von … Port 443: Verbindung verweigert“*.'
 exl-id: 520cf50f-3682-441d-87a7-8e05301a2b0c
 feature: Cache, Deploy
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Bereitstellungsfehler: *Fehler 7 beim Herunterladen ... Port 443: Verbindung verweigert*
+# Bereitstellungsfehler: *Fehler 7 beim Herunterladen von … Port 443: Verbindung verweigert*
 
-Dieser Artikel enthält eine Fehlerbehebung für das Problem, das bei einer fehlgeschlagenen Bereitstellung mit der folgenden Fehlermeldung auftritt:
+Dieser Artikel bietet eine Lösung für das Problem, wenn die Bereitstellung mit der folgenden Fehlermeldung fehlschlägt:
 
 ```bash
 W: In CurlDownloader.php line 370:
@@ -25,40 +25,40 @@ W:    refused
 
 ## Betroffene Versionen
 
-Adobe Commerce in der Cloud-Infrastruktur, [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problem
 
-Die Bereitstellung schlägt mit der Meldung **curl error 7** fehl.
+Die Bereitstellung schlägt mit der **curl error 7)**.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-Trigger einer Bereitstellung.
+Trigger einer -Bereitstellung.
 
-<u>Erwartetes Verhalten</u>:
+<u>Erwartetes </u>:
 
-Die Implementierung ist erfolgreich.
+Die Bereitstellung war erfolgreich.
 
-<u>Tatsächliches Verhalten</u>:
+<u>Tatsächliches </u>:
 
-Die Bereitstellung schlägt fehl, und der folgende Fehler: *curl error 7 while download ... port 443: Connection refused* wird im Bereitstellungsprotokoll angezeigt.
+Die Bereitstellung schlägt fehl und die folgende Fehlermeldung wird im Bereitstellungsprotokoll angezeigt: *cURL-Fehler 7 beim Herunterladen von … Port 443* Verbindung verweigert.
 
 ## Ursache
 
-Dies kann daran liegen, dass die Cache-Verbindung mit dem Repo verloren geht.
+Dies kann darauf zurückzuführen sein, dass die Cache-Verbindung mit dem Repository verloren geht.
 
 ## Lösung
 
-Bitten Sie einen Superuser im Projekt, diesen Befehl auszuführen:
+Bitten Sie einen Superbenutzer des Projekts, diesen Befehl auszuführen:
 
 ```bash
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Informationen dazu, wer im Projekt ein Superuser ist, finden Sie unter [Anzeigen der Projektrolle eines Benutzers](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) im Commerce on Cloud Infrastructure Guide.
+Informationen dazu, wer im Projekt ein Super-Anwender ist, finden Sie unter [Anzeigen der Projektrolle eines Anwenders](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) im Handbuch zu Commerce in Cloud-Infrastruktur .
 
-## Empfohlene Lesbarkeit
+## Empfohlene Lektüre
 
-* [Fehlerbehebung bei der Adobe Commerce-Bereitstellung](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
-* [Auf Adobe Commerce in Cloud Repo konnte nicht zugegriffen werden: Fehler 403 Verboten oder 404 Nicht gefunden bei Bereitstellung von ](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [Die Bereitstellung schlägt mit &quot;Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html) fehl.
+* Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+* Auf [Adobe Commerce in Cloud-Repository konnte nicht zugegriffen werden: Fehler „403 Verboten“ oder „404 Nicht gefunden“ bei der Bereitstellung](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
+* [Bereitstellung schlägt mit „Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen“](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).

@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-40609: Produktdaten in Kataloginventory_stock_status-Tabelle wurden deaktiviert.'
-description: Der Patch MDVA-40609 behebt das Problem, dass die Daten zu deaktivierten Produkten nicht in der Indextabelle "cataloginventory_stock_status"angezeigt werden, was zur Anzeige falscher Produktmengen führte. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-40609. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+title: 'MDVA-40609: Deaktivierte Produktdaten fehlen in der Tabelle catalogInventory_stock_status'
+description: Der MDVA-40609 Patch löst das Problem, dass die deaktivierten Produktdaten nicht in der Indextabelle „cataloginventory_stock_status“ angezeigt werden, was dazu führt, dass falsche Produktmengen angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-40609. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 exl-id: 2424c3b3-8bc9-4dd4-908c-9d653f09a57a
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# MDVA-40609: Produktdaten in Kataloginventory_stock_status-Tabelle wurden deaktiviert.
+# MDVA-40609: Deaktivierte Produktdaten fehlen in der Tabelle catalogInventory_stock_status
 
-Der Patch MDVA-40609 behebt das Problem, dass die Daten zu deaktivierten Produkten nicht in der Indextabelle `cataloginventory_stock_status` angezeigt werden, was dazu führt, dass falsche Produktmengen angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-40609. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
+Der MDVA-40609 Patch löst das Problem, dass die Daten für deaktivierte Produkte nicht in der `cataloginventory_stock_status` angezeigt werden, was dazu führt, dass falsche Produktmengen angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.6 installiert ist. Die Patch-ID lautet MDVA-40609. Beachten Sie, dass das Problem in Adobe Commerce 2.4.3 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,46 +27,46 @@ Der Patch MDVA-40609 behebt das Problem, dass die Daten zu deaktivierten Produkt
 
 >[!NOTE]
 >
->Der Patch kann für andere Versionen mit den neuen Versionen des Quality Patches Tool angewendet werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das Paket `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Suchen nach Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchschlüsselwort, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
-Deaktivierte Produktdaten werden nicht in der Indextabelle `cataloginventory_stock_status` angezeigt, was dazu führt, dass falsche Produktmengen angezeigt werden.
+Deaktivierte Produktdaten werden nicht in der `cataloginventory_stock_status` angezeigt, was zur Anzeige falscher Produktmengen führt.
 
 <u>Voraussetzungen</u>:
 
-Das Lagerbestandsmodul ist installiert.
+Das Inventar-Modul ist installiert.
 
-<u>Zu reproduzierende Schritte</u>:
+<u>Schritte zur Reproduktion</u>:
 
-1. Richten Sie zwei Websites mit Geschäften und Store-Ansichten ein.
-1. Erstellen Sie eine zusätzliche Quelle und ein weiteres Lager.
-1. Fügen Sie ein einfaches Produkt hinzu:
-   * Setzen Sie &quot;Produkt aktivieren&quot;auf &quot;*Nein*&quot;.
-   * Weisen Sie zwei Quellen mit Source Item Status = Instock und Menge größer als null zu.
+1. Richten Sie zwei Websites mit Stores und Store-Ansichten ein.
+1. Erstellen Sie eine zusätzliche Quelle und einen zusätzlichen Lagerbestand.
+1. Einfaches Produkt hinzufügen:
+   * Aktivieren Sie Produkt auf *Nein*.
+   * Weisen Sie zwei Bezugsquellen mit Source Artikelstatus = Lagerbestand und einer Menge größer als Null zu.
 1. Speichern Sie das Produkt.
-1. Überprüfen Sie die Registerkarte **Produktverkaufsmenge**.
+1. Überprüfen Sie die **Produktverkaufsmenge**.
 
 <u>Erwartete Ergebnisse</u>:
 
-Beide Bestände haben Werte über null eingegeben.
+Beide Bestände haben Werte von mehr als null eingegeben.
 
 <u>Tatsächliche Ergebnisse</u>:
 
-Ein Bestand hat einen Nullwert.
+Eine Aktie hat einen Nullwert.
 
-## Wenden Sie den Patch an
+## Patch anwenden
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source vor Ort: [Handbuch für Softwareaktualisierungen > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce für die Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zum Werkzeug für Qualitätsmuster finden Sie unter:
+Weitere Informationen zum Quality Patches Tool finden Sie unter:
 
-* [Qualitäts-Patches-Tool veröffentlicht: ein neues Tool zur Selbstbedienung von Qualitäts-Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
-* [Überprüfen Sie mithilfe des Quality Patches Tool](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) in unserer Support-Wissensdatenbank, ob ein Patch für Ihr Adobe Commerce-Problem verfügbar ist.
+* [Quality Patches Tool veröffentlicht: ein neues Tool zur Selbstbedienung hochwertiger Patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) in unserer Support-Wissensdatenbank.
+* [Überprüfen Sie in unserer Support-Wissensdatenbank, ob für Ihr Adobe Commerce-Problem ein Patch ](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) Quality Patches Tool verfügbar ist.
 
-Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [In QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) verfügbare Patches.
+Weitere Informationen zu anderen in QPT verfügbaren Patches finden Sie im Abschnitt [Patches in QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

@@ -1,6 +1,6 @@
 ---
-title: Engpässe bei hoher MySQL-Auslastung in Adobe Commerce in der Cloud-Infrastruktur
-description: Dieses Thema behandelt eine Lösung, wenn eine hohe Belastung durch MySQL in Adobe Commerce ein Problem mit Leistungsengpässen in der Cloud-Infrastruktur verursacht.
+title: MySQL-Engpass bei hoher Auslastung in Adobe Commerce auf Cloud-Infrastruktur
+description: In diesem Abschnitt wird eine Lösung erläutert, wenn eine hohe Last von MySQL in Adobe Commerce zu einem Leistungsengpass in der Cloud-Infrastruktur führt.
 exl-id: c1f9d282-41d8-4850-8a24-336d55aa3140
 feature: Cloud, Observability, Paas, Services
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Engpässe bei hoher MySQL-Auslastung in Adobe Commerce in der Cloud-Infrastruktur
+# MySQL-Engpass bei hoher Auslastung in Adobe Commerce auf Cloud-Infrastruktur
 
-Dieses Thema behandelt eine Lösung, wenn eine hohe Belastung durch MySQL in Adobe Commerce ein Problem mit Leistungsengpässen in der Cloud-Infrastruktur verursacht.
+In diesem Abschnitt wird eine Lösung erläutert, wenn eine hohe Last von MySQL in Adobe Commerce zu einem Leistungsengpass in der Cloud-Infrastruktur führt.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,71 +21,71 @@ Dieses Thema behandelt eine Lösung, wenn eine hohe Belastung durch MySQL in Ado
 
 ### Voraussetzungen
 
-* ECE Tools Version 2002.0.16 und höher
-* New Relic APM-Dienst (**Ihr Adobe Commerce-Konto für die Cloud-Infrastruktur enthält die Software für den New Relic-APM-Dienst** zusammen mit einem Lizenzschlüssel.)
+* ECE Tools-Version 2002.0.16 und höher
+* New Relic APM-Service (**Ihr Adobe Commerce auf Cloud-Infrastrukturkonto enthält die Software für den New Relic APM** Service zusammen mit einem Lizenzschlüssel.)
 
-Weitere Informationen zum New Relic APM-Dienst und dessen Einrichtung mit Ihrem Adobe Commerce-Konto für die Cloud-Infrastruktur-Konto finden Sie unter [New Relic-Dienste](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) und [Einführung in New Relic APM](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
+Weitere Informationen zum New Relic-APM-Service und dessen Einrichtung mit Ihrem Adobe Commerce-Konto in Cloud-Infrastruktur finden Sie unter [New Relic-Services](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) und [Einführung in New Relic APM](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
 
 ## Problem
 
 <u>Schritte, um festzustellen, ob das Problem Sie betrifft</u>
 
-1. Überprüfen Sie in Ihrem New Relic APM-Übersichtsdiagramm, ob MySQL zum Engpass geworden ist. Sehen Sie sich unten das Beispielbild an, in dem MySQL zum Engpass geworden ist und die meisten Webtransaktionen zeitaufwendig macht:
+1. Überprüfen Sie in Ihrem New Relic APM-Übersichtsdiagramm, ob der erste Hinweis darauf vorliegt, dass MySQL zu einem Engpass geworden ist. Im folgenden Beispielbild ist dargestellt, wo MySQL zu einem Engpass geworden ist und die meiste Zeit der Webtransaktionen in Anspruch nimmt:
 
    ![KB-372_image002.png](assets/KB-372_image002.png)
 
-   Beachten Sie, dass die rote gestrichelte Linie im Bild einen erkennbaren Aufwärtstrend bei der Zeit der MySQL-Webtransaktionen zeigt und dann sogar noch höhere Spitzen aufweist.
-1. Von hier aus können Sie dann zu Ihrem Bildschirm **Datenbank** wechseln, wo Sie die zweite Anzeige von hohem Durchsatz oder langsamen `SELECT` Abfragen in MySQL sehen können. Im folgenden Beispielbild sehen Sie, wie Sie beim Sortieren nach **Am zeitintensivsten** sehen, Ihr Speicher in diesem Beispiel ist bei `SELECT` MySQL-Abfragen langsam.
+   Beachten Sie, dass die rote gestrichelte Linie im Bild einen erkennbaren Aufwärtstrend in der Zeit der MySQL-Webtransaktionen zeigt und dann auf noch höheren Ebenen ihren Höhepunkt erreicht.
+1. Von hier aus können Sie dann zu Ihrem **Datenbank**-Bildschirm gehen, wo Sie den zweiten Hinweis auf hohe Durchsätze oder langsame `SELECT` Abfragen in MySQL sehen können, und in dem folgenden Beispielbild können Sie sehen, wenn Sie nach **am meisten Zeit verbrauchen** sortieren, ist Ihr Speicher in diesem Beispiel langsam in `SELECT` MySQL-Abfragen.
 
-   ![KB-372_image003_BlurredExtension.png](assets/KB-372_image003_BlurredExtension.png)
+   ![KB-372_image003_blurredExtension.png](assets/KB-372_image003_BlurredExtension.png)
 
-Analysieren Sie die langsamen Transaktionen in New Relic APM. Wenn eine große Anzahl von Abfragen oder ein hoher Druck auf eine MySQL-Datenbank auftritt, können Sie die Last über verschiedene Knoten verteilen, indem Sie `SLAVE` -Verbindungen aktivieren.
+Analysieren Sie die langsamen Transaktionen in New Relic APM. Wenn eine MySQL-Datenbank ein hohes Abfragevolumen oder einen hohen Druck aufweist, können Sie die Last auf verschiedene Knoten verteilen, indem Sie `SLAVE` Verbindungen aktivieren.
 
 ## Ursache
 
-Ihre Adobe Commerce im Cloud-Infrastrukturspeicher hat einen hohen Durchsatz oder ist bei `SELECT` MySQL-Abfragen langsam.
+Ihr Adobe Commerce im Cloud-Infrastrukturspeicher hat einen hohen Durchsatz oder ist langsam bei der `SELECT` von MySQL-Abfragen.
 
 ## Lösung
 
 >[!WARNING]
 >
->Für skalierte Architektur (Aufspaltungsarchitektur) SOLLTEN Redis-Slave-Verbindungen **NICHT** aktiviert sein. Sie können überprüfen, ob Sie sich in einer skalierten Architektur befinden, indem Sie Ihre Projekt-URL aufrufen, z. B. `https://console.adobecommerce.com/<owner-user-name>/<project-ID>/<environment-name>`. Klicken Sie auf **[!UICONTROL SSH]**. Wenn mehr als drei Knoten vorhanden sind, befinden Sie sich in einer skalierten Architektur. Wenn Sie Redis Slave Reads für skalierte Architektur aktivieren, erhält der Kunde Fehler bei Redis-Verbindungen, die keine Verbindung herstellen können. Dies hat mit der Konfiguration der Cluster zur Verarbeitung von Redis-Verbindungen zu tun. Redis Slaves sind weiterhin aktiv, werden aber nicht für Redis Reads verwendet. Es wird empfohlen, skalierte Architektur zu verwenden, um Adobe Commerce 2.3.5 oder höher zu verwenden und eine neue Redis-Backend-Konfiguration zu implementieren und die L2-Zwischenspeicherung für Redis zu implementieren.
+>Für skalierte Architektur (Split-Architektur) sollten Redis-Slave **Verbindungen** werden. Sie können überprüfen, ob Sie sich in einer skalierten Architektur befinden, indem Sie zu Ihrer Projekt-URL gehen, z. B. `https://console.adobecommerce.com/<owner-user-name>/<project-ID>/<environment-name>`. Klicken Sie auf **[!UICONTROL SSH]**. Wenn es mehr als drei Knoten gibt, befinden Sie sich auf skalierter Architektur. Wenn Sie Redis Slave Reads auf skalierter Architektur aktivieren, erhält der Kunde Fehler, wenn Redis-Verbindungen keine Verbindung herstellen können. Das hat damit zu tun, wie die Cluster konfiguriert sind, um Redis-Verbindungen zu verarbeiten. Redis-Slaves sind noch aktiv, werden aber nicht für Redis-Reads verwendet. Wir empfehlen für die skalierte Architektur die Verwendung von Adobe Commerce 2.3.5 oder höher und die Implementierung der neuen Redis-Backend-Konfiguration und die Implementierung des L2-Caching für Redis.
 
-Wenn diese beiden Hinweise angezeigt werden, kann die Aktivierung von `SLAVE` -Verbindungen für die MySQL-Datenbank und Redis dazu beitragen, die Last auf verschiedene Knoten zu verteilen.
+Wenn diese beiden Anzeichen auftreten, kann die Aktivierung `SLAVE` Verbindungen für die MySQL-Datenbank und Redis dazu beitragen, die Last auf verschiedene Knoten zu verteilen.
 
-Adobe Commerce kann mehrere Datenbanken oder Redis asynchron lesen. Aktualisieren der Datei `.magento.env.yaml` durch Festlegen der Werte `MYSQL_USE_SLAVE_CONNECTION` und `REDIS_USE_SLAVE_CONNECTION` auf `true` , um eine schreibgeschützte **Verbindung mit der Datenbank zu verwenden, damit schreibgeschützter Traffic auf einem Nicht-Master-Knoten empfangen wird.** Dies verbessert die Leistung durch Lastenausgleich, da nur ein Knoten Lese- und Schreibvorgänge-Traffic verarbeiten muss. Auf `false` setzen, um ein vorhandenes schreibgeschütztes Verbindungs-Array aus der `env.php`-Datei zu entfernen.
+Adobe Commerce kann mehrere Datenbanken oder Redis asynchron lesen. Aktualisieren der `.magento.env.yaml`-Datei durch Festlegen von auf `true` der Werte `MYSQL_USE_SLAVE_CONNECTION` und `REDIS_USE_SLAVE_CONNECTION`, um eine **schreibgeschützte)** zur Datenbank zu verwenden, um schreibgeschützten Traffic auf einem Nicht-Master-Knoten zu empfangen. Dies verbessert die Leistung durch Lastenausgleich, da nur ein Knoten Lese-/Schreibdatenverkehr verarbeiten muss. Mit der Einstellung auf `false` entfernen Sie ein vorhandenes schreibgeschütztes Verbindungs-Array aus der `env.php`.
 
 ### Schritte
 
-1. Bearbeiten Sie Ihre `.magento.env.yaml` -Datei und fügen Sie den folgenden Inhalt hinzu:
+1. Bearbeiten Sie die `.magento.env.yaml` und fügen Sie den folgenden Inhalt hinzu:
 
    ![KB-372_image004.png](assets/KB-372_image004.png)
 
    Weitere Informationen finden Sie unter [Bereitstellen von Variablen in DevDocs](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection).
 
-1. Übernehmen Sie Ihre Änderungen und übertragen Sie sie.
-1. Durch das Übermitteln von Änderungen wird ein neuer Implementierungsprozess eingeleitet. Nachdem die Bereitstellung erfolgreich abgeschlossen wurde, sollte Ihre Adobe Commerce in der Cloud-Infrastrukturinstanz jetzt für die Verwendung von Slave-Verbindungen konfiguriert sein.
+1. Übertragen Sie Ihre Änderungen und übertragen Sie sie.
+1. Durch das Pushen von Änderungen wird ein neuer Bereitstellungsprozess gestartet. Sobald die Bereitstellung erfolgreich abgeschlossen ist, sollte Ihre Instanz von Adobe Commerce in der Cloud-Infrastruktur jetzt für die Verwendung von Slave-Verbindungen konfiguriert sein.
 
 ## Häufige Fragen
 
-Im Folgenden finden Sie die häufig gestellten Fragen, die Sie stellen können, wenn Sie erwägen, die Slave-Verbindungsfunktion für Ihre Adobe Commerce im Cloud-Infrastrukturspeicher zu verwenden.
+Im Folgenden finden Sie die häufigsten Fragen, die Sie stellen können, wenn Sie die Verwendung der Slave-Verbindungsfunktion für Ihren Adobe Commerce im Cloud-Infrastrukturspeicher in Betracht ziehen.
 
-* Gibt es bekannte Probleme oder Einschränkungen bei der Verwendung von Slave-Verbindungen? **Es sind keine bekannten Probleme bei der Verwendung von Slave-Verbindungen bekannt. Vergewissern Sie sich einfach, dass Sie das neueste aktualisierte ece-tools Paket verwenden. Anweisungen finden Sie hier unter [wie Sie Ihr Eece-Tools-Paket aktualisieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package).**
-* Gibt es eine zusätzliche Latenz durch die Verwendung von Slave-Verbindungen? *Ja, die Latenz zwischen AZ-übergreifenden (Cross-Availability Zones) ist höher und verringert die Leistung einer Adobe Commerce in der Cloud-Infrastrukturinstanz, falls die Instanz nicht überlastet ist und die gesamte Last übertragen werden kann. Wenn die Instanz jedoch überlastet ist, hilft Master-Slave bei der Leistung, indem die Last auf die MySQL-Datenbank oder Redis über verschiedene Knoten verteilt wird.*
+* Gibt es bekannte Probleme oder Einschränkungen bei der Verwendung von Slave-Verbindungen? **Bei der Verwendung von Slave-Verbindungen sind keine Probleme bekannt. Stellen Sie einfach sicher, dass Sie das zuletzt aktualisierte Paket ece-tools verwenden. Anleitungen dazu finden Sie [Aktualisieren Ihres ece-tools-Pakets](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package).**
+* Gibt es eine zusätzliche Latenz bei der Verwendung von Slave-Verbindungen? *Ja, die Latenz zwischen AZ (Cross-Availability Zones) ist höher und reduziert die Leistung einer Adobe Commerce auf einer Cloud-Infrastrukturinstanz, falls die Instanz nicht überladen ist und die Gesamtlast tragen kann. Wenn die Instanz jedoch überlastet ist, hilft Master-Slave bei der Leistung, indem die Last auf die MySQL-Datenbank oder Redis auf verschiedene Knoten verteilt wird.*
 
-  **Bei nicht überladenen Clustern** - **Slave-Verbindungen verlangsamen die Leistung um 10-15 %**, was einer der Gründe ist, warum es nicht standardmäßig ist.
+  **Auf nicht überladenen Clustern** - **Slave-Verbindungen verlangsamen die Leistung um 10-15%**, was einer der Gründe dafür ist, dass es nicht standardmäßig ist.
 
-  *Bei überlasteten Clustern gibt es jedoch eine Leistungssteigerung, da diese 10-15 % durch Reduzierung der Traffic-Last reduziert werden.*
-* Sollte ich diese Einstellungen für meinen Store aktivieren? *Wenn Sie eine hohe Belastung der MySQL-Datenbank oder von Redis haben oder eine hohe Belastung erwarten, müssen Sie unbedingt Slave-Verbindungen aktivieren. Für einen regulären Kunden mit durchschnittlichem Traffic ist dies **nicht**eine optimale Einstellung, die aktiviert werden kann.*
+  *Auf überlasteten Clustern kommt es jedoch zu einer Leistungssteigerung, da diese 10-15 % durch die Reduzierung der Last durch Traffic gemindert werden.*
+* Sollte ich diese Einstellungen für meinen Store aktivieren? *Wenn Sie hohe Last haben oder hohe Last auf der MySQL-Datenbank oder Redis erwarten, müssen Sie auf jeden Fall Slave-Verbindungen aktivieren. Für einen regulären Kunden mit durchschnittlichem Traffic ist dies **nicht**eine optimale Einstellung, die aktiviert werden sollte.*
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
-* [Bereitstellen von Variablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy).
-* [Richten Sie die optionale Datenbankreplikation ein](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
-* [ece-tools package](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview).
+* [Variablen bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy).
+* [Richten Sie eine optionale Datenbankreplikation ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
+* [ECE-Tools-Paket](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview).
 
 >[!NOTE]
 >
->Wir wissen, dass dieser Artikel immer noch branchenübliche Softwarebegriffe enthalten kann, die einige rassistisch, sexistisch oder unterdrückend finden und die den Leser verletzen, traumatisiert oder unerwünscht machen können. Adobe arbeitet daran, diese Begriffe aus unserem Code, unserer Dokumentation und unseren Benutzererlebnissen zu entfernen.
+>Wir sind uns bewusst, dass dieser Artikel immer noch branchenübliche Softwarebegriffe enthalten kann, die manche als rassistisch, sexistisch oder repressiv empfinden und die den Leser verletzen, traumatisieren oder unwillkommen heißen können. Adobe arbeitet daran, diese Begriffe aus unserem Code, unserer Dokumentation und unseren Benutzererlebnissen zu entfernen.

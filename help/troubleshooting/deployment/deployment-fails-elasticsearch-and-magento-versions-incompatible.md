@@ -1,6 +1,6 @@
 ---
-title: 'Die Implementierung schlägt fehl: inkompatible Elasticsearch- und Adobe Commerce-Versionen'
-description: Weitere Informationen finden Sie im Abschnitt [Elasticsearch-Dienst einrichten &gt; Elasticsearch-Softwarekompatibilität](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
+title: 'Bereitstellung schlägt fehl: Elasticsearch- und Adobe Commerce-Versionen sind inkompatibel'
+description: Weitere Informationen finden Sie unter [Einrichten des Elasticsearch-Services und der Kompatibilität der Elasticsearch-Software](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
 exl-id: 7021df62-627c-45cf-a2f2-07c1a29ba1b2
 feature: Deploy, Search, Services
 role: Developer
@@ -11,6 +11,6 @@ ht-degree: 0%
 
 ---
 
-# Die Implementierung schlägt fehl: inkompatible Elasticsearch- und Adobe Commerce-Versionen
+# Bereitstellung schlägt fehl: Elasticsearch- und Adobe Commerce-Versionen sind inkompatibel
 
-Weitere Informationen finden Sie unter [Einrichten des Elasticsearch-Dienstes > Elasticsearch-Softwarekompatibilität](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie unter [Einrichten des Elasticsearch-Services > Kompatibilität der Elasticsearch ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
