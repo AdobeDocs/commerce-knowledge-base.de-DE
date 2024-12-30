@@ -1,5 +1,5 @@
 ---
-title: Übersicht über Mitteilungen
+title: Ankündigungen - Übersicht
 description: Hier erhalten Sie wichtige Updates von den Adobe Commerce-Teams.
 exl-id: ec186406-e85c-449c-a91f-229818d765c4
 feature: Support
@@ -11,6 +11,6 @@ ht-degree: 27%
 
 ---
 
-# Übersicht über Mitteilungen
+# Ankündigungen - Übersicht
 
-Hier erhalten Sie wichtige Updates von den Adobe Commerce-Teams. auf Erfahrungen des Adobe Commerce-Supportteams zurück.
+Erhalten Sie wichtige Updates von den Adobe Commerce-Teams. über die Erfahrungen des Adobe Commerce-Supportteams.

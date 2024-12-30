@@ -1,6 +1,6 @@
 ---
 title: Aktualisieren des Cloud-Kontoprofils
-description: Dieser Artikel enthält Schritte zum Ändern des Profils im Cloud-Konto.
+description: Dieser Artikel beschreibt die Schritte zum Ändern des Profils im Cloud-Konto.
 feature: Cloud, Support
 role: Admin, Developer
 exl-id: b0c9dbcf-9745-494d-a662-80c5c6378068
@@ -25,21 +25,21 @@ Beim Ändern eines Profils im Cloud-Konto können die folgenden Felder geändert
 
 Gehen Sie wie folgt vor, um diese Felder zu ändern:
 
-1. Greifen Sie auf Ihr Konto unter [Adobe-Kontoanmeldung](https://accounts.magento.cloud) zu.
+1. Greifen Sie unter [Adobe-Kontoanmeldung auf Ihr Konto ](https://accounts.magento.cloud).
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Account Settings]** .
-1. Aktivieren Sie das Kontrollkästchen *Neues Kennwort erstellen* .
-1. Nehmen Sie die erforderlichen Änderungen vor und klicken Sie auf *save*.
+1. Aktivieren Sie das *Neues Kennwort erstellen*.
+1. Nehmen Sie die erforderlichen Änderungen vor und klicken Sie auf *Speichern*.
 
 **HINWEIS**: *Ihr Kennwort wird nicht geändert.*
 
 ## Was kann nicht geändert werden?
 
 1. **[!UICONTROL Password]**:
-Um Ihr Kennwort zu ändern, besuchen Sie [Adobe password reset](https://account.adobe.com/) , da dieses Profil mit Ihrem Konto/Ihrer E-Mail-Adresse dort verknüpft ist.
+Adobe Um Ihr Passwort zu ändern, besuchen Sie [Passwort zurücksetzen](https://account.adobe.com/), da dieses Profil mit Ihrem Konto/Ihrer E-Mail-Adresse dort verknüpft ist.
 
 1. **[!UICONTROL Email Address]**:
-Die Änderung dieses Felds hängt von Ihren individuellen Umständen ab.
+Das Ändern dieses Felds hängt von Ihren individuellen Umständen ab.
 
-Wenn Sie die Eigentümerschaft Ihres aktuellen Kontos an einen neuen Eigentümer oder eine andere E-Mail-Adresse übertragen müssen, müssen Sie die mit dem Konto verknüpfte primäre Benutzer-E-Mail aktualisieren.
+Wenn Sie das Eigentum an Ihrem aktuellen Konto auf einen neuen Besitzer oder eine andere E-Mail-Adresse übertragen müssen, müssen Sie die mit dem Konto verknüpfte E-Mail-Adresse des primären Benutzers aktualisieren.
 
 Siehe: [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)

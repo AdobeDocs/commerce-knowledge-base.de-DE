@@ -1,6 +1,6 @@
 ---
-title: 'Backup (Schnappschuss) in Cloud: FAQ'
-description: In diesem Artikel werden die Grundlagen zum Sichern Ihrer Umgebungen mit Momentaufnahmen in Adobe Commerce in der Cloud-Infrastruktur beschrieben.
+title: 'Backup (Snapshot) in der Cloud: Häufig gestellte Fragen'
+description: In diesem Artikel werden die Grundlagen zum Sichern Ihrer Umgebungen mit Snapshots auf Adobe Commerce in der Cloud-Infrastruktur behandelt.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
 source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
@@ -10,66 +10,66 @@ ht-degree: 0%
 
 ---
 
-# Backup (Schnappschuss) in Cloud: FAQ
+# Backup (Snapshot) in der Cloud: Häufig gestellte Fragen
 
-In diesem Artikel wird die Sicherung Ihrer Umgebungen mit Momentaufnahmen in Adobe Commerce in der Cloud-Infrastruktur beschrieben.
+Dieser Artikel behandelt das Sichern Ihrer Umgebungen mit Momentaufnahmen der Adobe Commerce auf Cloud-Infrastrukturen.
 
 ## Betroffene Produkte und Versionen
 
 * Adobe Commerce auf Cloud-Infrastruktur 2.4.x
 * Architekturpläne: Starter, Pro Legacy, Pro
 
-## Umgebungsmomentan, Pro-Plan
+## Umgebungs-Snapshot, Pro-Plan
 
 ### Staging- und Produktionsumgebungen
 
-* Manuelle Momentaufnahmen sind nicht für Staging- und Produktionsumgebungen in Pro Plan verfügbar.
-* Automatische Momentaufnahmen werden **unabhängig vom Live-Status** Ihrer Site erstellt (Momentaufnahmen, die auch für Sites erstellt wurden, die noch nicht gestartet wurden). Automatische Sicherungen sind nicht öffentlich zugänglich, da sie in einem separaten System gespeichert sind. Sie können [ein Adobe Commerce-Supportticket senden](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um ein spezielles Backup anzufordern oder um es aus einem bestimmten Backup wiederherzustellen, indem Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Beachten Sie außerdem, dass die Unterstützung das Rollback oder die Wiederherstellung der Datenbank nicht für Sie ausführt - sie rufen den Schnappschuss ab, aber Sie müssen die Datenbank selbst wiederherstellen.
-* Die Sicherungen werden mit den **verschlüsselten Amazon Web Services Elastic Block Store (AWS EBS)-Momentaufnahmen** erstellt.
-* Umgebungsmomentaufnahmen beinhalten Ihr gesamtes System (Dateisystem und Datenbank).
-* Die Aufbewahrungszeit für automatische Momentaufnahmen **ist anders** und folgt [dem Zeitplan](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery).
+* Manuelle Momentaufnahmen sind für Staging- und Produktionsumgebungen in Pro Plan nicht verfügbar.
+* Automatische Momentaufnahmen werden **unabhängig vom Live-Status** Ihrer Site erstellt (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen sind nicht öffentlich zugänglich, da sie in einem separaten System gespeichert sind. Sie können [ein Adobe Commerce-Support-Ticket ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
+* Die Backups werden mithilfe der **verschlüsselten Momentaufnahmen des Amazon Web Services Elastic Block Store (AWS EBS))**.
+* Umgebungs-Snapshots umfassen Ihr gesamtes System (Dateisystem und Datenbank).
+* Die Aufbewahrungsdauer für automatische Momentaufnahmen **ist unterschiedlich** und folgt [dem Zeitplan](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery).
 
 >[!NOTE]
->In der Cloud-Konsole wird immer [!UICONTROL No backup] in Staging- und Produktionsumgebungen angezeigt. Sie können nur Backups aus der Integrationsumgebung aufnehmen. Wählen Sie im Dropdownmenü mit den Auslassungspunkten **[!UICONTROL Backup]** aus.
+>Die Cloud-Konsole zeigt [!UICONTROL No backup] immer in Staging- und Produktionsumgebungen an. Es können nur Sicherungen aus der Integrationsumgebung durchgeführt werden. Wählen Sie **[!UICONTROL Backup]** im Dropdown-Menü mit den Auslassungspunkten aus.
 >![cloud_console_backup.png](assets/cloud_console_backup.png)
 
 
 
 
 
-### Integrations- (Entwicklungs-)Umgebung
+### Integrations-(Entwicklungs-)Umgebung
 
-* Ihre [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) ist **nicht automatisch gesichert**, Sie können jedoch Momentaufnahmen **manuell** erstellen.
-* Sie können manuelle Momentaufnahmen für Integrationsumgebungen in Nicht-Live Stores erstellen.
-* Möglicherweise haben Sie **mehrere Momentaufnahmen**, die manuell ausgelöst wurden.
-* Ein manuell ausgelöster Schnappschuss wird für **7 Tage** gespeichert.
+* Ihre [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) wird **nicht automatisch gesichert** Sie können jedoch Momentaufnahmen (**)**.
+* Sie können manuelle Momentaufnahmen für Integrationsumgebungen in Nicht-Live-Stores erstellen.
+* Möglicherweise **mehrere Momentaufnahmen** die manuell ausgelöst wurden.
+* Ein manuell ausgelöster Snapshot wird **7 Tage** gespeichert.
 
 **Verwandte Artikel in unserer Entwicklerdokumentation:**
 
-* [Sicherung und Wiederherstellung nach Katastrophen](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
-* [Erstellen eines Schnappschusses](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html)
+* [Sicherung und Notfallwiederherstellung](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#backup-and-disaster-recovery)
+* [Snapshot erstellen](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html)
 
-## Umgebungsmomentaufnahme, Startplan
+## Umgebungs-Snapshot, Starterplan
 
-* Alle Umgebungstypen (Integration, Staging, Produktion) **werden nicht automatisch gesichert**, Sie können jedoch Momentaufnahmen manuell erstellen.
-* Sie können manuelle Momentaufnahmen **unabhängig vom Live-Status** Ihrer Site erstellen (Momentaufnahmen, die auch für Sites erstellt wurden, die noch nicht gestartet wurden).
-* Ein manuell ausgelöster Schnappschuss wird für **7 Tage** gespeichert.
+* Alle Umgebungstypen (Integration, Staging, Produktion) **werden nicht automatisch gesichert** Sie können Snapshots jedoch manuell erstellen.
+* Sie können manuelle Momentaufnahmen **unabhängig vom Live-Status** Ihrer Site erstellen (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden).
+* Ein manuell ausgelöster Snapshot wird **7 Tage** gespeichert.
 
-## Wiederherstellen eines Umgebungs-Snapshots
+## Wiederherstellen eines Umgebungsschnappschusses
 
-Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starter-Plan oder Integration in Pro-Plan) wiederherzustellen, führen Sie die Schritte unter [Backup-Management: Wiederherstellen eines manuellen Backups](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) im Handbuch zu Commerce on Cloud Infrastructure aus.
+Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starterplan oder Integration in Pro Plan) wiederherzustellen, führen Sie die Schritte in [Backup-Verwaltung: Manuelles Backup wiederherstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Handbuch zu Commerce in Cloud-Infrastruktur aus.
 
-## Datenbanksicherung (DB)
+## Datenbank-Backup (DB)
 
-Die DB-Sicherung ist Teil eines Cloud-Snapshots:
+Die Datenbanksicherung ist Teil eines Cloud-Snapshots:
 
 >>
-Ein Schnappschuss ist eine vollständige Sicherung einer Umgebung, die alle persistenten Daten aus allen laufenden Diensten (z. B. **Ihrer MySQL-Datenbank**, Redis usw.) und allen Dateien enthält, die auf den bereitgestellten Volumes gespeichert sind.
+Ein Snapshot ist ein vollständiges Backup einer Umgebung, das alle persistenten Daten aus allen ausgeführten Services (z. B. **MySQL-Datenbank**, Redis usw.) und allen auf den bereitgestellten Volumes gespeicherten Dateien enthält.
 
 >[!NOTE]
 >
->Die bereitgestellten Volumes enthalten/beziehen sich nur auf die [beschreibbaren Reittierungen](/docs/commerce-cloud-service/user-guide/configure/app/properties/properties.html?lang=en#mounts) und enthalten nicht alle Ihre /app-Verzeichnisse. Wie bei den anderen Dateien werden sie von [Build- und Bereitstellungsprozess](/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=en#deployment-workflow) erstellt/generiert und Sie müssen auch die verbleibenden Dateien aus Ihrem Git-Repository auschecken.
+>Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](/docs/commerce-cloud-service/user-guide/configure/app/properties/properties.html?lang=en#mounts) und enthalten nicht den gesamten Ordner /app. Die anderen Dateien werden vom Build- und [-Prozess erstellt/generiert](/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=en#deployment-workflow) und Sie müssen auch die verbleibenden Dateien aus Ihrem Git-Repository auschecken.
 
 [Snapshots und Backup-Verwaltung](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) in unserer Entwicklerdokumentation.
 
-Senden Sie für einen DB-Snapshot von Pro Production und Staging nur eine [Support-Anfrage](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket), wenn Sie die DB von einem bestimmten Zeitpunkt an benötigen. Wenn Sie nur eine aktuelle Sicherung Ihrer DB (in einer beliebigen Umgebung) benötigen, lesen Sie den Knowledge Base-Artikel: [Generieren von Datenbank-Dumps in Cloud](/help/how-to/general/create-database-dump-on-cloud.md).
+Senden Sie eine [Support-Anfrage](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) für einen DB-Snapshot von Pro Production and Staging nur, wenn Sie die DB zu einem bestimmten Zeitpunkt benötigen. Wenn Sie nur eine aktuelle Sicherung Ihrer DB benötigen (in einer beliebigen Umgebung), finden Sie weitere Informationen im Knowledge-Base-Artikel [Generieren von Datenbank-Dumps in der Cloud](/help/how-to/general/create-database-dump-on-cloud.md).
