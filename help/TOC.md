@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: ace01511b6a3f3b406b25d563d892351a5f6cf7d
+source-git-commit: c46d29aa11b9cbbcccbf1765b4ae972e14ac80ac
 workflow-type: tm+mt
-source-wordcount: '9409'
+source-wordcount: '9397'
 ht-degree: 0%
 
 ---
@@ -1021,7 +1021,6 @@ ht-degree: 0%
    * [Anfordern einer temporären Adobe Commerce-Aktualisierung in der Cloud-Infrastruktur](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Anzeigen der vCPU-Ebene der Umgebung in Ihrem Cluster auf Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [Adobe Commerce auf Cloud-Infrastruktur: Überprüfen der CPU-Konfiguration des Hosts](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
-   * [Kontoinhaber ändern (Zugangsdaten über API-Token) für Fastly in Cloud Manager](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md)
    * [Adobe Commerce in Cloud: Authentifizierungsschlüssel ändern und erneut bereitstellen](/help/how-to/general/redeploy-with-another-key.md)
    * [Erstellen eines „Bereinigungs“-Dump auf Anfrage des Support-Mitarbeiters](/help/how-to/general/create-dump-for-support.md)
    * [MBI: Erweiterte berechnete Spalten erstellen und bearbeiten](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
