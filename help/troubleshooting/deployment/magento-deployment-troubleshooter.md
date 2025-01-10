@@ -4,7 +4,7 @@ description: Festsitzende Bereitstellungen und fehlgeschlagene Bereitstellungen 
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 7f4f24c596eac96dc8fef40589a827eb9aa0c468
+source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -30,7 +30,7 @@ b. NEIN - Wartung oder globale Ausfälle. Prüfen Sie auf geschätzte Dauer und 
 
 +++**Gibt es Bereitstellungen in anderen Umgebungen, die die Bereitstellung in der vorhandenen Umgebung blockieren?**
 
-Um eine Liste der laufenden Aktivitäten zu erhalten, führen Sie den folgenden Befehl mithilfe der Magento-Cloud-CLI aus (wenn Sie nur zu einem Cloud-Projekt hinzugefügt wurden). **Hinweis**: Vergewissern Sie sich, dass Sie die neueste Version von magento-cloud CLI verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview#update-the-cli) im Handbuch Commerce on Cloud Infrastructure .
+Um eine Liste der laufenden Aktivitäten zu erhalten, führen Sie den folgenden Befehl mithilfe der Magento-Cloud-CLI aus (wenn Sie nur zu einem Cloud-Projekt hinzugefügt wurden). **Hinweis**: Vergewissern Sie sich, dass Sie die neueste Version von magento-cloud CLI verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) im Handbuch Commerce on Cloud Infrastructure .
 
 ```bash
 magento-cloud --state=in_progress

@@ -4,7 +4,7 @@ description: Dieser Artikel bietet eine Fehlerbehebung für Blocker, die auf Ado
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
+source-git-commit: df966df6a85057b26d53a870d038269ebdcc2b32
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Problem: Statische Assets werden langsam bereitgestellt, sodass Ihre Site eine s
 
 Empfehlung: Um mögliche Ursachen für schlechte Leistung zu identifizieren, sollten Sie das [Adobe Commerce Performance Toolkit](https://github.com/magento/magento2/tree/2.3/setup/performance-toolkit) für Leistungstests verwenden. Sie können auch die folgenden Drittanbieter-Tools berücksichtigen:
 
-* [Siege](https://www.joedog.org/siege-home/): HTTP-Lasttests und Benchmarking-Dienstprogramm; unterstützt einfache Authentifizierung, Cookies, HTTP-, HTTPS- und FTP-Protokolle.
+* [Siege](https://www.joedog.org/siege-home): HTTP-Lasttests und Benchmarking-Dienstprogramm; unterstützt einfache Authentifizierung, Cookies, HTTP-, HTTPS- und FTP-Protokolle.
 * [JMeter](https://jmeter.apache.org/): Ein seriöses Tool zur Lastprüfung und Leistungsmessung. Hilft bei der Messung der Leistung bei Traffic-Spitzen, z. B. bei Flash-Verkäufen.
 * [New Relic](https://support.newrelic.com/): Findet Prozesse und Bereiche der Site, die eine langsame Leistung mit der verfolgten Zeit pro Aktion verursachen, z. B. bei der Übertragung von Daten, Abfragen, Redis usw.
 * [WebPageTest](https://www.webpagetest.org/) (kostenlos) und [Pingdom](https://www.pingdom.com/) (gebührenpflichtig): Echtzeit-Analyse der Ladezeit Ihrer Site-Seiten mit verschiedenen Ursprungsorten.
