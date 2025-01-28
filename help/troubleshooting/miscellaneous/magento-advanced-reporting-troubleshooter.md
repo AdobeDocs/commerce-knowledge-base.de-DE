@@ -4,7 +4,7 @@ description: Probleme mit erweiterten Berichten in Adobe Commerce können mit di
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 3b402728be7a80b62f21319d2cf91a92f1ad4a0c
+source-git-commit: aed14781c6a7b43d0a719ac89c2965d5044d8c22
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -138,7 +138,7 @@ b. NEIN - Mit [Schritt 10](#step-10) fortfahren.
 
 +++**Gibt es eine Fehlermeldung, die vom Cron-Auftrag ausgelöst wird?**
 
-Beispiel: In der `core_config_data` wird der Fehler angezeigt *Die Datei &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 kann nicht gelöscht werden*. Warnung!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=de): Keine derartige Datei oder derartiges Verzeichnis*
+Beispiel: In der `cron_schedule` wird der Fehler angezeigt *Die Datei &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 kann nicht gelöscht werden*. Warnung!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=de): Keine derartige Datei oder derartiges Verzeichnis*
 
 a. JA - Verwenden Sie den Patch ACSD-50165 in [Die Datei kann nicht gelöscht werden. Warnung!Verknüpfung aufheben: Keine Datei- oder Verzeichnisfehler vom Admin](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md), 24 Stunden warten, bis der Auftrag erneut ausgeführt wird, und dann erneut versuchen.\
 b. NEIN - Mit [Schritt 11](#step-11) fortfahren.
