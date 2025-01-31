@@ -3,9 +3,9 @@ title: Experience League-Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, gemeinsamen Zugriff auf Konten gewähren und durch die Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 6321dfa57f694a53f4b9b1c1e93182d60fa63c7b
+source-git-commit: c287b45c3cea99f6d536d6ed4d90a5e19d9fa71c
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2963'
 ht-degree: 0%
 
 ---
@@ -309,6 +309,10 @@ Benutzende, denen ein freigegebener Zugriff gewährt wurde, können diesen Zugri
 ### Freigegebenen Zugriff bereitstellen {#provide-shared-access}
 
 Im Abschnitt [Freigeben eines Commerce-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share)&quot; in den ersten Schritten mit Adobe Commerce finden Sie ausführliche Schritte zum Einrichten eines freigegebenen Kontos.
+
+>[!NOTE]
+>
+>Der/die Benutzende muss über ein bestehendes Konto verfügen, damit ihm/ihr gemeinsamer Zugriff gewährt werden kann. Weitere Informationen finden Sie [Erstellen eines Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)Kontos).
 
 Nachdem Sie einem neuen Benutzer gemeinsamen Zugriff gewährt haben, sind die zugehörigen Informationen auf der Seite **Freigegebener Zugriff** > **Berechtigungen verwalten** Ihres Adobe Commerce-Kontos verfügbar.
 
