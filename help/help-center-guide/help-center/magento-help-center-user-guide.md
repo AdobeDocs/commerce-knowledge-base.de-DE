@@ -3,9 +3,9 @@ title: Experience League-Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, gemeinsamen Zugriff auf Konten gewähren und durch die Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 16511a9bcc0e229297916f5c48ee8b606e10edbe
+source-git-commit: 6321dfa57f694a53f4b9b1c1e93182d60fa63c7b
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 >[!INFO]
 >
 >1. Um einen Fall einzureichen, müssen Sie berechtigt sein, Support für das entsprechende Produkt (z. B. Adobe Commerce, Adobe Commerce Intelligence, Experience Platform usw.) zu erhalten. Wenn Sie nicht zu Support berechtigt sind, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Support-berechtigter Benutzer in der Organisation sind.
->1. Wenn Sie mehreren Organisationen angehören oder es mehrere Organisationen mit ähnlich aussehenden Namen gibt (jedes stellt eines der anderen Adobe-Produkte dar, die das Unternehmen abonniert hat), müssen Sie zunächst das entsprechende Unternehmen aus dem Dropdown-Menü auswählen, das auf „(Commerce)“ endet.
+>1. Wenn Sie mehreren Organisationen angehören oder es mehrere Organisationen mit ähnlich aussehenden Namen gibt (jedes von ihnen repräsentiert eines der anderen Adobe-Produkte, die das Unternehmen abonniert hat), müssen Sie zunächst das entsprechende Unternehmen aus der Dropdown-Liste in der linken Spalte auswählen, die auf „(Commerce)“ endet.
 >1. Um einen Fall einzureichen, müssen Sie berechtigt sein, Support für das entsprechende Produkt zu erhalten (z. B. Adobe Commerce, Adobe Commerce Reporting, Adobe Commerce Payment Services, Experience Platform usw.). Wenn Sie nicht zu Support berechtigt sind, wird oben auf der Seite eine Leiste angezeigt, die Sie darüber informiert, dass Sie kein Support-berechtigter Benutzer in der Organisation sind. Um einen Fall für Probleme im Zusammenhang mit Commerce einzureichen, müssen Sie zunächst den entsprechenden Organisationsnamen auswählen, der auf *[!DNL (Commerce)]* endet.
 >1. Wenn Sie mehreren Organisationen angehören oder es mehrere Organisationen mit ähnlich aussehenden Namen gibt (jedes repräsentiert eines der anderen Adobe-Produkte, die das Unternehmen abonniert hat), müssen Sie zunächst das entsprechende Unternehmen aus der Dropdown-Liste auswählen.
 >1. Wenn Adobe Commerce nicht im Dropdown-Menü &quot;[!UICONTROL Select a product]&quot; angezeigt wird, müssen Sie zunächst [Freigegebenen Zugriff](#shared-access) vom Commerce-Kontoinhaber erhalten. Nachdem Sie den freigegebenen Zugriff erhalten haben, müssen Sie [Konto synchronisieren](#switch-accounts) um den Vorgang abzuschließen, bevor Sie einen Fall senden können.
