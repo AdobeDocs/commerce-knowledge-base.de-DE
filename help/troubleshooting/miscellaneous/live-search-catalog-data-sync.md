@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 96e5bfc677949fb5f925040b95f951ca518fa71a
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Ka
 
 ## Problem
 
-Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Produkt hinzugefügt, es wird jedoch nicht in den Suchergebnissen angezeigt.
+Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Produkt hinzugefügt, es wird jedoch nicht in den Suchergebnissen angezeigt. Möglicherweise wird auch die folgende Fehlermeldung in der `var/log/exception.log` angezeigt:
+
+`Magento_LiveSearch: An error occurred in search backend. {"result":{"errors":[{"message":"Exception while fetching data (/productSearch) : No index was found for this request"}]}}`
 
 >[!NOTE]
 >
@@ -33,7 +35,7 @@ Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Pr
 1. Überprüfen Sie nach 30 Minuten die exportierten Katalogdaten, wie unter [Live-Suche installieren > Export überprüfen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) in unserer Benutzerdokumentation beschrieben.
 1. Testen Sie nach 30 Minuten die Verbindung, wie unter [Live Search installieren > Verbindung testen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) in unserer Benutzerdokumentation beschrieben.
 
-oder
+Or
 
 1. Fügen Sie ein neues Produkt zum Katalog hinzu.
 1. Versuchen Sie, eine Suchanfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen auszuführen, nachdem 15-20 Minuten nach dem Zeitpunkt, zu dem Magento-Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren, vergangen sind.
@@ -134,6 +136,22 @@ Wenn die richtigen Daten in `cde_product_attributes_feed` angezeigt werden:
 bin/magento saas:resync --feed products
 bin/magento saas:resync --feed productattributes
 ```
+
+Führen Sie die folgenden Befehle aus, um die Feeds neu zu synchronisieren:
+
+```
+bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed products --cleanup-feed
+bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
+bin/magento saas:resync --feed scopesWebsite --cleanup-feed
+bin/magento saas:resync --feed prices --cleanup-feed
+bin/magento saas:resync --feed productOverrides --cleanup-feed
+bin/magento saas:resync --feed variants --cleanup-feed
+bin/magento saas:resync --feed categories --cleanup-feed
+bin/magento saas:resync --feed categoryPermissions --cleanup-feed
+```
+
+[Senden einer Support-Anfrage](https://experienceleague.adobe.com/home?support-tab=home#support) um eine Neuindizierung des Live Search-Index anzufordern. Geben Sie in der Problembeschreibung Ihre Datenspeicher-/Umgebungs-ID ein, die Sie im Admin-Bedienfeld unter **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]** finden.
 
 ## Verwandtes Lesen
 
