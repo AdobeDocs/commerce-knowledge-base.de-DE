@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 96e5bfc677949fb5f925040b95f951ca518fa71a
+source-git-commit: 54f6fb60adca6f639cd315b3d070c7b93aa45bab
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,13 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht korrekt synchronisiert werd
 1. Verwenden Sie die folgende [!DNL SQL]-Abfrage und stellen Sie sicher, dass die erwarteten Daten in der Spalte `feed_data` vorhanden sind. Notieren Sie sich auch den `modified_at` Zeitstempel.
 
    ```sql
-   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   SELECT * FROM cde_products_feed WHERE json_extract(feed_data, '$.sku') = '<your_sku>' AND json_extract(feed_data, '$.storeViewCode') = '<your_ store_view_code>';
+   ```
+
+   Beispiel:
+
+   ```sql
+   SELECT * FROM cde_products_feed WHERE json_extract(feed_data, '$.sku') = '24-MB04' AND json_extract(feed_data, '$.storeViewCode') = 'default';
    ```
 
 1. Wenn nicht die richtigen Daten angezeigt werden, versuchen Sie, die Neuindizierung mit dem folgenden Befehl durchzuführen und führen Sie die [!DNL SQL] Abfrage in Schritt 1 erneut aus, um die Daten zu überprüfen:
