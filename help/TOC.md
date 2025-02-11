@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 9de7cb6d2c9e529031999cad9ae6f3c8de5520c7
+source-git-commit: 229ae54f21cef7d8fe488bfacf5aaec8942a5fc2
 workflow-type: tm+mt
-source-wordcount: '9382'
+source-wordcount: '9386'
 ht-degree: 0%
 
 ---
@@ -603,7 +603,7 @@ ht-degree: 0%
          * [ACSD-57846: GraphQL-Produkte suchen mit Filter für Null Preise geben keine Ergebnisse zurück](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054: API-Token-Generierung für inaktive Kunden](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
          * [ACSD-57045: URL-Neuschreibungen führen zu unendlicher Seitenschleife, nachdem [!UICONTROL Website Root] von [!UICONTROL Hierarchy] deaktiviert wurde](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
-         * [ACSD-58446: Beim Löschen eines Teams mit untergeordneten Benutzenden oder Teams über GraphQL wird eine informative Fehlermeldung angezeigt](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/ascd-58446-deleting-a-team-with-child-users-or-teams-via-graphql-gives-an-uninformative-error-message.md)
+         * [ACSD-58446: Beim Löschen eines Teams mit untergeordneten Benutzenden oder Teams über GraphQL wird ein nicht informativer Fehler ausgegeben](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/ascd-58446-deleting-a-team-with-child-users-or-teams-via-graphql-gives-an-uninformative-error-message.md)
          * [ACSD-58375: Falsch konfigurierter YouTube-API-Schlüssel verursacht Fehler beim Hinzufügen von Videos auf Store-Ansichtsebene](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level.md)
       * v1.1.50 {#v1-1-50}
          * [Übersicht: [!DNL Quality Patches Tool] (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
@@ -622,7 +622,7 @@ ht-degree: 0%
          * [ACSD-48210: Das Attribut für den spezifischen Bereich der Speicheransicht überschreibt globale Werte](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          * [ACSD-59280: ReflectionUnionType::getName()-Fehler in 2.4.4-pX-Installationen](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
          * [ACSD-60303: Problem mit der Platzierung von Admin-Aufträgen mit aktivierter HTML-Minimierung behoben](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60303-admin-order-placement-fix.md)
-      * [Patch auf Adobe Commerce-Probleme mit dem Quality Patches Tool überprüfen](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
+      * [Patch auf Commerce-Probleme mit dem Quality Patches Tool überprüfen](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Ankündigungen {#announcements}
    * [Ankündigungen - Übersicht](/help/announcements/overview.md)
    * Adobe Commerce-Ankündigungen {#commerce-announcements}
@@ -933,6 +933,7 @@ ht-degree: 0%
       * [Bereitstellung bei Cache-Leerung fehlgeschlagen: Fehler „Im Namespace &#39;cache&#39; sind keine Befehle definiert.“](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Bekannte Probleme {#known-issues-patches-attached}
+      * [Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
       * [Abwärtsinkompatible Änderungen für  [!DNL GraphQL "placeOrder" API]  in Adobe Commerce 2.4.6-p8](/help/troubleshooting/known-issues-patches-attached/backwards-incompatible-changes-for-graphql-placeorder-api-in-adobe-commerce-2-4-6-p8.md)
       * [Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
       * [Anleitungen zum Schützen Ihres Geschäfts und zum Drehen von Verschlüsselungsschlüsseln: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
