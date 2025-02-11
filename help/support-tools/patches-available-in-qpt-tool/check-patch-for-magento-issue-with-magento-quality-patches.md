@@ -4,7 +4,7 @@ description: Dieser Artikel bietet einen Überblick über das Quality Patches To
 exl-id: 43393708-3939-449f-a764-b2ac6326165f
 feature: Tools and External Services
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: ce9c69e12d64b4b4a8e6129783d9b15e95eff867
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -60,3 +60,4 @@ Weitere Informationen zur Installation und Verwendung von QPT zum Anwenden und Z
 
 * [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) in unserer Entwicklerdokumentation.
 * [Anwenden von Composer-Patches von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank.
+
