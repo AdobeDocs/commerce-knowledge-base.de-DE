@@ -1,12 +1,13 @@
 ---
 title: Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB25-08]
 promoted: true
-description: Wenden Sie einen isolierten Patch an, um  [!DNL critical, important, and moderate vulnerabilities]  sowohl für Adobe Commerce als auch für die Magento Open Sourcen 2.4.7-beta1, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 und frühere Versionen zu beheben.
+description: Wenden Sie einen isolierten Patch an, um  [!DNL critical, important, and moderate vulnerabilities]  für Adobe Commerce 2.4.8-beta1, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 und frühere Versionen zu beheben.
 feature: Compliance, Security
 role: Developer
-source-git-commit: 45c6486dea10b37aa8114467bbd7be0c7f9f86f6
+exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
+source-git-commit: f0c4bfae30d462d160e8096f0c4cee703f6f24e5
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -17,9 +18,9 @@ Am 11. Februar 2025 veröffentlichte Adobe ein regelmäßig geplantes Sicherheit
 
 >[!NOTE]
 >
->**Um sicherzustellen, dass die im obigen Sicherheitsbulletin aufgelistete Behebung von [!DNL CVE-2025-24434] so schnell wie möglich angewendet werden kann, hat Adobe auch einen isolierten Patch veröffentlicht, der [!DNL CVE-2025-24434] auflöst. Dadurch können Händler die Fehlerbehebung isoliert anwenden, sodass das Risiko von Verzögerungen aufgrund potenzieller Integrationsprobleme sinkt.**
+>**Um sicherzustellen, dass die im obigen Sicherheitsbulletin aufgelisteten Korrekturen für [!DNL CVE-2025-24434] so schnell wie möglich angewendet werden können, hat Adobe auch einen isolierten Patch veröffentlicht, der [!DNL CVE-2025-24434] auflöst. Dadurch können Händler die Fehlerbehebung isoliert anwenden, sodass das Risiko von Verzögerungen aufgrund potenzieller Integrationsprobleme sinkt.**
 
-**Bitte wenden Sie die neuesten Sicherheitsupdates so bald wie möglich an. Andernfalls sind Sie für diese Sicherheitsprobleme anfällig, und Adobe hat nur begrenzte Möglichkeiten, das Problem weiter zu beheben.**
+**Bitte wenden Sie die neuesten Sicherheitsupdates so bald wie möglich an. Andernfalls sind Sie für diese Sicherheitsprobleme anfällig, und Adobe verfügt nur über begrenzte Mittel, um das Problem weiter zu beheben.**
 
 >[!NOTE]
 >
@@ -27,9 +28,9 @@ Am 11. Februar 2025 veröffentlichte Adobe ein regelmäßig geplantes Sicherheit
 
 ## Betroffene Produkte und Versionen
 
-Adobe Commerce auf Cloud-Infrastruktur, Adobe Commerce On-Premise und Magento Open Source:
+Adobe Commerce on Cloud Infrastructure, Adobe Commerce On-Premise und Magento Open Source:
 
-* 2.4.7-Beta1 und früher
+* 2.4.8-Beta1 und früher
 * 2.4.7-P3 und früher
 * 2.4.6-P8 und früher
 * 2.4.5-P10 und früher
@@ -37,17 +38,36 @@ Adobe Commerce auf Cloud-Infrastruktur, Adobe Commerce On-Premise und Magento Op
 
 ## Lösung für Adobe Commerce on Cloud und lokale Adobe Commerce-Software
 
-Um die Sicherheitsanfälligkeit für die betroffenen Produkte und Versionen zu beheben, müssen Sie den [!DNL CVE-2025-24434] isolierten Patch anwenden.
+Um die Sicherheitsanfälligkeit für die betroffenen Produkte und Versionen zu beheben, müssen Sie den [!DNL CVE-2025-24434] isolierten Patch je nach Adobe Commerce/Magento Open Source-Version anwenden.
 
 ## Details zu isolierten Patches
 
-Verwenden Sie das folgende beigefügte isolierte Pflaster:
+Verwenden Sie je nach Adobe Commerce-/Magento Open Source-Version die folgenden angehängten isolierten Patches:
 
-[vuln-28982-composer-patch.zip](assets/vuln-28982-composer-patch.zip)
+### Für Version 2.4.8-beta1:
+
+* [vuln-28982-2-4-8x-v2-composer-patch.zip](assets/vuln-28982-2-4-8x-v2-composer-patch.zip)
+
+### Für die Versionen 2.4.7, 2.4.7-p1, 2.4.7-p2, 2.4.7-p3:
+
+* [vuln-28982-2-4-7x-v2-composer-patch.zip](assets/vuln-28982-2-4-7x-v2-composer-patch.zip)
+
+### Für die Versionen 2.4.6, 2.4.6-p1, 2.4.6-p2, 2.4.6-p3, 2.4.6-p4, 2.4.6-p5, 2.4.6-p6, 2.4.6-p7, 2.4.6-p8:
+
+* [vuln-28982-2-4-6x-v2-composer-patch.zip](assets/vuln-28982-2-4-6x-v2-composer-patch.zip)
+
+### Für die Versionen 2.4.5, 2.4.5-p1, 2.4.5-p2, 2.4.5-p3, 2.4.5-p4, 2.4.5-p5, 2.4.5-p6, 2.4.5-p7, 2.4.5-p8, 2.4.5-p9, 2.4.5-p10:
+
+* [vuln-28982-2-4-5x-v2-composer-patch.zip](assets/vuln-28982-2-4-5x-v2-composer-patch.zip)
+
+### Für die Versionen 2.4.4, 2.4.4-p1,, 2.4.4-p2, 2.4.4-p3, 2.4.4-p4, 2.4.4-p5, 2.4.4-p6, 2.4.4-p7, 2.4.4-p8, 2.4.4-p9, 2.4.4-p10, 2.4.4-p11:
+
+* [vuln-28982-2-4-4x-v2-composer-patch.zip](assets/vuln-28982-2-4-4x-v2-composer-patch.zip)
+
 
 ## Anbringen des isolierten Pflasters
 
-Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
 ## Nur für Adobe Commerce on Cloud-Händler - Ermitteln, ob die isolierten Patches angewendet wurden
 
@@ -77,4 +97,4 @@ Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde,
 Für Adobe Commerce verfügbare Sicherheitsupdates:
 
 * [Adobe-Sicherheitsbulletin ([!DNL APSB25-08])](https://helpx.adobe.com/security/products/magento/apsb25-08.html)
-* [Die neuesten für Adobe Commerce verfügbaren Sicherheits-Updates](https://helpx.adobe.com/security/products/magento.html)
+* [Die neuesten für Adobe Commerce verfügbaren Sicherheits-Updates)](https://helpx.adobe.com/security/products/magento.html)
