@@ -5,7 +5,7 @@ description: Wenden Sie einen isolierten Patch an, um  [!DNL critical, important
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: f4a7a6ac538cf1199aea32875215709fcd165a08
+source-git-commit: babb822cc505e2911ae28cd1a2540799146f19b3
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Adobe Commerce on Cloud Infrastructure, Adobe Commerce On-Premise und Magento Op
 * 2.4.5-P10 und früher
 * 2.4.4-P11 und früher
 
-## ## Lösung für Adobe Commerce on Cloud, Adobe Commerce On-Premise und Magento Open Source-Software
+## Lösung für Adobe Commerce on Cloud, Adobe Commerce On-Premise und Magento Open Source-Software
 
 Um die Sicherheitsanfälligkeit für die betroffenen Produkte und Versionen zu beheben, müssen Sie den [!DNL CVE-2025-24434] isolierten Patch je nach Adobe Commerce/Magento Open Source-Version anwenden.
 
