@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 83b57cde528c8f581d243553006cf0eb97aed138
+source-git-commit: 3003dc048e6f0bc34dd0264f0e038759e8ff94fa
 workflow-type: tm+mt
-source-wordcount: '9380'
+source-wordcount: '9388'
 ht-degree: 0%
 
 ---
@@ -932,6 +932,7 @@ ht-degree: 0%
       * [Bereitstellung bei Cache-Leerung fehlgeschlagen: Fehler „Im Namespace &#39;cache&#39; sind keine Befehle definiert.“](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Bekannte Probleme {#known-issues-patches-attached}
+      * [Adobe Commerce 2.4.7-p4 [!DNL HIPAA] 1.2.0-Kompatibilitätspaket Hotfix](/help/troubleshooting/known-issues-patches-attached/hotfix-for-hipaa-package-1-2-0-compatibility-with-adobe-commerce-2-4-7-p4.md)
       * [Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
       * [Abwärtsinkompatible Änderungen für  [!DNL GraphQL "placeOrder" API]  in Adobe Commerce 2.4.6-p8](/help/troubleshooting/known-issues-patches-attached/backwards-incompatible-changes-for-graphql-placeorder-api-in-adobe-commerce-2-4-6-p8.md)
       * [Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-73]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-73.md)
