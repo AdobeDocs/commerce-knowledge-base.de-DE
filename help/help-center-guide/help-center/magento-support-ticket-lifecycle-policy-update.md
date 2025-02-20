@@ -2,16 +2,16 @@
 title: Aktualisierung der Adobe Commerce Support-Ticket-Lebenszyklusrichtlinie
 description: Dieser Artikel enthält Informationen zur Aktualisierung der Adobe Commerce Support-Ticket-Lebenszyklusrichtlinie.
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
+source-git-commit: b882fcc3a890fa0eb06c17f877d7d315be66e294
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
 
 # Aktualisierung der Adobe Commerce Support-Ticket-Lebenszyklusrichtlinie
 
-In dieser Dokumentation werden Verbesserungen am Lebenszyklus von Adobe DX-Support-Fällen beschrieben. Ziel ist es, die Kommunikation zu verbessern und Kunden so schnell wie möglich Lösungen bereitzustellen, um den Kundenerfolg sicherzustellen. Dies finden Sie auch unter [Übersicht über die Adobe-Erfolgspläne: Lebenszyklus von Support-Fällen](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+In dieser Dokumentation werden Verbesserungen am Lebenszyklus des Adobe DX-Support-Falls beschrieben. Ziel ist es, die Kommunikation zu verbessern und Kunden so schnell wie möglich Lösungen bereitzustellen, um den Kundenerfolg sicherzustellen. Dies finden Sie auch unter [Übersicht über Adobe-Erfolgspläne: Lebenszyklus von Support-Fällen](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
 Im Folgenden finden Sie die Timelines und Benachrichtigungen für verschiedene Szenarien, die während des Support-Prozesses aufgetreten sind:
 
 ## Fall-Follow-up-Erinnerungen
@@ -33,7 +33,7 @@ In diesem Szenario werden die folgenden Schritte ausgeführt, wenn zusätzliche 
 * Am 1., 3. und 5. Tag nach der Einstellung des Status auf „Ausstehende Antwort“ werden Folgebenachrichtigungen an den Kunden gesendet, die zusätzliche Informationen anfordern.
 * Wenn innerhalb von 6 Tagen keine Antwort des Kunden eingeht, nachdem der Status auf „Ausstehende Antwort“ gesetzt wurde, wird der Fall auf „Geschlossen“ gesetzt und eine Abschlussbenachrichtigung gesendet.
 
-Kunden können einen abgeschlossenen Fall innerhalb von 14 Tagen erneut öffnen, um die Kommunikation fortzusetzen. Nach 14 Tagen kann ein neues Support-Case geöffnet werden, um die Kommunikation in Bezug auf einen zuvor geschlossenen Fall fortzusetzen.
+Kunden können einen abgeschlossenen Fall in Experience League innerhalb von 14 Tagen erneut öffnen, um die Kommunikation fortzusetzen. Nach 14 Tagen kann ein neues Support-Case geöffnet werden, um die Kommunikation in Bezug auf einen zuvor geschlossenen Fall fortzusetzen. Beachten Sie, dass eine E-Mail zu einem geschlossenen Ticket nicht erneut geöffnet wird.
 
 ### Wenn ein Techniker eine Lösung bereitstellt
 
@@ -50,4 +50,4 @@ Kunden können einen abgeschlossenen Fall innerhalb von 14 Tagen erneut öffnen,
 * [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
 * [ Link „Ticket senden“ wird nicht auf der Startseite des Adobe Commerce-Hilfezentrums angezeigt](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
 * [Formular zur Ticketübermittlung: Händler wird in der Dropdown-Liste „Organisation“ nicht angezeigt](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
-* [Übersicht über die Adobe-Erfolgspläne: Lebenszyklus von Support-Fällen](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
+* [Übersicht über Adobe-Erfolgspläne: Lebenszyklus von Support-Fällen](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
