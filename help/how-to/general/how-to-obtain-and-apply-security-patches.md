@@ -2,9 +2,9 @@
 title: Abrufen und Anwenden von [!UICONTROL security patch]
 description: Dieser Artikel enthält Anweisungen dazu, wie Sie eine freigegebene [!UICONTROL security patch] abrufen und anwenden. Anweisungen hierzu sind jedoch nicht verfügbar.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: b15a1d008b6cc2bdce797768e6ee7029a747e6da
+source-git-commit: 06bc239cb5b1a894d2a60236a9b32b2b0c4eba80
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,11 @@ Wenn in den Versionshinweisen eine physische Patch-Datei/ein Hotfix erwähnt wir
 
 **Einschränkungen:**
 
-Wenn Sie eine ältere Version von Adobe Commerce verwenden und erweiterten Support erworben haben, muss Ihre Version eine der folgenden sein, um die Sicherheits-Patches anwenden zu können:
+Wenn Sie eine ältere Version von Adobe Commerce (2.4.4) verwenden, erhalten Sie automatisch erweiterte Unterstützung. Ihre Version muss eine der folgenden nicht unterstützten Versionen sein, um die neuesten verfügbaren Sicherheits-Patches anwenden zu können:
 
-* 2.4.2-p2
-* 2.4.3-p3
+2.4.4 - 2.4.4-P11
+
+Nicht unterstützte Versionen (2.3.x, 2.4.0 - 2.4.3) sind nicht unterstützungsfähig, und Sie müssen zunächst ein Upgrade auf eine unterstützte Version durchführen, um die neuesten Sicherheitskorrekturen nutzen zu können.
 
 Wenn Sie nicht über erweiterten Support verfügen, können Sie den Support anfordern, die Patches für Sie freizugeben. Diese können jedoch keine Probleme/Fehler beheben, auf die Sie bei der Anwendung stoßen.
 
@@ -55,5 +56,5 @@ Wenn in den Versionshinweisen keine physische Patch-Datei bzw. kein Hotfix erwä
 
 ## Verwandtes Lesen
 
-* Siehe [Versionshinweise für Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) im *Handbuch zu Adobe Commerce in Cloud Infrastructure*.
+* Siehe [Versionshinweise für Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) im *Handbuch zu Adobe Commerce in Cloud-Infrastrukturen*.
 * Siehe [Upgrade der Adobe Commerce-Version](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) im Handbuch zu *Adobe Commerce in Cloud-Infrastrukturen*.

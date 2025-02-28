@@ -3,9 +3,9 @@ title: '[!DNL Elasticsearch] wird trotz Installation als  [!DNL OpenSearch]  ang
 description: Dieser Artikel bietet eine Lösung für das Problem [!DNL Elasticsearch]  bei dem weiterhin als Suchmaschine für Adobe Commerce in der Cloud angezeigt wird, auch nach der Installation oder dem Upgrade auf [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
+source-git-commit: b3f68e43ce3c4fdea001db1d8ba2774900db7dba
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass [!DNL Elasticsearch] a
 
 ## Betroffene Versionen
 
-Adobe Commerce in Cloud 2.4.3-p2 - 2.4.5-p6
+Adobe Commerce in Cloud 2.4.4 - 2.4.5-p11
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ Adobe Commerce in Cloud 2.4.3-p2 - 2.4.5-p6
 
 ## Ursache
 
-Adobe Commerce ist hartcodiert, um [!DNL Elasticsearch7] als Suchmaschine anzugeben.
+[!DNL Elasticsearch7] ist in Adobe Commerce als Suchmaschine für diese Versionen hartcodiert.
 
-Dies ist nicht mit der installierten Version des Dienstes zu verwechseln. Die Anwendung erkennt [!DNL Elasticsearch7] nur als Suchmaschine, aber nicht [!DNL OpenSearch], obwohl sie den zugrunde liegenden [!DNL OpenSearch]-Service als Engine im Backend verwendet.
+Dies ist nicht mit der installierten Version des Dienstes zu verwechseln. Obwohl im Code kein [!DNL Opensearch] enthalten ist, kann Adobe Commerce den zugrunde liegenden [!DNL Opensearch]-Service verwenden.
 
 ## Lösung
 
