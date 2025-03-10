@@ -4,9 +4,9 @@ description: 'Dieser Artikel enthält Schritte zur Fehlerbehebung, um Probleme m
 exl-id: 0a22beb7-18b0-47eb-a6b8-63b7322b392c
 feature: Observability
 role: Developer
-source-git-commit: 324cce66df1e4ab7ec4ef8fb6512c3acbabdf3ab
+source-git-commit: 27fed162416c619a08d757279a3405f1fa72e976
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Dieser Artikel enthält Schritte zur Fehlerbehebung, um Probleme mit der Leistun
 </ol>
 </td>
 <td>
-<p>Weitere Informationen zum New Relic Apdex-Score finden Sie in der <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM Apdex &gt; Messung der Benutzerzufriedenheit</a>. Weitere Informationen finden Sie unter <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis zu Apdex</a> in unserer Support-Wissensdatenbank.</p>
+<p>Weitere Informationen zum New Relic Apdex-Score finden Sie in der <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM Apdex &gt; Messung der Benutzerzufriedenheit</a>. Weitere Informationen finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis zu Apdex</a> in unserer Support-Wissensdatenbank.</p>
 </td>
 </tr>
 <tr>
