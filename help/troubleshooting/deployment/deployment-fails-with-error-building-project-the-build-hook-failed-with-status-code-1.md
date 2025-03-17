@@ -4,9 +4,9 @@ description: 'In diesem Artikel werden die Ursachen und Lösungen für das Probl
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 6a880a57c6cafb34fa51706f7bab1e23310bcef7
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,17 @@ Weitere Informationen zum Erhöhen des Festplattenspeichers in der Starterplanar
 
    Verwenden Sie den [Upgrade auf ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package)-Artikel als Referenz.
 
-1. Stellen Sie sicher, dass das Paket „ECE-tools“ in der `composer.lock`-Datei vorhanden ist, indem Sie den folgenden Befehl ausführen:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">„name“: „Magento/ECE-Tools“</code>&#39; composer.lock</code></pre>    Wenn sie angegeben werden, würde die Antwort wie im folgenden Beispiel aussehen:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
+1. Stellen Sie sicher, dass das Paket „ECE-tools“ in der `composer.lock`-Datei vorhanden ist, indem Sie den folgenden Befehl ausführen:
+
+   ```bash
+   grep '"name": "magento/ece-tools"' composer.lock
+   ```
+
+   Wenn sie angegeben werden, würde die Antwort wie im folgenden Beispiel aussehen:
+
+   ```bash
+   "name": "magento/ece-tools", "version": "2002.0.20",
+   ```
 
 Siehe den Artikel [Upgrade auf ECE-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package)) als Referenz.
 
