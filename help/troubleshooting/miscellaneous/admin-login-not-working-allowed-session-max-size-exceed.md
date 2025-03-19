@@ -1,17 +1,18 @@
 ---
-title: '[!DNL Admin]-Anmeldung funktioniert nicht - Zulässige maximale Sitzungsgröße überschritten'
-description: Beheben Sie das Problem, wenn Sie versuchen, sich bei Ihrem  [!DNL Admin] -Panel anzumelden, das Formular aktualisiert wird und Sie sich nicht anmelden können.
+title: '[!UICONTROL Admin]-Anmeldung funktioniert nicht - Zulässige maximale Sitzungsgröße überschritten'
+description: Beheben Sie das Problem, wenn Sie versuchen, sich bei Ihrem [!UICONTROL Admin] Panel anzumelden, das Formular aktualisiert wird und Sie sich nicht anmelden können.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
+source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# [!DNL Admin]-Anmeldung funktioniert nicht - Zulässige maximale Sitzungsgröße überschritten
+# [!UICONTROL Admin]-Anmeldung funktioniert nicht - Zulässige maximale Sitzungsgröße überschritten
 
-Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Sie versuchen, sich bei Ihrem [!DNL Admin] Panel anzumelden, das Formular jedoch gerade aktualisiert wird und Sie sich nicht anmelden können. Dies liegt daran, dass die [!DNL Admin] Sitzungsgröße überschritten wurde.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Sie versuchen, sich bei Ihrem [!UICONTROL Admin] Panel anzumelden, das Formular jedoch gerade aktualisiert wird und Sie sich nicht anmelden können oder einige Aktionen im [!UICONTROL Admin] Panel ausführen und automatisch abgemeldet werden.
+Dies liegt daran, dass die [!UICONTROL Admin] [!UICONTROL Session Size] überschritten wurde.
 
 ## Betroffene Versionen
 
@@ -20,7 +21,10 @@ Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Sie versuchen, sic
 
 ## Problem
 
-Es ist nicht möglich, sich bei der [!DNL Admin] anzumelden, da das Formular ständig neu geladen wird.
+Sie an der [!UICONTROL Admin] eines der folgenden Symptome bemerken:
+
+1. Es ist nicht möglich, sich bei der [!UICONTROL Admin] anzumelden, da das Formular ständig neu geladen wird.
+1. Sie werden beim Versuch, eine Aktion durchzuführen, automatisch abgemeldet.
 
 ## Ursache
 
@@ -41,7 +45,7 @@ Wenn diese Fehler angezeigt werden, lautet die Lösung wie folgt:
 
 <u>Adobe Commerce auf Cloud-Infrastruktur</u>:
 
-(Auf diese Einstellung kann in der [!DNL Admin] nur zugegriffen werden, wenn der Bereitstellungs-/Betriebsmodus „Standard“ oder „Entwickler“ ist. In der Cloud-Umgebung ist jedoch nur der Produktionsbereitstellungsmodus zulässig.)
+(Auf diese Einstellung kann in der [!UICONTROL Admin] nur zugegriffen werden, wenn der Bereitstellungs-/Betriebsmodus &quot;*&quot;* &quot;*&quot;*. In der Cloud-Umgebung ist jedoch nur der Produktionsbereitstellungsmodus zulässig.)
 
 Um diesen Wert zu erhöhen, führen Sie diesen Befehl im Terminal (SSH) aus:
 
@@ -53,6 +57,6 @@ Sie können je nach der vorhandenen maximalen Größe, die im Fehler gemeldet wu
 
 ## Verwandtes Lesen
 
-* [Sitzungsgröße](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) im Handbuch für Admin-Systeme.
-* [Betriebsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) im Konfigurationshandbuch.
-* [Sichere Verbindungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) im Handbuch Commerce on Cloud Infrastructure .
+* [Sitzungsgröße](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) im Handbuch für Admin-Systeme
+* [Betriebsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) im Konfigurationshandbuch
+* [Sichere Verbindungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) im Handbuch zu Commerce in Cloud-Infrastrukturen
