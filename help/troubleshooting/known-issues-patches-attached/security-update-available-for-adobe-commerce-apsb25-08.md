@@ -1,20 +1,20 @@
 ---
-title: Sicherheitsupdate für Adobe Systems Commerce verfügbar –[!DNL APSB25-08]
+title: Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB25-08]
 promoted: true
-description: Übernehmen eine isolierte Patch zur Korrektur [!DNL critical, important, and moderate vulnerabilities] für Adobe Systems Commerce 2.4.8-beta1, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 und frühere Versionen.
+description: Wenden Sie einen isolierten Patch an, um  [!DNL critical, important, and moderate vulnerabilities]  für Adobe Commerce 2.4.8-beta1, 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 und frühere Versionen zu beheben.
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: d669c097767b5855c6bd747a0ab11b3520f405a0
+source-git-commit: aba9548c0b5a06ffd0cddce630e53e5664bb9aac
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
 
-# Sicherheitsupdate für Adobe Systems Commerce verfügbar –[!DNL APSB25-08]
+# Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB25-08]
 
-Am 11. Februar 2025 hat Adobe Systems ein regelmäßig geplantes Sicherheitsupdate für Adobe Systems Commerce und Magento Open Source veröffentlicht. Dieses Update behebt [[!DNL critical, important]und [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) Sicherheitslücken.Die erfolgreiche Ausnutzung dieser Sicherheitslücken kann zur Ausführung von beliebigem Code, zur Umgehung von Sicherheitsfunktionen und zur Ausweitung von Berechtigungen führen. Mehr Informationen finden Sie im [Adobe Systems Security Bulletin ([!DNL APSB25-08]) hier](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
+Am 11. Februar 2025 veröffentlichte Adobe ein regelmäßig geplantes Sicherheits-Update für Adobe Commerce und Magento Open Source. Dieses Update behebt [[!DNL critical, important] und  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) Schwachstellen. Die erfolgreiche Ausnutzung dieser Sicherheitslücken kann zur Ausführung von beliebigem Code, zur Umgehung von Sicherheitsfunktionen und zur Ausweitung von Berechtigungen führen. Weitere Informationen finden Sie im [Adobe-Sicherheitsbulletin ([!DNL APSB25-08]) hier](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
 
 >[!NOTE]
 >
@@ -28,15 +28,19 @@ Am 11. Februar 2025 hat Adobe Systems ein regelmäßig geplantes Sicherheitsupda
 
 ## Betroffene Produkte und Versionen
 
-Adobe Systems Commerce in Cloud-Infrastruktur, Adobe Systems Commerce On-Premises und Magento Open Source:
+Adobe Commerce on Cloud Infrastructure, Adobe Commerce On-Premise und Magento Open Source:
 
-* 2.4.8-beta1 und früher
-* 2.4.7-p3 und früher
-* 2.4.6-p8 und frühere Versionen
-* 2.4.5-p10 und früher
-* 2.4.4-p11 und früher
+* 2.4.8-Beta1 und früher
+* 2.4.7-P3 und früher
+* 2.4.6-P8 und früher
+* 2.4.5-P10 und früher
+* 2.4.4-P11 und früher
 
 ## Lösung für Adobe Commerce on Cloud, Adobe Commerce On-Premise und Magento Open Source-Software
+
+>[!NOTE]
+>
+>Dieses Problem wird durch die [neueste Aktualisierung der Cloud-Patches“ ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Der Versuch, den isolierten Patch anzuwenden, wenn die Fehlerbehebung bereits im Update der Cloud-Patches vorhanden ist, kann zu Installationsfehlern führen.
 
 Um die Sicherheitsanfälligkeit für die betroffenen Produkte und Versionen zu beheben, müssen Sie den [!DNL CVE-2025-24434] isolierten Patch je nach Adobe Commerce/Magento Open Source-Version anwenden.
 
@@ -67,19 +71,19 @@ Verwenden Sie je nach Adobe Commerce-/Magento Open Source-Version die folgenden 
 
 ## Anbringen des isolierten Pflasters
 
-Entpacken Sie die Datei und lesen Sie Anweisungen unter [So wenden Sie einen Composer an Patch von Adobe Systems](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) in unserem Support-Knowledgebase bereitgestellt.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
-## Nur für Adobe Systems Commerce on Cloud-Händler - So stellen Sie fest, ob die isolierten Patches angewendet wurden
+## Nur für Adobe Commerce on Cloud-Händler - Ermitteln, ob die isolierten Patches angewendet wurden
 
-In Anbetracht der Tatsache, dass es nicht einfach zu überprüfen ist, ob das Problem behoben wurde, sollten Sie überprüfen, ob die [!DNL CVE-2025-24434] isolierte Patch erfolgreich angewendet wurde.
+Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde, sollten Sie überprüfen, ob der [!DNL CVE-2025-24434] isolierte Patch erfolgreich angewendet wurde.
 
 >[!NOTE]
 >
-><u>Führen Sie dazu die folgenden Schritte aus, verwenden Sie die `VULN-27015-2.4.7_COMPOSER.patch` **Datei als Beispiel**</u>:
+><u>Sie können dies tun, indem Sie die folgenden Schritte ausführen und dabei die Datei `VULN-27015-2.4.7_COMPOSER.patch` **als Beispiel**</u> verwenden:
 
-1. [Installieren das Qualität Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 1. Führen Sie den folgenden Befehl aus:<br>
-   ![CVE-2024-34102-tell-if-Patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
+   ![CVE-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der VULN-27015 den Status *Angewendet* zurückgibt:
 
    ```bash
@@ -97,4 +101,4 @@ In Anbetracht der Tatsache, dass es nicht einfach zu überprüfen ist, ob das Pr
 Für Adobe Commerce verfügbare Sicherheitsupdates:
 
 * [Adobe-Sicherheitsbulletin ([!DNL APSB25-08])](https://helpx.adobe.com/security/products/magento/apsb25-08.html)
-* [Die neuesten Sicherheitsupdates, die für Adobe Systems Commerce verfügbar sind)](https://helpx.adobe.com/security/products/magento.html)
+* [Die neuesten für Adobe Commerce verfügbaren Sicherheits-Updates](https://helpx.adobe.com/security/products/magento.html)
