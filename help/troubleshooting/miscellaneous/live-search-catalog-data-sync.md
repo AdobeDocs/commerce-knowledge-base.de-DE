@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 54f6fb60adca6f639cd315b3d070c7b93aa45bab
+source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
 workflow-type: tm+mt
 source-wordcount: '765'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Pr
 Or
 
 1. Fügen Sie ein neues Produkt zum Katalog hinzu.
-1. Versuchen Sie, eine Suchanfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen auszuführen, nachdem 15-20 Minuten nach dem Zeitpunkt, zu dem Magento-Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren, vergangen sind.
+1. Versuchen Sie, eine Suchabfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen auszuführen, nachdem 15-20 Minuten nach dem Zeitpunkt, zu dem Magento Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren.
 
 <u>Erwartetes Ergebnis</u>
 
@@ -146,7 +146,7 @@ bin/magento saas:resync --feed productattributes
 Führen Sie die folgenden Befehle aus, um die Feeds neu zu synchronisieren:
 
 ```
-bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed productattributes --cleanup-feed
 bin/magento saas:resync --feed products --cleanup-feed
 bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
 bin/magento saas:resync --feed scopesWebsite --cleanup-feed
