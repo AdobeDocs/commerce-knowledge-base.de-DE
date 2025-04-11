@@ -3,7 +3,7 @@ title: Adobe Commerce P1-Benachrichtigungs-Hotline
 description: Dieser Artikel enthält die P1-Benachrichtigungs-Hotline-Nummern für Adobe Commerce, die bei der Meldung eines P1-Vorfalls verwendet werden können, und erläutert, welche Informationen bereitgestellt werden müssen.
 feature: Communications
 exl-id: 48c4fe93-676e-4c69-a96c-8fb3e6872973
-source-git-commit: c5e94c6407394cd905ea470628d28db2c2c6c0ed
+source-git-commit: 8c0c128f2469086c44dcea0e9edc87f934578a69
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Dieser Artikel enthält die P1-Benachrichtigungs-Hotline-Nummern für Adobe Comm
 
 ## P1-Vorfallsdefinition
 
-Wie in [Geschäftsbedingungen für Adobe Commerce-Support-Services definiert](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf): „Ein P1-Vorfall ist ein katastrophaler Produktionsvorfall innerhalb des Service, der sich stark auf die Website des Kunden auswirkt und dazu führt, dass die Website nicht mehr funktioniert oder Bestellungen annimmt, oder aufgrund dessen die Website des Kunden vollständig ausgefallen ist oder nicht funktioniert, oder der zu einem Verlust von Produktionsdaten führt und es keine Problemumgehung gibt. P1-Vorfälle müssen unter der gebührenfreien P1-Telefonnummer der Adobe gemeldet werden, um die Lösung zu beschleunigen. Adobe wird sich kontinuierlich bemühen, unter entsprechender Weiterleitung an die Geschäftsleitung eine Lösung für einen P1-Vorfall zu finden, sobald dies wirtschaftlich vertretbar ist.“
+Wie in [Geschäftsbedingungen für Adobe Commerce-Support-Services definiert](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf): „Ein P1-Vorfall ist ein katastrophaler Produktionsvorfall innerhalb des Service, der sich stark auf die Website des Kunden auswirkt und dazu führt, dass die Website nicht mehr funktioniert oder Bestellungen annimmt, oder aufgrund dessen die Website des Kunden vollständig ausgefallen ist oder nicht funktioniert, oder der zu einem Verlust von Produktionsdaten führt und es keine Problemumgehung gibt. P1-Vorfälle müssen unter der gebührenfreien P1-Telefonnummer von Adobe gemeldet werden, um die Lösung zu beschleunigen. Adobe wird sich kontinuierlich bemühen, unter entsprechender Weiterleitung an die Geschäftsleitung eine Lösung für einen P1-Vorfall zu finden, sobald dies wirtschaftlich sinnvoll ist.“
 
 ## P1-Benachrichtigungs-Hotline-Telefonrichtlinien
 
@@ -40,7 +40,7 @@ Hinweis: Wenn Sie Voicemail aus irgendeinem Grund erreichen, hinterlassen Sie bi
    * Italien: (+39) 0269 682 818 (Beim ersten Menü drücken Sie 6 für die Adobe Commerce P1-Hotline)
    * Schweden: (+46) 0200 810 330 (Im ersten Menü, drücken Sie 6 für die Adobe Commerce P1-Hotline)
 * APAC
-   * Australien: (+61) 1 800 358 683 (Im ersten Menü, drücken Sie 6 für Adobe Commerce P1 Hotline)
+   * Australien: (+61) 1 800 358 683 (Beim ersten Menü drücken Sie 3 für die Adobe Commerce P1-Hotline)
    * Singapur: (+65) 1 800 818 5220 (Im ersten Menü, drücken Sie 6 für die Adobe Commerce P1-Hotline)
    * Philippinen (gebührenpflichtig): (+63) 1 800 1441 0660 (beim ersten Menü 6 für die Adobe Commerce P1-Hotline drücken)
    * Neuseeland (gebührenpflichtig): (+64) 050 861 4264 (beim ersten Menü 6 für Adobe Commerce P1-Hotline drücken)
