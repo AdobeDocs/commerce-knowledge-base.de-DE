@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 3003dc048e6f0bc34dd0264f0e038759e8ff94fa
+source-git-commit: 4a8f9d26ef6733d766cfff15c7b462c2433423f8
 workflow-type: tm+mt
-source-wordcount: '9388'
+source-wordcount: '9289'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,6 @@ ht-degree: 0%
    * Site-Wide Analysis Tool-{#site-wide-analysis-tool}
       * [Site-Wide Analysis Tool von Adobe: Übersicht](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
       * [Häufig gestellte Fragen zum Adobe Commerce Site-Wide Analysis Tool-Bericht](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
-   * Verwaltete Warnhinweise in Adobe Commerce {#managed-alerts}
-      * [Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis zu RediS-Speicher](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
-      * [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis bezüglich Festplatte](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
-      * [Verwaltete Warnhinweise für Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
-      * [Verwaltete Warnhinweise für Adobe Commerce: Kritischer Warnhinweis auf Festplatte](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
-      * [Verwaltete Warnhinweise auf Adobe Commerce: Warnung bei Redis-Speicher](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
-      * [Verwaltete Warnhinweise für Adobe Commerce: Speicherwarnung](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
-      * [Verwaltete Warnhinweise in Adobe Commerce: Kritischer Warnhinweis in CPU](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
-      * [Verwaltete Warnhinweise auf Adobe Commerce: Kritischer Warnhinweis bezüglich Speicher](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
-      * [Verwaltete Warnhinweise für Adobe Commerce: Kritischer Warnhinweis von Apdex](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
-      * [Verwaltete Warnhinweise in Adobe Commerce: MariaDB-Warnhinweise](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
-      * [Verwaltete Warnhinweise für Adobe Commerce: Apdex-Warnhinweis](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
-      * [Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis für CPU](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
    * In QPT-Tool {#patches} verfügbare Patches
       * [In der Übersicht über das QPT-Tool verfügbare Patches](/help/support-tools/patches-available-in-qpt-tool/patches-available-in-qpt-tool-overview.md)
       * v1.1.0 {#v1-1-0}
