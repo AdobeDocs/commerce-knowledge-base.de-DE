@@ -3,16 +3,16 @@ title: Checkliste zum Einrichten einer neuen  [!DNL domain]
 description: Dies ist eine Checkliste zum Einrichten einer neuen  [!DNL domain]  in Adobe Commerce in der Cloud-Infrastruktur.
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: 625ed2c7ab79f7bca9a979903e97c44c875e607c
+source-git-commit: f7b246088e3580922bd3389b2992e5dd8f97ff7a
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
 # Checkliste zum Einrichten einer neuen [!DNL domain]
 
-Dies ist eine Checkliste zum Einrichten einer neuen [!DNL domain] in Adobe Commerce auf Cloud-Infrastrukturen. Dies gilt unabhängig davon, ob Sie einfach eine neue Domain hinzufügen oder die aktuelle Domain durch eine neue ersetzen möchten.
+In dieser Checkliste wird erläutert, wie Sie in Adobe Commerce eine neue [!DNL domain] in der Cloud-Infrastruktur einrichten. Es gilt unabhängig davon, ob Sie eine neue Domain hinzufügen oder die aktuelle ersetzen. Dies gilt auch nach dem Abrufen einer neuen Staging-Umgebung (siehe Schritt 4).
 
 ## Betroffene Produkte und Versionen
 
@@ -65,3 +65,4 @@ Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 ## Verwandtes Lesen
 
 * [Mehrere Websites oder Geschäfte einrichten: Neu hinzufügen [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) in unserem Benutzerhandbuch.
+* [Site aufgrund von Ursprungsverdeckung nicht zugänglich](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking)
