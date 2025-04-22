@@ -3,9 +3,9 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, gemeinsamen Zugriff auf Konten gewähren und durch die Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c9468428b9d230121fb1da354d138439a04d070d
+source-git-commit: 46c19ec1185aa176beff9e5039a324a1f11b9aa1
 workflow-type: tm+mt
-source-wordcount: '2942'
+source-wordcount: '2966'
 ht-degree: 0%
 
 ---
@@ -321,6 +321,10 @@ Im Abschnitt [Freigeben eines Commerce-](https://experienceleague.adobe.com/en/d
 >Der/die Benutzende muss über ein bestehendes Konto verfügen, damit ihm/ihr gemeinsamer Zugriff gewährt werden kann. Weitere Informationen finden Sie [Erstellen eines Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)Kontos).
 
 Nachdem Sie einem neuen Benutzer gemeinsamen Zugriff gewährt haben, sind die zugehörigen Informationen auf der Seite **Freigegebener Zugriff** > **Berechtigungen verwalten** Ihres Adobe Commerce-Kontos verfügbar.
+
+>[!NOTE]
+>
+>Freigegebener Zugriff gewährt nicht automatisch Zugriff auf die Commerce Cloud-Konsole. Sie müssen den [ separat zum Cloud-Projekt hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
 
 ![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
