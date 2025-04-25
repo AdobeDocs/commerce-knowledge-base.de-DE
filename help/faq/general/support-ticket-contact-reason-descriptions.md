@@ -2,9 +2,9 @@
 title: Beschreibungen der Gründe für Support-Ticket-Probleme
 description: In diesem Artikel werden die Feldoptionen für Support**Tickets (**) aufgeführt und detaillierte Beschreibungen der einzelnen Optionen bereitgestellt.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
+source-git-commit: f502c913964103b88bcb00f942f70439394148f5
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -53,3 +53,7 @@ In diesem Artikel werden die Feldoptionen für Support **Tickets (**) aufgeführ
   </tr>  
 </tbody>
 </table>
+
+## Verwandtes Lesen
+
+* [Senden eines Support-Falls](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) im Experience League Support-Benutzerhandbuch für Adobe Commerce.

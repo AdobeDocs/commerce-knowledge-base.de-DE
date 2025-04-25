@@ -3,7 +3,7 @@ title: Experience League Support-Benutzerhandbuch für Adobe Commerce
 description: Erfahren Sie, wie Sie ein Support-Ticket an den Experience League-Support senden, gemeinsamen Zugriff auf Konten gewähren und durch die Adobe Commerce Knowledge Base navigieren.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 46c19ec1185aa176beff9e5039a324a1f11b9aa1
+source-git-commit: 145fc1dfc197cde39d55ceac4d02ecee6c641459
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Gehen Sie wie folgt vor, um ein neues Support-Ticket über Ihre Adobe Commerce-K
 
 1. Die Adobe Experience League-Support-Seite wird für Sie geladen.
 1. Wählen Sie **[!UICONTROL Open Ticket]** aus dem Menü links aus.
-1. Füllen Sie die Felder aus.
+1. Füllen Sie die [Felder](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) aus.
 1. Klicken Sie **Senden**.
 
 #### *E-Mail-Adresse überprüfen* Fehlermeldung auf der Adobe Commerce-Kontoseite {#verify-email-address-error}
@@ -279,8 +279,7 @@ Gehen Sie wie folgt vor, um ein neues Support-Ticket über die Cloud-Konsole ein
 1. Wählen Sie **[!UICONTROL Support]** im Menü USER aus.
 1. Die **[!UICONTROL My Tickets]** Seite wird geladen.
 1. Klicken Sie oben rechts auf **[!UICONTROL Submit a ticket]** .
-1. Füllen Sie die Felder aus.
-1. Klicken Sie **Senden**.
+1. Füllen Sie die [Felder](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) aus.
 1. Klicken Sie auf **[!UICONTROL Submit]**.
 
 ### Adobe Commerce P1-Hotline {#P1-hotline}
