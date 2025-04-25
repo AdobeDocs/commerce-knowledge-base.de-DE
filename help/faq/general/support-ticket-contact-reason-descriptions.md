@@ -2,7 +2,7 @@
 title: Beschreibungen der Gründe für Support-Ticket-Probleme
 description: In diesem Artikel werden die Feldoptionen für Support**Tickets (**) aufgeführt und detaillierte Beschreibungen der einzelnen Optionen bereitgestellt.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: d3523be967f16a3e65025917fa6ac65097214100
+source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -49,7 +49,7 @@ In diesem Artikel werden die Feldoptionen für Support **Tickets (**) aufgeführ
   </tr>
   <tr>
     <td>Infrastrukturstörfall</td>
-    <td>Sie benötigen Hilfe bei Adobe Commerce in Bezug auf Cloud-Infrastrukturen wie z. B. steckengebliebene Bereitstellungen, [!DNL New Relic]-Zugriff, SSH-/sFTP-Zugriff, Service-Upgrades ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], jedoch ohne PHP), SSL-Zertifikate usw. **(Gilt nicht für [!DNL Live Search])**</td>
+    <td>Sie benötigen Hilfe bei Adobe Commerce in Bezug auf Cloud-Infrastrukturen wie z. B. steckengebliebene Bereitstellungen, [!DNL New Relic]-Zugriff, SSH-/sFTP-Zugriff, Service-Upgrades ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], jedoch ohne PHP), SSL-Zertifikate usw.<strong> (gilt nicht für [!DNL Live Search])</strong>.</td>
   </tr>  
 </tbody>
 </table>
