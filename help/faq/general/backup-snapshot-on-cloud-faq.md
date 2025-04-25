@@ -3,9 +3,9 @@ title: 'Backup (Snapshot) in der Cloud: Häufig gestellte Fragen'
 description: In diesem Artikel werden die Grundlagen zum Sichern Ihrer Umgebungen mit Snapshots auf Adobe Commerce in der Cloud-Infrastruktur behandelt.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
+source-git-commit: cfaa7043eed9cc5369f5317b10609d97a91d5861
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Dieser Artikel behandelt das Sichern Ihrer Umgebungen mit Momentaufnahmen der Ad
 ### Staging- und Produktionsumgebungen
 
 * Manuelle Momentaufnahmen sind für Staging- und Produktionsumgebungen in Pro Plan nicht verfügbar.
-* Automatische Momentaufnahmen werden **unabhängig vom Live-Status** Ihrer Site erstellt (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen sind nicht öffentlich zugänglich, da sie in einem separaten System gespeichert sind. Sie können [ein Adobe Commerce-Support-Ticket ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
+* Automatische Momentaufnahmen werden erstellt **unabhängig vom Live-Status** Ihrer Site (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen sind nicht öffentlich zugänglich, da sie in einem separaten System gespeichert sind.
+Sie können [ein Adobe Commerce-Support-Ticket ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Der Support generiert bei Bedarf keine manuellen Momentaufnahmen.
+Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Die Backups werden mithilfe der **verschlüsselten Momentaufnahmen des Amazon Web Services Elastic Block Store (AWS EBS))**.
 * Umgebungs-Snapshots umfassen Ihr gesamtes System (Dateisystem und Datenbank).
 * Die Aufbewahrungsdauer für automatische Momentaufnahmen **ist unterschiedlich** und folgt [dem Zeitplan](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery).
