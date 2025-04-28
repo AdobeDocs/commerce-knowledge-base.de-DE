@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
+source-git-commit: fec99ebd6b03f2dc1b70c0ea388935dc5e60ad57
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -136,14 +136,7 @@ Wenn die richtigen Daten in `cde_product_attributes_feed` angezeigt werden:
 
 ### Nach API-Konfigurationsänderung synchronisieren
 
-(Bekanntes Problem) Wenn Sie Ihre API-Konfiguration geändert haben, was zu einer Änderung Ihrer Datenraum-ID führt, und feststellen, dass Ihre Katalogänderungen nicht mehr synchronisiert werden, führen Sie die folgenden Befehle aus:
-
-```bash
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed productattributes
-```
-
-Führen Sie die folgenden Befehle aus, um die Feeds neu zu synchronisieren:
+(Bekanntes Problem) Wenn Sie Ihre API-Konfiguration geändert haben, was zu einer Änderung Ihrer Datenraum-ID führt, und feststellen, dass Ihre Katalogänderungen nicht mehr synchronisiert werden, führen Sie die folgenden Befehle aus, um die Feeds neu zu synchronisieren:
 
 ```
 bin/magento saas:resync --feed productattributes --cleanup-feed
@@ -158,6 +151,9 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
 [Senden einer Support-Anfrage](https://experienceleague.adobe.com/home?support-tab=home#support) um eine Neuindizierung des Live Search-Index anzufordern. Geben Sie in der Problembeschreibung Ihre Datenspeicher-/Umgebungs-ID ein, die Sie im Admin-Bedienfeld unter **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]** finden.
+
+>[!IMPORTANT]
+>Verwenden Sie die Option `--cleanup-feed` nur, wenn Sie die API-Konfiguration aktualisiert haben, oder wenn Sie den `saas:resync` Befehl mit der Option [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) ausführen. Die Verwendung der Option `--cleanup-feed` in anderen Fällen führt zu Datenverlust und Problemen mit der Datensynchronisation.
 
 ## Verwandtes Lesen
 
