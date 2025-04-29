@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 1f9b11e38ed11fc022a5afa9132130ea2a266616
+source-git-commit: a4a913c9159e9267ca20da99b9d690c85667c7db
 workflow-type: tm+mt
-source-wordcount: '9326'
+source-wordcount: '9340'
 ht-degree: 0%
 
 ---
@@ -945,6 +945,7 @@ ht-degree: 0%
       * [Behebung  [!DNL CVE-2022-31160]  Sicherheitslücken in [!DNL JQuery UI] Versionen 2.4.4, 2.4.5 und 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [Migration der Integration der Versandmethode von SOAP zur RESTful-API [!DNL FedEx]](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Fehler „Maximale Anzahl von Cookies wurde überschritten“ in Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
+      * [Erhöhte Ausführungszeit für alle asynchronen Massenwebendpunkte nach dem APSB25-08-Sicherheits-Patch](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
    * Elasticsearch {#elasticsearch}
       * [Fallback auf [!DNL Elasticsearch7]  wenn die Suchmaschine auf gesetzt ist [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Elasticsearch-Probleme nach der Aktualisierung auf Adobe Commerce Cloud Infrastructure 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
