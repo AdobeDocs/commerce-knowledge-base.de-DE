@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 41948c702d5c4e37847ab18ca2a93798e70a8e98
+source-git-commit: 1f9b11e38ed11fc022a5afa9132130ea2a266616
 workflow-type: tm+mt
-source-wordcount: '9315'
+source-wordcount: '9326'
 ht-degree: 0%
 
 ---
@@ -708,6 +708,7 @@ ht-degree: 0%
       * [Fehlerbehebung bei Fehlern des Kompatibilitäts-Tools für Upgrades](/help/troubleshooting/installation-and-upgrade/uct-segmentation-fault-error.md)
       * [Fehler wegen zu wenig Arbeitsspeicher während der Installation oder Aktualisierung](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
       * [Das Upgrade auf B2B 1.5.2 schlägt aufgrund einer fehlenden REGEXP_LIKE-Funktion mit einem SQL-Syntaxfehler fehl](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
+      * [Leistungsproblem im Magento_Company-Modul-Upgrade nach der Aktualisierung auf B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
    * Site nicht verfügbar oder nicht responsiv {#site-down-or-unresponsive}
       * [Site aufgrund von Ursprungsverdeckung nicht zugänglich](/help/troubleshooting/site-down-or-unresponsive/production-site-not-accessible-due-to-origin-cloaking.md)
       * [503-Fehler beim Zugriff auf Adobe Commerce im Webbrowser](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
