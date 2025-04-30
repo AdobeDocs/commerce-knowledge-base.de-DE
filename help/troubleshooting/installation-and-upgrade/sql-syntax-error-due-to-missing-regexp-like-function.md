@@ -4,14 +4,20 @@ description: Dieser Artikel enthält einen Hotfix für das Problem, dass ein SQL
 feature: B2B, Upgrade
 role: Admin, Developer
 exl-id: c5fe316c-99e3-482e-80b5-25aaae371230
-source-git-commit: f83b82a95d4592252c8923720e90733115c52d87
+source-git-commit: 04e17dfdf143e233eb2767064c1328990c899eda
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Das Upgrade auf B2B 1.5.2 schlägt aufgrund einer fehlenden REGEXP_LIKE-Funktion mit einem SQL-Syntaxfehler fehl
+
+>[!INFO]
+>
+>Wenn beim Aktualisieren des `Magento_Company`-Moduls nach der Aktualisierung auf B2B 1.5.2 ein Leistungsproblem auftritt, wenden Sie den beigefügten [ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch](assets/ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch.zip) an.
+>
+>Weitere Informationen finden Sie unter [Leistungsproblem im Magento_Company-Modul-Upgrade nach dem B2B-Update 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md) in der Adobe Commerce-Wissensdatenbank.
 
 Dieser Artikel enthält einen Hotfix für den SQL-Syntaxfehler, der aufgrund der fehlenden `REGEXP_LIKE` beim Versuch auftritt, die `company_structure` zu aktualisieren.
 
