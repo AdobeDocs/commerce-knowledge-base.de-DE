@@ -2,7 +2,7 @@
 title: Abrufen und Anwenden von [!UICONTROL security patch]
 description: Dieser Artikel enthält Anweisungen dazu, wie Sie eine freigegebene [!UICONTROL security patch] abrufen und anwenden. Anweisungen hierzu sind jedoch nicht verfügbar.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: 43c8308c6539c53f60fb6457047898a2edd46532
+source-git-commit: 3c7234b52e5e4465d95c95345e1c070c28600dfb
 workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 # So erhalten Sie ein [!UICONTROL security patch] und wenden es an
 
 >[!NOTE]
->Wenn Sie eine On-Premise-Installation haben und keine Versionskontrollsysteme wie [!DNL CVS] oder [!DNL GitHub] verwenden, um Ihren Code zu verwalten, kann Ihr Webhost möglicherweise bei der Anwendung des Patches helfen. Sie können sich gerne an sie wenden, um Unterstützung zu erhalten
+>Wenn Sie eine On-Premise-Installation haben und keine Versionskontrollsysteme wie [!DNL CVS] oder [!DNL GitHub] verwenden, um Ihren Code zu verwalten, kann Ihr Webhost möglicherweise bei der Anwendung des Patches helfen. Sie können sich gerne an sie wenden, um Unterstützung zu erhalten.
 
 Dieser Artikel enthält Anweisungen dazu, wie Sie eine freigegebene [!UICONTROL security patch] abrufen und anwenden. Anweisungen hierzu sind jedoch nicht verfügbar.
 
