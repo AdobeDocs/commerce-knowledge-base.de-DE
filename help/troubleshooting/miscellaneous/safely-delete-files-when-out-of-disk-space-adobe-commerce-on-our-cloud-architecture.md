@@ -1,6 +1,6 @@
 ---
 title: Sicheres Löschen von Dateien, wenn in Adobe Commerce in der Cloud-Infrastruktur der Speicherplatz knapp wird
-description: Dieser Artikel bietet eine Lösung für den Fall, dass Ihnen der Speicherplatz ausgeht und Sie Dateien sicher entfernen müssen. Bevor Sie diese Aktion in Betracht ziehen, lesen Sie [Speicherplatz verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) in unserer Entwicklerdokumentation. Wenn die Schritte in diesem Artikel für Sie nicht geeignet sind oder das Problem nicht lösen, lesen Sie die Schritte in diesem Artikel.
+description: Dieser Artikel bietet eine Lösung für den Fall, dass Ihnen der Speicherplatz ausgeht und Sie Dateien sicher entfernen müssen. Bevor Sie diese Aktion in Betracht ziehen, lesen Sie [Speicherplatz verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) in unserer Entwicklerdokumentation. Wenn die Schritte in diesem Artikel für Sie nicht geeignet sind oder das Problem nicht lösen, lesen Sie die Schritte in diesem Artikel.
 exl-id: 6b0a5c1a-8db4-49d7-a785-b4e0bbaea0df
 feature: Cloud, Paas
 role: Developer
@@ -59,4 +59,4 @@ In unserer Support-Wissensdatenbank:
 
 In unserer Entwicklerdokumentation:
 
-* [Speicherplatz verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)
+* [Speicherplatz verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)

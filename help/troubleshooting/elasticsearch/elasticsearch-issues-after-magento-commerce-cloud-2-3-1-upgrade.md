@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->[Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Vor der Installation von Version 2.4.0 müssen Sie den Elasticsearch-Host eingerichtet und konfiguriert haben. Siehe [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
+>[Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Vor der Installation von Version 2.4.0 müssen Sie den Elasticsearch-Host eingerichtet und konfiguriert haben. Siehe [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search).
 
 >[!WARNING]
 >
@@ -29,7 +29,7 @@ In diesem Artikel wird eine Fehlerbehebung für Probleme während der Bereitstel
 
 ## Ursache
 
-Händler, die auf Adobe Commerce in der Cloud-Infrastruktur (Version 2.3.1 und höher) aktualisiert haben und eine Version von Elasticsearch vor 6.x verwenden, können bei der Bereitstellung Fehler auftreten. Dies liegt daran, dass die Elasticsearch-Versionen 2.x und 5[x auslaufen ](https://www.elastic.co/support/eol) und in Adobe Commerce nicht mehr unterstützt werden. Der Elasticsearch-Client muss auf dem neuesten Stand sein, da andernfalls beim Ausführen einer Bereitstellung ein Fehler ausgelöst werden könnte. Weitere Informationen finden Sie unter [Ändern des Elasticsearch-Clients](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation.
+Händler, die auf Adobe Commerce in der Cloud-Infrastruktur (Version 2.3.1 und höher) aktualisiert haben und eine Version von Elasticsearch vor 6.x verwenden, können bei der Bereitstellung Fehler auftreten. Dies liegt daran, dass die Elasticsearch-Versionen 2.x und 5[x auslaufen ](https://www.elastic.co/support/eol) und in Adobe Commerce nicht mehr unterstützt werden. Der Elasticsearch-Client muss auf dem neuesten Stand sein, da andernfalls beim Ausführen einer Bereitstellung ein Fehler ausgelöst werden könnte. Weitere Informationen finden Sie unter [Ändern des Elasticsearch-Clients](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation.
 
 ## Problem
 
@@ -43,12 +43,12 @@ Bei der Bereitstellung wird eine Fehlermeldung wie die folgende angezeigt, die d
 
 Um dieses Problem zu beheben, müssen das Elasticsearch-Client-Modul und der Elasticsearch-Service die neuesten empfohlenen Versionen verwenden:
 
-1. Befolgen Sie die Anweisungen [Ändern des Elasticsearch-Moduls](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation, damit Sie über die neueste empfohlene Version des Elasticsearch-Client-Moduls verfügen.
+1. Befolgen Sie die Anweisungen [Ändern des Elasticsearch-Moduls](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation, damit Sie über die neueste empfohlene Version des Elasticsearch-Client-Moduls verfügen.
 1. [Senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und fordern Sie ein Elasticsearch-Service-Update für Staging und Produktion auf 6.x an. Bitte beachten Sie, dass es einige Zeit dauern kann, bis eine Aktualisierung des Elasticsearch-Service abgeschlossen ist.
 
 ## Verwandtes Lesen
 
-* [Anforderungen für den Technologie-Stack von Adobe Commerce 2.3](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) in unserer Entwicklerdokumentation.
-* [Einrichten des Elasticsearch-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
-* [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) finden Sie in unserer Entwicklerdokumentation.
+* [Anforderungen für den Technologie-Stack von Adobe Commerce 2.3](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview) in unserer Entwicklerdokumentation.
+* [Einrichten des Elasticsearch-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
+* [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search) finden Sie in unserer Entwicklerdokumentation.
 * [Stellen Sie sicher, dass das Elasticsearch ordnungsgemäß installiert ](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md), in unserer Support-Wissensdatenbank.

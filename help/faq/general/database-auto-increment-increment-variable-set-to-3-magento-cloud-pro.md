@@ -31,5 +31,5 @@ Wenn das ausgewählte Hauptmenü beispielsweise Knoten 1 mit `auto_increment_off
 
 Siehe in unserer Entwicklerdokumentation:
 
-* [Cloud für Adobe Commerce > Pro-Architektur > Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Cloud für Adobe Commerce > Installationsvoraussetzungen: Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)
+* [Cloud für Adobe Commerce > Pro-Architektur > Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud für Adobe Commerce > Installationsvoraussetzungen: Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/overview)

@@ -50,5 +50,5 @@ Das Statusattribut des Produkts wurde in der CSV-Datei umbenannt. Sie ist jetzt 
 
 ## Verwandtes Lesen
 
-* [Arbeiten mit CSV-](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
-* [Produktexport-Attribute-Referenz](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.
+* [Arbeiten mit CSV-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
+* [Produktexport-Attribute-Referenz](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.

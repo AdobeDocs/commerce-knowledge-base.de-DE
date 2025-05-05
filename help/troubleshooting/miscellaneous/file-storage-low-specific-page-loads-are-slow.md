@@ -33,8 +33,8 @@ Bilder sind nicht optimiert, um Leistung und Anzeigequalität in Einklang zu bri
 
 Optimieren und komprimieren Sie Bilder vor dem Hochladen, um ein ausgewogenes Verhältnis zwischen Leistung und Anzeigequalität zu erzielen. Dies erhöht den Speicherplatz und reduziert die Seitenladezeiten. PNG-Dateien bieten kleinere Größen für Bilder mit großen einfarbigen Bereichen. JPEG geben für alles andere kleinere Größen. Verwenden Sie die höchste Komprimierung (ohne merkliche Beeinträchtigung). Das sind in der Regel 60-80%.
 
-Verwenden Sie [Fastly Image Optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html), um speichereffizientere Bilder zu erstellen.
+Verwenden Sie [Fastly Image Optimization](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=de), um speichereffizientere Bilder zu erstellen.
 
 ## Verwandtes Lesen
 
-Informationen zum Verwalten des Festplattenspeichers (wenn Sie sich in der Cloud-Infrastruktur von Adobe Commerce befinden) finden Sie unter [Verwalten des Festplattenspeichers in der Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) im Handbuch zu Commerce in der Cloud-Infrastruktur.
+Informationen zum Verwalten des Festplattenspeichers (wenn Sie sich in der Cloud-Infrastruktur von Adobe Commerce befinden) finden Sie unter [Verwalten des Festplattenspeichers in der Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=de) im Handbuch zu Commerce in der Cloud-Infrastruktur.

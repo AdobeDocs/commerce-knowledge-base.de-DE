@@ -30,7 +30,7 @@ Ein Grund für Leistungseinbußen können bestimmte Adobe Commerce-Cache-Typen s
 
 ## Lösung
 
-1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu [ Sie „SSH“ in Ihre Umgebung ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) und führen den folgenden Befehl aus:
+1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu [ Sie „SSH“ in Ihre Umgebung ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) und führen den folgenden Befehl aus:
 
    ```bash
    php bin/magento cache:status
@@ -48,7 +48,7 @@ Wenn es Bedenken und/oder Fragen dazu gibt, ob ein bestimmter Adobe Commerce-Cac
 Adobe Commerce-Cache-Dokumentation in unserer Entwicklerdokumentation:
 
 * [Übersicht über den Adobe Commerce-Cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [Cache verwalten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Cache verwalten](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Weitere mögliche Gründe für Leistungsprobleme und Lösungen für sie:
 

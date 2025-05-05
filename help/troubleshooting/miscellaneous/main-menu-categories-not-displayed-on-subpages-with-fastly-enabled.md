@@ -1,6 +1,6 @@
 ---
 title: Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist
-description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü für die obere Navigation der Kategorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü für die obere Navigation der Kategorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=de) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer

@@ -25,7 +25,7 @@ Sie können das MDVA-43395-Patch nicht anwenden.
 
 ## Ursache
 
-Cloud-Händler müssen den MDVA-43395-Patch nicht separat anwenden, wenn sie [magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) installiert haben, die den Patch bereits enthalten.
+Cloud-Händler müssen den MDVA-43395-Patch nicht separat anwenden, wenn sie [magento/magento-cloud-patches 1.0.16](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) installiert haben, die den Patch bereits enthalten.
 
 ## Lösung
 
@@ -45,4 +45,4 @@ $ vendor/bin/magento-patches -n status |grep 43443
 ## Verwandtes Lesen
 
 * [So wenden Sie einen Composer-Patch von Adobe an](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) in unserer Support-Wissensdatenbank.
-* [Cloud-Patches für Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) in unserer Entwicklerdokumentation.
+* [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches#v1016) in unserer Entwicklerdokumentation.

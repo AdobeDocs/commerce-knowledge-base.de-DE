@@ -38,7 +38,7 @@ Die Aktualisierung auf B2B-Version 1.5.2 schlägt aufgrund der fehlenden `REGEXP
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Weisen Sie einer übergeordneten Firma eine Firma zu, um die Unternehmenshierarchie festzulegen. Weitere Informationen finden [ unter „Verwalten ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) Unternehmenshierarchie“ im Adobe Commerce B2B-Handbuch.
+1. Weisen Sie einer übergeordneten Firma eine Firma zu, um die Unternehmenshierarchie festzulegen. Weitere Informationen finden [ unter „Verwalten ](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) Unternehmenshierarchie“ im Adobe Commerce B2B-Handbuch.
 1. Aktualisieren Sie B2B auf Version 1.5.2.
 
 <u>Erwartete Ergebnisse</u>:
@@ -78,4 +78,4 @@ Gehen Sie für Adobe Commerce auf Cloud-Infrastruktur wie folgt vor:
    composer update magento/magento-cloud-patches
    ```
 
-1. Übergeben Sie die Änderungen und übertragen Sie sie, um eine erneute Bereitstellung zu starten. Anweisungen finden [ unter „Anwenden ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) Patches“ in unserem Handbuch zu Adobe Commerce on Cloud.
+1. Übergeben Sie die Änderungen und übertragen Sie sie, um eine erneute Bereitstellung zu starten. Anweisungen finden [ unter „Anwenden ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) Patches“ in unserem Handbuch zu Adobe Commerce on Cloud.

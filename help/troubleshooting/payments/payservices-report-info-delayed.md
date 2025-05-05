@@ -29,7 +29,7 @@ Nachdem Sie beispielsweise eine Bestellung fakturiert (erfasst) oder eine Gutsch
 
 Voraussetzungen: Eine Bestellung wird über die Zahlungsdienstfunktion aufgegeben.
 
-1. Eine Bestellung wird [fakturiert](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (oder [storniert](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) oder [per Gutschrift ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) in [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin).
+1. Eine Bestellung wird [fakturiert](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) (oder [storniert](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) oder [per Gutschrift ](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) in [Admin](https://experienceleague.adobe.com/de/docs/commerce-admin/start/admin/admin).
 1. Navigieren Sie zur Auswertung „Zahlungsstatus der Bestellung“, um Informationen zu dieser Bestellung anzuzeigen.
 1. Der Status wird als `AUTHORIZED` angezeigt, d. h. der Bestellstatus vor der Fakturierung oder einer anderen Bestellaktion.
 
@@ -37,7 +37,7 @@ Voraussetzungen: Eine Bestellung wird über die Zahlungsdienstfunktion aufgegebe
 
 >[!NOTE]
 >
->Dies ist nur ein gängiger Anwendungsfall. Es kann andere Anwendungsfälle geben, in denen [Bestellaktion](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) auftritt und die Daten im entsprechenden Bericht nicht sofort verfügbar sind.
+>Dies ist nur ein gängiger Anwendungsfall. Es kann andere Anwendungsfälle geben, in denen [Bestellaktion](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) auftritt und die Daten im entsprechenden Bericht nicht sofort verfügbar sind.
 
 <u>Erwartetes Ergebnis</u>:
 Berichtsdaten werden sofort nach einer Aktion für eine Bestellung ausgefüllt.
@@ -49,7 +49,7 @@ Bei gerade abgeschlossenen Bestellaktionen kann es zu einer Verzögerung bei den
 
 Es gibt zwei Faktoren, die diese Verzögerung bei der Anzeige sichtbarer Daten in der Admin-Instanz beeinflussen:
 
-* Wie oft Sie Daten aus Commerce über (Konfiguration im Admin[ synchronisieren (exportieren und beibehalten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html).
+* Wie oft Sie Daten aus Commerce über (Konfiguration im Admin[ synchronisieren (exportieren und beibehalten](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html?lang=de).
 * Zeitrahmen, in dem PayPal Berichtsdaten veröffentlicht.
 
 ## Lösung

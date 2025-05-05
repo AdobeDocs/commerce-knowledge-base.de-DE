@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## Verwandtes Lesen
 
-Informationen zur Verwendung des Wartungsmodus finden Sie unter [Aktivieren oder Deaktivieren ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) Wartungsmodus“ in der Entwicklerdokumentation.
+Informationen zur Verwendung des Wartungsmodus finden Sie unter [Aktivieren oder Deaktivieren ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) Wartungsmodus“ in der Entwicklerdokumentation.

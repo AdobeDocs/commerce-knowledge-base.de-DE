@@ -30,4 +30,4 @@ Wenn sich der Grundpreis des Produkts ändert und niedriger als der entsprechend
 
 ## Verwandtes Lesen
 
-[Festlegen von Preisen und Strukturen für einen freigegebenen ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html)) in unserem Benutzerhandbuch.
+[Festlegen von Preisen und Strukturen für einen freigegebenen ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html?lang=de)) in unserem Benutzerhandbuch.

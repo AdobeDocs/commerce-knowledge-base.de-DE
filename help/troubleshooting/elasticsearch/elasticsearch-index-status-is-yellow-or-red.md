@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Vor der Installation von Version 2.4.0 müssen Sie den Elasticsearch-Host eingerichtet und konfiguriert haben. Siehe [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search).
+> [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Vor der Installation von Version 2.4.0 müssen Sie den Elasticsearch-Host eingerichtet und konfiguriert haben. Siehe [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search).
 
 Der Artikel bietet eine Fehlerbehebung für den Fall, dass der Elasticsearch-Indexstatus nicht &quot;*&quot;*. &quot;*gelb*&quot; bedeutet „normal“ und &quot;*rot* bedeutet „schlecht“. Der Status „gelb“ oder „rot“ kann in Verbindung mit fehlenden Produkten oder der Anzeige alter Produktinformationen auftreten.
 

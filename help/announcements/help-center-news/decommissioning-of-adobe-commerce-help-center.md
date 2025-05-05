@@ -14,11 +14,11 @@ ht-degree: 0%
 # Stilllegung des Adobe Commerce Help Centers
 
 Journey Um eine bessere Anbindung an die Adobe-Lösungspalette zu erreichen, hat Adobe Commerce seinen Support-Eingangsprozess vom Adobe Commerce Help Center nach Adobe Experience League migriert.
-Am 29. Juli 2024 wurde dem Adobe Commerce-Hilfezentrum der Status „Schreibgeschützt“ zugewiesen und alle neuen Support-Fälle werden jetzt über [Adobe Experience League&rbrace; ](https://experienceleague.adobe.com/).
+Am 29. Juli 2024 wurde dem Adobe Commerce-Hilfezentrum der Status „Schreibgeschützt“ zugewiesen und alle neuen Support-Fälle werden jetzt über [Adobe Experience League&rbrace; ](https://experienceleague.adobe.com/de).
 
 >[!NOTE]
 >
->**Verwenden Sie den beschriebenen Formularfluss für Experience League-Fälle [hier](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support), um Support-Fälle zu senden.**
+>**Verwenden Sie den beschriebenen Formularfluss für Experience League-Fälle [hier](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support), um Support-Fälle zu senden.**
 
 ## Anzeigen historischer Fälle im Adobe Commerce-Hilfezentrum
 
@@ -34,4 +34,4 @@ Wenn Sie sich historische Support-Fälle ansehen möchten, die nach dem 1. Mai 2
 
 >[!NOTE]
 >
->Der Knowledgebase-Teil des Adobe Commerce-Hilfezentrums wurde ebenfalls zum [Adobe Experience League-Portal](https://experienceleague.adobe.com/) migriert. Wenn Sie ein Support-Ticket erstellen, werden Ihnen zugehörige Knowledge Base-Artikel sowie andere relevante Adobe Commerce-Dokumentationen aus Adobe Experience League vorgeschlagen.
+>Der Knowledgebase-Teil des Adobe Commerce-Hilfezentrums wurde ebenfalls zum [Adobe Experience League-Portal](https://experienceleague.adobe.com/de) migriert. Wenn Sie ein Support-Ticket erstellen, werden Ihnen zugehörige Knowledge Base-Artikel sowie andere relevante Adobe Commerce-Dokumentationen aus Adobe Experience League vorgeschlagen.

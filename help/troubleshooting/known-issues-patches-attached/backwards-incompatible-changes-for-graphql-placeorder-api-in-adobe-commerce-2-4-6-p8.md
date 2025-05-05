@@ -61,7 +61,7 @@ Um ihn herunterzuladen, klicken Sie auf den folgenden Link:
 
 ## Anbringen des Pflasters
 
-Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=de)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
 
 ## Nur für Adobe Commerce on Cloud-Händler - Ermitteln, ob Patches angewendet wurden
 
@@ -69,7 +69,7 @@ Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde,
 
 <u>Sie können dazu die folgenden Schritte ausführen, indem Sie die Beispieldatei `VULN-27015-2.4.7_COMPOSER.patch`als Beispiel **verwenden</u>**:
 
-1. [Installieren Sie  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installieren Sie  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de).
 1. Führen Sie den folgenden Befehl aus:<br>
    ![ac-13283-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der VULN-27015 den Status *Angewendet* zurückgibt:

@@ -58,4 +58,4 @@ php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 
 ## Verwandtes Lesen
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) in unserer Entwicklerdokumentation.
+* [SendGrid](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/project/sendgrid) in unserer Entwicklerdokumentation.

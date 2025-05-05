@@ -41,8 +41,8 @@ Die typischen Speicherorte, an denen der Dateispeicher wahrscheinlich gefüllt w
 
 `du -shc` */path/to/folder*
 
-Wenn die Nutzung der Medien einen großen Teil des gesamten Festplattenspeichers ausmacht, sollten Sie [Fastly Deep Image Optimization](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) aktivieren und dann die Dateien im Ordner *pub/media/catalog/product/cache* auf dem Server manuell löschen.
+Wenn die Nutzung der Medien einen großen Teil des gesamten Festplattenspeichers ausmacht, sollten Sie [Fastly Deep Image Optimization](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) aktivieren und dann die Dateien im Ordner *pub/media/catalog/product/cache* auf dem Server manuell löschen.
 
 ## Verwandtes Lesen
 
-[Überprüfen Sie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.
+[Überprüfen Sie ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.

@@ -34,5 +34,5 @@ Erwägen Sie die folgenden Optionen, um einen Leistungsabfall zu vermeiden:
 
 ## Verwandtes Lesen
 
-* [Übergroße Änderungsprotokolltabellen, die zu Verzögerungen bei Entitätsaktualisierungen führen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) in unserer Support-Wissensdatenbank
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Übergroße Änderungsprotokolltabellen, die zu Verzögerungen bei Entitätsaktualisierungen führen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) in unserer Support-Wissensdatenbank
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

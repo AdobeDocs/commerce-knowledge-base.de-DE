@@ -122,5 +122,5 @@ Vermeiden Sie außerdem die Verwendung dieser Schlüsselwörter, die als *reserv
 
 ## Verwandtes Lesen
 
-* [URL-Neuschreibungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unserem Merchandising- und Promotions-Benutzerhandbuch.
-* [Best Practices für SEO](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch zu Merchandising und Promotions.
+* [URL-Neuschreibungen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unserem Merchandising- und Promotions-Benutzerhandbuch.
+* [Best Practices für SEO](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch zu Merchandising und Promotions.

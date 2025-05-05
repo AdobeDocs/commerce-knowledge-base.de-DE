@@ -15,7 +15,7 @@ ht-degree: 0%
 # Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-73]
 
 Am 8. Oktober 2024 veröffentlichte Adobe ein regelmäßig geplantes Sicherheits-Update für Adobe Commerce und [!DNL Adobe Commerce Webhooks Plugin].
-Dieses Update behebt [[!DNL critical, important] und  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) Schwachstellen. Eine erfolgreiche Ausnutzung kann zur Ausführung von beliebigem Code, zum Lesen beliebiger Dateisysteme, zur Umgehung von Sicherheitsfunktionen und zur Erweiterung von Berechtigungen führen. Das Bulletin ist [Adobe-Sicherheitsbulletin ([!DNL APSB24-73])](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+Dieses Update behebt [[!DNL critical, important] und  [!DNL moderate]](https://helpx.adobe.com/de/security/severity-ratings.html) Schwachstellen. Eine erfolgreiche Ausnutzung kann zur Ausführung von beliebigem Code, zum Lesen beliebiger Dateisysteme, zur Umgehung von Sicherheitsfunktionen und zur Erweiterung von Berechtigungen führen. Das Bulletin ist [Adobe-Sicherheitsbulletin ([!DNL APSB24-73])](https://helpx.adobe.com/de/security/products/magento/apsb24-73.html).
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Verwenden Sie das folgende beigefügte isolierte Pflaster:
 
 ## Anbringen des isolierten Pflasters
 
-Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=de)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
 
 ## Nur für Adobe Commerce on Cloud-Händler - Ermitteln, ob die isolierten Patches angewendet wurden
 
@@ -64,7 +64,7 @@ Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde,
 
 <u>Sie können dies tun, indem Sie die folgenden Schritte ausführen und dabei die Datei `VULN-27015-2.4.7_COMPOSER.patch` **als Beispiel**</u> verwenden:
 
-1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de).
 1. Führen Sie den folgenden Befehl aus:<br>
    ![CVE-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der VULN-27015 den Status *Angewendet* zurückgibt:
@@ -83,4 +83,4 @@ Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde,
 
 Für Adobe Commerce verfügbare Sicherheitsupdates:
 
-* [Adobe-Sicherheitsbulletin ([!DNL APSB24-73])](https://helpx.adobe.com/security/products/magento/apsb24-73.html)
+* [Adobe-Sicherheitsbulletin ([!DNL APSB24-73])](https://helpx.adobe.com/de/security/products/magento/apsb24-73.html)

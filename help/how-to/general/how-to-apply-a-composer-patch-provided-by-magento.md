@@ -36,7 +36,7 @@ In diesem Artikel wird beschrieben, wie Sie einen Composer-Patch für Adobe Comm
    git push origin
    ```
 
-Weitere Informationen zum Anwenden von Patches auf Cloud-Projekte finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+Weitere Informationen zum Anwenden von Patches auf Cloud-Projekte finden Sie [Anwenden von Patches](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ### Anwenden eines Composer-Patches für Adobe Commerce On-Premise und Magento Open Source {#commerce}
 

@@ -32,10 +32,10 @@ In Page Builder gibt es keine Option zum Hinzufügen von Produkt-Recommendations
 1. Überprüfen Sie, ob Sie das Modul separat installiert haben, indem Sie den folgenden Befehl ausführen: `composer show magento/module-page-builder-product-recommendations`
 1. Wenn die Meldung zurückgegeben wird: *Package magento/module-page-builder-product-recommendations not found*, müssen Sie sie durch Ausführen des Befehls installieren: `composer require magento/module-page-builder-product-recommendations`
 
-Durch die Aktivierung der Produkt-Recommendations in Page Builder können Sie [eine Empfehlungseinheit hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) zu allen in Page Builder erstellten Inhalten hinzufügen.
+Durch die Aktivierung der Produkt-Recommendations in Page Builder können Sie [eine Empfehlungseinheit hinzufügen](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=de) zu allen in Page Builder erstellten Inhalten hinzufügen.
 
 ## Verwandtes Lesen
 
-* [Inhalt hinzufügen - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) in unserem Benutzerhandbuch.
-* [Installieren und Konfigurieren von Produkt-Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) in unserer Entwicklerdokumentation.
-* [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+* [Inhalt hinzufügen - Produkt-Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=de) in unserem Benutzerhandbuch.
+* [Installieren und Konfigurieren von Produkt-Recommendations](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) in unserer Entwicklerdokumentation.
+* [Adobe Commerce-Benutzerhandbuch](https://experienceleague.adobe.com/de/docs/commerce-admin/user-guides/home)

@@ -74,4 +74,4 @@ $ curl 127.0.0.1:9200
 
 ## Verwandtes Lesen
 
-[Richten Sie den OpenSearch-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) im Handbuch zu Commerce in Cloud-Infrastrukturen ein.
+[Richten Sie den OpenSearch-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastrukturen ein.

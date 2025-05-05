@@ -20,17 +20,17 @@ Bob - not in TOC
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce auf Cloud-Infrastruktur, alle [unterstützten Versionen](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html).
+* Adobe Commerce auf Cloud-Infrastruktur, alle [unterstützten Versionen](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=de).
 
 Um Protokolle auf diese Server-Fehler anzuzeigen, überprüfen Sie die `access.log` auf dem Webserver, z. B. `<ip address>` `<timestamp>` `<request uri>` `<response code>` `<referer url>`
 
 So überprüfen Sie die zugehörigen Protokolle:
 
 1. Führen Sie den folgenden Befehl in der CLI aus, sofern er am aktuellen Tag erfolgt (für Adobe Commerce auf Cloud Infrastructure Pro Planarchitektur). Oder zu einem bestimmten Zeitpunkt in der Vergangenheit (für die Starterplanarchitektur von Adobe Commerce in der Cloud-Infrastruktur), da die Dauer der Protokollabdeckung begrenzt ist und die Protokollrotation nicht verfügbar ist: `grep -r "\" [50[0-9]" /path/to/access.log` Wenn der Fehler in der Vergangenheit aufgetreten ist, führen Sie den folgenden Befehl in der CLI aus (nur Pro-Architektur): `zgrep "\" 50[0-9]" /path/to/access.log.<rotation ID>.gz`
-1. Überprüfen Sie dann die `exception.log` und `error.log` oder das entsprechende [rotierte Protokoll](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#log-rotation) (Protokolle, die automatisch rotiert und komprimiert werden, wenn sie eine bestimmte Dateigröße erreichen) für denselben Zeitstempel, um den potenziellen Fehler zu finden und zu sehen, was möglicherweise passiert ist, das ihn verursacht hat. Hinweis: Um die `exception.log` zu überprüfen und `error.log` die oben genannten Befehle in der CLI ausführen, aber `access.log` durch `exception.log` oder `error.log` ersetzen.
+1. Überprüfen Sie dann die `exception.log` und `error.log` oder das entsprechende [rotierte Protokoll](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=de#log-rotation) (Protokolle, die automatisch rotiert und komprimiert werden, wenn sie eine bestimmte Dateigröße erreichen) für denselben Zeitstempel, um den potenziellen Fehler zu finden und zu sehen, was möglicherweise passiert ist, das ihn verursacht hat. Hinweis: Um die `exception.log` zu überprüfen und `error.log` die oben genannten Befehle in der CLI ausführen, aber `access.log` durch `exception.log` oder `error.log` ersetzen.
 
 ## Verwandtes Lesen
 
-* Siehe [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) im Handbuch zu *Adobe Commerce in Cloud-Infrastrukturen*.
+* Siehe [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de) im Handbuch zu *Adobe Commerce in Cloud-Infrastrukturen*.
 * Siehe [Fehlerbehebung für 503-Fehler](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md) in unserer Support-Wissensdatenbank.
 * Siehe [Fehlerbehebung beim Herunterladen der Magento-Site](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) in unserer Support-Wissensdatenbank.

@@ -78,7 +78,7 @@ Die `/data/mysql`-Bereitstellung könnte aufgrund einer Reihe von Problemen ausg
 
 Es gibt einen sofortigen Schritt, den Sie unternehmen können, um [!DNL MySQL] wieder auf den richtigen Weg zu bringen (oder zu verhindern, dass es stecken bleibt): Machen Sie Platz frei, indem Sie große Tische spülen.
 
-Eine langfristige Lösung bestünde jedoch darin, mehr Speicherplatz zuzuweisen und den Best Practices für [Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) zu folgen, einschließlich der Aktivierung der Funktion [Bestellung/Rechnung/Versand](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Eine langfristige Lösung bestünde jedoch darin, mehr Speicherplatz zuzuweisen und den Best Practices für [Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de) zu folgen, einschließlich der Aktivierung der Funktion [Bestellung/Rechnung/Versand](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 Im Folgenden finden Sie Details zu schnellen und langfristigen Lösungen.
 
@@ -124,7 +124,7 @@ Auf große `ibtmp1`-Dateien `/data/mysql` jedem Knoten prüfen: Diese Datei ist 
 
 >[!WARNING]
 >
->Es wird dringend empfohlen, ein Datenbank-Backup zu erstellen, bevor Sie Änderungen durchführen und diese in Zeiten hoher Site-Auslastung vermeiden. Siehe [Dump Ihrer Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
+>Es wird dringend empfohlen, ein Datenbank-Backup zu erstellen, bevor Sie Änderungen durchführen und diese in Zeiten hoher Site-Auslastung vermeiden. Siehe [Dump Ihrer Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
 
 Überprüfen Sie, ob große Tabellen vorhanden sind, und prüfen Sie, ob eine davon geleert werden kann. Gehen Sie dazu auf dem primären Knoten (Quellknoten) vor.
 
@@ -132,7 +132,7 @@ Beispielsweise können Tabellen mit Berichten normalerweise geleert werden. Weit
 
 Wenn keine großen Berichtstabellen vorhanden sind, sollten Sie `_index` Tabellen leeren, um die Adobe Commerce-Anwendung wieder auf den richtigen Weg zu bringen. `index_price` Tabellen wären die besten Kandidaten. Beispiel: `catalog_category_product_index_storeX` Tabellen, bei denen X Werte von „1“ bis zur maximalen Speicheranzahl aufweisen kann. Beachten Sie, dass Sie eine Neuindizierung durchführen müssen, um die Daten in diesen Tabellen wiederherzustellen. Bei großen Katalogen kann diese Neuindizierung sehr lange dauern.
 
-Warten Sie nach dem Leeren auf den Abschluss der WSREP-Synchronisierung. Sie können jetzt Sicherungskopien erstellen und wichtigere Schritte ausführen, um mehr Speicherplatz hinzuzufügen, z. B. mehr Speicherplatz zuweisen/kaufen und die Funktion [Bestellung/Rechnung/](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) aktivieren.
+Warten Sie nach dem Leeren auf den Abschluss der WSREP-Synchronisierung. Sie können jetzt Sicherungskopien erstellen und wichtigere Schritte ausführen, um mehr Speicherplatz hinzuzufügen, z. B. mehr Speicherplatz zuweisen/kaufen und die Funktion [Bestellung/Rechnung/](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-archive) aktivieren.
 
 ### Überprüfen der binären Protokollierungseinstellungen
 
@@ -151,4 +151,4 @@ Wenn Sie Ihr Speicherplatzlimit erreicht haben und weiterhin Probleme mit wenig 
 
 ## Verwandtes Lesen
 
-[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

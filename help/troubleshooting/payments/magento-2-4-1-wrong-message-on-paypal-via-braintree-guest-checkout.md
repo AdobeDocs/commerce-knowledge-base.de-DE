@@ -27,7 +27,7 @@ Ein unspezifischer Fehler wird angezeigt, wenn der Gast-Checkout im Backend deak
 <u>Voraussetzungen</u>:
 
 1. Legen Sie im Commerce Admin unter **Stores** > **Configuration** > **Sales** > **Checkout** **Allow Guest Checkout** = *No* fest.
-1. Aktivieren Sie PayPal per Braintree, wie in der [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) in unserem Benutzerhandbuch beschrieben.
+1. Aktivieren Sie PayPal per Braintree, wie in der [Braintree](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/payments/braintree?) in unserem Benutzerhandbuch beschrieben.
 
 <u>Schritte zur Reproduktion</u>:
 

@@ -48,11 +48,11 @@ Durch die Verwendung der Subdomain können Sie einen „Soft Launch“ Ihres Sto
 
 In unserer Support-Wissensdatenbank:
 
-* [Konfigurieren von Fastly-DNS-Einstellungen in Staging- und Produktionsumgebungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Richten Sie Fastly für den Starter-Plan in der Cloud ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
-* [Potenzielle Blocker für den Start auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [Konfigurieren von Fastly-DNS-Einstellungen in Staging- und Produktionsumgebungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=de)
+* [Richten Sie Fastly für den Starter-Plan in der Cloud ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=de)
+* [Potenzielle Blocker für den Start auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=de)
 
 In unserer Entwicklerdokumentation:
 
-* [Fastly-Übersicht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Go-Live-Checkliste: DNS-Konfigurationen für Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Fastly-Übersicht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=de)
+* [Go-Live-Checkliste: DNS-Konfigurationen für Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=de)

@@ -56,7 +56,7 @@ Das Ergebnis enthält eine Liste von Attributen, die für die mehrschichtige Nav
 Um das Problem zu beheben, müssen Sie `is_filterable` (d. h. in der mehrschichtigen Navigation verwendet) und `filterable_in_search` (d. h. in den Suchergebnissen der mehrschichtigen Navigation verwendet) auf „0“ (nicht verwendet) festlegen. Gehen Sie dazu wie folgt vor:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

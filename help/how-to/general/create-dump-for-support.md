@@ -27,7 +27,7 @@ Erstellen Sie einen „bereinigten“ Dump vom Administrator:
 
 Sie können dann für den Support den direkten Download-Link zu den Dump-Dateien angeben (Ihre Store-Adresse und der Dateiname wie angezeigt).
 
-Wenn Sie beim Erstellen von Dumps über die Admin Probleme haben, sollten Sie CLI-Befehle verwenden, wie unter [Ausführen der Support-Dienstprogramme](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) in unserer Entwicklerdokumentation beschrieben.
+Wenn Sie beim Erstellen von Dumps über die Admin Probleme haben, sollten Sie CLI-Befehle verwenden, wie unter [Ausführen der Support-Dienstprogramme](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/run-support-utilities) in unserer Entwicklerdokumentation beschrieben.
 
 ## Verwandtes Lesen
 

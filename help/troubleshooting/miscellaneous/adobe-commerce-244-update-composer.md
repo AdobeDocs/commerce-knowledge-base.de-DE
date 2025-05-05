@@ -29,7 +29,7 @@ Bei der Aktualisierung auf Adobe Commerce 2.4.4 oder höher nach Juli 2022 erhal
 
 Voraussetzungen: Adobe Commerce 2.4.3 oder früher ist installiert.
 
-1. Starten Sie das Upgrade wie unter [Durchführen eines Upgrades](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) beschrieben.
+1. Starten Sie das Upgrade wie unter [Durchführen eines Upgrades](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=de) beschrieben.
 1. Führen Sie den `composer update` Befehl aus, um die Adobe Commerce-Anwendung zu aktualisieren.
 
 <u>Erwartete Ergebnisse</u>:
@@ -64,7 +64,7 @@ Nach Juli 2022 ändert Composer den Standardwert der [`allow-plugins` Option ](h
 
 Fügen Sie je nach Installation von Adobe Commerce Folgendes zu Ihrer `composer.json` hinzu:
 
-* Wenn das Projekt erstellt wurde [mit dem `composer create-project` Befehl](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
+* Wenn das Projekt erstellt wurde [mit dem `composer create-project` Befehl](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer#get-the-metapackage):
 
   ```json
   "config": {

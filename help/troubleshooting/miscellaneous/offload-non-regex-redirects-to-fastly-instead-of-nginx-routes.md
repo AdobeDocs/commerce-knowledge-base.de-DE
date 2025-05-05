@@ -103,4 +103,4 @@ Wenn Sie keine Adobe Commerce-Staging-Umgebung ausführen möchten, aber sehen m
 * [Konfigurieren von Routen](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) in unserer Entwicklerdokumentation
 * [Einrichten [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) in unserer Entwicklerdokumentation
 * [[!DNL VCL] Cheat Sheet für reguläre Ausdrücke](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) in unserer Entwicklerdokumentation
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Da einige Erweiterungen nur mit flachen Tabellen funktionieren, besteht bei jeder Adobe Commerce-Version das Risiko, dass Sie flache Tabellen deaktivieren. Wenn Sie wissen, dass Sie einige Erweiterungen haben, die Indexer für flache Kataloge verwenden, müssen Sie dies möglicherweise berücksichtigen, wenn Sie diese Werte auf &quot;*&quot;*.
 
-In diesem Artikel wird beschrieben, wie Sie Probleme mit der Site-Leistung beheben und langsame und steckengebliebene Crons [, die durch die Aktivierung ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat)flachen Tabellen und Indexern“ verursacht wurden.
+In diesem Artikel wird beschrieben, wie Sie Probleme mit der Site-Leistung beheben und langsame und steckengebliebene Crons [, die durch die Aktivierung ](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/catalog/catalog-flat)flachen Tabellen und Indexern“ verursacht wurden.
 
 BETROFFENE PRODUKTE UND VERSIONEN
 

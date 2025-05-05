@@ -18,7 +18,7 @@ Sehen die Zahlen in einem bestimmten Bericht ungenau aus? Werden unerwartete NUL
 * [Checkliste für die Datendiskrepanzdiagnose](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Verwenden von Exporten zur Ermittlung von Datendiskrepanzen](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Es wird außerdem empfohlen, sicherzustellen, [ die richtigen ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) und [erneute ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) für die Tabellen und Spalten festgelegt wurden, die an der Diskrepanz beteiligt sind. Beachten Sie, dass Sie Administratorberechtigungen benötigen, um auf die Replikationsmethode zuzugreifen und Informationen erneut zu überprüfen.
+Es wird außerdem empfohlen, sicherzustellen, [ die richtigen ](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) und [erneute ](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) für die Tabellen und Spalten festgelegt wurden, die an der Diskrepanz beteiligt sind. Beachten Sie, dass Sie Administratorberechtigungen benötigen, um auf die Replikationsmethode zuzugreifen und Informationen erneut zu überprüfen.
 
 ## Ich brauche noch Hilfe!
 
@@ -32,4 +32,4 @@ Wenn der Bericht immer noch ungenau ist, keine Sorge - unser Support-Team hilft 
 ## Verwandtes Lesen
 
 * [Berechnete Spalten](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [Änderungen an der strukturellen Datenbank](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [Änderungen an der strukturellen Datenbank](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=de)

@@ -36,6 +36,6 @@ Führen Sie Folgendes aus, um den [`CleanExpiredTokens.php`](https://github.com/
 
 ## Verwandtes Lesen
 
-* [Services > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html) im Commerce-Konfigurationshandbuch
+* [Services > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html?lang=de) im Commerce-Konfigurationshandbuch
 * [Authentifizierungshandbuch](https://developer.adobe.com/developer-console/docs/guides/authentication/) im Adobe Developer-Handbuch
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

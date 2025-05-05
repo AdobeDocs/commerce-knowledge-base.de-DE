@@ -47,9 +47,9 @@ Origin Cloaking ist eine Sicherheitsfunktion, mit der Adobe Commerce jeden Nicht
 ## Lösung
 
 * Wenn Ihre Cloud-Site live ist, wechseln Sie zu https://mydomain.com/.
-* Wenn Sie eine aktive Website (nicht die Cloud) haben, richten Sie mithilfe der Domain https://mydomain.com/ eine Subdomain-`mcprod.mydomain.com` ein und aktualisieren Sie Ihre **Basis-URL** stattdessen auf *https://mcprod.mydomain.com*, dann [verweisen Sie den DNS auf Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
+* Wenn Sie eine aktive Website (nicht die Cloud) haben, richten Sie mithilfe der Domain https://mydomain.com/ eine Subdomain-`mcprod.mydomain.com` ein und aktualisieren Sie Ihre **Basis-URL** stattdessen auf *https://mcprod.mydomain.com*, dann [verweisen Sie den DNS auf Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Verwandtes Lesen
 
 * [Häufig gestellte Fragen zur Aktivierung der Ursprünglichen Cloaking](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) in unserer Support-Wissensdatenbank
-* [Checkliste zur Einrichtung einer neuen Domain](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain) in unserer Support-Wissensdatenbank
+* [Checkliste zur Einrichtung einer neuen Domain](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain) in unserer Support-Wissensdatenbank

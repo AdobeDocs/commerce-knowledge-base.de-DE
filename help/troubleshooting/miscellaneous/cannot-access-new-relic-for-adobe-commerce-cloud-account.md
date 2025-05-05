@@ -33,4 +33,4 @@ Wenden Sie sich an den Kontoinhaber von New Relic und bitten Sie ihn, Sie [!DNL 
 
 ## Verwandtes Lesen
 
-[Manage [!DNL New Relic] account](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation.
+[Manage [!DNL New Relic] account](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation.

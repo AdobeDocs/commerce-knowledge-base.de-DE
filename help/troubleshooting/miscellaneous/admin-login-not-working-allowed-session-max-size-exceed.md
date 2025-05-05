@@ -57,6 +57,6 @@ Sie können je nach der vorhandenen maximalen Größe, die im Fehler gemeldet wu
 
 ## Verwandtes Lesen
 
-* [Sitzungsgröße](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) im Handbuch für Admin-Systeme
-* [Betriebsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) im Konfigurationshandbuch
-* [Sichere Verbindungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) im Handbuch zu Commerce in Cloud-Infrastrukturen
+* [Sitzungsgröße](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-session-management#admin-sessions) im Handbuch für Admin-Systeme
+* [Betriebsmodus](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/set-mode) im Konfigurationshandbuch
+* [Sichere Verbindungen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections) im Handbuch zu Commerce in Cloud-Infrastrukturen

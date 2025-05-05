@@ -24,7 +24,7 @@ In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, b
 
 Voraussetzungen:
 
-Aktivieren **Vertex-Adressbereinigung**. Anweisungen hierzu finden Sie [Konfigurieren der Adressbereinigung für Storefronts](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) in unserem Benutzerhandbuch.
+Aktivieren **Vertex-Adressbereinigung**. Anweisungen hierzu finden Sie [Konfigurieren der Adressbereinigung für Storefronts](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=de) in unserem Benutzerhandbuch.
 
 <u>Schritte zur Reproduktion:</u>
 

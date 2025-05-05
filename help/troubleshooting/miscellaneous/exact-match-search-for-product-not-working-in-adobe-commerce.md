@@ -46,6 +46,6 @@ Die in 2.3.x verwendete native Adobe Commerce-Suchfunktion liefert exakte Sucher
 
 ## Verwandtes Lesen
 
-[Live Search installieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) in unserem Benutzerhandbuch.
+[Live Search installieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=de) in unserem Benutzerhandbuch.
 
-[Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/overview) in unserer Entwicklerdokumentation.
+[Live Search](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/live-search/overview) in unserer Entwicklerdokumentation.

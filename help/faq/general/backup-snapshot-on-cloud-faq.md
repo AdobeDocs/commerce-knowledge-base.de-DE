@@ -59,7 +59,7 @@ Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wie
 
 ## Wiederherstellen eines Umgebungsschnappschusses
 
-Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starterplan oder Integration in Pro Plan) wiederherzustellen, führen Sie die Schritte in [Backup-Verwaltung: Manuelles Backup wiederherstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Handbuch zu Commerce in Cloud-Infrastruktur aus.
+Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starterplan oder Integration in Pro Plan) wiederherzustellen, führen Sie die Schritte in [Backup-Verwaltung: Manuelles Backup wiederherstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Handbuch zu Commerce in Cloud-Infrastruktur aus.
 
 ## Datenbank-Backup (DB)
 

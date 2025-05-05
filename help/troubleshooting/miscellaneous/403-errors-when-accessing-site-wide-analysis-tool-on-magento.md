@@ -79,4 +79,4 @@ Wenn Sie immer noch nicht auf das Site-Wide Analysis Tool zugreifen können, wen
 
 ## Verwandtes Lesen
 
-* [Handbuch zum Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)
+* [Handbuch zum Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=de)

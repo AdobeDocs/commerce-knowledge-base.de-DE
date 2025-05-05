@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-Lesen Sie die Schritte im Abschnitt [Zurücksetzen Ihres Kennworts bei Admin Sign-](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in)&quot; in unserem Benutzerhandbuch.
+Lesen Sie die Schritte im Abschnitt [Zurücksetzen Ihres Kennworts bei Admin Sign-](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html?lang=de#admin-sign-in)&quot; in unserem Benutzerhandbuch.
 
 Nachfolgend finden Sie die kritischen Nutzungshinweise.
 
 ### Ausgehende E-Mails aktivieren
 
-Bevor Sie das Formular **Kennwort vergessen** verwenden, [ Sie ausgehende E-Mails aktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) mithilfe der [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+Bevor Sie das Formular **Kennwort vergessen** verwenden, [ Sie ausgehende E-Mails aktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html?lang=de) mithilfe der [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=de).
 
 ### Junk-E-Mail-Ordner überprüfen
 
@@ -32,5 +32,5 @@ Wenn Sie die Nachricht mit dem Link „Kennwort zurücksetzen“ nicht finden k�
 
 Wenn Sie das Kennwort für den vorhandenen Benutzer nicht wiederherstellen oder zurücksetzen können, können Sie einen neuen Admin-Benutzer erstellen und ein Kennwort für diesen Benutzer festlegen. Gehen Sie dazu wie folgt vor:
 
-1. Verwenden Sie [SSH, um sich bei der Remote-Umgebung anzumelden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Verwenden Sie [SSH, um sich bei der Remote-Umgebung anzumelden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de).
 1. Führen Sie den folgenden Befehl aus: `bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`

@@ -30,7 +30,7 @@ b. NEIN - Wartung oder globale Ausfälle. Prüfen Sie auf geschätzte Dauer und 
 
 +++**Gibt es Bereitstellungen in anderen Umgebungen, die die Bereitstellung in der vorhandenen Umgebung blockieren?**
 
-Um eine Liste der laufenden Aktivitäten zu erhalten, führen Sie den folgenden Befehl mithilfe der Magento-Cloud-CLI aus (wenn Sie nur zu einem Cloud-Projekt hinzugefügt wurden). **Hinweis**: Vergewissern Sie sich, dass Sie die neueste Version von magento-cloud CLI verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) im Handbuch Commerce on Cloud Infrastructure .
+Um eine Liste der laufenden Aktivitäten zu erhalten, führen Sie den folgenden Befehl mithilfe der Magento-Cloud-CLI aus (wenn Sie nur zu einem Cloud-Projekt hinzugefügt wurden). **Hinweis**: Vergewissern Sie sich, dass Sie die neueste Version von magento-cloud CLI verwenden. Anweisungen hierzu finden Sie unter [Aktualisieren der CLI](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) im Handbuch Commerce on Cloud Infrastructure .
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ Um eine Liste der laufenden Aktivitäten zu erhalten, führen Sie den folgenden 
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-Informationen zu einer vorhandenen Bereitstellungsaktivität finden Sie unter [Überprüfen des Bereitstellungsprotokolls, wenn in der Cloud-Benutzeroberfläche der Fehler „Protokoll abgeschnitten“ auftritt](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+Informationen zu einer vorhandenen Bereitstellungsaktivität finden Sie unter [Überprüfen des Bereitstellungsprotokolls, wenn in der Cloud-Benutzeroberfläche der Fehler „Protokoll abgeschnitten“ auftritt](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
 (für Details) Sie können diesen Befehl ausführen, um ein ausführendes Protokoll dieser Aktivität abzurufen:
 
 ```bash
@@ -79,7 +79,7 @@ b. NEIN - [Support-Ticket einreichen](/help/help-center-guide/help-center/magent
 +++**Mit Bitbucket?**
 
 a. JA - Überprüfen Sie [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NEIN - Überprüfen Sie die Bereitstellungsprotokollfehler in den [Build- und Bereitstellungsprotokollen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Fahren Sie mit [Schritt 6](#step-6) fort.
+b. NEIN - Überprüfen Sie die Bereitstellungsprotokollfehler in den [Build- und Bereitstellungsprotokollen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Fahren Sie mit [Schritt 6](#step-6) fort.
 
 +++
 
@@ -124,7 +124,7 @@ b. NEIN - Mit [Schritt 11](#step-11) fortfahren.
 +++**Verfügbarer Speicher okay?**
 
 a. JA - Fahren Sie mit [Schritt 11](#step-11) fort.\
-b. NEIN - Überprüfen Sie [Speicherplatz verwalten](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
+b. NEIN - Überprüfen Sie [Speicherplatz verwalten](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
 
 +++
 
@@ -132,7 +132,7 @@ b. NEIN - Überprüfen Sie [Speicherplatz verwalten](https://experienceleague.ad
 
 +++**_Datei konnte nicht geschrieben werden. Warnung _?**
 
-a. JA - Bitte [den Datenträgerwert in &quot;.magento.app.yaml“ erhöhen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) erneut bereitstellen. Wenn dies nicht funktioniert, [ein Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. JA - Bitte [den Datenträgerwert in &quot;.magento.app.yaml“ erhöhen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=de#application-disk-space) erneut bereitstellen. Wenn dies nicht funktioniert, [ein Support-Ticket einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NEIN - Fahren Sie mit [Schritt 12](#step-12) fort.
 
 +++
@@ -159,7 +159,7 @@ b. NEIN - Mit [Schritt 14](#step-14) fortfahren.
 
 +++**Nicht genügend Inodes oder Speicherplatz im Dateisystem**
 
-a. JA - Siehe [Speicherplatz verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space).\
+a. JA - Siehe [Speicherplatz verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=de#application-disk-space).\
 b. NEIN - Mit [Schritt 15](#step-15) fortfahren.
 
 +++
@@ -201,7 +201,7 @@ b. NEIN - Fahren Sie mit [Schritt 18](#step-18) fort.
 
 +++**Post Hook Failure/Hang?**
 
-a. JA - Datenbank: [Freier Speicherplatz](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space), Beschädigung, unvollständige/beschädigte Tabellen.\
+a. JA - Datenbank: [Freier Speicherplatz](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=de#allocate-disk-space), Beschädigung, unvollständige/beschädigte Tabellen.\
 b. NEIN - Fahren Sie mit [Schritt 19](#step-19) fort.
 
 +++
@@ -210,7 +210,7 @@ b. NEIN - Fahren Sie mit [Schritt 19](#step-19) fort.
 
 +++**Verwendung von Erweiterungen von Drittanbietern?**
 
-A. JA - Versuchen Sie [Drittanbietererweiterungen deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) und führen Sie die Bereitstellung aus (um zu sehen, ob sie die Ursache des Problems sind), insbesondere wenn in Fehlern Erweiterungsnamen enthalten sind.\
+A. JA - Versuchen Sie [Drittanbietererweiterungen deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/extensions) und führen Sie die Bereitstellung aus (um zu sehen, ob sie die Ursache des Problems sind), insbesondere wenn in Fehlern Erweiterungsnamen enthalten sind.\
 b. NEIN - Mit [Schritt 20](#step-20) fortfahren.
 
 +++

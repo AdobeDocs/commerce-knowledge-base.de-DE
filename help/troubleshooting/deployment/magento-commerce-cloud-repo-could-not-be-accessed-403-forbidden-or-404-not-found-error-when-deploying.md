@@ -66,11 +66,11 @@ Führen Sie die folgenden Schritte aus, um das Problem mit den Autorisierungssch
 
 Wenn Sie die unter dem freigegebenen Konto erstellten Schlüssel verwendet haben, müssen Sie sich an den Adobe Commerce-Lizenzinhaber wenden, der Ihnen Zugriff gewährt, und ihn auffordern, die Schlüssel für Sie zu generieren.
 
-Wenn Ihre Lizenz zuvor aufgrund von Zahlungsproblemen widerrufen wurde, Sie diese Probleme gelöst haben und Ihre Lizenz erneuert wurde, müssen Sie [die neuen Authentifizierungsschlüssel generieren](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html).
+Wenn Ihre Lizenz zuvor aufgrund von Zahlungsproblemen widerrufen wurde, Sie diese Probleme gelöst haben und Ihre Lizenz erneuert wurde, müssen Sie [die neuen Authentifizierungsschlüssel generieren](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=de).
 
 ### 2. Fügen Sie den Schlüsselwert in die Variable env:COMPOSER\_AUTH ein und überprüfen Sie, ob dieselben Schlüssel in auth.json angegeben sind
 
-Weitere Informationen finden Sie in den Anweisungen und [ Informationen unter „Vorhandenes System vorbereiten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) und [Authentifizierungsschlüssel hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie in den Anweisungen und [ Informationen unter „Vorhandenes System vorbereiten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/project/overview) und [Authentifizierungsschlüssel hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/project/overview) in unserer Entwicklerdokumentation.
 
 ### 3. Aktualisieren oder Löschen von auth.json
 

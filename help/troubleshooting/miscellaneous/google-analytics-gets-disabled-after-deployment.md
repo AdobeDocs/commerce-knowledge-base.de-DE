@@ -29,7 +29,7 @@ Mit dieser Funktion soll sichergestellt werden, dass Entwicklerdaten und -intera
 
 ## Lösung
 
-Wenn Sie möchten, dass Google Analytics immer aktiviert sind, legen Sie die `ENABLE_GOOGLE_ANALYTICS = true` der Bereitstellungsvariablen fest, wie unter [Bereitstellungsvariablen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) in unserer Entwicklerdokumentation beschrieben.
+Wenn Sie möchten, dass Google Analytics immer aktiviert sind, legen Sie die `ENABLE_GOOGLE_ANALYTICS = true` der Bereitstellungsvariablen fest, wie unter [Bereitstellungsvariablen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#enable_google_analytics) in unserer Entwicklerdokumentation beschrieben.
 
 >[!NOTE]
 >

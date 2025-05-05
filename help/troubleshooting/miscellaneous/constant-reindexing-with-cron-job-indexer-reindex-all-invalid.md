@@ -55,7 +55,7 @@ Sie können sehen, wie lange ein Zeitraum aufgezeichnet wird, indem Sie Folgende
 SELECT executed_at FROM cron_schedule WHERE job_code = 'indexer_reindex_all_invalid' AND executed_at IS NOT NULL ORDER BY executed_at ASC LIMIT 1;
 ```
 
-Wenn Ihnen dies nicht genügend Zeit für eine korrekte Bewertung gibt, können Sie die Zeit erhöhen, die ein erfolgreicher `cron` im Protokoll gespeichert wird, indem Sie dieser Anleitung [[!DNL Cron] (Geplante Aufgaben)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) folgen, und den **[!DNL Success History Lifetime]** erhöhen (der Standardwert ist nur 60 Minuten).
+Wenn Ihnen dies nicht genügend Zeit für eine korrekte Bewertung gibt, können Sie die Zeit erhöhen, die ein erfolgreicher `cron` im Protokoll gespeichert wird, indem Sie dieser Anleitung [[!DNL Cron] (Geplante Aufgaben)](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html?lang=de) folgen, und den **[!DNL Success History Lifetime]** erhöhen (der Standardwert ist nur 60 Minuten).
 
 
 ## Lösung
@@ -77,4 +77,4 @@ Dabei ist `ENTITY_CODE` der Wert, der für den Parameter „Entity Name“ in de
 
 ## Verwandtes Lesen
 
-[configure [!DNL cron] jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) im Adobe Commerce Operations Configuration Guide.
+[configure [!DNL cron] jobs](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=de) im Adobe Commerce Operations Configuration Guide.

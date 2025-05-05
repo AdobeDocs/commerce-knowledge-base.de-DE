@@ -26,7 +26,7 @@ Der Benutzer erhält einen Fehler bei der Validierung der Fastly-Anmeldeinformat
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass Sie die richtige Fastly-Service-ID und das richtige API-Token haben, und versuchen Sie es erneut. Detaillierte Anweisungen finden Sie unter [Testen der Fastly-Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
+1. Vergewissern Sie sich, dass Sie die richtige Fastly-Service-ID und das richtige API-Token haben, und versuchen Sie es erneut. Detaillierte Anweisungen finden Sie unter [Testen der Fastly-Anmeldedaten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
 1. Wenn die Überprüfung der Anmeldeinformationen fehlschlägt, führen Sie den folgenden curl-Befehl aus, um den Status des Services zu bestätigen:
 
    ```curl
@@ -45,6 +45,6 @@ Der Benutzer erhält einen Fehler bei der Validierung der Fastly-Anmeldeinformat
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
-* [Cloud für Adobe Commerce > Fastly > Fastly Service-Konto und Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
+* [Cloud für Adobe Commerce > Fastly > Fastly Service-Konto und Anmeldedaten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud für Adobe Commerce > Fastly einrichten > Testen der Fastly-Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)
+* [Cloud für Adobe Commerce > Fastly einrichten > Testen der Fastly-Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

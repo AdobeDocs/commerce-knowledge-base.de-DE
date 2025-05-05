@@ -29,7 +29,7 @@ Die folgende Meldung wird angezeigt, wenn Sie versuchen, auf die Adobe Commerce-
 
 Probieren Sie Folgendes aus:
 
-* Aktualisieren Sie PHP auf Version 7.3. Weitere Informationen finden Sie unter [Anforderungen für den Technologie-Stack von Adobe Commerce 2.3](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) in unserer Entwicklerdokumentation.
+* Aktualisieren Sie PHP auf Version 7.3. Weitere Informationen finden Sie unter [Anforderungen für den Technologie-Stack von Adobe Commerce 2.3](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/system-requirements) in unserer Entwicklerdokumentation.
 * Starten Sie Apache neu, da es möglicherweise nicht dieselbe PHP-Version verwendet wie im Dateisystem. Um Apache neu zu starten, verwenden Sie die folgenden Befehle:
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`
@@ -42,5 +42,5 @@ Beim Versuch, auf die Adobe Commerce-Storefront oder Commerce Admin zuzugreifen,
 
 Probieren Sie Folgendes aus:
 
-* Stellen Sie sicher[ dass „Apache](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache)Server-Neuschreibungen“ aktiviert sind. Wenn Apache-Server-Neuschreibungen falsch eingestellt sind, werden statische Dateien nicht vom richtigen Speicherort bereitgestellt.
+* Stellen Sie sicher[ dass „Apache](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/web-server/apache)Server-Neuschreibungen“ aktiviert sind. Wenn Apache-Server-Neuschreibungen falsch eingestellt sind, werden statische Dateien nicht vom richtigen Speicherort bereitgestellt.
 * Es kann ein Problem mit der während der Installation eingegebenen Basis-URL auftreten. Sie geben die Basis-URL als Wert von `--base-url=` bei der Installation von Adobe Commerce über die Befehlszeile oder als Wert des Felds **Ihre Store-**&quot; auf der Seite Web-Konfiguration des Web-Installationsprogramms an. Die Basis-URL *muss* mit dem Schema beginnen (z. B. `http://` ) und mit einem Schrägstrich (/) enden. Führen Sie das Installationsprogramm erneut mit einem gültigen Wert aus und versuchen Sie anschließend, auf Adobe Commerce zuzugreifen.

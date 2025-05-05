@@ -64,4 +64,4 @@ Jetzt können Sie mit dem Hinzufügen von Produkten zu Kategorien oder dem Versc
 
 ## Verwandtes Lesen
 
-[Automatische Produktweiterleitungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) in unserem Benutzerhandbuch.
+[Automatische Produktweiterleitungen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) in unserem Benutzerhandbuch.

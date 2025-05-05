@@ -36,11 +36,11 @@ Der Grund für die Entfernung der MySQL-Suchmaschine ist, dass Elasticsearch üb
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">MySQL</td>
-<td style="width: 478.2px;">Sie müssen Elasticsearch installieren. Siehe <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search">Installieren und Konfigurieren von Elasticsearch</a> in unserer Entwicklerdokumentation.</td>
+<td style="width: 478.2px;">Sie müssen Elasticsearch installieren. Siehe <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search">Installieren und Konfigurieren von Elasticsearch</a> in unserer Entwicklerdokumentation.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch (ohne aufgelistete Version)</td>
-<td style="width: 478.2px;">Sie verwenden Elasticsearch 2 und müssen auf Elasticsearch 7 (empfohlen) oder 6 aktualisieren. Weitere Informationen finden Sie <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search#es-upgrade6">Upgrade </a> Elasticsearch und <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine">Konfigurieren von Commerce für </a> Elasticsearch in unserer Entwicklerdokumentation.</td>
+<td style="width: 478.2px;">Sie verwenden Elasticsearch 2 und müssen auf Elasticsearch 7 (empfohlen) oder 6 aktualisieren. Weitere Informationen finden Sie <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search#es-upgrade6">Upgrade </a> Elasticsearch und <a href="https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/configure-search-engine">Konfigurieren von Commerce für </a> Elasticsearch in unserer Entwicklerdokumentation.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 5</td>
@@ -59,7 +59,7 @@ Der Grund für die Entfernung der MySQL-Suchmaschine ist, dass Elasticsearch üb
 
 ## Installation:
 
-Wenn Adobe Commerce On-Premise und Magento Open Source 2.4.0 veröffentlicht werden, ist Elasticsearch eine erforderliche Komponente. Daher müssen Sie vor der Installation von Version 2.4.0 einen Elasticsearch-Host einrichten und konfigurieren. Siehe [Installieren und Konfigurieren von Elasticsearch ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation.
+Wenn Adobe Commerce On-Premise und Magento Open Source 2.4.0 veröffentlicht werden, ist Elasticsearch eine erforderliche Komponente. Daher müssen Sie vor der Installation von Version 2.4.0 einen Elasticsearch-Host einrichten und konfigurieren. Siehe [Installieren und Konfigurieren von Elasticsearch ](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation.
 
 Standardmäßig verwendet die Adobe Commerce-Suche Elasticsearch 7 als Suchmaschine und versucht, eine Verbindung zu einem Server unter localhost:9200 herzustellen. Elasticsearch 6.x wird ebenfalls unterstützt. Wenn Ihre Konfiguration nicht den Standardeinstellungen entspricht, können Sie diese Einstellungen mit Argumenten konfigurieren, die an `setup:install` übergeben werden, ähnlich wie bei der Konfiguration der Datenbankverbindung.
 

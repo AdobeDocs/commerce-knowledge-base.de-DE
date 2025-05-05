@@ -32,7 +32,7 @@ Legen Sie alle folgenden Einstellungen wie gewünscht fest.
 
 ### Alle Webserver und Lackierung {#all-web-servers-and-varnish}
 
-1. Suchen Sie Ihr `php.ini` mithilfe einer [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. Suchen Sie Ihr `php.ini` mithilfe einer [`phpinfo.php`](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/optional-software).
 1. Wenn Sie ein Benutzer mit `root` Berechtigungen sind, öffnen Sie `php.ini` in einem Texteditor.
 1. Suchen Sie die `max_execution_time`.
 1. Ändern Sie den Wert in `18000` .

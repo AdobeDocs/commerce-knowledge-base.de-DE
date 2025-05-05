@@ -35,4 +35,4 @@ Speichern Sie die Server-seitigen Skripte in nicht beschreibbaren Verzeichnissen
 
 ## Verwandte Dokumentation
 
-* [Cloud für Adobe Commerce > Projektstruktur > Schreibbare Verzeichnisse](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) in unserer Entwicklerdokumentation.
+* [Cloud für Adobe Commerce > Projektstruktur > Schreibbare Verzeichnisse](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) in unserer Entwicklerdokumentation.

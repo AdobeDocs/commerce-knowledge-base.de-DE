@@ -16,7 +16,7 @@ Dieser Artikel bietet Lösungen für die erneute Autorisierung einer Integration
 
 ## Integrationen von Datenbanken und SaaS
 
-Eine Liste der Datenbank- und SaaS-Integrationen finden Sie unter [Verbinden externer Daten mithilfe einer Integration](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis links für die Navigation.)
+Eine Liste der Datenbank- und SaaS-Integrationen finden Sie unter [Verbinden externer Daten mithilfe einer Integration](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis links für die Navigation.)
 
 ## Haben Sie Verbindungsprobleme?
 

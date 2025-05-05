@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Live Search] Dashboard und das Suchergebnis-Ranking sind falsch
 
-Wenn Sie bemerken, dass die im [!DNL Live Search]-Dashboard angezeigten Daten falsch sind oder wenn das [Ranking der Suchergebnisse](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) nicht das ist, was Sie erwarten, sehen Sie sich Folgendes aus möglichen Gründen an:
+Wenn Sie bemerken, dass die im [!DNL Live Search]-Dashboard angezeigten Daten falsch sind oder wenn das [Ranking der Suchergebnisse](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) nicht das ist, was Sie erwarten, sehen Sie sich Folgendes aus möglichen Gründen an:
 
 * Das `topLevelSku` Feld des Produktkontexts in `productView` Ereignissen fehlt. Dies führt zu leeren Konversionen und anderen unerwarteten Metriken.
 

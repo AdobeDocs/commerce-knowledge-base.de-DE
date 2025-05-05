@@ -28,6 +28,6 @@ Wenn Sie keinen Zugriff auf die aktuelle E-Mail-Adresse haben, richten Sie mithi
 
 Gehen Sie wie folgt vor, um die E-Mail-Adresse zu ändern:
 
-1. Setzt das mit der alten E-Mail-Adresse verwendete Passwort zurück. Befolgen Sie die Anweisungen unter [Vergessenes Kennwort zurücksetzen](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) in der Adobe-Hilfe.
+1. Setzt das mit der alten E-Mail-Adresse verwendete Passwort zurück. Befolgen Sie die Anweisungen unter [Vergessenes Kennwort zurücksetzen](https://helpx.adobe.com/de/manage-account/using/change-or-reset-password.html) in der Adobe-Hilfe.
 1. Der Link zum Zurücksetzen des Kennworts wird mit Anweisungen an das Postfach des aktuellen Besitzers gesendet.
 1. Navigieren Sie zur [Adobe-Kontoseite](https://account.adobe.com) um sich mit der neuen E-Mail anzumelden und das Kennwort einzurichten.

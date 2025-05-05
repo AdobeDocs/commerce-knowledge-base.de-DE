@@ -33,7 +33,7 @@ Dies sind die häufigsten Ursachen für Probleme:
 
 ### Code-Speicherort für frühzeitigen Zugriff
 
-Während der Beta-Zugriffsperioden sind Veröffentlichungspakete nur über Composer auf [repo.magento.com](https://repo.magento.com/) verfügbar. Versionspakete sind in diesem Zeitraum nicht auf GitHub- und Adobe Commerce-Portalen verfügbar und werden am GA-Datum an diesen Speicherorten veröffentlicht. Für weitere Informationen über die Verwendung von Composer klicken Sie bitte [hier](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer).
+Während der Beta-Zugriffsperioden sind Veröffentlichungspakete nur über Composer auf [repo.magento.com](https://repo.magento.com/) verfügbar. Versionspakete sind in diesem Zeitraum nicht auf GitHub- und Adobe Commerce-Portalen verfügbar und werden am GA-Datum an diesen Speicherorten veröffentlicht. Für weitere Informationen über die Verwendung von Composer klicken Sie bitte [hier](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer).
 
 ### MageID, die Sie verwenden müssen
 

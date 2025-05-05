@@ -42,8 +42,8 @@ Die Indizierung durch Suchmaschinen ist deaktiviert.
 
 ## Lösung
 
-Aktivieren der Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung nach ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine)) in unserer Entwicklerdokumentation.
+Aktivieren der Indizierung durch Suchmaschinen. Siehe [Konfigurieren der Indizierung nach ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine)) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-* [Hinzufügen von Sitemap- und Suchmaschinenrobotern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) in unserer Entwicklerdokumentation.
+* [Hinzufügen von Sitemap- und Suchmaschinenrobotern](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) in unserer Entwicklerdokumentation.

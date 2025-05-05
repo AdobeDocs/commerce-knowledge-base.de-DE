@@ -1,6 +1,6 @@
 ---
 title: Kann ich Aktualisierungen der Inhalts-Staging-Umgebung für Preise in einem freigegebenen Katalog planen?
-description: Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
+description: Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
 source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Kann ich Aktualisierungen der Inhalts-Staging-Umgebung für Preise in einem freigegebenen Katalog planen?
 
-Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
+Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
 
 Das bedeutet, dass Sie eine solche Preisaktualisierung nicht direkt über das Menü **Preise und Struktur festlegen** im Admin-Bedienfeld von Commerce planen können (es gibt keine Schaltfläche **Neue Aktualisierung planen** in diesem Menü).
 
@@ -23,7 +23,7 @@ Sie können jedoch auch alternative Methoden verwenden und eine Preisaktualisier
 
 ## Planen der Preisaktualisierung für eine Kundengruppe
 
-1. Starten Sie [Planung einer neuen Produktaktualisierung](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html).
+1. Starten Sie [Planung einer neuen Produktaktualisierung](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=de).
 1. Scrollen Sie nach unten zum Feld **Preis** und klicken Sie auf **Erweiterte**&quot;.
 
    ![Advanced_Pricing.png](assets/advanced_pricing.png){width="600"}
@@ -40,8 +40,8 @@ Denken Sie daran: Freigegebene Kataloge nutzen die Kundengruppenpreise.
 
 **Verwandte Dokumentation**
 
-* [Planung einer Aktualisierung (Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html) in unserem Benutzerhandbuch.
-* [Advanced Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) in unserem Benutzerhandbuch.
+* [Planung einer Aktualisierung (Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html?lang=de) in unserem Benutzerhandbuch.
+* [Advanced Pricing](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=de) in unserem Benutzerhandbuch.
 
 ## Planen der Preisaktualisierung für den Basispreis
 

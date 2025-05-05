@@ -82,4 +82,4 @@ Bitte den zusätzlichen Abschnitt an den unten angegebenen Abschnitt anpassen un
 
 ## Verwandtes Lesen
 
-* [Upgrades und Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) in unserer Entwicklerdokumentation.
+* [Upgrades und Patches](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) in unserer Entwicklerdokumentation.

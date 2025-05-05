@@ -40,7 +40,7 @@ Dies sind die häufigsten Ursachen für Probleme:
 
 Während der Vorabversion sind Versionspakete an zwei Stellen verfügbar:
 
-1. Über Composer auf [magento.com](https://repo.magento.com/) unter Verwendung der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [ von Adobe Commerce mit ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
+1. Über Composer auf [magento.com](https://repo.magento.com/) unter Verwendung der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [ von Adobe Commerce mit ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
 1. **Mein** > **Downloads** auf [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]

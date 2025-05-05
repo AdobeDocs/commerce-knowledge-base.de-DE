@@ -45,4 +45,4 @@ Entfernen Sie JSON aus dem Abschnitt **Laufzeit** > **Erweiterungen** in `.magen
 
 ## Verwandtes Lesen
 
-[PHP-Anwendung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) in unserer Entwicklerdokumentation.
+[PHP-Anwendung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/php-settings) in unserer Entwicklerdokumentation.

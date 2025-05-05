@@ -80,7 +80,7 @@ Um die blockierte Bereitstellung zu beheben, aktualisieren Sie die `routes.yaml`
 
 1. СÜbergeben und Übertragen von Änderungen, um das Projekt erneut bereitzustellen.
 
-Detaillierte Anweisungen zum Aktualisieren der Routenkonfiguration finden Sie unter [Cloud für Adobe Commerce > Routen konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) in unserer Entwicklerdokumentation.
+Detaillierte Anweisungen zum Aktualisieren der Routenkonfiguration finden Sie unter [Cloud für Adobe Commerce > Routen konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >

@@ -57,4 +57,4 @@ Adobe Commerce On-Premise: Wenden Sie ACSD-50165 mithilfe von [Quality Patches T
 ## Verwandtes Lesen
 
 * [[!DNL Quality Patches Tool] > Versionshinweise](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) im Handbuch zu Commerce-Tools.
-* [[!DNL Quality Patches Tool]: Suchen Sie im Handbuch ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) Commerce-Tools nach Patches.
+* [[!DNL Quality Patches Tool]: Suchen Sie im Handbuch ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de) Commerce-Tools nach Patches.

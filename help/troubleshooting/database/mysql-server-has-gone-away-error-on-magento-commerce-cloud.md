@@ -48,5 +48,5 @@ Der `default_socket_timeout` ist zu niedrig eingestellt. Dies wird durch die Ein
 ## Verwandtes Lesen
 
 * [Datenbank-Upload verliert Verbindung zu MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-* [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastrukturen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+* [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de)
+* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastrukturen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de)

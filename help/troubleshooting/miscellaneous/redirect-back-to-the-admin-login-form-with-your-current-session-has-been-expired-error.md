@@ -51,7 +51,7 @@ Suchen Sie im folgenden Abschnitt nach Lösungen.
 
 ### Ändern des Sitzungsspeichers
 
-Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem Artikel [So finden Sie Ihre Sitzungsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) in unserer Entwicklerdokumentation, um herauszufinden, wo Ihre Sitzung gespeichert ist, und ändern Sie sie, indem Sie die `app/etc/env.php`-Datei bearbeiten.
+Versuchen Sie, den Sitzungsspeicher zu ändern. Verwenden Sie die Informationen aus dem Artikel [So finden Sie Ihre Sitzungsdateien](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) in unserer Entwicklerdokumentation, um herauszufinden, wo Ihre Sitzung gespeichert ist, und ändern Sie sie, indem Sie die `app/etc/env.php`-Datei bearbeiten.
 
 Um beispielsweise mit dem Speichern einer Sitzung im Dateisystem zu beginnen, ändern Sie den Abschnitt `'session'` wie folgt:
 
@@ -69,9 +69,9 @@ Führen Sie den `bin/magento app:config:import` Befehl aus, um Konfigurationsdat
 
 ## Verwandtes Lesen
 
-* [Daten aus Konfigurationsdateien importieren](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) in unserer Entwicklerdokumentation
-* [Konfigurieren [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) in unserer Entwicklerdokumentation
-* [Umleiten zurück zum [!UICONTROL Commerce Admin]-Anmeldeformular mit dem Fehler „Ihr Konto ist vorübergehend deaktiviert“ ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) unserer Support-Wissensdatenbank
-* [Führen Sie ohne Fehler zurück zum Anmeldeformular, wenn Sie versuchen, sich bei der [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) in unserer Support-Wissensdatenbank anzumelden
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Daten aus Konfigurationsdateien importieren](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) in unserer Entwicklerdokumentation
+* [Konfigurieren [!DNL Redis]](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/config-redis) in unserer Entwicklerdokumentation
+* [Umleiten zurück zum [!UICONTROL Commerce Admin]-Anmeldeformular mit dem Fehler „Ihr Konto ist vorübergehend deaktiviert“ ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) unserer Support-Wissensdatenbank
+* [Führen Sie ohne Fehler zurück zum Anmeldeformular, wenn Sie versuchen, sich bei der [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) in unserer Support-Wissensdatenbank anzumelden
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
 

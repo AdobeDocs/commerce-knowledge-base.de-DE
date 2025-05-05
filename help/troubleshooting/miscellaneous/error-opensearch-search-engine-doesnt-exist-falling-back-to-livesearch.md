@@ -43,4 +43,4 @@ Die folgende Meldung wird in den Protokollen angezeigt (und ist in [!DNL New Rel
 
 ## Verwandtes Lesen
 
-* [Installieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) in unserem Live Search-Handbuch
+* [Installieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=de) in unserem Live Search-Handbuch

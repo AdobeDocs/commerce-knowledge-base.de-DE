@@ -42,7 +42,7 @@ web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Sie müssen mehr Speicherplatz für die Datenbank in Ihrem `services.yaml` zuweisen und bereitstellen, wenn Sie noch ungenutzten Speicherplatz haben. Anweisungen hierzu finden Sie [Service-Speicherplatz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
+Sie müssen mehr Speicherplatz für die Datenbank in Ihrem `services.yaml` zuweisen und bereitstellen, wenn Sie noch ungenutzten Speicherplatz haben. Anweisungen hierzu finden Sie [Service-Speicherplatz](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
 
 Hinweis: Im Pro-Architekturplan können Sie den zugewiesenen Speicherplatz auf Ihrer Partition überprüfen, indem Sie den folgenden Befehl ausführen: `df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Verwandtes Lesen
 
-[Speicherplatz verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserer Entwicklerdokumentation
+[Speicherplatz verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) in unserer Entwicklerdokumentation

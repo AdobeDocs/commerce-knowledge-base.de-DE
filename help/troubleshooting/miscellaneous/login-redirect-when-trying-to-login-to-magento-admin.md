@@ -52,7 +52,7 @@ Versuchen Sie, einen anderen Browser zu verwenden und die Lebensdauer der Admin-
 Um die Lebensdauer der Admin-Sitzung zu verlängern, führen Sie die folgenden Schritte aus:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Um die Lebensdauer der Admin-Sitzung zu verlängern, führen Sie die folgenden S
 Gehen Sie wie folgt vor, um die Cookie-Einstellungswerte zu überprüfen und zu löschen:
 
 1. Erstellen Sie eine Datenbanksicherung.
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die Datenbank zu, um die folgende SQL-Abfrage auszuführen:
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");

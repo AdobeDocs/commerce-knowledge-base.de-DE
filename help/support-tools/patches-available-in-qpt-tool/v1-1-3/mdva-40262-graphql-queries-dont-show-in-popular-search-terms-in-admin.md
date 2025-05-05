@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40262: GraphQL-Abfragen werden in gängigen Suchbegriffen in Admin nicht angezeigt'
-description: Der Adobe Commerce-Qualitäts-Patch von MDVA-40262 behebt das Problem, dass GraphQL-Suchanfragen in gängigen Suchbegriffen im Admin-Bereich nicht angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40262. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+description: Der Adobe Commerce-Qualitäts-Patch von MDVA-40262 behebt das Problem, dass GraphQL-Suchanfragen in gängigen Suchbegriffen im Admin-Bereich nicht angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40262. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 exl-id: 7157e47d-a042-4462-96ed-23203a3213bd
 feature: Admin Workspace, GraphQL, Search
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40262: GraphQL-Abfragen werden in gängigen Suchbegriffen in Admin nicht angezeigt
 
-Der Adobe Commerce-Qualitäts-Patch von MDVA-40262 behebt das Problem, dass GraphQL-Suchanfragen in gängigen Suchbegriffen im Admin-Bereich nicht angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40262. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
+Der Adobe Commerce-Qualitäts-Patch von MDVA-40262 behebt das Problem, dass GraphQL-Suchanfragen in gängigen Suchbegriffen im Admin-Bereich nicht angezeigt werden. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3 installiert ist. Die Patch-ID lautet MDVA-40262. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.4 behoben wird.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.4.2 - 2.4.3
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 ## Problem
 
@@ -76,8 +76,8 @@ Die Suchabfrage wird nicht zu gängigen Suchbegriffen hinzugefügt.
 
 Verwenden Sie je nach Bereitstellungstyp die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

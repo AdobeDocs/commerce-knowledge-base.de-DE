@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u>Schritte zur Reproduktion</u>
 
-(Voraussetzungen: Stellen Sie sicher, dass sich der Speicher nicht im [Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show) befindet.
+(Voraussetzungen: Stellen Sie sicher, dass sich der Speicher nicht im [Wartungsmodus](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show) befindet.
 
 Navigieren Sie in einem Webbrowser zu Ihrer Commerce Admin oder Storefront.
 

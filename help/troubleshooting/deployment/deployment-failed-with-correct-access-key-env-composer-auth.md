@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Die Bereitstellung schlägt mit den richtigen Zugriffsschlüsseln in env:COMPOSER_AUTH oder auth.json fehl
 
-Dieser Artikel bietet eine Lösung für das Problem, wenn Ihre Bereitstellung mit einem Fehler wie dem folgenden im [Bereitstellungsprotokoll“ fehlschlägt](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
+Dieser Artikel bietet eine Lösung für das Problem, wenn Ihre Bereitstellung mit einem Fehler wie dem folgenden im [Bereitstellungsprotokoll“ fehlschlägt](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,7 +40,7 @@ Sie haben erfolgreich bereitgestellt.
 >
 >Dies ist ein Beispielfehler. Je nachdem, welche Adobe Commerce-Version Sie bereitstellen, wird möglicherweise eine Fehlermeldung angezeigt, die auf eine andere Datei verweist.
 
-Die Bereitstellung ist nicht erfolgreich. Es wird ein Fehler wie *Die Datei &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; konnte nicht heruntergeladen werden (HTTP/1.1 404 Not Found)* im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) angezeigt.
+Die Bereitstellung ist nicht erfolgreich. Es wird ein Fehler wie *Die Datei &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; konnte nicht heruntergeladen werden (HTTP/1.1 404 Not Found)* im [Bereitstellungsprotokoll](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log) angezeigt.
 
 ### Ursache
 
@@ -53,7 +53,7 @@ Die angegebenen Composer-Zugriffsschlüssel an einem dieser Speicherorte haben m
 
 Aktualisieren Sie die Variable `env:COMPOSER_AUTH` auf Projektebene und stellen Sie sicher, dass sie mit Schlüsseln konfiguriert ist, die Zugriff auf den Code haben.
 
-Anweisungen hierzu finden Sie unter [Variablenebenen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) im Handbuch zu Commerce in Cloud-Infrastrukturen.
+Anweisungen hierzu finden Sie unter [Variablenebenen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) im Handbuch zu Commerce in Cloud-Infrastrukturen.
 
 ## Verwandtes Lesen
 

@@ -74,7 +74,7 @@ Verwenden Sie je nach Adobe Commerce-/Magento Open Source-Version die folgenden 
 
 ## Anbringen des Pflasters
 
-Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=de)Wissensdatenbank die Anleitung „So wenden Sie einen Composer-Patch von Adobe an“.
 
 ## Wie man feststellt, ob die Patches angewendet wurden
 
@@ -82,7 +82,7 @@ Da es nicht einfach möglich ist, zu überprüfen, ob das Problem behoben wurde,
 
 <u>Sie können dies tun, indem Sie die folgenden Schritte ausführen</u>:
 
-1. [Installieren Sie  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Installieren Sie  [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=de).
 1. Führen Sie den Befehl aus:
 
    ```bash

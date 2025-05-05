@@ -53,4 +53,4 @@ Wenn Sie weiterhin keine Sites hinzufügen können, führen Sie die folgenden Sc
 
 ## Verwandtes Lesen
 
-* [Security Scan](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) in unserem Benutzerhandbuch.
+* [Security Scan](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) in unserem Benutzerhandbuch.

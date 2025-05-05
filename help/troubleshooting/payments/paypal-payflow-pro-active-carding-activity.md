@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 Konfigurieren Sie nach der Installation des Pakets Google reCAPTCHA (empfohlen) oder CAPTCHA, wie in den folgenden Dokumenten beschrieben:
 
-* [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) in unserem Benutzerhandbuch.
-* [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha) in unserem Benutzerhandbuch.
+* [Google reCAPTCHA](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) in unserem Benutzerhandbuch.
+* [CAPTCHA](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/captcha/security-captcha) in unserem Benutzerhandbuch.
 
 Die neue Option Checkout-Formular ist:
 

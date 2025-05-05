@@ -28,8 +28,8 @@ Wenn einige Kunden die E-Mail mit einem Aktivierungs-Link von New Relic erhalten
 
 **Kunden, die New Relic verwenden möchten, profitieren von der Starter-Planarchitektur von Adobe Commerce für Cloud-Infrastrukturen:**
 
-Kunden mit Starterarchitektur erhalten den New Relic Infrastructure-Service nicht im Rahmen ihres Abonnements. Sie können jedoch New Relic Application Performance Monitoring (APM) verwenden, wenn sie eine Lizenz hinzufügen, indem sie die Schritte [Mit New Relic verbinden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation befolgen.
+Kunden mit Starterarchitektur erhalten den New Relic Infrastructure-Service nicht im Rahmen ihres Abonnements. Sie können jedoch New Relic Application Performance Monitoring (APM) verwenden, wenn sie eine Lizenz hinzufügen, indem sie die Schritte [Mit New Relic verbinden](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation befolgen.
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu New Relic-Services finden Sie unter [Untersuchung der Leistung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation. Sie können auch [Fehlerbehebung bei der Leistung mit New Relic in Adobe Commerce auf Cloud-](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)&quot; in unserer Support-Wissensdatenbank überprüfen.
+Weitere Informationen zu New Relic-Services finden Sie unter [Untersuchung der Leistung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation. Sie können auch [Fehlerbehebung bei der Leistung mit New Relic in Adobe Commerce auf Cloud-](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)&quot; in unserer Support-Wissensdatenbank überprüfen.

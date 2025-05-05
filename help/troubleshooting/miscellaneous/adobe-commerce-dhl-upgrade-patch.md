@@ -29,7 +29,7 @@ Adobe Commerce 2.4.5, die im August 2022 veröffentlicht werden soll, wird die a
 ## Fleck
 
 Die Patch-ID ist AC-3022 und steht im Quality Patches Tool Version 1.1.16 zur Verfügung.
-Informationen zur Verwendung [ QPT und zur Installation von Patches finden Sie ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) Artikel „Quality Patches Tool (QPT) > Usage“ in unserer Entwicklerdokumentation.
+Informationen zur Verwendung [ QPT und zur Installation von Patches finden Sie ](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage) Artikel „Quality Patches Tool (QPT) > Usage“ in unserer Entwicklerdokumentation.
 
 Der Patch gilt für die folgenden Adobe Commerce-Versionen:
 
@@ -38,5 +38,5 @@ Der Patch gilt für die folgenden Adobe Commerce-Versionen:
 
 ## Verwandtes Lesen
 
-* [Spedition > DHL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) in unserem Benutzerhandbuch
-* [Versandmethoden](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/delivery-methods) in unserem Benutzerhandbuch
+* [Spedition > DHL](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) in unserem Benutzerhandbuch
+* [Versandmethoden](https://experienceleague.adobe.com/de/docs/commerce-admin/config/sales/delivery-methods) in unserem Benutzerhandbuch

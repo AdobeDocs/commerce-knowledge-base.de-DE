@@ -63,4 +63,4 @@ Da auf den Admin über Varnish zugegriffen wird, können Sie sich nicht bei Admi
 $ bin/magento cache:enable
 ```
 
-Weitere Informationen zur Verwendung der Befehlszeile finden Sie unter [Erste Schritte mit der Befehlszeilenkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).
+Weitere Informationen zur Verwendung der Befehlszeile finden Sie unter [Erste Schritte mit der Befehlszeilenkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/config-cli).

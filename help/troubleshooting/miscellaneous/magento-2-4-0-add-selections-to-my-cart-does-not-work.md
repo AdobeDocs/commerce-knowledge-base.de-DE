@@ -41,7 +41,7 @@ Die **„Auswahl zum Warenkorb hinzufügen** oben auf der Seite funktioniert wei
 
 ## Verwandtes Lesen
 
-* [MerchDocs&#39; Verwalten eines Warenkorbs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) in unserem Benutzerhandbuch.
+* [MerchDocs&#39; Verwalten eines Warenkorbs](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) in unserem Benutzerhandbuch.
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Rohdaten von Nachrichten werden in der Storefront ](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) unserer Support-Wissensdatenbank angezeigt.
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) in unserer Support-Wissensdatenbank.
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Braintree-Zahlungsmethoden werden beim Checkout für mehrere Adressen nicht angezeigt](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) in unserer Support-Wissensdatenbank.

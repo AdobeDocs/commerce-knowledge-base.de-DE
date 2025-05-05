@@ -35,7 +35,7 @@ Geben Sie den folgenden CLI-Befehl ein:
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
-Weitere Informationen zu Backups finden Sie unter [Sichern und Zurücksetzen des Dateisystems, der Medien und der Datenbank.](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/backup)
+Weitere Informationen zu Backups finden Sie unter [Sichern und Zurücksetzen des Dateisystems, der Medien und der Datenbank.](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/backup)
 
 ## Nicht genügend Speicherplatz {#insufficient-disk-space-trouble-backup-space-}
 
@@ -55,6 +55,6 @@ Leider können wir aufgrund der Vielzahl der Fehler, auf die Sie stoßen können
 
 ## Backup schlägt fehl {#backup-fails-trouble-backup-all-}
 
-Wenn das Backup fehlschlägt oder alle Backup-Tests fehlschlagen, verfügt der [Adobe Commerce-](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) möglicherweise nicht über ausreichende Berechtigungen und Eigentümerrechte für das Adobe Commerce-Dateisystem. Beispielsweise könnte ein anderer Benutzer Eigentümer der Dateien sein, oder die Dateien sind schreibgeschützt.
+Wenn das Backup fehlschlägt oder alle Backup-Tests fehlschlagen, verfügt der [Adobe Commerce-](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) möglicherweise nicht über ausreichende Berechtigungen und Eigentümerrechte für das Adobe Commerce-Dateisystem. Beispielsweise könnte ein anderer Benutzer Eigentümer der Dateien sein, oder die Dateien sind schreibgeschützt.
 
-Achten Sie besonders auf Dateisystemberechtigungen und die Eigentümerschaft des `<magento_root>/var` und der Unterverzeichnisse. Weitere Informationen finden Sie unter [Festlegen von Dateisystemberechtigungen und Eigentümerschaft](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).
+Achten Sie besonders auf Dateisystemberechtigungen und die Eigentümerschaft des `<magento_root>/var` und der Unterverzeichnisse. Weitere Informationen finden Sie unter [Festlegen von Dateisystemberechtigungen und Eigentümerschaft](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/file-system/configure-permissions).

@@ -43,9 +43,9 @@ Der Websetup-Assistent wurde für alle Adobe Commerce auf Cloud-Infrastrukturins
 
 Diese Funktion ist in Adobe Commerce in der Cloud-Infrastruktur deaktiviert.
 
-Siehe [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) in unserer Entwicklerdokumentation, um Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur zu erhalten.
-Informationen [ Ausführen von Aktualisierungen oder Installieren externer Module ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) Adobe Commerce On-Premise finden Sie in unserer Entwicklerdokumentation unter „Schnellstartanleitung“.
+Siehe [Installieren, Verwalten und Aktualisieren von Erweiterungen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions) in unserer Entwicklerdokumentation, um Informationen zum Ausführen von Aktualisierungen oder Installieren externer Module für Adobe Commerce in unserer Cloud-Infrastruktur zu erhalten.
+Informationen [ Ausführen von Aktualisierungen oder Installieren externer Module ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer) Adobe Commerce On-Premise finden Sie in unserer Entwicklerdokumentation unter „Schnellstartanleitung“.
 
 ## Verwandtes Lesen
 
-* Siehe [Installieren einer Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) in unserer Entwicklerdokumentation.
+* Siehe [Installieren einer Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) in unserer Entwicklerdokumentation.

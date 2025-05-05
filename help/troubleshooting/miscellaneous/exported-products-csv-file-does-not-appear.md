@@ -95,7 +95,7 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 
 >[!TIP]
 >
->[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) wird zwischen Groß- und Kleinschreibung unterschieden und es werden keine Registerkarten zugelassen. Achten Sie darauf, in der gesamten Datei &quot;.magento.env.yaml“ einen konsistenten Einzug zu verwenden. Andernfalls funktioniert Ihre Konfiguration möglicherweise nicht wie erwartet. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden eine Einrückung mit zwei Leerzeichen. Verwenden Sie den Befehl ECE-Tools validate , um Ihre Konfiguration zu überprüfen.
+>[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=de) wird zwischen Groß- und Kleinschreibung unterschieden und es werden keine Registerkarten zugelassen. Achten Sie darauf, in der gesamten Datei &quot;.magento.env.yaml“ einen konsistenten Einzug zu verwenden. Andernfalls funktioniert Ihre Konfiguration möglicherweise nicht wie erwartet. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden eine Einrückung mit zwei Leerzeichen. Verwenden Sie den Befehl ECE-Tools validate , um Ihre Konfiguration zu überprüfen.
 
 >[!NOTE]
 >

@@ -46,6 +46,6 @@ Wenn Sie sich in einer Situation befinden, in der Ihre benutzerdefinierte SSL du
 ## Verwandtes Lesen
 
 * [SSL (TLS)-Zertifikate zum Magento Commerce Cloud: ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) in unserer Support-Wissensdatenbank.
-* [Referenz zu Befehlszeilen-Tools: magento-cloud certificate:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) in unserer Entwicklerdokumentation.
-* [Checkliste starten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist) in unserer Entwicklerdokumentation.
-* [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) in unserem Benutzerhandbuch.
+* [Referenz zu Befehlszeilen-Tools: magento-cloud certificate:add](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) in unserer Entwicklerdokumentation.
+* [Checkliste starten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/launch/checklist) in unserer Entwicklerdokumentation.
+* [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) in unserem Benutzerhandbuch.

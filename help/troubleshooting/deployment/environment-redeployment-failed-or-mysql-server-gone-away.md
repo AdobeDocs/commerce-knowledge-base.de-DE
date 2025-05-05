@@ -30,13 +30,13 @@ Die wahrscheinlichste Ursache der Probleme ist, dass der zugewiesene Speicherpla
 
 ### Überprüfen, ob genügend Speicherplatz für MySQL vorhanden ist
 
-Für alle Adobe Commerce auf Cloud-Infrastruktur-Starter-Planarchitekturumgebungen und [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) der Adobe Commerce auf Cloud-Infrastruktur-Pro-Planarchitektur [SSH auf die Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) und führen Sie den Befehl aus:
+Für alle Adobe Commerce auf Cloud-Infrastruktur-Starter-Planarchitekturumgebungen und [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) der Adobe Commerce auf Cloud-Infrastruktur-Pro-Planarchitektur [SSH auf die Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de) und führen Sie den Befehl aus:
 
 ```bash
 magento-cloud db:size
 ```
 
-Für die Staging- oder Produktionsumgebung der Pro-Architektur [SSH zur Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) und führen Sie die `df -h` aus   Befehl `| grep mysql`. Das Ergebnis sieht in etwa wie folgt aus:
+Für die Staging- oder Produktionsumgebung der Pro-Architektur [SSH zur Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de) und führen Sie die `df -h` aus   Befehl `| grep mysql`. Das Ergebnis sieht in etwa wie folgt aus:
 
 ```bash
 sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
@@ -55,7 +55,7 @@ mysql:
     disk: 2048
 ```
 
-Siehe den Artikel [Einrichten des MySQL-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)) als Referenz.
+Siehe den Artikel [Einrichten des MySQL-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html?lang=de)) als Referenz.
 
 Um diese Änderungen an der Staging- oder Produktionsumgebung der Pro-Architektur vorzunehmen, müssen Sie ein „Support[Ticket erstellen](https://support.magento.com). In der Regel müssen Sie sich jedoch nicht mit dieser Aufgabe in der Staging-/Produktionsumgebung der Pro-Architektur befassen, da Adobe Commerce diese Parameter für Sie überwacht und Sie benachrichtigt und/oder vertragsgemäß Maßnahmen ergreift.
 

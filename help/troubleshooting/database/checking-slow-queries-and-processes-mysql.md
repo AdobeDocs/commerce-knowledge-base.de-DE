@@ -44,7 +44,7 @@ Wenn Sie einen Ausfall hatten, der möglicherweise durch eine überlastete Daten
 Wenn Ihr Adobe Commerce-Projekt in der Pro-Architektur bereitgestellt wird, können Sie die [!DNL Percona Toolkit] verwenden, um Abfragen zu analysieren.
 
 1. Führen Sie den `pt-query-digest --type=slowlog`-Befehl für MySQL-Protokolle mit langsamen Abfragen aus.
-   * Den Speicherort der langsamen Abfrageprotokolle finden Sie unter **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** in unserer Entwicklerdokumentation.
+   * Den Speicherort der langsamen Abfrageprotokolle finden Sie unter **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de)** in unserer Entwicklerdokumentation.
    * Weitere Informationen finden Sie in der Dokumentation [[!DNL Percona Toolkit] > pt-query](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest)digest.
 1. Führen Sie basierend auf den gefundenen Problemen Schritte aus, um die Abfrage zu beheben, sodass sie schneller ausgeführt wird.
 
@@ -81,4 +81,4 @@ Auf diese Weise lässt sich feststellen, ob der MySQL-Server aktiv ist und keine
 * [MySQL „ProcessList-Syntax anzeigen](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) in dev.mysql.com.
 * [MySQL Kill Syntax](https://dev.mysql.com/doc/refman/8.0/en/kill.html) in dev.mysql.com.
 * [Sicherheit, Leistung und Datenverarbeitung](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) in unserer Entwicklerdokumentation.
-* [MySQL-Hilfe](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) in unserer Entwicklerdokumentation.
+* [MySQL-Hilfe](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) in unserer Entwicklerdokumentation.

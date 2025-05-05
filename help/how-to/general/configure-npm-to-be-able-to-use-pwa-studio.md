@@ -54,4 +54,4 @@ Die Änderungen treten in Kraft, nachdem Sie die aktualisierte YAML-Datei per Gi
 
 ## Verwandte Dokumentation
 
-* [Anwendungskonfiguration: Erweiterungspunkte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) in unserem Handbuch zu Adobe Commerce in Cloud-Infrastrukturen.
+* [Anwendungskonfiguration: Erweiterungspunkte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=de) in unserem Handbuch zu Adobe Commerce in Cloud-Infrastrukturen.

@@ -31,6 +31,6 @@ Deaktivieren Sie dazu das Widget im Admin-Bereich. [!DNL Live Search] verwendet 
 
 ## Verwandtes Lesen
 
-* [[!DNL Live Search] Anleitung - Übersicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html) in unserer Dokumentation zur Adobe Commerce Live Search
+* [[!DNL Live Search] Anleitung - Übersicht](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html?lang=de) in unserer Dokumentation zur Adobe Commerce Live Search
 
-* [Installieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) in unserer Dokumentation zur Adobe Commerce Live Search
+* [Installieren [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=de) in unserer Dokumentation zur Adobe Commerce Live Search

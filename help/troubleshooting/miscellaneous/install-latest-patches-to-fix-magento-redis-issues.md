@@ -1,6 +1,6 @@
 ---
 title: Installieren der neuesten Patches zur Behebung von Adobe Commerce Redis-Problemen
-description: Dieser Artikel enthält Informationen zu den neuesten Redis-bezogenen Patches, die im Paket [Adobe Commerce on Cloud Infrastructure Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) verfügbar sind.
+description: Dieser Artikel enthält Informationen zu den neuesten Redis-bezogenen Patches, die im Paket [Adobe Commerce on Cloud Infrastructure Patches](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) verfügbar sind.
 exl-id: 0335bc11-f679-4629-b4e7-6a0e68c3ae44
 feature: Cache, Install, Services
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Installieren der neuesten Patches zur Behebung von Adobe Commerce Redis-Problemen
 
-Dieser Artikel enthält Informationen zu den neuesten Redis-bezogenen Patches, die im Paket [Adobe Commerce on Cloud Infrastructure Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) verfügbar sind.
+Dieser Artikel enthält Informationen zu den neuesten Redis-bezogenen Patches, die im Paket [Adobe Commerce on Cloud Infrastructure Patches](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) verfügbar sind.
 
 ## Betroffene Produkte und Versionen
 
@@ -25,7 +25,7 @@ Ein zusätzlicher CPU- und Speicherverbrauch von Redis kann die Adobe Commerce-L
 
 ## Lösung
 
-Wenden Sie die neuesten von Adobe Commerce bereitgestellten Patches auf das Cloud-Infrastruktur-Patchpaket an. Detaillierte Anweisungen finden Sie unter [Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+Wenden Sie die neuesten von Adobe Commerce bereitgestellten Patches auf das Cloud-Infrastruktur-Patchpaket an. Detaillierte Anweisungen finden Sie unter [Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 Die neuesten Redis-Patches, die von Adobe Commerce für das Cloud-Infrastruktur-Patchpaket bereitgestellt werden, tragen zu Folgendem bei:
 

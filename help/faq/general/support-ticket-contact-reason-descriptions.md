@@ -56,4 +56,4 @@ In diesem Artikel werden die Feldoptionen für Support **Tickets (**) aufgeführ
 
 ## Verwandtes Lesen
 
-* [Senden eines Support-Falls](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) im Experience League Support-Benutzerhandbuch für Adobe Commerce.
+* [Senden eines Support-Falls](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) im Experience League Support-Benutzerhandbuch für Adobe Commerce.

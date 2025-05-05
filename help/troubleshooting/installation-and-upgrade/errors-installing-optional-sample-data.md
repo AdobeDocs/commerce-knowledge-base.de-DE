@@ -34,11 +34,11 @@ Diese Ausnahmen resultieren aus den Einstellungen für Dateisystemberechtigungen
 
 ### Lösung
 
-[Legen Sie die Eigentümerschaft und Berechtigungen des Dateisystems erneut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html), als Benutzer mit `root` Berechtigungen.
+[Legen Sie die Eigentümerschaft und Berechtigungen des Dateisystems erneut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=de), als Benutzer mit `root` Berechtigungen.
 
 ## Symptom (Produktionsmodus)
 
-Wenn Sie derzeit für den [Produktionsmodus) eingestellt sind](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html) schlägt die Installation der Beispieldaten fehl, wenn Sie den Befehl [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html) verwenden:
+Wenn Sie derzeit für den [Produktionsmodus) eingestellt sind](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de) schlägt die Installation der Beispieldaten fehl, wenn Sie den Befehl [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=de) verwenden:
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -48,7 +48,7 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 Installieren Sie keine Beispieldaten im Produktionsmodus. Wechseln Sie in den Entwicklermodus, löschen Sie einige `var` Verzeichnisse und versuchen Sie es erneut.
 
-Geben Sie die folgenden Befehle in der Reihenfolge ein, die als Eigentümer des Dateisystems [Adobe Commerce angezeigt wird](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
+Geben Sie die folgenden Befehle in der Reihenfolge ein, die als Eigentümer des Dateisystems [Adobe Commerce angezeigt wird](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html?lang=de):
 
 ```php
 cd <magento_root>

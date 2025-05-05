@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40537: Beim Erstellen der Store-Ansicht wird ein Fehler ausgegeben, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.'
-description: Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
+description: Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 exl-id: d92400c9-0c5a-4416-820d-99ab4ba34003
 feature: CMS
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40537: Beim Erstellen der Store-Ansicht wird ein Fehler ausgegeben, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben.
 
-Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
+Der Patch MDVA-40537 behebt das Problem, dass Benutzende beim Erstellen einer Store-Ansicht einen Fehler erhalten, wenn mehrere CMS-Seiten denselben URL-Schlüssel haben. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4 installiert ist. Die Patch-ID lautet MDVA-40537. Beachten Sie, dass das Problem in Adobe Commerce 2.4.1 behoben wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -27,7 +27,7 @@ Adobe Commerce (alle Bereitstellungsmethoden) 2.3.4 - 2.4.0-p1
 
 >[!NOTE]
 >
->Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
+>Der Patch könnte mit neuen Versionen des Quality Patches Tool auf andere Versionen anwendbar werden. Um zu überprüfen, ob der Patch mit Ihrer Adobe Commerce-Version kompatibel ist, aktualisieren Sie das `magento/quality-patches` auf die neueste Version und überprüfen Sie die Kompatibilität auf der Seite [[!DNL Quality Patches Tool]: Nach Patches suchen](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de). Verwenden Sie die Patch-ID als Suchbegriff, um den Patch zu finden.
 
 
 ## Problem
@@ -88,8 +88,8 @@ Exception message: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplica
 
 Verwenden Sie je nach Bereitstellungsmethode die folgenden Links, um einzelne Patches anzuwenden:
 
-* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
-* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
+* Adobe Commerce oder Magento Open Source On-Premise: [Software-Update-Handbuch > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage) in unserer Entwicklerdokumentation.
+* Adobe Commerce auf Cloud-Infrastruktur: [Upgrades und Patches > Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 

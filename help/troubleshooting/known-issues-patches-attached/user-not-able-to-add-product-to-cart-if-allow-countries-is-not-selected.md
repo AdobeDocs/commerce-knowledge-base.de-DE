@@ -65,4 +65,4 @@ Anweisungen [ Sie in unserer Support](/help/how-to/general/how-to-apply-a-compos
 
 ## Nützliche Links
 
-[Wenden Sie benutzerdefinierte Patches auf Adobe Commerce in der Cloud-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) an“ in unserer Entwicklerdokumentation.
+[Wenden Sie benutzerdefinierte Patches auf Adobe Commerce in der Cloud-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) an“ in unserer Entwicklerdokumentation.

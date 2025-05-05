@@ -64,4 +64,4 @@ Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel v
 
 ## Verwandtes Lesen
 
-* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.
+* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.

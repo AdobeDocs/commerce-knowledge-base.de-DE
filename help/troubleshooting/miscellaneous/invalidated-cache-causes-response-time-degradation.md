@@ -67,4 +67,4 @@ Normalerweise wird der Cache aus folgenden Gründen ungültig:
 ## Empfehlung
 
 1. Vermeiden Sie es, den Cache über die Commerce-CLI zu leeren.
-1. Konfigurieren Sie Indexer so **dass sie nach Zeitplan aktualisiert werden** anstelle von **Aktualisieren im Speichermodus** da letzterer eine vollständige Neuindizierung Trigger. Weitere Informationen finden Sie unter [Indexer verwalten > Indexer konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) in unserer Entwicklerdokumentation.
+1. Konfigurieren Sie Indexer so **dass sie nach Zeitplan aktualisiert werden** anstelle von **Aktualisieren im Speichermodus** da letzterer eine vollständige Neuindizierung Trigger. Weitere Informationen finden Sie unter [Indexer verwalten > Indexer konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) in unserer Entwicklerdokumentation.

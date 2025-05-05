@@ -54,7 +54,7 @@ Die `slave_parallel_mode` in der Datenbank wurde standardmäßig in &quot;*&quot
 
 
 
-Anweisungen zum Aktualisieren der Datenbankkonfiguration finden Sie unter [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) im Thema Variablen bereitstellen im Handbuch Commerce on Cloud Infrastructure .
+Anweisungen zum Aktualisieren der Datenbankkonfiguration finden Sie unter [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#database_configuration) im Thema Variablen bereitstellen im Handbuch Commerce on Cloud Infrastructure .
 
 
 ## Verwandtes Lesen

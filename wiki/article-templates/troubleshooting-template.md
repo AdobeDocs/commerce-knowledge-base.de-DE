@@ -67,7 +67,7 @@ Wenn es eine vorübergehende Problemumgehung gibt, geben Sie diese als separaten
 
 ## Verwandtes Lesen
 
-* [Artikelthema](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) in unserem Benutzerhandbuch.
+* [Artikelthema](https://experienceleague.adobe.com/de/docs/commerce-admin/user-guides/home) in unserem Benutzerhandbuch.
 * [Artikelthema](https://developer.adobe.com/commerce/docs/) in unserer Entwicklerdokumentation. Sie können auch sagen, dass Sie zwischen Anweisungen in devDocs für Cloud- und lokale Benutzer unterscheiden können: &quot;[Artikelthema](https://developer.adobe.com/commerce/docs/) in unserer Entwicklerdokumentation für Adobe Commerce in Cloud-Infrastrukturen.“ im Vergleich zu [Artikelthema](https://developer.adobe.com/commerce/docs/) in unserer Entwicklerdokumentation für Adobe Commerce On-Premise.“
 * [Artikelthema](https://support.magento.com/hc/en-us) in unserer Support-Wissensdatenbank.
 * Alle zugehörigen Ressourcen (Blogs, Foren, StackOverflow usw.)

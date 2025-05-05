@@ -78,7 +78,7 @@ Weitere Informationen zum Erhöhen des Festplattenspeichers in der Starterplanar
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Verwenden Sie den [Upgrade auf ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package)-Artikel als Referenz.
+   Verwenden Sie den [Upgrade auf ECE-Tools](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package)-Artikel als Referenz.
 
 1. Stellen Sie sicher, dass das Paket „ECE-tools“ in der `composer.lock`-Datei vorhanden ist, indem Sie den folgenden Befehl ausführen:
 
@@ -92,7 +92,7 @@ Weitere Informationen zum Erhöhen des Festplattenspeichers in der Starterplanar
    "name": "magento/ece-tools", "version": "2002.0.20",
    ```
 
-Siehe den Artikel [Upgrade auf ECE-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package)) als Referenz.
+Siehe den Artikel [Upgrade auf ECE-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package)) als Referenz.
 
 ### Verursacht der Patch das Problem?
 

@@ -33,7 +33,7 @@ Sie müssen den Verschlüsselungsschlüssel aus der Quellumgebung kopieren und d
 
 So kopieren Sie den Verschlüsselungsschlüssel:
 
-1. SSH zu Ihrem Projekt, das die Quelle für den Datenbank-Dump war, wie unter [SSH zur Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) in unserer Entwicklerdokumentation beschrieben.
+1. SSH zu Ihrem Projekt, das die Quelle für den Datenbank-Dump war, wie unter [SSH zur Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de) in unserer Entwicklerdokumentation beschrieben.
 1. Öffnen Sie `app/etc/env.php` in einem Texteditor.
 1. Kopieren Sie den Wert von `key` für `crypt`.
 
@@ -44,7 +44,7 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 So legen Sie den Schlüsselwert für das Zielprojekt fest:
 
 1. Öffnen Sie die [Cloud-Konsole](https://console.adobecommerce.com) und suchen Sie Ihr Projekt.
-1. Legen Sie den Wert der Variablen [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (in unserer Entwicklerdokumentation) fest, wie unter [Konfigurieren Ihres Projekts](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) in unserer Entwicklerdokumentation beschrieben. Dadurch tritt ein Trigger beim Bereitstellungsprozess auf, und `CRYPT_KEY` wird bei jeder Bereitstellung in der `app/etc/env.php`-Datei überschrieben.
+1. Legen Sie den Wert der Variablen [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de) (in unserer Entwicklerdokumentation) fest, wie unter [Konfigurieren Ihres Projekts](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=de) in unserer Entwicklerdokumentation beschrieben. Dadurch tritt ein Trigger beim Bereitstellungsprozess auf, und `CRYPT_KEY` wird bei jeder Bereitstellung in der `app/etc/env.php`-Datei überschrieben.
 
 Optional können Sie den Verschlüsselungsschlüssel in der `app/etc/env.php`-Datei manuell überschreiben:
 

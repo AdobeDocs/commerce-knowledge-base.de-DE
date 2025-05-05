@@ -50,4 +50,4 @@ Löschen Sie hochgeladene Adobe Stock-Bilder aus den `pub/media`- und `pub/media
 
 ## Verwandtes Lesen
 
-* [Media Storage](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) in unserem Benutzerhandbuch.
+* [Media Storage](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) in unserem Benutzerhandbuch.

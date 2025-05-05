@@ -53,7 +53,7 @@ Die folgende Liste von Seiten wird nicht zwischengespeichert (Fastly-, Block- un
 
 >[!NOTE]
 >
->Für Adobe Commerce ab Cloud-Infrastruktur 2.4.1 können Sie das [Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) verwenden, um automatisch zu überprüfen, ob Ihr Vollseiten-Cache nicht korrekt konfiguriert ist.
+>Für Adobe Commerce ab Cloud-Infrastruktur 2.4.1 können Sie das [Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access) verwenden, um automatisch zu überprüfen, ob Ihr Vollseiten-Cache nicht korrekt konfiguriert ist.
 
 ### Verwandtes Lesen
 

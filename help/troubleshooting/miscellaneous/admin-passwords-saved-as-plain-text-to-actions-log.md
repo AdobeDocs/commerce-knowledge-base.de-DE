@@ -45,5 +45,5 @@ Nach der Installation des Sicherheits-Updates wird das Kennwort verschlüsselt u
 ## Weitere Informationen {#Adminpasswordsaresavedasplaintexttoactionslog('magento_logging_event_changes'table)-Moreinformation}
 
 * [Seite mit den Sicherheitsupdates für Adobe Commerce 2.0.16 und 2.1.9](https://magento.com/security/patches/magento-2016-and-219-security-update) in unserem Sicherheitscenter
-* [Aktualisieren des Adobe Commerce-Programms und der Komponenten](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) in unserer Entwicklerdokumentation
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Aktualisieren des Adobe Commerce-Programms und der Komponenten](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=de) in unserer Entwicklerdokumentation
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

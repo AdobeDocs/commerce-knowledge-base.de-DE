@@ -25,7 +25,7 @@ Verwenden Sie das folgende beigefügte Pflaster:
 
 ## Anbringen des Pflasters
 
-1. Führen Sie die Schritte unter [Durchführen eines Upgrades](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) im Commerce-Handbuch aus.
+1. Führen Sie die Schritte unter [Durchführen eines Upgrades](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=de) im Commerce-Handbuch aus.
 1. Kleben Sie das beigefügte Pflaster vor der **[!UICONTROL Update metadata]** auf.
 (Sie können den Patch auch anwenden, nachdem Sie die **[!UICONTROL Update metadata]** Phase abgeschlossen haben, aber dann müssen Sie `bin/magento setup:upgrade` erneut ausführen.)
-1. Fahren Sie mit den übrigen Schritten in fort [Führen Sie ein Upgrade durch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Fahren Sie mit den übrigen Schritten in fort [Führen Sie ein Upgrade durch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=de).

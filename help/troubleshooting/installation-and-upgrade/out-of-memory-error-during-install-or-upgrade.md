@@ -40,7 +40,7 @@ kann auch in der Befehlszeile angezeigt werden.
 
 ## Lösung {#solution}
 
-Wir empfehlen Ihnen [PHP 2 GB Speicher zuzuweisen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) in unserer Entwicklerdokumentation, um sicherzustellen, dass Ihre Installation oder Aktualisierung erfolgreich ist.
+Wir empfehlen Ihnen [PHP 2 GB Speicher zuzuweisen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/php-settings) in unserer Entwicklerdokumentation, um sicherzustellen, dass Ihre Installation oder Aktualisierung erfolgreich ist.
 
 Wenn Sie dies bereits getan haben, erstellen Sie eine Auslagerungsdatei auf Ihrem Computer. Ein Linux-Rechner verwendet *Swap-Speicherplatz* wenn er mehr Speicherressourcen benötigt und der RAM voll ist. Der Auslagerungsspeicher wird für inaktive Seiten im Speicher verwendet.
 

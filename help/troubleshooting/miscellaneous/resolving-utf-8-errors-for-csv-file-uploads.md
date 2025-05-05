@@ -23,4 +23,4 @@ Es wird empfohlen[ „Sublime Text](https://www.sublimetext.com/2) zu verwenden,
 1. Klicken Sie auf &#x200B;&#x200B; **Datei** > **Speichern unter** &#x200B;&#x200B; und wählen Sie das Format &#x200B;&#x200B; **Kommagetrennte Werte (.csv)**, um die Datei zu speichern.
 1. Öffnen Sie die CSV-Datei im Volltext.
 1. Navigieren Sie in „Vollständiger Text“ zu &#x200B;&#x200B; **Datei** > **Mit Kodierung speichern** > **UTF-8\*&#x200B;** . Dadurch wird die CSV-Datei mit UTF-8-Codierung gespeichert.    ![csv_file_UTF-8_sublime_3.2.2_magento_BI.png](assets/csv_file_UTF-8_sublime_3.2.2_magento_BI.png)
-1. [Laden Sie die Daten ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/connecting/using-file-uploader) (in unserem Benutzerhandbuch) in eine neue Tabelle in Magento BI hoch.
+1. [Laden Sie die Daten ](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/connecting/using-file-uploader) (in unserem Benutzerhandbuch) in eine neue Tabelle in Magento BI hoch.

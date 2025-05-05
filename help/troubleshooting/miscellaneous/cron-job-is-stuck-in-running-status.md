@@ -37,7 +37,7 @@ Zu den Symptomen [!DNL cron] Aufträge, die zurückgesetzt werden müssen, gehö
 
 Um dieses Problem zu beheben, müssen Sie den/die [!DNL cron] Auftrag/Aufträge mit dem Befehl `cron:unlock` zurücksetzen. Dieser Befehl ändert den Status des [!DNL cron] in der Datenbank und beendet den Vorgang erzwungen, damit andere geplante Aufträge fortgesetzt werden können.
 
-1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
+1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
 1. Abrufen der MySQL-Datenbankanmeldeinformationen:    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
 1. Stellen Sie mithilfe von `mysql` eine Verbindung zur Datenbank her:    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
 1. `main` auswählen:    ```shell    use main    ```
@@ -47,7 +47,7 @@ Um dieses Problem zu beheben, müssen Sie den/die [!DNL cron] Auftrag/Aufträge 
 
 ### Lösung zum Anhalten einer einzelnen [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
+1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
 1. Überprüfen Sie Aufgaben mit langer Laufzeit mithilfe des folgenden Befehls:
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```

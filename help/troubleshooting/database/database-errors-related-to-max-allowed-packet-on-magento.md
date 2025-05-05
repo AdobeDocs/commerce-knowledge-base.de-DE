@@ -45,8 +45,8 @@ Der Standardwert von 16 MB für die Einstellung [!DNL MySQL] `max_allowed_packet
 
 ## Verwandtes Lesen
 
-* [Übersicht über die lokale Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) in unserer Entwicklerdokumentation.
-* [Datenbank-Upload verliert die Verbindung zu [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) in unserer Support-Wissensdatenbank.
-* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)Infrastrukturen in unserer Support-Wissensdatenbank.
-* [Best Practices zur Behebung von Problemen mit ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) Datenbankleistung - in unserer Support-Wissensdatenbank.
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Übersicht über die lokale Installation](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview) in unserer Entwicklerdokumentation.
+* [Datenbank-Upload verliert die Verbindung zu [!DNL MySQL]](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) in unserer Support-Wissensdatenbank.
+* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de)Infrastrukturen in unserer Support-Wissensdatenbank.
+* [Best Practices zur Behebung von Problemen mit ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de) Datenbankleistung - in unserer Support-Wissensdatenbank.
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

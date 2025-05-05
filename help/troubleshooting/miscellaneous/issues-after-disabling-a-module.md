@@ -30,6 +30,6 @@ Durch Deaktivieren einer Modulausgabe unter **Stores** > **Settings** > **Config
 
 ## Lösung
 
-Wenn Sie die Modulfunktionalität deaktivieren müssen, deaktivieren Sie das Modul, wie in [Module aktivieren oder deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation beschrieben.
+Wenn Sie die Modulfunktionalität deaktivieren müssen, deaktivieren Sie das Modul, wie in [Module aktivieren oder deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation beschrieben.
 
 Die Funktion zum Deaktivieren der Modulausgabe wurde ab Version 2.2.0 entfernt.

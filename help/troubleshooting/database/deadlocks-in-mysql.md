@@ -35,10 +35,10 @@ Als Beispiel ist es eine Best Practice, einen blockierten MySQL-Datenbankimport 
 ## Lösung
 
 1. Überprüfen Sie die Anwendungs-, Bereitstellungs- oder MySQL-Protokolle auf Deadlockfehler:
-   * [Speicherorte für Adobe Commerce- und Magento Open Source-Protokolle](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
-   * [Speicherorte für Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+   * [Speicherorte für Adobe Commerce- und Magento Open Source-Protokolle](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html?lang=de)
+   * [Speicherorte für Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de)
 1. Überprüfen Sie mit dem Befehl `mysql -e 'show full processlist';` Ihre MySQL-Prozessliste auf laufende Prozesse
-1. Wenn in Adobe Commerce in der Cloud-Infrastruktur, überprüfen Sie, ob MySQL-Slave aktiviert ist. Lesen Sie diesen Artikel: [Variablen bereitstellen (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
+1. Wenn in Adobe Commerce in der Cloud-Infrastruktur, überprüfen Sie, ob MySQL-Slave aktiviert ist. Lesen Sie diesen Artikel: [Variablen bereitstellen (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de#mysql_use_slave_connection).
 1. Je nach den jeweiligen Fehlern kann sich die Lösung selbst präsentieren, oder Sie müssen Ihre hilfreichen Protokollinformationen angeben, wenn Sie ein „Support-Ticket[ öffnen ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Verwandtes Lesen

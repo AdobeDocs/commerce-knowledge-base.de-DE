@@ -29,12 +29,12 @@ Die richtige Hierarchieorganisation für Ihre Filialen lautet:
 
 So ordnen Sie Cloud-Verzweigungen neu an:
 
-1. Sie müssen über die [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) Rolle verfügen.
+1. Sie müssen über die [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de) Rolle verfügen.
 1. Installieren Sie den Magento-Cloud-[!DNL CLI] (falls nicht bereits geschehen).
 1. Führen Sie den folgenden Befehl für die Verzweigungen aus, die verschoben werden müssen:
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-Hinweis: Sie können die übergeordnete Verzweigung beim Erstellen einer neuen Verzweigung angeben. Anweisungen hierzu finden Sie unter [Erste Schritte mit dem Erstellen von Verzweigungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in unserer Entwicklerdokumentation.
+Hinweis: Sie können die übergeordnete Verzweigung beim Erstellen einer neuen Verzweigung angeben. Anweisungen hierzu finden Sie unter [Erste Schritte mit dem Erstellen von Verzweigungen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/cli-branches) in unserer Entwicklerdokumentation.
 
 Sie können eine neue Umgebungsverzweigung mit dem `branch <environment-name> <parent-environment-ID>` Befehl „magento-cloud environment“ erstellen.
 
@@ -42,4 +42,4 @@ Es kann einige zusätzliche Zeit dauern, bis eine neue Umgebungsverzweigung erst
 
 ## Verwandtes Lesen
 
-[Verzweigungen mit dem verwalten [!DNL CLI]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) finden Sie in unserer Entwicklerdokumentation.
+[Verzweigungen mit dem verwalten [!DNL CLI]](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/cli-branches) finden Sie in unserer Entwicklerdokumentation.

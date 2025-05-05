@@ -56,7 +56,7 @@ Wenn der `max(value_id)` kleiner als der `max int(11) [ 4294967296 ]` ist und de
 
 >[!WARNING]
 >
->Führen Sie eine Datenbanksicherung durch, bevor Sie die Tabellen ändern. Setzen Sie die Site auch in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). Darüber hinaus wird empfohlen, den Befehl [!DNL MySQL] optimieren für die Datenbanktabellen (nur für Tabellen, in denen Änderungen vorgenommen wurden) auszuführen, nachdem die Änderungen vorgenommen wurden.
+>Führen Sie eine Datenbanksicherung durch, bevor Sie die Tabellen ändern. Setzen Sie die Site auch in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#maintenance-mode). Darüber hinaus wird empfohlen, den Befehl [!DNL MySQL] optimieren für die Datenbanktabellen (nur für Tabellen, in denen Änderungen vorgenommen wurden) auszuführen, nachdem die Änderungen vorgenommen wurden.
 
 >[!NOTE]
 >
@@ -111,8 +111,8 @@ Gehen Sie dazu folgendermaßen vor:
 
 ## Verwandtes Lesen
 
-* [Allgemein [!DNL MySQL] Richtlinien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) im Commerce-Installationshandbuch
-* [Datenbank-Upload verliert Verbindung zu [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html) in unserer Support-Wissensdatenbank
-* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html)Infrastruktur in unserer Support-Wissensdatenbank
-* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) in unserer Support-Wissensdatenbank
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Allgemein [!DNL MySQL] Richtlinien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=de) im Commerce-Installationshandbuch
+* [Datenbank-Upload verliert Verbindung zu [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html?lang=de) in unserer Support-Wissensdatenbank
+* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=de)Infrastruktur in unserer Support-Wissensdatenbank
+* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=de) in unserer Support-Wissensdatenbank
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

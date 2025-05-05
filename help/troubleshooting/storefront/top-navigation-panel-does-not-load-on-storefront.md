@@ -51,7 +51,7 @@ Mögliche Gründe für das Problem sind:
 
 Um die Probleme zu beheben, müssen Sie eine zusätzliche Lackkonfiguration durchführen und Varnish neu starten.
 
-1. Wenn Sie ein Benutzer mit `root` Berechtigungen sind, öffnen Sie Ihre Vanish-Konfigurationsdatei in einem Texteditor. Unter [Ändern der Konfiguration des Lacksystems](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) in unserer Entwicklerdokumentation finden Sie Informationen darüber, wo sich diese Datei für verschiedene Betriebssysteme befinden könnte.
+1. Wenn Sie ein Benutzer mit `root` Berechtigungen sind, öffnen Sie Ihre Vanish-Konfigurationsdatei in einem Texteditor. Unter [Ändern der Konfiguration des Lacksystems](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/config-varnish-server) in unserer Entwicklerdokumentation finden Sie Informationen darüber, wo sich diese Datei für verschiedene Betriebssysteme befinden könnte.
 1. Fügen Sie in der `DAEMON_OPTS variable` `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check` hinzu. Dies würde wie folgt aussehen:
 
    ```bash
@@ -64,5 +64,5 @@ Um die Probleme zu beheben, müssen Sie eine zusätzliche Lackkonfiguration durc
 
 ## Verwandtes Lesen
 
-* [Konfigurieren Sie Lack und Ihren Webserver](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) in unserer Entwicklerdokumentation.
+* [Konfigurieren Sie Lack und Ihren Webserver](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/config-varnish-server) in unserer Entwicklerdokumentation.
 * [Lackdokumentation](https://varnish-cache.org/docs/5.1/reference/index.html)

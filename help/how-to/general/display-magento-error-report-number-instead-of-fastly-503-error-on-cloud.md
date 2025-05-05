@@ -20,7 +20,7 @@ Standardmäßig werden in Fastly alle Adobe Commerce-Fehler hinter dem Fehler **
 
 Sobald der Fehler „Authentische Adobe Commerce&quot; und die Fehlerberichtnummer angezeigt werden, können Sie Details in der Fehlerberichtsdatei erhalten, indem Sie die folgenden Schritte ausführen:
 
-1. SSH in die betroffene Umgebung. Siehe [SSH für eine Umgebung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) in unserer Entwicklerdokumentation.
+1. SSH in die betroffene Umgebung. Siehe [SSH für eine Umgebung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections) in unserer Entwicklerdokumentation.
 1. Suchen Sie die `./var/report/{error_number}`.
 
 ## Hinzufügen der Anwendungsdomäne und der IP-Adresse zur Hosts-Datei: detaillierte Schritte

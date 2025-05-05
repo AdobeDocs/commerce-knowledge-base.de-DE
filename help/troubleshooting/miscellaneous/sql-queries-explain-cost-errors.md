@@ -19,7 +19,7 @@ Es gibt einige Gründe, warum dies passieren könnte. Im Folgenden finden Sie In
 
 ## Abfrage kann nicht ausgeführt werden. Der Wert von \[xxx\] für die ERKLÄRUNGSKOSTEN ist zu hoch, um diese Abfrage auszuführen.
 
-Wenn Sie diese Meldung sehen, bedeutet dies, dass die Ausführung der Abfrage als zu teuer erachtet wurde. Für diese Situation haben wir zwei Empfehlungen: Erstens, alle ORDER BY-Klauseln aus Ihrer Abfrage zu entfernen, da es sich um kostspielige Operationen handelt. Die zweite Möglichkeit besteht darin, den Tipps in unserem [Optimierungsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) zu folgen, um Ihre Abfrage anzupassen.
+Wenn Sie diese Meldung sehen, bedeutet dies, dass die Ausführung der Abfrage als zu teuer erachtet wurde. Für diese Situation haben wir zwei Empfehlungen: Erstens, alle ORDER BY-Klauseln aus Ihrer Abfrage zu entfernen, da es sich um kostspielige Operationen handelt. Die zweite Möglichkeit besteht darin, den Tipps in unserem [Optimierungsartikel](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html?lang=de) zu folgen, um Ihre Abfrage anzupassen.
 
 ## Abfrage kann nicht ausgeführt werden. Diese Abfrage gibt \[xxx\] Zeilen zurück, was unseren Grenzwert von 10.000 überschreitet
 

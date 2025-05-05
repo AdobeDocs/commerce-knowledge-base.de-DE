@@ -20,4 +20,4 @@ Wenn jemand als Benutzer hinzugef√ºgt werden muss, aber kein bestehender Eigent√
 
 ## Verwandtes Lesen
 
-* [New Relic Services](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation.
+* [New Relic Services](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation.

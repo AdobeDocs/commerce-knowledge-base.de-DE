@@ -16,9 +16,9 @@ In diesem Artikel wird erläutert, wie Sie sich bei Ihrem Fastly-Konto anmelden,
 
 ## So zeigen Sie Ihre Fastly-Anmeldedaten an
 
-Weitere Informationen finden Sie im [Abrufen von Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) Abschnitt in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie im [Abrufen von Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) Abschnitt in unserer Entwicklerdokumentation.
 
 ## Testen der Fastly-Anmeldedaten
 
-Weitere Informationen finden Sie [ Abschnitt „Testen der Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)Anmeldedaten“ in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie [ Abschnitt „Testen der Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)Anmeldedaten“ in unserer Entwicklerdokumentation.
 

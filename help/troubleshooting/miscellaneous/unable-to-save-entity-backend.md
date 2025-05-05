@@ -44,7 +44,7 @@ Die Regel ist auf „Inaktiv“ festgelegt.
 
 ## Ursache
 
-Dieses Problem hängt mit den kürzlich eingeführten neuen Funktionen zusammen, die sich auf die maximale Sitzungsgröße ausgewirkt haben. Siehe [Sitzungsverwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) in unserer Entwicklerdokumentation.
+Dieses Problem hängt mit den kürzlich eingeführten neuen Funktionen zusammen, die sich auf die maximale Sitzungsgröße ausgewirkt haben. Siehe [Sitzungsverwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-session-management) in unserer Entwicklerdokumentation.
 
 ## Lösung
 
@@ -52,4 +52,4 @@ Erhöhen Sie den Wert „Maximale Sitzungsgröße“ in (**Stores** > **Konfigur
 
 ## Verwandtes Lesen
 
-* [Marketing-Menü](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu) in unserem Benutzerhandbuch.
+* [Marketing-Menü](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/marketing-menu) in unserem Benutzerhandbuch.

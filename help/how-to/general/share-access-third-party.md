@@ -28,7 +28,7 @@ Abhängig von Ihren internen Sicherheitsstandards können Sie die Fehlerbehebung
 * Ermöglichen Sie Ihrem Drittanbieter Zugriff auf die Cloud-Umgebung. Verwandte Artikel:
 
    * [Benutzerhandbuch für Adobe Commerce Help Center > GEMEINSAMER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) in unserer Support-Wissensdatenbank.
-   * [Freigeben Ihres Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) in unserem Benutzerhandbuch.
+   * [Freigeben Ihres Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-share) in unserem Benutzerhandbuch.
 
 * Erstellen Sie einen Datenbank-Dump (oder gewähren Sie Drittanbietern Zugriff). Dies kann über die CLI oder in der Commerce Admin Console erfolgen. Dieser DB-Dump verschleiert Kundendaten, sodass sie nur Code- und Produkt-SKUs usw. erhalten, keine proprietären/Kundendaten. Verwenden Sie als Referenz [Sharing Your Commerce Account] (/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.
 * Nachdem die Tests abgeschlossen sind, stellen Sie sicher, dass Sie den freigegebenen Zugriff auf Ihre Cloud-Umgebung widerrufen, wie in [Benutzerhandbuch für das Adobe Commerce Help Center > Widerrufen (freigegebenen Zugriff löschen)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) in unserer Support-Wissensdatenbank beschrieben.

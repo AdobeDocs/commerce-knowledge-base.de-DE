@@ -47,4 +47,4 @@ Es wird außerdem empfohlen, den `customer_grid` Indexer nach der Konfiguration 
 Links zu verwandten Themen in unserer Entwicklerdokumentation:
 
 * [Indizierungsübersicht](https://developer.adobe.com/commerce/php/development/components/indexing/)
-* [Indexer verwalten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [Indexer verwalten](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers)

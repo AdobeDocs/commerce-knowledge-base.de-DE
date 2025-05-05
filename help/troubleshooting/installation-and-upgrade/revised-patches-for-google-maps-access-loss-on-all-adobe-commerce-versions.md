@@ -73,4 +73,4 @@ Dieses Problem wird im Rahmen der Patch-Versionen, die nur für die Sicherheit i
 
 ## Verwandtes Lesen
 
-[Wie man einen Composer Patch von Adobe aufbringt](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
+[Wie man einen Composer Patch von Adobe aufbringt](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)

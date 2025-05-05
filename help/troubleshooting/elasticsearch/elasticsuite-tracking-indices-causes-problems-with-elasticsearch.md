@@ -68,5 +68,5 @@ Erstellen Sie einen Cron-Auftrag, um die Tracking-Indizes zu löschen. Dieser Be
 
 Wenn Sie Indizes mit einer bestimmten Häufigkeit löschen möchten, erstellen Sie einen Cron-Auftrag, indem Sie die folgenden Artikel in unserer Entwicklerdokumentation lesen:
 
-* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer Cron-Gruppe (Tutorial)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Richten Sie Cron-Aufträge ein](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer Cron-Gruppe (Tutorial)](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Richten Sie Cron-Aufträge ein](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

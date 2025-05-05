@@ -31,12 +31,12 @@ In diesem Artikel wird erläutert, wie Sie ein Team-Mitglied einbeziehen können
 
 Wenn sie dem Projekt nicht hinzugefügt wurden, müssen Sie sie als [!DNL Super User] hinzufügen und [!DNL Shared Access] gewähren:
 
-* [Verwalten des Benutzerzugriffs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html) in unserem Benutzerhandbuch.
-* [Benutzer kann nicht zum Adobe Commerce-Cloud-Projekt hinzugefügt werden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html) in unserer Commerce-Wissensdatenbank.
-* [Benutzerhandbuch für Adobe Commerce Help Center: Freigegebener Zugriff](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#shared-access) in unserer Commerce-Wissensdatenbank.
+* [Verwalten des Benutzerzugriffs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de) in unserem Benutzerhandbuch.
+* [Benutzer kann nicht zum Adobe Commerce-Cloud-Projekt hinzugefügt werden](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.html?lang=de) in unserer Commerce-Wissensdatenbank.
+* [Benutzerhandbuch für Adobe Commerce Help Center: Freigegebener Zugriff](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#shared-access) in unserer Commerce-Wissensdatenbank.
 
-Wenn sie zur [!DNL cloud project] hinzugefügt wurden, aber nicht über die [!DNL Super User role] verfügen, aktualisieren Sie ihren [!DNL role] entsprechend unter [Benutzerzugriff verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+Wenn sie zur [!DNL cloud project] hinzugefügt wurden, aber nicht über die [!DNL Super User role] verfügen, aktualisieren Sie ihren [!DNL role] entsprechend unter [Benutzerzugriff verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de).
 
 ## Verwandtes Lesen
 
-[Ehemalige Team-Mitglieder erhalten Adobe Commerce-E-Mails zur Cloud-Benachrichtigung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html)
+[Ehemalige Team-Mitglieder erhalten Adobe Commerce-E-Mails zur Cloud-Benachrichtigung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/former-teammembers-receive-cloud-notification-emails.html?lang=de)

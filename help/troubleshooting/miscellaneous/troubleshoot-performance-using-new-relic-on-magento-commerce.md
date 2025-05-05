@@ -60,7 +60,7 @@ Dieser Artikel enthält Schritte zur Fehlerbehebung, um Probleme mit der Leistun
 </ol>
 </td>
 <td>
-<p>Weitere Informationen zum New Relic Apdex-Score finden Sie in der <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM Apdex &gt; Messung der Benutzerzufriedenheit</a>. Weitere Informationen finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis zu Apdex</a> in unserer Support-Wissensdatenbank.</p>
+<p>Weitere Informationen zum New Relic Apdex-Score finden Sie in der <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM Apdex &gt; Messung der Benutzerzufriedenheit</a>. Weitere Informationen finden Sie unter <a href="https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis zu Apdex</a> in unserer Support-Wissensdatenbank.</p>
 </td>
 </tr>
 <tr>

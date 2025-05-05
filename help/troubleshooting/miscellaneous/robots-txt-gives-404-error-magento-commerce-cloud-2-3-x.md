@@ -33,10 +33,10 @@ Die Lösung besteht darin, die Nginx-Regel zu deaktivieren, die `/robots.txt` An
 
 Wenn Sie den Self-Service nicht aktiviert haben (oder nicht sicher sind, ob er aktiviert ist), [senden Sie ein Magento-Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und fordern Sie die Entfernung der Nginx-Umleitungsregel von `/robots.txt` Anfragen an `/media/robots.txt` an.
 
-Wenn Sie den Self-Service aktiviert haben, aktualisieren Sie bitte ECE-Tools auf mindestens 2002.0.12 und entfernen Sie die Nginx-Umleitungsregel in Ihrer `.magento.app.yaml`. Weitere Informationen finden Sie in [ Entwicklerdokumentation unter „Hinzufügen von Sitemaps ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) Suchmaschinenrobotern“.
+Wenn Sie den Self-Service aktiviert haben, aktualisieren Sie bitte ECE-Tools auf mindestens 2002.0.12 und entfernen Sie die Nginx-Umleitungsregel in Ihrer `.magento.app.yaml`. Weitere Informationen finden Sie in [ Entwicklerdokumentation unter „Hinzufügen von Sitemaps ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html?lang=de) Suchmaschinenrobotern“.
 
 ## Verwandtes Lesen
 
 * [Wie Sie bösartigen Traffic für Magento Commerce Cloud auf Fastly-Ebene blockieren](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) finden Sie in unserer Support-Wissensdatenbank.
-* [Hinzufügen von Sitemap- und Suchmaschinenrobotern](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) in unserer Entwicklerdokumentation.
-* [Suchmaschinenroboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) in unserem Benutzerhandbuch.
+* [Hinzufügen von Sitemap- und Suchmaschinenrobotern](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) in unserer Entwicklerdokumentation.
+* [Suchmaschinenroboter](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=de#search-engine-robots) in unserem Benutzerhandbuch.

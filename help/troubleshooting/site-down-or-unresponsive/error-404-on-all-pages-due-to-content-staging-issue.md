@@ -24,9 +24,9 @@ Dieser Artikel bietet eine Fehlerbehebung für das Problem mit der Cloud-Infrast
 
 >[!NOTE]
 >
->Dieser Artikel gilt nicht für die Situation, in der beim Versuch, die Staging-Aktualisierung in der Vorschau anzuzeigen[ der Fehler 404 ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Wenn dieses Problem auftritt, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Dieser Artikel gilt nicht für die Situation, in der beim Versuch, die Staging-Aktualisierung in der Vorschau anzuzeigen[ der Fehler 404 ](https://experienceleague.adobe.com/de/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Wenn dieses Problem auftritt, öffnen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
-Der Zugriff auf eine Storefront-Seite oder auf den Admin-Bereich führt zu einem 404-Fehler (die Seite „Hoppla, unsere schlechte …„), nachdem Vorgänge mit geplanten Aktualisierungen für Store-Content-Assets mithilfe von [Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) durchgeführt wurden (Aktualisierungen für Store-Content-Assets, die mit dem [Magento\_Staging-Modul](https://developer.adobe.com/commerce/php/module-reference/) geplant wurden). Sie haben beispielsweise ein Produkt mit einer geplanten Aktualisierung gelöscht oder das Enddatum für die geplante Aktualisierung entfernt.
+Der Zugriff auf eine Storefront-Seite oder auf den Admin-Bereich führt zu einem 404-Fehler (die Seite „Hoppla, unsere schlechte …„), nachdem Vorgänge mit geplanten Aktualisierungen für Store-Content-Assets mithilfe von [Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de) durchgeführt wurden (Aktualisierungen für Store-Content-Assets, die mit dem [Magento\_Staging-Modul](https://developer.adobe.com/commerce/php/module-reference/) geplant wurden). Sie haben beispielsweise ein Produkt mit einer geplanten Aktualisierung gelöscht oder das Enddatum für die geplante Aktualisierung entfernt.
 
 Ein Store-Content-Asset umfasst:
 
@@ -76,7 +76,7 @@ Wenn die Abfrage eine Tabelle mit `update_exists` Wert „1“ oder ein leeres E
 
 ![updates_exist_1.png](assets/updates_exist_1.png)
 
-In diesem Fall finden Sie unter &quot;[-Fehlerbehebung“ ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) Fehlerbehebungsideen.
+In diesem Fall finden Sie unter &quot;[-Fehlerbehebung“ ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) Fehlerbehebungsideen.
 
 ## Lösung
 
@@ -88,8 +88,8 @@ In diesem Fall finden Sie unter &quot;[-Fehlerbehebung“ ](https://experiencele
 
 1. Warten Sie, bis der [!DNL cron] ausgeführt wird (wird bei ordnungsgemäßer Einrichtung in bis zu fünf Minuten ausgeführt), oder führen Sie ihn manuell aus, wenn Sie [!DNL cron] eingerichtet haben.
 
-Das Problem sollte direkt nach der Behebung des ungültigen Links behoben werden. Wenn das Problem weiterhin besteht[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+Das Problem sollte direkt nach der Behebung des ungültigen Links behoben werden. Wenn das Problem weiterhin besteht[ reichen Sie ein Support-Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 ## Verwandtes Lesen
 
-[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

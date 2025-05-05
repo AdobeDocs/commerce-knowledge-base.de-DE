@@ -1,6 +1,6 @@
 ---
 title: Bekanntes Problem mit dem Produktvergleich in Adobe Commerce 2.3.5
-description: Dieser Artikel enthält Empfehlungen dazu, wie Sie ein bekanntes [Produktvergleich](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/shopper-tools/product-compare)-Problem in Adobe Commerce On-Premises 2.3.5 und Adobe Commerce on Cloud Infrastructure 2.3.5 vermeiden können.
+description: Dieser Artikel enthält Empfehlungen dazu, wie Sie ein bekanntes [Produktvergleich](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/shopper-tools/product-compare)-Problem in Adobe Commerce On-Premises 2.3.5 und Adobe Commerce on Cloud Infrastructure 2.3.5 vermeiden können.
 exl-id: 1488e2db-4a5d-4963-b48e-b84f760582d1
 feature: Products, Storefront
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Bekanntes Problem mit dem Produktvergleich in Adobe Commerce 2.3.5
 
-Dieser Artikel enthält Empfehlungen dazu, wie Sie ein bekanntes [Produktvergleich](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/shopper-tools/product-compare)-Problem in Adobe Commerce On-Premises 2.3.5 und Adobe Commerce on Cloud Infrastructure 2.3.5 vermeiden.
+Dieser Artikel enthält Empfehlungen dazu, wie Sie ein bekanntes [Produktvergleich](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/shopper-tools/product-compare)-Problem in Adobe Commerce On-Premises 2.3.5 und Adobe Commerce on Cloud Infrastructure 2.3.5 vermeiden.
 
 ## Betroffene Produkte und Versionen
 
@@ -30,7 +30,7 @@ Geben Sie nicht leere Werte für vergleichbare Produktattribute an oder verwende
 
 >[!NOTE]
 >
->Produktattribute werden für den Vergleich mithilfe der Konfigurationseinstellung **Vergleichbar in Storefront** festgelegt. Weitere Informationen finden Sie unter [Erstellen von Produktattributen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create#step-4-describe-the-storefront-properties) in unserem Benutzerhandbuch.
+>Produktattribute werden für den Vergleich mithilfe der Konfigurationseinstellung **Vergleichbar in Storefront** festgelegt. Weitere Informationen finden Sie unter [Erstellen von Produktattributen](https://experienceleague.adobe.com/de/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create#step-4-describe-the-storefront-properties) in unserem Benutzerhandbuch.
 
 Eine Fehlerbehebung wird in Adobe Commerce 2.3.6 verfügbar sein, die im 4. Quartal 2020 veröffentlicht werden soll.
 

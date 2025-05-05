@@ -51,7 +51,7 @@ Sie können sich wie folgt beim Konto anmelden:
 - Ein bestehendes Firmen-/Privatkonto für Adobe.
 - Wenn Sie kein Adobe-Konto haben, erstellen Sie eines mit derselben E-Mail-Adresse.
 
-Anweisungen hierzu finden Sie unter [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) in Adobe Experience League.
+Anweisungen hierzu finden Sie unter [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html?lang=de) in Adobe Experience League.
 
 ## Verwandtes Lesen
 

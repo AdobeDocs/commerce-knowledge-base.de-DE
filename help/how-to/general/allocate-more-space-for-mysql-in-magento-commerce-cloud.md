@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Siehe den Artikel [Einrichten des MySQL-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql)) als Referenz.
+Siehe den Artikel [Einrichten des MySQL-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/mysql)) als Referenz.
 
 Nachdem Sie die `.magento/services.yaml` geändert haben, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Mit der Push-Benachrichtigung wird der Bereitstellungsprozess Trigger.
 

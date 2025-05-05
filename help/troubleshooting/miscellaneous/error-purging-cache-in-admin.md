@@ -60,4 +60,4 @@ Wenn die Ausgabe jedoch zeigt, dass sich die Dateien noch im Cache befinden, mü
 
 ## Verwandtes Lesen
 
-* [Cache-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) in unserer Entwicklerdokumentation.
+* [Cache-Verwaltung](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management) in unserer Entwicklerdokumentation.

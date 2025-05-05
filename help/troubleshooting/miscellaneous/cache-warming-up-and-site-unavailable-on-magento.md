@@ -37,8 +37,8 @@ Die Site ist nicht verfügbar oder die Antwortzeit ist zu hoch.
 
 ## Lösung
 
-Begrenzen Sie die Anzahl der gleichzeitigen Verbindungen während des Aufwärmens des Cache. Dazu muss die Variable `WARM_UP_CONCURRENCY` nach der Bereitstellung hinzugefügt werden, um die Anzahl der Aufwärmanforderungen anzugeben, die das Cache-Aufwärmskript gleichzeitig senden kann. Das Festlegen dieser Option kann die Auslastung der Cloud-Infrastruktur von Adobe Commerce verringern. Anweisungen hierzu finden Sie [Variablen nach der Bereitstellung > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) in unserer Entwicklerdokumentation.
+Begrenzen Sie die Anzahl der gleichzeitigen Verbindungen während des Aufwärmens des Cache. Dazu muss die Variable `WARM_UP_CONCURRENCY` nach der Bereitstellung hinzugefügt werden, um die Anzahl der Aufwärmanforderungen anzugeben, die das Cache-Aufwärmskript gleichzeitig senden kann. Das Festlegen dieser Option kann die Auslastung der Cloud-Infrastruktur von Adobe Commerce verringern. Anweisungen hierzu finden Sie [Variablen nach der Bereitstellung > WARM\_UP\_CONCURRENCY](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-post-deploy#warm_up_concurrency) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-[Vollständiger Seitencache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) in unserem Benutzerhandbuch
+[Vollständiger Seitencache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management#full-page-caching) in unserem Benutzerhandbuch

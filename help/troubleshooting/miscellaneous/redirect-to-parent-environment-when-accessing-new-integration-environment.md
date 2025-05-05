@@ -59,7 +59,7 @@ update core_config_data set value = %your_new_environment_secure_url% where path
 
 #### Korrigieren Sie die Datenbank mit Adobe Commerce CLI (verfügbar für Version 2.2.X).
 
-1. Melden Sie sich als [ Adobe Commerce-Dateisystembesitzer an oder wechseln Sie zu diesem](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html).
+1. Melden Sie sich als [ Adobe Commerce-Dateisystembesitzer an oder wechseln Sie zu diesem](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/web-server/apache.html?lang=de).
 1. Führen Sie die folgenden Befehle aus:
 
 ```bash
@@ -87,4 +87,4 @@ php <your_magento_install_dir>/bin/magento cache:clean config
 
 ## Verwandter Artikel in unserer Entwicklerdokumentation:
 
-[Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html)
+[Variablen bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=de)

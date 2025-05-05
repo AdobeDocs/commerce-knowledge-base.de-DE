@@ -47,5 +47,5 @@ Stellen Sie sicher, dass die Zugriffssteuerung nicht aktiviert ist: Wechseln Sie
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce-Benutzerhandbuch > Vollseitiger Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) in unserem Benutzerhandbuch.
+* [Adobe Commerce-Benutzerhandbuch > Vollseitiger Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management#full-page-caching) in unserem Benutzerhandbuch.
 * [Cache-Aufwärmung und Site auf Adobe Commerce nicht verfügbar](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) in unserer Support-Wissensdatenbank.

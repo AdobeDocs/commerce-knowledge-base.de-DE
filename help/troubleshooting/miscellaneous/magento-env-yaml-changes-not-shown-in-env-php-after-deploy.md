@@ -29,7 +29,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass Änderungen in `.magen
 
 <u>Schritte zur Reproduktion:</u>
 
-Ändern Sie einen beliebigen Wert in `.magento.env.yaml` und übertragen Sie ihn auf den -Server, wo er die Konfiguration (und die Bereitstellungseinstellungen) für die aktuell ausgecheckte Umgebung definieren soll. Anweisungen hierzu finden Sie [Umgebungsvariablen > Variablen bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) in unserer Entwicklerdokumentation.
+Ändern Sie einen beliebigen Wert in `.magento.env.yaml` und übertragen Sie ihn auf den -Server, wo er die Konfiguration (und die Bereitstellungseinstellungen) für die aktuell ausgecheckte Umgebung definieren soll. Anweisungen hierzu finden Sie [Umgebungsvariablen > Variablen bereitstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy) in unserer Entwicklerdokumentation.
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -45,11 +45,11 @@ Das Problem kann durch den falschen Wert des `opcache.enable_cli`-Parameters in 
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass das System gemäß den [Best Practices für die Adobe Commerce-Leistung > Softwareempfehlungen konfiguriert ](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/software).
+1. Vergewissern Sie sich, dass das System gemäß den [Best Practices für die Adobe Commerce-Leistung > Softwareempfehlungen konfiguriert ](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/software).
 1. Überprüfen Sie, ob `opcache.enable_cli` -Anweisung in `php.ini` auf `0` festgelegt ist, indem Sie Folgendes ausführen: `php -i | grep opcache.enable_cli`
 1. Wenn die Ausgabe wie `opcache.enable_cli=1` aussieht, bearbeiten Sie die `php.ini` im Stammverzeichnis des Projekts und ändern Sie `opcache.enable_cli=1` in `opcache.enable_cli=0`
 1. Stellen Sie das Projekt erneut bereit.
 
 ## Verwandtes Lesen
 
-* [Cloud für Adobe Commerce > Erstellen und bereitstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).
+* [Cloud für Adobe Commerce > Erstellen und bereitstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml).

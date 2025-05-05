@@ -48,7 +48,7 @@ Konfigurationen mit einer hohen Anzahl von Storeviews, Produkten, Attributen ode
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-Es gibt keinen „richtigen“ Wert für `max-input-vars`. Dies hängt von der Größe und Komplexität Ihrer Konfiguration ab. Ändern Sie den Wert in der `php.ini` nach Bedarf. Siehe [Erforderliche PHP-](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
+Es gibt keinen „richtigen“ Wert für `max-input-vars`. Dies hängt von der Größe und Komplexität Ihrer Konfiguration ab. Ändern Sie den Wert in der `php.ini` nach Bedarf. Siehe [Erforderliche PHP-](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/php-settings).
 
 ## XDEBUG-Fehler bei maximaler Verschachtelungsebene der Funktion
 
@@ -76,4 +76,4 @@ Mehrere Vorlagen verfügen über eine Syntax für die Unterstützung auf abstrak
 
 Weitere Informationen zu &quot;[\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
 
-Bearbeiten Sie `php.ini` und legen Sie `asp_tags = off` fest. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings).
+Bearbeiten Sie `php.ini` und legen Sie `asp_tags = off` fest. Weitere Informationen finden Sie unter [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/php-settings).

@@ -45,4 +45,4 @@ Seiten werden weiterhin zwischengespeichert, sodass die Wartungsseite nicht ange
 
 ## Verwandtes Lesen
 
-[Wartungsmodus aktivieren oder deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.
+[Wartungsmodus aktivieren oder deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.

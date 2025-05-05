@@ -24,8 +24,8 @@ Lesen Sie die folgenden Themen in unserer Entwicklerdokumentation, bevor Sie ver
 
 * [PHP-Entwicklerhandbuch](https://developer.adobe.com/commerce/php/development/)
 * [Modul - Übersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [Erstellen Sie ein neues Modul](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
-* [Module-Konfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [Erstellen Sie ein neues Modul](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/backend-development/create-module)
+* [Module-Konfigurationsdateien](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## Erforderliche Informationen
 

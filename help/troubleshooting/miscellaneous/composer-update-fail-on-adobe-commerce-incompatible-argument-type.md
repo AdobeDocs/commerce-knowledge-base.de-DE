@@ -57,7 +57,7 @@ Ab Version 2.3.5 sollten lokale Adobe Commerce-Händler den folgenden CLI-Befehl
 
 **Fehlerbehebung in Adobe Commerce in der Cloud-Infrastruktur:**
 
-Führen Sie die oben genannten Befehle aus oder aktualisieren Sie auf die neueste Version der ECE-Tools (ece-tools: 2002.1.7), die am Donnerstag, 29. Juli verfügbar sein wird. Anweisungen hierzu finden Sie unter [Cloud für Adobe Commerce > ECE-Tools-Version aktualisieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in unserer Entwicklerdokumentation.
+Führen Sie die oben genannten Befehle aus oder aktualisieren Sie auf die neueste Version der ECE-Tools (ece-tools: 2002.1.7), die am Donnerstag, 29. Juli verfügbar sein wird. Anweisungen hierzu finden Sie unter [Cloud für Adobe Commerce > ECE-Tools-Version aktualisieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) in unserer Entwicklerdokumentation.
 
 Die vollständige Fehlerbehebung wird in Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 veröffentlicht.
 

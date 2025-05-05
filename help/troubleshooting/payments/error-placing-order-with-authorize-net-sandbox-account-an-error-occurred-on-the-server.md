@@ -19,7 +19,7 @@ Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Auf de
 >
 >**Hinweis zu veralteten**
 >
->Aufgrund der Zahlungsdiensterichtlinie [PSD2](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) und der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net in Zukunft veraltet und nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zur entsprechenden [Commerce Marketplace-Erweiterung zu ](https://marketplace.magento.com/extensions.html).
+>Aufgrund der Zahlungsdiensterichtlinie [PSD2](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) und der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net in Zukunft veraltet und nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zur entsprechenden [Commerce Marketplace-Erweiterung zu ](https://marketplace.magento.com/extensions.html).
 >
 >**Diese Integration wurde aus der Adobe Commerce-Version 2.4.0 entfernt und ist seit der aktuellen Version 2.3.** veraltet
 >
@@ -27,7 +27,7 @@ Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Auf de
 
 ## Problem
 
-Das Aufgeben einer Bestellung mit [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) Sandbox-Konto verursacht eine Fehlermeldung:
+Das Aufgeben einer Bestellung mit [Authorize.Net Direct Post](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) Sandbox-Konto verursacht eine Fehlermeldung:
 
 &#x200B;>>
 „Fehler auf dem Server. Bitte erneut versuchen, eine Bestellung aufzugeben“

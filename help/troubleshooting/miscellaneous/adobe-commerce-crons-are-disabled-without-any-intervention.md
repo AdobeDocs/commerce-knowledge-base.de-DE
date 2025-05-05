@@ -39,10 +39,10 @@ Ein Problem mit den [!DNL OPcache].
 
 ## Lösung
 
-Aktualisieren Sie [!DNL ECE Tools] auf die neueste Version [2002.1.](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
+Aktualisieren Sie [!DNL ECE Tools] auf die neueste Version [2002.1.](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
 
 ## Verwandtes Lesen
 
-* [Langsame Leistung, langsamer und langer Betrieb [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html) in unserer Support-Wissensdatenbank.
-* [[!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) in unserer Support-Wissensdatenbank.
-* [[!DNL Cron] Der Vorgang ist in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en)Wissensdatenbank im Status „Läuft“ festgefahren.
+* [Langsame Leistung, langsamer und langer Betrieb [!DNL crons]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.html?lang=de) in unserer Support-Wissensdatenbank.
+* [[!DNL Cron] Aufgaben sperren Aufgaben von anderen Gruppen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=de) in unserer Support-Wissensdatenbank.
+* [[!DNL Cron] Der Vorgang ist in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=de)Wissensdatenbank im Status „Läuft“ festgefahren.

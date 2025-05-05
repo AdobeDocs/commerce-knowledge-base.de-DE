@@ -42,4 +42,4 @@ Das Ändern dieses Felds hängt von Ihren individuellen Umständen ab.
 
 Wenn Sie das Eigentum an Ihrem aktuellen Konto auf einen neuen Besitzer oder eine andere E-Mail-Adresse übertragen müssen, müssen Sie die mit dem Konto verknüpfte E-Mail-Adresse des primären Benutzers aktualisieren.
 
-Siehe: [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)
+Siehe: [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=de](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=de)

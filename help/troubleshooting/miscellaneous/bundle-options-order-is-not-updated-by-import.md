@@ -29,7 +29,7 @@ Sie haben eine gültige CSV-Datei, die Bundle-Produkte enthält.
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Importieren Sie die Datei mit der [Importfunktion](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import).
+1. Importieren Sie die Datei mit der [Importfunktion](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/import/data-import).
 1. Öffnen Sie die Bundle-Produktseite.
 
 <u>Erwartete Ergebnisse</u>:
@@ -46,7 +46,7 @@ Die Optionsposition wurde nicht explizit deklariert.
 
 ## Lösung
 
-1. Deklarieren Sie explizit eine Position für jede Option im `position` der Spalte `bundle_values` in der CSV-Datei. Detaillierte Anweisungen finden Sie [Bearbeiten der Produktdaten](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) in unserem Benutzerhandbuch.
+1. Deklarieren Sie explizit eine Position für jede Option im `position` der Spalte `bundle_values` in der CSV-Datei. Detaillierte Anweisungen finden Sie [Bearbeiten der Produktdaten](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) in unserem Benutzerhandbuch.
 1. Wiederholen Sie den Importvorgang.
 
-Allgemeine Informationen zum Importieren finden Sie unter [Importieren von Bundle-](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products)) in unserem Benutzerhandbuch.
+Allgemeine Informationen zum Importieren finden Sie unter [Importieren von Bundle-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products)) in unserem Benutzerhandbuch.

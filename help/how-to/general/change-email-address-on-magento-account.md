@@ -34,7 +34,7 @@ Die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ist
 
 <u>Lösung</u>
 
-1. [Senden einer Support-Anfrage](https://experienceleague.adobe.com/home#support) unter https://experienceleague.adobe.com/home#support mit folgenden Informationen:
+1. [Senden einer Support-Anfrage](https://experienceleague.adobe.com/home?lang=de#support) unter https://experienceleague.adobe.com/home?lang=de#support mit folgenden Informationen:
 
    * Zu aktualisierende vorhandene E-Mail-Adresse
    * Neue E-Mail-Adresse
@@ -48,7 +48,7 @@ Die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ist
 
 <u>Lösung</u>
 
-Wenn Sie Zugriff auf das Postfach der E[Mail des aktuellen Besitzers] haben, setzen Sie das Kennwort für die E-Mail des aktuellen Besitzers zurück, indem Sie der Anleitung [Zurücksetzen oder Ändern des Adobe-](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch folgen.
+Wenn Sie Zugriff auf das Postfach der E[Mail des aktuellen Besitzers] haben, setzen Sie das Kennwort für die E-Mail des aktuellen Besitzers zurück, indem Sie der Anleitung [Zurücksetzen oder Ändern des Adobe-](https://helpx.adobe.com/de/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch folgen.
 
 1. Suchen Sie den Link zum Zurücksetzen des Kennworts, der mit Anweisungen an das Postfach des aktuellen Besitzers gesendet wird.
 1. Legen Sie ein neues Kennwort fest und ändern Sie die E-Mail in [E-Mail für neue Inhaber].
@@ -62,5 +62,5 @@ Wenn Sie jedoch keinen Zugriff auf E-Mails haben, die an den aktuellen [ gesende
 
 ## Verwandtes Lesen
 
-[Reset Forgotten Password](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch.
-[Kontoprofil aktualisieren](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) im Creative Cloud-Benutzerhandbuch.
+[Reset Forgotten Password](https://helpx.adobe.com/de/manage-account/using/change-or-reset-password.html) im Creative Cloud-Benutzerhandbuch.
+[Kontoprofil aktualisieren](https://helpx.adobe.com/de/manage-account/using/edit-adobe-account-personal-profile.html) im Creative Cloud-Benutzerhandbuch.
