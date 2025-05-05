@@ -30,7 +30,7 @@ In diesem Artikel wird die Lösung des Problems beschrieben, dass Benutzende, di
 1. Füllen Sie die Adressfelder aus.
 1. Wählen Sie die gewünschte **Versandart** aus und klicken Sie auf **Weiter**.
 1. Klicken Sie erneut auf **Weiter**.
-1. Deaktivieren Sie **Meine Abrechnungs- und****sind identisch** und geben Sie eine neue Abrechnungsadresse ein (nicht identisch mit Adresse).
+1. Deaktivieren Sie **Meine Abrechnungs- und**&#x200B;**sind identisch** und geben Sie eine neue Abrechnungsadresse ein (nicht identisch mit Adresse).
 1. Klicken Sie auf **Aktualisieren** und dann auf **Adresse aktualisieren**.
 
 <u>Erwartete Ergebnisse</u>:

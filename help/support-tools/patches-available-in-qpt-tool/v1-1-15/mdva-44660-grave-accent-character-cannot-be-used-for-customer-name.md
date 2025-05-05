@@ -1,6 +1,6 @@
 ---
-title: 'MDVA-44660: Grave Accent Character [`] kann nicht für den Kundennamen verwendet werden'
-description: Der Patch MDVA-44660 behebt das Problem, dass der Grave Accent Character (`) nicht für den Namen eines Kunden verwendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-44660. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
+title: 'MDVA-44660: Grave Accent Character [&grave;] kann nicht für den Kundennamen verwendet werden'
+description: Der Patch MDVA-44660 behebt das Problem, dass der Grave Accent Character (&grave;) nicht für den Namen eines Kunden verwendet werden kann. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-44660. Beachten Sie, dass das Problem voraussichtlich in Adobe Commerce 2.4.5 behoben wird.
 exl-id: 696f2690-2af5-4770-a4a8-c88c423c6c16
 feature: Variables
 role: Admin

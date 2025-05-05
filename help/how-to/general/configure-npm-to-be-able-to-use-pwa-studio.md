@@ -40,7 +40,7 @@ Um die erforderliche NPM-Version festzulegen, geben Sie sie in der `.magento.app
    >
    >Wenn Sie Node.js in Ihrer Anwendung und nicht nur in Ihrem Build ausführen möchten, fügen Sie die folgenden Befehle hinzu, um Ihren Build-Hook zu ändern:
    > 
-   ```
+   > ```
    > echo 'unset NPM_CONFIG_PREFIX' >> .environment
    > echo 'export NO_UPDATE_NOTIFIER=1' >> .environment
    > echo 'export NVM_DIR="$MAGENTO_CLOUD_DIR/.nvm"' >> .environment

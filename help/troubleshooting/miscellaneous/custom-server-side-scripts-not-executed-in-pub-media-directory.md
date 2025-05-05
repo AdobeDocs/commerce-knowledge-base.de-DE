@@ -1,6 +1,6 @@
 ---
 title: Benutzerdefinierte Server-seitige Skripte werden im Veröffentlichungsmedienverzeichnis nicht ausgeführt
-description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass benutzerdefinierte Server-seitige Skripte nicht ausgeführt werden, wenn sie in der "" platziert werden./pub/media/`-Verzeichnis Ihrer Adobe Commerce-Anwendung in der Cloud-Infrastruktur. Dies ist eine erwartete Sicherheitsbeschränkung, da der "".Der Ordner "/pub/media/`" ist schreibbar. Damit Skripte ausführbar werden, müssen sie in nicht beschreibbaren Verzeichnissen, wie z. B. "", abgelegt werden./app/code/` oder "./pub/`.
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass benutzerdefinierte Server-seitige Skripte nicht ausgeführt werden, wenn sie in der "" platziert werden./pub/media/&grave;-Verzeichnis Ihrer Adobe Commerce-Anwendung in der Cloud-Infrastruktur. Dies ist eine erwartete Sicherheitsbeschränkung, da der "".Der Ordner "/pub/media/&grave;" ist schreibbar. Damit Skripte ausführbar werden, müssen sie in nicht beschreibbaren Verzeichnissen, wie z. B. "", abgelegt werden./app/code/&grave; oder "./pub/&grave;.
 exl-id: fcad8a5d-47d6-4729-93a4-2410d7710d69
 feature: Media
 role: Developer

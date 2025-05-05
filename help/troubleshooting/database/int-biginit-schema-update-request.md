@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Vor der Implementierung der Lösung in diesem Artikel (`INT` zur Aktualisierung `BIGINT` Schemas) müssen Händler immer überprüfen, ob das Feld, das sie ändern werden, KEINE Fremdschlüsselbeziehungen zu einer anderen Tabelle aufweist. Wenn das Feld Fremdschlüsselbeziehungen zu einer anderen Tabelle hat, treten Probleme auf, da das zugehörige Feld weiterhin `INT` ist. Sie können die folgende Abfrage verwenden, um dies zu überprüfen. Diese Abfrage listet die Fremdschlüsselbeziehungen auf, die in der Datenbank für das angegebene Tabellenfeld verfügbar sind:
 >
-```mysql
+>```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM

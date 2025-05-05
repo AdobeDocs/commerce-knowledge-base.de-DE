@@ -42,8 +42,8 @@ Die Ursache des Problems besteht darin, dass die Klasse, von der Sie abhängig s
 
 Dafür gibt es zwei Hauptgründe:
 
-* 1. Fall: Die Klasse mit Abhängigkeiten von automatisch generierten Klassen befindet sich im Einstiegspunkt (z. B. `index.php` ), der während der Bereitstellung nicht auf Abhängigkeiten überprüft wird.
-* 2. Fall: Die Abhängigkeit von der automatisch generierten Klasse wird direkt angegeben (im Vergleich zur empfohlenen Verwendung des -Konstruktors zum Deklarieren der Abhängigkeit).
+* &#x200B;1. Fall: Die Klasse mit Abhängigkeiten von automatisch generierten Klassen befindet sich im Einstiegspunkt (z. B. `index.php` ), der während der Bereitstellung nicht auf Abhängigkeiten überprüft wird.
+* &#x200B;2. Fall: Die Abhängigkeit von der automatisch generierten Klasse wird direkt angegeben (im Vergleich zur empfohlenen Verwendung des -Konstruktors zum Deklarieren der Abhängigkeit).
 
 ## Lösung
 

@@ -50,6 +50,6 @@ Your environments are:
 |          Integration 2 | Integration 2    | Active       | Development    |
 ```
 
-2. Geben Sie mit Ihrem Befehl die Umgebungskennung an:
+&#x200B;2. Geben Sie mit Ihrem Befehl die Umgebungskennung an:
 
 `magento-cloud ssh -e integration`

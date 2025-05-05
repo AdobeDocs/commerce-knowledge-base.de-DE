@@ -29,7 +29,7 @@ Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Auf de
 
 Das Aufgeben einer Bestellung mit [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) Sandbox-Konto verursacht eine Fehlermeldung:
 
->>
+&#x200B;>>
 „Fehler auf dem Server. Bitte erneut versuchen, eine Bestellung aufzugeben“
 
 ## Ursache 1: Testmodus ist aktiviert

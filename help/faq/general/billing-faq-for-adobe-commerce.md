@@ -40,7 +40,7 @@ Diese Zahlungsmethode ist für Händler mit On-Premise-Lizenzen und/oder viertel
    >
    >Wir akzeptieren keine teilweisen Kreditkarten- oder PayPal-Zahlungen. Durch die Nutzung der **Jetzt bezahlen**-Funktion erklären Sie sich damit einverstanden, dass Ihnen der gesamte Rechnungsbetrag in Rechnung gestellt wird.
 
-1. Wenn Sie auf einen Fehler stoßen oder Fragen zur Funktion „Jetzt **&quot; haben** wenden Sie sich bitte an [](mailto:magentocreditcollections@adobe.com)magentocreditcollections@adobe.com), um weitere Hilfe zu erhalten.
+1. Wenn Sie auf einen Fehler stoßen oder Fragen zur Funktion „Jetzt **&quot; haben** wenden Sie sich bitte an [&#128279;](mailto:magentocreditcollections@adobe.com)magentocreditcollections@adobe.com), um weitere Hilfe zu erhalten.
 
 ### Autopay-Setup {#cc-autopay}
 
@@ -64,7 +64,7 @@ Diese Zahlungsmethode ist für Händler mit monatlicher Abrechnung (außer On-Pr
    >
    >Wenn Sie auf **Speichern** klicken, werden alle offenen/nicht bezahlten Rechnungen vollständig in Rechnung gestellt.
 
-1. Wenn Sie auf einen Fehler stoßen oder Fragen zur Funktion **Autopay** haben, wenden Sie sich bitte an [](mailto:magentocreditcollections@adobe.com)magentocreditcollections@adobe.com), um weitere Hilfe zu erhalten.
+1. Wenn Sie auf einen Fehler stoßen oder Fragen zur Funktion **Autopay** haben, wenden Sie sich bitte an [&#128279;](mailto:magentocreditcollections@adobe.com)magentocreditcollections@adobe.com), um weitere Hilfe zu erhalten.
 
 ### FAQs
 

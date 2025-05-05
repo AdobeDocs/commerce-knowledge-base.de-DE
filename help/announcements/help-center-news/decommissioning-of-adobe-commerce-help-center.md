@@ -14,7 +14,7 @@ ht-degree: 0%
 # Stilllegung des Adobe Commerce Help Centers
 
 Journey Um eine bessere Anbindung an die Adobe-Lösungspalette zu erreichen, hat Adobe Commerce seinen Support-Eingangsprozess vom Adobe Commerce Help Center nach Adobe Experience League migriert.
-Am 29. Juli 2024 wurde dem Adobe Commerce-Hilfezentrum der Status „Schreibgeschützt“ zugewiesen und alle neuen Support-Fälle werden jetzt über [Adobe Experience League} ](https://experienceleague.adobe.com/).
+Am 29. Juli 2024 wurde dem Adobe Commerce-Hilfezentrum der Status „Schreibgeschützt“ zugewiesen und alle neuen Support-Fälle werden jetzt über [Adobe Experience League&rbrace; ](https://experienceleague.adobe.com/).
 
 >[!NOTE]
 >

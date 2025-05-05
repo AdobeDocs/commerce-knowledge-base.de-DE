@@ -71,7 +71,7 @@ Verwenden Sie den folgenden Befehl, um diesen Vorgang auszuführen.
 
 >[!WARNING]
 >
->Bevor Sie den Indexermodus wechseln, empfehlen wir, Ihre Website in den [](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode)-Modus zu versetzen und [Cron-Aufträge zu deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) um Datenbanksperren zu vermeiden.
+>Bevor Sie den Indexermodus wechseln, empfehlen wir, Ihre Website in den [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode)-Modus zu versetzen und [Cron-Aufträge zu deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) um Datenbanksperren zu vermeiden.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]

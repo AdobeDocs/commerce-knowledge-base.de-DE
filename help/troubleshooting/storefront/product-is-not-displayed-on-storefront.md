@@ -49,7 +49,7 @@ Jeder der folgenden Punkte kann das Problem beheben.
 
 * Überprüfen Sie die Produkteinstellungen in Admin. Wechseln Sie **Katalog** > **Produkte**, öffnen Sie die Produktseite und stellen Sie sicher, dass die folgenden Felder korrekt konfiguriert sind:
    * **Produkt aktivieren** = *Ja.*
-   * **Lagerstatus**: *Auf Lager*. Wenn *Nicht vorrätig* der richtige Wert ist, stellen Sie sicher, dass **Nicht vorrätige Produkte anzeigen** (**STORES** > **Settings** > **Configuration** > **CATALOG** **** > **Stock Options** > **Nicht vorrätige Produkte anzeigen**) auf *Ja* (auf globaler Ebene konfiguriert) eingestellt ist.
+   * **Lagerstatus**: *Auf Lager*. Wenn *Nicht vorrätig* der richtige Wert ist, stellen Sie sicher, dass **Nicht vorrätige Produkte anzeigen** (**STORES** > **Settings** > **Configuration** > **CATALOG** **&#x200B;**&#x200B;> **Stock Options** > **Nicht vorrätige Produkte anzeigen**) auf *Ja* (auf globaler Ebene konfiguriert) eingestellt ist.
    * **Kategorien**: Wenn Sie versuchen, das Produkt auf einer Kategorieseite zu finden, überprüfen Sie, ob das Produkt der Kategorie zugewiesen ist. Um die Fehlerbehebung zu vereinfachen, erstellen Sie eine neue Kategorie von der aktuellen Seite aus und weisen Sie ihr ein Produkt zu.
    * **visible** = *catalog, search.*
    * Stellen Sie **Abschnitt „Produkt auf Websites** sicher, dass das Produkt der richtigen Website zugewiesen ist.

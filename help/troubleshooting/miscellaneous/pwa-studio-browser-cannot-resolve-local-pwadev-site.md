@@ -1,6 +1,6 @@
 ---
 title: 'PWA Studio: Browser kann die Website .local.pwadev nicht auflösen'
-description: Dieser Artikel bietet eine Lösung für den Fall, dass ein anderes Programm oder ein anderer Prozess Ihre [Hostdatei](https://en.wikipedia.org/wiki/Hosts_(file) bearbeitet und den Eintrag für Ihre Projekt-Domain entfernt hat.
+description: Dieser Artikel bietet eine Lösung für den Fall, dass ein anderes Programm oder ein anderer Prozess Ihre [Hostdatei] (https://en.wikipedia.org/wiki/Hosts_(file) bearbeitet und den Eintrag für Ihre Projekt-Domain entfernt hat.
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Browser kann die Website .local.pwadev nicht auflösen
 
-Dieser Artikel bietet eine Lösung für den Fall, dass ein anderes Programm oder ein anderer Prozess Ihre [Host-Datei](https://en.wikipedia.org/wiki/Hosts_(file\) bearbeitet und den Eintrag für Ihre Projekt-Domain entfernt hat.
+Dieser Artikel bietet eine Lösung für den Fall, dass ein anderes Programm oder ein anderer Prozess Ihre [Host-Datei] (https://en.wikipedia.org/wiki/Hosts_(file\) bearbeitet und den Eintrag für Ihre Projekt-Domain entfernt hat.
 
 ## Betroffene Produkte und Versionen
 

@@ -110,7 +110,7 @@ Der Patch wurde erstellt für:
 
 ## Anwenden des Patches
 
-Verwenden Sie das angehängte Bash-Skript {0](assets/ACPLTSRV-2017-fix.sh.zip)ACPLTSRV-2017-fix.sh.zip} als Problemumgehung.[
+Verwenden Sie das angehängte Bash-Skript {0[&#128279;](assets/ACPLTSRV-2017-fix.sh.zip)ACPLTSRV-2017-fix.sh.zip} als Problemumgehung.
 
 **Genaue Anweisungen zur Verwendung des Skripts:**
 

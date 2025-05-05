@@ -131,7 +131,7 @@ In diesem Szenario müssen Sie zunächst den Arbeitsstatus Ihrer Adobe Commerce-
 
 [3. Deinstallieren Sie die Adobe Commerce-Software.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&amp;Zeitraum; Erzwingen der erneuten Bereitstellung.
+4&Zeitraum; Erzwingen der erneuten Bereitstellung.
 
 Nachdem Sie diese Schritte ausgeführt haben, erhalten Sie dieselben Ergebnisse wie in Szenario 1.
 

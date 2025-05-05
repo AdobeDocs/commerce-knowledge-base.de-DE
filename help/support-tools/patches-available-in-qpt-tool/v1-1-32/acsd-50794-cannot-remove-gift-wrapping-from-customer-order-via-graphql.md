@@ -49,13 +49,13 @@ Benutzende können Geschenkverpackungen nicht über GraphQL aus der Kundenbestel
 1. Überprüfen Sie nun mit dieser Warenkorbabfrage *Geschenkverpackung* UID):
 
    <pre><code class="language-GraphQL">
-    {
-      cart(cart_id: "{{CART_ID}}") {
-        available_gift_wrappings{
+    &lbrace;
+      cart(cart_id: "{{CART_ID}}") &lbrace;
+        available_gift_wrappings&lbrace;
             uid
-        }
-    }
-    }
+        &rbrace;
+    &rbrace;
+    &rbrace;
     </code></pre>
 
 1. Geschenkverpackung mit `setGiftOptionsOnCart` festlegen.
@@ -66,38 +66,38 @@ Benutzende können Geschenkverpackungen nicht über GraphQL aus der Kundenbestel
 1. Führen Sie die Kundenabfrage aus: customer.
 
    <pre><code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         firstname
         middlename
         lastname
         suffix
         email
-        orders {
-            items {
+        orders &lbrace;
+            items &lbrace;
                 order_date
-                gift_wrapping {
+                gift_wrapping &lbrace;
                     design
                     uid
-                }
-            }
-        }
-        addresses {
+                &rbrace;
+            &rbrace;
+        &rbrace;
+        addresses &lbrace;
           firstname
           middlename
           lastname
           street
           city
-          region {
+          region &lbrace;
             region_code
             region
-          }
+          &rbrace;
           postcode
           country_code
           telephone
-        }
-      }
-    }
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code></pre>
 
 <u>Erwartete Ergebnisse</u>:

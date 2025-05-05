@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# {*} kann nicht* URL-Schlüssel gespeichert werden
+# &lbrace;*&rbrace; kann nicht* URL-Schlüssel gespeichert werden
 
 Dieser Artikel bietet eine Problemumgehung, wenn Sie *Kontakt“ nicht als* (z. B. &quot;/contact„) für Produkte oder CMS-Seiten speichern können.
 

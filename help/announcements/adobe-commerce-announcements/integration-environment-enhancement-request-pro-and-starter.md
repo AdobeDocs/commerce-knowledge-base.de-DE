@@ -27,7 +27,7 @@ Wenn Sie Adobe Commerce on Cloud Infrastructure Pro Plan Architecture-Kunde sind
 1. Der Händler muss [ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um ein Upgrade auf eine erweiterte Integrationsumgebung anzufordern, und zwar unter Verwendung des Kontaktgrundes &quot;*einer Cloud-Konfigurationsänderung*.
 1. Adobe Customer Engineering-Team bestätigt die Anzahl der Integrationsumgebungen und beginnt mit der Änderung.
 1. Der Händler wird im Ticket benachrichtigt, wenn das Upgrade abgeschlossen ist.
-1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Verzweigung zusammenführen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch, wenn Sie Folgendes ausführen: <pre>Git-Push-Herkunft <branch-name></pre>
+1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Verzweigung zusammenführen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch, wenn Sie Folgendes ausführen: <pre>Git-Push-Herkunft &lt;branch-name></pre>
 
 Eine höhere Leistung bedeutet ein erfolgreiches Upgrade auf erweiterte Integrationsumgebungen.
 
@@ -43,7 +43,7 @@ Eine höhere Leistung bedeutet ein erfolgreiches Upgrade auf erweiterte Integrat
 1. Der Händler muss [ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um ein Upgrade auf die erweiterte Integrationsumgebung anzufordern, und zwar unter Verwendung des Kontaktgrundes *„Änderung der Cloud-Konfiguration anfordern“* - **Ihre Staging-Umgebung ist eine benannte Integrationsumgebung**.
 1. Adobe Customer Engineering-Team bestätigt die Anzahl der Integrationsumgebungen und beginnt mit der Änderung.
 1. Der Händler wird im Ticket benachrichtigt, wenn das Upgrade abgeschlossen ist.
-1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Verzweigung zusammenführen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch, wenn Sie Folgendes ausführen: <pre>Git-Push-Herkunft <branch-name></pre>
+1. Der Händler stellt die Integrationsumgebungen erneut bereit. Befolgen Sie die Schritte unter [Verzweigung zusammenführen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) in unserer Entwicklerdokumentation. *Hinweis*: Die Bereitstellung erfolgt automatisch, wenn Sie Folgendes ausführen: <pre>Git-Push-Herkunft &lt;branch-name></pre>
 
 Eine höhere Leistung bedeutet ein erfolgreiches Upgrade auf erweiterte Integrationsumgebungen.
 

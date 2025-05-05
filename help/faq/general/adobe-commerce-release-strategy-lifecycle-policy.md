@@ -51,7 +51,7 @@ Ab 2024 bietet Adobe keinen „Pre-Release“-Zugriff mehr auf Patches. Stattdes
 
 ### Wo wird der Adobe Commerce-Veröffentlichungszeitplan veröffentlicht?
 
-Adobe Commerce Weitere Informationen finden Sie im [](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)-Veröffentlichungszeitplan auf [!DNL Experience League].
+Adobe Commerce Weitere Informationen finden Sie im [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html)-Veröffentlichungszeitplan auf [!DNL Experience League].
 
 ### Welche Arten von Versionen sind in der Programmplanung enthalten?
 

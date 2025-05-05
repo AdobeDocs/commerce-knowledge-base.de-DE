@@ -65,7 +65,7 @@ Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Stag
 
 Die Datenbanksicherung ist Teil eines Cloud-Snapshots:
 
->>
+&#x200B;>>
 Ein Snapshot ist ein vollständiges Backup einer Umgebung, das alle persistenten Daten aus allen ausgeführten Services (z. B. **MySQL-Datenbank**, Redis usw.) und allen auf den bereitgestellten Volumes gespeicherten Dateien enthält.
 
 >[!NOTE]

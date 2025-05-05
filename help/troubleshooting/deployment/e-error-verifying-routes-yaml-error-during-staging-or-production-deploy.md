@@ -36,9 +36,9 @@ Die Bereitstellung ist blockiert und die folgende Fehlermeldung wird im Protokol
 <pre>Anwendungen werden bereitgestellt Konfiguration wird überprüft E: Fehler beim Überprüfen von routes.yaml.
 Die folgenden Domains sind für Ihren Cluster konfiguriert, in Ihrer Datei „routes.yaml“ sind jedoch keine Routen definiert:
 
-- store1.example.com
-- store2.example.com
-- test-store.example.com
+&#x200B;- store1.example.com
+&#x200B;- store2.example.com
+&#x200B;- test-store.example.com
 
 Mit Ihrer aktuellen „routes.yaml“-Konfiguration
   diese Domains NICHT bedient werden!

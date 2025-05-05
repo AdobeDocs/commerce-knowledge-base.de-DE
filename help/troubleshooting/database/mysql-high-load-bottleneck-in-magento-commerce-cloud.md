@@ -76,7 +76,7 @@ Im Folgenden finden Sie die häufigsten Fragen, die Sie stellen können, wenn Si
   **Auf nicht überladenen Clustern** - **Slave-Verbindungen verlangsamen die Leistung um 10-15%**, was einer der Gründe dafür ist, dass es nicht standardmäßig ist.
 
   *Auf überlasteten Clustern kommt es jedoch zu einer Leistungssteigerung, da diese 10-15 % durch die Reduzierung der Last durch Traffic gemindert werden.*
-* Sollte ich diese Einstellungen für meinen Store aktivieren? *Wenn Sie hohe Last haben oder hohe Last auf der MySQL-Datenbank oder Redis erwarten, müssen Sie auf jeden Fall Slave-Verbindungen aktivieren. Für einen regulären Kunden mit durchschnittlichem Traffic ist dies **nicht**eine optimale Einstellung, die aktiviert werden sollte.*
+* Sollte ich diese Einstellungen für meinen Store aktivieren? *Wenn Sie hohe Last haben oder hohe Last auf der MySQL-Datenbank oder Redis erwarten, müssen Sie auf jeden Fall Slave-Verbindungen aktivieren. Für einen regulären Kunden mit durchschnittlichem Traffic ist dies **nicht**&#x200B;eine optimale Einstellung, die aktiviert werden sollte.*
 
 ## Verwandtes Lesen
 

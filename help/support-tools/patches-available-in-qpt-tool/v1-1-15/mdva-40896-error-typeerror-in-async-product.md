@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40896: ''Fehler: TypeError: Argument 3''-Fehler im asynchronen Produkt'
-description: 'Der Patch MDVA-40896 behebt das Problem, bei dem der Fehler „Error: TypeError: Argument 3, das an Magento\Framework\Webapi\ServiceInputProcessor::process() übergeben wird, vom Typ Array, Zeichenfolge sein muss“ in der asynchronen Produkt-Bulk-API angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-40896. Beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.'
+description: 'Der Patch MDVA-40896 behebt das Problem, bei dem der Fehler „Error: TypeError: Argument 3, das an MagentoFrameworkWebapiServiceInputProcessor::process() übergeben wird, vom Typ Array, Zeichenfolge sein muss“ in der asynchronen Produkt-Bulk-API angezeigt wird. Dieser Patch ist verfügbar, wenn das [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 installiert ist. Die Patch-ID lautet MDVA-40896. Beachten Sie, dass das Problem in Adobe Commerce 2.4.4 behoben wurde.'
 exl-id: d9b73e7a-c228-492c-9fdf-c57cceafb330
 feature: Products
 role: Admin

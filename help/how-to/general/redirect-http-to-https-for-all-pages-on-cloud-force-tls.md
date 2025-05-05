@@ -47,7 +47,7 @@ TLS (Transport Layer Security) ist ein Protokoll für sichere HTTP-Verbindungen,
 
 Mit der Force TLS-Funktion von Fastly können Sie alle eingehenden unverschlüsselten Anfragen für Ihre Website-Seiten an TLS erzwingen.
 
->>
+&#x200B;>>
 Es funktioniert durch Rückgabe einer *301 Moved Permanently*-Antwort auf jede unverschlüsselte Anfrage, die zum TLS-Äquivalent umleitet. Wenn Sie beispielsweise eine Anfrage für *http://www.example.com/foo.jpeg* stellen, leiten Sie diese an *https://www.example.com/foo.jpeg* weiter.
 
 [Sicherung der Kommunikation](https://docs.fastly.com/guides/securing-communications/) (Fastly-Dokumentation)

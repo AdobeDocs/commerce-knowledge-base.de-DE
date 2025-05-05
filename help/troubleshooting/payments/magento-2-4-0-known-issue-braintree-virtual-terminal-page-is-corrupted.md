@@ -26,7 +26,7 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.0-Probl
 
 <u>Schritte zur Reproduktion:</u>
 
-Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . ** **
+Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . **&#x200B; **
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -40,7 +40,7 @@ Die Benutzeroberfläche der Seite **Braintree Virtual Terminal** ist fehlerhaft.
 
 <u>Schritte zur Reproduktion:</u>
 
-Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . ** **
+Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . **&#x200B; **
 
 <u>Erwartetes Ergebnis:</u>
 

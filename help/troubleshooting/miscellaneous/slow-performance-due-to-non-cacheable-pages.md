@@ -36,7 +36,7 @@ Diese Seiten sind:
 
 Zwischenspeicherbare und nicht zwischenspeicherbare Begriffe werden verwendet, um anzugeben, ob eine Seite zwischengespeichert werden soll oder nicht. Standardmäßig können alle Seiten zwischengespeichert werden. Wenn jedoch ein Block in einem Layout als nicht cachefähig gekennzeichnet ist, ist die gesamte Seite nicht cachefähig.
 
-Der folgende Screenshot zeigt einen Block mit einer Einstellung `cacheable="false"` ** **, durch die eine nicht Cache-taugliche Seite erstellt wird.
+Der folgende Screenshot zeigt einen Block mit einer Einstellung `cacheable="false"` **&#x200B; **, durch die eine nicht Cache-taugliche Seite erstellt wird.
 
 ![non_cacheable_kb.png](assets/non_cacheable_kb.png)
 
