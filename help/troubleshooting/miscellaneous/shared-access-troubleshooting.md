@@ -4,9 +4,9 @@ description: '**Problem:** Sie möchten Ihrem vertrauenswürdigen Kollegen gemei
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: 6529a7d2c080a410617af8c51893c79c65c0bb81
+source-git-commit: 37996dd7e372c4d886c943d5ad2a94c016ac8b35
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 **Lösung:**
 
-* Wenn Sie der Kontoinhaber (primärer Kontoinhaber) sind, wenden Sie sich an Ihr Adobe-Kontoteam. Wenn Ihr Teammitglied Zugriff auf den Support hat, bitten Sie es, [ein Support-Ticket zu erstellen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed). Geben Sie den Namen und die E-Mail-Adresse Ihres Kontos an.
+* Wenn Sie der Kontoinhaber (primärer Kontoinhaber) sind, wenden Sie sich an Ihr Adobe-Konto-Team. Wenn Ihr Teammitglied Zugriff auf den Support hat, bitten Sie es, [ein Support-Ticket zu erstellen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed). Geben Sie den Namen und die E-Mail-Adresse Ihres Kontos an.
 * Wenn Sie nicht der Kontoinhaber sind, müssen Sie sich an ihn wenden, um gemeinsamen Zugriff und die erforderlichen Berechtigungen bereitzustellen.
-* Wenn der Kontoinhaber nicht mehr beim Unternehmen ist und Sie das Konto an einen anderen Benutzer übertragen möchten, lesen Sie den Abschnitt [Commerce-Konto übertragen](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-transfer).
+* Wenn der Kontoinhaber nicht mehr beim Unternehmen ist und Sie das Konto an einen anderen Benutzer übertragen möchten, lesen Sie den Abschnitt [Commerce-Konto übertragen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-transfer).
 
 >[!NOTE]
 >
->Es ist sogar für einen Nicht-Kontoinhaber möglich, die Registerkarte [!UICONTROL Shared Access] in seinem Konto zu haben. Allerdings kann nur der Kontoinhaber (primärer Kontoinhaber) mit den erforderlichen Berechtigungen anderen Benutzern gemeinsamen Zugriff gewähren. Weitere Informationen zum freigegebenen Zugriff finden Sie unter [Freigegebener Zugriff: Gewähren von Berechtigungen für andere Benutzer für den Zugriff auf Ihr Konto](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access) im Experience League-Support-Benutzerhandbuch für Adobe Commerce.
+>Es ist sogar für einen Nicht-Kontoinhaber möglich, die Registerkarte [!UICONTROL Shared Access] in seinem Konto zu haben. Allerdings kann nur der Kontoinhaber (primärer Kontoinhaber) mit den erforderlichen Berechtigungen anderen Benutzern gemeinsamen Zugriff gewähren. Weitere Informationen zum freigegebenen Zugriff finden Sie unter [Freigegebener Zugriff: Gewähren von Berechtigungen für andere Benutzer für den Zugriff auf Ihr Konto](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#shared-access) im Experience League Support-Benutzerhandbuch für Adobe Commerce.
 
 ## Ich habe gemeinsamen Zugriff verwendet, kann aber keinen Zugriff auf eine bestimmte Ressource erhalten
 
@@ -46,32 +46,32 @@ Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Ge
 
 ## Ich habe freigegebenen Zugriff verwendet und auf [!UICONTROL Support] geklickt, aber als ich ein neues Ticket für die Organisation geöffnet habe, war im Formular kein Produkt verfügbar
 
-**Problem:** Beim Öffnen eines Tickets auf [Experience League kann ich das entsprechende Cloud-Projekt nicht ](https://experienceleague.adobe.com/home?lang=de#support).
+**Problem:** Beim Öffnen eines Tickets in [Experience League kann ich das entsprechende Cloud-Projekt nicht ](https://experienceleague.adobe.com/home#support).
 
 **Mögliche Ursache** Sie haben nicht die richtige Organisation mit [!DNL Commerce] Berechtigungen ausgewählt.
 
 **Lösung:**
 
-1. Stellen Sie sicher, dass Sie die Organisation mit dem Suffix *[!DNL Commerce]* auswählen. Dies ist die Organisation mit den [!DNL Commerce] Berechtigungen.
+1. Stellen Sie sicher, dass Sie die Organisation mit dem Suffix ([!DNL Commerce]) auswählen. Dies ist die Organisation mit den [!DNL Commerce] Berechtigungen.
 
 Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Geben Sie den Namen und die E-Mail-Adresse Ihres Kontos an.
 
 ## Ich habe freigegebenen Zugriff verwendet und auf [!UICONTROL Support] geklickt, aber als ich ein neues Ticket für die Organisation geöffnet habe, die über die [!DNL Commerce] Berechtigungen verfügt, wurde das Cloud-Projekt nicht im Formular aufgeführt
 
-**Problem**: Beim Öffnen eines Tickets auf [Experience League kann ich das entsprechende Cloud-Projekt nicht ](https://experienceleague.adobe.com/home?lang=de#support).
+**Problem**: Beim Öffnen eines Tickets in [Experience League kann ich das entsprechende Cloud-Projekt nicht ](https://experienceleague.adobe.com/home#support).
 
 **Mögliche Ursache**: Möglicherweise wurden Sie dem Projekt nicht hinzugefügt oder das Projekt ist mit einer anderen Lizenz verknüpft (einige Organisationen haben möglicherweise Tochtergesellschaften/verbundene Unternehmen mit sehr ähnlichen Namen).
 
 **Lösung**:
 
-1. Stellen Sie sicher, dass Sie zum Projekt hinzugefügt wurden. Siehe [Benutzerzugriff verwalten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/project/user-access).
+1. Stellen Sie sicher, dass Sie zum Projekt hinzugefügt wurden. Siehe [Benutzerzugriff verwalten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
 1. Stellen Sie sicher, dass Sie vom Kontoinhaber gemeinsamen Zugriff auf die mit dem Projekt verknüpfte Lizenz erhalten haben.
 
 Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Geben Sie den Namen und die E-Mail-Adresse Ihres Kontos an.
 
 ## Ich habe freigegebenen Zugriff verwendet und auf &quot;[!UICONTROL Support]&quot; geklickt, aber als ich ein neues Ticket geöffnet habe, wurde das Dropdown-Menü &quot;[!UICONTROL Organization]&quot; nicht angezeigt oder diese Organisation wurde nicht aufgeführt
 
-**Problem**: Ich bin zum [!UICONTROL Shared Access]-Konto gewechselt, aber wenn ich versuche, ein Ticket auf [Experience League](https://experienceleague.adobe.com/home?lang=de#support) einzureichen, ist keine Organisation verfügbar oder der Organisationsname wird nicht in der Dropdown-Liste aufgeführt.
+**Problem**: Ich bin zum [!UICONTROL Shared Access]-Konto gewechselt, aber wenn ich versuche, ein Ticket für [Experience League](https://experienceleague.adobe.com/home#support) einzureichen, ist keine Organisation verfügbar oder der Organisationsname wird nicht in der Dropdown-Liste aufgeführt.
 
 **Mögliche Ursache**: Ihnen wurde nur der gemeinsame Zugriff auf einen Händler in Ihrem Konto gewährt.
 
@@ -89,3 +89,8 @@ Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Ge
 **Mögliche Ursache** Ihr Browser verwendet den im Hilfe-Center zwischengespeicherten Inhalt.
 
 **Lösung:** Löschen Sie den Browsercache und greifen Sie erneut auf das Hilfe-Center zu (stellen Sie sicher, dass Sie auf Ihrer Commerce-Kontoseite zum freigegebenen Zugriff gewechselt haben).
+
+## Verwandtes Lesen
+
+* [Anmeldung beim Adobe Commerce Support- oder Cloud-Konto nicht möglich](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
+* [Der Eigentümer des MageID-Kontos kann sich nicht anmelden und ein Support-Ticket senden](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)
