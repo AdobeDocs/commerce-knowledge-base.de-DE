@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für das Problem, wenn in Adobe 
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
-source-git-commit: 6b8eecb3df0bb32344a5861a604a40402bb4d392
+source-git-commit: d17af0f8f92726aa5a6914fc9e1ff13268256d04
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,13 @@ Dieser Artikel bietet eine Lösung für das Problem, wenn ein *Fallback auf[!DNL
 
 ## Betroffene Versionen
 
-Adobe Commerce auf Cloud-Infrastruktur 2.4.4 - 2.4.5
+Adobe Commerce auf Cloud-Infrastruktur
+2.4.4 - 2.4.4-p12
+2.4.5 - 2.4.5-P11
 
 >[!NOTE]
 >
->[!DNL OpenSearch] ist ab Adobe Commerce 2.4.6 als Suchmaschine verfügbar.
+>[!DNL OpenSearch] ist als Suchmaschine ab Adobe Commerce 2.4.6, 2.4.5-p12, 2.4.4-p13 verfügbar.
 
 ## Problem
 
@@ -50,4 +52,4 @@ Aktualisieren Sie die `SEARCH_CONFIGURATION` in der `.magento.env.yaml`-Datei un
 
 ## Verwandtes Lesen
 
-[Richten Sie den OpenSearch-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=de) im Handbuch zu Commerce in Cloud-Infrastrukturen ein.
+[Richten Sie den OpenSearch-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) im Handbuch zu Commerce in Cloud-Infrastrukturen ein.
