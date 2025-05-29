@@ -3,9 +3,9 @@ title: Häufig gestellte Fragen zum Adobe Commerce Security Scan Tool
 description: In diesem Artikel werden einige häufig gestellte Fragen (FAQ) zum Adobe Commerce-Sicherheits-Scan-Tool beantwortet.
 exl-id: 380ce617-e3d9-491b-b425-8489abd3c541
 feature: Compliance
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: cff17a83648e10e85d95a5895acd8d1916a8eef9
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -50,4 +50,4 @@ Händler können sich registrieren, um das Security Scan Tool zu verwenden und i
 
 Wir empfehlen unseren Händlern, alle fehlgeschlagenen Scans zu untersuchen und geeignete Schritte zur Lösung solcher Probleme zu unternehmen. Wenn Händler nach der Untersuchung auf ein Scan-Ergebnis stoßen, das als falsch positiv erscheint, bitten wir den Händler, Adobe zu benachrichtigen, damit es entsprechende Maßnahmen ergreift.
 
-Um einen falsch positiven Bericht zu senden, geben Sie ein Ticket beim Adobe Commerce-Händlersupport ein, damit wir den falsch positiven Bericht bewerten, die erforderlichen Änderungen vornehmen und/oder Empfehlungen geben können, um solche Benachrichtigungen in Zukunft zu vermeiden. Händler können auch einen falsch positiven Wert melden, indem sie uns eine E-Mail an [securityscan@magento.com](mailto:securityscan@magento.com) senden.
+Um einen falsch positiven Bericht zu senden, geben Sie ein Ticket beim Adobe Commerce-Händlersupport ein, damit wir den falsch positiven Bericht bewerten, die erforderlichen Änderungen vornehmen und/oder Empfehlungen geben können, um solche Benachrichtigungen in Zukunft zu vermeiden.
