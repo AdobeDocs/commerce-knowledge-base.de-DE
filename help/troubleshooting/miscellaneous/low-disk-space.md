@@ -4,9 +4,9 @@ description: In diesem Artikel werden Lösungen für die Situation vorgeschlagen
 exl-id: 1b2c25d3-ca1b-4409-8d6b-378aa0952f94
 feature: Storage, Observability
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 842c329b5d8bacf72ac689412fde5a5d76d16e85
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In diesem Artikel werden Lösungen für die Situation vorgeschlagen, wenn Ihnen 
 
 ## Problem
 
-Es ist nicht mehr genügend Speicherplatz auf der Festplatte mit beschreibbaren Verzeichnissen vorhanden. Ein Symptom kann sein [stecken geblieben](/help/troubleshooting/deployment/deployment-stuck-with-unable-to-upload-the-application-to-the-remote-cluster-error.md).
+Es ist nicht mehr genügend Speicherplatz auf der Festplatte mit beschreibbaren Verzeichnissen vorhanden. Ein Symptom kann sein [stecken geblieben](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26878).
 
 Um die Festplattenauslastung zu überprüfen, führen Sie den folgenden Befehl aus:
 
@@ -45,9 +45,9 @@ Lösungsoptionen:
 * Bereinigen Sie das `var`.
 * Richten Sie einen Cron-Auftrag ein, um die Größe des `var` zu verfolgen und zu bereinigen.
 * Weisen Sie mehr Speicherplatz zu, wenn Sie nicht verwendeten Speicherplatz haben. (Im folgenden Abschnitt finden Sie Informationen dazu, wie Sie Ihre Speicherplatzbeschränkung überprüfen können.)
-   * Für den Starter-Plan, alle Umgebungen und Pro-Plan-Integrationsumgebungen können Sie den Speicherplatz zuweisen, wenn Sie ungenutzten Speicherplatz haben, wie in [Verwalten von Speicherplatz: Zuweisen von Speicherplatz](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space) beschrieben.
+   * Für den Starter-Plan, alle Umgebungen und Pro-Plan-Integrationsumgebungen können Sie den Speicherplatz zuweisen, wenn Sie ungenutzten Speicherplatz haben, wie in [Verwalten von Speicherplatz: Zuweisen von Speicherplatz](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space) beschrieben.
    * Bei Pro Plan Staging- und Produktionsumgebungen wenden Sie sich an den Support, um mehr Speicherplatz zuzuweisen, wenn Sie ungenutzte Ressourcen haben.
-* Wenn Sie Ihr Speicherplatzlimit erreicht haben und weiterhin Probleme mit wenig Speicherplatz haben, sollten Sie ggf. weiteren Speicherplatz kaufen. Wenden Sie sich für weitere Informationen an Ihr Adobe-Account-Team.
+* Wenn Sie Ihr Speicherplatzlimit erreicht haben und weiterhin Probleme mit wenig Speicherplatz haben, sollten Sie ggf. weiteren Speicherplatz kaufen. Weitere Informationen erhalten Sie von Ihrem Adobe-Account-Team.
 
 ### Überprüfen des Speicherplatzlimits
 
