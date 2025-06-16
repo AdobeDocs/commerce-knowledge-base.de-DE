@@ -3,7 +3,7 @@ title: Adobe Commerce P1-Benachrichtigungs-Hotline
 description: Dieser Artikel enthält die P1-Benachrichtigungs-Hotline-Nummern für Adobe Commerce, die bei der Meldung eines P1-Vorfalls verwendet werden können, und erläutert, welche Informationen bereitgestellt werden müssen.
 feature: Communications
 exl-id: 48c4fe93-676e-4c69-a96c-8fb3e6872973
-source-git-commit: 8c0c128f2469086c44dcea0e9edc87f934578a69
+source-git-commit: bbff778a020a05953b82b452cdede7c46f20c990
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Wie in [Geschäftsbedingungen für Adobe Commerce-Support-Services definiert](ht
 ## P1-Benachrichtigungs-Hotline-Telefonrichtlinien
 
 * Über die P1-Benachrichtigungs-Hotline können Probleme auf P1-Ebene gemeldet werden. (Siehe Definition des P1-Incident im vorherigen Abschnitt).
-* [Senden Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) bevor Sie die Adobe Commerce P1-Benachrichtigungs-Hotline anrufen.
+* [Senden Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) bevor Sie die Adobe Commerce P1-Benachrichtigungs-Hotline anrufen.
 * Untersuchung, Fehlerbehebung und Kommunikation erfolgen ausschließlich innerhalb des Support-Tickets.
 * Fügen Sie dem Ticket direkt vor dem Anruf alle zusätzlichen Informationen hinzu, die Sie möglicherweise im Zusammenhang mit dem Problem haben.
 * Vergewissern Sie sich beim Anruf, dass Sie die Ticketnummer haben.
@@ -32,7 +32,7 @@ Wie in [Geschäftsbedingungen für Adobe Commerce-Support-Services definiert](ht
 Hinweis: Wenn Sie Voicemail aus irgendeinem Grund erreichen, hinterlassen Sie bitte Ihre Informationen: Vollständiger Name, Firma, Telefonnummer und Ticketnummer. Die Leitungen werden überwacht und ein Techniker wird Ihren Anruf so schnell wie möglich zurücksenden.
 
 * USA
-   * Gebührenfrei: (+1) 800 497 0335 (Im ersten Menü drücken Sie 6 für die Adobe Commerce P1-Hotline)
+   * Gebührenfrei: (+1) 800 497 0335 (Im ersten Menü drücken Sie 3 für die Adobe Commerce P1-Hotline)
 * EMEA
    * GB: (+44) 800 169 0454 (Im ersten Menü, drücken Sie 6 für die Adobe Commerce P1-Hotline)
    * Dänemark: (+45) 80206017 (Beim ersten Menü drücken Sie 6 für die Adobe Commerce P1-Hotline)
