@@ -104,7 +104,7 @@ Sie können die 10 vorherigen Berichte von Ihrem Ende aus generieren. Wenn älte
 
 ### Welche Informationen werden beim Einreichen eines Support-Tickets benötigt?
 
-Bitte geben Sie den Domain-Namen genau so an, wie er für die [Sicherheitsprüfung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID und Cloud Project_ID übermittelt wurde. Beachten Sie, dass die Cloud-Projekt-ID für Adobe Commerce On-Premise nicht erforderlich ist.
+Bitte geben Sie den Domain-Namen genau so an, wie er für die [Sicherheitsprüfung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID und Cloud Project_ID übermittelt wurde. Beachten Sie, dass die Cloud-Projekt-ID für Adobe Commerce On-Premise nicht erforderlich ist.
 
 ### Was passiert, wenn ich meinen Speicher aus dem Scan-Tool entferne?
 
