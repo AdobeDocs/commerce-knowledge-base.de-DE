@@ -4,9 +4,9 @@ description: 'Adobe Commerce bietet Qualitätskorrekturen für eine Nebenversion
 exl-id: 4aa601d0-ee1d-4f1f-a684-188772a58dd1
 feature: Compliance, Support
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2898089896cc2cdc88110a999564669341a52136
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerce bietet Qualitätskorrekturen für eine Nebenversion für mindestens 12 Monate ab dem allgemeinen Verfügbarkeitsdatum der nächsten Nebenversion der Software. Die Art und Weise, wie wir in diesem Zeitraum Qualitätskorrekturen bereitstellen, ändert sich:
 
 * **Vorherige Richtlinie:** Derzeit werden die Qualitätskorrekturen für die vorherige Zeile, die im 12-monatigen EOS-Fenster enthalten ist, über unsere vierteljährliche Patch-Version bereitgestellt. Dadurch stellen die vierteljährlichen Patches eine Kombination aus Sicherheit und Qualität dar.
-* **Neue Richtlinie:** Ab 2.4 als aktuellste Nebenversion werden die Veröffentlichungs-Patches für die vorherige unterstützte Zeile (2.3) auf „Nur Sicherheit“ umgestellt. Wir werden auch während des 12-monatigen Zeitfensters nach der Veröffentlichung einer Nebenversion (wie 2.4) und nachfolgender neuer Nebenversionen Qualitätskorrekturen für die vorherige unterstützte Zeile bereitstellen. Diese werden jedoch über das [Quality Patches Tool (QPT) verfügbar gemacht ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) sich nur auf kritische Probleme konzentrieren.
+* **Neue Richtlinie:** Ab 2.4 als aktuellste Nebenversion werden die Veröffentlichungs-Patches für die vorherige unterstützte Zeile (2.3) auf „Nur Sicherheit“ umgestellt. Wir werden auch während des 12-monatigen Zeitfensters nach der Veröffentlichung einer Nebenversion (wie 2.4) und nachfolgender neuer Nebenversionen Qualitätskorrekturen für die vorherige unterstützte Zeile bereitstellen. Diese werden jedoch über das [Quality Patches Tool (QPT) verfügbar gemacht ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) sich nur auf kritische Probleme konzentrieren.
 
 ## Wann tritt diese Richtlinie in Kraft?
 
@@ -26,7 +26,7 @@ Adobe Commerce 2.3.6 wird voraussichtlich am 15. Oktober 2020 veröffentlicht un
 
 >[!NOTE]
 >
->Die einzige Zeit, in der wir eine Vollversion von 2.3 veröffentlichen, ist, wenn wir die Einhaltung unseres Technologie-Stacks, wie z. B. für PHP oder Elasticsearch, beibehalten müssen. Dies geschieht im 2. Quartal 2021 mit einem obligatorischen Update von PHP 7.4, wir werden die Zeile auf 2.3.7 erhöhen. Weitere Informationen finden Sie unter [PHP 7.4-Unterstützung für Adobe Commerce 2.3.x-Release](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-Beitrag.
+>Die einzige Zeit, in der wir eine Vollversion von 2.3 veröffentlichen, ist, ob wir die Einhaltung unseres Technologie-Stacks, wie z. B. für PHP oder Elasticsearch, beibehalten müssen. Dies geschieht im 2. Quartal 2021 mit einem obligatorischen Update von PHP 7.4, wir werden die Zeile auf 2.3.7 erhöhen. Weitere Informationen finden Sie unter [PHP 7.4-Unterstützung für Adobe Commerce 2.3.x-Release](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-Beitrag.
 
 ## Was ist eine reine Sicherheitsversion?
 
@@ -34,11 +34,11 @@ Nur-Sicherheits-Versionen enthalten nur Sicherheitskorrekturen und keine Qualit�
 
 ## Wird es für die neueste Zeile (ab Veröffentlichung 2.4) weiterhin eine reine Sicherheitsversion geben?
 
-Adobe wird auch weiterhin nur sicherheitsrelevante Versionen für die neueste Release-Zeile haben. Der Prozess dafür wird im DevBlog-Beitrag [Einführung in die neue, reine Sicherheits](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287)Patch-Version beschrieben.
+Adobe wird auch weiterhin ausschließlich sicherheitsrelevante Versionen für die neueste Version haben. Der Prozess dafür wird im DevBlog-Beitrag [Einführung in die neue, reine Sicherheits](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287)Patch-Version beschrieben.
 
 ## Was ist das Quality Patches Tool?
 
-Weitere Informationen finden Sie im [Quality Patches Tool Release: a new tool to self-serve quality patches](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) Artikel in unserer Support Knowledge Base.
+Weitere Informationen finden Sie im [Quality Patches Tool Release: a new tool to self-serve quality patches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) Artikel in unserer Support Knowledge Base.
 
 ## Wer sollte in Betracht ziehen, diese neue Richtlinie anzuwenden?
 
@@ -50,7 +50,7 @@ Letztlich sollten alle Händler weiterhin die Planung zur zeitnahen Einführung 
 
 ## Wie erhalte ich Qualitätskorrekturen für unterstützte Nebenversionen, bei denen es sich nicht um die neueste Zeile handelt?
 
-Fehlerbehebungen werden über das [Quality Patches Tool) ](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+Fehlerbehebungen werden über das [Quality Patches Tool) ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patche).
 
 ## Wie erhalte ich Qualitätskorrekturen für die neueste Zeile?
 
@@ -62,7 +62,7 @@ Nur wichtige Qualitätsprobleme, die den Kernfluss unterbrechen, werden in der v
 
 ## Sind alle Qualitätskorrekturen Teil der vierteljährlichen -Version für unterstützte Nebenversionen, die nicht die neueste Zeile sind?
 
-Ja, als Teil der reinen Sicherheitslinie veröffentlichen wir, was Adobe als „Hotfixes“ bezeichnet, in dieser Zeile. Dies sind äußerst wichtige Probleme, die sich auf die Adobe Commerce-Anwendung auswirken.
+Ja, als Teil der Zeile „Nur Sicherheit“ veröffentlichen wir, was Adobe als „Hotfixes“ bezeichnet. Dies sind äußerst wichtige Probleme, die sich auf die Adobe Commerce-Anwendung auswirken.
 
 ## Werden gleichzeitig Sicherheitsverbesserungen und QPT bereitgestellt?
 
@@ -72,7 +72,7 @@ Die Zeile „Nur Sicherheit“ folgt dem vierteljährlichen Veröffentlichungsze
 
 Da die vorherige Zeile nur für Sicherheit ausgelegt ist, ist der Hauptvorteil die Sicherheit. Nur Patches für wichtige Probleme, die den Kernfluss unterbrechen, werden über QPT zur Verfügung gestellt.
 
-Probleme, die sich nicht auf Kernflüsse auswirken oder die Problemumgehungen aufweisen, werden nur in der letzten Zeile behoben. Adobe empfiehlt allen Benutzern, die sowohl kritische als auch nicht kritische Fehlerbehebungen wünschen, zur aktuellen Zeile zu wechseln.
+Probleme, die sich nicht auf Kernflüsse auswirken oder die Problemumgehungen aufweisen, werden nur in der letzten Zeile behoben. Adobe empfiehlt denjenigen, die sowohl kritische als auch nicht kritische Fehlerbehebungen wünschen, zur neuesten Zeile zu wechseln.
 
 ## Werden Upgrades für Händler teurer oder schwieriger, wenn sie bis zum Ende des Sicherheits-Supports auf der Nur-Sicherheits-Linie bleiben?
 
@@ -84,6 +84,6 @@ Durch die Anwendung vieler individueller Qualitätskorrekturen wird Ihr Adobe Co
 
 ## Wie sieht es mit der Compliance für Technologie-Stacks aus?
 
-Während der Lebensdauer einer Release-Line wird es Updates für verschiedene Technologie-Stacks wie PHP oder Elasticsearch geben, die aktualisiert werden müssen, um konform zu bleiben. Wir werden unseren Händlern so viel wie möglich mitteilen, dass diese kommen.
+Während der gesamten Lebensdauer einer Release-Reihe wird es Aktualisierungen an verschiedenen Technologie-Stacks wie PHP oder Elasticsearch geben, die aktualisiert werden müssen, um konform zu bleiben. Wir werden unseren Händlern so viel wie möglich mitteilen, dass diese kommen.
 
 Hinweis: Im 2. Quartal 2021 müssen wir PHP und Redis auf der 2.3.x-Zeile aktualisieren, um konform zu bleiben. Dadurch wird die Zeile auf 2.3.7 erhöht. Weitere Informationen finden Sie unter [PHP 7.4-Unterstützung für Adobe Commerce 2.3.x-Release](https://community.magento.com/t5/Magento-DevBlog/PHP-7-4-support-for-Magento-2-3-x-release-line/ba-p/458946) DevBlog-Beitrag.
