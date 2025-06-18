@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Security S
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
+source-git-commit: c6e338fb33477ab107fe4de382b485339b57275a
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Security Scan Tool für
 
 ## Problem: Die Site kann nicht gesendet werden
 
-Das Security Scan Tool erfordert, dass Sie die Eigentümerschaft Ihrer Website nachweisen, bevor die Domain zum Security Scan Tool hinzugefügt werden kann. Dies kann durch Hinzufügen eines Bestätigungscodes zu Ihrer Site mithilfe eines HTML-Kommentars oder des `<meta>`-Tags erfolgen. Der HTML-Kommentar sollte innerhalb des `<body>`-Tags platziert werden, z. B. im Fußzeilenbereich. Das `<meta>`-Tag sollte im `<head>` der Seite platziert werden.
+Das Security Scan Tool erfordert, dass Sie die Eigentümerschaft Ihrer Website nachweisen, bevor die Domain zum Security Scan Tool hinzugefügt werden kann. Dies kann durch Hinzufügen eines Bestätigungs-Codes zu Ihrer Site mithilfe eines HTML-Kommentars oder des `<meta>`-Tags erfolgen. Der HTML-Kommentar sollte innerhalb des `<body>`-Tags platziert werden, z. B. im Fußzeilenabschnitt. Das `<meta>`-Tag sollte im `<head>` der Seite platziert werden.
 
 Ein häufiges Problem, mit dem Händler konfrontiert sind, tritt auf, wenn das Sicherheits-Scan-Tool den Site-Eigentümer des Händlers nicht bestätigen kann.
 
@@ -25,7 +25,7 @@ Wenn Sie einen Fehler erhalten und Ihre Website nicht zur Suche einreichen könn
 
 ## Problem: Leere, vom Sicherheits-Scan-Tool generierte Berichte
 
-Sie erhalten leere Suchberichte vom Security Scan Tool oder Berichte, die nur einen einzigen Fehler enthalten, wie *Das Security Tool konnte die Basis-URL nicht erreichen* oder *die Magento-Installation wurde auf der angegebenen URL nicht gefunden*.
+Sie erhalten leere Suchberichte vom Security Scan Tool oder Berichte, die nur einen einzigen Fehler enthalten, wie *Das Security Tool konnte die Basis-URL nicht erreichen* oder *Magento-Installation wurde auf der angegebenen URL nicht gefunden*.
 
 ### Lösung
 
@@ -76,7 +76,7 @@ Sie erhalten eine Benachrichtigung über den Fehler „BotNet-Verdächtiger“.
 
 1. Überprüfen Sie die neu erstellten SSH-Konten, Dateisystemänderungen usw.
 1. Führen Sie eine Sicherheitsüberprüfung durch.
-1. Überprüfen Sie die Adobe Commerce-Version und das Upgrade, insbesondere wenn weiterhin Magento 1 ausgeführt wird, was nicht mehr unterstützt wird.
+1. Überprüfen Sie die Adobe Commerce-Version und das Upgrade, insbesondere wenn weiterhin Magento 1 ausgeführt wird, das nicht mehr unterstützt wird.
 1. Wenn das Problem weiterhin besteht, [ Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL an.
 
 ## Problem: Kompromisseinspritzung fehlgeschlagen
@@ -104,7 +104,7 @@ Sie können die 10 vorherigen Berichte von Ihrem Ende aus generieren. Wenn älte
 
 ### Welche Informationen werden beim Einreichen eines Support-Tickets benötigt?
 
-Stellen Sie sicher, dass Sie den Domain-Namen angeben.
+Bitte geben Sie den Domain-Namen genau so an, wie er für die [Sicherheitsprüfung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID und Cloud Project_ID übermittelt wurde. Beachten Sie, dass die Cloud-Projekt-ID für Adobe Commerce On-Premise nicht erforderlich ist.
 
 ### Was passiert, wenn ich meinen Speicher aus dem Scan-Tool entferne?
 
