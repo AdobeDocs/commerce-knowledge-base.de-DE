@@ -4,9 +4,9 @@ description: Dieser Artikel ist ein Tool zur Fehlerbehebung für Kunden und Kund
 exl-id: f7b09023-7129-4fd0-9bb5-02a2228bc148
 feature: Observability, Services, Storage, Support
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Wenn Sie eines der oben beschriebenen Symptome haben, überprüfen Sie den Statu
 
 Ist IUse% > 90%?
 
-a. JA - Dies liegt daran, dass zu viele Dateien vorhanden sind. Überprüfen Sie die Schritte zum sicheren Entfernen von Dateien in [Dateien sicher löschen, wenn kein Speicherplatz mehr zur Verfügung steht, Adobe Commerce in der Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md). Fahren Sie [ Schritt 2 fort](#step-2) nachdem Sie diese Schritte abgeschlossen haben. Wenn Sie mehr Speicherplatz benötigen, reichen [ein Support-Ticket ein](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. JA - Dies liegt daran, dass zu viele Dateien vorhanden sind. Überprüfen Sie die Schritte zum sicheren Entfernen von Dateien in [Dateien sicher löschen, wenn kein Speicherplatz mehr zur Verfügung steht, Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26889). Fahren Sie [ Schritt 2 fort](#step-2) nachdem Sie diese Schritte abgeschlossen haben. Wenn Sie mehr Speicherplatz benötigen, reichen [ein Support-Ticket ein](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NEIN - Platzierung prüfen. Führen Sie `df -h | grep mysql` und dann `df -h | grep tmp` in der CLI/Terminal aus, um die Speicherplatznutzung in den `/tmp`- und `/data/mysql`-Verzeichnissen zu überprüfen. Fahren Sie mit [Schritt 3](#step-3) fort.
 
 +++
@@ -93,4 +93,4 @@ b. NEIN - [Support-Ticket einreichen](/help/help-center-guide/help-center/magent
 
 ## Verwandtes Lesen
 
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
