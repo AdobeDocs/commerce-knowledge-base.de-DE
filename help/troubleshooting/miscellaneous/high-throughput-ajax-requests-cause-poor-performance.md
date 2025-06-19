@@ -36,7 +36,7 @@ AJAX-Anfragen mit hohem Durchsatz beziehen sich auf Anfragen im Zusammenhang mit
 
 Es gibt drei Lösungen:
 
-* [Aktualisieren Sie auf Version 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
+* [Aktualisieren Sie auf Version 2.3.4](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Stellen Sie leichtere Anfragen sicher (Cache-Anfragen oder Verschieben in den privaten Inhalt von Kunden).
 * Reduzieren Sie die Anzahl der Anfragen.
 
@@ -46,7 +46,7 @@ Wenn auf jeder Seite AJAX-Anfragen von Drittanbietern ausgelöst werden, versuch
 
 <u>Reduzieren Sie die Anzahl der Anfragen</u>
 
-* Deaktivieren Sie den beständigen Warenkorb, da er die Anzahl der `customer/section/load` Anfragen erhöhen kann. Befolgen Sie die Schritte unter [Pfade zum beständigen Warenkorb](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) in unserer Entwicklerdokumentation, um zu sehen, ob der beständige Warenkorb aktiviert ist.
+* Deaktivieren Sie den beständigen Warenkorb, da er die Anzahl der `customer/section/load` Anfragen erhöhen kann. Befolgen Sie die Schritte unter [Pfade zum beständigen Warenkorb](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/paths/config-reference-general) in unserer Entwicklerdokumentation, um zu sehen, ob der beständige Warenkorb aktiviert ist.
 * Wenn Sie Inhalte in neu laden oder ungültig machen müssen, befolgen Sie `sections.xml` Schritte unter [Privater Inhalt: Invalidierung privater Inhalte](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) in unserer Entwicklerdokumentation. Stellen Sie sicher, dass Sie die `customerData.reload()`-Methode nicht direkt in Ihren Anpassungen verwenden.
 * Überprüfen Sie andere POST-AJAX-Anfragen auf derselben Seite. Öffnen Sie das Google Chrome-Entwickler-Tool im Google Chrome-Browser. Klicken Sie auf **Registerkarte** und dann auf die Registerkarte **XHR**. Daraufhin wird eine Liste aller AJAX-Anfragen von der jeweiligen Seite angezeigt. Klicken Sie dann auf jede Anfrage. Im Feld Anfragemethode sollten die GET-Anfragen angezeigt werden. Hinweis: Google Chrome wird als Beispiel verwendet. Dies ist auch in anderen Browsern möglich.
 * Überprüfen Sie die Funktion von Google Tag Manager (GTM), die eine bestimmte AJAX-Anfrage ist. Der/die Benutzende kann diese AJAX entfernen und ihre Anpassung mit privater Funktion refaktorieren, um die Gesamtzahl der Anfragen an den Server zu reduzieren.
