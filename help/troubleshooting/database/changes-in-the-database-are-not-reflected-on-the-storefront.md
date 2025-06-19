@@ -26,7 +26,7 @@ Betroffene Produkte und Versionen:
 
 ## Ursache
 
-Wenn Ihre Indexer [für eine Aktualisierung nach Zeitplan konfiguriert sind](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) kann das Problem durch eine oder mehrere Tabellen mit zu großen Änderungsprotokollen oder nicht eingerichteten MySQL-Triggern verursacht werden.
+Wenn Ihre Indexer [für eine Aktualisierung nach Zeitplan konfiguriert sind](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) kann das Problem durch eine oder mehrere Tabellen mit zu großen Änderungsprotokollen oder nicht eingerichteten MySQL-Triggern verursacht werden.
 
 ### Übergroße Änderungsprotokolltabellen
 
@@ -71,7 +71,7 @@ Verwenden Sie den folgenden Befehl, um diesen Vorgang auszuführen.
 
 >[!WARNING]
 >
->Bevor Sie den Indexermodus wechseln, empfehlen wir, Ihre Website in den [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode)-Modus zu versetzen und [Cron-Aufträge zu deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) um Datenbanksperren zu vermeiden.
+>Bevor Sie den Indexermodus wechseln, empfehlen wir, Ihre Website in den [&#128279;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#maintenance-mode)-Modus zu versetzen und [Cron-Aufträge zu deaktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de#disable-cron-jobs) um Datenbanksperren zu vermeiden.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -83,6 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Verwandtes Lesen
 
-* [[!DNL MySQL] Tabellen sind zu groß](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945) in unserer Support-Wissensdatenbank
+* [[!DNL MySQL] Tabellen sind zu groß](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26945) in unserer Support-Wissensdatenbank
 * [Indizierung: [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) in unserer Entwicklerdokumentation
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

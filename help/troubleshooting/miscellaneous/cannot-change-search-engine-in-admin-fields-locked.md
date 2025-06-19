@@ -42,4 +42,4 @@ Die Suchmaschinenkonfiguration ist in der `app/etc/env.php` gesperrt oder die Su
 
 ## Verwandtes Lesen
 
-* [Gesperrte (ausgegraute) Felder in Commerce Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) im Handbuch zu Commerce in der Cloud-Infrastruktur.
+* [Gesperrte (ausgegraute) Felder in Commerce Admin](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26879) im Handbuch zu Commerce in der Cloud-Infrastruktur.

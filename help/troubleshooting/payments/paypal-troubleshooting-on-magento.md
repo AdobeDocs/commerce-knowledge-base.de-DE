@@ -41,7 +41,7 @@ Wenn Ihre PayPal-Zahlungsmethode eine API mit Abrechnungsvereinbarungen und Refe
 
 Siehe die folgenden Artikel:
 
-* [PayPal-Gateway hat Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) in unserer Support-Wissensdatenbank.
+* [PayPal-Gateway hat Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26838) in unserer Support-Wissensdatenbank.
 * [Ändern der Inkrement-ID für eine neue Store](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)Entität in unserer Support-Wissensdatenbank.
 
 ## Support kontaktieren, um erweiterte Zahlungsprotokolle zu erfassen
