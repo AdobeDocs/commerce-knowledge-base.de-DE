@@ -159,4 +159,4 @@ Wenn Sie feststellen, dass der neu erstellte Store/die neu erstellte Website nic
 ## Verwandtes Lesen
 
 * [Mehrere Websites oder Geschäfte einrichten: Neu hinzufügen [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de#add-new-domains) in unserem Benutzerhandbuch.
-* [Site aufgrund von Ursprungsverdeckung nicht zugänglich](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26856)
+* [Site aufgrund von Ursprungsverdeckung nicht zugänglich](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26856)

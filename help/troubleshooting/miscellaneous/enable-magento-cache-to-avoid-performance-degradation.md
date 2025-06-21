@@ -52,7 +52,7 @@ Adobe Commerce-Cache-Dokumentation in unserer Entwicklerdokumentation:
 
 Weitere mögliche Gründe für Leistungsprobleme und Lösungen für sie:
 
-* [Deaktivieren der Adobe Commerce-Bannerausgabe zur Verbesserung der Site-Leistung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [Deaktivieren der Adobe Commerce-Bannerausgabe zur Verbesserung der Site-Leistung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26909)
 * [MySQL-Tabellen sind zu groß](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [Langsame Leistung, langsame und lange laufende Crons](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
 * [Eingeschränkter Admin-Zugriff, der Leistungsprobleme verursacht](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
