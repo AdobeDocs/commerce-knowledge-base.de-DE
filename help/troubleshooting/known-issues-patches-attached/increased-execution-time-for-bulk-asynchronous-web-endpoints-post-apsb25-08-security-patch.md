@@ -56,8 +56,8 @@ Um das Problem zu beheben, wenden Sie [AC-14078-2-4x-composer-patch.zip](assets/
 
 ## Anbringen des Pflasters
 
-Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=de)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
 ## Verwandtes Lesen
 
-* [Sicherheitsupdate für Adobe Commerce verfügbar - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [Sicherheitsupdate für Adobe Commerce verfügbar - APSB25-08](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27149)

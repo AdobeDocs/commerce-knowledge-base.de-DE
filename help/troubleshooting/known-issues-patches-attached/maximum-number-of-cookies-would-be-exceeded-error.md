@@ -19,9 +19,9 @@ Dieser Artikel enthält Patches zur Behebung des Fehlers *Maximale Anzahl von Co
 
 Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.7, mit einem der folgenden Patches:
 
-* MDVA-12304 Patch angewendet mit dem [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
-* [Sicherheitsupdate für Adobe Commerce verfügbar - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
-* [Cloud-Patches für  [!DNL Commerce] .1.4](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+* MDVA-12304 Patch angewendet mit dem [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Sicherheitsupdate für Adobe Commerce verfügbar - APSB25-08](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [Cloud-Patches für  [!DNL Commerce] .1.4](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
 
 ## Problem
 
@@ -50,6 +50,6 @@ Das Problem tritt auf, weil die maximale Anzahl der zulässigen Cookies auf *50�
 
 ### Verwandtes Lesen
 
-* [Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/apply) im Adobe Commerce-Upgrade-Handbuch
-* [Best Practices für die skalierte Verteilung von Adobe Commerce-Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) im Adobe Commerce-Implementierungs-Playbook
-* [Versionshinweise für Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) im Handbuch zu Commerce on Cloud.
+* [Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/apply) im Adobe Commerce-Upgrade-Handbuch
+* [Best Practices für die skalierte Verteilung von Adobe Commerce-Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) im Adobe Commerce-Implementierungs-Playbook
+* [Versionshinweise für Commerce Cloud Tools Suite](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) im Handbuch zu Commerce on Cloud.
