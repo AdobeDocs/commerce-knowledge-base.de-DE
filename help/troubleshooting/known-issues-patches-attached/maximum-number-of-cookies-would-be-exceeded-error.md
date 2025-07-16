@@ -3,9 +3,10 @@ title: Fehler „Maximale Anzahl von Cookies wurde überschritten“ in Adobe Co
 description: Erfahren Sie, wie Sie das Adobe Commerce-Problem beheben können, bei dem ein Fehler auftritt, der angibt, dass die maximale Anzahl von Cookies überschritten würde.
 feature: Deploy, Support, Upgrade, Tools and External Services
 role: Admin, Developer
-source-git-commit: 44e167c801bbcd313f74c9fc51f9cde9473ef96f
+exl-id: 5c42ea7a-f023-4d34-8417-bb470efc3b84
+source-git-commit: 87e98607ee5e1cc41e4266836fd09531a290725e
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ Dieser Artikel enthält Patches zur Behebung des Fehlers *Maximale Anzahl von Co
 
 Adobe Commerce (alle Bereitstellungsmethoden) 2.4.4 - 2.4.7, mit einem der folgenden Patches:
 
-* MDVA-12304 Patch angewendet mit dem [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/release-notes)
-* [APSB25-08 isolierter Sicherheitspatch](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
-* [Cloud-Patches für  [!DNL Commerce] .1.4](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+* MDVA-12304 Patch angewendet mit dem [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Sicherheitsupdate für Adobe Commerce verfügbar - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [Cloud-Patches für  [!DNL Commerce] .1.4](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
 
 ## Problem
 
@@ -49,6 +50,6 @@ Das Problem tritt auf, weil die maximale Anzahl der zulässigen Cookies auf *50�
 
 ### Verwandtes Lesen
 
-* [Patches anwenden](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/apply) im Adobe Commerce-Upgrade-Handbuch
-* [Best Practices für die skalierte Verteilung von Adobe Commerce-Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) im Adobe Commerce-Implementierungs-Playbook
-* [Versionshinweise für Commerce Cloud Tools Suite](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) im Handbuch zu Commerce on Cloud.
+* [Patches anwenden](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/apply) im Adobe Commerce-Upgrade-Handbuch
+* [Best Practices für die skalierte Verteilung von Adobe Commerce-Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) im Adobe Commerce-Implementierungs-Playbook
+* [Versionshinweise für Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) im Handbuch zu Commerce on Cloud.
