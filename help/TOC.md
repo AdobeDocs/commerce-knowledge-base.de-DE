@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 4d3f571c55feb4752037429b9708e71dcf2c571b
+source-git-commit: 2d9b1c0934e7f2646462a73a786e126ab29719b0
 workflow-type: tm+mt
-source-wordcount: '3164'
+source-wordcount: '3193'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 0%
       * [Composer-Installationsbefehl überschreibt .gitignore-Datei, Adobe Commerce](/help/troubleshooting/installation-and-upgrade/custom-gitignore-file-overridden.md)
       * [Während der Installation, PHP-Datumswarnung](/help/troubleshooting/installation-and-upgrade/during-installation-php-date-warning.md)
       * [Während der Installation tritt bei Reflection Exception ein Fehler auf](/help/troubleshooting/installation-and-upgrade/during-installation-reflection-exception-error.md)
-      * [Bereichscode ist nicht festgelegt Fehler beim Ausführen des Setups:upgrade](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
+      * [Bereichscode wird beim Ausführen des Setups nicht als Fehler festgelegt](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
       * [Installation schlägt fehl; install.log kann nicht erstellt werden](/help/troubleshooting/installation-and-upgrade/installation-fails-cannot-create-install-log.md)
       * [Ausnahmen während der Installation](/help/troubleshooting/installation-and-upgrade/exceptions-during-installation.md)
       * [Fehler beim Installieren optionaler Beispieldaten](/help/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data.md)
@@ -286,10 +286,14 @@ ht-degree: 0%
       * [Bereitstellung bei Cache-Leerung fehlgeschlagen: Fehler „Im Namespace &#39;cache&#39; sind keine Befehle definiert.“](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Bekannte Probleme {#known-issues-patches-attached}
       * [Anleitungen zum Schützen Ihres Geschäfts und zum Drehen von Verschlüsselungsschlüsseln: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [Fehler beim Filtern von Bestellungen in Admin](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
-      * [Benutzende können kein Produkt in den Warenkorb legen, wenn in „Länder zulassen“ nichts ausgewählt ist.](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
-      * [Offenlegter Speicherort der Adobe Commerce-Admin-URL](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
-      * [Der Administrator kann keine Bestellung/Neuanordnung erstellen, wenn Braintree Payment aktiviert ist](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
+      * [Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
+      * [Fehlerbehebung bei der Rotation des Verschlüsselungsschlüssels: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
+      * [Sicherheitsupdate für Adobe Commerce verfügbar - [!DNL APSB24-40] überarbeitet und enthält isoliertes Patch für [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
+      * [[!DNL UPS] Migration der Versandmethodenintegration von  [!DNL SOAP]  zu  [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
+      * [[!DNL USPS] Ground Advantage Versandmethode Support Hotfix für AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
+      * [Adobe Commerce 2.4.3-p2 - 2.4.5 Sicherheits-Hotfix für CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
+      * [Adobe Commerce 2.4.4: Teilrechnungen können nicht erstellt werden](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
+      * [Erweiterte Suche zeigt nicht die relevantesten Ergebnisse an](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [Nach dem Upgrade von 2.4.4 auf 2.4.4-p1 heruntergestufte Pakete](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [Von der Server-E-Mail-Adresse gesendete Auftrags-E-Mail](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [Adobe Commerce 2.4.6 Fehler bei der Bestellung im Admin-Bedienfeld](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
