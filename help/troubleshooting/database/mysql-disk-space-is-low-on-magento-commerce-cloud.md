@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen für Fälle, in denen nur sehr weni
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services
 role: Developer
-source-git-commit: 80343c834563e7550569d225979edfa6a997bcfc
+source-git-commit: 660c463850abc145a22c34174aff45ac5ede6707
 workflow-type: tm+mt
 source-wordcount: '1319'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Die `/data/mysql`-Bereitstellung könnte aufgrund einer Reihe von Problemen ausg
 
 Es gibt einen sofortigen Schritt, den Sie unternehmen können, um [!DNL MySQL] wieder auf den richtigen Weg zu bringen (oder zu verhindern, dass es stecken bleibt): Machen Sie Platz frei, indem Sie große Tische spülen.
 
-Eine langfristige Lösung bestünde jedoch darin, mehr Speicherplatz zuzuweisen und den Best Practices für [Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de) zu folgen, einschließlich der Aktivierung der Funktion [Bestellung/Rechnung/Versand](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Eine langfristige Lösung bestünde jedoch darin, mehr Speicherplatz zuzuweisen und den Best Practices für [Datenbank](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) zu folgen, einschließlich der Aktivierung der Funktion [Bestellung/Rechnung/Versand](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 Im Folgenden finden Sie Details zu schnellen und langfristigen Lösungen.
 
@@ -124,7 +124,7 @@ Auf große `ibtmp1`-Dateien `/data/mysql` jedem Knoten prüfen: Diese Datei ist 
 
 >[!WARNING]
 >
->Es wird dringend empfohlen, ein Datenbank-Backup zu erstellen, bevor Sie Änderungen durchführen und diese in Zeiten hoher Site-Auslastung vermeiden. Siehe [Dump Ihrer Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
+>Es wird dringend empfohlen, ein Datenbank-Backup zu erstellen, bevor Sie Änderungen durchführen und diese in Zeiten hoher Site-Auslastung vermeiden. Siehe [Dump Ihrer Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
 
 Überprüfen Sie, ob große Tabellen vorhanden sind, und prüfen Sie, ob eine davon geleert werden kann. Gehen Sie dazu auf dem primären Knoten (Quellknoten) vor.
 
@@ -132,7 +132,7 @@ Beispielsweise können Tabellen mit Berichten normalerweise geleert werden. Weit
 
 Wenn keine großen Berichtstabellen vorhanden sind, sollten Sie `_index` Tabellen leeren, um die Adobe Commerce-Anwendung wieder auf den richtigen Weg zu bringen. `index_price` Tabellen wären die besten Kandidaten. Beispiel: `catalog_category_product_index_storeX` Tabellen, bei denen X Werte von „1“ bis zur maximalen Speicheranzahl aufweisen kann. Beachten Sie, dass Sie eine Neuindizierung durchführen müssen, um die Daten in diesen Tabellen wiederherzustellen. Bei großen Katalogen kann diese Neuindizierung sehr lange dauern.
 
-Warten Sie nach dem Leeren auf den Abschluss der WSREP-Synchronisierung. Sie können jetzt Sicherungskopien erstellen und wichtigere Schritte ausführen, um mehr Speicherplatz hinzuzufügen, z. B. mehr Speicherplatz zuweisen/kaufen und die Funktion [Bestellung/Rechnung/](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/order-management/orders/order-archive) aktivieren.
+Warten Sie nach dem Leeren auf den Abschluss der WSREP-Synchronisierung. Sie können jetzt Sicherungskopien erstellen und wichtigere Schritte ausführen, um mehr Speicherplatz hinzuzufügen, z. B. mehr Speicherplatz zuweisen/kaufen und die Funktion [Bestellung/Rechnung/](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive) aktivieren.
 
 ### Überprüfen der binären Protokollierungseinstellungen
 
@@ -148,7 +148,7 @@ Wenn Sie keinen Zugriff auf [!DNL MySQL] Server-Einstellungen haben, bitten Sie 
    mysql -h127.0.0.1 -p`php -r "echo (include('app/etc/env.php'))['db']['connection']['default']['password'];"` -u`whoami` `whoami`
    ```
 
-   Ausführliche Anweisungen finden Sie unter [Verbinden und Ausführen von Abfragen für die Adobe Commerce-Datenbank](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/backend-development/remote-db-connection-execute-queries).
+   Ausführliche Anweisungen finden Sie unter [Verbinden und Ausführen von Abfragen für die Adobe Commerce-Datenbank](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/remote-db-connection-execute-queries).
 
 1. Auf nicht verwendeten Speicherplatz prüfen:
 
@@ -161,17 +161,17 @@ Wenn Sie keinen Zugriff auf [!DNL MySQL] Server-Einstellungen haben, bitten Sie 
 
    | table_name | size_MB | Allocate_but_unused |
    |----------------------|----------|--------------------------|
-   | vertex_taxrequest | 28145,20 | 14943,00 |
+   | sales_order_grid | 28145,20 | 14943,00 |
 
 
    Überprüfen Sie die Ausgabe, um festzustellen, ob Speicher vorhanden ist, der zugewiesen wurde, aber nicht verwendet wird. Dies tritt auf, wenn Daten aus einer Tabelle gelöscht wurden, der Speicher dieser Tabelle jedoch noch zugewiesen ist.
 
 
-1. Setzen Sie Ihre Site in den Wartungsmodus und stoppen Sie Cron-Aufträge, damit keine Interaktionen in der Datenbank stattfinden. Anweisungen hierzu finden Sie unter [Wartungsmodus aktivieren oder deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) und [Cron-Aufträge deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+1. Setzen Sie Ihre Site in den Wartungsmodus und stoppen Sie Cron-Aufträge, damit keine Interaktionen in der Datenbank stattfinden. Anweisungen hierzu finden Sie unter [Wartungsmodus aktivieren oder deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) und [Cron-Aufträge deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
 1. Geben Sie diesen Platz zurück, indem Sie die Tabelle mit dem folgenden Befehl neu erstellen (beispielsweise unter Verwendung der oben aufgeführten Tabelle mit dem am meisten ungenutzten Platz):
 
    ```sql
-   ALTER TABLE vertex_taxrequest Engine = "INNODB";
+   ALTER TABLE sales_order_grid Engine = "INNODB";
    ```
 
 1. Führen Sie die folgende Abfrage aus, um nach nicht zugewiesenem Speicherplatz für jede Tabelle zu suchen, die einen hohen Wert im **[!UICONTROL Allocated_but_unused]** anzeigt.
@@ -182,7 +182,7 @@ Wenn Sie keinen Zugriff auf [!DNL MySQL] Server-Einstellungen haben, bitten Sie 
    ```
 
 
-1. Jetzt [Wartungsmodus deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#enable-or-disable-maintenance-mode-1) und [Cron-Aufträge aktivieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+1. Jetzt [Wartungsmodus deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#enable-or-disable-maintenance-mode-1) und [Cron-Aufträge aktivieren](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
 
 
 ### Mehr Speicherplatz zuweisen/kaufen
@@ -196,4 +196,4 @@ Wenn Sie Ihr Speicherplatzlimit erreicht haben und weiterhin Probleme mit wenig 
 
 ## Verwandtes Lesen
 
-[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
