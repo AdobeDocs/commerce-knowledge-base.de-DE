@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 15d38d9b0cb18536326c0afbb12b8a21eaee596c
+source-git-commit: 0569b4874400e0d313ad556cc7c07abfc7647368
 workflow-type: tm+mt
-source-wordcount: '3029'
+source-wordcount: '3013'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,6 @@ ht-degree: 0%
 * [Adobe Commerce Support-Wissensdatenbank](/help/overview.md)
 * Support-Tools {#support-tools}
    * [Support-Tools - Übersicht](/help/support-tools/overview.md)
-   * Site-Wide Analysis Tool {#site-wide-analysis-tool}
-      * [Site-Wide Analysis Tool von Adobe: Übersicht](/help/support-tools/site-wide-analysis-tool/swat-tool-overview.md)
-      * [Häufig gestellte Fragen zum Adobe Commerce Site-Wide Analysis Tool-Bericht](/help/support-tools/site-wide-analysis-tool/swat-faq.md)
 * Ankündigungen {#announcements}
    * [Ankündigungen - Übersicht](/help/announcements/overview.md)
    * Adobe Commerce-Ankündigungen {#commerce-announcements}
