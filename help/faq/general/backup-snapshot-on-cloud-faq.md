@@ -3,7 +3,7 @@ title: 'Backup (Snapshot) in der Cloud: Häufig gestellte Fragen'
 description: In diesem Artikel werden die Grundlagen zum Sichern Ihrer Umgebungen mit Snapshots auf Adobe Commerce in der Cloud-Infrastruktur behandelt.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 3df2d07bb5765fb0ddcb4417b7c4e4ae33ef2d42
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Sie können [ein Adobe Commerce-Support-Ticket ](/help/help-center-guide/help-ce
 Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Die Backups werden mithilfe der **verschlüsselten Momentaufnahmen des Amazon Web Services Elastic Block Store (AWS EBS))**.
 * Umgebungs-Snapshots umfassen Ihr gesamtes System (Dateisystem und Datenbank).
-* Die Aufbewahrungsdauer für automatische Momentaufnahmen **ist unterschiedlich** und folgt [dem Zeitplan](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
+* Die Aufbewahrungsdauer für automatische Momentaufnahmen **ist unterschiedlich** und folgt [dem Zeitplan](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
 
 >[!NOTE]
 >
@@ -50,15 +50,15 @@ Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wie
 
 ### Integrations-(Entwicklungs-)Umgebung
 
-* Ihre [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) wird **nicht automatisch gesichert** Sie können jedoch Momentaufnahmen (**)**.
+* Ihre [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) wird **nicht automatisch gesichert** Sie können jedoch Momentaufnahmen (**)**.
 * Sie können manuelle Momentaufnahmen für Integrationsumgebungen in Nicht-Live-Stores erstellen.
 * Möglicherweise **mehrere Momentaufnahmen** die manuell ausgelöst wurden.
 * Ein manuell ausgelöster Snapshot wird **7 Tage** gespeichert.
 
 **Verwandte Artikel in unserer Entwicklerdokumentation:**
 
-* [Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Snapshot erstellen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Snapshot erstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## Umgebungs-Snapshot, Starterplan
 
@@ -68,7 +68,7 @@ Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wie
 
 ## Wiederherstellen eines Umgebungsschnappschusses
 
-Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starterplan oder Integration in Pro Plan) wiederherzustellen, führen Sie die Schritte in [Backup-Verwaltung: Manuelles Backup wiederherstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Handbuch zu Commerce in Cloud-Infrastruktur aus.
+Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starterplan oder Integration in Pro Plan) wiederherzustellen, führen Sie die Schritte in [Backup-Verwaltung: Manuelles Backup wiederherstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Handbuch zu Commerce in Cloud-Infrastruktur aus.
 
 ## Datenbank-Backup (DB)
 
@@ -78,8 +78,8 @@ Ein Snapshot ist ein vollständiges Backup einer Umgebung, das alle persistenten
 
 >[!NOTE]
 >
->Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `/app`. Die anderen Dateien werden vom Build- und [-Prozess erstellt/generiert](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen auch die verbleibenden Dateien aus Ihrem Git-Repository auschecken.
+>Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `/app`. Die anderen Dateien werden vom Build- und [-Prozess erstellt/generiert](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen auch die verbleibenden Dateien aus Ihrem Git-Repository auschecken.
 
-[Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
+[Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
 
 Senden Sie eine [Support-Anfrage](/help/help-center-guide/help-center/magento-help-center-user-guide.md) für einen DB-Snapshot von Pro Production and Staging nur, wenn Sie die DB zu einem bestimmten Zeitpunkt benötigen. Wenn Sie nur eine aktuelle Sicherung Ihrer DB benötigen (in einer beliebigen Umgebung), finden Sie weitere Informationen im Knowledge-Base-Artikel [Generieren von Datenbank-Dumps in der Cloud](/help/how-to/general/create-database-dump-on-cloud.md).

@@ -4,9 +4,9 @@ description: In diesem Artikel wird beschrieben, wie Sie das Problem beheben kö
 exl-id: e2c00d4d-31c3-4446-a317-a8ac92c707d5
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ In diesem Artikel wird beschrieben, wie Sie das Problem beheben können, dass di
 1. Schreiben Sie in Ihrer lokalen Umgebung eine benutzerdefinierte Klasse mit einer Abhängigkeit von der automatisch generierten Klasse.
 1. Führen Sie das Szenario aus, in dem die benutzerdefinierte Klasse ausgelöst wird, und sehen Sie, wie sie ordnungsgemäß funktioniert.
 1. Übergeben Sie Ihre Änderungen und übertragen Sie sie in die Integrationsumgebung. Dadurch würde der Bereitstellungsprozess Trigger. Die Bereitstellung war erfolgreich.
-1. Führen Sie in [Integrationsumgebung](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
+1. Führen Sie in [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
 
 <u>Erwartetes Ergebnis</u>
 
