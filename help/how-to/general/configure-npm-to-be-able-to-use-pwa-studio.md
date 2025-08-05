@@ -48,10 +48,10 @@ Um die erforderliche NPM-Version festzulegen, geben Sie sie in der `.magento.app
    > ```
 
 1. Speichert Änderungen in der Datei.
-1. Git überträgt die bearbeitete Datei in Ihre [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+1. Git überträgt die bearbeitete Datei in Ihre [Integrationsumgebung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242).
 
 Die Änderungen treten in Kraft, nachdem Sie die aktualisierte YAML-Datei per Git in die Umgebung übertragen haben.
 
 ## Verwandte Dokumentation
 
-* [Anwendungskonfiguration: Erweiterungspunkte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) in unserem Handbuch zu Adobe Commerce in Cloud-Infrastrukturen.
+* [Anwendungskonfiguration: Erweiterungspunkte](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=de) in unserem Handbuch zu Adobe Commerce in Cloud-Infrastrukturen.

@@ -26,7 +26,7 @@ In diesem Artikel wird beschrieben, wie Sie das Problem beheben können, dass di
 1. Schreiben Sie in Ihrer lokalen Umgebung eine benutzerdefinierte Klasse mit einer Abhängigkeit von der automatisch generierten Klasse.
 1. Führen Sie das Szenario aus, in dem die benutzerdefinierte Klasse ausgelöst wird, und sehen Sie, wie sie ordnungsgemäß funktioniert.
 1. Übergeben Sie Ihre Änderungen und übertragen Sie sie in die Integrationsumgebung. Dadurch würde der Bereitstellungsprozess Trigger. Die Bereitstellung war erfolgreich.
-1. Führen Sie in [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
+1. Führen Sie in [Integrationsumgebung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242) das Szenario aus, in dem Ihre benutzerdefinierte Klasse ausgelöst wird.
 
 <u>Erwartetes Ergebnis</u>
 
