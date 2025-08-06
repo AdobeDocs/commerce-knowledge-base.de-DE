@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
+source-git-commit: acb00b0e25b85a558675993d63a80a59df7af5d7
 workflow-type: tm+mt
-source-wordcount: '3006'
+source-wordcount: '2998'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 0%
    * [Ankündigungen - Übersicht](/help/announcements/overview.md)
    * Adobe Commerce-Ankündigungen {#commerce-announcements}
       * [Holiday Surge Capacity Requests für Adobe Commerce in unserer Cloud-Infrastruktur](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
-      * [Upgrade-Kompatibilitäts-Tool 1.1.0 für Adobe Commerce](/help/announcements/adobe-commerce-announcements/upgrade-compatibility-tool-for-magento.md)
       * [Häufig gestellte Fragen zur aktualisierten Lebenszyklusrichtlinie für Adobe Commerce-Versionen](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Wechseln zu OpenSearch für Adobe Commerce in Cloud 2.4.4](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [Adobe Commerce Recommendations für PHP-Schwachstellen](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
