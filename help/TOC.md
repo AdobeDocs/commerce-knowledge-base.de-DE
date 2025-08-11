@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: acb00b0e25b85a558675993d63a80a59df7af5d7
+source-git-commit: 66ac9de94e9a4a1eccdb5aac1875ecf0a0637e90
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,6 @@ ht-degree: 0%
       * [503-Fehler beim Zugriff auf Adobe Commerce im Webbrowser](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [Site kann nicht geladen werden, da der Wartungsmodus aktiviert bleibt](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [Fehlerbehebungsdiagramm für Site-Downs](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
-      * [Fehlerbehebung beim Herunterfahren der Adobe Commerce-Site](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
       * [Durch das Anwenden eines Patches wird Ihre Site heruntergefahren](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Fehler 404 auf allen Seiten aufgrund eines Problems mit der Inhalts-Staging-Umgebung](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
