@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Experience League Support-Benutzerhandbuch für Adobe Commerce
 
-In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an den [Experience League-Support](https://experienceleague.adobe.com/home#support) senden und gemeinsamen Zugriff auf die Adobe Commerce-Konten gewähren.
+In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an den [Experience League-Support](https://experienceleague.adobe.com/home?lang=de#support) senden und gemeinsamen Zugriff auf die Adobe Commerce-Konten gewähren.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ In diesem Handbuch erfahren Sie, wie Sie ein Support-Ticket an den [Experience L
 
 >[!NOTE]
 >
->Um Ihre zuvor eingereichten Anfragen im Adobe Commerce Help Center anzuzeigen, müssen Sie jetzt auf https://support.magento.com/hc/en-us/requests gehen, da diese Fälle nicht in das neue Support-Ticket-System migriert wurden. Das Hilfezentrum ist jetzt schreibgeschützt. Um weiterhin Support für das ursprüngliche Problem zu erhalten, müssen Sie ein Folgeticket an den [Experience League-Support senden](https://experienceleague.adobe.com/home#support).
+>Um Ihre zuvor eingereichten Anfragen im Adobe Commerce Help Center anzuzeigen, müssen Sie jetzt auf https://support.magento.com/hc/en-us/requests gehen, da diese Fälle nicht in das neue Support-Ticket-System migriert wurden. Das Hilfezentrum ist jetzt schreibgeschützt. Um weiterhin Support für das ursprüngliche Problem zu erhalten, müssen Sie ein Folgeticket an den [Experience League-Support senden](https://experienceleague.adobe.com/home?lang=de#support).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Mit der Anmeldung können Sie Fragen von Agenten auf Support-Tickets senden, akt
 
 Gehen Sie wie folgt vor, um sich beim Adobe Experience League-Support anzumelden:
 
-1. Navigieren Sie zu [experienceleague.adobe.com](https://experienceleague.adobe.com/).
+1. Navigieren Sie zu [experienceleague.adobe.com](https://experienceleague.adobe.com/de).
 1. Melden Sie sich mit Ihren Adobe-Anmeldedaten an.
 
 ![Anmelden bei Experience League](assets/experience_league_sign_in.png)
@@ -146,7 +146,7 @@ Gehen Sie wie folgt vor, um einen neuen Support-Fall über die Startseite von Ad
 >1. Navigieren Sie zu accounts.magento.com und melden Sie sich mit demselben Profil (Firmenprofil, Schulprofil oder persönliches Profil) an, das Sie für die Verwaltung von Support-Fällen in Adobe Experience League verwenden werden.
 >1. Nachdem Sie sich erfolgreich bei Ihrem Profil accounts.magento.com angemeldet haben, navigieren Sie zurück zu experienceleague.adobe.com und melden Sie sich an.
 >1. Wählen Sie Ihre Organisation im Dropdown-Menü Organisation aus.
->1. Wenn Ihr Unternehmen weiterhin nicht angezeigt wird, wenden Sie sich an Ihren Commerce-Administrator, um Support-Delegiertenrechte zu erhalten. Weitere Informationen finden Sie im Hilfeartikel zur [Commerce-Kontofreigabe](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
+>1. Wenn Ihr Unternehmen weiterhin nicht angezeigt wird, wenden Sie sich an Ihren Commerce-Administrator, um Support-Delegiertenrechte zu erhalten. Weitere Informationen finden Sie im Hilfeartikel zur [Commerce-Kontofreigabe](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-share).
 
 >[!NOTE]
 >
@@ -178,14 +178,14 @@ Sie müssen über ein Konto sowohl auf https://account.adobe.com als auch auf ht
 
 Gehen Sie wie folgt vor, um ein neues Support-Ticket über Ihre Adobe Commerce-Kontoseite einzureichen:
 
-1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an. Siehe [detaillierte Anweisungen](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) in unserem Benutzerhandbuch.
+1. Melden Sie sich bei Ihrem Adobe Commerce-Konto an. Siehe [detaillierte Anweisungen](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=de#create-a-commerce-account) in unserem Benutzerhandbuch.
 1. Klicken Sie auf **Registerkarte** Support“.
 
    ![magento_account_support_tab](assets/magento_account_support_tab.png){width="800"}
 
 1. Die Adobe Experience League-Support-Seite wird für Sie geladen.
 1. Wählen Sie **[!UICONTROL Open Ticket]** aus dem Menü links aus.
-1. Füllen Sie die [Felder](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) aus.
+1. Füllen Sie die [Felder](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) aus.
 1. Klicken Sie **Senden**.
 
 #### *E-Mail-Adresse überprüfen* Fehlermeldung auf der Adobe Commerce-Kontoseite {#verify-email-address-error}
@@ -210,7 +210,7 @@ Sie können die von Ihnen übermittelten Fälle persönlich einsehen, indem Sie 
 
 #### Historische Anfragen im Adobe Commerce-Hilfezentrum anzeigen
 
-Erfahren Sie mehr darüber, wie Sie **Ihre historischen Fälle anzeigen** im Adobe Commerce Help Center in [Stilllegung des Adobe Commerce Help Centers](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) in unserer Adobe Commerce Knowledge Base.
+Erfahren Sie mehr darüber, wie Sie **Ihre historischen Fälle anzeigen** im Adobe Commerce Help Center in [Stilllegung des Adobe Commerce Help Centers](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) in unserer Adobe Commerce Knowledge Base.
 
 #### Überwachte Fälle anzeigen
 
@@ -253,7 +253,7 @@ Sie können Beobachter zu Support-Fällen hinzufügen, die von Mitgliedern Ihrer
 
 >[!NOTE]
 >
->Weitere Informationen zum Hinzufügen und Entfernen von Beobachtern für Ihren Fall finden Sie im [Video zum Hinzufügen und Entfernen von Beobachtern, Schließen und erneuten Öffnen von Tickets](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>Weitere Informationen zum Hinzufügen und Entfernen von Beobachtern für Ihren Fall finden Sie im [Video zum Hinzufügen und Entfernen von Beobachtern, Schließen und erneuten Öffnen von Tickets](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 ### Kommentare in Ihrem Fall {#comments-in-your-case}
 
@@ -273,17 +273,17 @@ Um Ihren Fall zu schließen, klicken Sie unten rechts im **[!UICONTROL Close cas
 
 >[!NOTE]
 >
->Weitere Informationen zum Schließen des Tickets finden Sie im Video [Hinzufügen und Entfernen von Beobachtern, Schließen und Erneutes Öffnen von Tickets](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>Weitere Informationen zum Schließen des Tickets finden Sie im Video [Hinzufügen und Entfernen von Beobachtern, Schließen und Erneutes Öffnen von Tickets](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 ### Fall erneut öffnen {#reopen-case}
 
 >[!NOTE]
 >
->**Sie können einen Fall nur innerhalb von 14 Tagen nach seiner Schließung erneut öffnen.** Wenn Sie mehr als 14 Tage nach Abschluss des Falles verbringen, aber dennoch Hilfe zu einem Problem anfordern möchten, müssen Sie einen neuen Fall eröffnen.<br>Weitere Informationen zum Schließen und erneuten Öffnen von Fällen finden Sie im [Video zum Hinzufügen und Entfernen von Beobachtern, Schließen und erneuten Öffnen von Tickets](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>**Sie können einen Fall nur innerhalb von 14 Tagen nach seiner Schließung erneut öffnen.** Wenn Sie mehr als 14 Tage nach Abschluss des Falles verbringen, aber dennoch Hilfe zu einem Problem anfordern möchten, müssen Sie einen neuen Fall eröffnen.<br>Weitere Informationen zum Schließen und erneuten Öffnen von Fällen finden Sie im [Video zum Hinzufügen und Entfernen von Beobachtern, Schließen und erneuten Öffnen von Tickets](https://experienceleague.adobe.com/de/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 >[!NOTE]
 >
->Sie können einen Fall nicht erneut öffnen, indem Sie auf eine E-Mail-Benachrichtigung von einem geschlossenen Ticket antworten. Um den Fall erneut zu öffnen, stellen Sie sicher, dass Sie vom Kontoinhaber [Freigegebenen Zugriff](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26164) erhalten haben.
+>Sie können einen Fall nicht erneut öffnen, indem Sie auf eine E-Mail-Benachrichtigung von einem geschlossenen Ticket antworten. Um den Fall erneut zu öffnen, stellen Sie sicher, dass Sie vom Kontoinhaber [Freigegebenen Zugriff](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26164) erhalten haben.
 
 ### Senden eines Tickets mit der Cloud-Konsole {#cloud-console}
 
@@ -293,16 +293,16 @@ Gehen Sie wie folgt vor, um ein neues Support-Ticket über die Cloud-Konsole ein
 1. Wählen Sie **[!UICONTROL Support]** im Menü USER aus.
 1. Die **[!UICONTROL My Tickets]** Seite wird geladen.
 1. Klicken Sie oben rechts auf **[!UICONTROL Submit a ticket]** .
-1. Füllen Sie die [Felder](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) aus.
+1. Füllen Sie die [Felder](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions) aus.
 1. Klicken Sie auf **[!UICONTROL Submit]**.
 
 ### Adobe Commerce P1-Hotline {#P1-hotline}
 
-Der Artikel [Adobe Commerce P1 Hotline](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) enthält die P1-Hotline-Nummern für Adobe Commerce, wenn Sie während eines P1-Vorfalls Hilfe anfordern, und erläutert, welche Informationen bereitgestellt werden müssen.
+Der Artikel [Adobe Commerce P1 Hotline](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=de) enthält die P1-Hotline-Nummern für Adobe Commerce, wenn Sie während eines P1-Vorfalls Hilfe anfordern, und erläutert, welche Informationen bereitgestellt werden müssen.
 
 ### Adobe Commerce Shared Responsibility -Betriebsmodell {#shared-responsibility-operational-model}
 
-Siehe den Artikel über das Betriebsmodell mit gemeinsamer Verantwortung für [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
+Siehe den Artikel über das Betriebsmodell mit gemeinsamer Verantwortung für [Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
 , um nur die betrieblichen Zuständigkeiten für unser Pro-Infrastruktur-Angebot zu klären.
 
 ### Follow-up-Ticket öffnen {#follow-up}
@@ -327,17 +327,17 @@ Benutzende, denen ein freigegebener Zugriff gewährt wurde, können diesen Zugri
 
 ### Freigegebenen Zugriff bereitstellen {#provide-shared-access}
 
-Im Abschnitt [Freigeben eines Commerce-](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share)&quot; in den ersten Schritten mit Adobe Commerce finden Sie ausführliche Schritte zum Einrichten eines freigegebenen Kontos.
+Im Abschnitt [Freigeben eines Commerce-](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-share)&quot; in den ersten Schritten mit Adobe Commerce finden Sie ausführliche Schritte zum Einrichten eines freigegebenen Kontos.
 
 >[!NOTE]
 >
->Der/die Benutzende muss über ein bestehendes Konto verfügen, damit ihm/ihr gemeinsamer Zugriff gewährt werden kann. Weitere Informationen finden Sie [Erstellen eines Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)Kontos).
+>Der/die Benutzende muss über ein bestehendes Konto verfügen, damit ihm/ihr gemeinsamer Zugriff gewährt werden kann. Weitere Informationen finden Sie [Erstellen eines Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)Kontos).
 
 Nachdem Sie einem neuen Benutzer gemeinsamen Zugriff gewährt haben, sind die zugehörigen Informationen auf der Seite **Freigegebener Zugriff** > **Berechtigungen verwalten** Ihres Adobe Commerce-Kontos verfügbar.
 
 >[!NOTE]
 >
->Freigegebener Zugriff gewährt nicht automatisch Zugriff auf die Commerce Cloud-Konsole. Sie müssen den [ separat zum Cloud-Projekt hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
+>Freigegebener Zugriff gewährt nicht automatisch Zugriff auf die Commerce Cloud-Konsole. Sie müssen den [ separat zum Cloud-Projekt hinzufügen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
 
 ![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
@@ -385,7 +385,7 @@ Nachdem Sie jedoch die Berechtigungen für diese Benutzer mit freigegebenem Zugr
 
 ![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
-Weitere Informationen finden Sie in der Dokumentation [Verwalten des Benutzerzugriffs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen.
+Weitere Informationen finden Sie in der Dokumentation [Verwalten des Benutzerzugriffs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de#manage-users-from-the-project-web-interface) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen.
 
 ### Auf freigegebenes Konto zugreifen (Konten wechseln) {#switch-accounts}
 
