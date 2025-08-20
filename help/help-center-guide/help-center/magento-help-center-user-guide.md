@@ -321,7 +321,7 @@ Sie können den freigegebenen Zugriff mithilfe Ihrer Adobe Commerce-Kontoseite u
 
 Nur der Kontoinhaber (primärer Kontoinhaber) mit den entsprechenden Berechtigungen kann anderen Benutzern gemeinsamen Zugriff gewähren.
 
-Die Verwaltung von Benutzern und deren Zugriff liegt in der Verantwortung des Kunden, insbesondere in der Perspektive des gemeinsamen Zugriffs. Daher kann das Adobe Commerce-Supportteam im Namen einer Kundin oder eines Kunden keinen gemeinsamen Zugriff auf ein Adobe Commerce-Konto bereitstellen. Kunden wird empfohlen, Benutzer mit freigegebenem Zugriff selbst hinzuzufügen, indem sie die Adobe Commerce-Kontoseite [](https://account.magento.com/).
+Die Verwaltung von Benutzern und deren Zugriff liegt in der Verantwortung des Kunden, insbesondere in der Perspektive des gemeinsamen Zugriffs. Daher kann das Adobe Commerce-Supportteam im Namen einer Kundin oder eines Kunden keinen gemeinsamen Zugriff auf ein Adobe Commerce-Konto bereitstellen. Kunden wird empfohlen, Benutzer mit freigegebenem Zugriff selbst hinzuzufügen, indem sie die Adobe Commerce-Kontoseite [&#128279;](https://account.magento.com/).
 
 Benutzende, denen ein freigegebener Zugriff gewährt wurde, können diesen Zugriff nicht an andere Benutzende übertragen oder gewähren.
 
