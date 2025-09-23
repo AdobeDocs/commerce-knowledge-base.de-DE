@@ -43,7 +43,7 @@ Die *REDIS\_PORT* und *REDIS\_HOST*-Variablen können von `app/etc/env.php` abge
 >
 >Sie können auch die Redis-Host-Adresse und Port-Nummer abrufen, indem Sie diesen CLI-Befehl ausführen:
 >   
-```bash
+>   ```bash
 >   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
 >   ```
 
