@@ -26,7 +26,7 @@ In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Ver
 
 * Adobe Commerce 2.4.0 ist installiert.
 * B2B ist installiert.
-* Legen Sie B2B-Funktionen auf **Unternehmen aktivieren =** *Ja* , **Freigegebenen Katalog aktivieren =** *Nein* und **** B2B-Angebot aktivieren =*Ja* fest.
+* Legen Sie B2B-Funktionen auf **Unternehmen aktivieren =** *Ja* , **Freigegebenen Katalog aktivieren =** *Nein* und **&#x200B;**&#x200B;B2B-Angebot aktivieren =*Ja* fest.
 * Kundenkonto erstellen.
 * Erstellen Sie ein Unternehmenskonto mit dem zuvor erstellten Kunden als Unternehmensadministrator.
 * Erstellen Sie ein einfaches Produkt (Beispiel: name &amp; **SKU** = TEST SIMPLE 1), das nicht **Standard (Allgemein) zugewiesen**.
