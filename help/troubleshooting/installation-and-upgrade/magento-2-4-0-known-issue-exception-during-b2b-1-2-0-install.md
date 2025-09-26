@@ -69,8 +69,8 @@ Anweisungen [ Composer-Patches finden Sie unter „Anwenden eines von Adobe bere
 
 <u>Git-Patch-</u>
 
-* Siehe [Anwenden von ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
-* Siehe [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce.
+* Siehe [Anwenden von ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
+* Siehe [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce.
 
 ## Verwandtes Lesen
 
