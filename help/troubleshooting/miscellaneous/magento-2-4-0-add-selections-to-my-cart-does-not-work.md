@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Problemumgehung für ein bekanntes Probl
 exl-id: b0830ec2-2aea-4afb-8d02-e9c8f54283be
 feature: Orders, Shopping Cart
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ Die **„Auswahl zum Warenkorb hinzufügen** oben auf der Seite funktioniert wei
 
 ## Verwandtes Lesen
 
-* [MerchDocs&#39; Verwalten eines Warenkorbs](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) in unserem Benutzerhandbuch.
-* [Bekanntes Problem mit Adobe Commerce 2.4.0: Rohdaten von Nachrichten werden in der Storefront ](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) unserer Support-Wissensdatenbank angezeigt.
+* [MerchDocs&#39; Verwalten eines Warenkorbs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) in unserem Benutzerhandbuch.
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) in unserer Support-Wissensdatenbank.
-* [Bekanntes Problem mit Adobe Commerce 2.4.0: Braintree-Zahlungsmethoden werden beim Checkout für mehrere Adressen nicht angezeigt](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) in unserer Support-Wissensdatenbank.
+* [Bekanntes Problem mit Adobe Commerce 2.4.0: Braintree-Zahlungsmethoden werden beim Checkout für mehrere Adressen nicht ](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) unserer Support-Wissensdatenbank angezeigt.
