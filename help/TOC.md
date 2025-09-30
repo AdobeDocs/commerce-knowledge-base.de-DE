@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 2b12aeb9227944fc80da50d50fbc5668f4622269
+source-git-commit: 750c0c41580af90cc5c883472326f2073cfe0b23
 workflow-type: tm+mt
-source-wordcount: '2898'
+source-wordcount: '2891'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 0%
 * Fehlerbehebung {#troubleshooting}
    * [Übersicht über die Fehlerbehebung](/help/troubleshooting/overview.md)
    * Datenbank {#database}
-      * [Mehrere Zeilen in der Datenbank für dieselbe Entität](/help/troubleshooting/database/multiple-rows-in-database-for-same-entity.md)
       * [Überprüfen langsamer Abfragen und Prozesse MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Datenbank-Upload verliert Verbindung zu MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [Änderungen an der Datenbank werden nicht in der Storefront übernommen](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
