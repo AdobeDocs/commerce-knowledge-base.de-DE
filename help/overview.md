@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![Homepage der Wissensdatenbank](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-Die Informationen in dieser Wissensdatenbank ergänzen die [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs) und das [Adobe Commerce-Händlerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) sowie andere Adobe Commerce-Publikationen. Es behandelt Fehlerbehebung und Best Practices, enthält Ankündigungen, beantwortet häufig gestellte Fragen und zeigt bestimmte Szenarien auf, die (aus welchen Gründen auch immer) in der offiziellen Dokumentation nicht erwähnt wurden.
+Die Informationen in dieser Wissensdatenbank ergänzen die [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs) und das [Adobe Commerce-Händlerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de) sowie andere Adobe Commerce-Publikationen. Es behandelt Fehlerbehebung und Best Practices, enthält Ankündigungen, beantwortet häufig gestellte Fragen und zeigt bestimmte Szenarien auf, die (aus welchen Gründen auch immer) in der offiziellen Dokumentation nicht erwähnt wurden.
 
 ## Was befindet sich in dieser Wissensdatenbank?
 
