@@ -106,7 +106,7 @@ Heap-Dumps (`*.hprof`) mit der System-Shell entfernen:
 find /tmp/*.hprof -type f -delete
 ```
 
-Wenn Sie nicht über die Berechtigung zum Löschen von Dateien verfügen, die von einem anderen Benutzer erstellt wurden (in diesem Fall Elasticsearch), aber sehen, dass die Dateien groß sind, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) um sie zu bearbeiten.
+Wenn Sie nicht über die Berechtigung zum Löschen von Dateien verfügen, die von einem anderen Benutzer erstellt wurden (in diesem Fall Elasticsearch), aber sehen, dass die Dateien groß sind, erstellen [&#x200B; ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) um sie zu bearbeiten.
 
 #### Überprüfen von Datenbank-Dumps/Backups
 
@@ -120,7 +120,7 @@ Wenn Sie nicht über die Berechtigung zum Löschen von Dateien verfügen, die vo
 
 Um Probleme mit `/tmp` zu vermeiden, die vollständig sind, befolgen Sie die folgenden Empfehlungen:
 
-* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche macht in der Regel die meisten der umfangreichen temporären Tabellenerstellungen überflüssig. Siehe [Konfigurieren von Adobe Commerce für die Verwendung ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) Elasticsearch in unserer Entwicklerdokumentation.
+* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche macht in der Regel die meisten der umfangreichen temporären Tabellenerstellungen überflüssig. Siehe [Konfigurieren von Adobe Commerce für die Verwendung &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) Elasticsearch in unserer Entwicklerdokumentation.
 * Vermeiden Sie das Ausführen der `SELECT` Abfrage für Spalten ohne Indizes, da dies viel temporären Speicherplatz beansprucht. Sie können auch die Indizes hinzufügen.
 * Erstellen Sie einen Cron, um `/tmp` zu bereinigen, indem Sie den folgenden Befehl in der CLI ausführen:
 
