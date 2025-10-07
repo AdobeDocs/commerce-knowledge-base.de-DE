@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für den Fall, dass die Bereitst
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: aa4cfbceb745f1a06b8a8f9e93cbdebbc151458b
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -92,9 +92,9 @@ Es gibt mehrere Services, die möglicherweise Dateien in `/tmp` speichern.
 
 #### Überprüfen und Freigeben von MySQL-Speicherplatz
 
-Befolgen Sie die Anweisungen in [MySQL Speicherplatz ist auf Adobe Commerce in der Cloud-Infrastruktur zu niedrig > Überprüfen Sie und geben Sie Speicherplatz frei](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md#check_and_free) in unserer Support-Wissensdatenbank.
+Befolgen Sie die Anweisungen in [MySQL Speicherplatz ist auf Adobe Commerce in der Cloud-Infrastruktur zu niedrig > Überprüfen Sie und geben Sie Speicherplatz frei](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) in unserer Support-Wissensdatenbank.
 
-#### Überprüfen von Elasticsearch-Heap-Dumps
+#### Überprüfen von Elasticsearch Heap-Dumps
 
 >[!WARNING]
 >
@@ -106,7 +106,7 @@ Heap-Dumps (`*.hprof`) mit der System-Shell entfernen:
 find /tmp/*.hprof -type f -delete
 ```
 
-Wenn Sie nicht über die Berechtigung zum Löschen von Dateien verfügen, die von einem anderen Benutzer erstellt wurden (in diesem Fall von Elasticsearch), aber sehen, dass die Dateien groß sind, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) um sie zu bearbeiten.
+Wenn Sie nicht über die Berechtigung zum Löschen von Dateien verfügen, die von einem anderen Benutzer erstellt wurden (in diesem Fall Elasticsearch), aber sehen, dass die Dateien groß sind, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) um sie zu bearbeiten.
 
 #### Überprüfen von Datenbank-Dumps/Backups
 
@@ -120,7 +120,7 @@ Wenn Sie nicht über die Berechtigung zum Löschen von Dateien verfügen, die vo
 
 Um Probleme mit `/tmp` zu vermeiden, die vollständig sind, befolgen Sie die folgenden Empfehlungen:
 
-* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche macht in der Regel die meisten der umfangreichen temporären Tabellenerstellungen überflüssig. Siehe [Adobe Commerce für die Verwendung von Elasticsearch konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/configure-search-engine) in unserer Entwicklerdokumentation.
+* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche macht in der Regel die meisten der umfangreichen temporären Tabellenerstellungen überflüssig. Siehe [Konfigurieren von Adobe Commerce für die Verwendung ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) Elasticsearch in unserer Entwicklerdokumentation.
 * Vermeiden Sie das Ausführen der `SELECT` Abfrage für Spalten ohne Indizes, da dies viel temporären Speicherplatz beansprucht. Sie können auch die Indizes hinzufügen.
 * Erstellen Sie einen Cron, um `/tmp` zu bereinigen, indem Sie den folgenden Befehl in der CLI ausführen:
 
@@ -130,4 +130,4 @@ Um Probleme mit `/tmp` zu vermeiden, die vollständig sind, befolgen Sie die fol
 
 ## Verwandtes Lesen
 
-[In unserer Support-Wissensdatenbank ist wenig Speicherplatz auf der Adobe Commerce-](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md) vorhanden.
+[In unserer Support-Wissensdatenbank ist wenig Speicherplatz auf der Adobe Commerce-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) vorhanden.

@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: d1a9f509bdf4a4c75220145069810e55eddcc43e
+source-git-commit: 4ba5d701280fa41bea1102fa1ca46e1e3cc35256
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2860'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,8 @@ ht-degree: 0%
    * Datenbank {#database}
       * [Überprüfen langsamer Abfragen und Prozesse MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Datenbank-Upload verliert Verbindung zu MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-      * [Änderungen an der Datenbank werden nicht in der Storefront übernommen](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
       * [MySQL-Engpass bei hoher Auslastung in Adobe Commerce auf Cloud-Infrastruktur](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [MySQL-Server ist verschwunden&#x200B; Fehler in Adobe Commerce in der Cloud](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
-      * [MySQL-Speicherplatz auf Adobe Commerce in der Cloud-Infrastruktur ist knapp](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Fehlerbehebung bei der Datenbankspeicherung in Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Datenbankfehler im Zusammenhang mit „max_allowed_package“ in Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Numerischer Adobe Commerce-Datenbankwert außerhalb des Bereichs  [!DNL INT] bis [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)
@@ -95,7 +93,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
