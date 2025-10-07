@@ -92,7 +92,7 @@ Es gibt mehrere Services, die möglicherweise Dateien in `/tmp` speichern.
 
 #### Überprüfen und Freigeben von MySQL-Speicherplatz
 
-Befolgen Sie die Anweisungen in [MySQL Speicherplatz ist auf Adobe Commerce in der Cloud-Infrastruktur zu niedrig > Überprüfen Sie und geben Sie Speicherplatz frei](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) in unserer Support-Wissensdatenbank.
+Befolgen Sie die Anweisungen in [MySQL Speicherplatz ist auf Adobe Commerce in der Cloud-Infrastruktur zu niedrig > Überprüfen Sie und geben Sie Speicherplatz frei](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) in unserer Support-Wissensdatenbank.
 
 #### Überprüfen von Elasticsearch Heap-Dumps
 
@@ -120,7 +120,7 @@ Wenn Sie nicht über die Berechtigung zum Löschen von Dateien verfügen, die vo
 
 Um Probleme mit `/tmp` zu vermeiden, die vollständig sind, befolgen Sie die folgenden Empfehlungen:
 
-* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche macht in der Regel die meisten der umfangreichen temporären Tabellenerstellungen überflüssig. Siehe [Konfigurieren von Adobe Commerce für die Verwendung &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) Elasticsearch in unserer Entwicklerdokumentation.
+* Verwenden Sie MySQL nicht für die Suche. Elasticsearch für die Suche macht in der Regel die meisten der umfangreichen temporären Tabellenerstellungen überflüssig. Siehe [Konfigurieren von Adobe Commerce für die Verwendung &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/configure-search-engine) Elasticsearch in unserer Entwicklerdokumentation.
 * Vermeiden Sie das Ausführen der `SELECT` Abfrage für Spalten ohne Indizes, da dies viel temporären Speicherplatz beansprucht. Sie können auch die Indizes hinzufügen.
 * Erstellen Sie einen Cron, um `/tmp` zu bereinigen, indem Sie den folgenden Befehl in der CLI ausführen:
 
@@ -130,4 +130,4 @@ Um Probleme mit `/tmp` zu vermeiden, die vollständig sind, befolgen Sie die fol
 
 ## Verwandtes Lesen
 
-[In unserer Support-Wissensdatenbank ist wenig Speicherplatz auf der Adobe Commerce-](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) vorhanden.
+[In unserer Support-Wissensdatenbank ist wenig Speicherplatz auf der Adobe Commerce-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27806) vorhanden.
