@@ -35,7 +35,7 @@ Außerdem eignen sich Baseline-Warnungen gut für neue Anwendungen, wenn die Ver
 
 Unter diesem Link erfahren Sie mehr über New Relic [Anomalieerkennung mit Applied Intelligence](https://docs.newrelic.com/docs/alerts-applied-intelligence/applied-intelligence/anomaly-detection/anomaly-detection-applied-intelligence/).
 
-Wenn Sie eine Warnmeldung erhalten, die auf ein Ereignis mit hohem Traffic hinweist, sollten Sie ggf. erwägen, [ein Support-Ticket ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket), um zusätzliche Kapazität anzufordern. Führen Sie die folgenden Schritte aus.
+Wenn Sie eine Warnmeldung erhalten, die auf ein Ereignis mit hohem Traffic hinweist, sollten Sie ggf. erwägen, [ein Support-Ticket &#x200B;](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket), um zusätzliche Kapazität anzufordern. Führen Sie die folgenden Schritte aus.
 
 ## Überwachen der Leistung Ihrer Site
 
@@ -101,7 +101,7 @@ Um temporäre zusätzliche Cloud-Kapazität anzufordern, reichen Sie ein [Suppor
 
 >[!NOTE]
 >
->Sobald die Vergrößerung geplant ist, passt ein automatisiertes System die Größe Ihrer Cloud-Instanz an. Sie erhalten möglicherweise keine Ticket-Benachrichtigung, wenn der Vorgang abgeschlossen ist. Sie können das Tool Observation for Adobe Commerce verwenden, um Ihre AWS- oder Azure-Instanztypen anzuzeigen [die Änderung zu ](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md).
+>Sobald die Vergrößerung geplant ist, passt ein automatisiertes System die Größe Ihrer Cloud-Instanz an. Sie erhalten möglicherweise keine Ticket-Benachrichtigung, wenn der Vorgang abgeschlossen ist. Sie können das Tool Observation for Adobe Commerce verwenden, um Ihre AWS- oder Azure-Instanztypen anzuzeigen [die Änderung zu &#x200B;](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md).
 
 ## Verlauf der Upsides anzeigen
 
