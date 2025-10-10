@@ -3,9 +3,9 @@ title: Anfordern einer temporären Adobe Commerce-Aktualisierung in der Cloud-In
 description: Wenn Ihr Unternehmen eine Online-Veranstaltung plant, bei der Sie hohen Traffic erwarten, oder Sie plötzlich feststellen, dass auf Ihrer Website ein hohes Traffic-Ereignis stattfindet, können Sie ein [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) einreichen, um vorübergehend zusätzliche Cloud-Kapazität für Ihren Adobe Commerce im Cloud-Infrastrukturspeicher anzufordern.
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
+source-git-commit: e59335b67e1f33e138e34cab93ce593836d14b48
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -51,21 +51,53 @@ Unter diesem Link erfahren Sie, wie [leistungsbasierte Warnhinweise konfiguriere
 
 ## Schritte zum Anfordern einer temporären Vergrößerung
 
-Gehen Sie wie folgt vor, um ein [Support-Ticket](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) einzureichen und temporäre zusätzliche Cloud-Kapazität anzufordern:
-
-Senden Sie [Support-Ticket beim Adobe Commerce Support Center](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), nachdem Sie die folgenden Informationen eingegeben haben:
+Um temporäre zusätzliche Cloud-Kapazität anzufordern, reichen Sie ein [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) im Adobe Commerce Support Center mit den folgenden Informationen ein:
 
 >[!NOTE]
 >
 >Die *Holiday Surge Request*-Option ist nur zwischen Oktober und Dezember möglich.
 
-1. Wählen Sie das Adobe Commerce-Produkt aus, für das Sie Support benötigen.
-1. Füllen Sie die ersten vier Felder (Produkt, Organisation, Implementierungstyp, Betreff) aus.
-1. Wählen Sie *Adobe Commerce Cloud* Infrastruktur in der Dropdown **Kontaktgrund** aus.
-1. Wählen Sie *Holiday Surge Capacity Request* in den Dropdown-Optionen **Adobe Commerce** aus. Klicken Sie **der Popup** Meldung mit der Aufforderung zur Vorankündigung von 48 Geschäftsstunden für temporäre zusätzliche Cloud-Kapazitätsanfragen auf „OK“.
-1. Wählen Sie Datumsangaben für die Pflichtfelder **Startdatum ändern** und **Enddatum ändern**. Die bevorzugte **Startzeit ändern** ist ebenfalls ein Pflichtfeld.
-1. Füllen Sie die nächsten vier Felder aus.
-1. Wenn Sie im Feld **Beschreibung** zusätzliche Informationen zur Größe haben, geben Sie sie hier an. Wenn keine bestimmte größere Größe angefordert wird, werden wir Sie auf die nächste größere Umgebungsgrößenkapazität aufstocken. Bei Anfragen zu Stoßzeiten wird standardmäßig die nächstgrößere Größe aus Ihrer aktuellen Größe verwendet. Wenn Sie zusätzliche Kapazität benötigen, geben Sie dies bitte im Feld **Beschreibung** an. Erhöhte Kapazität wird von den vertraglich vereinbarten Spitzentagen oder vCPU-Tagen abgezogen. Das typische Zeitfenster für die Kapazitätssteigerung beträgt fünf Tage. Wenn Sie jedoch mehr oder weniger Tage benötigen, geben Sie dies bitte in Ihrem [Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) an.
+1. Wählen Sie das [!DNL Adobe Commerce] Produkt aus, für das Sie Unterstützung benötigen:
+   * [!DNL Commerce Cloud]
+   * [!DNL Commerce on Managed Service]
+
+1. Füllen Sie die folgenden Felder aus:
+   * **[!UICONTROL Case Title]**
+   * **[!UICONTROL Case Description]** *(Stellen Sie sicher, dass diese das Problem und den Kontext klar beschreiben.)*
+
+1. Wählen *Infrastruktur-Änderungsanforderung* aus dem **[!UICONTROL Issue Reason]** Dropdown-Menü aus.
+
+1. Wählen Sie die **[!UICONTROL Environment]** aus dem Dropdown-Menü aus.
+
+1. Wählen Sie die entsprechende **[!UICONTROL Product Version]** aus dem Dropdown-Menü aus.
+
+1. Wählen Sie *Cloud-Projektgröße (vCPU* aus dem **[!UICONTROL Which Infra Change you would like to do today]** Dropdown-Menü aus.
+
+1. **Wählen Sie die[!UICONTROL Architecture]**:
+   * *Standardarchitektur:* Wählen Sie *Nächste verfügbare Größe* aus dem **Wählen Sie die Größe aus** Dropdown-Menü.
+   * *Skalierte Architektur:* Wenn diese Option ausgewählt ist, ändert sich der Bildschirm und zeigt zwei zusätzliche Felder an:
+      * *Größe für Webknoten*
+      * *Größe für Dienstknoten* *(geben Sie die gewünschten Größen für jeden Knoten ein.)*
+
+1. Geben Sie die **[!UICONTROL From Date]** im UTC-Format (Datum und Uhrzeit) ein.
+
+1. Geben Sie die **[!UICONTROL To Date]** im UTC-Format (Datum und Uhrzeit) ein.
+
+1. Geben Sie **[!UICONTROL Project URL]** *an (unter https://accounts.magento.cloud/, normalerweise im Format `https://[REGION].magento.cloud/projects/PROJECT_ID`)*
+
+1. Geben Sie die **[!UICONTROL Project ID]** ein.
+
+1. Geben Sie **[!UICONTROL Affected URL]** *an (muss mit `http://` oder `https://` beginnen)*
+
+1. Wählen Sie **[!UICONTROL Priority]** aus.
+
+1. Wählen Sie **[!UICONTROL Business Impact]** aus.
+
+1. Bestätigen Sie **[!UICONTROL Time Zone]** *(z. B. `(UTC-5:00) Indiana (East)`)*
+
+1. Geben Sie **[!UICONTROL Phone Number]** *ein (z. B. `+12015550123`)*
+
+1. Klicken Sie auf **[!UICONTROL Submit]** , um Ihren Support-Fall abzuschließen.
 
 >[!NOTE]
 >
