@@ -28,7 +28,7 @@ Wählen Sie das für Ihren Fall am besten geeignete aus:
 
 >[!NOTE]
 >
-> Wenn Sie einen Schnappschuss in eine Integrationsumgebung importieren, achten Sie auf die Datenbankgröße. Große Datenbanken können nach dem Import zu Leistungseinbußen führen. Es wird empfohlen, den Snapshot zunächst in eine Staging- oder lokale Umgebung zu importieren, um seine Größe zu überprüfen und zu reduzieren, bevor Sie ihn in die -Integration übertragen. Deaktivieren Sie außerdem Cron-Aufträge im Integrationszweig, wenn nach dem Import Leistungsprobleme auftreten. Weitere Informationen finden Sie unter [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) im Handbuch Commerce on Cloud Infrastructure .
+> Wenn Sie einen Schnappschuss in eine Integrationsumgebung importieren, achten Sie auf die Datenbankgröße. Große Datenbanken können nach dem Import zu Leistungseinbußen führen. Es wird empfohlen, den Snapshot zunächst in eine Staging- oder lokale Umgebung zu importieren, um seine Größe zu überprüfen und zu reduzieren, bevor Sie ihn in die -Integration übertragen. Deaktivieren Sie außerdem Cron-Aufträge im Integrationszweig, wenn nach dem Import Leistungsprobleme auftreten. Weitere Informationen finden Sie unter [Integrationsumgebung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) im Handbuch Commerce on Cloud Infrastructure .
 
 * [Methode 1: Übertragen Sie die  [!DNL dump]  auf Ihren lokalen Computer und importieren Sie sie](#meth2).
 * [Methode 2: Importieren Sie die  [!DNL dump]  direkt vom Server](#meth3).
@@ -83,7 +83,7 @@ Die Schritte sind:
    ```
 
 1. Kopieren Sie die [!DNL dump file] (z. B.: `<cluster ID>.sql.gz` für [!DNL Production] oder `<cluster ID_stg>.sql.gz` für [!DNL Staging]) auf Ihren lokalen Computer.
-1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] eingerichtet haben, um eine Remote-Verbindung zur Datenbank herzustellen[[!DNL SSH]  „and [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn)&quot;.
+1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] eingerichtet haben, um eine Remote-Verbindung zur Datenbank herzustellen[[!DNL SSH]  „and [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn)&quot;.
 1. Stellen Sie eine Verbindung zur Datenbank her.
 
    ```bash
@@ -179,6 +179,6 @@ Die Schritte sind:
 
 In unserer Entwicklerdokumentation:
 
-* [Importcode: Importieren Sie die Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] AND [!DNL backup] MANAGEMENT: [!DNL Dump] Ihre Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Backup (Snapshot) in Cloud: Häufig gestellte Fragen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Importcode: Importieren Sie die Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] AND [!DNL backup] MANAGEMENT: [!DNL Dump] Ihre Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Backup (Snapshot) in Cloud: Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
