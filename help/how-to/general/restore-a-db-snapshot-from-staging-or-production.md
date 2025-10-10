@@ -17,7 +17,7 @@ Dieser Artikel zeigt, wie Sie eine DB-[!DNL snapshot] aus [!DNL Staging] oder [!
 >[!NOTE]
 >
 >Mit diesen Methoden wird der **vollständige Snapshot“**.
->>Wenn Sie den Snapshot (**) wiederherstellen müssen** z. B. nur die Katalogtabellen wiederherstellen und dabei die Bestelltabellen intakt lassen, müssen Sie sich an Ihren Entwickler oder DBA wenden.
+>&#x200B;>Wenn Sie den Snapshot (**) wiederherstellen müssen** z. B. nur die Katalogtabellen wiederherstellen und dabei die Bestelltabellen intakt lassen, müssen Sie sich an Ihren Entwickler oder DBA wenden.
 
 
 ## Betroffene Produkte und Versionen
