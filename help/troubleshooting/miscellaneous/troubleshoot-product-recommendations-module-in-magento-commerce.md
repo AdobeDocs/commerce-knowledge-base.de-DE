@@ -45,7 +45,7 @@ Modul richtig, ([[!UICONTROL Product Recommendations - Install and Configure]](h
 
 * Wenn Sie die von Ihnen konfigurierten Empfehlungen nicht sehen, gibt es möglicherweise noch nicht genügend Daten, um Empfehlungen für die Benutzenden zu erstellen.
 
-* Stellen Sie sicher, dass der [!DNL SaaS] oder der [!DNL API] gültig sind. Wenn bei der Initialisierung der Produktempfehlungen nach Angabe Ihres [!DNL SaaS]-Datenbereichs oder Ihres [!DNL API]-Schlüssels ein Fehler auftritt, stellen Sie sicher, dass Sie [[!DNL SaaS] Datenbereich und  [!DNL API] -Schlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas) (in unserem Benutzerhandbuch) korrekt eingegeben haben. Um sicherzustellen, dass [!DNL MageID] und [!DNL API] verknüpft sind, muss der Benutzer, dem die [!DNL MageID] gehört, in der Regel der Benutzer sein, der die Adobe Commerce-Lizenz besitzt, auch der Benutzer sein, der den [!DNL API] generiert. Wenn Sie die verwendete [!DNL MageID] ändern müssen, [ Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Stellen Sie sicher, dass der [!DNL SaaS] oder der [!DNL API] gültig sind. Wenn bei der Initialisierung der Produktempfehlungen nach Angabe Ihres [!DNL SaaS]-Datenbereichs oder Ihres [!DNL API]-Schlüssels ein Fehler auftritt, stellen Sie sicher, dass Sie [[!DNL SaaS] Datenbereich und  [!DNL API] -Schlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/config/services/saas) (in unserem Benutzerhandbuch) korrekt eingegeben haben. Um sicherzustellen, dass [!DNL MageID] und [!DNL API] verknüpft sind, muss der Benutzer, dem die [!DNL MageID] gehört, in der Regel der Benutzer sein, der die Adobe Commerce-Lizenz besitzt, auch der Benutzer sein, der den [!DNL API] generiert. Wenn Sie die verwendete [!DNL MageID] ändern müssen, [&#x200B; Sie ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ saas-export
 * [Produktentwicklung für Recommendations-](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/product-recommendations/developer/development-overview) in unserer Entwicklerdokumentation
 * [Einführung in die Produkt](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/product-recommendations/overview)Recommendations im Produkt-Recommendations-Handbuch
 * [Erstellen von Produkt](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/product-recommendations/admin/create)Recommendations im Produkt-Recommendations-Handbuch
-* [Überprüfen Sie die Protokolle und ](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) Sie Fehler“ im Handbuch [!DNL SaaS] Datenexport .
+* [Überprüfen Sie die Protokolle und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) Sie Fehler“ im Handbuch [!DNL SaaS] Datenexport .
 * [[!DNL SaaS] Versionshinweise zur Datenexporterweiterung](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/saas-data-export/release-notes) im Adobe Commerce-Datenexporthandbuch für [!DNL SaaS] Services
 * [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
 

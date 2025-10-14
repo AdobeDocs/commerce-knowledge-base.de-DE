@@ -54,7 +54,7 @@ Die Bereitstellung schlägt möglicherweise mit den folgenden Fehlermeldungen fe
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Wenn Sie Adobe Commerce in einer Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im &quot;[&quot; ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations). Bei On-Premise-Adobe Commerce wird der Fehler in der Befehlszeile angezeigt.
+Wenn Sie Adobe Commerce in einer Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations). Bei On-Premise-Adobe Commerce wird der Fehler in der Befehlszeile angezeigt.
 
 ## Ursache
 

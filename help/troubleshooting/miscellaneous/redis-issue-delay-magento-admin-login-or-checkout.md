@@ -43,7 +43,7 @@ Dieses Problem wurde in Adobe Commerce 2.1.14 und 2.2.2 behoben.
 
 ### Lösung 1: Wenden Sie das Pflaster mit einer Fehlerbehebung an
 
-Um einen Patch zu erhalten[ fordern Sie (ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) den Patch an. Geben Sie in Ihrem Ticket Ihre Adobe Commerce-Version und die entsprechende Referenznummer für den Patch an:
+Um einen Patch zu erhalten[&#x200B; fordern Sie (ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) den Patch an. Geben Sie in Ihrem Ticket Ihre Adobe Commerce-Version und die entsprechende Referenznummer für den Patch an:
 
 * **2.1.11 und höher:** MDVA-7835
 * **2.2.1:** MDVA-8128
@@ -80,6 +80,6 @@ Nachdem Sie den Patch mit der Fehlerbehebung angewendet haben, ist die Problemum
 
 ## Adobe Commerce on Cloud Infrastructure 2.2.0: Verwenden Sie die ECE-Tools der Version 2002.0.8 oder höher. {#h_64593789291526919876198}
 
-Das Bereitstellungsskriptpaket [ECE-Tools](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) mit den Versionen 2002.0.3 bis 2002.0.7 [gilt automatisch für ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=de) Problemumgehung, wobei `disable_locking` auf `1` gesetzt wird. Dadurch wird der Sitzungssperrmechanismus für Adobe Commerce 2.2.0 deaktiviert, bei dem das ursprüngliche Problem nicht auftritt.
+Das Bereitstellungsskriptpaket [ECE-Tools](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) mit den Versionen 2002.0.3 bis 2002.0.7 [gilt automatisch für &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=de) Problemumgehung, wobei `disable_locking` auf `1` gesetzt wird. Dadurch wird der Sitzungssperrmechanismus für Adobe Commerce 2.2.0 deaktiviert, bei dem das ursprüngliche Problem nicht auftritt.
 
 Wenn Sie Adobe Commerce auf Cloud-Infrastruktur 2.2.0 ausführen, aktualisieren Sie ECE-Tools auf Version 2002.0.8 oder höher. Sie können auch erwägen, Ihre Adobe Commerce on Cloud-Infrastruktur auf Version 2.2.2 oder höher zu aktualisieren.

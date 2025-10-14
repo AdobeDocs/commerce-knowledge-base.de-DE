@@ -25,7 +25,7 @@ Dieser Artikel behandelt das Sichern Ihrer Umgebungen mit Momentaufnahmen der Ad
 
 * Manuelle Momentaufnahmen sind für Staging- und Produktionsumgebungen in Pro Plan nicht verfügbar.
 * Automatische Momentaufnahmen werden erstellt **unabhängig vom Live-Status** Ihrer Site (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen sind nicht öffentlich zugänglich, da sie in einem separaten System gespeichert sind.
-Sie können [ein Adobe Commerce-Support-Ticket ](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Nachdem das Infrastruktur-Team den Schnappschuss bereitgestellt hat, führen Sie den folgenden Befehl an der Stelle aus, an der der Schnappschuss platziert wurde, um den Zeitstempel zu ermitteln, an dem er ursprünglich erstellt wurde:
+Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Nachdem das Infrastruktur-Team den Schnappschuss bereitgestellt hat, führen Sie den folgenden Befehl an der Stelle aus, an der der Schnappschuss platziert wurde, um den Zeitstempel zu ermitteln, an dem er ursprünglich erstellt wurde:
 
   `cat /mnt/recovery/vol-<volume_id>/snap.time`
 
@@ -36,7 +36,7 @@ Sie können [ein Adobe Commerce-Support-Ticket ](/docs/commerce-knowledge-base/k
 
 * Der Support generiert bei Bedarf keine manuellen Momentaufnahmen. Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Automatische Momentaufnahmen werden erstellt **unabhängig vom Live-Status** Ihrer Site (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen werden in einem separaten System gespeichert und sind für die Öffentlichkeit nicht zugänglich.
-Sie können [ein Adobe Commerce-Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Der Support generiert bei Bedarf keine manuellen Momentaufnahmen.
+Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Der Support generiert bei Bedarf keine manuellen Momentaufnahmen.
 Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Die Backups werden mithilfe der **verschlüsselten Momentaufnahmen des Amazon Web Services Elastic Block Store (AWS EBS))**.
 * Umgebungs-Snapshots umfassen Ihr gesamtes System (Dateisystem und Datenbank).

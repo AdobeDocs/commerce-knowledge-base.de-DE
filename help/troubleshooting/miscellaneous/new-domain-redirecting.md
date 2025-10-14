@@ -29,7 +29,7 @@ Dies geschieht, wenn die Variablen nicht aktualisiert werden, nachdem eine neue 
 
 ## Lösung
 
-1. Wenn die Domain innerhalb derselben Umgebung umgeleitet wird, stellen Sie sicher, dass Sie die [Variablen“ konfiguriert ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de#modify-variables).
+1. Wenn die Domain innerhalb derselben Umgebung umgeleitet wird, stellen Sie sicher, dass Sie die [Variablen“ konfiguriert &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de#modify-variables).
 1. Wenn die Domain zu einer anderen Umgebung umleitet, überprüfen Sie, ob Sie den richtigen [!DNL Fastly]-Service konfiguriert haben, indem Sie den folgenden Befehl ausführen: `bin/magento fastly:conf:get -s`
 
 >[!NOTE]

@@ -49,11 +49,11 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 Für lokale Adobe Commerce-Händler: Wenden Sie den [Hotfix](https://magento.com/tech-resources/download#download2353) an, der im Abschnitt Downloads auf dem Portal [magento.com](https://magento.com) in Mein Konto verfügbar ist.
 
-Für Händler mit Adobe Commerce-Cloud-Infrastruktur: Adobe hat die Fehlerbehebung in die Cloud-Patches für Commerce v1.0.2 aufgenommen. Siehe [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) in unserer Entwicklerdokumentation, um Anweisungen zum Anwenden des neuesten Pakets zu erhalten.
+Für Händler mit Adobe Commerce-Cloud-Infrastruktur: Adobe hat die Fehlerbehebung in die Cloud-Patches für Commerce v1.0.2 aufgenommen. Siehe [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche) in unserer Entwicklerdokumentation, um Anweisungen zum Anwenden des neuesten Pakets zu erhalten.
 
 ## Anwenden des Patches
 
-Anweisungen finden Sie unter [So wenden Sie einen von Adobe bereitgestellten Composer-Patch ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) unserer Support-Wissensdatenbank an.
+Anweisungen finden Sie unter [So wenden Sie einen von Adobe bereitgestellten Composer-Patch &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) unserer Support-Wissensdatenbank an.
 
 ## Verwandtes Lesen
 

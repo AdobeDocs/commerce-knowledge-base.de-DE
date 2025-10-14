@@ -123,7 +123,7 @@ In unserem Beispiel müssen wir einen `_TranslatedListsPlugin_` registrieren, de
 
 In der Modulregistrierungsdatei müssen wir die Abhängigkeit für das Modul &quot;Adobe Commerce Directory“ angeben, um sicherzustellen, dass das Modul „Extra Countries“ registriert und nach dem Modul „Directory“ ausgeführt wird.
 
-Weitere Informationen [ Modulabhängigkeiten finden Sie ](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies)Verwalten von Modulabhängigkeiten“ in unserer Entwicklerdokumentation.
+Weitere Informationen [&#x200B; Modulabhängigkeiten finden Sie &#x200B;](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies)Verwalten von Modulabhängigkeiten“ in unserer Entwicklerdokumentation.
 
 `module.xml` Beispiel
 
@@ -185,7 +185,7 @@ class TranslatedListsPlugin
 
 Dieser Daten-Patch wird während der Installation/Aktualisierung von Adobe Commerce ausgeführt und fügt der Datenbank einen neuen Länderdatensatz hinzu.
 
-Weitere [ zu Daten-Patches finden Sie ](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) unserer Entwicklerdokumentation unter „Entwickeln von Daten- und Schema-Patches“.
+Weitere [&#x200B; zu Daten-Patches finden Sie &#x200B;](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) unserer Entwicklerdokumentation unter „Entwickeln von Daten- und Schema-Patches“.
 
 Im folgenden Beispiel sehen Sie, dass das `$data` Array der Methode `apply()` Länder-ID, ISO2- und ISO3-Codes für das neue Land enthält. Diese Daten werden in die Datenbank eingefügt.
 

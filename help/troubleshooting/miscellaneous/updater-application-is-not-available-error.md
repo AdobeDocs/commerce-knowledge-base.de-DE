@@ -29,4 +29,4 @@ Die folgende Meldung wird bei der Bereitschaftsprüfung angezeigt:
 
 ## Lösung
 
-Um dieses Problem zu beheben, überprüfen Sie, ob es ein `<magento_root>/update`-Verzeichnis gibt, das Dateien und Unterverzeichnisse enthält. Andernfalls finden Sie weitere Informationen unter [Einrichten des ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error)) in unserer Entwicklerdokumentation.
+Um dieses Problem zu beheben, überprüfen Sie, ob es ein `<magento_root>/update`-Verzeichnis gibt, das Dateien und Unterverzeichnisse enthält. Andernfalls finden Sie weitere Informationen unter [Einrichten des &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error)) in unserer Entwicklerdokumentation.

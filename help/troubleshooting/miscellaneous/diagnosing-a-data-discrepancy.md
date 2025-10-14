@@ -25,7 +25,7 @@ Je nach Komplexität Ihrer Analyse kann die Erstellung des entsprechenden MBI-Be
    * Operandenspalte, einschließlich der Berechnung, falls sie abgeleitet ist (über Systemzusammenfassung)
    * Zeitstempel
    * Für Abonnementmetriken: Start- und Enddatum
-   * Es werden Filter angewendet, einschließlich [ in ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html?lang=de) Filtersätzen enthaltenen
+   * Es werden Filter angewendet, einschließlich [&#x200B; in &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html?lang=de) Filtersätzen enthaltenen
 1. Überprüfen und bestätigen Sie andere Datenmanipulationen im Bericht:
    * Berechnete Formeln
    * [Gruppierungen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/tutorials/using-visual-report-builder.html?lang=de#groupby)

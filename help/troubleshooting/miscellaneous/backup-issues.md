@@ -50,7 +50,7 @@ Wenn das Backup aufgrund von ungenügendem Speicherplatz fehlschlug, sollten Sie
 Leider können wir aufgrund der Vielzahl der Fehler, auf die Sie stoßen können, keine spezifischen Empfehlungen aussprechen. Wir können Ihnen jedoch folgendes vorschlagen:
 
 * Wenden Sie sich an Ihren Systemadministrator.
-* Öffentliche Foren wie &quot;[ Exchange“ ](https://unix.stackexchange.com) &quot;[ Overflow](https://stackoverflow.com) durchsuchen
+* Öffentliche Foren wie &quot;[&#x200B; Exchange“ &#x200B;](https://unix.stackexchange.com) &quot;[&#x200B; Overflow](https://stackoverflow.com) durchsuchen
 * Öffnen Sie ein [GitHub-Problem](https://github.com/magento/magento2/issues) und wir versuchen, Ihnen zu helfen.
 
 ## Backup schlägt fehl {#backup-fails-trouble-backup-all-}

@@ -46,7 +46,7 @@ Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Ge
 
 ## Ich habe freigegebenen Zugriff verwendet und auf [!UICONTROL Support] geklickt, aber als ich ein neues Ticket für die Organisation geöffnet habe, war im Formular kein Produkt verfügbar
 
-**Problem:** Beim Öffnen eines Tickets in [Experience League kann ich das entsprechende Cloud-Projekt nicht ](https://experienceleague.adobe.com/home?lang=de#support).
+**Problem:** Beim Öffnen eines Tickets in [Experience League kann ich das entsprechende Cloud-Projekt nicht &#x200B;](https://experienceleague.adobe.com/home?lang=de#support).
 
 **Mögliche Ursache** Sie haben nicht die richtige Organisation mit [!DNL Commerce] Berechtigungen ausgewählt.
 
@@ -58,7 +58,7 @@ Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Ge
 
 ## Ich habe freigegebenen Zugriff verwendet und auf [!UICONTROL Support] geklickt, aber als ich ein neues Ticket für die Organisation geöffnet habe, die über die [!DNL Commerce] Berechtigungen verfügt, wurde das Cloud-Projekt nicht im Formular aufgeführt
 
-**Problem**: Beim Öffnen eines Tickets in [Experience League kann ich das entsprechende Cloud-Projekt nicht ](https://experienceleague.adobe.com/home?lang=de#support).
+**Problem**: Beim Öffnen eines Tickets in [Experience League kann ich das entsprechende Cloud-Projekt nicht &#x200B;](https://experienceleague.adobe.com/home?lang=de#support).
 
 **Mögliche Ursache**: Möglicherweise wurden Sie dem Projekt nicht hinzugefügt oder das Projekt ist mit einer anderen Lizenz verknüpft (einige Organisationen haben möglicherweise Tochtergesellschaften/verbundene Unternehmen mit sehr ähnlichen Namen).
 

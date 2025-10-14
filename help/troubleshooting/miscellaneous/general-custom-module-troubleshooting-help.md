@@ -21,12 +21,12 @@ Wenn Sie erkennen, dass es ein Problem mit den Funktionen aus Ihrem benutzerdefi
 
 ## Lösung
 
-Überprüfen Sie die Protokolle, um festzustellen, ob im Fehler Einträge mit dem Namen des benutzerdefinierten Moduls vorhanden sind.  Je nach den aufgetretenen Fehlern kann sich die Lösung selbst präsentieren, oder Sie müssen Ihre hilfreichen Adobe Commerce-Protokollinformationen angeben, wenn Sie ein „Support[Ticket“ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) möchten. In den folgenden Absätzen finden Sie Informationen zum Speicherort der Protokolle und zu möglichen Lösungen.
+Überprüfen Sie die Protokolle, um festzustellen, ob im Fehler Einträge mit dem Namen des benutzerdefinierten Moduls vorhanden sind.  Je nach den aufgetretenen Fehlern kann sich die Lösung selbst präsentieren, oder Sie müssen Ihre hilfreichen Adobe Commerce-Protokollinformationen angeben, wenn Sie ein „Support[Ticket“ &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) möchten. In den folgenden Absätzen finden Sie Informationen zum Speicherort der Protokolle und zu möglichen Lösungen.
 
 ### Adobe Commerce (alle Bereitstellungsmethoden), Magento Open Source, alle 2.x-Versionen
 
 1. Speicherorte der Protokolle:
-   * [Architekturprotokolle zum Adobe Commerce-Plan für die Cloud-Infrastruktur-Starter ](/help/how-to/general/log-locations-directories-for-starter-plan.md) unserer Support-Wissensdatenbank.
+   * [Architekturprotokolle zum Adobe Commerce-Plan für die Cloud-Infrastruktur-Starter &#x200B;](/help/how-to/general/log-locations-directories-for-starter-plan.md) unserer Support-Wissensdatenbank.
    * [Adobe Commerce in der Cloud-Infrastruktur Pro Planarchitektur-Protokolle](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) in unserer Support-Wissensdatenbank.
 1. Je nach den gefundenen Fehlern werden in den folgenden Artikeln diese Aktionen beschrieben, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten:
    * [Module aktivieren oder deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation.
@@ -36,7 +36,7 @@ Wenn Sie erkennen, dass es ein Problem mit den Funktionen aus Ihrem benutzerdefi
 
 1. Speicherorte für Protokolle: [Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
 1. Je nach den gefundenen Fehlern werden diese Aktionen in den folgenden Artikeln in der Entwicklerdokumentation beschrieben, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten:
-   * [Installieren, Verwalten und Aktualisieren von ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+   * [Installieren, Verwalten und Aktualisieren von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
    * [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
 
 ## Verwandtes Lesen

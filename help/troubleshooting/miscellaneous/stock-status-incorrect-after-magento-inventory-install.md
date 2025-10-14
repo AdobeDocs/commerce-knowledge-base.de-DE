@@ -33,4 +33,4 @@ Bei der ersten Installation/Aktualisierung werden alle Produkte der Standardquel
 
 Wenn Sie über mehr als eine Website verfügen, müssen Sie diese Websites als Sales Channel zum Standardbestand oder zu anderen benutzerdefinierten Stocks hinzufügen.
 
-Weitere Informationen dazu [ Sie im Abschnitt „Stock“ ](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/stocks/stocks-manage) Wiki/Benutzerhandbuch in unserem Benutzerhandbuch.
+Weitere Informationen dazu [&#x200B; Sie im Abschnitt „Stock“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/stocks/stocks-manage) Wiki/Benutzerhandbuch in unserem Benutzerhandbuch.

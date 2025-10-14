@@ -14,7 +14,7 @@ ht-degree: 0%
 
 MariaDB ist eine Open-Source-Unternehmensdatenbank, die mit Adobe Commerce verwendet wird.
 
-Das Ende der Unterstützung für MariaDB 10.4 wurde am [. Juni 2024 ](https://endoflife.date/mariadb). Wenn Sie eine nicht unterstützte Version von MariaDB verwenden, sind Sie nicht mehr PCI-kompatibel. In diesem Artikel wird erläutert, wie Sie von MariaDB 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
+Das Ende der Unterstützung für MariaDB 10.4 wurde am [. Juni 2024 &#x200B;](https://endoflife.date/mariadb). Wenn Sie eine nicht unterstützte Version von MariaDB verwenden, sind Sie nicht mehr PCI-kompatibel. In diesem Artikel wird erläutert, wie Sie von MariaDB 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
 
 >[!NOTE]
 >
@@ -48,5 +48,5 @@ Nehmen Sie die neuen, nur für die Sicherheit geeigneten Patches (2.4.4-p9 oder 
 ## Verwandtes Lesen
 
 * [Handbuch mit Best Practices für DB](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/prepare/prerequisites)Upgrades) für lokale Bereitstellungen.
-* [Upgrade von MariaDB 10.0 auf 10.2 für Adobe Commerce on ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud) in unserer Support-Wissensdatenbank.
+* [Upgrade von MariaDB 10.0 auf 10.2 für Adobe Commerce on &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud) in unserer Support-Wissensdatenbank.
 * [Adobe Commerce-Lebenszyklusrichtlinie](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy) in unserer Entwicklerdokumentation.

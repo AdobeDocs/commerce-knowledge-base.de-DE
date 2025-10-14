@@ -33,7 +33,7 @@ Nachdem Sie die `.magento/services.yaml` geändert haben, müssen Sie Ihre Ände
 
 ## Platz auf Pro Plan Staging oder Produktion zuweisen
 
-Um diese Änderungen an der Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie ein [Support-Ticket“ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Wenn Sie ein Support-Ticket einreichen, um den Speicher zu erhöhen, muss der Support wissen, auf wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Eine Anfrage zur Speichererhöhung erfordert die Genehmigung Ihres Adobe-Accountteams, das die für Sie geeignete Speichermenge (gemäß Bestellformular) vor der Genehmigung überprüft.
+Um diese Änderungen an der Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie ein [Support-Ticket“ &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Wenn Sie ein Support-Ticket einreichen, um den Speicher zu erhöhen, muss der Support wissen, auf wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Eine Anfrage zur Speichererhöhung erfordert die Genehmigung Ihres Adobe-Accountteams, das die für Sie geeignete Speichermenge (gemäß Bestellformular) vor der Genehmigung überprüft.
 
 ## Verringernder zugewiesener Platz nicht verfügbar (Pro- und Starter-Plan)
 

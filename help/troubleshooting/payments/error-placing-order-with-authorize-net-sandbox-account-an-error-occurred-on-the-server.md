@@ -19,7 +19,7 @@ Dieser Artikel enthält eine Fehlerbehebung für die Fehlermeldung &quot;*Auf de
 >
 >**Hinweis zu veralteten**
 >
->Aufgrund der Zahlungsdiensterichtlinie [PSD2](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) und der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net in Zukunft veraltet und nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zur entsprechenden [Commerce Marketplace-Erweiterung zu ](https://marketplace.magento.com/extensions.html).
+>Aufgrund der Zahlungsdiensterichtlinie [PSD2](https://experienceleague.adobe.com/de/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) und der kontinuierlichen Weiterentwicklung vieler APIs besteht die Gefahr, dass Authorize.Net in Zukunft veraltet und nicht mehr sicherheitskonform ist. Aus diesem Grund wird sie jetzt nicht mehr unterstützt. Wir empfehlen, sie in Ihrer Adobe Commerce-Konfiguration zu deaktivieren und zur entsprechenden [Commerce Marketplace-Erweiterung zu &#x200B;](https://marketplace.magento.com/extensions.html).
 >
 >**Diese Integration wurde aus der Adobe Commerce-Version 2.4.0 entfernt und ist seit der aktuellen Version 2.3.** veraltet
 >

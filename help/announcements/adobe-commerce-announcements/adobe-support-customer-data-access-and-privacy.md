@@ -22,7 +22,7 @@ Der technische Adobe-Support benötigt möglicherweise Zugriff auf Ihre Adobe Co
 Zugriff autorisieren:
 
 1. [Anmelden](https://account.magento.com/customer/account/login) als Support mit dem Titel „Primärer Benutzer“.
-1. Vergewissern Sie sich auf der Seite **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]**, dass Sie Ihr [Kontoprofil“ ](https://account.magento.com/customer/account/edit) haben, und klicken Sie auf **[!UICONTROL Save]**.
+1. Vergewissern Sie sich auf der Seite **[!UICONTROL My Account]** > **[!UICONTROL Account Settings]**, dass Sie Ihr [Kontoprofil“ &#x200B;](https://account.magento.com/customer/account/edit) haben, und klicken Sie auf **[!UICONTROL Save]**.
 1. Auf der **[!UICONTROL My Account]** Seite > **[!UICONTROL Account Settings]** > **[!UICONTROL Privacy Settings]**. Sie sehen ein Einverständnisformular, um dem technischen Support von Adobe Zugriff auf Ihre Daten zu gewähren.
 1. Wählen Sie nach der Überprüfung der Informationen zu den Datenschutzeinstellungen, ob das Kontrollkästchen neben **Ich autorisiere den Zugriff auf meine Daten für die folgende Dauer:** aktiviert werden soll.
 1. Wählen Sie in der Dropdown-Liste Dauer den Zeitraum aus, über den das technische Support-Personal von Adobe Zugriff auf Ihre Kundendaten haben soll. Sie können 7 Tage, 30 Tage, ein Jahr oder unbegrenzt auswählen.

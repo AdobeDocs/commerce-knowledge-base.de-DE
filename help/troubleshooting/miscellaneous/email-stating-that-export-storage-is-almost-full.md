@@ -45,4 +45,4 @@ Wenn die Nutzung der Medien einen großen Teil des gesamten Festplattenspeichers
 
 ## Verwandtes Lesen
 
-[Überprüfen Sie ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.
+[Überprüfen Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.

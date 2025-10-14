@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Schnelles Einrichten für den Starterplan in der Cloud
 
-Weitere Informationen finden [ unter „Fastly einrichten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) in unserer Entwicklerdokumentation.
+Weitere Informationen finden [&#x200B; unter „Fastly einrichten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) in unserer Entwicklerdokumentation.

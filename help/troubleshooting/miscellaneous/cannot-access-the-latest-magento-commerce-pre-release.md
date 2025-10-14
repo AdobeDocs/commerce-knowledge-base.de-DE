@@ -24,7 +24,7 @@ Dieser Artikel enthält Lösungen für Probleme bei der Verwendung des neuesten 
 In diesem Artikel werden die folgenden Probleme beim Zugriff auf den Vorabversions-Code behandelt:
 
 * Sie können den Vorabversions-Code nicht finden.
-* Laden der Adobe Commerce-Version mit frühzeitigem Zugriff von [magento.com) ](https://account.magento.com/customer/account/login) Composer fehlgeschlagen.
+* Laden der Adobe Commerce-Version mit frühzeitigem Zugriff von [magento.com) &#x200B;](https://account.magento.com/customer/account/login) Composer fehlgeschlagen.
 
 ## Ursache
 
@@ -40,7 +40,7 @@ Dies sind die häufigsten Ursachen für Probleme:
 
 Während der Vorabversion sind Versionspakete an zwei Stellen verfügbar:
 
-1. Über Composer auf [magento.com](https://repo.magento.com/) unter Verwendung der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [ von Adobe Commerce mit ](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
+1. Über Composer auf [magento.com](https://repo.magento.com/) unter Verwendung der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [&#x200B; von Adobe Commerce mit &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
 1. **Mein** > **Downloads** auf [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]
@@ -49,7 +49,7 @@ Während der Vorabversion sind Versionspakete an zwei Stellen verfügbar:
 
 ### MageID, die Sie verwenden müssen
 
-Sie müssen die primäre MageID verwenden, die mit Ihrem Adobe Commerce- oder Partnerkonto verknüpft ist. Das Vorabversionsprogramm ist mit keinem Kontakt verknüpft, der über gemeinsamen Zugriff verfügt. Der frühzeitige Zugriff kann nur über Composer oder [repo.magento.com) ](https://repo.magento.com/) die MageID erfolgen, die mit Ihrer Adobe Commerce- oder Partnerlizenz verknüpft ist.
+Sie müssen die primäre MageID verwenden, die mit Ihrem Adobe Commerce- oder Partnerkonto verknüpft ist. Das Vorabversionsprogramm ist mit keinem Kontakt verknüpft, der über gemeinsamen Zugriff verfügt. Der frühzeitige Zugriff kann nur über Composer oder [repo.magento.com) &#x200B;](https://repo.magento.com/) die MageID erfolgen, die mit Ihrer Adobe Commerce- oder Partnerlizenz verknüpft ist.
 
 #### Wie finde ich heraus, ob meine MageID die primäre ID ist?
 
@@ -71,8 +71,8 @@ Um herauszufinden, ob Ihre MageID primär ist, versuchen Sie Folgendes:
    * Wenn Sie die Informationen zur aktiven Partnerlizenz sehen, ist Ihre MageID primär. Die Partnerlizenz ist aktiv, wenn das ENDDATUM ein Datum in der Zukunft ist.
    * Wenn die Informationen zur aktiven Partnerlizenz nicht angezeigt werden, verfügt Ihre MageID nur über freigegebenen Zugriff. Um herauszufinden, wer der primäre ID-Inhaber ist, gehen Sie zu **Für mich freigegeben** Beachten Sie den dort angegebenen SHARENAME. Klicken Sie **Konten wechseln** und wählen Sie den Wert aus, den Sie in SHARENAME angegeben haben. Auf der Begrüßungsseite wird die E-Mail-Adresse des primären ID-Inhabers angezeigt.
 1. Sollten Sie diese Informationen aus irgendeinem Grund nicht auf [magento.com](https://account.magento.com/customer/account/login) finden, wenden Sie sich bitte an Ihren Partner Manager.
-1. Wenn keiner der oben genannten Punkte funktioniert, wenden Sie [ (с den Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Wenn keiner der oben genannten Punkte funktioniert, wenden Sie [&#x200B; (с den Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Nicht Teil des Vorabversionsprogramms
 
-Um am Vorabversionsprogramm für den Zugriff teilnehmen zu können, muss Ihr Unternehmen über ein gültiges Adobe Commerce- oder Partnerkonto verfügen. Wenn Sie der Meinung sind, dass Sie diese Kriterien erfüllen und nicht auf den Vorabversions-Code zugreifen können, [ Sie sich mit Ihrer MageID an den ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)-Support.
+Um am Vorabversionsprogramm für den Zugriff teilnehmen zu können, muss Ihr Unternehmen über ein gültiges Adobe Commerce- oder Partnerkonto verfügen. Wenn Sie der Meinung sind, dass Sie diese Kriterien erfüllen und nicht auf den Vorabversions-Code zugreifen können, [&#x200B; Sie sich mit Ihrer MageID an den &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)-Support.

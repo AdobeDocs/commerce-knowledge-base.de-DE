@@ -29,4 +29,4 @@ Im [2023 haben wir unsere Versionsstrategie aktualisiert](https://business.adobe
 
 Unter Einbeziehung dieser Strategieänderungen enthält unser Veröffentlichungskalender für 2024 fünf Versionen, die auf unserem [Veröffentlichungszeitplan](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=de) auf Adobe Experience League überprüft werden können.
 
-Wir hoffen, dass Sie diesen Zeitplan in Ihren jährlichen Planungszyklen verwenden können, um die Ressourcen für diese Versionsfenster besser vorzubereiten und zuzuweisen. Weitere Ressourcen zur Upgrade-Planung finden Sie in [ „Überblick über den Upgrade-](/docs/commerce-operations/upgrade-guide/overview.html)&quot; in unserem Upgrade-Handbuch.
+Wir hoffen, dass Sie diesen Zeitplan in Ihren jährlichen Planungszyklen verwenden können, um die Ressourcen für diese Versionsfenster besser vorzubereiten und zuzuweisen. Weitere Ressourcen zur Upgrade-Planung finden Sie in [&#x200B; „Überblick über den Upgrade-](/docs/commerce-operations/upgrade-guide/overview.html)&quot; in unserem Upgrade-Handbuch.

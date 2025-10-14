@@ -17,8 +17,8 @@ Dieser Artikel bietet Lösungen für Probleme bei der Verwendung der neuesten Be
 
 In diesem Artikel werden die folgenden Probleme beim Zugriff auf den Early-Access-Code behandelt:
 
-* Die Adobe Commerce Beta-Version kann nicht unter **Mein Konto** > **Downloads** auf [magento.com) ](https://account.magento.com/customer/account/login) werden.
-* Laden der Adobe Commerce-Version mit frühzeitigem Zugriff von [magento.com) ](https://account.magento.com/customer/account/login) Composer fehlgeschlagen.
+* Die Adobe Commerce Beta-Version kann nicht unter **Mein Konto** > **Downloads** auf [magento.com) &#x200B;](https://account.magento.com/customer/account/login) werden.
+* Laden der Adobe Commerce-Version mit frühzeitigem Zugriff von [magento.com) &#x200B;](https://account.magento.com/customer/account/login) Composer fehlgeschlagen.
 
 ## Ursache
 
@@ -60,4 +60,4 @@ Wenn Sie der primäre MageID-Eigentümer sind und einem Entwickler in Ihrem Team
 
 ### Nicht Teil des Early Access-Programms
 
-Unser Beta Access-Programm steht nur unseren Lösungs- und technischen Partnern zur Verfügung, damit diese unseren Vorproduktions-Code auswerten können. Um am Beta Access-Programm teilnehmen zu können, muss Ihr Unternehmen über ein aktives Adobe-Partnerkonto verfügen, das sich in gutem Zustand befindet und die Beta-NDA ([) ](https://github.com/magento/magento2/wiki/Magento-Beta-Program) hat. Wenn Sie glauben, dass Sie diese Kriterien erfüllen und nicht auf den Beta-Code zugreifen können, wenden Sie sich bitte an [commercebeta@adobe.com](mailto:commercebeta@adobe.com).
+Unser Beta Access-Programm steht nur unseren Lösungs- und technischen Partnern zur Verfügung, damit diese unseren Vorproduktions-Code auswerten können. Um am Beta Access-Programm teilnehmen zu können, muss Ihr Unternehmen über ein aktives Adobe-Partnerkonto verfügen, das sich in gutem Zustand befindet und die Beta-NDA ([) &#x200B;](https://github.com/magento/magento2/wiki/Magento-Beta-Program) hat. Wenn Sie glauben, dass Sie diese Kriterien erfüllen und nicht auf den Beta-Code zugreifen können, wenden Sie sich bitte an [commercebeta@adobe.com](mailto:commercebeta@adobe.com).

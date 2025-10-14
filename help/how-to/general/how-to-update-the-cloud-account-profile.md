@@ -25,7 +25,7 @@ Beim Ändern eines Profils im Cloud-Konto können die folgenden Felder geändert
 
 Gehen Sie wie folgt vor, um diese Felder zu ändern:
 
-1. Greifen Sie unter [Adobe-Kontoanmeldung auf Ihr Konto ](https://accounts.magento.cloud).
+1. Greifen Sie unter [Adobe-Kontoanmeldung auf Ihr Konto &#x200B;](https://accounts.magento.cloud).
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Account Settings]** .
 1. Aktivieren Sie das *Neues Kennwort erstellen*.
 1. Nehmen Sie die erforderlichen Änderungen vor und klicken Sie auf *Speichern*.

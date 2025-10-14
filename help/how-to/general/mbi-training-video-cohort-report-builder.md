@@ -20,7 +20,7 @@ In diesem Video erfahren Sie Folgendes:
 * Warum es wichtig ist
 * So erstellen Sie Ihre eigene Kohortenanalyse in Magento BI
 
-Sehen Sie sich das Video unter [Commerce Intelligence - Kohorten-Report Builder ](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) in Adobe Experience League an.
+Sehen Sie sich das Video unter [Commerce Intelligence - Kohorten-Report Builder &#x200B;](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) in Adobe Experience League an.
 
 **Willst du mitmachen?** In unserem [Cohort Report Builder-Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) finden Sie schriftliche Anweisungen.
 

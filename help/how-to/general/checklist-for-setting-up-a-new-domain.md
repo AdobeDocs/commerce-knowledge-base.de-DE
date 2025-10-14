@@ -22,13 +22,13 @@ Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 
 ### Schritt 1: Ist dies für die [!DNL Integration, Staging] oder [!DNL Production environment]?
 
-* **[!DNL Integration]**: [!DNL Custom domains] werden nicht unterstützt. Sie müssen stattdessen diese Methode verwenden: [Mehrere Websites oder Geschäfte einrichten: Lokale Installation ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de#add-new-domains) in unserem Benutzerhandbuch.
+* **[!DNL Integration]**: [!DNL Custom domains] werden nicht unterstützt. Sie müssen stattdessen diese Methode verwenden: [Mehrere Websites oder Geschäfte einrichten: Lokale Installation &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=de#add-new-domains) in unserem Benutzerhandbuch.
 * **[!DNL Staging]**: Gehen Sie zu **Schritt 2**.
 * **[!DNL Production]**: Gehen Sie zu **Schritt 3**.
 
 ### Schritt 2 - [!DNL Staging environment]: Sind Sie auf [!DNL Pro] oder [!DNL Starter]?
 
-* **[!DNL Pro]**: **Senden einer Anfrage**, um die Domain zu [!DNL Fastly, Nginx] hinzuzufügen, und konfigurieren Sie die [!DNL SSL certificate] (sowie ggf. die [!DNL Sendgrid domain]). Nachdem dies konfiguriert wurde, [ Sie die  [!DNL DNS]  mit [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=de#update-dns-configuration-with-development-settings).
+* **[!DNL Pro]**: **Senden einer Anfrage**, um die Domain zu [!DNL Fastly, Nginx] hinzuzufügen, und konfigurieren Sie die [!DNL SSL certificate] (sowie ggf. die [!DNL Sendgrid domain]). Nachdem dies konfiguriert wurde, [&#x200B; Sie die  [!DNL DNS]  mit [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=de#update-dns-configuration-with-development-settings).
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 
 ### Schritt 5: Sind Domain-Umleitungen in `magento-vars.php` konfiguriert?
 
-Nachdem die Domain konfiguriert wurde, müssen Sie in der [-Datei ](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites#modify-variables)die Variablen ändern`magento-vars.php` um die Domain an die entsprechende Website-/Store-URL weiterzuleiten.
+Nachdem die Domain konfiguriert wurde, müssen Sie in der [-Datei &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites#modify-variables)die Variablen ändern`magento-vars.php` um die Domain an die entsprechende Website-/Store-URL weiterzuleiten.
 
 ### Schritt 6: Ist die [!DNL domain]-Konfiguration verifiziert?
 

@@ -169,7 +169,7 @@ Wenn Sie auf ein anderes Element als die Kopfzeile verweisen müssen, definieren
 
 ### Relative Links und Links zu anderen Artikeln
 
-Verwenden Sie keine relativen Links, um auf unsere Artikel in der Support-Wissensdatenbank zu verweisen. Diese Links funktionieren nicht, wenn Ihr Artikel im [Adobe Commerce-Hilfezentrum veröffentlicht ](https://support.magento.com/hc/en-us).
+Verwenden Sie keine relativen Links, um auf unsere Artikel in der Support-Wissensdatenbank zu verweisen. Diese Links funktionieren nicht, wenn Ihr Artikel im [Adobe Commerce-Hilfezentrum veröffentlicht &#x200B;](https://support.magento.com/hc/en-us).
 Verwenden Sie vollständige Hyperlinks aus dem [Adobe Commerce-Hilfezentrum](https://support.magento.com/hc/en-us).
 
 

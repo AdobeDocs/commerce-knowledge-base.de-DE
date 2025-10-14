@@ -46,7 +46,7 @@ Zusätzlich zu den oben aufgeführten Datensicherheitsfunktionen gibt es einige 
 * **SQL lehren** - SQL-Report Builder verwenden, aber SQL nicht kennen? Keine Sorge - wir haben ein [Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) zusammengestellt, das Ihnen bei den Grundlagen hilft.
 
 * **SQL-Visualisierungsprobleme, die nicht durch Produktfehler verursacht werden** - Wenn ein Diagramm am Ende etwas unausgegoren aussieht und es **nicht** durch einen Produktfehler verursacht wird, ist die Ursache wahrscheinlich die Abfrage selbst. Sehen Sie sich unser Tutorial [Erstellen von Visualisierungen aus SQL-Abfragen](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html) in unserem Benutzerhandbuch an, um Anleitungen zur Strukturierung Ihrer Abfragen für die Visualisierung zu erhalten.
-* **Debuggen von SQL**-Abfragen: Gelegentlich können Fehler auftreten, die nicht erklären sind und die Ausführung der Abfrage verhindern. Es wird empfohlen, das [Commerce Intelligence-Benutzerhandbuch: Verwenden von SQL Report Builder ](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) und unser SQL-Tutorial heranzuziehen, um festzustellen, wo bei der Abfrage ein Fehler aufgetreten ist.
+* **Debuggen von SQL**-Abfragen: Gelegentlich können Fehler auftreten, die nicht erklären sind und die Ausführung der Abfrage verhindern. Es wird empfohlen, das [Commerce Intelligence-Benutzerhandbuch: Verwenden von SQL Report Builder &#x200B;](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) und unser SQL-Tutorial heranzuziehen, um festzustellen, wo bei der Abfrage ein Fehler aufgetreten ist.
 
 ## Wie sende ich ein Ticket?
 

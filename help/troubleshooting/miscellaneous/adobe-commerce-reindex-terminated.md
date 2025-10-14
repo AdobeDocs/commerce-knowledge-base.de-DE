@@ -31,7 +31,7 @@ Der häufigste Grund ist eine große Anzahl von Produkten, Geschäften und/oder 
 1. Reduzieren Sie die Anzahl der Produkte (sowie ggf. Kundengruppen und Geschäfte).
 1. Verwendung auf einen oder zwei gleichzeitige Benutzer beschränken.
 1. Deaktivieren Sie Cron-Aufträge und führen Sie sie nach Bedarf manuell aus.
-1. Falls dies noch nicht geschehen ist, fordern Sie ein Upgrade für die erweiterten Integrationsumgebungen an - beachten Sie die Beschränkung der Anzahl der Umgebungen, auf die Sie nach dem Upgrade beschränkt wären. Weitere Informationen finden Sie [ Artikel „Anfrage zur Verbesserung der Integrationsumgebung - Pro und ](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242)&quot; in unserer Support-Wissensdatenbank.
+1. Falls dies noch nicht geschehen ist, fordern Sie ein Upgrade für die erweiterten Integrationsumgebungen an - beachten Sie die Beschränkung der Anzahl der Umgebungen, auf die Sie nach dem Upgrade beschränkt wären. Weitere Informationen finden Sie [&#x200B; Artikel „Anfrage zur Verbesserung der Integrationsumgebung - Pro und &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242)&quot; in unserer Support-Wissensdatenbank.
 
 ## Verwandtes Lesen:
 

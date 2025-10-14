@@ -23,7 +23,7 @@ Alle Facetten der Adobe Commerce-Storefront werden alphabetisch mit Einzelauswah
 
 ## Abhilfe
 
-In bestimmten Randfällen werden Facetten jedoch möglicherweise nicht alphabetisch sortiert, wie dies im Arbeitsbereich [[!DNL Live Search] Facettierung“ ](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) wurde.
+In bestimmten Randfällen werden Facetten jedoch möglicherweise nicht alphabetisch sortiert, wie dies im Arbeitsbereich [[!DNL Live Search] Facettierung“ &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace) wurde.
 
 Als Problemumgehung können Sie Produktattribute im Abschnitt [!UICONTROL Admin] sortieren.
 

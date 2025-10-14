@@ -44,7 +44,7 @@ Zwei Methoden, um zu überprüfen, wann die letzte Bereitstellung durchgeführt 
 
 Wenn die Bereitstellung erfolgreich abgeschlossen wurde, wird die [!DNL SSL certificate] automatisch erneuert.
 
-Wenn die Bereitstellung fehlschlägt und Sie Hilfe bei der Lösung benötigen, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
+Wenn die Bereitstellung fehlschlägt und Sie Hilfe bei der Lösung benötigen, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket).
 
 ### Methode 1: Verwenden [!DNL magento-cloud] CLI {#meth2}
 

@@ -39,7 +39,7 @@ b. NEIN - [Schritt 3](#step-3).
 
 +++**Fehler bei der Bildoptimierung?**
 
-a. JA - [Fehler bei Aktivierung der ](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md))\
+a. JA - [Fehler bei Aktivierung der &#x200B;](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md))\
 b. NEIN - Überprüfen Sie das DNS, indem Sie in der CLI/im Terminal ausführen: `dig [your website.com] + short`. Fahren Sie mit [Schritt 4](#step-4) fort.
 
 +++

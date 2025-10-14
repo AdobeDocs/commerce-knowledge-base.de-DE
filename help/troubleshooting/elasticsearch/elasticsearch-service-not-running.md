@@ -19,7 +19,7 @@ Dieser Artikel enthält Lösungen für Fehler, die auftreten können, wenn der E
 
    * v2.2.3+ unterstützt ES 5.x
    * v2.2.8+ und v2.3.1+ unterstützen ES 6.x
-   * ES v2.x und v5.x werden aufgrund von [End of Life) nicht ](https://www.elastic.co/support/eol). Wenn Sie jedoch Adobe Commerce v2.3.1 haben und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [den Elasticsearch-PHP-Client ändern](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search).
+   * ES v2.x und v5.x werden aufgrund von [End of Life) nicht &#x200B;](https://www.elastic.co/support/eol). Wenn Sie jedoch Adobe Commerce v2.3.1 haben und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [den Elasticsearch-PHP-Client ändern](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search).
 
 * Magento Open Source v2.3.0+ unterstützt ES 5.x und 6.x (6.x wird jedoch empfohlen).
 

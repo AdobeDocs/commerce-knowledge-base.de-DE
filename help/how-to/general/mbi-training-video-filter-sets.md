@@ -23,4 +23,4 @@ In diesem Video erfahren Sie Folgendes:
 
 Sehen Sie sich das Video unter [Commerce Intelligence - Filtersätze](/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) in Adobe Experience League an.
 
-**Willst du mitmachen?** schriftliche Anweisungen finden Sie [ Tutorial zum Erstellen von Filtersätzen ](/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) Metriken .
+**Willst du mitmachen?** schriftliche Anweisungen finden Sie [&#x200B; Tutorial zum Erstellen von Filtersätzen &#x200B;](/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) Metriken .

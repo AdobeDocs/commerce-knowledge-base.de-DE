@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerce bietet Qualitätskorrekturen für eine Nebenversion für mindestens 12 Monate ab dem allgemeinen Verfügbarkeitsdatum der nächsten Nebenversion der Software. Die Art und Weise, wie wir in diesem Zeitraum Qualitätskorrekturen bereitstellen, ändert sich:
 
 * **Vorherige Richtlinie:** Derzeit werden die Qualitätskorrekturen für die vorherige Zeile, die im 12-monatigen EOS-Fenster enthalten ist, über unsere vierteljährliche Patch-Version bereitgestellt. Dadurch stellen die vierteljährlichen Patches eine Kombination aus Sicherheit und Qualität dar.
-* **Neue Richtlinie:** Ab 2.4 als aktuellste Nebenversion werden die Veröffentlichungs-Patches für die vorherige unterstützte Zeile (2.3) auf „Nur Sicherheit“ umgestellt. Wir werden auch während des 12-monatigen Zeitfensters nach der Veröffentlichung einer Nebenversion (wie 2.4) und nachfolgender neuer Nebenversionen Qualitätskorrekturen für die vorherige unterstützte Zeile bereitstellen. Diese werden jedoch über das [Quality Patches Tool (QPT) verfügbar gemacht ](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) sich nur auf kritische Probleme konzentrieren.
+* **Neue Richtlinie:** Ab 2.4 als aktuellste Nebenversion werden die Veröffentlichungs-Patches für die vorherige unterstützte Zeile (2.3) auf „Nur Sicherheit“ umgestellt. Wir werden auch während des 12-monatigen Zeitfensters nach der Veröffentlichung einer Nebenversion (wie 2.4) und nachfolgender neuer Nebenversionen Qualitätskorrekturen für die vorherige unterstützte Zeile bereitstellen. Diese werden jedoch über das [Quality Patches Tool (QPT) verfügbar gemacht &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) sich nur auf kritische Probleme konzentrieren.
 
 ## Wann tritt diese Richtlinie in Kraft?
 
@@ -50,7 +50,7 @@ Letztlich sollten alle Händler weiterhin die Planung zur zeitnahen Einführung 
 
 ## Wie erhalte ich Qualitätskorrekturen für unterstützte Nebenversionen, bei denen es sich nicht um die neueste Zeile handelt?
 
-Fehlerbehebungen werden über das [Quality Patches Tool) ](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
+Fehlerbehebungen werden über das [Quality Patches Tool) &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
 
 ## Wie erhalte ich Qualitätskorrekturen für die neueste Zeile?
 

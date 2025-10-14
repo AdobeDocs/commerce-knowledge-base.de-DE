@@ -16,14 +16,14 @@ In diesem Artikel wird über Lösungen für Probleme gesprochen, die durch die f
 
 >[!WARNING]
 >
->Beachten Sie bei Adobe Commerce auf Cloud-Infrastrukturen, dass Service-Upgrades nicht ohne Vorankündigung an unser Infrastrukturteam innerhalb von 48 Geschäftsstunden in die Produktionsumgebung verschoben werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen, [ Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), in dem Sie die erforderliche Service-Aktualisierung detailliert beschreiben und den Zeitpunkt angeben, zu dem der Upgrade-Prozess beginnen soll.
+>Beachten Sie bei Adobe Commerce auf Cloud-Infrastrukturen, dass Service-Upgrades nicht ohne Vorankündigung an unser Infrastrukturteam innerhalb von 48 Geschäftsstunden in die Produktionsumgebung verschoben werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion sein müssen, [&#x200B; Sie ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), in dem Sie die erforderliche Service-Aktualisierung detailliert beschreiben und den Zeitpunkt angeben, zu dem der Upgrade-Prozess beginnen soll.
 
 ## Elasticsearch-Versionskompatibilität mit Adobe Commerce
 
 * Adobe Commerce On-Premise und Adobe Commerce on Cloud Infrastructure:
    * v2.2.3+ unterstützt ES 5.x
    * v2.2.8+ und v2.3.1+ unterstützen ES 6.x
-   * ES v2.x und v5.x werden aufgrund von [End of Life) nicht ](https://www.elastic.co/support/eol). Wenn Sie jedoch Adobe Commerce v2.3.1 haben und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [den Elasticsearch-PHP-Client ändern](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search).
+   * ES v2.x und v5.x werden aufgrund von [End of Life) nicht &#x200B;](https://www.elastic.co/support/eol). Wenn Sie jedoch Adobe Commerce v2.3.1 haben und ES 2.x oder ES 5.x verwenden möchten, müssen Sie [den Elasticsearch-PHP-Client ändern](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search).
 * Magento Open Source v2.3.0+ unterstützt ES 5.x und 6.x (6.x wird jedoch empfohlen).
 
 ## Problem

@@ -31,4 +31,4 @@ Wenn beim erstmaligen Zugriff auf die URL der Fehler 403 auftritt, stellen Sie s
    Wenn Sie das nächste Mal auf die Haupt-URL zugreifen, wird standardmäßig die zuletzt besuchte Umgebung verwendet.
 
 1. Wenn Sie sich immer noch nicht anmelden können, wenden Sie сsich an den Lizenzinhaber oder einen Superuser des Projekts und stellen Sie sicher, dass dieser Ihnen Zugriff **Benutzer auf Projektebene** gewährt, wie unter [Cloud-Projekte > Benutzer zum Projekt hinzufügen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de#add-a-user-to-the-project) in unserer Entwicklerdokumentation beschrieben.
-1. Wenn der Fehler weiterhin auftritt, [ Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Wenn der Fehler weiterhin auftritt, [&#x200B; Sie ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

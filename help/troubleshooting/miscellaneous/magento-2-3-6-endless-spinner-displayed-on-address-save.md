@@ -31,5 +31,5 @@ Das Problem wurde in Adobe Commerce 2.3.1 behoben.
 
 ## Verwandtes Lesen
 
-* [Unterschiedliche Adressen sind nicht zulässig, wenn Sie in unserer Support-Wissensdatenbank die Option „Meine Abrechnungs- und Versandadresse sind identisch“ ](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) VertexAddress Cleansing deaktivieren.
-* [Adobe Commerce 2.4.1 Vertex-Adressvalidierungsmeldung nach ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) Aktualisierung der Adresse in unserer Support-Wissensdatenbank.
+* [Unterschiedliche Adressen sind nicht zulässig, wenn Sie in unserer Support-Wissensdatenbank die Option „Meine Abrechnungs- und Versandadresse sind identisch“ &#x200B;](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) VertexAddress Cleansing deaktivieren.
+* [Adobe Commerce 2.4.1 Vertex-Adressvalidierungsmeldung nach &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) Aktualisierung der Adresse in unserer Support-Wissensdatenbank.

@@ -22,7 +22,7 @@ Probleme mit erweiterten Berichten in Adobe Commerce können mit diesem Tool beh
 Bei Verwendung der erweiterten Berichterstellung wird die Fehlerseite 404 angezeigt. Erfüllt Ihre Website [Advanced Reporting Requirements](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
 
 a. JA - Mit [Schritt 2](#step-2) fortfahren.\
-b. NEIN - Vervollständigen Sie die erweiterten Berichtsanforderungen für Ihre Site, indem Sie die Schritte unter [Erweiterte Berichtsanforderungen](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) befolgen. Fahren Sie dann mit ([ 2) ](#step-2).
+b. NEIN - Vervollständigen Sie die erweiterten Berichtsanforderungen für Ihre Site, indem Sie die Schritte unter [Erweiterte Berichtsanforderungen](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) befolgen. Fahren Sie dann mit ([&#x200B; 2) &#x200B;](#step-2).
 
 +++
 
@@ -58,7 +58,7 @@ b. NEIN - Fahren Sie mit [Schritt 4](#step-4) fort.
 Überprüfen Sie **Admin** > **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Erweiterte Berichterstellung**. Ausführliche Anweisungen finden Sie unter [Erweiterte Berichterstellung: Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
 
 a. JA - Mit [Schritt 5](#step-5) fortfahren.\
-b. NEIN - [Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) und 24 Stunden warten, bis Adobe Commerce und die erweiterten Berichterstellung synchronisiert werden. Überprüfen Sie, ob Ihre Daten jetzt geladen werden. Wenn dies der Fall ist, haben Sie das Problem gelöst. Wenn nicht mit (Schritt [) ](#step-5) wird.
+b. NEIN - [Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) und 24 Stunden warten, bis Adobe Commerce und die erweiterten Berichterstellung synchronisiert werden. Überprüfen Sie, ob Ihre Daten jetzt geladen werden. Wenn dies der Fall ist, haben Sie das Problem gelöst. Wenn nicht mit (Schritt [) &#x200B;](#step-5) wird.
 
 +++
 
@@ -82,9 +82,9 @@ b. NEIN - Wenn der Token-Wert NULL ist oder es keinen Datensatz in der Datenbank
 a. JA - Führen Sie folgende Schritte durch: 1. Führen Sie die folgende Abfrage aus:\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
 2\ [Deaktivieren und Aktivieren des erweiterten Reporting-Moduls](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [autorisieren Sie das Token erneut](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
-3\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [ Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+3\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [&#x200B; Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NEIN - Wenn die Abfrage nichts zurückgibt, führen Sie die folgenden Schritte aus: 1. [Deaktivieren und Aktivieren des erweiterten Reporting-Moduls](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [autorisieren Sie das Token erneut](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
-2\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [ Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+2\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [&#x200B; Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
 
@@ -97,7 +97,7 @@ Vergewissern Sie sich, dass die `analytics_collect_data` ausgeführt wurde, inde
 A. JA - Wenn Datensätze vorhanden sind und in der Spalte **status** der Wert &quot;_missing_ angegeben ist, verwenden Sie den Patch in diesem KB-Artikel Aktualisieren der erweiterten Berichterstellung, um die Ausführung auf einer eigenen Cron-Gruppe durchzuführen.\
 b. JA - Wenn Datensätze vorhanden sind und die Spalte **status** den Wert _success_ aufweist, fahren Sie mit [Schritt 9](#step-9) fort.\
 c. JA - Wenn Datensätze vorhanden sind und die Spalte **status** den Wert _error_ aufweist, fahren Sie mit [Schritt 8.](#step-8) fort.\
-d. NEIN - Wenn keine Datensätze vorhanden sind, fahren Sie mit ([) ](#step-8).
+d. NEIN - Wenn keine Datensätze vorhanden sind, fahren Sie mit ([) &#x200B;](#step-8).
 
 +++
 
@@ -107,8 +107,8 @@ d. NEIN - Wenn keine Datensätze vorhanden sind, fahren Sie mit ([) ](#step-8).
 
 Führen Sie den folgenden Befehl aus: `zgrep analytics_collect_data var/log/support_report.log var/log/support_report.log.1.gz | tail`
 
-a. JA - Wenn die Ausgabe der Abfrage auf einen erfolgreichen Auftrag hinweist, fahren `Cron Job analytics_collect_data is successfully finished` beispielsweise mit ([ 9) ](#step-9).\
-b. NEIN - Wenn das Protokoll keine Datensätze enthält, [ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. JA - Wenn die Ausgabe der Abfrage auf einen erfolgreichen Auftrag hinweist, fahren `Cron Job analytics_collect_data is successfully finished` beispielsweise mit ([&#x200B; 9) &#x200B;](#step-9).\
+b. NEIN - Wenn das Protokoll keine Datensätze enthält, [ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 c. JA - Wenn Datensätze vorhanden sind, aber ein Fehler auftritt, fahren Sie mit [Schritt 10](#step-10) fort.
 
 +++

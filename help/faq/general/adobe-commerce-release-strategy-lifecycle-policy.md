@@ -28,7 +28,7 @@ Die [Adobe Commerce-Software-Lebenszyklusrichtlinie](https://www.adobe.com/conte
 
 ### Wann erreichen Kunden mit 2.4.4, 2.4.5, 2.4.6 und 2.4.7 das Ende der Unterstützung gemäß dieser neuen Richtlinie?
 
-Kunden mit Adobe Commerce 2.4.4 oder höher erhalten 3 Jahre lang ab dem [!DNL GA] der Version Sicherheits- und Qualitätskorrekturen, wie in der folgenden Zeitleiste dargestellt. Siehe die [Veröffentlichte ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=de)&quot; auf [!DNL Experience League] für bestimmte Endtermine des Supports.
+Kunden mit Adobe Commerce 2.4.4 oder höher erhalten 3 Jahre lang ab dem [!DNL GA] der Version Sicherheits- und Qualitätskorrekturen, wie in der folgenden Zeitleiste dargestellt. Siehe die [Veröffentlichte &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=de)&quot; auf [!DNL Experience League] für bestimmte Endtermine des Supports.
 
 ![Grafik 1](assets/MSKB-1978-1.jpg)
 

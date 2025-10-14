@@ -23,7 +23,7 @@ Dieser Artikel bietet eine Lösung für das Problem, dass das Security Scan Tool
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Konfigurieren Sie das Sicherheits-Scan-Tool, um Ihre Website zu überprüfen[ wie unter ](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) beschrieben.
+1. Konfigurieren Sie das Sicherheits-Scan-Tool, um Ihre Website zu überprüfen[&#x200B; wie unter &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) beschrieben.
 1. Wählen Sie in der Spalte Aktionen die Option **Suche ausführen** aus.
 
 <u>Erwartete Ergebnisse</u>:
@@ -47,5 +47,5 @@ Versuchen Sie, Ihre Website zu öffnen.
 
 ## Verwandtes Lesen
 
-* [Live-Schaltung und ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/launch/overview)) in unserer Entwicklerdokumentation.
+* [Live-Schaltung und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/launch/overview)) in unserer Entwicklerdokumentation.
 * [Security Scan](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) in unserem Benutzerhandbuch.

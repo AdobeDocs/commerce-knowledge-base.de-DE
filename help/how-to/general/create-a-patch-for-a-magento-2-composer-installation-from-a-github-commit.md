@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Erstellen eines Patches für die Adobe Commerce Composer-Installation über einen GitHub-Commit
 
-Weitere Informationen finden Sie [ Abschnitt „Benutzerdefinierte Patches“ unter Anwenden von ](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie [&#x200B; Abschnitt „Benutzerdefinierte Patches“ unter Anwenden von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in unserer Entwicklerdokumentation.

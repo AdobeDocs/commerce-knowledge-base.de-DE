@@ -49,7 +49,7 @@ Wenn die Anmeldeinformationen korrekt sind, können Probleme mit Ihren VCLs auft
 curl -X GET -s https://api.fastly.com/service/<Service ID>/version/<Editable Version #>/snippet -H "Fastly-Key:FASTLY_API_TOKEN"
 ```
 
-Überprüfen Sie die Liste der VCLs. Wenn Sie Probleme mit den Standard-VCLs von Fastly haben, können Sie den Inhalt erneut hochladen oder gemäß den [Fastly Standard-VCLs) ](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Informationen zum Bearbeiten Ihrer benutzerdefinierten VCLs finden Sie unter [Benutzerdefinierte Fastly-VCL-Snippets](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=de) im Handbuch zu Commerce in Cloud Infrastructure.
+Überprüfen Sie die Liste der VCLs. Wenn Sie Probleme mit den Standard-VCLs von Fastly haben, können Sie den Inhalt erneut hochladen oder gemäß den [Fastly Standard-VCLs) &#x200B;](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Informationen zum Bearbeiten Ihrer benutzerdefinierten VCLs finden Sie unter [Benutzerdefinierte Fastly-VCL-Snippets](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=de) im Handbuch zu Commerce in Cloud Infrastructure.
 
 ## Weitere Informationen
 

@@ -45,7 +45,7 @@ Das Problem kann durch den falschen Wert des `opcache.enable_cli`-Parameters in 
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass das System gemäß den [Best Practices für die Adobe Commerce-Leistung > Softwareempfehlungen konfiguriert ](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/software).
+1. Vergewissern Sie sich, dass das System gemäß den [Best Practices für die Adobe Commerce-Leistung > Softwareempfehlungen konfiguriert &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/software).
 1. Überprüfen Sie, ob `opcache.enable_cli` -Anweisung in `php.ini` auf `0` festgelegt ist, indem Sie Folgendes ausführen: `php -i | grep opcache.enable_cli`
 1. Wenn die Ausgabe wie `opcache.enable_cli=1` aussieht, bearbeiten Sie die `php.ini` im Stammverzeichnis des Projekts und ändern Sie `opcache.enable_cli=1` in `opcache.enable_cli=0`
 1. Stellen Sie das Projekt erneut bereit.

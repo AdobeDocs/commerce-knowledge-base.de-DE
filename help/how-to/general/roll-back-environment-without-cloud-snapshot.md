@@ -20,7 +20,7 @@ Dieser Artikel zeigt zwei Lösungen zum Zurücksetzen einer Umgebung, ohne dass 
 
 Wählen Sie das für Ihren Fall am besten geeignete aus:
 
-* Wenn Sie einen stabilen Build, aber keinen gültigen Snapshot haben - ([ 1: Kein Snapshot, Build stabil (SSH-Verbindung verfügbar)](#scen2).
+* Wenn Sie einen stabilen Build, aber keinen gültigen Snapshot haben - ([&#x200B; 1: Kein Snapshot, Build stabil (SSH-Verbindung verfügbar)](#scen2).
 * Wenn der Build beschädigt ist und Sie keinen gültigen Snapshot haben - [Szenario 2: Kein Snapshot; Build beschädigt (keine SSH-Verbindung)](#scen3).
 
 ## Szenario 1: Kein Snapshot, Build stabil (SSH-Verbindung verfügbar) {#scen2}
@@ -168,7 +168,7 @@ Wenn die Ausführung des `setup:uninstall`-Befehls mit einem Fehler fehlschlägt
 
 1. Löschen Sie die folgenden Konfigurationsdateien: `config.php`, `config.php` `.bak`, `env.php` und `env.php.bak`.
 
-Nach dem Zurücksetzen der DB [ Sie „einen Git-Push an die Umgebung durchführen, um den Trigger erneut bereitzustellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=de#git-commands) und Adobe Commerce in einer neu erstellten DB zu installieren. Oder [führen Sie den Befehl zum erneuten Bereitstellen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=de#environment-commands).
+Nach dem Zurücksetzen der DB [&#x200B; Sie „einen Git-Push an die Umgebung durchführen, um den Trigger erneut bereitzustellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=de#git-commands) und Adobe Commerce in einer neu erstellten DB zu installieren. Oder [führen Sie den Befehl zum erneuten Bereitstellen &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=de#environment-commands).
 
 ## Verwandtes Lesen
 

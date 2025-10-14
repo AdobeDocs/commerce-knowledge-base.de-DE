@@ -37,7 +37,7 @@ Aktivieren **Vertex-Adressbereinigung**. Anweisungen hierzu finden Sie [Konfigur
 
 <u>Erstes Szenario:</u>
 
-Führen Sie die [ sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
+Führen Sie die [&#x200B; sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
 
 1. Geben Sie eine neue gültige Rechnungsadresse ein.
 1. Klicken Sie auf die Schaltfläche **Aktualisieren**. Die Nachricht/der Vorschlag wird wie folgt angezeigt: *Die Adresse ist ungültig.* Es folgt ein Adressenvorschlag wie: *Postleitzahl : XXXXX- XXXX Straße : XXX City Street XXX*
@@ -56,7 +56,7 @@ Die Überprüfungsmeldung/Empfehlung *Wir haben keine gültige Adresse gefunden 
 
 <u>Zweites Szenario:</u>
 
-Führen Sie die [ sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
+Führen Sie die [&#x200B; sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
 
 1. Füllen Sie das Adressformular mit einer gültigen Adresse aus.
 1. Klicken Sie auf die Schaltfläche **Aktualisieren**. Die Nachricht/der Vorschlag wird wie folgt angezeigt: *Die Adresse ist ungültig.* Es folgt ein Adressenvorschlag wie: *Postleitzahl : XXXXX-XXXX Straße : XXX City Street XXX*.

@@ -14,7 +14,7 @@ ht-degree: 0%
 Der Titel sollte das Problem kurz beschreiben. Es werden maximal 70 Zeichen empfohlen.<br/>
 (Beispiel: „Fehler wegen zu wenig Arbeitsspeicher während der Installation oder Aktualisierung“.)
 
-Weitere Informationen [ Metadaten finden Sie unter ](../../CONTRIBUTING.md#metadata) > Metadaten .
+Weitere Informationen [&#x200B; Metadaten finden Sie unter &#x200B;](../../CONTRIBUTING.md#metadata) > Metadaten .
 
 Ein oder zwei Absätze einführen: ein kurzer Überblick über das Problem. Die ersten 140 Zeichen sind für SEO-Zwecke wichtig.
 

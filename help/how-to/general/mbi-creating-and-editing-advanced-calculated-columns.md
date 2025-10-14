@@ -23,7 +23,7 @@ Eine Liste der berechneten Spalten, die Sie im Data Warehouse-Manager erstellen 
 
 ## Ich brauche noch Hilfe!
 
-Wenn Sie Hilfe bei der Erstellung einer regulären berechneten Spalte benötigen oder eine erweiterte berechnete Spalte erstellen oder bearbeiten möchten, wenden [ sich an unser Team ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) schließen Sie Folgendes ein:
+Wenn Sie Hilfe bei der Erstellung einer regulären berechneten Spalte benötigen oder eine erweiterte berechnete Spalte erstellen oder bearbeiten möchten, wenden [&#x200B; sich an unser Team &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) schließen Sie Folgendes ein:
 
 * Was versuchst du zu tun?
 * Auf welcher Tabelle müssen die neuen Spalten erstellt werden?

@@ -51,11 +51,11 @@ Nun, da alle Daten an einem Ort sind, können wir nach der Quelle der Diskrepanz
 
 Wenn beide Systeme dieselbe Zeilenanzahl aufweisen und die Metrik **Umsatz** nicht mit den Quelldaten übereinstimmt, muss **order\_total** irgendwo abgeschaltet sein. Es ist möglich, dass das Feld **order\_total** in Ihrer Quelldatenbank aktualisiert wurde und Magento BI diese Änderungen nicht übernimmt.
 
-Um dies zu bestätigen, überprüfen Sie, ob die Spalte **order\_total** erneut überprüft wird. Gehen Sie zum Data Warehouse-Manager und klicken Sie auf die **`orders`**. Die „Häufigkeit der [&quot; wird ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=de) „Änderungen?“ angezeigt. Spalte. Das Feld **order\_total** sollte so oft neu überprüft werden, wie dies erwartet wird. Ist dies nicht der Fall, sollte mit der gewünschten Häufigkeit fortgefahren werden.
+Um dies zu bestätigen, überprüfen Sie, ob die Spalte **order\_total** erneut überprüft wird. Gehen Sie zum Data Warehouse-Manager und klicken Sie auf die **`orders`**. Die „Häufigkeit der [&quot; wird &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=de) „Änderungen?“ angezeigt. Spalte. Das Feld **order\_total** sollte so oft neu überprüft werden, wie dies erwartet wird. Ist dies nicht der Fall, sollte mit der gewünschten Häufigkeit fortgefahren werden.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
-Wenn die Häufigkeit der erneuten Prüfung bereits korrekt eingestellt ist, ist ein anderer Fehler aufgetreten. Die nächsten Schritte [ Sie im Abschnitt ](#support)Support kontaktieren“ am Ende dieses Artikels.
+Wenn die Häufigkeit der erneuten Prüfung bereits korrekt eingestellt ist, ist ein anderer Fehler aufgetreten. Die nächsten Schritte [&#x200B; Sie im Abschnitt &#x200B;](#support)Support kontaktieren“ am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält MEHR Zeilen als Magento BI {#morerows}
 
@@ -65,7 +65,7 @@ Navigieren Sie zur Seite Verbindungen und sehen Sie sich den Status der Datenque
 
 1. **Wenn der Status Erneut**, verwendet die Verbindung nicht die richtigen Anmeldeinformationen. Klicken Sie auf die Verbindung, geben Sie die richtigen Anmeldeinformationen ein und versuchen Sie es erneut.
 1. **Wenn der Status Fehlgeschlagen**, ist die Verbindung auf der Server-Seite möglicherweise nicht ordnungsgemäß eingerichtet. Fehlgeschlagene Verbindungen ergeben sich in der Regel aus einem falschen Hostnamen oder dem Ziel-Server, der keine Verbindungen am angegebenen Port akzeptiert. Klicken Sie in die Verbindung und überprüfen Sie die Schreibweise des Hostnamens und dass der richtige Port eingegeben wurde. Stellen Sie auf der Serverseite sicher, dass der Port Verbindungen akzeptieren kann und dass Ihre Firewall die zulässige Magento BI-IP-Adresse (54.88.76.97/32) hat. **Wenn die Verbindung weiterhin fehlschlägt** finden Sie im Abschnitt [Kontaktaufnahme mit dem Support](#support) am Ende dieses Artikels die nächsten Schritte.
-1. **Wenn der Status Erfolgreich ist** , ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte [ Sie im Abschnitt ](#support)Support kontaktieren“ am Ende dieses Artikels.
+1. **Wenn der Status Erfolgreich ist** , ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte [&#x200B; Sie im Abschnitt &#x200B;](#support)Support kontaktieren“ am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält WENIGER Zeilen als Magento BI {#lessrows}
 

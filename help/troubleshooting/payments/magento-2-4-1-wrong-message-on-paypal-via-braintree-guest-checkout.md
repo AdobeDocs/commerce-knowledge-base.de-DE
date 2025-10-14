@@ -60,5 +60,5 @@ Die Problemumgehung besteht darin, dass sich der Kunde bei einem Store anmelden 
 ## Verwandtes Lesen
 
 * [Best Practice für die Anzahl der in den Warenkorb befindlichen Produkte in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Support-Wissensdatenbank.
-* [Tutorial zur Bestellabwicklung: Schritt 1. Artikel zum Warenkorb hinzufügen, ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
+* [Tutorial zur Bestellabwicklung: Schritt 1. Artikel zum Warenkorb hinzufügen, &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
 * [Tutorial zum GraphQL-Checkout: Schritt 1. Fügen Sie Produkte zum Warenkorb hinzu](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) in unserer Entwicklerdokumentation

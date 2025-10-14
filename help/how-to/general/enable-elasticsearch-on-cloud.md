@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Elasticsearch in der Cloud aktivieren
 
-Informationen zum Einrichten von Elasticsearch [ Adobe Commerce in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)Infrastruktur finden Sie im Artikel „Einrichten des Elasticsearch-Service“ in unserer Entwicklerdokumentation.
+Informationen zum Einrichten von Elasticsearch [&#x200B; Adobe Commerce in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)Infrastruktur finden Sie im Artikel „Einrichten des Elasticsearch-Service“ in unserer Entwicklerdokumentation.

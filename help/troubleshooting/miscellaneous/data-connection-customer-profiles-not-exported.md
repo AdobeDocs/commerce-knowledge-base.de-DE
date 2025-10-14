@@ -116,7 +116,7 @@ select * from event_data_saas;
    "error_code": "403003" } } }
    ```
 
-1. Navigieren Sie zur Seite *[!UICONTROL Commerce Services Connector]* in der Admin Console und stellen Sie sicher, dass die angegebenen [!UICONTROL sandbox/production] korrekt konfiguriert sind. Bestätigen Sie außerdem, dass die Einstellungen der Commerce-[!UICONTROL sandbox/production] mit den in der [!UICONTROL Commerce Services Connector] angezeigten übereinstimmen. Weitere [ (](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
+1. Navigieren Sie zur Seite *[!UICONTROL Commerce Services Connector]* in der Admin Console und stellen Sie sicher, dass die angegebenen [!UICONTROL sandbox/production] korrekt konfiguriert sind. Bestätigen Sie außerdem, dass die Einstellungen der Commerce-[!UICONTROL sandbox/production] mit den in der [!UICONTROL Commerce Services Connector] angezeigten übereinstimmen. Weitere [&#x200B; (](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
 
 ### Überprüfen Sie, ob sich die Service-ID in der Zulassungsliste befindet, und bestätigen Sie dies mit dem Adobe Commerce-Support
 

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Bitte beachten Sie, dass Service-Upgrades erst nach einer Vorankündigung von 48 Geschäftsstunden an unser Infrastruktur-Team in die Produktionsumgebung übertragen werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion vorgenommen werden müssen ([ ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)), wobei das erforderliche Service-Upgrade detailliert angegeben und der Zeitpunkt angegeben wird, zu dem das Upgrade gestartet werden soll.
+>Bitte beachten Sie, dass Service-Upgrades erst nach einer Vorankündigung von 48 Geschäftsstunden an unser Infrastruktur-Team in die Produktionsumgebung übertragen werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion vorgenommen werden müssen ([&#x200B; ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)), wobei das erforderliche Service-Upgrade detailliert angegeben und der Zeitpunkt angegeben wird, zu dem das Upgrade gestartet werden soll.
 
 In diesem Artikel wird eine Fehlerbehebung für Probleme während der Bereitstellung nach dem Upgrade auf Adobe Commerce unter Cloud-Infrastrukturversionen 2.3.1 oder höher beschrieben, wenn Sie Elasticsearch-Versionen 2.x und 5.x verwenden.
 
@@ -29,7 +29,7 @@ In diesem Artikel wird eine Fehlerbehebung für Probleme während der Bereitstel
 
 ## Ursache
 
-Händler, die auf Adobe Commerce in der Cloud-Infrastruktur (Version 2.3.1 und höher) aktualisiert haben und eine Version von Elasticsearch vor 6.x verwenden, können bei der Bereitstellung Fehler auftreten. Dies liegt daran, dass die Elasticsearch-Versionen 2.x und 5[x auslaufen ](https://www.elastic.co/support/eol) und in Adobe Commerce nicht mehr unterstützt werden. Der Elasticsearch-Client muss auf dem neuesten Stand sein, da andernfalls beim Ausführen einer Bereitstellung ein Fehler ausgelöst werden könnte. Weitere Informationen finden Sie unter [Ändern des Elasticsearch-Clients](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation.
+Händler, die auf Adobe Commerce in der Cloud-Infrastruktur (Version 2.3.1 und höher) aktualisiert haben und eine Version von Elasticsearch vor 6.x verwenden, können bei der Bereitstellung Fehler auftreten. Dies liegt daran, dass die Elasticsearch-Versionen 2.x und 5[x auslaufen &#x200B;](https://www.elastic.co/support/eol) und in Adobe Commerce nicht mehr unterstützt werden. Der Elasticsearch-Client muss auf dem neuesten Stand sein, da andernfalls beim Ausführen einer Bereitstellung ein Fehler ausgelöst werden könnte. Weitere Informationen finden Sie unter [Ändern des Elasticsearch-Clients](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search) in unserer Entwicklerdokumentation.
 
 ## Problem
 
@@ -51,4 +51,4 @@ Um dieses Problem zu beheben, müssen das Elasticsearch-Client-Modul und der Ela
 * [Anforderungen für den Technologie-Stack von Adobe Commerce 2.3](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview) in unserer Entwicklerdokumentation.
 * [Einrichten des Elasticsearch-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
 * [Installieren und Konfigurieren von Elasticsearch](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/search/overview-search) finden Sie in unserer Entwicklerdokumentation.
-* [Stellen Sie sicher, dass das Elasticsearch ordnungsgemäß installiert ](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md), in unserer Support-Wissensdatenbank.
+* [Stellen Sie sicher, dass das Elasticsearch ordnungsgemäß installiert &#x200B;](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md), in unserer Support-Wissensdatenbank.

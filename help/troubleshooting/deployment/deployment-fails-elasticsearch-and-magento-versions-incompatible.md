@@ -13,4 +13,4 @@ ht-degree: 0%
 
 # Bereitstellung schlägt fehl: Elasticsearch- und Adobe Commerce-Versionen sind inkompatibel
 
-Weitere Informationen finden Sie unter [Einrichten des Elasticsearch-Services > Kompatibilität der Elasticsearch ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie unter [Einrichten des Elasticsearch-Services > Kompatibilität der Elasticsearch &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) in unserer Entwicklerdokumentation.

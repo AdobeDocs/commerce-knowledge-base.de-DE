@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## Wie funktioniert Adobe Commerce Managed Cloud WAF (powered by Fastly)?
 
-Web Application Firewalls (WAFs) verhindern, [ bösartiger Traffic ](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) Websites und Netzwerken gelangt, indem sie den Traffic nach einer Reihe von Sicherheitsregeln filtern. Traffic, der Trigger einer der Regeln ist, wird blockiert, bevor er Ihre Websites oder Ihr Netzwerk beschädigen kann.
+Web Application Firewalls (WAFs) verhindern, [&#x200B; bösartiger Traffic &#x200B;](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) Websites und Netzwerken gelangt, indem sie den Traffic nach einer Reihe von Sicherheitsregeln filtern. Traffic, der Trigger einer der Regeln ist, wird blockiert, bevor er Ihre Websites oder Ihr Netzwerk beschädigen kann.
 
 Adobe Commerce Cloud WAF bietet eine WAF-Richtlinie mit einem Regelsatz, der Ihre Adobe Commerce-Web-Anwendungen vor einer Vielzahl von Angriffen schützt.
 
@@ -50,7 +50,7 @@ Sie können diese Seite anpassen, solange die Anpassung die Anforderungskennung 
 
 ## Wie aktualisieren wir WAF-Regelsätze? Wie schnell kann eine WAF-Regel geändert oder aktualisiert und global in der Produktion angewendet werden?
 
-Als Teil des Cloud-WAF-Services verwaltet Fastly Regelaktualisierungen von kommerziellen Drittanbietern, Fastly Research und Open Sources. Sie aktualisieren veröffentlichte Regeln nach Bedarf oder wenn Änderungen an den Regeln aus ihren jeweiligen Quellen verfügbar sind in eine Richtlinie. Neue Regeln, die mit den veröffentlichten Regelklassen übereinstimmen, werden ebenfalls in die WAF-Instanz eines beliebigen Services eingefügt, sobald sie aktiviert ist. Dies hilft, eine sofortige Abdeckung für neue oder sich entwickelnde Exploits sicherzustellen. Informationen ([ zu Regelaktualisierungen und Wartungsarbeiten) ](https://docs.fastly.com/guides/web-application-firewall/fastly-waf-rule-set-updates-maintenance#rule-set-maintenance) Sie auf der Dokumentations-Site von Fastly.
+Als Teil des Cloud-WAF-Services verwaltet Fastly Regelaktualisierungen von kommerziellen Drittanbietern, Fastly Research und Open Sources. Sie aktualisieren veröffentlichte Regeln nach Bedarf oder wenn Änderungen an den Regeln aus ihren jeweiligen Quellen verfügbar sind in eine Richtlinie. Neue Regeln, die mit den veröffentlichten Regelklassen übereinstimmen, werden ebenfalls in die WAF-Instanz eines beliebigen Services eingefügt, sobald sie aktiviert ist. Dies hilft, eine sofortige Abdeckung für neue oder sich entwickelnde Exploits sicherzustellen. Informationen ([&#x200B; zu Regelaktualisierungen und Wartungsarbeiten) &#x200B;](https://docs.fastly.com/guides/web-application-firewall/fastly-waf-rule-set-updates-maintenance#rule-set-maintenance) Sie auf der Dokumentations-Site von Fastly.
 
 ## Wie unterscheidet sich Adobe Commerces Cloud-WAF von der WAF-Lösung, die Fastly seinen Direktkunden anbietet?
 
@@ -128,7 +128,7 @@ Der WAF-Support bietet die folgenden Ressourcen, um die Auswirkungen unerwünsch
 * Laufende falsch-positive Analyse zur Behandlung von Instanzen, in denen der WAF legitimen Traffic blockiert
 * Konfiguration aller neuen Standardregeln, die im Rahmen von WAF-Versionsaktualisierungen eingeführt werden
 
-Weitere Support[Informationen, einschließlich Schweregraden, Antwortzeiten, Kanälen und Verfügbarkeit, finden Sie in den ](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) von Cloud SLA.
+Weitere Support[Informationen, einschließlich Schweregraden, Antwortzeiten, Kanälen und Verfügbarkeit, finden Sie in den &#x200B;](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) von Cloud SLA.
 
 ## Wie erhalte ich Hilfe, wenn WAF legitimen Traffic blockiert oder andere Probleme verursacht?
 

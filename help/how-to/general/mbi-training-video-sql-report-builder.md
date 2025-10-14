@@ -17,9 +17,9 @@ Denken Sie daran **dass Sie Administratorberechtigungen benötigen, um auf SQL R
 In diesem Video erfahren Sie Folgendes:
 
 * Ausführen einer SQL-Abfrage
-* So [ Sie Ihre Ergebnisse ](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html)<!-- Link fails-->
+* So [&#x200B; Sie Ihre Ergebnisse &#x200B;](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html)<!-- Link fails-->
 * So speichern Sie den Bericht in einem Dashboard
 
-Sehen Sie sich das Video unter [Commerce Intelligence - SQL Report Builder ](/docs/commerce-learn/tutorials/business-intelligence/sql-report-builder.html) in Adobe Experience League an.
+Sehen Sie sich das Video unter [Commerce Intelligence - SQL Report Builder &#x200B;](/docs/commerce-learn/tutorials/business-intelligence/sql-report-builder.html) in Adobe Experience League an.
 
 **Willst du mitmachen?** In unserem [SQL Report Builder-Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) finden Sie schriftliche Anweisungen.

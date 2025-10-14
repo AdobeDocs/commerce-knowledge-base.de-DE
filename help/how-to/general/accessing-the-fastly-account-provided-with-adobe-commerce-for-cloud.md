@@ -20,5 +20,5 @@ Weitere Informationen finden Sie im [Abrufen von Fastly](https://experienceleagu
 
 ## Testen der Fastly-Anmeldedaten
 
-Weitere Informationen finden Sie [ Abschnitt „Testen der Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)Anmeldedaten“ in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie [&#x200B; Abschnitt „Testen der Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)Anmeldedaten“ in unserer Entwicklerdokumentation.
 

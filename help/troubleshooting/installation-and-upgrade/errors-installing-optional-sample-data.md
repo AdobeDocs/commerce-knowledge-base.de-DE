@@ -34,7 +34,7 @@ Diese Ausnahmen resultieren aus den Einstellungen für Dateisystemberechtigungen
 
 ### Lösung
 
-[Legen Sie die Eigentümerschaft und Berechtigungen des Dateisystems erneut ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=de), als Benutzer mit `root` Berechtigungen.
+[Legen Sie die Eigentümerschaft und Berechtigungen des Dateisystems erneut &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=de), als Benutzer mit `root` Berechtigungen.
 
 ## Symptom (Produktionsmodus)
 

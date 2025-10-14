@@ -57,5 +57,5 @@ Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam
 Wenn Sie den Patch für die erweiterte Zahlungsprotokollierung erhalten:
 
 * Pflaster aufkleben.
-* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 * Warten Sie auf weitere Empfehlungen vom Adobe Commerce-Supportteam.

@@ -36,7 +36,7 @@ Die BAK-Dateien sind ein Produkt des Bereitstellungsprozesses. Wenn Sie eine Kon
 
 So stellen Sie die Konfigurationsdateien wieder her:
 
-1. Melden Sie sich mit „SSH[ bei Ihrem Remote-Repository ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
+1. Melden Sie sich mit „SSH[&#x200B; bei Ihrem Remote-Repository &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 1. Listet die verfügbaren Backup-Dateien auf.
 
    ```

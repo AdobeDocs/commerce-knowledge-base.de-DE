@@ -48,8 +48,8 @@ In der folgenden Dokumentation finden Sie Anweisungen zum Upgrade:
 
 ## Verwandtes Lesen
 
-* [PWA Studio: Webpack hängt vor der Kompilierung ](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md) unserer Support-Wissensdatenbank
-* [PWA Studio: Validierungsfehler beim Ausführen des ](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md) in unserer Support-Wissensdatenbank
-* [PWA Studio: In unserer Support-Wissensdatenbank wird im Browser ](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md) Fehler „Proxy nicht möglich“ angezeigt
+* [PWA Studio: Webpack hängt vor der Kompilierung &#x200B;](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md) unserer Support-Wissensdatenbank
+* [PWA Studio: Validierungsfehler beim Ausführen des &#x200B;](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md) in unserer Support-Wissensdatenbank
+* [PWA Studio: In unserer Support-Wissensdatenbank wird im Browser &#x200B;](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md) Fehler „Proxy nicht möglich“ angezeigt
 * [Konfigurieren Sie NPM, um PWA Studio verwenden zu können](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md) in unserer Support-Wissensdatenbank
 * Dokumentation zu [PWA für Adobe Commerce](https://magento.github.io/pwa-studio/)

@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Optionen zur Bereitstellung statischer Inhalte zur Reduzierung von Bereitstellungsausfällen in der Cloud
 
-Weitere Informationen zu den Optionen für die [-Inhaltsbereitstellung (Static Content Deployment Strategies, SCD), ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/static-content) den Bereitstellungsprozess beschleunigen und die Ausfallzeit für die Wartung von Adobe Commerce auf der Cloud-Infrastruktur reduzieren können, finden Sie in unserer Entwicklerdokumentation.
+Weitere Informationen zu den Optionen für die [-Inhaltsbereitstellung (Static Content Deployment Strategies, SCD), &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/static-content) den Bereitstellungsprozess beschleunigen und die Ausfallzeit für die Wartung von Adobe Commerce auf der Cloud-Infrastruktur reduzieren können, finden Sie in unserer Entwicklerdokumentation.

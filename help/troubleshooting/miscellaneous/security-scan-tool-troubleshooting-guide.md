@@ -39,7 +39,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 {   error 403;   }
 ```
 
-Weitere Informationen finden Sie auch [ Artikel in unserer Support](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)Wissensdatenbank unter Der Bericht zum Security Scan Tool ist leer.
+Weitere Informationen finden Sie auch [&#x200B; Artikel in unserer Support](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)Wissensdatenbank unter Der Bericht zum Security Scan Tool ist leer.
 
 ## Problem: Das Sicherheitsproblem wurde behoben, wird aber in der Suche weiterhin als verwundbar angezeigt
 
@@ -59,7 +59,7 @@ Die folgenden Status können bei Prüfungen angezeigt werden:
 1. **Unbekannt**: Das Security Scan Tool enthält noch keine Daten zu Ihrer Domain. Warten Sie auf den nächsten Synchronisierungszyklus.
 1. **Fehlgeschlagen**: Wenn der Status „Fehlgeschlagen“ anzeigt, müssen Sie das Problem beheben (2FA aktivieren, Admin-URL ändern usw.) und auf den nächsten Synchronisierungszyklus warten.
 
-Wenn seit der Vornahme der Änderungen an der Instanz 24 Stunden vergangen sind und sie nicht im Bericht zur Sicherheitsprüfung angezeigt werden, können [ ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Geben Sie beim Senden des Tickets die Store-URL an.
+Wenn seit der Vornahme der Änderungen an der Instanz 24 Stunden vergangen sind und sie nicht im Bericht zur Sicherheitsprüfung angezeigt werden, können [&#x200B; ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Geben Sie beim Senden des Tickets die Store-URL an.
 
 ## BotNet-Verdächtiger Fehler
 
@@ -77,7 +77,7 @@ Sie erhalten eine Benachrichtigung über den Fehler „BotNet-Verdächtiger“.
 1. Überprüfen Sie die neu erstellten SSH-Konten, Dateisystemänderungen usw.
 1. Führen Sie eine Sicherheitsüberprüfung durch.
 1. Überprüfen Sie die Adobe Commerce-Version und das Upgrade, insbesondere wenn weiterhin Magento 1 ausgeführt wird, das nicht mehr unterstützt wird.
-1. Wenn das Problem weiterhin besteht, [ Sie ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL an.
+1. Wenn das Problem weiterhin besteht, [&#x200B; Sie ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL an.
 
 ## Problem: Kompromisseinspritzung fehlgeschlagen
 

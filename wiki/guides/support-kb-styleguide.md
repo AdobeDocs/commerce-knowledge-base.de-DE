@@ -276,4 +276,4 @@ Im Allgemeinen befolgen Sie die Chicagoer Manual of Style Recommendations für O
 
 ## Branding
 
-* Magento Commerce ist jetzt Adobe Commerce. Weitere Informationen zur Verwendung der [ Markensprache finden ](https://github.com/magento/knowledge-base/wiki) im Wiki zu den Rebranding-Bedingungen.
+* Magento Commerce ist jetzt Adobe Commerce. Weitere Informationen zur Verwendung der [&#x200B; Markensprache finden &#x200B;](https://github.com/magento/knowledge-base/wiki) im Wiki zu den Rebranding-Bedingungen.

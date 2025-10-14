@@ -31,7 +31,7 @@ Dieses Verhalten ist zu erwarten, da die vom Anbieter gebündelten Erweiterungen
 
 ## Lösung
 
-Installieren/kaufen Sie die offiziellen Erweiterungen separat. Diese sind auf der [Commerce Marketplace ](https://marketplace.magento.com/extensions.html).
+Installieren/kaufen Sie die offiziellen Erweiterungen separat. Diese sind auf der [Commerce Marketplace &#x200B;](https://marketplace.magento.com/extensions.html).
 
 ## Verwandtes Lesen
 

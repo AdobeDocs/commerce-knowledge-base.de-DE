@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Rabatt nur für Erstkauf angeben (keine Coupons)
 
-Weitere Informationen finden Sie [ Artikel „Rabatt beim ](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rule-discount-first-purchase)&quot; in unserem Benutzerhandbuch.
+Weitere Informationen finden Sie [&#x200B; Artikel „Rabatt beim &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/promotions/cart-rules/price-rule-discount-first-purchase)&quot; in unserem Benutzerhandbuch.

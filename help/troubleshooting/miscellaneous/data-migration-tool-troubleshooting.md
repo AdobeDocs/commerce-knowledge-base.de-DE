@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Ursache
 
-Eine Klasse aus der Adobe Commerce Adobe Commerce 1-Codebasis konnte während des [EAV-Migrationsschritts“ in unserer Entwicklerdokumentation nicht in ](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/data-migration/basics/technical-specification) 2-Codebasis gefunden werden. In den meisten Fällen gehört die fehlende Klasse zu einer [Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#extension).
+Eine Klasse aus der Adobe Commerce Adobe Commerce 1-Codebasis konnte während des [EAV-Migrationsschritts“ in unserer Entwicklerdokumentation nicht in &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/data-migration/basics/technical-specification) 2-Codebasis gefunden werden. In den meisten Fällen gehört die fehlende Klasse zu einer [Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#extension).
 
 ### Mögliche Lösungen
 

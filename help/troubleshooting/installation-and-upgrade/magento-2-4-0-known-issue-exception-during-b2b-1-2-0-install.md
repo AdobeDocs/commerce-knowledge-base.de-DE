@@ -65,11 +65,11 @@ Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie 
 
 <u>Composer Patch-</u>
 
-Anweisungen [ Composer-Patches finden Sie unter „Anwenden eines von Adobe bereitgestellten ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)&quot;.
+Anweisungen [&#x200B; Composer-Patches finden Sie unter „Anwenden eines von Adobe bereitgestellten &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)&quot;.
 
 <u>Git-Patch-</u>
 
-* Siehe [Anwenden von ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
+* Siehe [Anwenden von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
 * Siehe [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce.
 
 ## Verwandtes Lesen

@@ -47,7 +47,7 @@ Staging2:
 
 ## Ursache
 
-[!DNL SendGrid] hat eine Systembegrenzung von 30 MB für E-Mails. Es wird empfohlen, keine Anhänge zu verwenden, die mehr als 10 MB umfassen. Weitere Informationen finden [ in der ](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh)-Dokumentation unter „Senden von Anhängen“.
+[!DNL SendGrid] hat eine Systembegrenzung von 30 MB für E-Mails. Es wird empfohlen, keine Anhänge zu verwenden, die mehr als 10 MB umfassen. Weitere Informationen finden [&#x200B; in der &#x200B;](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh)-Dokumentation unter „Senden von Anhängen“.
 
 ## Abhilfe
 

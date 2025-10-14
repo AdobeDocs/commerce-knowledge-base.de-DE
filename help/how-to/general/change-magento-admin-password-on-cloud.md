@@ -24,7 +24,7 @@ Nachfolgend finden Sie die kritischen Nutzungshinweise.
 
 Bevor Sie das Formular **Kennwort vergessen** verwenden, stellen Sie sicher, dass Sie [ausgehende E-Mails aktivieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html?lang=de) mithilfe der [Cloud-Konsole](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=de). Dies gilt nur für Integrationsumgebungen und Sandbox-Projekte.
 
-Wenn ausgehende E-Mails in Pro Produktion oder Staging wirklich deaktiviert sind - was bedeutet, dass die E-Mail nicht von SendGrid aufgenommen wurde - können Sie dies überprüfen, indem Sie die Option [E-Mails in der Cloud-Konsole aktivieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/outgoing-emails#enable-emails-in-the-cli) aktivieren. Wenn das Problem weiterhin besteht, können Sie ein Adobe-Support[Ticket ](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Wenn ausgehende E-Mails in Pro Produktion oder Staging wirklich deaktiviert sind - was bedeutet, dass die E-Mail nicht von SendGrid aufgenommen wurde - können Sie dies überprüfen, indem Sie die Option [E-Mails in der Cloud-Konsole aktivieren](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/project/outgoing-emails#enable-emails-in-the-cli) aktivieren. Wenn das Problem weiterhin besteht, können Sie ein Adobe-Support[Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ### Junk-E-Mail-Ordner überprüfen
 

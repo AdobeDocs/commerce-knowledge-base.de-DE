@@ -20,7 +20,7 @@ In diesem Artikel wird erläutert, wie Sie Ihre Produktionsumgebung mit der Stag
 
 ## So synchronisieren Sie Daten von einer Umgebung mit einer anderen
 
-Um die Daten zu synchronisieren, müssen Sie die Datenbank manuell aus der Quellumgebung entladen. Um Daten in eine andere Umgebung zu übertragen, müssen Sie dann den Quell-Dump in die Zielumgebung hochladen und importieren. Weitere Informationen finden Sie unter [Importieren von Adobe Commerce-Code in ein Cloud-Projekt > Importieren ](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) Adobe Commerce-Datenbank“ in unserer Entwicklerdokumentation.
+Um die Daten zu synchronisieren, müssen Sie die Datenbank manuell aus der Quellumgebung entladen. Um Daten in eine andere Umgebung zu übertragen, müssen Sie dann den Quell-Dump in die Zielumgebung hochladen und importieren. Weitere Informationen finden Sie unter [Importieren von Adobe Commerce-Code in ein Cloud-Projekt > Importieren &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) Adobe Commerce-Datenbank“ in unserer Entwicklerdokumentation.
 
 Für die Planarchitektur Adobe Commerce on Cloud Infrastructure Pro können Sie auch von der Staging- und Produktionsumgebung aus mit Ihrer Hauptverzweigung für die Integration synchronisieren. Diese Synchronisierung ruft nur Code ab und pusht ihn, keine Daten. Um Daten zu synchronisieren, müssen Sie die Datenbankdaten ablegen und in die Datenbank einer anderen Umgebung pushen.
 

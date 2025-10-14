@@ -18,7 +18,7 @@ Anzahl Die Installation von Drittanbieter-Apps (wie WordPress oder Drupal) auf d
 
 ### Vereinbarung über die Nutzungsbedingungen
 
-In Artikel 18 der Adobe Commerce [ Cloud Infrastructure Edition (](https://magento.com/legal/terms/cloud-terms)) heißt es:
+In Artikel 18 der Adobe Commerce [&#x200B; Cloud Infrastructure Edition (](https://magento.com/legal/terms/cloud-terms)) heißt es:
 
 > Der Kunde erklärt sich damit einverstanden, dass Adobe Commerce und der Service nicht zum Hosten anderer Software-Anwendungen von Drittanbietern verwendet werden, die nicht direkt von der Software abhängig sind.
 

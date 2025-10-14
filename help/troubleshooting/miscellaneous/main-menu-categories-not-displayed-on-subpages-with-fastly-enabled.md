@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist
 
-Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü „Navigation oben“ ](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü „Navigation oben“ &#x200B;](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
 
 **Ursache:** das nicht zulässige `/` (Schrägstrich) im Parameter *URL-Schlüssel* der Seite (Einstellungen für die Suchmaschinenoptimierung). Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort) versehentlich anstelle des *URL-Schlüssels* angegeben wird, z. B. *blog/page\_name* anstelle von *page\_name*.
 

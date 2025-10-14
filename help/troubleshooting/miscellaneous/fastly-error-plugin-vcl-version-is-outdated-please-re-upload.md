@@ -33,7 +33,7 @@ Die Fastly-Erweiterung wurde aktualisiert (zusammen mit einer gebündelten VCL-K
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass Sie die neuesten ECE-Tools in der [ Version ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html?lang=de) Entwicklerdokumentation installiert haben. ECE-Tools hat eine Version des Fastly-Pakets in seinen Abhängigkeiten.
+1. Vergewissern Sie sich, dass Sie die neuesten ECE-Tools in der [&#x200B; Version &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html?lang=de) Entwicklerdokumentation installiert haben. ECE-Tools hat eine Version des Fastly-Pakets in seinen Abhängigkeiten.
 
    Dies mag nicht die neueste Version des Fastly-Plugins sein, aber es ist wahrscheinlich eine spätere Version als die, die Sie gerade installiert haben, und es ist Best Practice, die neuesten ECE-Tools zu installieren.
 

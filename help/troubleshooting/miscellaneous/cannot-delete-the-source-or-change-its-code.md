@@ -39,4 +39,4 @@ Sie können eine Quelle aus einem Produkt entfernen, indem Sie das Inventar übe
 
 Wenn Sie eine Quelle aus [SSA)-](https://experienceleague.adobe.com/de/docs/commerce-admin/inventory/basics/selection-reservations) und der Adobe Commerce-Inventarauftragsverarbeitung entfernen müssen, können Sie die Quelle deaktivieren. Deaktivierte Quellen speichern alle Daten, zugewiesenen Produkte und Lagermengen und können jederzeit wieder aktiviert werden, um den Versand wieder aufzunehmen.
 
-Weitere Informationen zum Deaktivieren einer [ finden Sie ](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) Handbuch zum Erstellen von Quellen .
+Weitere Informationen zum Deaktivieren einer [&#x200B; finden Sie &#x200B;](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) Handbuch zum Erstellen von Quellen .

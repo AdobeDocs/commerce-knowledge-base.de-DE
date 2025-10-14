@@ -65,6 +65,6 @@ Der `MDVA-14172_EE_2.2.6_COMPOSER_v1.patch` Patch ist auch mit den folgenden Ado
 
 ## Anbringen des Pflasters
 
-Anleitungen finden [ in unserer Support](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)Wissensdatenbank unter „So wenden Sie einen Composer-Patch an, der von Adobe bereitgestellt wird“.
+Anleitungen finden [&#x200B; in unserer Support](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)Wissensdatenbank unter „So wenden Sie einen Composer-Patch an, der von Adobe bereitgestellt wird“.
 
 ## Angehängte Dateien

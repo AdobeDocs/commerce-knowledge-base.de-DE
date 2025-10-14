@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Profilerstellung von Datenbankabfragen in Adobe Commerce in der Cloud-Infrastruktur
 
-Weitere Informationen finden Sie [ Abschnitt „Profildatenbankabfragen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/profile-database-queries) in unserer Entwicklerdokumentation.
+Weitere Informationen finden Sie [&#x200B; Abschnitt „Profildatenbankabfragen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/profile-database-queries) in unserer Entwicklerdokumentation.

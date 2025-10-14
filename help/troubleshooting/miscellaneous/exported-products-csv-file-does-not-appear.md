@@ -73,7 +73,7 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 
 #### Prozess als Cron-Auftrag hinzufügen (optional)
 
-1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [ finden Sie unter „Einrichten ](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) Cron-Aufträgen“.
+1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [&#x200B; finden Sie unter „Einrichten &#x200B;](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) Cron-Aufträgen“.
 1. Führen Sie den folgenden Befehl aus, um eine Liste der Nachrichtenwarteschlangen-Verbraucher zurückzugeben:     `./bin/magento queue:consumers:list`
 1. Fügen Sie Ihrer `.magento.env.yaml`-Datei im Stammverzeichnis der Anwendung Folgendes hinzu und schließen Sie die Verbraucher ein, die Sie hinzufügen möchten. Hier finden Sie beispielsweise den Verbraucher, der für die Exportverarbeitung erforderlich ist:
 
@@ -91,7 +91,7 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 
 >[!NOTE]
 >
->Wenn Sie die `.magento.env.yaml`-Datei für Ihre Umgebung nicht finden können und der Meinung sind, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml` erstellen. Möglicherweise ist es zunächst leer. Sie können dort nach Bedarf weitere Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel[ „Konfigurieren von Umgebungsvariablen für ](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)&quot; und [Umgebungsvariablen](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in Ihrer Entwicklerdokumentation.
+>Wenn Sie die `.magento.env.yaml`-Datei für Ihre Umgebung nicht finden können und der Meinung sind, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml` erstellen. Möglicherweise ist es zunächst leer. Sie können dort nach Bedarf weitere Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel[&#x200B; „Konfigurieren von Umgebungsvariablen für &#x200B;](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)&quot; und [Umgebungsvariablen](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in Ihrer Entwicklerdokumentation.
 
 >[!TIP]
 >
@@ -99,4 +99,4 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 
 >[!NOTE]
 >
->In Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [automatische Krone](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) in Ihrer Adobe Commerce in der Cloud-Infrastruktur aktiviert sein, bevor Sie mithilfe von `.magento.app.yaml` benutzerdefinierte Cron-Aufträge zu Staging- und Produktionsumgebungen hinzufügen können. Wenn diese Funktion nicht aktiviert ist[ erstellen Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.
+>In Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [automatische Krone](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) in Ihrer Adobe Commerce in der Cloud-Infrastruktur aktiviert sein, bevor Sie mithilfe von `.magento.app.yaml` benutzerdefinierte Cron-Aufträge zu Staging- und Produktionsumgebungen hinzufügen können. Wenn diese Funktion nicht aktiviert ist[&#x200B; erstellen Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.

@@ -80,7 +80,7 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht korrekt synchronisiert werd
    bin/magento indexer:reindex cde_products_feed
    ```
 
-1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [&#x200B; ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Zeitstempel des letzten Produktexports überprüfen
 
@@ -96,7 +96,7 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht korrekt synchronisiert werd
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Warten Sie `<>` (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Warten Sie `<>` (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [&#x200B; ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Spezifischen Attributcode synchronisieren
 
@@ -114,7 +114,7 @@ Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht korrekt 
    bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
-1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [&#x200B; ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Zeitstempel des letzten Produktattribut-Exports überprüfen
 
@@ -132,7 +132,7 @@ Wenn die richtigen Daten in `cde_product_attributes_feed` angezeigt werden:
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. 15-20 Minuten warten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [ ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. 15-20 Minuten warten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [&#x200B; ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Nach API-Konfigurationsänderung synchronisieren
 

@@ -83,7 +83,7 @@ Im Folgenden finden Sie die häufigsten Fragen, die Sie stellen können, wenn Si
 In unserer Entwicklerdokumentation:
 
 * [Variablen bereitstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy).
-* [Richten Sie eine optionale Datenbankreplikation ](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
+* [Richten Sie eine optionale Datenbankreplikation &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/storage/split-db/multi-master-replication).
 * [ECE-Tools-Paket](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview).
 
 >[!NOTE]

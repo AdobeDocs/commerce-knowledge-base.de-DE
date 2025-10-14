@@ -47,7 +47,7 @@ Bevor Sie mit dem Upgrade auf Adobe Commerce 2.4.4 beginnen, müssen Händler je
 
 Wenn die Adobe Commerce-Kernversion, auf der sie sich befinden, Elasticsearch 7.10 unterstützt, können sie sie verwenden.
 
-Informationen [ Versionskompatibilität finden Sie in ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) Entwicklerdokumentation unter „Systemanforderungen“.
+Informationen [&#x200B; Versionskompatibilität finden Sie in &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=de) Entwicklerdokumentation unter „Systemanforderungen“.
 
 >[!NOTE]
 >

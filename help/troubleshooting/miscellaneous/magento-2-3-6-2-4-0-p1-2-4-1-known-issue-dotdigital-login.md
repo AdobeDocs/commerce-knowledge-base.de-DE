@@ -47,4 +47,4 @@ Problemumgehung: Verwenden Sie für diese spezielle Situation einen alternativen
 
 ## Verwandtes Lesen
 
-[Bekanntes Problem mit Adobe Commerce 2.4.1 - Vertex-Adresse wird nicht mit verschiedenen Versand-/Rechnungsadressen ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) unserer Support-Wissensdatenbank validiert.
+[Bekanntes Problem mit Adobe Commerce 2.4.1 - Vertex-Adresse wird nicht mit verschiedenen Versand-/Rechnungsadressen &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) unserer Support-Wissensdatenbank validiert.
