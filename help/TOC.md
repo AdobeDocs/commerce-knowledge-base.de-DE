@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 5c4d76b3dbaf34b2ded10b520297087562fcaad2
+source-git-commit: 3f0eb749d5f704af3584178187fa0907b9c81d83
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -264,13 +264,7 @@ ht-degree: 0%
       * [Anleitungen zum Schützen Ihres Geschäfts und zum Drehen von Verschlüsselungsschlüsseln: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
    * Elasticsearch {#elasticsearch}
       * [Fallback auf [!DNL Elasticsearch7]  wenn die Suchmaschine auf gesetzt ist [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
-      * [Elasticsearch-Probleme nach der Aktualisierung auf Adobe Commerce Cloud Infrastructure 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
       * [ElasticSuite Trackingindizes verursacht Probleme mit Elasticsearch](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
-      * [Stellen Sie sicher, dass Elasticsearch ordnungsgemäß installiert ist](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md)
-      * [Elasticsearch 5 ist konfiguriert, aber die Suchseite wird nicht mit dem Fehler „Felddaten sind deaktiviert…“ geladen](/help/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled-error.md)
-      * [Elasticsearch-Indexstatus ist „gelb“ oder „rot“](/help/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.md)
-      * [Elasticsearch-Dienst nicht ausgeführt](/help/troubleshooting/elasticsearch/elasticsearch-service-not-running.md)
-      * [MySQL und Elasticsearch zeigen unterschiedliche Ergebnisse](/help/troubleshooting/elasticsearch/mysql-and-elasticsearch-show-different-results.md)
 * Hilfe-Center-Handbuch {#help-center-guide}
    * [Experience League Support-Benutzerhandbuch für Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Aktualisierung der Adobe Commerce Support-Ticket-Lebenszyklusrichtlinie](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
