@@ -16,7 +16,7 @@ In diesem Artikel werden die offiziellen Dokumentationsressourcen aufgeführt, d
 
 ## Adobe Commerce ist bereit für die DSGVO
 
-Die [offizielle Homepage](https://business.adobe.com/privacy/general-data-protection-regulation.html) für alle Adobe Commerce-DSGVO-Ressourcen.
+Die [offizielle Homepage](https://business.adobe.com/de/privacy/general-data-protection-regulation.html) für alle Adobe Commerce-DSGVO-Ressourcen.
 
 ## Offizielle Adobe Commerce-Erklärungen
 

@@ -103,4 +103,4 @@ Adobe Commerce auf Cloud-Infrastruktur</td>
 
 * Adobe Trust Center (Sicherheits-Updates und Patches): [https://www.adobe.com/trust/resources.html](https://www.adobe.com/trust/resources.html)
 * Adobe Commerce Community Developer Blog (Anleitungen, Best Practices und technische Neuigkeiten aus der Community): [https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog](https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog)
-* Adobe Commerce-Blog (allgemeiner E-Commerce):[https://business.adobe.com/blog/](https://business.adobe.com/blog/)
+* Adobe Commerce-Blog (allgemeiner E-Commerce):[https://business.adobe.com/de/blog/](https://business.adobe.com/de/blog/)
