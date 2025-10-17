@@ -21,7 +21,7 @@ Wie in [Geschäftsbedingungen für Adobe Commerce-Support-Services definiert](ht
 ## P1-Benachrichtigungs-Hotline-Telefonrichtlinien
 
 * Die P1-Benachrichtigungs-Hotline ist verfügbar, um Probleme auf P1-Ebene zu melden (siehe die Definition von P1-Incident im vorherigen Abschnitt).
-* [Senden Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) bevor Sie die Adobe Commerce P1-Benachrichtigungs-Hotline anrufen.
+* [Senden Sie ein Support-Ticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=de#submit-ticket) bevor Sie die Adobe Commerce P1-Benachrichtigungs-Hotline anrufen.
 * Untersuchung, Fehlerbehebung und Kommunikation erfolgen ausschließlich innerhalb des Support-Tickets.
 * Fügen Sie dem Ticket direkt vor dem Anruf alle zusätzlichen Informationen hinzu, die Sie möglicherweise im Zusammenhang mit dem Problem haben.
 * Vergewissern Sie sich beim Anruf, dass Sie die Ticketnummer haben.
