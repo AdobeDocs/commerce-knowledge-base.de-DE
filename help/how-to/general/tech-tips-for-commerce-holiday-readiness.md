@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Die angehängte PDF-Datei enthält Tipps, wie Sie Ihre Infrastruktur auf hohen Traffic vorbereiten, Ausfallzeiten verhindern und die Leistung in der Urlaubszeit optimieren können.
 
-Weitere lösungsübergreifende Anleitungen zur Vorbereitung von Unternehmen, Infrastruktur und Teams auf die Hauptsaison finden Sie im Handbuch [Adobe DX Solutions Unified Holiday Readiness](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/unified-holiday-readiness).
+Weitere lösungsübergreifende Anleitungen zur Vorbereitung von Unternehmen, Infrastruktur und Teams auf die Hauptsaison finden Sie im Handbuch [Adobe DX Solutions Unified Holiday Readiness](https://experienceleague.adobe.com/de/docs/support-resources/data-sheets/unified-holiday-readiness).
 
 ## Betroffene Produkte und Versionen
 
