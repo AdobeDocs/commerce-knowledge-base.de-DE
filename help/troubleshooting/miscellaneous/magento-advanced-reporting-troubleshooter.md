@@ -4,7 +4,7 @@ description: Probleme mit erweiterten Berichten in Adobe Commerce können mit di
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 50262a7b98091d4388668c984cfd8237bd534bad
+source-git-commit: 3761e9b337ae5b3c07fb23a0bdf191b96efe55ba
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 0%
@@ -19,10 +19,10 @@ Probleme mit erweiterten Berichten in Adobe Commerce können mit diesem Tool beh
 
 +++**Erfüllt Ihre Website die erweiterten Reporting-Anforderungen?**
 
-Bei Verwendung der erweiterten Berichterstellung wird die Fehlerseite 404 angezeigt. Erfüllt Ihre Website [Advanced Reporting Requirements](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
+Bei Verwendung der erweiterten Berichterstellung wird die Fehlerseite 404 angezeigt. Erfüllt Ihre Website [Advanced Reporting Requirements](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
 
 a. JA - Mit [Schritt 2](#step-2) fortfahren.\
-b. NEIN - Vervollständigen Sie die erweiterten Berichtsanforderungen für Ihre Site, indem Sie die Schritte unter [Erweiterte Berichtsanforderungen](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) befolgen. Fahren Sie dann mit ([&#x200B; 2) &#x200B;](#step-2).
+b. NEIN - Vervollständigen Sie die erweiterten Berichtsanforderungen für Ihre Site, indem Sie die Schritte unter [Erweiterte Berichtsanforderungen](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements) befolgen. Fahren Sie dann mit ([ 2) ](#step-2).
 
 +++
 
@@ -32,7 +32,7 @@ b. NEIN - Vervollständigen Sie die erweiterten Berichtsanforderungen für Ihre 
 
 Werden mehrere Basiswährungen verwendet (in Bestellungen und Konfiguration)? Führen Sie diesen [!DNL SQL] aus, um die aktuelle Konfiguration abzurufen: `SELECT value FROM core_config_data WHERE path = 'currency/options/base';` .
 
-a. JA - Wenn die Abfrage mehrere Zeilen zurückgibt, können Sie keine **[!UICONTROL Advanced Reporting]** verwenden, da wir nur eine Währung unterstützen. Sie müssen [Adobe Commerce Intelligence verwenden](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/guide-overview). Wenden Sie sich an Ihr Konto-Team, um dies einzurichten.
+a. JA - Wenn die Abfrage mehrere Zeilen zurückgibt, können Sie keine **[!UICONTROL Advanced Reporting]** verwenden, da wir nur eine Währung unterstützen. Sie müssen [Adobe Commerce Intelligence verwenden](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/guide-overview). Wenden Sie sich an Ihr Konto-Team, um dies einzurichten.
 b. NEIN - Ausgabe zeigt nur eine Währung. Beispiel: `USD`. Wurden bereits mehrere Basiswährungen (in Bestellungen) verwendet? Führen Sie diesen [!DNL SQL] aus, um historische Bestelldaten abzurufen:\
 `SELECT DISTINCT base_currency_code FROM sales_order;`.
 **HINWEIS: Dieser Befehl erfordert eine vollständige Tabellenüberprüfung. Bei Tabellen mit einer hohen Anzahl von Datensätzen kann dies daher während der Ausführung der Abfrage die Leistung beeinträchtigen,** historische Bestelldaten abzurufen.
@@ -44,7 +44,7 @@ Wenn bereits mehrere Basiswährungen verwendet wurden, können Sie keine erweite
 
 +++**Verwenden Sie die Split-Datenbanklösung?**
 
-Verwenden Sie die [Split-](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
+Verwenden Sie die [Split-](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
 
 a. JA - Verwenden Sie den Patch **MDVA-26831** in Advanced Reporting 404-Fehler bei der Lösung aufgeteilter Datenbanken und löschen Sie den Cache. Warten Sie 24 Stunden, bis der Auftrag erneut ausgeführt wird, und versuchen Sie es dann erneut.\
 b. NEIN - Fahren Sie mit [Schritt 4](#step-4) fort.
@@ -55,10 +55,10 @@ b. NEIN - Fahren Sie mit [Schritt 4](#step-4) fort.
 
 +++**Ist die erweiterte Berichterstellung aktiviert?**
 
-Überprüfen Sie **Admin** > **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Erweiterte Berichterstellung**. Ausführliche Anweisungen finden Sie unter [Erweiterte Berichterstellung: Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
+Überprüfen Sie **Admin** > **Stores** > **Einstellungen** > **Konfiguration** > **Allgemein** > **Erweiterte Berichterstellung**. Ausführliche Anweisungen finden Sie unter [Erweiterte Berichterstellung: Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
 
 a. JA - Mit [Schritt 5](#step-5) fortfahren.\
-b. NEIN - [Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) und 24 Stunden warten, bis Adobe Commerce und die erweiterten Berichterstellung synchronisiert werden. Überprüfen Sie, ob Ihre Daten jetzt geladen werden. Wenn dies der Fall ist, haben Sie das Problem gelöst. Wenn nicht mit (Schritt [) &#x200B;](#step-5) wird.
+b. NEIN - [Erweiterte Berichterstellung aktivieren](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) und 24 Stunden warten, bis Adobe Commerce und die erweiterten Berichterstellung synchronisiert werden. Überprüfen Sie, ob Ihre Daten jetzt geladen werden. Wenn dies der Fall ist, haben Sie das Problem gelöst. Wenn nicht mit (Schritt [) ](#step-5) wird.
 
 +++
 
@@ -81,10 +81,10 @@ b. NEIN - Wenn der Token-Wert NULL ist oder es keinen Datensatz in der Datenbank
 
 a. JA - Führen Sie folgende Schritte durch: 1. Führen Sie die folgende Abfrage aus:\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\ [Deaktivieren und Aktivieren des erweiterten Reporting-Moduls](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [autorisieren Sie das Token erneut](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
-3\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [&#x200B; Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NEIN - Wenn die Abfrage nichts zurückgibt, führen Sie die folgenden Schritte aus: 1. [Deaktivieren und Aktivieren des erweiterten Reporting-Moduls](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [autorisieren Sie das Token erneut](https://experienceleague.adobe.com/de/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
-2\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [&#x200B; Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+2\ [Deaktivieren und Aktivieren des erweiterten Reporting-Moduls](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [autorisieren Sie das Token erneut](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+3\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [ Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+b. NEIN - Wenn die Abfrage nichts zurückgibt, führen Sie die folgenden Schritte aus: 1. [Deaktivieren und Aktivieren des erweiterten Reporting-Moduls](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) in den Einstellungen und [autorisieren Sie das Token erneut](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+2\ Warten Sie 24 Stunden, bis Adobe Commerce und Advanced Reporting synchronisiert sind. Wenn Sie im erweiterten Reporting immer noch keine Daten sehen können, [ Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
 
@@ -97,7 +97,7 @@ Vergewissern Sie sich, dass die `analytics_collect_data` ausgeführt wurde, inde
 A. JA - Wenn Datensätze vorhanden sind und in der Spalte **status** der Wert &quot;_missing_ angegeben ist, verwenden Sie den Patch in diesem KB-Artikel Aktualisieren der erweiterten Berichterstellung, um die Ausführung auf einer eigenen Cron-Gruppe durchzuführen.\
 b. JA - Wenn Datensätze vorhanden sind und die Spalte **status** den Wert _success_ aufweist, fahren Sie mit [Schritt 9](#step-9) fort.\
 c. JA - Wenn Datensätze vorhanden sind und die Spalte **status** den Wert _error_ aufweist, fahren Sie mit [Schritt 8.](#step-8) fort.\
-d. NEIN - Wenn keine Datensätze vorhanden sind, fahren Sie mit ([) &#x200B;](#step-8).
+d. NEIN - Wenn keine Datensätze vorhanden sind, fahren Sie mit ([) ](#step-8).
 
 +++
 
@@ -107,8 +107,8 @@ d. NEIN - Wenn keine Datensätze vorhanden sind, fahren Sie mit ([) &#x200B;](#s
 
 Führen Sie den folgenden Befehl aus: `zgrep analytics_collect_data var/log/support_report.log var/log/support_report.log.1.gz | tail`
 
-a. JA - Wenn die Ausgabe der Abfrage auf einen erfolgreichen Auftrag hinweist, fahren `Cron Job analytics_collect_data is successfully finished` beispielsweise mit ([&#x200B; 9) &#x200B;](#step-9).\
-b. NEIN - Wenn das Protokoll keine Datensätze enthält, [ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. JA - Wenn die Ausgabe der Abfrage auf einen erfolgreichen Auftrag hinweist, fahren `Cron Job analytics_collect_data is successfully finished` beispielsweise mit ([ 9) ](#step-9).\
+b. NEIN - Wenn das Protokoll keine Datensätze enthält, [ein Support-Ticket ](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 c. JA - Wenn Datensätze vorhanden sind, aber ein Fehler auftritt, fahren Sie mit [Schritt 10](#step-10) fort.
 
 +++
@@ -128,7 +128,7 @@ Um zu überprüfen, ob Einträge in „access.logs“ vorhanden sind, führen Si
 * Auf Commerce Cloud:
 
   ```
-  {{zgrep -i analytics /var/log/platform/*/access.log* | grep MagentoBI}}
+  zgrep -i analytics /var/log/platform/*/access.log* | grep MagentoBI
   ```
 
 * Ersetzen Sie für On-Premise den Dateipfad entsprechend:
@@ -145,7 +145,7 @@ b. NEIN - Mit [Schritt 10](#step-10) fortfahren.
 
 Beispiel: In der `cron_schedule` wird der Fehler angezeigt *Die Datei &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 kann nicht gelöscht werden*. Warnung!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=de): Keine derartige Datei oder derartiges Verzeichnis*
 
-a. JA - Verwenden Sie den Patch ACSD-50165 in [Die Datei kann nicht gelöscht werden. Warnung!Verknüpfung aufheben: Keine Datei- oder Verzeichnisfehler vom Admin](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26887), 24 Stunden warten, bis der Auftrag erneut ausgeführt wird, und dann erneut versuchen.\
+a. JA - Verwenden Sie den Patch ACSD-50165 in [Die Datei kann nicht gelöscht werden. Warnung!Verknüpfung aufheben: Keine Datei- oder Verzeichnisfehler vom Admin](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26887), 24 Stunden warten, bis der Auftrag erneut ausgeführt wird, und dann erneut versuchen.\
 b. NEIN - Mit [Schritt 11](#step-11) fortfahren.
 
 +++
@@ -165,4 +165,4 @@ b. NEIN - [Support-Ticket einreichen](/help/help-center-guide/help-center/magent
 
 ## Verwandtes Lesen
 
-[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
