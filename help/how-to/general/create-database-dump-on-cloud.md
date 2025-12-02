@@ -18,7 +18,7 @@ Sie müssen nur eine Variante (Option) verwenden, um Ihre Datenbank zu entladen.
 
 ## Voraussetzung: SSH in Ihre Umgebung
 
-Um Ihre DB mit einer in diesem Artikel besprochenen Variante auf Adobe Commerce in der Cloud-Infrastruktur zu entladen, müssen Sie zunächst [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+Um Ihre DB mit einer in diesem Artikel besprochenen Variante auf Adobe Commerce in der Cloud-Infrastruktur zu entladen, müssen Sie zunächst [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de).
 
 >[!WARNING]
 >
@@ -26,7 +26,7 @@ Um Ihre DB mit einer in diesem Artikel besprochenen Variante auf Adobe Commerce 
 
 ## Option 1: db-dump (**ECE-Tools; empfohlen**)
 
-Sie können Ihre Datenbank mit dem Befehl [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) entladen:
+Sie können Ihre Datenbank mit dem Befehl [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=de) entladen:
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 Dies ist die empfohlene und sicherste Option.
 
-Siehe [Dump Ihrer Datenbank (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) in unserem Handbuch zu Commerce in Cloud Infrastructure.
+Siehe [Dump Ihrer Datenbank (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=de) in unserem Handbuch zu Commerce in Cloud Infrastructure.
 
 ## Option 2: mariadb-dump (oder mysqldump für ältere Versionen)
 
@@ -73,4 +73,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Verwandte Dokumentation:**
 
 * [mysqldump - Ein Datenbanksicherungsprogramm](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) in der offiziellen MySQL-Dokumentation.
-* [Cloud-spezifische Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (siehe `MAGENTO_CLOUD_RELATIONSHIPS`) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen .
+* [Cloud-spezifische Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=de) (siehe `MAGENTO_CLOUD_RELATIONSHIPS`) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen .
