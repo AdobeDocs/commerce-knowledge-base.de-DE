@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 9c17f1a10303f91ac95813171191983471d345a1
+source-git-commit: ed116b8fddfb6f5e22c2da2fdad5d0d0d2b4a377
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2769'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -203,7 +203,6 @@ ht-degree: 0%
       * [Geplante Staging-Aktualisierungen von Inhalten werden nicht mit veraltetem Fastly-Cache angezeigt](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Fehlerbehebung bei Cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [Exportierte .csv-Produktdatei wird nicht angezeigt](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
-      * [Fehler „Klasse kann nicht im Codeverzeichnis gespeichert werden“](/help/troubleshooting/miscellaneous/class-cannot-be-saved-in-the-code-directory-error.md)
       * [Überprüfen des Bereitstellungsprotokolls, wenn in der Cloud-Benutzeroberfläche der Fehler „Protokoll abgeschnitten“ auftritt](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [Der Download schlägt aufgrund von Änderungen im Composer fehl](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
       * [FEHLER: Aufwärmen in Adobe Commerce auf Cloud-Infrastruktur fehlgeschlagen](/help/troubleshooting/miscellaneous/error-warming-up-failed-on-magento-commerce-cloud.md)
