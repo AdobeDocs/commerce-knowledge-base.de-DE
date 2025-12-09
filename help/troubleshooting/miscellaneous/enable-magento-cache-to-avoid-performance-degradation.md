@@ -30,7 +30,7 @@ Ein Grund für Leistungseinbußen können bestimmte Adobe Commerce-Cache-Typen s
 
 ## Lösung
 
-1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu [ Sie „SSH“ in Ihre Umgebung ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) und führen den folgenden Befehl aus:
+1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu [&#x200B; Sie „SSH“ in Ihre Umgebung &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) und führen den folgenden Befehl aus:
 
    ```bash
    php bin/magento cache:status

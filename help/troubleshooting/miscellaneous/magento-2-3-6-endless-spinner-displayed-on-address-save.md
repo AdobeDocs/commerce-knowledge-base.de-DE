@@ -31,4 +31,4 @@ Das Problem wurde in Adobe Commerce 2.3.1 behoben.
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce 2.4.1 Vertex-Adressvalidierungsmeldung nach ](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) Aktualisierung der Adresse in unserer Support-Wissensdatenbank.
+* [Adobe Commerce 2.4.1 Vertex-Adressvalidierungsmeldung nach &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) Aktualisierung der Adresse in unserer Support-Wissensdatenbank.
