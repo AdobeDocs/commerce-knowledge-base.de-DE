@@ -4,9 +4,9 @@ description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem b
 exl-id: c2abeb96-e837-4d16-92dd-82fea5661dd9
 feature: Shipping/Delivery
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: ce377064efabaf09d3856da7c6c5c742a9fdcc2f
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,6 @@ In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, b
 
 ## Problem
 
-Voraussetzungen:
-
-Aktivieren **Vertex-Adressbereinigung**. Anweisungen hierzu finden Sie [Konfigurieren der Adressbereinigung für Storefronts](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=de) in unserem Benutzerhandbuch.
 
 <u>Schritte zur Reproduktion:</u>
 
@@ -37,7 +34,7 @@ Aktivieren **Vertex-Adressbereinigung**. Anweisungen hierzu finden Sie [Konfigur
 
 <u>Erstes Szenario:</u>
 
-Führen Sie die [&#x200B; sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
+Führen Sie die [ sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
 
 1. Geben Sie eine neue gültige Rechnungsadresse ein.
 1. Klicken Sie auf die Schaltfläche **Aktualisieren**. Die Nachricht/der Vorschlag wird wie folgt angezeigt: *Die Adresse ist ungültig.* Es folgt ein Adressenvorschlag wie: *Postleitzahl : XXXXX- XXXX Straße : XXX City Street XXX*
@@ -56,7 +53,7 @@ Die Überprüfungsmeldung/Empfehlung *Wir haben keine gültige Adresse gefunden 
 
 <u>Zweites Szenario:</u>
 
-Führen Sie die [&#x200B; sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
+Führen Sie die [ sechs Schritte aus](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) und dann:
 
 1. Füllen Sie das Adressformular mit einer gültigen Adresse aus.
 1. Klicken Sie auf die Schaltfläche **Aktualisieren**. Die Nachricht/der Vorschlag wird wie folgt angezeigt: *Die Adresse ist ungültig.* Es folgt ein Adressenvorschlag wie: *Postleitzahl : XXXXX-XXXX Straße : XXX City Street XXX*.

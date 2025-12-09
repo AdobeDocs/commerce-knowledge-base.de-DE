@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 3a482f7e5ddc872ddaf9634da8ca4f41a3b46ab4
+source-git-commit: 96ec7b44bd913c5976f0a8e3ce8355f7686622ad
 workflow-type: tm+mt
-source-wordcount: '2763'
+source-wordcount: '2736'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -123,7 +123,6 @@ ht-degree: 0%
       * [Extension Manager zeigt in Adobe Commerce 2.3.x keine Erweiterungen an](/help/troubleshooting/miscellaneous/extension-manager-shows-no-extensions-in-magento-commerce-2-3-x.md)
       * [Anmeldeumleitung bei Anmeldung bei Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Beheben von Problemen mit dem Verschlüsselungsschlüssel](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
-      * [Fehler „Aktualisierungsanwendung ist nicht verfügbar“](/help/troubleshooting/miscellaneous/updater-application-is-not-available-error.md)
       * [PWA Studio: Venia-GraphQL-Abfragen an Adobe Commerce erzeugen Validierungsfehler](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
       * [Lagerstatus nach Inventory management-Installation falsch](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Bekanntes Problem mit Adobe Commerce 2.3.5: Multi-Ship-Bestellungen für virtuelle Produkte](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
@@ -133,7 +132,6 @@ ht-degree: 0%
       * [Fehlerbehebung beim Datenmigrations-Tool](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [Probleme bei der Prüfung der Komponentenabhängigkeit](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
       * [Zugriff auf Adobe Commerce in der Cloud-Infrastruktur-Benutzeroberfläche nicht möglich](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
-      * [Vertex-Adressbereinigung: Verschiedene Adressen nicht zulässig](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md)
       * [Änderungen an Kategorien werden nicht gespeichert](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
       * [Adobe Commerce 2.4.0 bekanntes Problem - Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Magento Order Management System (OMS) für Adobe Commerce-Verarbeitungsfehler](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
@@ -157,7 +155,6 @@ ht-degree: 0%
       * [Die Git-Pull-Entwicklung schlägt beim Aktualisieren der Adobe Commerce-Software fehl](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Blocker beim Start auf Adobe Commerce in der Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
       * [PHP-Einstellungsfehler](/help/troubleshooting/miscellaneous/php-settings-errors.md)
-      * [Problemverzögerung bei Commerce-Admin-Anmeldung oder -Checkout beheben](/help/troubleshooting/miscellaneous/redis-issue-delay-magento-admin-login-or-checkout.md)
       * [PHP mcrypt-Erweiterung nicht richtig installiert](/help/troubleshooting/miscellaneous/php-mcrypt-extension-not-installed-properly.md)
       * [Bekanntes Problem in Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1: dotdigital login](/help/troubleshooting/miscellaneous/magento-2-3-6-2-4-0-p1-2-4-1-known-issue-dotdigital-login.md)
       * [Cron-Auftrag steckt im Status „Läuft“ fest](/help/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.md)
@@ -173,7 +170,6 @@ ht-degree: 0%
       * [Der manuelle Bestellungsexport nach MOM schlägt fehl. Die Schaltfläche „Exportreihenfolge“ gibt den HTTP 404-Fehler zurück](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio: Browser vertraut nicht auf generiertes SSL-Zertifikat](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [Fehlerbehebung für 503-Fehler, der durch die Notwendigkeit verursacht wurde, die standardmäßigen Lackeinstellungen zu ändern](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
-      * [Eingeschränkter Admin-Zugriff, der Leistungsprobleme verursacht](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Cron-Aufgaben Sperren von Aufgaben aus anderen Gruppen](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [Installation xdebug Fehler für maximale Verschachtelungsebene der Funktion](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [Entität Adobe Commerce Backend kann nicht gespeichert werden](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
