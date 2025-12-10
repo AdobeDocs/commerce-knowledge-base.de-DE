@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: dff3d2101da7264fe5e6af9ac5c9a6c1c8c97bc9
+source-git-commit: 0c5164641f171a92612417dbc8586b6b6ed442b1
 workflow-type: tm+mt
-source-wordcount: '2700'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -161,7 +161,6 @@ ht-degree: 0%
       * [Fehlerbehebung bei erweiterten Berichten für Adobe Commerce](/help/troubleshooting/miscellaneous/magento-advanced-reporting-troubleshooter.md)
       * [Häufige schwerwiegende PHP Fehler und Lösungen](/help/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions.md)
       * [Composer-Update bei Adobe Commerce fehlgeschlagen: Inkompatibler Argumenttyp](/help/troubleshooting/miscellaneous/composer-update-fail-on-adobe-commerce-incompatible-argument-type.md)
-      * [Quelle kann nicht gelöscht oder Code geändert werden](/help/troubleshooting/miscellaneous/cannot-delete-the-source-or-change-its-code.md)
       * [Adobe Commerce 2.4.2 B2B: E-Mail-Vorlage wird nicht aktualisiert](/help/troubleshooting/miscellaneous/magento-2-4-2-b2b-email-template-not-updating-email.md)
       * [Der manuelle Bestellungsexport nach MOM schlägt fehl. Die Schaltfläche „Exportreihenfolge“ gibt den HTTP 404-Fehler zurück](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio: Browser vertraut nicht auf generiertes SSL-Zertifikat](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
@@ -176,7 +175,6 @@ ht-degree: 0%
       * [Benutzerdefinierte Server-seitige Skripte werden im Veröffentlichungsmedienverzeichnis nicht ausgeführt](/help/troubleshooting/miscellaneous/custom-server-side-scripts-not-executed-in-pub-media-directory.md)
       * [Probleme bei der Prüfung der PHP-Version](/help/troubleshooting/miscellaneous/php-version-readiness-check-issues.md)
       * [Cloud-Site ist langsam](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
-      * [Fehler beim Löschen des Fastly-Cache in der Cloud (die Löschanfrage wurde nicht erfolgreich verarbeitet)](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
       * [Benutzerdefinierte SSL-Zertifikatgültigkeitsinformationen](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Stündliche Amazon-E-Mails bei Verwendung von Adobe Commerce deaktivieren](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
