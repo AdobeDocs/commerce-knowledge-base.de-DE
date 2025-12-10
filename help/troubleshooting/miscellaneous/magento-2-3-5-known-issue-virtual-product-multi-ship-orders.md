@@ -4,9 +4,9 @@ description: In diesem Artikel wird ein bekanntes Problem in Adobe Commerce 2.3.
 exl-id: 34ce79a2-5157-492b-8ee4-bdc09aae0c40
 feature: Orders, Products, Shipping/Delivery
 role: Developer
-source-git-commit: 60f68b9edabd13a69e84705b85d84fd10ee6e2be
+source-git-commit: 39e61a3fe8b75fb613819d89c7d47acdf1c384f6
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ Die Bestellung für das virtuelle Produkt ist leer.
 Eine Fehlerbehebung wird in Adobe Commerce 2.3.6 verfügbar sein, die im 4. Quartal 2020 veröffentlicht werden soll.
 
 ## Verwandtes Lesen
-
-In unserer Support-Wissensdatenbank:
-
-* [Bekanntes Problem mit der Produktzahl für Massenaktionen in Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 
 In unserer Entwicklerdokumentation:
 
