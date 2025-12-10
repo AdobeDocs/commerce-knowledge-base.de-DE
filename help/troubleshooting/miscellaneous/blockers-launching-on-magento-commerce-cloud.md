@@ -35,9 +35,9 @@ Weitere Informationen finden Sie [Abrufen Ihrer Fastly](https://experienceleague
 
 ### 1c. Hochladen von Fastly VCL-Snippets
 
-Weitere Informationen finden Sie unter [VCL in Fastly ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html).
+Weitere Informationen finden Sie unter [VCL in Fastly &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html).
 
-Sie können auch [eigene benutzerdefinierte VCL-Snippets erstellen und ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html).
+Sie können auch [eigene benutzerdefinierte VCL-Snippets erstellen und &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html).
 
 ### 1d. Konfigurieren des DNS für Fastly
 
