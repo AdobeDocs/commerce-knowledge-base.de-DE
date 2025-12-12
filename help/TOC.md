@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 0c5164641f171a92612417dbc8586b6b6ed442b1
+source-git-commit: 898424645c2ef0435c1a75604a47b7d5713670d8
 workflow-type: tm+mt
-source-wordcount: '2679'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -178,7 +178,6 @@ ht-degree: 0%
       * [Benutzerdefinierte SSL-Zertifikatgültigkeitsinformationen](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
       * [PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Stündliche Amazon-E-Mails bei Verwendung von Adobe Commerce deaktivieren](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
-      * [Invalidierter Cache führt zu einer Verschlechterung der Antwortzeit](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
       * [Problem mit GitHub-Token und wichtige Verfahren von Composer](/help/troubleshooting/miscellaneous/github-token-issue-and-composer-key-procedures.md)
       * [Adobe Commerce 2.4.1 Problem: Amazon-Konto kann in Chrome nicht geändert werden](/help/troubleshooting/miscellaneous/magento-2-4-1-known-issue-unable-to-change-amazon-account-in-google-chrome.md)
       * [ECE-Tools und Patch-Aktualisierungsfehler Adobe Commerce Cloud Infrastructure 2.2.x., 2.3.x](/help/troubleshooting/miscellaneous/ece-tools-and-patch-update-errors-magento-commerce-cloud-2-2-x-2-3-x.md)
@@ -202,7 +201,6 @@ ht-degree: 0%
       * [Kundenprofile werden nicht in Experience Platform angezeigt](/help/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported.md)
       * [PWA Studio: Browser kann die Website .local.pwadev nicht auflösen](/help/troubleshooting/miscellaneous/pwa-studio-browser-cannot-resolve-local-pwadev-site.md)
       * [Produktempfehlungen werden in Page Builder nicht angezeigt](/help/troubleshooting/miscellaneous/product-recommendations-do-not-show-in-page-builder.md)
-      * [Adobe Commerce Fastly-Fehlerbehebung](/help/troubleshooting/miscellaneous/magento-fastly-troubleshooter.md)
       * [AJAX-Anfragen mit hohem Durchsatz führen zu schlechter Leistung](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio: Browser zeigt den Fehler „Proxy nicht möglich für“ an](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [Ausführen des Problems :static-content:setup-deploy_version.txt“](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
