@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: de5dd9b057f2dbe79f9c931ef6d3473d809aedab
+source-git-commit: 9a2dadfbb5ca0a2c04d4e86454a1145b97924f61
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2656'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -166,7 +166,6 @@ ht-degree: 0%
       * [Fehlerbehebung für 503-Fehler, der durch die Notwendigkeit verursacht wurde, die standardmäßigen Lackeinstellungen zu ändern](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Cron-Aufgaben Sperren von Aufgaben aus anderen Gruppen](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [Installation xdebug Fehler für maximale Verschachtelungsebene der Funktion](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
-      * [Entität Adobe Commerce Backend kann nicht gespeichert werden](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
       * [PHP-Versionsfehler oder 404-Fehler beim Zugriff auf Adobe Commerce im Browser](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
       * [Reihenfolge der Bundle-Optionen wird beim Import nicht aktualisiert](/help/troubleshooting/miscellaneous/bundle-options-order-is-not-updated-by-import.md)
       * [Adobe Commerce 2.4.0: „Auswahl zu meinem Warenkorb hinzufügen“ funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
