@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: b03b34be26ed42280036ccda5a94ebc664cdaf7d
+source-git-commit: 1374f09d481ffd79014d00952c734cf83504df6b
 workflow-type: tm+mt
-source-wordcount: '2649'
+source-wordcount: '2628'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -102,7 +102,6 @@ ht-degree: 0%
       * [Cache aktivieren, um Leistungseinbußen zu vermeiden](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Probleme bei der Prüfung der Bereitschaft für Dateiberechtigungen](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
-      * [Fastly-Caching funktioniert nicht in Adobe Commerce auf Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/fastly-caching-is-not-working-on-magento-cloud.md)
       * [Diagnose von Diskrepanzen beim E-Commerce-Umsatz mit Google](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
       * [Ich habe API-Schlüssel für Sensei konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
@@ -136,7 +135,6 @@ ht-degree: 0%
       * [Fehlerbehebung bei freigegebenem Zugriff](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
       * [Langsame Leistung, langsame und lange laufende Crons](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
       * [Fehler bei der Validierung der Fastly-Anmeldedaten](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
-      * [Neue Kunden werden nach dem CSV-Import nicht im Kundenraster angezeigt](/help/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.md)
       * [Der Bericht des Security Scan Tools ist leer](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
       * [Adobe Commerce 2.4.2-P1: Rechnungsnachweis mit falschem Wert](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
       * [Zugriff auf die neueste Vorabversion von Adobe Commerce nicht möglich](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
