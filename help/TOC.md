@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 557cfbab3dd2c612255c177848d9faf98024a04b
+source-git-commit: fd5d542ca580060c3f0b3ad28024365a43758cfb
 workflow-type: tm+mt
-source-wordcount: '2612'
+source-wordcount: '2597'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -249,7 +249,6 @@ ht-degree: 0%
    * [Aktualisierung der Adobe Commerce Support-Ticket-Lebenszyklusrichtlinie](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * Anleitung {#how-to}
    * [Anleitungsübersicht](/help/how-to/overview.md)
-   * [Adobe Commerce P1-Benachrichtigungs-Hotline](/help/how-to/general/adobe-commerce-p1-notification-hotline.md)
    * [Wie man ein Teammitglied in Support-Benachrichtigungen einbezieht](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
    * [So erhalten Sie Sicherheits-Patches und wenden diese an](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [Checkliste zum Einrichten einer neuen  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
@@ -296,7 +295,6 @@ ht-degree: 0%
    * [Blockieren von bösartigem Traffic für Adobe Commerce auf Fastly-Ebene](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [Erstellen eines Patches für die Adobe Commerce Composer-Installation über einen GitHub-Commit](/help/how-to/general/create-a-patch-for-a-magento-2-composer-installation-from-a-github-commit.md)
    * [Ändern des Administratorkennworts in Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/change-magento-admin-password-on-cloud.md)
-   * [Anfordern einer temporären Adobe Commerce-Aktualisierung in der Cloud-Infrastruktur](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Anzeigen der vCPU-Ebene der Umgebung in Ihrem Cluster auf Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [Adobe Commerce auf Cloud-Infrastruktur: Überprüfen der CPU-Konfiguration des Hosts](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
    * [Adobe Commerce in Cloud: Authentifizierungsschlüssel ändern und erneut bereitstellen](/help/how-to/general/redeploy-with-another-key.md)
