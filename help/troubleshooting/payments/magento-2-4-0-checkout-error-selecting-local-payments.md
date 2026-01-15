@@ -28,7 +28,7 @@ Die Fehlermeldung &quot;*Es sind derzeit keine Zahlungsmethoden verfügbar. Bitt
 
 * Adobe Commerce 2.4.0 ist installiert.
 * Erstellen Sie ein Produkt und eine Kategorie.
-* [Braintree-Zahlungsmethode ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
+* [Braintree-Zahlungsmethode &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
 
 <u>Schritte zur Reproduktion</u>:
 
