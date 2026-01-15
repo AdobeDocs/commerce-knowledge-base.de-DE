@@ -4,9 +4,9 @@ description: In diesem Artikel wird über ein bekanntes Problem in Commerce Admi
 exl-id: 73f7231b-b496-4250-b9e2-29427c772d56
 feature: Admin Workspace, B2B, Catalog Management, Configuration, Products, Quotes
 role: Developer
-source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Ver
 
 * Adobe Commerce 2.4.0 ist installiert.
 * B2B ist installiert.
-* Legen Sie B2B-Funktionen auf **Unternehmen aktivieren =** *Ja* , **Freigegebenen Katalog aktivieren =** *Nein* und **&#x200B;**&#x200B;B2B-Angebot aktivieren =*Ja* fest.
+* Legen Sie B2B-Funktionen auf **Unternehmen aktivieren =** *Ja* , **Freigegebenen Katalog aktivieren =** *Nein* und **** B2B-Angebot aktivieren =*Ja* fest.
 * Kundenkonto erstellen.
 * Erstellen Sie ein Unternehmenskonto mit dem zuvor erstellten Kunden als Unternehmensadministrator.
 * Erstellen Sie ein einfaches Produkt (Beispiel: name &amp; **SKU** = TEST SIMPLE 1), das nicht **Standard (Allgemein) zugewiesen**.
@@ -55,9 +55,4 @@ In diesem Artikel wird über ein bekanntes Problem in Commerce Admin bei der Ver
 ## Empfehlung
 
 Derzeit gibt es für dieses Problem mit der B2B-Angebotsbearbeitung keine Problemumgehung. Für die Verwaltung von Bestellungen und Warenkorb ist es jedoch möglich, Produkte aus der **Produktliste** auszuwählen, anstatt sie per **SKU** hinzuzufügen. Ein Patch zur Behebung des Problems wird für Adobe Commerce 2.4.1 verfügbar sein, das im 4. Quartal 2020 veröffentlicht werden soll.
-
-## Verwandtes Lesen
-
-* [Bekanntes Problem in Adobe Commerce 2.4.0: Aktualisierung der Aktivitäten des Kunden funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Adobe Commerce 2.4.0 Bekanntes Problem: Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 

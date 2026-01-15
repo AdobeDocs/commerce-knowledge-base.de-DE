@@ -4,9 +4,9 @@ description: Dieser Artikel enthält eine Fehlerbehebung für ein bekanntes Prob
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: 60f68b9edabd13a69e84705b85d84fd10ee6e2be
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -65,18 +65,15 @@ Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie 
 
 <u>Composer Patch-</u>
 
-Anweisungen [&#x200B; Composer-Patches finden Sie unter „Anwenden eines von Adobe bereitgestellten &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)&quot;.
+Anweisungen [ Composer-Patches finden Sie unter „Anwenden eines von Adobe bereitgestellten ](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)&quot;.
 
 <u>Git-Patch-</u>
 
-* Siehe [Anwenden von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
-* Siehe [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce.
+* Siehe [Anwenden von ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
+* Siehe [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce.
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce 2.4.0 Bekanntes Problem: Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 * [Adobe Commerce 2.4.0 Bekanntes Problem: Braintree-Zahlungsmethoden werden beim Checkout für mehrere Adressen nicht angezeigt](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Bekanntes Problem mit Adobe Commerce 2.4.0: Fehlermeldung bei Auswahl der lokalen Zahlungsmethode, die für einige Länder während des Checkouts angezeigt wird](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
 * [Adobe Commerce 2.4.0 B2B-Admin kann kein konfigurierbares Produkt zum Angebot hinzufügen](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
-* [Bekanntes Problem in Adobe Commerce 2.4.0 - Aktualisierung der Aktivitäten des Kunden funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Bekanntes Problem in Adobe Commerce 2.4.0: Die Schaltfläche „Auswahl zu meinem Warenkorb hinzufügen“ funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

@@ -4,9 +4,9 @@ description: 'In diesem Artikel wird über eine Lösung für ein bekanntes Probl
 exl-id: de2eafb0-d03c-4ff8-9615-0f2676d95848
 feature: B2B, Categories, Checkout, Orders, Payments
 role: Developer
-source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Die Fehlermeldung &quot;*Es sind derzeit keine Zahlungsmethoden verfügbar. Bitt
 
 * Adobe Commerce 2.4.0 ist installiert.
 * Erstellen Sie ein Produkt und eine Kategorie.
-* [Braintree-Zahlungsmethode &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
+* [Braintree-Zahlungsmethode ](https://developer.adobe.com/commerce/webapi/graphql/payment-methods/braintree/).
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -52,7 +52,5 @@ Die Lösung besteht darin, die angezeigte Fehlermeldung zu ignorieren und die Za
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce 2.4.0 Bekanntes Problem: Exportsteuersätze funktionieren nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 * [Adobe Commerce 2.4.0 Bekanntes Problem: Braintree-Zahlungsmethoden werden beim Checkout für mehrere Adressen nicht angezeigt](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
-* [Bekanntes Problem in Adobe Commerce 2.4.0: Aktualisierung der Aktivitäten des Kunden funktioniert nicht](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
 * [Adobe Commerce 2.4.0 B2B-Admin kann kein konfigurierbares Produkt zum Angebot hinzufügen](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
