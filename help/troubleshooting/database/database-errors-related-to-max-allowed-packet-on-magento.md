@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für Datenbankverbindungsfehler 
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Der Standardwert von 16 MB für die Einstellung [!DNL MySQL] `max_allowed_packet
 ## Lösung
 
 1. Identifizieren Sie Abfragen, bei denen die einzelnen Zeilen das aktuelle `max_allowed_packet` überschreiten. Solche Abfragen müssen neu geschrieben werden, um die Menge der zurückgegebenen Daten zu reduzieren. Dies kann durch eine kleinere Anzahl von Spalten in der `SELECT`-Anweisung oder durch Auswahl eines kleineren Datentyps für verschiedene Spalten als Teil des Tabellendesigns erfolgen. Wenn Sie über ein New Relic-Konto verfügen, verwenden Sie die Seite [New Relic APM-Fehler](https://docs.newrelic.com/docs/apm/apm-ui-pages/error-analytics/errors-page-explore-events-behind-errors) und die Seite [New Relic APM-Datenbanken](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) und [New Relic-](https://docs.newrelic.com/docs/logs/log-management/get-started/get-started-log-management), um nach den entsprechenden Abfragen zu suchen.
-1. Zur schnellen Behebung können Sie beim [&#x200B; eines Tickets vorübergehend eine Erhöhung der `max_allowed_packet` anfordern](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Dies liegt jedoch im Ermessen des Customer Engineering-Teams, da eine zu große Menge eines Werts zu Replikationsfehlern führen kann, da dies zu Netzwerkengpässen führt.
+1. Zur schnellen Behebung können Sie beim `max_allowed_packet` eines Tickets vorübergehend eine Erhöhung der [ anfordern](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) Dies liegt jedoch im Ermessen des Customer Engineering-Teams, da eine zu große Menge eines Werts zu Replikationsfehlern führen kann, da dies zu Netzwerkengpässen führt.
 1. Als Best Practice sollten Sie den folgenden Befehl in Ihrer CLI für einige Ihrer großen Datenbanktabellen ausführen:
 
    ```
@@ -45,8 +45,7 @@ Der Standardwert von 16 MB für die Einstellung [!DNL MySQL] `max_allowed_packet
 
 ## Verwandtes Lesen
 
-* [Übersicht über die lokale Installation](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/overview) in unserer Entwicklerdokumentation.
-* [Datenbank-Upload verliert die Verbindung zu [!DNL MySQL]](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) in unserer Support-Wissensdatenbank.
-* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de)Infrastrukturen in unserer Support-Wissensdatenbank.
-* [Best Practices zur Behebung von Problemen mit &#x200B;](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de) Datenbankleistung - in unserer Support-Wissensdatenbank.
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Übersicht über die lokale Installation](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) in unserer Entwicklerdokumentation.
+* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)Infrastrukturen in unserer Support-Wissensdatenbank.
+* [Best Practices zur Behebung von Problemen mit ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) Datenbankleistung - in unserer Support-Wissensdatenbank.
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

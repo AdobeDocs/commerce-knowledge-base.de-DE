@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für Fälle, in denen Sie eine Prod
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Vor der Implementierung der Lösung in diesem Artikel (`INT` zur Aktualisierung `BIGINT` Schemas) müssen Händler immer überprüfen, ob das Feld, das sie ändern werden, KEINE Fremdschlüsselbeziehungen zu einer anderen Tabelle aufweist. Wenn das Feld Fremdschlüsselbeziehungen zu einer anderen Tabelle hat, treten Probleme auf, da das zugehörige Feld weiterhin `INT` ist. Sie können die folgende Abfrage verwenden, um dies zu überprüfen. Diese Abfrage listet die Fremdschlüsselbeziehungen auf, die in der Datenbank für das angegebene Tabellenfeld verfügbar sind:
 >
->```mysql
+```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM
@@ -41,7 +41,7 @@ SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column '
 
 Die im Artikel beschriebenen Lösungen sind:
 * Aktualisieren Sie die `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle oder
-* Aktualisierung des `BIGINT`-Schemas `INT`
+* Aktualisierung des `INT`-Schemas `BIGINT`
 
 Welche Lösung Sie verwenden, hängt von der Ursache des Problems ab. Gehen Sie wie folgt vor, um die Ursache zu isolieren.
 
@@ -50,13 +50,13 @@ Welche Lösung Sie verwenden, hängt von der Ursache des Problems ab. Gehen Sie 
 
 Überprüfen Sie den höchsten Wert des Primärschlüssels, indem Sie den folgenden Befehl am Terminal ausführen: `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Wenn der `max(value_id)` kleiner als der `max int(11) [ 4294967296 ]` ist und der `[ AUTO_INCREMENT ]` einen Wert größer oder gleich dem `max int(11) [ 4294967296 ]` hat, [&#x200B; Sie (den `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle aktualisieren](#update-the-auto-increment-to-the-next-value-from-the-table). Andernfalls sollten Sie eine [`INT` zur Aktualisierung `BIGINT` Schemas &#x200B;](#int_to_bigint_schema_update).
+Wenn der `max(value_id)` kleiner als der `max int(11) [ 4294967296 ]` ist und der `[ AUTO_INCREMENT ]` einen Wert größer oder gleich dem `max int(11) [ 4294967296 ]` hat, [ Sie (den `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle aktualisieren](#update-the-auto-increment-to-the-next-value-from-the-table). Andernfalls sollten Sie eine [`INT` zur Aktualisierung `BIGINT` Schemas ](#int_to_bigint_schema_update).
 
 ## Aktualisieren Sie die `AUTO_INCREMENT` auf den nächsten Wert aus der Tabelle. {#update-the-auto-increment-to-the-next-value-from-the-table}
 
 >[!WARNING]
 >
->Führen Sie eine Datenbanksicherung durch, bevor Sie die Tabellen ändern. Setzen Sie die Site auch in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#maintenance-mode). Darüber hinaus wird empfohlen, den Befehl [!DNL MySQL] optimieren für die Datenbanktabellen (nur für Tabellen, in denen Änderungen vorgenommen wurden) auszuführen, nachdem die Änderungen vorgenommen wurden.
+>Führen Sie eine Datenbanksicherung durch, bevor Sie die Tabellen ändern. Setzen Sie die Site auch in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). Darüber hinaus wird empfohlen, den Befehl [!DNL MySQL] optimieren für die Datenbanktabellen (nur für Tabellen, in denen Änderungen vorgenommen wurden) auszuführen, nachdem die Änderungen vorgenommen wurden.
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Wie Sie in der obigen Beispielausgabe sehen können, hat sich die Tabelle `[ AUT
 ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 ```
 
-## Aktualisierung des `BIGINT`-Schemas `INT` {#int_to_bigint_schema_update}
+## Aktualisierung des `INT`-Schemas `BIGINT` {#int_to_bigint_schema_update}
 
 Wenn jedoch beim Ausführen der folgenden Abfrage `SELECT MAX(value_id) FROM catalog_product_entity_int;` der angezeigte Wert höher ist als `max int(11) [ 4294967296 ]` eine `INT` zur `BIGINT` Schemaaktualisierung in Betracht ziehen. Der Datentyp `BIGINT` hat einen größeren Wertebereich.
 
@@ -111,8 +111,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 ## Verwandtes Lesen
 
-* [Allgemein [!DNL MySQL] Richtlinien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=de) im Commerce-Installationshandbuch
-* [Datenbank-Upload verliert Verbindung zu [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html?lang=de) in unserer Support-Wissensdatenbank
-* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=de)Infrastruktur in unserer Support-Wissensdatenbank
-* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=de) in unserer Support-Wissensdatenbank
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Allgemein [!DNL MySQL] Richtlinien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) im Commerce-Installationshandbuch
+* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html)Infrastruktur in unserer Support-Wissensdatenbank
+* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) in unserer Support-Wissensdatenbank
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
