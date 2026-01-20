@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Vor der Implementierung der Lösung in diesem Artikel (`INT` zur Aktualisierung `BIGINT` Schemas) müssen Händler immer überprüfen, ob das Feld, das sie ändern werden, KEINE Fremdschlüsselbeziehungen zu einer anderen Tabelle aufweist. Wenn das Feld Fremdschlüsselbeziehungen zu einer anderen Tabelle hat, treten Probleme auf, da das zugehörige Feld weiterhin `INT` ist. Sie können die folgende Abfrage verwenden, um dies zu überprüfen. Diese Abfrage listet die Fremdschlüsselbeziehungen auf, die in der Datenbank für das angegebene Tabellenfeld verfügbar sind:
 >
-```mysql
+>```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM
@@ -50,7 +50,7 @@ Welche Lösung Sie verwenden, hängt von der Ursache des Problems ab. Gehen Sie 
 
 Überprüfen Sie den höchsten Wert des Primärschlüssels, indem Sie den folgenden Befehl am Terminal ausführen: `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Wenn der `max(value_id)` kleiner als der `max int(11) [ 4294967296 ]` ist und der `[ AUTO_INCREMENT ]` einen Wert größer oder gleich dem `max int(11) [ 4294967296 ]` hat, [ Sie (den `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle aktualisieren](#update-the-auto-increment-to-the-next-value-from-the-table). Andernfalls sollten Sie eine [`INT` zur Aktualisierung `BIGINT` Schemas ](#int_to_bigint_schema_update).
+Wenn der `max(value_id)` kleiner als der `max int(11) [ 4294967296 ]` ist und der `[ AUTO_INCREMENT ]` einen Wert größer oder gleich dem `max int(11) [ 4294967296 ]` hat, [&#x200B; Sie (den `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle aktualisieren](#update-the-auto-increment-to-the-next-value-from-the-table). Andernfalls sollten Sie eine [`INT` zur Aktualisierung `BIGINT` Schemas &#x200B;](#int_to_bigint_schema_update).
 
 ## Aktualisieren Sie die `AUTO_INCREMENT` auf den nächsten Wert aus der Tabelle. {#update-the-auto-increment-to-the-next-value-from-the-table}
 
