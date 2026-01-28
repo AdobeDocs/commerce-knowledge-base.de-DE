@@ -4,9 +4,9 @@ description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.3.6-, 2.4.0-p
 exl-id: 427d895c-8c03-4ced-813a-eeaa67f1d1f0
 feature: Configuration
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 38b4d310cab9dccad142c244f6e07f8421a9894d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,3 @@ Anmeldung bei dotdigital nicht möglich.
 ## Lösung
 
 Problemumgehung: Verwenden Sie für diese spezielle Situation einen alternativen Browser zu Safari.
-
-## Verwandtes Lesen
-
-[Bekanntes Problem mit Adobe Commerce 2.4.1 - Vertex-Adresse wird nicht mit verschiedenen Versand-/Rechnungsadressen &#x200B;](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) unserer Support-Wissensdatenbank validiert.
