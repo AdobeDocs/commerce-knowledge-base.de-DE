@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: e73894751543dcd1197cc0d20cfac61c44b3ecaa
+source-git-commit: 27b0836380c3040b26076b9cb81b9328cb2c9ff2
 workflow-type: tm+mt
-source-wordcount: '2395'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -98,7 +98,7 @@ ht-degree: 0%
       * [Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Probleme bei der Prüfung der Bereitschaft für Dateiberechtigungen](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
       * [Diagnose von Diskrepanzen beim E-Commerce-Umsatz mit Google](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
-      * [Ich habe API-Schlüssel für Sensei konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
+      * [Ich habe API-Schlüssel für die Adobe-KI konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
       * [Der Dateispeicher ist niedrig, bestimmte Seitenladevorgänge sind langsam](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
       * [Langsame Leistung aufgrund vollständiger Neuindizierung](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
