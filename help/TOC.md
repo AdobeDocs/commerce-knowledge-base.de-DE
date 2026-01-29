@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 12e17359c84e3a71425fce1b378cb57ed7fca86d
+source-git-commit: 7f7e26f07e921577b1dd7686f5dace396888aa60
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -158,7 +158,6 @@ ht-degree: 0%
       * [PWA Studio: Webpack bleibt vor Kompilierung hängen](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Beheben eines Fehlers bei einem illegalen Offset](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Produktstatus bei programmatischer Erstellung falsch](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [Das Berechtigungsproblem mit der Var/dem Exportordner Adobe Commerce in der Cloud](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [Geplante Staging-Aktualisierungen von Inhalten werden nicht mit veraltetem Fastly-Cache angezeigt](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Fehlerbehebung bei Cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [Exportierte .csv-Produktdatei wird nicht angezeigt](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
@@ -302,7 +301,6 @@ ht-degree: 0%
    * [Verknüpfen von Magento.com und accounts.magento.cloud-Konto-Anmeldungen](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
    * [Häufig gestellte Fragen zur Aktivierung der Ursprungsverdeckung von Fastly](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [Datenbank automatisch inkrementieren Variable auf „3“ gesetzt Adobe Commerce in unserer Cloud Pro-Architektur](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
-   * [Factsheet zur Überwachung für Adobe Commerce in Cloud Pro-Infrastruktur](/help/faq/general/monitoring-whitepaper.md)
    * [Zugriff auf New Relic-Services](/help/faq/general/access-new-relic-services.md)
    * [Barrierefreiheit von Web-Inhalten für Adobe Commerce](/help/faq/general/accessibility.md)
    * [Wie viele Gutscheine kann ein Kunde in Adobe Commerce verwenden?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
@@ -315,5 +313,4 @@ ht-degree: 0%
    * [Backup (Snapshot) in der Cloud: Häufig gestellte Fragen](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [Häufig gestellte Fragen zur Adobe Commerce-Versionsstrategie und -Lebenszyklusrichtlinie für 2024 und 2023](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [Kann ich Aktualisierungen der Inhalts-Staging-Umgebung für Preise in einem freigegebenen Katalog planen?](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
-   * [Häufig gestellte Fragen zum Ende der Unterstützung für Adobe Commerce-Software](/help/faq/general/adobe-commerce-eos-policy-faq.md)
    * [Benötige ich Fastly für eine Headless-Adobe Commerce-Site?](/help/faq/general/do-i-need-fastly-for-a-headless-magento-site.md)
