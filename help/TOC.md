@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 3786fde60a4161a155da798a9deda0184e6d1e6a
+source-git-commit: 87955322d02a499cf97d297761c9c1f7ebbca3c3
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2308'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -225,7 +225,6 @@ ht-degree: 0%
    * [Wiederherstellen eines DB-Snapshots aus der Staging- oder Produktionsumgebung](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials: Zahlungsmethode aktualisieren oder Abonnement stornieren](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Adobe Commerce Intelligence-Schulungsvideo: SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
-   * [Festlegen der Cache-TTL für Bilder und andere statische Inhalte](/help/how-to/general/set-cache-ttl-for-images-and-other-static-content.md)
    * [Rabatt nur für Erstkauf angeben (keine Coupons)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [Rollback der Umgebung ohne Cloud-Snapshot](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Speicherorte (Verzeichnisse) für den Starter-Plan protokollieren](/help/how-to/general/log-locations-directories-for-starter-plan.md)
