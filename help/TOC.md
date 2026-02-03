@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 87955322d02a499cf97d297761c9c1f7ebbca3c3
+source-git-commit: 981d62e0bd2c61ae516777579757eaff505b8719
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2298'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -180,7 +180,6 @@ ht-degree: 0%
       * [Adobe Commerce Intelligence-Service-Richtlinien](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Neue Umgebungen werden in die Produktion verschoben, wenn sie von Git gepusht werden](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Fehler nach der Anmeldung beim Commerce-Administrator](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
-      * [Magento Order Management System (OMS) für Adobe Commerce-Zeitüberschreitung](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
       * [Adobe Commerce 2.4.1: Leere Seite beim Speichern des dotdigital Page Builder-Formulars](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [Adobe Commerce Cloud: Neuindizierung wird mit Nachricht beendet](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
       * [In der Adobe Commerce-Statusspalte fehlt die exportierte Produkt-CSV-Datei](/help/troubleshooting/miscellaneous/adobe-commerce-status-column-missing-exported-products-csv-file.md)
