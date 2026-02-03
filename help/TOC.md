@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 981d62e0bd2c61ae516777579757eaff505b8719
+source-git-commit: 5e179296b668aec143c309dd56a7561fe0ccbd09
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '2291'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -113,7 +113,6 @@ ht-degree: 0%
       * [Anmeldeumleitung bei Anmeldung bei Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
       * [Beheben von Problemen mit dem Verschlüsselungsschlüssel](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
       * [PWA Studio: Venia-GraphQL-Abfragen an Adobe Commerce erzeugen Validierungsfehler](/help/troubleshooting/miscellaneous/pwa-studio-venia-graphql-queries-to-magento-produce-validation-errors.md)
-      * [Lagerstatus nach Inventory management-Installation falsch](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Verwenden von Datenexporten zur Ermittlung von Diskrepanzen](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
       * [Fehlerbehebung beim Datenmigrations-Tool](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [Probleme bei der Prüfung der Komponentenabhängigkeit](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
