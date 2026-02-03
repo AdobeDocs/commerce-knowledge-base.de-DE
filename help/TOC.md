@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 5e179296b668aec143c309dd56a7561fe0ccbd09
+source-git-commit: 038d6e68093742a0ef7d6bd76996f416559ba5c0
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -299,7 +299,6 @@ ht-degree: 0%
    * [Zugriff auf New Relic-Services](/help/faq/general/access-new-relic-services.md)
    * [Barrierefreiheit von Web-Inhalten für Adobe Commerce](/help/faq/general/accessibility.md)
    * [Wie viele Gutscheine kann ein Kunde in Adobe Commerce verwenden?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
-   * [Support-Ticket - Beschreibung der Kontaktgründe](/help/faq/general/support-ticket-contact-reason-descriptions.md)
    * [Partner-Adobe Commerce bei Sandbox-Anfragen für Cloud-Infrastruktur](/help/faq/general/partner-magento-commerce-cloud-sandbox-requests.md)
    * [Adobe Commerce - DSGVO-Ressourcen](/help/faq/general/magento-gdpr-resources.md)
    * [Einfluss der Basispreisänderung auf den Preis des freigegebenen Katalogs](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md)
