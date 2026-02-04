@@ -345,7 +345,7 @@ Sie können den freigegebenen Zugriff mithilfe Ihrer Adobe Commerce-Kontoseite u
 
 Nur der Kontoinhaber (primärer Kontoinhaber) mit den entsprechenden Berechtigungen kann anderen Benutzern gemeinsamen Zugriff gewähren.
 
-Die Verwaltung von Benutzern und deren Zugriff liegt in der Verantwortung des Kunden, insbesondere in der Perspektive des gemeinsamen Zugriffs. Daher kann das Adobe Commerce-Supportteam im Namen einer Kundin oder eines Kunden keinen gemeinsamen Zugriff auf ein Adobe Commerce-Konto bereitstellen. Kunden wird empfohlen, Benutzer mit freigegebenem Zugriff selbst hinzuzufügen, indem sie die Adobe Commerce-Kontoseite [](https://account.magento.com/).
+Die Verwaltung von Benutzern und deren Zugriff liegt in der Verantwortung des Kunden, insbesondere in der Perspektive des gemeinsamen Zugriffs. Daher kann das Adobe Commerce-Supportteam im Namen einer Kundin oder eines Kunden keinen gemeinsamen Zugriff auf ein Adobe Commerce-Konto bereitstellen. Kunden wird empfohlen, Benutzer mit freigegebenem Zugriff selbst hinzuzufügen, indem sie die Adobe Commerce-Kontoseite [&#128279;](https://account.magento.com/).
 
 Benutzende, denen ein freigegebener Zugriff gewährt wurde, können diesen Zugriff nicht an andere Benutzende übertragen oder gewähren.
 
@@ -361,7 +361,7 @@ Nachdem Sie einem neuen Benutzer gemeinsamen Zugriff gewährt haben, sind die zu
 
 >[!NOTE]
 >
->Freigegebener Zugriff gewährt nicht automatisch Zugriff auf die Commerce Cloud-Konsole. Sie müssen den [ separat zum Cloud-Projekt hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
+>Freigegebener Zugriff gewährt nicht automatisch Zugriff auf die Commerce Cloud-Konsole. Sie müssen den [&#x200B; separat zum Cloud-Projekt hinzufügen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
 
 ![magento-account-shared-manage-permissions](assets/magento_account_shared_manage_permissions.png)
 
@@ -398,7 +398,7 @@ Wenn Sie ein Adobe Commerce Cloud-Projekt haben/hatten und eine Benutzerin oder 
 
 <u>Lösung</u>
 
-Es ist nicht möglich, die Liste der Benutzer mit freigegebenem Zugriff mit dem Freigabenamen *Cloud Shared Access von MAG[XYZ) zu löschen]* wenn der freigegebene Zugriff nicht hinzugefügt/[ wurde](https://account.magento.com/grantor/manage/). Diese werden zu Informations-/Prüfungszwecken aufbewahrt.
+Es ist nicht möglich, die Liste der Benutzer mit freigegebenem Zugriff mit dem Freigabenamen *Cloud Shared Access von MAG[XYZ) zu löschen]* wenn der freigegebene Zugriff nicht hinzugefügt/[&#x200B; wurde](https://account.magento.com/grantor/manage/). Diese werden zu Informations-/Prüfungszwecken aufbewahrt.
 
 Nachdem Sie jedoch die Berechtigungen für diese Benutzer mit freigegebenem Zugriff widerrufen haben, verfügen sie nicht mehr über diesen Zugriff.
 
