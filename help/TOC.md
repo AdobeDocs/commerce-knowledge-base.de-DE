@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
+source-git-commit: 538514ebb9a262af74aa1304ea7d70aefcf08dbe
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -131,7 +131,6 @@ ht-degree: 0%
       * [Diagnose einer Datendiskrepanz](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [Admin 2FA-E-Mail-Benachrichtigungen werden nicht empfangen](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
       * [Leiten Sie mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ zurück zum Commerce Admin-Anmeldeformular](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Redis serialize error setup:static-content:deploy](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
       * [Site im Wartungsmodus, aber für Kunden verfügbar](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
       * [Die Git-Pull-Entwicklung schlägt beim Aktualisieren der Adobe Commerce-Software fehl](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Blocker beim Start auf Adobe Commerce in der Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -156,7 +155,6 @@ ht-degree: 0%
       * [Beheben eines Fehlers bei einem illegalen Offset](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Produktstatus bei programmatischer Erstellung falsch](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
       * [Geplante Staging-Aktualisierungen von Inhalten werden nicht mit veraltetem Fastly-Cache angezeigt](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
-      * [Fehlerbehebung bei Cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [Exportierte .csv-Produktdatei wird nicht angezeigt](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
       * [Überprüfen des Bereitstellungsprotokolls, wenn in der Cloud-Benutzeroberfläche der Fehler „Protokoll abgeschnitten“ auftritt](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [Der Download schlägt aufgrund von Änderungen im Composer fehl](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
