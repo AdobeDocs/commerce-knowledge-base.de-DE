@@ -27,24 +27,24 @@ Wenn Sie erkennen, dass es ein Problem mit den Funktionen aus Ihrem benutzerdefi
 
 1. Der Speicherort der Protokolle befindet sich in [Adobe Commerce in den Cloud Infrastructure Pro Plan Architecture-Protokollen](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) in unserer Support-Wissensdatenbank.
 1. Je nach den gefundenen Fehlern werden in den folgenden Artikeln diese Aktionen beschrieben, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten:
-   * [Module aktivieren oder deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation.
-   * [Module deinstallieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) in unserer Entwicklerdokumentation.
+   * [Module aktivieren oder deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation.
+   * [Module deinstallieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) in unserer Entwicklerdokumentation.
 
 ### Adobe Commerce auf Cloud-Infrastruktur, alle Versionen
 
-1. Speicherorte für Protokolle: [Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
+1. Speicherorte für Protokolle: [Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
 1. Je nach den gefundenen Fehlern werden diese Aktionen in den folgenden Artikeln in der Entwicklerdokumentation beschrieben, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten:
-   * [Installieren, Verwalten und Aktualisieren von &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
-   * [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
+   * [Installieren, Verwalten und Aktualisieren von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+   * [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
 * [Modul - Übersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [Fehler bei der Installation optionaler Beispieldaten](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
+* [Fehler bei der Installation optionaler Beispieldaten](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
 * [Ausnahmebehandlung](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
-* [Ausnahmen während der Installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
-* [Module Manager ausführen](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
-* [Module-Konfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
-* [Fehler wegen zu wenig Arbeitsspeicher](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)
+* [Ausnahmen während der Installation](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
+* [Module Manager ausführen](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
+* [Module-Konfigurationsdateien](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/files/module-files)
+* [Fehler wegen zu wenig Arbeitsspeicher](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)
