@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für den Fehler „depl
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Dieser Artikel bietet eine Fehlerbehebung für den Fehler &quot;`deployed_versio
 
 ## Problem
 
-Wenn Sie die Empfehlungen für die Verwendung der [Konfigurationsverwaltung“ von Adobe Commerce in der Cloud](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md)Infrastruktur befolgen (und die Generierung statischer Assets in die Build-Phase verschieben, um Website-Ausfallzeiten während der Bereitstellung zu reduzieren), tritt möglicherweise die folgende Fehlermeldung auf, wenn Sie den `setup:static-content:deploy`-Befehl manuell ausführen:
+Wenn Sie die Empfehlungen für die Verwendung der Konfigurationsverwaltung in Adobe Commerce zur Cloud-Infrastruktur befolgen (und die Generierung statischer Assets in den Build-Schritt verschieben, um Website-Ausfallzeiten während der Bereitstellung zu reduzieren), tritt möglicherweise der folgende Fehler auf, wenn Sie den `setup:static-content:deploy`-Befehl manuell ausführen:
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy

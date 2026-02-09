@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für Fälle, in denen Produkte nich
 exl-id: 454eca5b-4722-46e0-8e5d-3daf8e3e675a
 feature: Cache, Categories, Console, Products, Storefront
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Jeder der folgenden Punkte kann das Problem beheben.
 
 * Überprüfen Sie die Produkteinstellungen in Admin. Wechseln Sie **Katalog** > **Produkte**, öffnen Sie die Produktseite und stellen Sie sicher, dass die folgenden Felder korrekt konfiguriert sind:
    * **Produkt aktivieren** = *Ja.*
-   * **Lagerstatus**: *Auf Lager*. Wenn *Nicht vorrätig* der richtige Wert ist, stellen Sie sicher, dass **Nicht vorrätige Produkte anzeigen** (**STORES** > **Settings** > **Configuration** > **CATALOG** **&#x200B;**&#x200B;> **Stock Options** > **Nicht vorrätige Produkte anzeigen**) auf *Ja* (auf globaler Ebene konfiguriert) eingestellt ist.
+   * **Lagerstatus**: *Auf Lager*. Wenn *Nicht vorrätig* der richtige Wert ist, stellen Sie sicher, dass **Nicht vorrätige Produkte anzeigen** (**STORES** > **Settings** > **Configuration** > **CATALOG** **** > **Stock Options** > **Nicht vorrätige Produkte anzeigen**) auf *Ja* (auf globaler Ebene konfiguriert) eingestellt ist.
    * **Kategorien**: Wenn Sie versuchen, das Produkt auf einer Kategorieseite zu finden, überprüfen Sie, ob das Produkt der Kategorie zugewiesen ist. Um die Fehlerbehebung zu vereinfachen, erstellen Sie eine neue Kategorie von der aktuellen Seite aus und weisen Sie ihr ein Produkt zu.
    * **visible** = *catalog, search.*
    * Stellen Sie **Abschnitt „Produkt auf Websites** sicher, dass das Produkt der richtigen Website zugewiesen ist.
@@ -59,5 +59,5 @@ Jeder der folgenden Punkte kann das Problem beheben.
 
 ## Lesen Sie diesbezüglich in unserer Support-Wissensdatenbank
 
-* [Protokollspeicherorte (Verzeichnisse) für die Pro-Architektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
-* [Protokollspeicherorte (Verzeichnisse) für Starter-Architektur](/help/how-to/general/log-locations-directories-for-starter-plan.md)
+[Protokollspeicherorte (Verzeichnisse) für die Pro-Architektur](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
+
