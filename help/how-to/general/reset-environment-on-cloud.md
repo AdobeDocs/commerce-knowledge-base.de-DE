@@ -21,7 +21,7 @@ Wählen Sie das für Ihren Fall am besten geeignete aus:
 
 * Wenn Sie eine geplante Aktivität (geplante Bereitstellung oder Aktualisierung) haben - [Szenario 1: Geplante Aktivität)](#scen1).
 * Wenn Sie einen gültigen Schnappschuss haben - [Szenario 2: Wiederherstellen eines Schnappschusses](#scen2).
-* Wenn Sie einen stabilen Build, aber keinen gültigen Snapshot haben - ([ 3: Kein Snapshot, Build stabil (SSH-Verbindung verfügbar)](#scen3).
+* Wenn Sie einen stabilen Build, aber keinen gültigen Snapshot haben - ([&#x200B; 3: Kein Snapshot, Build stabil (SSH-Verbindung verfügbar)](#scen3).
 * Wenn der Build beschädigt ist und Sie keinen gültigen Snapshot haben - [Szenario 4: Kein Snapshot; Build beschädigt (keine SSH-Verbindung)](#scen4).
 
 ## Szenario 1: Geplante Aktivität
@@ -161,4 +161,4 @@ Wenn die Ausführung des `setup:uninstall`-Befehls mit einem Fehler fehlschlägt
 1. Leere `main`-DB erstellen: `create database main;`
 1. Löschen Sie die folgenden Konfigurationsdateien: `config.php`, `config.php.bak`, `env.php`, `env.php.bak`
 
-Nachdem Sie die DB zurückgesetzt haben[ führen Sie einen Push  [!DNL git]  die Umgebung aus, um den Trigger erneut bereitzustellen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) und installieren Sie Adobe Commerce in einer neu erstellten DB. Oder [führen Sie den Befehl zum erneuten Bereitstellen ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
+Nachdem Sie die DB zurückgesetzt haben[&#x200B; führen Sie einen Push  [!DNL git]  die Umgebung aus, um den Trigger erneut bereitzustellen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) und installieren Sie Adobe Commerce in einer neu erstellten DB. Oder [führen Sie den Befehl zum erneuten Bereitstellen &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
