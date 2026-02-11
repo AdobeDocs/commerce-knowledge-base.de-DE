@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: c6d036ff57ede5dbdb031f00f099e00c811d7b0a
+source-git-commit: 950cbe6a4886f1f4f9f38250a46eb7f82bda73d4
 workflow-type: tm+mt
-source-wordcount: '2207'
+source-wordcount: '2196'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -223,7 +223,6 @@ ht-degree: 0%
    * [Adobe Commerce auf Cloud-Infrastruktur: Berechnung der CPU-Zuordnung](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Preise für freigegebene Kataloge mithilfe der REST-API aktualisieren](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [Suchen nach großen MySQL-Tabellen](/help/how-to/general/find-large-mysql-tables.md)
-   * [Synchronisieren von Daten und Produktionsdateien mit der Staging- oder Staging-Integration](/help/how-to/general/sync-data-and-files-from-production-to-staging-or-staging-to-integration.md)
    * [Überprüfen des Festplattenspeichers mithilfe der CLI in der Adobe Commerce in der Cloud-Infrastrukturumgebung](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Setzt fixierte Adobe Commerce in der Cloud-Infrastruktur bei Cron-Aufträgen manuell zurück](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Schnelles Testen in der Produktion, wenn eine Live-Site dieselbe Domain verwendet](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
