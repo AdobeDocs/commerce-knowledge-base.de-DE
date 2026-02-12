@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 888089e960017477364b3b3dae7e9cc5c69892ba
+source-git-commit: 87c6be20e766e88978f7a02960457cf715cf6911
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2177'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -220,7 +220,6 @@ ht-degree: 0%
    * [Hinzufügen eines neuen Landes zu Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Anpassen der Design-Konfiguration in Commerce Admin](/help/how-to/general/customize-design-configuration-in-magento-admin.md)
    * [Adobe Commerce auf Cloud-Infrastruktur: Berechnung der CPU-Zuordnung](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
-   * [Preise für freigegebene Kataloge mithilfe der REST-API aktualisieren](/help/how-to/general/update-shared-catalog-prices-using-rest-api.md)
    * [Suchen nach großen MySQL-Tabellen](/help/how-to/general/find-large-mysql-tables.md)
    * [Überprüfen des Festplattenspeichers mithilfe der CLI in der Adobe Commerce in der Cloud-Infrastrukturumgebung](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Setzt fixierte Adobe Commerce in der Cloud-Infrastruktur bei Cron-Aufträgen manuell zurück](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
