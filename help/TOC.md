@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 4c8bb0d63cd7826b24c2f6c85fbb9bb5982b2a35
+source-git-commit: 9d80bfb801d55c25627e92e9777699c14056e2dd
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2140'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -211,16 +211,13 @@ ht-degree: 0%
    * [Experience League Support-Benutzerhandbuch für Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
 * Anleitung {#how-to}
    * [Anleitungsübersicht](/help/how-to/overview.md)
-   * [Wie man ein Teammitglied in Support-Benachrichtigungen einbezieht](/help/how-to/general/how-to-include-a-team-member-in-support-notifications.md)
    * [So erhalten Sie Sicherheits-Patches und wenden diese an](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [Checkliste zum Einrichten einer neuen  [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [Wiederherstellen eines DB-Snapshots aus der Staging- oder Produktionsumgebung](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials: Zahlungsmethode aktualisieren oder Abonnement stornieren](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Rollback der Umgebung ohne Cloud-Snapshot](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
-   * [Hinzufügen eines neuen Landes zu Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
    * [Adobe Commerce auf Cloud-Infrastruktur: Berechnung der CPU-Zuordnung](/help/how-to/general/magento-commerce-cloud-cpu-allocation-calculation.md)
    * [Suchen nach großen MySQL-Tabellen](/help/how-to/general/find-large-mysql-tables.md)
-   * [Überprüfen des Festplattenspeichers mithilfe der CLI in der Adobe Commerce in der Cloud-Infrastrukturumgebung](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md)
    * [Setzt fixierte Adobe Commerce in der Cloud-Infrastruktur bei Cron-Aufträgen manuell zurück](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Schnelles Testen in der Produktion, wenn eine Live-Site dieselbe Domain verwendet](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Optionen zur Bereitstellung statischer Inhalte zur Reduzierung von Bereitstellungsausfällen in der Cloud](/help/how-to/general/static-content-deployment-options-to-reduce-deployment-downtime-on-cloud.md)
