@@ -45,7 +45,7 @@ Dieser Artikel enthält Schritte zur Fehlerbehebung, um Probleme mit der Leistun
 <li>Scrollen Sie nach unten und klicken Sie auf Alle Transaktionen anzeigen .</li>
 <li>Sie können Transaktionen nach <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#table_view">verschiedenen Parametern) sortieren </a> zu den Parametern springen, die einen Verdacht hervorrufen.</li>
 <li>Überprüfen Sie diese Transaktionen mit einem niedrigen Apdex-Score, einer ungewöhnlich hohen Anzahl oder einer hohen durchschnittlichen Zeit oder Disset %.</li>
-<li>Klicken Sie auf jede einzelne Transaktion. Wenn Sie das Problem nicht beheben können, <a href="https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket">senden Sie ein Support-Ticket.</a>
+<li>Klicken Sie auf jede einzelne Transaktion. Wenn Sie das Problem nicht beheben können, <a href="https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket">senden Sie ein Support-Ticket.</a>
 </li>
 <li>Wenn Sie weitere Nachforschungen anstellen müssen, sollten Sie Nicht-Web-Transaktionen überprüfen.</li>
 </ol>
@@ -60,7 +60,7 @@ Dieser Artikel enthält Schritte zur Fehlerbehebung, um Probleme mit der Leistun
 </ol>
 </td>
 <td>
-<p>Weitere Informationen zum New Relic Apdex-Score finden Sie in der <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM Apdex &gt; Messung der Benutzerzufriedenheit</a>. Weitere Informationen finden Sie unter <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis zu Apdex</a> in unserer Support-Wissensdatenbank.</p>
+<p>Weitere Informationen zum New Relic Apdex-Score finden Sie in der <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">New Relic-Dokumentation &gt; APM Apdex &gt; Messung der Benutzerzufriedenheit</a>. Weitere Informationen finden Sie unter <a href="https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Verwaltete Warnhinweise für Adobe Commerce: Warnhinweis zu Apdex</a> in unserer Support-Wissensdatenbank.</p>
 </td>
 </tr>
 <tr>

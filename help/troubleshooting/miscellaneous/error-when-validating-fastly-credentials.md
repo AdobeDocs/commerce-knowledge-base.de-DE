@@ -29,7 +29,7 @@ Die in diesem Artikel beschriebenen Schritte gelten auch, wenn Sie Ihr [!DNL Fas
 
 ## Lösung
 
-1. Vergewissern Sie sich, dass Sie die richtige [!DNL Fastly]-Service-ID und das richtige API-Token haben, und versuchen Sie es erneut. Detaillierte Anweisungen finden Sie unter [Testen der  [!DNL Fastly] Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
+1. Vergewissern Sie sich, dass Sie die richtige [!DNL Fastly]-Service-ID und das richtige API-Token haben, und versuchen Sie es erneut. Detaillierte Anweisungen finden Sie unter [Testen der  [!DNL Fastly] Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) in unserer Entwicklerdokumentation.
 1. Wenn die Überprüfung der Anmeldeinformationen fehlschlägt, führen Sie den folgenden curl-Befehl aus, um den Status des Services zu bestätigen:
 
    ```curl
@@ -38,7 +38,7 @@ Die in diesem Artikel beschriebenen Schritte gelten auch, wenn Sie Ihr [!DNL Fas
 
 1. Wenn der obige Befehl einen Fehler wie den folgenden zurückgibt: `{"msg":"Token $TOKEN expired at 2021-09-28T02:03:37Z"}`, senden Sie ein Support-Ticket, um ein neues API-Token anzufordern. Nachdem Sie Ihr neues Token erhalten haben, aktualisieren Sie die Konfiguration in Ihrer Umgebung.
 
-   Informationen zum Einreichen eines Support-Tickets finden Sie im [Benutzerhandbuch für das Adobe Commerce Help Center > SUPPORT-TICKETS](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-tickets) in unserer Support-Wissensdatenbank.
+   Informationen zum Einreichen eines Support-Tickets finden Sie im [Benutzerhandbuch für das Adobe Commerce Help Center > SUPPORT-TICKETS](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-tickets) in unserer Support-Wissensdatenbank.
 
    >[!NOTE]
    >
@@ -50,6 +50,6 @@ Die in diesem Artikel beschriebenen Schritte gelten auch, wenn Sie Ihr [!DNL Fas
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
-* [Cloud für Adobe Commerce > [!DNL Fastly] > [!DNL Fastly] Service-Konto und Anmeldedaten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
+* [Cloud für Adobe Commerce > [!DNL Fastly] > [!DNL Fastly] Service-Konto und Anmeldedaten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
 
-* [Cloud für Adobe Commerce > Einrichten [!DNL Fastly] > Testen der  [!DNL Fastly] Anmeldeinformationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
+* [Cloud für Adobe Commerce > Einrichten [!DNL Fastly] > Testen der  [!DNL Fastly] Anmeldeinformationen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)

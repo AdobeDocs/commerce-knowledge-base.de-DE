@@ -42,7 +42,7 @@ Um das Problem zu beheben, aktualisieren Sie Ihre Composer-Version auf 1.10.22:
 1. Dadurch wird die Anforderung für diese Composer-Paketversion hinzugefügt. Überprüfen Sie die Sperrdatei - `composer/composer` Version muss 1.0.22 oder höher sein.
 1. `composer.json` und `composer.lock` übertragen und eine Bereitstellung per Push übertragen.
 
-Wenn diese Methode nicht funktioniert, reichen [ein Support-Ticket ein](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+Wenn diese Methode nicht funktioniert, reichen [ein Support-Ticket ein](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Verwandtes Lesen
 

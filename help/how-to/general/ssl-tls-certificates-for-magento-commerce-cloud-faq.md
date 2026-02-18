@@ -29,7 +29,7 @@ Für die Starter-Planarchitektur und die PaaS-Integrationsumgebungen gibt es ein
 So fügen Sie die Domain zum Service in [!DNL Fastly] hinzu:
 
 1. Verweisen Sie Ihre Domain in DNS auf prod.magentocloud.map.fastly.net und warten Sie bis zu 6 Stunden.
-1. [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Bitte, diese Domain in der Nginx-Konfiguration hinzuzufügen (falls noch nicht geschehen).
+1. [Senden eines Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Bitte, diese Domain in der Nginx-Konfiguration hinzuzufügen (falls noch nicht geschehen).
 
 ## Wie kann ich ein Zertifikat anfordern?
 
@@ -47,10 +47,10 @@ Sie können Ihr eigenes SSL-/TLS-Zertifikat bereitstellen, anstatt das von Adobe
 
 Dieser Prozess erfordert jedoch zusätzliche Arbeit bei der Einrichtung und Wartung. Sie müssen zunächst ein Certificate Signing Request (CSR) für den Domain-Namen (oder Gebrauchsnamen) der Website generieren und ihn Ihrem SSL-Anbieter bereitstellen, um ein SSL-Zertifikat bereitzustellen.
 
-Sobald Sie über das SSL-Zertifikat verfügen, senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) oder verwenden Sie Ihre CTA, um Ihren Cloud-Umgebungen benutzerdefinierte gehostete Zertifikate hinzuzufügen.
+Sobald Sie über das SSL-Zertifikat verfügen, senden Sie ein [Adobe Commerce-Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) oder verwenden Sie Ihre CTA, um Ihren Cloud-Umgebungen benutzerdefinierte gehostete Zertifikate hinzuzufügen.
 
 * Wenn die Domains nicht mehr verwendet werden, werden sie automatisch aus unserem System gelöscht, sodass keine weiteren Maßnahmen erforderlich sind.
-* Wenn Sie bereits über ein Zertifikat verfügen, laden Sie es mithilfe eines SFTP-Clients (SSH File Transfer Protocol) an einen im Web nicht zugänglichen Dateispeicherort auf Ihrem Server hoch und [senden Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), sodass der Dateipfad bekannt wird.
+* Wenn Sie bereits über ein Zertifikat verfügen, laden Sie es mithilfe eines SFTP-Clients (SSH File Transfer Protocol) an einen im Web nicht zugänglichen Dateispeicherort auf Ihrem Server hoch und [senden Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), sodass der Dateipfad bekannt wird.
 
 >[!WARNING]
 >
@@ -67,7 +67,7 @@ Die im Zertifikat angezeigte Domain ist nur die erste Domain, die zum TLS-Zertif
 
 ## Kann ich Platzhalter-TLS-Zertifikate verwenden?
 
-Platzhalter-TLS-Zertifikate können nur mit Ihrem benutzerdefinierten Zertifikat verwendet werden, nicht aber mit Adobe Commerce Let&#39;s Encrypt-Zertifikaten. Im Rahmen unserer TLS-Optimierung stellt Adobe die Unterstützung für Platzhalter-TLS-Zertifikate ein. Wir identifizieren und kontaktieren Händler, die ein Platzhalterzertifikat mit Adobes Let&#39;s Encrypt-Zertifikaten verwenden und in der [!DNL Fastly] für Adobe Commerce konfiguriert sind. Wir bitten darum, diese Platzhalterzertifikate durch exakte Domains zu ersetzen, um die TLS-Abdeckung sicherzustellen. Um ein Platzhalter-TLS-Zertifikat zu ersetzen, besuchen Sie [&#x200B; Abschnitt „Domain](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) des [!DNL Fastly]-Plug-ins. Von hier aus können exakte Domains hinzugefügt und der Platzhalter entfernt werden. Beachten Sie, dass das DNS auf [!DNL Fastly] verweisen muss, damit diese neuen Domains über das CDN weitergeleitet werden. Sobald die Domains hinzugefügt und das DNS aktualisiert wurde, wird ein passendes [Let&#39;s &#x200B;](https://letsencrypt.org/)) bereitgestellt. Wenn Sie eine Domain, die auf [!DNL Fastly] mit einem Platzhalter verweist, nicht entfernen, löscht Adobe das freigegebene Zertifikat. Dies kann zu einem Website-Ausfall führen, wenn Sie den URL-FQDN nicht konfiguriert und denselben URL-FQDN in Ihrem DNS eingerichtet haben. Sie sollten daher bestätigen, dass die konfigurierten URLs auch eine Eins-zu-eins-Übereinstimmung in ihrem DNS aufweisen, die auf [!DNL Fastly] verweist.
+Platzhalter-TLS-Zertifikate können nur mit Ihrem benutzerdefinierten Zertifikat verwendet werden, nicht aber mit Adobe Commerce Let&#39;s Encrypt-Zertifikaten. Im Rahmen unserer TLS-Optimierung stellt Adobe die Unterstützung für Platzhalter-TLS-Zertifikate ein. Wir identifizieren und kontaktieren Händler, die ein Platzhalterzertifikat mit Adobes Let&#39;s Encrypt-Zertifikaten verwenden und in der [!DNL Fastly] für Adobe Commerce konfiguriert sind. Wir bitten darum, diese Platzhalterzertifikate durch exakte Domains zu ersetzen, um die TLS-Abdeckung sicherzustellen. Um ein Platzhalter-TLS-Zertifikat zu ersetzen, besuchen Sie [&#x200B; Abschnitt „Domain](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) des [!DNL Fastly]-Plug-ins. Von hier aus können exakte Domains hinzugefügt und der Platzhalter entfernt werden. Beachten Sie, dass das DNS auf [!DNL Fastly] verweisen muss, damit diese neuen Domains über das CDN weitergeleitet werden. Sobald die Domains hinzugefügt und das DNS aktualisiert wurde, wird ein passendes [Let&#39;s &#x200B;](https://letsencrypt.org/)) bereitgestellt. Wenn Sie eine Domain, die auf [!DNL Fastly] mit einem Platzhalter verweist, nicht entfernen, löscht Adobe das freigegebene Zertifikat. Dies kann zu einem Website-Ausfall führen, wenn Sie den URL-FQDN nicht konfiguriert und denselben URL-FQDN in Ihrem DNS eingerichtet haben. Sie sollten daher bestätigen, dass die konfigurierten URLs auch eine Eins-zu-eins-Übereinstimmung in ihrem DNS aufweisen, die auf [!DNL Fastly] verweist.
 
 ## Was sollte ich tun, wenn meine Domain nicht mehr auf Adobe Commerce verweist?
 
@@ -75,4 +75,4 @@ Wenn Ihre Domain nicht mehr auf Adobe Commerce verweist, entfernen Sie sie aus d
 
 ## Verwandtes Lesen
 
-[Bereitstellen von SSL-/TLS-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) in unserer Entwicklerdokumentation
+[Bereitstellen von SSL-/TLS-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) in unserer Entwicklerdokumentation

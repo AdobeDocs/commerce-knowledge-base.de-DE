@@ -16,7 +16,7 @@ Dieser Artikel bietet Lösungen für die erneute Autorisierung einer Integration
 
 ## Integrationen von Datenbanken und SaaS
 
-Eine Liste der Datenbank- und SaaS-Integrationen finden Sie unter [Verbinden externer Daten mithilfe einer Integration](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis links für die Navigation.)
+Eine Liste der Datenbank- und SaaS-Integrationen finden Sie unter [Verbinden externer Daten mithilfe einer Integration](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) in unserer Entwicklerdokumentation. (Verwenden Sie beim Öffnen der Seite das Inhaltsverzeichnis links für die Navigation.)
 
 ## Haben Sie Verbindungsprobleme?
 
@@ -35,4 +35,4 @@ Der Status aller Integrationen finden Sie auf der Seite Integrationen ( **Daten 
 
 Um sich erneut zu authentifizieren, müssen Sie möglicherweise Ihre Kontoanmeldeinformationen erneut eingeben. In einigen Fällen müssen Sie möglicherweise neue API-Schlüssel für die Problemintegration generieren. Klicken Sie auf den Namen des Integrationsproblems, um den erneuten Autorisierungsprozess zu starten.
 
-Wenn das Problem weiterhin besteht, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+Wenn das Problem weiterhin besteht, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).

@@ -17,7 +17,7 @@ Am 3. September hat das Multi-State Information Sharing and Analysis Center (MS-
 
 >[!WARNING]
 >
->Beachten Sie bei Adobe Commerce auf Cloud-Infrastrukturen, dass Service-Upgrades nicht ohne Vorankündigung an unser Infrastrukturteam innerhalb von 48 Geschäftsstunden in die Produktionsumgebung verschoben werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion vorgenommen werden müssen ([&#x200B; ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)), wobei das erforderliche Service-Upgrade detailliert angegeben und der Zeitpunkt angegeben wird, zu dem das Upgrade gestartet werden soll.
+>Beachten Sie bei Adobe Commerce auf Cloud-Infrastrukturen, dass Service-Upgrades nicht ohne Vorankündigung an unser Infrastrukturteam innerhalb von 48 Geschäftsstunden in die Produktionsumgebung verschoben werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion vorgenommen werden müssen ([&#x200B; ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)), wobei das erforderliche Service-Upgrade detailliert angegeben und der Zeitpunkt angegeben wird, zu dem das Upgrade gestartet werden soll.
 
 Informationen zu Auswirkungen und Schritten für Adobe Commerce Sites finden Sie weiter:
 
@@ -28,7 +28,7 @@ Wenn Sie Adobe Commerce in der Cloud-Infrastruktur verwenden, wenden Sie sich bi
 Zusätzliche Hinweise zur erneuten Bereitstellung der Cloud-Site für dieses Update:
 
 * Wenn Ihre Site weiterhin PHP Version 7.0 verwendet, müssen Sie zuerst auf eine unterstützte PHP Version aktualisieren, bevor Sie erneut bereitstellen, um diese Sicherheitsaktualisierungen nutzen zu können.
-* Für 2.1.x/2.2.x finden Sie weitere Informationen zum Upgrade von PHP [hier](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html).
+* Für 2.1.x/2.2.x finden Sie weitere Informationen zum Upgrade von PHP [hier](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=de).
 
 \* *Frühere Versionen dieses Artikels und unserer Nachricht haben am 19. September begonnen, aber unsere Teams haben ihre Arbeit vor dem Zeitplan beendet.*
 

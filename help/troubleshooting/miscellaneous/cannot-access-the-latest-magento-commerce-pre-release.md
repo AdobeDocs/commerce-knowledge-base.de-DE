@@ -40,7 +40,7 @@ Dies sind die häufigsten Ursachen für Probleme:
 
 Während der Vorabversion sind Versionspakete an zwei Stellen verfügbar:
 
-1. Über Composer auf [magento.com](https://repo.magento.com/) unter Verwendung der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [&#x200B; von Adobe Commerce mit &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
+1. Über Composer auf [magento.com](https://repo.magento.com/) unter Verwendung der primären MageID für das Konto. Weitere Informationen zur Verwendung von Composer finden Sie unter [&#x200B; von Adobe Commerce mit &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer) in unserer Entwicklerdokumentation.
 1. **Mein** > **Downloads** auf [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]
@@ -61,7 +61,7 @@ Um herauszufinden, ob Ihre MageID primär ist, versuchen Sie Folgendes:
    * Wenn Sie die Adobe Commerce-Lizenzinformationen sehen, ist Ihre MageID primär.
    * Wenn die Adobe Commerce-Lizenzinformationen nicht angezeigt werden, verfügt Ihre MageID nur über freigegebenen Zugriff. Um herauszufinden, wer der primäre ID-Inhaber ist, gehen Sie zu **Für mich freigegeben** Beachten Sie den dort angegebenen SHARENAME. Klicken Sie **Konten wechseln** und wählen Sie den Wert aus, den Sie in SHARENAME angegeben haben. Auf der Begrüßungsseite wird die E-Mail-Adresse des primären ID-Inhabers angezeigt.
 1. Wenn Sie diese Informationen auf [magento.com](https://account.magento.com/customer/account/login) nicht finden können, wenden Sie sich bitte an Ihr Adobe Account Team.
-1. Wenn keiner der oben genannten Schritte funktioniert, wenden Sie [an den Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+1. Wenn keiner der oben genannten Schritte funktioniert, wenden Sie [an den Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 **Für Partner**
 
@@ -71,8 +71,8 @@ Um herauszufinden, ob Ihre MageID primär ist, versuchen Sie Folgendes:
    * Wenn Sie die Informationen zur aktiven Partnerlizenz sehen, ist Ihre MageID primär. Die Partnerlizenz ist aktiv, wenn das ENDDATUM ein Datum in der Zukunft ist.
    * Wenn die Informationen zur aktiven Partnerlizenz nicht angezeigt werden, verfügt Ihre MageID nur über freigegebenen Zugriff. Um herauszufinden, wer der primäre ID-Inhaber ist, gehen Sie zu **Für mich freigegeben** Beachten Sie den dort angegebenen SHARENAME. Klicken Sie **Konten wechseln** und wählen Sie den Wert aus, den Sie in SHARENAME angegeben haben. Auf der Begrüßungsseite wird die E-Mail-Adresse des primären ID-Inhabers angezeigt.
 1. Sollten Sie diese Informationen aus irgendeinem Grund nicht auf [magento.com](https://account.magento.com/customer/account/login) finden, wenden Sie sich bitte an Ihren Partner Manager.
-1. Wenn keiner der oben genannten Punkte funktioniert, wenden Sie [&#x200B; (с den Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+1. Wenn keiner der oben genannten Punkte funktioniert, wenden Sie [&#x200B; (с den Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ### Nicht Teil des Vorabversionsprogramms
 
-Um am Vorabversionsprogramm für den Zugriff teilnehmen zu können, muss Ihr Unternehmen über ein gültiges Adobe Commerce- oder Partnerkonto verfügen. Wenn Sie der Meinung sind, dass Sie diese Kriterien erfüllen und nicht auf den Vorabversions-Code zugreifen können, [&#x200B; Sie sich mit Ihrer MageID an den &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)-Support.
+Um am Vorabversionsprogramm für den Zugriff teilnehmen zu können, muss Ihr Unternehmen über ein gültiges Adobe Commerce- oder Partnerkonto verfügen. Wenn Sie der Meinung sind, dass Sie diese Kriterien erfüllen und nicht auf den Vorabversions-Code zugreifen können, [&#x200B; Sie sich mit Ihrer MageID an den &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)-Support.

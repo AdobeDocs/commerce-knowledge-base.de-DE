@@ -59,7 +59,7 @@ Die folgenden Status können bei Prüfungen angezeigt werden:
 1. **Unbekannt**: Das Security Scan Tool enthält noch keine Daten zu Ihrer Domain. Warten Sie auf den nächsten Synchronisierungszyklus.
 1. **Fehlgeschlagen**: Wenn der Status „Fehlgeschlagen“ anzeigt, müssen Sie das Problem beheben (2FA aktivieren, Admin-URL ändern usw.) und auf den nächsten Synchronisierungszyklus warten.
 
-Wenn seit der Vornahme der Änderungen an der Instanz 24 Stunden vergangen sind und sie nicht im Bericht zur Sicherheitsprüfung angezeigt werden, können [&#x200B; ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Geben Sie beim Senden des Tickets die Store-URL an.
+Wenn seit der Vornahme der Änderungen an der Instanz 24 Stunden vergangen sind und sie nicht im Bericht zur Sicherheitsprüfung angezeigt werden, können [&#x200B; ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Geben Sie beim Senden des Tickets die Store-URL an.
 
 ## BotNet-Verdächtiger Fehler
 
@@ -77,7 +77,7 @@ Sie erhalten eine Benachrichtigung über den Fehler „BotNet-Verdächtiger“.
 1. Überprüfen Sie die neu erstellten SSH-Konten, Dateisystemänderungen usw.
 1. Führen Sie eine Sicherheitsüberprüfung durch.
 1. Überprüfen Sie die Adobe Commerce-Version und das Upgrade, insbesondere wenn weiterhin Magento 1 ausgeführt wird, das nicht mehr unterstützt wird.
-1. Wenn das Problem weiterhin besteht, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) und geben Sie die Store-URL an.
+1. Wenn das Problem weiterhin besteht, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) und geben Sie die Store-URL an.
 
 ## Problem: Kompromisseinspritzung fehlgeschlagen
 
@@ -90,7 +90,7 @@ Sie erhalten eine Fehlermeldung bezüglich eines „Compromising Injection“-Fe
 1. Führen Sie eine Überprüfung der Systemkonfigurationsänderungen durch, insbesondere der benutzerdefinierten `HTML head` und `Miscellaneous HTML` in `footer` Abschnittswerten.
 1. Code- und Datenbanküberprüfung auf unbekannte Änderungen und Anzeichen von injizierter Malware durchführen.
 
-Wenn keiner der oben genannten Punkte hilft, [senden Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) und geben Sie die Store-URL und die Fehlermeldung aus dem Bericht an.
+Wenn keiner der oben genannten Punkte hilft, [senden Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) und geben Sie die Store-URL und die Fehlermeldung aus dem Bericht an.
 
 ## Häufig gestellte Fragen
 
@@ -104,7 +104,7 @@ Sie können die 10 vorherigen Berichte von Ihrem Ende aus generieren. Wenn älte
 
 ### Welche Informationen werden beim Einreichen eines Support-Tickets benötigt?
 
-Bitte geben Sie den Domain-Namen genau so an, wie er für die [Sicherheitsprüfung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID und Cloud Project_ID übermittelt wurde. Beachten Sie, dass die Cloud-Projekt-ID für Adobe Commerce On-Premise nicht erforderlich ist.
+Bitte geben Sie den Domain-Namen genau so an, wie er für die [Sicherheitsprüfung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID und Cloud Project_ID übermittelt wurde. Beachten Sie, dass die Cloud-Projekt-ID für Adobe Commerce On-Premise nicht erforderlich ist.
 
 ### Was passiert, wenn ich meinen Speicher aus dem Scan-Tool entferne?
 
