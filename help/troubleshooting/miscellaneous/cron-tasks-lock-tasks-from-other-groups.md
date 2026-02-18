@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für das Adobe Commerce-Problem 
 exl-id: b5b9e8b3-373c-4f93-af9c-85da84dbc928
 feature: Configuration
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server zum Ausführen von [!DN
 
 ## Lösung
 
-1. Wenden Sie sich an den [Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)Support, um die selbstverwaltete [!DNL crons] aktivieren zu lassen.
+1. Wenden Sie sich an den [Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)Support, um die selbstverwaltete [!DNL crons] aktivieren zu lassen.
 1. Bearbeiten Sie die `.magento.app.yaml` im Stammverzeichnis des Codes für Adobe Commerce in der [!DNL Git]. Folgendes hinzufügen:
 
    ```yaml
@@ -71,5 +71,5 @@ Um zu überprüfen, ob die selbst verwaltete [!DNL cron] aktiviert ist, führen 
 
 ## Verwandtes Lesen
 
-* [Setup [!DNL cron] jobs](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Setup [!DNL cron] jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

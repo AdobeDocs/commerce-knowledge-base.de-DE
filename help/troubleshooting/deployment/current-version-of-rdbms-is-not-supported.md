@@ -4,9 +4,9 @@ description: 'Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereit
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ Ihre Version von MariaDB ist nicht kompatibel mit der Version von Adobe Commerce
 Sie müssen den MariaDB-Dienst auf eine kompatible Version aktualisieren, bevor Sie die Anwendung aktualisieren.
 
 
-Für die Integrationsverzweigung auf Adobe Commerce in der Cloud-Infrastruktur Pro Planarchitektur (und alle Verzweigungen in der Starterarchitektur) folgen Sie bitte [Service konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) in unserer Entwicklerdokumentation.
+Für die Integrationsverzweigung auf Adobe Commerce in der Cloud-Infrastruktur Pro Planarchitektur (und alle Verzweigungen in der Starterarchitektur) folgen Sie bitte [Service konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) in unserer Entwicklerdokumentation.
 
-Für die Planarchitektur Staging und Produktion in Adobe Commerce auf Cloud-Infrastruktur Pro [&#x200B; Sie ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um anzufordern, dass die Services vor der Bereitstellung des Adobe Commerce-Versions-Upgrades aktualisiert werden.
+Für die Planarchitektur Staging und Produktion in Adobe Commerce auf Cloud-Infrastruktur Pro [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um anzufordern, dass die Services vor der Bereitstellung des Adobe Commerce-Versions-Upgrades aktualisiert werden.
 
 
 ## Verwandtes Lesen
 
-* [Best Practices für Builds und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)) in unserer Entwicklerdokumentation.
-* [Adobe Commerce-Upgrade 2.3.5: Kompakt auf dynamische Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=de) in unserer Support-Wissensdatenbank.
+* [Best Practices für Builds und ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)) in unserer Entwicklerdokumentation.
+* [Adobe Commerce-Upgrade 2.3.5: Kompakt auf dynamische Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) in unserer Support-Wissensdatenbank.

@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für Probleme bei der Verarbeitung 
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -41,14 +41,14 @@ Wenn Ihre PayPal-Zahlungsmethode eine API mit Abrechnungsvereinbarungen und Refe
 
 Siehe die folgenden Artikel:
 
-* [PayPal-Gateway hat Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26838) in unserer Support-Wissensdatenbank.
+* [PayPal-Gateway hat Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) in unserer Support-Wissensdatenbank.
 * [Ändern der Inkrement-ID für eine neue Store](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)Entität in unserer Support-Wissensdatenbank.
 
 ## Support kontaktieren, um erweiterte Zahlungsprotokolle zu erfassen
 
 Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam Sie bitten, einen speziellen Patch anzuwenden, um die erweiterte Zahlungsprotokollierung zu aktivieren. In diesem Fall sollten Sie die folgenden Schritte ausführen:
 
-[Senden eines Support-Tickets](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit den folgenden Details:
+[Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit den folgenden Details:
 
 * Geben Sie Ihr Problem mit so vielen Details wie möglich an.
 * Führen Sie die Schritte auf, die Sie in diesem Artikel, in der Wissensdatenbank und in anderen Ressourcen versucht haben. Alle Ergebnisse einschließen.
@@ -57,5 +57,5 @@ Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam
 Wenn Sie den Patch für die erweiterte Zahlungsprotokollierung erhalten:
 
 * Pflaster aufkleben.
-* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 * Warten Sie auf weitere Empfehlungen vom Adobe Commerce-Supportteam.

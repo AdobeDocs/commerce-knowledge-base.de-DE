@@ -4,9 +4,9 @@ description: Dieser Artikel bietet die Lösung für das Problem, dass zwischenge
 exl-id: 3e6bd5aa-bd5d-4880-8b78-64f280647abe
 feature: Cache, Upgrade
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ Das Problem wird durch die falsche Nginx-Konfiguration verursacht, die in `.mage
    * Starterplan: Korrigieren Sie die Datei selbst und übertragen Sie die Änderungen.
    * Pro Plan:
    * Integration: Korrigieren Sie die Datei selbst und übertragen Sie die Änderungen.
-   * Staging und Produktion: Korrigieren Sie die Datei selbst, übertragen Sie die Änderungen und erstellen Sie ein [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)Ticket, um sie anzuwenden.
+   * Staging und Produktion: Korrigieren Sie die Datei selbst, übertragen Sie die Änderungen und erstellen Sie ein [Adobe Commerce-Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide)Ticket, um sie anzuwenden.
 
-1. Aktivieren Sie die Fastly-Bildoptimierung in Commerce Admin (Fastly muss zuvor konfiguriert werden), wie in <https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization> beschrieben.
+1. Aktivieren Sie die Fastly-Bildoptimierung in Commerce Admin (Fastly muss zuvor konfiguriert werden), wie in <https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization> beschrieben.
 
-Wenn die Konfiguration korrekt ist, das Problem jedoch weiterhin auftritt, setzen Sie die Untersuchung fort oder wenden Sie sich an den [Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn die Konfiguration korrekt ist, das Problem jedoch weiterhin auftritt, setzen Sie die Untersuchung fort oder wenden Sie sich an den [Adobe Commerce-Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

@@ -4,9 +4,9 @@ description: In diesem Artikel wird erläutert, wie Sie ein langsames Site-Probl
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: d9985fecdafa63882f8411b32e296cc47583c93d
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Ein Grund für Leistungseinbußen können bestimmte Adobe Commerce-Cache-Typen s
 
 ## Lösung
 
-1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu [&#x200B; Sie „SSH“ in Ihre Umgebung &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) und führen den folgenden Befehl aus:
+1. Überprüfen Sie zunächst den Status Ihres Adobe Commerce-Caches, um festzustellen, ob dies das Problem ist. Dazu [ Sie „SSH“ in Ihre Umgebung ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh) und führen den folgenden Befehl aus:
 
    ```bash
    php bin/magento cache:status
@@ -41,17 +41,17 @@ Ein Grund für Leistungseinbußen können bestimmte Adobe Commerce-Cache-Typen s
 1. Untersuchen Sie die deaktivierten Cache-Typen. Alle Adobe Commerce-Cache-Typen sollten aktiviert werden, es sei denn, Sie haben eine alternative Anleitung von Adobe erhalten. Erweiterungen von Drittanbietern dürfen nicht die Deaktivierung des Adobe Commerce-Caches erfordern.
 1. Wenn die Untersuchung bestätigt, dass einige Cache-Typen versehentlich deaktiviert sind, aktivieren Sie sie, indem Sie den folgenden Befehl für jeden Cache-Typ ausführen: `php bin/magento cache:enable <your_disabled_cache_type>`
 
-Wenn es Bedenken und/oder Fragen dazu gibt, ob ein bestimmter Adobe Commerce-Cache-Typ deaktiviert werden kann oder sollte, [wenden Sie sich an den Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und fragen Sie nach Empfehlungen.
+Wenn es Bedenken und/oder Fragen dazu gibt, ob ein bestimmter Adobe Commerce-Cache-Typ deaktiviert werden kann oder sollte, [wenden Sie sich an den Adobe Commerce-Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) und fragen Sie nach Empfehlungen.
 
 ## Verwandtes Lesen
 
 Adobe Commerce-Cache-Dokumentation in unserer Entwicklerdokumentation:
 
 * [Übersicht über den Adobe Commerce-Cache](https://developer.adobe.com/commerce/frontend-core/guide/caching/)
-* [Cache verwalten](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-cache)
+* [Cache verwalten](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-cache)
 
 Weitere mögliche Gründe für Leistungsprobleme und Lösungen für sie:
 
-* [Deaktivieren der Adobe Commerce-Bannerausgabe zur Verbesserung der Site-Leistung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26909)
-* [MySQL-Tabellen sind zu groß](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26945)
+* [Deaktivieren der Adobe Commerce-Bannerausgabe zur Verbesserung der Site-Leistung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [MySQL-Tabellen sind zu groß](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [Langsame Leistung, langsame und lange laufende Crons](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)

@@ -4,9 +4,9 @@ description: Unser Ziel bei Commerce Intelligence ist es, herausragenden Kundens
 exl-id: 2e1ef4b3-a77c-4281-8337-fb90574a44f7
 feature: Commerce Intelligence, User Account
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ Obwohl wir diese Aktionen nicht in Ihrem Namen durchführen können, sind wir ge
 
 Zusätzlich zu den oben aufgeführten Datensicherheitsfunktionen gibt es einige produktbezogene Anfragen, die unser Support-Team nicht erfüllen kann:
 
-* **SQL lehren** - SQL-Report Builder verwenden, aber SQL nicht kennen? Keine Sorge - wir haben ein [Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) zusammengestellt, das Ihnen bei den Grundlagen hilft.
+* **SQL lehren** - Sie möchten die SQL-Report Builder verwenden, kennen SQL aber nicht? Keine Sorge - wir haben ein [Tutorial](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) zusammengestellt, das Ihnen bei den Grundlagen hilft.
 
 * **SQL-Visualisierungsprobleme, die nicht durch Produktfehler verursacht werden** - Wenn ein Diagramm am Ende etwas unausgegoren aussieht und es **nicht** durch einen Produktfehler verursacht wird, ist die Ursache wahrscheinlich die Abfrage selbst. Sehen Sie sich unser Tutorial [Erstellen von Visualisierungen aus SQL-Abfragen](/docs/commerce-business-intelligence/mbi/tutorials/create-visuals-from-sql.html) in unserem Benutzerhandbuch an, um Anleitungen zur Strukturierung Ihrer Abfragen für die Visualisierung zu erhalten.
-* **Debuggen von SQL**-Abfragen: Gelegentlich können Fehler auftreten, die nicht erklären sind und die Ausführung der Abfrage verhindern. Es wird empfohlen, das [Commerce Intelligence-Benutzerhandbuch: Verwenden von SQL Report Builder &#x200B;](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) und unser SQL-Tutorial heranzuziehen, um festzustellen, wo bei der Abfrage ein Fehler aufgetreten ist.
+* **Debuggen von SQL**-Abfragen: Gelegentlich können Fehler auftreten, die nicht erklären sind und die Ausführung der Abfrage verhindern. Es wird empfohlen, das [Commerce Intelligence-Benutzerhandbuch: Verwenden von SQL Report Builder](/docs/commerce-business-intelligence/mbi/analyze/sql/sql-rpt-bldr.html) und unser SQL-Tutorial heranzuziehen, um festzustellen, wo bei der Abfrage ein Fehler aufgetreten ist.
 
 ## Wie sende ich ein Ticket?
 
-Sie können [Ticket senden](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) indem Sie auf den Link **Ticket senden** oben auf der Seite klicken. Wir empfehlen, sich [Informationen in Ihrem Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#info-in-support-ticket) anzusehen, bevor Sie sich an uns wenden, um sicherzustellen, dass alle erforderlichen Informationen in Ihrer ersten Übermittlung enthalten sind.
+Sie können [Ticket senden](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) indem Sie auf den Link **Ticket senden** oben auf der Seite klicken. Wir empfehlen, sich [Informationen in Ihrem Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) anzusehen, bevor Sie sich an uns wenden, um sicherzustellen, dass alle erforderlichen Informationen in Ihrer ersten Übermittlung enthalten sind.

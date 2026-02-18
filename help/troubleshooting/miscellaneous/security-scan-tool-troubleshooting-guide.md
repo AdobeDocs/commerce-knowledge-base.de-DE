@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie die verschiedenen Probleme mit dem Security S
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: c6e338fb33477ab107fe4de382b485339b57275a
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ if(req.http.user-agent ~ "(Chrome|Firefox)/[1-7][0-9]" && client.ip !~ useragent
 {   error 403;   }
 ```
 
-Weitere Informationen finden Sie auch [&#x200B; Artikel in unserer Support](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)Wissensdatenbank unter Der Bericht zum Security Scan Tool ist leer.
+Weitere Informationen finden Sie auch [ Artikel in unserer Support](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)Wissensdatenbank unter Der Bericht zum Security Scan Tool ist leer.
 
 ## Problem: Das Sicherheitsproblem wurde behoben, wird aber in der Suche weiterhin als verwundbar angezeigt
 
@@ -59,7 +59,7 @@ Die folgenden Status können bei Prüfungen angezeigt werden:
 1. **Unbekannt**: Das Security Scan Tool enthält noch keine Daten zu Ihrer Domain. Warten Sie auf den nächsten Synchronisierungszyklus.
 1. **Fehlgeschlagen**: Wenn der Status „Fehlgeschlagen“ anzeigt, müssen Sie das Problem beheben (2FA aktivieren, Admin-URL ändern usw.) und auf den nächsten Synchronisierungszyklus warten.
 
-Wenn seit der Vornahme der Änderungen an der Instanz 24 Stunden vergangen sind und sie nicht im Bericht zur Sicherheitsprüfung angezeigt werden, können [&#x200B; ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Geben Sie beim Senden des Tickets die Store-URL an.
+Wenn seit der Vornahme der Änderungen an der Instanz 24 Stunden vergangen sind und sie nicht im Bericht zur Sicherheitsprüfung angezeigt werden, können [ ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Geben Sie beim Senden des Tickets die Store-URL an.
 
 ## BotNet-Verdächtiger Fehler
 
@@ -77,7 +77,7 @@ Sie erhalten eine Benachrichtigung über den Fehler „BotNet-Verdächtiger“.
 1. Überprüfen Sie die neu erstellten SSH-Konten, Dateisystemänderungen usw.
 1. Führen Sie eine Sicherheitsüberprüfung durch.
 1. Überprüfen Sie die Adobe Commerce-Version und das Upgrade, insbesondere wenn weiterhin Magento 1 ausgeführt wird, das nicht mehr unterstützt wird.
-1. Wenn das Problem weiterhin besteht, [&#x200B; Sie ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL an.
+1. Wenn das Problem weiterhin besteht, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) und geben Sie die Store-URL an.
 
 ## Problem: Kompromisseinspritzung fehlgeschlagen
 
@@ -90,7 +90,7 @@ Sie erhalten eine Fehlermeldung bezüglich eines „Compromising Injection“-Fe
 1. Führen Sie eine Überprüfung der Systemkonfigurationsänderungen durch, insbesondere der benutzerdefinierten `HTML head` und `Miscellaneous HTML` in `footer` Abschnittswerten.
 1. Code- und Datenbanküberprüfung auf unbekannte Änderungen und Anzeichen von injizierter Malware durchführen.
 
-Wenn keiner der oben genannten Punkte hilft, [senden Sie ein Support-Ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) und geben Sie die Store-URL und die Fehlermeldung aus dem Bericht an.
+Wenn keiner der oben genannten Punkte hilft, [senden Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) und geben Sie die Store-URL und die Fehlermeldung aus dem Bericht an.
 
 ## Häufig gestellte Fragen
 
@@ -104,7 +104,7 @@ Sie können die 10 vorherigen Berichte von Ihrem Ende aus generieren. Wenn älte
 
 ### Welche Informationen werden beim Einreichen eines Support-Tickets benötigt?
 
-Bitte geben Sie den Domain-Namen genau so an, wie er für die [Sicherheitsprüfung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID und Cloud Project_ID übermittelt wurde. Beachten Sie, dass die Cloud-Projekt-ID für Adobe Commerce On-Premise nicht erforderlich ist.
+Bitte geben Sie den Domain-Namen genau so an, wie er für die [Sicherheitsprüfung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID und Cloud Project_ID übermittelt wurde. Beachten Sie, dass die Cloud-Projekt-ID für Adobe Commerce On-Premise nicht erforderlich ist.
 
 ### Was passiert, wenn ich meinen Speicher aus dem Scan-Tool entferne?
 

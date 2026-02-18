@@ -1,23 +1,23 @@
 ---
-title: Schwachstellen in Adobe Commerce Recommendations for PHP
+title: Adobe Commerce Recommendations für PHP-Schwachstellen
 description: Am 3. September hat das Multi-State Information Sharing and Analysis Center (MS-ISAC) einen Warnhinweis bezüglich mehrerer Sicherheitslücken herausgegeben, die die Ausführung von beliebigem Code ermöglichen könnten, und eine Empfehlung, dass alle Websites, die PHP verwenden, so schnell wie möglich auf die neueste PHP-Version aktualisieren sollten ([vollständiger Warnhinweis ist hier verfügbar](https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-php-could-allow-for-arbitrary-code-execution_2019-087/).
 exl-id: 0bc7caab-0b89-463a-a7f2-a7c92df9f84e
 feature: Compliance, Recommendations
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# Schwachstellen in Adobe Commerce Recommendations for PHP
+# Adobe Commerce Recommendations für PHP-Schwachstellen
 
 Am 3. September hat das Multi-State Information Sharing and Analysis Center (MS-ISAC) einen Warnhinweis bezüglich mehrerer Sicherheitslücken herausgegeben, die eine beliebige Codeausführung ermöglichen könnten, und eine Empfehlung, dass alle Websites, die PHP verwenden, so schnell wie möglich auf die neueste PHP-Version aktualisieren sollten ([vollständige Warnung ist hier verfügbar](https://www.cisecurity.org/advisory/multiple-vulnerabilities-in-php-could-allow-for-arbitrary-code-execution_2019-087/)).
 
 >[!WARNING]
 >
->Beachten Sie bei Adobe Commerce auf Cloud-Infrastrukturen, dass Service-Upgrades nicht ohne Vorankündigung an unser Infrastrukturteam innerhalb von 48 Geschäftsstunden in die Produktionsumgebung verschoben werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion vorgenommen werden müssen ([&#x200B; ein Support-Ticket &#x200B;](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)), wobei das erforderliche Service-Upgrade detailliert angegeben und der Zeitpunkt angegeben wird, zu dem das Upgrade gestartet werden soll.
+>Beachten Sie bei Adobe Commerce auf Cloud-Infrastrukturen, dass Service-Upgrades nicht ohne Vorankündigung an unser Infrastrukturteam innerhalb von 48 Geschäftsstunden in die Produktionsumgebung verschoben werden können. Dies ist erforderlich, da wir sicherstellen müssen, dass wir einen Support-Techniker für die Infrastruktur zur Verfügung haben, der Ihre Konfiguration innerhalb eines gewünschten Zeitraums mit minimalen Ausfallzeiten in Ihrer Produktionsumgebung aktualisiert. 48 Stunden vor dem Zeitpunkt, zu dem Ihre Änderungen in der Produktion vorgenommen werden müssen ([ ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)), wobei das erforderliche Service-Upgrade detailliert angegeben und der Zeitpunkt angegeben wird, zu dem das Upgrade gestartet werden soll.
 
 Informationen zu Auswirkungen und Schritten für Adobe Commerce Sites finden Sie weiter:
 
@@ -28,7 +28,7 @@ Wenn Sie Adobe Commerce in der Cloud-Infrastruktur verwenden, wenden Sie sich bi
 Zusätzliche Hinweise zur erneuten Bereitstellung der Cloud-Site für dieses Update:
 
 * Wenn Ihre Site weiterhin PHP Version 7.0 verwendet, müssen Sie zuerst auf eine unterstützte PHP Version aktualisieren, bevor Sie erneut bereitstellen, um diese Sicherheitsaktualisierungen nutzen zu können.
-* Für 2.1.x/2.2.x finden Sie weitere Informationen zum Upgrade von PHP [hier](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=de).
+* Für 2.1.x/2.2.x finden Sie weitere Informationen zum Upgrade von PHP [hier](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html).
 
 \* *Frühere Versionen dieses Artikels und unserer Nachricht haben am 19. September begonnen, aber unsere Teams haben ihre Arbeit vor dem Zeitplan beendet.*
 

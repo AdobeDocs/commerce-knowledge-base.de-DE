@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Lösungen für das Problem fehlgeschlagener
 exl-id: 202cb936-f9ba-49ea-bf0a-6e6994d2337a
 feature: Identity Management
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Dieser Artikel enthält Lösungen für das Problem fehlgeschlagener Bereitstellu
 
 Bereitstellungen schlagen fehl und Bereitstellungsprotokolle enthalten Informationen ähnlich den folgenden:
 
-*Schwerwiegender Fehler: UnexpectedValueException: Ihr GitHub-OAuth-Token für github.com enthält ungültige Zeichen: „ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx“ in /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
+*Schwerwiegender Fehler: UnexpectedValueException: Ihr GitHub-OAuth-Token für github.com enthält ungültige Zeichen: „ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx“ in /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
 
 ## Ursache
 
@@ -42,7 +42,7 @@ Um das Problem zu beheben, aktualisieren Sie Ihre Composer-Version auf 1.10.22:
 1. Dadurch wird die Anforderung für diese Composer-Paketversion hinzugefügt. Überprüfen Sie die Sperrdatei - `composer/composer` Version muss 1.0.22 oder höher sein.
 1. `composer.json` und `composer.lock` übertragen und eine Bereitstellung per Push übertragen.
 
-Wenn diese Methode nicht funktioniert, reichen [ein Support-Ticket ein](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Wenn diese Methode nicht funktioniert, reichen [ein Support-Ticket ein](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Verwandtes Lesen
 

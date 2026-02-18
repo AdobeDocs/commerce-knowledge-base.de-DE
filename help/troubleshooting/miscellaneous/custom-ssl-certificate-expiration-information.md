@@ -1,10 +1,10 @@
 ---
 title: Benutzerdefinierte SSL-Zertifikatgültigkeitsinformationen
-description: Dieser Artikel bietet eine Lösung für den Fall, dass ein benutzerdefiniertes SSL-Zertifikat mit einem von der Adobe bereitgestellten SSL-Zertifikat aktualisiert wurde.
+description: Dieser Artikel bietet eine Lösung für den Fall, dass ein benutzerdefiniertes SSL-Zertifikat mit einem von Adobe bereitgestellten SSL-Zertifikat aktualisiert wurde.
 exl-id: cc968bae-f742-449b-b291-bc121ec45935
 feature: Support
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Benutzerdefinierte SSL-Zertifikatgültigkeitsinformationen
 
-Dieser Artikel bietet eine Lösung für den Fall, dass ein benutzerdefiniertes SSL-Zertifikat mit einem von der Adobe bereitgestellten SSL-Zertifikat aktualisiert wurde.
+Dieser Artikel bietet eine Lösung für den Fall, dass ein benutzerdefiniertes SSL-Zertifikat mit einem von Adobe bereitgestellten SSL-Zertifikat aktualisiert wurde.
 
 ## Betroffene Produkte und Versionen
 
@@ -41,11 +41,11 @@ Adobe Commerce aktualisiert alle Zertifikate 30 Tage nach ihrem Ablauf.
 
 Wenn ein Händler sich dafür entscheidet, sein eigenes benutzerdefiniertes SSL-Zertifikat zu verwenden, muss es mehr als 30 Tage vor Ablauf des Zertifikats aktualisiert werden, um sicherzustellen, dass es nicht durch ein internes Adobe Commerce-SSL-Zertifikat ersetzt wird.
 
-Wenn Sie sich in einer Situation befinden, in der Ihre benutzerdefinierte SSL durch unsere interne SSL ersetzt wurde, und Sie sie durch Ihr aktualisiertes benutzerdefiniertes SSL-Zertifikat ersetzen möchten, [&#x200B; Sie (eine Support-Anfrage einreichen](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) mit dem Speicherort, an den Sie Ihre neuen Zertifikatdateien hochgeladen haben. Bitte das Startdatum der neuen SSL angeben. Sobald wir diese Informationen haben, können wir mit der Installation des neuen SSL-Zertifikats fortfahren.
+Wenn Sie sich in einer Situation befinden, in der Ihre benutzerdefinierte SSL durch unsere interne SSL ersetzt wurde, und Sie sie durch Ihr aktualisiertes benutzerdefiniertes SSL-Zertifikat ersetzen möchten, [ Sie (eine Support-Anfrage einreichen](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit dem Speicherort, an den Sie Ihre neuen Zertifikatdateien hochgeladen haben. Bitte das Startdatum der neuen SSL angeben. Sobald wir diese Informationen haben, können wir mit der Installation des neuen SSL-Zertifikats fortfahren.
 
 ## Verwandtes Lesen
 
-* [SSL (TLS)-Zertifikate zum Magento Commerce Cloud: &#x200B;](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) in unserer Support-Wissensdatenbank.
-* [Referenz zu Befehlszeilen-Tools: magento-cloud certificate:add](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) in unserer Entwicklerdokumentation.
-* [Checkliste starten](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/launch/checklist) in unserer Entwicklerdokumentation.
-* [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) in unserem Benutzerhandbuch.
+* [SSL (TLS)-Zertifikate für Magento Commerce Cloud: ](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) in unserer Support-Wissensdatenbank.
+* [Referenz zu Befehlszeilen-Tools: Magento-Cloud-Zertifikat:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) in unserer Entwicklerdokumentation.
+* [Checkliste starten](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist) in unserer Entwicklerdokumentation.
+* [Zugriff auf das Site-Wide Analysis Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) in unserem Benutzerhandbuch.

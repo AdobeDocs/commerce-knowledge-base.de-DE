@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für Probleme bei der Bereitstel
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ Wenn eine Bereitstellung fehlschlug, nachdem eine Änderung am Primären Kontakt
 
 ### Deaktivieren des Zugriffsschlüssels
 
-Wenn Sie keinen Zugriff auf das [Commerce Marketplace](https://marketplace.magento.com/)-Konto haben, das mit dem alten Schlüssel verknüpft ist, [kontaktieren Sie den Adobe Commerce-Support](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), um den Schlüssel zu deaktivieren.
+Wenn Sie keinen Zugriff auf das [Commerce Marketplace](https://marketplace.magento.com/)-Konto haben, das mit dem alten Schlüssel verknüpft ist, [kontaktieren Sie den Adobe Commerce-Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um den Schlüssel zu deaktivieren.
 
 Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel verknüpft ist, führen Sie die folgenden Schritte aus, um den Schlüssel zu deaktivieren:
 
-1. Melden Sie sich mit den Anmeldeinformationen [&#128279;](https://marketplace.magento.com/) alten Kontos bei der Commerce Marketplace an.
+1. Melden Sie sich mit den Anmeldeinformationen [ alten Kontos bei der ](https://marketplace.magento.com/)Commerce Marketplace an.
 1. Klicken Sie oben rechts auf der Seite auf den Kontonamen und wählen Sie **Mein Profil** aus.
 1. Klicken Sie **der Registerkarte** Marketplace“ auf „Zugriffsschlüssel“.
 
@@ -64,4 +64,4 @@ Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel v
 
 ## Verwandtes Lesen
 
-* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.
+* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.
