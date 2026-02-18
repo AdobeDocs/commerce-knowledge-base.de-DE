@@ -23,7 +23,7 @@ Eine Liste der berechneten Spalten, die Sie in Data Warehouse Manager erstellen 
 
 ## Ich brauche noch Hilfe!
 
-Wenn Sie Hilfe bei der Erstellung einer regulären berechneten Spalte benötigen oder eine erweiterte berechnete Spalte erstellen oder bearbeiten möchten, wenden [ sich an unser Team ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) schließen Sie Folgendes ein:
+Wenn Sie Hilfe bei der Erstellung einer regulären berechneten Spalte benötigen oder eine erweiterte berechnete Spalte erstellen oder bearbeiten möchten, wenden [&#x200B; sich an unser Team &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) schließen Sie Folgendes ein:
 
 * Was versuchst du zu tun?
 * Auf welcher Tabelle müssen die neuen Spalten erstellt werden?

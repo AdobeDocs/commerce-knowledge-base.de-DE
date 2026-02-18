@@ -31,4 +31,4 @@ Wenn beim erstmaligen Zugriff auf die URL der Fehler 403 auftritt, stellen Sie s
    Wenn Sie das nächste Mal auf die Haupt-URL zugreifen, wird standardmäßig die zuletzt besuchte Umgebung verwendet.
 
 1. Wenn Sie sich immer noch nicht anmelden können, wenden Sie сsich an den Lizenzinhaber oder einen Superuser des Projekts und stellen Sie sicher, dass dieser Ihnen Zugriff **Benutzer auf Projektebene** gewährt, wie unter [Cloud-Projekte > Benutzer zum Projekt hinzufügen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-a-user-to-the-project) in unserer Entwicklerdokumentation beschrieben.
-1. Wenn der Fehler weiterhin auftritt, [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. Wenn der Fehler weiterhin auftritt, [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).

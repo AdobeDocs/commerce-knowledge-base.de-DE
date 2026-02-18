@@ -1,6 +1,6 @@
 ---
 title: Ändern der Admin-URL in Adobe Commerce in der Cloud-Infrastruktur
-description: Standardmäßig ist die [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)-URL auf *&lt;domain\_name&gt;/admin* festgelegt. Dieser Artikel zeigt, wie Sie die URL ändern.
+description: Standardmäßig ist die [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin)-URL auf *&lt;domain_name&gt;/admin* festgelegt. Dieser Artikel zeigt, wie Sie die URL ändern.
 exl-id: 6236370c-e0a2-45a6-a38f-12e219c540af
 feature: Admin Workspace, Cloud
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
@@ -43,4 +43,4 @@ Sie können die Variable ADMIN\_URL mit dem folgenden Cloud-CLI-Befehl hinzufüg
 
 Detailliertere Anweisungen finden Sie unter [Ändern der Admin-](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=en#change-the-admin-url)) im Thema „Admin-Variablen“ im Handbuch Commerce on Cloud Infrastructure.
 
-Beachten Sie, dass die Verwendung der Cloud-CLI zum Ändern der Variablen ADMIN\_URL eine erneute Bereitstellung der Umgebung Trigger. Variablen sind standardmäßig vererbt. Um eine Vererbung zu verhindern, verwenden Sie die Befehlsoptionen der Cloud-CLI, um anzugeben, dass der Variablenwert nicht von untergeordneten Umgebungen vererbt werden soll. Weitere Informationen finden [ unter „Sichtbarkeit](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in den Variablenebenen im Handbuch zu Commerce in Cloud-Infrastrukturen.
+Beachten Sie, dass die Verwendung der Cloud-CLI zum Ändern der Variablen ADMIN\_URL eine erneute Bereitstellung der Umgebung Trigger. Variablen sind standardmäßig vererbt. Um eine Vererbung zu verhindern, verwenden Sie die Befehlsoptionen der Cloud-CLI, um anzugeben, dass der Variablenwert nicht von untergeordneten Umgebungen vererbt werden soll. Weitere Informationen finden [&#x200B; unter „Sichtbarkeit](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) in den Variablenebenen im Handbuch zu Commerce in Cloud-Infrastrukturen.

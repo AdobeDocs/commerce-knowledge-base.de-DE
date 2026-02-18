@@ -57,5 +57,5 @@ Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam
 Wenn Sie den Patch für die erweiterte Zahlungsprotokollierung erhalten:
 
 * Pflaster aufkleben.
-* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 * Warten Sie auf weitere Empfehlungen vom Adobe Commerce-Supportteam.
