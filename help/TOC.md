@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 4d86db1115489e83e58d82464abed8fbd82fea25
+source-git-commit: 14dbbb4e661ea66c79a8532eaa8ea6cb5e45d0c0
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2091'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 1%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -270,7 +270,6 @@ ht-degree: 1%
    * [Abschreibung von Adobe Commerce-Kernzahlungsintegrationen](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
    * [Kann ich Anwendungen von Drittanbietern auf meiner Cloud-Instanz installieren?](/help/faq/general/can-i-install-third-party-applications-on-my-cloud-instance.md)
    * [Verknüpfen von Magento.com und accounts.magento.cloud-Konto-Anmeldungen](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
-   * [Häufig gestellte Fragen zur Aktivierung der Ursprungsverdeckung von Fastly](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [Datenbank automatisch inkrementieren Variable auf „3“ gesetzt Adobe Commerce in unserer Cloud Pro-Architektur](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
    * [Zugriff auf New Relic-Services](/help/faq/general/access-new-relic-services.md)
    * [Barrierefreiheit von Web-Inhalten für Adobe Commerce](/help/faq/general/accessibility.md)
