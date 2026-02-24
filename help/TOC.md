@@ -2,10 +2,10 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 688cdb1d0e76850aa953c602a78820fe6208ae41
+source-git-commit: 4d86db1115489e83e58d82464abed8fbd82fea25
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 0%
+source-wordcount: '2096'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 0%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -220,9 +220,7 @@ ht-degree: 0%
    * [Identifizieren und Messen von Ausfällen für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/how-to-identify-outages.md)
    * [Kontoinhaber für New Relic in Cloud Manager ändern](/help/how-to/general/change-account-owner-for-new-relic-on-cloud.md)
    * [Ändern der Admin-URL in Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/change-magento-admin-url-on-cloud.md)
-   * [Konfigurieren von NPM für die Verwendung von PWA Studio](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md)
    * [Cloud-Verzweigungen in Adobe Commerce neu anordnen](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
-   * [So finden Sie die Adobe Commerce-Produktdokumentation](/help/how-to/general/how-to-find-magento-product-documentation.md)
    * [Umleiten von HTTP zu HTTPS für alle Seiten in Adobe Commerce auf Cloud-Infrastrukturen (TLS erzwingen)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Mehr Speicherplatz für MySQL in Adobe Commerce in der Cloud zuweisen](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Geschäft](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
