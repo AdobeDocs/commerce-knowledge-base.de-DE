@@ -4,9 +4,9 @@ description: 'Dieser Artikel bietet eine Lösung für den Bereitstellungsfehler:
 exl-id: 520cf50f-3682-441d-87a7-8e05301a2b0c
 feature: Cache, Deploy
 role: Developer
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: c005409900021a72d73c10a2df5f23be3f2bc2cf
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,6 @@ Informationen dazu, wer im Projekt ein Super-Anwender ist, finden Sie unter [Anz
 
 ## Empfohlene Lektüre
 
-* Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
+* Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
 * Auf [Adobe Commerce in Cloud-Repository konnte nicht zugegriffen werden: Fehler „403 Verboten“ oder „404 Nicht gefunden“ bei der Bereitstellung](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
 * [Bereitstellung schlägt mit „Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen“](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
