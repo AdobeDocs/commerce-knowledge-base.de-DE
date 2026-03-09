@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 27fdd8be38a2507601aba7d52a0cd4348ec9ed6e
+source-git-commit: 8351ff2e2ac3db4488ad61dc38974e4ca79c6ce6
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2002'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 1%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -234,7 +234,6 @@ ht-degree: 1%
    * [Adobe Commerce auf Cloud-Infrastruktur: Überprüfen der CPU-Konfiguration des Hosts](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
    * [Adobe Commerce in Cloud: Authentifizierungsschlüssel ändern und erneut bereitstellen](/help/how-to/general/redeploy-with-another-key.md)
    * [Erstellen eines „Bereinigungs“-Dump auf Anfrage des Support-Mitarbeiters](/help/how-to/general/create-dump-for-support.md)
-   * [MBI: Erweiterte berechnete Spalten erstellen und bearbeiten](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [SSL (TLS)-Zertifikate für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
    * [Zugriff auf die neueste Beta-Version nicht möglich](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Wechseln des Anwendungsmodus](/help/how-to/general/switch-the-magento-mode.md)
