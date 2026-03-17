@@ -34,13 +34,13 @@ Bei der Planung Ihres Adobe Commerce in einem Cloud-Infrastrukturprojekt können
 
 Führen Sie die folgenden Schritte aus, um die Subdomain in Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt zu verarbeiten:
 
-* [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Aufforderung, die Subdomain zur Fastly-Service-/Nginx-Konfiguration (für Adobe Commerce auf der Cloud-Infrastruktur-Pro-Planarchitektur) hinzuzufügen.
+* [Senden eines Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Aufforderung, die Subdomain zur Fastly-Service-/Nginx-Konfiguration (für Adobe Commerce auf der Cloud-Infrastruktur-Pro-Planarchitektur) hinzuzufügen.
 * Konfigurieren Sie die entsprechenden DNS-Einstellungen auf Ihrer Seite.
 
 Nachdem Sie die Schritte für die Konfiguration der Subdomain ausgeführt haben, müssen Sie auch diese Schritte ausführen, um Ihre Produktions-Domain für das SSL-Zertifikat zu validieren:
 
 * Laden Sie den DNS-TXT-Eintrag zur SSL-Validierung Ihrer Produktions-Domain hoch.
-* [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Anforderung, die Produktions-Domain für das SSL-Zertifikat zu validieren.
+* [Senden eines Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Anforderung, die Produktions-Domain für das SSL-Zertifikat zu validieren.
 
 Durch die Verwendung der Subdomain können Sie einen „Soft Launch“ Ihres Stores in Zukunft durchführen - da ein solcher Launch nur die Aktualisierung der entsprechenden DNS-Einstellungen erfordert.
 
@@ -48,10 +48,10 @@ Durch die Verwendung der Subdomain können Sie einen „Soft Launch“ Ihres Sto
 
 In unserer Support-Wissensdatenbank:
 
-* [Konfigurieren von Fastly-DNS-Einstellungen in Staging- und Produktionsumgebungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Potenzielle Blocker für den Start auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [Konfigurieren von Fastly-DNS-Einstellungen in Staging- und Produktionsumgebungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=de)
+* [Potenzielle Blocker für den Start auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=de)
 
 In unserer Entwicklerdokumentation:
 
-* [Fastly-Übersicht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Go-Live-Checkliste: DNS-Konfigurationen für Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Fastly-Übersicht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=de)
+* [Go-Live-Checkliste: DNS-Konfigurationen für Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=de)
