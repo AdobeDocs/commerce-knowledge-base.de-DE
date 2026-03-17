@@ -25,7 +25,7 @@ Dieser Artikel behandelt das Sichern Ihrer Umgebungen mit Momentaufnahmen der Ad
 
 * Manuelle Momentaufnahmen sind für Staging- und Produktionsumgebungen in Pro Plan nicht verfügbar.
 * Automatische Momentaufnahmen werden erstellt **unabhängig vom Live-Status** Ihrer Site (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen sind nicht öffentlich zugänglich, da sie in einem separaten System gespeichert sind.
-Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Nachdem das Infrastruktur-Team den Schnappschuss bereitgestellt hat, führen Sie den folgenden Befehl an der Stelle aus, an der der Schnappschuss platziert wurde, um den Zeitstempel zu ermitteln, an dem er ursprünglich erstellt wurde:
+Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Nachdem das Infrastruktur-Team den Schnappschuss bereitgestellt hat, führen Sie den folgenden Befehl an der Stelle aus, an der der Schnappschuss platziert wurde, um den Zeitstempel zu ermitteln, an dem er ursprünglich erstellt wurde:
 
   `cat /mnt/recovery/vol-<volume_id>/snap.time`
 
@@ -36,11 +36,11 @@ Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleagu
 * Die Bereitstellung ist 7 Tage lang verfügbar und die Aufbewahrungsfrist kann nicht verlängert werden. Wenn Sie einen Schnappschuss über diesen Zeitraum hinaus beibehalten möchten, müssen Sie ihn in einen anderen Ordner oder externen Server innerhalb dieses Zeitraums kopieren
 * Der Support generiert bei Bedarf keine manuellen Momentaufnahmen. Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Automatische Momentaufnahmen werden erstellt **unabhängig vom Live-Status** Ihrer Site (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen werden in einem separaten System gespeichert und sind für die Öffentlichkeit nicht zugänglich.
-Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Der Support generiert bei Bedarf keine manuellen Momentaufnahmen.
+Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Der Support generiert bei Bedarf keine manuellen Momentaufnahmen.
 Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Die Backups werden mithilfe der **verschlüsselten Momentaufnahmen des Amazon Web Services Elastic Block Store (AWS EBS))**.
 * Umgebungs-Snapshots umfassen Ihr gesamtes System (Dateisystem und Datenbank).
-* Die Aufbewahrungsdauer für automatische Momentaufnahmen **ist unterschiedlich** und folgt [dem Zeitplan](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
+* Die Aufbewahrungsdauer für automatische Momentaufnahmen **ist unterschiedlich** und folgt [dem Zeitplan](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
 
 >[!NOTE]
 >
@@ -50,25 +50,25 @@ Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wie
 
 ### Integrations-(Entwicklungs-)Umgebung
 
-* Ihre [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) wird **nicht automatisch gesichert** Sie können jedoch Momentaufnahmen (**)**.
+* Ihre [Integrationsumgebung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242) wird **nicht automatisch gesichert** Sie können jedoch Momentaufnahmen (**)**.
 * Sie können manuelle Momentaufnahmen für Integrationsumgebungen in Nicht-Live-Stores erstellen.
 * Möglicherweise **mehrere Momentaufnahmen** die manuell ausgelöst wurden.
-* Ein manuell ausgelöster Schnappschuss wird 7 Tage lang gespeichert. Wenn Sie eine Momentaufnahme über die Aufbewahrungsfrist hinaus beibehalten müssen, kopieren Sie sie in einen anderen Ordner oder einen externen Server innerhalb dieses Zeitraums. Um den Snapshot zu einem späteren Zeitpunkt wiederherzustellen, folgen Sie dem gleichen Prozess, der unter [Importieren des Datenbank-Dump direkt vom Server](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) beschrieben ist.
+* Ein manuell ausgelöster Schnappschuss wird 7 Tage lang gespeichert. Wenn Sie eine Momentaufnahme über die Aufbewahrungsfrist hinaus beibehalten müssen, kopieren Sie sie in einen anderen Ordner oder einen externen Server innerhalb dieses Zeitraums. Um den Snapshot zu einem späteren Zeitpunkt wiederherzustellen, folgen Sie dem gleichen Prozess, der unter [Importieren des Datenbank-Dump direkt vom Server](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) beschrieben ist.
 
 **Verwandte Artikel in unserer Entwicklerdokumentation:**
 
-* [Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Snapshot erstellen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Snapshot erstellen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## Umgebungs-Snapshot, Starterplan
 
 * Alle Umgebungstypen (Integration, Staging, Produktion) **werden nicht automatisch gesichert** Sie können Snapshots jedoch manuell erstellen.
 * Sie können manuelle Momentaufnahmen **unabhängig vom Live-Status** Ihrer Site erstellen (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden).
-* Ein manuell ausgelöster Snapshot wird **7 Tage** gespeichert. Wenn Sie eine Momentaufnahme über die Aufbewahrungsfrist hinaus beibehalten müssen, kopieren Sie sie in einen anderen Ordner oder einen externen Server innerhalb dieses Zeitraums. Um den Snapshot zu einem späteren Zeitpunkt wiederherzustellen, folgen Sie dem gleichen Prozess, der unter [Importieren des Datenbank-Dump direkt vom Server](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) beschrieben ist.
+* Ein manuell ausgelöster Snapshot wird **7 Tage** gespeichert. Wenn Sie eine Momentaufnahme über die Aufbewahrungsfrist hinaus beibehalten müssen, kopieren Sie sie in einen anderen Ordner oder einen externen Server innerhalb dieses Zeitraums. Um den Snapshot zu einem späteren Zeitpunkt wiederherzustellen, folgen Sie dem gleichen Prozess, der unter [Importieren des Datenbank-Dump direkt vom Server](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3) beschrieben ist.
 
 ## Wiederherstellen eines Umgebungsschnappschusses
 
-Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starterplan oder Integration in Pro Plan) wiederherzustellen, führen Sie die Schritte in [Backup-Verwaltung: Manuelles Backup wiederherstellen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Handbuch zu Commerce in Cloud-Infrastruktur aus.
+Um einen vorhandenen Snapshot (in der unterstützten Umgebung: Integration, Staging, Produktion im Starterplan oder Integration in Pro Plan) wiederherzustellen, führen Sie die Schritte in [Backup-Verwaltung: Manuelles Backup wiederherstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) in unserem Handbuch zu Commerce in Cloud-Infrastruktur aus.
 
 ## Datenbank-Backup (DB)
 
@@ -78,8 +78,8 @@ Ein Snapshot ist ein vollständiges Backup einer Umgebung, das alle persistenten
 
 >[!NOTE]
 >
->Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `/app`. Die anderen Dateien werden vom Build- und [-Prozess erstellt/generiert](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen auch die verbleibenden Dateien aus Ihrem Git-Repository auschecken.
+>Die bereitgestellten Volumes enthalten/beziehen sich nur auf [beschreibbare Bereitstellungen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts) und enthalten nicht alle Ihre `/app`. Die anderen Dateien werden vom Build- und [-Prozess erstellt/generiert](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow) und Sie müssen auch die verbleibenden Dateien aus Ihrem Git-Repository auschecken.
 
-[Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
+[Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) in unserer Entwicklerdokumentation.
 
-Senden Sie eine [Support-Anfrage](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) für einen DB-Snapshot von Pro Production and Staging nur, wenn Sie die DB zu einem bestimmten Zeitpunkt benötigen. Wenn Sie nur eine aktuelle Sicherung Ihrer DB benötigen (in einer beliebigen Umgebung), finden Sie weitere Informationen im Knowledge-Base-Artikel [Generieren von Datenbank-Dumps in der Cloud](/help/how-to/general/create-database-dump-on-cloud.md).
+Senden Sie eine [Support-Anfrage](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) für einen DB-Snapshot von Pro Production and Staging nur, wenn Sie die DB zu einem bestimmten Zeitpunkt benötigen. Wenn Sie nur eine aktuelle Sicherung Ihrer DB benötigen (in einer beliebigen Umgebung), finden Sie weitere Informationen im Knowledge-Base-Artikel [Generieren von Datenbank-Dumps in der Cloud](/help/how-to/general/create-database-dump-on-cloud.md).
