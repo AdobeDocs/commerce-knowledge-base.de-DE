@@ -3,9 +3,9 @@ title: Schnelles Testen in der Produktion, wenn eine Live-Site dieselbe Domain v
 description: Wenn Sie eine Live-Site in Ihrer Produktions-Domain („example.com„) haben und Ihren neuen Store in der Produktionsumgebung der Cloud-Infrastruktur in Adobe Commerce mit aktiviertem Fastly CDN testen müssen, empfehlen wir die Verwendung der Subdomain (wie „prod.example.com„), die Sie zuvor zu Fastly hinzugefügt haben, für alle Testaktivitäten vor dem Start. Dieser Artikel beschreibt die Details und enthält nützliche Links zu den zugehörigen Adobe Commerce-Dokumentationsressourcen.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+source-git-commit: 6651963ea5843283dee40a8ce58280baac79053a
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ Bei der Planung Ihres Adobe Commerce in einem Cloud-Infrastrukturprojekt können
 
 Führen Sie die folgenden Schritte aus, um die Subdomain in Ihrem Adobe Commerce in einem Cloud-Infrastrukturprojekt zu verarbeiten:
 
-* [Senden eines Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Aufforderung, die Subdomain zur Fastly-Service-/Nginx-Konfiguration (für Adobe Commerce auf der Cloud-Infrastruktur-Pro-Planarchitektur) hinzuzufügen.
+* [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Aufforderung, die Subdomain zur Fastly-Service-/Nginx-Konfiguration (für Adobe Commerce auf der Cloud-Infrastruktur-Pro-Planarchitektur) hinzuzufügen.
 * Konfigurieren Sie die entsprechenden DNS-Einstellungen auf Ihrer Seite.
 
 Nachdem Sie die Schritte für die Konfiguration der Subdomain ausgeführt haben, müssen Sie auch diese Schritte ausführen, um Ihre Produktions-Domain für das SSL-Zertifikat zu validieren:
 
 * Laden Sie den DNS-TXT-Eintrag zur SSL-Validierung Ihrer Produktions-Domain hoch.
-* [Senden eines Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Anforderung, die Produktions-Domain für das SSL-Zertifikat zu validieren.
+* [Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit der Anforderung, die Produktions-Domain für das SSL-Zertifikat zu validieren.
 
 Durch die Verwendung der Subdomain können Sie einen „Soft Launch“ Ihres Stores in Zukunft durchführen - da ein solcher Launch nur die Aktualisierung der entsprechenden DNS-Einstellungen erfordert.
 
@@ -48,11 +48,10 @@ Durch die Verwendung der Subdomain können Sie einen „Soft Launch“ Ihres Sto
 
 In unserer Support-Wissensdatenbank:
 
-* [Konfigurieren von Fastly-DNS-Einstellungen in Staging- und Produktionsumgebungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=de)
-* [Richten Sie Fastly für den Starter-Plan in der Cloud ein](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=de)
-* [Potenzielle Blocker für den Start auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=de)
+* [Konfigurieren von Fastly-DNS-Einstellungen in Staging- und Produktionsumgebungen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
+* [Potenzielle Blocker für den Start auf Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
 
 In unserer Entwicklerdokumentation:
 
-* [Fastly-Übersicht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=de)
-* [Go-Live-Checkliste: DNS-Konfigurationen für Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=de)
+* [Fastly-Übersicht](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
+* [Go-Live-Checkliste: DNS-Konfigurationen für Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
