@@ -14,7 +14,7 @@ ht-degree: 0%
 
 MariaDB ist eine Open-Source-Unternehmensdatenbank, die mit Adobe Commerce verwendet wird.
 
-Das Ende der Unterstützung für MariaDB 10.4 wurde am [. Juni 2024 ](https://endoflife.date/mariadb). Wenn Sie eine nicht unterstützte Version von MariaDB verwenden, sind Sie nicht mehr PCI-kompatibel. In diesem Artikel wird erläutert, wie Sie von MariaDB 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
+Das Ende der Unterstützung für MariaDB 10.4 wurde am [. Juni 2024 &#x200B;](https://endoflife.date/mariadb). Wenn Sie eine nicht unterstützte Version von MariaDB verwenden, sind Sie nicht mehr PCI-kompatibel. In diesem Artikel wird erläutert, wie Sie von MariaDB 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
 
 >[!NOTE]
 >
