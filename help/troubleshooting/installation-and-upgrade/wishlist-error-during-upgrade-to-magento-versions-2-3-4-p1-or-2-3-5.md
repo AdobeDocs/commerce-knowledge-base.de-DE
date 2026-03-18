@@ -4,7 +4,7 @@ description: Dieser Artikel enthält eine Fehlerbehebung für das bekannte Probl
 exl-id: 97479615-bf3f-4544-a9c1-8f19ba74318e
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 8be0c125bb0417e34e016656337506da88796630
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Dieser Artikel enthält eine Fehlerbehebung für das bekannte Problem beim Upgra
 
 ## Problem
 
-Beim Upgrade Ihres Adobe Commerce (alle Bereitstellungsmethoden) und Ihrer Magento Open Source auf Version 2.3.5 oder 2.3.4-p1 wird Ihnen möglicherweise eine Fehlermeldung auf der Wunschliste (siehe unten) angezeigt:
+Beim Upgrade von Adobe Commerce (alle Bereitstellungsmethoden) und Magento Open Source auf Version 2.3.5 oder 2.3.4-p1 wird möglicherweise ein Wunschlistenfehler (siehe unten) aus dem Modul angezeigt:
 
 ```php
 Magento_Wishlist
@@ -32,11 +32,11 @@ Fehlerkorrektur - Der Fehler wird durch ein Upgrade von Adobe Commerce (alle Ber
 
 <u>Schritte zur Reproduktion</u>:
 
-Aktualisieren Sie Ihre Adobe Commerce (alle Bereitstellungsmethoden)/Magento Open Source auf Version 2.3.4-p1 oder 2.3.5.
+Aktualisieren Sie Adobe Commerce (alle Bereitstellungsmethoden)/Magento Open Source auf Version 2.3.4-p1 oder 2.3.5.
 
 <u>Erwartetes Ergebnis</u>:
 
-Das Upgrade auf Adobe Commerce (alle Bereitstellungsmethoden)/Magento Open Source 2.3.4-p1 oder 2.3.5 wird normal abgeschlossen.
+Das Upgrade auf Adobe Commerce (alle Bereitstellungsmethoden)/Magento Open Source Version 2.3.4-p1 oder 2.3.5 wird normal abgeschlossen.
 
 <u>Tatsächliches </u>:
 
@@ -51,14 +51,14 @@ Unable to apply data patch Magento\Wishlist\Setup\Patch\Data\CleanUpData for mod
 ## Lösungen
 
 * Wenn Sie ein Upgrade auf Adobe Commerce (alle Bereitstellungsmethoden)/Magneto Open Source Version 2.3.5 durchgeführt haben, **aktualisieren Sie auf Version 2.3.5-p1**. Adobe Commerce (alle Bereitstellungsmethoden)/Magento Open Source Version 2.3.5-p1 ersetzt 2.3.5.
-* Wenn Sie ein Upgrade auf Adobe Commerce (alle Bereitstellungsmethoden)/Magento Open Source 2.3.4-p1 durchgeführt haben, **aktualisieren Sie auf Version 2.3.4-p2**. Adobe Commerce (alle Bereitstellungsmethoden)/Magneto Open Source Version 2.3.4-p2 ersetzt Version 2.3.4-p1.
+* Wenn Sie ein Upgrade auf Adobe Commerce (alle Bereitstellungsmethoden)/Magento Open Source Version 2.3.4-p1 durchgeführt haben, **aktualisieren Sie auf Version 2.3.4-p2**. Adobe Commerce (alle Bereitstellungsmethoden)/Magneto Open Source Version 2.3.4-p2 ersetzt Version 2.3.4-p1.
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
-* [Handbuch zu Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce auf Cloud-Infrastruktur - Adobe Commerce-Version aktualisieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
-* [Adobe Commerce On-Premise und Magento Open Source - Aktualisieren Sie die Adobe Commerce-Anwendung und -Module](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/overview)
-* [Wunschlistenelement Seite konfigurieren](https://developer.adobe.com/commerce/frontend-core/guide/layouts/product-layouts/#wishlist-item-configure-page)
+* [Handbuch zu Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce auf Cloud-Infrastruktur - Adobe Commerce-Version aktualisieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [Adobe Commerce On-Premises und Magento Open Source - Aktualisieren Sie die Adobe Commerce-Anwendung und -Module](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+* [Wunschlistenelement Seite konfigurieren](https://developer.adobe.com/commerce/frontend-core/guide/layouts/product-layouts#wishlist-item-configure-page)
 * [Module für erweiterte Berichterstellung](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/)

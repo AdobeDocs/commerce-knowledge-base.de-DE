@@ -4,7 +4,7 @@ description: Dieser Artikel listet einige häufige Beispiele für schwerwiegende
 exl-id: 3e42d38f-97bc-4d38-8e36-23b1453f81d9
 feature: Support
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 8be0c125bb0417e34e016656337506da88796630
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Beispiel:
 
 `max_execution_time = 120`
 
-Lesen Sie den Artikel [Anpassen der php.ini](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/php-settings)Einstellungen.
+Lesen Sie den Artikel [Anpassen der php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)Einstellungen.
 
 ## Beispiel
 
@@ -35,7 +35,7 @@ Lesen Sie den Artikel [Anpassen der php.ini](https://experienceleague.adobe.com/
 
 ## Lösung
 
-`php.ini` anpassen. Lesen Sie diesen [Anpassen der php.ini-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+`php.ini` anpassen. Lesen Sie diesen [Anpassen der php.ini-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Beispiel
 
@@ -55,7 +55,7 @@ Der MySQL-Umgebung ist der Speicherplatz ausgegangen. Stellen Sie mehr Speicherp
 
 ## Beispiel
 
-*&#39;PHP Schwerwiegender Fehler: Nicht abgefangener TypeError: Rückgabewert von Magento&#39;*
+Schwerwiegender Fehler in *&#39;PHP: Nicht abgefangener TypFehler: Rückgabewert von Magento&#39;*
 
 ## Lösung
 
@@ -65,9 +65,9 @@ Der MySQL-Umgebung ist der Speicherplatz ausgegangen. Stellen Sie mehr Speicherp
 
 In unserer Entwicklerdokumentation:
 
-* [PHP-Einstellungsfehler](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Redis-Überprüfung](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Konfigurieren von Redis](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [Fehler bei der PHP-Speicherbegrenzung](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Lösungen für häufige Probleme - Speicherbegrenzung](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)
+* [PHP-Einstellungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Redis-Überprüfung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Konfigurieren von Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [Fehler bei der PHP-Speicherbegrenzung](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Lösungen für häufige Probleme - Speicherbegrenzung](https://developer.adobe.com/commerce/testing/guide/unit/command-line#solutions-to-common-problems)

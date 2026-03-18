@@ -1,10 +1,10 @@
 ---
 title: 'PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus'
-description: In diesem Abschnitt wird eine Lösung für Fälle beschrieben, in denen Validierungsfehler beim Ausführen des Entwicklermodus in Progressive Web App (PWA) Studio für Adobe Commerce auftreten, da zuvor das venia-Konzept (Venia ist eine PWA-Storefront) nicht erstellt wurde. Diese Datei enthält die Variablen für Ihre lokale Entwicklungsumgebung.
+description: In diesem Abschnitt wird eine Lösung für Fälle beschrieben, in denen bei der Ausführung des Entwicklermodus in PWA Studio (Progressive Web App) für Adobe Commerce Validierungsfehler auftreten, da zuvor das Venia-Konzept nicht erstellt wurde (Venia ist eine PWA-Storefront.). Diese Datei enthält die Variablen für Ihre lokale Entwicklungsumgebung.
 exl-id: 97d042ef-88e6-4eda-a834-2cff4de276e2
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 9d32a5971341ed8dc46e0932c10eaac4d17ec299
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus
 
-In diesem Abschnitt wird eine Lösung für Fälle beschrieben, in denen Validierungsfehler beim Ausführen des Entwicklermodus in Progressive Web App (PWA) Studio für Adobe Commerce auftreten, da zuvor das venia-Konzept (Venia ist eine PWA-Storefront) nicht erstellt wurde. Diese Datei enthält die Variablen für Ihre lokale Entwicklungsumgebung.
+In diesem Abschnitt wird eine Lösung für Fälle beschrieben, in denen bei der Ausführung des Entwicklermodus in PWA Studio (Progressive Web App) für Adobe Commerce Validierungsfehler auftreten, da zuvor das Venia-Konzept nicht erstellt wurde (Venia ist eine PWA-Storefront.). Diese Datei enthält die Variablen für Ihre lokale Entwicklungsumgebung.
 
 ## Betroffene Produkte und Versionen
 
@@ -53,5 +53,5 @@ im Stammverzeichnis speichern, um die Datei zu generieren, die die Variablen fü
 
 ## Verwandtes Lesen
 
-* Dokumentation zu [PWA Studio für Adobe Commerce](https://magento.github.io/pwa-studio/)
-* [Venia-Storefront (Konzept)](https://magento.github.io/pwa-studio/venia-pwa-concept/)
+* Dokumentation zu [PWA Studio für Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
+* [Venia-Storefront (Konzept)](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)

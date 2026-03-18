@@ -3,9 +3,9 @@ title: Upgrade von MariaDB 10.4 auf 10.5 für Adobe Commerce on Cloud Service
 description: MariaDB 10.4 erreicht am 18. Juni 2024 das Ende der Unterstützung. In diesem Artikel wird erläutert, wie Sie MariaDB von 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
 feature: Best Practices, Cloud
 exl-id: 065840b8-28c1-4686-95fc-df3e73152845
-source-git-commit: 9e218e3fadbf9941c94d309fcfb6f258d2f4faf2
+source-git-commit: 70c2421cb28b45f82ab7c0568c6a45b9572897df
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 MariaDB ist eine Open-Source-Unternehmensdatenbank, die mit Adobe Commerce verwendet wird.
 
-Das Ende der Unterstützung für MariaDB 10.4 wurde am [. Juni 2024 &#x200B;](https://endoflife.date/mariadb). Wenn Sie eine nicht unterstützte Version von MariaDB verwenden, sind Sie nicht mehr PCI-kompatibel. In diesem Artikel wird erläutert, wie Sie von MariaDB 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
+Das Ende der Unterstützung für MariaDB 10.4 wurde am [. Juni 2024 ](https://endoflife.date/mariadb). Wenn Sie eine nicht unterstützte Version von MariaDB verwenden, sind Sie nicht mehr PCI-kompatibel. In diesem Artikel wird erläutert, wie Sie von MariaDB 10.4 auf 10.5 aktualisieren können, um Adobe Commerce weiterhin in der Cloud-Infrastruktur zu verwenden.
 
 >[!NOTE]
 >
@@ -30,16 +30,16 @@ Nehmen Sie die neuen, nur für die Sicherheit geeigneten Patches (2.4.4-p9 oder 
 
 ### Upgrade-Schritte für Cloud-Bereitstellungen
 
-1. Erstellen Sie ein [DB-Backup mit ECE-Tools DB-Backup-Befehlen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots). Diese Sicherung muss vor den Schritten 2 und 3 durchgeführt werden, falls beim Aktualisieren von Tabellen/Zeilen ein Fehler auftritt.
-1. [Überprüfen und konvertieren Sie alle kompakten Tabellen in dynamische Tabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade). Dieser Schritt ist erforderlich, um einen möglichen Datenverlust während des Datenbank-Upgrades zu vermeiden.
-1. Auf MYISAM-Tabellen prüfen. Sie müssen [alle MyISAM-Tabellen in InnoD konvertieren](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud).
-1. Nachdem Sie die Datenbanktabellen und -zeilen vorbereitet haben (die beiden vorherigen Schritte), erstellen Sie ein [DB-Backup mit ECE-Tools DB-Backup-Befehlen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
-1. [Öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um das Upgrade von MariaDB 10.4 auf 10.5 zu planen. Geben Sie im Ticket das Datum und die Uhrzeit an, zu der Sie die DB aktualisieren möchten. Das Support-Team benötigt 48 Stunden Vorankündigung, und das Entwicklungsteam des Händlers muss verfügbar sein. Nachdem Zeit und Datum für das Upgrade vereinbart wurden, führen Sie folgende Schritte aus:
+1. Erstellen Sie ein [DB-Backup mit ECE-Tools DB-Backup-Befehlen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots). Diese Sicherung muss vor den Schritten 2 und 3 durchgeführt werden, falls beim Aktualisieren von Tabellen/Zeilen ein Fehler auftritt.
+1. [Überprüfen und konvertieren Sie alle kompakten Tabellen in dynamische Tabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade). Dieser Schritt ist erforderlich, um einen möglichen Datenverlust während des Datenbank-Upgrades zu vermeiden.
+1. Auf MYISAM-Tabellen prüfen. Sie müssen [alle MyISAM-Tabellen in InnoD konvertieren](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud).
+1. Nachdem Sie die Datenbanktabellen und -zeilen vorbereitet haben (die beiden vorherigen Schritte), erstellen Sie ein [DB-Backup mit ECE-Tools DB-Backup-Befehlen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
+1. [Öffnen Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um das Upgrade von MariaDB 10.4 auf 10.5 zu planen. Geben Sie im Ticket das Datum und die Uhrzeit an, zu der Sie die DB aktualisieren möchten. Das Support-Team benötigt 48 Stunden Vorankündigung, und das Entwicklungsteam des Händlers muss verfügbar sein. Nachdem Zeit und Datum für das Upgrade vereinbart wurden, führen Sie folgende Schritte aus:
    1. Setzen Sie Ihre Site in den Wartungsmodus und stoppen Sie alle DB-Aktivitäten, z. B. Crons.
-   1. Erstellen Sie ein [DB-Backup mit ECE-Tools DB-Backup-Befehlen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
-   1. Teilen Sie dem Support mit, dass Sie die Sicherung über Ihr Support-Ticket abgeschlossen haben. Anweisungen zum Anzeigen und Verfolgen Ihrer Tickets finden Sie im [Benutzerhandbuch für das Adobe Commerce Help Center: Verfolgen Sie Ihre Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets) in unserer Support-Wissensdatenbank.
+   1. Erstellen Sie ein [DB-Backup mit ECE-Tools DB-Backup-Befehlen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
+   1. Teilen Sie dem Support mit, dass Sie die Sicherung über Ihr Support-Ticket abgeschlossen haben. Anweisungen zum Anzeigen und Verfolgen Ihrer Tickets finden Sie im [Benutzerhandbuch für das Adobe Commerce Help Center: Verfolgen Sie Ihre Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets) in unserer Support-Wissensdatenbank.
    1. Das Adobe Commerce-Supportteam beginnt dann mit dem MariaDB-Upgrade-Prozess. Wenn alle oben genannten Schritte ausgeführt wurden und die Datenbank eine durchschnittliche Größe aufweist, dauert der Vorgang etwa eine Stunde. Größere DBs dauern länger. Sobald das Upgrade abgeschlossen ist, werden Sie über Ihr Ticket informiert.
-1. Deaktivieren Sie den Wartungsmodus. Siehe [Aktivieren oder Deaktivieren des Wartungsmodus](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.
+1. Deaktivieren Sie den Wartungsmodus. Siehe [Aktivieren oder Deaktivieren des Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >
@@ -47,6 +47,6 @@ Nehmen Sie die neuen, nur für die Sicherheit geeigneten Patches (2.4.4-p9 oder 
 
 ## Verwandtes Lesen
 
-* [Handbuch mit Best Practices für DB](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/prepare/prerequisites)Upgrades) für lokale Bereitstellungen.
-* [Upgrade von MariaDB 10.0 auf 10.2 für Adobe Commerce on &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud) in unserer Support-Wissensdatenbank.
-* [Adobe Commerce-Lebenszyklusrichtlinie](https://experienceleague.adobe.com/de/docs/commerce-operations/release/planning/lifecycle-policy) in unserer Entwicklerdokumentation.
+* [Handbuch mit Best Practices für DB](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)Upgrades) für lokale Bereitstellungen.
+* [Upgrade-Voraussetzungen für MariaDB: Bereiten Sie Ihre Datenbank für das Upgrade vor](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade#prepare-your-database-for-the-upgrade) im Implementierungs-Playbook.
+* [Adobe Commerce-Lebenszyklusrichtlinie](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) in unserer Entwicklerdokumentation.

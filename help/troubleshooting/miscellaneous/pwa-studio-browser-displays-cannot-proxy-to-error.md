@@ -1,17 +1,17 @@
 ---
-title: 'PWA Studio: Der Browser zeigt den Fehler „Proxy kann nicht verwendet werden“ an'
+title: 'PWA Studio: Der Browser zeigt den Fehler „Proxy nicht möglich für“ an'
 description: In diesem Thema wird eine Lösung erläutert, wenn im Webbrowser "*Kein Proxy für*" angezeigt wird und in der Konsole eine
 exl-id: de689633-34b8-4a25-bbd0-a58742c4d03c
 feature: Console
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 8be0c125bb0417e34e016656337506da88796630
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
-# PWA Studio: Der Browser zeigt den Fehler „Proxy kann nicht verwendet werden“ an
+# PWA Studio: Der Browser zeigt den Fehler „Proxy nicht möglich für“ an
 
 In diesem Thema wird eine Lösung erläutert, wenn im Webbrowser &quot;*Proxy für nicht möglich“* und in der Konsole eine
 
@@ -55,5 +55,5 @@ NodeJS kann den Hostnamen Ihres Adobe Commerce-Stores nicht auflösen.
 
 ## Verwandtes Lesen
 
-* Dokumentation zu [PWA Studio für Adobe Commerce](https://magento.github.io/pwa-studio/)
-* [Tools und Bibliotheken](https://magento.github.io/pwa-studio/technologies/tools-libraries/)
+* Dokumentation zu [PWA Studio für Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
+* [Tools und Bibliotheken](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/)
