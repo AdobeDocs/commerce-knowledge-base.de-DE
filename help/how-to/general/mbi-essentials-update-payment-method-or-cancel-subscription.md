@@ -41,4 +41,4 @@ Damit Commerce Intelligence Essentials-Kunden ihre Abonnements kündigen oder ih
 
 ## Verwandtes Lesen
 
-* [Commerce Intelligence-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html)
+* [Commerce Intelligence-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html?lang=de)

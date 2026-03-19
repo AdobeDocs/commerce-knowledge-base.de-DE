@@ -39,7 +39,7 @@ In den folgenden Schritten wird beschrieben, wie Sie Umleitungen auf [!DNL Fastl
 
 1. Erstellen Sie ein Edge-Wörterbuch.
 
-   Zunächst können Sie [[!DNL VCL] Snippets in Adobe Commerce) verwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) um ein Edge-Wörterbuch zu definieren. Dies enthält die Umleitungen.
+   Zunächst können Sie [[!DNL VCL] Snippets in Adobe Commerce) verwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html?lang=de) um ein Edge-Wörterbuch zu definieren. Dies enthält die Umleitungen.
 
    Einige Vorbehalte:
 
@@ -100,7 +100,7 @@ Wenn Sie keine Adobe Commerce-Staging-Umgebung ausführen möchten, aber sehen m
 ## Verwandtes Lesen
 
 * [[!DNL Fastly VCL] Referenz](https://docs.fastly.com/vcl/)
-* [Konfigurieren von Routen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) in unserer Entwicklerdokumentation
-* [Einrichten [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) in unserer Entwicklerdokumentation
+* [Konfigurieren von Routen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html?lang=de) in unserer Entwicklerdokumentation
+* [Einrichten [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=de) in unserer Entwicklerdokumentation
 * [[!DNL VCL] Cheat Sheet für reguläre Ausdrücke](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) in unserer Entwicklerdokumentation
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

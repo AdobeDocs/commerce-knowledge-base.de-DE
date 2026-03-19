@@ -21,6 +21,6 @@ In diesem Video erfahren Sie Folgendes:
 * Anwenden eines Filtersatzes auf eine Metrik
 * Anwenden eines Filtersatzes auf eine berechnete Datendimension
 
-Sehen Sie sich das Video unter [Commerce Intelligence - Filtersätze](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) in Adobe Experience League an.
+Sehen Sie sich das Video unter [Commerce Intelligence - Filtersätze](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html?lang=de) in Adobe Experience League an.
 
-**Willst du mitmachen?** schriftliche Anweisungen finden Sie [&#x200B; Tutorial zum Erstellen von Filtersätzen &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) Metriken .
+**Willst du mitmachen?** schriftliche Anweisungen finden Sie [&#x200B; Tutorial zum Erstellen von Filtersätzen &#x200B;](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html?lang=de) Metriken .
