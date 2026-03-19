@@ -3,9 +3,9 @@ title: 'Adobe Commerce Intelligence Essentials: Zahlungsmethode aktualisieren od
 description: Wie berechtigte Commerce Intelligence Essentials-Kunden (eigenständig, von Monat zu Monat, Rechnungsstellung über account.magento.com) die Zahlungsmethode aktualisieren oder stornieren können. Gilt nicht für Pro-, Cloud- oder vertragsbasierte oder fakturierte Abonnements.
 exl-id: 45e95451-6d17-44c7-81d3-87f5876b5758
 feature: Commerce Intelligence
-source-git-commit: 7d304a492471168f456071a9a38134f465dbc88f
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -41,4 +41,4 @@ Damit Commerce Intelligence Essentials-Kunden ihre Abonnements kündigen oder ih
 
 ## Verwandtes Lesen
 
-* [Commerce Intelligence-Benutzerhandbuch](/docs/commerce-business-intelligence/mbi/guide-overview.html)
+* [Commerce Intelligence-Benutzerhandbuch](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/guide-overview.html)

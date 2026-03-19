@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass Sie versu
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 
 #### Prozess als Cron-Auftrag hinzufügen (optional)
 
-1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [&#x200B; finden Sie unter „Einrichten &#x200B;](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) Cron-Aufträgen“.
+1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [ finden Sie unter „Einrichten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) Cron-Aufträgen“.
 1. Führen Sie den folgenden Befehl aus, um eine Liste der Nachrichtenwarteschlangen-Verbraucher zurückzugeben:     `./bin/magento queue:consumers:list`
 1. Fügen Sie Ihrer `.magento.env.yaml`-Datei im Stammverzeichnis der Anwendung Folgendes hinzu und schließen Sie die Verbraucher ein, die Sie hinzufügen möchten. Hier finden Sie beispielsweise den Verbraucher, der für die Exportverarbeitung erforderlich ist:
 
@@ -87,16 +87,16 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
                    - exportProcessor
    ```
 
-   Pushen Sie dann diese aktualisierte Datei und stellen Sie Ihre Umgebung erneut bereit. Verweisen Sie auch [Benutzerdefinierte Cron-Aufträge zu Ihrem Projekt hinzufügen](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) in unserer Entwicklerdokumentation.
+   Pushen Sie dann diese aktualisierte Datei und stellen Sie Ihre Umgebung erneut bereit. Verweisen Sie auch [Benutzerdefinierte Cron-Aufträge zu Ihrem Projekt hinzufügen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >
->Wenn Sie die `.magento.env.yaml`-Datei für Ihre Umgebung nicht finden können und der Meinung sind, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml` erstellen. Möglicherweise ist es zunächst leer. Sie können dort nach Bedarf weitere Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel[&#x200B; „Konfigurieren von Umgebungsvariablen für &#x200B;](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)&quot; und [Umgebungsvariablen](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in Ihrer Entwicklerdokumentation.
+>Wenn Sie die `.magento.env.yaml`-Datei für Ihre Umgebung nicht finden können und der Meinung sind, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml` erstellen. Möglicherweise ist es zunächst leer. Sie können dort nach Bedarf weitere Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel[ „Konfigurieren von Umgebungsvariablen für ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)&quot; und [Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in Ihrer Entwicklerdokumentation.
 
 >[!TIP]
 >
->[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=de) wird zwischen Groß- und Kleinschreibung unterschieden und es werden keine Registerkarten zugelassen. Achten Sie darauf, in der gesamten Datei &quot;.magento.env.yaml“ einen konsistenten Einzug zu verwenden. Andernfalls funktioniert Ihre Konfiguration möglicherweise nicht wie erwartet. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden eine Einrückung mit zwei Leerzeichen. Verwenden Sie den Befehl ECE-Tools validate , um Ihre Konfiguration zu überprüfen.
+>[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) wird zwischen Groß- und Kleinschreibung unterschieden und es werden keine Registerkarten zugelassen. Achten Sie darauf, in der gesamten Datei &quot;.magento.env.yaml“ einen konsistenten Einzug zu verwenden. Andernfalls funktioniert Ihre Konfiguration möglicherweise nicht wie erwartet. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden eine Einrückung mit zwei Leerzeichen. Verwenden Sie den Befehl ECE-Tools validate , um Ihre Konfiguration zu überprüfen.
 
 >[!NOTE]
 >
->In Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [automatische Krone](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) in Ihrer Adobe Commerce in der Cloud-Infrastruktur aktiviert sein, bevor Sie mithilfe von `.magento.app.yaml` benutzerdefinierte Cron-Aufträge zu Staging- und Produktionsumgebungen hinzufügen können. Wenn diese Funktion nicht aktiviert ist[&#x200B; erstellen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.
+>In Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [automatische Krone](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) in Ihrer Adobe Commerce in der Cloud-Infrastruktur aktiviert sein, bevor Sie mithilfe von `.magento.app.yaml` benutzerdefinierte Cron-Aufträge zu Staging- und Produktionsumgebungen hinzufügen können. Wenn diese Funktion nicht aktiviert ist[ erstellen Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.

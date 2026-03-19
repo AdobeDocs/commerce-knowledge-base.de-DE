@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für Probleme bei der Verarbeitung 
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Stellen Sie sicher, dass Sie dieselben Einstellungen angewendet und dieselben Fu
 
 Bei der Anwendung der PayPal Express Checkout-Lösung müssen Transaktionen, die auf AVS/CSC-Antworten basieren, in **PayPal Manager** (Diensteinstellungen > Einrichten > Sicherheitsoptionen) und in **Commerce Admin** abgelehnt werden ( **Stores** > Konfiguration > **Verkauf** > **Zahlungsmethoden**…).
 ![magento_paypal_settings_2.4.1.png](assets/magento_paypal_settings_2.4.1.png)
-Weitere Informationen finden Sie in der Dokumentation: [PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm) und [Adobe Commerce](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html) in unserem Benutzerhandbuch.
+Weitere Informationen finden Sie in der Dokumentation: [PayPal](https://www.paypalobjects.com/en_US/vhelp/paypalmanager_help/setup.htm) und [Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html) in unserem Benutzerhandbuch.
 
 ## Referenztransaktionen zulassen
 
@@ -41,14 +41,14 @@ Wenn Ihre PayPal-Zahlungsmethode eine API mit Abrechnungsvereinbarungen und Refe
 
 Siehe die folgenden Artikel:
 
-* [PayPal-Gateway hat Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26838) in unserer Support-Wissensdatenbank.
+* [PayPal-Gateway hat Anfrage abgelehnt - Problem mit doppelter Rechnung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) in unserer Support-Wissensdatenbank.
 * [Ändern der Inkrement-ID für eine neue Store](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)Entität in unserer Support-Wissensdatenbank.
 
 ## Support kontaktieren, um erweiterte Zahlungsprotokolle zu erfassen
 
 Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam Sie bitten, einen speziellen Patch anzuwenden, um die erweiterte Zahlungsprotokollierung zu aktivieren. In diesem Fall sollten Sie die folgenden Schritte ausführen:
 
-[Senden eines Support-Tickets](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit den folgenden Details:
+[Senden eines Support-Tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit den folgenden Details:
 
 * Geben Sie Ihr Problem mit so vielen Details wie möglich an.
 * Führen Sie die Schritte auf, die Sie in diesem Artikel, in der Wissensdatenbank und in anderen Ressourcen versucht haben. Alle Ergebnisse einschließen.
@@ -57,5 +57,5 @@ Um komplizierte Zahlungsprobleme zu beheben, kann das Adobe Commerce-Supportteam
 Wenn Sie den Patch für die erweiterte Zahlungsprotokollierung erhalten:
 
 * Pflaster aufkleben.
-* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+* Sammeln Sie Protokolle und fügen Sie sie Ihrem [Support-Ticket“ ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 * Warten Sie auf weitere Empfehlungen vom Adobe Commerce-Supportteam.

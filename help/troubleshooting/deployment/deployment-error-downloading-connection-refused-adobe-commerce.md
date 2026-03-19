@@ -4,9 +4,9 @@ description: 'Dieser Artikel bietet eine Lösung für den Bereitstellungsfehler:
 exl-id: 520cf50f-3682-441d-87a7-8e05301a2b0c
 feature: Cache, Deploy
 role: Developer
-source-git-commit: c005409900021a72d73c10a2df5f23be3f2bc2cf
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -55,10 +55,10 @@ Bitten Sie einen Superbenutzer des Projekts, diesen Befehl auszuführen:
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Informationen dazu, wer im Projekt ein Super-Anwender ist, finden Sie unter [Anzeigen der Projektrolle eines Anwenders](/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) im Handbuch zu Commerce in Cloud-Infrastruktur .
+Informationen dazu, wer im Projekt ein Super-Anwender ist, finden Sie unter [Anzeigen der Projektrolle eines Anwenders](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) im Handbuch zu Commerce in Cloud-Infrastruktur .
 
 ## Empfohlene Lektüre
 
-* Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-29640).
-* Auf [Adobe Commerce in Cloud-Repository konnte nicht zugegriffen werden: Fehler „403 Verboten“ oder „404 Nicht gefunden“ bei der Bereitstellung](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [Bereitstellung schlägt mit „Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen“](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* Fehlerbehebung bei der Bereitstellung von [Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
+* Auf [Adobe Commerce in Cloud-Repository konnte nicht zugegriffen werden: Fehler „403 Verboten“ oder „404 Nicht gefunden“ bei der Bereitstellung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
+* [Bereitstellung schlägt mit „Fehler beim Erstellen des Projekts: Der Build-Hook ist mit Status-Code 1 fehlgeschlagen“](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).

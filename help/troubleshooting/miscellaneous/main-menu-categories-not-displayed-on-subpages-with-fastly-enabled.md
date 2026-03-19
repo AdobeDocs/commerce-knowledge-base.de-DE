@@ -1,19 +1,19 @@
 ---
 title: Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist
-description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü für die obere Navigation der Kategorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=de) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü für die obere Navigation der Kategorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) in unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist
 
-Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü „Navigation oben“ &#x200B;](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (oder das [Menü „Navigation oben“ ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) unserem Benutzerhandbuch) nicht auf der Storefront für Unterseiten angezeigt wird (z. B. *blog/page*), wenn Fastly oder Varnish aktiviert ist.
 
 **Ursache:** das nicht zulässige `/` (Schrägstrich) im Parameter *URL-Schlüssel* der Seite (Einstellungen für die Suchmaschinenoptimierung). Das Zeichen wird normalerweise hinzugefügt, wenn *URL-Pfad* (mit dem gesamten Seitenspeicherort) versehentlich anstelle des *URL-Schlüssels* angegeben wird, z. B. *blog/page\_name* anstelle von *page\_name*.
 
@@ -27,7 +27,7 @@ Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass das Hauptmenü (od
 
 ## Problem
 
-Das Hauptmenü (in unserem Benutzerhandbuch auch als [Kategorie-Navigationsmenü oben](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) bezeichnet) wird auf der Storefront für Unterseiten nicht angezeigt, wenn Fastly oder andere lackbasierte Dienste aktiviert sind.
+Das Hauptmenü (in unserem Benutzerhandbuch auch als [Kategorie-Navigationsmenü oben](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) bezeichnet) wird auf der Storefront für Unterseiten nicht angezeigt, wenn Fastly oder andere lackbasierte Dienste aktiviert sind.
 
 ## Ursache
 
@@ -43,7 +43,7 @@ Entfernen Sie das `/` (Schrägstrich) aus dem *URL Key*-Parameter für alle Seit
 
 Mit anderen Worten: Verwenden Sie *URL-Schlüssel* anstelle von *URL-Pfad*: geben Sie nur den Seitennamen an, ohne die übergeordnete Ressource/das übergeordnete Verzeichnis.
 
-### Recommendations in Seitenhierarchie und SEO
+### Empfehlungen zu Seitenhierarchie und SEO
 
 Um die Seitenhierarchie festzulegen, verwenden Sie den **Hierarchie** des Menüs Seite bearbeiten .
 
@@ -57,10 +57,10 @@ Verwenden Sie für SEO-Zwecke auf Produktseiten URL-Neuschreibungen (**Marketing
 
 Der *URL-Schlüssel* für SEO:
 
-* [Suchmaschinenoptimierung](/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
-* [Hinzufügen einer neuen Seite](/docs/commerce-admin/content-design/elements/pages/page-add.html)
+* [Suchmaschinenoptimierung](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
+* [Hinzufügen einer neuen Seite](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html)
 
 Seitenhierarchie:
 
-* [Übersicht](/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html)
-* [Hinzufügen eines Knotens](/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html#add-a-hierarchy-node)
+* [Übersicht](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html)
+* [Hinzufügen eines Knotens](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html#add-a-hierarchy-node)

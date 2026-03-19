@@ -3,9 +3,9 @@ title: Adobe Commerce - DSGVO-Ressourcen
 description: In diesem Artikel werden die offiziellen Dokumentationsressourcen aufgeführt, die besprechen, wie Adobe Commerce die DSGVO (Datenschutz-Grundverordnung der Europäischen Union) einhält.
 exl-id: d578ff9b-e39c-4c5b-8aaf-f41cab5c1fbb
 feature: Compliance
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ In diesem Artikel werden die offiziellen Dokumentationsressourcen aufgeführt, d
 
 ## Adobe Commerce ist bereit für die DSGVO
 
-Die [offizielle Homepage](https://business.adobe.com/de/privacy/general-data-protection-regulation.html) für alle Adobe Commerce-DSGVO-Ressourcen.
+Die [offizielle Homepage](https://business.adobe.com/privacy/general-data-protection-regulation.html) für alle Adobe Commerce-DSGVO-Ressourcen.
 
 ## Offizielle Adobe Commerce-Erklärungen
 
-* [Datenschutz-Grundverordnung DSGVO](/docs/commerce-operations/security-and-compliance/privacy/gdpr.html)
-* [DSGVO-Compliance](/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
+* [Datenschutz-Grundverordnung DSGVO](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html)
+* [DSGVO-Compliance](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 
 ## DSGVO-Konformität in unserer Entwicklerdokumentation: Adobe Commerce 2.X und 1.X
 
-* [Referenz zu personenbezogenen Daten von Kunden (Version 2.x)](/docs/commerce-operations/security-and-compliance/reference/data-m2.html)
-* [Referenz zu personenbezogenen Daten von Kunden (Version 1.x)](/docs/commerce-operations/security-and-compliance/reference/data-m1.html)
+* [Referenz zu personenbezogenen Daten von Kunden (Version 2.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html)
+* [Referenz zu personenbezogenen Kundeninformationen (Version 1.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html)
 
 Diese Adobe Commerce-Entwicklerdokumentationsthemen enthalten Datenflussdiagramme und Datenbankinformationen, mit denen Händler und Systemintegratoren Anwendungsfälle wie die folgenden beheben können:
 

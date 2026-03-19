@@ -3,9 +3,9 @@ title: 'Adobe Commerce Intelligence-Schulungsvideo: Filtersätze'
 description: Möchten Sie nur bestimmte Teile Ihrer Geschäftsdaten analysieren? Sind Sie es leid, Dinge manuell zu bereinigen? In Adobe Commerce Intelligence können Sie die Filtersatzfunktion verwenden, um diesen Prozess zu vereinfachen.
 exl-id: 2756f1f0-1465-4a7b-b249-7a3b36674e43
 feature: Commerce Intelligence
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,6 @@ In diesem Video erfahren Sie Folgendes:
 * Anwenden eines Filtersatzes auf eine Metrik
 * Anwenden eines Filtersatzes auf eine berechnete Datendimension
 
-Sehen Sie sich das Video unter [Commerce Intelligence - Filtersätze](/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) in Adobe Experience League an.
+Sehen Sie sich das Video unter [Commerce Intelligence - Filtersätze](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/business-intelligence/filter-sets.html) in Adobe Experience League an.
 
-**Willst du mitmachen?** schriftliche Anweisungen finden Sie [&#x200B; Tutorial zum Erstellen von Filtersätzen &#x200B;](/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) Metriken .
+**Willst du mitmachen?** schriftliche Anweisungen finden Sie [ Tutorial zum Erstellen von Filtersätzen ](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-filters.html) Metriken .
