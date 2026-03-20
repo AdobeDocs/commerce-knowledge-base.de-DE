@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 03cb143909535a2e615b87ac4bdff425fb667c97
+source-git-commit: 8f1f6cbdc5aabb0c05a51287d463f051f4233b16
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1941'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 1%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -229,7 +229,6 @@ ht-degree: 1%
    * [Erstellen eines „Bereinigungs“-Dump auf Anfrage des Support-Mitarbeiters](/help/how-to/general/create-dump-for-support.md)
    * [SSL (TLS)-Zertifikate für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
    * [Zugriff auf die neueste Beta-Version nicht möglich](/help/how-to/general/cannot-access-the-latest-beta-version.md)
-   * [Wechseln des Anwendungsmodus](/help/how-to/general/switch-the-magento-mode.md)
    * [Wie Sie sich bei dem mit Adobe Commerce bereitgestellten Fastly-Konto in der Cloud-Infrastruktur anmelden](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Adobe Commerce-Fehlerberichtnummer anstelle von Fastly 503-Fehler anzeigen](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
    * [Reset a theme to defaults](/help/how-to/general/reset-a-theme-to-defaults.md)
