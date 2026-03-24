@@ -4,9 +4,9 @@ description: Dieser Artikel enthält eine Fehlerbehebung für ein bekanntes Prob
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: 7705b6030d2f0877c228dae1707916ad38c9d587
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -65,12 +65,12 @@ Scrollen Sie zum Herunterladen nach unten zum Ende des Artikels und klicken Sie 
 
 <u>Composer Patch-</u>
 
-Anweisungen [&#x200B; Composer-Patches finden Sie unter „Anwenden eines von Adobe bereitgestellten &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)&quot;.
+Anweisungen [ Composer-Patches finden Sie unter „Anwenden eines von Adobe bereitgestellten ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)&quot;.
 
 <u>Git-Patch-</u>
 
-* Siehe [Anwenden von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
-* Siehe [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce.
+* Siehe [Anwenden von ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches)&quot; in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce in der Cloud-Infrastruktur.
+* Siehe [Anwenden von Patches: Benutzerdefinierte Patches](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) in der Entwicklerdokumentation für Git-Patch-Anweisungen für Adobe Commerce.
 
 ## Verwandtes Lesen
 

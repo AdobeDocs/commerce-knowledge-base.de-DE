@@ -1,17 +1,17 @@
 ---
-title: Adobe Commerce 2.4.0 Braintree Virtual Terminal-Seite beschädigt
+title: Adobe Commerce 2.4.0 Virtual Terminal-Seite in Braintree beschädigt
 description: Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.0-Problem, bei dem die Seite "Braintree Virtual Terminal“ nicht die richtigen Benutzeroberflächenelemente lädt, oder eine korrekte Fehlermeldung, wenn Braintree nicht konfiguriert ist.
 exl-id: 1d4d762d-2ab3-4752-ad6d-1eb6a179917d
 feature: Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.4.0 Braintree Virtual Terminal-Seite beschädigt
+# Adobe Commerce 2.4.0 Virtual Terminal-Seite in Braintree beschädigt
 
 Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.0-Problem, bei dem die Seite &quot;Braintree Virtual Terminal“ nicht die richtigen Benutzeroberflächenelemente lädt, oder eine korrekte Fehlermeldung, wenn Braintree nicht konfiguriert ist.
 
@@ -26,7 +26,7 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.0-Probl
 
 <u>Schritte zur Reproduktion:</u>
 
-Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . **&#x200B; &#x200B;**
+Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . ** **
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -40,7 +40,7 @@ Die Benutzeroberfläche der Seite **Braintree Virtual Terminal** ist fehlerhaft.
 
 <u>Schritte zur Reproduktion:</u>
 
-Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . **&#x200B; &#x200B;**
+Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . ** **
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -48,7 +48,7 @@ Die Seite **Braintree Virtual Terminal** wird mit der richtigen Benutzeroberflä
 
 <u>Tatsächliches Ergebnis:</u>
 
-Die Benutzeroberfläche der Seite **Braintree Virtual Terminal** ist fehlerhaft, und es wird keine Warnung angezeigt.
+Die Benutzeroberfläche der Seite **Braintree Virtual Terminal** ist fehlerhaft und es wird keine Warnung angezeigt.
 
 ## Lösung
 
@@ -69,6 +69,6 @@ Der Patch wurde erstellt für:
 
 ## Anbringen des Pflasters
 
-Anweisungen [&#x200B; Sie unter „Anwenden eines Composer-Patches von Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Anweisungen [ Sie unter „Anwenden eines von Adobe bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
 
 ## Angehängte Dateien

@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce Upgrade 2.4.3, 2.3.7-p1 PHP Schwerwiegender Fehler Hotfix
-description: 'Dieser Artikel bietet eine Fehlerbehebung für Händler, die versuchen, auf Adobe Commerce (alle Bereitstellungsmethoden) oder Magento Open Source 2.4.3 oder 2.3.7-p1 zu aktualisieren, wenn der folgende Fehler angezeigt wird:'
+description: 'Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Händler versuchen, auf Adobe Commerce (alle Bereitstellungsmethoden) oder Magento Open Source 2.4.3 oder 2.3.7-p1 zu aktualisieren, der folgende Fehler angezeigt wird:'
 exl-id: 1c472214-8387-403e-b2d2-d3f3c9e1da6a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce Upgrade 2.4.3, 2.3.7-p1 PHP Schwerwiegender Fehler Hotfix
 
-Dieser Artikel bietet eine Fehlerbehebung für Händler, die versuchen, auf Adobe Commerce (alle Bereitstellungsmethoden) oder Magento Open Source 2.4.3 oder 2.3.7-p1 zu aktualisieren, wenn der folgende Fehler angezeigt wird:
+Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Händler versuchen, auf Adobe Commerce (alle Bereitstellungsmethoden) oder Magento Open Source 2.4.3 oder 2.3.7-p1 zu aktualisieren, der folgende Fehler angezeigt wird:
 
 *Schwerwiegender PHP-Fehler: Nicht abgefangener Fehler: Aufruf der undefinierten Funktion Magento\Framework\Filesystem\Directory\str_contains() in &lt;…>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*
 
@@ -42,7 +42,7 @@ Schwerwiegender PHP-Fehler.
 
 ## Lösung
 
-Als Problemumgehung führen Sie den folgenden Befehl in der CLI/Terminal-Konsole aus: `composer require symfony/polyfill-php80` aus dem Magento-Stammordner oder installieren Sie einen Composer-Patch.
+Als Problemumgehung führen Sie in der CLI/Terminal den folgenden Befehl aus: `composer require symfony/polyfill-php80` aus dem Magento-Stammordner oder installieren Sie einen Composer-Patch.
 
 Um das Problem für 2.4.3 zu beheben, sollten Adobe Commerce (alle Bereitstellungsmethoden) und Magento Open Source-Händler einen Patch anwenden:
 
@@ -54,7 +54,7 @@ Um das Problem für 2.3.7-p1 zu beheben, sollten Adobe Commerce (alle Bereitstel
 
 ## Anwenden des Patches
 
-Anweisungen [&#x200B; Sie unter „Anwenden eines Composer-Patches von Magento](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Anweisungen [ Sie unter „Anwenden eines von Magento bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
 
 ## Verwandtes Lesen
 

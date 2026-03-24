@@ -4,9 +4,9 @@ description: Dieser Artikel enthält einen Patch für das bekannte Problem Adobe
 exl-id: ace92331-6022-49fa-a776-d06d841b3b32
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 4617b915a62093e00da428a753d913a39d30f3a0
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Beim Ausführen von
 bin/magento setup:upgrade
 ```
 
-wird folgende Fehlermeldung angezeigt: *„MODULE &#39;Magento\_AdvancedSalesRule&#39;: Installing data…Area code not set: Area code must be set before starting a session“* und die Befehlsausführung wird unterbrochen. Das Problem tritt auf, weil die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Mit dem Patch kann der Fehler erkannt werden, ohne dass der Upgrade-Prozess unterbrochen wird.
+wird folgende Fehlermeldung angezeigt: *„MODULE &#39;Magento\_AdvancedSalesRule&#39;: Installing data…Area code not set: Area code must be set before starting a session“* and the command execution is interrupted. Das Problem tritt auf, weil die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Mit dem Patch kann der Fehler erkannt werden, ohne dass der Upgrade-Prozess unterbrochen wird.
 
 ## Fleck
 
@@ -51,6 +51,6 @@ Der Patch ist auch mit den folgenden Adobe Commerce-Versionen und -Editionen kom
 
 ## Anbringen des Pflasters
 
-Anweisungen finden Sie unter [So wenden Sie einen von Adobe bereitgestellten Composer-Patch &#x200B;](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) unserer Support-Wissensdatenbank an.
+Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in unserer Support-Wissensdatenbank.
 
 ## Angehängte Dateien
