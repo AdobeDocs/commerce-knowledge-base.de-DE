@@ -69,6 +69,6 @@ Die Patches sind auch mit den folgenden Versionen kompatibel:
 
 ## Anwenden eines Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in unserer Support-Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in unserer Support-Wissensdatenbank.
 
 ## Angehängte Dateien

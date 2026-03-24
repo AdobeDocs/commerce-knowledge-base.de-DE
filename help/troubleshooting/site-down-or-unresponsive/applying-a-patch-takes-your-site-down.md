@@ -65,4 +65,4 @@ Für Adobe Commerce in der Cloud-Infrastruktur: alle Versionen,
 
 ## Verwandtes Lesen
 
-* [So wenden Sie einen von Adobe bereitgestellten Composer-Patch &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) unserer Support-Wissensdatenbank an.
+* [So wenden Sie einen von Adobe bereitgestellten Composer-Patch &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) unserer Support-Wissensdatenbank an.

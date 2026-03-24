@@ -69,6 +69,6 @@ Der Patch wurde erstellt für:
 
 ## Anbringen des Pflasters
 
-Anweisungen [&#x200B; Sie unter „Anwenden eines von Adobe bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
+Anweisungen [&#x200B; Sie unter „Anwenden eines von Adobe bereitgestellten Composer](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
 
 ## Angehängte Dateien
