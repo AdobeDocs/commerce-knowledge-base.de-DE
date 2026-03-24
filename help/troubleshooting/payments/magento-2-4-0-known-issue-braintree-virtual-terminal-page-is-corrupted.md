@@ -26,7 +26,7 @@ Dieser Artikel enthält einen Patch für das bekannte Adobe Commerce 2.4.0-Probl
 
 <u>Schritte zur Reproduktion:</u>
 
-Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . ** **
+Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . **&#x200B; **
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -40,7 +40,7 @@ Die Benutzeroberfläche der Seite **Braintree Virtual Terminal** ist fehlerhaft.
 
 <u>Schritte zur Reproduktion:</u>
 
-Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . ** **
+Wechseln Sie in Commerce Admin zu **Verkauf** > **Braintree Virtual Terminal** . **&#x200B; **
 
 <u>Erwartetes Ergebnis:</u>
 
@@ -69,6 +69,6 @@ Der Patch wurde erstellt für:
 
 ## Anbringen des Pflasters
 
-Anweisungen [ Sie unter „Anwenden eines von Adobe bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
+Anweisungen [&#x200B; Sie unter „Anwenden eines von Adobe bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
 
 ## Angehängte Dateien

@@ -54,7 +54,7 @@ Um das Problem für 2.3.7-p1 zu beheben, sollten Adobe Commerce (alle Bereitstel
 
 ## Anwenden des Patches
 
-Anweisungen [ Sie unter „Anwenden eines von Magento bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
+Anweisungen [&#x200B; Sie unter „Anwenden eines von Magento bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
 
 ## Verwandtes Lesen
 
