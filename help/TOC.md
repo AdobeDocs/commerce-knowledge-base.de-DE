@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 651620add857a2cf33c59fd0cd7972cb7c1e0cc3
+source-git-commit: 1502ee72f4421f8fdec5c0e780f1f56423a2cce8
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1880'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 1%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -215,10 +215,8 @@ ht-degree: 1%
    * [Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Geschäft](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Umgebung auf Adobe Commerce auf Cloud-Infrastruktur zurücksetzen](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI: Integrationen erneut authentifizieren](/help/how-to/general/mbi-reauthenticating-integrations.md)
-   * [Speicherorte (Verzeichnisse) für Pro Plan: Integration, Staging, Produktion](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [Adobe Commerce in Cloud Service: Überprüfen, ob eine Aktualisierung für die Host-Instanzen erforderlich ist](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [Bootstrap Adobe Commerce 2 in einem Sandbox-Skript](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
-   * [Adobe Commerce Intelligence-Schulungsvideo: Filtersätze](/help/how-to/general/mbi-training-video-filter-sets.md)
    * [Blockieren von bösartigem Traffic für Adobe Commerce auf Fastly-Ebene](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [Ändern des Administratorkennworts in Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/change-magento-admin-password-on-cloud.md)
    * [Anzeigen der vCPU-Ebene der Umgebung in Ihrem Cluster auf Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
