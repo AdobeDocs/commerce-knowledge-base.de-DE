@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 308b24e3f88fd9e9aab1c3c2f572b627703bab4d
+source-git-commit: 620f4d9e2e070ea8009f2f16b106ddd63d23b1b6
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1864'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,6 @@ ht-degree: 1%
       * [Die MySQL-Katalogsuchmaschine wird in Adobe Commerce 2.4.0 entfernt](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Migration des Aufnahmeprozesses von Adobe Commerce nach Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
    * Hilfezentrum-Nachrichten {#news}
-      * [Stilllegung des Adobe Commerce Help Centers](/help/announcements/help-center-news/decommissioning-of-adobe-commerce-help-center.md)
 * Fehlerbehebung {#troubleshooting}
    * [Übersicht über die Fehlerbehebung](/help/troubleshooting/overview.md)
    * Datenbank {#database}
@@ -80,7 +79,7 @@ ht-degree: 1%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
