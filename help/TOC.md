@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 8b9d7908c4c6b99424e40e24e4de08968b203d18
+source-git-commit: ef65f8cf94b86511661b9fe2605d14d3a3027e58
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1828'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 1%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
@@ -204,7 +204,6 @@ ht-degree: 1%
    * [Setzt fixierte Adobe Commerce in der Cloud-Infrastruktur bei Cron-Aufträgen manuell zurück](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Schnelles Testen in der Produktion, wenn eine Live-Site dieselbe Domain verwendet](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Identifizieren und Messen von Ausfällen für Adobe Commerce in der Cloud-Infrastruktur](/help/how-to/general/how-to-identify-outages.md)
-   * [Cloud-Verzweigungen in Adobe Commerce neu anordnen](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Umleiten von HTTP zu HTTPS für alle Seiten in Adobe Commerce auf Cloud-Infrastrukturen (TLS erzwingen)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Mehr Speicherplatz für MySQL in Adobe Commerce in der Cloud zuweisen](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Geschäft](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
