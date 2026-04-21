@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: ef65f8cf94b86511661b9fe2605d14d3a3027e58
+source-git-commit: 4a274957a88cfb40d318d898ca9870c29540f400
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1817'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 1%
 * Ankündigungen {#announcements}
    * [Ankündigungen - Übersicht](/help/announcements/overview.md)
    * Adobe Commerce-Ankündigungen {#commerce-announcements}
-      * [Holiday Surge Capacity Requests für Adobe Commerce in unserer Cloud-Infrastruktur](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
       * {hide-from-toc}[Migration des Aufnahmevorgangs der Adobe Commerce-Unterstützung nach Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
 * Fehlerbehebung {#troubleshooting}
    * [Übersicht über die Fehlerbehebung](/help/troubleshooting/overview.md)
