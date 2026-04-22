@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für das Problem, bei dem Sie ei
 feature: Cloud, Storage, Media
 role: Developer
 exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
-source-git-commit: 89f985b832545f1fbccf94aac1d60f1e767b5bc4
+source-git-commit: 11cf981c7ebe813219a0cd311632eafce086bbf6
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -29,20 +29,54 @@ Sie erhalten eine E-Mail mit folgendem Inhalt, können jedoch den Ordner *Export
 
 ## Ursache
 
-Die E-Mail bezieht sich auf den **Exporte**-Speicher, d. h. die den Dateien/Medien zugeordnete Festplattenmenge, und nicht auf einen bestimmten Ordner mit dem Namen *Exporte*.
+Der Warnhinweis bezieht sich auf das Dateisystem für Exporte, das das Festplatten-Volume ist, auf dem Medien und andere Dateidaten gespeichert werden. Dieses Dateisystem wird normalerweise unter `/data/exports` gemountet. Der Warnhinweis zeigt nicht an, dass ein einzelnes Verzeichnis mit dem buchstäblichen Namen „exports“ vorhanden ist.
+
+Um zu bestätigen, worauf sich der Warnhinweis bezieht, überprüfen Sie die Speicherverwendung des Exports:
+
+* Führen Sie `df -h | grep exports` aus. Daraufhin wird die folgende Beispielausgabe angezeigt:
+
+  ```
+  /dev/nvme1n1 50G 38G 12G 77% /data/exports
+  tmpfs         7.7G 4.0K 7.7G  1% /data/exports/shared
+  ```
+
+* In diesem Beispiel ist `/data/exports` das Hauptexportdateisystem:
+
+   * 50 GB insgesamt
+   * Verwendete 38 GB
+   * 12 GB verfügbar (77 % Auslastung)
+
+* `/data/exports/shared` ist eine `tmpfs` (speicherinterne) Halterung, die für gemeinsam genutzte Daten verwendet wird und nicht wesentlich zum Festplattendruck beiträgt.
+
+Dadurch wird bestätigt, dass der Warnhinweis durch die allgemeine Festplattenauslastung von `/data/exports` ausgelöst wird, und nicht durch einen einzelnen Ordner mit dem Namen „exports“.
+
+Wenn `/data/exports` hohe Auslastung aufweist, sind große Verzeichnisse unter diesem Dateisystem - wie z. B. Pub/Media oder andere benutzerdefinierte Dateispeicherorte - in der Regel für die erhöhte Nutzung verantwortlich.
 
 ## Lösung
 
-Sie sollten die Datennutzung in der Umgebung überprüfen. Führen Sie diesen Befehl aus, um die vorhandene Verwendung abzurufen:
+Führen Sie diese Schritte aus, um die Nutzung des Exportspeichers zu überprüfen, zu bereinigen und zu validieren.
 
-`df -h |grep data`
+1. Führen Sie den Befehl `df -h | grep exports` aus, um die aktuelle Verwendung des Exportspeicherdateisystems zu überprüfen. Überprüfen Sie die Spalte **Verwenden** für `/data/exports`:
 
-Die typischen Speicherorte, an denen der Dateispeicher wahrscheinlich gefüllt wird, sind die Ordner *pub/media/catalog/product/cache* oder *var/log*. Um den von den Dateien verwendeten Speicherplatz zu ermitteln, führen Sie diesen Befehl mit dem entsprechenden Pfad */path/to/folder aus*:
+   * Wenn die Nutzung zwischen 70 und 85 % liegt, beginnen Sie mit der Planung der Bereinigung.
+   * Wenn die Nutzung mehr als 90 % beträgt, ergreifen Sie sofort Maßnahmen, um Schreibfehler oder Auswirkungen auf den Service zu vermeiden.
 
-`du -shc` */path/to/folder*
+1. Ermitteln Sie Verzeichnisse, die unter `/data/exports` erheblichen Speicherplatz belegen, indem Sie Folgendes ausführen:
 
-Wenn die Nutzung der Medien einen großen Teil des gesamten Festplattenspeichers ausmacht, sollten Sie [Fastly Deep Image Optimization](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) aktivieren und dann die Dateien im Ordner *pub/media/catalog/product/cache* auf dem Server manuell löschen.
+   ```bash
+   du -sh /data/exports/* 2>/dev/null
+   ```
+
+   Die typischen Speicherorte, an denen der Dateispeicher wahrscheinlich gefüllt wird, sind `pub/media/catalog/product/cache` oder `var/log`.
+
+1. Bereinigen von Dateien basierend auf der Umgebung:
+
+   * Entfernen Sie zuerst alte oder nicht verwendete Exportdateien, Protokolle oder temporäre Daten.
+   * In Nicht-Produktionsumgebungen können Sie Testmedien oder alte Artefakte in der Regel aggressiver entfernen.
+   * Koordinieren Sie sich in Produktionsumgebungen mit Ihrem Team, bevor Sie Medien oder geschäftskritische Dateien löschen.
+
+1. Führen Sie nach der Bereinigung den folgenden `df -h | grep exports` aus, um zu bestätigen, dass der Wert **Verwenden%** für `/data/exports` auf eine sichere Betriebsebene abgesunken ist.
 
 ## Verwandtes Lesen
 
-[Überprüfen Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.
+[Überprüfen Sie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.
