@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 4a274957a88cfb40d318d898ca9870c29540f400
+source-git-commit: 3bec25fb1d0ade6c36c41135075edc4ba3610d30
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1801'
 ht-degree: 1%
 
 ---
@@ -59,33 +59,33 @@ ht-degree: 1%
       * [Composer-Installationsbefehl überschreibt .gitignore-Datei, Adobe Commerce](/help/troubleshooting/installation-and-upgrade/custom-gitignore-file-overridden.md)
       * [Während der Installation, PHP-Datumswarnung](/help/troubleshooting/installation-and-upgrade/during-installation-php-date-warning.md)
       * [Während der Installation tritt bei Reflection Exception ein Fehler auf](/help/troubleshooting/installation-and-upgrade/during-installation-reflection-exception-error.md)
-      * [Bereichscode wird beim Ausführen des Setups nicht als Fehler festgelegt](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
+      * [Fehler „Ortskennzahl ist nicht festgelegt“ beim Ausführen des Setups:upgrade](/help/troubleshooting/installation-and-upgrade/area-code-is-not-set-error-when-running-setup-upgrade.md)
       * [Installation schlägt fehl; install.log kann nicht erstellt werden](/help/troubleshooting/installation-and-upgrade/installation-fails-cannot-create-install-log.md)
       * [Ausnahmen während der Installation](/help/troubleshooting/installation-and-upgrade/exceptions-during-installation.md)
-      * [Fehler beim Installieren optionaler Beispieldaten](/help/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data.md)
-      * [Während der Installation wird ein schwerwiegender PDO-Fehler angezeigt](/help/troubleshooting/installation-and-upgrade/during-installation-fatal-pdo-error-displays.md)
-      * [Installation stoppt bei ca. 70%](/help/troubleshooting/installation-and-upgrade/installation-stops-at-about-70.md)
-      * [Adobe Commerce Upgrade 2.4.3, 2.3.7-p1 PHP Schwerwiegender Fehler Hotfix](/help/troubleshooting/installation-and-upgrade/hotfix-unsupported-php8-command-in-adobe-commerce-2-4-3.md)
-      * [Adobe Commerce 2.4.0: Ausnahme während der B2B 1.2.0-Installation](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-exception-during-b2b-1-2-0-install.md)
-      * [Fehler wegen zu wenig Arbeitsspeicher während der Installation oder Aktualisierung](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
-      * [Das Upgrade auf B2B 1.5.2 schlägt aufgrund einer fehlenden REGEXP_LIKE-Funktion mit einem SQL-Syntaxfehler fehl](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
-      * [Leistungsproblem im Magento_Company-Modul-Upgrade nach der Aktualisierung auf B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
-   * Site nicht verfügbar oder nicht responsiv {#site-down-or-unresponsive}
-      * [Durch das Anwenden eines Patches wird Ihre Site heruntergefahren](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
-      * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
+      * [Errors installing optional sample data](/help/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data.md)
+      * [During installation, fatal PDO error displays](/help/troubleshooting/installation-and-upgrade/during-installation-fatal-pdo-error-displays.md)
+      * [Installation stops at about 70%](/help/troubleshooting/installation-and-upgrade/installation-stops-at-about-70.md)
+      * [Adobe Commerce upgrade 2.4.3, 2.3.7-p1 PHP Fatal error Hotfix](/help/troubleshooting/installation-and-upgrade/hotfix-unsupported-php8-command-in-adobe-commerce-2-4-3.md)
+      * [Adobe Commerce 2.4.0: exception during B2B 1.2.0 install](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-exception-during-b2b-1-2-0-install.md)
+      * [Out of memory error during install or upgrade](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
+      * [Upgrade to B2B 1.5.2 fails with SQL syntax error due to missing REGEXP_LIKE function](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
+      * [Performance issue in Magento_Company module upgrade after B2B 1.5.2 update](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
+   * Site down or unresponsive {#site-down-or-unresponsive}
+      * [Applying a patch takes your site down](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
+      * [Revised patches for Google Maps access loss on all Adobe Commerce versions](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
-      * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
-      * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-      * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
-      * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
-      * [Fehlerbehebung beim Modul „Produktempfehlungen“ in Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-      * [Unbekanntes Modul Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
-      * [Probleme mit der Cron-Bereitschaftsprüfung](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
-      * [SQL-Abfragen: Fehler bei EXPLAIN COST](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
-      * [Fehlerbehebung bei New Relic in Adobe Commerce auf Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
-      * [Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
-      * [Probleme bei der Prüfung der Bereitschaft für Dateiberechtigungen](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
+      * [Fix data not updated in [!DNL Commerce Data Exporter] feeds and [!DNL cron] logs errors with changelog table don&#39;t exist](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
+      * [Error [!DNL opensearch] search engine doesn&#39;t exist. Falling back to [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [Email stating that export storage is almost full](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
+      * [Missing or altered configuration file](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
+      * [cURL error 60: SSL certificate expired](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
+      * [Troubleshoot Product Recommendations module in Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
+      * [Unknown module Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
+      * [Cron readiness check issues](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
+      * [SQL queries: EXPLAIN cost errors](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
+      * [Troubleshooting New Relic on Adobe Commerce on cloud infrastructure](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
+      * [Adobe Commerce Security Scan tool troubleshooting guide](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
+      * [File permissions readiness check issues](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
       * [Diagnose von Diskrepanzen beim E-Commerce-Umsatz mit Google](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
       * [Ich habe API-Schlüssel für Adobe AI konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [Hauptmenü (Kategorien) wird nicht auf Unterseiten angezeigt, wenn Fastly aktiviert ist](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
@@ -235,7 +235,6 @@ ht-degree: 1%
    * [Upgrade von MariaDB 10.4 auf 10.5 für Adobe Commerce on Cloud Service](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQs {#faq}
    * [Häufig gestellte Fragen - Übersicht](/help/faq/overview.md)
-   * [Abschreibung von Adobe Commerce-Kernzahlungsintegrationen](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
    * [Kann ich Anwendungen von Drittanbietern auf meiner Cloud-Instanz installieren?](/help/faq/general/can-i-install-third-party-applications-on-my-cloud-instance.md)
    * [Verknüpfen von Magento.com und accounts.magento.cloud-Konto-Anmeldungen](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
    * [Datenbank automatisch inkrementieren Variable auf „3“ gesetzt Adobe Commerce in unserer Cloud Pro-Architektur](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
