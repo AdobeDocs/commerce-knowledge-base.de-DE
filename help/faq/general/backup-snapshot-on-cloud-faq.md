@@ -3,9 +3,9 @@ title: 'Backup (Snapshot) in der Cloud: Häufig gestellte Fragen'
 description: In diesem Artikel werden die Grundlagen zum Sichern Ihrer Umgebungen mit Snapshots auf Adobe Commerce in der Cloud-Infrastruktur behandelt.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 79e7cd40665b1857a9c68916679f07b1c046028a
+source-git-commit: 878a49fd1bbfa98dd506f0e81008ebe3bf7ecaca
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ Dieser Artikel behandelt das Sichern Ihrer Umgebungen mit Momentaufnahmen der Ad
 * Architekturpläne: Starter, Pro Legacy, Pro
 
 ## Umgebungs-Snapshot, Pro-Plan
+
+### Vorbereiten eines Upgrades
+
+Wenn Sie Ihre Datenbank zur Vorbereitung auf ein Upgrade sichern müssen, sind Sie dafür verantwortlich, Ihre eigene Sicherung zu erstellen und zu validieren, bevor Sie fortfahren. Snapshots zur Notfallwiederherstellung sind nur für die Datenbankwiederherstellung vorgesehen, wenn das Upgrade nicht erfolgreich war, nicht als Ersatz für Sicherungskopien zur Upgrade-Vorbereitung.
+
+Wenn Sie aufgrund eines Fehlers keine eigene Sicherung erstellen können, [&#x200B; Sie sich an den &#x200B;](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support) und nehmen Sie die Details zum Sicherungsfehler in Ihr Ticket auf.
+
+Hinweis: Ein Snapshot zur Notfallwiederherstellung ist ein zuvor erfasster Systemwiederherstellungspunkt, kein manuell erstelltes Backup für ein geplantes Upgrade, und kann nicht bei Bedarf generiert werden. Wenn ein Snapshot angefordert wird, wird der neueste verfügbare Wiederherstellungspunkt angegeben, sodass alle nach diesem Punkt vorgenommenen Änderungen möglicherweise nicht wiederherstellbar sind.
 
 ### Staging- und Produktionsumgebungen
 
