@@ -25,7 +25,7 @@ Dieser Artikel behandelt das Sichern Ihrer Umgebungen mit Momentaufnahmen der Ad
 
 Wenn Sie Ihre Datenbank zur Vorbereitung auf ein Upgrade sichern müssen, sind Sie dafür verantwortlich, Ihre eigene Sicherung zu erstellen und zu validieren, bevor Sie fortfahren. Snapshots zur Notfallwiederherstellung sind nur für die Datenbankwiederherstellung vorgesehen, wenn das Upgrade nicht erfolgreich war, nicht als Ersatz für Sicherungskopien zur Upgrade-Vorbereitung.
 
-Wenn Sie aufgrund eines Fehlers keine eigene Sicherung erstellen können, [ Sie sich an den ](https://experienceleague.adobe.com/home?support-tab=home#support) und nehmen Sie die Details zum Sicherungsfehler in Ihr Ticket auf.
+Wenn Sie aufgrund eines Fehlers keine eigene Sicherung erstellen können, [&#x200B; Sie sich an den &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support) und nehmen Sie die Details zum Sicherungsfehler in Ihr Ticket auf.
 
 Hinweis: Ein Snapshot zur Notfallwiederherstellung ist ein zuvor erfasster Systemwiederherstellungspunkt, kein manuell erstelltes Backup für ein geplantes Upgrade, und kann nicht bei Bedarf generiert werden. Wenn ein Snapshot angefordert wird, wird der neueste verfügbare Wiederherstellungspunkt angegeben, sodass alle nach diesem Punkt vorgenommenen Änderungen möglicherweise nicht wiederherstellbar sind.
 
@@ -33,7 +33,7 @@ Hinweis: Ein Snapshot zur Notfallwiederherstellung ist ein zuvor erfasster Syste
 
 * Manuelle Momentaufnahmen sind für Staging- und Produktionsumgebungen in Pro Plan nicht verfügbar.
 * Automatische Momentaufnahmen werden erstellt **unabhängig vom Live-Status** Ihrer Site (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen sind nicht öffentlich zugänglich, da sie in einem separaten System gespeichert sind.
-Sie können [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Nachdem das Infrastruktur-Team den Schnappschuss bereitgestellt hat, führen Sie den folgenden Befehl an der Stelle aus, an der der Schnappschuss platziert wurde, um den Zeitstempel zu ermitteln, an dem er ursprünglich erstellt wurde:
+Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Nachdem das Infrastruktur-Team den Schnappschuss bereitgestellt hat, führen Sie den folgenden Befehl an der Stelle aus, an der der Schnappschuss platziert wurde, um den Zeitstempel zu ermitteln, an dem er ursprünglich erstellt wurde:
 
   `cat /mnt/recovery/vol-<volume_id>/snap.time`
 
@@ -44,7 +44,7 @@ Sie können [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.
 * Die Bereitstellung ist 7 Tage lang verfügbar und die Aufbewahrungsfrist kann nicht verlängert werden. Wenn Sie einen Schnappschuss über diesen Zeitraum hinaus beibehalten möchten, müssen Sie ihn in einen anderen Ordner oder externen Server innerhalb dieses Zeitraums kopieren
 * Der Support generiert bei Bedarf keine manuellen Momentaufnahmen. Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Automatische Momentaufnahmen werden erstellt **unabhängig vom Live-Status** Ihrer Site (Momentaufnahmen werden auch für Sites erstellt, die noch nicht gestartet wurden). Automatische Sicherungen werden in einem separaten System gespeichert und sind für die Öffentlichkeit nicht zugänglich.
-Sie können [ein Adobe Commerce-Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Der Support generiert bei Bedarf keine manuellen Momentaufnahmen.
+Sie können [ein Adobe Commerce-Support-Ticket &#x200B;](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide), um eine spezielle Sicherung anzufordern oder eine Wiederherstellung aus einer bestimmten Sicherung durchzuführen, wobei Sie Datum, Uhrzeit und Zeitzone im Ticket angeben. Der Support generiert bei Bedarf keine manuellen Momentaufnahmen.
 Beachten Sie außerdem, dass die -Unterstützung nicht das Rollback oder die Wiederherstellung der Datenbank für Sie durchführt - sie rufen den Snapshot ab, aber Sie müssen die Datenbank selbst wiederherstellen.
 * Die Backups werden mithilfe der **verschlüsselten Momentaufnahmen des Amazon Web Services Elastic Block Store (AWS EBS))**.
 * Umgebungs-Snapshots umfassen Ihr gesamtes System (Dateisystem und Datenbank).
