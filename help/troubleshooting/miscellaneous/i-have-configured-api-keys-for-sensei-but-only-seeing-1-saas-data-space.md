@@ -57,4 +57,4 @@ Magento Open Source-Kunden, die Adobe Payment Services verwenden, können auch e
 
 ## Verwandtes Lesen
 
-[SaaS-Datenspeicherbereitstellung](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas?lang=en#saas-data-space-provisioning)
+[SaaS-Datenspeicherbereitstellung](https://experienceleague.adobe.com/de/docs/commerce/user-guides/integration-services/saas?lang=en#saas-data-space-provisioning)
