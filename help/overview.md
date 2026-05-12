@@ -15,8 +15,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Das Handbuch zur Adobe Commerce-Support-Wissensdatenbank wird umstrukturiert und seine Inhalte werden an andere Stellen in Adobe Experience League verschoben. Verwenden Sie die [Experience League-Suchseite und -](https://experienceleague.adobe.com/en/search#), um die neuesten Inhalte zur Fehlerbehebung bei Adobe Commerce und zu Support zu finden.
+>Das Handbuch zur Adobe Commerce-Support-Wissensdatenbank wird umstrukturiert und seine Inhalte werden an andere Stellen in Adobe Experience League verschoben. Verwenden Sie die [Experience League-Suchseite und -](https://experienceleague.adobe.com/de/search#), um die neuesten Inhalte zur Fehlerbehebung bei Adobe Commerce und zu Support zu finden.
 
 ![Homepage der Wissensdatenbank](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-Die Informationen in dieser Wissensdatenbank ergänzen die [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs) und das [Adobe Commerce-Händlerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) sowie andere Adobe Commerce-Publikationen. Es behandelt Fehlerbehebung und Best Practices, enthält Ankündigungen, beantwortet häufig gestellte Fragen und zeigt bestimmte Szenarien auf, die (aus welchen Gründen auch immer) in der offiziellen Dokumentation nicht erwähnt wurden.
+Die Informationen in dieser Wissensdatenbank ergänzen die [Adobe Commerce-Entwicklerdokumentation](https://developer.adobe.com/commerce/docs) und das [Adobe Commerce-Händlerhandbuch](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=de) sowie andere Adobe Commerce-Publikationen. Es behandelt Fehlerbehebung und Best Practices, enthält Ankündigungen, beantwortet häufig gestellte Fragen und zeigt bestimmte Szenarien auf, die (aus welchen Gründen auch immer) in der offiziellen Dokumentation nicht erwähnt wurden.
