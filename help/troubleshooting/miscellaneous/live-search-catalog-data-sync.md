@@ -4,9 +4,9 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+source-git-commit: beca5aa3fa796e4b12afc4882024db718b65ac0c
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Pr
 
 >[!NOTE]
 >
->Die Tabellennamen `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes` werden ab `cde_products_feed` Version 4.2.1 nun `cde_product_attributes_feed` und [!DNL Live Search] genannt. Händler, die mit Versionen vor 4.2.1 arbeiten, suchen nach den Daten in den alten Tabellennamen, `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes`.
+>Die Tabellennamen `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes` werden ab [!DNL Live Search] Version 4.2.1 nun `cde_products_feed` und `cde_product_attributes_feed` genannt. Händler, die mit Versionen vor 4.2.1 arbeiten, suchen nach den Daten in den alten Tabellennamen, `catalog_data_exporter_products` und `catalog_data_exporter_product_attributes`.
 
 <u>Schritte zur Reproduktion</u>
 
@@ -158,5 +158,5 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ## Verwandtes Lesen
 
 * [Onboarding Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html?lang=de) in unserer Benutzerdokumentation
-* [Überprüfen Sie Protokolle und Fehlerbehebung bei Adobe Commerce SaaS-Datenexporten und -](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/saas-data-export/troubleshooting-logging) im Adobe Commerce SaaS-Datenexporthandbuch
+* [Überprüfen Sie Protokolle und Fehlerbehebung bei Adobe Commerce SaaS-Datenexporten und -](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging) im Adobe Commerce SaaS-Datenexporthandbuch
 * [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
