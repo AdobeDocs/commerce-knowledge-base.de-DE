@@ -38,7 +38,7 @@ Die Aktualisierung auf B2B-Version 1.5.2 schlägt aufgrund der fehlenden `REGEXP
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Weisen Sie einer übergeordneten Firma eine Firma zu, um die Unternehmenshierarchie festzulegen. Weitere Informationen finden [&#x200B; unter „Verwalten &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) Unternehmenshierarchie“ im Adobe Commerce B2B-Handbuch.
+1. Weisen Sie einer übergeordneten Firma eine Firma zu, um die Unternehmenshierarchie festzulegen. Weitere Informationen finden [&#x200B; unter „Verwalten &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) Unternehmenshierarchie“ im Adobe Commerce B2B-Handbuch.
 1. Aktualisieren Sie B2B auf Version 1.5.2.
 
 <u>Erwartete Ergebnisse</u>:
@@ -64,7 +64,7 @@ Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
    composer update magento/module-b2b
    ```
 
-1. Wenden Sie den beigefügten [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) an. Anweisungen finden Sie [So wenden Sie einen von Adobe bereitgestellten Composer](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patch in unserer Support-Wissensdatenbank an.
+1. Wenden Sie den beigefügten [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) an. Anweisungen finden Sie [So wenden Sie einen von Adobe bereitgestellten Composer](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patch in unserer Support-Wissensdatenbank an.
 1. `bin/magento setup:upgrade` ausführen.
 
 ### Anwenden eines Patches mithilfe von Cloud-Patches
@@ -78,4 +78,4 @@ Gehen Sie für Adobe Commerce auf Cloud-Infrastruktur wie folgt vor:
    composer update magento/magento-cloud-patches
    ```
 
-1. Übergeben Sie die Änderungen und übertragen Sie sie, um eine erneute Bereitstellung zu starten. Anweisungen finden [&#x200B; unter „Anwenden &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) Patches“ in unserem Handbuch zu Adobe Commerce on Cloud.
+1. Übergeben Sie die Änderungen und übertragen Sie sie, um eine erneute Bereitstellung zu starten. Anweisungen finden [&#x200B; unter „Anwenden &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) Patches“ in unserem Handbuch zu Adobe Commerce on Cloud.

@@ -47,7 +47,7 @@ Das ist kein Bug. Zum Einrichten einer übergeordneten Verzweigung für eine and
 
 ## Lösung
 
-Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Siehe [Adobe Commerce in der Cloud-Infrastruktur > Bitbucket-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) in unserer Entwicklerdokumentation.
+Eine übergeordnete Verzweigung kann erst festgelegt werden, nachdem der Händler eine neu erstellte Verzweigung gepusht und aktiviert hat. Siehe [Adobe Commerce in der Cloud-Infrastruktur > Bitbucket-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/integrations/bitbucket#create-a-cloud-branch) in unserer Entwicklerdokumentation.
 
 Um eine übergeordnete Seite für die vorhandene Verzweigung auf dem Server zu aktualisieren, verwenden Sie den Befehl `magento-cloud environment:info` in der Magento-Cloud-CLI.
 
@@ -59,4 +59,4 @@ Dadurch wird die übergeordnete Verzweigung für die aktuell ausgecheckte Verzwe
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce auf Cloud-Infrastruktur > magento-cloud CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) in unserer Entwicklerdokumentation.
+* [Adobe Commerce auf Cloud-Infrastruktur > magento-cloud CLI](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) in unserer Entwicklerdokumentation.
