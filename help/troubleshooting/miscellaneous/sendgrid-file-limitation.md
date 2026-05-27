@@ -52,9 +52,9 @@ Staging2:
 ## Abhilfe
 
 * Verwenden Sie keine Anhänge mit mehr als 6 MB oder 10 MB.
-* Erwägen Sie die Verwendung eines Remote-SMTP-Servers auf Ihrer Adobe Commerce-Instanz. Anweisungen hierzu finden Sie unter [Konfigurieren von E-Mail](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) in unserem Admin-Systemhandbuch.
+* Erwägen Sie die Verwendung eines Remote-SMTP-Servers auf Ihrer Adobe Commerce-Instanz. Anweisungen hierzu finden Sie unter [Konfigurieren von E-Mail](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=de) in unserem Admin-Systemhandbuch.
 * Konfigurieren Sie Ihren Server neu, sodass Dateien in Ihrem Modul gespeichert werden können, und fügen Sie dann den Link zu den Dateien in den E-Mails hinzu.
 
 ## Verwandtes Lesen
 
-* [[!DNL SendGrid] E-Mail](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html)Service) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen.
+* [[!DNL SendGrid] E-Mail](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=de)Service) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen.

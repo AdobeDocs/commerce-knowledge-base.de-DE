@@ -60,7 +60,7 @@ Wenn die E-Mail in Ihrem Spam-Ordner angezeigt wird, ist die E-Mail-Authentifizi
 
 Wenn Sie den von Adobe verwalteten SendGrid-Service verwenden:
 
-[Senden Sie ein Support-Ticket](https://experienceleague.adobe.com/home?support-tab=home#support) in dem Sie anfordern, dass Ihre Versand-Domain mit SendGrid authentifiziert *auch als „weiß gekennzeichnet* bezeichnet) wird.
+[Senden Sie ein Support-Ticket](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support) in dem Sie anfordern, dass Ihre Versand-Domain mit SendGrid authentifiziert *auch als „weiß gekennzeichnet* bezeichnet) wird.
 Dieser Prozess umfasst das Hinzufügen von DNS-Einträgen (DKIM und SPF), um SendGrid zu autorisieren, E-Mails im Namen Ihrer Domain zu senden, was die Wahrscheinlichkeit erhöht, dass Ihre E-Mails an den Posteingang statt an den Spam-Ordner gesendet werden.
 
 Wenn Sie Ihr eigenes SendGrid-Konto verwenden:
@@ -74,4 +74,4 @@ Sie sind dafür verantwortlich, Ihre Domain-Authentifizierungseinstellungen dire
 
 ## Verwandtes Lesen
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) in unserer Entwicklerdokumentation.
+* [SendGrid](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/project/sendgrid) in unserer Entwicklerdokumentation.

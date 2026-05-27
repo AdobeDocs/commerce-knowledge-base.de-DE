@@ -1,6 +1,6 @@
 ---
 title: Abonnieren von Adobe Commerce-Statusaktualisierungen
-description: In diesem Artikel wird erläutert, wie Sie den Adobe Commerce-Status auf [Adobe-Status](https://status.adobe.com) für Statuswarnungen, Updates und Informationen zu größeren Ausfällen oder Wartungsarbeiten abonnieren können.
+description: In diesem Artikel wird erläutert, wie Sie den Adobe Commerce-Status auf [Adobe-Status](https://status.adobe.com/de-de) für Statuswarnungen, Updates und Informationen zu größeren Ausfällen oder Wartungsarbeiten abonnieren können.
 exl-id: 17b39925-4726-45da-b55d-c04c9b782df1
 source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
 workflow-type: tm+mt
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Abonnieren von Statusaktualisierungen zu Adobe Magento
 
-1. Zum Status [Adobe wechseln](https://status.adobe.com).
+1. Zum Status [Adobe wechseln](https://status.adobe.com/de-de).
 1. Klicken Sie **Anmelden**.
 1. Melden Sie sich mit Ihren Adobe-Anmeldeinformationen an.
 1. Wählen Sie **Firmen- oder Schulkonto** aus, falls die Option angezeigt wird.

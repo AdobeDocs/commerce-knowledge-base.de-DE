@@ -50,7 +50,7 @@ Wenn eine Bereitstellung fehlschlug, nachdem eine Änderung am Primären Kontakt
 
 ### Deaktivieren des Zugriffsschlüssels
 
-Wenn Sie keinen Zugriff auf das [Commerce Marketplace](https://marketplace.magento.com/)-Konto haben, das mit dem alten Schlüssel verknüpft ist, [kontaktieren Sie den Adobe Commerce-Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um den Schlüssel zu deaktivieren.
+Wenn Sie keinen Zugriff auf das [Commerce Marketplace](https://marketplace.magento.com/)-Konto haben, das mit dem alten Schlüssel verknüpft ist, [kontaktieren Sie den Adobe Commerce-Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um den Schlüssel zu deaktivieren.
 
 Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel verknüpft ist, führen Sie die folgenden Schritte aus, um den Schlüssel zu deaktivieren:
 
@@ -64,4 +64,4 @@ Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel v
 
 ## Verwandtes Lesen
 
-* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.
+* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.
