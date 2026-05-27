@@ -6,7 +6,7 @@ feature: Configuration
 role: Developer
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Zuvor wurde in unserer Cloud-Umgebung der Jenkins-Server zum Ausführen von [!DN
 
 ## Lösung
 
-1. Wenden Sie sich an den [Adobe Commerce](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)Support, um die selbstverwaltete [!DNL crons] aktivieren zu lassen.
+1. Wenden Sie sich an den [Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket)Support, um die selbstverwaltete [!DNL crons] aktivieren zu lassen.
 1. Bearbeiten Sie die `.magento.app.yaml` im Stammverzeichnis des Codes für Adobe Commerce in der [!DNL Git]. Folgendes hinzufügen:
 
    ```yaml
@@ -71,5 +71,5 @@ Um zu überprüfen, ob die selbst verwaltete [!DNL cron] aktiviert ist, führen 
 
 ## Verwandtes Lesen
 
-* [Setup [!DNL cron] jobs](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Setup [!DNL cron] jobs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) in unserer Entwicklerdokumentation
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

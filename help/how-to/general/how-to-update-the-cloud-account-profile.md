@@ -6,7 +6,7 @@ role: Admin, Developer
 exl-id: b0c9dbcf-9745-494d-a662-80c5c6378068
 source-git-commit: bc8dbb1b43c3f2ad8f2ac214fd303f6a4d3e3412
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -52,4 +52,4 @@ Das Ändern dieses Felds hängt von Ihren individuellen Umständen ab.
 
 Wenn Sie das Eigentum an Ihrem aktuellen Konto auf einen neuen Besitzer oder eine andere E-Mail-Adresse übertragen müssen, müssen Sie die mit dem Konto verknüpfte E-Mail-Adresse des primären Benutzers aktualisieren.
 
-Siehe: [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=de](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=de)
+Siehe: [https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-transfer.html?lang=en)

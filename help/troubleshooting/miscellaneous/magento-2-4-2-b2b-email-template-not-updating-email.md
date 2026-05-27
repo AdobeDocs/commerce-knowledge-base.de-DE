@@ -6,7 +6,7 @@ feature: B2B, Communications
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ Führen Sie den Cron-Auftrag oder Verbraucher manuell aus, um die neuen Informat
 
 ## Verwandtes Lesen
 
-* [Verwalten von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) in unserer Entwicklerdokumentation.
+* [Verwalten von ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) in unserer Entwicklerdokumentation.

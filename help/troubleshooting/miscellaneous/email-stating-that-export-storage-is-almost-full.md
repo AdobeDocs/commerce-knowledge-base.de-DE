@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
 source-git-commit: 11cf981c7ebe813219a0cd311632eafce086bbf6
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---
@@ -79,4 +79,4 @@ Führen Sie diese Schritte aus, um die Nutzung des Exportspeichers zu überprüf
 
 ## Verwandtes Lesen
 
-[Überprüfen Sie &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.
+[Überprüfen Sie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.

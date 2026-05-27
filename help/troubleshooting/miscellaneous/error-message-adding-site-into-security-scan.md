@@ -6,7 +6,7 @@ feature: Cache, Compliance, Console, Security
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Der Benutzer kann keine Websites zur [Commerce-Sicherheitsprüfung hinzufügen](
 
 Wenn Sie weiterhin keine Sites hinzufügen können, führen Sie die folgenden Schritte aus:
 
-1. Platzieren Sie einen weiteren HTML-Kommentar auf der Seite:
+1. Fügen Sie einen weiteren HTML-Kommentar auf der Seite ein:
 
    ```HTML
    <!-- MAGEID:Your magento.com ID, EMAIL:your email address -->
@@ -53,4 +53,4 @@ Wenn Sie weiterhin keine Sites hinzufügen können, führen Sie die folgenden Sc
 
 ## Verwandtes Lesen
 
-* [Security Scan](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/security-scan) in unserem Benutzerhandbuch.
+* [Security Scan](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) in unserem Benutzerhandbuch.

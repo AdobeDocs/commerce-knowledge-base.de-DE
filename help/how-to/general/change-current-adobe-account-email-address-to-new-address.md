@@ -5,14 +5,14 @@ exl-id: ca549d38-0d62-4206-9727-0ed85b733dc3
 feature: Communications
 source-git-commit: 95d4507be9ac06a4cb3b1150000d7f9df30d35f8
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # E-Mail-Adresse des aktuellen Adobe-Kontos ändern
 
-In diesem Artikel wird erläutert, wie Sie die aktuelle E-Mail-Adresse, die im [Adobe-Konto](https://account.adobe.com/) registriert ist, in eine neue Adresse ändern, die derzeit nicht im [Adobe-Konto](https://account.adobe.com/) oder dem [Magento-Konto registriert &#x200B;](https://account.magento.com/).
+In diesem Artikel wird erläutert, wie Sie die aktuelle E-Mail-Adresse, die im [Adobe-Konto](https://account.adobe.com/) registriert ist, in eine neue Adresse ändern, die derzeit nicht im [Adobe-Konto](https://account.adobe.com/) oder dem [Magento-Konto registriert ](https://account.magento.com/).
 
 ## Betroffene Produkte und Versionen
 
@@ -28,7 +28,7 @@ Wenn Sie keinen Zugriff auf die aktuelle E-Mail-Adresse haben, richten Sie mithi
 
 Gehen Sie wie folgt vor, um die E-Mail-Adresse zu ändern:
 
-1. Setzt das mit der alten E-Mail-Adresse verwendete Passwort zurück. Befolgen Sie die Anweisungen unter [Vergessenes Kennwort zurücksetzen](https://helpx.adobe.com/de/manage-account/using/change-or-reset-password.html) in der Adobe-Hilfe.
+1. Setzt das mit der alten E-Mail-Adresse verwendete Passwort zurück. Befolgen Sie die Anweisungen unter [Vergessenes Kennwort zurücksetzen](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) in der Adobe-Hilfe.
 1. Der Link zum Zurücksetzen des Kennworts wird mit Anweisungen an das Postfach des aktuellen Besitzers gesendet.
 1. Navigieren Sie zur Seite [Adobe-Konto](https://account.adobe.com), um sich mit der neuen E-Mail anzumelden und das Kennwort einzurichten.
 
@@ -50,9 +50,9 @@ Nachdem Sie die E-Mail-Adresse für Ihre MAGE-ID geändert haben, müssen Sie au
 ### Commerce Marketplace-E-Mail verifizieren
 
 1. Melden Sie sich bei Ihrem [Commerce Marketplace-](https://commercemarketplace.adobe.com/) an und bestätigen Sie, dass Ihre Konto-E-Mail auf die neue Adresse aktualisiert wurde.
-1. Wenn die E-Mail nicht aktualisiert wurde, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/support#home) ein, um die E-Mail zum Commerce Marketplace-Konto zu korrigieren.
+1. Wenn die E-Mail nicht aktualisiert wurde, reichen Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/support#home) ein, um die E-Mail zum Commerce Marketplace-Konto zu korrigieren.
 
 ### Bitten Sie den Support, die Aktualisierung des internen Kontos abzuschließen
 
-1. Senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/de/support#home) mit der Frage, ob wir alle erforderlichen internen Aktualisierungen durchführen sollen (z. B. die Aktualisierung der Verknüpfung zwischen Ihren alten und neuen Adobe-IDs und Ihrer MAGE-ID).
+1. Senden Sie ein [Support-Ticket](https://experienceleague.adobe.com/en/support#home) mit der Frage, ob wir alle erforderlichen internen Aktualisierungen durchführen sollen (z. B. die Aktualisierung der Verknüpfung zwischen Ihren alten und neuen Adobe-IDs und Ihrer MAGE-ID).
 1. Wenn Sie bereits ein Support-Ticket geöffnet haben, da die Commerce Marketplace-E-Mail im vorherigen Abschnitt nicht aktualisiert wurde, können Sie dasselbe Ticket verwenden, um diese zusätzlichen internen Aktualisierungen anzufordern.

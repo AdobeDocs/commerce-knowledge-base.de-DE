@@ -6,7 +6,7 @@ feature: Cloud, Paas
 role: Developer
 source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -35,23 +35,23 @@ Erfolgreich angemeldet.
 
 <u>Tatsächliches </u>:
 
-Sie werden zu einer Seite weitergeleitet, auf der Sie sich mit einem Adobe-Konto anmelden, und die Anmeldeinformationen funktionieren nicht.
+Sie werden zu einer Seite weitergeleitet, auf der Sie sich mit einem Adobe-Konto anmelden. Die Anmeldeinformationen funktionieren nicht.
 
 ![adobe-login-two](assets/adobe-login-two.png)
 
 
 ## Ursache
 
-Im Rahmen unserer Integration von Adobe Commerce mit anderen Adobe-Lösungen müssen alle Anwender eine Adobe-Anmeldung erstellen - falls noch keine vorhanden ist - und dabei dieselbe E-Mail-Adresse verwenden, die mit ihrer MageID verbunden ist.
+Im Rahmen unserer Integration von Adobe Commerce mit anderen Adobe-Lösungen müssen alle Benutzenden eine Adobe-Anmeldung erstellen - falls noch keine vorhanden ist - und dabei dieselbe E-Mail-Adresse verwenden, die mit ihrer MageID verbunden ist.
 
 ## Lösung
 
 Sie können sich wie folgt beim Konto anmelden:
 
-- Ein bestehendes Firmen-/Privatkonto für Adobe.
+- Ein bestehendes Firmen-/Privatkonto in Adobe.
 - Wenn Sie kein Adobe-Konto haben, erstellen Sie eines mit derselben E-Mail-Adresse.
 
-Anweisungen hierzu finden Sie unter [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html?lang=de) in Adobe Experience League.
+Anweisungen hierzu finden Sie unter [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) in Adobe Experience League.
 
 ## Verwandtes Lesen
 

@@ -6,7 +6,7 @@ feature: Cache, Commerce Intelligence, Console
 role: Developer
 source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Nachdem Sie sich vergewissert haben, dass die E-Mail-Adresse korrekt ist, versuc
 
 ## Zurücksetzen des Kennworts versuchen
 
-Wenn Sie überprüft haben, dass Sie die richtige E-Mail verwenden, versuchen Sie, Ihr Kennwort zurückzusetzen. Sie können die Datei &quot;**?** Link auf der Anmeldeseite aus dem vorherigen Abschnitt, um eine E-Mail zum Zurücksetzen des Kennworts Trigger.
+Wenn Sie überprüft haben, dass Sie die richtige E-Mail verwenden, versuchen Sie, Ihr Kennwort zurückzusetzen. Sie können die Datei **Forgot?** Link auf der Anmeldeseite aus dem vorherigen Abschnitt zum Trigger einer E-Mail zum Zurücksetzen des Kennworts.
 
 Wenn die E-Mail zunächst nicht angezeigt wird, schauen Sie unbedingt in Ihren Junk-E-Mail-Ordner. Manchmal werden sogar gut gemeinte E-Mails mit Junk verwechselt. **Beachten Sie, dass die temporären Zugriffs-Links in diesen E-Mails nur einmal in Ordnung sind!**
 
@@ -42,11 +42,11 @@ Wenn Sie immer noch gesperrt sind, stellen Sie sicher, dass Ihre E-Mail-Adresse 
 >
 >Dieser Schritt ist nicht immer erforderlich. Ein proaktiver Abschluss dieses Schritts könnte jedoch den Zeitaufwand für das Hin- und Herbewegen einer Support-Anfrage reduzieren.
 
-Wenn Sie immer noch nicht auf Ihr Konto zugreifen können, empfehlen wir, nach Fehlern zu suchen und ein Ticket an unser Support-Team zu senden. Wie kannst du das machen? Öffnen Sie dazu die Entwickler-Tools Ihres Browsers und machen Sie einen Screenshot aller Fehler, die in der Konsole oder im Site-Protokollfenster angezeigt werden. Auf der folgenden GIF öffne ich die Entwickler-Tools für Google Chrome:
+Wenn Sie immer noch nicht auf Ihr Konto zugreifen können, empfehlen wir, nach Fehlern zu suchen und ein Ticket an unser Support-Team zu senden. Wie kannst du das machen? Öffnen Sie dazu die Entwickler-Tools Ihres Browsers und machen Sie einen Screenshot aller Fehler, die in der Konsole oder im Site-Protokollfenster angezeigt werden. In der folgenden GIF öffne ich die Entwickler-Tools für Google Chrome:
 
 ![Öffnen der Entwicklertools von Chrome.](assets/Opening_Chrome_dev_tools.gif)
 
-Im obigen Beispiel haben wir die gängigste Methode (**Rechtsklick** > **Inspect**) zum Öffnen der Konsole verwendet. Wenn Ihr Browser diese Methode nicht hat oder Sie Hilfe benötigen, verwenden Sie die folgenden Dokumentations-Links für den verwendeten Webbrowser:
+Im obigen Beispiel haben wir die gängigste Methode zum Öffnen der Konsole verwendet (**Rechtsklick** > **Überprüfen**). Wenn Ihr Browser diese Methode nicht hat oder Sie Hilfe benötigen, verwenden Sie die folgenden Dokumentations-Links für den verwendeten Webbrowser:
 
 <table>
 <tbody>
@@ -70,6 +70,6 @@ Keine Sorge! Erstellen Sie ein neues Support-Ticket (geben Sie unbedingt die E-M
 
 ## Verwandte Themen in unserer Support-Wissensdatenbank:
 
-* [Hinzufügen eines neuen Benutzers und Festlegen von Berechtigungen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=de)
-* [Wie aktualisiere ich meine E-Mail-Adresse oder mein Passwort?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=de)
-* [Wie setze ich mein Passwort zurück?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=de)
+* [Hinzufügen eines neuen Benutzers und Festlegen von Berechtigungen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
+* [Wie aktualisiere ich meine E-Mail-Adresse oder mein Passwort?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
+* [Wie setze ich mein Passwort zurück?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)
