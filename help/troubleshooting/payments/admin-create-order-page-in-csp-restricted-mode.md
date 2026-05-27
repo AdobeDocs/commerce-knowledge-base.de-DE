@@ -6,27 +6,27 @@ role: Developer
 exl-id: c1a0886a-df1f-418a-9e4d-562b28a0d8b3
 source-git-commit: 6d0c4ea9576440d66be3b8053a6e362b8ac0ebcb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
 
 # Fehlerbehebung bei der Erstellung einer Auftragsseite im eingeschränkten [!UICONTROL CSP]
 
-In diesem Artikel finden Sie Erläuterungen und Fehlerbehebungen für Adobe Commerce 2.4.7-Probleme beim Erstellen einer Bestellung auf der Admin-Seite mit **[!UICONTROL CSP restricted mode]** ist *Aktiviert* mit der Fehlermeldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Anweisung verstößt: „script-src …*&quot; im Protokoll der Browser-Konsole.
+Dieser Artikel enthält Erläuterungen und Fehlerbehebungen für Adobe Commerce 2.4.7-Probleme beim Erstellen einer Bestellung auf der Admin-Seite mit **[!UICONTROL CSP restricted mode]** ist *Aktiviert* mit der Meldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es die folgende Content Security Policy-Anweisung verletzt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 ## Betroffene Produkte und Versionen
 
 Adobe Commerce auf Cloud-Infrastruktur, Adobe Commerce On-Premise und Magento Open Source:
 
-* 2,4,7
+* 2.4.7
 * 2.4.6-pX
-* 2,4,5-pX
+* 2.4.5-pX
 * 2.4.4-pX
 
 ## Problem - Admin **Bestellung erstellen** Seite ist fehlerhaft oder kann nicht geladen werden
 
-Die Admin **Seite „Bestellung erstellen** ist fehlerhaft oder kann nicht geladen werden, mit der Fehlermeldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Anweisung verstößt: „script-src …*&quot; im Protokoll der Browser-Konsole.
+Die Admin **Seite „Bestellung erstellen** ist fehlerhaft oder kann nicht geladen werden, mit dem Skript &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es die folgende Content Security Policy-Anweisung verletzt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -95,7 +95,7 @@ Adobe Commerce und Magento Open Source 2.4.7 und höher enthalten einen **[!UICO
 
 ## Problem - Zahlungsmethode fehlt oder funktioniert nicht
 
-Die Zahlungsmethode fehlt oder funktioniert nicht auf der Admin-Seite **Bestellerstellung** mit der Fehlermeldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Direktive verstößt: „script-src …*&quot; im Protokoll der Browser-Konsole.
+Die Zahlungsmethode fehlt oder funktioniert nicht auf der Admin-Seite **Bestellerstellungsseite** mit der Meldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Anweisung verstößt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -168,7 +168,7 @@ Adobe Commerce und Magento Open Source 2.4.7 und höher enthalten einen **[!UICO
 
 ## Problem - Der Administrator kann keine Bestellung aufgeben
 
-Ein Administrator kann keine Bestellung auf der Admin-Seite **Bestellung erstellen** mit der Fehlermeldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Direktive verstößt: „script-src …*&quot; im Protokoll der Browser-Konsole.
+Ein Administrator kann keine Bestellung auf der Admin-Seite **Bestellung erstellen** mit der Meldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Anweisung verstößt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 <u>Schritte zur Reproduktion</u>:
 

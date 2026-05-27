@@ -5,7 +5,7 @@ exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -31,5 +31,5 @@ Wenn das ausgewählte Hauptmenü beispielsweise Knoten 1 mit `auto_increment_off
 
 Siehe in unserer Entwicklerdokumentation:
 
-* [Cloud für Adobe Commerce > Pro-Architektur > Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Cloud für Adobe Commerce > Installationsvoraussetzungen: Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/overview)
+* [Cloud für Adobe Commerce > Pro-Architektur > Sicherung und Notfallwiederherstellung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud für Adobe Commerce > Installationsvoraussetzungen: Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)
