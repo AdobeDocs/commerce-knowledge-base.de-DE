@@ -65,7 +65,7 @@ Dieser Prozess umfasst das Hinzufügen von DNS-Einträgen (DKIM und SPF), um Sen
 
 Wenn Sie Ihr eigenes SendGrid-Konto verwenden:
 
-Sie sind dafür verantwortlich, Ihre Domain-Authentifizierungseinstellungen direkt in Ihrem SendGrid-Konto-Dashboard zu verwalten. Weitere Informationen finden Sie [ der SendGrid-](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication) unter „Einrichten der Domain-Authentifizierung“.
+Sie sind dafür verantwortlich, Ihre Domain-Authentifizierungseinstellungen direkt in Ihrem SendGrid-Konto-Dashboard zu verwalten. Weitere Informationen finden Sie [&#x200B; der SendGrid-](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication) unter „Einrichten der Domain-Authentifizierung“.
 
 >[!NOTE]
 >

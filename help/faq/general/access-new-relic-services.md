@@ -24,7 +24,7 @@ Kunden, die Pro Architecture verwenden, erhalten den New Relic Infrastructure-Se
 
 **Kunden, die Pro Architecture verwenden und ihr Passwort vergessen oder ihr New Relic Infrastructure-Konto nicht aktiviert haben:**
 
-Wenn einige Kunden die E-Mail mit einem Aktivierungs-Link von New Relic erhalten und ihr New Relic-Konto registriert haben, aber anschließend ihre Anmeldeinformationen vergessen haben, müssen sie auf die Anmeldeseite von [New Relic klicken ](https://login.newrelic.com/login) auf „Kennwort vergessen?“. Der Benutzername ist die E-Mail-Adresse. Sie müssen ihr Kennwort zurücksetzen, um sich wieder bei New Relic anzumelden. Kunden, die sich nicht an den Erhalt der E-Mail erinnern und New Relic Infrastructure verwenden möchten, sollten ebenfalls diese Schritte ausführen.
+Wenn einige Kunden die E-Mail mit einem Aktivierungs-Link von New Relic erhalten und ihr New Relic-Konto registriert haben, aber anschließend ihre Anmeldeinformationen vergessen haben, müssen sie auf die Anmeldeseite von [New Relic klicken &#x200B;](https://login.newrelic.com/login) auf „Kennwort vergessen?“. Der Benutzername ist die E-Mail-Adresse. Sie müssen ihr Kennwort zurücksetzen, um sich wieder bei New Relic anzumelden. Kunden, die sich nicht an den Erhalt der E-Mail erinnern und New Relic Infrastructure verwenden möchten, sollten ebenfalls diese Schritte ausführen.
 
 **Kunden, die New Relic verwenden möchten, profitieren von der Starter-Planarchitektur von Adobe Commerce für Cloud-Infrastrukturen:**
 

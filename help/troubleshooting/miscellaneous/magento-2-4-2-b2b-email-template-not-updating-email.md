@@ -45,4 +45,4 @@ Führen Sie den Cron-Auftrag oder Verbraucher manuell aus, um die neuen Informat
 
 ## Verwandtes Lesen
 
-* [Verwalten von ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) in unserer Entwicklerdokumentation.
+* [Verwalten von &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) in unserer Entwicklerdokumentation.

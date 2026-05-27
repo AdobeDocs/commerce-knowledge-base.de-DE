@@ -79,4 +79,4 @@ Führen Sie diese Schritte aus, um die Nutzung des Exportspeichers zu überprüf
 
 ## Verwandtes Lesen
 
-[Überprüfen Sie ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.
+[Überprüfen Sie &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) dedizierten Clustern in unserer Support-Wissensdatenbank.
