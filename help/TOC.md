@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 3bec25fb1d0ade6c36c41135075edc4ba3610d30
+source-git-commit: 1f8558e14c82e9f5ca3c050b15394c1361bdd179
 workflow-type: tm+mt
-source-wordcount: '1801'
+source-wordcount: '1796'
 ht-degree: 1%
 
 ---
@@ -12,8 +12,6 @@ ht-degree: 1%
 # Wissensdatenbank zu Adobe Commerce {#kb}
 
 * [Adobe Commerce Support-Wissensdatenbank](/help/overview.md)
-* Support-Tools {#support-tools}
-   * [Support-Tools - Übersicht](/help/support-tools/overview.md)
 * Ankündigungen {#announcements}
    * [Ankündigungen - Übersicht](/help/announcements/overview.md)
    * Adobe Commerce-Ankündigungen {#commerce-announcements}
@@ -75,7 +73,7 @@ ht-degree: 1%
       * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
    * Verschiedenes {#miscellaneous}
       * [Behebung von nicht aktualisierten  [!DNL Commerce Data Exporter] - [!DNL cron] -Fehlern mit Changelog-Tabelle existiert nicht](/help/troubleshooting/miscellaneous/mdee-table-does-not-exist.md)
-      * [&#x200B; [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
+      * [ [!DNL opensearch] -Suchmaschine existiert nicht. Zurückfallen auf [!DNL livesearch].](/help/troubleshooting/miscellaneous/error-opensearch-search-engine-doesnt-exist-falling-back-to-livesearch.md)
       * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
       * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
