@@ -6,7 +6,7 @@ feature: Cache
 role: Developer
 source-git-commit: c9ad6040ddb65dbb3be6591f2c0e00405dfbebd5
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
@@ -93,5 +93,5 @@ Wenn weiterhin Probleme auftreten, wenden Sie sich an Ihr Adobe-Account-Team. Ge
 ## Verwandtes Lesen
 
 * [Anmeldung beim Adobe Commerce Support- oder Cloud-Konto nicht möglich](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project)
-* [Der Eigentümer des MageID-Kontos kann sich nicht anmelden und ein Support-Ticket senden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [Der Besitzer des MageID-Kontos kann sich nicht anmelden und ein Support-Ticket senden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25231)
 * [Commerce-Konto freigeben](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-share)

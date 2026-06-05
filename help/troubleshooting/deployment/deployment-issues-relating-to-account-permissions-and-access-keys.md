@@ -6,7 +6,7 @@ feature: Deploy, Roles/Permissions
 role: Developer
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Wenn Sie keinen Zugriff auf das [Commerce Marketplace](https://marketplace.magen
 
 Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel verknüpft ist, führen Sie die folgenden Schritte aus, um den Schlüssel zu deaktivieren:
 
-1. Melden Sie sich mit den Anmeldeinformationen [&#x200B; alten Kontos bei der &#x200B;](https://marketplace.magento.com/)Commerce Marketplace an.
+1. Melden Sie sich mit den Anmeldeinformationen [&#128279;](https://marketplace.magento.com/) alten Kontos bei der Commerce Marketplace an.
 1. Klicken Sie oben rechts auf der Seite auf den Kontonamen und wählen Sie **Mein Profil** aus.
 1. Klicken Sie **der Registerkarte** Marketplace“ auf „Zugriffsschlüssel“.
 

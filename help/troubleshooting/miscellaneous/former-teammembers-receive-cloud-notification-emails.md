@@ -6,7 +6,7 @@ feature: Cloud, Communications, Paas
 role: Developer
 source-git-commit: bd199fac6d8f33491b9fa0f508b2bb52d56b46a5
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -37,5 +37,5 @@ Wenn Sie dies bereits getan haben und die E-Mail-Benachrichtigungen weiterhin di
 
 ## Verwandtes Lesen
 
-* [Zeigen Sie die Projektrolle eines Benutzers &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de#view-a-user&?lang=de#39;s-project-role) Handbuch zu Commerce in Cloud-Infrastrukturen an.
+* [Zeigen Sie die Projektrolle eines Benutzers &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=de#view-a-user's-project-role) Handbuch zu Commerce in Cloud-Infrastrukturen an.
 * [Wie Sie ein Teammitglied in Support-Benachrichtigungen einbeziehen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html?lang=de) in der Commerce-KB.

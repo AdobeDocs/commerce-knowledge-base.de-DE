@@ -6,27 +6,27 @@ role: Developer
 exl-id: fb92b75d-c88b-4810-a309-d6ab38485e86
 source-git-commit: 6d0c4ea9576440d66be3b8053a6e362b8ac0ebcb
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '954'
 ht-degree: 0%
 
 ---
 
 # Fehlerbehebung für die Storefront-Checkout-Seite [!UICONTROL CSP] eingeschränkten Modus
 
-Dieser Artikel enthält Erläuterungen und Fehlerbehebungen für Probleme mit Adobe Commerce 2.4.7 beim Anzeigen der Kaufbestätigungsseite in **[!UICONTROL CSP restricted mode]** mit der Fehlermeldung &quot;*Ausführung des Inline-Skripts abgelehnt, da es gegen die folgende Content Security Policy-Direktive verstößt: „script-src …*&quot; im Protokoll der Browser-Konsole.
+Dieser Artikel enthält Erläuterungen und Fehlerbehebungen für Probleme mit Adobe Commerce 2.4.7, während die Checkout-Seite in **[!UICONTROL CSP restricted mode]** angezeigt wird, mit dem Hinweis &quot;*Die Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Direktive verstößt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 ## Betroffene Produkte und Versionen
 
 Adobe Commerce auf Cloud-Infrastruktur, Adobe Commerce On-Premise und Magento Open Source:
 
-* 2,4,7
+* 2.4.7
 * 2.4.6-pX
-* 2,4,5-pX
+* 2.4.5-pX
 * 2.4.4-pX
 
 ## Problem - Storefront-Checkout-Seite ist fehlerhaft oder kann nicht geladen werden
 
-Die **Storefront Checkout**-Seite ist fehlerhaft oder kann nicht geladen werden, mit dem Fehlerhinweis &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Anweisung verstößt: Fehlermeldung „script-src …*&quot; im Protokoll der Browser-Konsole.
+Die **Storefront Checkout**-Seite ist fehlerhaft oder kann nicht geladen werden, mit dem Skript &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Anweisung verstößt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -95,7 +95,7 @@ Adobe Commerce und Magento Open Source 2.4.7 und höher enthalten einen **[!UICO
 
 ## Problem - Zahlungsmethode fehlt oder funktioniert nicht
 
-Die Zahlungsmethode fehlt oder funktioniert nicht auf der Seite **Storefront Checkout** mit der Fehlermeldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Direktive verstößt: „script-src …*&quot; im Protokoll der Browser-Konsole.
+Die Zahlungsmethode fehlt oder funktioniert nicht auf der Seite **Storefront Checkout** mit der Meldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es gegen die folgende Content Security Policy-Anweisung verstößt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -165,7 +165,7 @@ Adobe Commerce und Magento Open Source 2.4.7 und höher enthalten einen **[!UICO
 
 ## Problem - Kunde kann keine Bestellung aufgeben
 
-Eine Kundin oder ein Kunde kann keine Bestellung aufgeben, wobei das Skript &quot;*Ausführung des Inline-Skripts abgelehnt, da es die folgende Content Security Policy-Direktive verletzt: Fehlermeldung „script-src …*&quot; im Protokoll der Browser-Konsole.
+Ein Kunde kann keine Bestellung aufgeben, wobei das Skript &quot;*Ausführung des Inline-Skripts abgelehnt, da es die folgende Content Security Policy-Direktive verletzt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.
 
 <u>Schritte zur Reproduktion</u>:
 

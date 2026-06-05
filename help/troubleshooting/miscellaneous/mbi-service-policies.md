@@ -6,7 +6,7 @@ feature: Commerce Intelligence, User Account
 role: Developer
 source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---

@@ -6,7 +6,7 @@ feature: Categories, Marketing Tools
 role: Developer
 source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -62,5 +62,5 @@ Der *URL-Schlüssel* für SEO:
 
 Seitenhierarchie:
 
-* [Übersicht](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=de)
+* [Überblick](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=de)
 * [Hinzufügen eines Knotens](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=de#add-a-hierarchy-node)

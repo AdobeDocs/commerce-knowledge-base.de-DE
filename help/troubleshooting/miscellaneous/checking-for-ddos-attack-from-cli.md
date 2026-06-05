@@ -6,7 +6,7 @@ feature: Observability
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Auch hier ist es wichtig zu beachten, dass die Verwendung von Software, die spez
    * [Speicherorte für Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
 1. Verwenden Sie die CLI, um alle aktuellen Internetverbindungen mithilfe des `netstat` Befehls zu überprüfen: `netstat -na`. Hier werden alle aktiven bestehenden Verbindungen zum Server angezeigt. Hier können Sie möglicherweise feststellen, dass zu viele Verbindungen von derselben IP-Adresse stammen.
 1. Verwenden Sie diesen Befehl, um Ihre Ergebnisse für bestehende Verbindungen weiter einzugrenzen auf diejenigen, die eine Verbindung über Port 80 (den HTTP-Port für Ihre Website) herstellen, sodass Sie zu viele Verbindungen von einer IP-Adresse oder einer Gruppe von IP-Adressen sortieren und erkennen können: `netstat -an | grep :80 | sort`. Sie können denselben Befehl für https auf Port 443: `netstat -an | grep :443 | sort` wiederholen. Eine weitere Möglichkeit besteht darin, den ursprünglichen Befehl auf beide Ports 80 und 443: `netstat -an | egrep ":80|:443" | sort` auszudehnen.
-1. Mit dem folgenden Befehl können Sie überprüfen, ob viele aktive `SYNC_REC` auf dem Server auftreten:     `netstat -n -p|grep SYN_REC | wc -l`     Dies ist in der Regel weniger als 5, aber es könnte für einen DDoS-Angriff viel höher sein, obwohl für einige Server eine höhere Anzahl eine normale Bedingung sein könnte.
+1. Um herauszufinden, ob viele aktive `SYNC_REC` auf dem Server auftreten, verwenden Sie den folgenden Befehl: `netstat -n -p|grep SYN_REC | wc -l` Dies ist normalerweise weniger als 5, aber es könnte für einen DDoS-Angriff viel höher sein, obwohl für einige Server eine höhere Anzahl eine normale Bedingung sein könnte.
 1. Um alle IP-Adressen aufzulisten, die `SYNC_REC` Status senden, verwenden Sie den Befehl `netstat -n -p | grep SYN_REC | sort -u`.
 1. Um alle eindeutigen IP-Adressen, die `SYNC_REC` senden, weiter aufzulisten, verwenden Sie den Befehl `netstat -n -p | grep SYN_REC | awk ‘{print $5}’ | awk -F: ‘{print $1}’`.
 1. Sie können auch den Befehl `netstat` verwenden, um die Anzahl der Verbindungen zu zählen und zu berechnen, die jede IP-Adresse mit Ihrem Server herstellt: `netstat -ntu | awk ‘{print $5}’ | cut -d: -f1 | sort | uniq -c | sort -n`.
@@ -54,5 +54,5 @@ Wenn Sie feststellen, dass Sie unter DDoS-Angriffen stehen, hängen die Schritte
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
 * [DDoS-Schutz](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
-* [Verwendung von CLI-Befehlen](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
+* [Verwenden von CLI-Befehlen](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
 * [Cloud-CLI für Commerce](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)
