@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Lösungen für Fehler, die beim Ausführen 
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 958067830d32b1f10ffa669307ec76d1e14b82a4
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -19,8 +19,8 @@ Dieser Artikel enthält Lösungen für Fehler, die beim Ausführen des Datenmigr
 
 ### Fehlermeldungen
 
-* ```bash    Source documents are not mapped: <EXTENSION_TABLE>    ```
-* ```bash    Source fields are not mapped. Document: <EXTENSION_TABLE>. Fields: <EXTENSION_FIELD>    ```
+* `Source documents are not mapped: <EXTENSION_TABLE>`
+* `Source fields are not mapped. Document: <EXTENSION_TABLE>. Fields: <EXTENSION_FIELD>`
 
 In seltenen Fällen wird in der Meldung Folgendes erwähnt
 
@@ -166,4 +166,3 @@ Wir haben empfohlen, den Migrationsprozess aus einer Kopie Ihrer Adobe Commerce 
 ## Verwandtes Lesen
 
 [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
-

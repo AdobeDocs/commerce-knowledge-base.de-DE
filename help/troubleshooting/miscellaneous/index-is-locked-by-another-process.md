@@ -4,9 +4,9 @@ description: In diesem Artikel wird über ein häufiges Indizierungsproblem in A
 exl-id: 542c714c-fad5-4f0e-9757-d90044c36bfc
 feature: Catalog Management, Categories
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 1536ad8672498cf36f3d28452762744e4ffcc5de
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In diesem Artikel wird über ein häufiges Indizierungsproblem in Adobe Commerce
 
 ## Problem
 
-Während einer vollständigen Neuindizierung in Ihrer CLI erhalten Sie von Adobe Commerce die Fehlermeldung: *&#39;index is locked by another reindex process. Wird übersprungen.“* heißt, wenn der Prozess oder der Indextyp gesperrt ist, können Sie diesen bestimmten gesperrten Indextyp nicht neu indizieren. Die Neuindizierung überspringt immer diesen Indextyp.
+Während einer vollständigen Neuindizierung in Ihrer CLI erhalten Sie von Adobe Commerce die Fehlermeldung: *&#39;index is locked by another reindex process. Überspringen.&#39;* Mit anderen Worten: Wenn der Prozess oder der Indextyp gesperrt ist, können Sie diesen bestimmten gesperrten Indextyp nicht neu indizieren. Die Neuindizierung überspringt immer diesen Indextyp.
 
 ## Ursache
 
@@ -34,10 +34,28 @@ Dieser Fehler kann auftreten, wenn der vorherige Index nicht erfolgreich abgesch
 
 ## Schritte zur Reproduktion
 
-1. Beispiel: Die Variable    ```bash    cataloginventory_stock ```    Indextyp ist gesperrt.
-1. Beim Versuch, alle Daten durch Ausführen des CLI-Befehls neu zu indizieren    ```bash    php bin/magento indexer:reindex    ``` erhalten Sie das folgende Ausgabeergebnis:    ```bash    customer_grid index has been rebuilt successfully in 00:00:09    catalog_category_product index has been rebuilt successfully in 00:00:07    catalog_product_category index has been rebuilt successfully in 00:00:00    catalogrule_rule index has been rebuilt successfully in 00:00:05    catalog_product_attribute index has been rebuilt successfully in 00:00:04    cataloginventory_stock index is locked by another reindex process. Skipping.    catalog_product_price index has been rebuilt successfully in 00:00:01    catalogrule_product has been rebuilt successfully in 00:00:00    catalogsearch_fulltext index has been rebuilt successfully in 00:00:01    ```
-1. Wie Sie oben sehen können, ist die    ```bash    cataloginventory_stock```    Der Indexprozess wurde übersprungen.
+1. Angenommen, der Indextyp &quot;`cataloginventory_stock`&quot; ist gesperrt.
+1. Beim Versuch, alle Daten durch Ausführen des CLI-Befehls neu zu indizieren:
 
+   ```bash
+   php bin/magento indexer:reindex
+   ```
+
+   Sie erhalten das folgende Ausgabeergebnis:
+
+   ```
+   customer_grid index has been rebuilt successfully in 00:00:09
+   catalog_category_product index has been rebuilt successfully in 00:00:07
+   catalog_product_category index has been rebuilt successfully in 00:00:00
+   catalogrule_rule index has been rebuilt successfully in 00:00:05
+   catalog_product_attribute index has been rebuilt successfully in 00:00:04
+   cataloginventory_stock index is locked by another reindex process. Skipping.
+   catalog_product_price index has been rebuilt successfully in 00:00:01
+   catalogrule_product has been rebuilt successfully in 00:00:00
+   catalogsearch_fulltext index has been rebuilt successfully in 00:00:01
+   ```
+
+1. Wie Sie oben sehen können, wurde der `cataloginventory_stock` übersprungen.
 
 ## Lösung
 
@@ -68,7 +86,6 @@ bin/magento indexer:reset catalogrule_product;
 bin/magento indexer:reset catalogsearch_fulltext;
 ```
 
-
 ## Verwandtes Lesen
 
 In unserer Support-Wissensdatenbank:
@@ -81,8 +98,8 @@ In unserem Benutzerhandbuch:
 
 In unserer Entwicklerdokumentation:
 
-* [Indizierungsübersicht](https://developer.adobe.com/commerce/php/development/components/indexing/)
+* [Übersicht über die Indizierung](https://developer.adobe.com/commerce/php/development/components/indexing/)
 * [Best Practices für Indexer](https://experienceleague.adobe.com/de/docs/commerce-operations/performance-best-practices/configuration)
 * [Konfigurieren und Ausführen von Cron](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
-* [Indexer verwalten](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers)
+* [Verwalten der Indexer](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers)
 * [Indexeroptimierung](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)

@@ -4,7 +4,7 @@ description: Dieser Artikel bietet Lösungen für den Fall,  [!DNL cron]  Adobe 
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: 08a241131453725a86eda5f267a209e6705da2e3
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -38,19 +38,19 @@ Zu den Symptomen [!DNL cron] Aufträge, die zurückgesetzt werden müssen, gehö
 Um dieses Problem zu beheben, müssen Sie den/die [!DNL cron] Auftrag/Aufträge mit dem Befehl `cron:unlock` zurücksetzen. Dieser Befehl ändert den Status des [!DNL cron] in der Datenbank und beendet den Vorgang erzwungen, damit andere geplante Aufträge fortgesetzt werden können.
 
 1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
-1. Abrufen der MySQL-Datenbankanmeldeinformationen:    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
-1. Stellen Sie mithilfe von `mysql` eine Verbindung zur Datenbank her:    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
-1. `main` auswählen:    ```shell    use main    ```
-1. Alle laufenden [!DNL cron] Aufträge suchen:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
+1. Abrufen der MySQL-Datenbankanmeldeinformationen: `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp`
+1. Verbindung zur Datenbank herstellen mit `mysql`: `mysql -hdatabase.internal -uuser -ppassword main`
+1. `main` auswählen: `use main`
+1. Alle laufenden [!DNL cron] Aufträge suchen: `SELECT * FROM cron_schedule WHERE status = 'running';`
 1. Kopieren Sie die `job_code` eines Auftrags, der länger als üblich ausgeführt wird.
-1. Verwenden Sie die Zeitplan-IDs aus dem vorherigen Schritt, um bestimmte [!DNL cron] zu entsperren:    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
+1. Verwenden Sie die Zeitplan-IDs aus dem vorherigen Schritt, um bestimmte [!DNL cron] zu entsperren: `./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]`
 
 ### Lösung zum Anhalten einer einzelnen [!DNL cron] {#solution-stop-a-single-cron}
 
 1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
 1. Überprüfen Sie Aufgaben mit langer Laufzeit mithilfe des folgenden Befehls:
 
-   ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```
+   `date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'`
 
 1. In der Ausgabe werden Sie wie in der Beispielausgabe unten das aktuelle Datum und die Liste der Prozesse sehen. Die Spalte `START` zeigt die Startzeit oder das Datum des Vorgangs an:
 
@@ -75,6 +75,6 @@ Um dieses Problem zu beheben, müssen Sie den/die [!DNL cron] Auftrag/Aufträge 
 1. Wenn [!DNL cron] Aufträge mit langer Laufzeit angezeigt werden, die den Bereitstellungsprozess blockieren können, können Sie den Vorgang mit dem Befehl `kill` beenden. Sie können die **Prozess-ID** (in der `PID` Spalte gefunden) identifizieren und diese `PID` dann in den Befehl zum Beenden des Prozesses einfügen.
 Der **Kill process**-Befehl lautet:
 
-   ```kill -9 <PID>```
+   `kill -9 <PID>`
 
 1. Wenn Sie eine erneute Bereitstellung versuchen, können Sie die Bereitstellung dann erneut durchführen.

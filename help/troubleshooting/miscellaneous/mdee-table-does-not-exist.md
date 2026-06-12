@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung zur Behebung von Datensynchronis
 feature: Data Import/Export, Saas, Logs
 role: Developer
 exl-id: 50f2223b-bfcf-4c3c-b0f1-dbcc4365edc2
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In diesem Fall tritt der Fehler *Tabelle existiert nicht* auf, da der `catalog_d
 
 ## Lösung
 
-Bearbeiten Sie in der angepassten Erweiterung die [!DNL Mview] Konfigurationsdatei (```./etc/mview.xml```), um den `catalog_data_exporter_products` Tabellennamen in *`cde_products_feed`* zu ändern.
+Bearbeiten Sie in der angepassten Erweiterung die [!DNL Mview] Konfigurationsdatei (`./etc/mview.xml`), um den `catalog_data_exporter_products` Tabellennamen in *`cde_products_feed`* zu ändern.
 
 Das folgende Beispiel zeigt den Code, der die vom [!DNL Mview]-Abonnement verfolgten Tabellen angibt:
 

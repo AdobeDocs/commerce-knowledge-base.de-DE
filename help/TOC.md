@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 1f8558e14c82e9f5ca3c050b15394c1361bdd179
+source-git-commit: 5cb7550f95d48b89fc0d68c5e282bc3efe817f17
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 1%
       * [Fehler während der Bereitstellung beim Upgrade auf eine Version, die PHP 8.1 unterstützt](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
       * [Bereitstellungsfehler: „Fehler 7 beim Herunterladen von … Port 443: Verbindung verweigert“](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Bereitstellungsfehler beim Übergeben falscher Dateien](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
-      * [Bereitstellungsfehler, wenn keine Patches gefunden wurden](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
+      * [Patch: Fehler bei Bereitstellung oder manueller Anwendung nicht gefunden](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [Bereitstellung bei Cache-Leerung fehlgeschlagen: Fehler „Im Namespace &#39;cache&#39; sind keine Befehle definiert.“](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Bekannte Probleme {#known-issues-patches-attached}
       * [Anleitungen zum Schützen Ihres Geschäfts und zum Drehen von Verschlüsselungsschlüsseln: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)

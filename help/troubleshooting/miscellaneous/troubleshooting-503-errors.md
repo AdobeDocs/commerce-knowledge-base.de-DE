@@ -4,9 +4,9 @@ description: Dieser Artikel enthält Lösungen zur Fehlerbehebung bei 503-Fehler
 exl-id: 3f001cc9-b19a-4dee-bff0-fc8ba89e2646
 feature: Cache, Categories
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Um dieses Problem zu beheben, erhöhen Sie den Standardwert des `http_resp_hdr_l
    * Ubuntu: `/etc/default/varnish`
 1. Suchen Sie nach dem `http_resp_hdr_len`.
 1. Wenn der Parameter nicht vorhanden ist, fügen Sie ihn nach `thread_pool_max` hinzu.
-1. Legen Sie `http_resp_hdr_len` auf einen Wert fest, der der Produktzahl Ihrer größten Kategorie multipliziert mit 21 entspricht. (Jedes Produkt-Tag hat eine Länge von etwa 21 Zeichen.)    Wenn Sie beispielsweise den Wert auf 65536 Byte festlegen, sollte dies funktionieren, wenn Ihre größte Kategorie 3.000 Produkte umfasst.    Beispiel:    ```conf    -p http_resp_hdr_len=65536 \    ```
+1. Legen Sie `http_resp_hdr_len` auf einen Wert fest, der der Produktzahl Ihrer größten Kategorie multipliziert mit 21 entspricht. (Jedes Produkt-Tag hat eine Länge von etwa 21 Zeichen.) Wenn Sie beispielsweise den Wert auf 65536 Byte festlegen, sollte dies funktionieren, wenn Ihre größte Kategorie 3.000 Produkte umfasst. Beispiel: `-p http_resp_hdr_len=65536 \`
 1. Legen Sie die `http_resp_size` auf einen Wert fest, der der erhöhten Länge der Antwortkopfzeile entspricht.    Beispielsweise ist die Verwendung der Summe aus erhöhter Kopfzeilenlänge und Standardantwortgröße ein guter Ausgangspunkt (z. B. 65536 + 32768 = 98304): `-p http_resp_size=98304`. Es folgt ein Snippet:
 
    ```

@@ -4,9 +4,9 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass Sie versu
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Weitere Informationen zu beiden Optionen finden Sie in den folgenden Absätzen.
 1. Navigieren Sie in Admin zu **Stores** > **Konfiguration** > **Erweitert** > **Admin** > **Sicherheit**.
 1. Setzen Sie die **Geheimschlüssel zu URLs hinzufügen** auf *Nein.*
 1. Klicken Sie **Konfiguration speichern**.
-1. Bereinigen Sie den Cache unter **System** > **Tools** > **Cache-Verwaltung** oder indem Sie Folgendes ausführen    ```bash    bin/magento cache:clean``` oder in der Admin.
+1. Löschen Sie den Cache unter **System** > **Tools** > **Cache-Verwaltung** oder indem Sie `bin/magento cache:clean` oder im Admin ausführen.
 
 ### Führen Sie den Exportbefehl manuell aus und fügen Sie ihn optional als Cron-Auftrag hinzu
 
@@ -74,7 +74,7 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 #### Prozess als Cron-Auftrag hinzufügen (optional)
 
 1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [&#x200B; finden Sie unter „Einrichten &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de) Cron-Aufträgen“.
-1. Führen Sie den folgenden Befehl aus, um eine Liste der Nachrichtenwarteschlangen-Verbraucher zurückzugeben:     `./bin/magento queue:consumers:list`
+1. Führen Sie den folgenden Befehl aus, um eine Liste der Nachrichtenwarteschlangen-Verbraucher zurückzugeben: `./bin/magento queue:consumers:list`
 1. Fügen Sie Ihrer `.magento.env.yaml`-Datei im Stammverzeichnis der Anwendung Folgendes hinzu und schließen Sie die Verbraucher ein, die Sie hinzufügen möchten. Hier finden Sie beispielsweise den Verbraucher, der für die Exportverarbeitung erforderlich ist:
 
    ```yaml

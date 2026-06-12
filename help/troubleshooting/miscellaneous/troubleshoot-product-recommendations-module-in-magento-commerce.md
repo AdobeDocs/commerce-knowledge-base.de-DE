@@ -4,7 +4,7 @@ description: In diesem Artikel werden Vorschläge zur Fehlerbehebung für das [!
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: beca5aa3fa796e4b12afc4882024db718b65ac0c
+source-git-commit: 48b929f6fdf0bf8745ec03c8faa8b07bf5b3e5c3
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -62,8 +62,14 @@ saas-export
 )-Modul:
 
 1. Bestätigen Sie, dass die [[!DNL cron]](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) (in unserer Entwicklerdokumentation) ausgeführt werden.
-1. Vergewissern Sie sich, dass die [[!UICONTROL indexers]](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers) (in unserer Entwicklerdokumentation) ausgeführt werden und die ```php    Product Feed    ```-[!UICONTROL indexer] auf ```php    Update by Schedule    ``` eingestellt ist.
-1. Bestätigen Sie, dass die Module *aktiviert* sind. Das ```php    saas-export    ```-Metapaket installiert die folgenden Module, die alle aktiviert *müssen*: ```php    "magento/module-catalog-data-exporter"      "magento/module-catalog-inventory-data-exporter"      "magento/module-catalog-url-rewrite-data-exporter"      "magento/module-configurable-product-data-exporter"      "magento/module-data-exporter"      "magento/module-saas-catalog"    ```
+1. Vergewissern Sie sich, dass die [[!UICONTROL indexers]](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers) (in unserer Entwicklerdokumentation) ausgeführt werden und die `Product Feed`-[!UICONTROL indexer] auf `Update by Schedule` eingestellt ist.
+1. Bestätigen Sie, dass die Module *aktiviert* sind. Das `saas-export`-Metapaket installiert die folgenden Module, die alle aktiviert *müssen*:
+   * `magento/module-catalog-data-exporter`
+   * `magento/module-catalog-inventory-data-exporter`
+   * `magento/module-catalog-url-rewrite-data-exporter`
+   * `magento/module-configurable-product-data-exporter`
+   * `magento/module-data-exporter`
+   * `magento/module-saas-catalog`
 1. Überprüfen Sie die [Protokolle](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/enable-logging) (in unserer Entwicklerdokumentation). Stellen Sie sicher, dass die oben genannten Module keine Fehler enthalten.
 1. Aktualisieren Sie die [!UICONTROL Configuration cache]. Wechseln Sie **System** > **Tools** > **Cache-Verwaltung** und löschen Sie die [!UICONTROL Configuration cache].
 1. Bestätigen Sie, dass die `cde_products_products_feed` Datenbanktabelle Daten enthält.
@@ -84,4 +90,3 @@ saas-export
 * [Überprüfen Sie die Protokolle und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging) Sie Fehler“ im Handbuch [!DNL SaaS] Datenexport .
 * [[!DNL SaaS] Versionshinweise zur Datenexporterweiterung](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/saas-data-export/release-notes) im Adobe Commerce-Datenexporthandbuch für [!DNL SaaS] Services
 * [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
-
