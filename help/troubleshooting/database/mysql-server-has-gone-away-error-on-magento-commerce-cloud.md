@@ -4,9 +4,9 @@ description: In diesem Artikel wird über die Lösung des Problems gesprochen, d
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,11 @@ Der `default_socket_timeout` ist zu niedrig eingestellt. Dies wird durch die Ein
 
 ## Lösung
 
-1. Überprüfen Sie den aktuellen Timeout-Zeitraum für `default_socket_timeout`, indem Sie in der CLI ausführen:    ```    php -i |grep default_socket_timeout    ```
+1. Überprüfen Sie den aktuellen Timeout-Zeitraum für `default_socket_timeout`, indem Sie in der CLI ausführen: `php -i |grep default_socket_timeout`
 1. Erhöhen Sie die Variable `default_socket_timeout` je nach Zeitüberschreitungseinstellung auf die erwartete längstmögliche Laufzeit in der `/etc/platform/<project_name>/php.ini`. Es wird empfohlen, zwischen 10 und 15 Minuten einzustellen.
 1. Übertragen Sie sie an GIT und stellen Sie sie erneut bereit.
 
 ## Verwandtes Lesen
 
-* [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de)
-* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastrukturen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de)
+* [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [Häufigste Datenbankprobleme in Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
