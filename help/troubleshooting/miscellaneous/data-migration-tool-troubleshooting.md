@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Lösungen für Fehler, die beim Ausführen 
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 0%
@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Ursache
 
-Eine Klasse aus der Adobe Commerce 1-Codebasis konnte während des [EAV-Migrationsschritts“ in unserer Entwicklerdokumentation nicht in &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/data-migration/basics/technical-specification) 2-Codebasis gefunden werden. In den meisten Fällen gehört die fehlende Klasse zu einer [Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/glossary#extension).
+Eine Klasse aus der Adobe Commerce 1-Codebasis konnte während des [EAV-Migrationsschritts“ in unserer Entwicklerdokumentation nicht in ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) 2-Codebasis gefunden werden. In den meisten Fällen gehört die fehlende Klasse zu einer [Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension).
 
 ### Mögliche Lösungen
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Ursache
 
-Dieser Fehler tritt während [inkrementellen Migration](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/data-migration/migrate-data/delta) (in unserer Entwicklerdokumentation) von Datenänderungen auf. Das bedeutet, dass Deltalogtabellen (mit dem Präfix `m2_cl_*`) nicht in der Adobe Commerce 1-Datenbank gefunden wurden. Das Tool installiert diese Tabellen während [Datenmigration](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/data-migration/migrate-data/data) (in unserer Entwicklerdokumentation) sowie Datenbank-Trigger, die Änderungen verfolgen und Deltalog-Tabellen ausfüllen.
+Dieser Fehler tritt während [inkrementellen Migration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (in unserer Entwicklerdokumentation) von Datenänderungen auf. Das bedeutet, dass Deltalogtabellen (mit dem Präfix `m2_cl_*`) nicht in der Adobe Commerce 1-Datenbank gefunden wurden. Das Tool installiert diese Tabellen während [Datenmigration](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (in unserer Entwicklerdokumentation) sowie Datenbank-Trigger, die Änderungen verfolgen und Deltalog-Tabellen ausfüllen.
 
 Ein Grund für den Fehler könnte sein, dass Sie versuchen, von einer *Kopie* Ihres Adobe Commerce 1-Live-Stores und nicht vom Live-Store selbst zu migrieren. Wenn Sie eine Kopie aus einem Live Adobe Commerce 1-Store erstellen, der noch nie migriert wurde, enthält die Kopie nicht die Trigger und zusätzlichen Deltalogtabellen, die zum Abschließen einer Delta-Migration erforderlich sind, sodass die Migration fehlschlägt. Das Datenmigrations-Tool vergleicht NICHT die DB von AC1 und AC2, um die Unterschiede zu migrieren. Stattdessen verwendet das Tool die während der ersten Migration installierten Trigger und Deltalogtabellen, um nachfolgende Deltaimmigrationen durchzuführen. In einem solchen Fall enthält Ihre Live Copy der Adobe Commerce 1 DB nicht die Trigger- und Deltalogtabellen, die das Datenmigrations-Tool zur Durchführung einer Migration verwendet.
 
@@ -165,4 +165,5 @@ Wir haben empfohlen, den Migrationsprozess aus einer Kopie Ihrer Adobe Commerce 
 
 ## Verwandtes Lesen
 
-[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+[Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+

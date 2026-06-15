@@ -4,7 +4,7 @@ description: Dieser Artikel enthält Lösungen zur Fehlerbehebung bei 503-Fehler
 exl-id: 3f001cc9-b19a-4dee-bff0-fc8ba89e2646
 feature: Cache, Categories
 role: Admin
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -63,4 +63,5 @@ Da auf den Admin über Varnish zugegriffen wird, können Sie sich nicht bei Admi
 $ bin/magento cache:enable
 ```
 
-Weitere Informationen zur Verwendung der Befehlszeile finden Sie unter [Erste Schritte mit der Befehlszeilenkonfiguration](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/config-cli).
+Weitere Informationen zur Verwendung der Befehlszeile finden Sie unter [Erste Schritte mit der Befehlszeilenkonfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).
+
