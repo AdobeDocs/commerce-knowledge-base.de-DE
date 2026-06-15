@@ -4,7 +4,7 @@ description: In diesem Artikel wird eine vorgeschlagene Lösung für den Fall vo
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration
 role: Developer
-source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -97,3 +97,4 @@ Sie können höhere Versionen von OpenSSL mit [Homebrew](https://brew.sh/) unter
 * [PWA Buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/packages/buildpack/)
 * [Buildpack-Befehlszeilenschnittstelle](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
 * [Tools und Bibliotheken: buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)
+

@@ -4,7 +4,7 @@ description: In diesem Artikel werden Vorschläge zur Fehlerbehebung für das [!
 exl-id: 431ee31e-eb5b-400c-9c99-cc86613453d7
 feature: Cache, Compliance, Extensions, Marketing Tools, Personalization, Products, Recommendations
 role: Developer
-source-git-commit: 48b929f6fdf0bf8745ec03c8faa8b07bf5b3e5c3
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
@@ -90,3 +90,4 @@ saas-export
 * [Überprüfen Sie die Protokolle und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging) Sie Fehler“ im Handbuch [!DNL SaaS] Datenexport .
 * [[!DNL SaaS] Versionshinweise zur Datenexporterweiterung](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/saas-data-export/release-notes) im Adobe Commerce-Datenexporthandbuch für [!DNL SaaS] Services
 * [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+

@@ -2,7 +2,7 @@
 title: 'Patch: Fehler bei Bereitstellung oder manueller Anwendung nicht gefunden'
 description: 'Dieser Artikel bietet eine Lösung für das Problem, bei dem ein Fehler angezeigt wird *Die nächsten Patches wurden nicht gefunden: MDVA-XXXXX, ACSD-XXXXX. Überprüfen Sie die Verfügbarkeit dieser Patches für die aktuelle Version von Magento mithilfe des Befehls ''status''*.'
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
-source-git-commit: 180f0e00ec1a2c6c3bd2ebca4dafe387c7bb3852
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -79,3 +79,4 @@ In diesem Fall ist der Patch nicht für die Adobe Commerce-Version verfügbar, d
 ## Verwandtes Lesen
 
 * [Patches anwenden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=de#apply-a-patch-in-a-local-environment) in Commerce im Handbuch zur Cloud-Infrastruktur.
+

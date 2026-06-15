@@ -4,7 +4,7 @@ description: In diesem Artikel wird über ein häufiges Indizierungsproblem in A
 exl-id: 542c714c-fad5-4f0e-9757-d90044c36bfc
 feature: Catalog Management, Categories
 role: Developer
-source-git-commit: 1536ad8672498cf36f3d28452762744e4ffcc5de
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -103,3 +103,4 @@ In unserer Entwicklerdokumentation:
 * [Konfigurieren und Ausführen von Cron](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)
 * [Verwalten der Indexer](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cli/manage-indexers)
 * [Indexeroptimierung](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
+
