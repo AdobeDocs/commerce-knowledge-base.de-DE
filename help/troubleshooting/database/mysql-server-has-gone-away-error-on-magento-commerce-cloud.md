@@ -4,9 +4,9 @@ description: In diesem Artikel wird über die Lösung des Problems gesprochen, d
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+source-git-commit: 467d214d25b2154af0545054a026a588de883f58
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -41,12 +41,12 @@ Der `default_socket_timeout` ist zu niedrig eingestellt. Dies wird durch die Ein
 
 ## Lösung
 
+1. Überprüfen Sie die aktuelle Zeitüberschreitungsdauer für `default_socket_timeout`, indem Sie in der CLI: `php -i |grep default_socket_timeout` ausführen.
 1. Überprüfen Sie den aktuellen Timeout-Zeitraum für `default_socket_timeout`, indem Sie in der CLI ausführen: `php -i |grep default_socket_timeout`
 1. Erhöhen Sie die Variable `default_socket_timeout` je nach Zeitüberschreitungseinstellung auf die erwartete längstmögliche Laufzeit in der `/etc/platform/<project_name>/php.ini`. Es wird empfohlen, zwischen 10 und 15 Minuten einzustellen.
 1. Übertragen Sie sie an GIT und stellen Sie sie erneut bereit.
 
 ## Verwandtes Lesen
 
-* [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=de)
-* [Häufigste Datenbankprobleme in Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=de)
-
+* [Best Practices für Datenbanken für Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [Häufigste Datenbankprobleme in Adobe Commerce in der Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
