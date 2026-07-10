@@ -6,7 +6,7 @@ feature: Data Import/Export, Products
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -50,5 +50,5 @@ Das Statusattribut des Produkts wurde in der CSV-Datei umbenannt. Sie ist jetzt 
 
 ## Verwandtes Lesen
 
-* [Arbeiten mit CSV-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
-* [Produktexport-Attribute-Referenz](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.
+* [Arbeiten mit CSV-](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
+* [Produktexport-Attribute-Referenz](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.
