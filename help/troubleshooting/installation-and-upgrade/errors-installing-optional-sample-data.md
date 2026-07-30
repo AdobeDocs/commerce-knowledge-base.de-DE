@@ -6,7 +6,7 @@ feature: Console, Install, Upgrade
 role: Developer
 source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Diese Ausnahmen resultieren aus den Einstellungen für Dateisystemberechtigungen
 
 ## Symptom (Produktionsmodus)
 
-Wenn Sie derzeit für den [Produktionsmodus) eingestellt sind](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de) schlägt die Installation der Beispieldaten fehl, wenn Sie den Befehl [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=de) verwenden:
+Wenn Sie derzeit für den [Produktionsmodus) eingestellt sind](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de) schlägt die Installation der Beispieldaten fehl, wenn Sie den [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=de)-Befehl verwenden:
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -70,7 +70,7 @@ PHP Fatal error: Call to undefined method Magento\Catalog\Model\Resource\Product
 Deaktivieren Sie während der Installation der Beispieldaten SELinux mithilfe einer Ressource wie der folgenden:
 
 * [www.ibm.com](https://www.ibm.com/docs/ja/ahts/4.0?topic=t-disabling-selinux)
-* [Dokumentation zu CentOS](https://docs.centos.org/en-US/docs/)
+* [CentOS-Dokumentation](https://docs.centos.org/en-US/docs/)
 
 ## Symptom (Verzweigung entwickeln)
 
