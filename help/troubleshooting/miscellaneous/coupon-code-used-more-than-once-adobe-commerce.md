@@ -6,7 +6,7 @@ feature: Orders
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -62,8 +62,8 @@ Fügen Sie den `sales.rule.update.coupon.usage` Verbraucher zur `app/etc/env.php
 ...
 ```
 
-Detaillierte Anweisungen finden Sie unter [Verwalten von Nachrichtenwarteschlangen > Konfiguration](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) in unserer Entwicklerdokumentation.
+Detaillierte Anweisungen finden Sie unter [Verwalten von Nachrichtenwarteschlangen > Konfiguration](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) in unserer Entwicklerdokumentation.
 
 ## Verwandtes Lesen
 
-[Übersicht über Message Queues](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) in unserer Entwicklerdokumentation.
+[Übersicht über Message Queues](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) in unserer Entwicklerdokumentation.

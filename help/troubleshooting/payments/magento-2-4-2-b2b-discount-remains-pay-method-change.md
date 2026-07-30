@@ -6,7 +6,7 @@ feature: B2B, Orders, Payments, Personalization
 role: Developer
 source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.2 B2B-Problem beschriebe
 
 <u>Tatsächliche Ergebnisse</u> :
 
-Der Skonto der Zahlungsmethode bleibt auf die Bestellsumme angewendet.  Es wird keine Fehlermeldung angezeigt. Der Besitzer des Geschäfts kann dies sehen, indem er den Auftragsverlauf überprüft.
+Der Skonto der Zahlungsmethode bleibt auf die Bestellsumme angewendet.  Keine Fehlermeldung angezeigt.Der Geschäftsinhaber kann diesen Fehler im Bestellverlauf sehen.
 
-<u>Erwartete Ergebnisse</u> : Der Rabatt für die Zahlungsmethode wird erwartungsgemäß aus der Bestellsumme entfernt.
+<u>Erwartete Ergebnisse</u> :The Rabatt auf die Zahlungsmethode wird wie erwartet aus der Bestellsumme entfernt.
 
 ## Lösung
 

@@ -1,19 +1,19 @@
 ---
 title: 'Bekanntes Problem in Adobe Commerce 2.4.1: Fehler beim Bestellen mit PayPal Braintree'
-description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem eine Fehlermeldung beim Abrechnungsschritt der Kasse angezeigt wird, wenn eine PayPal-Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden.
+description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem eine Fehlermeldung beim Abrechnungsschritt der Kasse angezeigt wird, wenn die PayPal Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden.
 exl-id: db3830b2-4885-4d89-85cd-bdcbd4b396e6
 feature: Checkout, Orders, Payments
 role: Developer
 source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
 # Bekanntes Problem in Adobe Commerce 2.4.1: Fehler beim Bestellen mit PayPal Braintree
 
-In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem eine Fehlermeldung beim Abrechnungsschritt der Kasse angezeigt wird, wenn eine PayPal-Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden.
+In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem eine Fehlermeldung beim Abrechnungsschritt der Kasse angezeigt wird, wenn die PayPal Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden.
 
 ## Betroffene Produkte und Versionen
 
@@ -22,7 +22,7 @@ In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, b
 
 ## Problem
 
-Wenn PayPal-Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgewählt wurden, wird beim Abrechnungsschritt der Kasse eine Fehlermeldung angezeigt und ausgeblendet.
+Wenn die Zahlung mit PayPal Braintree verwendet wird und mehrere Versandadressen ausgewählt wurden, wird beim Abrechnungsschritt der Kasse eine Fehlermeldung angezeigt und ausgeblendet.
 
 <u>Schritte zur Reproduktion:</u>
 
@@ -33,7 +33,7 @@ Wenn PayPal-Braintree-Zahlung verwendet wird und mehrere Versandadressen ausgew�
 1. Klicken Sie auf der Warenkorbseite auf **Mit mehreren Adressen auschecken**.
 1. Klicken Sie **Zu Versandinformationen gehen** und geben Sie die Adressen an.
 1. Klicken Sie **Weiter zu Rechnungsinformationen**.
-1. Wählen Sie **PayPal-Braintree** und klicken Sie auf die Schaltfläche **PayPal**.
+1. Wählen Sie **PayPal Braintree** und klicken Sie auf die Schaltfläche **PayPal**.
 1. Klicken Sie im Popup-Fenster auf **Zustimmen und bezahlen**.
 
 <u>Erwartetes Ergebnis:</u>
