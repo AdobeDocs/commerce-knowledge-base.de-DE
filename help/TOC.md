@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 804fdcd482abed2b61fb31e805ee9a24491ff58f
+source-git-commit: 4787dec7aefd10f0b8db97ee5e76b09abe78af6c
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1753'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,6 @@ ht-degree: 1%
     * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
     * [Fehlerbehebung beim Modul „Produktempfehlungen“ in Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Unbekanntes Modul Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
-    * [Probleme mit der Cron-Bereitschaftsprüfung](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
     * [SQL-Abfragen: Fehler bei EXPLAIN COST](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
     * [Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Probleme bei der Prüfung der Bereitschaft für Dateiberechtigungen](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
