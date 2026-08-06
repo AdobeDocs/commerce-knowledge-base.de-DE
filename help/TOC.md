@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 694ab6fe606195c40b15d2752c09dd380d3dcedb
+source-git-commit: 4787dec7aefd10f0b8db97ee5e76b09abe78af6c
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1753'
 ht-degree: 1%
 
 ---
@@ -73,13 +73,10 @@ ht-degree: 1%
     * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Verschiedenes {#miscellaneous}
     * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Fehlende oder geänderte Konfigurationsdatei](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
     * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
     * [Fehlerbehebung beim Modul „Produktempfehlungen“ in Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Unbekanntes Modul Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
-    * [Probleme mit der Cron-Bereitschaftsprüfung](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
     * [SQL-Abfragen: Fehler bei EXPLAIN COST](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
-    * [Fehlerbehebung bei New Relic in Adobe Commerce auf Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
     * [Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Probleme bei der Prüfung der Bereitschaft für Dateiberechtigungen](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
     * [Diagnose von Diskrepanzen beim E-Commerce-Umsatz mit Google](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
