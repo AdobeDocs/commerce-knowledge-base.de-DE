@@ -65,4 +65,4 @@ Wenn Sie die Konfiguration der erweiterten Integration bereits verwenden oder na
 * [Pro-Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
 * [Starter-Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
-Wenn Sie die oben genannten Empfehlungen erfüllt haben, [ Sie (eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) um zusätzliche Hilfe.
+Wenn Sie die oben genannten Empfehlungen erfüllt haben, [&#x200B; Sie (eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) um zusätzliche Hilfe.
