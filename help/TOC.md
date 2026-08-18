@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: fbc97f1f9a9df7771ea0473f50fe927923dff630
+source-git-commit: 865bb40cf8e884289fc850c96d661b9aa0e621f7
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1719'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,8 @@ ht-degree: 1%
     * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Verschiedenes {#miscellaneous}
     * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Unbekanntes Modul Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
+    * [cURL-Fehler 60: SSL-Zertifikat abgelaufen](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
+    * [Fehlerbehebung beim Modul „Produktempfehlungen“ in Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Handbuch zur Fehlerbehebung beim Adobe Commerce Security Scan Tool](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Diagnose von Diskrepanzen beim E-Commerce-Umsatz mit Google](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [Ich habe API-Schlüssel für Adobe AI konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
