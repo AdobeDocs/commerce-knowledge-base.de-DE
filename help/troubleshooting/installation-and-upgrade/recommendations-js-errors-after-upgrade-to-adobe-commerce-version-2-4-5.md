@@ -6,7 +6,7 @@ role: Developer
 exl-id: 51d899eb-48f7-48c5-8bda-bd72a4d28945
 source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Das Problem wird dadurch verursacht, dass die Web-Seite der Storefront weiterhin
 
 1. Aktualisieren Sie auf Adobe Commerce 2.4.5.
 1. Rufen Sie die Web-Seite der Storefront auf.
-1. Klicken Sie mit der rechten Maustaste, und wählen Sie **Inspect**, um den Web-Inspektor in Ihrem Webbrowser zu öffnen.
+1. Klicken Sie mit der rechten Maustaste, und wählen Sie **Überprüfen**, um den Web-Inspektor in Ihrem Webbrowser zu öffnen.
 1. Klicken Sie auf die Registerkarte **[!UICONTROL Console]** .
 1. Überprüfen Sie die [!DNL JS].
 

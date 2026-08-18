@@ -1,7 +1,7 @@
 ---
 source-git-commit: 88a2b8fe11d718f33c26bbc6f407c55d9f1fd189
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Fügen Sie für jeden Artikel die folgenden Titeltypen hinzu:
 * Etikett(e) für Produkt(e). (erforderlich)
 * Titel der betroffenen Versionen. (Erforderlich, mit Ausnahme von Artikeln, die sich auf den allgemeinen Support beziehen)
 * Titel für Inhaltstyp. (erforderlich)
-* Beschriftungen für wichtige technische Komponenten.(falls zutreffend)
+* Beschriftungen für wichtige technische Komponenten. (falls zutreffend)
 * Kennzeichnungen für Prozesse/Funktionen, bei denen eine Fehlerbehebung durchgeführt/beschrieben wird. (falls zutreffend)
 * Kennzeichnungen für das zu behebende/beschriebene Problem. (falls zutreffend)
 
@@ -31,7 +31,7 @@ In den folgenden Abschnitten finden Sie detaillierte Empfehlungen zum Definieren
 <tbody>
   <tr>
     <th>Produktname</th>
-    <th>Bezeichnung</th>
+    <th>Label</th>
   </tr>
   <tr>
     <td>Adobe Commerce (alle Bereitstellungsmethoden) </td>
@@ -52,13 +52,13 @@ In den folgenden Abschnitten finden Sie detaillierte Empfehlungen zum Definieren
   <tr>
     <td>Magento Business Intelligence (MBI)</td>
     <td>
-        "Magento Business Intelligence,MBI“
+        „Magento Business Intelligence, MBI“
     </td>
   </tr>
    <tr>
     <td>Magento Open Source</td>
     <td>
-        "Magento Open Source"
+        "Magento Open Source
     </td>
   </tr>
   <tr>
@@ -67,7 +67,7 @@ In den folgenden Abschnitten finden Sie detaillierte Empfehlungen zum Definieren
   </tr>
   <tr>
     <td>PWA für Adobe Commerce</td>
-    <td>"PWA"</td>
+    <td>"PWA</td>
   </tr>
   <tr>
     <td>Venia-Storefront-Projekt</td>
@@ -94,7 +94,7 @@ NICHT 2.3.0-2.3.5
   <tbody>
     <tr>
       <th>Kategorie</th>
-      <th>Bezeichnung</th>
+      <th>Label</th>
     </tr>
     <tr>
       <td>Best Practices</td>
@@ -123,13 +123,13 @@ NICHT 2.3.0-2.3.5
 
 * Verwenden Sie die Groß-/Kleinschreibung gemäß der offiziellen Benennung der Komponente.
 * Verwenden Sie keine Synonyme, sondern nur eine Bezeichnung für eine Komponente.
-* Beschriftungen mit einem Wort sind vorzuziehen. Wenn der Komponentenname jedoch mehrere Wörter enthält, verwenden Sie mehrere Wörter. Keine Problembeschreibungen hinzufügen. Das heißt, stellen Sie &quot;Elasticsearch&quot; statt &quot;Elasticsearch Probleme“.
+* Beschriftungen mit einem Wort sind vorzuziehen. Wenn der Komponentenname jedoch mehrere Wörter enthält, verwenden Sie mehrere Wörter. Keine Problembeschreibungen hinzufügen. Das heißt, stellen Sie &quot;Elasticsearch&quot; anstelle von &quot;Elasticsearch-Problemen“.
 * Wenn der Inhalt nur für eine bestimmte Version der Komponente relevant ist, fügen Sie eine Bezeichnung hinzu, die Name + Version enthält.\
   Beispiel: &quot;Elasticsearch 5“. Wenn es für mehrere bestimmte Versionen relevant ist, fügen Sie mehrere Bezeichnungen dieses Typs hinzu. Beispiel: &quot;Elasticsearch 5“, &quot;Elasticsearch 6“. Verwenden Sie gegebenenfalls „x“ für mehrere Versionen. Beispiel: &quot;Elasticsearch 2.x“
 
 Beispiele:
 
-* &quot;Elasticsearch&quot;
+* &quot;Elasticsearch
 * &quot;New Relic
 * „Websetup-Assistent“
 
