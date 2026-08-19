@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 865bb40cf8e884289fc850c96d661b9aa0e621f7
+source-git-commit: 3873d836625af318fa62f66a8e5989805f59af2f
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1713'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,6 @@ ht-degree: 1%
     * [Diagnose von Diskrepanzen beim E-Commerce-Umsatz mit Google](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [Ich habe API-Schlüssel für Adobe AI konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [Der Dateispeicher ist niedrig, bestimmte Seitenladevorgänge sind langsam](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
-    * [Langsame Leistung aufgrund vollständiger Neuindizierung](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
     * [Hilfe zur Fehlerbehebung bei allgemeinen benutzerdefinierten Modulen](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Cache-Aufwärmung und Site auf Adobe Commerce nicht verfügbar](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Beheben von UTF-8-Fehlern beim Hochladen von CSV-Dateien](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
