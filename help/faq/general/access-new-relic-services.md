@@ -2,9 +2,9 @@
 title: Zugriff auf New Relic-Services
 description: 'In diesem Artikel wird erläutert, wie Kunden mit ausreichender Lizenz-/Abonnementautorisierung auf ausgewählte New Relic-Services zugreifen können:'
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 09777d70272bdb78a0bcf7566cc398a53c474f4c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Kunden mit Starterarchitektur erhalten den New Relic Infrastructure-Service nich
 
 ## Verwandtes Lesen
 
-Weitere Informationen zu New Relic-Services finden Sie unter [Untersuchung der Leistung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation. Sie können auch [Fehlerbehebung bei der Leistung mit New Relic in Adobe Commerce auf Cloud-](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)&quot; in unserer Support-Wissensdatenbank überprüfen.
+Weitere Informationen zu New Relic-Services finden Sie unter [Untersuchung der Leistung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) in unserer Entwicklerdokumentation. Sie können auch [Fehlerbehebung bei der Leistung mit New Relic in Adobe Commerce auf Cloud-](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-40830)&quot; in unserer Support-Wissensdatenbank überprüfen.

@@ -1,7 +1,7 @@
 ---
 source-git-commit: c992521cae8c847adc0cc23d2323300e0ba69cdc
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
@@ -30,12 +30,12 @@ Bitte befolgen Sie diese Stil- und Formatierungsempfehlungen, wenn Sie zum Adobe
 
 * Aufzählungslisten erleichtern das Scannen.
 
-   * Verwenden Sie Aufzählungslisten für Methoden, Ansätze, Optionen und nicht aufeinander folgende Aufgabenschritte.
-   * Halten Sie Text in kurzen Aufzählungszeichen, vorzugsweise nicht mehr als zwei Sätze.
-   * Die Anzahl der Aufzählungszeichen minimieren; sieben oder weniger ist ideal.
-   * Vermeiden Sie es, einen Tipp oder eine Notiz zwischen Aufzählungszeichen zu platzieren.
-   * Verwenden Sie parallele Grammatikstrukturen in Listen, brechen Sie diese Regel jedoch, wenn sie zu Überschwänglichkeit oder gestelzter Sprache führt.
-   * Das erste Wort jedes Elements in einer Aufzählungsliste wird großgeschrieben, auch wenn es sich um ein Fragment handelt.
+  * Verwenden Sie Aufzählungslisten für Methoden, Ansätze, Optionen und nicht aufeinander folgende Aufgabenschritte.
+  * Halten Sie Text in kurzen Aufzählungszeichen, vorzugsweise nicht mehr als zwei Sätze.
+  * Die Anzahl der Aufzählungszeichen minimieren; sieben oder weniger ist ideal.
+  * Vermeiden Sie es, einen Tipp oder eine Notiz zwischen Aufzählungszeichen zu platzieren.
+  * Verwenden Sie parallele Grammatikstrukturen in Listen, brechen Sie diese Regel jedoch, wenn sie zu Überschwänglichkeit oder gestelzter Sprache führt.
+  * Das erste Wort jedes Elements in einer Aufzählungsliste wird großgeschrieben, auch wenn es sich um ein Fragment handelt.
 
 * Listen parallel gestalten. Beispielsweise sollte jedes Element ein Substantiv oder eine Phrase sein, die mit einem Verb beginnt.
 
@@ -51,7 +51,7 @@ Achten Sie auf die Groß- und Kleinschreibung. Verwenden Sie in Überschriften G
 
 * Alles, was der Benutzer klickt, wird eingefügt **fett**. Beispiel: „Klicken Sie auf **Weiter**.“ Optionswerte und Fehlermeldungen sind mit &quot;_&quot;_.
 * Erwähnen Sie nach Möglichkeit nicht den Elementtyp der Benutzeroberfläche in Anweisungen. (Klicken Sie auf **Weiter**. vs. Klicken Sie auf **Weiter**-Schaltfläche.)
-* Verwenden Sie „Choose“ und &quot;>&quot; in Befehlssequenzen. (Wählen Sie **Bearbeiten** > **Voreinstellungen**. vs. auf Bearbeiten klicken | Preferences.)
+* Verwenden Sie „Choose“ und &quot;>&quot; in Befehlssequenzen. (Wählen Sie **Bearbeiten** > **Voreinstellungen**. vs. Klicken Sie auf Bearbeiten | Voreinstellungen.)
 * Präposition: „in“ für Dialogfeld, Fenster, Bereich, Bereich, Ansicht, Assistent, Liste, Ordner, Knoten.
 * Präposition: „on“ für Bildschirm, Seite, Symbolleiste, Menüleiste, Registerkarte, Bereich, Menüband.
 * Präposition: Klicken (Klicken Sie auf **Weiter** vs. Klicken auf **Weiter**).
@@ -71,10 +71,10 @@ Schreiben Sie eine Zahl als Zahl, wie „42“ oder „11“, wenn:
 
 * Die Zahl ist über 9 (Zahlen zehn und höher).
 * Sie geben die Zahl an:
-   * Innerhalb einer Code- oder Codezeile.
-   * Innerhalb eines Dateipfads oder Verzeichnisnamens.
-   * Bei der Kommunikation eines Bereichs wie „zwischen 5 und 25“ oder „Rezensionsnummern 8 bis 21“.
-   * Die Zahlen wurden gemessen oder berechnet wie „62 Pica“ oder „830 MHz“.
+  * Innerhalb einer Code- oder Codezeile.
+  * Innerhalb eines Dateipfads oder Verzeichnisnamens.
+  * Bei der Kommunikation eines Bereichs wie „zwischen 5 und 25“ oder „Rezensionsnummern 8 bis 21“.
+  * Die Zahlen wurden gemessen oder berechnet wie „62 Pica“ oder „830 MHz“.
 
 Verwenden Sie einen Mix aus Zahlen und Ziffern, wenn Sie eine Menge nummerierter Dinge notieren, z. B. „eine Sammlung von fünfzehn 1000-Testläufen“.
 
@@ -164,7 +164,7 @@ Adobe Commerce Version 2.4.0
 
 </td>
 
-<td colspan="1">Adobe Commerce 2.4.0 (keine Version oder Version)</td>
+<td colspan="1">Adobe Commerce 2.4.0 (keine Version) oder Version)</td>
 
 <td colspan="1"></td>
 
@@ -182,7 +182,7 @@ Adobe Commerce Version 2.4.0
 
 <td colspan="1">
 
-2,4,0
+2.4.0
 
 2.4.x
 
@@ -276,4 +276,4 @@ Im Allgemeinen befolgen Sie die Chicagoer Manual of Style Recommendations für O
 
 ## Branding
 
-* Magento Commerce ist jetzt Adobe Commerce. Weitere Informationen zur Verwendung der [&#x200B; Markensprache finden &#x200B;](https://github.com/magento/knowledge-base/wiki) im Wiki zu den Rebranding-Bedingungen.
+* Magento Commerce heißt jetzt Adobe Commerce. Weitere Informationen zur Verwendung der [&#x200B; Markensprache finden &#x200B;](https://github.com/magento/knowledge-base/wiki) im Wiki zu den Rebranding-Bedingungen.
