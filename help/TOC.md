@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: a57fca068b8154dfa451b2ba76e297f57e7229eb
+source-git-commit: ae5cf17925a4b4c9ef5827345a471abd3a9728ce
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1683'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,6 @@ ht-degree: 1%
     * [Beheben von UTF-8-Fehlern beim Hochladen von CSV-Dateien](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
     * [Überprüfen auf DDoS-Angriffe über CLI](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
     * [Anmeldeumleitung bei Anmeldung bei Commerce Admin](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
-    * [Beheben von Problemen mit dem Verschlüsselungsschlüssel](/help/troubleshooting/miscellaneous/resolve-issues-with-encryption-key.md)
     * [Verwenden von Datenexporten zur Ermittlung von Diskrepanzen](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
     * [Fehlerbehebung beim Datenmigrations-Tool](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
     * [Probleme bei der Prüfung der Komponentenabhängigkeit](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
