@@ -1,19 +1,19 @@
 ---
 title: Kundenprofile werden nicht in Experience Platform angezeigt
-description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Erweiterung  [!DNL Data Connection]  nicht auf der Experience Platform angezeigt werden.
+description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der  [!DNL Data Connection]  nicht in der Experience Platform angezeigt werden.
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
 exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
 source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
 # Kundenprofile werden nicht in Experience Platform angezeigt
 
-Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Datenverbindungserweiterung nicht auf der Experience Platform angezeigt werden.
+Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Datenverbindungserweiterung nicht in der Experience Platform angezeigt werden.
 
 ## Betroffene Produkte und Versionen
 
@@ -21,11 +21,11 @@ Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten
 
 ## Problem
 
-Sie haben die [[!DNL Data Connection]](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/data-connection/overview)-Erweiterung installiert und konfiguriert und das Senden von Kundenprofildaten an die Experience Platform aktiviert, diese Profildaten werden jedoch nicht auf der Experience Platform angezeigt.
+Sie haben die [[!DNL Data Connection]](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/data-connection/overview)-Erweiterung installiert und konfiguriert und das Senden von Kundenprofildaten an die Experience Platform aktiviert, diese Profildaten werden jedoch nicht in der Experience Platform angezeigt.
 
 ## Lösung
 
-Wenn die Kundenprofilinformationen nicht auf der Experience Platform angezeigt werden, überprüfen Sie Folgendes:
+Wenn Kundenprofilinformationen nicht in der Experience Platform angezeigt werden, überprüfen Sie Folgendes:
 
 ### Überprüfen Sie, ob die neueste Version von [!DNL Data Connection] installiert ist
 
@@ -35,7 +35,7 @@ In den [[!DNL Data Connection] Versionshinweisen zur Erweiterung](https://experi
 
 >[!NOTE]
 >
->Die neueste Version der [!DNL Data Connection]-Erweiterung enthält das `customers-connector`-Modul, das für das Senden von Profildaten an die Experience Platform verantwortlich ist. Das `customers-connector` sollte Version `1.2.0` oder höher sein.
+>Die neueste Version der [!DNL Data Connection]-Erweiterung enthält das `customers-connector` , das für das Senden von Profildaten an die Experience Platform verantwortlich ist. Das `customers-connector` sollte Version `1.2.0` oder höher sein.
 
 ### Überprüfen, ob das Modul „customers-connector“ konfiguriert ist
 
@@ -69,7 +69,7 @@ Führen Sie die folgenden Befehle aus, um die Codegenerierung und Adobe Commerce
    bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 
-### Bestätigen Sie, dass die Profildaten erfasst und an Experience Platform gesendet werden konnten.
+### Bestätigen, dass Profildaten erfasst und an Experience Platform gesendet werden können
 
 Stellen Sie in Commerce Admin sicher, dass die folgenden Felder festgelegt sind:
 
@@ -120,7 +120,7 @@ select * from event_data_saas;
 
 ### Überprüfen Sie, ob sich die Service-ID in der Zulassungsliste befindet, und bestätigen Sie dies mit dem Adobe Commerce-Support
 
-1. Auf die Zulassungsliste setzen Stellen Sie sicher, dass die [!UICONTROL Commerce Services Connector] `serviceId` in der Adobe Commerces angezeigt wird.
+1. Stellen Sie sicher, dass die [!UICONTROL Commerce Services Connector] `serviceId` in der Adobe Commerces angezeigt wird.
 1. Wenden Sie sich an den [Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)Support, um den Status der Zulassungsliste zu bestätigen.
 
 ## Verwandtes Lesen
