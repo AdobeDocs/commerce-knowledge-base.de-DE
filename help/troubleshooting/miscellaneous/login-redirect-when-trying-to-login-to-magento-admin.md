@@ -4,9 +4,9 @@ description: In diesem Artikel finden Sie die möglichen Lösungen für das Comm
 exl-id: ff3114fd-8690-4983-8221-cf807f083b15
 feature: Admin Workspace, Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: ec2111316458420c51a6b6f3b3881bd3f9d10c06
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -90,4 +90,4 @@ Gehen Sie wie folgt vor, um die Cookie-Einstellungswerte zu überprüfen und zu 
 ## Verwandte Artikel
 
 * [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihr Konto ist vorübergehend deaktiviert“ &#x200B;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) unserer Support-Wissensdatenbank.
-* [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ &#x200B;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) unserer Support-Wissensdatenbank.
+* [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41686) unserer Support-Wissensdatenbank.
