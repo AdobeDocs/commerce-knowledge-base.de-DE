@@ -1,19 +1,19 @@
 ---
 title: Verwenden von Datenexporten zur Ermittlung von Diskrepanzen
-description: Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
+description: Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1389'
 ht-degree: 0%
 
 ---
 
 # Verwenden von Datenexporten zur Ermittlung von Diskrepanzen
 
-Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
+Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
 
 Nehmen wir beispielsweise diese Analyse:
 
@@ -51,11 +51,11 @@ Nun, da alle Daten an einem Ort sind, können wir nach der Quelle der Diskrepanz
 
 Wenn beide Systeme dieselbe Zeilenanzahl aufweisen und die Metrik **Umsatz** nicht mit den Quelldaten übereinstimmt, muss **order\_total** irgendwo abgeschaltet sein. Es ist möglich, dass das Feld **order\_total** in Ihrer Quelldatenbank aktualisiert wurde und Magento BI diese Änderungen nicht übernimmt.
 
-Um dies zu bestätigen, überprüfen Sie, ob die Spalte **order\_total** erneut überprüft wird. Wechseln Sie zu Data Warehouse Manager und klicken Sie auf die Tabelle **`orders`** . Die [Häufigkeit der erneuten Überprüfung](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=de) wird in der Spalte „Änderungen?“ angezeigt. Das Feld **order\_total** sollte so oft neu überprüft werden, wie dies erwartet wird. Ist dies nicht der Fall, sollte mit der gewünschten Häufigkeit fortgefahren werden.
+Um dies zu bestätigen, überprüfen Sie, ob die Spalte **order\_total** erneut überprüft wird. Wechseln Sie zu Data Warehouse Manager und klicken Sie auf die Tabelle **`orders`** . Die [Häufigkeit der erneuten Überprüfung](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) wird in der Spalte „Änderungen?“ angezeigt. Das Feld **order\_total** sollte so oft neu überprüft werden, wie dies erwartet wird. Ist dies nicht der Fall, sollte mit der gewünschten Häufigkeit fortgefahren werden.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
-Wenn die Häufigkeit der erneuten Prüfung bereits korrekt eingestellt ist, ist ein anderer Fehler aufgetreten. Die nächsten Schritte [&#x200B; Sie im Abschnitt &#x200B;](#support)Support kontaktieren“ am Ende dieses Artikels.
+Wenn die Häufigkeit der erneuten Prüfung bereits korrekt eingestellt ist, ist ein anderer Fehler aufgetreten. Die nächsten Schritte [ Sie im Abschnitt ](#support)Support kontaktieren“ am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält MEHR Zeilen als Magento BI {#morerows}
 
@@ -65,11 +65,11 @@ Navigieren Sie zur Seite Verbindungen und sehen Sie sich den Status der Datenque
 
 1. **Wenn der Status Erneut**, verwendet die Verbindung nicht die richtigen Anmeldeinformationen. Klicken Sie auf die Verbindung, geben Sie die richtigen Anmeldeinformationen ein und versuchen Sie es erneut.
 1. **Wenn der Status Fehlgeschlagen**, ist die Verbindung auf der Server-Seite möglicherweise nicht ordnungsgemäß eingerichtet. Fehlgeschlagene Verbindungen ergeben sich in der Regel aus einem falschen Hostnamen oder dem Ziel-Server, der keine Verbindungen am angegebenen Port akzeptiert.Klicken Sie in die Verbindung und überprüfen Sie die Schreibweise des Host-Namens und dass der richtige Port eingegeben wurde. Stellen Sie auf der Serverseite sicher, dass der Port Verbindungen akzeptieren kann und dass Ihre Firewall über die zulässige Magento BI IP-Adresse (54.88.76.97/32) verfügt. **Wenn die Verbindung weiterhin fehlschlägt** finden Sie im Abschnitt [Kontaktaufnahme mit dem Support](#support) am Ende dieses Artikels die nächsten Schritte.
-1. **Wenn der Status Erfolgreich ist** , ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte [&#x200B; Sie im Abschnitt &#x200B;](#support)Support kontaktieren“ am Ende dieses Artikels.
+1. **Wenn der Status Erfolgreich ist** , ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte [ Sie im Abschnitt ](#support)Support kontaktieren“ am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält WENIGER Zeilen als Magento BI {#lessrows}
 
-Wenn die Quelldatenbank weniger Zeilen enthält als Magento BI, werden möglicherweise Zeilen aus der Quelldatenbank gelöscht und Magento BI nimmt diese Löschungen nicht auf. **&#x200B; [Löschen von Daten](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=de) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe von logistischen &#x200B;** führen. Daher empfehlen wir dringend, Daten niemals zu löschen, es sei denn, dies ist wirklich erforderlich.
+Wenn die Quelldatenbank weniger Zeilen enthält als Magento BI, werden möglicherweise Zeilen aus der Quelldatenbank gelöscht und Magento BI nimmt diese Löschungen nicht auf. ** [Löschen von Daten](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe von logistischen ** führen. Daher empfehlen wir dringend, Daten niemals zu löschen, es sei denn, dies ist wirklich erforderlich.
 
 Wenn jedoch Zeilen aus der Tabelle gelöscht werden, sollten Sie sich die Häufigkeit der erneuten Überprüfung auf dem Primärschlüssel ansehen. Das erneute Überprüfen des Primärschlüssels bedeutet, dass die Tabelle auf gelöschte Zeilen überprüft wird.
 
@@ -89,7 +89,7 @@ Wenn Sie die Ursache des Problems nicht identifizieren können, müssen Sie den 
 
 ## Verwandtes Lesen
 
-* [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
-* [Adobe Commerce Intelligence-Service-Richtlinien](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [Adobe Commerce Intelligence-Service-Richtlinien](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
 

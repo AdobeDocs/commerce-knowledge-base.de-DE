@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: ec2111316458420c51a6b6f3b3881bd3f9d10c06
+source-git-commit: 85213549e150c6f00e03201750694c0d51b8309d
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1653'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,6 @@ ht-degree: 1%
     * [Adobe Commerce 2.4.2-P1: Rechnungsnachweis mit falschem Wert](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
     * [Zugriff auf die neueste Vorabversion von Adobe Commerce nicht möglich](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
     * [Index wird durch einen anderen Prozess gesperrt](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
-    * [Diagnose einer Datendiskrepanz](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
     * [Admin 2FA-E-Mail-Benachrichtigungen werden nicht empfangen](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
     * [Site im Wartungsmodus, aber für Kunden verfügbar](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
     * [Die Git-Pull-Entwicklung schlägt beim Aktualisieren der Adobe Commerce-Software fehl](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)

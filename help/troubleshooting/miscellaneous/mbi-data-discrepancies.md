@@ -4,9 +4,9 @@ description: 'Sehen die Zahlen in einem bestimmten Bericht ungenau aus? Werden u
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 5a5da5104458309b18ef6d9044bb5eb8d52b671f
+source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '258'
 ht-degree: 0%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 Sehen die Zahlen in einem bestimmten Bericht ungenau aus? Werden unerwartete NULL-Werte angezeigt? Wenn Sie etwas sehen, das nicht ganz richtig erscheint, empfehlen wir, diese Ressourcen zur Fehlerbehebung zu verwenden:
 
-* [Checkliste für die Datendiskrepanzdiagnose](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
+* [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [Verwenden von Exporten zur Ermittlung von Datendiskrepanzen](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-Es wird außerdem empfohlen, sicherzustellen, [&#x200B; die richtigen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) und [erneute &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) für die Tabellen und Spalten festgelegt wurden, die an der Diskrepanz beteiligt sind. Beachten Sie, dass Sie Administratorberechtigungen benötigen, um auf die Replikationsmethode zuzugreifen und Informationen erneut zu überprüfen.
+Es wird außerdem empfohlen, sicherzustellen, [ die richtigen ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) und [erneute ](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) für die Tabellen und Spalten festgelegt wurden, die an der Diskrepanz beteiligt sind. Beachten Sie, dass Sie Administratorberechtigungen benötigen, um auf die Replikationsmethode zuzugreifen und Informationen erneut zu überprüfen.
 
 ## Ich brauche noch Hilfe!
 
-Wenn der Bericht immer noch ungenau ist, keine Sorge - unser Support-Team hilft Ihnen gerne weiter! [Kontaktieren Sie uns](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit folgenden Informationen:
+Wenn der Bericht immer noch ungenau ist, keine Sorge - unser Support-Team hilft Ihnen gerne weiter! [Kontaktieren Sie uns](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) mit folgenden Informationen:
 
 * Wie heißt der Bericht, wo die Diskrepanz zu sehen ist?
 * Welche Werte im Bericht sind falsch?
@@ -31,4 +31,4 @@ Wenn der Bericht immer noch ungenau ist, keine Sorge - unser Support-Team hilft 
 
 ## Verwandtes Lesen
 
-* [Änderungen an der strukturellen Datenbank](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=de)
+* [Änderungen an der strukturellen Datenbank](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
