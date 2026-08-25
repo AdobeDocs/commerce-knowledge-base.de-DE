@@ -55,7 +55,7 @@ Um dies zu bestätigen, überprüfen Sie, ob die Spalte **order\_total** erneut 
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
-Wenn die Häufigkeit der erneuten Prüfung bereits korrekt eingestellt ist, ist ein anderer Fehler aufgetreten. Die nächsten Schritte [ Sie im Abschnitt ](#support)Support kontaktieren“ am Ende dieses Artikels.
+Wenn die Häufigkeit der erneuten Prüfung bereits korrekt eingestellt ist, ist ein anderer Fehler aufgetreten. Die nächsten Schritte [&#x200B; Sie im Abschnitt &#x200B;](#support)Support kontaktieren“ am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält MEHR Zeilen als Magento BI {#morerows}
 
@@ -65,11 +65,11 @@ Navigieren Sie zur Seite Verbindungen und sehen Sie sich den Status der Datenque
 
 1. **Wenn der Status Erneut**, verwendet die Verbindung nicht die richtigen Anmeldeinformationen. Klicken Sie auf die Verbindung, geben Sie die richtigen Anmeldeinformationen ein und versuchen Sie es erneut.
 1. **Wenn der Status Fehlgeschlagen**, ist die Verbindung auf der Server-Seite möglicherweise nicht ordnungsgemäß eingerichtet. Fehlgeschlagene Verbindungen ergeben sich in der Regel aus einem falschen Hostnamen oder dem Ziel-Server, der keine Verbindungen am angegebenen Port akzeptiert.Klicken Sie in die Verbindung und überprüfen Sie die Schreibweise des Host-Namens und dass der richtige Port eingegeben wurde. Stellen Sie auf der Serverseite sicher, dass der Port Verbindungen akzeptieren kann und dass Ihre Firewall über die zulässige Magento BI IP-Adresse (54.88.76.97/32) verfügt. **Wenn die Verbindung weiterhin fehlschlägt** finden Sie im Abschnitt [Kontaktaufnahme mit dem Support](#support) am Ende dieses Artikels die nächsten Schritte.
-1. **Wenn der Status Erfolgreich ist** , ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte [ Sie im Abschnitt ](#support)Support kontaktieren“ am Ende dieses Artikels.
+1. **Wenn der Status Erfolgreich ist** , ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte [&#x200B; Sie im Abschnitt &#x200B;](#support)Support kontaktieren“ am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält WENIGER Zeilen als Magento BI {#lessrows}
 
-Wenn die Quelldatenbank weniger Zeilen enthält als Magento BI, werden möglicherweise Zeilen aus der Quelldatenbank gelöscht und Magento BI nimmt diese Löschungen nicht auf. ** [Löschen von Daten](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe von logistischen ** führen. Daher empfehlen wir dringend, Daten niemals zu löschen, es sei denn, dies ist wirklich erforderlich.
+Wenn die Quelldatenbank weniger Zeilen enthält als Magento BI, werden möglicherweise Zeilen aus der Quelldatenbank gelöscht und Magento BI nimmt diese Löschungen nicht auf. **&#x200B; [Löschen von Daten](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe von logistischen &#x200B;** führen. Daher empfehlen wir dringend, Daten niemals zu löschen, es sei denn, dies ist wirklich erforderlich.
 
 Wenn jedoch Zeilen aus der Tabelle gelöscht werden, sollten Sie sich die Häufigkeit der erneuten Überprüfung auf dem Primärschlüssel ansehen. Das erneute Überprüfen des Primärschlüssels bedeutet, dass die Tabelle auf gelöschte Zeilen überprüft wird.
 
