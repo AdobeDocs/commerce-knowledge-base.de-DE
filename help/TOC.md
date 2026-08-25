@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: f0181656eb18a7d9e4b7a78639c9fadb130d74e6
+source-git-commit: ec2111316458420c51a6b6f3b3881bd3f9d10c06
 workflow-type: tm+mt
-source-wordcount: '1673'
+source-wordcount: '1657'
 ht-degree: 1%
 
 ---
@@ -97,7 +97,6 @@ ht-degree: 1%
     * [Index wird durch einen anderen Prozess gesperrt](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
     * [Diagnose einer Datendiskrepanz](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
     * [Admin 2FA-E-Mail-Benachrichtigungen werden nicht empfangen](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
-    * [Leiten Sie mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ zurück zum Commerce Admin-Anmeldeformular](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
     * [Site im Wartungsmodus, aber für Kunden verfügbar](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
     * [Die Git-Pull-Entwicklung schlägt beim Aktualisieren der Adobe Commerce-Software fehl](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
     * [Blocker beim Start auf Adobe Commerce in der Cloud-Infrastruktur](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
