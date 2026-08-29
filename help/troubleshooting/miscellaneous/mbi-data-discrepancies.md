@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Sehen die Zahlen in einem bestimmten Bericht ungenau aus? Werden unerwartete NULL-Werte angezeigt? Wenn Sie etwas sehen, das nicht ganz richtig erscheint, empfehlen wir, diese Ressourcen zur Fehlerbehebung zu verwenden:
 
-* [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [Verwenden von Exporten zur Ermittlung von Datendiskrepanzen](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
 Es wird außerdem empfohlen, sicherzustellen, [&#x200B; die richtigen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) und [erneute &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) für die Tabellen und Spalten festgelegt wurden, die an der Diskrepanz beteiligt sind. Beachten Sie, dass Sie Administratorberechtigungen benötigen, um auf die Replikationsmethode zuzugreifen und Informationen erneut zu überprüfen.

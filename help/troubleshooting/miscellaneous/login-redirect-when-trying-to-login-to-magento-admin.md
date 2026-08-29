@@ -90,4 +90,4 @@ Gehen Sie wie folgt vor, um die Cookie-Einstellungswerte zu überprüfen und zu 
 ## Verwandte Artikel
 
 * [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihr Konto ist vorübergehend deaktiviert“ &#x200B;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) unserer Support-Wissensdatenbank.
-* [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ &#x200B;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41686) unserer Support-Wissensdatenbank.
+* [Leiten Sie zurück zum Admin-Anmeldeformular mit dem Fehler „Ihre aktuelle Sitzung ist abgelaufen“ &#x200B;](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-41686) unserer Support-Wissensdatenbank.
