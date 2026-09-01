@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Datenexporten zur Ermittlung von Diskrepanzen
-description: Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
+description: Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-41479) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Verwenden von Datenexporten zur Ermittlung von Diskrepanzen
 
-Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
+Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-41479) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
 
 Nehmen wir beispielsweise diese Analyse:
 
@@ -89,7 +89,7 @@ Wenn Sie die Ursache des Problems nicht identifizieren können, müssen Sie den 
 
 ## Verwandtes Lesen
 
-* [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [Adobe Commerce Intelligence-Service-Richtlinien](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
 * [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
 
