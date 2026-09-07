@@ -3,9 +3,14 @@ title: Dringende Maßnahmen erforderlich Wichtiges Sicherheitsupdate für Adobe 
 description: Adobe hat das Sicherheitsbulletin APSB26-146 veröffentlicht, das CVE-2026-75650 adressiert, eine Zero-Day-Schwachstelle in Adobe Commerce. Erfahren Sie, wie Sie den Hotfix anwenden und Anmeldeinformationen rotieren.
 autotag-review: '2026-09-07T17:27:44.037Z'
 TQID: 'https://experienceleague.adobe.com/ADVRRn85--ZgWtPdi4qA49fsDPVW976N4MYWp26taho'
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c32adafa-ed01-4b31-997e-2413013911b0
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: d0e075aabc24a1719098754b456b71a0025e47bf
 workflow-type: tm+mt
 source-wordcount: 842
@@ -96,7 +101,7 @@ Wenden Sie den folgenden Hotfix auf die betroffene Produktversion an:
 
 ### Anwenden des Hotfixes
 
-Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
+Entpacken Sie die Datei und [&#x200B; Sie in unserer Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
 ### Bestätigen der Anwendung des Hotfixes (nur Adobe Commerce auf Cloud-Händler)
 
@@ -146,4 +151,4 @@ Für Adobe Commerce verfügbare Sicherheitsupdates:
 
 ### Verwandtes Lesen
 
-[Aktivieren oder Deaktivieren des ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
+[Aktivieren oder Deaktivieren des &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
