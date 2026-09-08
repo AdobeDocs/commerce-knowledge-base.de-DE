@@ -86,7 +86,7 @@ Um die Sicherheitslücke für die betroffenen Produkte und Versionen zu beheben,
 
 ### Anwenden des Hotfixes
 
-Entpacken Sie die Datei und [&#x200B; Sie in unserer Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
+Entpacken Sie die Datei und [&#x200B; Sie in unserer Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
 ### Bestätigen der Anwendung des Hotfixes (nur Adobe Commerce auf Cloud-Händler)
 
@@ -94,7 +94,7 @@ Da nicht einfach festgestellt werden kann, ob das Problem behoben wurde, wird em
 
 Dies können Sie tun, indem Sie die folgenden Schritte ausführen und dabei die Datei `VULN-39341_Hotfix_COMPOSER.patch` als Beispiel verwenden:
 
-1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage#install).
+1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage#install).
 1. Führen Sie den Befehl `vendor/bin/magento-patches -n status | grep "39341\|Status"` aus.
 1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der dieses Beispiel-VULN-39341 den Status Angewendet zurückgibt:
 
@@ -115,7 +115,7 @@ Gehen Sie wie folgt vor, um Anmeldeinformationen zu rotieren:
 1. Wenden Sie den Hotfix an.
 1. Wartungsmodus aktivieren.
 1. Deaktivieren Sie die Cron-Ausführung (Commerce in Cloud-Befehl: `vendor/bin/ece-tools cron:disable`).
-1. [Drehen Sie Ihre Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en).
+1. [Drehen Sie Ihre Verschlüsselungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key?lang=en).
 1. Rotieren Sie alle Administratorbereich-Benutzerkennwörter.
 1. Deaktivieren und regenerieren Sie alle REST/SOAP/GraphQL-Integrations-Token (**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**).
 1. Rotieren von OAuth-Client-Geheimnissen für alle verbundenen Anwendungen von Drittanbietern.
@@ -137,4 +137,4 @@ Für Adobe Commerce verfügbare Sicherheitsupdates:
 
 ### Verwandtes Lesen
 
-[Aktivieren oder Deaktivieren des &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
+[Aktivieren oder Deaktivieren des &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
