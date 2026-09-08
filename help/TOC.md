@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: d8f408d530a9106a1b26c602085bd6ce0db3fef3
+source-git-commit: 16bf1de71bfc6ab2836cb2e98dd60fe191d942d1
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1618'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,7 @@ ht-degree: 1%
 * [Adobe Commerce Support-Wissensdatenbank](/help/overview.md)
 * Ankündigungen {#announcements}
   * [Ankündigungen - Übersicht](/help/announcements/overview.md)
+  * [Sicherheitsupdate für Adobe Commerce verfügbar - APSB26-146](/help/announcements/commerce-apsb26-146.md)
   * Adobe Commerce-Ankündigungen {#commerce-announcements}
     * {hide-from-toc}[Migration des Aufnahmevorgangs der Adobe Commerce-Unterstützung nach Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
 * Fehlerbehebung {#troubleshooting}
