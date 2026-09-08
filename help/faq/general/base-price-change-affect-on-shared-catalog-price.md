@@ -5,7 +5,7 @@ exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
 source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ Wenn sich der Grundpreis des Produkts ändert und niedriger als der entsprechend
 
 ## Verwandtes Lesen
 
-[Festlegen von Preisen und Strukturen für einen freigegebenen &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html?lang=de)) in unserem Benutzerhandbuch.
+[Festlegen von Preisen und Strukturen für einen freigegebenen ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html)) in unserem Benutzerhandbuch.
