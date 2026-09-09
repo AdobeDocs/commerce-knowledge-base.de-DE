@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 16bf1de71bfc6ab2836cb2e98dd60fe191d942d1
+source-git-commit: b4a9384a0d72eec790e08382dd2e45d53cbb9831
 workflow-type: tm+mt
-source-wordcount: '1618'
+source-wordcount: '1611'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,6 @@ ht-degree: 1%
     * [Zwischengespeicherte Bilder werden nach dem Upgrade von 2.2.x auf 2.3.x nicht geladen](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
     * [Fehlermeldung beim Hinzufügen von Sites zur Sicherheitsprüfung](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
     * [Fehlerbehebung bei freigegebenem Zugriff](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
-    * [Langsame Leistung, langsame und lange laufende Crons](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
     * [Fehler bei der Validierung der Fastly-Anmeldedaten](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
     * [Der Bericht des Security Scan Tools ist leer](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
     * [Adobe Commerce 2.4.2-P1: Rechnungsnachweis mit falschem Wert](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
