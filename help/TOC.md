@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 829114a6626409412d62e829ba1209d3fbc55ae2
+source-git-commit: 104c637c8f1c0a22b34d0b963a7cacf80b074999
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1602'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,6 @@ ht-degree: 1%
     * [Magento Order Management System (OMS) für Adobe Commerce-Verarbeitungsfehler](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
     * [Zwischengespeicherte Bilder werden nach dem Upgrade von 2.2.x auf 2.3.x nicht geladen](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
     * [Fehlermeldung beim Hinzufügen von Sites zur Sicherheitsprüfung](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
-    * [Fehlerbehebung bei freigegebenem Zugriff](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
     * [Der Bericht des Security Scan Tools ist leer](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
     * [Adobe Commerce 2.4.2-P1: Rechnungsnachweis mit falschem Wert](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
     * [Zugriff auf die neueste Vorabversion von Adobe Commerce nicht möglich](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
