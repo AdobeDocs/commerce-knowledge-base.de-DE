@@ -2,13 +2,11 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: f88551f595f1907957301f2ebdf9c0c9dc685939
+source-git-commit: 75d326acaa5926506fe3078da18abbbcdf2f3df4
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1589'
 ht-degree: 1%
-
 ---
-
 # Wissensdatenbank zu Adobe Commerce {#kb}
 
 * [Adobe Commerce Support-Wissensdatenbank](/help/overview.md)
@@ -73,7 +71,6 @@ ht-degree: 1%
     * [Durch das Anwenden eines Patches wird Ihre Site heruntergefahren](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
     * [Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Verschiedenes {#miscellaneous}
-    * [E-Mail, die besagt, dass der Exportspeicher fast voll ist](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
     * [Ich habe API-Schlüssel für Adobe AI konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [Hilfe zur Fehlerbehebung bei allgemeinen benutzerdefinierten Modulen](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Cache-Aufwärmung und Site auf Adobe Commerce nicht verfügbar](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
