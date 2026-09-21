@@ -4,13 +4,11 @@ description: In diesem Artikel wird erläutert, wie Sie ein langsames Site-Probl
 exl-id: e4e5a753-efa3-4552-aaf6-28e44efcfa5b
 feature: Cache, Observability
 role: Developer
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+source-git-commit: 42aa1d4ef3540d4eb9682627dc5bf1dd14091dc3
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '366'
 ht-degree: 0%
-
 ---
-
 # Cache aktivieren, um Leistungseinbußen zu vermeiden
 
 In diesem Artikel wird erläutert, wie Sie ein langsames Site-Problem beheben können, das durch die Deaktivierung bestimmter Adobe Commerce-Cache-Typen verursacht wird.
@@ -52,6 +50,6 @@ Adobe Commerce-Cache-Dokumentation in unserer Entwicklerdokumentation:
 
 Weitere mögliche Gründe für Leistungsprobleme und Lösungen für sie:
 
-* [Deaktivieren der Adobe Commerce-Bannerausgabe zur Verbesserung der Site-Leistung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [Adobe Commerce-Bannerausgabe deaktivieren, um die Site-Leistung zu verbessern](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26909)
 * [MySQL-Tabellen sind zu groß](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-26945)
-* [Langsame Leistung, langsame und lange laufende Crons](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
+* [Langsame Leistung, langsame und lange laufende Crons](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-42802)
