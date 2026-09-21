@@ -5,19 +5,22 @@ autotag-review: '2026-09-07T17:27:44.037Z'
 TQID: 'https://experienceleague.adobe.com/ADVRRn85--ZgWtPdi4qA49fsDPVW976N4MYWp26taho'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 8a165b274bf508d849c60fd6768569af1885fdb7
+    internal-label: Security
+source-git-commit: d80b5265f4babf0a7ea85034c9ccc8ae19636a48
 workflow-type: tm+mt
-source-wordcount: 957
+source-wordcount: '957'
 ht-degree: 0%
-
 ---
-
 
 # Dringende Maßnahmen erforderlich: Wichtiges Sicherheitsupdate für Adobe Commerce verfügbar (APSB26-146)
 
@@ -29,7 +32,7 @@ Am 7. September veröffentlichte Adobe ein wichtiges Sicherheitsupdate, das Adob
 
 Adobe hat das Sicherheitsbulletin APSB26-146 veröffentlicht, das diese Sicherheitslücke behebt. Das Bulletin finden Sie hier:
 
-[Sicherheitsupdate für Adobe Commerce verfügbar | APSB26-146](https://helpx.adobe.com/de/security/products/magento/apsb26-146.html)
+[Sicherheitsupdate für Adobe Commerce verfügbar | APSB26-146](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
 
 In diesem Artikel wird erläutert, wie Sie den Hotfix für aktuelle und frühere Versionen von Adobe Commerce und Magento Open Source anwenden.
 
@@ -81,12 +84,11 @@ Um die Sicherheitslücke für die betroffenen Produkte und Versionen zu beheben,
 | 2.4.6-p13, 2.4.6-p12, 2.4.5-p15, 2.4.5-p14, 2.4.4-p16, 2.4.4-p15 | [VULN-39341_246-p13.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p13-patch.zip) |
 | 2.4.6 - 2.4.6-p11, 2.4.5 - 2.4.5-p13, 2.4.4 - 2.4.4-p14 | [VULN-39341_246-p11.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p11-patch.zip) |
 
-
 {style="table-layout:auto"}
 
 ### Anwenden des Hotfixes
 
-Entpacken Sie die Datei und [&#x200B; Sie in unserer Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
 ### Bestätigen der Anwendung des Hotfixes (nur Adobe Commerce auf Cloud-Händler)
 
@@ -94,7 +96,7 @@ Da nicht einfach festgestellt werden kann, ob das Problem behoben wurde, wird em
 
 Dies können Sie tun, indem Sie die folgenden Schritte ausführen und dabei die Datei `VULN-39341_Hotfix_COMPOSER.patch` als Beispiel verwenden:
 
-1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/usage#install).
+1. [Installieren Sie das Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage#install).
 1. Führen Sie den Befehl `vendor/bin/magento-patches -n status | grep "39341\|Status"` aus.
 1. Es sollte eine ähnliche Ausgabe angezeigt werden, bei der dieses Beispiel-VULN-39341 den Status Angewendet zurückgibt:
 
@@ -115,7 +117,7 @@ Gehen Sie wie folgt vor, um Anmeldeinformationen zu rotieren:
 1. Wenden Sie den Hotfix an.
 1. Wartungsmodus aktivieren.
 1. Deaktivieren Sie die Cron-Ausführung (Commerce in Cloud-Befehl: `vendor/bin/ece-tools cron:disable`).
-1. [Drehen Sie Ihre Verschlüsselungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/security/encryption-key?lang=en).
+1. [Drehen Sie Ihre Verschlüsselungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en).
 1. Rotieren Sie alle Administratorbereich-Benutzerkennwörter.
 1. Deaktivieren und regenerieren Sie alle REST/SOAP/GraphQL-Integrations-Token (**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**).
 1. Rotieren von OAuth-Client-Geheimnissen für alle verbundenen Anwendungen von Drittanbietern.
@@ -132,9 +134,9 @@ Gehen Sie wie folgt vor, um Anmeldeinformationen zu rotieren:
 
 Für Adobe Commerce verfügbare Sicherheitsupdates:
 
-* [Adobe-Sicherheitsbulletin (APSB26-146)](https://helpx.adobe.com/de/security/products/magento/apsb26-146.html)
-* [Die neuesten für Adobe Commerce verfügbaren Sicherheitsupdates](https://helpx.adobe.com/de/security/products/magento.html)
+* [Adobe-Sicherheitsbulletin (APSB26-146)](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
+* [Die neuesten für Adobe Commerce verfügbaren Sicherheitsupdates](https://helpx.adobe.com/security/products/magento.html)
 
 ### Verwandtes Lesen
 
-[Aktivieren oder Deaktivieren des &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
+[Aktivieren oder Deaktivieren des ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
