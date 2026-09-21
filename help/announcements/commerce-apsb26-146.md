@@ -88,7 +88,7 @@ Um die Sicherheitslücke für die betroffenen Produkte und Versionen zu beheben,
 
 ### Anwenden des Hotfixes
 
-Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
+Entpacken Sie die Datei und [&#x200B; Sie in unserer Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
 ### Bestätigen der Anwendung des Hotfixes (nur Adobe Commerce auf Cloud-Händler)
 
@@ -139,4 +139,4 @@ Für Adobe Commerce verfügbare Sicherheitsupdates:
 
 ### Verwandtes Lesen
 
-[Aktivieren oder Deaktivieren des ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
+[Aktivieren oder Deaktivieren des &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) im Adobe Commerce-Installationshandbuch
