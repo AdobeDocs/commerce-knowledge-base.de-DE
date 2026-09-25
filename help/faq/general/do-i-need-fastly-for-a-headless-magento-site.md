@@ -31,5 +31,5 @@ Alle Kunden von Adobe Commerce auf Cloud-Infrastrukturen erhalten im Rahmen des 
 
 ## Weitere Informationen
 
-* [Headless-Websites: Was ist das Besondere an der entkoppelten Architektur?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) von [Josh ](https://pantheon.io/team/josh-koenig).
+* [Headless-Websites: Was ist das Besondere an der entkoppelten Architektur?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) von [Josh &#x200B;](https://pantheon.io/team/josh-koenig).
 * [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) in unserer Entwicklerdokumentation.
