@@ -5,11 +5,9 @@ description: In diesem Artikel wird erläutert, wie Sie die Zuordnung Ihrer vCPU
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
 source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '367'
 ht-degree: 0%
-
 ---
-
 # Anzeigen der vCPU-Ebene der Umgebung in Ihrem Cluster auf Adobe Commerce
 
 In diesem Artikel wird erläutert, wie Sie die Zuordnung Ihrer vCPU-Ebene mithilfe der New Relic-Registerkarte „Infra“ unter „Observation for Adobe Commerce&quot; überprüfen. Observation for Adobe Commerce ist ein New Relic-Nerdlet, das den Status Ihrer Adobe Commerce-Site, aktuelle und vergangene Zeitansichten anzeigt.
