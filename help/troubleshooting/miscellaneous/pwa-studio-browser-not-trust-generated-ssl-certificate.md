@@ -6,11 +6,9 @@ feature: Configuration
 role: Developer
 source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '303'
 ht-degree: 0%
-
 ---
-
 # PWA Studio: Browser vertraut nicht auf generiertes SSL-Zertifikat
 
 Dieser Artikel bietet eine Lösung für eine nicht vertrauenswürdige, generierte SSL-Zertifikatwarnung in Ihrem Browser, wenn Sie während der Entwicklung zu einer lokalen Instanz Ihrer PWA Studio-Storefront navigieren.
@@ -52,7 +50,7 @@ Einige Benutzer haben vorgeschlagen, den Ordner „devcert“ zu löschen, um di
 
 ## Lesen Sie diesbezüglich in unserer Support-Wissensdatenbank
 
-* [PWA Studio: Fehler bei der Vertrauenswürdigkeit des selbstsignierten Zertifikats](https://support.magento.com/hc/en-us/articles/360038973172)
-* [PWA Studio: Webpack hängt vor Kompilierung](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
-* [PWA Studio: Der Browser zeigt den Fehler „Proxy kann nicht verwendet werden“ an](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
+* [PWA Studio: Fehler bei selbstsignierter Zertifikatvertrauensstellung](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio: Webpack bleibt vor Kompilierung hängen](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
+* [PWA Studio: Der Browser zeigt den Fehler „Proxy nicht möglich für“ an](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
 * [PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
