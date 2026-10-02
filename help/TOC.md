@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 75d326acaa5926506fe3078da18abbbcdf2f3df4
+source-git-commit: 50b733947e4c62b9a318df1f86a51c456f9f15d1
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1583'
 ht-degree: 1%
 ---
 # Wissensdatenbank zu Adobe Commerce {#kb}
@@ -196,7 +196,6 @@ ht-degree: 1%
   * [Adobe Commerce wird nach der Bereitstellung übersprungen, da die Bereitstellung fehlgeschlagen war. error.md](/help/how-to/general/adobe-commerce-post-deploy-is-skipped-because-deploy-was-failed-error.md)
   * [Ändern der E-Mail-Adresse im Konto magento.com , wenn das Feld ausgegraut ist](/help/how-to/general/change-email-address-on-magento-account.md)
   * [So entfernen Sie Magento Order Management](/help/how-to/general/how-to-remove-mom.md)
-  * [Technische Tipps für Commerce Holiday Readiness](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
   * [Umgehen von WAF für GraphQL-Anfragen](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
   * [Upgrade von MariaDB 10.4 auf 10.5 für Adobe Commerce on Cloud Service](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQs {#faq}
