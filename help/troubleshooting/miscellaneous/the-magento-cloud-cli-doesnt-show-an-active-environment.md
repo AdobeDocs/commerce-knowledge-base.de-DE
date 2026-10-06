@@ -1,16 +1,14 @@
 ---
-title: Die "Magento-Cloud [!DNL CLI]  zeigt keine aktive Umgebung
-description: In diesem Artikel wird ein bekanntes Adobe Commerce-Problem beschrieben, bei dem "Magento-Cloud“ [!DNL CLI] (Befehlszeilen-Tool) keine aktive Umgebung anzeigt.
+title: Die [!DNL CLI] "Magento-Cloud“ zeigt keine aktive Umgebung an
+description: In diesem Artikel wird ein bekanntes Adobe Commerce-Problem beschrieben, bei dem die [!DNL CLI] "Magento-Cloud“ (Befehlszeilen-Tool) keine aktive Umgebung anzeigt.
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
 source-git-commit: 5eac8bb54e205eff6a96e279295cd12db1009f0a
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '136'
 ht-degree: 0%
-
 ---
-
 # Die `Magento-cloud` [!DNL CLI] zeigt keine aktive Umgebung an
 
 ## Problem

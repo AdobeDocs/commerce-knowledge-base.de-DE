@@ -1,19 +1,17 @@
 ---
 title: Magento Order Management System (OMS) für Adobe Commerce-Verarbeitungsfehler
-description: Dieser Artikel bietet eine Lösung für das Problem, wenn Sie einen „getMode()“-Fehler in der CLI erhalten, die „bin/magento oms:messages:process“ im Magento Order Management System (OMS) für Adobe Commerce ausführt.
+description: Dieser Artikel bietet eine Lösung für das Problem, wenn Sie einen „getMode()“-Fehler in der CLI erhalten, die „bin/magento:messages:process“ im Magento Order Management System (OMS) für Adobe Commerce ausführt.
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 # Magento Order Management System (OMS) für Adobe Commerce-Verarbeitungsfehler
 
-Dieser Artikel bietet eine Lösung für das Problem, wenn ein `getMode()` in der CLI auftritt, die im Magento Order Management System (OMS) für Adobe Commerce ausgeführt `bin/magento oms:messages:process`.
+Dieser Artikel bietet eine Lösung für das Problem, wenn ein `getMode()` in der CLI-`bin/magento oms:messages:process` im Magento Order Management System (OMS) für Adobe Commerce auftritt.
 
 ## Betroffene Produkte und Versionen
 
@@ -68,4 +66,4 @@ Um das Problem zu beheben, führen Sie die folgende [!DNL SQL]-Anweisung in der 
 ## Verwandtes Lesen
 
 * OMS-Dokumente [Tutorial zur Einrichtung des OMS-Connectors](https://commerce-docs.github.io/oms-documentation-archive/integration/connector/setup-tutorial/)
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
