@@ -6,11 +6,9 @@ feature: Categories
 role: Developer
 source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '760'
 ht-degree: 0%
-
 ---
-
 # Änderungen an Kategorien werden nicht gespeichert
 
 Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass beim Aktualisieren von Produktkategorien über den Commerce-Admin die Änderungen nicht in der Admin- und Storefront angezeigt werden. Das Problem wird durch die beschädigten Daten in der `catalog_category_entity` verursacht. Um das Problem zu beheben, beheben oder entfernen Sie die problematischen Datensätze für die Kategorieaktualisierung in der Tabelle. Danach sollten Sie in der Lage sein, Produktkategorien mithilfe des Administrators zu aktualisieren.
@@ -40,7 +38,7 @@ Details:
 
 ### Wie wird der zweite DB-Eintrag (und alle nächsten) in der DB für ein und dieselbe Kategorie angezeigt?
 
-Der zweite DB-Eintrag (und möglicherweise die nächsten) für die betroffene Kategorie bedeutet, dass Kategorienaktualisierungen mit dem Magento\_Staging-Modul geplant wurden. Das Modul erstellt einen zusätzlichen Datensatz für eine Kategorie im `catalog_category_entity`. Dies ist das erwartete Anwendungsverhalten. Das Problem besteht darin, dass die Datensätze dieselben Werte für die `created_in` Spalte aufweisen.
+Der zweite DB-Eintrag (und möglicherweise die nächsten) für die betroffene Kategorie bedeutet, dass Kategorienaktualisierungen mithilfe des Magento-Staging-Moduls geplant wurden. Das Modul erstellt einen zusätzlichen Datensatz für eine Kategorie im `catalog_category_entity`. Dies ist das erwartete Anwendungsverhalten. Das Problem besteht darin, dass die Datensätze dieselben Werte für die `created_in` Spalte aufweisen.
 
 ### Wie werden dieselben Werte angezeigt?
 

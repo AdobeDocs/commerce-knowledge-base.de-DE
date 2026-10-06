@@ -1,18 +1,16 @@
 ---
 title: Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Geschäft
-description: In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbankentität (DB) (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Adobe Commerce Store mithilfe der SQL-Anweisung „ALTER TABLE“ ändern können.
+description: In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbankentität (DB) ändern können (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Adobe Commerce-Store mit der SQL-Anweisung „ALTER TABLE“.
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
 source-git-commit: e33d0bf6c857d0d54ec1373db79910d78296b054
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '617'
 ht-degree: 0%
-
 ---
-
 # Ändern der Inkrement-ID für eine DB-Entität (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Geschäft
 
-In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbankentität (DB) (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Adobe Commerce Store mithilfe der `ALTER TABLE` SQL-Anweisung ändern.
+In diesem Artikel wird beschrieben, wie Sie die Inkrement-ID für eine Adobe Commerce-Datenbankentität (DB) ändern können (Bestellung, Rechnung, Gutschrift usw.) in einem bestimmten Adobe Commerce-Store mit der `ALTER TABLE` SQL-Anweisung speichern.
 
 >[!NOTE]
 >

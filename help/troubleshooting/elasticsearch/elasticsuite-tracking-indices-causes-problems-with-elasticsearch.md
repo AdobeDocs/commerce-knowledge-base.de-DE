@@ -1,19 +1,17 @@
 ---
-title: ElasticSuite Trackingindizes verursacht Probleme mit dem Elasticsearch
+title: ElasticSuite Trackingindizes verursacht Probleme mit Elasticsearch
 description: In diesem Artikel wird über das Problem von Elasticsearch-Speicherproblemen gesprochen, die durch Tracking-Indizes verursacht werden, die vom ElasticSuite-Plug-in erzeugt werden.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
-# ElasticSuite Trackingindizes verursacht Probleme mit dem Elasticsearch
+# ElasticSuite Trackingindizes verursacht Probleme mit Elasticsearch
 
 >[!NOTE]
 >
->ElasticSuite und die dazugehörigen Anwendungen sind Drittanbieter-Tools, die derzeit nicht von Adobe unterstützt werden. Diese Inhalte werden nur zu Informationszwecken und nicht als Hinweis darauf präsentiert, was für die Support-Abdeckung aktiviert ist.
+>ElasticSuite und die zugehörigen Anwendungen sind Drittanbieter-Tools, die derzeit nicht von Adobe unterstützt werden. Diese Inhalte werden nur zu Informationszwecken und nicht als Hinweis darauf präsentiert, was für die Support-Abdeckung aktiviert ist.
 
 In diesem Artikel wird über das Problem von Elasticsearch-Speicherproblemen gesprochen, die durch Tracking-Indizes verursacht werden, die vom ElasticSuite-Plug-in erzeugt werden.
 
@@ -25,17 +23,17 @@ ElasticSuite-Versionen vor 2.9.8 / 2.10.7 speichern Tracking-Indizes in täglich
 
 ## Problem
 
-Wenn das ElasticSuite-Drittanbieter-Plug-in installiert ist, können Probleme mit dem Elasticsearch-Speicher auftreten, und der Elasticsearch-Service kann aufgrund von ElasticSuite-Trackingindizes abstürzen. Zu den Symptomen gehören:
+Wenn das ElasticSuite-Plug-in eines Drittanbieters installiert ist, können Probleme mit dem Elasticsearch-Speicher auftreten, und der Elasticsearch-Service kann aufgrund von ElasticSuite-Trackingindizes abstürzen. Zu den Symptomen gehören:
 
 * Elasticsearch stürzt ohne Speicherfehler ab.
 * Beim Ausführen eines Health Command `curl -m1 localhost:9200/_cluster/health?pretty` oder `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` (für Starterkonten) gibt es Hunderte oder Tausende von `unassigned_shards`
-* Die Leistung von Elasticsearch oder Websites wird stark beeinträchtigt.
-* *Keine aktiven Knoten in Ihrem Cluster gefunden“* bei der Bereitstellung von Elasticsearch oder bei Protokollfehlern.
-* *„Aktualisierung der Zuordnung zu [&lt;\*>_ tracking_log_event _&lt;\*>] wird abgelehnt“* bei Bereitstellungs- oder Protokollfehlern.
+* Die Leistung von Elasticsearch oder Sites wird erheblich beeinträchtigt.
+* *Keine aktiven Knoten in Ihrem Cluster gefunden“* bei der Elasticsearch-Bereitstellung oder bei Protokollfehlern.
+* *„Aktualisierung der Zuordnung zu [&lt;\*>_tracking_ log_event_&lt;\*>] wird abgelehnt“* bei Bereitstellungs- oder Protokollfehlern.
 
 ## Ursache
 
-ElasticSuite verfügt über eine neue Funktion, die Tracking-Indizes erstellt. Diese Tracking-Indizes zeichnen auf, welche Suchbegriffe am häufigsten verwendet werden, welche Begriffe den meisten Umsatz generieren und welche Begriffe zu einer „Keine Ergebnisse“-Seite führen, damit Händler Synonyme erstellen können, um sie zu beheben. Die Trackingindizes werden anscheinend nicht gelöscht, sodass dem Elasticsearch die Ressourcen ausgehen und es zu Abstürzen kommt.
+ElasticSuite verfügt über eine neue Funktion, die Tracking-Indizes erstellt. Diese Tracking-Indizes zeichnen auf, welche Suchbegriffe am häufigsten verwendet werden, welche Begriffe den meisten Umsatz generieren und welche Begriffe zu einer „Keine Ergebnisse“-Seite führen, damit Händler Synonyme erstellen können, um sie zu beheben. Die Trackingindizes werden anscheinend nicht gelöscht, sodass Elasticsearch keine Ressourcen mehr zur Verfügung stehen und abstürzt.
 
 ## Lösung
 
@@ -68,5 +66,5 @@ Erstellen Sie einen Cron-Auftrag, um die Tracking-Indizes zu löschen. Dieser Be
 
 Wenn Sie Indizes mit einer bestimmten Häufigkeit löschen möchten, erstellen Sie einen Cron-Auftrag, indem Sie die folgenden Artikel in unserer Entwicklerdokumentation lesen:
 
-* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer Cron-Gruppe (Tutorial)](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Richten Sie Cron-Aufträge ein](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer benutzerdefinierten Cron-Gruppe (Tutorial)](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Einrichten von Cron-Aufträgen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

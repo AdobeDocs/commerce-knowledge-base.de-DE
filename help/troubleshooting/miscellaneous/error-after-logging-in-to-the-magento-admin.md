@@ -6,11 +6,9 @@ feature: Admin Workspace
 role: Developer
 source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '166'
 ht-degree: 0%
-
 ---
-
 # Fehler nach der Anmeldung beim Commerce-Administrator
 
 Dieser Artikel bietet eine Lösung für den Fall, dass Sie eine Fehlermeldung erhalten, die besagt, dass die angeforderte URL auf diesem Server nicht gefunden wurde.
