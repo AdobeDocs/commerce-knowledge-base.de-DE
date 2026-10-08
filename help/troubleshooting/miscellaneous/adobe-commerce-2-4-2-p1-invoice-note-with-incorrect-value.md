@@ -6,11 +6,9 @@ feature: Customer Service, Invoices
 role: Developer
 source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '229'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.2-P1: Rechnungsnachweis mit falschem Wert
 
 In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.2-p1-Problem beschrieben, bei dem ein Rechnungsnachweis mit einem falschen Wert generiert wird, wenn die Kundengruppe beim Erstellen der Bestellung geändert wird. Dieses Problem wurde in Version 2.4.3 behoben.
@@ -29,7 +27,7 @@ Wenn die Kundengruppe zum Zeitpunkt der Auftragserstellung geändert wird, wird 
 1. Erstellen Sie **Testkundenkonto** und fügen Sie es der **Einzelhandelskundengruppe“**.
 1. Erstellen Sie eine **Neue Bestellung** für den Testkunden und fügen Sie **Produkt** und **Adresse** hinzu.
 1. Wählen Sie **Versandart**.
-1. Ändern Sie im Abschnitt **Kontoinformationen** die Kundengruppe von **Einzelhändler** in **Regierung**.
+1. Ändern Sie im Abschnitt **Kontoinformationen** die Kundengruppe von **Retailer** zu **Government**.
 1. Klicken Sie **Bestellung aufgeben**.
 1. Klicken Sie **Rechnung** > **Rechnung senden**.
 
