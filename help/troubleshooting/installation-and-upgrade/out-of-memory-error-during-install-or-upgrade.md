@@ -1,19 +1,17 @@
 ---
 title: Fehler wegen zu wenig Arbeitsspeicher während der Installation oder Aktualisierung
-description: In diesem Artikel wird über Lösungen für den Fehler wegen zu wenig Arbeitsspeicher bei der Installation/Aktualisierung von Adobe Commerce On-Premise- und Magento Open Source On-Premise-Produkten gesprochen.
+description: In diesem Artikel wird über Lösungen für den Fehler wegen zu wenig Arbeitsspeicher bei der Installation/Aktualisierung von lokalen Adobe Commerce- und lokalen Magento Open Source-Produkten gesprochen.
 exl-id: c0ed8228-9357-4a3b-a102-1119386ea52a
 feature: Install, Upgrade
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '359'
 ht-degree: 0%
-
 ---
-
 # Fehler wegen zu wenig Arbeitsspeicher während der Installation oder Aktualisierung
 
-In diesem Artikel wird über Lösungen für den Fehler wegen zu wenig Arbeitsspeicher bei der Installation/Aktualisierung von Adobe Commerce On-Premise- und Magento Open Source On-Premise-Produkten gesprochen.
+In diesem Artikel wird über Lösungen für den Fehler wegen zu wenig Arbeitsspeicher bei der Installation/Aktualisierung von lokalen Adobe Commerce- und lokalen Magento Open Source-Produkten gesprochen.
 
 ## Betroffene Produkte und Versionen
 
@@ -50,8 +48,8 @@ Im Folgenden finden Sie nur Vorschläge. Möglicherweise sind weitere Optionen v
 
 Verwenden Sie den Befehl `fallocate` wie in den folgenden Referenzen erläutert:
 
-* [So fügen Sie einen Swap auf Ubuntu 14.04 (DigitalOcean) hinzu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
-* [So fügen Sie Swap-Speicherplatz auf Ubuntu 16.04 (DigitalOcean) hinzu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
+* [Hinzufügen von Swap auf Ubuntu 14.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+* [Hinzufügen von Auslagerungsspeicher auf Ubuntu 16.04 (DigitalOcean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
 * [SwapFAQ (help.ubuntu.com)](https://help.ubuntu.com/community/SwapFaq)
 
 ### Datei auf CentOS austauschen {#swap-file-on-centos}
@@ -60,4 +58,4 @@ Verwenden Sie den Befehl `mkswap` wie in den folgenden Referenzen erläutert:
 
 * [So fügen Sie einen Swap auf CentOS 6 (DigitalOcean) hinzu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
 * [So fügen Sie einen Swap auf CentOS 7 (DigitalOcean) hinzu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
-* [Wechseln des Speicherplatzes (RedHat-Kundenportal)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)
+* [Auslagern von Speicherplatz (RedHat-Kundenportal)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)
