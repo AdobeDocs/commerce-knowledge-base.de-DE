@@ -1,16 +1,23 @@
 ---
 title: Benutzerdefinierte Server-seitige Skripte werden im Veröffentlichungsmedienverzeichnis nicht ausgeführt
-description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass benutzerdefinierte Server-seitige Skripte nicht ausgeführt werden, wenn sie in der "" platziert werden./pub/media/&grave;-Verzeichnis Ihrer Adobe Commerce-Anwendung in der Cloud-Infrastruktur. Dies ist eine erwartete Sicherheitsbeschränkung, da der "".Der Ordner "/pub/media/&grave;" ist schreibbar. Damit Skripte ausführbar werden, müssen sie in nicht beschreibbaren Verzeichnissen, wie z. B. "", abgelegt werden./app/code/&grave; oder "./pub/&grave;.
+description: Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass benutzerdefinierte Server-seitige Skripte nicht ausgeführt werden, wenn sie im Verzeichnis "./pub/media/" Ihrer Adobe Commerce-Anwendung in der Cloud-Infrastruktur abgelegt werden. Dies ist eine erwartete Sicherheitsbeschränkung, da das Verzeichnis "./pub/media/" beschreibbar ist. Damit Skripte ausführbar sind, platzieren Sie sie in nicht beschreibbaren Verzeichnissen, wie z. B. "./app/code/" oder "./pub/".
 exl-id: fcad8a5d-47d6-4729-93a4-2410d7710d69
 feature: Media
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '284'
 ht-degree: 0%
-
 ---
-
 # Benutzerdefinierte Server-seitige Skripte werden im Veröffentlichungsmedienverzeichnis nicht ausgeführt
 
 Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass benutzerdefinierte Server-seitige Skripte nicht ausgeführt werden, wenn sie im `./pub/media/` Verzeichnis Ihrer Adobe Commerce-Anwendung in der Cloud-Infrastruktur platziert werden. Dies ist eine erwartete Sicherheitsbeschränkung, da das `./pub/media/` beschreibbar ist. Um Skripte ausführbar zu machen, platzieren Sie sie in nicht beschreibbaren Verzeichnissen, wie `./app/code/` oder `./pub/`.
