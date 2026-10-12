@@ -86,6 +86,6 @@ Keine Sorge! Erstellen Sie ein neues Support-Ticket (geben Sie unbedingt die E-M
 
 ## Verwandte Themen in unserer Support-Wissensdatenbank:
 
-* [Hinzufügen eines neuen Benutzers und Festlegen von Berechtigungen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
-* [Wie aktualisiere ich meine E-Mail-Adresse oder mein Passwort?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
-* [Wie setze ich mein Passwort zurück?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)
+* [Hinzufügen eines neuen Benutzers und Festlegen von Berechtigungen](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=de)
+* [Wie aktualisiere ich meine E-Mail-Adresse oder mein Passwort?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=de)
+* [Wie setze ich mein Passwort zurück?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=de)

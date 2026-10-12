@@ -66,8 +66,8 @@ Unable to apply data patch Magento\Wishlist\Setup\Patch\Data\CleanUpData for mod
 
 In unserer Entwicklerdokumentation:
 
-* [Handbuch zu Adobe Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
-* [Adobe Commerce auf Cloud-Infrastruktur - Adobe Commerce-Version aktualisieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
-* [Adobe Commerce On-Premise und Magento Open Source - Aktualisieren der Adobe Commerce-Anwendung und -Module](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+* [Handbuch zu Adobe Commerce in Cloud-Infrastrukturen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce auf Cloud-Infrastruktur - Adobe Commerce-Version aktualisieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [Adobe Commerce On-Premise und Magento Open Source - Aktualisieren der Adobe Commerce-Anwendung und -Module](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/overview)
 * [Wunschlistenelement Seite konfigurieren](https://developer.adobe.com/commerce/frontend-core/guide/layouts/product-layouts#wishlist-item-configure-page)
 * [Module mit erweitertem Reporting](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/)

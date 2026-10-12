@@ -39,5 +39,5 @@ Nachdem Sie das Tool installiert haben, können Sie nach verfügbaren Patches su
 
 Weitere Informationen finden Sie in der Entwicklerdokumentation:
 
-* [Im Quality Patches Tool verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
-* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Im Quality Patches Tool verfügbare Patches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=de)
+* [Versionshinweise zum Quality Patches Tool](https://experienceleague.adobe.com/de/docs/commerce-operations/tools/quality-patches-tool/release-notes)

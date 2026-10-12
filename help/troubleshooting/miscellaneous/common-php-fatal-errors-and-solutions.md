@@ -37,7 +37,7 @@ Beispiel:
 
 `max_execution_time = 120`
 
-Lesen Sie den Artikel [Anpassen der php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings)Einstellungen.
+Lesen Sie den Artikel [Anpassen der php.ini](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/php-settings)Einstellungen.
 
 ## Beispiel
 
@@ -45,7 +45,7 @@ Lesen Sie den Artikel [Anpassen der php.ini](https://experienceleague.adobe.com/
 
 ## Lösung
 
-`php.ini` anpassen. Lesen Sie diesen [Anpassen der php.ini-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+`php.ini` anpassen. Lesen Sie diesen [Anpassen der php.ini-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Beispiel
 
@@ -75,9 +75,9 @@ Der MySQL-Umgebung ist der Speicherplatz ausgegangen. Stellen Sie mehr Speicherp
 
 In unserer Entwicklerdokumentation:
 
-* [PHP-Einstellungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Redis-Überprüfung](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Konfigurieren von Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [PHP-Speicherbegrenzungsfehler](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [PHP-Einstellungsfehler](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Erforderliche PHP-Einstellungen](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Redis-Überprüfung](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Konfigurieren von Redis](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [PHP-Speicherbegrenzungsfehler](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/overview)
 * [Lösungen für häufige Probleme - Speicherlimit](https://developer.adobe.com/commerce/testing/guide/unit/command-line#solutions-to-common-problems)

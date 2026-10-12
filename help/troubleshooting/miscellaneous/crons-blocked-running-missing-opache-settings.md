@@ -35,7 +35,7 @@ Der Cron hat aufgehört zu funktionieren.
 
 ## Ursache
 
-Das [!DNL OpCache] wurde auf eine neuere Version aktualisiert, wodurch ein [!DNL GraphQL]-Plug-in eingeführt wurde, das die `env.php` zur Laufzeit neu schreibt und die Cron-Einstellung überschreiben könnte, was das Problem verursacht haben könnte. Die [!DNL OpCache] muss aktualisiert werden, um Probleme mit dem `env.php file` zu vermeiden. Dies wurde in [Version 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) des [!DNL ECE Tools]-Pakets behoben.
+Das [!DNL OpCache] wurde auf eine neuere Version aktualisiert, wodurch ein [!DNL GraphQL]-Plug-in eingeführt wurde, das die `env.php` zur Laufzeit neu schreibt und die Cron-Einstellung überschreiben könnte, was das Problem verursacht haben könnte. Die [!DNL OpCache] muss aktualisiert werden, um Probleme mit dem `env.php file` zu vermeiden. Dies wurde in [Version 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=de#v2002.1.13) des [!DNL ECE Tools]-Pakets behoben.
 
 ## Lösung
 
@@ -66,6 +66,6 @@ Option 2: Öffnen Sie die `app/etc/env.php`-Datei. Wenn Sie das unten sehen, wur
 
 ## Verwandtes Lesen
 
-* [Probleme mit der Cron-Bereitschaftsprüfung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
-* [Crons-Eigenschaft](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)
-* [Cron-Auftrag steckt im Status „Läuft“ fest](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+* [Probleme mit der Cron-Bereitschaftsprüfung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html?lang=de)
+* [Crons-Eigenschaft](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de)
+* [Cron-Auftrag steckt im Status „Läuft“ fest](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=de)

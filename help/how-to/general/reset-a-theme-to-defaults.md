@@ -37,7 +37,7 @@ Während Sie Adobe Commerce (alle Bereitstellungen) und Magento Open Source-Komp
 
 Wenn Sie das Store-Design zurücksetzen müssen, aber nicht auf das Admin-Bedienfeld zugreifen können, können Sie es wie folgt in der Datenbank zurücksetzen:
 
-1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die DB zu, um die folgende SQL-Abfrage auszuführen: `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
+1. Verwenden Sie ein Datenbank-Tool wie [phpMyAdmin](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) oder greifen Sie manuell über die Befehlszeile auf die DB zu, um die folgende SQL-Abfrage auszuführen: `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
 1. Löschen Sie die folgenden Ordner:
    * `pub/static/frontend`
    * `var/view_preprocessing`
