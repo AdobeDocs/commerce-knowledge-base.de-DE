@@ -46,11 +46,11 @@ Beim Versuch, das Bereitstellungsprotokoll in der Benutzeroberfläche des Cloud-
 
 ## Ursache
 
-Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als Datenquelle behandelt werden sollte, insbesondere wenn Sie feststellen, dass die Site nicht reagiert oder nicht richtig funktioniert, nachdem die Bereitstellung mit dem Status Erfolgreich aufgeführt wurde. Sie sollten auch mit den Protokollen auf dem Server überprüfen. Siehe [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de) in unserer Entwicklerdokumentation.
+Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als Datenquelle behandelt werden sollte, insbesondere wenn Sie feststellen, dass die Site nicht reagiert oder nicht richtig funktioniert, nachdem die Bereitstellung mit dem Status Erfolgreich aufgeführt wurde. Sie sollten auch mit den Protokollen auf dem Server überprüfen. Siehe [Anzeigen und Verwalten von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) in unserer Entwicklerdokumentation.
 
 ## Lösung
 
-1. Stellen Sie sicher, dass [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=de) in Ihrer lokalen Umgebung installiert ist.
+1. Stellen Sie sicher, dass [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) in Ihrer lokalen Umgebung installiert ist.
 1. Sie können einen der folgenden Befehle ausführen:
 
    ```bash
@@ -86,5 +86,5 @@ Beachten Sie, dass das in der Benutzeroberfläche angezeigte Protokoll nicht als
 
 ## Weitere Informationen finden Sie in unserer Entwicklerdokumentation:
 
-* [Adobe Commerce auf Cloud-Infrastruktur > Erstellen und Bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=de)
-* [Adobe Commerce auf Cloud-Infrastruktur > Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=de)
+* [Adobe Commerce auf Cloud-Infrastruktur > Erstellen und Bereitstellen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
+* [Adobe Commerce auf Cloud-Infrastruktur > Protokolle anzeigen und verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)

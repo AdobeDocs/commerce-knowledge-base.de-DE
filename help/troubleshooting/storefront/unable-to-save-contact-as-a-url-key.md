@@ -22,7 +22,7 @@ workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
 ---
-# &lbrace;*&rbrace; kann nicht* URL-Schlüssel gespeichert werden
+# {*} kann nicht* URL-Schlüssel gespeichert werden
 
 Dieser Artikel bietet eine Problemumgehung, wenn Sie *Kontakt“ nicht als* (z. B. &quot;/contact„) für Produkte oder CMS-Seiten speichern können.
 
@@ -74,5 +74,5 @@ Führen Sie die folgenden Schritte aus:
 
 ## Verwandtes Lesen
 
-* [URL-Neuschreibungen](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unserem Benutzerhandbuch.
-* [SEO Best Practices](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch.
+* [URL-Neuschreibungen](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) in unserem Benutzerhandbuch.
+* [SEO Best Practices](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) in unserem Benutzerhandbuch.
