@@ -1,16 +1,23 @@
 ---
-title: Nicht [!DNL regex] auslagern leitet zu/ [!DNL Fastly] anstelle [!DNL Nginx] (routes) um
-description: In diesem Thema wird eine Lösung für ein typisches Leistungsproblem bei Umleitungen vorgeschlagen, das beim Abladen von Umleitungen von nicht [!DNL regex] in  [!DNL Fastly] /anstelle  [!DNL Nginx]  Adobe Commerce in der Cloud-Infrastruktur auftreten könnte.
+title: Nicht [!DNL regex] auslagern leitet zu [!DNL Fastly] anstatt zu [!DNL Nginx] um (Routen)
+description: In diesem Abschnitt wird eine Lösung für ein typisches Leistungsproblem bei Weiterleitungen vorgeschlagen, das auftreten kann, wenn Sie in der Cloud-Infrastruktur nicht [!DNL regex] Weiterleitungen an [!DNL Fastly] anstatt [!DNL Nginx] in Adobe Commerce abladen.
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 1783ae9f-7157-5aeb-a915-91e260301e46
+    internal-label: Routes
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '796'
 ht-degree: 0%
-
 ---
-
 # Nicht [!DNL regex] auslagern leitet zu [!DNL Fastly] anstatt zu [!DNL Nginx] um (Routen)
 
 In diesem Abschnitt wird eine Lösung für ein typisches Leistungsproblem bei Weiterleitungen vorgeschlagen, das auftreten kann, wenn Sie in der Cloud-Infrastruktur nicht [!DNL regex] Weiterleitungen an [!DNL Fastly] anstatt [!DNL Nginx] in Adobe Commerce abladen.
@@ -99,7 +106,7 @@ Wenn Sie keine Adobe Commerce-Staging-Umgebung ausführen möchten, aber sehen m
 
 ## Verwandtes Lesen
 
-* [[!DNL Fastly VCL] Referenz](https://docs.fastly.com/vcl/)
+* [[!DNL Fastly VCL]](https://docs.fastly.com/vcl/)
 * [Konfigurieren von Routen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html?lang=de) in unserer Entwicklerdokumentation
 * [Einrichten [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=de) in unserer Entwicklerdokumentation
 * [[!DNL VCL] Cheat Sheet für reguläre Ausdrücke](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) in unserer Entwicklerdokumentation

@@ -4,13 +4,22 @@ description: 'Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Hän
 exl-id: 1c472214-8387-403e-b2d2-d3f3c9e1da6a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '333'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce Upgrade 2.4.3, 2.3.7-p1 PHP Schwerwiegender Fehler Hotfix
 
 Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Händler versuchen, auf Adobe Commerce (alle Bereitstellungsmethoden) oder Magento Open Source 2.4.3 oder 2.3.7-p1 zu aktualisieren, der folgende Fehler angezeigt wird:
@@ -42,7 +51,7 @@ Schwerwiegender PHP-Fehler.
 
 ## Lösung
 
-Als Problemumgehung führen Sie in der CLI/Terminal den folgenden Befehl aus: `composer require symfony/polyfill-php80` aus dem Magento-Stammordner oder installieren Sie einen Composer-Patch.
+Als Problemumgehung führen Sie den folgenden Befehl in der CLI/Terminal-Konsole aus: `composer require symfony/polyfill-php80` aus dem Magento-Stammordner oder installieren Sie einen Composer-Patch.
 
 Um das Problem für 2.4.3 zu beheben, sollten Adobe Commerce (alle Bereitstellungsmethoden) und Magento Open Source-Händler einen Patch anwenden:
 
@@ -54,7 +63,7 @@ Um das Problem für 2.3.7-p1 zu beheben, sollten Adobe Commerce (alle Bereitstel
 
 ## Anwenden des Patches
 
-Anweisungen [&#x200B; Sie unter „Anwenden eines von Magento bereitgestellten Composer](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
+Anweisungen finden [&#x200B; unter „Anwenden eines von Magento bereitgestellten Composer](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento)Patches .
 
 ## Verwandtes Lesen
 

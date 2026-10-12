@@ -4,13 +4,26 @@ description: In diesem Artikel werden Fehler bei der Erstellung einer Bestellung
 feature: Checkout,Security,Orders,Payments
 role: Developer
 exl-id: c1a0886a-df1f-418a-9e4d-562b28a0d8b3
-source-git-commit: 6d0c4ea9576440d66be3b8053a6e362b8ac0ebcb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '1085'
 ht-degree: 0%
-
 ---
-
 # Fehlerbehebung bei der Erstellung einer Auftragsseite im eingeschränkten [!UICONTROL CSP]
 
 Dieser Artikel enthält Erläuterungen und Fehlerbehebungen für Adobe Commerce 2.4.7-Probleme beim Erstellen einer Bestellung auf der Admin-Seite mit **[!UICONTROL CSP restricted mode]** ist *Aktiviert* mit der Meldung &quot;*Ausführung des Inline-Skripts wurde abgelehnt, da es die folgende Content Security Policy-Anweisung verletzt: „script-src …*&quot; Fehlermeldung im Protokoll der Browser-Konsole.

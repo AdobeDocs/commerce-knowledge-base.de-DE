@@ -4,13 +4,25 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: beca5aa3fa796e4b12afc4882024db718b65ac0c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 0%
-
 ---
-
 # Live Search-Katalog nicht synchronisiert
 
 Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Katalogdaten bei Verwendung der Live Search-Erweiterung nicht korrekt synchronisiert werden.
@@ -38,7 +50,7 @@ Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Pr
 Or
 
 1. Fügen Sie ein neues Produkt zum Katalog hinzu.
-1. Versuchen Sie, eine Suchabfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen auszuführen, nachdem 15-20 Minuten nach dem Zeitpunkt, zu dem Magento Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren.
+1. Versuchen Sie, eine Suchanfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen nach 15-20 Minuten ab dem Zeitpunkt auszuführen, zu dem Magento Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren.
 
 <u>Erwartetes Ergebnis</u>
 

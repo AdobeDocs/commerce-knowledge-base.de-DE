@@ -3,13 +3,17 @@ title: Datenbank automatisch inkrementieren Variable auf „3“ gesetzt Adobe C
 description: Dies ist das erwartete Verhalten für Adobe Commerce bei Cloud-Infrastruktur-Pro-Plan-Architekturlösungen aufgrund der 3-Knoten-Architektur und kann nicht geändert werden.
 exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
-
 ---
-
 # Datenbank automatisch inkrementieren Variable auf „3“ gesetzt Adobe Commerce in unserer Cloud Pro-Architektur
 
 Dies ist das erwartete Verhalten für Adobe Commerce bei Cloud-Infrastruktur-Pro-Plan-Architekturlösungen aufgrund der 3-Knoten-Architektur und kann nicht geändert werden.

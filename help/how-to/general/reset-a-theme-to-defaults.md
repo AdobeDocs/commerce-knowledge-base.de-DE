@@ -3,18 +3,25 @@ title: Reset a theme to defaults
 description: Abhängig von Problemen, auf die Sie beim Anpassen Ihrer Designs und Entwickeln Ihres Stores stoßen können, haben Sie möglicherweise keinen Zugriff über den Commerce-Administrator. Sie können das Design löschen und auf die Standardeinstellung zurücksetzen, ohne auf den Administrator zugreifen zu müssen. Nachdem Sie das Design gelöscht haben, wird das Standard-Luma-Design angewendet.
 exl-id: 86304dd5-f448-4dcc-ad07-04ecc6c85b6d
 feature: Cache
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '295'
 ht-degree: 0%
-
 ---
-
 # Reset a theme to defaults
 
 Abhängig von Problemen, auf die Sie beim Anpassen Ihrer Designs und Entwickeln Ihres Stores stoßen können, haben Sie möglicherweise keinen Zugriff über den Commerce-Administrator. Sie können das Design löschen und auf die Standardeinstellung zurücksetzen, ohne auf den Administrator zugreifen zu müssen. Nachdem Sie das Design gelöscht haben, wird das Standard-Luma-Design angewendet.
 
-Beim Entwickeln von Adobe Commerce (alle Bereitstellungen) und Ordnerkomponenten (Magento Open Sourcen, Designs und Sprachpakete) müssen Sie aufgrund Ihrer sich schnell verändernden Umgebung bestimmte Ordner und Caches regelmäßig löschen. Andernfalls wird der Code mit Ausnahmen ausgeführt und funktioniert nicht ordnungsgemäß. Weitere Informationen finden Sie unter [Löschen von Ordnern während der Entwicklung](https://developer.adobe.com/commerce/php/development/components/clear-directories/) in unserer Entwicklerdokumentation.
+Während Sie Adobe Commerce (alle Bereitstellungen) und Magento Open Source-Komponenten (Module, Designs und Sprachpakete) entwickeln, müssen Sie in Ihrer sich schnell verändernden Umgebung regelmäßig bestimmte Ordner und Caches löschen. Andernfalls wird der Code mit Ausnahmen ausgeführt und funktioniert nicht ordnungsgemäß. Weitere Informationen finden Sie unter [Löschen von Ordnern während der Entwicklung](https://developer.adobe.com/commerce/php/development/components/clear-directories/) in unserer Entwicklerdokumentation.
 
 ## Umwelt und Technologien
 

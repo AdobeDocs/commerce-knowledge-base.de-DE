@@ -1,10 +1,13 @@
 ---
-source-git-commit: 0cfb7dc0dce68bcb0933a5ae49b0cd5a8b5b5a39
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '251'
 ht-degree: 0%
-
 ---
+
 # Handbuch zur Metadatenvalidierung
 
 Um die korrekte Formatierung von Metadaten in MD-Dateien sicherzustellen, haben wir einen Metadaten-Validierungstest eingerichtet. Dieses Dokument enthält Richtlinien, die den Mitwirkenden helfen, einige der häufigsten Fehler bei der Validierung von Metadaten zu vermeiden.

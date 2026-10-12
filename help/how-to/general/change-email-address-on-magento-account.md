@@ -3,16 +3,20 @@ title: Ändern der E-Mail-Adresse im Konto magento.com , wenn das Feld ausgegrau
 description: In diesem Artikel wird beschrieben, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern, wenn das Feld ausgegraut ist.
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
-source-git-commit: 123027ee291b44ad4b234e561b9c3f4156af7c90
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # Wie ändere ich eine E-Mail-Adresse in einem magento.com Konto, wenn das Feld ausgegraut ist?
 
-In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern, wenn das Feld unter Umständen ausgegraut ist, z. B.:
+In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ändern, wenn das Feld unter Umständen ausgegraut ist, wie etwa:
 
 * Sie oder der ursprüngliche Benutzer haben das Unternehmen verlassen.
 * Ihr Unternehmen ist zu einer neuen E-Mail-Domain migriert.
@@ -24,7 +28,7 @@ In diesem Artikel wird erläutert, wie Sie die E-Mail-Adresse in Ihrem [Magento.
 
 ## Ursache
 
-Die E-Mail-Adresse in Ihrem [Magento.com](https://account.magento.com)-Konto ist mit Ihrem Adobe-Konto unter <https://account.adobe.com> verknüpft und muss dort aktualisiert werden.
+Die E-Mail-Adresse Ihres [Magento.com](https://account.magento.com)-Kontos ist mit Ihrem Adobe-Konto unter <https://account.adobe.com> verknüpft und muss dort aktualisiert werden.
 
 ## Schritte zum Ändern der E-Mail-Adresse
 
@@ -53,7 +57,7 @@ Wenn Sie Zugriff auf das Postfach der E[Mail des aktuellen ] haben, setzen Sie d
 1. Suchen Sie den Link zum Zurücksetzen des Kennworts, der mit Anweisungen an das Postfach des aktuellen Besitzers gesendet wird.
 1. Legen Sie ein neues Kennwort fest und ändern Sie die E-Mail in [E-Mail für neue Inhaber].
 1. Navigieren Sie zum [IMS-Konto](https://account.adobe.com/), um sich mit der neuen E-Mail anzumelden, und ändern Sie das Kennwort.
-1. Nachdem Sie die E-Mail-Adresse und das Passwort geändert haben, navigieren Sie zu [Magento.com](https://account.magento.com), um sich mit der E-[ „neuer Inhaber“ ].
+1. Nachdem Sie die E-Mail-Adresse und das Passwort geändert haben, navigieren Sie zu [Magento.com](https://account.magento.com), um sich mit der E-[-Mail des neuen Inhabers ].
 
 Wenn Sie jedoch keinen Zugriff auf E-Mails haben, die an den aktuellen [ gesendet werden] führen Sie die folgenden Schritte aus:
 

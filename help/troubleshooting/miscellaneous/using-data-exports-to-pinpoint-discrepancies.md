@@ -4,13 +4,22 @@ description: Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanz
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
-source-git-commit: 3d73611b812833820eda5b906eb700c89f50cbbe
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3cd14413-6539-5c64-b063-fdcabf03abff
+    internal-label: Commerce Intelligence
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1389'
 ht-degree: 0%
-
 ---
-
 # Verwenden von Datenexporten zur Ermittlung von Diskrepanzen
 
 Dieser Artikel enthält Lösungen zur Fehlerbehebung bei Diskrepanzen in Ihren Magento BI-Daten. Datenexporte sind ein nützliches Tool für den Vergleich Ihrer Magento BI-Daten mit Ihren Quelldaten, um Datendiskrepanzen in Ihren Berichten zu identifizieren, insbesondere wenn die [Checkliste für die Datendiskrepanzdiagnose](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-41479) Ihnen nicht geholfen hat, das Problem zu identifizieren. Dieser Artikel zeigt Ihnen ein Beispiel aus der Praxis, wie Datendiskrepanzen mithilfe von Datenexporten erkannt werden können.
@@ -49,7 +58,7 @@ Nun, da alle Daten an einem Ort sind, können wir nach der Quelle der Diskrepanz
 
 ### Beide Blätter enthalten die gleiche Anzahl von Zeilen
 
-Wenn beide Systeme dieselbe Zeilenanzahl aufweisen und die Metrik **Umsatz** nicht mit den Quelldaten übereinstimmt, muss **order\_total** irgendwo abgeschaltet sein. Es ist möglich, dass das Feld **order\_total** in Ihrer Quelldatenbank aktualisiert wurde und Magento BI diese Änderungen nicht übernimmt.
+Wenn beide Systeme dieselbe Zeilenanzahl aufweisen und die Metrik **Umsatz** nicht mit den Quelldaten übereinstimmt, muss **order\_total** irgendwo abgeschaltet sein. Möglicherweise wurde das Feld **order\_total** in Ihrer Quelldatenbank aktualisiert, und Magento BI übernimmt diese Änderungen nicht.
 
 Um dies zu bestätigen, überprüfen Sie, ob die Spalte **order\_total** erneut überprüft wird. Wechseln Sie zu Data Warehouse Manager und klicken Sie auf die Tabelle **`orders`** . Die [Häufigkeit der erneuten Überprüfung](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=de) wird in der Spalte „Änderungen?“ angezeigt. Das Feld **order\_total** sollte so oft neu überprüft werden, wie dies erwartet wird. Ist dies nicht der Fall, sollte mit der gewünschten Häufigkeit fortgefahren werden.
 
@@ -59,17 +68,17 @@ Wenn die Häufigkeit der erneuten Prüfung bereits korrekt eingestellt ist, ist 
 
 ## Die Quelldatenbank enthält MEHR Zeilen als Magento BI {#morerows}
 
-Wenn die Quelldatenbank mehr Zeilen als Magento BI enthält und die Lücke größer ist als die Anzahl der Bestellungen, die während eines Aktualisierungszyklus eingehen werden, kann ein Verbindungsproblem vorliegen. Dies bedeutet, dass Magento BI keine neuen Daten aus der Quelldatenbank abrufen kann, was aus verschiedenen Gründen passieren kann.
+Wenn die Quelldatenbank mehr Zeilen als Magento BI enthält und die Lücke größer ist als die Anzahl der Bestellungen, die während eines Aktualisierungszyklus eingehen werden, kann es zu einem Verbindungsproblem kommen. Dies bedeutet, dass Magento BI keine neuen Daten aus der Quelldatenbank abrufen kann, was aus verschiedenen Gründen passieren kann.
 
 Navigieren Sie zur Seite Verbindungen und sehen Sie sich den Status der Datenquelle an, die die `order`-Tabelle enthält:
 
 1. **Wenn der Status Erneut**, verwendet die Verbindung nicht die richtigen Anmeldeinformationen. Klicken Sie auf die Verbindung, geben Sie die richtigen Anmeldeinformationen ein und versuchen Sie es erneut.
-1. **Wenn der Status Fehlgeschlagen**, ist die Verbindung auf der Server-Seite möglicherweise nicht ordnungsgemäß eingerichtet. Fehlgeschlagene Verbindungen ergeben sich in der Regel aus einem falschen Hostnamen oder dem Ziel-Server, der keine Verbindungen am angegebenen Port akzeptiert.Klicken Sie in die Verbindung und überprüfen Sie die Schreibweise des Host-Namens und dass der richtige Port eingegeben wurde. Stellen Sie auf der Serverseite sicher, dass der Port Verbindungen akzeptieren kann und dass Ihre Firewall über die zulässige Magento BI IP-Adresse (54.88.76.97/32) verfügt. **Wenn die Verbindung weiterhin fehlschlägt** finden Sie im Abschnitt [Kontaktaufnahme mit dem Support](#support) am Ende dieses Artikels die nächsten Schritte.
+1. **Wenn der Status Fehlgeschlagen**, ist die Verbindung auf der Server-Seite möglicherweise nicht ordnungsgemäß eingerichtet. Fehlgeschlagene Verbindungen ergeben sich in der Regel aus einem falschen Hostnamen oder dem Ziel-Server, der keine Verbindungen am angegebenen Port akzeptiert.Klicken Sie in die Verbindung und überprüfen Sie die Schreibweise des Host-Namens und dass der richtige Port eingegeben wurde. Stellen Sie auf der Serverseite sicher, dass der Port Verbindungen akzeptieren kann und dass Ihre Firewall über die zulässige Magento BI-IP-Adresse (54.88.76.97/32) verfügt. **Wenn die Verbindung weiterhin fehlschlägt** finden Sie im Abschnitt [Kontaktaufnahme mit dem Support](#support) am Ende dieses Artikels die nächsten Schritte.
 1. **Wenn der Status Erfolgreich ist** , ist die Verbindung nicht das Problem und der RJ-Support muss einbezogen werden. Die nächsten Schritte [&#x200B; Sie im Abschnitt &#x200B;](#support)Support kontaktieren“ am Ende dieses Artikels.
 
 ## Die Quelldatenbank enthält WENIGER Zeilen als Magento BI {#lessrows}
 
-Wenn die Quelldatenbank weniger Zeilen enthält als Magento BI, werden möglicherweise Zeilen aus der Quelldatenbank gelöscht und Magento BI nimmt diese Löschungen nicht auf. **&#x200B; [Löschen von Daten](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=de) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe von logistischen &#x200B;** führen. Daher empfehlen wir dringend, Daten niemals zu löschen, es sei denn, dies ist wirklich erforderlich.
+Wenn die Quelldatenbank weniger Zeilen als Magento BI hat, ist es möglich, dass Zeilen aus der Quelldatenbank gelöscht werden und Magento BI diese Löschungen nicht erfasst. **&#x200B; [Löschen von Daten](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=de) kann zu Diskrepanzen, längeren Aktualisierungszeiten und einer Reihe von logistischen &#x200B;** führen. Daher empfehlen wir dringend, Daten niemals zu löschen, es sei denn, dies ist wirklich erforderlich.
 
 Wenn jedoch Zeilen aus der Tabelle gelöscht werden, sollten Sie sich die Häufigkeit der erneuten Überprüfung auf dem Primärschlüssel ansehen. Das erneute Überprüfen des Primärschlüssels bedeutet, dass die Tabelle auf gelöschte Zeilen überprüft wird.
 
@@ -83,8 +92,8 @@ Wenn der Primärschlüssel bereits auf eine erneute Überprüfung eingestellt is
 
 Wenn Sie die Ursache des Problems nicht identifizieren können, müssen Sie den RJ-Support einbinden. Bevor Sie ein Ticket senden, gehen Sie wie folgt vor:
 
-* **Wenn Ihre Quelldatenbank und Magento BI dieselbe Anzahl von Zeilen** und die Häufigkeit der erneuten Prüfung korrekt ist, führen Sie eine Suche in Ihrer Tabelle durch, **herauszufinden, welche Werte für die order\_id einen anderen order\_total-Wert zwischen Magento BI und Ihrer Quelldatenbank aufweisen.** Schließen Sie diese Werte beim Senden Ihres Tickets ein.
-* **Wenn Ihre Quelldatenbank mehr Zeilen als Magento BI** enthält und die Verbindung als „Erfolgreich“ angezeigt wird oder weiterhin fehlschlägt, müssen wir den Namen der Verbindung und die angezeigte Fehlermeldung kennen, falls vorhanden.
+* **Wenn Ihre Quelldatenbank und Magento BI dieselbe Anzahl von Zeilen aufweisen** die Häufigkeit der erneuten Prüfung korrekt ist, führen Sie eine Suche in Ihrer Tabelle durch, **um herauszufinden, welche order\_id-Werte einen anderen order\_total-Wert zwischen Magento BI und Ihrer Quelldatenbank haben.** Schließen Sie diese Werte beim Senden Ihres Tickets ein.
+* **Wenn Ihre Quelldatenbank mehr Zeilen als Magento BI** enthält und die Verbindung als erfolgreich angezeigt wird oder weiterhin fehlschlägt, müssen wir den Namen der Verbindung und die angezeigte Fehlermeldung kennen, falls vorhanden.
 * **Wenn Ihre Quelldatenbank weniger Zeilen als Magento BI enthält,** Zeilen nicht aus der Tabelle gelöscht werden und die Häufigkeit der erneuten Prüfung korrekt ist, führen Sie eine Suche in Ihrer Tabelle durch, **um herauszufinden, welche order\_id-Werte sich in Magento BI,** nicht in Ihrer Quelldatenbank befinden. Schließen Sie diese Werte beim Senden Ihres Tickets ein.
 
 ## Verwandtes Lesen

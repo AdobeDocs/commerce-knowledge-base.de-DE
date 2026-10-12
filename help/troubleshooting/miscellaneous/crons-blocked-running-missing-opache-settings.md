@@ -1,16 +1,26 @@
 ---
-title: 'Cron stoppt aufgrund falsch konfigurierter oder fehlender  [!DNL OpCache] '
-description: Dieser Artikel bietet eine Lösung für den Fall, dass Crons aufgrund falsch konfigurierter oder fehlender  [!DNL OpCache]  nicht mehr funktionieren.
+title: Cron stoppt aufgrund falsch konfigurierter oder fehlender [!DNL OpCache]
+description: Dieser Artikel bietet eine Lösung für den Fall, dass Crons aufgrund falsch konfigurierter oder fehlender [!DNL OpCache] nicht mehr funktionieren.
 exl-id: 30643ea9-969f-41c8-8e62-b24e56d690cf
 feature: Cache
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '373'
 ht-degree: 0%
-
 ---
-
 # Cron wurde aufgrund falsch konfigurierter oder fehlender [!DNL OpCache] gestoppt
 
 Dieser Artikel bietet eine Lösung für den Fall, dass Cron aufgrund fehlender oder falsch konfigurierter [!DNL OpCache] nicht mehr funktioniert.
@@ -51,11 +61,11 @@ Option 2: Öffnen Sie die `app/etc/env.php`-Datei. Wenn Sie das unten sehen, wur
    `composer show magento/ece-tools`
 1. Wenn Sie bereits die neueste Version von [!DNL ECE Tools] verwenden, überprüfen Sie, ob die `op-exclude.txt` vorhanden ist. Führen Sie dazu diesen Befehl aus:
    `ls op-exclude.txt`.
-Wenn diese Datei nicht vorhanden ist, fügen Sie https://github.com/magento/magento-cloud/blob/master/op-exclude.txt zu Ihrem Repository hinzu, übertragen Sie dann die Änderung und stellen Sie sie erneut bereit.
+   Wenn diese Datei nicht vorhanden ist, fügen Sie https://github.com/magento/magento-cloud/blob/master/op-exclude.txt zu Ihrem Repository hinzu, übertragen Sie dann die Änderung und stellen Sie sie erneut bereit.
 1. Ohne [!DNL ECE Tools] aktualisieren zu müssen, können Sie auch einfach https://github.com/magento/magento-cloud/blob/master/op-exclude.txt in Ihrem Repository hinzufügen/ändern, dann die Änderung übernehmen und erneut bereitstellen.
 
 ## Verwandtes Lesen
 
-* [Probleme mit der Cron-Bereitschaft](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html?lang=de)
+* [Probleme mit der Cron-Bereitschaftsprüfung](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html?lang=de)
 * [Crons-Eigenschaft](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de)
-* [Cron-Auftrag bleibt im Status „Wird ausgeführt“ stecken](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=de)
+* [Cron-Auftrag steckt im Status „Läuft“ fest](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=de)

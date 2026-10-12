@@ -4,13 +4,24 @@ description: Dieser Artikel bietet eine Lösung für Datenbankverbindungsfehler 
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '626'
 ht-degree: 0%
-
 ---
-
 # Datenbankfehler im Zusammenhang mit „max_allowed_package“ in Adobe Commerce
 
 Dieser Artikel bietet eine Lösung für Datenbankverbindungsfehler in der `var/log/exception.log`, die beim Importieren einer großen Anzahl von Produkten oder beim Ausführen einer anderen Aufgabe auftreten können, die den Server zwingt, größere Pakete zu verarbeiten als in `max_allowed_packet` festgelegt, die größer als der Standardwert (16 MB) ist.
@@ -34,7 +45,7 @@ Der Standardwert von 16 MB für die Einstellung [!DNL MySQL] `max_allowed_packet
 ## Lösung
 
 1. Identifizieren Sie Abfragen, bei denen die einzelnen Zeilen das aktuelle `max_allowed_packet` überschreiten. Solche Abfragen müssen neu geschrieben werden, um die Menge der zurückgegebenen Daten zu reduzieren. Dies kann durch eine kleinere Anzahl von Spalten in der `SELECT`-Anweisung oder durch Auswahl eines kleineren Datentyps für verschiedene Spalten als Teil des Tabellendesigns erfolgen. Wenn Sie über ein New Relic-Konto verfügen, verwenden Sie die Seite [New Relic APM-Fehler](https://docs.newrelic.com/docs/apm/apm-ui-pages/error-analytics/errors-page-explore-events-behind-errors) und die Seite [New Relic APM-Datenbanken](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time) und [New Relic-](https://docs.newrelic.com/docs/logs/log-management/get-started/get-started-log-management), um nach den entsprechenden Abfragen zu suchen.
-1. Zur schnellen Behebung können Sie beim `max_allowed_packet` eines Tickets vorübergehend eine Erhöhung der [&#x200B; anfordern](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) Dies liegt jedoch im Ermessen des Customer Engineering-Teams, da eine zu große Menge eines Werts zu Replikationsfehlern führen kann, da dies zu Netzwerkengpässen führt.
+1. Zur schnellen Behebung können Sie beim [&#x200B; eines Tickets vorübergehend eine Erhöhung der `max_allowed_packet` anfordern](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) Dies liegt jedoch im Ermessen des Customer Engineering-Teams, da eine zu große Menge eines Werts zu Replikationsfehlern führen kann, da dies zu Netzwerkengpässen führt.
 1. Als Best Practice sollten Sie den folgenden Befehl in Ihrer CLI für einige Ihrer großen Datenbanktabellen ausführen:
 
    ```

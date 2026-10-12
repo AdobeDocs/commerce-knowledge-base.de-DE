@@ -1,15 +1,18 @@
 ---
-source-git-commit: c587986edc925c49bf95ab935888b59f265371af
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '611'
 ht-degree: 0%
-
 ---
+
 # Handbuch zur KB-Formatierung
 
 ## Autor in Markdown
 
-Im Allgemeinen verwenden wir das Stilhandbuch zur [Adobe Experience League Markdown-Syntax](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=de) es gibt jedoch einige Unterschiede und Ausnahmen. Außerdem sind in bestimmten Fällen bestimmte HTML-Tags erforderlich.
+Im Allgemeinen verwenden wir [Stilhandbuch zur Adobe Experience League Markdown-Syntax](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), es gibt jedoch einige Unterschiede und Ausnahmen. In bestimmten Fällen sind auch bestimmte HTML-Tags erforderlich.
 
 Im Folgenden finden Sie Beispiele für die Markdown-Formatierung, die am häufigsten in unserem Repository verwendet wird.
 
@@ -165,7 +168,7 @@ Dies ist ein Link zu dieser Kopfzeile:
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-Wenn Sie auf ein anderes Element als die Kopfzeile verweisen müssen, definieren Sie mithilfe von HTML das hinzuzufügende Element und verwenden [id](https://www.w3schools.com/html/html_id.asp). Sie können dann Markdown oder HTML verwenden, um auf diese ID zu verweisen.
+Wenn Sie auf ein anderes Element als Header verweisen müssen, verwenden Sie HTML , um das hinzuzufügende Element zu definieren, und verwenden Sie das [id](https://www.w3schools.com/html/html_id.asp). Sie können dann Markdown oder HTML verwenden, um auf diese ID zu verweisen.
 
 ### Relative Links und Links zu anderen Artikeln
 
@@ -175,7 +178,7 @@ Verwenden Sie vollständige Hyperlinks aus dem [Adobe Commerce-Hilfezentrum](htt
 
 ## Tabellen
 
-Verwenden Sie [HTML-Formatierung für Tabellen](https://www.w3schools.com/html/html_tables.asp).
+Verwenden Sie die [HTML-Formatierung für Tabellen](https://www.w3schools.com/html/html_tables.asp).
 
 
 ## Warnungen und Informationsblöcke

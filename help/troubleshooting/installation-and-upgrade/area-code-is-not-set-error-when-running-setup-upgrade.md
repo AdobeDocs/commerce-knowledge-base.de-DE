@@ -4,13 +4,22 @@ description: Dieser Artikel enthält einen Patch für das bekannte Problem Adobe
 exl-id: ace92331-6022-49fa-a776-d06d841b3b32
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Fehler &#39;Die Ortskennzahl ist nicht festgelegt&#39; bei der Ausführung von `setup:upgrade`
 
 Dieser Artikel enthält einen Patch für das bekannte Problem Adobe Commerce on Cloud Infrastructure 2.2.3 im Zusammenhang mit dem Abrufen des *Fehlers &quot;* ist nicht festgelegt“ bei Ausführung des folgenden Befehls:
@@ -31,7 +40,7 @@ Beim Ausführen von
 bin/magento setup:upgrade
 ```
 
-wird folgende Fehlermeldung angezeigt: *„MODULE &#39;Magento\_AdvancedSalesRule&#39;: Installing data…Area code not set: Area code must be set before starting a session“* and the command execution is interrupted. Das Problem tritt auf, weil die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Mit dem Patch kann der Fehler erkannt werden, ohne dass der Upgrade-Prozess unterbrochen wird.
+wird folgende Fehlermeldung angezeigt: *„Modul &#39;Magento\_AdvancedSalesRule&#39;: Daten werden installiert…Ortsvorwahl nicht festgelegt: Ortsvorwahl muss vor Sitzungsbeginn gesetzt werden“* und die Befehlsausführung wird unterbrochen. Das Problem tritt auf, weil die Bereichskonfiguration angefordert wird, bevor sie tatsächlich festgelegt wird. Mit dem Patch kann der Fehler erkannt werden, ohne dass der Upgrade-Prozess unterbrochen wird.
 
 ## Fleck
 

@@ -3,13 +3,22 @@ title: SSL (TLS)-Zertifikate für Adobe Commerce in der Cloud-Infrastruktur
 description: Dieser Artikel enthält schnelle Antworten auf Fragen zum Abrufen von SSL (TLS)-Zertifikaten für Ihre Adobe Commerce-Site in unserer Cloud-Infrastruktur.
 exl-id: 5a682d07-e4d7-4e81-a2ad-3232f2d8d9c1
 feature: Cloud, Console
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1211'
 ht-degree: 0%
-
 ---
-
 # SSL (TLS)-Zertifikate für Adobe Commerce in der Cloud-Infrastruktur
 
 Dieser Artikel enthält schnelle Antworten auf Fragen zum Abrufen von SSL (TLS)-Zertifikaten für Ihre Adobe Commerce-Site in unserer Cloud-Infrastruktur.
@@ -55,7 +64,7 @@ Sobald Sie über das SSL-Zertifikat verfügen, senden Sie ein [Adobe Commerce-Su
 >[!WARNING]
 >
 >Es ist wichtig, dass Sie die Zertifikatsdateien nicht direkt in das Ticket hochladen. Andernfalls werden die Zertifikate als kompromittiert betrachtet und Adobe muss ein neues Zertifikat anfordern.
->Die Dateien sollten über SFTP in einen Ordner Ihrer Wahl hochgeladen werden, z. B. `var/ssl`, `/tmp/ssl` usw. - Verwenden Sie keine anderen Methoden, wie z. B. das Übertragen der Dateien in das Repository (was nur für unveränderliche Dateien erfolgen sollte, die keine vertraulichen Daten enthalten).
+>Die Dateien sollten über SFTP in einen Ordner Ihrer Wahl hochgeladen werden, z. B. `var/ssl`, `/tmp/ssl` usw. - Verwenden Sie keine anderen Methoden wie das Übergeben der Dateien an Ihr Repository (was nur für unveränderliche Dateien erfolgen sollte, die keine vertraulichen Daten enthalten).
 
 ## Der Name Ihres Zertifikats
 

@@ -3,13 +3,22 @@ title: Kann ich Aktualisierungen der Inhalts-Staging-Umgebung für Preise in ein
 description: Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+subfeature_v2:
+  - id: deedbb4d-f1b7-58ea-a34a-de1f481f9d4c
+    internal-label: Customer Service
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '290'
 ht-degree: 0%
-
 ---
-
 # Kann ich Aktualisierungen der Inhalts-Staging-Umgebung für Preise in einem freigegebenen Katalog planen?
 
 Adobe Commerce bietet nicht die Möglichkeit, eine Preisaktualisierung ([Content-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de)) für ein oder mehrere Produkte in einem freigegebenen Katalog zu planen.
@@ -45,4 +54,4 @@ Denken Sie daran: Freigegebene Kataloge nutzen die Kundengruppenpreise.
 
 ## Planen der Preisaktualisierung für den Basispreis
 
-Siehe den entsprechenden Artikel: [Wie wirkt sich die Grundpreisänderung auf den gemeinsamen Katalogpreis aus?](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) in unserer Support-Wissensdatenbank.
+Siehe den entsprechenden Artikel: [Wie wirkt sich die Grundpreisänderung auf den Preis des geteilten Katalogs aus?](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md) in unserer Support-Wissensdatenbank.

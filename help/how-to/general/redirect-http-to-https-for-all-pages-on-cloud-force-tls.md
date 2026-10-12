@@ -3,13 +3,22 @@ title: Umleiten von HTTP zu HTTPS für alle Seiten in Adobe Commerce auf Cloud-I
 description: Aktivieren Sie die Fastly-Funktion **TLS erzwingen** in Commerce Admin, um die globale HTTP-zu-HTTPS-Umleitung für alle Seiten Ihrer Adobe Commerce im Cloud-Infrastrukturspeicher zu aktivieren.
 exl-id: 71667f52-a99a-47a6-99d8-10532364870f
 feature: Cache, Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '519'
 ht-degree: 0%
-
 ---
-
 # Umleiten von HTTP zu HTTPS für alle Seiten in Adobe Commerce auf Cloud-Infrastrukturen (TLS erzwingen)
 
 Aktivieren Sie im Commerce Admin die **Force TLS**-Funktion von Fastly, um die globale HTTP-zu-HTTPS-Umleitung für alle Seiten Ihrer Adobe Commerce im Cloud-Infrastrukturspeicher zu aktivieren.
@@ -26,20 +35,20 @@ In diesem Schritt definieren wir die sicheren URLs für den Store. Wenn dies ber
 1. Navigieren Sie zu **Stores** > **Konfiguration** > **Allgemein** > **Web**.
 1. Erweitern Sie den Abschnitt **Basis-URLs (sicher**.    ![magento-admin_base-urls-secure.png](assets/magento-admin_base-urls-secure.png)
 1. Geben Sie im Feld **Sichere Basis** URL die HTTPS-URL Ihres Stores an.
-1. Legen Sie die Einstellungen **Sichere URLs für Storefront verwenden** und **Sichere URLs für Admin verwenden** auf **Ja** fest.    ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
+1. Legen Sie die Einstellungen **Sichere URLs für die Storefront verwenden** und **Sichere URLs für** verwenden auf **Ja** fest. ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
 1. Klicken **oben rechts auf** Konfiguration speichern“, um Änderungen anzuwenden.
 
-**Verwandte Dokumentation in unserem Benutzerhandbuch:**   [URLs speichern](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-urls).
+**Verwandte Dokumentation in unserem Benutzerhandbuch:** [Store URLs](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 ### Schritt 2: TLS erzwingen aktivieren {#step-2-enable-force-tls}
 
 1. Navigieren Sie in der Commerce Admin zu **Stores** > **Configuration** > **Advanced** > **System**.
 1. Erweitern Sie den **Vollständiger Seitencache**-Abschnitt, dann **Fastly Configuration** und dann **Advanced Configuration**.
 1. Klicken Sie auf die **TLS erzwingen**-Schaltfläche.    ![magento-admin_force-tls-button.png](assets/magento-admin_force-tls-button.png)
-1. Klicken Sie im angezeigten Dialogfeld auf **Hochladen**.    ![magento-admin_force-tls-confirmation-dialog.png](assets/magento-admin_force-tls-confirmation-dialog.png)
-1. Stellen Sie nach dem Schließen des Dialogfelds sicher, dass der aktuelle Status von TLS erzwingen als **aktiviert“ angezeigt**.    ![magento-admin_force-tls-enabled.png](assets/magento-admin_force-tls-enabled.png)
+1. Klicken Sie im angezeigten Dialogfeld auf **Hochladen**. ![magento-admin_force-tls-confirmation-dialog.png](assets/magento-admin_force-tls-confirmation-dialog.png)
+1. Nachdem das Dialogfeld geschlossen wurde, stellen Sie sicher, dass der aktuelle Status von TLS erzwingen als **enabled** angezeigt wird. ![magento-admin_force-tls-enabled.png](assets/magento-admin_force-tls-enabled.png)
 
-**Verwandte Fastly-Dokumentation:**   [TLS-Handbuch erzwingen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) für Adobe Commerce 2.
+**Verwandte Fastly-Dokumentation** [TLS-Handbuch erzwingen](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/FORCE-TLS.md) für Adobe Commerce 2.
 
 ## Über TLS erzwingen
 
@@ -55,8 +64,8 @@ Es funktioniert durch Rückgabe einer *301 Moved Permanently*-Antwort auf jede u
 ## Betroffene Versionen
 
 * **Adobe Commerce auf Cloud-Infrastruktur:**
-   * Version: 2.1.4 und höher
-   * Pläne: Adobe Commerce auf Cloud-Infrastruktur Starter-Planarchitektur und Adobe Commerce auf Cloud-Infrastruktur Pro-Planarchitektur (einschließlich Pro Legacy)
+  * Version: 2.1.4 und höher
+  * Pläne: Adobe Commerce auf Cloud-Infrastruktur Starter-Planarchitektur und Adobe Commerce auf Cloud-Infrastruktur Pro-Planarchitektur (einschließlich Pro Legacy)
 * **Fastly:** 1.2.4
 
 ## Keine Änderungen in routes.yaml erforderlich

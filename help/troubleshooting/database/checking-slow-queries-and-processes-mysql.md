@@ -4,13 +4,20 @@ description: In diesem Artikel wird über einige häufige MySQL-Probleme (langsa
 exl-id: cae02e4f-d8cb-4074-abac-24ead22bdc07
 feature: Services
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '547'
 ht-degree: 0%
-
 ---
-
 # Überprüfen langsamer Abfragen und Prozesse MySQL
 
 In diesem Artikel wird über einige häufige MySQL-Probleme (langsame Abfragen, zu lange dauernde Prozesse) gesprochen, die sich negativ auf die Website eines Händlers und die Lösungen, die sie angeben, auswirken können.
@@ -21,7 +28,7 @@ In diesem Artikel wird über einige häufige MySQL-Probleme (langsame Abfragen, 
 
 Wenn Sie einen Ausfall hatten, der möglicherweise durch eine überlastete Datenbank verursacht wurde, helfen Ihnen diese Schritte, das Protokoll der langsamen Abfragen Ihrer Datenbank zu überprüfen.
 
-### Abfragen mithilfe der MySQL-Befehlszeile analysieren (Adobe Commerce Cloud/On-Premise/Magento Open Source)
+### Analysieren von Abfragen mithilfe der MySQL-Befehlszeile (Adobe Commerce Cloud/On-Premise/Magento Open Source)
 
 1. Melden Sie sich über die Befehlszeile bei Ihrer MySQL-Befehlszeile (Adobe Commerce On-Premise/Magento Open Source) oder auf Ihrem Cloud-Server an (Adobe Commerce in Cloud-Infrastruktur).
 1. Überprüfen Sie das langsame Abfrageprotokoll auf Abfragen, die länger als 50 Sekunden dauern:

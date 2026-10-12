@@ -3,13 +3,20 @@ title: Schnelles Testen in der Produktion, wenn eine Live-Site dieselbe Domain v
 description: Wenn Sie eine Live-Site in Ihrer Produktions-Domain („example.com„) haben und Ihren neuen Store in der Produktionsumgebung der Cloud-Infrastruktur in Adobe Commerce mit aktiviertem Fastly CDN testen müssen, empfehlen wir die Verwendung der Subdomain (wie „prod.example.com„), die Sie zuvor zu Fastly hinzugefügt haben, für alle Testaktivitäten vor dem Start. Dieser Artikel beschreibt die Details und enthält nützliche Links zu den zugehörigen Adobe Commerce-Dokumentationsressourcen.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
-source-git-commit: 6651963ea5843283dee40a8ce58280baac79053a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # Schnelles Testen in der Produktion, wenn eine Live-Site dieselbe Domain verwendet
 
 Wenn Sie eine Live-Site in Ihrer Produktions-Domain (`example.com`) verwenden und Ihren neuen Store in der Produktionsumgebung der Cloud-Infrastruktur in Adobe Commerce mit aktiviertem Fastly CDN testen müssen, empfehlen wir die Verwendung der Subdomain (wie `prod.example.com`), die Sie zuvor zu Fastly hinzugefügt haben, für alle Testaktivitäten vor dem Start. Dieser Artikel beschreibt die Details und enthält nützliche Links zu den zugehörigen Adobe Commerce-Dokumentationsressourcen.

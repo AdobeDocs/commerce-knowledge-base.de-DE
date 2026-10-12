@@ -1,15 +1,22 @@
 ---
-title: Checkliste zum Einrichten einer neuen  [!DNL domain]
-description: Dies ist eine Checkliste zum Einrichten einer neuen  [!DNL domain]  in Adobe Commerce in der Cloud-Infrastruktur.
+title: Checkliste zum Einrichten einer neuen [!DNL domain]
+description: Dies ist eine Checkliste zum Einrichten einer neuen [!DNL domain] in Adobe Commerce auf Cloud-Infrastrukturen.
 exl-id: bfe0582d-2c6d-4814-908f-dfd8c898bef7
 feature: Cache
-source-git-commit: 552a290b50f9e0c5fa740f26092c57bac447fe68
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '793'
 ht-degree: 0%
-
 ---
-
 # Checkliste zum Einrichten einer neuen [!DNL domain]
 
 In dieser Checkliste wird erläutert, wie Sie in Adobe Commerce eine neue [!DNL domain] in der Cloud-Infrastruktur einrichten. Es gilt unabhängig davon, ob Sie eine neue Domain hinzufügen oder die aktuelle ersetzen. Dies gilt auch nach dem Abrufen einer neuen Staging-Umgebung (siehe Schritt 4).
@@ -25,7 +32,7 @@ Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 >Bevor Sie mit der Domain-Einrichtung fortfahren, stellen Sie Folgendes sicher:
 >
 >Alle Basis-URLs sind für die Verwendung von HTTPS unter **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]** konfiguriert und haben den Umfang der richtigen Website- oder Store-Ansicht.
->&#x200B;> [TLS erzwingen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) ist aktiviert, um den gesamten HTTP-Traffic an HTTPS auf Ihrer Adobe Commerce-Site in der Cloud-Infrastruktur umzuleiten.
+> [TLS erzwingen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/redirect-http-to-https-for-all-pages-on-cloud-force-tls#token_type=bearer&expires_in=10799996) ist aktiviert, um den gesamten HTTP-Traffic an HTTPS auf Ihrer Adobe Commerce-Site in der Cloud-Infrastruktur umzuleiten.
 
 ### Schritt 1: Ist dies für die [!DNL Integration, Staging] oder [!DNL Production environment]?
 
@@ -58,7 +65,7 @@ Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 >1. Sie migrieren die Domain von lokal in die Cloud-Umgebung, die in Ihrem eigenen [!DNL Fastly]-Service konfiguriert wurde. Senden Sie in diesem Fall eine Anfrage und fordern Sie die Delegierung der Domain an.
 >1. Sie migrieren die Domain von Starter zu Pro. Reichen Sie in diesem Fall ein Ersuchen um weitere Unterstützung ein.
 
-* **[!DNL Starter]**: Fügen Sie auf der Registerkarte [!DNL domain] die **[!DNL Domains]** zu Ihrem Projekt hinzu und **Sie dann eine Anfrage**, um die **[!DNL ACME Challenge Key]** für die [!DNL SSL certificate] anzugeben.
+* **[!DNL Starter]**: Fügen Sie auf der Registerkarte **[!DNL Domains]** die [!DNL domain] zu Ihrem Projekt hinzu und **Sie dann eine Anfrage**, um die **[!DNL ACME Challenge Key]** für die [!DNL SSL certificate] anzugeben.
 
 ### Schritt 4: Ist der [!DNL domain] aktiv?
 
@@ -67,7 +74,7 @@ Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 
 ### Schritt 5: Sind Domain-Umleitungen in `magento-vars.php` konfiguriert?
 
-Nachdem die Domain konfiguriert wurde, müssen Sie in der [-Datei &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites#modify-variables)die Variablen ändern`magento-vars.php` um die Domain an die entsprechende Website-/Store-URL weiterzuleiten.
+Nachdem die Domain konfiguriert wurde, müssen Sie in der `magento-vars.php`-Datei [die Variablen ändern](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites#modify-variables) um die Domain an die entsprechende Website-/Store-URL weiterzuleiten.
 
 ### Schritt 6: Ist die [!DNL domain]-Konfiguration verifiziert?
 

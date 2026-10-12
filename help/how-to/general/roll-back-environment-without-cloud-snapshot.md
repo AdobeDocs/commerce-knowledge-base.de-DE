@@ -3,13 +3,26 @@ title: Rollback der Umgebung ohne Cloud-Snapshot
 description: Dieser Artikel zeigt zwei Lösungen zum Zurücksetzen einer Umgebung, ohne dass eine Momentaufnahme Ihrer Umgebung in Adobe Commerce in der Cloud-Infrastruktur vorhanden ist.
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
+    internal-label: Build system
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '949'
 ht-degree: 0%
-
 ---
-
 # Rollback der Umgebung ohne Cloud-Snapshot
 
 Dieser Artikel zeigt zwei Lösungen zum Zurücksetzen einer Umgebung, ohne dass eine Momentaufnahme Ihrer Umgebung in Adobe Commerce in der Cloud-Infrastruktur vorhanden ist.
@@ -94,7 +107,7 @@ Dies bedeutet, dass wir unsere Adobe Commerce-Installation (einschließlich DB) 
 
 Beim Zurücksetzen von Git stellen wir den Code in den gewünschten Status in der Vergangenheit zurück.
 
-1. Klonen Sie die Umgebung in Ihre lokale Entwicklungsumgebung. Sie können den Befehl in die Cloud-Konsole kopieren:    ![copy_git_clone.png](assets/copy_git_clone.png)
+1. Klonen Sie die Umgebung in Ihre lokale Entwicklungsumgebung. Sie können den Befehl in die Cloud-Konsole kopieren: ![copy_git_clone.png](assets/copy_git_clone.png)
 1. Zugriff auf den Commit-Verlauf. `--reverse` verwenden, um den Verlauf zur Vereinfachung in umgekehrter Reihenfolge anzuzeigen:
 
    ```git
@@ -122,13 +135,13 @@ In diesem Abschnitt wird gezeigt, wie eine Umgebung in einem kritischen Zustand 
 
 In diesem Szenario müssen Sie zunächst den Arbeitsstatus Ihrer Adobe Commerce-Anwendung mithilfe des Git-Resets wiederherstellen und dann die Adobe Commerce-Software deinstallieren (um die Datenbank abzulegen und wiederherzustellen, die Bereitstellungskonfiguration zu entfernen usw.). Das Szenario umfasst dieselben Schritte wie in Szenario 1, aber die Reihenfolge der Schritte unterscheidet sich, und es gibt einen zusätzlichen Schritt: Erzwingen der erneuten Bereitstellung. Die Schritte sind:
 
-[&#x200B;1. Setzen Sie die Git-Verzweigung zurück.](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
+[&#x200B;1. Zurücksetzen der Git-Verzweigung.](/help/how-to/general/reset-environment-on-cloud.md#reset-git-branch)
 
 [2. Deaktivieren Sie die Konfigurationsverwaltung.](/help/how-to/general/reset-environment-on-cloud.md#disable_config_management)
 
 [&#x200B;3. Deinstallieren Sie die Adobe Commerce-Software.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&Zeitraum; Erzwingen der erneuten Bereitstellung.
+4&periode; Erzwingt die erneute Bereitstellung.
 
 Nachdem Sie diese Schritte ausgeführt haben, erhalten Sie dieselben Ergebnisse wie in Szenario 1.
 
@@ -171,9 +184,9 @@ Nach dem Zurücksetzen der DB [&#x200B; Sie „einen Git-Push an die Umgebung du
 
 In unserer Entwicklerdokumentation:
 
-* [Einen Schnappschuss in der Cloud wiederherstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
+* [Wiederherstellen eines Snapshots in der Cloud](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup)
 * [Snapshot erstellen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-a-manual-backup)
 * [Snapshots und Backup-Verwaltung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Verzweigungen mit der Cloud-Konsole verwalten - Protokolle anzeigen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=de#view-logs)
+* [Verwalten von Verzweigungen mit der Cloud-Konsole - Anzeigen von Protokollen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/console-branches.html?lang=de#view-logs)
 * [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment.html?lang=de)
 * [Projekt verwalten](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=de#configure-the-project)

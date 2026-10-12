@@ -1,18 +1,22 @@
 ---
 title: E-Mail-Adresse des aktuellen Adobe-Kontos ändern
-description: Erfahren Sie, wie Sie die aktuelle, im Adobe-Konto registrierte E-Mail-Adresse in eine neue Adresse ändern, die derzeit nicht im Adobe- oder Magento-Konto registriert ist.
+description: Erfahren Sie, wie Sie die aktuell im Adobe-Konto registrierte E-Mail-Adresse in eine neue Adresse ändern, die derzeit nicht im Adobe- oder Magento-Konto registriert ist.
 exl-id: ca549d38-0d62-4206-9727-0ed85b733dc3
 feature: Communications
-source-git-commit: 95d4507be9ac06a4cb3b1150000d7f9df30d35f8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
-
 ---
-
 # E-Mail-Adresse des aktuellen Adobe-Kontos ändern
 
-In diesem Artikel wird erläutert, wie Sie die aktuelle E-Mail-Adresse, die im [Adobe-Konto](https://account.adobe.com/) registriert ist, in eine neue Adresse ändern, die derzeit nicht im [Adobe-Konto](https://account.adobe.com/) oder dem [Magento-Konto registriert &#x200B;](https://account.magento.com/).
+In diesem Artikel wird erläutert, wie Sie die aktuelle E-Mail-Adresse, die im [Adobe-](https://account.adobe.com/) registriert ist, in eine neue Adresse ändern, die derzeit nicht im [Adobe-Konto](https://account.adobe.com/) oder [Magento-Konto](https://account.magento.com/) registriert ist.
 
 ## Betroffene Produkte und Versionen
 
