@@ -33,7 +33,7 @@ Dieser Artikel bietet eine Fehlerbehebung für den Fall, dass Adobe Commerce-Sto
 
 ## Problem
 
-Geplante Aktualisierungen für ein Store-Content-Asset (Seite, Produkt, Block usw.) werden nicht sofort nach dem Start der Aktualisierung in der Storefront angezeigt. Dies geschieht, wenn Aktualisierungen mithilfe der Funktion [Inhalts-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) geplant wurden.
+Geplante Aktualisierungen für ein Store-Content-Asset (Seite, Produkt, Block usw.) werden nicht sofort nach dem Start der Aktualisierung in der Storefront angezeigt. Dies geschieht, wenn Aktualisierungen mithilfe der Funktion [Inhalts-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de) geplant wurden.
 
 ## Ursache
 
@@ -61,6 +61,6 @@ Wenn die Bereitstellung veralteter Inhalte selbst für die erste Anfrage inakzep
 
 ## Verwandte Dokumentation
 
-* [Bereinigungsoptionen konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) im Handbuch Commerce on Cloud Infrastructure .
-* [Inhalts-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) in der Dokumentation zu Inhalt und Design.
+* [Bereinigungsoptionen konfigurieren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=de) im Handbuch Commerce on Cloud Infrastructure .
+* [Inhalts-Staging](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=de) in der Dokumentation zu Inhalt und Design.
 * [Serving Stale Content](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) in der Fastly-Dokumentation.
