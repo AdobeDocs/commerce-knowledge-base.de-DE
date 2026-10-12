@@ -3,7 +3,18 @@ title: Blockieren von bösartigem Traffic für Adobe Commerce auf Fastly-Ebene
 description: In diesem Artikel finden Sie die Schritte, die Sie unternehmen können, um bösartigen Traffic zu blockieren, wenn Sie vermuten, dass Ihr Adobe Commerce im Cloud-Infrastrukturspeicher einen DDoS-Angriff durchläuft.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 8e64b148938394e67265da543784b2769df56c58
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '932'
 ht-degree: 0%
@@ -24,7 +35,7 @@ In diesem Artikel gehen wir davon aus, dass Sie bereits über die böswilligen I
 
 Wenn Ihre Website durch DDoS überlastet ist, können Sie sich möglicherweise nicht bei Ihrem Commerce-Administrator anmelden (und alle in diesem Artikel beschriebenen Schritte ausführen).
 
-Um Zugriff auf den Admin zu erhalten, setzen Sie Ihre Website in den Wartungsmodus, wie in [Aktivieren oder Deaktivieren des Wartungsmodus](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) beschrieben, und setzen Sie Ihre IP-Adresse auf die Zulassungsliste. Deaktivieren Sie danach den Wartungsmodus.
+Um Zugriff auf den Admin zu erhalten, setzen Sie Ihre Website in den Wartungsmodus, wie in [Aktivieren oder Deaktivieren des Wartungsmodus](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) beschrieben, und setzen Sie Ihre IP-Adresse auf die Zulassungsliste. Deaktivieren Sie danach den Wartungsmodus.
 
 ## Blockieren des Traffics nach IP
 
@@ -132,7 +143,7 @@ Bei der Verwendung von `robots.txt` sind zwei wichtige Aspekte zu beachten:
 * Roboter können Ihre `robots.txt` ignorieren. Vor allem Malware-Roboter, die das Internet nach Sicherheitslücken durchsuchen, und E-Mail-Adressen-Harvester, die von Spammern verwendet werden, werden keine Aufmerksamkeit schenken.
 * Die `robots.txt` ist eine öffentlich verfügbare Datei. Jeder kann sehen, welche Bereiche des Servers Roboter nicht benutzen sollen.
 
-Die grundlegenden Informationen und die standardmäßige Adobe Commerce `robots.txt`-Konfiguration finden Sie im Artikel [Suchmaschinenroboter](https://experienceleague.adobe.com/de/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) in unserer Entwicklerdokumentation.
+Die grundlegenden Informationen und die standardmäßige Adobe Commerce `robots.txt`-Konfiguration finden Sie im Artikel [Suchmaschinenroboter](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) in unserer Entwicklerdokumentation.
 
 Allgemeine Informationen und Empfehlungen zu `robots.txt` finden Sie unter:
 
@@ -144,4 +155,4 @@ Arbeiten Sie mit Ihrem Entwickler und/oder SEO-Experten zusammen, um zu bestimme
 ## Verwandtes Lesen
 
 * [Produktspezifische Lizenzbedingungen für Adobe Commerce on Cloud Service](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* [Benutzerdefinierte VCL zum Blockieren von Anfragen](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) im Handbuch zu Commerce in Cloud Manager
+* [Benutzerdefinierte VCL zum Blockieren von Anfragen](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) im Handbuch zu Commerce in Cloud Manager

@@ -4,22 +4,31 @@ description: Dieser Artikel bietet eine Lösung für den Fehler, der während de
 exl-id: bdc4a355-4f2b-49a7-9c5d-63c950f7ca30
 feature: Deploy, Observability
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '148'
 ht-degree: 0%
-
 ---
-
 # Fehler während der Bereitstellung beim Upgrade auf eine Version, die PHP 8.1 unterstützt
 
 Dieser Artikel bietet eine Lösung für den Fehler, der während der Bereitstellung beim Upgrade auf eine Version auftritt, die PHP 8.1 unterstützt.
 
 ## Betroffene Produkte und Versionen
 
-* Adobe Commerce auf Cloud-Infrastruktur 2.4.4 und höher
+* Adobe Commerce auf Cloud-Infrastruktur 2.4.4. und später
 
-* Erweiterungs- oder Technologieversion (Fastly, New Relic usw.) PHP 8.1
+* Erweiterung oder Technologie (Fastly, New Relic usw.) Version PHP 8.1
 
 ## Problem
 
@@ -45,4 +54,4 @@ Entfernen Sie JSON aus dem Abschnitt **Laufzeit** > **Erweiterungen** in `.magen
 
 ## Verwandtes Lesen
 
-[PHP-Anwendung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/php-settings) in unserer Entwicklerdokumentation.
+[PHP-Anwendung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) in unserer Entwicklerdokumentation.

@@ -4,13 +4,25 @@ description: Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, be
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: beca5aa3fa796e4b12afc4882024db718b65ac0c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 0%
-
 ---
-
 # Live Search-Katalog nicht synchronisiert
 
 Dieser Artikel bietet Lösungen für das Adobe Commerce-Problem, bei dem Ihre Katalogdaten bei Verwendung der Live Search-Erweiterung nicht korrekt synchronisiert werden.
@@ -31,14 +43,14 @@ Ihre Katalogdaten werden nicht korrekt synchronisiert oder es wurde ein neues Pr
 
 <u>Schritte zur Reproduktion</u>
 
-1. Konfigurieren und verbinden Sie die Live Search für Ihre Adobe Commerce-Instanz, wie in [Live Search installieren > API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=de#configure-api-keys) in unserer Benutzerdokumentation beschrieben.
-1. Überprüfen Sie nach 30 Minuten die exportierten Katalogdaten, wie unter [Live-Suche installieren > Export überprüfen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=de#verify-export) in unserer Benutzerdokumentation beschrieben.
-1. Testen Sie nach 30 Minuten die Verbindung, wie unter [Live Search installieren > Verbindung testen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=de#test-connection) in unserer Benutzerdokumentation beschrieben.
+1. Konfigurieren und verbinden Sie die Live Search für Ihre Adobe Commerce-Instanz, wie in [Live Search installieren > API-Schlüssel konfigurieren](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#configure-api-keys) in unserer Benutzerdokumentation beschrieben.
+1. Überprüfen Sie nach 30 Minuten die exportierten Katalogdaten, wie unter [Live-Suche installieren > Export überprüfen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#verify-export) in unserer Benutzerdokumentation beschrieben.
+1. Testen Sie nach 30 Minuten die Verbindung, wie unter [Live Search installieren > Verbindung testen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#test-connection) in unserer Benutzerdokumentation beschrieben.
 
 Or
 
 1. Fügen Sie ein neues Produkt zum Katalog hinzu.
-1. Versuchen Sie, eine Suchabfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen auszuführen, nachdem 15-20 Minuten nach dem Zeitpunkt, zu dem Magento Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren.
+1. Versuchen Sie, eine Suchanfrage mit dem Produktnamen oder anderen durchsuchbaren Attributen nach 15-20 Minuten ab dem Zeitpunkt auszuführen, zu dem Magento Indexer + Cron ausgeführt wurden, um Daten mit dem Backend-Service zu synchronisieren.
 
 <u>Erwartetes Ergebnis</u>
 
@@ -80,7 +92,7 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht korrekt synchronisiert werd
    bin/magento indexer:reindex cde_products_feed
    ```
 
-1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [&#x200B; ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [ ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ### Zeitstempel des letzten Produktexports überprüfen
 
@@ -96,7 +108,7 @@ Wenn Ihre Produktdaten für eine bestimmte SKU nicht korrekt synchronisiert werd
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. Warten Sie `<>` (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [&#x200B; ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. Warten Sie `<>` (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [ ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ### Spezifischen Attributcode synchronisieren
 
@@ -114,7 +126,7 @@ Wenn Ihre Produktattributdaten für einen bestimmten Attributcode nicht korrekt 
    bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
-1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [&#x200B; ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. Wenn immer noch nicht die richtigen Daten angezeigt werden, erstellen [ ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ### Zeitstempel des letzten Produktattribut-Exports überprüfen
 
@@ -132,7 +144,7 @@ Wenn die richtigen Daten in `cde_product_attributes_feed` angezeigt werden:
    bin/magento cron:run --group=saas_data_exporter
    ```
 
-1. 15-20 Minuten warten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [&#x200B; ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
+1. 15-20 Minuten warten (Zeit für inkrementelle Aktualisierungen). Wenn Ihre Daten weiterhin nicht angezeigt werden, erstellen [ ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ### Nach API-Konfigurationsänderung synchronisieren
 
@@ -150,13 +162,13 @@ bin/magento saas:resync --feed categories --cleanup-feed
 bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
-[Senden einer Support-Anfrage](https://experienceleague.adobe.com/home?lang=de&support-tab=home#support) um eine Neuindizierung des Live Search-Index anzufordern. Geben Sie in der Problembeschreibung Ihre Datenspeicher-/Umgebungs-ID ein, die Sie im Admin-Bedienfeld unter **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]** finden.
+[Senden einer Support-Anfrage](https://experienceleague.adobe.com/home?support-tab=home#support) um eine Neuindizierung des Live Search-Index anzufordern. Geben Sie in der Problembeschreibung Ihre Datenspeicher-/Umgebungs-ID ein, die Sie im Admin-Bedienfeld unter **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]** finden.
 
 >[!IMPORTANT]
->Die Verwendung der Option `--cleanup-feed` in anderen Fällen kann zu Datenverlust und Problemen mit der Datensynchronisation führen.  Verwenden Sie sie nur, wenn Sie eine neue, leere Umgebung haben, nachdem das Adobe-Team einen Vorgang zur Bereinigung des Datenraums abgeschlossen hat, oder wenn Sie den `saas:resync`-Befehl mit der Option [—dry-run](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) ausführen. Die Verwendung der Option `--cleanup-feed` in anderen Fällen kann zu Datenverlust und Problemen mit der Datensynchronisation führen.
+>Die Verwendung der Option `--cleanup-feed` in anderen Fällen kann zu Datenverlust und Problemen mit der Datensynchronisation führen.  Verwenden Sie sie nur, wenn Sie eine neue, leere Umgebung haben, nachdem das Adobe-Team einen Vorgang zur Bereinigung des Datenraums abgeschlossen hat, oder wenn Sie den `saas:resync`-Befehl mit der Option [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run) ausführen. Die Verwendung der Option `--cleanup-feed` in anderen Fällen kann zu Datenverlust und Problemen mit der Datensynchronisation führen.
 
 ## Verwandtes Lesen
 
-* [Onboarding Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html?lang=de) in unserer Benutzerdokumentation
-* [Überprüfen Sie Protokolle und Fehlerbehebung bei Adobe Commerce SaaS-Datenexporten und -](https://experienceleague.adobe.com/de/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging) im Adobe Commerce SaaS-Datenexporthandbuch
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Onboarding Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) in unserer Benutzerdokumentation
+* [Überprüfen Sie Protokolle und Fehlerbehebung bei Adobe Commerce SaaS-Datenexporten und -](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging) im Adobe Commerce SaaS-Datenexporthandbuch
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

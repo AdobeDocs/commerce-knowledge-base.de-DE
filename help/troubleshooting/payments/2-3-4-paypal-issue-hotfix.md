@@ -4,13 +4,22 @@ description: Dieser Artikel bietet eine Fehlerbehebung für Fehler, die bei der 
 exl-id: 9f5ec100-49b0-4ac5-8951-32b5c4fe6bed
 feature: Orders, Payments
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
-
 ---
-
 # 2.3.4 Hotfix für PayPal-Probleme
 
 Dieser Artikel bietet eine Fehlerbehebung für Fehler, die bei der Bestellplatzierung bei der Auswahl einer Region in der PayPal Express-Checkout empfangen wurden. Das Problem wird durch Änderungen in der Adobe Commerce-Version 2.3.4 verursacht und hängt damit zusammen, wie die Adressfelder des PayPal Express-Checkouts geparst werden.
@@ -49,11 +58,11 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 Für lokale Adobe Commerce-Händler: Wenden Sie den [Hotfix](https://magento.com/tech-resources/download#download2353) an, der im Abschnitt Downloads auf dem Portal [magento.com](https://magento.com) in Mein Konto verfügbar ist.
 
-Für Händler mit Adobe Commerce-Cloud-Infrastruktur: Adobe hat die Fehlerbehebung in die Cloud-Patches für Commerce v1.0.2 aufgenommen. Siehe [Cloud-Patches für Commerce](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche) in unserer Entwicklerdokumentation, um Anweisungen zum Anwenden des neuesten Pakets zu erhalten.
+Für Händler mit Adobe Commerce-Cloud-Infrastruktur: Adobe hat die Fehlerbehebung in die Cloud-Patches für Commerce v1.0.2 aufgenommen. Siehe [Cloud-Patches für Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche) in unserer Entwicklerdokumentation, um Anweisungen zum Anwenden des neuesten Pakets zu erhalten.
 
 ## Anwenden des Patches
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in unserer Support-Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in unserer Support-Wissensdatenbank.
 
 ## Verwandtes Lesen
 

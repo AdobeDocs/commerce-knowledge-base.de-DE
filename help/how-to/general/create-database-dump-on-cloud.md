@@ -3,13 +3,17 @@ title: Erstellen eines Datenbank-Dump auf Adobe Commerce in der Cloud-Infrastruk
 description: In diesem Artikel werden die möglichen (und empfohlenen) Möglichkeiten zum Erstellen eines Datenbank-Dump (DB) in Adobe Commerce auf der Cloud-Infrastruktur erläutert.
 exl-id: 4a2e54ac-8d65-4e51-8337-08f9748dc6c0
 feature: Cloud
-source-git-commit: 96b145a1f76c296907da96fd97c7a8f7778463f8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '453'
 ht-degree: 0%
-
 ---
-
 # Erstellen eines Datenbank-Dump auf Adobe Commerce in der Cloud-Infrastruktur
 
 In diesem Artikel werden die möglichen (und empfohlenen) Möglichkeiten zum Erstellen eines Datenbank-Dump (DB) in Adobe Commerce auf der Cloud-Infrastruktur erläutert.
@@ -18,7 +22,7 @@ Sie müssen nur eine Variante (Option) verwenden, um Ihre Datenbank zu entladen.
 
 ## Voraussetzung: SSH in Ihre Umgebung
 
-Um Ihre DB mit einer in diesem Artikel besprochenen Variante auf Adobe Commerce in der Cloud-Infrastruktur zu entladen, müssen Sie zunächst [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de).
+Um Ihre DB mit einer in diesem Artikel besprochenen Variante auf Adobe Commerce in der Cloud-Infrastruktur zu entladen, müssen Sie zunächst [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 
 >[!WARNING]
 >
@@ -26,7 +30,7 @@ Um Ihre DB mit einer in diesem Artikel besprochenen Variante auf Adobe Commerce 
 
 ## Option 1: db-dump (**ECE-Tools; empfohlen**)
 
-Sie können Ihre Datenbank mit dem Befehl [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=de) entladen:
+Sie können Ihre Datenbank mit dem Befehl [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) entladen:
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +38,7 @@ vendor/bin/ece-tools db-dump
 
 Dies ist die empfohlene und sicherste Option.
 
-Siehe [Dump Ihrer Datenbank (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=de) in unserem Handbuch zu Commerce in Cloud Infrastructure.
+Siehe [Dump Ihrer Datenbank (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) in unserem Handbuch zu Commerce in Cloud Infrastructure.
 
 ## Option 2: mariadb-dump (oder mysqldump für ältere Versionen)
 
@@ -73,4 +77,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Verwandte Dokumentation:**
 
 * [mysqldump - Ein Datenbanksicherungsprogramm](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) in der offiziellen MySQL-Dokumentation.
-* [Cloud-spezifische Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=de) (siehe `MAGENTO_CLOUD_RELATIONSHIPS`) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen .
+* [Cloud-spezifische Variablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (siehe `MAGENTO_CLOUD_RELATIONSHIPS`) in unserem Handbuch zu Commerce in Cloud-Infrastrukturen .

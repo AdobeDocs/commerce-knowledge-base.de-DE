@@ -1,16 +1,23 @@
 ---
 title: 'PWA Studio: Browser kann die Website .local.pwadev nicht auflösen'
-description: Dieser Artikel bietet eine Lösung für den Fall, dass ein anderes Programm oder ein anderer Prozess Ihre [Hostdatei] (https://en.wikipedia.org/wiki/Hosts_(file) bearbeitet und den Eintrag für Ihre Projekt-Domain entfernt hat.
+description: Dieser Artikel bietet eine Lösung für den Fall, dass ein anderes Programm oder ein anderer Prozess Ihre [Hostdatei](https://en.wikipedia.org/wiki/Hosts_(file) bearbeitet und den Eintrag für Ihre Projekt-Domain entfernt hat.
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
-source-git-commit: 1d0d51209bdc02360c6f8527701cdf0da811659d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '255'
 ht-degree: 0%
-
 ---
-
 # PWA Studio: Browser kann die Website .local.pwadev nicht auflösen
 
 Dieser Artikel bietet eine Lösung für den Fall, dass ein anderes Programm oder ein anderer Prozess Ihre [Host-Datei]&#x200B;(https://en.wikipedia.org/wiki/Hosts_(file\) bearbeitet und den Eintrag für Ihre Projekt-Domain entfernt hat.
@@ -35,7 +42,7 @@ Sie können [Ihre Hostdatei manuell bearbeiten](https://docs.rackspace.com/docs/
 
 ## Lesen Sie diesbezüglich in unserer Support-Wissensdatenbank
 
-* [PWA Studio: Fehler bei der Vertrauenswürdigkeit des selbstsignierten Zertifikats](https://support.magento.com/hc/en-us/articles/360038973172)
+* [PWA Studio: Fehler bei selbstsignierter Zertifikatvertrauensstellung](https://support.magento.com/hc/en-us/articles/360038973172)
 * [PWA Studio: Webpack bleibt vor Kompilierung hängen](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
 * [PWA Studio: Browser zeigt den Fehler „Proxy nicht möglich für“ an](/help/troubleshooting/miscellaneous/pwa-studio-browser-displays-cannot-proxy-to-error.md)
 * [PWA Studio: Validierungsfehler beim Ausführen des Entwicklermodus](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)

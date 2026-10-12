@@ -4,13 +4,20 @@ description: 'Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereit
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '331'
 ht-degree: 0%
-
 ---
-
 # Fehler „Aktuelle Version von RDBMS wird nicht unterstützt“ bei der Bereitstellung
 
 Dieser Artikel bietet eine Lösung für den Fall, dass eine Bereitstellung fehlschlägt und Sie den folgenden Fehler im Bereitstellungsprotokoll haben: *Aktuelle Version von RDBMS wird nicht unterstützt*.
@@ -45,12 +52,12 @@ Ihre Version von MariaDB ist nicht kompatibel mit der Version von Adobe Commerce
 Sie müssen den MariaDB-Dienst auf eine kompatible Version aktualisieren, bevor Sie die Anwendung aktualisieren.
 
 
-Für die Integrationsverzweigung auf Adobe Commerce in der Cloud-Infrastruktur Pro Planarchitektur (und alle Verzweigungen in der Starterarchitektur) folgen Sie bitte [Service konfigurieren](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) in unserer Entwicklerdokumentation.
+Für die Integrationsverzweigung auf Adobe Commerce in der Cloud-Infrastruktur Pro Planarchitektur (und alle Verzweigungen in der Starterarchitektur) folgen Sie bitte [Service konfigurieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) in unserer Entwicklerdokumentation.
 
-Für die Planarchitektur Staging und Produktion in Adobe Commerce auf Cloud-Infrastruktur Pro [&#x200B; Sie ein Support-Ticket &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um anzufordern, dass die Services vor der Bereitstellung des Adobe Commerce-Versions-Upgrades aktualisiert werden.
+Für die Planarchitektur Staging und Produktion in Adobe Commerce auf Cloud-Infrastruktur Pro [ Sie ein Support-Ticket ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um anzufordern, dass die Services vor der Bereitstellung des Adobe Commerce-Versions-Upgrades aktualisiert werden.
 
 
 ## Verwandtes Lesen
 
-* [Best Practices für Builds und &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)) in unserer Entwicklerdokumentation.
-* [Adobe Commerce-Upgrade 2.3.5: Kompakt auf dynamische Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html?lang=de) in unserer Support-Wissensdatenbank.
+* [Best Practices für Builds und ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices)) in unserer Entwicklerdokumentation.
+* [Adobe Commerce-Upgrade 2.3.5: Kompakt auf dynamische Tabellen](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) in unserer Support-Wissensdatenbank.

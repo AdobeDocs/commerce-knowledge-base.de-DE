@@ -3,13 +3,17 @@ title: Einfluss der Basispreisänderung auf den Preis des freigegebenen Katalogs
 description: 'Dieser Artikel beantwortet die Frage: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Grundpreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt dann im freigegebenen Katalog?'
 exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 0%
-
 ---
-
 # Einfluss der Basispreisänderung auf den Preis des freigegebenen Katalogs
 
 Dieser Artikel beantwortet die Frage: Wenn ein Produkt in einem freigegebenen Katalog einen benutzerdefinierten Preis hat und sich der Grundpreis des Produkts ändert (z. B. nach einer geplanten Aktualisierung), welcher Preis gilt dann im freigegebenen Katalog?
@@ -30,4 +34,4 @@ Wenn sich der Grundpreis des Produkts ändert und niedriger als der entsprechend
 
 ## Verwandtes Lesen
 
-[Festlegen von Preisen und Strukturen für einen freigegebenen &#x200B;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html?lang=de)) in unserem Benutzerhandbuch.
+[Festlegen von Preisen und Strukturen für einen freigegebenen ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html)) in unserem Benutzerhandbuch.

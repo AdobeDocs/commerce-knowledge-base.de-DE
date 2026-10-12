@@ -2,7 +2,10 @@
 title: ElasticSuite Trackingindizes verursacht Probleme mit Elasticsearch
 description: In diesem Artikel wird über das Problem von Elasticsearch-Speicherproblemen gesprochen, die durch Tracking-Indizes verursacht werden, die vom ElasticSuite-Plug-in erzeugt werden.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -66,5 +69,5 @@ Erstellen Sie einen Cron-Auftrag, um die Tracking-Indizes zu löschen. Dieser Be
 
 Wenn Sie Indizes mit einer bestimmten Häufigkeit löschen möchten, erstellen Sie einen Cron-Auftrag, indem Sie die folgenden Artikel in unserer Entwicklerdokumentation lesen:
 
-* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer benutzerdefinierten Cron-Gruppe (Tutorial)](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Einrichten von Cron-Aufträgen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Konfigurieren eines benutzerdefinierten Cron-Auftrags und einer benutzerdefinierten Cron-Gruppe (Tutorial)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Einrichten von Cron-Aufträgen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

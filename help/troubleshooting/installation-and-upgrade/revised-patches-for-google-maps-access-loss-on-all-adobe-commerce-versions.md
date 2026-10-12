@@ -1,16 +1,25 @@
 ---
 title: Überarbeitete Patches für Google Maps-Zugriffsverluste in allen Adobe Commerce-Versionen
-description: Dieser Artikel bietet eine Fehlerbehebung für Adobe Commerce-Händler, die mit keiner der neuesten  [!DNL Google Maps]  ab Version 3.54 kompatibel sind.
+description: Dieser Artikel bietet eine Fehlerbehebung für Adobe Commerce-Händler, die mit keiner aktuellen [!DNL Google Maps] ab Version 3.54 kompatibel sind.
 feature: Install, Upgrade
 role: Developer
 exl-id: 6151e89a-3190-40cb-b599-94ae5530488b
-source-git-commit: d7e58d6a9ed8e9b369ea41165cbdd6b362e40824
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '345'
 ht-degree: 0%
-
 ---
-
 # Überarbeitete Patches für [!DNL Google Maps] Zugriffsverlust in allen Adobe Commerce-Versionen
 
 Dieser Artikel bietet eine Fehlerbehebung für Adobe Commerce-Händler, die mit keiner aktuellen [!DNL Google Maps] ab Version 3.54 kompatibel sind. Mit dieser Fehlerbehebung wird das Problem behoben, dass Adobe Commerce-Händler in keiner Version von Adobe Commerce mehr Zugriff auf [!DNL Google Maps] haben.
@@ -26,9 +35,9 @@ Am *14. Juni* erreichte [!DNL Google Maps] Version *3.53* das Ende des Lebenszyk
 
 Weitere Informationen finden Sie unter [[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
-Adobe Commerce war mit keiner der aktuellen [!DNL &#x200B; Google Maps] ab Version 3.54 kompatibel.
+Adobe Commerce war mit keiner der aktuellen [!DNL  Google Maps] ab Version 3.54 kompatibel.
 
-Die Inkompatibilität wurde durch ältere `prototype.js script` verursacht, die durch geladen wurden, `lib/web/legacy-build.min.js` die native Funktion Array.from überschreibt, was zu einem direkten Konflikt mit [!DNL &#x200B; Google Maps] API führt.
+Die Inkompatibilität wurde durch ältere `prototype.js script` verursacht, die durch geladen wurden, `lib/web/legacy-build.min.js` die native Funktion Array.from überschreibt, was zu einem direkten Konflikt mit [!DNL  Google Maps] API führt.
 
 Siehe [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices).
 
@@ -54,16 +63,16 @@ Wenn Sie den Block „Inhalt zuordnen“ aus **[!DNL PageBuilder]** Menü auf di
 
 Verwenden Sie je nach Adobe Commerce-Version die folgenden angehängten Patches:
 
-**Für Versionen 2.4.4:**
+**Für Version 2.4.4:**
 [ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
-**Für Versionen 2.4.5:**
+**Für Version 2.4.5:**
 [ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
-**Für Versionen 2.4.6:**
+**Für Version 2.4.6:**
 [ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.4_2.4.5_2.4.6_composer.patch.zip)
 
-**Für Versionen 2.4.7:**
+**Für Version 2.4.7:**
 [ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip](assets/ACSD-60245_Google_maps_API_2.4.7_composer.patch.zip)
 
 **Bitte beachten**
@@ -73,4 +82,4 @@ Dieses Problem wird im Rahmen der Patch-Versionen, die nur für die Sicherheit i
 
 ## Verwandtes Lesen
 
-[Wie man einen Composer Patch von Adobe aufbringt](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)
+[Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)

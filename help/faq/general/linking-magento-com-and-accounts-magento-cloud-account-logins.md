@@ -1,18 +1,22 @@
 ---
 title: Verknüpfen von Magento.com und accounts.magento.cloud-Konto-Anmeldungen
-description: Ab dem 1. April 2020 verlangt Adobe Commerce, dass Benutzende, die über ein Konto unter [accounts.magento.cloud](https://accounts.magento.cloud/) verfügen, dieses Konto mit ihrem [Magento.com](https://account.magento.com/customer/account/login/)-Konto verknüpfen. Dadurch wird die Anmeldung am [Magento.com](https://account.magento.com/customer/account/login/)-Konto zur primären Anmeldemethode für beide Konten und verbessert die Sicherheit für Benutzende.
+description: Ab dem 1. April 2020 verlangt Adobe Commerce, dass Benutzer, die über ein Konto unter [accounts.magento.cloud](https://accounts.magento.cloud/) verfügen, dieses Konto mit ihrem [Magento.com](https://account.magento.com/customer/account/login/)-Konto verknüpfen. Dadurch wird die Anmeldung beim [Magento.com](https://account.magento.com/customer/account/login/)-Konto zur primären Anmeldemethode für beide Konten und verbessert die Sicherheit für Benutzer.
 exl-id: 89afec50-bc21-46cd-8440-2bcf717ded69
 feature: Cloud
-source-git-commit: 74b04ca74330037252334c288b15d8412d00d253
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '278'
 ht-degree: 0%
-
 ---
-
 # Verknüpfen von Magento.com und accounts.magento.cloud-Konto-Anmeldungen
 
-Ab dem 1. April 2020 verlangt Adobe Commerce, dass Benutzer, die über ein Konto bei [accounts.magento.cloud](https://accounts.magento.cloud/) verfügen, dieses Konto mit ihrem [Magento.com](https://account.magento.com/customer/account/login/)-Konto verknüpfen. Dadurch wird die Anmeldung am Konto [Magento.com](https://account.magento.com/customer/account/login/) zur primären Anmeldemethode für beide Konten und verbessert die Sicherheit für Benutzerinnen und Benutzer.
+Ab dem 1. April 2020 verlangt Adobe Commerce, dass Benutzer, die über ein Konto bei [accounts.magento.cloud](https://accounts.magento.cloud/) verfügen, dieses Konto mit ihrem [Magento.com](https://account.magento.com/customer/account/login/)-Konto verknüpfen. Dadurch wird der [Magento.com](https://account.magento.com/customer/account/login/)-Kontologin zur primären Anmeldemethode für beide Konten und verbessert die Sicherheit für Benutzer.
 
 Benutzer unter [accounts.magento.cloud](https://accounts.magento.cloud/) können diese Konten über eine von zwei Methoden verbinden:
 
@@ -28,9 +32,9 @@ Benutzer unter [accounts.magento.cloud](https://accounts.magento.cloud/) können
 
 1. Anmelden bei [https://account.magento.com](https://account.magento.com/).
 1. Navigieren Sie zu einer separaten Registerkarte unter [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user).
-1. Klicken Sie auf „Verbindung mit [Magento.com](https://account.magento.com/customer/account/login/) herstellen“.
+1. Klicken Sie auf „Verbinden mit [Magento.com](https://account.magento.com/customer/account/login/)&quot;.
 
 ## Verwandtes Lesen
 
 * [Anmeldung beim Adobe Commerce Support- oder Cloud-Konto nicht möglich](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
-* [Der Eigentümer des MageID-Kontos kann sich nicht anmelden und ein Support-Ticket senden](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [Der Besitzer des MageID-Kontos kann sich nicht anmelden und ein Support-Ticket senden](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)

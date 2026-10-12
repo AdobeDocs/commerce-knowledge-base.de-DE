@@ -1,16 +1,30 @@
 ---
 title: Leistungsproblem im Magento_Company-Modul-Upgrade nach der Aktualisierung auf B2B 1.5.2
-description: Dieser Artikel enthält einen Hotfix für das Leistungsproblem im Magento_Company-Modul-Upgrade nach dem B2B-Update 1.5.2, in dem die übermäßig lange Verarbeitungszeit für große Datensätze in der Tabelle company_structure behandelt wird.
+description: Dieser Artikel bietet einen Hotfix für das Leistungsproblem im Upgrade des Magento_Company-Moduls nach der Aktualisierung von B2B 1.5.2, wobei die übermäßig lange Verarbeitungszeit für große Datensätze in der Tabelle company_structure behandelt wird.
 feature: B2B, Upgrade
 role: Admin, Developer
 exl-id: b091d761-2e8a-4535-b461-ee9a46b5c2bc
-source-git-commit: e0524b54ee0adae1caa809212e98dda3a33c1954
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
-
 ---
-
 # Leistungsproblem im Magento_Company-Modul-Upgrade nach der Aktualisierung auf B2B 1.5.2
 
 Dieser Artikel bietet einen Hotfix für das Leistungsproblem beim Upgrade des `Magento_Company`-Moduls nach der Aktualisierung von B2B 1.5.2, wobei die übermäßig lange Verarbeitungszeit für große Datensätze (~100.000+ Datensätze) in der `company_structure` behandelt wird.
@@ -33,7 +47,7 @@ Das Upgrade des `Magento_Company`-Moduls nach der Aktualisierung auf B2B 1.5.2 d
 
 <u>Schritte zur Reproduktion</u>:
 
-1. Weisen Sie einer übergeordneten Firma eine Firma zu, um die Unternehmenshierarchie festzulegen. Weitere Informationen finden [&#x200B; unter „Verwalten &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) Unternehmenshierarchie“ im Adobe Commerce B2B-Handbuch.
+1. Weisen Sie einer übergeordneten Firma eine Firma zu, um die Unternehmenshierarchie festzulegen. Weitere Informationen finden [ unter „Verwalten ](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) Unternehmenshierarchie“ im Adobe Commerce B2B-Handbuch.
 1. Aktualisieren Sie B2B auf Version 1.5.2.
 
 <u>Erwartete Ergebnisse</u>:
@@ -62,7 +76,7 @@ Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
 ### Anbringen des Pflasters
 
-Entpacken Sie die Datei und [&#x200B; Sie in unserer Support](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
+Entpacken Sie die Datei und [ Sie in unserer Support](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento)Wissensdatenbank die Anleitung „So wenden Sie einen von Adobe bereitgestellten Composer-Patch an“.
 
 ### Anwenden eines Patches mithilfe von Cloud-Patches
 
@@ -81,8 +95,8 @@ Gehen Sie für Adobe Commerce on Cloud-Händler wie folgt vor:
    ```
 
 1. Fügen Sie den ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch zum Verzeichnis `m2-hotfixes` hinzu.
-1. Übertragen Sie die Änderungen und übertragen Sie sie, um die erneute Bereitstellung und `bin/magento setup:upgrade` zu starten. Anweisungen finden [&#x200B; unter „Anwenden &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) Patches“ in unserem Handbuch zu Adobe Commerce on Cloud.
+1. Übertragen Sie die Änderungen und übertragen Sie sie, um die erneute Bereitstellung und `bin/magento setup:upgrade` zu starten. Anweisungen finden [ unter „Anwenden ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) Patches“ in unserem Handbuch zu Adobe Commerce on Cloud.
 
 ## Verwandtes Lesen
 
-* [Das Upgrade auf B2B 1.5.2 schlägt aufgrund einer fehlenden REGEXP_LIKE-Funktion mit einem SQL-Syntaxfehler fehl](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
+* [Das Upgrade auf B2B 1.5.2 schlägt aufgrund einer fehlenden REGEXP_LIKE-Funktion mit einem SQL-Syntaxfehler fehl](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)

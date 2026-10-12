@@ -4,13 +4,27 @@ description: Dieser Artikel enthält einen Patch für die bekannte Adobe Commerc
 exl-id: 948d5907-70bd-4890-bc8a-23e04b116018
 feature: Admin Workspace, Orders, Payments
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '579'
 ht-degree: 0%
-
 ---
-
 # Cybersource-Zahlung von Admin und Front auf verschiedenen Domains nicht verarbeitet
 
 Dieser Artikel enthält einen Patch für die bekannte Adobe Commerce 2.3.0-Einschränkung, die sich darauf bezieht, dass Cybersource-Zahlungen nicht sowohl von der Storefront als auch vom Commerce-Administrator verarbeitet werden können, wenn sie sich in verschiedenen Domains befinden.
@@ -21,7 +35,7 @@ Dieser Artikel enthält einen Patch für die bekannte Adobe Commerce 2.3.0-Einsc
 
 ## Problem
 
-Die vorherige Implementierung der Cybersource-Integration ermöglichte die Verarbeitung von Zahlungen aus nur einer Domain. Wenn sich Ihre Adobe Commerce-Storefront in einer anderen Domain als der Commerce-Admin befindet, erhalten Sie daher beim Versuch, eine Bestellung über Cybersource in Admin aufzugeben, die folgende Fehlermeldung: &quot;*Laden von X-Frame-Optionen verweigert: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ erlaubt kein ursprungsübergreifendes Framing.* ..“
+Die vorherige Implementierung der Cybersource-Integration ermöglichte die Verarbeitung von Zahlungen aus nur einer Domain. Wenn sich Ihre Adobe Commerce-Storefront in einer anderen Domain als der Commerce-Admin befindet, erhalten Sie daher beim Versuch, eine Bestellung über Cybersource in Admin aufzugeben, die folgende Fehlermeldung: &quot;*Laden von X-Frame-Optionen verweigert: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ erlaubt kein ursprungsübergreifendes Framing.* ..&quot;
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -69,6 +83,6 @@ Die Patches sind auch mit den folgenden Versionen kompatibel:
 
 ## Anwenden eines Pflasters
 
-Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in unserer Support-Wissensdatenbank.
+Anweisungen finden Sie unter [Anwenden eines von Adobe bereitgestellten Composer-Patches](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) in unserer Support-Wissensdatenbank.
 
 ## Angehängte Dateien

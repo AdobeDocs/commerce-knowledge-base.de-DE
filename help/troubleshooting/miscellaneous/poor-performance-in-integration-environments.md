@@ -4,13 +4,22 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass die Pro-I
 feature: Integration, Staging
 role: Developer
 exl-id: 46110dbc-2f54-4654-95e2-39e8ae1e6979
-source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%
-
 ---
-
 # Schlechte Leistung in Integrationsumgebungen
 
 Dieser Artikel bietet eine Lösung für das Problem, dass die Pro-Integrationsumgebungen und die Starter-Staging-Umgebungen schlecht abschneiden.
@@ -31,10 +40,10 @@ Abhängig von der Größe Ihres Katalogs/Ihrer Daten oder den Anforderungen der 
 
 Um Leistungsprobleme zu beheben, stellen Sie sicher, dass Sie die Best Practices für Best Performance in der Integrationsumgebung befolgen. Möglicherweise müssen Sie auch ein Upgrade der Umgebungen anfordern, um die Integration zu verbessern.
 
-Bestimmen Sie zunächst, ob sich Ihre Umgebung auf der [Erweiterte Integrationskonfiguration](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242) befindet.
+Bestimmen Sie zunächst, ob sich Ihre Umgebung auf der [Erweiterte Integrationskonfiguration](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) befindet.
 
-* [Pro-Architektur](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Starter-Architektur](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [Pro-Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Starter-Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
 Überprüfen Sie das Bereitstellungsprotokoll mit einer der folgenden Methoden.
 
@@ -59,10 +68,10 @@ opensearch (type: opensearch:2, size: L, disk: 1024)
 rabbitmq (type: rabbitmq:3.12, size: L, disk: 1024)
 ```
 
-Wenn Sie die Konfiguration der erweiterten Integration nicht verwenden, können Sie [die Verbesserung/das Upgrade anfordern](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242).
+Wenn Sie die Konfiguration der erweiterten Integration nicht verwenden, können Sie [die Verbesserung/das Upgrade anfordern](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
 Wenn Sie die Konfiguration der erweiterten Integration bereits verwenden oder nach dem Upgrade weiterhin Leistungsprobleme auftreten, sollten Sie die Best Practices für eine optimale Leistung in der Integrationsumgebung befolgen:
 
-* [Pro-Architektur](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Starter-Architektur](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [Pro-Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Starter-Architektur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
-Wenn Sie die oben genannten Empfehlungen erfüllt haben, [&#x200B; Sie (eine Support-Anfrage](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) um zusätzliche Hilfe.
+Wenn Sie die oben genannten Empfehlungen erfüllt haben, [ Sie (eine Support-Anfrage](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) um zusätzliche Hilfe.

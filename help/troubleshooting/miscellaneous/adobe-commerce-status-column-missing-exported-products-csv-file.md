@@ -4,13 +4,22 @@ description: Dieser Artikel bietet eine Lösung für das Problem, wenn Sie die S
 exl-id: 3cbe1e6c-fc73-4331-add7-1ebcb28a4580
 feature: Data Import/Export, Products
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
-
 ---
-
 # In der Adobe Commerce-Statusspalte fehlt die exportierte Produkt-CSV-Datei
 
 Dieser Artikel bietet eine Lösung für das Problem, wenn Sie die Statusspalte (d. h. die Angabe, ob das Produkt aktiviert oder deaktiviert ist) in der CSV-Datei, die exportierte Produkte enthält, nicht finden können. Der Status des Produkts wird durch die Spalte [!UICONTROL product_online] angezeigt.
@@ -50,5 +59,5 @@ Das Statusattribut des Produkts wurde in der CSV-Datei umbenannt. Sie ist jetzt 
 
 ## Verwandtes Lesen
 
-* [Arbeiten mit CSV-](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
-* [Produktexport-Attribute-Referenz](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.
+* [Arbeiten mit CSV-](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) in unserem Benutzerhandbuch.
+* [Produktexport-Attribute-Referenz](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) in unserem Benutzerhandbuch.

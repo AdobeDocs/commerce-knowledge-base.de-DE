@@ -4,13 +4,23 @@ description: In diesem Thema wird eine Lösung erläutert, wenn im Webbrowser "*
 exl-id: de689633-34b8-4a25-bbd0-a58742c4d03c
 feature: Console
 role: Developer
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '207'
 ht-degree: 0%
-
 ---
-
 # PWA Studio: Der Browser zeigt den Fehler „Proxy nicht möglich für“ an
 
 In diesem Thema wird eine Lösung erläutert, wenn im Webbrowser &quot;*Proxy für nicht möglich“* und in der Konsole eine
@@ -55,5 +65,5 @@ NodeJS kann den Hostnamen Ihres Adobe Commerce-Stores nicht auflösen.
 
 ## Verwandtes Lesen
 
-* Dokumentation zu [PWA Studio für Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
+* [Dokumentation zu PWA Studio für Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
 * [Tools und Bibliotheken](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/)

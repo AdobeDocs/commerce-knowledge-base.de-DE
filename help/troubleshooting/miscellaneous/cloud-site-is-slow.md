@@ -4,13 +4,31 @@ description: Dieser Artikel enthält Empfehlungen dazu, wie Sie die Leistung Ihr
 exl-id: 144df36b-6305-4e57-b813-46bbb0ddedda
 feature: Cache, Categories, Cloud, Paas
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 0%
-
 ---
-
 # Cloud-Site ist langsam
 
 Dieser Artikel enthält Empfehlungen dazu, wie Sie die Leistung Ihrer Adobe Commerce auf einer Cloud-Infrastruktur-Site bei starkem Traffic verbessern und diese Last reduzieren können.
@@ -65,7 +83,7 @@ Wenn die Indexseite eine niedrige Trefferrate aufweist, können Sie sie beheben,
 
 So überprüfen Sie die allgemeine Cache-Trefferrate:
 
-1. [Abrufen von Fastly](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)-Anmeldeinformationen für Ihre Adobe Commerce in der Cloud-Infrastrukturumgebung.
+1. [Abrufen von Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration)-Anmeldeinformationen für Ihre Adobe Commerce in der Cloud-Infrastrukturumgebung.
 1. Führen Sie den folgenden Linux/macOS cURL-Befehl aus, um die Trefferrate für Ihre Site in den letzten 30 Minuten zu überprüfen, und ersetzen Sie und durch die Werte für Ihre Fastly-Anmeldeinformationen:
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
@@ -82,8 +100,8 @@ Eine Trefferrate unter 0,85 oder 85 % kann auf ein Site-Konfigurationsproblem hi
 
 1. Ermitteln Sie mithilfe der Statistiken zur stündlichen und täglichen Trefferrate, wann der Rückgang der Trefferrate begonnen hat. Wenn die Trefferrate etwa zur gleichen Zeit wie bei der Bereitstellung einer Site-Änderung plötzlich zurückging, sollten Sie in Erwägung ziehen, die Änderung rückgängig zu machen, bis die Site-Last sinkt.
 1. Überprüfen Sie die Konfiguration im Commerce Admin unter **Stores** > **Configuration** > Erweitert > **System** > **Vollständiger Seitencache**. Stellen Sie sicher, dass **TTL für öffentliche Inhalte** nicht zu niedrig eingestellt ist.
-1. Stellen Sie sicher, [&#x200B; Sie die VCL-Snippets hochgeladen &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
-1. Wenn Sie benutzerdefinierte VCL-Snippets verwenden, debuggen Sie diese für die korrekte Verwendung der „Pass“- oder „Pipe“-Aktionen: Sie sollten sorgfältig verwendet und zumindest mit einer bestimmten Bedingung verwendet werden. Weitere Tipps finden Sie unter [Benutzerdefinierte Fastly-VCL-Snippets](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) in unserer Entwicklerdokumentation.
+1. Stellen Sie sicher, [ Sie die VCL-Snippets hochgeladen ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
+1. Wenn Sie benutzerdefinierte VCL-Snippets verwenden, debuggen Sie diese für die korrekte Verwendung der „Pass“- oder „Pipe“-Aktionen: Sie sollten sorgfältig verwendet und zumindest mit einer bestimmten Bedingung verwendet werden. Weitere Tipps finden Sie unter [Benutzerdefinierte Fastly-VCL-Snippets](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) in unserer Entwicklerdokumentation.
 
 ### Schritt 3: Identifizieren Sie die Websites, die die hohe Server-Last verursachen
 

@@ -1,10 +1,13 @@
 ---
-source-git-commit: c992521cae8c847adc0cc23d2323300e0ba69cdc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
-
 ---
+
 # Support-KB-Stilhandbuch
 
 Bitte befolgen Sie diese Stil- und Formatierungsempfehlungen, wenn Sie zum Adobe Commerce-Hilfezentrum beitragen.
@@ -276,4 +279,4 @@ Im Allgemeinen befolgen Sie die Chicagoer Manual of Style Recommendations für O
 
 ## Branding
 
-* Magento Commerce heißt jetzt Adobe Commerce. Weitere Informationen zur Verwendung der [&#x200B; Markensprache finden &#x200B;](https://github.com/magento/knowledge-base/wiki) im Wiki zu den Rebranding-Bedingungen.
+* Magento Commerce heißt jetzt Adobe Commerce. Weitere Informationen zur Verwendung der [ Markensprache finden ](https://github.com/magento/knowledge-base/wiki) im Wiki zu den Rebranding-Bedingungen.

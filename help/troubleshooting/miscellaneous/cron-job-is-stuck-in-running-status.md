@@ -1,16 +1,23 @@
 ---
 title: '[!DNL Cron] Auftrag steckt im Status **Wird ausgeführt** fest'
-description: Dieser Artikel bietet Lösungen für den Fall,  [!DNL cron]  Adobe Commerce-Aufträge die Ausführung nicht abschließen und in einem „laufenden“ Status verbleiben, der die Ausführung  [!DNL cron]  anderen Aufträge verhindert. Dies kann verschiedene Ursachen haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der erneuten Bereitstellung.
+description: Dieser Artikel bietet Lösungen für den Fall, dass Adobe Commerce [!DNL cron]-Aufträge nicht abgeschlossen werden und weiterhin den Status „Wird ausgeführt“ aufweisen, was die Ausführung anderer [!DNL cron] verhindert. Dies kann verschiedene Ursachen haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der erneuten Bereitstellung.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # [!DNL Cron] Auftrag steckt im Status „Wird ausgeführt“ fest
 
 Dieser Artikel bietet Lösungen für den Fall, dass Adobe Commerce [!DNL cron]-Aufträge nicht abgeschlossen werden und weiterhin den Status „Wird ausgeführt“ aufweisen, was die Ausführung anderer [!DNL cron] verhindert. Dies kann verschiedene Ursachen haben, z. B. Netzwerkprobleme, Anwendungsabstürze oder Probleme bei der erneuten Bereitstellung.
@@ -37,7 +44,7 @@ Zu den Symptomen [!DNL cron] Aufträge, die zurückgesetzt werden müssen, gehö
 
 Um dieses Problem zu beheben, müssen Sie den/die [!DNL cron] Auftrag/Aufträge mit dem Befehl `cron:unlock` zurücksetzen. Dieser Befehl ändert den Status des [!DNL cron] in der Datenbank und beendet den Vorgang erzwungen, damit andere geplante Aufträge fortgesetzt werden können.
 
-1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
+1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
 1. Abrufen der MySQL-Datenbankanmeldeinformationen: `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp`
 1. Verbindung zur Datenbank herstellen mit `mysql`: `mysql -hdatabase.internal -uuser -ppassword main`
 1. `main` auswählen: `use main`
@@ -47,7 +54,7 @@ Um dieses Problem zu beheben, müssen Sie den/die [!DNL cron] Auftrag/Aufträge 
 
 ### Lösung zum Anhalten einer einzelnen [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
+1. Öffnen Sie ein Terminal und verwenden Sie Ihre [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections)Schlüssel, um eine Verbindung zur betroffenen Umgebung herzustellen.
 1. Überprüfen Sie Aufgaben mit langer Laufzeit mithilfe des folgenden Befehls:
 
    `date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'`

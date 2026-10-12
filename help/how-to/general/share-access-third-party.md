@@ -3,13 +3,19 @@ title: Tipps von Drittanbietern zum Testen von Adobe Commerce in Cloud-Infrastru
 description: Dieser Artikel bietet Optionen zum Freigeben des Zugriffs für einen Drittanbieter zum Testen/Validieren, wenn Sie ein Problem mit einer Erweiterung für Adobe Commerce in der Cloud-Infrastruktur haben.
 exl-id: e2d80aa9-8b68-48ed-bec5-68e128611a1e
 feature: Best Practices, Cloud
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '530'
 ht-degree: 0%
-
 ---
-
 # Tipps von Drittanbietern zum Testen von Adobe Commerce in Cloud-Infrastrukturen
 
 Dieser Artikel bietet Optionen zum Freigeben des Zugriffs für einen Drittanbieter zum Testen/Validieren, wenn Sie ein Problem mit einer Erweiterung für Adobe Commerce in der Cloud-Infrastruktur haben.
@@ -27,11 +33,11 @@ Abhängig von Ihren internen Sicherheitsstandards können Sie die Fehlerbehebung
 
 * Ermöglichen Sie Ihrem Drittanbieter Zugriff auf die Cloud-Umgebung. Verwandte Artikel:
 
-   * [Benutzerhandbuch für Adobe Commerce Help Center > GEMEINSAMER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#shared-access) in unserer Support-Wissensdatenbank.
-   * [Freigeben Ihres Commerce](https://experienceleague.adobe.com/de/docs/commerce-admin/start/commerce-account/commerce-account-share) in unserem Benutzerhandbuch.
+  * [Benutzerhandbuch für Adobe Commerce Help Center > GEMEINSAMER ZUGRIFF: GEWÄHREN SIE ANDEREN BENUTZERN BERECHTIGUNGEN FÜR DEN ZUGRIFF AUF IHR KONTO](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#shared-access) in unserer Support-Wissensdatenbank.
+  * [Freigeben Ihres Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) in unserem Benutzerhandbuch.
 
 * Erstellen Sie einen Datenbank-Dump (oder gewähren Sie Drittanbietern Zugriff). Dies kann über die CLI oder in der Commerce Admin Console erfolgen. Dieser DB-Dump verschleiert Kundendaten, sodass sie nur Code- und Produkt-SKUs usw. erhalten, keine proprietären/Kundendaten. Verwenden Sie als Referenz [Sharing Your Commerce Account] (/help/how-to/general/create-database-dump-on-cloud.md) in unserer Support-Wissensdatenbank.
-* Nachdem die Tests abgeschlossen sind, stellen Sie sicher, dass Sie den freigegebenen Zugriff auf Ihre Cloud-Umgebung widerrufen, wie in [Benutzerhandbuch für das Adobe Commerce Help Center > Widerrufen (freigegebenen Zugriff löschen)](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access) in unserer Support-Wissensdatenbank beschrieben.
+* Nachdem die Tests abgeschlossen sind, stellen Sie sicher, dass Sie den freigegebenen Zugriff auf Ihre Cloud-Umgebung widerrufen, wie in [Benutzerhandbuch für das Adobe Commerce Help Center > Widerrufen (freigegebenen Zugriff löschen)](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access) in unserer Support-Wissensdatenbank beschrieben.
 
 ## Best Practice für Tests
 

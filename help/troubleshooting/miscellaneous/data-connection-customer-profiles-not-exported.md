@@ -1,16 +1,29 @@
 ---
 title: Kundenprofile werden nicht in Experience Platform angezeigt
-description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der  [!DNL Data Connection]  nicht in der Experience Platform angezeigt werden.
+description: Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der [!DNL Data Connection]-Erweiterung nicht in der Experience Platform angezeigt werden.
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
 exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
-
 ---
-
 # Kundenprofile werden nicht in Experience Platform angezeigt
 
 Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten bei Verwendung der Datenverbindungserweiterung nicht in der Experience Platform angezeigt werden.
@@ -21,7 +34,7 @@ Dieser Artikel enthält Schritte zur Fehlerbehebung, wenn Ihre Kundenprofildaten
 
 ## Problem
 
-Sie haben die [[!DNL Data Connection]](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/data-connection/overview)-Erweiterung installiert und konfiguriert und das Senden von Kundenprofildaten an die Experience Platform aktiviert, diese Profildaten werden jedoch nicht in der Experience Platform angezeigt.
+Sie haben die [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview)-Erweiterung installiert und konfiguriert und das Senden von Kundenprofildaten an die Experience Platform aktiviert, diese Profildaten werden jedoch nicht in der Experience Platform angezeigt.
 
 ## Lösung
 
@@ -31,7 +44,7 @@ Wenn Kundenprofilinformationen nicht in der Experience Platform angezeigt werden
 
 Vergewissern Sie sich, dass Sie die neueste Version der `experience-platform-connector`-Erweiterung installiert haben.
 
-In den [[!DNL Data Connection] Versionshinweisen zur Erweiterung](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/data-connection/release-notes) finden Sie Informationen zur neuesten Version.
+In den [[!DNL Data Connection] Versionshinweisen zur Erweiterung](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/release-notes) finden Sie Informationen zur neuesten Version.
 
 >[!NOTE]
 >
@@ -43,7 +56,7 @@ Bestätigen Sie, dass das `customers-connector` entsprechend Ihrem Installations
 
 #### Adobe Commerce auf Cloud-Infrastruktur
 
-1. Aktivieren Sie die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Informationen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
+1. Aktivieren Sie die globale Variable `ENABLE_EVENTING` in `.magento.env.yaml`. [Weitere Informationen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global).
 
    ```bash
        stage:
@@ -116,14 +129,14 @@ select * from event_data_saas;
    "error_code": "403003" } } }
    ```
 
-1. Navigieren Sie zur Seite *[!UICONTROL Commerce Services Connector]* in der Admin Console und stellen Sie sicher, dass die angegebenen [!UICONTROL sandbox/production] korrekt konfiguriert sind. Bestätigen Sie außerdem, dass die Einstellungen der Commerce-[!UICONTROL sandbox/production] mit den in der [!UICONTROL Commerce Services Connector] angezeigten übereinstimmen. Weitere [&#x200B; (](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
+1. Navigieren Sie zur Seite *[!UICONTROL Commerce Services Connector]* in der Admin Console und stellen Sie sicher, dass die angegebenen [!UICONTROL sandbox/production] korrekt konfiguriert sind. Bestätigen Sie außerdem, dass die Einstellungen der Commerce-[!UICONTROL sandbox/production] mit den in der [!UICONTROL Commerce Services Connector] angezeigten übereinstimmen. Weitere [ (](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#apikey).
 
 ### Überprüfen Sie, ob sich die Service-ID in der Zulassungsliste befindet, und bestätigen Sie dies mit dem Adobe Commerce-Support
 
 1. Stellen Sie sicher, dass die [!UICONTROL Commerce Services Connector] `serviceId` in der Adobe Commerces angezeigt wird.
-1. Wenden Sie sich an den [Adobe Commerce](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)Support, um den Status der Zulassungsliste zu bestätigen.
+1. Wenden Sie sich an den [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)Support, um den Status der Zulassungsliste zu bestätigen.
 
 ## Verwandtes Lesen
 
-* [[!DNL Data Connection]](https://experienceleague.adobe.com/de/docs/commerce-merchant-services/data-connection/overview) im Commerce Services-Benutzerhandbuch
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [[!DNL Data Connection]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/overview) im Commerce Services-Benutzerhandbuch
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

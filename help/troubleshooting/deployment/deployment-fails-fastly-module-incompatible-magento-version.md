@@ -4,13 +4,25 @@ description: 'AKTUALISIERT: 29. Februar 2019'
 exl-id: aab77407-94e5-42de-92f4-2f0c19e24fa4
 feature: Deploy, Extensions
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+subfeature_v2:
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '368'
 ht-degree: 0%
-
 ---
-
 # Bereitstellung schlägt fehl Fastly-Modul inkompatible Adobe Commerce-Version
 
 AKTUALISIERT: 29. Februar 2019
@@ -54,7 +66,7 @@ Die Bereitstellung schlägt möglicherweise mit den folgenden Fehlermeldungen fe
 [2019-01-23 00:00:00] CRITICAL: Command php ./bin/magento setup:static-content:deploy --ansi --no-interaction --jobs 1 --exclude-theme Magento/luma en_GB en_US returned code 1
 ```
 
-Wenn Sie Adobe Commerce in einer Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im &quot;[&quot; &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations). Bei On-Premise-Adobe Commerce wird der Fehler in der Befehlszeile angezeigt.
+Wenn Sie Adobe Commerce in einer Cloud-Infrastrukturlösung verwenden, wird diese Fehlermeldung im &quot;[&quot; ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations). Bei On-Premise-Adobe Commerce wird der Fehler in der Befehlszeile angezeigt.
 
 ## Ursache
 
@@ -70,4 +82,4 @@ Gehen Sie dazu wie folgt vor:
    * wenn das Fastly-Modul im magento-cloud-metapaket enthalten ist:    <pre>Composer-Update Magento/Magento-Cloud-Metapaket</pre>
    * wenn das Fastly-Modul separat installiert wurde (z. B. wenn Sie Adobe Commerce lokal verwenden, nicht die Cloud-Edition) <pre>Composer Update Fastly/Magento2</pre>
 1. Übergeben Sie die Änderungen, übertragen Sie sie und führen Sie einen Trigger des Bereitstellungsprozesses aus, wenn er nicht automatisch durchgeführt wird.
-1. Laden Sie in der Admin [die neue VCL in Fastly hoch](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
+1. Laden Sie in der Admin [die neue VCL in Fastly hoch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).

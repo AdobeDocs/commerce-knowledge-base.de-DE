@@ -4,13 +4,20 @@ description: Dieser Artikel bietet Lösungen für Fälle, in denen Sie eine Prod
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 2fa4ab1fcba962033a6dd6a448a6cec49b5e8bf2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '658'
 ht-degree: 0%
-
 ---
-
 # Numerischer Adobe Commerce-Datenbankwert außerhalb des Bereichs, `INT` bis `BIGINT`
 
 >[!WARNING]
@@ -42,7 +49,7 @@ SQLSTATE[22003]: Numeric value out of range: 167 Out of range value for column '
 Die im Artikel beschriebenen Lösungen sind:
 
 * Aktualisieren Sie die `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle oder
-* Aktualisierung des `INT`-Schemas `BIGINT`
+* Aktualisierung des `BIGINT`-Schemas `INT`
 
 Welche Lösung Sie verwenden, hängt von der Ursache des Problems ab. Gehen Sie wie folgt vor, um die Ursache zu isolieren.
 
@@ -51,13 +58,13 @@ Welche Lösung Sie verwenden, hängt von der Ursache des Problems ab. Gehen Sie 
 
 Überprüfen Sie den höchsten Wert des Primärschlüssels, indem Sie den folgenden Befehl am Terminal ausführen: `SELECT MAX(value_id) FROM catalog_product_entity_int;`
 
-Wenn der `max(value_id)` kleiner als der `max int(11) [ 4294967296 ]` ist und der `[ AUTO_INCREMENT ]` einen Wert größer oder gleich dem `max int(11) [ 4294967296 ]` hat, [&#x200B; Sie (den `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle aktualisieren](#update-the-auto-increment-to-the-next-value-from-the-table). Andernfalls sollten Sie eine [`INT` zur Aktualisierung `BIGINT` Schemas &#x200B;](#int_to_bigint_schema_update).
+Wenn der `max(value_id)` kleiner als der `max int(11) [ 4294967296 ]` ist und der `[ AUTO_INCREMENT ]` einen Wert größer oder gleich dem `max int(11) [ 4294967296 ]` hat, [ Sie (den `[ AUTO_INCREMENT ]` auf den nächsten Wert aus der Tabelle aktualisieren](#update-the-auto-increment-to-the-next-value-from-the-table). Andernfalls sollten Sie eine [`INT` zur Aktualisierung `BIGINT` Schemas ](#int_to_bigint_schema_update).
 
 ## Aktualisieren Sie die `AUTO_INCREMENT` auf den nächsten Wert aus der Tabelle. {#update-the-auto-increment-to-the-next-value-from-the-table}
 
 >[!WARNING]
 >
->Führen Sie eine Datenbanksicherung durch, bevor Sie die Tabellen ändern. Setzen Sie die Site auch in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=de#maintenance-mode). Darüber hinaus wird empfohlen, den Befehl [!DNL MySQL] optimieren für die Datenbanktabellen (nur für Tabellen, in denen Änderungen vorgenommen wurden) auszuführen, nachdem die Änderungen vorgenommen wurden.
+>Führen Sie eine Datenbanksicherung durch, bevor Sie die Tabellen ändern. Setzen Sie die Site auch in den [Wartungsmodus](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). Darüber hinaus wird empfohlen, den Befehl [!DNL MySQL] optimieren für die Datenbanktabellen (nur für Tabellen, in denen Änderungen vorgenommen wurden) auszuführen, nachdem die Änderungen vorgenommen wurden.
 
 >[!NOTE]
 >
@@ -89,7 +96,7 @@ Wie Sie in der obigen Beispielausgabe sehen können, hat sich die Tabelle `[ AUT
 ALTER TABLE catalog_product_entity_int AUTO_INCREMENT = 4283174131;
 ```
 
-## Aktualisierung des `INT`-Schemas `BIGINT` {#int_to_bigint_schema_update}
+## Aktualisierung des `BIGINT`-Schemas `INT` {#int_to_bigint_schema_update}
 
 Wenn jedoch beim Ausführen der folgenden Abfrage `SELECT MAX(value_id) FROM catalog_product_entity_int;` der angezeigte Wert höher ist als `max int(11) [ 4294967296 ]` eine `INT` zur `BIGINT` Schemaaktualisierung in Betracht ziehen. Der Datentyp `BIGINT` hat einen größeren Wertebereich.
 
@@ -112,7 +119,7 @@ Gehen Sie dazu folgendermaßen vor:
 
 ## Verwandtes Lesen
 
-* [Allgemein [!DNL MySQL] Richtlinien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=de) im Commerce-Installationshandbuch
-* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=de)Infrastruktur in unserer Support-Wissensdatenbank
-* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=de) in unserer Support-Wissensdatenbank
-* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/de/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook
+* [Allgemein [!DNL MySQL] Richtlinien](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html) im Commerce-Installationshandbuch
+* [Best Practices für Datenbanken für Adobe Commerce auf Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html)Infrastruktur in unserer Support-Wissensdatenbank
+* [Häufigste Datenbankprobleme in Adobe Commerce auf Cloud-Infrastruktur](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) in unserer Support-Wissensdatenbank
+* [Best Practices zum Ändern von Datenbanktabellen](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) im Commerce-Implementierungs-Playbook

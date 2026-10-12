@@ -2,13 +2,14 @@
 title: Zugriff auf die neueste Beta-Version nicht möglich
 description: Dieser Artikel bietet Lösungen für Probleme bei der Verwendung der neuesten Beta-Codeversionen für Adobe Commerce. Der Beta-Code ist nur für offizielle Adobe-Partner verfügbar, die den unter [Adobe Commerce Beta-Programm](https://github.com/magento/magento2/wiki/Magento-Beta-Program) beschriebenen Prozess befolgt haben.
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '660'
 ht-degree: 0%
-
 ---
-
 # Zugriff auf die neueste Beta-Version nicht möglich
 
 Dieser Artikel bietet Lösungen für Probleme bei der Verwendung der neuesten Beta-Codeversionen für Adobe Commerce. Der Beta-Code ist nur für offizielle Adobe-Partner verfügbar, die den im [Adobe Commerce Beta-Programm](https://github.com/magento/magento2/wiki/Magento-Beta-Program) beschriebenen Prozess befolgt haben.
@@ -17,8 +18,8 @@ Dieser Artikel bietet Lösungen für Probleme bei der Verwendung der neuesten Be
 
 In diesem Artikel werden die folgenden Probleme beim Zugriff auf den Early-Access-Code behandelt:
 
-* Die Adobe Commerce Beta-Version kann nicht unter **Mein Konto** > **Downloads** auf [magento.com) &#x200B;](https://account.magento.com/customer/account/login) werden.
-* Laden der Adobe Commerce-Version mit frühzeitigem Zugriff von [magento.com) &#x200B;](https://account.magento.com/customer/account/login) Composer fehlgeschlagen.
+* Die Adobe Commerce Beta-Version kann nicht unter **Mein Konto** > **Downloads** auf [magento.com) ](https://account.magento.com/customer/account/login) werden.
+* Laden der Adobe Commerce-Version mit frühzeitigem Zugriff von [magento.com) ](https://account.magento.com/customer/account/login) Composer fehlgeschlagen.
 
 ## Ursache
 
@@ -33,7 +34,7 @@ Dies sind die häufigsten Ursachen für Probleme:
 
 ### Code-Speicherort für frühzeitigen Zugriff
 
-Während der Beta-Zugriffsperioden sind Veröffentlichungspakete nur über Composer auf [repo.magento.com](https://repo.magento.com/) verfügbar. Versionspakete sind in diesem Zeitraum nicht auf GitHub- und Adobe Commerce-Portalen verfügbar und werden am GA-Datum an diesen Speicherorten veröffentlicht. Für weitere Informationen über die Verwendung von Composer klicken Sie bitte [hier](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/composer).
+Während der Beta-Zugriffsperioden sind Veröffentlichungspakete nur über Composer auf [repo.magento.com](https://repo.magento.com/) verfügbar. Versionspakete sind in diesem Zeitraum nicht auf GitHub- und Adobe Commerce-Portalen verfügbar und werden am GA-Datum an diesen Speicherorten veröffentlicht. Für weitere Informationen über die Verwendung von Composer klicken Sie bitte [hier](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer).
 
 ### MageID, die Sie verwenden müssen
 
@@ -47,7 +48,7 @@ Um herauszufinden, ob Ihre MageID primär ist, versuchen Sie Folgendes:
    * Wenn Sie die Informationen zur aktiven Partnerlizenz sehen, ist Ihre MageID primär. Die Partnerlizenz ist aktiv, wenn das ENDDATUM ein Datum in der Zukunft ist.
    * Wenn die Informationen zur aktiven Partnerlizenz nicht angezeigt werden, verfügt Ihre MageID nur über freigegebenen Zugriff. Um herauszufinden, wer der primäre ID-Inhaber ist, gehen Sie zu **Für mich freigegeben** Beachten Sie den dort angegebenen SHARENAME. Klicken Sie **Konten wechseln** und wählen Sie den Wert aus, den Sie in SHARENAME angegeben haben. Auf der Begrüßungsseite wird die E-Mail-Adresse des primären ID-Inhabers angezeigt.
 1. Sollten Sie diese Informationen aus irgendeinem Grund nicht auf [magento.com](https://account.magento.com/customer/account/login) finden, wenden Sie sich bitte an Ihren Partner Manager.
-1. Wenn keiner der oben genannten Schritte funktioniert, wenden Sie [an den Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+1. Wenn keiner der oben genannten Schritte funktioniert, wenden Sie [an den Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 #### Entwickler hat nicht den richtigen Zugriff auf Schlüssel
 
@@ -60,4 +61,4 @@ Wenn Sie der primäre MageID-Eigentümer sind und einem Entwickler in Ihrem Team
 
 ### Nicht Teil des Early Access-Programms
 
-Unser Beta Access-Programm steht nur unseren Lösungs- und technischen Partnern zur Verfügung, damit diese unseren Vorproduktions-Code auswerten können. Um am Beta Access-Programm teilnehmen zu können, muss Ihr Unternehmen über ein aktives Adobe-Partnerkonto verfügen, das sich in gutem Zustand befindet und die Beta-NDA ([) &#x200B;](https://github.com/magento/magento2/wiki/Magento-Beta-Program) hat. Wenn Sie glauben, dass Sie diese Kriterien erfüllen und nicht auf den Beta-Code zugreifen können, wenden Sie sich bitte an [commercebeta@adobe.com](mailto:commercebeta@adobe.com).
+Unser Beta Access-Programm steht nur unseren Lösungs- und technischen Partnern zur Verfügung, damit diese unseren Vorproduktions-Code auswerten können. Um am Beta Access-Programm teilnehmen zu können, muss Ihr Unternehmen über ein aktives Adobe-Partnerkonto verfügen, das sich in gutem Zustand befindet und die Beta-NDA ([) ](https://github.com/magento/magento2/wiki/Magento-Beta-Program) hat. Wenn Sie glauben, dass Sie diese Kriterien erfüllen und nicht auf den Beta-Code zugreifen können, wenden Sie sich bitte an [commercebeta@adobe.com](mailto:commercebeta@adobe.com).

@@ -4,13 +4,31 @@ description: Dieser Artikel bietet eine Lösung für das Problem, dass Sie versu
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
-
 ---
-
 # Exportierte .csv-Produktdatei wird nicht angezeigt
 
 Dieser Artikel bietet eine Lösung für den Fall, dass der Export des gewünschten Entitätstyps in eine CSV-Datei in der Commerce Admin dazu führt, dass die Datei nicht angezeigt wird.
@@ -73,7 +91,7 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
 
 #### Prozess als Cron-Auftrag hinzufügen (optional)
 
-1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [&#x200B; finden Sie unter „Einrichten &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de) Cron-Aufträgen“.
+1. Stellen Sie sicher, dass Ihr Cron eingerichtet und konfiguriert ist. Weitere [ finden Sie unter „Einrichten ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) Cron-Aufträgen“.
 1. Führen Sie den folgenden Befehl aus, um eine Liste der Nachrichtenwarteschlangen-Verbraucher zurückzugeben: `./bin/magento queue:consumers:list`
 1. Fügen Sie Ihrer `.magento.env.yaml`-Datei im Stammverzeichnis der Anwendung Folgendes hinzu und schließen Sie die Verbraucher ein, die Sie hinzufügen möchten. Hier finden Sie beispielsweise den Verbraucher, der für die Exportverarbeitung erforderlich ist:
 
@@ -87,17 +105,17 @@ Um den Prozess optional als Cron-Auftrag hinzuzufügen, müssen Sie die `CRON_CO
                    - exportProcessor
    ```
 
-   Pushen Sie dann diese aktualisierte Datei und stellen Sie Ihre Umgebung erneut bereit. Verweisen Sie auch [Benutzerdefinierte Cron-Aufträge zu Ihrem Projekt hinzufügen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de#add-custom-cron-jobs-to-your-project) in unserer Entwicklerdokumentation.
+   Pushen Sie dann diese aktualisierte Datei und stellen Sie Ihre Umgebung erneut bereit. Verweisen Sie auch [Benutzerdefinierte Cron-Aufträge zu Ihrem Projekt hinzufügen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) in unserer Entwicklerdokumentation.
 
 >[!NOTE]
 >
->Wenn Sie die `.magento.env.yaml`-Datei für Ihre Umgebung nicht finden können und der Meinung sind, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml` erstellen. Möglicherweise ist es zunächst leer. Sie können dort nach Bedarf weitere Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel[&#x200B; „Konfigurieren von Umgebungsvariablen für &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=de)&quot; und [Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=de) in Ihrer Entwicklerdokumentation.
+>Wenn Sie die `.magento.env.yaml`-Datei für Ihre Umgebung nicht finden können und der Meinung sind, dass sie gelöscht wurde, müssen Sie eine neue `.magento.env.yaml` erstellen. Möglicherweise ist es zunächst leer. Sie können dort nach Bedarf weitere Informationen hinzufügen. Verweisen Sie auf die folgenden Artikel[ „Konfigurieren von Umgebungsvariablen für ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)&quot; und [Umgebungsvariablen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) in Ihrer Entwicklerdokumentation.
 
 >[!TIP]
 >
->[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=de) wird zwischen Groß- und Kleinschreibung unterschieden und es werden keine Registerkarten zugelassen. Achten Sie darauf, in der gesamten Datei &quot;.magento.env.yaml“ einen konsistenten Einzug zu verwenden. Andernfalls funktioniert Ihre Konfiguration möglicherweise nicht wie erwartet. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden eine Einrückung mit zwei Leerzeichen. Verwenden Sie den Befehl ECE-Tools validate , um Ihre Konfiguration zu überprüfen.
+>[YAML-Dateien](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) wird zwischen Groß- und Kleinschreibung unterschieden und es werden keine Registerkarten zugelassen. Achten Sie darauf, in der gesamten Datei &quot;.magento.env.yaml“ einen konsistenten Einzug zu verwenden. Andernfalls funktioniert Ihre Konfiguration möglicherweise nicht wie erwartet. Die Beispiele in der Dokumentation und in der Beispieldatei verwenden eine Einrückung mit zwei Leerzeichen. Verwenden Sie den Befehl ECE-Tools validate , um Ihre Konfiguration zu überprüfen.
 
 >[!NOTE]
 >
->In Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [automatische Krone](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=de#crontab) in Ihrer Adobe Commerce in der Cloud-Infrastruktur aktiviert sein, bevor Sie mithilfe von `.magento.app.yaml` benutzerdefinierte Cron-Aufträge zu Staging- und Produktionsumgebungen hinzufügen können. Wenn diese Funktion nicht aktiviert ist[&#x200B; erstellen Sie ein Support-Ticket](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.
+>In Adobe Commerce in Cloud Infrastructure Pro-Projekten muss die Funktion [automatische Krone](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) in Ihrer Adobe Commerce in der Cloud-Infrastruktur aktiviert sein, bevor Sie mithilfe von `.magento.app.yaml` benutzerdefinierte Cron-Aufträge zu Staging- und Produktionsumgebungen hinzufügen können. Wenn diese Funktion nicht aktiviert ist[ erstellen Sie ein Support-Ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), damit der Auftrag für Sie hinzugefügt wird.
 

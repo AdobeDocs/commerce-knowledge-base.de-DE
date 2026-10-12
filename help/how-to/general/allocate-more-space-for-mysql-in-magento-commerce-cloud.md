@@ -3,19 +3,23 @@ title: Mehr Speicherplatz für MySQL in Adobe Commerce in der Cloud zuweisen
 description: Dieser Artikel enthält Anweisungen dazu, wie Sie in Adobe Commerce in der Cloud-Infrastruktur mehr Speicherplatz für MySQL zuweisen.
 exl-id: 98501aa0-5ec7-4ea1-8856-13d171ad0be9
 feature: Cloud
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '322'
 ht-degree: 0%
-
 ---
-
 # Mehr Speicherplatz für MySQL in Adobe Commerce in der Cloud zuweisen
 
 
 ## Platz auf Starter-Plan und Pro-Plan-Integration zuweisen
 
-Für alle Starter-Planumgebungen und Pro-Plan [Integrationsumgebung](https://experienceleague.adobe.com/de/docs/experience-cloud-kcs/kbarticles/ka-27242) können Sie mehr Speicherplatz für MySQL in der `.magento/services.yaml`-Datei zuweisen, indem Sie den `mysql: disk:` erhöhen. Beispiel:
+Für alle Starter-Planumgebungen und Pro-Plan [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) können Sie mehr Speicherplatz für MySQL in der `.magento/services.yaml`-Datei zuweisen, indem Sie den `mysql: disk:` erhöhen. Beispiel:
 
 ```yaml
 mysql:
@@ -23,7 +27,7 @@ mysql:
     disk: 2048
 ```
 
-Siehe den Artikel [Einrichten des MySQL-](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure/service/mysql)) als Referenz.
+Siehe den Artikel [Einrichten des MySQL-](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql)) als Referenz.
 
 Nachdem Sie die `.magento/services.yaml` geändert haben, müssen Sie Ihre Änderungen übernehmen und pushen, damit sie angewendet werden. Mit der Push-Benachrichtigung wird der Bereitstellungsprozess Trigger.
 
@@ -33,7 +37,7 @@ Nachdem Sie die `.magento/services.yaml` geändert haben, müssen Sie Ihre Ände
 
 ## Platz auf Pro Plan Staging oder Produktion zuweisen
 
-Um diese Änderungen an der Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie ein [Support-Ticket“ &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Wenn Sie ein Support-Ticket einreichen, um den Speicher zu erhöhen, muss der Support wissen, auf wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Eine Anfrage zur Speichererhöhung erfordert die Genehmigung Ihres Adobe-Accountteams, das die für Sie geeignete Speichermenge (gemäß Bestellformular) vor der Genehmigung überprüft.
+Um diese Änderungen an der Staging- oder Produktionsumgebung des Pro-Plans vorzunehmen, müssen Sie ein [Support-Ticket“ ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Wenn Sie ein Support-Ticket einreichen, um den Speicher zu erhöhen, muss der Support wissen, auf wie viel und auf welche Partition der Speicher angewendet werden soll (`/mysql` oder `/exports`). Eine Anfrage zur Speichererhöhung erfordert die Genehmigung Ihres Adobe-Accountteams, das die für Sie geeignete Speichermenge (gemäß Bestellformular) vor der Genehmigung überprüft.
 
 ## Verringernder zugewiesener Platz nicht verfügbar (Pro- und Starter-Plan)
 

@@ -2,13 +2,14 @@
 title: Wiederherstellen eines DB-Snapshots aus der Staging- oder Produktionsumgebung
 description: Dieser Artikel zeigt, wie Sie einen DB-Snapshot aus der Staging- oder Produktionsumgebung in Adobe Commerce in der Cloud-Infrastruktur wiederherstellen.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 62815213ce54f72d27812b9c2d7b3997f2e88897
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Wiederherstellen eines DB-Snapshots aus [!DNL Staging] oder [!DNL Production]
 
 Dieser Artikel zeigt, wie Sie eine DB-[!DNL snapshot] aus [!DNL Staging] oder [!DNL Production] in Adobe Commerce in der Cloud Pro-Infrastruktur wiederherstellen.
@@ -17,7 +18,7 @@ Dieser Artikel zeigt, wie Sie eine DB-[!DNL snapshot] aus [!DNL Staging] oder [!
 >[!NOTE]
 >
 >Mit diesen Methoden wird der **vollständige Snapshot“**.
->&#x200B;>Wenn Sie den Snapshot (**) wiederherstellen müssen** z. B. nur die Katalogtabellen wiederherstellen und dabei die Bestelltabellen intakt lassen, müssen Sie sich an Ihren Entwickler oder DBA wenden.
+>Wenn Sie den Snapshot (**) wiederherstellen müssen** z. B. nur die Katalogtabellen wiederherstellen und dabei die Bestelltabellen intakt lassen, müssen Sie sich an Ihren Entwickler oder DBA wenden.
 
 
 ## Betroffene Produkte und Versionen
@@ -28,7 +29,7 @@ Wählen Sie das für Ihren Fall am besten geeignete aus:
 
 >[!NOTE]
 >
-> Wenn Sie einen Schnappschuss in eine Integrationsumgebung importieren, achten Sie auf die Datenbankgröße. Große Datenbanken können nach dem Import zu Leistungseinbußen führen. Es wird empfohlen, den Snapshot zunächst in eine Staging- oder lokale Umgebung zu importieren, um seine Größe zu überprüfen und zu reduzieren, bevor Sie ihn in die -Integration übertragen. Deaktivieren Sie außerdem Cron-Aufträge im Integrationszweig, wenn nach dem Import Leistungsprobleme auftreten. Weitere Informationen finden Sie unter [Integrationsumgebung](https://experienceleague.adobe.com/de/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) im Handbuch Commerce on Cloud Infrastructure .
+> Wenn Sie einen Schnappschuss in eine Integrationsumgebung importieren, achten Sie auf die Datenbankgröße. Große Datenbanken können nach dem Import zu Leistungseinbußen führen. Es wird empfohlen, den Snapshot zunächst in eine Staging- oder lokale Umgebung zu importieren, um seine Größe zu überprüfen und zu reduzieren, bevor Sie ihn in die -Integration übertragen. Deaktivieren Sie außerdem Cron-Aufträge im Integrationszweig, wenn nach dem Import Leistungsprobleme auftreten. Weitere Informationen finden Sie unter [Integrationsumgebung](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) im Handbuch Commerce on Cloud Infrastructure .
 
 * [Methode 1: Übertragen Sie die  [!DNL dump]  auf Ihren lokalen Computer und importieren Sie sie](#meth2).
 * [Methode 2: Importieren Sie die  [!DNL dump]  direkt vom Server](#meth3).
@@ -38,14 +39,14 @@ Wählen Sie das für Ihren Fall am besten geeignete aus:
 
 >[!NOTE]
 >
-> Das Format des Schnappschusses bei **Azure-Projekten** ist unterschiedlich und enthält andere Datenbanken, die nicht importiert **können**.\
+> Das Format des Schnappschusses für **Azure-Projekte** ist unterschiedlich und enthält andere Datenbanken, die **nicht importiert werden können**.\
 > Bevor Sie den Snapshot importieren, müssen Sie zusätzliche Schritte ausführen, um **die entsprechende Datenbank zu extrahieren** bevor Sie mit dem Dump-Import fortfahren.
 
 Die Schritte sind:
 
 1. Navigieren Sie mithilfe von [!DNL SFTP] zu dem Speicherort, an dem die [!DNL snapshot] platziert wurde, normalerweise auf dem ersten Server/Knoten Ihrer [!DNL cluster] (zum Beispiel: `/mnt/recovery-<recovery_id>`).
    > **Azure-basierte Projekte:**\
-   > Wenn Ihr Projekt auf Azure basiert (d. h. Ihre Projekt-URL sieht wie `https://us-a1.magento.cloud/projects/<cluster_id>` aus), wird der Schnappschuss in folgendem Verzeichnis platziert:
+   > Wenn Ihr Projekt auf Azure basiert (d. h. wenn Ihre Projekt-URL wie `https://us-a1.magento.cloud/projects/<cluster_id>` aussieht), wird der Schnappschuss in folgendem Verzeichnis platziert:
    > * `/mnt/shared/<cluster ID>/all-databases.sql.gz`
    > * `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz`
 
@@ -83,7 +84,7 @@ Die Schritte sind:
    ```
 
 1. Kopieren Sie die [!DNL dump file] (z. B.: `<cluster ID>.sql.gz` für [!DNL Production] oder `<cluster ID_stg>.sql.gz` für [!DNL Staging]) auf Ihren lokalen Computer.
-1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] eingerichtet haben, um eine Remote-Verbindung zur Datenbank herzustellen[[!DNL SSH]  „and [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn)&quot;.
+1. Stellen Sie sicher, dass Sie in unserer Entwicklerdokumentation die [!DNL SSH tunnel] eingerichtet haben, um eine Remote-Verbindung zur Datenbank herzustellen[[!DNL SSH]  „and [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn)&quot;.
 1. Stellen Sie eine Verbindung zur Datenbank her.
 
    ```bash
@@ -179,6 +180,6 @@ Die Schritte sind:
 
 In unserer Entwicklerdokumentation:
 
-* [Importcode: Importieren Sie die Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] AND [!DNL backup] MANAGEMENT: [!DNL Dump] Ihre Datenbank](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Backup (Snapshot) in Cloud: Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Code importieren: Datenbank importieren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] und [!DNL backup] Management: [!DNL Dump] Ihre Datenbank](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Backup (Snapshot) in der Cloud: Häufig gestellte Fragen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)

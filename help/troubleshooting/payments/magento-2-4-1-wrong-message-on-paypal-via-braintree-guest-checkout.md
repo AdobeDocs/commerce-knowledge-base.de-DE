@@ -4,13 +4,24 @@ description: In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem b
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.1: Falsche Nachricht beim PayPal-Braintree-Gast-Checkout
 
 In diesem Artikel wird ein bekanntes Adobe Commerce 2.4.1-Problem beschrieben, bei dem ein Gast, der versucht, über Braintree eine Bestellung bei PayPal aufzugeben, eine nicht-informative Fehlermeldung erhält, wenn der Gast-Checkout deaktiviert ist.
@@ -27,7 +38,7 @@ Ein unspezifischer Fehler wird angezeigt, wenn der Gast-Checkout im Backend deak
 <u>Voraussetzungen</u>:
 
 1. Legen Sie im Commerce Admin unter **Stores** > **Configuration** > **Sales** > **Checkout** **Allow Guest Checkout** = *No* fest.
-1. Aktivieren Sie PayPal über Braintree, wie in der [Braintree](https://experienceleague.adobe.com/de/docs/commerce-admin/stores-sales/payments/braintree?) in unserem Benutzerhandbuch beschrieben.
+1. Aktivieren Sie PayPal über Braintree, wie in der [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) in unserem Benutzerhandbuch beschrieben.
 
 <u>Schritte zur Reproduktion</u>:
 
@@ -60,5 +71,5 @@ Die Problemumgehung besteht darin, dass sich der Kunde bei einem Geschäft anmel
 ## Verwandtes Lesen
 
 * [Best Practice für die Anzahl der in den Warenkorb befindlichen Produkte in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) in unserer Support-Wissensdatenbank.
-* [Tutorial zur Bestellabwicklung: Schritt 1. Artikel zum Warenkorb hinzufügen, &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
+* [Tutorial zur Bestellabwicklung: Schritt 1. Artikel zum Warenkorb hinzufügen, ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) in unserer Entwicklerdokumentation
 * [Tutorial zum GraphQL-Checkout: Schritt 1. Fügen Sie Produkte zum Warenkorb hinzu](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) in unserer Entwicklerdokumentation

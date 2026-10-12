@@ -4,13 +4,22 @@ description: Dieser Artikel bietet eine Lösung für Probleme bei der Bereitstel
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # Bereitstellungsprobleme in Bezug auf Kontoberechtigungen und Zugriffsschlüssel
 
 Dieser Artikel bietet eine Lösung für Probleme bei der Bereitstellung von Adobe Commerce in Cloud-Infrastrukturen, die durch einen Konflikt mit dem Zugriffsschlüssel verursacht wurden.
@@ -50,11 +59,11 @@ Wenn eine Bereitstellung fehlschlug, nachdem eine Änderung am Primären Kontakt
 
 ### Deaktivieren des Zugriffsschlüssels
 
-Wenn Sie keinen Zugriff auf das [Commerce Marketplace](https://marketplace.magento.com/)-Konto haben, das mit dem alten Schlüssel verknüpft ist, [kontaktieren Sie den Adobe Commerce-Support](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um den Schlüssel zu deaktivieren.
+Wenn Sie keinen Zugriff auf das [Commerce Marketplace](https://marketplace.magento.com/)-Konto haben, das mit dem alten Schlüssel verknüpft ist, [kontaktieren Sie den Adobe Commerce-Support](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), um den Schlüssel zu deaktivieren.
 
 Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel verknüpft ist, führen Sie die folgenden Schritte aus, um den Schlüssel zu deaktivieren:
 
-1. Melden Sie sich mit den Anmeldeinformationen [&#128279;](https://marketplace.magento.com/) alten Kontos bei der Commerce Marketplace an.
+1. Melden Sie sich mit den Anmeldeinformationen ](https://marketplace.magento.com/) alten Kontos bei der [Commerce Marketplace an.
 1. Klicken Sie oben rechts auf der Seite auf den Kontonamen und wählen Sie **Mein Profil** aus.
 1. Klicken Sie **der Registerkarte** Marketplace“ auf „Zugriffsschlüssel“.
 
@@ -64,4 +73,4 @@ Wenn Sie Zugriff auf das Marketplace-Konto haben, das mit dem alten Schlüssel v
 
 ## Verwandtes Lesen
 
-* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.
+* [Erhalten Sie Ihre Authentifizierungsschlüssel](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) in unserer Entwicklerdokumentation.

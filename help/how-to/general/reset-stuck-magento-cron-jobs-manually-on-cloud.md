@@ -3,26 +3,30 @@ title: Setzt fixierte Adobe Commerce in der Cloud-Infrastruktur bei Cron-Aufträ
 description: Adobe Commerce in der Cloud-Infrastruktur Cron-Aufträge werden nicht fertig ausgeführt, bleiben hängen und verhindern die Ausführung anderer Cron-Aufträge. Dieser Artikel zeigt, wie Sie die blockierten Cron-Aufträge manuell zurücksetzen können.
 exl-id: aec6de8e-c3a9-4a6d-8ecd-a213e77c97a1
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # Setzt fixierte Adobe Commerce in der Cloud-Infrastruktur bei Cron-Aufträgen manuell zurück
 
 Adobe Commerce in der Cloud-Infrastruktur Cron-Aufträge werden nicht fertig ausgeführt, bleiben hängen und verhindern die Ausführung anderer Cron-Aufträge. Dieser Artikel zeigt, wie Sie die blockierten Cron-Aufträge manuell zurücksetzen können.
 
-Verwenden Sie diesen Befehl mit Vorsicht! Wir empfehlen, den Artikel [Reset cron jobs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=de) in unserer Support-Wissensdatenbank zu lesen, um mehr zu erfahren.
+Verwenden Sie diesen Befehl mit Vorsicht! Wir empfehlen, den Artikel [Reset cron jobs](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) in unserer Support-Wissensdatenbank zu lesen, um mehr zu erfahren.
 
 ## Schritte
 
 >[!INFO]
 >
->Ab [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html?lang=de#v2002.0.4) können Sie hängengebliebene Cron-Aufträge manuell über einen CLI-Befehl per SSH-Zugriff zurücksetzen.
+>Ab [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) können Sie hängengebliebene Cron-Aufträge manuell über einen CLI-Befehl per SSH-Zugriff zurücksetzen.
 
-1. [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=de).
+1. [SSH in Ihre Umgebung](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Führen Sie diesen Befehl aus: `./vendor/bin/ece-tools cron:unlock`
 
 ## Warnungen
@@ -32,4 +36,4 @@ Verwenden Sie diesen Befehl mit Vorsicht! Wir empfehlen, den Artikel [Reset cron
 
 ## Lesen Sie es in unserer Support-Wissensdatenbank:
 
-[Cron-Aufträge zurücksetzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=de)
+[Cron-Aufträge zurücksetzen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)

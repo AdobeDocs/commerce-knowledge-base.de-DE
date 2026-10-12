@@ -4,13 +4,23 @@ description: In diesem Artikel wird über allgemeine Tools gesprochen, die bei d
 exl-id: c6603a2b-dc98-4022-ab29-c081c2b07415
 feature: Extensions
 role: Developer
-source-git-commit: ae2a4508daeaf2d29a5f615918fcc46626b2e196
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+subfeature_v2:
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '453'
 ht-degree: 0%
-
 ---
-
 # Hilfe zur Fehlerbehebung bei allgemeinen benutzerdefinierten Modulen
 
 In diesem Artikel wird über allgemeine Tools gesprochen, die bei der Fehlerbehebung bei benutzerdefinierten Modulen in Adobe Commerce helfen.
@@ -21,30 +31,30 @@ Wenn Sie erkennen, dass es ein Problem mit den Funktionen aus Ihrem benutzerdefi
 
 ## Lösung
 
-Überprüfen Sie die Protokolle, um festzustellen, ob im Fehler Einträge mit dem Namen des benutzerdefinierten Moduls vorhanden sind.  Je nach den aufgetretenen Fehlern kann sich die Lösung selbst präsentieren, oder Sie müssen Ihre hilfreichen Adobe Commerce-Protokollinformationen angeben, wenn Sie ein „Support[Ticket“ &#x200B;](https://experienceleague.adobe.com/de/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) möchten. In den folgenden Absätzen finden Sie Informationen zum Speicherort der Protokolle und zu möglichen Lösungen.
+Überprüfen Sie die Protokolle, um festzustellen, ob im Fehler Einträge mit dem Namen des benutzerdefinierten Moduls vorhanden sind.  Je nach den aufgetretenen Fehlern kann sich die Lösung selbst präsentieren, oder Sie müssen Ihre hilfreichen Adobe Commerce-Protokollinformationen angeben, wenn Sie ein „Support[Ticket“ ](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) möchten. In den folgenden Absätzen finden Sie Informationen zum Speicherort der Protokolle und zu möglichen Lösungen.
 
 ### Adobe Commerce (alle Bereitstellungsmethoden), Magento Open Source, alle Versionen 2.x
 
 1. Der Speicherort der Protokolle befindet sich in der Adobe Commerce in den Protokollen zur Architektur von Cloud Infrastructure Pro Plan in unserer Support-Wissensdatenbank.
 1. Je nach den gefundenen Fehlern werden in den folgenden Artikeln diese Aktionen beschrieben, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten:
-   * [Module aktivieren oder deaktivieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation.
-   * [Module deinstallieren](https://experienceleague.adobe.com/de/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) in unserer Entwicklerdokumentation.
+   * [Module aktivieren oder deaktivieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) in unserer Entwicklerdokumentation.
+   * [Module deinstallieren](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) in unserer Entwicklerdokumentation.
 
 ### Adobe Commerce auf Cloud-Infrastruktur, alle Versionen
 
-1. Speicherorte für Protokolle: [Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
+1. Speicherorte für Protokolle: [Adobe Commerce in Cloud-Infrastrukturprotokollen](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) in unserer Entwicklerdokumentation.
 1. Je nach den gefundenen Fehlern werden diese Aktionen in den folgenden Artikeln in der Entwicklerdokumentation beschrieben, wenn Sie ein benutzerdefiniertes Modul aktivieren, deaktivieren oder deinstallieren möchten:
-   * [Installieren, Verwalten und Aktualisieren von &#x200B;](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/configure-store/extensions).
-   * [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/de/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
+   * [Installieren, Verwalten und Aktualisieren von ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+   * [Fehler bei der Komponentenbereitstellung](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/recover-failed-deployment).
 
 ## Verwandtes Lesen
 
 In unserer Entwicklerdokumentation:
 
-* [Modul - Übersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
-* [Fehler bei der Installation optionaler Beispieldaten](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
+* [Modulübersicht](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Fehler beim Installieren optionaler Beispieldaten](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/errors-installing-optional-sample-data)
 * [Ausnahmebehandlung](https://developer.adobe.com/commerce/webapi/graphql/develop/exceptions/)
-* [Ausnahmen während der Installation](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
-* [Module Manager ausführen](https://experienceleague.adobe.com/de/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
-* [Module-Konfigurationsdateien](https://experienceleague.adobe.com/de/docs/commerce-operations/configuration-guide/files/module-files)
-* [Fehler wegen zu wenig Arbeitsspeicher](https://experienceleague.adobe.com/de/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)
+* [Ausnahmen während der Installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/exceptions-during-installation)
+* [Module Manager ausführen](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites)
+* [Modulkonfigurationsdateien](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
+* [Fehler wegen unzureichendem Arbeitsspeicher](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade)
