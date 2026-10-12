@@ -24,7 +24,7 @@ ht-degree: 0%
 1. Klicken Sie **Abonnements erstellen**.
 
    ![create-subscription-adobe-status.png](assets/create-subscription-adobe-status.png)
-1. Es wird ein Fenster angezeigt, in dem Sie Benachrichtigungen für Produkte auswählen können. Er kann sich vom folgenden Screenshot unterscheiden, da einige Abonnements basierend auf Ihrem Profil vorausgewählt sein können oder weil Sie bereits einige Abonnements eingerichtet haben. Klicken Sie unter Experience Cloud auf **0}Adobe Magento.** Wenn Sie Benachrichtigungen für alle Adobe Magento-Services erhalten möchten, aktivieren Sie das Kontrollkästchen Adobe Magento . Dadurch werden automatisch alle Adobe Magento-Services ausgewählt, die angezeigt werden, wenn der Abschnitt Adobe Magento erweitert wird (siehe Screenshot).
+1. Es wird ein Fenster angezeigt, in dem Sie Benachrichtigungen für Produkte auswählen können. Er kann sich vom folgenden Screenshot unterscheiden, da einige Abonnements basierend auf Ihrem Profil vorausgewählt sein können oder weil Sie bereits einige Abonnements eingerichtet haben. Klicken Sie unter Experience Cloud auf **0&rbrace;Adobe Magento.** Wenn Sie Benachrichtigungen für alle Adobe Magento-Services erhalten möchten, aktivieren Sie das Kontrollkästchen Adobe Magento . Dadurch werden automatisch alle Adobe Magento-Services ausgewählt, die angezeigt werden, wenn der Abschnitt Adobe Magento erweitert wird (siehe Screenshot).
 
    ![subscribe_to_all_adobe_magento_services_notifications.png](assets/adobe_magento_all_services_notification.png)
 

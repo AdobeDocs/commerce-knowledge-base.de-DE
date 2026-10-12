@@ -36,17 +36,17 @@ Adobe Commerce auf Cloud-Infrastruktur, [alle unterstützten Versionen](https://
 
 ### Schritt 1: Ist dies für die [!DNL Integration, Staging] oder [!DNL Production environment]?
 
-* **[!DNL Integration]**: [!DNL Custom domains] werden nicht unterstützt. Sie müssen stattdessen diese Methode verwenden: [Mehrere Websites oder Geschäfte einrichten: Lokale Installation ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) in unserem Benutzerhandbuch.
+* **[!DNL Integration]**: [!DNL Custom domains] werden nicht unterstützt. Sie müssen stattdessen diese Methode verwenden: [Mehrere Websites oder Geschäfte einrichten: Lokale Installation &#x200B;](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#add-new-domains) in unserem Benutzerhandbuch.
 * **[!DNL Staging]**: Gehen Sie zu **Schritt 2**.
 * **[!DNL Production]**: Gehen Sie zu **Schritt 3**.
 
 ### Schritt 2 - [!DNL Staging environment]: Sind Sie auf [!DNL Pro] oder [!DNL Starter]?
 
-* **[!DNL Pro]**: **Senden einer Anfrage**, um die Domain zu [!DNL Fastly, Nginx] hinzuzufügen, und konfigurieren Sie die [!DNL SSL certificate] (sowie ggf. die [!DNL Sendgrid domain]). Nachdem dies konfiguriert wurde, [ Sie die  [!DNL DNS]  mit [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings).
+* **[!DNL Pro]**: **Senden einer Anfrage**, um die Domain zu [!DNL Fastly, Nginx] hinzuzufügen, und konfigurieren Sie die [!DNL SSL certificate] (sowie ggf. die [!DNL Sendgrid domain]). Nachdem dies konfiguriert wurde, [&#x200B; Sie die  [!DNL DNS]  mit [!DNL development settings]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#update-dns-configuration-with-development-settings).
 
 >[!NOTE]
 >
->Für PRO-Architekturen ist zum Hinzufügen einer neuen Domain die Übermittlung einer Support-Anfrage an Adobe Commerce erforderlich. Während einige Kunden Fastly möglicherweise manuell über die Admin Console konfigurieren können, gilt dies nur in bestimmten Fällen, z. B. wenn die Domain nicht an einen anderen Fastly-Service oder ein anderes Projekt gebunden ist. Allerdings ist immer eine Nginx-Konfiguration erforderlich, und dieser Schritt muss von Adobe durchgeführt werden. Aus diesem Grund wird empfohlen, am zuverlässigsten ein „Support-Ticket[ einzureichen ](https://experienceleague.adobe.com/home?support-tab=home#support) Adobe den gesamten Domain-Einrichtungsprozess verwalten zu lassen.
+>Für PRO-Architekturen ist zum Hinzufügen einer neuen Domain die Übermittlung einer Support-Anfrage an Adobe Commerce erforderlich. Während einige Kunden Fastly möglicherweise manuell über die Admin Console konfigurieren können, gilt dies nur in bestimmten Fällen, z. B. wenn die Domain nicht an einen anderen Fastly-Service oder ein anderes Projekt gebunden ist. Allerdings ist immer eine Nginx-Konfiguration erforderlich, und dieser Schritt muss von Adobe durchgeführt werden. Aus diesem Grund wird empfohlen, am zuverlässigsten ein „Support-Ticket[&#x200B; einzureichen &#x200B;](https://experienceleague.adobe.com/home?support-tab=home#support) Adobe den gesamten Domain-Einrichtungsprozess verwalten zu lassen.
 
 
 * **[!DNL Starter]**: [!DNL Custom domains] werden in der Staging-Umgebung nicht unterstützt.
