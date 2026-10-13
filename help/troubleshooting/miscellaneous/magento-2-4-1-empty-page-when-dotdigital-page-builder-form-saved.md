@@ -6,11 +6,9 @@ feature: Page Builder
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.1: Leere Seite beim Speichern des dotdigital Page Builder-Formulars
 
 Dieser Artikel bietet eine Problemumgehung für ein bekanntes Problem in Adobe Commerce 2.4.1, um nach dem Speichern eines dotdigital Page Builder-Formulars im Admin Panel eine leere Webseite anzuzeigen, wenn der Safari-Browser verwendet wird.
