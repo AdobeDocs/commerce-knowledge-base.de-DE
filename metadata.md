@@ -3,6 +3,7 @@ cloud: Experience Cloud
 solution: Commerce
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: "Commerce"
 usetq: true
 feature-set: Commerce
 landing-page-name: commerce
@@ -15,11 +16,9 @@ index: true
 badgePaas: label="Nur PaaS" type="Informative" url="https://experienceleague.adobe.com/de/docs/commerce/user-guides/product-solutions" tooltip="Gilt nur für Adobe Commerce in Cloud-Projekten (von Adobe verwaltete PaaS-Infrastruktur) und lokale Projekte."
 source-git-commit: be3af16156719ed47daf3fdaec1113663885a1a3
 workflow-type: tm+mt
-source-wordcount: 97
+source-wordcount: '91'
 ht-degree: 0%
-
 ---
-
 
 # Metadaten für die interne Verwendung
 
