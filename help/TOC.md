@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 50b733947e4c62b9a318df1f86a51c456f9f15d1
+source-git-commit: 152df0a44bb16aae19cd84c6d79b891da7365565
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1573'
 ht-degree: 1%
 ---
 # Wissensdatenbank zu Adobe Commerce {#kb}
@@ -139,7 +139,6 @@ ht-degree: 1%
     * [Cron stoppt aufgrund von falsch konfigurierten oder fehlenden [!DNL OpCache settings]](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
     * [[!DNL Admin]-Anmeldung funktioniert nicht - Zulässige maximale Sitzungsgröße überschritten](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
     * [[!DNL Google Tag Manager] wird durch das Live Search-Widget beschädigt](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
-    * [Sicherheitslücken, die bei Sicherheitsüberprüfungen von Drittanbietern gefunden wurden, sollten Sie aufrufen unter [!DNL HackerOne]](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
     * [Tausende von Suchergebnissen werden nach dem Upgrade von 2.4.2 auf 2.4.5-p3 abgerufen](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
     * [Suchmaschine in app/etc/env.php kann nicht geändert werden](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
     * [Die Magento-Cloud-CLI zeigt keine aktive Umgebung an](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
