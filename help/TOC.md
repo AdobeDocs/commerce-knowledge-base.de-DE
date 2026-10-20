@@ -2,9 +2,9 @@
 user-guide-title: Wissensdatenbank zu Adobe Commerce
 user-guide-description: Alles, was Sie für die Fehlerbehebung und Wartung Ihres Commerce-Stores benötigen.
 breadcrumb-title: Commerce-Wissensdatenbank
-source-git-commit: 152df0a44bb16aae19cd84c6d79b891da7365565
+source-git-commit: a5bb7b49f18f098b8706ba8b3187a7ae81059940
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1564'
 ht-degree: 1%
 ---
 # Wissensdatenbank zu Adobe Commerce {#kb}
@@ -73,7 +73,6 @@ ht-degree: 1%
   * Verschiedenes {#miscellaneous}
     * [Ich habe API-Schlüssel für Adobe AI konfiguriert, sehe jedoch nur einen SaaS-Datenspeicher](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [Hilfe zur Fehlerbehebung bei allgemeinen benutzerdefinierten Modulen](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
-    * [Cache-Aufwärmung und Site auf Adobe Commerce nicht verfügbar](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Verwenden von Datenexporten zur Ermittlung von Diskrepanzen](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
     * [Probleme bei der Prüfung der Komponentenabhängigkeit](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
     * [Zugriff auf Adobe Commerce in der Cloud-Infrastruktur-Benutzeroberfläche nicht möglich](/help/troubleshooting/miscellaneous/cannot-access-magento-commerce-cloud-ui.md)
