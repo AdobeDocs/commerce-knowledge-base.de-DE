@@ -129,7 +129,7 @@ Sie können Listen auch auf diese Weise einbetten.
 Externe Links sind unkompliziert:
 
 ```markdown
-[Adobe](https://www.adobe.com)
+[Adobe](https://www.adobe.com/de)
 ```
 
 ### Links zu Anlagen

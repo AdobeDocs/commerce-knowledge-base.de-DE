@@ -28,4 +28,4 @@ Lösungen finden Sie in der [Commerce Marketplace](https://marketplace.magento.c
 
 ## Verwandtes Lesen
 
-* [Adobe-Barrierefreiheit](https://www.adobe.com/trust/accessibility.html)
+* [Adobe-Barrierefreiheit](https://www.adobe.com/de/trust/accessibility.html)
