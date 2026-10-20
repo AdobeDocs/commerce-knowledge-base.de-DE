@@ -61,4 +61,4 @@ Stellen Sie sicher, dass die Zugriffssteuerung nicht aktiviert ist: Wechseln Sie
 
 ## Verwandtes Lesen
 
-* [Adobe Commerce-Benutzerhandbuch > Vollseitiger Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) in unserem Benutzerhandbuch.
+* [Adobe Commerce-Benutzerhandbuch > Vollseitiger Cache](https://experienceleague.adobe.com/de/docs/commerce-admin/systems/tools/cache-management#full-page-caching) in unserem Benutzerhandbuch.
