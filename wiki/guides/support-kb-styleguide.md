@@ -256,7 +256,7 @@ Eine spezielle Link-Liste, eine so genannte „see-also-Liste“, wird nur am En
 
 ### Links zu externen Websites
 
-Verwenden Sie normale URLs statt goURLs, um Links zu Seiten außerhalb von [Adobe.com](http://Adobe.com) zu erstellen.
+Verwenden Sie normale URLs statt goURLs, um Links zu Seiten außerhalb von [Adobe.com](http://Adobe.com/de) zu erstellen.
 
 
 ## Kommas
